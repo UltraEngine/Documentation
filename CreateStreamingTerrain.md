@@ -1,7 +1,9 @@
 # CreateStreamingTerrain
 This function creates a new streaming terrain. This type of terrain loads height and other data into memory only as it is needed, allowing display of very large landscapes.
 ### Syntax
+```
 CreateStreamingTerrain(std.shared_ptr<World> world, const int resolution, const int patchsize = nullptr)
+```
 ### Parameters
 | Name | Description |
 | ------ | ------ |
