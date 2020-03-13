@@ -13,7 +13,7 @@ std::shared_ptr<StreamingTerrain> CreateStreamingTerrain(std::shared_ptr<World> 
 | patchsize | The size of one patch of terrain, This should be a power-of-two number. 128 is a good setting.|
 | datapath | The file path or URL to the terrain data.|
 | FetchPatchInfo | A user-defined callback function that retrieves terrain information as it is needed. |
-### Returns
+### Return Value
 Returns a new streamed terrain.
 ### Example
 ``` lua
