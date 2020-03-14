@@ -2,9 +2,9 @@
 This function creates a new streaming terrain. This type of terrain loads height and other data into memory only as it is needed, allowing display of very large landscapes.
 
 ### Syntax
-* [StreamingTerrain](StreamingTerrain.md) **CreateStreamingTerrain**([World](../World/World.md) world, number resolution, number patchsize, string datapath);
+* [StreamingTerrain](StreamingTerrain.md) **CreateStreamingTerrain**([World](../World/World.md) world, number resolution, number patchsize, string datapath)
 
-* [StreamingTerrain](StreamingTerrain.md) **CreateStreamingTerrain**([World](../World/World.md) world, number resolution, number patchsize, string datapath);
+* [StreamingTerrain](StreamingTerrain.md) **CreateStreamingTerrain**([World](../World/World.md) world, number resolution, number patchsize, string datapath)
 
 ### Parameters
 | Name | Description |
