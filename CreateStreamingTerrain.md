@@ -2,9 +2,9 @@
 This function creates a new streaming terrain. This type of terrain loads height and other data into memory only as it is needed, allowing display of very large landscapes.
 
 ### Syntax
-* shared_ptr\<[StreamingTerrain](StreamingTerrain.md)\> **CreateStreamingTerrain**(shared_ptr\<[World](../World/World.md)\> world, const int resolution, const int patchsize, const string& datapath, void FetchPatchInfo([TerrainPatchInfo](../TerrainPatchInfo/TerrainPatchInfo.md)\*) = NULL)
+* shared_ptr\<[StreamingTerrain](StreamingTerrain.md)\> **CreateStreamingTerrain**(shared_ptr\<[World](../World/World.md)\> *world*, const int *resolution*, const int *patchsize*, const string& *datapath*, void *FetchPatchInfo*([TerrainPatchInfo](../TerrainPatchInfo/TerrainPatchInfo.md)\*) = NULL)
 
-* shared_ptr\<[StreamingTerrain](StreamingTerrain.md)\> **CreateStreamingTerrain**(shared_ptr\<[World](../World/World.md)\> world, const int resolution, const int patchsize, const wstring& datapath, void FetchPatchInfo([TerrainPatchInfo](../TerrainPatchInfo/TerrainPatchInfo.md)\*) = NULL)
+* shared_ptr\<[StreamingTerrain](StreamingTerrain.md)\> **CreateStreamingTerrain**(shared_ptr\<[World](../World/World.md)\> *world*, const int *resolution*, const int *patchsize*, const wstring& *datapath*, void *FetchPatchInfo*([TerrainPatchInfo](../TerrainPatchInfo/TerrainPatchInfo.md)\*) = NULL)
 
 ### Parameters
 | Name | Description |
