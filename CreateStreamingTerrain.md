@@ -16,7 +16,7 @@ This function creates a new streaming terrain. This type of terrain loads height
 | FetchPatchInfo | A user-defined callback function that retrieves terrain information as it is needed. |
 
 ### Return Value
-Returns a new streamed terrain.
+If successful this function returns a new streaming terrain object, otherwise NULL is returned.
 
 ### Example
 [Streaming Terrain Example](terrain-example.md)
