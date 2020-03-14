@@ -1,4 +1,4 @@
-# Object::Self Method
+# Object::Self
 This is the equivalent to calling the C++ "this" keyword inside a class method, except it will return a safe shared pointer.
 
 ### Syntax
