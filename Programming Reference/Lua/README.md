@@ -3,7 +3,7 @@
 ## Getting Started
 Programming with Lua is easy and fun, making it great for simple games and beginners. To get started, we recommend you install [Visual Studio Code](https://code.visualstudio.com/download), a lightweight editor for code files.
 
-### Classes
+## Classes
 * [Object](Object/README.md)
 
 **Entities**
@@ -30,12 +30,12 @@ Programming with Lua is easy and fun, making it great for simple games and begin
 * [Vec3]()
 * [Vec4]()
 
-### Functions
+## Functions
 * [ListDisplays](Functions/ListDisplays.md)
 
-### Constants
+## Constants
 * [LoadFlags](Constants/LoadFlags.md)
 
-### Additional Information
+## Additional Information
 * [Lua Language Documentation](https://www.lua.org/docs.html)
 * [Official Lua Website](https://www.lua.org)
