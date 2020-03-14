@@ -6,10 +6,10 @@ Programming with Lua is easy and fun, making it great for simple games and begin
 ### Classes
 * [Object](Object/README.md)
 
-#### Entities
+**Entities**
 * [StreamingTerrain](StreamingTerrain/README.md)
 
-#### Math
+**Math**
 * [AABB]()
 * [dAABB]()
 * [dMat3]()
