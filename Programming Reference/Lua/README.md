@@ -1,7 +1,7 @@
 # Lua Programming Reference
 
 ## Getting Started
-Programming with Lua is easy and fun, making it great for simple games. To get started, we recommend you install [Visual Studio Code](https://code.visualstudio.com/download), a lightweight editor for code files.
+Programming with Lua is easy and fun, making it great for simple games and beginners. To get started, we recommend you install [Visual Studio Code](https://code.visualstudio.com/download), a lightweight editor for code files.
 
 ### Classes
 * [Object](Object/README.md)
