@@ -1,8 +1,11 @@
 # CreateStreamingTerrain
 This function creates a new streaming terrain. This type of terrain loads height and other data into memory only as it is needed, allowing display of very large landscapes.
+
 ### Syntax
 * shared_ptr\<[StreamingTerrain](StreamingTerrain.md)\> **CreateStreamingTerrain**(shared_ptr\<[World](../World/World.md)\> world, const int resolution, const int patchsize, const string& datapath, void FetchPatchInfo([TerrainPatchInfo](../TerrainPatchInfo/TerrainPatchInfo.md)\*) = NULL);
+
 * shared_ptr\<[StreamingTerrain](StreamingTerrain.md)\> **CreateStreamingTerrain**(shared_ptr\<[World](../World/World.md)\> world, const int resolution, const int patchsize, const wstring& datapath, void FetchPatchInfo([TerrainPatchInfo](../TerrainPatchInfo/TerrainPatchInfo.md)\*) = NULL);
+
 ### Parameters
 | Name | Description |
 | ------ | ------ |
@@ -11,7 +14,9 @@ This function creates a new streaming terrain. This type of terrain loads height
 | patchsize | The size of one patch of terrain, This should be a power-of-two number. 128 is a good setting.|
 | datapath | The file path or URL to the terrain data.|
 | FetchPatchInfo | A user-defined callback function that retrieves terrain information as it is needed. |
+
 ### Return Value
 Returns a new streamed terrain.
+
 ### Example
 [Streaming Terrain Example](terrain-example.md)
