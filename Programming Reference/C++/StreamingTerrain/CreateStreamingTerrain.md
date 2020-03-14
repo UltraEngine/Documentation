@@ -19,4 +19,4 @@ This function creates a new streaming terrain. This type of terrain loads height
 If successful this function returns a new streaming terrain object, otherwise NULL is returned.
 
 ### Example
-[Streaming Terrain Example](Streaming Terrain.cpp)
+[Streaming Terrain Example](StreamingTerrain.cpp)
