@@ -2,6 +2,7 @@
 This is the equivalent to calling C++ this inside a class method, except it will return a safe shared pointer.
 
 ### Syntax
+
 * shared_ptr<Object> Self()
 
 ### Return Value
