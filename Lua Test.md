@@ -3,7 +3,6 @@ This function creates a new streaming terrain. This type of terrain loads height
 
 ### Syntax
 * [StreamingTerrain](StreamingTerrain.md) **CreateStreamingTerrain**([World](../World/World.md) world, number resolution, number patchsize, string datapath)
-
 * [StreamingTerrain](StreamingTerrain.md) **CreateStreamingTerrain**([World](../World/World.md) world, number resolution, number patchsize, string datapath)
 
 ### Parameters
