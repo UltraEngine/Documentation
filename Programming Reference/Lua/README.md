@@ -1,4 +1,4 @@
-$ Lua Programming Reference
+# Lua Programming Reference
 
 ### Classes
 * [Object](Object/README.md)
