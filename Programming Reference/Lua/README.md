@@ -26,5 +26,5 @@
 ### Functions
 * [ListDisplays](Functions/ListDisplays.md)
 
-### Enums
+### Constants
 * [LoadFlags](Constants/LoadFlags.md)
