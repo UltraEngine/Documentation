@@ -3,8 +3,6 @@
 ### Classes
 * [Object](Object/README.md)
 * [StreamingTerrain](StreamingTerrain/README.md)
-
-### Structures
 * [AABB]()
 * [dAABB]()
 * [dMat3]()
