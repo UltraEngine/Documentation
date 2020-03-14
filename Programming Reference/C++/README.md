@@ -1,4 +1,5 @@
 # C++ Programming Reference
+C++ provides the fastest performance and most advanced feature set for advanced programmers. To get started, install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 
 ### Classes
 * [Object](Object/README.md)
