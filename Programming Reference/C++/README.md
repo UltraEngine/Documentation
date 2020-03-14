@@ -40,4 +40,4 @@ C++ provides the fastest performance and most advanced feature set for advanced 
 
 ## Additional Information
 * [Microsoft C++ Language Reference](https://docs.microsoft.com/cpp/cpp/cpp-language-reference)
-* [CPlusPlus.com Reference](http://www.cplusplus.com/reference/)
+* [cplusplus.com Reference](http://www.cplusplus.com/reference/)
