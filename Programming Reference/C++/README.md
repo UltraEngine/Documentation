@@ -1,7 +1,7 @@
 # C++ Programming Reference
 C++ provides the fastest performance and most advanced feature set for advanced programmers. To get started, install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 
-### Classes
+## Classes
 * [Object](Object/README.md)
 * [StreamingTerrain](StreamingTerrain/README.md)
 * [AABB]()
@@ -24,8 +24,12 @@ C++ provides the fastest performance and most advanced feature set for advanced 
 * [Vec3]()
 * [Vec4]()
 
-### Functions
+## Functions
 * [ListDisplays](Functions/ListDisplays.md)
 
-### Enums
+## Enums
 * [LoadFlags](Constants/LoadFlags.md)
+
+## Additional Information
+* [Microsoft C++ Language Reference](https://docs.microsoft.com/cpp/cpp/cpp-language-reference)
+* [cplusplus.com Reference](http://www.cplusplus.com/reference/)
