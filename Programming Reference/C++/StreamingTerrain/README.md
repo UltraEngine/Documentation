@@ -5,7 +5,7 @@ This type of terrain loads height and other data into memory only as it is neede
 ### Members
 * const string& datapath
 ### Methods
-* [GetElevation](ClearCache.md)
+* [ClearCache](ClearCache.md)
 * [GetElevation](GetElevation.md)
 * [GetHeight](GetHeight.md)
 ### Functions
