@@ -38,6 +38,7 @@ Programming with Lua is easy and fun, making it great for simple games and begin
 * LOAD_DEFAULT
 * LOAD_QUIET
 * LOAD_UNMANAGED
+
 **EntityBounds**
 * BOUNDS_LOCAL
 * BOUNDS_GLOBAL
