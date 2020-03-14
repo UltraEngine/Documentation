@@ -6,7 +6,7 @@ C++ provides the fastest performance and most advanced feature set for advanced 
 * [Language Basics](Smart%20Pointers.md)
 * [STL Containers](Smart%20Pointers.md)
 * [Smart Pointers](Smart%20Pointers.md)
-* [Object--oriented Programming](Smart%20Pointers.md)
+* [Object-oriented Programming](Smart%20Pointers.md)
 * [64-bit Floats](Smart%20Pointers.md)
 
 ## Classes
