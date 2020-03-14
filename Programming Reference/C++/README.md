@@ -2,6 +2,9 @@
 C++ provides the fastest performance and most advanced feature set for advanced programmers. To get started, install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 
 ## Topics
+* [Getting Started](Smart%20Pointers.md)
+* [Language Basics](Smart%20Pointers.md)
+* [STL Containers](Smart%20Pointers.md)
 * [Smart Pointers](Smart%20Pointers.md)
 * [64-bit Floats](Smart%20Pointers.md)
 
