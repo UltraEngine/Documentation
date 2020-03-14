@@ -11,4 +11,4 @@ This type of terrain loads height and other data into memory only as it is neede
 ### Functions
 * [CreateStreamingTerrain](CreateStreamingTerrain.md)
 ### Examples
-* [Streaming Terrain Example](CreateStreamingTerrain.md)
+* [Streaming Terrain Example](StreamingTerrain.cpp)
