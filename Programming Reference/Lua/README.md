@@ -31,3 +31,6 @@ Programming with Lua is easy and fun, making it great for simple games and begin
 
 ### Constants
 * [LoadFlags](Constants/LoadFlags.md)
+
+### Additional Information
+* [Lua Language Documentation](https://www.lua.org/docs.html)
