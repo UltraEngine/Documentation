@@ -1,5 +1,5 @@
 # C++ Programming Reference
-C++ provides the fastest performance and most advanced feature set for experienced programmers. Our use of smart pointers greatly improves the usability of this language. To get started, install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
+C++ provides the fastest performance and most advanced feature set for experienced programmers. Our use of smart pointers makes C++ code much easier to manage. To get started, install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 
 ## Topics
 * [Getting Started](Smart%20Pointers.md)
