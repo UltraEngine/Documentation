@@ -34,7 +34,14 @@ Programming with Lua is easy and fun, making it great for simple games and begin
 * [ListDisplays](Functions/ListDisplays.md)
 
 ## Constants
-* [LoadFlags](Constants/LoadFlags.md)
+**LoadFlags**
+* LOAD_DEFAULT
+* LOAD_QUIET
+* LOAD_UNMANAGED
+**EntityBounds**
+* BOUNDS_LOCAL
+* BOUNDS_GLOBAL
+* BOUNDS_RECURSIVE
 
 ## Additional Information
 * [Lua Language Documentation](https://www.lua.org/docs.html)
