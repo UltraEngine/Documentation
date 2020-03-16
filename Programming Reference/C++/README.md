@@ -18,10 +18,20 @@ C++ provides the fastest performance and most advanced feature set for experienc
       - [StreamingTerrain](StreamingTerrain/README.md)
 
 ## Functions
+
+### Debugging
+- [Assert]()
+- [DebugBreak]()
+- [RunTimeError]()
+- [Warn](Functions/Warn.md)
+
 ### I/O
 - [Input](Functions/Input.md)
 - [Print](Functions/Print.md)
-- [Warn](Functions/Warn.md)
+
+## Timing
+- [Millisecs](Functions/Millisecs.md)
+- [Sleep](Functions/Sleep.md)
 
 ## Enums
 * [LoadFlags](Constants/LoadFlags.md)
