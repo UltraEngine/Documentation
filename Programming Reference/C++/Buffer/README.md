@@ -1,6 +1,6 @@
 # Buffer
 
-The buffer class allows easy management of blocks of generic memory. These are used extensively within the engine itself, but can also be used as a low-level tool for advanced users.
+The buffer class allows easy management of generic blocks of memory. These are used extensively within the engine itself, but can also be used as a low-level tool for advanced users.
 
 # Members
 
