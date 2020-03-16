@@ -15,6 +15,9 @@ C++ provides the fastest performance and most advanced feature set for experienc
   - [Display](Display/README.md)
   - [Pixmap](Pixmap/README.md)  
   - [Entity](Entity/README.md)
+    - [Camera](Camera/README.md)
+    - [Light](Light/README.md)
+      - [BoxLight](BoxLight/README.md)
     - [Terrain](Terrain/README.md)
       - [StreamingTerrain](StreamingTerrain/README.md)
 
