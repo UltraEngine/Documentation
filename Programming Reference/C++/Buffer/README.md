@@ -1,6 +1,6 @@
 # Buffer
 
-The buffer class is a low-level tool that allows easy management of blocks of generic memory.
+The buffer class allows easy management of blocks of generic memory. These are used extensively within the engine itself, but can also be used as a low-level tool for advanced users.
 
 # Members
 
@@ -10,6 +10,8 @@ The buffer class is a low-level tool that allows easy management of blocks of ge
 # Methods
 
 - [data]()
+- [Resize]()
+- [Clear]()
 - [Poke]()
 - [Peek]()
 - [PokeByte]()
@@ -23,5 +25,11 @@ The buffer class is a low-level tool that allows easy management of blocks of ge
 - [PeekFloat]()
 - [PeekShort]()
 - [PeekDouble]()
+
+# Functions
+
+- [CreateBuffer]()
+- [CreateStaticBuffer]()
+- [LoadBuffer]()
 
 # Examples
