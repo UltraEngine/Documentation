@@ -10,6 +10,8 @@ The buffer class allows easy management of generic blocks of memory. These are u
 # Methods
 
 - [data]()
+- [GetSize]()
+- [GetCapacity]()
 - [Resize]()
 - [Clear]()
 - [Poke]()
