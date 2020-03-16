@@ -29,7 +29,7 @@ C++ provides the fastest performance and most advanced feature set for experienc
 - [Input](Functions/Input.md)
 - [Print](Functions/Print.md)
 
-## Timing
+### Timing
 - [Millisecs](Functions/Millisecs.md)
 - [Sleep](Functions/Sleep.md)
 
