@@ -33,6 +33,11 @@ C++ provides the fastest performance and most advanced feature set for experienc
 - [Millisecs](Functions/Millisecs.md)
 - [Sleep](Functions/Sleep.md)
 
+### System
+- [Confirm](Functions/Confirm.md)
+- [Notify](Functions/Notify.md)
+- [Proceed](Functions/Proceed.md)
+
 ## Enums
 * [LoadFlags](Constants/LoadFlags.md)
 
