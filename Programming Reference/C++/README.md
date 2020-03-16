@@ -18,7 +18,7 @@ C++ provides the fastest performance and most advanced feature set for experienc
       - [StreamingTerrain](StreamingTerrain/README.md)
 
 ## Functions
-### IO
+### I/O
 - [Input](Functions/Input.md)
 - [Print](Functions/Print.md)
 - [Warn](Functions/Warn.md)
