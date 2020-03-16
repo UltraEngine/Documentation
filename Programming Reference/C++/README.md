@@ -12,7 +12,9 @@ C++ provides the fastest performance and most advanced feature set for experienc
 ## Classes
 - [Object](Object/README.md)
   - [Buffer](Buffer/README.md)
-  - [StreamingTerrain](StreamingTerrain/README.md)
+  - [Entity](Entity/README.md)
+    - [Terrain](Terrain/README.md)
+      - [StreamingTerrain](StreamingTerrain/README.md)
 
 ## Functions
 * [ListDisplays](Functions/ListDisplays.md)
