@@ -1,9 +1,18 @@
 # Entity::SetPosition
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
+ion, const bool global = false)
 
-### Syntax
+### Lua Syntax
+* SetPosition(number x, number y, number z, boolean global = false)
+* SetPosition(Vec3 position, boolean = false)
+
+### C# Syntax
+* void SetPosition(float x, float y, float z, bool global = false)
+* void SetPosition(Vec3 posit
+
+### C++ Syntax
 * void SetPosition(const float x, const float y, const float z, const bool global = false)
-* void SetPosition(const Vec3& position, const bool global = false)
+* void SetPosition(const Vec3& posit
 
 ### Parameters
 | Name | Description |
