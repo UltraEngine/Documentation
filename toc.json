@@ -15,12 +15,12 @@
 		},
 		{
 			"title": "Programming Reference",
-			"openstate": "true",
+			"openstate": true,
 			"topics":
 			[
 				{
 					"title": "Classes",
-					"openstate": "true",
+					"openstate": true,
 					"topics":
 					[
 						{
