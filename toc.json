@@ -13,12 +13,12 @@
 					[
 						{
 							"title": "Object",
-							"filename": "Programming-Reference/CPP/Classes/Object/README.md",
+							"filename": "CPP_Object.md",
 							"topics":
 							[
 								{
 									"title": "Self",
-									"filename": "Programming%20Reference/C%2B%2B/Object/Self.md"
+									"filename": "CPP_Object_Self.md"
 								}
 							]							
 						}
