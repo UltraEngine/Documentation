@@ -2,9 +2,9 @@
 This method sets the scale of an entity on all three axes.
 
 ### Syntax
-* void SetRotation(const float x, const float y, const float z)
-* void SetRotation(const Vec3& scale)
-* void SetRotation(const float scale)
+* void SetScale(const float x, const float y, const float z)
+* void SetScale(const Vec3& scale)
+* void SetScale(const float scale)
 
 ### Parameters
 | Name | Description |
