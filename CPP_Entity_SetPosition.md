@@ -10,11 +10,11 @@ ion, const bool global = false)
 
 ### C#
 * void SetPosition(float x, float y, float z, bool global = false)
-* void SetPosition(Vec3 posit
+* void SetPosition(Vec3 position, bool global = false)
 
 ### Lua
 * SetPosition(number x, number y, number z, boolean global = false)
-* SetPosition(Vec3 position, boolean = false)
+* SetPosition(Vec3 position, boolean global = false)
 
 ### Parameters
 | Name | Description |
