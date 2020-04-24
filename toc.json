@@ -12,6 +12,8 @@
 					"selected": true
 				}
 			],
+		},
+		{
 			"title": "Programming Reference",
 			"openstate": "true",
 			"topics":
