@@ -18,6 +18,6 @@ MyClass::MyMethod()
   auto me = dynamic_pointer_cast<MyClass>(Self());
 }
 ```
-This method should **always** be used in place of the C++ keyword "this" for all objects created as a shared pointer.
+This method should *always* be used in place of the C++ keyword "this" for all objects created as a shared pointer.
 
-This method should **never** be called in a class constructor or destructor.
+This method should *never* be called in a class constructor or destructor.
