@@ -7,7 +7,7 @@ This is the equivalent to calling the C++ "this" keyword inside a class method, 
 
 ### Return Value
 
-Returns a shared pointer to the object.
+Returns a shared pointer to this object.
 
 ### Remarks
 
