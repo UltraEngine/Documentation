@@ -15,6 +15,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 
 ### Methods
 * [GetParent](GetParent.md)
+* [SetParent](SetParent.md)
 * [SetPosition](SetPosition.md)
 * [SetRotation](SetRotation.md)
 * [SetScale](SetScale.md)
