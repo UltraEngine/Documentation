@@ -13,7 +13,7 @@
 					[
 						{
 							"title": "Object",
-							"filename": "CPP_Object",
+							"filename": "Object",
 							"topics":
 							[
 								{
@@ -29,7 +29,7 @@
 								},							
 								{
 									"title": "Self",
-									"filename": "CPP_Object_Self"
+									"filename": "Object_Self"
 								}
 							]							
 						}
