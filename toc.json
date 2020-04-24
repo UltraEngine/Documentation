@@ -17,6 +17,17 @@
 							"topics":
 							[
 								{
+									"title": "Entity",
+									"filename": "CPP_Entity"
+									"topics":
+									[
+										{
+											"title": "SetPosition",
+											"filename": "CPP_Entity_SetPosition"
+										}								
+									]									
+								}								
+								{
 									"title": "Self",
 									"filename": "CPP_Object_Self"
 								}
