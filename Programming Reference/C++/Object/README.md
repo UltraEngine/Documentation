@@ -2,6 +2,9 @@
 
 This is the base class for all other classes in the engine.
 
-# Methods
+### Derived Classes
+- [Entity](Entity.md)
 
-* [Self](Self.md)
+### Methods
+
+- [Self](Self.md)
