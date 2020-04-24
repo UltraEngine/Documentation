@@ -13,12 +13,12 @@
 					[
 						{
 							"title": "Object",
-							"filename": "CPP_Object.md",
+							"filename": "CPP_Object",
 							"topics":
 							[
 								{
 									"title": "Self",
-									"filename": "CPP_Object_Self.md"
+									"filename": "CPP_Object_Self"
 								}
 							]							
 						}
