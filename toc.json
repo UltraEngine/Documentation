@@ -18,12 +18,12 @@
 							[
 								{
 									"title": "Entity",
-									"filename": "CPP_Entity",
+									"filename": "Entity",
 									"topics":
 									[
 										{
 											"title": "SetPosition",
-											"filename": "CPP_Entity_SetPosition"
+											"filename": "Entity_SetPosition"
 										}								
 									]									
 								},							
