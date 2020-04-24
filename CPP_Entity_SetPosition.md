@@ -4,17 +4,17 @@ ion, const bool global = false)
 
 ## Syntax
 
-### Lua
-* SetPosition(number x, number y, number z, boolean global = false)
-* SetPosition(Vec3 position, boolean = false)
+### C++
+* void SetPosition(const float x, const float y, const float z, const bool global = false)
+* void SetPosition(const Vec3& posit
 
 ### C#
 * void SetPosition(float x, float y, float z, bool global = false)
 * void SetPosition(Vec3 posit
 
-### C++
-* void SetPosition(const float x, const float y, const float z, const bool global = false)
-* void SetPosition(const Vec3& posit
+### Lua
+* SetPosition(number x, number y, number z, boolean global = false)
+* SetPosition(Vec3 position, boolean = false)
 
 ## Parameters
 | Name | Description |
