@@ -1,4 +1,6 @@
-void main()
+#include "UltraEngine.h"
+
+void main(const char* args, const int argc)
 {
   auto displays = ListDisplays();
   
