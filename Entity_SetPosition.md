@@ -5,7 +5,7 @@ This method sets the position of an entity in 3-dimensional space, using local o
 
 ### C++
 * void SetPosition(const float x, const float y, const float z, const bool global = false)
-* void SetPosition(const Vec3& posit
+* void SetPosition(const Vec3& position, const bool global = false)
 
 ### CSharp
 * void SetPosition(float x, float y, float z, bool global = false)
