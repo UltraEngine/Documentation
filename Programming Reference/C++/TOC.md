@@ -1,7 +1,0 @@
-- Topics
-  - [Gettings Started](GettingStarted.md)
-  - [Smart Pointers](SmartPointers.md)
-  - [STL Containers](STLContainers.md)
-- Classes
-  - [Object](Object/README.md)
-    - [Entity](Entity/README.md)
