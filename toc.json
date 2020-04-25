@@ -34,13 +34,21 @@
 									"topics":
 									[
 										{
-											"title": "Getmaterial",
+											"title": "GetMaterial",
 											"filename": "Entity_GetMaterial"
-										},										
+										},
+										{
+											"title": "GetParent",
+											"filename": "Entity_GetParent"
+										},											
 										{
 											"title": "Setmaterial",
 											"filename": "Entity_SetMaterial"
-										},										
+										},
+										{
+											"title": "SetParent",
+											"filename": "Entity_SetParent"
+										},
 										{
 											"title": "SetPosition",
 											"filename": "Entity_SetPosition"
