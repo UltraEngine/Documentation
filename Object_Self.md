@@ -3,7 +3,7 @@ This is the equivalent to calling the C++ "this" keyword inside a class method, 
 
 ### Syntax
 
-- shared_ptr\<[Object](Object.md)\> Self()
+- shared_ptr<[Object](Object.md)> Self()
 
 ### Return Value
 
