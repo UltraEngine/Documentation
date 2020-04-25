@@ -34,9 +34,25 @@
 									"topics":
 									[
 										{
+											"title": "Getmaterial",
+											"filename": "Entity_GetMaterial"
+										},										
+										{
+											"title": "Setmaterial",
+											"filename": "Entity_SetMaterial"
+										},										
+										{
 											"title": "SetPosition",
 											"filename": "Entity_SetPosition"
-										}								
+										},
+										{
+											"title": "SetRotation",
+											"filename": "Entity_SetRotation"
+										},
+										{
+											"title": "SetScale",
+											"filename": "Entity_SetScale"
+										}											
 									]									
 								},							
 								{
