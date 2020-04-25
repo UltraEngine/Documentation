@@ -51,7 +51,7 @@
 										},
 										{
 											"title": "SetPosition",
-											"filename": "Entity_SetPosition"
+											"filename": "$(LANG)_Entity_SetPosition"
 										},
 										{
 											"title": "SetRotation",
