@@ -42,7 +42,7 @@
 											"filename": "Entity_GetParent"
 										},											
 										{
-											"title": "Setmaterial",
+											"title": "SetMaterial",
 											"filename": "Entity_SetMaterial"
 										},
 										{
