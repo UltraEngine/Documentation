@@ -25,7 +25,7 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 auto displays = ListDisplays()
 
 --Create a window
-local window = CreateWindow(displays[0], "", 0, 0, 1280, 720, nullptr, WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow(displays[0], "", 0, 0, 1280, 720, nil, WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
