@@ -21,8 +21,6 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 
 ## Example
 ```
-#include "UltraEngine.h"
-	
 void main(string[] args)
 {
 	//Get the displays
