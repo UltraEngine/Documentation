@@ -29,7 +29,7 @@ void main(string[] args)
 	var displays = ListDisplays();
   
 	//Create a window
-	var window = CreateWindow(displays[0], "", 0, 0, 1280, 720, NULL, WINDOW_CENTER | WINDOW_TITLEBAR);
+	var window = CreateWindow(displays[0], "", 0, 0, 1280, 720, null, WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create a framebuffer
 	var framebuffer = CreateFramebuffer(window);
