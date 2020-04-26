@@ -23,7 +23,7 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 ```
 #include "UltraEngine.h"
 	
-void main(const char* args, const int argc)
+void main(string[] args)
 {
 	//Get the displays
 	var displays = ListDisplays();
