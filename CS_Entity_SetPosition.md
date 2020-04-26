@@ -2,8 +2,8 @@
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
 
 ## Syntax
-* void SetPosition(float x, float y, float z, bool global = false)
-* void SetPosition(Vec3 position, bool global = false)
+* void **SetPosition**(float x, float y, float z, bool global = false)
+* void **SetPosition**(Vec3 position, bool global = false)
 
 ### Parameters
 | Name | Description |
