@@ -29,7 +29,7 @@ void main(const char* args, const int argc)
 	auto displays = ListDisplays();
   
 	//Create a window
-	auto window = CreateWindow(displays[0], "", 0, 0, 1280, 720, nullptr, WINDOW_CENTER | WINDOW_TITLEBAR);
+	auto window = CreateWindow(displays[0], "", 0, 0, 1280, 720, NULL, WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create a framebuffer
 	auto framebuffer = CreateFramebuffer(window);
