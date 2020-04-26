@@ -2,8 +2,8 @@
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
 
 ## Syntax
-* SetPosition(number x, number y, number z, boolean global = false)
-* SetPosition(Vec3 position, boolean global = false)
+* **SetPosition**(number x, number y, number z, boolean global = false)
+* **SetPosition**(Vec3 position, boolean global = false)
 
 ### Parameters
 | Name | Description |
