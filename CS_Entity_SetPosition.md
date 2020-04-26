@@ -26,10 +26,10 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 void main(const char* args, const int argc)
 {
 	//Get the displays
-	auto displays = ListDisplays();
+	var displays = ListDisplays();
   
 	//Create a window
-	auto window = CreateWindow(displays[0], "", 0, 0, 1280, 720, nullptr, WINDOW_CENTER | WINDOW_TITLEBAR);
+	var window = CreateWindow(displays[0], "", 0, 0, 1280, 720, nullptr, WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create a framebuffer
 	var framebuffer = CreateFramebuffer(window);
