@@ -1,9 +1,9 @@
 # Object::Self
-This is the equivalent to calling the C++ "this" keyword inside a class method, except it will return a safe shared pointer.
+This is the equivalent to calling the C++ **this** keyword inside a class method, except it will return a safe shared pointer.
 
 ### Syntax
 
-- shared_ptr<[Object](Object.md)> Self()
+- shared_ptr<Object> **Self**()
 
 ### Return Value
 
