@@ -5,6 +5,7 @@ This is the equivalent to calling the C++ **this** keyword inside a class method
 
 - shared_ptr<Object> **Self**()
 
+
 ### Return Value
 
 Returns a shared pointer to this object.
