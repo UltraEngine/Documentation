@@ -1,4 +1,4 @@
-# 🔗 Entity::SetPosition
+# Entity::SetPosition
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
 
 ## Syntax
