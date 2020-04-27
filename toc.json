@@ -27,6 +27,7 @@
 						{
 							"title": "Object",
 							"filename": "Object",
+							"openstate": true,
 							"topics":
 							[
 								{
@@ -71,7 +72,14 @@
 							]							
 						}
 					]
-				}
+				},
+				{
+					"title": "Structures",
+					"openstate": true,
+					"topics":
+					[
+					]
+				},				
 			]
 		}
 	]
