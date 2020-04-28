@@ -22,7 +22,7 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 ## Example
 ```
 --Get the displays
-auto displays = ListDisplays()
+local displays = ListDisplays()
 
 --Create a window
 local window = CreateWindow(displays[1], "", 0, 0, 1280, 720, nil, WINDOW_CENTER | WINDOW_TITLEBAR)
