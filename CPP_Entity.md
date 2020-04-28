@@ -5,8 +5,6 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * [Object](../Object/README.md)
 
 ## Members
-
-### C++
 * const Vec3& position
 * const Vec3& rotation
 * const Quat& quaternion
