@@ -12,4 +12,4 @@ Lua is very simple and easy to learn, and is suitable for simple projects.
 
 Click on an image below for the setup guide for each language.
 
-![Lua Logo](https://raw.githubusercontent.com/Leadwerks/Documentation/master/cpp_logo.png) ![Lua Logo](https://raw.githubusercontent.com/Leadwerks/Documentation/master/lua_logo.jpg) ![Lua Logo](https://raw.githubusercontent.com/Leadwerks/Documentation/master/csharp_logo.png)
+![Lua Logo](https://raw.githubusercontent.com/Leadwerks/Documentation/master/cpp_logo.png)  ![Lua Logo](https://raw.githubusercontent.com/Leadwerks/Documentation/master/csharp_logo.png)  ![Lua Logo](https://raw.githubusercontent.com/Leadwerks/Documentation/master/lua_logo.jpg)
