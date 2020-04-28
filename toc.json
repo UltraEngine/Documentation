@@ -26,48 +26,48 @@
 					[
 						{
 							"title": "Object",
-							"filename": "Object",
+							"filename": "API_Object",
 							"openstate": true,
 							"topics":
 							[
 								{
 									"title": "Entity",
-									"filename": "Entity",
+									"filename": "API_Entity",
 									"topics":
 									[
 										{
 											"title": "GetMaterial",
-											"filename": "Entity_GetMaterial"
+											"filename": "API_Entity_GetMaterial"
 										},
 										{
 											"title": "GetParent",
-											"filename": "Entity_GetParent"
+											"filename": "API_Entity_GetParent"
 										},											
 										{
 											"title": "SetMaterial",
-											"filename": "Entity_SetMaterial"
+											"filename": "API_Entity_SetMaterial"
 										},
 										{
 											"title": "SetParent",
-											"filename": "Entity_SetParent"
+											"filename": "API_Entity_SetParent"
 										},
 										{
 											"title": "SetPosition",
-											"filename": "$(LANG)_Entity_SetPosition"
+											"filename": "API_Entity_SetPosition"
 										},
 										{
 											"title": "SetRotation",
-											"filename": "Entity_SetRotation"
+											"filename": "API_Entity_SetRotation"
 										},
 										{
 											"title": "SetScale",
-											"filename": "Entity_SetScale"
+											"filename": "API_Entity_SetScale"
 										}											
 									]									
 								},							
 								{
 									"title": "Self",
-									"filename": "Object_Self"
+									"filename": "API_Object_Self"
 								}
 							]							
 						}
