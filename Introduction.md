@@ -5,7 +5,7 @@ Welcome to the engine tutorials. You're about to start learning how to use the m
 Engine SDK can be programmed with three languages.
 - C++ offers the fastest code execution speed, best compatibility with third-party libraries, and is good for advanced projects.
 - C# offers fast compilation times and more compact syntax, and is acceptable for most projects.
-- Lua is very simple and easy to learn, and is suitable for simple projects.
+- Lua is very easy to use, and is suitable for simple projects.
 
 Click on an image below for the setup guide for each language.
 
