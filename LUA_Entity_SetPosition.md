@@ -21,7 +21,7 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 
 ## Example
 ```lua
---Get the displays
+--Get all displays
 local displays = ListDisplays()
 
 --Create a window
