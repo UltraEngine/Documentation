@@ -21,7 +21,7 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 
 ## Example
 ```lua
---Get all displays
+--Get the displays
 local displays = ListDisplays()
 
 --Create a window
@@ -43,7 +43,7 @@ box:SetPosition(1, 0, 0)
 box:SetRotation(0, 0, 45)
 box:SetScale(2, 1, 1)
 
-//Main loop
+--Main loop
 while (window->Closed() == false) do
   
   --Update world
