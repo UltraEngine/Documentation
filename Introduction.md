@@ -9,7 +9,7 @@ Engine SDK can be programmed with three languages.
 
 Click on an image below for the setup guide for each language.
 
-![Programming with C++](https://raw.githubusercontent.com/Leadwerks/Documentation/master/cpp_logo.png) ![Programming with C#](https://raw.githubusercontent.com/Leadwerks/Documentation/master/csharp_logo.png)  ![Programming with Lua](https://raw.githubusercontent.com/Leadwerks/Documentation/master/lua_logo.jpg)
+![Programming with C++](https://raw.githubusercontent.com/Leadwerks/Documentation/master/cpp_logo.png "Programming with C++") ![Programming with C#](https://raw.githubusercontent.com/Leadwerks/Documentation/master/csharp_logo.png "Programming with C#")  ![Programming with Lua](https://raw.githubusercontent.com/Leadwerks/Documentation/master/lua_logo.jpg "Programming with Lua")
 
 ## Physics
 
