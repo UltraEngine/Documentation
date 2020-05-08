@@ -2,9 +2,9 @@
 This function loads a texture from a file or open stream.
 
 ### Syntax
-* void LoadTexture(const string& path, const LoadFlags flags = LOAD_DEFAULT)
-* void LoadTexture(const wstring& path, const LoadFlags flags = LOAD_DEFAULT)
-* void LoadTexture(shared_ptr<Stream> stream, const LoadFlags flags = LOAD_DEFAULT)
+* void **LoadTexture**(const string& path, const LoadFlags flags = LOAD_DEFAULT)
+* void **LoadTexture**(const wstring& path, const LoadFlags flags = LOAD_DEFAULT)
+* void **LoadTexture**(shared_ptr<Stream> stream, const LoadFlags flags = LOAD_DEFAULT)
 
 ### Parameters
 | Name | Description |
