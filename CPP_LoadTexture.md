@@ -1,5 +1,5 @@
 # LoadTexture
-This method sets the rotation of an entity in 3-dimensional space, using local or global space.
+This function loads a texture from a file or opened stream.
 
 ### Syntax
 * void LoadTexture(const string& path, const LoadFlags flags = LOAD_DEFAULT)
