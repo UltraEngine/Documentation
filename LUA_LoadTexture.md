@@ -1,5 +1,5 @@
 # LoadTexture
-This function loads a texture from a file or opened stream.
+This function loads a texture from a file or open stream.
 
 ### Syntax
 * void LoadTexture(const string& path, const LoadFlags flags = LOAD_DEFAULT)
