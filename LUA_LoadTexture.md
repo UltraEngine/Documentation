@@ -19,6 +19,7 @@ Any of the values below may be combined in the flags parameter:
 - **LOAD_UNMANAGED***: Does not store or load cached object.
 - **LOAD_QUIET**: Does not print loading messages.
 - **LOAD_NO_OVERRIDE**: Does not use workflows to redirect files.
+- **LOAD_NO_CACHE**: Ignores cached copies of downloaded files.
  
 ### Example
 ```lua
