@@ -22,7 +22,7 @@ if display == nil then RuntimeError("Primary display not found.") end
 local displayscale = display:GetScale()
 
 --Create a window
-local window = CreateWindow(display, "Download File", 0, 0, math.min(1280 * displayscale.x, display.size.x), math.min(720 * displayscale.y, display.size.y), WINDOW_TITLEBAR)
+local window = CreateWindow(display, "Example", 0, 0, math.min(1280 * displayscale.x, display.size.x), math.min(720 * displayscale.y, display.size.y), WINDOW_TITLEBAR)
 
 --Create a rendering framebuffer
 local framebuffer = CreateFramebuffer(window);
