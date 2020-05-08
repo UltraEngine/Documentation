@@ -14,7 +14,7 @@ This function loads a texture from a file or opened stream.
 | flags |  |
 
 ### Example
-```
+```lua
 --Get the primary display
 local displaylist = ListDisplays()
 local display = displaylist[1];
