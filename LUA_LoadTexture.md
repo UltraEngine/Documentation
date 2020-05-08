@@ -14,7 +14,7 @@ This function loads a texture from a file or open stream.
 | **flags** | LoadFlags parameter to use |
 
 ### Remarks
-Any of the LoadFlags below may be combined in the flags paramter:
+Any of the values below may be combined in the flags paramter:
 | Name | Description |
 | ------ | ------ |
 | **LOAD_DEFAULT** | Default load flags. | 
