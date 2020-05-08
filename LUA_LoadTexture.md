@@ -11,11 +11,16 @@ This function loads a texture from a file or opened stream.
 | ------ | ------ |
 | **path** |  |
 | **stream** |  |
-| **flags** | LoadFlags parameter to use. Any of the following values can be combined:
-LOAD_DEFAULT | Default load flags.
-LOAD_UNMANAGED | Does not store or load cached object.
-LOAD_QUIET | Does not print loading messages.
-LOAD_NO_OVERRIDE | Does not use workflows to redirect files. |
+| **flags** | LoadFlags parameter to use. |
+
+### Remarks
+Any of the LoadFlags below may be combined in the flags paramter:
+| Name | Description |
+| ------ | ------ |
+| **LOAD_DEFAULT** | Default load flags. | 
+| **LOAD_UNMANAGED** | Does not store or load cached object. |
+| **LOAD_QUIET** | Does not print loading messages. |
+| **LOAD_NO_OVERRIDE** | Does not use workflows to redirect files. |
 
 ### Example
 ```lua
