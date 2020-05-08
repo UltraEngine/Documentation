@@ -21,7 +21,7 @@ Any of the values below may be combined in the flags paramter:
 | **LOAD_UNMANAGED** | Does not store or load cached object. |
 | **LOAD_QUIET** | Does not print loading messages. |
 | **LOAD_NO_OVERRIDE** | Does not use workflows to redirect files. |
-
+ 
 ### Example
 ```lua
 --Get the primary display
