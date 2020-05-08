@@ -52,7 +52,7 @@ local mtl = CreateMaterial()
 model:SetMaterial(mtl)
 
 --Load texture
-local tex = LoadTexture("https://github.com/Leadwerks/Documentation/raw/master/Assets/brickwall01.dds")
+local tex = LoadTexture("https://www.github.com/Leadwerks/Documentation/raw/master/Assets/brickwall01.dds")
 if tex ~= nil then mtl:SetTexture(tex, TEXTURE_BASE) end
 
 --Main loop
