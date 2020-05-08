@@ -9,9 +9,9 @@ This function loads a texture from a file or open stream.
 ### Parameters
 | Name | Description |
 | ------ | ------ |
-| **path** |  |
-| **stream** |  |
-| **flags** | LoadFlags parameter to use. |
+| **path** | path or URL to the file to be loaded |
+| **stream** | an open file stream to load the asset from |
+| **flags** | LoadFlags parameter to use |
 
 ### Remarks
 Any of the LoadFlags below may be combined in the flags paramter:
