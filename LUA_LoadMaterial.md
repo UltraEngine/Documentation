@@ -1,4 +1,4 @@
-# LoadTexture
+# LoadMaterial
 This function loads a material from a file or open stream.
 
 ### Syntax
