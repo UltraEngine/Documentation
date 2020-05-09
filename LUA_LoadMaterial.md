@@ -50,7 +50,7 @@ local light = CreateLight(world,LIGHT_DIRECTIONAL)
 local model = CreateBox(world)
 
 --Load material
-local mtl = LoadMaterial("https://www.github.com/Leadwerks/Documentation/raw/master/Assets/brickwall01.mtl")
+local mtl = LoadMaterial("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/brickwall01.mtl")
 if mtl ~= nil then model:SetMaterial(mtl) end
 
 --Main loop
