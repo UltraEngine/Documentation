@@ -15,12 +15,12 @@ This function loads a texture from a file or open stream.
 
 ### Remarks
 Any of the values below may be combined in the flags parameter:
-- **LOAD_DEFAULT**: Default load behavior.
-- **LOAD_UNMANAGED**: Does not store or load cached object.
-- **LOAD_QUIET**: Does not print loading messages.
-- **LOAD_DUMP_INFO**: Prints extra file information for debugging.
-- **LOAD_NO_OVERRIDE**: Does not use workflows to redirect files.
-- **LOAD_NO_CACHE**: Ignores cached copies of downloaded files.
+- LOAD_DEFAULT: Default load behavior.
+- LOAD_UNMANAGED: Does not store or load cached object.
+- LOAD_QUIET: Does not print loading messages.
+- LOAD_DUMP_INFO: Prints extra file information for debugging.
+- LOAD_NO_OVERRIDE: Does not use workflows to redirect files.
+- LOAD_NO_CACHE: Ignores cached copies of downloaded files.
  
 ### Example
 ```lua
