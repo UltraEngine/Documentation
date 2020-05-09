@@ -1,0 +1,12 @@
+{
+	"material":
+	{
+		"textures":
+		[
+			{
+				"slot": "BASE",
+				"file": "./brickwall01.dds",
+			}
+		]
+	}
+}
