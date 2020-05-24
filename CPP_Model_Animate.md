@@ -33,6 +33,10 @@ void main(string[] args)
 	var camera = CreateCamera(world);
 	camera.Move(0, 0, -4);
   
+  	//JPEG loader required for textures
+	auto plugin = LoadPlugin("Plugins/FreeImage.*")
+  
+  	//Load a model
 	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Fox.glb");
 	model->Animate();
   
