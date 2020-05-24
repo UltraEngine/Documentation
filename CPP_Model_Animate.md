@@ -14,7 +14,7 @@ This method causes an animation sequence to play.
 | mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP |
 
 ## Example
-```
+```c++
 int main(int argc, const char* argv[])
 {
 	//Get the displays
