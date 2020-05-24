@@ -33,7 +33,8 @@ void main(string[] args)
 	var camera = CreateCamera(world);
 	camera.Move(0, 0, -4);
   
-	
+	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Fox.glb");
+	model->Animate();
   
 	//Main loop
 	while (window.Closed() == false)
