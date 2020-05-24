@@ -53,5 +53,7 @@ int main(int argc, const char* argv[])
 		//Render world
 		world->Render(framebuffer);
 	}
+	
+	return 0;
 }
 ```
