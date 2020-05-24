@@ -15,6 +15,10 @@ This method causes an animation sequence to play.
 
 ## Example
 ```c++
+#include "pch.h"
+
+using namespace Leadwerks;
+
 int main(int argc, const char* argv[])
 {
 	//Get the displays
