@@ -23,37 +23,35 @@ int main(int argc, const char* argv[])
 {
 	//Get the displays
 	auto displays = ListDisplays();
-  
+
 	//Create a window
-	auto window = CreateWindow(displays[0], "", 0, 0, 1280, 720, null, WINDOW_CENTER | WINDOW_TITLEBAR);
+	auto window = CreateWindow(displays[0], L"", 0, 0, 1280, 720, WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create a framebuffer
 	auto framebuffer = CreateFramebuffer(window);
-    
+
 	//Create a world
 	auto world = CreateWorld();
-    
+
 	//Create a camera
 	auto camera = CreateCamera(world);
-	camera.Move(0, 0, -4);
-  
-  	//JPEG loader required for textures
-	auto plugin = LoadPlugin("Plugins/FreeImage")
-  
-  	//Load a model
+	camera->Move(0, 0, -4);
+
+	//JPEG loader required for textures
+	auto plugin = LoadPlugin("Plugins/FreeImage");
+
+	//Load a model
 	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Fox.glb");
 	model->Animate();
-  
+
 	//Main loop
 	while (window->Closed() == false)
 	{
-		//Update world
+		model->Turn(0, 0.1, 0);
+
 		world->Update();
-		
-		//Render world
 		world->Render(framebuffer);
 	}
-	
 	return 0;
 }
 ```
