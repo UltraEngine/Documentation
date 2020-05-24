@@ -38,7 +38,7 @@ int main(int argc, const char* argv[])
 	camera->Move(0, 0, -4);
 
 	//JPEG loader required for textures
-	auto plugin = LoadPlugin("Plugins/FreeImage");
+	auto plugin = LoadPlugin("Plugins/FITextureLoader");
 
 	//Load a model
 	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Fox.glb");
