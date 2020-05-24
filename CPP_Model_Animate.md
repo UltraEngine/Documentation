@@ -15,22 +15,22 @@ This method causes an animation sequence to play.
 
 ## Example
 ```
-void main(string[] args)
+int main(int argc, const char* argv[])
 {
 	//Get the displays
-	var displays = ListDisplays();
+	auto displays = ListDisplays();
   
 	//Create a window
-	var window = CreateWindow(displays[0], "", 0, 0, 1280, 720, null, WINDOW_CENTER | WINDOW_TITLEBAR);
+	auto window = CreateWindow(displays[0], "", 0, 0, 1280, 720, null, WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create a framebuffer
-	var framebuffer = CreateFramebuffer(window);
+	auto framebuffer = CreateFramebuffer(window);
     
 	//Create a world
-	var world = CreateWorld();
+	auto world = CreateWorld();
     
 	//Create a camera
-	var camera = CreateCamera(world);
+	auto camera = CreateCamera(world);
 	camera.Move(0, 0, -4);
   
   	//JPEG loader required for textures
@@ -41,13 +41,13 @@ void main(string[] args)
 	model->Animate();
   
 	//Main loop
-	while (window.Closed() == false)
+	while (window->Closed() == false)
 	{
 		//Update world
-		world.Update();
+		world->Update();
 		
 		//Render world
-		world.Render(framebuffer);
+		world->Render(framebuffer);
 	}
 }
 ```
