@@ -11,7 +11,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * const Mat& matrix
 * const Vec4& color
 * wstring name
-* const shared_ptr<Material>& material
+* const shared_ptr<Material\>& material
 
 ## Methods
 * [GetParent](GetParent.md)
