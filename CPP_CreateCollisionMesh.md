@@ -33,7 +33,7 @@ int main(int argc, const char* argv[])
 	light->SetRotation(45,35,0);
 
 	//Load model
-	auto model = LoadModel(world, "https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Models/Wooden%20Bridge/woodenbridge.gltf");
+	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Structures/wooden%20bridge.glb");
 	model->SetRotation(0, 90, 0);
 	
 	//Create collision
