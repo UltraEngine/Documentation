@@ -9,4 +9,4 @@ The window class provides an cross-platform interface for creating program windo
 ## Methods
 
 ## Functions
-- [CreateWindow](API_CreateWindow.md)
+- [CreateWindow](API_CreateWindow)
