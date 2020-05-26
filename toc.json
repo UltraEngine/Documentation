@@ -77,6 +77,17 @@
 									]									
 								},
 								{
+									"title": "Mesh",
+									"filename": "API_Mesh",
+									"topics":
+									[
+										{
+											"title": "Add",
+											"filename": "API_Mesh_Add"
+										}
+									]
+								},								
+								{
 									"title": "Window",
 									"filename": "API_Window",
 									"topics":
@@ -90,17 +101,9 @@
 								{
 									"title": "Self",
 									"filename": "API_Object_Self"
-								}
+								}								
 							]							
-						},
-						{
-							"title": "Mesh",
-							"filename": "API_Mesh",
-							"topics":
-							[
-								
-							]
-						}						
+						}					
 					]
 				},
 				{
