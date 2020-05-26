@@ -1,5 +1,5 @@
 # Vertex #
-The vertex structure stored properties for a single vertex in a mesh.
+The vertex structure stores properties for a single vertex in a mesh.
 
 ## Members ##
 - Vec3 position
