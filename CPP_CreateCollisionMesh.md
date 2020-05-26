@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
 	auto model = LoadModel(world, "https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Models/Wooden%20Bridge/woodenbridge.gltf");
 	model->SetRotation(0, 90, 0);
 	
-	//Create mesh collision
+	//Create collision
 	auto collision = CreateCollisionMesh(model);
 	model->SetCollision(collision);
 	model->SetCollisionType(COLLISION_SCENE);
