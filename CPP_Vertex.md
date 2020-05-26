@@ -13,6 +13,7 @@ The vertex structure stored properties for a single vertex in a mesh.
 - array<unsigned char, 4> boneindices
 
 ## Methods ##
+- GetBitangent
 - GetColor
 - GetNormal
 - GetTexCoords
