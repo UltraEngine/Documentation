@@ -8,7 +8,7 @@ The model class is used for visible 3D objects. Models can be loaded from files 
 
 #### AnimationMode ####
 - ANIMATION_LOOP
-- ANIMTION_ONCE
+- ANIMATION_ONCE
 - ANIMATION_STOP
 
 ## Members
