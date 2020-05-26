@@ -35,6 +35,7 @@ int main(int argc, const char* argv[])
 	//Load model
 	auto model = LoadModel(world, "https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Models/Wooden%20Bridge/woodenbridge.gltf");
 	model->SetRotation(0, 90, 0);
+	model->Collapse();
 
 	//Create mesh collision
 	auto collision = CreateCollisionMesh(model);
@@ -42,11 +43,17 @@ int main(int argc, const char* argv[])
 	model->SetCollisionType(COLLISION_SCENE);
 
 	//Add some objects to show collision
-	auto box = CreateBox(world);
-	box->SetPosition(0, 5, 0);
-	box->SetMass(1);
-	box->SetCollisionType(COLLISION_PROP);
-
+	vector<shared_ptr<Entity> > boxes;
+	for (int n = 0; n < 5; ++n)
+	{
+		auto box = CreateBox(world);
+		box->SetScale(2);
+		box->SetPosition(Random(-2,2), 8 + 3 * n, Random(-2, 2));
+		box->SetColor(0, Random(), Random());
+		box->SetMass(1);
+		boxes.push_back(box);
+	}
+	
 	while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
 	{
 		world->Update();
