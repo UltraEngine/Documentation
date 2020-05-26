@@ -75,7 +75,18 @@
 											"filename": "API_Entity_SetScale"
 										}											
 									]									
-								},							
+								},
+								{
+									"title": "Window",
+									"filename": "API_Window",
+									"topics":
+									[
+										{
+											"title": "CreateWindow",
+											"filename": "API_CreateWindow"
+										}
+									]
+								},
 								{
 									"title": "Self",
 									"filename": "API_Object_Self"
