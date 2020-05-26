@@ -154,7 +154,15 @@
         {
             "name": "bridgeplanks01.png",
             "uri": "bridgeplanks01.png"
-        }
+        },
+        {
+            "name": "wornconcrete01_dot3.png",
+            "uri": "wornconcrete01_dot3.png"
+        },
+        {
+            "name": "bridgeplanks01_dot3.png",
+            "uri": "bridgeplanks01_dot3.png"
+        }        
     ],
     "samplers": [
         {}
@@ -169,7 +177,15 @@
             "name": "Map #20",
             "sampler": 0,
             "source": 1
-        }
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        }        
     ],
     "materials": [
         {
@@ -181,6 +197,9 @@
                     "isTruePBR": false
                 }
             },
+            "normalTexture": {
+                "index": 2
+            },
             "pbrMetallicRoughness": {
                 "baseColorTexture": {
                     "index": 0,
@@ -191,13 +210,16 @@
                     1.0,
                     1.0,
                     1.0
-                ],
+                ],                
                 "metallicFactor": 0.400000005960464,
                 "roughnessFactor": 0.70710676908493
             }
         },
         {
             "name": "Material #20",
+            "normalTexture": {
+                "index": 3
+            },
             "alphaMode": "OPAQUE",
             "extras": {
                 "fromFBX": {
