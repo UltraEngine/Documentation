@@ -1,3 +1,5 @@
+This function is used to create a new window.
+
 ### Syntax ###
 - shared_ptr<Window> CreateWindow(shared_ptr<Display> display, const string& title, const int x, const int y, const int width, const int height, const WindowStyles style, shared_ptr<Window> parent);
 - shared_ptr<Window> CreateWindow(shared_ptr<Display> display, const string& title, const int x, const int y, const int width, const int height, const WindowStyles style = WINDOW_TITLEBAR);
