@@ -27,7 +27,7 @@ int main(int argc, const char* argv[])
 	camera->SetFOV(70);
 	camera->Turn(15, 0, 0);
 	camera->Move(0, 0, -12);
-	camera->SetClearColor(0.25);
+	camera->SetClearColor(0.125);
 
 	auto light = CreateLight(world, LIGHT_DIRECTIONAL);
 	light->SetRotation(45,35,0);
@@ -35,8 +35,7 @@ int main(int argc, const char* argv[])
 	//Load model
 	auto model = LoadModel(world, "https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Models/Wooden%20Bridge/woodenbridge.gltf");
 	model->SetRotation(0, 90, 0);
-	model->Collapse();
-
+	
 	//Create mesh collision
 	auto collision = CreateCollisionMesh(model);
 	model->SetCollision(collision);
