@@ -21,4 +21,4 @@ The window class provides an cross-platform interface for creating program windo
 ## Methods
 
 ## Functions
-- [CreateWindow](CPP_CreateWindow)
+- [CreateWindow](API_CreateWindow)
