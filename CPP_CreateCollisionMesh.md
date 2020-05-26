@@ -14,8 +14,6 @@
 
 int main(int argc, const char* argv[])
 {
-	const bool fullscreenmode = false;
-
 	auto displays = ListDisplays();
 	Vec2 displayscale = displays[0]->GetScale();
 
