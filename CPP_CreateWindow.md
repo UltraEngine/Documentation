@@ -1,8 +1,8 @@
 This function is used to create a new window.
 
 ### Syntax ###
-- shared_ptr<Window> CreateWindow(shared_ptr<Display> display, const string& title, const int x, const int y, const int width, const int height, const WindowStyles style = WINDOW_TITLEBAR, shared_ptr parent = nullptr);
-- shared_ptr<Window> CreateWindow(shared_ptr<Display> display, const wstring& title, const int x, const int y, const int width, const int height, const WindowStyles style = WINDOW_TITLEBAR, shared_ptr<Window> parent = nullptr);
+- shared_ptr<Window> CreateWindow(shared_ptr<Display> display, const string& title, const int x, const int y, const int width, const int height, const WindowStyles style = WINDOW_TITLEBAR, shared_ptr parent = NULL);
+- shared_ptr<Window> CreateWindow(shared_ptr<Display> display, const wstring& title, const int x, const int y, const int width, const int height, const WindowStyles style = WINDOW_TITLEBAR, shared_ptr<Window> parent = NULL);
 
 ### Example ###
 ```c++
