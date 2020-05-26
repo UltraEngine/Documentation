@@ -3,8 +3,9 @@ The vertex structure stored properties for a single vertex in a mesh.
 
 ## Members ##
 - Vec3 position
-- float displacement
+- int materialindex
 - array<unsigned char, 3> normal
+- signed char displacement
 - array<short, 4> texcoords;
 - array<unsigned char, 4> color
 - array<unsigned char, 4> tangent
