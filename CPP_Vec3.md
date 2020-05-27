@@ -10,7 +10,7 @@ This structure describes a three-dimensional vector.
 ## Members ##
 - float **x**, **r**, **width**
 - float **y**, **g**, **height**
-- float **z**, **b**, **depth**.
+- float **z**, **b**, **depth**
 
 ## Methods ##
 - DistanceToPoint
