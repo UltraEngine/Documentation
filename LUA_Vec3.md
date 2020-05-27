@@ -17,6 +17,12 @@ This structure describes a three-dimensional vector.
 - [Vec2]() **yx**
 - [Vec2]() **zx**
 - [Vec2]() **zy**
+- [Vec2]() **rg**
+- [Vec2]() **rb**
+- [Vec2]() **gb**
+- [Vec2]() **gr**
+- [Vec2]() **br**
+- [Vec2]() **bg**
 
 ## Methods ##
 - Cross
