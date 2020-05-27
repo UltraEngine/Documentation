@@ -8,9 +8,9 @@ This structure describes a three-dimensional vector.
 - **Vec**3(const float x, const float y, const float z);
 
 ## Members ##
-- **x, r, width**: X component of the vector.
-- **y, g, height**: Y component of the vector.
-- **z, b, depth**: Z component of the vector.
+- float **x, r, width**: X component of the vector.
+- float **y, g, height**: Y component of the vector.
+- float **z, b, depth**: Z component of the vector.
 
 ## Methods ##
 - DistanceToPoint
