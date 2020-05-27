@@ -8,10 +8,10 @@ This structure describes a 4x4 matrix.
 - **Mat4**(const float ix, const float iy, const float iz, const float iw, const float jx, const float jy, const float jz, const float jw, const float kx, const float ky, const float kz, const float kw, const float tx, const float ty, const float tz, const float tw)
 
 ## Members ##
-- [Vec4]() **i**
-- [Vec4]() **j**
-- [Vec4]() **k**
-- [Vec4]() **t**
+- [Vec4](API_Vec4) **i**
+- [Vec4](API_Vec4) **j**
+- [Vec4](API_Vec4) **k**
+- [Vec4](API_Vec4) **t**
 
 ## Methods ##
 - Determinant
