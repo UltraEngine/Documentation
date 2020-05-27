@@ -23,6 +23,12 @@ This structure describes a three-dimensional vector.
 - [Vec2]() **yx**
 - [Vec2]() **zx**
 - [Vec2]() **zy**
+- [Vec3]() **rgb**
+- [Vec3]() **rbg**
+- [Vec3]() **grb**
+- [Vec3]() **gbr**
+- [Vec3]() **brg**
+- [Vec3]() **bgr**
 - [Vec2]() **rg**
 - [Vec2]() **rb**
 - [Vec2]() **gb**
