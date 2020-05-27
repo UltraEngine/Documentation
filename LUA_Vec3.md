@@ -11,6 +11,12 @@ This structure describes a three-dimensional vector.
 - number **x, r, width**
 - number **y, g, height**
 - number **z, b, depth**
+- [Vec3]() **xyz**
+- [Vec3]() **xzy**
+- [Vec3]() **yxz**
+- [Vec3]() **yzx**
+- [Vec3]() **zxy**
+- [Vec3]() **zyx**
 - [Vec2]() **xy**
 - [Vec2]() **xz**
 - [Vec2]() **yz**
