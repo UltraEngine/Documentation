@@ -173,13 +173,33 @@
 							"topics":
 							[
 								{
+									"title": "Dot",
+									"filename": "API_Vec3_Dot"
+								},
+								{
+									"title": "DistanceToPoint",
+									"filename": "API_Vec3_DistanceToPoint"
+								},
+								{
 									"title": "Length",
 									"filename": "API_Vec3_Length"
 								},
 								{
 									"title": "Normalize",
 									"filename": "API_Vec3_Normalize"
-								}
+								},
+								{
+									"title": "Inverse",
+									"filename": "API_Vec3_Inverse"
+								},
+								{
+									"title": "Cross",
+									"filename": "API_Vec3_Cross"
+								},
+								{
+									"title": "Reflect",
+									"filename": "API_Vec3_Reflect"
+								}								
 							]
 						},
 						{
