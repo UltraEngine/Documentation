@@ -14,9 +14,9 @@ This structure describes a three-dimensional vector.
 
 ## Methods ##
 - DistanceToPoint
-- [Normalize](CPP_Normalize)
 - [Dot](CPP_Dot)
-- Length
-- Inverse
 - Cross
+- Inverse
+- Length
+- [Normalize](CPP_Normalize)
 - Reflect
