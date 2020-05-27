@@ -14,9 +14,9 @@ This structure describes a three-dimensional vector.
 - [Vec2]() **xy**
 - [Vec2]() **xz**
 - [Vec2]() **yz**
-- [Vec2]() **zy**
-- [Vec2]() **xz**
+- [Vec2]() **yx**
 - [Vec2]() **zx**
+- [Vec2]() **zy**
 
 ## Methods ##
 - DistanceToPoint
