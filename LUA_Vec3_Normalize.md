@@ -1,4 +1,4 @@
-# Vec3::Normalize #
+# Vec3.Normalize #
 This method returns the normalized vector. The resulting vector will have a length of 1.
 
 ## Syntax ##
