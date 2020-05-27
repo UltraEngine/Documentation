@@ -5,4 +5,7 @@
 
 ## Parameters ##
 
+## Returns ##
+Returns this entity's position, in local or global space.
+
 ## Example ##
