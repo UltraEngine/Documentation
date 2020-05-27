@@ -19,5 +19,4 @@ This structure describes a three-dimensional vector.
 - Length
 - Inverse
 - Cross
-- Dot
 - Reflect
