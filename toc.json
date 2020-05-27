@@ -181,16 +181,16 @@
 									"filename": "API_Vec3_Dot"
 								},
 								{
+									"title": "Inverse",
+									"filename": "API_Vec3_Inverse"
+								},
+								{
 									"title": "Length",
 									"filename": "API_Vec3_Length"
 								},
 								{
 									"title": "Normalize",
 									"filename": "API_Vec3_Normalize"
-								},
-								{
-									"title": "Inverse",
-									"filename": "API_Vec3_Inverse"
 								},
 								{
 									"title": "Cross",
