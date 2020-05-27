@@ -1,5 +1,5 @@
 # Vec3.Normalize #
-This method returns the normalized vector. The resulting vector will have a length of 1.
+This method returns the normalized vector. The resulting vector will have a length of one.
 
 ## Syntax ##
 - [Vec3](LUA_Vec3) **Normalize**()
