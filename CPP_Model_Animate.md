@@ -34,10 +34,11 @@ int main(int argc, const char* argv[])
 
 	//Create a camera
 	auto camera = CreateCamera(world);
+	camera->SetClearColor(0.125);
 	camera->Move(0, 0, -4);
 
 	//Load a model
-	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Fox.glb");
+	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Fox.glb");
 	model->Animate();
 
 	//Main loop
