@@ -7,10 +7,17 @@ This structure describes a three-dimensional vector.
 - **Vec3**(number x, number y)
 - **Vec**3(number x, number y, number z)
 
-## Members ##
-- number **x, r, width**: X component of the vector.
-- number **y, g, height**: Y component of the vector.
-- number **z, b, depth**: Z component of the vector.
+## Properties ##
+- number **x, r, width**
+- number **y, g, height**
+- number **z, b, depth**
+- [Vec2]() xy
+- [Vec2]() xz
+- [Vec2]() zy
+- [Vec2]() yz
+- [Vec2]() zx
+- [Vec2]() xz
+- [Vec2]() yz
 
 ## Methods ##
 - DistanceToPoint
