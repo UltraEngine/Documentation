@@ -10,7 +10,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * Quat quaternion
 * Mat4 matrix
 * Vec4 color
-* string name
+* wstring name
 
 ## Methods
 * [GetParent](API_Entity_GetParent)
