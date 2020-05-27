@@ -1,7 +1,7 @@
 # Quat::Euler #
 
 ## Syntax ##
-- Vec3 Euler()
+- [Vec3]() **Euler**()
 
 ## Returns ##
 Returns a Euler rotation representing this rotation.
