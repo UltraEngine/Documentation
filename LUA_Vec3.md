@@ -11,13 +11,13 @@ This structure describes a three-dimensional vector.
 - number **x, r, width**
 - number **y, g, height**
 - number **z, b, depth**
-- [Vec2]() xy
-- [Vec2]() xz
-- [Vec2]() zy
-- [Vec2]() yz
-- [Vec2]() zx
-- [Vec2]() xz
-- [Vec2]() yz
+- [Vec2]() **xy**
+- [Vec2]() **xz**
+- [Vec2]() **zy**
+- [Vec2]() **yz**
+- [Vec2]() **zx**
+- [Vec2]() **xz**
+- [Vec2]() **yz**
 
 ## Methods ##
 - DistanceToPoint
