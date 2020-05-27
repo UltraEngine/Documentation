@@ -1,9 +1,9 @@
 # Entity::GetPosition #
 
-## 32f Syntax ##
+## Syntax (32f) ##
 - [Vec3]( ) **GetPosition**(const bool global  = false)
 
-## 64f Syntax ##
+## Syntax (64f) ##
 - [dVec3]( ) **GetPosition**(const bool global  = false)
 
 ## Parameters ##
