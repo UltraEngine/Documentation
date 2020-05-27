@@ -67,8 +67,7 @@
 										},
 										{
 											"title": "GetPosition",
-											"filename": "API_Entity_GetPosition",
-											"filename64f": "API_Entity_GetPosition_64f"
+											"filename": "API_Entity_GetPosition"
 										},										
 										{
 											"title": "SetMaterial",
