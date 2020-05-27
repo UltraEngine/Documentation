@@ -7,10 +7,10 @@ This structure describes a three-dimensional vector.
 ...
 
 ## Members ##
-- [Vec4]() i
-- [Vec4]() j
-- [Vec4]() k
-- [Vec4]() t
+- [Vec4]() **i**
+- [Vec4]() **j**
+- [Vec4]() **k**
+- [Vec4]() **t**
 
 ## Methods ##
 - Inverse
