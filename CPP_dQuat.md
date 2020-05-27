@@ -1,4 +1,4 @@
-# Quat #
+# dQuat #
 This structure describes a quaternion rotation using double float precision.
 
 ## Constructors ##
