@@ -2,10 +2,10 @@
 This structure describes a three-dimensional vector.
 
 ## Constructors ##
-- **Vec3**();
-- **Vec3**(const float x);
-- **Vec3**(const float x, const float y);
-- **Vec**3(const float x, const float y, const float z);
+- **Vec3**()
+- **Vec3**(const float x)
+- **Vec3**(const float x, const float y)
+- **Vec**3(const float x, const float y, const float z)
 
 ## Members ##
 - float **x, r, width**: X component of the vector.
