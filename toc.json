@@ -168,7 +168,18 @@
 						},
 						{
 							"title": "Vec4",
-							"filename": "API_Vec4"
+							"filename": "API_Vec4",
+							"topics":
+							[
+								{
+									"title": "Length",
+									"filename": "API_Vec4_Length"
+								},
+								{
+									"title": "Normalize",
+									"filename": "API_Vec4_Normalize"
+								}
+							]							
 						}
 					]
 				}			
