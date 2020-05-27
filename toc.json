@@ -96,7 +96,8 @@
 								},
 								{
 									"title": "Self",
-									"filename": "API_Object_Self"
+									"filename": "API_Object_Self",
+									"hideForLua": true
 								}								
 							]							
 						}					
