@@ -111,6 +111,26 @@
 					"openstate": true,
 					"topics":
 					[
+						{
+							"title": "Vec2",
+							"filename": "API_Vec2"
+						},						
+						{
+							"title": "Vec3",
+							"filename": "API_Vec3"
+						},
+						{
+							"title": "Vec4",
+							"filename": "API_Vec4"
+						},				
+						{
+							"title": "Mat3",
+							"filename": "API_Mat3"
+						},
+						{
+							"title": "Mat4",
+							"filename": "API_Mat4"
+						}
 					]
 				}			
 			]
