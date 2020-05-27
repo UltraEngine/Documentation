@@ -112,6 +112,34 @@
 					"topics":
 					[
 						{
+							"title": "dPlane",
+							"filename": "API_dPlane"
+						},						
+						{
+							"title": "dVec2",
+							"filename": "API_dVec2"
+						},						
+						{
+							"title": "dVec3",
+							"filename": "API_dVec3"
+						},
+						{
+							"title": "dVec4",
+							"filename": "API_dVec4"
+						},				
+						{
+							"title": "dMat3",
+							"filename": "API_dMat3"
+						},
+						{
+							"title": "dMat4",
+							"filename": "API_dMat4"
+						},
+						{
+							"title": "Plane",
+							"filename": "API_Plane"
+						},						
+						{
 							"title": "Vec2",
 							"filename": "API_Vec2"
 						},						
