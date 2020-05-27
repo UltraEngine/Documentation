@@ -2,8 +2,8 @@
 This function is used to create a new window.
 
 ## Syntax ##
-- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(shared_ptr<[Display](CPP_Display)\> display, const string& title, const int x, const int y, const int width, const int height, const WindowStyle style = WINDOW_TITLEBAR, shared_ptr<[Window](CPP_Window)\> parent = NULL)
-- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(shared_ptr<[Display](CPP_Display)\> display, const wstring& title, const int x, const int y, const int width, const int height, const WindowStyle style = WINDOW_TITLEBAR, shared_ptr<[Window](CPP_Window)\> parent = NULL)
+- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(shared_ptr<[Display](CPP_Display)\> display, const string& title, const int x, const int y, const int width, const int height, const [WindowStyle](CPP_Window) style = WINDOW_TITLEBAR, shared_ptr<[Window](CPP_Window)\> parent = NULL)
+- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(shared_ptr<[Display](CPP_Display)\> display, const wstring& title, const int x, const int y, const int width, const int height, const [WindowStyle](CPP_Window) style = WINDOW_TITLEBAR, shared_ptr<[Window](CPP_Window)\> parent = NULL)
 
 ## Parameters ##
 | Name | Description |
