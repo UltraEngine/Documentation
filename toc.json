@@ -47,10 +47,6 @@
 											]
 										},
 										{
-											"title": "GetMaterial",
-											"filename": "API_Entity_GetMaterial"
-										},
-										{
 											"title": "GetParent",
 											"filename": "API_Entity_GetParent"
 										},											
