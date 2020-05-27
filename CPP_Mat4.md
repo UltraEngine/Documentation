@@ -13,5 +13,13 @@ This structure describes a three-dimensional vector.
 - [Vec4]() **t**
 
 ## Methods ##
+- Determinant
+- GetTranslation
+- GetQuaternion
+- GetRotation
+- GetScale
 - Inverse
+- Ortho
+- Perspective
 - Transpose
+- Normalize
