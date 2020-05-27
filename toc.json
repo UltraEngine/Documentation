@@ -41,7 +41,7 @@
 										},									
 										{
 											"title": "CreateCollisionMesh",
-											"filename": "APIn_CreateCollisionMesh"
+											"filename": "API_CreateCollisionMesh"
 										}
 									]
 								},
