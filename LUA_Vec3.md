@@ -2,10 +2,10 @@
 This structure describes a three-dimensional vector.
 
 ## Constructors ##
-- **Vec3**();
-- **Vec3**(number x);
-- **Vec3**(number x, number y);
-- **Vec**3(number x, number y, number z);
+- **Vec3**()
+- **Vec3**(number x)
+- **Vec3**(number x, number y)
+- **Vec**3(number x, number y, number z)
 
 ## Members ##
 - number **x, r, width**: X component of the vector.
