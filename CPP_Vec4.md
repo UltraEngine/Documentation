@@ -5,8 +5,8 @@ This structure describes a four-dimensional vector.
 - **Vec4**()
 - **Vec4**(const float x)
 - **Vec4**(const float x, const float y)
-- **Vec4*3(const float x, const float y, const float z)
-- **Vec4*3(const float x, const float y, const float z, const float w)
+- **Vec4**(const float x, const float y, const float z)
+- **Vec4**(const float x, const float y, const float z, const float w)
 
 ## Members ##
 - float **x**, **r**
