@@ -173,12 +173,12 @@
 							"topics":
 							[
 								{
-									"title": "Dot",
-									"filename": "API_Vec3_Dot"
-								},
-								{
 									"title": "DistanceToPoint",
 									"filename": "API_Vec3_DistanceToPoint"
+								},
+								{
+									"title": "Dot",
+									"filename": "API_Vec3_Dot"
 								},
 								{
 									"title": "Length",
