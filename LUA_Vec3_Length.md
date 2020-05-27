@@ -2,7 +2,7 @@
 This method returns the length of the vector.
 
 ## Syntax ##
-- float **Length**()
+- number **Length**()
 
 ## Returns ##
 Returns the length of the vector.
