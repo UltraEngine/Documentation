@@ -1,5 +1,5 @@
 # dQuat #
-This structure describes a quaternion rotation using double float precision.
+This structure describes a quaternion rotation with double float precision.
 
 ## Constructors ##
 - **Quat**(const double x, const double y, const double z, const double w)
