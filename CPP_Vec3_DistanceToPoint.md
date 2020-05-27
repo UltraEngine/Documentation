@@ -7,7 +7,7 @@ This method returns the distance between this point and the specified position.
 ## Parameters ##
 | Name | Description |
 |-|-|
-|v|position to return the distance to.|
+|position|position to return the distance to.|
 
 ## Returns ##
 Returns the distance between this point and the specified position.
