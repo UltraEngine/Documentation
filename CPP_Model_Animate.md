@@ -2,9 +2,9 @@
 This method causes an animation sequence to play.
 
 ## Syntax
-* void Animate(const int sequence = 0, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
-* void Animate(const string sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
-* void Animate(const wstring sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
+* void **Animate**(const int sequence = 0, const float speed = 1.0f, const int blendtime = 250, const [AnimationMode](CPP_Model) mode = ANIMATION_LOOP)
+* void **Animate**(const string sequence, const float speed = 1.0f, const int blendtime = 250, const [AnimationMode](CPP_Model) mode = ANIMATION_LOOP)
+* void **Animate**(const wstring sequence, const float speed = 1.0f, const int blendtime = 250, const [AnimationMode](CPP_Model) mode = ANIMATION_LOOP)
 
 ### Parameters
 | Name | Description |
@@ -16,8 +16,7 @@ This method causes an animation sequence to play.
 ## Example
 ```c++
 #include "pch.h"
-
-using namespace Leadwerks;
+#include "Project.h"
 
 int main(int argc, const char* argv[])
 {
@@ -36,9 +35,6 @@ int main(int argc, const char* argv[])
 	//Create a camera
 	auto camera = CreateCamera(world);
 	camera->Move(0, 0, -4);
-
-	//JPEG loader required for textures
-	auto plugin = LoadPlugin("Plugins/FITextureLoader");
 
 	//Load a model
 	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Fox.glb");
