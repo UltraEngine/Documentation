@@ -19,11 +19,10 @@ This structure describes a three-dimensional vector.
 - [Vec2]() **zy**
 
 ## Methods ##
-- DistanceToPoint
-- [Normalize](CPP_Normalize)
-- [Dot](CPP_Dot)
-- Length
-- Inverse
 - Cross
-- Dot
+- DistanceToPoint
+- [Dot](CPP_Dot)
+- Inverse
+- Length
+- [Normalize](CPP_Normalize)
 - Reflect
