@@ -176,7 +176,11 @@
 									"filename": "API_Vec4_Normalize"
 								}
 							]							
-						}
+						},
+						{
+							"title": "Vertex",
+							"filename": "API_Vertex"							
+						}						
 					]
 				}			
 			]
