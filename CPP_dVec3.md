@@ -1,11 +1,11 @@
-# Vec3 #
-This structure describes a three-dimensional vector with double float precision.
+# dVec3 #
+Thi1s structure describes a three-dimensional vector with double float precision.
 
 ## Constructors ##
-- **Vec3**()
-- **Vec3**(const double x)
-- **Vec3**(const double x, const double y)
-- **Vec**3(const double x, const double y, const double z)
+- **dVec3**()
+- **dVec3**(const double x)
+- **dVec3**(const double x, const double y)
+- **dVec**3(const double x, const double y, const double z)
 
 ## Members ##
 - double **x**, **r**, **width**
