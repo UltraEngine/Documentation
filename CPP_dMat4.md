@@ -1,5 +1,5 @@
 # dMat4 #
-This structure describes a 4x4 matrix.
+This structure describes a 4x4 matrix with double float precision.
 
 ## Constructors ##
 - **dMat4**()
