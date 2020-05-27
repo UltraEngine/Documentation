@@ -64,7 +64,12 @@
 										{
 											"title": "GetParent",
 											"filename": "API_Entity_GetParent"
-										},											
+										},
+										{
+											"title": "GetPosition",
+											"filename": "API_Entity_GetPosition",
+											"filename64f": "API_Entity_GetPosition_64f"
+										},										
 										{
 											"title": "SetMaterial",
 											"filename": "API_Entity_SetMaterial"
