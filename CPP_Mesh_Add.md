@@ -1,5 +1,5 @@
 # Mesh::Add #
-This method adds the contents of one mesh to this one.
+This method adds the contents of this mesh to another one.
 
 ## Syntax ##
 - void Add(shared_ptr<[Mesh](CPP_Mesh)> mesh)
