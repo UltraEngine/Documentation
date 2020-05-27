@@ -138,6 +138,10 @@
 						{
 							"title": "dPlane",
 							"filename": "API_dPlane"
+						},
+						{
+							"title": "dQuat",
+							"filename": "API_dQuat"
 						},						
 						{
 							"title": "dVec2",
@@ -162,7 +166,11 @@
 						{
 							"title": "Plane",
 							"filename": "API_Plane"
-						},						
+						},
+						{
+							"title": "Quat",
+							"filename": "API_Quat"
+						},
 						{
 							"title": "Vec2",
 							"filename": "API_Vec2"
