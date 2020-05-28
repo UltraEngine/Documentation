@@ -8,7 +8,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * [Model](CPP_Model)
 
 ## Members
-* const [Vec3](https://www.ultraengine.com/learn/API_Vec3)& position
+* const [Vec3](documentation?page=API_Vec3)& position
 * const Vec3& rotation
 * const Quat& quaternion
 * const Mat& matrix
