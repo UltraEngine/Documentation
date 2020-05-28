@@ -1,4 +1,4 @@
-# Entity::SetRotation
+# [Entity](CPP_Entity.md)::SetRotation
 This method sets the rotation of an entity in 3-dimensional space, using local or global space.
 
 ### Syntax
