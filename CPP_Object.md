@@ -3,8 +3,8 @@
 This is the base class for all other classes in the engine.
 
 ### Derived Classes
-- [Entity](CPP_Entity.md)
-- [Window](CPP_Window.md)
+- [Entity](API_Entity)
+- [Window](API_Window)
 
 ### Methods
-- [Self](CPP_Object_Self.md)
+- [Self](CPP_Object_Self)
