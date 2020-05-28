@@ -2,7 +2,7 @@
 This method can be used safely within a derived object class method to return a valid shared pointer to the object.
 
 ## Syntax ##
-- shared_ptr<[Object](CPP_Object)\> **Self**()
+- shared_ptr<[Object](API_Object)\> **Self**()
 
 ## Returns ##
 Returns a shared pointer to the object.
