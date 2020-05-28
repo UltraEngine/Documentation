@@ -14,9 +14,9 @@ This structure describes a three-dimensional vector.
 
 ## Methods ##
 - DistanceToPoint
-- [Dot](CPP_Dot)
+- [Dot](API_Vec3_Dot)
 - Cross
 - Inverse
 - Length
-- [Normalize](CPP_Normalize)
+- [Normalize](API_Vec3_Normalize)
 - Reflect
