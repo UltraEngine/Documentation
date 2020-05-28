@@ -15,4 +15,4 @@ The model class is used for visible 3D objects. Models can be loaded from files 
 * const vector<shared_ptr<[LOD](API_LOD)\> \>& lods;
 
 ## Methods
-* [Animate](API_Model_Animate.md)
+* [Animate](API_Model_Animate)
