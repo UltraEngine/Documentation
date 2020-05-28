@@ -12,4 +12,4 @@ This structure describes a two-dimensional vector.
 
 ## Methods ##
 - Length
-- [Normalize](CPP_Normalize)
+- [Normalize](CPP_Vec2_Normalize.md)
