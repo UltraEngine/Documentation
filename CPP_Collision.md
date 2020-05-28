@@ -6,4 +6,4 @@ This class provides an interface for loading and creating collision shapes for p
 ## Methods ##
 
 ## Functions ##
-- CreateCollisionMesh
+- [CreateCollisionMesh](CPP_CreateCollisionMesh.md)
