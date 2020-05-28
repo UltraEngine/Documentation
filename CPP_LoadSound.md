@@ -24,7 +24,7 @@ int main(int argc, const char* argv[])
 	auto window = CreateWindow(displays[0], "Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y);
 
 	//Load sound
-	auto sound = LoadSound("https://github.com/Leadwerks/Documentation/raw/master/Assets/Sound/notification.wav");
+	auto sound = LoadSound("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Sound/notification.wav");
 
 	//Play sound
 	auto speaker = CreateSpeaker();
