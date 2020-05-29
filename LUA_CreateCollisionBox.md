@@ -3,7 +3,7 @@ This function creates a collision box shape for physics interactions.
 
 ## Syntax ##
 - [Collision](CPP_Collision.md) **CreateCollisionBox**(number width, number height, number depth, number x = 0, number y = 0, number z = 0, number pitch = 0, number yaw = 0, number roll = 0)
-- [Collision](CPP_Collision.md) **CreateCollisionBox**([Vec3](CPP_Vec3.md) size, [Vec3](CPP_Vec3.md) offset = Vec3(0), [Vec3](CPP_Vec3.md) rotation = Vec3(0))
+- [Collision](CPP_Collision.md) **CreateCollisionBox**([Vec3](CPP_Vec3.md) size, [Vec3](CPP_Vec3.md) offset = [Vec3](CPP_Vec3.md)(0), [Vec3](CPP_Vec3.md) rotation = [Vec3](CPP_Vec3.md)(0))
 
 ## Parameters ##
 |Name|Description|
