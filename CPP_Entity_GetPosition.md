@@ -1,8 +1,8 @@
 # Entity::GetPosition #
 
 ## Syntax ##
-- [Vec3](CPP_Vec3.md) **GetPosition**(const bool global  = false) **[32f]**
-- [dVec3](CPP_dVec3.md) **GetPosition**(const bool global  = false) **[64f]**
+- **[32f]** [Vec3](CPP_Vec3.md) **GetPosition**(const bool global  = false)
+- **[64f]** [dVec3](CPP_dVec3.md) **GetPosition**(const bool global  = false)
 
 ## Parameters ##
 
