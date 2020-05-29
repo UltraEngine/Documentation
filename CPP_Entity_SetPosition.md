@@ -17,7 +17,7 @@ This method sets the position of an entity in 3-dimensional space, using local o
 ## Remarks
 An entity can be positioned in local or global coordinates. Local coordinates are relative to the entity parent's space. If the entity does not have a parent, local and global coordinates are the same.
 
-The engine uses a left-handed coordinate system. The X axis points right, the Y axis points up, and the Z axis points forward.
+The engine uses a left-handed coordinate system. The X axis points to the right, the Y axis points up, and the Z axis points forward.
 
 ## Example
 ```cpp
