@@ -11,12 +11,15 @@ This function creates a collision box shape for physics interactions.
 |**width**|width of collision box|
 |**height**|height of collision box|
 |**depth**|depth of collision box|
-|**pitch**|width of collision box|
-|**yaw**|height of collision box|
-|**roll**|depth of collision box|
-|**x**|size of collision box|
-|**y**|size of collision box|
-|**z**|size of collision box|
+|**x**|x component of collision box offset|
+|**y**|y component of collision box offset|
+|**z**|z component of collision box offset|
+|**pitch**|pitch of collision box rotation|
+|**yaw**|yaw of collision box rotation|
+|**roll**|roll of collision box rotation|
+|**size**|size of collision box|
+|**offset**|offset of collision box|
+|**rotation**|rotation of collision box|
 
 ## Returns ##
 Returns a new collision object.
