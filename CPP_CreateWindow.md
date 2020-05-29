@@ -31,7 +31,8 @@ int main(int argc, const char* argv[])
     Vec2 displayscale = displays[0]->GetScale();
 
     //Create a window
-    auto window = CreateWindow(displays[0], "Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y, WINDOW_TITLEBAR | WINDOW_CENTER);
+    auto style = WINDOW_TITLEBAR | WINDOW_CENTER;
+    auto window = CreateWindow(displays[0], "Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y, style);
 
     //Main loop
     while (window->Closed() == false)
