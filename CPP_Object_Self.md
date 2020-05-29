@@ -8,4 +8,4 @@ This method can be used safely within a derived object class method to return a 
 Returns a shared pointer to the object.
 
 ## Remarks ##
-This method should never be called in the object's constructor or destructor.
+This method should never be called in the object's constructor or destructor. Doing so will result in an invalid shared pointer.
