@@ -31,23 +31,26 @@
 							"topics":
 							[
 								{
-									"title": "Collision",
-									"filename": "API_Collision",
+									"title": "Asset",
+									"filename": "API_Asset",
 									"topics":
 									[
 										{
-											"title": "CreateCollisionHull",
-											"filename": "API_CreateCollisionHull"
-										},									
-										{
-											"title": "CreateCollisionMesh",
-											"filename": "API_CreateCollisionMesh"
-										}
+											"title": "Collision",
+											"filename": "API_Collision",
+											"topics":
+											[
+												{
+													"title": "CreateCollisionHull",
+													"filename": "API_CreateCollisionHull"
+												},									
+												{
+													"title": "CreateCollisionMesh",
+													"filename": "API_CreateCollisionMesh"
+												}
+											]
+										}									
 									]
-								},
-								{
-									"title": "Asset",
-									"filename": "API_Asset"
 								},
 								{
 									"title": "Entity",
