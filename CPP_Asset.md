@@ -5,7 +5,7 @@ This class is the base class of all game media classes.
 - [Object](CPP_Object.md)
 
 ## Derived Classes ##
-- Collision
+- [Collision](CPP_Collision.md)
 - Font
 - Material
 - ShaderFamily
