@@ -46,6 +46,10 @@
 									]
 								},
 								{
+									"title": "Asset",
+									"filename": "API_Asset",
+								},
+								{
 									"title": "Entity",
 									"filename": "API_Entity",
 									"topics":
