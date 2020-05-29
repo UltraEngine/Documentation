@@ -49,6 +49,7 @@ int main(int argc, const char* argv[])
     camera->Move(0, 1, -3);
     camera->SetFOV(70);
 
+    //Create light
     auto light = CreateLight(world, LIGHT_DIRECTIONAL);
     light->SetRotation(45, 35, 0);
 
