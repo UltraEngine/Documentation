@@ -5,22 +5,24 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 - [Object](CPP_Object.md)
 
 ## Derived Classes ##
-* [Brush](CPP_Brush.md)
-* [Camera](CPP_Camera.md)
-* [Emitter](CPP_Emitter.md)
-* [Light](CPP_Light.md)
-* [Listener](CPP_Listener.md)
-* [Model](CPP_Model.md)
-* [Pivot](CPP_Pivot.md)
-* [Terrain](CPP_Terrain.md)
+- [Brush](CPP_Brush.md)
+- [Camera](CPP_Camera.md)
+- [Emitter](CPP_Emitter.md)
+- [Light](CPP_Light.md)
+- [Listener](CPP_Listener.md)
+- [Model](CPP_Model.md)
+- [Pivot](CPP_Pivot.md)
+- [Terrain](CPP_Terrain.md)
 
 ## Members
-* const [Vec3](CPP_Vec3.md)& position
-* const [Vec3](CPP_Vec3.md)& rotation
-* const [Quat](CPP_Quat.md)& quaternion
-* const [Mat4](CPP_Mat4.md)& matrix
-* const [Vec4](CPP_Vec4.md)& color
-* wstring name
+- const [Vec3](CPP_Vec3.md)& position
+- const [Vec3](CPP_Vec3.md)& rotation
+- const [Quat](CPP_Quat.md)& quaternion
+- const [Mat4](CPP_Mat4.md)& matrix
+- const [Vec4](CPP_Vec4.md)& color
+- wstring name
+- vector<shared_ptr<[Entity](.)\> \> kids
+- weak_ptr<[Entity](.)\> parent
 
 ## Methods
 * [GetParent](CPP_Entity_GetParent.md)
