@@ -6,6 +6,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 
 ## Derived Classes ##
 * [Model](CPP_Model.md)
+* [Pivot](CPP_Pivot.md)
 
 ## Members
 * const [Vec3](API_Vec3)& position
