@@ -22,8 +22,6 @@ This function is used to create a new window.
 #include "pch.h"
 #include "Project.h"
 
-using namespace Leadwerks;
-
 int main(int argc, const char* argv[])
 {
     //Get the display
