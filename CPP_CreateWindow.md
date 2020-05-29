@@ -26,7 +26,7 @@ using namespace Leadwerks;
 
 int main(int argc, const char* argv[])
 {
-    //Get the displays
+    //Get the display
     auto displays = ListDisplays();
     Vec2 displayscale = displays[0]->GetScale();
 
