@@ -3,10 +3,10 @@ This method sets the scale of an entity in local 3-dimensional space.
 
 ## Syntax
 * void **SetScale**(const float x, const float y, const float z)
-* void **SetScale**(const Vec3& scale)
+* void **SetScale**(const [Vec3](CPP_Vec3.md)& scale)
 * void **SetScale**(const float scale)
 * void **SetScale**(const double x, const double y, const double z)
-* void **SetScale**(const dVec3& scale)
+* void **SetScale**(const [dVec3](CPP_dVec3.md)& scale)
 * void **SetScale**(const double scale)
 
 ### Parameters
