@@ -1,5 +1,10 @@
 # dVec4 #
 This structure describes a four-dimensional vector with double float precision.
+## Members ##
+- double **x**, **r**
+- double **y**, **g**
+- double **z**, **b**
+- double **w**, **a**
 
 ## Constructors ##
 - **dVec4**()
@@ -8,8 +13,3 @@ This structure describes a four-dimensional vector with double float precision.
 - **dVec4**(const double x, const double y, const double z)
 - **dVec4**(const double x, const double y, const double z, const double w)
 
-## Members ##
-- double **x**, **r**
-- double **y**, **g**
-- double **z**, **b**
-- double **w**, **a**
