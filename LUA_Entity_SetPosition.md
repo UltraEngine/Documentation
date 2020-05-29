@@ -3,7 +3,7 @@ This method sets the position of an entity in 3-dimensional space, using local o
 
 ## Syntax
 * **SetPosition**(number x, number y, number z, boolean global = false)
-* **SetPosition**(Vec3 position, boolean global = false)
+* **SetPosition**([Vec3](LUA_Vec3.md) position, boolean global = false)
 
 ### Parameters
 | Name | Description |
