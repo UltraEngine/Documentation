@@ -1,4 +1,6 @@
+```
 C++ void UltraEngine::Entity::SetPosition(float x, float y, float z, bool global = false)
+```
 
 # Entity::SetPosition
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
