@@ -59,7 +59,6 @@ int main(int argc, const char* argv[])
 
     //Load model
     auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.glb");
-    model->Collapse();
     model->SetPosition(0, 3, 0);
     model->SetRotation(0, 0, 15);
     model->SetMass(1);
