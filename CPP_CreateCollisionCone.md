@@ -54,13 +54,13 @@ int main(int argc, const char* argv[])
     //Create model
     auto model = CreateCone(world, 0.5, 2);
     model->SetPosition(0, 5, 0);
-    model->Turn(90, 10, 0);
+    model->SetRotation(90, 0, 0);
     model->SetColor(0, 0, 1);
     model->SetMass(1);
     model->AddForce(100, 0, 0);
 
     //Create collision
-    auto collision = CreateCollisionCone(0.5,2);
+    auto collision = CreateCollisionCone(0.5, 2);
     model->SetCollision(collision);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
