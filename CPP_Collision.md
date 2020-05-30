@@ -6,6 +6,9 @@ This class provides an interface for loading and creating collision shapes for p
 
 ## Functions ##
 - [CreateCollisionBox](CPP_CreateCollisionBox.md)
+- [CreateCollisionCompound](CPP_CreateCollisionCompound.md)
+- [CreateCollisionCone](CPP_CreateCollisionCone.md)
 - [CreateCollisionCylinder](CPP_CreateCollisionCylinder.md)
 - [CreateCollisionHull](CPP_CreateCollisionHull.md)
 - [CreateCollisionMesh](CPP_CreateCollisionMesh.md)
+- [CreateCollisionSphere](CPP_CreateCollisionSphere.md)
