@@ -8,7 +8,7 @@ This function creates a convex hull that encapsulates all vertices of the input 
 ## Parameters ##
 |Name|Description|
 |-|-|
-|geometry|mesh or model to build the collision from|
+|**geometry**|mesh or model to build the collision from|
 
 ## Example ##
 ```c++
