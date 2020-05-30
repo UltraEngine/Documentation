@@ -16,5 +16,5 @@ This class is the base class of all game media classes.
 - const wstring& path
 
 ## Methods ##
-- Reload
+- [Reload](CPP_Asset_Reload.md)
 - [Save](CPP_Asset_Save.md)
