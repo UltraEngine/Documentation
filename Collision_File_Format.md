@@ -28,7 +28,7 @@ The file below specifies a box shape with dimensions of 1.0 on each axis, positi
     }
 }
 ```
-Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and "MESH". In the case of cylinders and cones, the z parameter of the size array will be ignored and can be omitted. The file below creates a cylinder with a radius of 0.5 and a height of 3.0:
+Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and "MESH". In the case of cylinders and cones, the z parameter of the size array will be ignored and can be omitted. The file below creates a cylinder with a diamater of 1.0 and a height of 3.0:
 ```json
 {
     "collision":
