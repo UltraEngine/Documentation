@@ -1,5 +1,14 @@
 # Collision File Format ##
 The PHY collision shape format is a JSON-based ASCII format. PHY files consist of one top-level *collision* object that contains an array of shapes. Each shape has a type, offset, rotation, and size attributes.
+
+| Name | Type | Components | Description |
+|---|---|---| --- |
+| shape | string | - | BOX, CONE, CYLINDER, SPHERE, CONVEX_HULL, or MESH |
+| size | number array | 1, 2, or 3 | scale / diameter |
+| offset | number array | 3 | position |
+| rotation | number array | 3 | Euler rotation | 
+| vertices | number array | (3 or 9) * n | convex hull points or mesh vertices |
+
 ```json
 {
     "collision":
