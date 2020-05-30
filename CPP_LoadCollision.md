@@ -92,7 +92,7 @@ Shapes of type MESH should include an array of faces.
                     {
                         "vertices": [0,0,0]
                     },
-                                        {
+                    {
                         "vertices": [1,0,0]
                     },
                     {
