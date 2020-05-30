@@ -20,9 +20,9 @@ The file below specifies a box shape with dimensions of 1.0 on each axis, positi
         [
             {
                 "shape": "BOX",
-                "size": [1, 1, 1],
-                "offset": [0, 0, 0],
-                "rotation": [0, 0, 0]
+                "size": [1.0, 1.0, 1.0],
+                "offset": [0.0, 0.0, 0.0],
+                "rotation": [0.0, 0.0, 0.0]
             }
         ]
     }
