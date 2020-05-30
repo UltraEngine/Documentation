@@ -49,8 +49,8 @@
 													"filename": "API_CreateCollisionCylinder"
 												},												
 												{
-													"title": "CreateCollisionHull",
-													"filename": "API_CreateCollisionHull"
+													"title": "CreateCollisionConvexHull",
+													"filename": "API_CreateCollisionConvexHull"
 												},									
 												{
 													"title": "CreateCollisionMesh",
