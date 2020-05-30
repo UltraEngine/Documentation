@@ -1,8 +1,8 @@
-# CreateCollisionHull #
+# CreateCollisionConvexHull #
 
 ## Syntax ##
-- shared_ptr<Collision\> CreateCollisionHull(shared_ptr<Mesh\> geometry)
-- shared_ptr<Collision\> CreateCollisionHull(shared_ptr<Model\> geometry)
+- shared_ptr<Collision\> CreateCollisionConvexHull(shared_ptr<Mesh\> geometry)
+- shared_ptr<Collision\> CreateCollisionConvexHull(shared_ptr<Model\> geometry)
 
 ## Parameters ##
 |Name|Description|
@@ -46,7 +46,7 @@ int main(int argc, const char* argv[])
     model->Turn(90, 30, 0);
 
     //Create collision
-    auto collision = CreateCollisionHull(model);
+    auto collision = CreateCollisionConvexHull(model);
     model->SetCollision(collision);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
