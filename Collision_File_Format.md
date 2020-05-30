@@ -20,9 +20,9 @@ The file below specifies a box shape with dimensions of 1.0 on each axis, positi
         [
             {
                 "shape": "BOX",
-                "size": [1,1,1],
-                "offset": [0,0,0],
-                "rotation": [0,0,0]
+                "size": [1, 1, 1],
+                "offset": [0, 0, 0],
+                "rotation": [0, 0, 0]
             }
         ]
     }
@@ -37,7 +37,7 @@ Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and
         [
             {
                 "shape": "CYLINDER",
-                "size": [1.0,3.0]
+                "size": [1.0, 3.0]
             }
         ]
     }
@@ -52,7 +52,7 @@ In the case of spheres, an array with length one can be used. Note that in all c
         [
             {
                 "shape": "SPHERE",
-                "size": [1.0]
+                "size": [1. 0]
             }
         ]
     }
@@ -68,7 +68,7 @@ Shapes of type CONVEX_HULL and MESH should include an array of vertex positions.
         [
             {
                 "shape": "CONVEX_HULL",
-                "vertices": [0,0,0,1,0,0,0,1,0,1,1,1]
+                "vertices": [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1]
             }
         ]
     }
