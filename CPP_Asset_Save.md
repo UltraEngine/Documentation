@@ -1,4 +1,5 @@
 # Asset::Save #
+This method saves the object to a file. This method can be used with Collision and Material objects. 
 
 ## Syntax ##
 - bool **Save**(const string& path, const SaveFlags flags = SAVE_DEFAULT)
