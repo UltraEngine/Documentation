@@ -67,6 +67,10 @@
 												{
 													"title": "CreateCollisionSphere",
 													"filename": "API_CreateCollisionSphere"
+												},
+												{
+													"title": "LoadCollision",
+													"filename": "API_LoadCollision"
 												}												
 											]
 										}									
