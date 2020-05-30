@@ -1,5 +1,5 @@
 # LoadCollision #
-This function loads a collision shape from a [collision file](Collision_File_Format.md).
+This function loads a collision shape from a [collision file](Collision_File_Format.md). Collision objects can be saved to a file by calling the [Save](CPP_Asset_Save.md) method.
 
 ## Syntax ##
 - shared_ptr<[Collision](CPP_Collision.md)\> **LoadCollision**(const string& path, const LoadFlags flags = LOAD_DEFAULT)
