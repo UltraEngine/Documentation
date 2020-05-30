@@ -279,17 +279,17 @@
 							"filename": "Collision_File_Format"
 						},
 						{
-							"title": "Languages",
+							"title": "Languages"
 						},
 						{
 							"title": "Materials",
 							"filename": "Material_File_Format"
 						},
 						{
-							"title": "Shader Families",
+							"title": "Shader Families"
 						},
 						{
-							"title": "Workflows",
+							"title": "Workflows"
 						}						
 					]
 				}				
