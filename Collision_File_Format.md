@@ -28,7 +28,7 @@ The file below specifies a box shape with dimensions of 1.0 on each axis, positi
     }
 }
 ```
-Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and "MESH". In the case of cylinders and cones, the z parameter of the size array will be ignored and can be omitted.
+Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and "MESH". In the case of cylinders and cones, the z parameter of the size array will be ignored and can be omitted. The file below creates a cylinder with a radius of 0.5 and a height of 3:
 ```json
 {
     "collision":
@@ -37,7 +37,7 @@ Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and
         [
             {
                 "shape": "CYLINDER",
-                "size": [1,1]
+                "size": [1,3]
             }
         ]
     }
@@ -59,7 +59,7 @@ In the case of spheres, an array with length one can be used. Note that in all c
 }
 ```
 
-Shapes of type CONVEX_HULL and MESH should include an array of vertex positions. If the shape is a convex hull the array must be evenly divisible by three. If the shape is a mesh the array must be evenly divisible by nine. These types of shapes do not support offset, size, or rotation values.0
+Shapes of type CONVEX_HULL and MESH should include an array of vertex positions. If the shape is a convex hull the array must be evenly divisible by three. If the shape is a mesh the array must be evenly divisible by nine. These types of shapes do not support offset, size, or rotation values.
 ```json
 {
     "collision":
