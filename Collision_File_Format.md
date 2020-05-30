@@ -52,7 +52,7 @@ In the case of spheres, an array with length one can be used. Note that in all c
         [
             {
                 "shape": "SPHERE",
-                "size": [1. 0]
+                "size": [1.0]
             }
         ]
     }
