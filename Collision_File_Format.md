@@ -68,7 +68,7 @@ Shapes of type CONVEX_HULL and MESH should include an array of vertex positions.
         [
             {
                 "shape": "CONVEX_HULL",
-                "vertices": [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1]
+                "vertices": [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0]
             }
         ]
     }
