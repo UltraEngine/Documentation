@@ -1,5 +1,5 @@
 # LoadCollision #
-This function loads a collision shape from a file.
+This function loads a collision shape from a [collision file](Collision_File_Format.md).
 
 ## Syntax ##
 - shared_ptr<[Collision](CPP_Collision.md)\> **LoadCollision**(const string& path, const LoadFlags flags = LOAD_DEFAULT)
