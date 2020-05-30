@@ -7,6 +7,11 @@ This function loads a collision shape from a file or stream.
 - shared_ptr<Collision\> **LoadCollision**(shared_ptr<Stream\> stream, const LoadFlags flags = LOAD_DEFAULT)
 
 ## Parameters ##
+|Name|Description|
+|---|---|
+|path|file path to open|
+|stream|open stream to read from|
+|flags|optional load settings|
 
 ## Example ##
 ```c++
