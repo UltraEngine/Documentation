@@ -7,7 +7,7 @@ This function creates a complex collision shape that is made up of multiple sub-
 ## Parameters ##
 |Name|Description|
 |-|-|
-|subshapes|array of collision objects to be combined into the created shape|
+|**subshapes**|array of collision objects to be combined into the created shape|
 
 ## Example ##
 ```c++
