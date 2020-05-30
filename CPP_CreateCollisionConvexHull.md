@@ -1,4 +1,5 @@
 # CreateCollisionConvexHull #
+This function creates a convex hull that encapsulates all vertices of the input geometry.
 
 ## Syntax ##
 - shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionConvexHull**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
