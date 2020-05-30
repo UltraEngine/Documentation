@@ -3,7 +3,7 @@ The PHY collision shape format is a JSON-based ASCII format. PHY files consist o
 
 Each shape can specify any of the following attributes:
 
-| Name | Type | Components | Description |
+| Name | Type | Size | Description |
 |---|---|---| --- |
 | shape | string | - | may be BOX, CONE, CYLINDER, SPHERE, CONVEX_HULL, or MESH |
 | size | number array | 1, 2, or 3 | scale / diameter |
