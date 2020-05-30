@@ -17,3 +17,4 @@ This class is the base class of all game media classes.
 
 ## Methods ##
 - Reload
+- [Save](CPP_Asset_Save.md)
