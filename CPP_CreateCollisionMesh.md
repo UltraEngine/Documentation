@@ -7,7 +7,7 @@
 ## Parameters ##
 |Name|Description|
 |-|-|
-|geometry|mesh or model to build the collision from|
+|**geometry**|mesh or model to build the collision from|
 
 ## Example ##
 ```c++
