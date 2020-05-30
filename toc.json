@@ -43,7 +43,11 @@
 												{
 													"title": "CreateCollisionBox",
 													"filename": "API_CreateCollisionBox"
-												},													
+												},
+												{
+													"title": "CreateCollisionCylinder",
+													"filename": "API_CreateCollisionCylinder"
+												},												
 												{
 													"title": "CreateCollisionHull",
 													"filename": "API_CreateCollisionHull"
