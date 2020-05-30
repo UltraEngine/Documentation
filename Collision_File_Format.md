@@ -1,4 +1,4 @@
-# Collision File Format ##
+# Collision File Format (PHY) ##
 The PHY collision shape format is a JSON-based ASCII format. PHY files consist of one top-level *collision* object that contains an array of shapes. Each shape has a type, offset, rotation, and size attributes.
 ```json
 {
