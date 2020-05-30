@@ -86,7 +86,7 @@ Shapes of type MESH should include an array of faces.
         "subShapes":
         [
             {
-                "shape": "CONVEXH_ULL",
+                "shape": "CONVEX_HULL",
                 "faces":
                 [
                     {
