@@ -5,7 +5,9 @@
 - shared_ptr<Collision\> CreateCollisionMesh(shared_ptr<Model\> geometry)
 
 ## Parameters ##
-
+|Name|Description|
+|-|-|
+|geometry|mesh or model to build the collision from|
 
 ## Example ##
 ```c++
