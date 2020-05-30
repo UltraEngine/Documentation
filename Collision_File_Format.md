@@ -47,7 +47,7 @@ In the case of spheres, an array with length one can be used. Note that in all c
 }
 ```
 
-Shapes of type CONVEX_HULL and MESH should include an array of vertex positions that is evenly divisible by three. Convex hull shapes do not support offset, size, or rotation values.
+Shapes of type CONVEX_HULL and MESH should include an array of vertex positions that is evenly divisible by three. These types of shapes do not support offset, size, or rotation values.
 ```json
 {
     "collision":
@@ -62,7 +62,7 @@ Shapes of type CONVEX_HULL and MESH should include an array of vertex positions 
     }
 }
 ```
-Compound collision shapes can be built from multiple subshapes.
+Compound collision shapes can be built from multiple subshapes of any type.
 ```json
 {
 	"collision":
