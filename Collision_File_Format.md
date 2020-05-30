@@ -59,9 +59,7 @@ In the case of spheres, an array with length one can be used. Note that in all c
 }
 ```
 
-Shapes of type CONVEX_HULL and MESH should include an array of vertex positions. If the shape is a convex hull the array must be evenly divisible by three. If the shape is a mesh the array must be evenly divisible by nine. These types of shapes do not support offset, size, or rotation values.
-
-Also note that mesh shapes can not be physically active. They can be collided against, but an entity with a mesh collision applied to it will not be affected by forces and will not move.
+Shapes of type CONVEX_HULL and MESH should include an array of vertex positions. If the shape is a convex hull the array must be evenly divisible by three. If the shape is a mesh the array must be evenly divisible by nine. These types of shapes do not support offset, size, or rotation values.0
 ```json
 {
     "collision":
@@ -76,7 +74,9 @@ Also note that mesh shapes can not be physically active. They can be collided ag
     }
 }
 ```
-Compound collision shapes can be built from multiple subshapes of any type.
+Also note that mesh shapes can not be physically active. They can be collided against, but an entity with a mesh collision applied to it will not be affected by forces and will not move.
+
+For more complex shapes, compound collisions can be built from multiple subshapes of any type.
 ```json
 {
 	"collision":
