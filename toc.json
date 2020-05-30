@@ -45,6 +45,14 @@
 													"filename": "API_CreateCollisionBox"
 												},
 												{
+													"title": "CreateCollisionCompound",
+													"filename": "API_CreateCollisionCompound"
+												},
+												{
+													"title": "CreateCollisionCone",
+													"filename": "API_CreateCollisionCone"
+												},												
+												{
 													"title": "CreateCollisionCylinder",
 													"filename": "API_CreateCollisionCylinder"
 												},												
@@ -55,7 +63,11 @@
 												{
 													"title": "CreateCollisionMesh",
 													"filename": "API_CreateCollisionMesh"
-												}
+												},
+												{
+													"title": "CreateCollisionSphere",
+													"filename": "API_CreateCollisionSphere"
+												}												
 											]
 										}									
 									]
