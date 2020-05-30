@@ -1,8 +1,8 @@
 # CreateCollisionConvexHull #
 
 ## Syntax ##
-- shared_ptr<Collision\> CreateCollisionConvexHull(shared_ptr<Mesh\> geometry)
-- shared_ptr<Collision\> CreateCollisionConvexHull(shared_ptr<Model\> geometry)
+- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionConvexHull**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
+- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionConvexHull**(shared_ptr<[Model](CPP_Model.md)\> geometry)
 
 ## Parameters ##
 |Name|Description|
