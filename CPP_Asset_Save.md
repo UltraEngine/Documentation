@@ -11,5 +11,8 @@ This method saves the object to a file. This method can be used with Collision a
 |path||
 |flags||
 
+## Remarks ##
+Not all asset types can be saved. Font loading involves processing of file data that cannot be reversed. Texture data is stored on the GPU and is not available to system memory.
+
 ## Returns ##
 Returns true if saving is supported for this object type, and if the object was successfully saved, otherwise false is returned.
