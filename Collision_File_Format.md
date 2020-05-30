@@ -16,7 +16,7 @@ The PHY collision shape format is a JSON-based ASCII format. PHY files consist o
     }
 }
 ```
-Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and "MESH". In the case of cylinders and cones, the z parameter of the size array will be ignored and can be ommitted.
+Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and "MESH". In the case of cylinders and cones, the z parameter of the size array will be ignored and can be omitted.
 ```json
 {
     "collision":
@@ -31,7 +31,7 @@ Supported shapes include "BOX", "CONE", "CYLINDER", "SPHERE", "CONVEX_HULL", and
     }
 }
 ```
-In the case of spheres, a single numerical value is used. Note that in all cases, size indicates diameter, not radius.
+In the case of spheres, an array with length one can be used. Note that in all cases, size indicates diameter, not radius.
 ```json
 {
     "collision":
@@ -40,14 +40,14 @@ In the case of spheres, a single numerical value is used. Note that in all cases
         [
             {
                 "shape": "SPHERE",
-                "size": 1
+                "size": [1]
             }
         ]
     }
 }
 ```
 
-Shapes of type CONVEX_HULL should include an array of vertex positions that is evenly divisible by three:
+Shapes of type CONVEX_HULL and MESH should include an array of vertex positions that is evenly divisible by three. Convex hull shapes do not support offset, size, or rotation values.
 ```json
 {
     "collision":
@@ -62,30 +62,56 @@ Shapes of type CONVEX_HULL should include an array of vertex positions that is e
     }
 }
 ```
-
-Shapes of type MESH should include an array of faces.
+Compound collision shapes can be built from multiple subshapes.
 ```json
 {
-    "collision":
-    {
-        "subShapes":
-        [
-            {
-                "shape": "CONVEX_HULL",
-                "faces":
-                [
-                    {
-                        "vertices": [0,0,0]
-                    },
-                    {
-                        "vertices": [1,0,0]
-                    },
-                    {
-                        "vertices": [1,0,1]
-                    }
-                ]
-            }
-        ]
-    }
+	"collision":
+	{
+		"subShapes":
+		[
+			{
+				"shape": "SPHERE",
+				"size": [2.0, 2.0, 2.0],
+				"offset": [0.0, 0.0, 0.0],
+				"rotation": [0.0, 0.0, 0.0]
+			},
+			{
+				"shape": "CONE",
+				"size": [1.0, 1.0, 1.0],
+				"offset": [1.0, 0.0, 0.0],
+				"rotation": [0.0, 0.0, -90.0]
+			},
+			{
+				"shape": "CONE",
+				"size": [1.0, 1.0, 1.0],
+				"offset": [-1.0, 0.0, 0.0],
+				"rotation": [0.0, 0.0, 90.0]
+			},
+			{
+				"shape": "CONE",
+				"size": [1.0, 1.0, 1.0],
+				"offset": [0.0, 1.0, 0.0],
+				"rotation": [0.0, 0.0, 0.0]
+			},
+			{
+				"shape": "CONE",
+				"size": [1.0, 1.0, 1.0],
+				"offset": [0.0, -1.0, 0.0],
+				"rotation": [180.0, 0.0, 0.0]
+			},
+			{
+				"shape": "CONE",
+				"size": [1.0, 1.0, 1.0],
+				"offset": [0.0, 0.0, 1.0],
+				"rotation": [90.0, 0.0, 0.0]
+			},
+			{
+				"shape": "CONE",
+				"size": [1.0, 1.0, 1.0],
+				"offset": [0.0, 0.0, -1.0],
+				"rotation": [-90.0, 0.0, 0.0]
+			}
+		]
+	}
 }
 ```
