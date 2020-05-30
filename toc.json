@@ -75,6 +75,10 @@
 											]
 										},
 										{
+											"title": "Reload",
+											"filename": "API_Asset_Reload"
+										},										
+										{
 											"title": "Save",
 											"filename": "API_Asset_Save"
 										}
