@@ -140,6 +140,17 @@
 											"filename": "API_Mesh_Add"
 										}
 									]
+								},
+								{
+									"title": "NavMesh",
+									"filename": "API_NavMesh",
+									"topics":
+									[
+										{
+											"title": "CreateNavMesh",
+											"filename": "API_CreateNavMesh"
+										}
+									]
 								},								
 								{
 									"title": "Window",
