@@ -47,4 +47,9 @@ int main(int argc, const char* argv[])
     return 0;
 }
 ```
+To test your game, you need to create a text file in your project folder named "steam_appid.txt" with these contents. This tells the SDK that you application is using an application ID for testing:
+```
+480
+```
+
 When you run your application, the Steam overlay can be shown by pressing Shift + Tab. This is all you need to publish a game or application on Steam. See the [Steamworks documentation](https://partner.steamgames.com/doc/sdk) for additional features you can use.
