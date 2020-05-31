@@ -11,7 +11,7 @@
 | **height** | width of the navmesh volume |
 | **depth** | width of the navmesh volume |
 | **tilesx** | number of tiles along the X axis |
-| **tilesy** | number of tiles along the Y axis |
+| **tilesz** | number of tiles along the Z axis |
 ...
 
 ## Returns ##
