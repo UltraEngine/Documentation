@@ -1,4 +1,4 @@
-# Steam Integration #
+# Steamworkd SDK Integration #
 The Steamworks SDK provides a range of features which are designed to help ship your application or game on Steam in an efficient manner. This tutorial will explain how to add the Steamworks SDK into your C++ application.
 
 First, [download the Steamworks SDK](https://partner.steamgames.com/doc/sdk) from Valve.
