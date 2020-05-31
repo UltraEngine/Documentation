@@ -1,16 +1,22 @@
 # Steamworks SDK Integration #
 The Steamworks SDK provides a range of features which are designed to help ship your application or game on Steam in an efficient manner. This tutorial will explain how to add the Steamworks SDK into your C++ application.
 
+## Compiling ##
 First, [download the Steamworks SDK](https://partner.steamgames.com/doc/sdk) from Valve.
 
 Extract the contents of the zip file to "(Project Folder)\Source\Steamworks".
 
 Add this line of code anywhere in your "Project.h" file:
 ```c++
-#include "steamworks/public/steam/steam_api.h"
+#include "Steamworks/sdk/public/steam/steam_api.h"
 ```
-In Visual Studio, drag the file "Source/Steamworks/redistributable_bin/win64/steam_api64.lib" into the solution explorer.
+In Visual Studio, drag the file "Source\\Steamworks\\sdk\\redistributable_bin\\win64\\steam_api64.lib" into the solution explorer.
 
+Copy the file "Source\\Steamworks\\sdk\\redistributable_bin\\win64\\steam_api64.dll" into your project folder.
+
+At this point, your project should be able to compile successfully.
+
+## Usage ##
 In "main.cpp", at the start of your program add this line of code:
 ```c++
 SteamAPI_Init()
