@@ -8,11 +8,11 @@ This method sets the position of an entity in 3-dimensional space, using local o
 ### Parameters
 | Name | Description |
 | ------ | ------ |
-| x | X component of the specified position. |
-| y | Y component of the specified position. |
-| z | Z component of the specified position. |
-| position | the position to set. |
-| global | indicates whether the position should be set in global or local space. |
+| **x** | X component of the specified position. |
+| **y** | Y component of the specified position. |
+| **z** | Z component of the specified position. |
+| **position** | the position to set. |
+| **global** | indicates whether the position should be set in global or local space. |
 
 ## Remarks
 An entity can be positioned in local or global coordinates. Local coordinates are relative to the entity parent's space. If the entity does not have a parent, local and global coordinates are the same.
