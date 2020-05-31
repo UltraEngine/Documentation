@@ -12,6 +12,10 @@
 | **depth** | width of the navmesh volume |
 | **tilesx** | number of tiles along the X axis |
 | **tilesz** | number of tiles along the Z axis |
-...
+| **voxelsize** | resolution of voxel grid |
+| **agentradius** | radius of the characters that will use this navmesh |
+| **agentheight** | height of the characters that will use this navmesh |
+| **agentstepheight** | maximum height that can be stepped up |
+| **maxslope** | maximum slope that can be traversed, in degrees |
 
 ## Returns ##
