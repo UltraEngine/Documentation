@@ -44,7 +44,7 @@ box:SetRotation(0, 0, 45)
 box:SetScale(2, 1, 1)
 
 --Main loop
-while (window->Closed() == false) do
+while window->Closed() == false do
   
   --Update world
   world:Update()
