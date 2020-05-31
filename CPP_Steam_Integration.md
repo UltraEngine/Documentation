@@ -1,7 +1,7 @@
 # Steamworks SDK Integration #
 The Steamworks SDK provides a range of features which are designed to help ship your application or game on Steam in an efficient manner. This tutorial will explain how to add the Steamworks SDK into your C++ application and initialize the Steam overlay.
 
-![text]("Images/steamworks_logo.png")
+![text](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/steamworks_logo.png)
 
 ## Compiling ##
 First, [download the Steamworks SDK](https://partner.steamgames.com/downloads/steamworks_sdk.zip) from Valve.
