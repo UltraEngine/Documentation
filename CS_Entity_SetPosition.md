@@ -20,7 +20,7 @@ An entity can be positioned in local or global coordinates. Local coordinates ar
 The engine uses a left-handed coordinate system. The X axis points right, the Y axis points up, and the Z axis points forward.
 
 ## Example
-```
+```c#
 void main(string[] args)
 {
 	//Get the displays
