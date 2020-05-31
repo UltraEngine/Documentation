@@ -47,4 +47,4 @@ int main(int argc, const char* argv[])
     return 0;
 }
 ```
-When you run your application, the Steam overlay can be shown by pressing Shift + Tab. This is all you need to publish a game or application on Steam.
+When you run your application, the Steam overlay can be shown by pressing Shift + Tab. This is all you need to publish a game or application on Steam. See the [Steamworks documentation](https://partner.steamgames.com/doc/sdk) for additional features you can use.
