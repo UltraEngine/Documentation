@@ -7,7 +7,7 @@ Extract the contents of the zip file to "(Project Folder)\Source\Steamworks".
 
 Add this line of code anywhere in your "Project.h" file:
 ```c++
-#include "Source/Steamworks/public/Steam/steam_api.h"
+#include "steamworks/public/steam/steam_api.h"
 ```
 In Visual Studio, drag the file "Source/Steamworks/redistributable_bin/win64/steam_api64.lib" into the solution explorer.
 
