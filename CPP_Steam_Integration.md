@@ -1,4 +1,4 @@
-# Steamworkd SDK Integration #
+# Steamworks SDK Integration #
 The Steamworks SDK provides a range of features which are designed to help ship your application or game on Steam in an efficient manner. This tutorial will explain how to add the Steamworks SDK into your C++ application.
 
 First, [download the Steamworks SDK](https://partner.steamgames.com/doc/sdk) from Valve.
@@ -13,10 +13,10 @@ In Visual Studio, drag the file "Source/Libaries/Steamworks/redistributable_bin/
 
 In "main.cpp", at the start of your program add this line of code:
 ```c++
-SteamAPI_Init
+SteamAPI_Init()
 ```
 At the end of the main function, add this line of code:
 ```c++
-SteamAPI_Shutdown
+SteamAPI_Shutdown()
 ```
 Your main.cpp file should now look something like this:
