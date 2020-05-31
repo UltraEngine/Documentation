@@ -27,3 +27,24 @@ At the end of the main function, add this line of code:
 SteamAPI_Shutdown()
 ```
 Your main.cpp file should now look something like this:
+```c++
+#include "pch.h"
+#include "Project.h"
+
+int main(int argc, const char* argv[])
+{
+    SteamAPI_Init();
+
+    ...
+
+    //Main loop
+    while (window->Closed() == false)
+    {
+        ...
+    }
+
+    SteamAPI_Shutdown();
+    return 0;
+}
+```
+When you run your application, the Steam overlay can be shown by pressing Shift + Tab. This is all you need to publish a game or application on Steam.
