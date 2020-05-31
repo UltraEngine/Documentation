@@ -37,7 +37,6 @@ int main(int argc, const char* argv[])
 
     ...
 
-    //Main loop
     while (window->Closed() == false)
     {
         ...
