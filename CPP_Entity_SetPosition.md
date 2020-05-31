@@ -21,8 +21,9 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 
 ## Example
 ```cpp
-#include ".h"
-	
+#include "pch.h"
+#include "Project.h"
+
 void main(const char* args, const int argc)
 {
 	//Get the displays
