@@ -11,6 +11,10 @@
 					"filename": "Introduction",
 					"openstate": true,
 					"selected": true
+				},
+				{
+					"title": "Steamworks SDK Integration",
+					"filename": "API_Steam_Integration.md"
 				}
 			]
 		},
