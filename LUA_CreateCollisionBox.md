@@ -66,7 +66,7 @@ local collision = CreateCollisionBox(bounds.size, bounds.center)
 model:SetCollision(collision)
 
 while window:Closed() == false do
-    world:Update();
-    world:Render(framebuffer);
+    world:Update()
+    world:Render(framebuffer)
 end
 ```
