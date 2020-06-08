@@ -12,7 +12,8 @@ The model class is used for visible 3D objects. Models can be loaded from files 
 - ANIMATION_STOP
 
 ## Members
-* const vector<shared_ptr<[LOD](API_LOD)\> \>& lods;
+- const vector<shared_ptr<[LOD](API_LOD)\> \>& lods
+- const shared_ptr<[Skeleton](CPP_Skeleton)\>& skeleton
 
 ## Methods
-* [Animate](API_Model_Animate)
+- [Animate](API_Model_Animate)
