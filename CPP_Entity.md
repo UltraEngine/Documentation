@@ -15,14 +15,13 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 - [Terrain](CPP_Terrain.md)
 
 ## Members
-- const [Vec4](CPP_Vec4.md)& color
-- vector<shared_ptr<[Entity](CPP_Entity.md)\> \> kids
-- const [Mat4](CPP_Mat4.md)& matrix
 - wstring name
-- weak_ptr<[Entity](CPP_Entity.md)\> parent
+- const [Mat4](CPP_Mat4.md)& matrix
 - const [Vec3](CPP_Vec3.md)& position
 - const [Quat](CPP_Quat.md)& quaternion
 - const [Vec3](CPP_Vec3.md)& rotation
+- const [Vec4](CPP_Vec4.md)& color
+- vector<shared_ptr<[Entity](CPP_Entity.md)\> \> kids
 
 ## Methods
 * [GetParent](CPP_Entity_GetParent.md)
