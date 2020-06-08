@@ -2,7 +2,7 @@
 The vertex structure stores properties for a single vertex in a mesh.
 
 ## Members ##
-- Vec3 position
+- [Vec3](CPP_Vec3) position
 - int materialindex
 - array<unsigned char, 3> normal
 - signed char displacement
