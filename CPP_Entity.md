@@ -18,8 +18,8 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 - wstring name
 - const [Vec3](CPP_Vec3.md)& position
 - const [Vec3](CPP_Vec3.md)& rotation
-- const [Vec3](CPP_Vec3.md)& scale
 - const [Quat](CPP_Quat.md)& quaternion
+- const [Vec3](CPP_Vec3.md)& scale
 - const [Mat4](CPP_Mat4.md)& matrix
 - const [Vec4](CPP_Vec4.md)& color
 - vector<shared_ptr<[Entity](CPP_Entity.md)\> \> kids
