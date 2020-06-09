@@ -2,13 +2,14 @@
 This function can be used to create an object that monitors a specified directory for changes.
 
 ## Syntax ##
-- shared_ptr<[FileSystemWatcher](CPP_FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const string& path);
-- shared_ptr<[FileSystemWatcher](CPP_FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const wstring& path);
+- shared_ptr<[FileSystemWatcher](CPP_FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const string& path, const bool recursive = true)
+- shared_ptr<[FileSystemWatcher](CPP_FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const wstring& path, const bool recursive = true)
 
 ### Parameters ###
 |Name|Description|
 |---|---|
 |**path**|path to folder to watch|
+|**recursive**|set to true to detect changes to the subdirectory|
 
 ## Returns ##
 Returns a new FileSystemWatcher object if the specified directory exists, otherwise NULL is returned.
