@@ -18,10 +18,10 @@ Once the FileSystemWatcher object is created, it will monitor the directory to d
 
 ## Example ##
 ```c++
-/*---------------------------------------------------------------------------------------------------
-This example demonstrates use of a FileSystemWatcher to allow dynamic asset reloading.
-Run the example and modify the texture file in a paint program to see your changes appear as the program is running.
----------------------------------------------------------------------------------------------------*/
+//---------------------------------------------------------------------------------------------------
+// This example demonstrates use of a FileSystemWatcher to allow dynamic asset reloading.
+// Run the example and modify the texture file in a paint program to see your changes appear as the program is running.
+//---------------------------------------------------------------------------------------------------
 
 #include "pch.h"
 #include "Project.h"
