@@ -16,8 +16,6 @@ The window class provides an cross-platform interface for creating program windo
 - WINDOW_EMBEDDED
 - WINDOW_DOUBLE_BUFFERED
 
-## Members
-
 ## Methods
 
 ## Functions
