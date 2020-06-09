@@ -188,6 +188,16 @@
 					]
 				},
 				{
+					"title": "Functions",
+					"topics":
+					[
+						{
+							"title": "OpenDir",
+							"filename": "API_OpenDir"
+						}
+					]
+				},
+				{
 					"title": "Structures",
 					"openstate": false,
 					"topics":
