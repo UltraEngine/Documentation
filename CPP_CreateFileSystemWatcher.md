@@ -35,7 +35,7 @@ int main(int argc, const char* argv[])
     auto displayscale = display->GetScale();
 
     // Create a window
-    auto window = CreateWindow(display, L"Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y, WINDOW_TITLEBAR);
+    auto window = CreateWindow(display, "Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y, WINDOW_TITLEBAR);
 
     // Create a rendering framebuffer
     auto framebuffer = CreateFramebuffer(window);
