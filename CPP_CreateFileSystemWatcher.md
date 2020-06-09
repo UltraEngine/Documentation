@@ -52,9 +52,9 @@ auto mtl = CraateMaterial();
 model->SetMaterial(mtl);
 
 // Download the texture file
-CopyFile("https://github.com/...", "brickwall.jpg");
+CopyFile("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.jpg", "dirt01.jpg");
 
-auto tex = LoadTexture("dirt.jpg");
+auto tex = LoadTexture("dirt01.jpg");
 mtl->SetTexture(tex);
 
 // Main loop
