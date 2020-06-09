@@ -1,5 +1,5 @@
 # OpenDir #
-This function opens a folder and can select a file in the operating system file explorer application.
+This function opens a folder. If a file name is specified, the folder will be opened with that file selected.
 
 ## Syntax ##
 - bool **OpenDir**(const string& path)
