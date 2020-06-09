@@ -1,4 +1,4 @@
-# OpenFile #
+# OpenDir #
 This function opens a folder and can select a file in the operating system file explorer application.
 
 ## Syntax ##
