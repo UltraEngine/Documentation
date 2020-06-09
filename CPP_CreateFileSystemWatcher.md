@@ -13,6 +13,9 @@ This function can be used to create an object that monitors a specified director
 ## Returns ##
 Returns a new FileSystemWatcher object if the specified directory exists, otherwise NULL is returned.
 
+## Remarks ##
+Once the FileSystemWatcher object is created, it will monitor the directory to detect changes. When changes occur an event will be emitted. The event ID will be EVENT_FILE_CREATE, EVENT_FILE_DELETE, EVENT_FILE_RENAME, or EVENT_FILE_CHANGE.
+
 ## Example ##
 ```c++
 
