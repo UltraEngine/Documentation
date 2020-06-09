@@ -18,23 +18,23 @@ Once the FileSystemWatcher object is created, it will monitor the directory to d
 
 ## Example ##
 ```c++
-//---------------------------------------------------------------------------------------------------
-// This example demonstrates use of a FileSystemWatcher to allow dynamic asset reloading.
-// Run the example and modify the texture file in a paint program to see your changes appear as the program is running.
-//---------------------------------------------------------------------------------------------------
-
 #include "pch.h"
 #include "Project.h"
 
 int main(int argc, const char* argv[])
 {
+    //---------------------------------------------------------------------------------------------------
+    // This example demonstrates use of a FileSystemWatcher to allow dynamic asset reloading.
+    // Run the example and modify the texture file in a paint program to see your changes appear as the program is running.
+    //---------------------------------------------------------------------------------------------------
+
     // Get the primary display
     auto displaylist = ListDisplays();
     auto display = displaylist[0];
     auto displayscale = display->GetScale();
 
     // Create a window
-    auto window = CreateWindow(display, L"Example", 0, 0, Min(1280 * displayscale.x, displayscale.x), Min(720 * displayscale.y, displayscale.y), WINDOW_TITLEBAR);
+    auto window = CreateWindow(display, L"Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y, WINDOW_TITLEBAR);
 
     // Create a rendering framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -55,12 +55,18 @@ int main(int argc, const char* argv[])
     // Create material
     auto mtl = CreateMaterial();
     model->SetMaterial(mtl);
-
+     
     // Download the texture file
-    CopyFile("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.jpg", "dirt01.jpg");
+    CreateDir("Download");
+    CopyFile("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.jpg", "Download/dirt01.jpg");
+    OpenDir("Download/dirt01.jpg");
 
-    auto tex = LoadTexture("dirt01.jpg");
+    //Load texture
+    auto tex = LoadTexture("Download/dirt01.jpg");
     mtl->SetTexture(tex);
+
+    //Create FileSystemWatcher to detect changes to files
+    auto watcher = CreateFileSystemWatcher("Download");
 
     // Main loop
     while (window->Closed() == false)
@@ -69,7 +75,9 @@ int main(int argc, const char* argv[])
         while (PeekEvent())
         {
             auto e = WaitEvent();
-            if (e.id == EVENT_FILE_CHANGE)
+
+            //Look for file change or create events. Some programs delete the file and then recreate it when they save.
+            if (e.id == EVENT_FILE_CHANGE or e.id == EVENT_FILE_CREATE)
             {
                 //Look for a loaded asset with this file path
                 auto asset = FindCachedAsset(e.filepath[0]);
@@ -80,7 +88,6 @@ int main(int argc, const char* argv[])
                 }
             }
         }
-
         world->Update();
         world->Render(framebuffer);
     }
