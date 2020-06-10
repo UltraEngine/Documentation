@@ -24,6 +24,10 @@
 			"topics":
 			[
 				{
+					"title": "Constants",
+					"filename": "API_Enums"
+				},
+				{
 					"title": "Classes",
 					"openstate": true,
 					"topics":
