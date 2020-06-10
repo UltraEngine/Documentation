@@ -1,5 +1,5 @@
 # Vec4 #
-This structure describes a four-dimensional vector.
+This class describes a four-dimensional vector or an RGBA color.
 
 ## Members ##
 - float **x**, **r**
