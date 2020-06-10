@@ -341,6 +341,28 @@
 									]
 								},
 								{
+									"title": "Mutex",
+									"filename": "API_Mutex",
+									"topics":
+									[
+										{
+											"title": "CreateMutex",
+											"filename": "API_CreateMutex"
+										}
+									]
+								},								
+								{
+									"title": "NavAgent",
+									"filename": "API_NavAgent",
+									"topics":
+									[
+										{
+											"title": "CreateNavAgent",
+											"filename": "API_CreateAgent"
+										}
+									]
+								},
+								{
 									"title": "NavMesh",
 									"filename": "API_NavMesh",
 									"topics":
@@ -374,6 +396,14 @@
 								{
 									"title": "Skeleton",
 									"filename": "API_Skeleton"
+								},
+								{
+									"title": "Sprite",
+									"filename": "API_Sprite"
+								},
+								{
+									"title": "SpriteLayer",
+									"filename": "API_SpriteLayer"
 								},								
 								{
 									"title": "Stream",
@@ -389,6 +419,17 @@
 								{
 									"title": "TextureBuffer",
 									"filename": "API_TextureBuffer"
+								},
+								{
+									"title": "Thread",
+									"filename": "API_Thread",
+									"topics":
+									[
+										{
+											"title": "CreateThread",
+											"filename": "API_CreateThread"
+										}
+									]
 								},
 								{
 									"title": "Vertex",
