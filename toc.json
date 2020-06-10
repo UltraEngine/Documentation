@@ -397,6 +397,7 @@
 								{
 									"title": "Mutex",
 									"filename": "API_Mutex",
+									"hideForLua": true,
 									"topics":
 									[
 										{
@@ -481,6 +482,7 @@
 								{
 									"title": "Thread",
 									"filename": "API_Thread",
+									"hideForLua": true,
 									"topics":
 									[
 										{
