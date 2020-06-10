@@ -41,7 +41,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * [GetBounds](CPP_Entity_GetBounds.md)
 * [GetDistance](CPP_Entity_GetDistance.md)
 * [GetMass](CPP_Entity_GetMass.md)
-* [GetPmega](CPP_Entity_GetOmega.md)
+* [GetOmega](CPP_Entity_GetOmega.md)
 * [GetParent](CPP_Entity_GetParent.md)
 * [GetQuaternion](CPP_Entity_GetQuaternion.md)
 * [GetVelocity](CPP_Entity_GetVelocity.md)
