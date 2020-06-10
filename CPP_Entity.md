@@ -25,6 +25,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 - vector<shared_ptr<[Entity](CPP_Entity.md)\> \>& kids
 
 ## Methods
+* [AddActor](CPP_Entity_AddActor.md)
 * [AddForce](CPP_Entity_AddForce.md)
 * [AddPointForce](CPP_Entity_AddPointForce.md)
 * [AddScript](CPP_Entity_AddScript.md)
@@ -33,13 +34,17 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * [Copy](CPP_Entity_Copy.md)
 * [Detach](CPP_Entity_Detach.md)
 * [FindChild](CPP_Entity_FondChild.md)
+* [GetCollision](CPP_Entity_GetCollision.md)
+* [GetCollisionType](CPP_Entity_GetCollisionType.md)
 * [GetDistance](CPP_Entity_GetDistance.md)
 * [GetMass](CPP_Entity_GetMass.md)
 * [GetParent](CPP_Entity_GetParent.md)
 * [Hide](CPP_Entity_Hide.md)
 * [Instantiate](CPP_Entity_Instantiate.md)
+* [Move](CPP_Entity_Move.md)
 * [Reset](CPP_Entity_Reset.md)
 * [SetCollision](CPP_Entity_SetCollision.md)
+* [SetCollisionType](CPP_Entity_SetCollisionType.md)
 * [SetMass](CPP_Entity_SetMass.md)
 * [SetMaterial](CPP_Entity_SetMaterial.md)
 * [SetParent](CPP_Entity_SetParent.md)
