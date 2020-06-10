@@ -1,4 +1,4 @@
-# Enums #
+# Constants #
 
 #### AnimationMode ####
 - ANIMATION_LOOP
