@@ -204,15 +204,15 @@
 								},
 								{
 									"title": "Package",
-									"filename": "API_Package",
+									"filename": "API_Package"
 								},
 								{
 									"title": "Plugin",
-									"filename": "API_Plugin",
+									"filename": "API_Plugin"
 								},
 								{
 									"title": "Scene",
-									"filename": "API_Scene",
+									"filename": "API_Scene"
 								},				
 								{
 									"title": "Stream",
@@ -238,7 +238,7 @@
 								},
 								{
 									"title": "World",
-									"filename": "API_World",
+									"filename": "API_World"
 								},									
 								{
 									"title": "Self",
