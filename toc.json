@@ -89,10 +89,29 @@
 									]
 								},
 								{
+									"title": "Buffer",
+									"filename": "API_Buffer",
+									"topics":
+									[
+										{
+											"title": "StreamBuffer",
+											"filename": "API_StreamBuffer"
+										}
+									]
+								},								
+								{
 									"title": "Entity",
 									"filename": "API_Entity",
 									"topics":
 									[
+										{
+											"title": "Brush",
+											"filename": "API_Brush"
+										},
+										{
+											"title": "Camera",
+											"filename": "API_Camera"
+										},
 										{
 											"title": "Model",
 											"filename": "API_Model",
@@ -104,6 +123,22 @@
 												}
 											]
 										},
+										{
+											"title": "Light",
+											"filename": "API_Light"
+										},
+										{
+											"title": "Listener",
+											"filename": "API_Listener"
+										},
+										{
+											"title": "Pivot",
+											"filename": "API_Pivot"
+										},	
+										{
+											"title": "Terrain",
+											"filename": "API_Terrain"
+										},						
 										{
 											"title": "GetParent",
 											"filename": "API_Entity_GetParent"
@@ -166,6 +201,29 @@
 											"filename": "API_CreateNavMesh"
 										}
 									]
+								},
+								{
+									"title": "Package",
+									"filename": "API_Package",
+								},
+								{
+									"title": "Plugin",
+									"filename": "API_Plugin",
+								},
+								{
+									"title": "Scene",
+									"filename": "API_Scene",
+								},				
+								{
+									"title": "Stream",
+									"filename": "API_Stream",
+									"topics":
+									[
+										{
+											"title": "BufferStream",
+											"filename": "API_BufferStream"
+										}
+									]
 								},								
 								{
 									"title": "Window",
@@ -178,6 +236,10 @@
 										}
 									]
 								},
+								{
+									"title": "World",
+									"filename": "API_World",
+								},									
 								{
 									"title": "Self",
 									"filename": "API_Object_Self",
