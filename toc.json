@@ -465,6 +465,25 @@
 									"filename": "API_SpriteLayer"
 								},								
 								{
+									"title": "Statistics",
+									"topics":
+									[
+										{
+											"title": "AnimationStats",
+											"filename": "API_AnimationStats"
+										},
+										{
+											"title": "PhysicsStats",
+											"filename": "API_PhysicsStats"
+										},
+										{
+											"title": "RenderStats",
+											"filename": "API_RenderStats"
+										}										
+									]
+								},
+
+								{
 									"title": "Stream",
 									"filename": "API_Stream",
 									"topics":
@@ -516,6 +535,10 @@
 											"filename": "API_CreateWindow"
 										}
 									]
+								},
+								{
+									"title": "Workflow",
+									"filename": "API_Workflow"
 								},
 								{
 									"title": "World",
