@@ -259,11 +259,7 @@
 											"filename": "API_CreateFramebuffer"
 										}
 									]
-								},								
-								{
-									"title": "LOD",
-									"filename": "API_LOD"
-								},								
+								},															
 								{
 									"title": "GUI",
 									"filename": "API_GUI",
@@ -274,7 +270,15 @@
 											"filename": "API_CreateGUI"
 										}
 									]						
-								},							
+								},
+								{
+									"title": "Joint",
+									"filename": "API_Joint"
+								},
+								{
+									"title": "LOD",
+									"filename": "API_LOD"
+								},
 								{
 									"title": "Math",
 									"topics":
