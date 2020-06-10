@@ -24,12 +24,13 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 - const [Vec4](CPP_Vec4.md)& color
 - vector<shared_ptr<[Entity](CPP_Entity.md)\> \>& kids
 
-## Methods
+## Methods ##
 * [AddActor](CPP_Entity_AddActor.md)
 * [AddForce](CPP_Entity_AddForce.md)
 * [AddPointForce](CPP_Entity_AddPointForce.md)
 * [AddScript](CPP_Entity_AddScript.md)
 * [AddTorque](CPP_Entity_AddTorque.md)
+* [AlignToVector](CPP_Entity_AlignToVector.md)
 * [Attach](CPP_Entity_Attach.md)
 * [Copy](CPP_Entity_Copy.md)
 * [Detach](CPP_Entity_Detach.md)
