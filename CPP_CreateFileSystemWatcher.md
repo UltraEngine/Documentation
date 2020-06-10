@@ -19,7 +19,7 @@ Once the FileSystemWatcher object is created, it will monitor the directory to d
 - EVENT_FILE_CREATE
 - EVENT_FILE_DELETE
 - EVENT_FILE_RENAME
-- EVENT_FILE_CHANGE.
+- EVENT_FILE_CHANGE
 
 ## Example ##
 ```c++
