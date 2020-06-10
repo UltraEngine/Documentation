@@ -281,11 +281,7 @@
 													"filename": "API_Vec4_Normalize"
 												}
 											]							
-										},
-										{
-											"title": "Vertex",
-											"filename": "API_Vertex"							
-										}						
+										}					
 									]
 								},								
 								{
@@ -332,7 +328,11 @@
 											"filename": "API_BufferStream"
 										}
 									]
-								},								
+								},
+								{
+									"title": "Vertex",
+									"filename": "API_Vertex"							
+								},									
 								{
 									"title": "Window",
 									"filename": "API_Window",
@@ -347,7 +347,7 @@
 								{
 									"title": "World",
 									"filename": "API_World"
-								},									
+								},								
 								{
 									"title": "Self",
 									"filename": "API_Object_Self",
