@@ -13,4 +13,4 @@ This class describes a four-dimensional vector or an RGBA color.
 - **Vec4**(const float x, const float y)
 - **Vec4**(const float x, const float y, const float z)
 - **Vec4**(const float x, const float y, const float z, const float w)
-- Vec4(const [Vec3](CPP_Vec3.md)& v, const float w)
+- **Vec4**(const [Vec3](CPP_Vec3.md)& v, const float w)
