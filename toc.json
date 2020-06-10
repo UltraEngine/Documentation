@@ -446,7 +446,14 @@
 								},
 								{
 									"title": "Scene",
-									"filename": "API_Scene"
+									"filename": "API_Scene",
+									"topics":
+									[
+										{
+											"title": "Prefab",
+											"filename": "API_Prefab"
+										}
+									]
 								},	
 								{
 									"title": "Shader",
