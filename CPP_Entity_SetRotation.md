@@ -13,7 +13,7 @@ This method sets the rotation of an entity in 3-dimensional space, using local o
 | yaw | Y component of the specified rotation |
 | roll | Z component of the specified rotation |
 | rotation | the rotation to set, either as a Euler or quaternion |
-| global | indicates whether the rotation should be set in global or local space. |
+| global | indicates whether the rotation should be set in global or local space |
 
 ### Remarks
 An entity can be rotated in local or global space. Local space is relative to the entity parent's space. If the entity does not have a parent, local and global rotation is the same.
