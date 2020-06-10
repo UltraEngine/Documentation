@@ -35,6 +35,10 @@
 							"topics":
 							[
 								{
+									"title": "Actor",
+									"filename": "API_Actor"
+								},
+								{
 									"title": "Asset",
 									"filename": "API_Asset",
 									"topics":
@@ -79,9 +83,33 @@
 											]
 										},
 										{
+											"title": "Font",
+											"filename": "API_Font"
+										},						
+										{
+											"title": "Material",
+											"filename": "API_Material"
+										},
+										{
+											"title": "ShaderFamily",
+											"filename": "API_ShaderFamily"
+										},
+										{
+											"title": "ShaderModule",
+											"filename": "API_ShaderModule"
+										},
+										{
+											"title": "Sound",
+											"filename": "API_Sound"
+										},
+										{
+											"title": "Texture",
+											"filename": "API_Texture"
+										},
+										{
 											"title": "Reload",
 											"filename": "API_Asset_Reload"
-										},										
+										},
 										{
 											"title": "Save",
 											"filename": "API_Asset_Save"
@@ -372,6 +400,10 @@
 											"filename": "API_CreateMutex"
 										}
 									]
+								},
+								{
+									"title": "PickInfo",
+									"filename": "API_PickInfo"
 								},								
 								{
 									"title": "NavAgent",
