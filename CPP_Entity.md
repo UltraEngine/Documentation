@@ -26,9 +26,9 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 
 ## Methods
 * [AddForce](CPP_Entity_AddForce.md)
+* [AddPointForce](CPP_Entity_AddPointForce.md)
 * [AddScript](CPP_Entity_AddScript.md)
 * [AddTorque](CPP_Entity_AddTorque.md)
-* [AddPointForce](CPP_Entity_AddPointForce.md)
 * [Attach](CPP_Entity_Attach.md)
 * [Detach](CPP_Entity_Detach.md)
 * [FindChild](CPP_Entity_FondChild.md)
