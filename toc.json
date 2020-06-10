@@ -109,6 +109,17 @@
 											"filename": "API_Bone_SetMatrix"
 										}
 									]
+								},
+								{
+									"title": "Display",
+									"filename": "API_Display",
+									"topics":
+									[
+										{
+											"title": "ListDisplays",
+											"filename": "API_ListDisplays"
+										}
+									]
 								},								
 								{
 									"title": "Entity",
@@ -210,6 +221,17 @@
 										}
 									]						
 								},
+								{
+									"title": "Framebuffer",
+									"filename": "API_Framebuffer",
+									"topics":
+									[
+										{
+											"title": "CreateFramebuffer",
+											"filename": "API_CreateFramebuffer"
+										}
+									]
+								},								
 								{
 									"title": "LOD",
 									"filename": "API_LOD"
