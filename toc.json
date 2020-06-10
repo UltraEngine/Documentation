@@ -170,6 +170,25 @@
 									]									
 								},
 								{
+									"title": "Event",
+									"filename": "API_Event",
+									"topics":
+									[
+										{
+											"title": "EmitEvent",
+											"filename": "API_EmitEvent"
+										},
+										{
+											"title": "PeekEvent",
+											"filename": "API_PeekEvent"
+										},
+										{
+											"title": "WaitEvent",
+											"filename": "API_WaitEvent"
+										}										
+									]						
+								},
+								{
 									"title": "FileSystemWatcher",
 									"filename": "API_FileSystemWatcher",
 									"topics":
@@ -180,6 +199,17 @@
 										}
 									]						
 								},
+								{
+									"title": "GUI",
+									"filename": "API_GUI",
+									"topics":
+									[
+										{
+											"title": "CreateGUI",
+											"filename": "API_CreateGUI"
+										}
+									]						
+								},							
 								{
 									"title": "Math",
 									"topics":
@@ -332,7 +362,18 @@
 								{
 									"title": "Vertex",
 									"filename": "API_Vertex"							
-								},									
+								},
+								{
+									"title": "Widget",
+									"filename": "API_Widget",
+									"topics":
+									[
+										{
+											"title": "CreateWidget",
+											"filename": "API_CreateWidget"
+										}
+									]						
+								},								
 								{
 									"title": "Window",
 									"filename": "API_Window",
@@ -372,21 +413,21 @@
 					"topics":
 					[
 						{
-							"title": "Collisions",
+							"title": "Collision",
 							"filename": "Collision_File_Format"
 						},
 						{
-							"title": "Languages"
+							"title": "Language"
 						},
 						{
-							"title": "Materials",
+							"title": "Material",
 							"filename": "Material_File_Format"
 						},
 						{
-							"title": "Shader Families"
+							"title": "Shader Family"
 						},
 						{
-							"title": "Workflows"
+							"title": "Workflow"
 						}						
 					]
 				}				
