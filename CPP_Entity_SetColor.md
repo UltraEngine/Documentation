@@ -10,7 +10,7 @@
 
 | Name | Description |
 | --- | --- |
-| **color** | color to set |
+| **color** | RGBA color to set |
 | **r** | red component of the color to set |
 | **g** | green component of the color to set |
 | **b** | blue component of the color to set |
