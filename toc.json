@@ -100,6 +100,17 @@
 									]
 								},								
 								{
+									"title": "Bone",
+									"filename": "API_Bone",
+									"topics":
+									[
+										{
+											"title": "SetMatrix",
+											"filename": "API_Bone_SetMatrix"
+										}
+									]
+								},								
+								{
 									"title": "Entity",
 									"filename": "API_Entity",
 									"topics":
@@ -199,6 +210,10 @@
 										}
 									]						
 								},
+								{
+									"title": "LOD",
+									"filename": "API_LOD"
+								},								
 								{
 									"title": "GUI",
 									"filename": "API_GUI",
@@ -341,13 +356,25 @@
 									"filename": "API_Package"
 								},
 								{
+									"title": "Pixmap",
+									"filename": "API_Pixmap"
+								},								
+								{
 									"title": "Plugin",
 									"filename": "API_Plugin"
 								},
 								{
 									"title": "Scene",
 									"filename": "API_Scene"
-								},				
+								},	
+								{
+									"title": "Shader",
+									"filename": "API_Shader"
+								},
+								{
+									"title": "Skeleton",
+									"filename": "API_Skeleton"
+								},								
 								{
 									"title": "Stream",
 									"filename": "API_Stream",
@@ -358,6 +385,10 @@
 											"filename": "API_BufferStream"
 										}
 									]
+								},
+								{
+									"title": "TextureBuffer",
+									"filename": "API_TextureBuffer"
 								},
 								{
 									"title": "Vertex",
