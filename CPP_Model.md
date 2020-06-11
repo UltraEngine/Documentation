@@ -2,11 +2,11 @@
 The model class is used for visible 3D objects. Models can be loaded from files or created from scratch.
 
 ## Base Class
-* [Entity](../Object/CPP_Entity.md)
+* [Entity](CPP_Entity_32f.md)
 
 ## Members
-- const vector<shared_ptr<[LOD](API_LOD)\> \>& lods
-- const shared_ptr<[Skeleton](CPP_Skeleton)\>& skeleton
+- const vector<shared_ptr<[LOD](CPP_LOD.md)\> \>& lods
+- const shared_ptr<[Skeleton](CPP_Skeleton.md)\>& skeleton
 
 ## Methods
-- [Animate](API_Model_Animate)
+- [Animate](CPP_Model_Animate.md)
