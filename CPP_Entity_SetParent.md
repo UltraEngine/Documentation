@@ -2,7 +2,7 @@
 This method can be used to parent one entity to another. The child entity will move relative to the parent. If the parent is hidden, the child will also be hidden.
 
 ## Syntax ##
-- void **SetParent**(shared_ptr<[Entity](CPP_Entity.md)\> entity, const bool global = true)
+- void **SetParent**(shared_ptr<[Entity](CPP_Entity_32f.md)\> entity, const bool global = true)
 
 ### Parameters ###
 | Name | Description |
