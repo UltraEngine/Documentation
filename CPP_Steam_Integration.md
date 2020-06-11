@@ -11,7 +11,7 @@ Add this line of code anywhere in your "Project.h" file:
 #include "Steamworks/sdk/public/steam/steam_api.h"
 ```
 In Visual Studio, drag the file "Source\\Steamworks\\sdk\\redistributable_bin\\win64\\steam_api64.lib" into the solution explorer.
-![](Images/steamworks_lib.png)
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/steamworks_lib.png)
 
 Copy the file "Source\\Steamworks\\sdk\\redistributable_bin\\win64\\steam_api64.dll" into your project folder.
 
