@@ -11,5 +11,5 @@ This class provides an interface for loading and creating collision shapes for p
 - [CreateCollisionCylinder](CPP_CreateCollisionCylinder_32f.md)
 - [CreateCollisionConvexHull](CPP_CreateCollisionConvexHull.md)
 - [CreateCollisionMesh](CPP_CreateCollisionMesh.md)
-- [CreateCollisionSphere_32f](CPP_CreateCollisionSphere.md)
+- [CreateCollisionSphere](CPP_CreateCollisionSphere_32f.md)
 - [LoadCollision](CPP_LoadCollision.md)
