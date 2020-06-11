@@ -7,6 +7,7 @@ This structure describes a 4x4 matrix with double float precision.
 - [dVec4](API_dVec4) **j**
 - [dVec4](API_dVec4) **k**
 - [dVec4](API_dVec4) **t**
+
 ## Constructors ##
 - **dMat4**()
 - **dMat4**(const double scale)
