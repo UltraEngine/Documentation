@@ -386,9 +386,21 @@
 											"filename": "API_Entity_GetPickMode"
 										},
 										{
+											"title": "GetPosition",
+											"filename": "API_Entity_GetPosition_FP"
+										},
+										{
+											"title": "GetRotation",
+											"filename": "API_Entity_GetRotation_FP"
+										},										
+										{
 											"title": "GetQuaternion",
 											"filename": "API_Entity_GetQuaternion_FP"
 										},
+										{
+											"title": "GetScale",
+											"filename": "API_Entity_GetScale_FP"
+										},										
 										{
 											"title": "GetShadowMode",
 											"filename": "API_Entity_GetCShadowMode"
