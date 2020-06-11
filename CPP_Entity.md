@@ -64,7 +64,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 * [SetPickMode](CPP_Entity_SetPickMode.md)
 * [SetPosition](CPP_Entity_SetPosition_32f.md)
 * [SetRotation](CPP_Entity_SetRotation_32f.md)
-* [SetScale](CPP_Entity_SetScale.md)
+* [SetScale](CPP_Entity_SetScale_32f.md)
 * [SetShadowMode](CPP_Entity_SetShadowMode.md)
 * [SetVelocity](CPP_Entity_SetVelocity.md)
 * [Show](CPP_Entity_Show.md)
