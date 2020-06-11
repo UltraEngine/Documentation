@@ -9,7 +9,7 @@ This structure describes a quaternion rotation with double float precision.
 
 ## Constructors ##
 - **Quat**(const double x, const double y, const double z, const double w)
-- **Quat**(const dVec3& euler)
+- **Quat**(const [dVec3](CPP_dVec.md)& euler)
 - **Quat**(const double angle, const dVec3& axis)
 
 ## Methods ##
