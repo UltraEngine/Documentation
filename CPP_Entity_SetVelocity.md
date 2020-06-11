@@ -13,5 +13,5 @@ This method sets the velocity of an entity.
 | **x** | x component of velocity |
 | **y** | y component of velocity |
 | **z** | z component of velocity |
-| **omega** | velocity to set, in meters per second |
+| **velocity** | velocity to set, in meters per second |
 | **global** | if set to true velocity is in global space, otherwise local space is used |
