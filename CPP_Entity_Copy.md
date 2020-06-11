@@ -1,5 +1,5 @@
 # Entity::Copy #
-This method returns a unique copy of the entity. Resources such as model meshes are duplicated, creating a new unique object. For faster performance and lower memory usage, consider using the [Instaniate](CPP_Entity_Instaniate.md) method instead.
+This method returns a unique copy of the entity. Resources such as model meshes are duplicated, creating a new unique object. For faster performance and lower memory usage, consider using the [Instantiate](CPP_Entity_Instantiate.md) method instead.
 
 ## Syntax ##
 - shared_ptr<[Entity](CPP_Entity.md)\> Copy()
