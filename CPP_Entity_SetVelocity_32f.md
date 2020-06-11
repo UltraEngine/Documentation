@@ -4,8 +4,6 @@ This method sets the velocity of an entity.
 ## Syntax ##
 - void **SetVelocity**(const float x, const float y, const float z, const bool recursive = true)
 - void **SetVelocity**(const [Vec3](CPP_Vec3.md)& velocity, const bool recursive = true)
-- void **SetVelocity**(const double x, const double y, const double z, const bool recursive = true)
-- void **SetVelocity**(const [dVec3](CPP_dVec3.md)& velocity, const bool recursive = true)
 
 ### Parameters ###
 | Name | Description |
