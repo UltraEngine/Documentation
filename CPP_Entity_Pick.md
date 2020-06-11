@@ -14,8 +14,8 @@ This method performs a ray intersection test on the entity.
 | **x1** | x component of the ray end position |
 | **y1** | y component of the ray end position |
 | **z1** | z component of the ray end position |
-| **p0** | ray start position |
-| **p1** | ray end position |
+| **p0** | ray start position, in local space |
+| **p1** | ray end position, in local space |
 | **pickinfo** | structure containing information about the ray intersection result |
 | **radius** | if greater than zero a swept sphere intersection test will be performed |
 | **closest** | if set to true the closest intersected point will be found, otherwise the routine will return on the first hit |
