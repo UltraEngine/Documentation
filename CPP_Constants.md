@@ -1,22 +1,22 @@
 # Constants #
 
-### AnimationMode ###
+#### AnimationMode ####
 - ANIMATION_LOOP
 - ANIMATION_ONCE
 - ANIMATION_STOP
 
-### CollisionType ###
+#### CollisionType ####
 - COLLISION_NONE
 - COLLISION_PROP
 - COLLISION_SCENE
 - COLLISION_PLAYER
 - COLLISION_DEBRIS
 
-### EventID ###
+#### EventID ####
 - EVENT_WINDOW_CLOSE
 - EVENT_MOUSE_DOWN
 
-### PickMode ###
+#### PickMode ####
 - PICK_NONE
 - PICK_SPHERE
 - PICK_MESH
