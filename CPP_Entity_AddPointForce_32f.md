@@ -2,7 +2,7 @@
 This method applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity.
 
 ## Syntax ##
-- void **AddPointForce**(const float fx, const float fy, const float fz, const dFloat x, const dFloat y, const dFloat z, const bool 
+- void **AddPointForce**(const float fx, const float fy, const float fz, const float x, const float y, const float z, const bool 
 - void **AddPointForce**(const [Vec3](CPP_Vec3.md)& force, const [Vec3](CPP_Vec3.md)& position), const bool global = true)
 
 ### Parameters ###
