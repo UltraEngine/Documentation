@@ -37,10 +37,6 @@ int main(int argc, const char* argv[])
 
     ...
 
-    while (window->Closed() == false)
-    {
-        ...
-    }
 
     SteamAPI_Shutdown();
     return 0;
