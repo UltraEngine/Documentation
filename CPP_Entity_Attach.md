@@ -18,4 +18,4 @@ This method attaches an entity to a model bone or a navigation agent. This provi
 Returns true if the attachment is valid, otherwise false is returned.
 
 ## Remarks ##
-For bone attachments, the bone must belong to the skeleton the model is currently using. To detach an entity from an attached bone or navigation agent, you can call this method with NULL as the first parameter.
+For bone attachments, the bone must belong to the skeleton the model is currently using.
