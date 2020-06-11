@@ -410,6 +410,10 @@
 											"filename": "API_Entity_GetVelocity_FP"
 										},
 										{
+											"title": "GetWorld",
+											"filename": "API_Entity_GetWorld"
+										},
+										{
 											"title": "Hide",
 											"filename": "API_Entity_Hide"
 										},
