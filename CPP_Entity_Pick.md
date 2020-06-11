@@ -1,7 +1,7 @@
 # Entity::Pick #
 This method performs a ray intersection test on the entity.
 
-## Syntax (32f) ##
+## Syntax ##
 - bool **Pick**(const float x0, const float y0, const float z0,  
 const float x1, const float y1, const float z1,  
 [PickInfo](CPP_PickInfo.cpp)& pickinfo,  
@@ -16,8 +16,6 @@ const float radius = 0.0,
 const bool closest = false,  
 const bool recursive = false,  
 const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
-
-## Syntax (64f) ##
 - bool **Pick**(const double x0, const double y0, const double z0,  
 const double x1, const double y1, const double z1,  
 [PickInfo](CPP_PickInfo.cpp)& pickinfo,  
