@@ -15,4 +15,4 @@ This method applies a force, measured in Newtons, to an entity at a specified po
 | **y** | y component of point where the force is applied |
 | **z** | z component of point where the force is applied |
 | **force** | force to add |
-| **point** | point where the force is applied |
+| **position** | point where the force is applied |
