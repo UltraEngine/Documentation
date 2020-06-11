@@ -1,15 +1,17 @@
 # Constants #
 
-#### AnimationMode ####
+### AnimationMode ###
 - ANIMATION_LOOP
 - ANIMATION_ONCE
 - ANIMATION_STOP
 
-#### EventID ####
+### CollisionTyoe ###
+
+### EventID ###
 - EVENT_WINDOW_CLOSE
 - EVENT_MOUSE_DOWN
 
-#### PickMode ####
+### PickMode ###
 - PICK_NONE
 - PICK_SPHERE
 - PICK_MESH
