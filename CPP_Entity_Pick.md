@@ -2,16 +2,36 @@
 This method performs a ray intersection test on the entity.
 
 ## Syntax (32f) ##
-- bool **Pick**(const float x0, 
-const float y0, 
-const float z0, 
-const float x1, 
-const float y1, const float z1, PickInfo& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const CollisionType collisiontype = COLLISION_NONE)
-- bool **Pick**(const Vec3& p0, const Vec3& p1, PickInfo& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const CollisionType collisiontype = COLLISION_NONE)
+- bool **Pick**(const float x0, const float y0, const float z0,  
+const float x1, const float y1, const float z1,  
+PickInfo& pickinfo,  
+const float radius = 0.0,  
+const bool closest = false,  
+const bool recursive = false,  
+const CollisionType collisiontype = COLLISION_NONE)
+- bool **Pick**(const [Vec3](CPP_Vec3.md)& p0,  
+const [Vec3](CPP_Vec3.md)& p1,  
+PickInfo& pickinfo,  
+const float radius = 0.0,  
+const bool closest = false,  
+const bool recursive = false,  
+const CollisionType collisiontype = COLLISION_NONE)
 
 ## Syntax (64f) ##
-- bool **Pick**(const double x0, const double y0, const double z0, const double x1, const double y1, const double z1, PickInfo& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const CollisionType collisiontype = COLLISION_NONE)
-- bool **Pick**(const dVec3& p0, const dVec3& p1, PickInfo& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const CollisionType collisiontype = COLLISION_NONE)
+- bool **Pick**(const double x0, const double y0, const double z0,  
+const double x1, const double y1, const double z1,  
+PickInfo& pickinfo,  
+const double radius = 0.0,  
+const bool closest = false,  
+const bool recursive = false,  
+const CollisionType collisiontype = COLLISION_NONE)
+- bool **Pick**(const [dVec3](CPP_dVec3.md)& p0,  
+const [dVec3](CPP_dVec3.md)& p1,  
+PickInfo& pickinfo,  
+const float radius = 0.0,  
+const bool closest = false,  
+const bool recursive = false,  
+const CollisionType collisiontype = COLLISION_NONE)
 
 ### Parameters ###
 | Name | Description |
