@@ -2,8 +2,8 @@
 This method returns a unique copy of the entity. Resources such as model meshes are duplicated, creating a new unique object. For faster performance and lower memory usage, consider using the [Instaniate](CPP_Entity_Instaniate.md) method instead.
 
 ## Syntax ##
-- shared_ptr<[Entity](CPP_Entity_Copy.md)\> Copy()
-- shared_ptr<[Entity](CPP_Entity_Copy.md)\> Copy(shared_ptr<[World](CPP_World.cpp)> world, const bool recursive = true, const bool callstart = true)
+- shared_ptr<[Entity](CPP_Entity.md)\> Copy()
+- shared_ptr<[Entity](CPP_Entity.md)\> Copy(shared_ptr<[World](CPP_World.cpp)> world, const bool recursive = true, const bool callstart = true)
 
 ### Parameters ###
 | Name | Description |
@@ -11,4 +11,3 @@ This method returns a unique copy of the entity. Resources such as model meshes 
 | **world** | world to create new copy in | 
 | **recursive** | if set to true the entity subhierarchy will also be copied |
 | **callstart** | if set to true the Start function will be called for all attached actors and scripts |
-
