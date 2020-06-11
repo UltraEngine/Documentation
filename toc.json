@@ -228,18 +228,122 @@
 										{
 											"title": "Copy",
 											"filename": "API_Entity_Copy"
+										},
+										{
+											"title": "Detach",
+											"filename": "API_Entity_Detach"
+										},		
+										{
+											"title": "FindChild",
+											"filename": "API_Entity_FindChild"
+										},
+										{
+											"title": "GetCollision",
+											"filename": "API_Entity_GetCollision"
 										},										
+										{
+											"title": "GetCollisionType",
+											"filename": "API_Entity_GetCollisionType"
+										},
+										{
+											"title": "GetColor",
+											"filename": "API_Entity_GetColor"
+										},
+										{
+											"title": "GetBounds",
+											"filename": "API_Entity_GetBounds"
+										},
+										{
+											"title": "GetDistance",
+											"filename": "API_Entity_GetDistance"
+										},
+										{
+											"title": "GetMass",
+											"filename": "API_Entity_GetMass"
+										},
+										{
+											"title": "GetOmega",
+											"filename": "API_Entity_GetOmega"
+										},
 										{
 											"title": "GetParent",
 											"filename": "API_Entity_GetParent"
 										},
 										{
-											"title": "GetPosition",
-											"filename": "API_Entity_GetPosition"
+											"title": "GetPickMode",
+											"filename": "API_Entity_GetPickMode"
+										},
+										{
+											"title": "GetQuaternion",
+											"filename": "API_Entity_GetQuaternion"
+										},
+										{
+											"title": "GetShadowMode",
+											"filename": "API_Entity_GetCShadowMode"
+										},
+										{
+											"title": "GetVelocity",
+											"filename": "API_Entity_GetVelocity"
+										},
+										{
+											"title": "Hide",
+											"filename": "API_Entity_Hide"
+										},
+										{
+											"title": "Hidden",
+											"filename": "API_Entity_Hidden"
+										},
+										{
+											"title": "Instantiate",
+											"filename": "API_Entity_Instantiate"
+										},
+										{
+											"title": "MakeStatic",
+											"filename": "API_Entity_MakeStatic"
+										},
+										{
+											"title": "Move",
+											"filename": "API_Entity_Move"
+										},
+										{
+											"title": "Pick",
+											"filename": "API_Entity_Pick"
+										},
+										{
+											"title": "Point",
+											"filename": "API_Entity_Point"
+										},
+										{
+											"title": "Reset",
+											"filename": "API_Entity_Reset"
+										},
+										{
+											"title": "SetCollision",
+											"filename": "API_Entity_SetCollision"
+										},
+										{
+											"title": "SetCollisionType",
+											"filename": "API_Entity_SetCollisionType"
+										},
+										{
+											"title": "SetColor",
+											"filename": "API_Entity_SetColor"
+										},
+										{
+											"title": "SetMass",
+											"filename": "API_Entity_SetMass"
+										},
+										{
+											"title": "SetOmega",
+											"filename": "API_Entity_SetOmega"
 										},
 										{
 											"title": "SetParent",
 											"filename": "API_Entity_SetParent"
+										},
+										{
+											"title": "SetPickMode",
+											"filename": "API_Entity_SetPickMode"
 										},
 										{
 											"title": "SetPosition",
@@ -252,7 +356,27 @@
 										{
 											"title": "SetScale",
 											"filename": "API_Entity_SetScale"
-										}											
+										},
+										{
+											"title": "SetShadowMode",
+											"filename": "API_Entity_SetShadowMode"
+										},
+										{
+											"title": "SetVelocity",
+											"filename": "API_Entity_SetVelocity"
+										},
+										{
+											"title": "Show",
+											"filename": "API_Entity_Show"
+										},
+										{
+											"title": "Translate",
+											"filename": "API_Entity_Translate"
+										},
+										{
+											"title": "Turn",
+											"filename": "API_Entity_Turn"
+										}										
 									]									
 								},
 								{
