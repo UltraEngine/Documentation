@@ -22,7 +22,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 - const [Vec3](CPP_Vec3.md)& scale
 - const [Mat4](CPP_Mat4.md)& matrix
 - const [Vec4](CPP_Vec4.md)& color
-- vector<shared_ptr<[Entity](CPP_Entity.md)\> \>& kids
+- vector<shared_ptr<[Entity](CPP_Entity_32f.md)\> \>& kids
 
 ## Methods ##
 * [AddActor](CPP_Entity_AddActor.md)
