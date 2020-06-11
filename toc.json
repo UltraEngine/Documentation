@@ -347,7 +347,7 @@
 										},
 										{
 											"title": "SetPosition",
-											"filename": "API_Entity_SetPosition"
+											"filename": "API_Entity_SetPosition_FP"
 										},
 										{
 											"title": "SetRotation",
