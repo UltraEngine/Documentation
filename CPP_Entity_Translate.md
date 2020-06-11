@@ -14,3 +14,4 @@ This method translates an entity in its parent's space or world space.
 | **y** | y component of the translation vector |
 | **z** | z component of the translation vector |
 | **translation** | translation vector |
+| **global** | if set to true global space is used, otherwise the entity's parent space is used |
