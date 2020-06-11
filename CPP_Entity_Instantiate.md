@@ -1,5 +1,5 @@
 # Entity::Instantiate #
-This method returns an instanced copy of the entity. Resources such as model meshes are shared.
+This method returns an instanced copy of the entity. Resources such as model meshes are shared. If you want to create a unique copy of the entity, use the [Copy](CPP_Entity_Copy.md) method instead.
 
 ## Syntax ##
 - shared_ptr<[Entity](CPP_Entity.md)\> Instantiate()
