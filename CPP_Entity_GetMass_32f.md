@@ -1,15 +1,11 @@
 # Entity::GetMass #
 This method is used to retrieve the entity's physical mass.
 
-## Syntax (32f) ##
+## Syntax ##
 
 - float **GetMass**()
 
 
-## Syntax (64f) ##
-
-
-- double **GetMass**()
 
 
 
