@@ -167,6 +167,10 @@
 											"filename": "API_Camera"
 										},
 										{
+											"title": "Emitter",
+											"filename": "API_Emitter"
+										},										
+										{
 											"title": "Model",
 											"filename": "API_Model",
 											"topics":
@@ -192,7 +196,39 @@
 										{
 											"title": "Terrain",
 											"filename": "API_Terrain"
-										},						
+										},
+										{
+											"title": "AddActor",
+											"filename": "API_Entity_AddActor"
+										},										
+										{
+											"title": "AddForce",
+											"filename": "API_Entity_AddForce"
+										},
+										{
+											"title": "AddPointForce",
+											"filename": "API_Entity_AddPointForce"
+										},
+										{
+											"title": "AddScript",
+											"filename": "API_Entity_AddScript"
+										},										
+										{
+											"title": "AddTorque",
+											"filename": "API_Entity_AddTorque"
+										},
+										{
+											"title": "AlignToVector",
+											"filename": "API_Entity_AlignToVector"
+										},										
+										{
+											"title": "Attach",
+											"filename": "API_Entity_Attach"
+										},
+										{
+											"title": "Copy",
+											"filename": "API_Entity_Copy"
+										},										
 										{
 											"title": "GetParent",
 											"filename": "API_Entity_GetParent"
