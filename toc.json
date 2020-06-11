@@ -24,10 +24,6 @@
 			"topics":
 			[
 				{
-					"title": "Constants",
-					"filename": "API_Constants"
-				},
-				{
 					"title": "Classes",
 					"openstate": true,
 					"topics":
@@ -758,6 +754,10 @@
 							"filename": "API_PickInfo_FP"
 						}					
 					]
+				},
+				{
+					"title": "Constants",
+					"filename": "API_Constants"
 				},				
 				{
 					"title": "Functions",
