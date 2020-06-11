@@ -4,8 +4,6 @@ This method translates an entity in its parent's space or world space.
 ## Syntax ##
 - void **Translate**(const float x, const float y, const float z, const bool global = false)
 - void **Translate**(const [Vec3](CPP_Vec3.md)& translation, const bool global = false)
-- void **Translate**(const double x, const double y, const double z, const bool global = false)
-- void **Translate**(const [dVec3](CPP_dVec3.md)& translation, const bool global = false)
 
 ### Parameters ###
 | Name | Description |
