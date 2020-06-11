@@ -3,8 +3,8 @@ This method attaches an entity to a model bone or a navigation agent. This provi
 
 ## Syntax ##
 - bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, shared_ptr<[Bone](CPP_Bone.md)> bone);
-- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, const std::string& bone);
-- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, const std::wstring& bone);
+- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, const string& bone);
+- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, const wstring& bone);
 - bool **Attach**(shared_ptr<[NavAgent](CPP_NavAgent.md)> agent);
 
 ### Parameters ###
