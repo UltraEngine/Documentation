@@ -1,0 +1,19 @@
+# Entity::AddPointForce #
+This method applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity.
+
+## Syntax ##
+- void **AddPointForce**(const [Vec3](CPP_Vec3.md)& force, const Vec3& position), const bool global = true)
+- void **AddPointForce**(const [dVec3](CPP_dVec3.md)& force, const dVec3& position), const bool global = true)
+- void **AddPointForce**(const dFloat fx, const dFloat fy, const dFloat fz, const dFloat x, const dFloat y, const dFloat z, const bool global = true)
+
+### Parameters ###
+| Name | Description |
+| --- | --- |
+| **fx** | x component of the force to add |
+| **fy** | y component of the force to add |
+| **fz** | z component of the force to add |
+| **x** | x component of point where the force is applied |
+| **y** | y component of point where the force is applied |
+| **z** | z component of point where the force is applied |
+| **force** | force to add |
+| **point** | point where the force is applied |
