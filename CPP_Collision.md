@@ -5,10 +5,10 @@ This class provides an interface for loading and creating collision shapes for p
 - [Asset](CPP_Asset.md)
 
 ## Functions ##
-- [CreateCollisionBox_32f](CPP_CreateCollisionBox.md)
+- [CreateCollisionBox](CPP_CreateCollisionBox_32f.md)
 - [CreateCollisionCompound](CPP_CreateCollisionCompound.md)
-- [CreateCollisionCone_32f](CPP_CreateCollisionCone.md)
-- [CreateCollisionCylinder_32f](CPP_CreateCollisionCylinder.md)
+- [CreateCollisionCone](CPP_CreateCollisionCone_32f.md)
+- [CreateCollisionCylinder](CPP_CreateCollisionCylinder_32f.md)
 - [CreateCollisionConvexHull](CPP_CreateCollisionConvexHull.md)
 - [CreateCollisionMesh](CPP_CreateCollisionMesh.md)
 - [CreateCollisionSphere_32f](CPP_CreateCollisionSphere.md)
