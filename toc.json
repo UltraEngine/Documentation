@@ -53,20 +53,20 @@
 											"topics":
 											[
 												{
-													"title": "CreateCollisionBox_FP",
-													"filename": "API_CreateCollisionBox"
+													"title": "CreateCollisionBox",
+													"filename": "API_CreateCollisionBox_FP"
 												},
 												{
 													"title": "CreateCollisionCompound",
 													"filename": "API_CreateCollisionCompound"
 												},
 												{
-													"title": "CreateCollisionCone_FP",
-													"filename": "API_CreateCollisionCone"
+													"title": "CreateCollisionCone",
+													"filename": "API_CreateCollisionCone_FP"
 												},												
 												{
-													"title": "CreateCollisionCylinder_FP",
-													"filename": "API_CreateCollisionCylinder"
+													"title": "CreateCollisionCylinder",
+													"filename": "API_CreateCollisionCylinder_FP"
 												},												
 												{
 													"title": "CreateCollisionConvexHull",
@@ -77,8 +77,8 @@
 													"filename": "API_CreateCollisionMesh"
 												},
 												{
-													"title": "CreateCollisionSphere_FP",
-													"filename": "API_CreateCollisionSphere"
+													"title": "CreateCollisionSphere",
+													"filename": "API_CreateCollisionSphere_FP"
 												},
 												{
 													"title": "LoadCollision",
