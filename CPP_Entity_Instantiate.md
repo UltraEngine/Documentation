@@ -2,8 +2,8 @@
 This method returns an instanced copy of the entity. Resources such as model meshes are shared. If you want to create a unique copy of the entity, use the [Copy](CPP_Entity_Copy.md) method instead.
 
 ## Syntax ##
-- shared_ptr<[Entity](CPP_Entity.md)\> Instantiate()
-- shared_ptr<[Entity](CPP_Entity.md)\> Instantiate(shared_ptr<[World](CPP_World.md)> world, const bool recursive = true, const bool callstart = true)
+- shared_ptr<[Entity](CPP_Entity_32f.md)\> Instantiate()
+- shared_ptr<[Entity](CPP_Entity_32f.md)\> Instantiate(shared_ptr<[World](CPP_World.md)> world, const bool recursive = true, const bool callstart = true)
 
 ### Parameters ###
 | Name | Description |
