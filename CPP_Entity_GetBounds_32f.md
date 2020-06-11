@@ -2,7 +2,7 @@
 This method retrieves the entity bounding box.
 
 ## Syntax ##
-- [AABB](CPP_AABB.md) **GetBounds**(const EntityBounds mode = BOUNDS_GLOBAL)
+- [AABB](CPP_AABB.md) **GetBounds**(const [EntityBounds](CPP_Constants.md) mode = BOUNDS_GLOBAL)
 
 ### Parameters ###
 | Name | Description |
