@@ -1,7 +1,6 @@
 # dMat4 #
 This structure describes a 4x4 matrix with double float precision.
 
-
 ## Members ##
 - [dVec4](API_dVec4) **i**
 - [dVec4](API_dVec4) **j**
