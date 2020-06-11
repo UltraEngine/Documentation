@@ -3,9 +3,9 @@ This method moves an entity in local space.
 
 ## Syntax ##
 - void **Move**(const float x, const float y, const float z)
-- void **Move**(const Vec3& movement)
+- void **Move**(const [Vec3](CPP_Vec3.md)& movement)
 - void **Move**(const double x, const double y, const double z)
-- void **Move**(const dVec3& movement)
+- void **Move**(const [dVec3](CPP_dVec3.md)& movement)
 
 ### Parameters ###
 | Name | Description |
