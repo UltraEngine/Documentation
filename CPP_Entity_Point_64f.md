@@ -2,7 +2,7 @@
 This method aligns an axis of the entity to point to another entity or a point in global space.
 
 ## Syntax ##
-- void **Point**(shared_ptr<[Entity](CPP_Entity.md)\> entity, const int axis = 2, const float rate = 1.0, const double roll = 0.0) 
+- void **Point**(shared_ptr<[Entity](CPP_Entity_32f.md)\> entity, const int axis = 2, const float rate = 1.0, const double roll = 0.0) 
 - void **Point**(const double x, const double y, const double z, const int axis = 2, const float rate = 1.0, const double roll = 0.0) 
 - void **Point**(const [dVec3](CPP_dVec3.md)& position, const int axis = 2, const float rate = 1.0, const double roll = 0.0) 
 
