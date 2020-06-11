@@ -455,6 +455,10 @@
 									"topics":
 									[
 										{
+											"title": "dAABB",
+											"filename": "API_dAABB"
+										},
+										{
 											"title": "dMat3",
 											"filename": "API_dMat3"
 										},
@@ -482,6 +486,10 @@
 											"title": "dVec4",
 											"filename": "API_dVec4"
 										},
+										{
+											"title": "AABB",
+											"filename": "API_AABB"
+										},										
 										{
 											"title": "Mat3",
 											"filename": "API_Mat3"
