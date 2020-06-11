@@ -355,7 +355,7 @@
 										},
 										{
 											"title": "SetScale",
-											"filename": "API_Entity_SetScale"
+											"filename": "API_Entity_SetScale_FP"
 										},
 										{
 											"title": "SetShadowMode",
