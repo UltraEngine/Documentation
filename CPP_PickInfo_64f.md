@@ -1,8 +1,8 @@
 # PickInfo #
 
 ## Members ##
-- [Vec3](CPP_dVec3.md) position
-- [Vec3](CPP_dVec3.md) normal
+- [dVec3](CPP_dVec3.md) position
+- [dVec3](CPP_dVec3.md) normal
 - [Entity](CPP_Entity.md) entity
 - [Mesh](CPP_Mesh.md) mesh
 - [Face](CPP_Face.md) face
