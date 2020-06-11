@@ -2,7 +2,7 @@
 Thsi method retrieves the entity's angular velocity, in radians per second.
 
 ## Syntax ##
-- dFloat **GetOmega**()
+- Vec3 **GetOmega**()
 
 ## Returns ##
 Returns the entity's angular velocity, in radians per second.
