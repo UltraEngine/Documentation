@@ -1,5 +1,5 @@
 # Entity::Copy #
-This method returns a copy of the entity. Resources such as model meshes are duplicated, creating a new unique object.
+This method returns a unique copy of the entity. Resources such as model meshes are duplicated, creating a new unique object. For faster performance and lower memory usage, consider using the [Instaniate](CPP_Entity_Instaniate.md) method instead.
 
 ## Syntax ##
 - shared_ptr<[Entity](CPP_Entity_Copy.md)\> Copy()
@@ -12,5 +12,3 @@ This method returns a copy of the entity. Resources such as model meshes are dup
 | **recursive** | if set to true the entity subhierarchy will also be copied |
 | **callstart** | if set to true the Start function will be called for all attached actors and scripts |
 
-## Remarks ##
-For faster performance and lower memory usage, consider using the [Instaniate](CPP_Entity_Instaniate.md) method.
