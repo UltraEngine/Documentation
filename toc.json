@@ -203,11 +203,11 @@
 										},										
 										{
 											"title": "AddForce",
-											"filename": "API_Entity_AddForce"
+											"filename": "API_Entity_AddForce_FP"
 										},
 										{
 											"title": "AddPointForce",
-											"filename": "API_Entity_AddPointForce"
+											"filename": "API_Entity_AddPointForce_FP"
 										},
 										{
 											"title": "AddScript",
@@ -215,11 +215,11 @@
 										},										
 										{
 											"title": "AddTorque",
-											"filename": "API_Entity_AddTorque"
+											"filename": "API_Entity_AddTorque_FP"
 										},
 										{
 											"title": "AlignToVector",
-											"filename": "API_Entity_AlignToVector"
+											"filename": "API_Entity_AlignToVector_FP"
 										},										
 										{
 											"title": "Attach",
@@ -251,19 +251,19 @@
 										},
 										{
 											"title": "GetBounds",
-											"filename": "API_Entity_GetBounds"
+											"filename": "API_Entity_GetBounds_FP"
 										},
 										{
 											"title": "GetDistance",
-											"filename": "API_Entity_GetDistance"
+											"filename": "API_Entity_GetDistance_FP"
 										},
 										{
 											"title": "GetMass",
-											"filename": "API_Entity_GetMass"
+											"filename": "API_Entity_GetMass_FP"
 										},
 										{
 											"title": "GetOmega",
-											"filename": "API_Entity_GetOmega"
+											"filename": "API_Entity_GetOmega_FP"
 										},
 										{
 											"title": "GetParent",
@@ -275,7 +275,7 @@
 										},
 										{
 											"title": "GetQuaternion",
-											"filename": "API_Entity_GetQuaternion"
+											"filename": "API_Entity_GetQuaternion_FP"
 										},
 										{
 											"title": "GetShadowMode",
@@ -283,7 +283,7 @@
 										},
 										{
 											"title": "GetVelocity",
-											"filename": "API_Entity_GetVelocity"
+											"filename": "API_Entity_GetVelocity_FP"
 										},
 										{
 											"title": "Hide",
@@ -303,7 +303,7 @@
 										},
 										{
 											"title": "Move",
-											"filename": "API_Entity_Move"
+											"filename": "API_Entity_Move_FP"
 										},
 										{
 											"title": "Pick",
@@ -311,7 +311,7 @@
 										},
 										{
 											"title": "Point",
-											"filename": "API_Entity_Point"
+											"filename": "API_Entity_Point_FP"
 										},
 										{
 											"title": "Reset",
@@ -331,11 +331,11 @@
 										},
 										{
 											"title": "SetMass",
-											"filename": "API_Entity_SetMass"
+											"filename": "API_Entity_SetMass_FP"
 										},
 										{
 											"title": "SetOmega",
-											"filename": "API_Entity_SetOmega"
+											"filename": "API_Entity_SetOmega_FP"
 										},
 										{
 											"title": "SetParent",
@@ -363,7 +363,7 @@
 										},
 										{
 											"title": "SetVelocity",
-											"filename": "API_Entity_SetVelocity"
+											"filename": "API_Entity_SetVelocity_FP"
 										},
 										{
 											"title": "Show",
@@ -371,7 +371,7 @@
 										},
 										{
 											"title": "Translate",
-											"filename": "API_Entity_Translate"
+											"filename": "API_Entity_Translate_FP"
 										},
 										{
 											"title": "Turn",
