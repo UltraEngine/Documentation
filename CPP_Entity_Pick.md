@@ -3,27 +3,7 @@ This method performs a ray intersection test on the entity.
 
 ## Syntax ##
 - bool **Pick**(const float x0, const float y0, const float z0, const float x1, const float y1, const float z1, [PickInfo](CPP_PickInfo.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
-- bool **Pick**(const [Vec3](CPP_Vec3.md)& p0,  
-const [Vec3](CPP_Vec3.md)& p1,  
-[PickInfo](CPP_PickInfo.md)& pickinfo,  
-const float radius = 0.0,  
-const bool closest = false,  
-const bool recursive = false,  
-const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
-- bool **Pick**(const double x0, const double y0, const double z0,  
-const double x1, const double y1, const double z1,  
-[PickInfo](CPP_PickInfo.md)& pickinfo,  
-const double radius = 0.0,  
-const bool closest = false,  
-const bool recursive = false,  
-const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
-- bool **Pick**(const [dVec3](CPP_dVec3.md)& p0,  
-const [dVec3](CPP_dVec3.md)& p1,  
-[PickInfo](CPP_PickInfo.md)& pickinfo,  
-const float radius = 0.0,  
-const bool closest = false,  
-const bool recursive = false,  
-const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
+- bool **Pick**(const [Vec3](CPP_Vec3.md)& p0, const [Vec3](CPP_Vec3.md)& p1, [PickInfo](CPP_PickInfo.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
 
 ### Parameters ###
 | Name | Description |
