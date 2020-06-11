@@ -5,7 +5,6 @@ This method is used to calculate the distance in meters to another entity or to 
 
 - float **GetDistance**(shared_ptr<[Entity](CPP_Entity.md)\> entity)
 - float **GetDistance**(shared_ptr<[Vec3](CPP_Vec3.md)\> point)
-- float **GetDistance**(shared_ptr<[dVec3](CPP_dVec3.md)\> point)
 
 ### Parameters ###
 
