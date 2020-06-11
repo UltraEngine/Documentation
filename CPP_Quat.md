@@ -1,5 +1,5 @@
 # Quat #
-This structure describes a quaternion rotation. Quaternions are more accurate than Euler angles, but more difficult to intuitively understand.
+This structure describes a quaternion rotation. Quaternions are more accurate than Euler angles because they do not suffer from Gimbal lock, but they more difficult to intuitively understand.
 
 ## Members ##
 - float **x**
