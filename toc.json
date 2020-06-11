@@ -449,119 +449,7 @@
 								{
 									"title": "LOD",
 									"filename": "API_LOD"
-								},
-								{
-									"title": "Math",
-									"topics":
-									[
-										{
-											"title": "dAABB",
-											"filename": "API_dAABB"
-										},
-										{
-											"title": "dMat3",
-											"filename": "API_dMat3"
-										},
-										{
-											"title": "dMat4",
-											"filename": "API_dMat4"
-										},
-										{
-											"title": "dPlane",
-											"filename": "API_dPlane"
-										},
-										{
-											"title": "dQuat",
-											"filename": "API_dQuat"
-										},						
-										{
-											"title": "dVec2",
-											"filename": "API_dVec2"
-										},						
-										{
-											"title": "dVec3",
-											"filename": "API_dVec3"
-										},
-										{
-											"title": "dVec4",
-											"filename": "API_dVec4"
-										},
-										{
-											"title": "AABB",
-											"filename": "API_AABB"
-										},										
-										{
-											"title": "Mat3",
-											"filename": "API_Mat3"
-										},
-										{
-											"title": "Mat4",
-											"filename": "API_Mat4"
-										},			
-										{
-											"title": "Plane",
-											"filename": "API_Plane"
-										},
-										{
-											"title": "Quat",
-											"filename": "API_Quat"
-										},
-										{
-											"title": "Vec2",
-											"filename": "API_Vec2"
-										},						
-										{
-											"title": "Vec3",
-											"filename": "API_Vec3",
-											"topics":
-											[
-												{
-													"title": "DistanceToPoint",
-													"filename": "API_Vec3_DistanceToPoint"
-												},
-												{
-													"title": "Dot",
-													"filename": "API_Vec3_Dot"
-												},
-												{
-													"title": "Inverse",
-													"filename": "API_Vec3_Inverse"
-												},
-												{
-													"title": "Length",
-													"filename": "API_Vec3_Length"
-												},
-												{
-													"title": "Normalize",
-													"filename": "API_Vec3_Normalize"
-												},
-												{
-													"title": "Cross",
-													"filename": "API_Vec3_Cross"
-												},
-												{
-													"title": "Reflect",
-													"filename": "API_Vec3_Reflect"
-												}								
-											]
-										},
-										{
-											"title": "Vec4",
-											"filename": "API_Vec4",
-											"topics":
-											[
-												{
-													"title": "Length",
-													"filename": "API_Vec4_Length"
-												},
-												{
-													"title": "Normalize",
-													"filename": "API_Vec4_Normalize"
-												}
-											]							
-										}					
-									]
-								},								
+								},							
 								{
 									"title": "Mesh",
 									"filename": "API_Mesh",
@@ -739,6 +627,118 @@
 						}					
 					]
 				},
+				{
+					"title": "Math",
+					"topics":
+					[
+						{
+							"title": "dAABB",
+							"filename": "API_dAABB"
+						},
+						{
+							"title": "dMat3",
+							"filename": "API_dMat3"
+						},
+						{
+							"title": "dMat4",
+							"filename": "API_dMat4"
+						},
+						{
+							"title": "dPlane",
+							"filename": "API_dPlane"
+						},
+						{
+							"title": "dQuat",
+							"filename": "API_dQuat"
+						},						
+						{
+							"title": "dVec2",
+							"filename": "API_dVec2"
+						},						
+						{
+							"title": "dVec3",
+							"filename": "API_dVec3"
+						},
+						{
+							"title": "dVec4",
+							"filename": "API_dVec4"
+						},
+						{
+							"title": "AABB",
+							"filename": "API_AABB"
+						},										
+						{
+							"title": "Mat3",
+							"filename": "API_Mat3"
+						},
+						{
+							"title": "Mat4",
+							"filename": "API_Mat4"
+						},			
+						{
+							"title": "Plane",
+							"filename": "API_Plane"
+						},
+						{
+							"title": "Quat",
+							"filename": "API_Quat"
+						},
+						{
+							"title": "Vec2",
+							"filename": "API_Vec2"
+						},						
+						{
+							"title": "Vec3",
+							"filename": "API_Vec3",
+							"topics":
+							[
+								{
+									"title": "DistanceToPoint",
+									"filename": "API_Vec3_DistanceToPoint"
+								},
+								{
+									"title": "Dot",
+									"filename": "API_Vec3_Dot"
+								},
+								{
+									"title": "Inverse",
+									"filename": "API_Vec3_Inverse"
+								},
+								{
+									"title": "Length",
+									"filename": "API_Vec3_Length"
+								},
+								{
+									"title": "Normalize",
+									"filename": "API_Vec3_Normalize"
+								},
+								{
+									"title": "Cross",
+									"filename": "API_Vec3_Cross"
+								},
+								{
+									"title": "Reflect",
+									"filename": "API_Vec3_Reflect"
+								}								
+							]
+						},
+						{
+							"title": "Vec4",
+							"filename": "API_Vec4",
+							"topics":
+							[
+								{
+									"title": "Length",
+									"filename": "API_Vec4_Length"
+								},
+								{
+									"title": "Normalize",
+									"filename": "API_Vec4_Normalize"
+								}
+							]							
+						}					
+					]
+				},					
 				{
 					"title": "Functions",
 					"topics":
