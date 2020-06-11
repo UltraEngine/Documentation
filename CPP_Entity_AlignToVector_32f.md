@@ -4,8 +4,6 @@ This method will align one axis of an entity along a specified vector in global 
 ## Syntax ##
 - void **AlignToVector**(const float x, const float y, const float z, const int axis = 2, const float rate = 1.0, const float roll = 0.0)
 - void **AlignToVector**(const [Vec3](CPP_Vec3.md)& v, const int axis = 2, const float rate = 1.0, const float roll = 0.0)
-- void **AlignToVector**(const double x, const double y, const double z, const int axis = 2, const float rate = 1.0, const double roll = 0.0)
-- void **AlignToVector**(const [dVec3](CPP_dVec3.md)& v, const int axis = 2, const float rate = 1.0, const float roll = 0.0)
 
 ### Parameters ###
 | Name | Description |
