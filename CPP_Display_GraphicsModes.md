@@ -1,4 +1,4 @@
-# Display::GraphicsMode #
+# Display::GraphicsModes #
 This method retrieves the supported full-screen graphics resolutions for this display.
 
 ## Syntax ##
