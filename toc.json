@@ -86,7 +86,7 @@
 												},												
 												{
 													"title": "CreateCollisionConvexHull",
-													"filename": "API_CreateCollisionConvexHull_FP"
+													"filename": "API_CreateCollisionConvexHull"
 												},									
 												{
 													"title": "CreateCollisionMesh",
@@ -160,12 +160,12 @@
 								},
 								{
 									"title": "ConvexHull",
-									"filename": "API_ConvexHull",
+									"filename": "API_ConvexHull_FP",
 									"topics":
 									[
 										{
 											"title": "CreateConvexHull",
-											"filename": "API_CreateConvexHull_32f"
+											"filename": "API_CreateConvexHull"
 										}
 									]
 								},								
