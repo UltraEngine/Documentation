@@ -1,5 +1,5 @@
 # Asset
-This class is the base class of all game media classes.
+This is the base class of all game media classes.
 
 ## Base Class ##
 - [Object](CPP_Object.md)
