@@ -8,20 +8,26 @@ This method retrieves the supported full-screen graphics resolutions for this di
 Returns an array of all supported full-screen graphics resolutions. The native resolution will be the last entry in the array.
 
 ## Example ##
+## Example ##
 ```c++
 #include "pch.h"
 #include "Project.h"
 
 int main(int argc, const char* argv[])
 {
-	//Get the displays
 	auto displays = ListDisplays();
-	
-	//Get all full-screen display modes of the primary display and list them
-	auto gfxmodes = displays[0]->GraphicsModes();	
-	for (auto resolution : gfxmodes)
+	for (int k=0; k < displays.size(); ++k)
 	{
-		Print(resolution);
+		Print("Display " + String(k) + ":");
+		Print("	Position: " + String(displays[k]->GetPosition()));
+		Print("	Size: " + String(displays[k]->GetSize()));
+		Print("	Scale: " + String(displays[k]->GetScale()));
+		Print("	Graphics Modes:");
+		auto gfxmodes = displays[k]->GraphicsModes();
+		for (int n=0; n < gfxmodes.size(); ++n)
+		{
+			Print("		" + String(n) + ": " + String(gfxmodes[n]));
+		}
 	}
 	return 0;
 }
