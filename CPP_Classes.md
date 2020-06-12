@@ -8,14 +8,18 @@ The engine uses many classes for different ares of functionlity.
 - SpriteLayer
 
 ## 3D Graphics ##
+- Actor
 - Display
 - Edge
+- Entity
 - Face
 - Font
 - Framebuffer
 - Material
 - Vertex
 - Mesh
+- Prefab
+- Scene
 - Texture
 - TextureBuffer
 - LOD
@@ -26,9 +30,13 @@ The engine uses many classes for different ares of functionlity.
 - Skeleton
 
 ## Entities ##
-- Entity
-- Model
 - Brush
+- Camera
+- Emitter
+- Light
+- Model
+- Pivot
+- Terrain
 
 ## File System ##
 - BufferStream
@@ -87,5 +95,6 @@ The engine uses many classes for different ares of functionlity.
 - Listener
 
 ## System ##
+- Language
 - Plugin
 - Window
