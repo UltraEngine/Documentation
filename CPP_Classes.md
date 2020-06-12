@@ -9,6 +9,7 @@ The engine uses many classes for different ares of functionlity. Below is a part
 
 ## 3D Graphics ##
 - Actor
+- ConvexHull
 - Edge
 - [Entity](CPP_Entity_32f.md)
 - Face
