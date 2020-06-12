@@ -9,6 +9,14 @@ This class provides an interface for building and using convex hull geometric ob
 
 ## Methods ##
 - Build
+- BuildBounds
+- BuildEdges
+- BuildPlanes
+- BuildTexCoords
+- IntersectsAABB
+- IntersectsConvexHull
+- IntersectsPlane
+- IntersectsPoint
 
 ## Functions ##
 - CreateConvexHull
