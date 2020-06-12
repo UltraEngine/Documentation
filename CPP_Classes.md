@@ -1,4 +1,5 @@
-# Classes
+# Classes #
+The engine uses many classes for different ares of functionlity.
 
 ## 2D Graphics ##
 - Font
