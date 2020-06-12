@@ -27,12 +27,12 @@ int main(int argc, const char* argv[])
 	Vec3 v = Vec3(1, 2, 3);
 	
 	//Create static buffer
-	auto buffer = CreateStaticBuffer(&v, 12);
+	auto buffer = CreateStaticBuffer(&v, sizeof(v));
 	
 	//Print out the contents
-	Print(buffer->PeekFloat(0));
-	Print(buffer->PeekFloat(4));
-	Print(buffer->PeekFloat(8));
+	Print(buffer->PeekFloat(offsetof(Vec3, x)));
+	Print(buffer->PeekFloat(offsetof(Vec3, y)));
+	Print(buffer->PeekFloat(offsetof(Vec3, z)));
 	
 	return 0;
 }
