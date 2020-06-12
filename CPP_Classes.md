@@ -1,5 +1,5 @@
 # Classes #
-The engine uses many classes for different ares of functionlity.
+The engine uses many classes for different ares of functionlity. Below is a partial list of classes categorized by function.
 
 ## 2D Graphics ##
 - [Font](CPP_Font.md)
@@ -41,7 +41,6 @@ The engine uses many classes for different ares of functionlity.
 - FileSystemWatcher
 - Package
 - Stream
-- Workflow
 
 
 ## GUI ##
