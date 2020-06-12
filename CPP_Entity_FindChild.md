@@ -51,8 +51,17 @@ int main(int argc, const char* argv[])
 	Print("Found " + String(count) + " children:");
 	for (auto child : results)
 	{
-	  Print(child->name);
+		Print(child->name);
 	}
+
+	/*
+	Output:
+
+	Found 3 children:
+	thing1
+	thing_02
+	thing
+	*/
 
 	return 0;
 }
