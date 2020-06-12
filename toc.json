@@ -141,6 +141,17 @@
 									]
 								},
 								{
+									"title": "ConvexHull",
+									"filename": "API_ConvexHull",
+									"topics":
+									[
+										{
+											"title": "CreateConvexHull",
+											"filename": "API_CreateConvexHull"
+										}
+									]
+								},								
+								{
 									"title": "Display",
 									"filename": "API_Display",
 									"topics":
