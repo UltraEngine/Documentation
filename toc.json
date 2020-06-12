@@ -16,7 +16,7 @@
 					"title": "Steamworks SDK Integration",
 					"filename": "API_Steam_Integration"
 				}
-			]					"title": "2D Graphics"
+			]
 
 		},
 		{
@@ -45,7 +45,8 @@
 							"filename": "API_Object",
 							"openstate": true,
 							"topics":
-					Animation	{
+							[
+								{
 									"title": "Actor",
 									"filename": "API_Actor"
 								},
