@@ -93,13 +93,7 @@ The engine uses many classes for different ares of functionlity.
 - TextureBuffer
 - Window
 
-
-
 ## Sound ##
 - Sound
 - Speaker
 - Listener
-
-## System ##
-- Language
-- Plugin
