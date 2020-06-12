@@ -21,7 +21,7 @@
 		},
 		{
 			"title": "Programming Reference",
-			"fielname": "CPP_Programming_Reference.md",
+			"fielname": "API_Programming_Reference.md",
 			"openstate": true,
 			"topics":
 			[
@@ -36,7 +36,14 @@
 					]
 				},
 				{
-					"title": "3D Graphics"
+					"title": "3D Graphics",
+					"topics":
+					[
+						{
+							"title": "Entity",
+							"filename": "API_Entity_FP"
+						}
+					]
 				},
 				{
 					"title": "Animation"
