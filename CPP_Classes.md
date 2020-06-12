@@ -9,20 +9,16 @@ The engine uses many classes for different ares of functionlity.
 
 ## 3D Graphics ##
 - Actor
-- Display
 - Edge
 - Entity
 - Face
-- Font
-- Framebuffer
+- LOD
 - Material
-- Vertex
 - Mesh
 - Prefab
 - Scene
 - Texture
-- TextureBuffer
-- LOD
+- Vertex
 - World
 
 ## Animation ##
@@ -85,6 +81,12 @@ The engine uses many classes for different ares of functionlity.
 ## Raycasting ##
 - PickInfo
 
+## Rendering ##
+- Display
+- Framebuffer
+- TextureBuffer
+- Window
+
 ## Pathfinding ##
 - NavAgent
 - NavMesh
@@ -97,4 +99,3 @@ The engine uses many classes for different ares of functionlity.
 ## System ##
 - Language
 - Plugin
-- Window
