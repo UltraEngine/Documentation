@@ -2,13 +2,17 @@
 This method searches the entity subhierarchy for a child with a specified name. Name searches are case-sensitive.
 
 ## Syntax ##
-- shared_ptr<[Entity](CPP_Entity.md)\> **FindChild**(const string& name)
-- shared_ptr<[Entity](CPP_Entity.md)\> **FindChild**(const wstring& name)
+- shared_ptr<[Entity](CPP_Entity_32f.md)\> **FindChild**(const string& name, const bool casesensitive = true)
+- int **FindChild**(const string& name, vector<shared_ptr<[Entity](CPP_Entity_32f.md)\>\> results, const bool casesensitive = true)
+- shared_ptr<[Entity](CPP_Entity_32f.md)\> **FindChild**(const wstring& name, const bool casesensitive = true)
+- int **FindChild**(const wstring& name, vector<shared_ptr<[Entity](CPP_Entity_32f.md)\>\> results, const bool casesensitive = true)
 
 ### Parameters ###
 | Name | Description |
 | --- | --- |
 | **name** | name of the entity to find |
+| **casesensitive** | if set to true the name search will be case-sensitive |
+| **results** | all matching children will be added to the end of the array |
 
 ## Returns ##
-Returns the first entity found with the specified name, or NULL if nothing is found.
+Returns the first entity found with the specified name, or the number of children found.
