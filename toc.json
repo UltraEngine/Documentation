@@ -34,6 +34,10 @@
 							"topics":
 							[
 								{
+									"title": "AABB",
+									"filename": "API_AABB"
+								},									
+								{
 									"title": "dAABB",
 									"filename": "API_dAABB"
 								},
@@ -64,11 +68,7 @@
 								{
 									"title": "dVec4",
 									"filename": "API_dVec4"
-								},
-								{
-									"title": "AABB",
-									"filename": "API_AABB"
-								},										
+								},									
 								{
 									"title": "Mat3",
 									"filename": "API_Mat3"
