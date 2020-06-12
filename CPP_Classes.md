@@ -17,6 +17,8 @@ The engine uses many classes for different ares of functionlity.
 - Mesh
 - Prefab
 - Scene
+- Shader
+- ShaderModule
 - Texture
 - Vertex
 - World
@@ -53,6 +55,7 @@ The engine uses many classes for different ares of functionlity.
 ## Math ##
 - AABB
 - dAABB
+- dMat4
 - dPlane
 - dQuat
 - dVec2 
@@ -62,6 +65,7 @@ The engine uses many classes for different ares of functionlity.
 - iVec3
 - iVec4
 - AABB
+- Mat4
 - Plane
 - Quat
 - Vec2
