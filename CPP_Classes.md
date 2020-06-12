@@ -1,17 +1,25 @@
 # Classes
+
 ## 2D Graphics ##
 - Font
 - Pixmap
+- Sprite
+- SpriteLayer
+
 ## 3D Graphics ##
 - Display
-- Texture
+- Edge
+- Face
 - Font
+- Framebuffer
 - Material
 - Vertex
 - Mesh
-- Framebuffer
+- Texture
 - TextureBuffer
 - LOD
+- World
+
 ## Animation ##
 - Bone 
 - Skeleton
@@ -22,19 +30,50 @@
 - Brush
 
 ## File System ##
-- Stream
+- BufferStream
+- FileSystemWatcher
 - Package
+- Stream
+
+## Memory ##
+- Buffer
+- StreamBuffer
 
 ## GUI ##
 - Event
 - GUI
 - Widget
+
+## Math ##
+- AABB
+- dAABB
+- dPlane
+- dQuat
+- dVec2 
+- dVec3
+- dVec4
+- iVec2
+- iVec3
+- iVec4
+- AABB
+- Plane
+- Quat
+- Vec2
+- Vec3
+- Vec4
+
+## Multithreading ##
+- Mutex
+- Thread
+- ThreadManager
+
 ## Physics ##
 - Collision
 - Joint
 - Vehicle
 
-
+## Raycasting ##
+- PickInfo
 
 ## Pathfinding ##
 - NavAgent
@@ -45,8 +84,6 @@
 - Speaker
 - Listener
 
-
-
 ## System ##
 - Window
-- World
+
