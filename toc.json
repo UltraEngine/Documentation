@@ -625,10 +625,10 @@
 									"title": "Package",
 									"filename": "API_Package"
 								},
-						{
-							"title": "PickInfo",
-							"filename": "API_PickInfo_FP"
-						}									
+								{
+									"title": "PickInfo",
+									"filename": "API_PickInfo_FP"
+								},									
 								{
 									"title": "Pixmap",
 									"filename": "API_Pixmap"
