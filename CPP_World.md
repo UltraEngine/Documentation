@@ -6,10 +6,10 @@
 - [RenderStats](CPP_RenderStats.md) renderstats
 
 ## Methods ##
-- Update
-- Pick
-- RecordStats
-- Render
+- [Update](CPP_World_Update.md)
+- [Pick](CPP_World_Pick.md)
+- [RecordStats](CPP_World_RecordStats.md)
+- [Render](CPP_World_Render.md)
 
 ## Functions ##
-- CreateWorld
+- [CreateWorld](CPP_CreateWorld.md)
