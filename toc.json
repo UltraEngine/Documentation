@@ -150,7 +150,14 @@
 									[
 										{
 											"title": "StreamBuffer",
-											"filename": "API_StreamBuffer"
+											"filename": "API_StreamBuffer",
+											"topics": 
+											[
+												{
+													"title": "CreateStreamBuffer",
+													"filename": "API_CreateStreamBuffer"
+												}
+											]
 										}
 									]
 								},								
