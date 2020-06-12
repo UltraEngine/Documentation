@@ -35,6 +35,7 @@ The engine uses many classes for different ares of functionlity.
 - FileSystemWatcher
 - Package
 - Stream
+- Workflow
 
 ## Memory ##
 - Buffer
@@ -86,5 +87,5 @@ The engine uses many classes for different ares of functionlity.
 - Listener
 
 ## System ##
+- Plugin
 - Window
-
