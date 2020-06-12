@@ -1,4 +1,4 @@
-# Entity::FindChild #
+# Entity.FindChild #
 This method searches the entity subhierarchy for a child with a specified name. Name searches are case-sensitive.
 
 ## Syntax ##
