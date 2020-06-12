@@ -19,4 +19,4 @@ This class provides an interface for building and using convex hull geometric ob
 - IntersectsPoint
 
 ## Functions ##
-- [CreateConvexHull](CPP_CreateConvexHull.cpp)
+- [CreateConvexHull](CPP_CreateConvexHull.md)
