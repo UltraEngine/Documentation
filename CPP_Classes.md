@@ -43,9 +43,6 @@ The engine uses many classes for different ares of functionlity.
 - Stream
 - Workflow
 
-## Memory ##
-- Buffer
-- StreamBuffer
 
 ## GUI ##
 - Event
@@ -72,10 +69,16 @@ The engine uses many classes for different ares of functionlity.
 - Vec3
 - Vec4
 
+## Memory ##
+- Buffer
+- StreamBuffer
+
 ## Multithreading ##
 - Mutex
 - Thread
-
+## Pathfinding ##
+- NavAgent
+- NavMesh
 ## Physics ##
 - Collision
 - Joint
@@ -90,9 +93,7 @@ The engine uses many classes for different ares of functionlity.
 - TextureBuffer
 - Window
 
-## Pathfinding ##
-- NavAgent
-- NavMesh
+
 
 ## Sound ##
 - Sound
