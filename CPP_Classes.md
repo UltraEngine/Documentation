@@ -10,7 +10,7 @@ The engine uses many classes for different ares of functionlity.
 ## 3D Graphics ##
 - Actor
 - Edge
-- Entity
+- [Entity](CPP_Entity_32f.md)
 - Face
 - LOD
 - Material
