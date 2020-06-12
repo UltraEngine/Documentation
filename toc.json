@@ -189,8 +189,20 @@
 									"topics":
 									[
 										{
+											"title": "GetScale",
+											"filename": "API_Display_GetScale"
+										},
+										{
+											"title": "GetSize",
+											"filename": "API_Display_GetSize"
+										},
+										{
+											"title": "GetPosition",
+											"filename": "API_Display_GetPosition"
+										},										
+										{
 											"title": "ListDisplays",
-											"filename": "API_ListDisplays"
+											"filename": "API_Display_ListDisplays"
 										}
 									]
 								},								
