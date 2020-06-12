@@ -1,13 +1,15 @@
 # Functions #
 
-## System ##
-- Confirm
-- Notify
-- Proceed
-- RequestDir
-- RequestFile
+## Debugging ##
+- DebugStop
+- DebugLog
+- Assert
+- RuntimeError
 
 ## File System ##
+- CopyDir
+- CopyFile
+- DeleteFile
 - ExtractDir
 - ExtractExt
 - FileTime
@@ -17,12 +19,16 @@
 - CasedPath
 - CreateDir
 - RenameDir
+- RenameFile
 - DeleteDir
 - FileType
 - StripDir
 - StripExt
 - StripAll
 
+## IO ##
+- Input
+- Print
 
 ## Math ##
 - XOR
@@ -42,6 +48,29 @@
 - Cos
 - ATan2
 
-## IO ##
-- Input
-- Print
+## String ##
+- Asc
+- Chr
+- Match
+- Mid
+- Find
+- Left
+- Right
+- Lower
+- Upper
+- Replace
+- Split
+- String
+- WString
+- XOR
+
+## System ##
+- Confirm
+- Notify
+- Proceed
+- RequestDir
+- RequestFile
+
+## Time ##
+- Millisecs
+- Sleep
