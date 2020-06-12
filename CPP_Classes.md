@@ -71,7 +71,6 @@ The engine uses many classes for different ares of functionlity.
 ## Multithreading ##
 - Mutex
 - Thread
-- ThreadManager
 
 ## Physics ##
 - Collision
