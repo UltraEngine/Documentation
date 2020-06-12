@@ -199,7 +199,11 @@
 										{
 											"title": "GetPosition",
 											"filename": "API_Display_GetPosition"
-										},										
+										},
+										{
+											"title": "GraphicsModes",
+											"filename": "API_Display_GraphicsModes"
+										},											
 										{
 											"title": "ListDisplays",
 											"filename": "API_Display_ListDisplays"
