@@ -2,7 +2,7 @@
 This methods retrieves the display position on the virtual display.
 
 ## Syntax ##
-- [Vec2](CPP_Vec2.md) GetPosition()
+- [iVec2](CPP_iVec2.md) GetPosition()
 
 ## Returns ##
 Returns the display's position on the bounding virtual display.
