@@ -19,9 +19,9 @@ int main(int argc, const char* argv[])
 	
 	//Get all full-screen display modes of the primary display and list them
 	auto gfxmodes = displays[0]->GraphicsModes();	
-	for (auto size : gfxmodes)
+	for (auto resolution : gfxmodes)
 	{
-		Print(size);
+		Print(resolution);
 	}
 	return 0;
 }
