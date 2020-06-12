@@ -15,7 +15,7 @@ Returns an array of all supported full-screen graphics resolutions. The native r
 int main(int argc, const char* argv[])
 {
 	//Get the displays
-	auto displays - ListDisplays();
+	auto displays = ListDisplays();
 	
 	//Get all full-screen display modes of the primary display and list them
 	auto gfxmodes = displays[0]->GraphicsModes();	
