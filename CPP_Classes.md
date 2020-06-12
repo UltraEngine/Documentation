@@ -2,10 +2,10 @@
 The engine uses many classes for different ares of functionlity.
 
 ## 2D Graphics ##
-- Font
-- Pixmap
-- Sprite
-- SpriteLayer
+- [Font](CPP_Font.md)
+- [Pixmap](CPP_Pixmap.md)
+- [Sprite](Sprite.md)
+- [SpriteLayer](SpriteLayer.md)
 
 ## 3D Graphics ##
 - Actor
