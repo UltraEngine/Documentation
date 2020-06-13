@@ -152,26 +152,8 @@
 						},
 						{
 							"title": "GetWorld",
-							"filename": "API_Entity_GetWorld",
-							"topics":
-							[
-								{
-									"title": "Pick",
-									"filename": "API_World_Pick_FP"
-								},
-								{
-									"title": "RecordStats",
-									"filename": "API_World_RecordStats"
-								},
-								{
-									"title": "Render",
-									"filename": "API_World_Render"
-								},
-								{
-									"title": "Update",
-									"filename": "API_World_Update"
-								}								
-							]
+							"filename": "API_Entity_GetWorld"
+							
 						},
 						{
 							"title": "Hide",
@@ -293,7 +275,26 @@
 				},						
 				{
 					"title": "World",
-					"filename": "API_World"
+					"filename": "API_World",
+					"topics":
+					[
+						{
+							"title": "Pick",
+							"filename": "API_World_Pick_FP"
+						},
+						{
+							"title": "RecordStats",
+							"filename": "API_World_RecordStats"
+						},
+						{
+							"title": "Render",
+							"filename": "API_World_Render"
+						},
+						{
+							"title": "Update",
+							"filename": "API_World_Update"
+						}								
+					]					
 				}						
 			]
 		},
