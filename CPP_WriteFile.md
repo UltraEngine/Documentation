@@ -6,7 +6,7 @@ This function creates a new file and returns a stream for write operations.
 - shared_ptr<[Stream](CPP_Stream.md)\> **WriteFile**(const wstring& path)
 
 ### Parameters ###
-|  |  |
+| Name | Description |
 |--|--|
 | **path** | file path to save |
 
