@@ -242,6 +242,10 @@
 					]
 				},
 				{
+					"title": "LOD",
+					"filename": "API_LOD"
+				},
+				{
 					"title": "Light",
 					"filename": "API_Light"
 				},						
