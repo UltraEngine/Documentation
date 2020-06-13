@@ -404,7 +404,25 @@
 		{
 			"title": "Float Precision",
 			"filename": "API_Float_Precision"
-		},				
+		},
+		{
+			"title": "GUI",
+			"topics":
+			[
+				{
+					"title": "Event",
+					"filename": "API_Event"
+				},				
+				{
+					"title": "Interface",
+					"filename": "API_Interface"
+				},
+				{
+					"title": "Widget",
+					"filename": "API_Widget"
+				}				
+			]							
+		},		
 		{
 			"title": "Logic",
 			"topics":
@@ -1400,24 +1418,6 @@
 					"filename": "API_TransformVector"
 				}				
 			]							
-		},
-		{
-			"title": "GUI",
-			"topics":
-			[
-				{
-					"title": "Event",
-					"filename": "API_Event"
-				},				
-				{
-					"title": "Interface",
-					"filename": "API_Interface"
-				},
-				{
-					"title": "Widget",
-					"filename": "API_Widget"
-				}				
-			]							
-		}		
+		}	
 	]
 }
