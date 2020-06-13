@@ -348,6 +348,24 @@
 					"filename": "API_BufferStream"
 				},
 				{
+					"title": "FileSystemWatcher",
+					"filename": "API_FileSystemWatcher",
+					"topics":
+					[
+						{
+							"title": "CreateFileSystemWatcher",
+							"filename": "API_CreateFileSystemWatcher"
+						}
+					]						
+				},
+				{
+					"title": "Package",
+					"filename": "API_Package",
+					"topics":
+					[
+					]
+				},				
+				{
 					"title": "Stream",
 					"filename": "API_Stream",
 					"topics":
@@ -1176,18 +1194,7 @@
 									"filename": "API_Face_AddIndice"
 								}
 							]
-						},								
-						{
-							"title": "FileSystemWatcher",
-							"filename": "API_FileSystemWatcher",
-							"topics":
-							[
-								{
-									"title": "CreateFileSystemWatcher",
-									"filename": "API_CreateFileSystemWatcher"
-								}
-							]						
-						},						
+						},													
 						{
 							"title": "GUI",
 							"filename": "API_GUI",
