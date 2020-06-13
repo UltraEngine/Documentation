@@ -1,4 +1,4 @@
-# CreatenBoxCollider #
+# CreateBoxCollider #
 This function creates a collider box shape for physics interactions.
 
 ## Syntax ##
@@ -63,7 +63,7 @@ int main(int argc, const char* argv[])
     model->SetRotation(0, 0, 15);
     model->SetMass(1);
 
-    //Create collision
+    //Create collider
     auto bounds = model->GetBounds(BOUNDS_LOCAL);
     auto collider = CreateBoxCollider(bounds.size, bounds.center);
     model->SetCollider(collider);
