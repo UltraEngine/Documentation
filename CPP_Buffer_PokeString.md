@@ -3,7 +3,6 @@ This method inserts a string into a memory buffer.
 
 ## Syntax ##
 - void **PokeString**(const uint64_t pos, const string& s)
-- void **PokeString**(const uint64_t pos, const wstring& s)
 
 ### Parameters ###
 | Name | Description |
