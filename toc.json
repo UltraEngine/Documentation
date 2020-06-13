@@ -38,11 +38,27 @@
 				{
 					"title": "3D Graphics",
 					"topics":
-					[						
+					[
+						{
+							"title": "Brush",
+							"filename": "API_Brush"
+						},
+						{
+							"title": "Camera",
+							"filename": "API_Camera"
+						},						
+						{
+							"title": "Entity",
+							"filename": "API_Entity_FP"
+						},						
 						{
 							"title": "Entity",
 							"filename": "API_Entity_FP"
 						},
+						{
+							"title": "Light",
+							"filename": "API_Light"
+						},						
 						{
 							"title": "Material",
 							"filename": "API_Material"
