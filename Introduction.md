@@ -3,15 +3,6 @@ Welcome to the Engine SDK documentation. You're about to start learning how to u
 
 Engine SDK can be programmed with three languages. **C++** offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects. **C#** offers fast compilation times, simpler syntax, and is fast enough for most projects. **Lua** is lightweight, easy to learn, and is suitable for simple projects. Additionally, Lua scripts can be combined with C++ and C# projects.
 
-## System Requirements ##
-- Discrete GPU with support for Vulkan 1.1
-- 64-bit operating system
-- Quad-core CPU @2.0 GHz
-- 4.0 Gb RAM
-- 200 Mb free hard drive space
-
-## Getting Started ##
-
 You currently have selected the C++ language documentation. You can change this by clicking on the language links in the header at the top of this page.
 
 To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
