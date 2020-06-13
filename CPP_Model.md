@@ -1,4 +1,4 @@
-# [Object](CPP_Object.md) > [Entity](CPP_Entity_32f.md) > Model #
+# [Object](CPP_Object.md) ▸ [Entity](CPP_Entity_32f.md) ▸ Model #
 The model class is used for visible 3D objects. Models can be loaded from files or created from scratch.
 
 ## Base Class
