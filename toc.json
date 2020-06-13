@@ -335,8 +335,16 @@
 					"filename": "API_Asset"
 				},
 				{
+					"title": "Language",
+					"filename": "API_Language"
+				},
+				{
 					"title": "Object",
 					"filename": "API_Object"
+				},
+				{
+					"title": "Workflow",
+					"filename": "API_Workflow"
 				}				
 			]							
 		},			
