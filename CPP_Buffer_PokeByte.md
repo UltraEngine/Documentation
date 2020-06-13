@@ -2,7 +2,7 @@
 This method inserts a single byte into a memory buffer.
 
 ## Syntax ##
-- void **PokeByte**(const uint64_t pos, const unsigned char b);
+- void **PokeByte**(const uint64_t pos, const unsigned char b)
 
 ### Parameters ###
 | Name | Description |
