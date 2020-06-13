@@ -8,4 +8,4 @@ In addition to the functions below, the [World](API_World.md) class includes som
 | Name | Description |
 |-----|-----|
 | [Millisecs](API_Millisecs.md) | Retrieves the current CPU time. |
-| [Sleep](API_Sleep.md) | Pauses the main thread for a specified period of time. |
+| [Sleep](API_Sleep.md) | Pauses the calling thread for a specified period of time. |
