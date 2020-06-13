@@ -2,7 +2,7 @@
 This method inserts a float value into the memory buffer.
 
 ## Syntax ##
-- void **PokeFloat**(const uint64_t pos, const float f);
+- void **PokeFloat**(const uint64_t pos, const float f)
 
 ### Parameters ###
 | Name | Description |
