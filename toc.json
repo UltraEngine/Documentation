@@ -1450,6 +1450,20 @@
 			"filename": "API_Steam_Integration"
 		},
 		{
+			"title": "System",
+			"topics":
+			[
+				{
+					"title": "Confirm",
+					"filename": "API_Confirm"
+				},
+				{
+					"title": "Notify",
+					"filename": "API_Notify"
+				}										
+			]			
+		},		
+		{
 			"title": "Timing",
 			"filename": "Timing",
 			"topics":
