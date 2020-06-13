@@ -168,6 +168,14 @@
 											"filename": "API_Buffer_Copy"
 										},
 										{
+											"title": "CreateBuffer",
+											"filename": "API_CreateBuffer"
+										},
+										{
+											"title": "CreateStaticBuffer",
+											"filename": "API_CreateStaticBuffer"
+										},										
+										{
 											"title": "data",
 											"filename": "API_Buffer_data"
 										},
@@ -175,6 +183,10 @@
 											"title": "GetSize",
 											"filename": "API_Buffer_GetSize"
 										},
+										{
+											"title": "LoadBuffer",
+											"filename": "API_LoadBuffer"
+										},											
 										{
 											"title": "PeekByte",
 											"filename": "API_Buffer_PeekByte"
