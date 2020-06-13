@@ -7,7 +7,7 @@
 
 ## Methods ##
 - [Update](CPP_World_Update.md)
-- [Pick](CPP_World_Pick.md)
+- [Pick](CPP_World_Pick_32f.md)
 - [RecordStats](CPP_World_RecordStats.md)
 - [Render](CPP_World_Render.md)
 
