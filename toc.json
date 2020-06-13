@@ -683,6 +683,10 @@
 			"topics":
 			[
 				{
+					"title": "Mutex",
+					"filename": "API_Mutex"
+				},				
+				{
 					"title": "Thread",
 					"filename": "API_Thread"
 				}
