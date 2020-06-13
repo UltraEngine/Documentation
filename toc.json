@@ -1413,6 +1413,21 @@
 			"filename": "API_Steam_Integration"
 		},
 		{
+			"title": "Timing",
+			"filename": "Timing",
+			"topics":
+			[
+				{
+					"title": "Millisecs",
+					"filename": "API_Millisecs"
+				},
+				{
+					"title": "Sleep",
+					"filename": "API_Sleep"
+				}										
+			]			
+		},		
+		{
 			"title": "Transformation",
 			"topics":
 			[
