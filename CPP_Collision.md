@@ -8,7 +8,7 @@ This class provides an interface for loading and creating collision shapes for p
 
 ## Functions ##
 
-|  |  |
+| Name | Description |
 | ----- | ----- |
 | [CreateBoxCollider](CPP_CreateCollisionBox_32f.md) | Creates a box collision shape for physics interactions. |
 | [CreateCompoundCollider](CPP_CreateCollisionCompound.md) | Creates a compound collision shape for physics interactions. |
