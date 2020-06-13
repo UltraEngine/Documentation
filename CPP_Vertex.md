@@ -1,5 +1,5 @@
 # Vertex #
-The vertex structure stores properties for a single vertex in a mesh.
+This class stores properties for a single mesh vertex.
 
 ## Members ##
 - [Vec3](CPP_Vec3) position
