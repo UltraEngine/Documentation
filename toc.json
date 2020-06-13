@@ -34,17 +34,9 @@
 			"topics":
 			[
 				{
-					"title": "Brush",
-					"filename": "API_Brush"
-				},
-				{
 					"title": "Camera",
 					"filename": "API_Camera"
-				},						
-				{
-					"title": "ConvexHull",
-					"filename": "API_ConvexHull_FP"
-				},						
+				},									
 				{
 					"title": "Entity",
 					"filename": "API_Entity_FP",
@@ -315,6 +307,29 @@
 					"filename": "API_Skeleton"
 				}						
 			]					
+		},
+		{
+			"title": "Constructive Solid Geometry",
+			"filename": "CSG",
+			"topics":
+			[		
+				{
+					"title": "Brush",
+					"filename": "API_Brush"
+				},
+				{
+					"title": "ConvexHull",
+					"filename": "API_ConvexHull_FP"
+				},
+				{
+					"title": "Edge",
+					"filename": "API_Edge"
+				},
+				{
+					"title": "Face",
+					"filename": "API_Face"
+				}				
+			]
 		},
 		{
 			"title": "Debugging",
