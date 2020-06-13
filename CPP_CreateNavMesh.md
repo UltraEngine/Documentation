@@ -2,7 +2,7 @@
 This function creates a new Navmesh object for pathfinding.
 
 ## Syntax ##
-- shared_ptr<NavMesh> CreateNavMesh(shared_ptr<World\> world, const float width, const float height, const float depth, const int tilesx, const int tilesz, const float voxelsize = 0.25f, const float agentradius = 0.4, const float agentheight = 1.8, const float agentstepheight = 0.501, const float maxslope = 45.01f);
+- shared_ptr<NavMesh> **CreateNavMesh**(shared_ptr<World\> world, const float width, const float height, const float depth, const int tilesx, const int tilesz, const float voxelsize = 0.25, const float agentradius = 0.4, const float agentheight = 1.8, const float agentstepheight = 0.501, const float maxslope = 45.01);
 
 ## Parameters ##
 | Name | Description |
