@@ -1,23 +1,23 @@
-# CreateCollisionCone #
+# CreateConeCollider #
 This function creates a collision cone shape for physics interactions.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionCone**(const float radius, const float height, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionCone**(const float radius, const float height, const [Vec3](CPP_Vec3.md)& offset, const [Vec3](CPP_Vec3.md)& rotation = 0.0)
+- shared_ptr<[Collider](CPP_Collision.md)> **CreateConeCollider**(const float radius, const float height, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
+- shared_ptr<[Collider](CPP_Collision.md)> **CreateConeCollider**(const float radius, const float height, const [Vec3](CPP_Vec3.md)& offset, const [Vec3](CPP_Vec3.md)& rotation = 0.0)
 
 ## Parameters ##
 |Name|Description|
 |---|----|
-|**radius**|radius of collision shape|
-|**height**|height of collision shape|
-|**x**|x component of collision shape offset|
-|**y**|y component of collision shape offset|
-|**z**|z component of collision shape offset|
-|**pitch**|pitch of collision shape rotation|
-|**yaw**|yaw of collision shape rotation|
-|**roll**|roll of collision shape rotation|
-|**offset**|offset of collision shape|
-|**rotation**|rotation of collision shape|
+|**radius**|radius of shape|
+|**height**|height of shape|
+|**x**|x component of shape offset|
+|**y**|y component of shape offset|
+|**z**|z component of shape offset|
+|**pitch**|pitch of shape rotation|
+|**yaw**|yaw of shape rotation|
+|**roll**|roll of shape rotation|
+|**offset**|offset of shape|
+|**rotation**|rotation of shape|
 
 ## Returns ##
 Returns a new collision object.
@@ -60,8 +60,8 @@ int main(int argc, const char* argv[])
     model->AddForce(100, 0, 0);
 
     //Create collision
-    auto collision = CreateCollisionCone(0.5, 2);
-    model->SetCollision(collision);
+    auto collider = CreateConeCollider(0.5, 2);
+    model->SetCollider(collider);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
