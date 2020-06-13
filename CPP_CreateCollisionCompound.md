@@ -1,8 +1,8 @@
-# CreateCollisionCompound #
+# CreateCompoundCollider #
 This function creates a complex collision shape that is made up of multiple sub-shapes.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionCompound**(vector<shared_ptr<[Collision](CPP_Collision.md)\> \> subshapes)
+- shared_ptr<[Collider](CPP_Collider.md)\> **CreateCompoundCollider**(vector<shared_ptr<[Collider](CPP_Collider.md)\> \> subshapes)
 
 ## Parameters ##
 |Name|Description|
@@ -84,15 +84,15 @@ int main(int argc, const char* argv[])
 
     //Create collision
     vector<shared_ptr<Collision> > collisions;
-    collisions.push_back(CreateCollisionSphere(1));
-    collisions.push_back(CreateCollisionCone(0.5, 1, 1, 0, 0, 0, 0, -90));
-    collisions.push_back(CreateCollisionCone(0.5, 1, -1, 0, 0, 0, 0, 90));
-    collisions.push_back(CreateCollisionCone(0.5, 1, 0, 1, 0, 0, 0, 0));
-    collisions.push_back(CreateCollisionCone(0.5, 1, 0, -1, 0, 180, 0, 0));
-    collisions.push_back(CreateCollisionCone(0.5, 1, 0, 0, 1, 90, 0, 0));
-    collisions.push_back(CreateCollisionCone(0.5, 1, 0, 0, -1, -90, 0, 0));
-    auto collision = CreateCollisionCompound(collisions);
-    model->SetCollision(collision);
+    collisions.push_back(CreateSphereCollider(1));
+    collisions.push_back(CreateConeCollider(0.5, 1, 1, 0, 0, 0, 0, -90));
+    collisions.push_back(CreateConeCollider(0.5, 1, -1, 0, 0, 0, 0, 90));
+    collisions.push_back(CreateConeCollider(0.5, 1, 0, 1, 0, 0, 0, 0));
+    collisions.push_back(CreateConeCollider(0.5, 1, 0, -1, 0, 180, 0, 0));
+    collisions.push_back(CreateConeCollider(0.5, 1, 0, 0, 1, 90, 0, 0));
+    collisions.push_back(CreateConeCollider(0.5, 1, 0, 0, -1, -90, 0, 0));
+    auto collider = CreateCompoundCollider(collisions);
+    model->SetCollider(collider);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
