@@ -1,4 +1,4 @@
-# C++ Programming Reference #
+# Programming Reference #
 
 ## 2D Graphics ##
 - [Font](CPP_Font.md)
@@ -42,7 +42,6 @@
 - Package
 - Stream
 
-
 ## GUI ##
 - Event
 - GUI
@@ -69,15 +68,17 @@
 - Vec4
 
 ## Memory ##
-- Buffer
-- StreamBuffer
+- [Buffer](CPP_Buffer.md)
+- [StreamBuffer](CPP_StreamBuffer.md)
 
 ## Multithreading ##
 - Mutex
 - Thread
+
 ## Pathfinding ##
 - NavAgent
 - NavMesh
+
 ## Physics ##
 - Collision
 - Joint
