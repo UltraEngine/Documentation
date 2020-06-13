@@ -1402,7 +1402,7 @@
 			]							
 		},
 		{
-			"title": "User Interface",
+			"title": "GUI",
 			"topics":
 			[
 				{
@@ -1410,8 +1410,8 @@
 					"filename": "API_Event"
 				},				
 				{
-					"title": "GUI",
-					"filename": "API_GUI"
+					"title": "Interface",
+					"filename": "API_Interface"
 				},
 				{
 					"title": "Widget",
