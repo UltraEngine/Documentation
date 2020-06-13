@@ -3,8 +3,8 @@
 	[
 		{
 			"title": "Introduction",
-			"filename": ".",
-			"openstate": true,
+			"filename": "Introduction",
+			"openstate": false,
 			"selected": true
 		},
 		{
