@@ -1,8 +1,8 @@
-# CreateCollisionMesh #
+# CreateMeshCollider #
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionMesh**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
-- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionMesh**(shared_ptr<[Model](CPP_Model.md)\> geometry)
+- shared_ptr<[Collider](CPP_Collision.md)\> **CreateMeshCollider**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
+- shared_ptr<[Collider](CPP_Collision.md)\> **CreateMeshCollider**(shared_ptr<[Model](CPP_Model.md)\> geometry)
 
 ## Parameters ##
 |Name|Description|
@@ -39,8 +39,8 @@ int main(int argc, const char* argv[])
 	model->SetRotation(0, 90, 0);
 	
 	//Create collision
-	auto collision = CreateCollisionMesh(model);
-	model->SetCollision(collision);
+	auto collision = CreateMeshCollider(model);
+	model->SetCollider(collision);
 	model->SetCollisionType(COLLISION_SCENE);
 
 	//Add some objects to show collision
