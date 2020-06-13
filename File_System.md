@@ -12,7 +12,7 @@ The engine provides a powerful interface for reading and writing files on the ha
 ## Functions ##
 |   |   |
 |---|---|
-| [ReadFile](CPP_ReadFile.md) | |
+| [ReadFile](CPP_ReadFile.md) | Loads a file from a path and returns a stream. |
 | WriteFile | |
 | OpenFile | |
 | LoadDir | |
