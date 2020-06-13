@@ -7,11 +7,7 @@ Engine SDK can be programmed with three languages.
 - C# offers fast compilation times and more compact syntax, with acceptable performance for most projects.
 - Lua is very easy to use and is suitable for simple projects.
 
-Click on an image below for the setup guide for each language.
-
-[![Programming with C++](https://raw.githubusercontent.com/Leadwerks/Documentation/master/cpp_logo.png "Programming with C++")](lua.md) 
-[![Programming with C#](https://raw.githubusercontent.com/Leadwerks/Documentation/master/csharp_logo.png "Programming with C#")](lua.md) 
-[![Programming with Lua](https://raw.githubusercontent.com/Leadwerks/Documentation/master/lua_logo.jpg "Programming with Lua")](lua.md)
+You currently have selected the C++ language documentation. You can change this by clicking on the language links in the header at the top of this page.
 
 ## 2D Graphics ##
 - [Font](CPP_Font.md)
