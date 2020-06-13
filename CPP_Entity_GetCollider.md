@@ -1,8 +1,8 @@
-# Entity::GetCollision #
+# Entity::GetCollider #
 This method retrieves the collision object the entity uses for physics.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)\> GetCollision()
+- shared_ptr<[Collision](CPP_Collision.md)\> GetCollider()
 
 ## Returns ##
 Returns the collision object this entity uses, or NULL if no collision object is in use.
