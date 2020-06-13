@@ -1285,24 +1285,6 @@
 							"filename": "API_Skeleton"
 						},								
 						{
-							"title": "Statistics",
-							"topics":
-							[
-								{
-									"title": "AnimationStats",
-									"filename": "API_AnimationStats"
-								},
-								{
-									"title": "PhysicsStats",
-									"filename": "API_PhysicsStats"
-								},
-								{
-									"title": "RenderStats",
-									"filename": "API_RenderStats"
-								}										
-							]
-						},
-						{
 							"title": "TextureBuffer",
 							"filename": "API_TextureBuffer"
 						},
@@ -1359,6 +1341,24 @@
 		{
 			"title": "Constants",
 			"filename": "API_Constants"
+		},
+		{
+			"title": "Statistics",
+			"topics":
+			[
+				{
+					"title": "AnimationStats",
+					"filename": "API_AnimationStats"
+				},
+				{
+					"title": "PhysicsStats",
+					"filename": "API_PhysicsStats"
+				},
+				{
+					"title": "RenderStats",
+					"filename": "API_RenderStats"
+				}										
+			]
 		},
 		{
 			"title": "Steamworks SDK Integration",
