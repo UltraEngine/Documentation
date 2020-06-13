@@ -1,7 +1,7 @@
 # Welcome to Engine
 Welcome to the engine tutorials. You're about to start learning how to use the most advanced 3D engine technology in the world to create high-performance 3D simulations and games.
 
-Engine SDK can be programmed with three languages. *C++* offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects. *C#* offers fast compilation times and more compact syntax, with acceptable performance for most projects. *Lua* is very easy to use and is suitable for simple projects.
+Engine SDK can be programmed with three languages. *C++* offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects. *C#* offers fast compilation times and more compact syntax, with acceptable performance for most projects. *Lua* is easy to use and is suitable for simple projects.
 
 You currently have selected the C++ language documentation. You can change this by clicking on the language links in the header at the top of this page.
 
