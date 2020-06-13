@@ -158,7 +158,79 @@
 													"filename": "API_CreateStreamBuffer"
 												}
 											]
-										}
+										},										
+										{
+											"title": "Clear",
+											"filename": "API_Buffer_Clear"
+										},
+										{
+											"title": "Copy",
+											"filename": "API_Buffer_Copy"
+										},
+										{
+											"title": "data",
+											"filename": "API_Buffer_data"
+										},
+										{
+											"title": "GetSize",
+											"filename": "API_Buffer_GetSize"
+										},
+										{
+											"title": "PeekByte",
+											"filename": "API_Buffer_PeekByte"
+										},
+										{
+											"title": "PeekInt",
+											"filename": "API_Buffer_PeekInt"
+										},
+										{
+											"title": "PeekFloat",
+											"filename": "API_Buffer_PeekFloat"
+										},
+										{
+											"title": "PeekShort",
+											"filename": "API_Buffer_PeekShort"
+										},
+										{
+											"title": "PeekString",
+											"filename": "API_Buffer_PeekString"
+										},
+										{
+											"title": "PeekWString",
+											"filename": "API_Buffer_PeekWString"
+										},
+										{
+											"title": "PokeByte",
+											"filename": "API_Buffer_PokeByte"
+										},
+										{
+											"title": "PokeInt",
+											"filename": "API_Buffer_PokeInt"
+										},
+										{
+											"title": "PokeFloat",
+											"filename": "API_Buffer_PokeFloat"
+										},
+										{
+											"title": "PokeShort",
+											"filename": "API_Buffer_PokeShort"
+										},
+										{
+											"title": "PokeString",
+											"filename": "API_Buffer_PokeString"
+										},
+										{
+											"title": "PokeWString",
+											"filename": "API_Buffer_PokeWString"
+										},
+										{
+											"title": "Resize",
+											"filename": "API_Buffer_Resize"
+										},
+										{
+											"title": "Save",
+											"filename": "API_Buffer_Save"
+										}										
 									]
 								},								
 								{
