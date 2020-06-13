@@ -1460,7 +1460,19 @@
 				{
 					"title": "Notify",
 					"filename": "API_Notify"
-				}										
+				},
+				{
+					"title": "Proceed",
+					"filename": "API_Proceed"
+				},
+				{
+					"title": "RequestDir",
+					"filename": "API_RequestDird"
+				},
+				{
+					"title": "RequestFile",
+					"filename": "API_RequestFile"
+				}
 			]			
 		},		
 		{
