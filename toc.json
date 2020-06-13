@@ -608,10 +608,6 @@
 					"topics":
 					[
 						{
-							"title": "Joint",
-							"filename": "API_Joint"
-						},
-						{
 							"title": "Collision",
 							"filename": "API_Collision",
 							"topics":
@@ -649,6 +645,14 @@
 									"filename": "API_LoadCollision"
 								}												
 							]
+						},
+						{
+							"title": "Joint",
+							"filename": "API_Joint"
+						},
+						{
+							"title": "Vehicle",
+							"filename": "API_Vehicle"
 						}						
 					]							
 				},				
@@ -692,7 +696,18 @@
 									"filename": "API_ListDisplays"
 								}
 							]							
-						}
+						},
+						{
+							"title": "Window",
+							"filename": "API_Window",
+							"topics":
+							[
+								{
+									"title": "CreateWindow",
+									"filename": "API_CreateWindow"
+								}
+							]
+						},						
 					]							
 				},
 				{
@@ -1275,17 +1290,7 @@
 										}
 									]						
 								},								
-								{
-									"title": "Window",
-									"filename": "API_Window",
-									"topics":
-									[
-										{
-											"title": "CreateWindow",
-											"filename": "API_CreateWindow"
-										}
-									]
-								},
+								
 								{
 									"title": "Workflow",
 									"filename": "API_Workflow"
