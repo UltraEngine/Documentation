@@ -344,6 +344,17 @@
 			"topics":
 			[
 				{
+					"title": "BufferStream",
+					"filename": "API_BufferStream"
+				},
+				{
+					"title": "Stream",
+					"filename": "API_Stream",
+					"topics":
+					[
+					]
+				},				
+				{
 					"title": "OpenDir",
 					"filename": "API_OpenDir"
 				}
@@ -1289,18 +1300,6 @@
 									"title": "RenderStats",
 									"filename": "API_RenderStats"
 								}										
-							]
-						},
-
-						{
-							"title": "Stream",
-							"filename": "API_Stream",
-							"topics":
-							[
-								{
-									"title": "BufferStream",
-									"filename": "API_BufferStream"
-								}
 							]
 						},
 						{
