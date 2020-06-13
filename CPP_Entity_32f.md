@@ -32,7 +32,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | Name | Description |
 |---|---|
 | [AddActor](CPP_Entity_AddActor.md) | Adds an actor to the entity. |
-| [AddForce](CPP_Entity_AddForce_32f.md) | |
+| [AddForce](CPP_Entity_AddForce_32f.md) | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
 | [AddPointForce](CPP_Entity_AddPointForce_32f.md) | |
 | [AddScript](CPP_Entity_AddScript.md) | |
 | [AddTorque](CPP_Entity_AddTorque_32f.md) | |
