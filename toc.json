@@ -32,7 +32,19 @@
 						{
 							"title": "Font",
 							"filename": "API_Font"
-						}
+						},
+						{
+							"title": "Pixmap",
+							"filename": "API_Pixmap"
+						},						
+						{
+							"title": "Sprite",
+							"filename": "API_Sprite"
+						},
+						{
+							"title": "SpriteLayer",
+							"filename": "API_SpriteLayer"
+						},						
 					]
 				},
 				{
@@ -1196,14 +1208,6 @@
 								{
 									"title": "Skeleton",
 									"filename": "API_Skeleton"
-								},
-								{
-									"title": "Sprite",
-									"filename": "API_Sprite"
-								},
-								{
-									"title": "SpriteLayer",
-									"filename": "API_SpriteLayer"
 								},								
 								{
 									"title": "Statistics",
