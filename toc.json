@@ -517,18 +517,7 @@
 					"title": "Buffer",
 					"filename": "API_Buffer",
 					"topics":
-					[
-						{
-							"title": "StreamBuffer",
-							"filename": "API_StreamBuffer",
-							"topics": 
-							[
-								{
-									"title": "CreateStreamBuffer",
-									"filename": "API_CreateStreamBuffer"
-								}
-							]
-						},										
+					[									
 						{
 							"title": "Clear",
 							"filename": "API_Buffer_Clear"
@@ -614,7 +603,18 @@
 							"filename": "API_Buffer_Save"
 						}										
 					]							
-				}
+				},
+				{
+					"title": "StreamBuffer",
+					"filename": "API_StreamBuffer",
+					"topics": 
+					[
+						{
+							"title": "CreateStreamBuffer",
+							"filename": "API_CreateStreamBuffer"
+						}
+					]
+				}			
 			]							
 		},
 		{
