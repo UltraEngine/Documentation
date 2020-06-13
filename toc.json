@@ -309,6 +309,24 @@
 			]					
 		},
 		{
+			"title": "Audio",
+			"topics":
+			[
+				{
+					"title": "Listener",
+					"filename": "API_Listener"
+				},
+				{
+					"title": "Sound",
+					"filename": "API_Sound"
+				},
+				{
+					"title": "Speaker",
+					"filename": "API_Speaker"
+				}				
+			]							
+		},		
+		{
 			"title": "Constructive Solid Geometry",
 			"filename": "CSG",
 			"topics":
@@ -846,20 +864,6 @@
 				}						
 			]							
 		},		
-		{
-			"title": "Sound",
-			"topics":
-			[
-				{
-					"title": "Sound",
-					"filename": "API_Sound"
-				},
-				{
-					"title": "Speaker",
-					"filename": "API_Speaker"
-				}				
-			]							
-		},	
 		{
 			"title": "Classes",
 			"filename": "API_Classes",
