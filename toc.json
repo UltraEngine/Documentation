@@ -698,6 +698,28 @@
 							]							
 						},
 						{
+							"title": "Framebuffer",
+							"filename": "API_Framebuffer",
+							"topics":
+							[
+								{
+									"title": "CreateFramebuffer",
+									"filename": "API_CreateFramebuffer"
+								}
+							]
+						},
+						{
+							"title": "TextureBuffer",
+							"filename": "API_TextureBuffer",
+							"topics":
+							[
+								{
+									"title": "CreateTextureBuffer",
+									"filename": "API_CreateTextureBuffer"
+								}
+							]
+						},
+						{
 							"title": "Window",
 							"filename": "API_Window",
 							"topics":
@@ -1113,17 +1135,6 @@
 											"filename": "API_CreateFileSystemWatcher"
 										}
 									]						
-								},
-								{
-									"title": "Framebuffer",
-									"filename": "API_Framebuffer",
-									"topics":
-									[
-										{
-											"title": "CreateFramebuffer",
-											"filename": "API_CreateFramebuffer"
-										}
-									]
 								},															
 								{
 									"title": "GUI",
