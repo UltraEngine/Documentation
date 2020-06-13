@@ -1,28 +1,28 @@
-# CreateCollisionBox #
-This function creates a collision box shape for physics interactions.
+# CreatenBoxCollider #
+This function creates a collider box shape for physics interactions.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionBox**(const float width, const float height, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionBox**(const [Vec3](CPP_Vec3.md)& size, const [Vec3](CPP_Vec3.md)& offset = 0.0, const [Vec3](CPP_Vec3.md)& rotation = 0.0)
+- shared_ptr<[Collider](CPP_Collision.md)> **CreateBoxCollider**(const float width, const float height, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
+- shared_ptr<[Collider](CPP_Collision.md)> **CreateBoxCollider**(const [Vec3](CPP_Vec3.md)& size, const [Vec3](CPP_Vec3.md)& offset = 0.0, const [Vec3](CPP_Vec3.md)& rotation = 0.0)
 
 ## Parameters ##
 |Name|Description|
 |---|----|
-|**width**|width of collision box|
-|**height**|height of collision box|
-|**depth**|depth of collision box|
-|**x**|x component of collision box offset|
-|**y**|y component of collision box offset|
-|**z**|z component of collision box offset|
-|**pitch**|pitch of collision box rotation|
-|**yaw**|yaw of collision box rotation|
-|**roll**|roll of collision box rotation|
-|**size**|size of collision box|
-|**offset**|offset of collision box|
-|**rotation**|rotation of collision box|
+|**width**|width of box|
+|**height**|height of box|
+|**depth**|depth of box|
+|**x**|x component of box offset|
+|**y**|y component of box offset|
+|**z**|z component of box offset|
+|**pitch**|pitch of box rotation|
+|**yaw**|yaw of box rotation|
+|**roll**|roll of box rotation|
+|**size**|size of box|
+|**offset**|offset of box|
+|**rotation**|rotation of box|
 
 ## Returns ##
-Returns a new collision object.
+Returns a new collider object.
 
 ## Example ##
 ```c++
@@ -65,8 +65,8 @@ int main(int argc, const char* argv[])
 
     //Create collision
     auto bounds = model->GetBounds(BOUNDS_LOCAL);
-    auto collision = CreateCollisionBox(bounds.size, bounds.center);
-    model->SetCollision(collision);
+    auto collider = CreateBoxCollider(bounds.size, bounds.center);
+    model->SetCollider(collider);
 
     while (window->Closed() == false)
     {
