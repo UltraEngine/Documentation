@@ -15,7 +15,7 @@ This class provides an interface for loading and creating collision shapes for p
 | [CreateCollisionConvexHull](CPP_CreateCollisionConvexHull.md) | |
 | [CreateCollisionMesh](CPP_CreateCollisionMesh.md) | |
 | [CreateCollisionSphere](CPP_CreateCollisionSphere_32f.md) | |
-| [LoadCollision](CPP_LoadCollision.md) | |
+| [LoadCollision](CPP_LoadCollision.md) | This function loads a collision shape from a collision file. Collision objects can be saved to a file by calling the Save method. |
 
 - [CreateCollisionBox](CPP_CreateCollisionBox_32f.md)
 - [CreateCollisionCompound](CPP_CreateCollisionCompound.md)
