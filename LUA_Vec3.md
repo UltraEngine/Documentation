@@ -1,12 +1,6 @@
 # Vec3 #
 This structure describes a three-dimensional vector.
 
-## Constructors ##
-- **Vec3**()
-- **Vec3**(number x)
-- **Vec3**(number x, number y)
-- **Vec**3(number x, number y, number z)
-
 ## Properties ##
 - number **x, r, width**
 - number **y, g, height**
@@ -35,6 +29,12 @@ This structure describes a three-dimensional vector.
 - [Vec2](API_Vec3) **gr**
 - [Vec2](API_Vec3) **br**
 - [Vec2](API_Vec3) **bg**
+
+## Constructors ##
+- **Vec3**()
+- **Vec3**(number x)
+- **Vec3**(number x, number y)
+- **Vec**3(number x, number y, number z)
 
 ## Methods ##
 - Cross
