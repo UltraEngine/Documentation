@@ -1,13 +1,5 @@
-# Object
-
+# Object #
 This is the base class for all other classes in the engine.
 
-### Derived Classes
-- [Buffer](CPP_Buffer.md)
-- [Display](CPP_Display.md)
-- [Entity](CPP_Entity_32f.md)
-- [Framebuffer](CPP_Framebuffer.md)
-- [Window](CPP_Window.md)
-
-### Methods
+## Methods ##
 - [Self](CPP_Object_Self.md)
