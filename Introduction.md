@@ -5,6 +5,13 @@ Engine SDK can be programmed with three languages. *C++* offers the fastest code
 
 You currently have selected the C++ language documentation. You can change this by clicking on the language links in the header at the top of this page.
 
+## System Requirements ##
+- Discrete GPU with support for Vulkan 1.1
+- 64-bit operating system
+- Quad-core CPU @2.0 GHz
+- 4.0 Gb RAM
+- 200 Mb free hard drive space
+
 ## Getting Started ##
 To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
 
