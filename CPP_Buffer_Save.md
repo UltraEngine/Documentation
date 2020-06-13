@@ -8,7 +8,7 @@ Thie method saves the buffer's contents to a file.
 ### Parameters ###
 |Name|Description|
 |---|---|
-|path|file name to save|
+|**path**|file name to save|
 
 ## Returns ##
 Returns true if the file is saved successfully, otherwise false is returned.
