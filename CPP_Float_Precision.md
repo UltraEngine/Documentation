@@ -1,3 +1,5 @@
+# Float Precision #
+
 The engine provides two builds with different float precision. The 32f uses 32-bit floating point values for object orientations. This is what most games use, and will provide good precision for areas up to a few square kilometers. Larger simulations and games will require greater float precision. For these types of projects the 64f build should be used. This will use 64-bit floating point values for all object orientations. 64-bit floats are slower, so this build should only be used when it is needed.
 
 Programming with the 64-bit float build uses some different classes.
