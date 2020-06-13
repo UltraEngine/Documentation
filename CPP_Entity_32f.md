@@ -16,7 +16,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 
 ## Members ##
 
-| Member | Description |
+| Name | Description |
 |---|---|
 | wstring **name** | name of the entity | 
 | const [Vec3](CPP_Vec3.md)& **position** | read-only position in local space |
@@ -29,7 +29,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 
 ## Methods ##
 
-| Method | Description |
+| Name | Description |
 |---|---|
 | [AddActor](CPP_Entity_AddActor.md) | Adds an actor to the entity. |
 | [AddForce](CPP_Entity_AddForce_32f.md) | |
