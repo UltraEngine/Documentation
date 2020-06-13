@@ -430,7 +430,11 @@
 				{
 					"title": "Actor",
 					"filename": "API_Actor"
-				}
+				},
+				{
+					"title": "Connection",
+					"filename": "API_Connection"
+				}				
 			]							
 		},
 		{
