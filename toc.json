@@ -318,6 +318,10 @@
 					"filename": "API_Brush"
 				},
 				{
+					"title": "BSPTree",
+					"filename": "API_BSPTree"
+				},				
+				{
 					"title": "ConvexHull",
 					"filename": "API_ConvexHull_FP"
 				},
