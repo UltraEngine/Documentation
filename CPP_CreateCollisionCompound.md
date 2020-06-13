@@ -5,8 +5,8 @@ This function creates a complex collision shape that is made up of multiple sub-
 - shared_ptr<[Collider](CPP_Collision.md)\> **CreateCompoundCollider**(vector<shared_ptr<[Collider](CPP_Collision.md)\> \> subshapes)
 
 ## Parameters ##
-|Name|Description|
-|-|-|
+|   |   |
+|---|---|
 |**subshapes**|array of collision objects to be combined into the created shape|
 
 ## Example ##
