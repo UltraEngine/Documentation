@@ -1,7 +1,7 @@
 # Welcome to Engine
 Welcome to the Engine SDK documentation. You're about to start learning how to use the most advanced 3D engine in the world to create high-performance simulations and games.
 
-Engine SDK can be programmed with three languages. **C++** offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects. **C#** offers fast compilation times and more compact syntax, with acceptable performance for most projects. **Lua** is lightweight, easy to learn, and is suitable for simple projects.
+Engine SDK can be programmed with three languages. **C++** offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects. **C#** offers fast compilation times and more compact syntax, and is fast enough for most projects. **Lua** is lightweight, easy to learn, and is suitable for simple projects.
 
 ## System Requirements ##
 - Discrete GPU with support for Vulkan 1.1
