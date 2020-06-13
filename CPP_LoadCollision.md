@@ -56,8 +56,8 @@ int main(int argc, const char* argv[])
     model->SetMass(1);
 
     //Load collision
-    auto collision = LoadCollision("https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.phy");
-    model->SetCollision(collision);
+    auto collision = LoadCollider("https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.phy");
+    model->SetCollider(collision);
 
     while (window->Closed() == false)
     {
