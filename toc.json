@@ -1400,6 +1400,10 @@
 			"topics":
 			[
 				{
+					"title": "Event",
+					"filename": "API_Event"
+				},				
+				{
 					"title": "GUI",
 					"filename": "API_GUI"
 				},
