@@ -6,7 +6,7 @@ This method sets the position of an entity in 3-dimensional space, using local o
 * void **SetPosition**(const [Vec3](CPP_Vec3.md)& position, const bool global = false)
 
 ### Parameters
-| Name | Description |
+|  |  |
 | ------ | ------ |
 | **x** | X component of the specified position. |
 | **y** | Y component of the specified position. |
