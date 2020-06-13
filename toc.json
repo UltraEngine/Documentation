@@ -38,11 +38,35 @@
 				{
 					"title": "3D Graphics",
 					"topics":
-					[
+					[						
 						{
 							"title": "Entity",
 							"filename": "API_Entity_FP"
-						}
+						},
+						{
+							"title": "Material",
+							"filename": "API_Material"
+						},
+						{
+							"title": "Mesh",
+							"filename": "API_Mesh"
+						},							
+						{
+							"title": "Model",
+							"filename": "API_Model"
+						},						
+						{
+							"title": "Texture",
+							"filename": "API_Texture"
+						},
+						{
+							"title": "Vertex",
+							"filename": "API_Vertex"
+						},						
+						{
+							"title": "World",
+							"filename": "API_World"
+						}						
 					]
 				},
 				{
