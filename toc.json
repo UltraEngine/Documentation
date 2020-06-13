@@ -685,7 +685,11 @@
 					"filename": "API_Vehicle"
 				}						
 			]							
-		},				
+		},
+		{
+			"title": "Plugins",
+			"filename": "API_Plugin"
+		},		
 		{
 			"title": "RayCasting",
 			"topics":
@@ -1248,10 +1252,6 @@
 							"title": "Pixmap",
 							"filename": "API_Pixmap"
 						},								
-						{
-							"title": "Plugin",
-							"filename": "API_Plugin"
-						},
 						{
 							"title": "Scene",
 							"filename": "API_Scene",
