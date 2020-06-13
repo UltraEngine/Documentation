@@ -2,7 +2,7 @@
 The engine provides a powerful interface for reading and writing files on the hard drive or from a remove server.
 
 ## Classes ##
-|   |   |
+| Name | Description |
 |---|---|
 | [BufferStream](CPP_BufferStream.md) | Allows reading and writing from memory blocks. |
 | [FileSystemWatcher](CPP_FileSystemWatcher.md) | Monitors a directory for changes. |
@@ -10,7 +10,7 @@ The engine provides a powerful interface for reading and writing files on the ha
 | [Package](CPP_Package.md) | Load compressed packages of files |
 
 ## Functions ##
-|   |   |
+| Name | Description |
 |---|---|
 | [ReadFile](CPP_ReadFile.md) | Loads a file from a path and returns a stream. |
 | [WriteFile](CPP_WriteFile.md) | |
