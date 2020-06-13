@@ -115,7 +115,7 @@
 							"filename": "API_Entity_GetMass_FP"
 						},
 						{
-							"title": "GetOmega",
+							"title": "GetAngularVelocity",
 							"filename": "API_Entity_GetOmega_FP"
 						},
 						{
@@ -204,7 +204,7 @@
 							"filename": "API_Entity_SetMass_FP"
 						},
 						{
-							"title": "SetOmega",
+							"title": "SetAngularVelocity",
 							"filename": "API_Entity_SetOmega_FP"
 						},
 						{
@@ -992,7 +992,7 @@
 									"filename": "API_Entity_GetMass_FP"
 								},
 								{
-									"title": "GetOmega",
+									"title": "GetAngularVelocity",
 									"filename": "API_Entity_GetOmega_FP"
 								},
 								{
@@ -1080,7 +1080,7 @@
 									"filename": "API_Entity_SetMass_FP"
 								},
 								{
-									"title": "SetOmega",
+									"title": "SetAngularVelocity",
 									"filename": "API_Entity_SetOmega_FP"
 								},
 								{
