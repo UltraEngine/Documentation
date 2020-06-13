@@ -266,6 +266,18 @@
 					"filename": "API_Model"
 				},						
 				{
+					"title": "Shader",
+					"filename": "API_Shader"
+				},
+				{
+					"title": "ShaderFamily",
+					"filename": "API_ShaderFamily"
+				},
+				{
+					"title": "ShaderModule",
+					"filename": "API_ShaderModule"
+				},				
+				{
 					"title": "Texture",
 					"filename": "API_Texture"
 				},
