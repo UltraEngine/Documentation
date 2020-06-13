@@ -152,7 +152,26 @@
 						},
 						{
 							"title": "GetWorld",
-							"filename": "API_Entity_GetWorld"
+							"filename": "API_Entity_GetWorld",
+							"topics":
+							[
+								{
+									"title": "Pick",
+									"filename": "API_World_Pick"
+								},
+								{
+									"title": "RecordStats",
+									"filename": "API_World_RecordStats"
+								},
+								{
+									"title": "Render",
+									"filename": "API_World_Render"
+								},
+								{
+									"title": "Update",
+									"filename": "API_World_Update"
+								}								
+							]
 						},
 						{
 							"title": "Hide",
