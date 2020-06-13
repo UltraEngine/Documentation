@@ -8,7 +8,7 @@ If you want to build an application that does not perform any rendering, such as
 ## Classes ##
 | Name | Description |
 | --- | --- |
+| [Display](API_Display.md) | |
 | [Framebuffer](API_Framebuffer.md) | |
-| [ListDisplays](API_ListDisplays.md) | |
 | [TextureBuffer](API_TextureBuffer.md) | |
 | [Window](API_Window.md) | |
