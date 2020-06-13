@@ -5,10 +5,10 @@ This function creates a static buffer from an existing block of memory.
 - shared_ptr<[Buffer](CPP_Buffer.md)\> CreateStaticBuffer(const void* data, const uint64_t size)
 
 ### Parameters ###
-|Name|Description|
-|---|---|
-|data|pointer to a block of allocated memory|
-|size|size of the allocated memory block|
+| Name | Description |
+| ----- | ----- |
+| **data** | pointer to a block of allocated memory |
+| **size** | size of the allocated memory block |
 
 ## Returns ###
 Returns a new static buffer.
