@@ -375,17 +375,7 @@
 		{
 			"title": "Float Precision",
 			"filename": "API_Float_Precision"
-		},		
-		{
-			"title": "GUI",
-			"topics":
-			[
-				{
-					"title": "GUI",
-					"filename": "API_GUI"
-				}
-			]							
-		},		
+		},				
 		{
 			"title": "Logic",
 			"topics":
@@ -632,6 +622,10 @@
 			"topics":
 			[
 				{
+					"title": "NavAgent",
+					"filename": "API_Agent"
+				},				
+				{
 					"title": "NavMesh",
 					"filename": "API_NavMesh"
 				}
@@ -782,7 +776,11 @@
 				{
 					"title": "Sound",
 					"filename": "API_Sound"
-				}
+				},
+				{
+					"title": "Speaker",
+					"filename": "API_Speaker"
+				}				
 			]							
 		},	
 		{
@@ -1394,6 +1392,20 @@
 				{
 					"title": "TransformVector",
 					"filename": "API_TransformVector"
+				}				
+			]							
+		},
+		{
+			"title": "User Interface",
+			"topics":
+			[
+				{
+					"title": "GUI",
+					"filename": "API_GUI"
+				},
+				{
+					"title": "Widget",
+					"filename": "API_Widget"
 				}				
 			]							
 		}		
