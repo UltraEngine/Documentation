@@ -3,10 +3,12 @@ This method returns an integer value from the memory buffer.
 
 ## Syntax ##
 - float **PeekFloat**(const uint64_t pos)
+
 ### Parameters ###
 | Name | Description |
 | ----- | ----- |
 | **pos** | offset from the start of the buffer, in bytes |
+
 ## Returns ##
 Returns a float value.
 
