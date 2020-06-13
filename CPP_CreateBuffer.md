@@ -7,7 +7,7 @@ This function creates a new memory buffer object.
 ### Parameters ###
 | Name | Description |
 | ----- | ----- |
-| size | size of the allocated memory block |
+| **size** | size of the allocated memory block |
 
 ## Returns ###
 If the memory is allocated successfully a new buffer object is returned, otherwise NULL is returned.
