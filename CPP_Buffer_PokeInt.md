@@ -2,7 +2,7 @@
 This method inserts a single integer into a memory buffer.
 
 ## Syntax ##
-- void **PokeInt**(const uint64_t pos, const int i);
+- void **PokeInt**(const uint64_t pos, const int i)
 
 ### Parameters ###
 | Name | Description |
