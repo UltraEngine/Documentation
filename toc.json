@@ -776,37 +776,7 @@
 					"filename": "API_Sound"
 				}
 			]							
-		},
-		{
-			"title": "Transform",
-			"topics":
-			[
-				{
-					"title": "TransformAABB",
-					"filename": "API_TransformAABB"
-				},
-				{
-					"title": "TransformNormal",
-					"filename": "API_TransformNormal"
-				},				
-				{
-					"title": "TransformPlane",
-					"filename": "API_TransformPlane"
-				},			
-				{
-					"title": "TransformPoint",
-					"filename": "API_TransformPoint"
-				},
-				{
-					"title": "TransformRotation",
-					"filename": "API_TransformRotation"
-				},
-				{
-					"title": "TransformVector",
-					"filename": "API_TransformVector"
-				}				
-			]							
-		},		
+		},	
 		{
 			"title": "Classes",
 			"filename": "API_Classes",
@@ -1392,6 +1362,36 @@
 		{
 			"title": "Steamworks SDK Integration",
 			"filename": "API_Steam_Integration"
-		}			
+		},
+		{
+			"title": "Transform",
+			"topics":
+			[
+				{
+					"title": "TransformAABB",
+					"filename": "API_TransformAABB"
+				},
+				{
+					"title": "TransformNormal",
+					"filename": "API_TransformNormal"
+				},				
+				{
+					"title": "TransformPlane",
+					"filename": "API_TransformPlane"
+				},			
+				{
+					"title": "TransformPoint",
+					"filename": "API_TransformPoint"
+				},
+				{
+					"title": "TransformRotation",
+					"filename": "API_TransformRotation"
+				},
+				{
+					"title": "TransformVector",
+					"filename": "API_TransformVector"
+				}				
+			]							
+		}		
 	]
 }
