@@ -1,4 +1,4 @@
-# Collision
+# Collider
 
 This class provides an interface for loading and creating collision shapes for physics interactions.
 
