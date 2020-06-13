@@ -1,9 +1,9 @@
-# CreateCollisionConvexHull #
+# CreateConvexHullCollider #
 This function creates a convex hull that encapsulates all vertices of the input geometry.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionConvexHull**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
-- shared_ptr<[Collision](CPP_Collision.md)\> **CreateCollisionConvexHull**(shared_ptr<[Model](CPP_Model.md)\> geometry)
+- shared_ptr<[Collider](CPP_Collision.md)\> **CreateConvexHullCollider**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
+- shared_ptr<[Collider](CPP_Collision.md)\> **CreateConvexHullCollider**(shared_ptr<[Model](CPP_Model.md)\> geometry)
 
 ## Parameters ##
 |Name|Description|
@@ -47,8 +47,8 @@ int main(int argc, const char* argv[])
     model->Turn(90, 30, 0);
 
     //Create collision
-    auto collision = CreateCollisionConvexHull(model);
-    model->SetCollision(collision);
+    auto collider = CreateConvexHullCollider(model);
+    model->SetCollider(collider);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
