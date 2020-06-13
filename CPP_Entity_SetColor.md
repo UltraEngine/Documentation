@@ -1,4 +1,5 @@
 # Entity::SetColor #
+This method can be used to colorize a visible entity such as a model or light.
 
 ## Syntax ##
 - void **SetColor**(const [Vec4](CPP_Vec4.md)& color, const bool recursive = false)
