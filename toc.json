@@ -325,6 +325,10 @@
 			]							
 		},
 		{
+			"title": "Float Precision",
+			"filename": "API_Float_Precision"
+		},		
+		{
 			"title": "GUI",
 			"topics":
 			[
