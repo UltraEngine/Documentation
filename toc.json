@@ -325,7 +325,21 @@
 					"filename": "API_Speaker"
 				}				
 			]							
-		},		
+		},	
+		{
+			"title": "Core",
+			"topics":
+			[
+				{
+					"title": "Asset",
+					"filename": "API_Asset"
+				},
+				{
+					"title": "Object",
+					"filename": "API_Object"
+				}				
+			]							
+		},			
 		{
 			"title": "Constructive Solid Geometry",
 			"filename": "CSG",
