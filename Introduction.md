@@ -1,7 +1,6 @@
 # Welcome to Engine
 Welcome to the engine tutorials. You're about to start learning how to use the most advanced 3D engine technology in the world to create high-performance 3D simulations and games.
 
-## Programming
 Engine SDK can be programmed with three languages.
 - C++ offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects.
 - C# offers fast compilation times and more compact syntax, with acceptable performance for most projects.
