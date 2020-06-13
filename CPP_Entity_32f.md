@@ -4,16 +4,6 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 ## Base Class
 - [Object](CPP_Object.md)
 
-## Derived Classes ##
-- [Brush](CPP_Brush.md)
-- [Camera](CPP_Camera.md)
-- [Emitter](CPP_Emitter.md)
-- [Light](CPP_Light.md)
-- [Listener](CPP_Listener.md)
-- [Model](CPP_Model.md)
-- [Pivot](CPP_Pivot.md)
-- [Terrain](CPP_Terrain.md)
-
 ## Members ##
 
 | Name | Description |
