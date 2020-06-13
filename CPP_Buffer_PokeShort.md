@@ -2,7 +2,7 @@
 This method inserts a single short integer into a memory buffer.
 
 ## Syntax ##
-- void **PokeShort**(const uint64_t pos, const unsigned short i);
+- void **PokeShort**(const uint64_t pos, const unsigned short i)
 
 ### Parameters ###
 | Name | Description |
