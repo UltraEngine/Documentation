@@ -4,6 +4,8 @@ The engine provides two builds with different float precision. The 32f uses 32-b
 
 Programming with the 64-bit float build uses some different classes.
 
+Note that the 64-bit float build does not replace all float values with double. Double float values are only used for properties that benefit from increased precision.
+
 32f:
 ```c++
 Vec3 pos = entity->GetPosition();
