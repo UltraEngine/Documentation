@@ -120,7 +120,17 @@
 							"filename": "API_Warn"
 						}						
 					]					
-				},				
+				},
+				{
+					"title": "File System",
+					"topics":
+					[
+						{
+							"title": "OpenDir",
+							"filename": "API_OpenDir"
+						}
+					]							
+				},			
 				{
 					"title": "Classes",
 					"filename": "API_Classes",
@@ -977,23 +987,6 @@
 				{
 					"title": "Constants",
 					"filename": "API_Constants"
-				},				
-				{
-					"title": "Functions",
-					"filename": "API_Functions",
-					"topics":
-					[
-						{
-							"title": "File System",
-							"topics":
-							[
-								{
-									"title": "OpenDir",
-									"filename": "API_OpenDir"
-								}
-							]							
-						}
-					]
 				},
 				{
 					"title": "File Formats",
