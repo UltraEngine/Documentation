@@ -735,7 +735,11 @@
 						{
 							"title": "CreateFramebuffer",
 							"filename": "API_CreateFramebuffer"
-						}
+						},
+						{
+							"title": "GetSize",
+							"filename": "API_Framebuffer_GetSize"
+						}						
 					]
 				},
 				{
