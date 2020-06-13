@@ -8,8 +8,8 @@ This function loads a file from a path and returns a stream.
 ### Parameters ###
 |  |  |
 |--|--|
-| path | file name or URL to load |
-| flags | optional load settings |
+| **path** | file name or URL to load |
+| **flags** | optional load settings |
 
 ## Returns ##
 Returns a new [Stream](CPP_Stream.md) object If the file was successfully read, otherwise NULL is returned.
