@@ -325,6 +325,29 @@
 			]							
 		},
 		{
+			"title": "File Formats",
+			"topics":
+			[
+				{
+					"title": "Collision",
+					"filename": "Collision_File_Format"
+				},
+				{
+					"title": "Language"
+				},
+				{
+					"title": "Material",
+					"filename": "Material_File_Format"
+				},
+				{
+					"title": "Shader Family"
+				},
+				{
+					"title": "Workflow"
+				}						
+			]
+		},		
+		{
 			"title": "Float Precision",
 			"filename": "API_Float_Precision"
 		},		
@@ -1121,7 +1144,7 @@
 									"filename": "API_CreateFileSystemWatcher"
 								}
 							]						
-						},															
+						},						
 						{
 							"title": "GUI",
 							"filename": "API_GUI",
@@ -1313,29 +1336,6 @@
 		{
 			"title": "Steamworks SDK Integration",
 			"filename": "API_Steam_Integration"
-		},
-		{
-			"title": "File Formats",
-			"topics":
-			[
-				{
-					"title": "Collision",
-					"filename": "Collision_File_Format"
-				},
-				{
-					"title": "Language"
-				},
-				{
-					"title": "Material",
-					"filename": "Material_File_Format"
-				},
-				{
-					"title": "Shader Family"
-				},
-				{
-					"title": "Workflow"
-				}						
-			]
 		}			
 	]
 }
