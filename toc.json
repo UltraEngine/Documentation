@@ -46,8 +46,41 @@
 					]
 				},
 				{
-					"title": "Animation"
+					"title": "Animation",
+					"topics":
+					[
+						{
+							"title": "Bone",
+							"filename": "API_Bone"
+						},
+						{
+							"title": "Skeleton",
+							"filename": "API_Skeleton"
+						}						
+					]					
 				},
+				{
+					"title": "Debugging",
+					"topics":
+					[
+						{
+							"title": "Assert",
+							"filename": "API_Assert"
+						},
+						{
+							"title": "DebugLog",
+							"filename": "API_DebugLog"
+						},						
+						{
+							"title": "RuntimeError",
+							"filename": "API_RuntimeError"
+						},
+						{
+							"title": "Warn",
+							"filename": "API_Warn"
+						}						
+					]					
+				},				
 				{
 					"title": "Classes",
 					"filename": "API_Classes",
