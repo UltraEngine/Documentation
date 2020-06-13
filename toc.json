@@ -610,7 +610,46 @@
 						{
 							"title": "Joint",
 							"filename": "API_Joint"
-						}
+						},
+						{
+							"title": "Collision",
+							"filename": "API_Collision",
+							"topics":
+							[
+								{
+									"title": "CreateCollisionBox",
+									"filename": "API_CreateCollisionBox_FP"
+								},
+								{
+									"title": "CreateCollisionCompound",
+									"filename": "API_CreateCollisionCompound"
+								},
+								{
+									"title": "CreateCollisionCone",
+									"filename": "API_CreateCollisionCone_FP"
+								},												
+								{
+									"title": "CreateCollisionCylinder",
+									"filename": "API_CreateCollisionCylinder_FP"
+								},												
+								{
+									"title": "CreateCollisionConvexHull",
+									"filename": "API_CreateCollisionConvexHull"
+								},									
+								{
+									"title": "CreateCollisionMesh",
+									"filename": "API_CreateCollisionMesh"
+								},
+								{
+									"title": "CreateCollisionSphere",
+									"filename": "API_CreateCollisionSphere_FP"
+								},
+								{
+									"title": "LoadCollision",
+									"filename": "API_LoadCollision"
+								}												
+							]
+						}						
 					]							
 				},				
 				{
@@ -688,45 +727,7 @@
 									"filename": "API_Asset",
 									"topics":
 									[
-										{
-											"title": "Collision",
-											"filename": "API_Collision",
-											"topics":
-											[
-												{
-													"title": "CreateCollisionBox",
-													"filename": "API_CreateCollisionBox_FP"
-												},
-												{
-													"title": "CreateCollisionCompound",
-													"filename": "API_CreateCollisionCompound"
-												},
-												{
-													"title": "CreateCollisionCone",
-													"filename": "API_CreateCollisionCone_FP"
-												},												
-												{
-													"title": "CreateCollisionCylinder",
-													"filename": "API_CreateCollisionCylinder_FP"
-												},												
-												{
-													"title": "CreateCollisionConvexHull",
-													"filename": "API_CreateCollisionConvexHull"
-												},									
-												{
-													"title": "CreateCollisionMesh",
-													"filename": "API_CreateCollisionMesh"
-												},
-												{
-													"title": "CreateCollisionSphere",
-													"filename": "API_CreateCollisionSphere_FP"
-												},
-												{
-													"title": "LoadCollision",
-													"filename": "API_LoadCollision"
-												}												
-											]
-										},
+										
 										{
 											"title": "Font",
 											"filename": "API_Font"
