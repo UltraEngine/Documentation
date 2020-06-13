@@ -7,8 +7,10 @@ The main supported model file format is the [glTF](https://www.khronos.org/gltf/
 * [Entity](CPP_Entity_32f.md)
 
 ## Members
-- const vector<shared_ptr<[LOD](CPP_LOD.md)\> \>& lods
-- const shared_ptr<[Skeleton](CPP_Skeleton.md)\>& skeleton
+| Name | Description |
+|---|---|
+| const vector<shared_ptr<[LOD](CPP_LOD.md)\> \>& lods | |
+| const shared_ptr<[Skeleton](CPP_Skeleton.md)\>& skeleton | |
 
 ## Methods
 - [Animate](CPP_Model_Animate.md)
