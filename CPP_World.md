@@ -6,9 +6,20 @@
 - [RenderStats](CPP_RenderStats.md) renderstats
 
 ## Methods ##
+- CurrentTime
+- GetCollisionResponse
+- GetAmbientLight
+- GetSkybox
+- GetGravity
+- Pause
 - [Pick](CPP_World_Pick_32f.md)
 - [RecordStats](CPP_World_RecordStats.md)
 - [Render](CPP_World_Render.md)
+- Resume
+- SetAmbientLight
+- SetCollisionResponse
+- SetGravity
+- SetSkybox
 - [Update](CPP_World_Update.md)
 
 ## Functions ##
