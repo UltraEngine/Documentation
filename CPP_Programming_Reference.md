@@ -7,7 +7,6 @@
 - [SpriteLayer](SpriteLayer.md)
 
 ## 3D Graphics ##
-- Actor
 - ConvexHull
 - Edge
 - [Entity](CPP_Entity_32f.md)
@@ -46,6 +45,10 @@
 - Event
 - GUI
 - Widget
+
+## Logic ##
+- Actor
+- Connection
 
 ## Math ##
 - AABB
