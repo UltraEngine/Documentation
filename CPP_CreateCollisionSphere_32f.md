@@ -1,21 +1,21 @@
-# CreateCollisionSphere #
+# CreateSphereCollider #
 This function creates a collision sphere shape for physics interactions.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionSphere**(const float radius, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0)
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionSphere**(const float radius, const [Vec3](CPP_Vec3.md)& offset)
+- shared_ptr<[Collider](CPP_Collision.md)> **CreateSphereCollider**(const float radius, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0)
+- shared_ptr<[Collider](CPP_Collision.md)> **CreateSphereCollider**(const float radius, const [Vec3](CPP_Vec3.md)& offset)
 
 ## Parameters ##
 |Name|Description|
 |---|----|
-|**radius**|radius of collision shape|
-|**x**|x component of collision shape offset|
-|**y**|y component of collision shape offset|
-|**z**|z component of collision shape offset|
-|**offset**|offset of collision shape|
+|**radius**|radius of shape|
+|**x**|x component of shape offset|
+|**y**|y component of shape offset|
+|**z**|z component of shape offset|
+|**offset**|offset of shape|
 
 ## Returns ##
-Returns a new collision object.
+Returns a new collider object.
 
 ## Example ##
 ```c++
@@ -55,8 +55,8 @@ int main(int argc, const char* argv[])
     model->AddForce(100, 0, 0);
 
     //Create collision
-    auto collision = CreateCollisionSphere(0.5);
-    model->SetCollision(collision);
+    auto collision = CreateSphereCollider(0.5);
+    model->SetCollider(collision);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
