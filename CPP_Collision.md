@@ -2,9 +2,7 @@
 
 This class provides an interface for loading and creating collision shapes for physics interactions.
 
-## Base Class ##
-
-- [Asset](CPP_Asset.md)
+**Base Class:** [Asset](CPP_Asset.md)
 
 ## Functions ##
 
