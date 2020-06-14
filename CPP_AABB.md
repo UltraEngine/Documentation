@@ -11,7 +11,7 @@ This class describes an axis-aligned bounding box.
 | [Vec3](CPP_Vec3.md) size | Distance between the minimum and maximum extents |
 | float radius | Radius of a sphere that complete encloses the bounding box. |
 
-##Constructors ##
+## Constructors ##
 | Constructor |
 | --- |
 | **AABB**() |
