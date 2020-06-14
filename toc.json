@@ -674,6 +674,30 @@
 					"filename": "API_Quat"
 				},
 				{
+					"title": "TransformAABB",
+					"filename": "API_TransformAABB"
+				},
+				{
+					"title": "TransformNormal",
+					"filename": "API_TransformNormal"
+				},				
+				{
+					"title": "TransformPlane",
+					"filename": "API_TransformPlane"
+				},			
+				{
+					"title": "TransformPoint",
+					"filename": "API_TransformPoint"
+				},
+				{
+					"title": "TransformRotation",
+					"filename": "API_TransformRotation"
+				},
+				{
+					"title": "TransformVector",
+					"filename": "API_TransformVector"
+				},			
+				{
 					"title": "Vec2",
 					"filename": "API_Vec2"
 				},						
@@ -726,7 +750,7 @@
 							"filename": "API_Vec4_Normalize"
 						}
 					]							
-				}					
+				}				
 			]
 		},				
 		{
@@ -1008,36 +1032,6 @@
 					"filename": "API_Sleep"
 				}										
 			]			
-		},		
-		{
-			"title": "Transform",
-			"topics":
-			[
-				{
-					"title": "TransformAABB",
-					"filename": "API_TransformAABB"
-				},
-				{
-					"title": "TransformNormal",
-					"filename": "API_TransformNormal"
-				},				
-				{
-					"title": "TransformPlane",
-					"filename": "API_TransformPlane"
-				},			
-				{
-					"title": "TransformPoint",
-					"filename": "API_TransformPoint"
-				},
-				{
-					"title": "TransformRotation",
-					"filename": "API_TransformRotation"
-				},
-				{
-					"title": "TransformVector",
-					"filename": "API_TransformVector"
-				}				
-			]							
 		}	
 	]
 }
