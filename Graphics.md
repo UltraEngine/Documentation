@@ -4,11 +4,3 @@ A [Window](API_Window.md) is then created on one of the displays and a [Framebuf
 You can also render to a texture using a [TextureBuffer](API_TextureBuffer.md) object.
 
 If you want to build an application that does not perform any rendering, such as a dedicated server for a networked game, you can simply skip window creation and never render the world.
-
-## Classes ##
-| Name | Description |
-| --- | --- |
-| [Display](API_Display.md) | |
-| [Framebuffer](API_Framebuffer.md) | |
-| [TextureBuffer](API_TextureBuffer.md) | |
-| [Window](API_Window.md) | |
