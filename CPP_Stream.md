@@ -2,9 +2,7 @@
 
 This class provides an interface for reading and writing files.
 
-## Base Class ##
-
-- [Object](CPP_Object.md)
+**Base Class:** [Object](CPP_Object.md)
 
 ## Members ##
 
