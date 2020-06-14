@@ -4,11 +4,13 @@ This class describes an axis-aligned bounding box.
 
 ## Members ##
 
-- [Vec3](CPP_Vec3.md) min
-- [Vec3](CPP_Vec3.md) max
-- [Vec3](CPP_Vec3.md) center
-- [Vec3](CPP_Vec3.md) size
-- float radius
+| Name | Description |
+| ----- | ----- |
+| [Vec3](CPP_Vec3.md) min | Minimum extent of the bounding box. |
+| [Vec3](CPP_Vec3.md) max | Maximum extent of the bounding box. |
+| [Vec3](CPP_Vec3.md) center | Halfway point between the minimum and maximum extents |
+| [Vec3](CPP_Vec3.md) size | Distance between the minimum and maximum extents |
+| float radius | Radius of a sphere that complete encloses the bounding box. |
 
 ## Constructors ##
 
@@ -19,5 +21,5 @@ This class describes an axis-aligned bounding box.
 ## Methods ##
 
 | Name | Description |
-|-----|-----|
+| ----- | ----- |
 | [Update](API_AABB_Update.md) | Calculates the bounding box size, center, and radius from the minimum and maximum extents. |
