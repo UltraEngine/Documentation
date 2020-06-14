@@ -6,8 +6,9 @@ The engine provides a powerful interface for reading and writing files on the ha
 |---|---|
 | [BufferStream](CPP_BufferStream.md) | Allows reading and writing from memory blocks. |
 | [FileSystemWatcher](CPP_FileSystemWatcher.md) | Monitors a directory for changes. |
-| [Stream](CPP_Stream.md) | Read and write files |
-| [Package](CPP_Package.md) | Load compressed packages of files |
+| [Stream](CPP_Stream.md) | Read and write files. |
+| [Package](CPP_Package.md) | Load compressed packages of files. |
+| [Process](CPP_Process.md) | Launches and communicates with external programs. |
 
 ## Functions ##
 | Name | Description |
