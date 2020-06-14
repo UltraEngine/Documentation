@@ -8,64 +8,7 @@
 			"selected": true
 		},
 		{
-			"title": "2D Objects",
-			"topics":
-			[
-				{
-					"title": "Font",
-					"filename": "Font"
-				},
-				{
-					"title": "Pixmap",
-					"filename": "API_Pixmap",
-					"topics":
-					[
-						{
-							"title": "Convert",
-							"filename": "API_Pixmap_Convert"
-						},
-						{
-							"title": "Fill",
-							"filename": "API_Pixmap_Fill"
-						},
-						{
-							"title": "MakeNormalMap",
-							"filename": "API_Pixmap_MakeNormalMap"
-						},
-						{
-							"title": "ReadPixel",
-							"filename": "API_Pixmap_ReadPixel"
-						},
-						{
-							"title": "Resize",
-							"filename": "API_Pixmap_Resize"
-						},
-						{
-							"title": "Save",
-							"filename": "API_Pixmap_Save"
-						},
-						{
-							"title": "Swizzle",
-							"filename": "API_Pixmap_Swizzle"
-						},
-						{
-							"title": "WritePixel",
-							"filename": "API_Pixmap_WritePixel"
-						}							
-					]
-				},						
-				{
-					"title": "Sprite",
-					"filename": "API_Sprite"
-				},
-				{
-					"title": "SpriteLayer",
-					"filename": "API_SpriteLayer"
-				}					
-			]
-		},
-		{
-			"title": "3D Objects",
+			"title": "3D Graphics",
 			"topics":
 			[
 				{
@@ -519,7 +462,7 @@
 			"title": "Graphics",
 			"filename": "Graphics",
 			"topics":
-			[
+			[				
 				{
 					"title": "Display",
 					"filename": "API_Display",
@@ -548,6 +491,10 @@
 					]							
 				},
 				{
+					"title": "Font",
+					"filename": "Font"
+				},			
+				{
 					"title": "Framebuffer",
 					"filename": "API_Framebuffer",
 					"topics":
@@ -562,6 +509,53 @@
 						}						
 					]
 				},
+				{
+					"title": "Pixmap",
+					"filename": "API_Pixmap",
+					"topics":
+					[
+						{
+							"title": "Convert",
+							"filename": "API_Pixmap_Convert"
+						},
+						{
+							"title": "Fill",
+							"filename": "API_Pixmap_Fill"
+						},
+						{
+							"title": "MakeNormalMap",
+							"filename": "API_Pixmap_MakeNormalMap"
+						},
+						{
+							"title": "ReadPixel",
+							"filename": "API_Pixmap_ReadPixel"
+						},
+						{
+							"title": "Resize",
+							"filename": "API_Pixmap_Resize"
+						},
+						{
+							"title": "Save",
+							"filename": "API_Pixmap_Save"
+						},
+						{
+							"title": "Swizzle",
+							"filename": "API_Pixmap_Swizzle"
+						},
+						{
+							"title": "WritePixel",
+							"filename": "API_Pixmap_WritePixel"
+						}							
+					]
+				},						
+				{
+					"title": "Sprite",
+					"filename": "API_Sprite"
+				},
+				{
+					"title": "SpriteLayer",
+					"filename": "API_SpriteLayer"
+				},				
 				{
 					"title": "TextureBuffer",
 					"filename": "API_TextureBuffer",
