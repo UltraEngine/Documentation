@@ -996,6 +996,20 @@
 			]							
 		},
 		{
+			"title": "Scripting",
+			"topics":
+			[
+				{
+					"title": "GetLuaState",
+					"filename": "API_GetLuaState"
+				},				
+				{
+					"title": "RunScript",
+					"filename": "API_RunScript"
+				}
+			]							
+		},		
+		{
 			"title": "Statistics",
 			"topics":
 			[
