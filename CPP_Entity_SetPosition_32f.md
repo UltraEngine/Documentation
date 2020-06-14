@@ -18,6 +18,8 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 | **position** | The position to set. |
 | **global** | Indicates whether the position should be set in global or local space. |
 
+## Example ##
+
 ```C++
 #include "pch.h"
 #include "Project.h"
