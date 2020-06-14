@@ -21,5 +21,6 @@ The engine provides a powerful interface for reading and writing files on the ha
 | DeleteFile | |
 | DeleteDir | |
 | CopyDir | |
+| [RunFile](API_RunFile.md) | Launches a file or folder in the operating system application. |
 
 
