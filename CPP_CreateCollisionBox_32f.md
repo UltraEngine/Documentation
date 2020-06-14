@@ -6,7 +6,7 @@ This function creates a collider box shape for physics interactions.
 - shared_ptr<[Collider](CPP_Collision.md)> **CreateBoxCollider**(const [Vec3](CPP_Vec3.md)& size, const [Vec3](CPP_Vec3.md)& offset = 0.0, const [Vec3](CPP_Vec3.md)& rotation = 0.0)
 
 ## Parameters ##
-|  |  |
+| Name | Description |
 |---|----|
 |**width**|width of box|
 |**height**|height of box|
