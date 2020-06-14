@@ -24,3 +24,9 @@ This class provides an interface for loading, manipulating, and saving image dat
 | Save | |
 | Swizzle | |
 | WritePixel | |
+
+## Functions ##
+
+| Name | Description |
+|-----|-----|
+| [LoadPixmap](API_LoadPixmap.md) | Loads a pixmap from a file. |
