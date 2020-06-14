@@ -1001,6 +1001,10 @@
 					"filename": "API_Confirm"
 				},
 				{
+					"title": "Input",
+					"filename": "API_Input"
+				},				
+				{
 					"title": "Millisecs",
 					"filename": "API_Millisecs"
 				},				
@@ -1011,7 +1015,11 @@
 				{
 					"title": "Proceed",
 					"filename": "API_Proceed"
-				},				
+				},
+				{
+					"title": "Print",
+					"filename": "API_Print"
+				},					
 				{
 					"title": "RequestDir",
 					"filename": "API_RequestDird"
