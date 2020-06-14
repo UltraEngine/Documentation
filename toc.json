@@ -476,10 +476,6 @@
 					]
 				},
 				{
-					"title": "Process",
-					"filename": "API_Process"
-				},
-				{
 					"title": "Stream",
 					"filename": "API_Stream",
 					"topics":
@@ -966,6 +962,17 @@
 			"topics":
 			[
 				{
+					"title": "Process",
+					"filename": "API_Process",
+					"topics":
+					[
+						{
+							"title": "CreateProcess",
+							"filename": "API_CreateProcess"
+						}										
+					]					
+				},				
+				{
 					"title": "Confirm",
 					"filename": "API_Confirm"
 				},
@@ -976,7 +983,7 @@
 				{
 					"title": "Proceed",
 					"filename": "API_Proceed"
-				},
+				},				
 				{
 					"title": "RequestDir",
 					"filename": "API_RequestDird"
