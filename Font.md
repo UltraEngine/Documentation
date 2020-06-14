@@ -7,9 +7,8 @@ This class provides an interface for loading and rasterizing fonts for text draw
 ## Methods ##
 | Name | Description |
 | ----- | ----- |
-| [GetTextWidth]() |  |
-| [GetHeight]() |  |
-| [GetTextWidth]() |  |
+| [GetTextWidth](API_GetTextWidth.md) | Returns the width in pixels of the specified text when rendered with this font. |
+| [GetHeight](API_GetHeight.md) | Returns the height in pixels of a line of text with this font |
 
 ## Functions ##
 | Name | Description |
