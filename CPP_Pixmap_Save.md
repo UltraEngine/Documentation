@@ -13,7 +13,7 @@ This function saves the pixmap to a texture file.
 | **flags** | Optional save settings. |
 
 ## Returns ##
-Returns true if the file was successfully save, otherwise false is returned.
+Returns true if the file was successfully saved, otherwise false is returned.
 
 ## Remarks ##
 
