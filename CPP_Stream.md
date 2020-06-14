@@ -1,20 +1,32 @@
 # Stream #
+
 This class provides an interface for reading and writing files.
 
 ## Base Class ##
+
 - [Object](CPP_Object.md)
 
 ## Derived Classes ##
+
 - [BufferStream](CPP_BufferStream.md)
 
 ## Members ##
-- const wstring& path
+
+| Name | Type | Description |
+| ----- | ----- | ----- |
+| **path** | const wstring& | Read-only file name or URL. |
 
 ## Methods ##
-- WriteInt
-- ReadInt
+
+| Name | Description |
+| ----- | ----- |
+| WriteInt | |
+| ReadInt | |
 
 ## Functions ##
-- OpenFile
-- ReadFile
-- WriteFile
+
+| Name | Description |
+| ----- | ----- |
+| OpenFile | |
+| ReadFile | |
+| WriteFile | |
