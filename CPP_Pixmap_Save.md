@@ -19,14 +19,14 @@ Returns true if the file was successfully saved, otherwise false is returned.
 
 The following formats are supported:
 
-| Format | Method |
-|--|--|
-| BASIS | Basis Universal plugin |
-| BMP | FreeImage plugin |
-| DDS | Native support |
-| JPG | FreeImage plugin |
-| PNG | FreeImage plugin |
-| PSD | FreeImage plugin |
-| TGA | FreeImage plugin |
+| Format | Type | Save Method |
+|--|--|--|
+| BASIS | Texture | Basis Universal plugin |
+| BMP | Image | FreeImage plugin |
+| DDS | Texture | Native support |
+| JPG | Image | FreeImage plugin |
+| PNG | Image | FreeImage plugin |
+| PSD | Image | FreeImage plugin |
+| TGA | Image | FreeImage plugin |
 
 Support for saving new image and texture formats can be added with the plugin system.
