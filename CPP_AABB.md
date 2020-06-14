@@ -12,7 +12,7 @@ This class describes an axis-aligned bounding box.
 | float radius | Radius of a sphere that complete encloses the bounding box. |
 
 ## Constructors ##
-| Constructor |
+| Syntax |
 | --- |
 | **AABB**() |
 | **AABB**(const [Vec3](CPP_Vec3.md)& min, const [Vec3](CPP_Vec3.md)& max) |
