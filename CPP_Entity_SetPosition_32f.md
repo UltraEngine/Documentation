@@ -1,12 +1,12 @@
 # Entity::SetPosition
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
 
-## Syntax
-* void **SetPosition**(const float x, const float y, const float z, const bool global = false)
-* void **SetPosition**(const [Vec3](CPP_Vec3.md)& position, const bool global = false)
+| Syntax |
+| --- |
+| void **SetPosition**(const float x, const float y, const float z, const bool global = false) |
+| void **SetPosition**(const [Vec3](CPP_Vec3.md)& position, const bool global = false) |
 
-### Parameters ###
-| Name | Description |
+| Parameter | Description |
 | ------ | ------ |
 | **x** | X component of the specified position. |
 | **y** | Y component of the specified position. |
