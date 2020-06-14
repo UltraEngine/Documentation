@@ -1,5 +1,5 @@
 # iVec3 #
-This class describes a two-dimensional integer vector.
+This class describes a three-dimensional integer vector.
 
 ## Members ##
 - int **x**, **width**
