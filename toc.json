@@ -864,11 +864,53 @@
 			[
 				{
 					"title": "Mutex",
-					"filename": "API_Mutex"
+					"filename": "API_Mutex",
+					"topics": 
+					[
+						{
+							"title": "CreateMutex",
+							"filename": "API_CreateMutex"
+						},
+						{
+							"title": "Lock",
+							"filename": "API_Mutex_Lock"
+						},
+						{
+							"title": "Unlock",
+							"filename": "API_Mutex_Unlock"
+						}
+					]
 				},				
 				{
 					"title": "Thread",
-					"filename": "API_Thread"
+					"filename": "API_Thread",
+					"topics": 
+					[
+						{
+							"title": "CreateThread",
+							"filename": "API_CreateThread"
+						},
+						{
+							"title": "GetState",
+							"filename": "API_Thread_GetState"
+						},						
+						{
+							"title": "Pause",
+							"filename": "API_Thread_Pause"
+						},
+						{
+							"title": "Resume",
+							"filename": "API_Thread_Resume"
+						},
+						{
+							"title": "SetPriority",
+							"filename": "API_Thread_SetPriority"
+						},						
+						{
+							"title": "Wait",
+							"filename": "API_Thread_Wait"
+						}						
+					]
 				}
 			]							
 		},
