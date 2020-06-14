@@ -8,7 +8,7 @@
 			"selected": true
 		},
 		{
-			"title": "2D Graphics",
+			"title": "2D Objects",
 			"topics":
 			[
 				{
@@ -30,7 +30,7 @@
 			]
 		},
 		{
-			"title": "3D Graphics",
+			"title": "3D Objects",
 			"topics":
 			[
 				{
@@ -469,6 +469,77 @@
 			"filename": "API_Float_Precision"
 		},
 		{
+			"title": "Graphics",
+			"filename": "Graphics",
+			"topics":
+			[
+				{
+					"title": "Display",
+					"filename": "API_Display",
+					"topics":
+					[
+						{
+							"title": "GetScale",
+							"filename": "API_Display_GetScale"
+						},
+						{
+							"title": "GetSize",
+							"filename": "API_Display_GetSize"
+						},
+						{
+							"title": "GetPosition",
+							"filename": "API_Display_GetPosition"
+						},
+						{
+							"title": "GraphicsModes",
+							"filename": "API_Display_GraphicsModes"
+						},											
+						{
+							"title": "ListDisplays",
+							"filename": "API_ListDisplays"
+						}
+					]							
+				},
+				{
+					"title": "Framebuffer",
+					"filename": "API_Framebuffer",
+					"topics":
+					[
+						{
+							"title": "CreateFramebuffer",
+							"filename": "API_CreateFramebuffer"
+						},
+						{
+							"title": "GetSize",
+							"filename": "API_Framebuffer_GetSize"
+						}						
+					]
+				},
+				{
+					"title": "TextureBuffer",
+					"filename": "API_TextureBuffer",
+					"topics":
+					[
+						{
+							"title": "CreateTextureBuffer",
+							"filename": "API_CreateTextureBuffer"
+						}
+					]
+				},
+				{
+					"title": "Window",
+					"filename": "API_Window",
+					"topics":
+					[
+						{
+							"title": "CreateWindow",
+							"filename": "API_CreateWindow"
+						}
+					]
+				}						
+			]							
+		},		
+		{
 			"title": "GUI",
 			"topics":
 			[
@@ -817,77 +888,6 @@
 					"title": "PickInfo",
 					"filename": "API_PickInfo"
 				}
-			]							
-		},
-		{
-			"title": "Rendering",
-			"filename": "Rendering",
-			"topics":
-			[
-				{
-					"title": "Display",
-					"filename": "API_Display",
-					"topics":
-					[
-						{
-							"title": "GetScale",
-							"filename": "API_Display_GetScale"
-						},
-						{
-							"title": "GetSize",
-							"filename": "API_Display_GetSize"
-						},
-						{
-							"title": "GetPosition",
-							"filename": "API_Display_GetPosition"
-						},
-						{
-							"title": "GraphicsModes",
-							"filename": "API_Display_GraphicsModes"
-						},											
-						{
-							"title": "ListDisplays",
-							"filename": "API_ListDisplays"
-						}
-					]							
-				},
-				{
-					"title": "Framebuffer",
-					"filename": "API_Framebuffer",
-					"topics":
-					[
-						{
-							"title": "CreateFramebuffer",
-							"filename": "API_CreateFramebuffer"
-						},
-						{
-							"title": "GetSize",
-							"filename": "API_Framebuffer_GetSize"
-						}						
-					]
-				},
-				{
-					"title": "TextureBuffer",
-					"filename": "API_TextureBuffer",
-					"topics":
-					[
-						{
-							"title": "CreateTextureBuffer",
-							"filename": "API_CreateTextureBuffer"
-						}
-					]
-				},
-				{
-					"title": "Window",
-					"filename": "API_Window",
-					"topics":
-					[
-						{
-							"title": "CreateWindow",
-							"filename": "API_CreateWindow"
-						}
-					]
-				}						
 			]							
 		},		
 		{
