@@ -14,4 +14,4 @@ This class provides an interface for loading and rasterizing fonts for text draw
 ## Functions ##
 | Name | Description |
 | ----- | ----- |
-| [LoadFont]() |  |
+| [LoadFont](API_LoadFont.md) | Loads a font from a True-type font (TTF) file. |
