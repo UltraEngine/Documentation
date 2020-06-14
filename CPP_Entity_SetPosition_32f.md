@@ -5,10 +5,9 @@ An entity can be positioned in local or global coordinates. Local coordinates ar
 
 The engine uses a left-handed coordinate system. The X axis points to the right, the Y axis points up, and the Z axis points forward.
 
-| Syntax |
-| --- |
-| void **SetPosition**(const float x, const float y, const float z, const bool global = false) |
-| void **SetPosition**(const [Vec3](CPP_Vec3.md)& position, const bool global = false) |
+## Syntax ##
+- void **SetPosition**(const float x, const float y, const float z, const bool global = false) 
+- void **SetPosition**(const [Vec3](CPP_Vec3.md)& position, const bool global = false) 
 
 | Parameter | Description |
 | ------ | ------ |
