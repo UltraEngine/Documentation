@@ -23,7 +23,7 @@ The following formats are supported:
 |--|--|
 | BASIS | Basis Universal plugin |
 | BMP | FreeImage plugin |
-| DDS | Internal |
+| DDS | Native support |
 | JPG | FreeImage plugin |
 | PNG | FreeImage plugin |
 | PSD | FreeImage plugin |
