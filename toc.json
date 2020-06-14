@@ -619,7 +619,19 @@
 				{
 					"title": "dVec4",
 					"filename": "API_dVec4"
-				},									
+				},
+				{
+					"title": "iVec2",
+					"filename": "API_iVec2"
+				},						
+				{
+					"title": "iVec3",
+					"filename": "API_iVec3"
+				},
+				{
+					"title": "iVec4",
+					"filename": "API_iVec4"
+				},				
 				{
 					"title": "Mat3",
 					"filename": "API_Mat3"
