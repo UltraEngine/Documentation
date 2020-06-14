@@ -1,10 +1,12 @@
 # Math #
 
 ## Classes ##
-- AABB
-- Vec2
-- Vec3
-- Vec4
+| Name | Description |
+| ----- | ----- |
+| AABB | |
+| Vec2 | |
+| Vec3 | |
+| Vec4 | |
 
 ## Functions ##
 - Abs
