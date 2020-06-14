@@ -16,11 +16,11 @@ This class provides an interface for loading, modifying, and saving image data.
 
 | Name | Description |
 |-----|-----|
-| Swizzle | |
-| MakeNormalMap | |
-| Resize | |
 | Convert | |
-| Save | |
-| WritePixel | |
-| ReadPixel | |
 | Fill | |
+| MakeNormalMap | |
+| ReadPixel | |
+| Resize | |
+| Save | |
+| Swizzle | |
+| WritePixel | |
