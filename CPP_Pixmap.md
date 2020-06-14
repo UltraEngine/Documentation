@@ -6,7 +6,7 @@ This class provides an interface for loading, manipulating, and saving image dat
 
 | Name | Type | Description |
 | ----- | ----- | ----- |
-| **format** | const TextureFormat&  | format of the pixel data |
+| **format** | const [TextureFormat](Constants.md#TextureFormat)&  | format of the pixel data |
 | **size** | const iVec2&  | format of the pixel data |
 | **blocks** | const iVec2&  |  format of the pixel data |
 | **pixels** | const shared_ptr<Buffer>&  | format of the pixel data |
