@@ -6,3 +6,16 @@ You can also render to a texture using a [TextureBuffer](API_TextureBuffer.md) o
 2D drawing is performed by first creating a [SpriteLayer](API_SpriteLayer.md) and then creating [Sprite](API_Sprite.md) objects. You can create sprites as rectangles or as text rendered from a [Font](API_Font.md).
 
 If you want to build an application that does not perform any rendering, such as a dedicated server for a networked game, you can simply skip window creation and never render the world.
+
+## Classes ##
+
+| Name | Description |
+| ----- | ----- |
+| Display | |
+| Font | |
+| Framebuffer | |
+| Pixmap | |
+| Sprite | |
+| SpriteLayer | |
+| TextureBuffer | |
+| Window | |
