@@ -22,8 +22,8 @@ This class creates a physical constraint between two entities. Joints can use li
 | GetActuatorSpeed | Method | Breaks the joint. |
 | SetFriction | Method | Breaks the joint. |
 | GetFriction | Method | Breaks the joint. |
-| CreateSliderJoint | Function | Creates a new hinge joint |
+| CreateBallAndSocketJoint | Function | Creates a new ball and soxket joint |
 | CreateHingeJoint | Function | Creates a new hinge joint |
-| CreateBallAndSocketJoint | Function | Creates a new hinge joint |
-| CreateHingeJoint | Function | Creates a new hinge joint |
-
+| CreateKinematicJoint | Function | Creates a new kinematic joint |
+| CreatePlaneJoint | Function | Creates a new plane joint |
+| CreateSliderJoint | Function | Creates a new slider joint |
