@@ -21,12 +21,12 @@ The following formats are supported:
 
 | Format | Type | Save Method |
 |--|--|--|
-| BASIS | Texture | Basis Universal plugin |
-| BMP | Image | FreeImage plugin |
-| DDS | Texture | Native support |
-| JPG | Image | FreeImage plugin |
-| PNG | Image | FreeImage plugin |
-| PSD | Image | FreeImage plugin |
-| TGA | Image | FreeImage plugin |
+| **BASIS** | Texture | Basis Universal plugin |
+| **BMP** | Image | FreeImage plugin |
+| **DDS** | Texture | Native support |
+| **JPG** | Image | FreeImage plugin |
+| **PNG** | Image | FreeImage plugin |
+| **PSD**1 | Image | FreeImage plugin |
+| **TGA** | Image | FreeImage plugin |
 
 Support for saving new image and texture formats can be added with the plugin system.
