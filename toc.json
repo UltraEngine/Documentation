@@ -427,6 +427,10 @@
 			"topics":
 			[
 				{
+					"title": "Actor",
+					"filename": "API_Actor"
+				},				
+				{
 					"title": "Asset",
 					"filename": "API_Asset"
 				},
@@ -470,7 +474,11 @@
 					"topics":
 					[
 					]
-				},				
+				},
+				{
+					"title": "Process",
+					"filename": "API_Process"
+				},
 				{
 					"title": "Stream",
 					"filename": "API_Stream",
@@ -600,20 +608,6 @@
 				}				
 			]							
 		},		
-		{
-			"title": "Logic",
-			"topics":
-			[
-				{
-					"title": "Actor",
-					"filename": "API_Actor"
-				},
-				{
-					"title": "Connection",
-					"filename": "API_Connection"
-				}				
-			]							
-		},
 		{
 			"title": "Math",
 			"filename": "API_Math",
