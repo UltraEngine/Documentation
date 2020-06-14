@@ -27,7 +27,7 @@
 						{
 							"title": "Fill",
 							"filename": "API_Pixmap_Fill"
-						}
+						},
 						{
 							"title": "MakeNormalMap",
 							"filename": "API_Pixmap_MakeNormalMap"
