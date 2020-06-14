@@ -5,7 +5,7 @@ Each shape can specify any of the following attributes:
 
 | Name | Type | Elements | Description |
 |---|---|---| --- |
-| **shape** | string | 1 | may be BOX, CONE, CYLINDER, SPHERE, CONVEX_HULL, or MESH |
+| **shape** | string | - | may be BOX, CONE, CYLINDER, SPHERE, CONVEX_HULL, or MESH |
 | **size** | number array | 1, 2, or 3 | scale / diameter |
 | **offset** | number array | 3 | position |
 | **rotation** | number array | 3 | Euler rotation | 
