@@ -14,4 +14,4 @@ This class describes an axis-aligned bounding box.
 - **AABB**(const float x0, const float y0, const float z0, const float x1, const float y1, const float z1)
 
 ## Methods ##
-- Update
+- [Update](API_AABB_Update.md)
