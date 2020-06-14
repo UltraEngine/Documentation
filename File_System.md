@@ -15,6 +15,7 @@ The engine provides a powerful interface for reading and writing files on the ha
 | [ReadFile](CPP_ReadFile.md) | Loads a file from a path and returns a stream. |
 | [WriteFile](CPP_WriteFile.md) | |
 | [OpenFile](CPP_OpenFile.md) | |
+| [ClearWebCache](API_ClearWebCache.md) | Clears the cache of downloaded engine files. |
 | LoadDir | |
 | CopyFile | |
 | DeleteFile | |
