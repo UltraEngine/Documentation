@@ -17,7 +17,42 @@
 				},
 				{
 					"title": "Pixmap",
-					"filename": "API_Pixmap"
+					"filename": "API_Pixmap",
+					"topics":
+					[
+						{
+							"title": "Convert",
+							"filename": "API_Pixmap_Convert"
+						},
+						{
+							"title": "Fill",
+							"filename": "API_Pixmap_Fill"
+						}
+						{
+							"title": "MakeNormalMap",
+							"filename": "API_Pixmap_MakeNormalMap"
+						},
+						{
+							"title": "ReadPixel",
+							"filename": "API_Pixmap_ReadPixel"
+						},
+						{
+							"title": "Resize",
+							"filename": "API_Pixmap_Resize"
+						},
+						{
+							"title": "Save",
+							"filename": "API_Pixmap_Save"
+						},
+						{
+							"title": "Swizzle",
+							"filename": "API_Pixmap_Swizzle"
+						},
+						{
+							"title": "WritePixel",
+							"filename": "API_Pixmap_WritePixel"
+						}							
+					]
 				},						
 				{
 					"title": "Sprite",
