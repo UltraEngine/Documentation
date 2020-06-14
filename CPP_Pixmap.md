@@ -1,6 +1,6 @@
 # Pixmap #
 
-This class provides an interface for loading, manipulating, and saving image data. Pixmaps cannot be displayed directly on the screen, but can be used to build a [Texture](CPP_Textures.md), which can be applied to a material and displayed on a [Model](API_Model.md) or [Sprite](API_Sprite.md).
+This class provides an interface for loading, manipulating, and saving image data. Pixmaps cannot be displayed directly on the screen, but can be used to build a [Texture](CPP_Textures.md), which can be applied to a [Material](API_Material.md) and displayed on a [Model](API_Model.md) or [Sprite](API_Sprite.md).
 
 ## Members ##
 
