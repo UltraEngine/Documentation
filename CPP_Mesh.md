@@ -4,9 +4,9 @@ The mesh class is a collection of vertices and polygons that are visible in the 
 
 | Property | Type | Description |
 | --- | --- | --- |
-| **indices** | vector<uint32_t\> | Array of polygon indices. |
-| **material** | shared_ptr<[Material](API_Material.md)\>& | Read-only material object. |
-| **vertices** | vector<[Vertex](CPP_Vertex)\> | Array of mesh vertices. |
+| indices | vector<uint32_t\> | Array of polygon indices. |
+| material | shared_ptr<[Material](API_Material.md)\>& | Read-only material object. |
+| vertices | vector<[Vertex](CPP_Vertex)\> | Array of mesh vertices. |
 | [AddVertex](API_AddVertex.md) | Method | Adds a new vertex to the mesh. |
 | [AddPolygon](API_AddPolygon.md) | Method | Adds a new polygon to the mesh. |
 | [Finalize](API_Finalize.md) | Method | Sends the mesh data to the rendering thread. |
