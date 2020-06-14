@@ -29,4 +29,5 @@ This class provides an interface for loading, manipulating, and saving image dat
 
 | Name | Description |
 |-----|-----|
-| [LoadPixmap](API_LoadPixmap.md) | Loads a pixmap from a file. |
+| [CreatePixmap](API_LoadPixmap.md) | Creates a new pixmap object. |
+| [LoadPixmap](API_LoadPixmap.md) | Loads a pixmap object from a file. |
