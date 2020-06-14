@@ -4,5 +4,7 @@ Leadwerks 5 makes extensive use of multithreading to deliver maximum performance
 Multithreading is an advanced feature and should only be used by expert programmers.
 
 ## Classes ##
-- [Mutex](API_Mutex.md)
-- [Thread](API_Thread.md)
+| Name | Description |
+| ----- | ----- |
+| [Mutex](API_Mutex.md) | | 
+| [Thread](API_Thread.md) | |
