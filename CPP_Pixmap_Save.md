@@ -26,7 +26,7 @@ The following formats are supported:
 | **DDS** | Texture | Native support |
 | **JPG** | Image | FreeImage plugin |
 | **PNG** | Image | FreeImage plugin |
-| **PSD**1 | Image | FreeImage plugin |
+| **PSD** | Image | FreeImage plugin |
 | **TGA** | Image | FreeImage plugin |
 
 Support for saving new image and texture formats can be added with the plugin system.
