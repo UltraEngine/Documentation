@@ -1002,7 +1002,7 @@
 				{
 					"title": "GetLuaState",
 					"filename": "API_GetLuaState"
-				},				
+				},
 				{
 					"title": "RunScript",
 					"filename": "API_RunScript"
