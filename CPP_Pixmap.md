@@ -1,4 +1,5 @@
 # Pixmap #
+
 This class provides an interface for loading, modifying, and saving image data.
 
 ## Members ##
@@ -12,8 +13,14 @@ This class provides an interface for loading, modifying, and saving image data.
 | **blocksize** | const int&  | format of the pixel data |
 
 ## Methods ##
+
 | Name | Description |
 |-----|-----|
 | Swizzle | |
-| makeNormalmap | |
+| MakeNormalMap | |
 | Resize | |
+| Convert | |
+| Save | |
+| WritePixel | |
+| ReadPixel | |
+| Fill | |
