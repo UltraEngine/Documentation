@@ -6,8 +6,7 @@ This function loads a collision shape from a [collision file](Collision_File_For
 - shared_ptr<[Collider](CPP_Collision.md)\> **LoadCollider**(const wstring& path, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
 - shared_ptr<[Collider](CPP_Collision.md)\> **LoadCollider**(shared_ptr<[Stream](CPP_Stream.md)\> stream, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
 
-## Parameters ##
-|Name|Description|
+|Parameter|Description|
 |---|---|
 |path|file path to open|
 |stream|open stream to read from|
