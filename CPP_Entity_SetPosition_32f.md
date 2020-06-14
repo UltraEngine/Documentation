@@ -11,11 +11,11 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 
 | Parameter | Description |
 | ------ | ------ |
-| **x** | X component of the specified position. |
-| **y** | Y component of the specified position. |
-| **z** | Z component of the specified position. |
-| **position** | The position to set. |
-| **global** | Indicates whether the position should be set in global or local space. |
+| x | X component of the specified position. |
+| y | Y component of the specified position. |
+| z | Z component of the specified position. |
+| position | The position to set. |
+| global | Indicates whether the position should be set in global or local space. |
 
 ## Example ##
 
