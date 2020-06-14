@@ -9,6 +9,11 @@
 | Vec4 | |
 
 ## Functions ##
+
+| Name | Description |
+| ----- | ----- |
+| | |
+
 - Abs
 - Alpha
 - ASin
