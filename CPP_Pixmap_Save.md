@@ -1,5 +1,5 @@
 # Pixmap::Save #
-This function saves the pixmap to a texture file.
+This function saves the pixmap to a texture or image file.
 
 ## Syntax ##
 - bool **Save**(const string& path, const SaveFlags flags = SAVE_DEFAULT)
