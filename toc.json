@@ -1001,6 +1001,10 @@
 					"filename": "API_Confirm"
 				},
 				{
+					"title": "Millisecs",
+					"filename": "API_Millisecs"
+				},				
+				{
 					"title": "Notify",
 					"filename": "API_Notify"
 				},
@@ -1015,22 +1019,11 @@
 				{
 					"title": "RequestFile",
 					"filename": "API_RequestFile"
-				}
-			]			
-		},		
-		{
-			"title": "Timing",
-			"filename": "Timing",
-			"topics":
-			[
-				{
-					"title": "Millisecs",
-					"filename": "API_Millisecs"
 				},
 				{
 					"title": "Sleep",
 					"filename": "API_Sleep"
-				}										
+				}				
 			]			
 		}	
 	]
