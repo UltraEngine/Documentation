@@ -21,7 +21,7 @@ This class provides an interface for loading, manipulating, and saving image dat
 | MakeNormalMap | |
 | ReadPixel | |
 | Resize | |
-| Save | |
+| Save | Saves a pixmap to an image or texture file. |
 | Swizzle | |
 | WritePixel | |
 
