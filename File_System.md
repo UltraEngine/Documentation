@@ -1,5 +1,5 @@
 # File System #
-The engine provides a powerful interface for reading and writing files on the hard drive or from a remove server.
+The engine provides a set of commands for reading and writing files on the hard drive or from a remove server.
 
 ## Classes ##
 | Name | Description |
