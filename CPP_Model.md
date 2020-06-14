@@ -13,4 +13,7 @@ The main supported model file format is the [glTF](https://www.khronos.org/gltf/
 | const shared_ptr<[Skeleton](CPP_Skeleton.md)\>& skeleton | Read-only skeleton object |
 
 ## Methods
-- [Animate](CPP_Model_Animate.md)
+| Name | Description |
+|---|---|
+| [Animate](CPP_Model_Animate.md) | |
+| [SetMaterial](CPP_Model_SetMaterial.md) | |
