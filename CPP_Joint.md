@@ -1,8 +1,8 @@
 # Joint #
-This class creates a physical constraint between two entities. Joints can use limits and actuators (motors) to control their range of motion and movement.
 
-## Base Class ##
-- [Object](CPP_Object.md)
+**Base Class:** [Object](CPP_Object.md)
+
+This class creates a physical constraint between two entities. Joints can use limits and actuators (motors) to control their range of motion and movement.
 
 | Property | Type | Description |
 |---|---|----|
