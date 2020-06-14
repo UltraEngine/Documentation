@@ -6,5 +6,5 @@ This method sends all queued rendering instructions to the rendering thread and 
 
 | Parameter | Description |
 |---|---|
-| **framebuffer** | framebuffer to render to |
-| **vsync** | if set to true vertical sync is enabled |
+| framebuffer | framebuffer to render to |
+| vsync | if set to true vertical sync is enabled |
