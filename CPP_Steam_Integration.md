@@ -48,3 +48,12 @@ To test your game, you need to create a text file in your project folder named "
 480
 ```
 When you run your application, the Steam overlay can be shown by pressing Shift+Tab. This is all you need to publish a game or application on Steam. See the [Steamworks documentation](https://partner.steamgames.com/doc/sdk) for additional features you can use.
+
+## Delayed DLL Loading ##
+You can set your application to defer loading of the Steamworks DLL until it is needed. If your application does not initialize the Steamworks SDK, the DLL will never get loaded. This allows you to ship a non-Steam version of your game without having to include the Steamworks DLL.
+
+To enable delayed DLL loading, open the project settings in Visual Studio. In the Linker \> Command Line options add this text:
+```
+/delayload:steam_api64.dll 
+```
+Make sure this is added for all configurations, and the non-Steam version of your game will be able to run without the DLL.
