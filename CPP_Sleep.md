@@ -16,13 +16,13 @@ This function pauses the current thread for the specified number of milliseconds
 int main(int argc, const char* argv[])
 {
 	//Get the initial system time
-	uint64_t starttime = Millisecs();
+	auto starttime = Millisecs();
 
 	//Pause for one second
 	Sleep(1000);
 
 	//Show the current time relative to the starting time
-	uint64_t currenttime = Millisecs() - starttime;
+	auto currenttime = Millisecs() - starttime;
 	Print(currenttime);
 
 	//Pause for one second
