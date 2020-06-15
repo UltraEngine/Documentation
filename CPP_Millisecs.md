@@ -2,7 +2,10 @@
 This function returns the current system time, in milliseconds.
 
 ## Syntax ##
-- uint64_t Millisecs()
+- uint64_t **Millisecs**()
+
+## Returns ##
+Returns the current system time, in milliseconds.
 
 ## Example ##
 ```c++
