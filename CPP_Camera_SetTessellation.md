@@ -14,6 +14,9 @@
 
 int main(int argc, const char* argv[])
 {
+	//Load plugin for texture loading
+	auto plugin = LoadPlugin("Plugins/Basis.*");
+
 	//Get the primary display
 	auto displaylist = ListDisplays();
 	auto display = displaylist[0];
@@ -39,9 +42,6 @@ int main(int argc, const char* argv[])
 	auto  light = CreateLight(world, LIGHT_DIRECTIONAL);
 	light->SetRotation(35, -55, 0);
 	light->SetColor(2, 2, 2);
-
-	//Load Basis plugin
-	auto plugin = LoadPlugin("Plugins/Basis.*");
 
 	//Display material
 	auto model = CreateQuadSphere(world, 0.5, 8, true);
