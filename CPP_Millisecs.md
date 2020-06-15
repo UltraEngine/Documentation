@@ -1,5 +1,5 @@
 # Millisecs #
-This functions returns the current system time, in milliseconds.
+This function returns the current system time, in milliseconds.
 
 ## Syntax ##
 - uint64_t Millisecs()
