@@ -38,7 +38,7 @@ light:SetColor(2,2,2)
 
 --Display material
 local model = CreateQuadSphere(world, 0.5, 8, true)
-local mtl = LoadMaterial("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl")
+local mtl = LoadMaterial("https://github.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl")
 model:SetMaterial(mtl)
 
 --Main loop
