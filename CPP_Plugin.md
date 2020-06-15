@@ -6,6 +6,6 @@ This class provides an interface by which modular functionality can be added to 
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| description | const wstring& | Description of functionality loaded from the plugin. |
-| title | const wstring& | Title loaded from plugin. |
+| description | const wstring& | Read-only description of functionality loaded from the plugin. |
+| title | const wstring& | Read-only title loaded from plugin. |
 | [LoadPlugin](API_LoadPlugin.md) | Function | Loads a plugin module. |
