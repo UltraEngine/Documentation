@@ -1011,10 +1011,6 @@
 					"filename": "API_ExecuteString"
 				},				
 				{
-					"title": "LuaState",
-					"filename": "API_LuaState"
-				},
-				{
 					"title": "RunScript",
 					"filename": "API_RunScript"
 				}
