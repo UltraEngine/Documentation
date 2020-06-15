@@ -3,8 +3,7 @@
 ## Syntax ##
 - SetTessellation(number polygonsize)
 
-## Parameters ##
-| Name | Description |
+| Parameter | Description |
 | --- | --- |
 | polygonsize | |
 
