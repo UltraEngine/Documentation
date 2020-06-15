@@ -1,8 +1,7 @@
 # Asset
 This is the base class of all game media classes.
 
-## Base Class ##
-- [Object](CPP_Object.md)
+**Base Class:** [Object](CPP_Object.md)
 
 ## Derived Classes ##
 - [Collision](CPP_Collision.md)
