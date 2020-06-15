@@ -1,5 +1,16 @@
 # LoadPlugin #
-This function loads a plugin.
+This function loads a plugin module. The plugin's functionality will be available immediately. When the plugin object goes out of scope it will be deleted, and its functionality will no longer be available.
+
+## Syntax ##
+- [Plugin](API_Plugin.md) LoadPlugin(string path)
+
+| Parameter | Description |
+| ----- | ----- |
+| path | File name of the module to load. |
+
+## Remarks ##
+The file extension of plugin modules varies by platform. On Windows the extension ".dll" is used. On MacOS the extension ".dylib" is used.
+On Linux the extension ".so" is used. You can use an asterisk (.*) for the file extension and the engine will select the correct file extension based on the current platform.
 
 ## Example ##
 ```lua
