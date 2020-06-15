@@ -30,7 +30,7 @@ int main(int argc, const char* argv[])
 
 	//Create a world
 	auto world = CreateWorld();
-	world->SetSkybox("Materials/Sky/zonesunset.tex");
+	world->SetSkybox("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Sky/sunset.basis");
 
 	//Create a camera
 	auto camera = CreateCamera(world);
