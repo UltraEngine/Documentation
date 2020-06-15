@@ -31,10 +31,10 @@ local mtl = CreateMaterial()
 model:SetMaterial(mtl)
 
 --Load VPK package plugin
-local vpkloader = LoadPlugin("Plugins/VPK.dll")
+local vpkloader = LoadPlugin("Plugins/VPK.*")
 
 --Load VTF loader plugin. Comment this out and the texture will fail to load!
-local vtfloader = LoadPlugin("Plugins/VTF.dll")
+local vtfloader = LoadPlugin("Plugins/VTF.*")
 
 --Steam installation path
 local STEAM_PATH = "C:/Program Files (x86)/Steam/"
