@@ -7,8 +7,8 @@ This functions displays a message box.
 
 | Parameter | Description |
 | ----- | ----- |
-| message | |
-| title | | 
+| message | Message to display in the message box. |
+| title | Optional title of message box window. | 
 
 ```c++
 #include "pch.h"
