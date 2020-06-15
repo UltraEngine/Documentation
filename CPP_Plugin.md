@@ -1,4 +1,6 @@
-# Plugins #
+# Plugin #
+
+This class provides an interface by which modular functionality can be added to the engine.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
