@@ -983,7 +983,14 @@
 		},
 		{
 			"title": "Plugins",
-			"filename": "API_Plugin"
+			"filename": "API_Plugin",
+			"topics":
+			[
+				{
+					"title": "LoadPlugin",
+					"filename": "API_LoadPlugin"
+				}
+			]			
 		},		
 		{
 			"title": "Ray Casting",
