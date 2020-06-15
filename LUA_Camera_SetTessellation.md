@@ -9,6 +9,9 @@
 
 ## Example ##
 ```lua
+--Load plugin for texture loading
+local plugin = LoadPlugin("Plugins/Basis.*")
+
 --Get the primary display
 local displaylist = ListDisplays()
 local display = displaylist[1];
