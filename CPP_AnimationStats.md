@@ -6,5 +6,5 @@ This class contains information about the animation threads. To enable statistic
 |		 bones | int | Number of bones updated in the previous frame. |
 |		 skeletons | int | Number of skeletons updated in the previous frame. |
 | 		 threads | int | Number of animation threads currently in use. |
-|		 time | int | Time taken to update animations, in milliseconds. |
+|		 time | int | Combined time taken to update animations, in milliseconds. |
 
