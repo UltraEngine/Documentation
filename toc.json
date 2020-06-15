@@ -1007,6 +1007,10 @@
 			"topics":
 			[
 				{
+					"title": "ExecuteString",
+					"filename": "API_ExecuteString"
+				},				
+				{
 					"title": "LuaState",
 					"filename": "API_LuaState"
 				},
