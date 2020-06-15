@@ -8,20 +8,20 @@ This function returns the current system time, in milliseconds.
 Returns the current system time, in milliseconds.
 
 ## Example ##
-```c++
+```c+
 #include "pch.h"
 #include "Project.h"
 
 int main(int argc, const char* argv[])
 {
 	//Get the initial system time
-	uint64_t starttime = Millisecs();
+	auto starttime = Millisecs();
 
 	//Pause for one second
 	Sleep(1000);
 
 	//Show the current time relative to the starting time
-	uint64_t currenttime = Millisecs() - starttime;
+	auto currenttime = Millisecs() - starttime;
 	Print(currenttime);
 
 	//Pause for one second
