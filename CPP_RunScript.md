@@ -3,7 +3,7 @@ This function executes a Lua script from a file or string.
 
 ## Syntax ##
 - bool RunScript(const std::string& source)
-- bool RunScript(const std::string& path)
+- bool RunScript(const std::wstring& path)
 
 | Parameter | Description |
 |-----|-----|
