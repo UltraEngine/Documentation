@@ -5,9 +5,9 @@ Leadwerks 5 SDK supports three programming languages. C++ offers the fastest cod
 
 ## Getting Started ##
 
-You currently have selected the **C++** language documentation. You can change this by clicking on the language links in the header at the top of this page.
+You currently have selected the C++ language documentation. You can change this by clicking on the language links in the header at the top of this page.
 
-To start programming with you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
+To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
 
 ## 2D Graphics ##
 - [Font](CPP_Font.md)
