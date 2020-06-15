@@ -6,7 +6,7 @@ This function waits for a line of text to be input into the program console.
 - wstring **Input**(const wstring& message = L"")
 
 ## Returns ##
-When the user enters some text and presss enter, the type string is returned.
+When the user enters some text and presses enter, the typed input is returned.
 
 ## Example ##
 ```c++
