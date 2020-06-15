@@ -23,7 +23,7 @@ local framebuffer = CreateFramebuffer(window);
 
 --Create a world
 local world = CreateWorld()
-world:SetSkybox("Materials/Sky/zonesunset.tex",0)
+world:SetSkybox("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Sky/sunset.basis")
 
 --Create a camera
 local camera = CreateCamera(world)
