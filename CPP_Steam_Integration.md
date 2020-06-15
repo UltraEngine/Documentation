@@ -53,7 +53,7 @@ When you run your application, the Steam overlay can be shown by pressing Shift+
 You can set your application to defer loading of the Steamworks DLL until it is needed. If your application does not initialize the Steamworks SDK, the DLL will never get loaded. This allows you to ship a non-Steam version of your game without having to include the Steamworks DLL.
 
 To enable delayed DLL loading, open the project settings in Visual Studio. In the Linker \> Command Line options add this text:
-```
+```txt
 /delayload:steam_api64.dll 
 ```
 Make sure this is added for all configurations, and the non-Steam version of your game will be able to run without the DLL. To prevent errors, you may wish to add a check for the DLL when Steam is initialized:
