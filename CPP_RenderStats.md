@@ -3,7 +3,7 @@ This class contains information about the rendering thread. To enable statistics
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-|		 cameras | int | Number of cameras rendered in the previous frame. |
+|		 cameras | int | Number of cameras rendered in the previous frame, not including shadow updates. |
 |		 cullingtime | int | Time taken to calculate current visibility set. |
 |		 instances | int | Number of instances drawn in the previous frame. |
 |		 framerate | int | Smoothed current average framerate. |
