@@ -56,7 +56,7 @@ To enable delayed DLL loading, open the project settings in Visual Studio. In th
 ```txt
 /delayload:steam_api64.dll 
 ```
-Make sure this is added for all configurations, and the non-Steam version of your game will be able to run without the DLL. To prevent errors, you may wish to add a check for the DLL when Steam is initialized:
+Make sure this is added for all configurations, and the non-Steam version of your game will be able to run without the DLL. To prevent the application from silently failing, you may wish to add a check for the DLL when Steam is initialized:
 ```c++
 bool InitSteam()
 {
