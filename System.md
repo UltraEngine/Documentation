@@ -1,5 +1,5 @@
 # System #
-Leadwerks 5 provides a command set for OS-level tasks.
+Leadwerks 5 provides a cross-platform command set for OS-level tasks.
 
 | Function | Description |
 |-----|-----|
