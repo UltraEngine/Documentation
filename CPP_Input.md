@@ -2,7 +2,8 @@
 This function waits for a line of text to be input into the program console.
 
 ## Syntax ##
-- wstring **Input**()
+- string **Input**(const wstring& message)
+- wstring **Input**(const wstring& message = L"")
 
 ## Returns ##
 When the user enters some text and presss enter, the type string is returned.
@@ -14,9 +15,8 @@ When the user enters some text and presss enter, the type string is returned.
 
 int main(int argc, const char* argv[])
 {
-	Print("Enter your name:");
-	wstring s = Input();
-	Print(L"You entered \"" + s + L"\".");
+	string s = Input("Enter your name:");
+	Print("You entered \"" + s + "\".");
 	return 0;
 }
 ```
