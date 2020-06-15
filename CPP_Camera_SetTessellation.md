@@ -45,7 +45,7 @@ int main(int argc, const char* argv[])
 
 	//Display material
 	auto model = CreateQuadSphere(world, 0.5, 8, true);
-	auto mtl = LoadMaterial("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl");
+	auto mtl = LoadMaterial("https://github.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl");
 	model->SetMaterial(mtl);
 
 	//Main loop
