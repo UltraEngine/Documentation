@@ -1041,18 +1041,7 @@
 		{
 			"title": "System",
 			"topics":
-			[
-				{
-					"title": "Process",
-					"filename": "API_Process",
-					"topics":
-					[
-						{
-							"title": "CreateProcess",
-							"filename": "API_CreateProcess"
-						}										
-					]					
-				},				
+			[				
 				{
 					"title": "Confirm",
 					"filename": "API_Confirm"
