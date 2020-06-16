@@ -38,6 +38,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [GetDistance](CPP_Entity_GetDistance_32f.md) | |
 | [GetMass](CPP_Entity_GetMass_32f.md) | |
 | [GetAngularVelocity](CPP_Entity_GetOmega_32f.md) | |
+| [GetEmission](CPP_GetEmission.md) | |
 | [GetParent](CPP_Entity_GetParent.md) | |
 | [GetPickMode](CPP_Entity_GetPickMode.md) | |
 | [GetPosition](CPP_Entity_GetPosition_32f.md) | |
@@ -60,6 +61,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [SetColor](CPP_Entity_SetColor.md) | |
 | [SetMass](CPP_Entity_SetMass.md) | |
 | [SetAngularVelocity](CPP_Entity_SetOmega_32f.md) | |
+| [SetEmission](CPP_SetEmission.md) | |
 | [SetParent](CPP_Entity_SetParent.md) | |
 | [SetPickMode](CPP_Entity_SetPickMode.md) | |
 | [SetPosition](CPP_Entity_SetPosition_32f.md) | |
