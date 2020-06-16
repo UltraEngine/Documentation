@@ -920,7 +920,7 @@
 			[
 				{
 					"title": "NavAgent",
-					"filename": "API_Agent"
+					"filename": "API_NavAgent"
 				},				
 				{
 					"title": "NavMesh",
