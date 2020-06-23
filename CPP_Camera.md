@@ -7,3 +7,4 @@ This class The camera class is an entity used to render the world.
 | [Pick](API_Camera_Pick.md) | Method | |
 | Project | Method | |
 | Unproject | Method | |
+| [SetRealTime](API_Camera_SetRealTime.md) | Method | |
