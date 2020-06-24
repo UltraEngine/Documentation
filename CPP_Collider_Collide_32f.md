@@ -11,6 +11,4 @@ This method performs a static or swept collision test between two colliders.
 | mat0 | 4x4 matrix of this collider. |
 | mat1 | 4x4 matrix of the colliding collider. |
 | velocity1 | Velocity of this collider. |
-
-## Remarks ##
-The time step tested will be one second. If the velocity of a collider is 10 meters per second, then the routine will consider the collider to have moved a distance of ten meters during the collision test.
+| timestep | Time elapsed in milliseconds. This is usually equal to 1.0 / 60.0. |
