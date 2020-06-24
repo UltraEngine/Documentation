@@ -8,8 +8,8 @@ This entity emits light in a defined pattern.
 | ----- | ----- | ----- |
 | [GetConeAngles](CPP_SetConeAngles.md) | Method |  |
 | [SetConeAngles](CPP_SetConeAngles.md) | Method |  |
-| [GetFalloff](CPP_SetFalloff.md) | Method |  |
-| [SetFalloff](CPP_GetFalloff.md) | Method |  |
+| [GetFalloffMode](CPP_SetFalloffMode.md) | Method |  |
+| [SetFalloffMode](CPP_GetFalloffMode.md) | Method |  |
 | [GetRange](CPP_SetRange.md) | Method |  |
 | [SetRange](CPP_SetRange.md) | Method |  |
 | [CreateLight](CPP_CreateLight.md)| Function | Creates a new light. |
