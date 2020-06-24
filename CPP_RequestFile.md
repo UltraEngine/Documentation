@@ -16,6 +16,23 @@ This function opens a file browser dialog and lets the user select a file to ope
 ## Returns ##
 Returns the selected file path, or an empty string if the user cancelled the operation.
 
+## Remarks ##
+The extensions filter allows you to specify one or more file types to show in the dialog. Each file type consists of a description and an extension, separated by a colon:
+
+```Texture Files (*.txt):txt```
+
+You can specify multiple extensions for a file type by separating them with a comma:
+
+```JPEG Image (*.jpg, *.jprg):jpg,jpeg```
+
+You can use a wildcard to specify a range of extensions:
+
+```All Files:*```
+
+Use a semicolon to specify multiple file types:
+
+```Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg```
+
 ## Example ##
 
 ```c++
