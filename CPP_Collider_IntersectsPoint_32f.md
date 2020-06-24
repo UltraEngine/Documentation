@@ -1,5 +1,5 @@
 # Collider::IntersectsPoint #
-This method performs a point intersection test.
+This method performs a point intersection test on a convex collider.
 
 ## Syntax ##
 - bool IntersectsPoint(const float x, const float y, const float z)
