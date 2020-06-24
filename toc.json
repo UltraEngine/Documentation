@@ -938,6 +938,14 @@
 					"topics":
 					[
 						{
+							"title": "ClosestPoint",
+							"filename": "API_Collider_ClosestPoint_FP"							
+						},
+						{
+							"title": "Collide",
+							"filename": "API_Collider_Collide_FP"							
+						},						
+						{
 							"title": "CreateBoxCollider",
 							"filename": "API_CreateCollisionBox_FP"
 						},
@@ -966,9 +974,17 @@
 							"filename": "API_CreateCollisionSphere_FP"
 						},
 						{
+							"title": "GetBounds",
+							"filename": "API_Collider_GetBounds_FP"							
+						},						
+						{
 							"title": "LoadCollider",
 							"filename": "API_LoadCollision"
-						}												
+						},
+						{
+							"title": "IntersectsPoint",
+							"filename": "API_Collider_IntersectsPoint_FP"							
+						}						
 					]
 				},
 				{
