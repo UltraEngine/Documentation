@@ -19,7 +19,7 @@ Returns the selected file path, or an empty string if the user cancelled the ope
 ## Remarks ##
 The extensions filter allows you to specify one or more file types to show in the dialog. Each file type consists of a description and an extension, separated by a colon:
 
-```Texture Files (*.txt):txt```
+```Text Files (*.txt):txt```
 
 You can specify multiple extensions for a file type by separating them with a comma:
 
