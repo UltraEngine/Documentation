@@ -2,8 +2,8 @@
 This method performs a static or swept collision test between two colliders.
 
 ## Syntax ##
-- int **Collide**(shared_ptr<[Collider](API_Collider.md)\> collider, const [Mat4](API_Mat4.md)& mat0, const [Mat4](API_Mat4.md)& mat1, vector<[Collision](API_Collision_FP.md)\>& collisions)
-- int **Collide**(shared_ptr<[Collider](API_Collider.md)\> collider, const [Mat4](API_Mat4.md)& mat0, const [Mat4](API_Mat4.md)& mat1, const [Vec3](API_Vec3.md)& velocity0, const [Vec3](API_Vec3.md)& velocity1, const [Vec3](API_Vec3.md)& omega0, const [Vec3](API_Vec3.md)& omega1, vector<[Collision](API_Collision_FP.md)\>& collisions)
+- int **Collide**(shared_ptr<[Collider](API_Collider.md)\> collider, const [Mat4](API_Mat4.md)& mat0, const [Mat4](API_Mat4.md)& mat1, const float timestep, vector<[Collision](API_Collision_FP.md)\>& collisions)
+- int **Collide**(shared_ptr<[Collider](API_Collider.md)\> collider, const [Mat4](API_Mat4.md)& mat0, const [Mat4](API_Mat4.md)& mat1, const [Vec3](API_Vec3.md)& velocity0, const [Vec3](API_Vec3.md)& velocity1, const [Vec3](API_Vec3.md)& omega0, const [Vec3](API_Vec3.md)& omega1, const float timestep, vector<[Collision](API_Collision_FP.md)\>& collisions)
 
 | Parameter | Description | 
 | ----- | ----- |
