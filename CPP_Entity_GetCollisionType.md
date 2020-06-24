@@ -2,7 +2,7 @@
 This method retrieves the entity collision type.
 
 ## Syntax ##
-- int GetCollisionType()
+- CollisionType GetCollisionType()
 
 ## Returns ##
 Returns the entity collision type.
