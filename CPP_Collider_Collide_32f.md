@@ -13,3 +13,4 @@ This method performs a static or swept collision test between two colliders.
 | velocity0 | Velocity of this collider. |
 | omega0 | Angular velocity of this collider. |
 | timestep | Time elapsed in milliseconds. This is usually equal to 1.0 / 60.0. |
+| collisions | Array of [Collision](API_Collision_FP.md) objects for recording information. |
