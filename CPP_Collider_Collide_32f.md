@@ -10,5 +10,6 @@ This method performs a static or swept collision test between two colliders.
 | collider | Collider to test collision against. |
 | mat0 | 4x4 matrix of this collider. |
 | mat1 | 4x4 matrix of the colliding collider. |
-| velocity1 | Velocity of this collider. |
+| velocity0 | Velocity of this collider. |
+| omega0 | Angular velocity of this collider. |
 | timestep | Time elapsed in milliseconds. This is usually equal to 1.0 / 60.0. |
