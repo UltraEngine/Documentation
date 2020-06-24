@@ -6,6 +6,8 @@ This class provides an interface for loading and creating collision shapes for p
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
+| [ClosestPoint](API_Collider_ClosestPoint_FP.md) | Method | Finds the closest point to a position or collider. |
+| [Collide](API_Collider_Collide_FP.md) | Method | Performs a collision test. |
 | [CreateBoxCollider](CPP_CreateCollisionBox_32f.md) | Function | Creates a box collision shape for physics interactions. |
 | [CreateCompoundCollider](CPP_CreateCollisionCompound.md) | Function | Creates a compound collision shape for physics interactions. |
 | [CreateConeCollider](CPP_CreateCollisionCone_32f.md) | Function | Creates a cone collision shape for physics interactions. |
