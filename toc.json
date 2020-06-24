@@ -225,7 +225,38 @@
 				},
 				{
 					"title": "Light",
-					"filename": "API_Light"
+					"filename": "API_Light",
+					"topics":
+					[
+						{
+							"title": "GetConeAngles",
+							"filename": "API_GetConeAngles"
+						},
+						{
+							"title": "SetConeAngles",
+							"filename": "API_SetConeAngles"
+						},
+						{
+							"title": "GetFalloffMode",
+							"filename": "API_GetFalloffMode"
+						},
+						{
+							"title": "SetFalloffMode",
+							"filename": "API_SetFalloffMode"
+						},						
+						{
+							"title": "GetRange",
+							"filename": "API_GetRange"
+						},
+						{
+							"title": "SetRange",
+							"filename": "API_SetRange"
+						},						
+						{
+							"title": "CreateLight",
+							"filename": "API_CreateLight"
+						}
+					]
 				},						
 				{
 					"title": "Material",
