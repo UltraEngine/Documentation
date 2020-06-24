@@ -9,4 +9,4 @@ This method performs a static or swept collision test between two colliders.
 | ----- | ----- |
 | collider | Collider to test collision against. |
 | mat0 | 4x4 matrix of this collider. |
-| mat1 | 4x4 matrix of the colliding collider |
+| mat1 | 4x4 matrix of the colliding collider. |
