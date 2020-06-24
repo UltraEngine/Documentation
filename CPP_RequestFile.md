@@ -17,7 +17,7 @@ This function opens a file browser dialog and lets the user select a file to ope
 Returns the selected file path, or an empty string if the user cancelled the operation.
 
 ## Remarks ##
-The extensions filter allows you to specify one or more file types to show in the dialog. Each file type consists of a description and an extension, separated by a colon:
+The extensions filter allows you to specify one or more file types to show in the dialog. Each file type consists of a description and an extension, separated by a colon. Note that the text shown inside the parenthesis is part of the description, and is just decorative:
 
 ```Text Files (*.txt):txt```
 
