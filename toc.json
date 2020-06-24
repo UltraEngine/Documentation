@@ -976,14 +976,14 @@
 						{
 							"title": "GetBounds",
 							"filename": "API_Collider_GetBounds_FP"							
-						},						
-						{
-							"title": "LoadCollider",
-							"filename": "API_LoadCollision"
 						},
 						{
 							"title": "IntersectsPoint",
 							"filename": "API_Collider_IntersectsPoint_FP"							
+						},						
+						{
+							"title": "LoadCollider",
+							"filename": "API_LoadCollision"
 						},
 						{
 							"title": "Pick",
