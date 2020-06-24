@@ -1,8 +1,10 @@
 # Collider
 
+**Base Class:** [Asset](CPP_Asset.md)
+
 This class provides an interface for loading and creating collision shapes for physics interactions.
 
-**Base Class:** [Asset](CPP_Asset.md)
+
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
