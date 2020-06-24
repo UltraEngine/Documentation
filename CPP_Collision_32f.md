@@ -6,3 +6,4 @@
 | normal | Vec3 | |
 | penetration | float | |
 | polygon | array<int, 2> | |
+| time | float | |
