@@ -18,3 +18,4 @@ This class provides an interface for loading and creating collision shapes for p
 | [CreateMeshCollider](CPP_CreateCollisionMesh.md) | Function | Creates a mesh collision shape for physics interactions. |
 | [CreateSphereCollider](CPP_CreateCollisionSphere_32f.md) | Function | Creates a sphere collision shape for physics interactions. |
 | [LoadCollider](CPP_LoadCollision.md) | Function | Loads a collision shape from a file. |
+| [Pick](API_Collider_Pick_FP) | Method | Performs a ray cast test. |
