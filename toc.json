@@ -230,27 +230,27 @@
 					[
 						{
 							"title": "GetConeAngles",
-							"filename": "API_GetConeAngles"
+							"filename": "API_Light_GetConeAngles"
 						},
 						{
 							"title": "SetConeAngles",
-							"filename": "API_SetConeAngles"
+							"filename": "API_Light_SetConeAngles"
 						},
 						{
 							"title": "GetFalloffMode",
-							"filename": "API_GetFalloffMode"
+							"filename": "API_Light_GetFalloffMode"
 						},
 						{
 							"title": "SetFalloffMode",
-							"filename": "API_SetFalloffMode"
+							"filename": "API_Light_SetFalloffMode"
 						},						
 						{
 							"title": "GetRange",
-							"filename": "API_GetRange"
+							"filename": "API_Light_GetRange"
 						},
 						{
 							"title": "SetRange",
-							"filename": "API_SetRange"
+							"filename": "API_Light_SetRange"
 						},						
 						{
 							"title": "CreateLight",
