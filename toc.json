@@ -984,7 +984,11 @@
 						{
 							"title": "IntersectsPoint",
 							"filename": "API_Collider_IntersectsPoint_FP"							
-						}						
+						},
+						{
+							"title": "Pick",
+							"filename": "API_Collider_Pick_FP"							
+						}							
 					]
 				},
 				{
