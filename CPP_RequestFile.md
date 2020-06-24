@@ -23,7 +23,7 @@ The extensions filter allows you to specify one or more file types to show in th
 
 You can specify multiple extensions for a file type by separating them with a comma:
 
-```JPEG Image (*.jpg, *.jprg):jpg,jpeg```
+```JPEG Image (*.jpg, *.jpeg):jpg,jpeg```
 
 You can use a wildcard to specify a range of extensions:
 
