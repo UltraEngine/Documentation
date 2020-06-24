@@ -2,16 +2,16 @@
 This function opens a file browser dialog and lets the user select a file to open or save.
 
 ## Syntax ##
-- string **RequestFile**(const string& title = "Open File", const string& file = "", const string& extensions = "All Files:*", const int extindex = 0, const bool save = false);
-- wstring **RequestFile**(const wstring& title = L"Open File", const wstring& file = L"", const wstring& extensions = L"All Files:*", const int extindex = 0, const bool save = false);
+- string **RequestFile**(const string& title = "Open File", const string& file = "", const string& filetypes = "All Files:*", const int typeindex = 0, const bool save = false);
+- wstring **RequestFile**(const wstring& title = L"Open File", const wstring& file = L"", const wstring& filetypes = L"All Files:*", const int typeindex = 0, const bool save = false);
 
 | Parameter | Description |
 | ----- | ----- |
 | title | Title shown in dialog window. |
 | file | Default file directory or full file path. |
-| extensions | File extensions filter. |
-| extindex |  |
-| save | |
+| filetypes | File extensions filter. |
+| typeindex | Default file type to show. |
+| save | Set to true for a save dialog, otherwise an open dialog will be shown. |
 
 ## Returns ##
 Returns the selected file path, or an empty string if the user cancelled the operation.
@@ -29,7 +29,7 @@ You can use a wildcard to specify a range of extensions:
 
 ```All Files:*```
 
-Use a semicolon to specify multiple file types:
+Use a semicolon to specify multiple file extensions for one file type:
 
 ```Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg```
 
