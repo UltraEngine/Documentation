@@ -2,7 +2,7 @@
 
 
 ## Syntax ##
-- void SetShadowFilter( const ShadowFilter filter)
+- void **SetShadowFilter**( const ShadowFilter filter)
 
 | Parameter | Description | 
 | --- | --- |
