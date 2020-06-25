@@ -1040,8 +1040,12 @@
 				{
 					"title": "LoadPlugin",
 					"filename": "API_LoadPlugin"
-				}
-			]			
+				},
+				{
+					"title": "SDK",
+					"filename": "PluginSDK"
+				}				
+			]		
 		},		
 		{
 			"title": "Ray Casting",
