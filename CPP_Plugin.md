@@ -4,6 +4,8 @@
 
 This class provides an interface by which modular functionality can be added to the engine. Plugins can be used to add support for loading and saving new file and package formats, and for converting image data between pixel formats.
 
+New plugins can be created with the [Leadwerks 5 plugin SDK](https://github.com/Leadwerks/PluginSDK).
+
 | Property | Type | Description |
 | ----- | ----- | ----- |
 | description | const wstring& | Read-only description of functionality loaded from the plugin. |
