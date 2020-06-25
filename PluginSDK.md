@@ -9,13 +9,16 @@ Windows uses DLL files for plugins. MacOS uses DYLIB files. Linux uses SO files.
 LoadPlugin("Plugins/Basis.*");
 ```
 
-A plugin is only required to have one function called "GetPluginInfo". This will return a string in JSON format containing information about the plugin. The JSON string is required to have the title and description elements. You can optionally include some text about the author:
+A plugin is only required to have one function called "GetPluginInfo". This will return a string in JSON format containing information about the plugin. A top-level plugin object must be specified. This object is required to have string elements for "title" and "description". You can optionally include some text about the author:
 
 ```json
 {
-  "title": "Plugin Title",
-  "description": "Description of the plugin and its functionality.",
-  "author": "Copyright John Smith 2021."
+  "plugin:
+  {
+    "title": "Plugin Title",
+    "description": "Description of the plugin and its functionality.",
+    "author": "Copyright John Smith 2021."
+  }
 }
 ```
 
