@@ -2,9 +2,9 @@
 
 **Base Class:** [Asset](API_Asset.md)
 
-This class provides an interface by which modular functionality can be added to the engine. Plugins can be used to add support for loading and saving new file and package formats, and for converting image data between pixel formats.
+This class provides an interface by which modular functionality can be added to Leadwerks 5. Plugins can be used to add support for loading and saving new file and package formats, and for converting image data between pixel formats.
 
-New plugins can be created with the [Leadwerks 5 plugin SDK](https://github.com/Leadwerks/PluginSDK).
+New plugins can be created with the [plugin SDK](https://github.com/Leadwerks/PluginSDK).
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
