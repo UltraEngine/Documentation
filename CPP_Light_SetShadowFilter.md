@@ -44,9 +44,10 @@ int main(int argc, const char* argv[])
 	fan->SetPosition(0, 2, 0);
 	
 	//Create spot light
-	auto light = CreateLight(world);
+	auto light = CreateLight(world, LIGHT_SPOT);
 	light->SetColor(2, 2, 2);
 	light->SetRange(10);
+	light->SetRotation(90, 0, 0);
 	light->SetPosition(0, 4, 0);
 	light->SetShadowFilter(SHADOW_DYNAMIC);
 
