@@ -22,6 +22,8 @@ A plugin is only required to have one function called "GetPluginInfo". This will
 }
 ```
 
+## Plugin Functions ##
+
 The plugin's functionality is defined by the functions it contains. A plugin can contain any of the following functions. It is possible to combine functionality, like a plugin that
 can save model files and load a new texture format. However, it is best to limit plugins to a single purpose, or a single file format, like loading and saving of a new image format.
 
