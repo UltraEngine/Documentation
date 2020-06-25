@@ -11,6 +11,8 @@ This functions displays a message box.
 | title | Optional title of message box window. | 
 | serious | If set to true a warning icon will be displayed. |
 
+## Example ##
+
 ```c++
 #include "pch.h"
 #include "Project.h"
