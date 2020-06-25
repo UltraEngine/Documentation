@@ -16,4 +16,5 @@ The main supported model file format is the [glTF](https://www.khronos.org/gltf/
 | Name | Description |
 |---|---|
 | [Animate](CPP_Model_Animate.md) | |
+| [Save](API_Model_Save.md) | Saves the model to a file. |
 | [SetMaterial](CPP_Model_SetMaterial.md) | Applies a material to the model's meshes. |
