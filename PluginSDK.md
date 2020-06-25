@@ -5,7 +5,7 @@ The Leadwerks 5 plugin SDK allows modular functionality to be added to the engin
 A plugin can be loaded by any Leadwerks 5 program using the [LoadPlugin](API_LoadPlugin.md) command. Plugins must be compiled separately for each supported platform.
 Windows uses DLL files for plugins. MacOS uses DYLIB files. Linux uses SO files. You can use an asterisk for the file extension in the LoadPlugin command, and the engine will choose a file extension based on the current platform:
 
-```
+```c++
 LoadPlugin("Plugins/Basis.*");
 ```
 
