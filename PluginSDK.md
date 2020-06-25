@@ -13,7 +13,7 @@ A plugin is only required to have one function called "GetPluginInfo". This will
 
 ```json
 {
-  "plugin:
+  "plugin":
   {
     "title": "Plugin Title",
     "description": "Description of the plugin and its functionality.",
