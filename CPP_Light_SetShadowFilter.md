@@ -80,7 +80,7 @@ int main(int argc, const char* argv[])
 		}
 
 		//Display shadow polycount
-		text->SetText(L"Shadow polygons: " + WString(world->renderstats.shadowpolygons));
+		text->SetText("Shadow polygons: " + String(world->renderstats.shadowpolygons));
 	}
 	return 0;
 }
