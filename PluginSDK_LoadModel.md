@@ -6,7 +6,7 @@ It's best for the plugin to attempt to determine the file type by reading the fi
 The engine will automatically call the [Cleanup](PluginSDK_Cleanup) plugin function following this function call, regardless of the return value.
 
 ## Syntax ##
-- void* LoadModel(void* data, uint64_t size, const wchar_t* filename, uint64_t& returnsize)
+- void* **LoadModel**(void* data, uint64_t size, const wchar_t* filename, uint64_t& returnsize)
 
 | Parameter | Description |
 | ----- | ----- |
