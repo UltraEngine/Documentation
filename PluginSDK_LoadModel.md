@@ -1,4 +1,4 @@
-# LoadModel Plugin Function #
+# LoadModel (Plugin Function) #
 This plugin function will load a model from memory. When an unknown model file format is encountered, the engine will pass the file data to all plugins that include this function.
 
 It's best for the plugin to attempt to determine the file type by reading the file contents and only use the file path extension as a last resort.
