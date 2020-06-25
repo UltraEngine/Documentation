@@ -23,7 +23,7 @@ can save model files and load a new texture format. However, it is best to limit
 
 | Function | Description |
 | ---- | ---- |
-| [LoadModel]() | Loads a model from memory in a specific format. |
+| [LoadModel](PluginSDK_LoadModel.md) | Loads a model from memory in a specific format. |
 | [SaveModel]() | Saves a model to memory in a specific format. |
 | [ConvertPixmap]() | Converts pixel data between formats. |
 | [LoadTexture]() | Loads an image from memory in a specific format. |
