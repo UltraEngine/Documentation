@@ -1,5 +1,5 @@
 # Light::SetShadowFilter #
-
+This method specifies whether a light should affect static objects, dynamic objects, or both.
 
 ## Syntax ##
 - void **SetShadowFilter**( const ShadowFilter filter)
