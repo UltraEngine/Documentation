@@ -41,10 +41,3 @@ A package plugin is different in that it must contain a set of commands in order
 | FreePackage | Loads a model from memory in a specific format. |
 | GetPackageFileName | Loads a model from memory in a specific format. |
 
-Plugins will be utilized automatically by the engine as the program runs. For example, when an unknown model format is loaded, the data will be passed to all plugins that contain a LoadModel function, until one is found that recognizes the data.
-
-When a plugin is deleted it will be automatically unloaded and its functionality will no longer be available to the engine. Therefore, you must maintain a variable for a loaded plugin and not let it go out of scope. One way of doing this is to place a Lua script in the "Scripts\\Start\\Autoload" folder that loaded the plugin and stores it in a global variable. For example, you could create a script called "Scripts\\Start\\Autoload\\Basis.lua" with these contents:
-```lua
-PLUGIN_BASIS = LoadPlugin("Plugins/Basis.*")
-```
-The script will be automatically run every time your program starts and the plugin will be loaded.
