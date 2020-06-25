@@ -12,6 +12,4 @@ This entity emits light in a defined pattern.
 | [SetFalloffMode](CPP_Light_GetFalloffMode.md) | Method |  |
 | [GetRange](CPP_Light_SetRange.md) | Method |  |
 | [SetRange](CPP_Light_SetRange.md) | Method |  |
-| [GetShadowFilter](CPP_Light_SetShadowFilter.md) | Method |  |
-| [SetShadowFilter](CPP_Light_GetShadowFilter.md) | Method |  |
 | [CreateLight](CPP_CreateLight.md)| Function | Creates a new light. |
