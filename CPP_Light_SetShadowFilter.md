@@ -9,6 +9,9 @@ This method specifies whether a light should affect static objects, dynamic obje
 | filter | Shadow filter flags, can be any combination of SHAODW_STATIC and SHADOW_DYNAMIC. |
 
 ## Example ##
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/API_Light_SetShadowFilter.gif)
+
 ```c++
 #include "pch.h"
 #include "Project.h"
