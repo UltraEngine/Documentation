@@ -22,6 +22,16 @@ A plugin is only required to have one function called "GetPluginInfo". This will
 }
 ```
 
+Other miscellaneous properties can be added to tell the engine how to handle the plugin.
+
+| Property | Type | Description |
+| ----- | ----- | ----- |
+| collapseSavedModels | boolean | If set to true models will be collapsed before SaveModel is called. |
+| saveModelExtensions | string array | Array of file format extensions supported for model saving. |
+| saveModelFilter | string | File type filter for save file dialogs. |
+| saveTextureExtensions | string array | Array of file format extensions supported for texture saving. |
+| saveTextureFilter | string | File type filter for save file dialogs. |
+
 ## Plugin Functions ##
 
 The plugin's functionality is defined by the functions it contains. A plugin can contain any of the following functions. It is possible to combine functionality, like a plugin that
