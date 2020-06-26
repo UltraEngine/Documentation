@@ -251,15 +251,7 @@
 						{
 							"title": "SetRange",
 							"filename": "API_Light_SetRange"
-						},
-						{
-							"title": "GetShadowFilter",
-							"filename": "API_Light_GetShadowFilter"
-						},
-						{
-							"title": "SetShadowFilter",
-							"filename": "API_Light_SetShadowFilter"
-						},						
+						},					
 						{
 							"title": "CreateLight",
 							"filename": "API_CreateLight"
@@ -1082,7 +1074,7 @@
 					"filename": "API_RunScript"
 				}
 			]							
-		},		
+		},
 		{
 			"title": "Statistics",
 			"topics":
