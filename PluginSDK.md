@@ -29,7 +29,7 @@ Other miscellaneous properties can be added to tell the engine how to handle the
 | collapseSavedModels | boolean | If set to true models will be collapsed before SaveModel is called. |
 | saveModelExtensions | string or array | File format extensions supported for model saving. |
 | saveModelFilter | string | File type filter for save file dialogs. |
-| saveTextureExtensions | string array | Array of file format extensions supported for texture saving. |
+| saveTextureExtensions | string or array | File format extensions supported for texture saving. |
 | saveTextureFilter | string | File type filter for save file dialogs. |
 
 ## Plugin Functions ##
