@@ -11,8 +11,7 @@ In this example the scene is optimized to make non-moving objects static, result
 
 ```c++
 #include "pch.h"
-
-using namespace UltraEngine;
+#include "Project.h"
 
 int main(int argc, const char* argv[])
 {
