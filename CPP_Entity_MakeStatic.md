@@ -5,7 +5,7 @@ This method permanently freezes an entity and makes it static. A static entity c
 - void **MakeStatic**()
 
 ## Example ##
-In this example scene is optimized to make non-moving objects static, resulting in a lower shadow polygon count. In large scenes this can make a big improvement in performance.
+In this example the scene is optimized to make non-moving objects static, resulting in a lower shadow polygon count. In large scenes this can make a big improvement in performance.
 
 ```c++
 #include "pch.h"
