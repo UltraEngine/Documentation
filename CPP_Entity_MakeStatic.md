@@ -7,6 +7,8 @@ This method permanently freezes an entity and makes it static. A static entity c
 ## Example ##
 In this example the scene is optimized to make non-moving objects static, resulting in a lower shadow polygon count. In large scenes this can make a big improvement in performance.
 
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/API_Entity_MakeStatic.gif)
+
 ```c++
 #include "pch.h"
 
