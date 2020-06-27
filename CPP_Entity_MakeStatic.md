@@ -75,8 +75,7 @@ int main(int argc, const char* argv[])
             light->MakeStatic();
             text2->Hide();
         }
-
-        //Display shadow polycount
+        
         text->SetText("Shadow polygons: " + String(world->renderstats.shadowpolygons));
     }
 
