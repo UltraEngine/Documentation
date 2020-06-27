@@ -28,6 +28,7 @@ Other miscellaneous properties can be added to tell the engine how to handle the
 | Property | Type | Description |
 | ----- | ----- | ----- |
 | collapseSavedModels | boolean | If set to true models will be collapsed before SaveModel is called. |
+| redistributable | boolean | Indicates whether the plugin can be redistributed in a game or application. |
 | saveModelExtensions | string or array | File format extensions supported for model saving. |
 | saveModelFilter | string | File type filter for save file dialogs. |
 | saveTextureExtensions | string or array | File format extensions supported for texture saving. |
