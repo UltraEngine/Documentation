@@ -35,12 +35,12 @@ int main(int argc, const char* argv[])
     auto tunnel = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
     tunnel->SetRotation(0, 180, 0);
     auto cage = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
-    tunnel->MakeStatic();
-    cage->MakeStatic();
-
-    //Load fan model
     auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
+
+    //Optimize scene
+    tunnel->MakeStatic();
+    cage->MakeStatic();
 
     //Create spot light
     auto light = CreateLight(world, LIGHT_POINT);
@@ -57,7 +57,7 @@ int main(int argc, const char* argv[])
     auto text = CreateText(spritelayer, font, "0 shadow polygons.", 14.0 * displayscale);
     text->SetPosition(2, 2);
 
-    auto text2 = CreateText(spritelayer, font, "Press space to optimize the scene.", 14.0 * displayscale);
+    auto text2 = CreateText(spritelayer, font, "Press space to make the light static.", 14.0 * displayscale);
     text2->SetPosition(2, 20 * displayscale);
 
     //Enable stats recording
