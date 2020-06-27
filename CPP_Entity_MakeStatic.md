@@ -34,7 +34,9 @@ int main(int argc, const char* argv[])
     //Build scene
     auto tunnel = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
     tunnel->SetRotation(0, 180, 0);
+    
     auto cage = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
+    
     auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
 
