@@ -36,15 +36,13 @@ int main(int argc, const char* argv[])
     //Build scene
     auto tunnel = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
     tunnel->SetRotation(0, 180, 0);
+    tunnel->MakeStatic();
     
     auto cage = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
+    cage->MakeStatic();
     
     auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
-
-    //Optimize scene
-    tunnel->MakeStatic();
-    cage->MakeStatic();
     
     auto light = CreateLight(world, LIGHT_POINT);
     light->SetColor(2, 2, 2);
