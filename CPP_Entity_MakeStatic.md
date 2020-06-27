@@ -26,6 +26,7 @@ int main(int argc, const char* argv[])
 
     //Create world
     auto world = CreateWorld();
+    world->RecordStats(true);
 
     //Create camera
     auto camera = CreateCamera(world);
@@ -60,9 +61,6 @@ int main(int argc, const char* argv[])
 
     auto text2 = CreateText(spritelayer, font, "Press space to make the light static.", 14.0 * displayscale);
     text2->SetPosition(2, 20 * displayscale);
-
-    //Enable stats recording
-    world->RecordStats(true);
 
     //Main loop
     while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
