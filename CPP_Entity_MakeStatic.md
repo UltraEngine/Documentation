@@ -77,7 +77,6 @@ int main(int argc, const char* argv[])
         
         text->SetText("Shadow polygons: " + String(world->renderstats.shadowpolygons));
     }
-
     return 0;
 }
 ```
