@@ -35,6 +35,8 @@ int main(int argc, const char* argv[])
     auto tunnel = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
     tunnel->SetRotation(0, 180, 0);
     auto cage = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
+    tunnel->MakeStatic();
+    cage->MakeStatic();
 
     //Load fan model
     auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
@@ -46,7 +48,7 @@ int main(int argc, const char* argv[])
     light->SetRange(10);
     light->SetPosition(0, 2, 2);
     light->SetColor(4.0);
-
+ 
     //Display text
     auto spritelayer = CreateSpriteLayer(world);
     camera->AddSpriteLayer(spritelayer);
@@ -72,8 +74,6 @@ int main(int argc, const char* argv[])
         if (window->KeyHit(KEY_SPACE))
         {
             light->MakeStatic();
-            tunnel->MakeStatic();
-            cage->MakeStatic();
             text2->Hide();
         }
 
