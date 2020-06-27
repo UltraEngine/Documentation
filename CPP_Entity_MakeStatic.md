@@ -42,7 +42,6 @@ int main(int argc, const char* argv[])
     auto light = CreateLight(world, LIGHT_POINT);
     light->SetColor(2, 2, 2);
     light->SetRange(10);
-    light->SetRotation(90, 0, 0);
     light->SetPosition(0, 2, 2);
     light->SetColor(4.0);
 
