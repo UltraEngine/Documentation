@@ -45,8 +45,7 @@ int main(int argc, const char* argv[])
     //Optimize scene
     tunnel->MakeStatic();
     cage->MakeStatic();
-
-    //Create spot light
+    
     auto light = CreateLight(world, LIGHT_POINT);
     light->SetColor(2, 2, 2);
     light->SetRange(10);
