@@ -3,6 +3,7 @@ This class The camera class is an entity used to render the world.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
+| [AddPostEffect](API_Camera_AddPostEffect) | Method | Adds a post-processing effect to the effects stack. | 
 | [SetTessellation](API_Camera_SetTessellation.md) | Method |  |
 | [Pick](API_Camera_Pick.md) | Method | |
 | Project | Method | |
