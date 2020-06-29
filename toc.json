@@ -578,7 +578,18 @@
 							"filename": "API_Pixmap_WritePixel"
 						}							
 					]
-				},						
+				},
+				{
+					"title": "PostEffect",
+					"filename": "PostEffect",
+					"topics":
+					[
+						{
+							"title": "LoadPostEffect",
+							"filename": "API_LoadPostEffect"
+						}							
+					]
+				},		
 				{
 					"title": "Sprite",
 					"filename": "API_Sprite"
