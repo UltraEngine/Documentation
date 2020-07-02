@@ -83,7 +83,7 @@ int main(int argc, const char* argv[])
     model->AddForce(10, 0, -10);
 
     //Create collision
-    vector<shared_ptr<Collision> > collisions;
+    vector<shared_ptr<Collider> > collisions;
     collisions.push_back(CreateSphereCollider(1));
     collisions.push_back(CreateConeCollider(0.5, 1, 1, 0, 0, 0, 0, -90));
     collisions.push_back(CreateConeCollider(0.5, 1, -1, 0, 0, 0, 0, 90));
