@@ -281,7 +281,11 @@
 				{
 					"title": "ShaderFamily",
 					"filename": "API_ShaderFamily"
-				},			
+				},
+				{
+					"title": "Terrain",
+					"filename": "API_Terrain"
+				},				
 				{
 					"title": "Texture",
 					"filename": "API_Texture"
