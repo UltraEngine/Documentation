@@ -45,7 +45,7 @@ int main(int argc, const char* argv[])
 
     auto terrain = CreateTerrain(world, 1024, 32);
     terrain->SetScale(1, 100, 1);
-    if (FileType("Terrain/1024") == 0) CreateDir("Terrain/1024");
+    if (FileType("Terrain/1024") == 0) CreateDir("Terrain/1024", true);
 
     //---------------------------------------------------------------
     // Load heightmap
