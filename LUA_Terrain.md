@@ -34,6 +34,9 @@ local starttime = Millisecs()
 --Create editable terrain
 local terrain = CreateTerrain(world, 1024, 32)
 terrain:SetScale(1,200,1)
+if FileType("Terrain/1024") == 0 then
+	CreateDir("Terrain/1024", true)
+end
 
 -----------------------------------------------------------------
 --Load heightmap
