@@ -56,6 +56,7 @@ int main(int argc, const char* argv[])
     //Create ground
     auto ground = CreateBox(world, 10, 1, 10);
     ground->SetPosition(0, -0.5, 0);
+    ground->SetColor(0.5);
 
     //Load model
     auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.glb");
