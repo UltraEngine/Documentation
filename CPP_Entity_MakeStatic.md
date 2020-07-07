@@ -25,6 +25,7 @@ int main(int argc, const char* argv[])
 
     //Create world
     auto world = CreateWorld();
+    world->SetAmbientLight(0.1);
     world->RecordStats(true);
 
     //Create camera
@@ -37,19 +38,19 @@ int main(int argc, const char* argv[])
     auto tunnel = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
     tunnel->SetRotation(0, 180, 0);
     tunnel->MakeStatic();
-    
+
     auto cage = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
     cage->MakeStatic();
-    
+
     auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
-    
+
     auto light = CreateLight(world, LIGHT_POINT);
     light->SetColor(2, 2, 2);
     light->SetRange(10);
     light->SetPosition(0, 2, 2);
     light->SetColor(4.0);
- 
+
     //Display text
     auto spritelayer = CreateSpriteLayer(world);
     camera->AddSpriteLayer(spritelayer);
@@ -74,7 +75,7 @@ int main(int argc, const char* argv[])
             light->MakeStatic();
             text2->Hide();
         }
-        
+
         text->SetText("Shadow polygons: " + String(world->renderstats.shadowpolygons));
     }
     return 0;
