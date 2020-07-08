@@ -15,9 +15,12 @@ In this example the scene is optimized to make non-moving objects static, result
 
 int main(int argc, const char* argv[])
 {
-    //Create window
+    //Get display
     auto displays = ListDisplays();
-    auto window = CreateWindow(displays[0], "", 0, 0, 1280 * displays[0]->scale.x, 720 * displays[0]->scale.y);
+    auto display = displays[0];
+
+    //Create window
+    auto window = CreateWindow(display, "", 0, 0, 1280 * display->scale.x, 720 * display->scale.y);
 
     //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -55,10 +58,10 @@ int main(int argc, const char* argv[])
     camera->AddSpriteLayer(spritelayer);
     auto font = LoadFont("Fonts/arial.ttf");
 
-    auto text = CreateText(spritelayer, font, "Shadow polygons: 0", 14.0 * displayscale);
+    auto text = CreateText(spritelayer, font, "Shadow polygons: 0", 14.0 * display-<scale.y);
     text->SetPosition(2, 2);
 
-    auto text2 = CreateText(spritelayer, font, "Press space to make the light static.", 14.0 * displayscale);
+    auto text2 = CreateText(spritelayer, font, "Press space to make the light static.", 14.0 * display->scale.y);
     text2->SetPosition(2, 20 * displayscale);
 
     //Main loop
