@@ -9,6 +9,7 @@
 - CurrentTime
 - GetCollisionResponse
 - GetAmbientLight
+- [GetEntitiesInArea](CPP_World_GetEntitiesInArea.md)
 - GetSkybox
 - GetGravity
 - Pause
