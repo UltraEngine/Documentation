@@ -58,11 +58,11 @@ int main(int argc, const char* argv[])
     camera->AddSpriteLayer(spritelayer);
     auto font = LoadFont("Fonts/arial.ttf");
 
-    auto text = CreateText(spritelayer, font, "Shadow polygons: 0", 14.0 * display-<scale.y);
+    auto text = CreateText(spritelayer, font, "Shadow polygons: 0", 14.0 * display->scale.y);
     text->SetPosition(2, 2);
 
     auto text2 = CreateText(spritelayer, font, "Press space to make the light static.", 14.0 * display->scale.y);
-    text2->SetPosition(2, 20 * displayscale);
+    text2->SetPosition(2, 20 * display->scale.y);
 
     //Main loop
     while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
