@@ -43,10 +43,11 @@ int main(int argc, const char* argv[])
 
     //Create camera
     auto camera = CreateCamera(world);
-    camera->SetClearColor(0.25);
+    camera->SetClearColor(0.125);
     camera->SetPosition(0, 2, 0);
     camera->Move(0, 0, -2);
 
+    //Create light
     auto light = CreateLight(world, LIGHT_DIRECTIONAL);
     light->SetColor(2);
     light->SetRotation(35, 15, 0);
@@ -57,7 +58,7 @@ int main(int argc, const char* argv[])
 
     //Attach an actor
     auto spinner = make_shared<Spinner>();
-    spinner->speed = Vec3(0, 0, 5);
+    spinner->speed = Vec3(0, 0, -5);
     fan->AddActor(spinner);
 
     //Main loop
