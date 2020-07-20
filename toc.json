@@ -261,6 +261,13 @@
 				{
 					"title": "Material",
 					"filename": "API_Material"
+					"topics":
+					[
+						{
+							"title": "SetRefraction",
+							"filename": "API_Material_SetRefraction"
+						}
+					]
 				},
 				{
 					"title": "Mesh",
