@@ -60,7 +60,7 @@ Make sure this is added for all configurations, and the non-Steam version of you
 ```c++
 bool InitSteam()
 {
-    if (FileType("steam_api64.dll ") != 1) RuntimeError("steam_api64.dll is missing.");
+    if (FileType(AppDir() + "steam_api64.dll ") != 1) RuntimeError("steam_api64.dll is missing.");
     return SteamAPI_Init();
 }
 ```
