@@ -5,7 +5,7 @@
 		"emission": [0,0,0],
 		"metallic": 1,
 		"roughness": 1,
-		"tessellation": true,
+		"tessellation": false,
 		"mappingScale": 16,
 		"textures":
 		[
