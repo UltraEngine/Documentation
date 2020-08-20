@@ -19,7 +19,7 @@ if display == nil then RuntimeError("Primary display not found.") end
 local displayscale = display:GetScale()
 
 --Create a window
-local window = CreateWindow(display, "Tessellation", 0, 0, math.min(1280 * displayscale.x, display.size.x), math.min(720 * displayscale.y, display.size.y), WINDOW_TITLEBAR)
+local window = CreateWindow(display, "Tessellation", 0, 0, 1280, 720, WINDOW_CENTER + WINDOW_TITLEBAR)
 
 --Create a rendering framebuffer
 local framebuffer = CreateFramebuffer(window);
@@ -27,6 +27,7 @@ local framebuffer = CreateFramebuffer(window);
 --Create a world
 local world = CreateWorld()
 world:SetSkybox("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Sky/sunset.basis")
+world:SetAmbientLight(0)
 
 --Create a camera
 local camera = CreateCamera(world)
@@ -47,10 +48,10 @@ model:SetMaterial(mtl)
 --Main loop
 while window:Closed() == false do
 
-	model:Turn(0,0.1,0)
+    model:Turn(0,0.1,0,true)
 
-	world:Update()
-	world:Render(framebuffer)
+    world:Update()
+    world:Render(framebuffer)
 
 end
 ```
