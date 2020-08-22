@@ -36,7 +36,7 @@ The material (.mtl) file format is a JSON-based file format for storing material
 	}
 }
 ```
-The slot value can be an integer from 0-31 or one of these strings:
+The texture slot value can be an integer from 0-31 or one of these strings:
 - BASE
 - NORMAL
 - METALLIC_ROUGHNESS
