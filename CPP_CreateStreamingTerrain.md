@@ -104,7 +104,7 @@ int main(const char* args, const int argc)
     light->SetRotation(35, 45, 0);
 
     String datapath = "https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/32768";
-    auto terrain = CreateTerrain(world, terrainsize, patchsize, datapath, FetchPatchInfo);
+    auto terrain = CreateStreamingTerrain(world, terrainsize, patchsize, datapath, FetchPatchInfo);
     terrain->SetScale(1, TerrainHeight, 1);
 
     //Main loop
