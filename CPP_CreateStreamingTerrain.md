@@ -12,14 +12,14 @@ void FetchPatchInfo(shared_ptr<StreamingTerrain> terrain, TerrainPatchInfo& patc
 
     //Load heightmap
     patchinfo.heightmap = CreatePixmap(patchinfo.size.x + 1, patchinfo.size.y + 1, TEXTURE_RED16);
-    
+
     //Load most of the patch
     auto pixmap = LoadPixmap(heightmappath, 0, 0, LOAD_QUIET);
     if (pixmap)
     {
         Assert(pixmap->size.x + 1 == patchinfo.heightmap->size.x);
         Assert(pixmap->size.y + 1 == patchinfo.heightmap->size.y);
-        pixmap->CopyRect(0,0,pixmap->size.x,pixmap->size.y,patchinfo.heightmap,0,0);
+        pixmap->CopyRect(0, 0, pixmap->size.x, pixmap->size.y, patchinfo.heightmap, 0, 0);
     }
 
     iVec2 patches = terrain->CountPatches(patchinfo.level);
@@ -44,7 +44,7 @@ void FetchPatchInfo(shared_ptr<StreamingTerrain> terrain, TerrainPatchInfo& patc
     {
         //Copy top edge of the tile beneath this one to the bottom edge of the patch
         WString path = terrain->datapath + L"/LOD" + WString(patchinfo.level) + L"/" + WString(patchinfo.position.x) + L"_" + WString(patchinfo.position.y + 1) + L".dds";
-        auto pixmap = LoadPixmap(path,0,0,LOAD_QUIET);
+        auto pixmap = LoadPixmap(path, 0, 0, LOAD_QUIET);
         if (pixmap) pixmap->CopyRect(0, 0, pixmap->size.x, 1, patchinfo.heightmap, 0, patchinfo.heightmap->size.y - 1);
     }
     else
@@ -70,14 +70,14 @@ void FetchPatchInfo(shared_ptr<StreamingTerrain> terrain, TerrainPatchInfo& patc
     }
 
     //Calculate the normal map - I'm not 100% sure on the height factor
-    patchinfo.normalmap = patchinfo.heightmap->MakeNormalMap(TerrainHeight / pow(2,patchinfo.level), TEXTURE_RGBA);
+    patchinfo.normalmap = patchinfo.heightmap->MakeNormalMap(TerrainHeight / pow(2, patchinfo.level), TEXTURE_RGBA);
 }
 
 int main(const char* args, const int argc)
 {
     const int terrainsize = 8192;
     const int patchsize = 64;
-    
+
     //Get the displays
     auto displays = ListDisplays();
 
@@ -103,7 +103,7 @@ int main(const char* args, const int argc)
     auto light = CreateLight(world, LIGHT_DIRECTIONAL);
     light->SetRotation(35, 45, 0);
 
-    String datapath = "https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/8192";
+    WString datapath = L"https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/8192";
     auto terrain = CreateStreamingTerrain(world, terrainsize, patchsize, datapath, FetchPatchInfo);
     terrain->SetScale(1, TerrainHeight, 1);
 
@@ -112,7 +112,7 @@ int main(const char* args, const int argc)
     {
         //Camera controls
         dFloat z = 0.0;
-        if (window->KeyDown(KEY_W)) z += 1; 
+        if (window->KeyDown(KEY_W)) z += 1;
         if (window->KeyDown(KEY_S)) z -= 1;
         if (window->KeyDown(KEY_SHIFT)) z *= 10.0f;
         camera->SetRotation(0, camera->rotation.y, 0);
