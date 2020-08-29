@@ -75,7 +75,7 @@ void FetchPatchInfo(shared_ptr<StreamingTerrain> terrain, TerrainPatchInfo& patc
 
 int main(const char* args, const int argc)
 {
-    const int terrainsize = 32768;
+    const int terrainsize = 8192;
     const int patchsize = 64;
     
     //Get the displays
@@ -96,14 +96,14 @@ int main(const char* args, const int argc)
     camera->SetClearColor(0.125);
     camera->Move(0, TerrainHeight * 0.25, 0);
     camera->Turn(35, 0, 0);
-    camera->SetRange(1, 16000);
+    camera->SetRange(0.5, 4000);
     camera->SetWireframe(true);
 
     //Create a light
     auto light = CreateLight(world, LIGHT_DIRECTIONAL);
     light->SetRotation(35, 45, 0);
 
-    String datapath = "https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/32768";
+    String datapath = "https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/8192";
     auto terrain = CreateStreamingTerrain(world, terrainsize, patchsize, datapath, FetchPatchInfo);
     terrain->SetScale(1, TerrainHeight, 1);
 
