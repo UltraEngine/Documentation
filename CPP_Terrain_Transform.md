@@ -1,4 +1,5 @@
 # Terrain::Transform #
+This method accepts a user-defined callback function that can be used to warp terrain into different shapes, for creating planets and displaying GIS data. The terrain must also use a shader family that applies the exact same calculations in the vertex shader.
 
 ## Example ##
 ```c++
