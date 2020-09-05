@@ -292,11 +292,22 @@
 				{
 					"title": "Terrain",
 					"filename": "API_Terrain"
+					"topics":
+					[
+						{
+							"title": "StreamingTerrain",
+							"filename": "API_StreamingTerrain"
+						},					
+						{
+							"title": "Transform",
+							"filename": "API_Terrain_Transform"
+						}								
+					]					
 				},				
 				{
 					"title": "Texture",
 					"filename": "API_Texture"
-				},
+				},		
 				{
 					"title": "Vertex",
 					"filename": "API_Vertex"
