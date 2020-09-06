@@ -48,7 +48,7 @@ int main(int argc, const char* argv[])
     Vec2 dpiscale = displays[0]->GetScale();
 
     //Create a window
-    auto window = CreateWindow(displays[0], "", 0, 0, 1280 * dpiscale.x, 720 * dpiscale.y);
+    auto window = CreateWindow(displays[0], "Ultra Engine", 0, 0, 1280 * dpiscale.x, 720 * dpiscale.y);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
