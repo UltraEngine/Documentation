@@ -79,7 +79,7 @@ int main(int argc, const char* argv[])
     auto buffer = LoadBuffer("https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/1024.r16");
     auto heightmap = CreatePixmap(1024, 1024, TEXTURE_R16, buffer);
 
-    //Set a custom shader family. This will apply the same transform equation in the vertex shader so the visible terrain matches the game terrain
+    //Load custom shader family
     auto family = LoadShaderFamily("Shaders/CustomTerrain.json");
 
     const Vec3 position = Vec3(0.0f);
@@ -103,7 +103,8 @@ int main(int argc, const char* argv[])
         params[2] = position.z;
         params[3] = radius;
         terrain[n]->Transform(TransformTerrainPoint, params);
-
+        
+        //Set a custom shader family. This will apply the same transform equation in the vertex shader so the visible terrain matches the game terrain
         terrain[n]->material->SetShaderFamily(family);
 
         Vec3 angle;
