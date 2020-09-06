@@ -20,12 +20,11 @@ void TransformTerrainPoint(const Mat4& matrix, Vec3& position, Vec3& normal, Vec
 {
     //Get the position and radius of the sphere
 #ifdef DOUBLE_FLOAT
-    dVec3 center = dVec3(userparams[0], userparams[1], userparams[2]);
-    dVec3 tangentposition;
+    dVec3 center, tangentposition;
 #else
-    Vec3 center = Vec3(userparams[0], userparams[1], userparams[2]);
-    Vec3 tangentposition;
+    Vec3 center, tangentposition;
 #endif
+    center.x = userparams[0]; center.y = userparams[1]; center.z = userparams[2];
     auto radius = userparams[3];
 
     //Get the tangent position before any modification
