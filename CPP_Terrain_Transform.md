@@ -14,7 +14,7 @@ void TransformTerrainPoint(const Mat4& matrix, Vec3& position, Vec3& normal, Vec
 {
     //Get the position and radius of the sphere
 #ifdef DOUBLE_FLOAT
-    dVec3 center = Vec3(userparams[0], userparams[1], userparams[2]);
+    dVec3 center = dVec3(userparams[0], userparams[1], userparams[2]);
 #else
     Vec3 center = Vec3(userparams[0], userparams[1], userparams[2]);
 #endif
