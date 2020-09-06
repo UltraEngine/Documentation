@@ -20,9 +20,9 @@ void TransformTerrainPoint(const Mat4& matrix, Vec3& position, Vec3& normal, Vec
 {
     //Get the position and radius of the sphere
 #ifdef DOUBLE_FLOAT
-    dVec3 center, tangentposition;
+    dVec3 center, tangentposition, tangentposnormal;
 #else
-    Vec3 center, tangentposition;
+    Vec3 center, tangentposition, tangentposnormal;
 #endif
     center.x = userparams[0]; center.y = userparams[1]; center.z = userparams[2];
     auto radius = userparams[3];
@@ -37,7 +37,7 @@ void TransformTerrainPoint(const Mat4& matrix, Vec3& position, Vec3& normal, Vec
     position = center + normal * radius;
 
     //Calculate transformed tangent
-    Vec3 tangentposnormal = (tangentposition - center).Normalize();
+    tangentposnormal = (tangentposition - center).Normalize();
     tangentposition = center + tangentposnormal * radius;
     tangent = (tangentposition - position).Normalize();
 }
