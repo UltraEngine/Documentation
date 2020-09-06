@@ -1,4 +1,6 @@
 ## Example ##
+This function creates a streaming terrain entity.
+
 ```c++
 #include "pch.h"
 #include "Project.h"
