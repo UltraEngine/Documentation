@@ -296,7 +296,14 @@
 					[
 						{
 							"title": "StreamingTerrain",
-							"filename": "API_StreamingTerrain"
+							"filename": "API_StreamingTerrain",
+							"topics":
+							[
+								{
+									"title": "CreateStreamingTerrain",
+									"filename": "API_CreateStreamingTerrain"
+								}								
+							]						
 						},					
 						{
 							"title": "Transform",
