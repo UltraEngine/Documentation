@@ -12,11 +12,23 @@ void TransformTerrainPoint(const dMat4& matrix, dVec3& position, dVec3& normal, 
 void TransformTerrainPoint(const Mat4& matrix, Vec3& position, Vec3& normal, Vec3& tangent, const std::array<float,16>& userparams)
 #endif
 {
-    float radius = 512.0;
-    Vec3 center = Vec3(0, -radius, 0);
-    float scale = normal.y;
+    //Get the position and radius of the sphere
+    Vec3 center = Vec3(userparams[0], userparams[1], userparams[2]);
+    float radius = userparams[3];
+
+    //Get the tangent position before any modification
+    Vec3 tangentposition = position + tangent;
+
+    //Calculate the ground normal
     normal = (position - center).Normalize();
+
+    //Calculate the transformed position
     position = center + normal * radius;
+
+    //Calculate transformed tangent
+    Vec3 tangentposnormal = (tangentposition - center).Normalize();
+    tangentposition = center + tangentposnormal * radius;
+    tangent = (tangentposition - position).Normalize();
 }
 
 int main(int argc, const char* argv[])
@@ -51,27 +63,65 @@ int main(int argc, const char* argv[])
     // Create terrain
     //---------------------------------------------------------------
 
-    auto terrain = CreateTerrain(world, 1024, 32);
-    terrain->SetScale(1, 50, 1);
-    
+    array <shared_ptr<Terrain>, 6> terrain;
+
     // We have to specify the width, height, and format then create the pixmap from the raw pixel data.
     auto buffer = LoadBuffer("https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/1024.r16");
     auto heightmap = CreatePixmap(1024, 1024, TEXTURE_R16, buffer);
 
-    // Apply the heightmap to the terrain
-    terrain->SetHeightMap(heightmap);
-    heightmap = NULL;
-
-    //Build normals for the entire terrain
-    terrain->BuildNormals();
-
-    //Apply our transformation callback for culling, physics, and other tasks
-    std::array<dFloat, 16> params = {};
-    terrain->Transform(TransformTerrainPoint, params);
-
     //Set a custom shader family. This will apply the same transform equation in the vertex shader so the visible terrain matches the game terrain
     auto family = LoadShaderFamily("Shaders/CustomTerrain.json");
-    terrain->material->SetShaderFamily(family);
+
+    const Vec3 position = Vec3(0.0f);
+    const float radius = 512.0f;
+
+    for (int n = 0; n < 6; ++n)
+    {
+        terrain[n] = CreateTerrain(world, 1024, 32);
+        terrain[n]->SetScale(1, 50, 1);
+
+        // Apply the heightmap to the terrain
+        terrain[n]->SetHeightMap(heightmap);
+
+        //Build normals for the entire terrain
+        terrain[n]->BuildNormals();
+
+        //Apply our transformation callback for culling, physics, and other tasks
+        std::array<dFloat, 16> params = {};
+        params[0] = position.x;
+        params[1] = position.y;
+        params[2] = position.z;
+        params[3] = radius;
+        terrain[n]->Transform(TransformTerrainPoint, params);
+
+        terrain[n]->material->SetShaderFamily(family);
+
+        Vec3 angle;
+        switch (n)
+        {
+        case 0:
+            angle = Vec3(0, 0, 90);
+            break;
+        case 1:
+            angle = Vec3(0, 0, -90);
+            break;
+        case 2:
+            angle = Vec3(0, 0, 0);
+            break;
+        case 3:
+            angle = Vec3(0, 0, 180);
+            break;
+        case 4:
+            angle = Vec3(90, 0, 0);
+            break;
+        case 5:
+            angle = Vec3(-90, 0, 0);
+            break;
+        }
+
+        terrain[n]->SetRotation(angle);
+        terrain[n]->Move(0, 512, 0);
+    }
 
     //Main loop
     while (window->Closed() == false)
