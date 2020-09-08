@@ -86,6 +86,8 @@ int main(int argc, const char* argv[])
     const Vec3 position = Vec3(0.0f);
     const float radius = 512.0f;
 
+    array<Vec3, 6> angle = { Vec3(0, 0, 90), Vec3(0, 0, -90), Vec3(0, 0, 0), Vec3(0, 0, 180), Vec3(90, 0, 0), Vec3(-90, 0, 0) };
+
     for (int n = 0; n < 6; ++n)
     {
         terrain[n] = CreateTerrain(world, 1024, 32);
@@ -108,30 +110,7 @@ int main(int argc, const char* argv[])
         //Set a custom shader family. This will apply the same transform equation in the vertex shader so the visible terrain matches the game terrain
         terrain[n]->material->SetShaderFamily(family);
 
-        Vec3 angle;
-        switch (n)
-        {
-        case 0:
-            angle = Vec3(0, 0, 90);
-            break;
-        case 1:
-            angle = Vec3(0, 0, -90);
-            break;
-        case 2:
-            angle = Vec3(0, 0, 0);
-            break;
-        case 3:
-            angle = Vec3(0, 0, 180);
-            break;
-        case 4:
-            angle = Vec3(90, 0, 0);
-            break;
-        case 5:
-            angle = Vec3(-90, 0, 0);
-            break;
-        }
-
-        terrain[n]->SetRotation(angle);
+        terrain[n]->SetRotation(angle[n]);
         terrain[n]->Move(0, 512, 0);
     }
 
