@@ -337,6 +337,10 @@
 							"filename": "API_World_Render"
 						},
 						{
+							"title": "SetSkyColor",
+							"filename": "API_World_SetSkyColor"
+						},						
+						{
 							"title": "Update",
 							"filename": "API_World_Update"
 						}								
