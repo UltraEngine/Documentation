@@ -1,8 +1,8 @@
-# Terrain::Transform #
+# Terrain::Deform #
 This method accepts a user-defined callback function that can be used to warp terrain into different shapes, for creating planets and visualizing GIS data with different projection methods. The terrain must also use a shader family that applies the exact same calculations in the vertex shader. The callback function must be thread-safe.
 
 ## Syntax ##
-- void Transform(void callback(const Mat4& matrix, Vec3& position, Vec3& normal, Vec3& tangent, const std::array<float, 16>& userparams), std::array<float, 16> userparams)
+- void Deform(void callback(const Mat4& matrix, Vec3& position, Vec3& normal, Vec3& tangent, const std::array<float, 16>& userparams), std::array<float, 16> userparams)
 
 ## Parameters ##
 
@@ -105,7 +105,7 @@ int main(int argc, const char* argv[])
         params[1] = position.y;
         params[2] = position.z;
         params[3] = radius;
-        terrain[n]->Transform(TransformTerrainPoint, params);
+        terrain[n]->Deform(TransformTerrainPoint, params);
         
         //Set a custom shader family. This will apply the same transform equation in the vertex shader so the visible terrain matches the game terrain
         terrain[n]->material->SetShaderFamily(family);
