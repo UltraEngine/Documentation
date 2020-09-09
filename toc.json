@@ -307,7 +307,7 @@
 						},					
 						{
 							"title": "Transform",
-							"filename": "API_Terrain_Transform"
+							"filename": "API_Terrain_Deform"
 						}								
 					]					
 				},				
