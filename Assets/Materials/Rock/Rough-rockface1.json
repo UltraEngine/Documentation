@@ -1,0 +1,37 @@
+{
+	"material":
+	{
+		"color": [1,1,1,1],
+		"emission": [0,0,0],
+		"metallic": 1,
+		"roughness": 1,
+		"mappingScale": 16,
+		"textures":
+		[
+			{
+				"slot": "BASE",
+				"file": "./Rough-rockface1_Base_Color.dds",
+				"filter": "LINEAR",
+				"clamp": [false, false, false]
+			},
+			{
+				"slot": "NORMAL",
+				"file": "./Rough-rockface1_Normal.dds",
+				"scale": 1
+			},
+			{
+				"slot": "METALLIC_ROUGHNESS",
+				"file": "./Rough-rockface1_MetallicRoughness.dds"
+			},
+			{
+				"slot": "DISPLACEMENT",
+				"file": "./Rough-rockface1_Height.png",
+				"scale": 0.02
+			},
+			{
+				"slot": "BRDF",
+				"file": "Materials/BRDF/default.dds"
+			}
+		]
+	}
+}
