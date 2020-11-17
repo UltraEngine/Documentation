@@ -1,6 +1,6 @@
 --Load required plugins
-local plugin = LoadPlugin("Plugins/ISPCTexComp.dll")
-local plugin2 = LoadPlugin("Plugins/Basis.dll")
+local plugin = LoadPlugin("Plugins/ISPCTexComp.*")
+local plugin2 = LoadPlugin("Plugins/Basis.*")
 
 --Load image
 local pixmap = LoadPixmap("Materials/77684-blocks18c_1.jpg")
