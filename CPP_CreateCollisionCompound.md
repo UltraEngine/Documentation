@@ -17,9 +17,8 @@ This function creates a complex collision shape that is made up of multiple sub-
 int main(int argc, const char* argv[])
 {
     auto displays = ListDisplays();
-    Vec2 displayscale = displays[0]->GetScale();
-
-    auto window = CreateWindow(displays[0], L"Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y);
+    
+    auto window = CreateWindow("Example", 0, 0, 1280, 720, displays[0]);
 
     auto framebuffer = CreateFramebuffer(window);
 
@@ -33,10 +32,11 @@ int main(int argc, const char* argv[])
 
     auto light = CreateLight(world, LIGHT_DIRECTIONAL);
     light->SetRotation(45, -35, 0);
-    
+
     //Create ground
     auto ground = CreateBox(world, 10, 1, 10);
     ground->SetPosition(0, -0.5, 0);
+    ground->SetColor(0.5);
 
     //Create model
     auto model = CreateSphere(world, 1);
