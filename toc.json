@@ -311,8 +311,8 @@
                                     ]						
                                 },					
                                 {
-                                    "title": "Deform",
-                                    "filename": "API_Terrain_Deform"
+                                    "title": "SetDeformation",
+                                    "filename": "API_Terrain_SetDeformation"
                                 }								
                             ]					
                         },				
