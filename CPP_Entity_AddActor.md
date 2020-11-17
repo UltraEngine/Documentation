@@ -1,4 +1,4 @@
-# Entity::AddActor #
+# Entity::AddComponent #
 This method adds an actor to an entity. An actor is a user-defined class derived from the base [Actor](CPP_Actor.md) class that can be used to add behaviors to an entity.
 
 ## Syntax ##
@@ -15,7 +15,7 @@ This method adds an actor to an entity. An actor is a user-defined class derived
 #include "pch.h"
 #include "Project.h"
 
-class Spinner : public Actor
+class Spinner : public Component
 {
 public:
     Vec3 speed;
@@ -59,7 +59,7 @@ int main(int argc, const char* argv[])
     //Attach an actor
     auto spinner = make_shared<Spinner>();
     spinner->speed = Vec3(0, 0, -5);
-    fan->AddActor(spinner);
+    fan->AddComponent(spinner);
 
     //Main loop
     while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
