@@ -1,0 +1,28 @@
+{
+	"material":
+	{
+		"color": [1,1,1,1],
+		"emission": [0,0,0],
+		"metallic": 1,
+		"roughness": 0,
+		"mappingScale": 16,
+		"textures":
+		[
+			{
+				"slot": "BASE",
+				"file": "./dirt01.basis",
+				"filter": "LINEAR",
+				"clamp": [false, false, false]
+			},
+			{
+				"slot": "NORMAL",
+				"file": "./dirt01_dot3.basis",
+				"scale": 1
+			},
+			{
+				"slot": "BRDF",
+				"file": "Materials/BRDF/default.dds"
+			}
+		]
+	}
+}
