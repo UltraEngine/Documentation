@@ -1,0 +1,33 @@
+{
+	"material":
+	{
+		"color": [1,1,1,1],
+		"emission": [0,0,0],
+		"metallic": 1,
+		"roughness": 0,
+		"mappingScale": 16,
+		"textures":
+		[
+			{
+				"slot": "BASE",
+				"file": "./snow01.basis",
+				"filter": "LINEAR",
+				"clamp": [false, false, false]
+			},
+			{
+				"slot": "NORMAL",
+				"file": "./snow01_dot3.basis",
+				"scale": 1
+			},
+			{
+				"slot": "DISPLACEMENT",
+				"file": "./snow01_disp.basis",
+				"scale": 0.02
+			},
+			{
+				"slot": "BRDF",
+				"file": "Materials/BRDF/default.dds"
+			}
+		]
+	}
+}
