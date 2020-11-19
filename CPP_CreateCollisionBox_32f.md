@@ -27,7 +27,8 @@ Returns a new collider object.
 ## Example ##
 ```c++
 #include "pch.h"
-#include "Project.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
