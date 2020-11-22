@@ -48,7 +48,7 @@ int main(int argc, const char* argv[])
     auto sz = framebuffer->GetSize();
 
     //Create widget
-    auto panel = CreatePanel(50,50,300, framebuffer->GetSize().y - 50, ui);
+    auto panel = CreatePanel(50,50,300, framebuffer->GetSize().y - 100, ui);
 
     while (window->Closed() == false)
     {
