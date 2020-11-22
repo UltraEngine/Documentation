@@ -43,7 +43,7 @@ int main(int argc, const char* argv[])
     auto canvas = CreateCanvas(world);
     camera->AddCanvas(canvas);
 
-    //Create Interface
+    //Create User Interface
     auto ui = CreateInterface(canvas,framebuffer);
     auto sz = framebuffer->GetSize();
 
