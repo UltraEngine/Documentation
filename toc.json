@@ -674,7 +674,21 @@
                         },
                         {
                             "title": "Widget",
-                            "filename": "API_Widget"
+                            "filename": "API_Widget",
+                            "topics":
+				[
+					{
+						"title": "Panel",
+						"filename": "API_Panel",
+						"topics":
+						[
+							{
+							"title": "CreatePanel",
+							"filename": "API_CreatePanel"
+							}
+						]					
+					}
+				]
                         }				
                     ]							
                 },		
