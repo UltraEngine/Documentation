@@ -14,6 +14,9 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Load plugins
+    auto plugin_svg = LoadPlugin("Plugins/SVG.*");
+
     //Get the displays
     auto displays = ListDisplays();
 
@@ -63,6 +66,8 @@ int main(int argc, const char* argv[])
     auto radio1 = CreateButton("Option 1", 20, y, 120, 30, panel, BUTTON_RADIO);
     y += sep;
     auto radio2 = CreateButton("Option 2", 20, y, 120, 30, panel, BUTTON_RADIO);
+
+    panel->SetPixmap(LoadPixmap("Materials/77684-blocks18c_1.dds"));
 
     while (window->Closed() == false)
     {
