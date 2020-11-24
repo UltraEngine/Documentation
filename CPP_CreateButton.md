@@ -67,8 +67,6 @@ int main(int argc, const char* argv[])
     y += sep;
     auto radio2 = CreateButton("Option 2", 20, y, 120, 30, panel, BUTTON_RADIO);
 
-    panel->SetPixmap(LoadPixmap("Materials/77684-blocks18c_1.dds"));
-
     while (window->Closed() == false)
     {
         box->Turn(0, 1, 0);
