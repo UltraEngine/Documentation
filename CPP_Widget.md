@@ -5,6 +5,7 @@ This class handle user interface elements.
 
 | Name | Type | Description
 |---|---|---|
+| kids | const vector<shared_ptr<Widget\> \>& | |
 | [AddBlock](CPP_AddBlock.md) | Method | |
 | [GetText](CPP_Widget_GetText.md) | Method | |
 | [SetText](CPP_Widget_SetText.md) | Method | |
