@@ -1,4 +1,4 @@
-# TreeViewNode #
+# [Object](CPP_Object.md)::TreeViewNode #
 The TreeViewNode object stores an item in a [TreeView](CPP_TreeView.md) widget.
 
 | Property | Type | Description |
