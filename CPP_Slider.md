@@ -7,4 +7,4 @@
 | SLIDER_SCROLLBAR | enum | |
 | SLIDER_STEPPER | enum | |
 | SLIDER_VERTICAL | enum | |
-| (CreateSlider)[CPP_CreateSlider.md] | Function | Creates a new slider widget. |
+| [CreateSlider](CPP_CreateSlider.md) | Function | Creates a new slider widget. |
