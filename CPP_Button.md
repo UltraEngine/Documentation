@@ -1,5 +1,5 @@
 # Button #
-The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items.
+The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
 
 | Property | Type | Description |
 | --- | --- | --- |
