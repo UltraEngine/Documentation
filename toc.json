@@ -767,7 +767,9 @@
                                         "title": "CreateSlider",
                                         "filename": "API_CreateSlider"
                                         }
-                                    ],
+                                    ]
+				},
+				{
                                     "title": "Tabber",
                                     "filename": "API_Tabber",
                                     "topics":
