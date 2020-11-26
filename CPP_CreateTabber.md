@@ -1,6 +1,6 @@
 # CreateTabber #
 
-## Example #3
+## Example ##
 ```c++
 #include "pch.h"
 
@@ -50,7 +50,7 @@ int main(int argc, const char* argv[])
     //Create widget
     auto sz = panel->ClientSize();
     auto tabber = CreateTabber(10, 10, sz.x - 20, sz.y - 20, panel);
-    tabber->AddItem("Item 1");
+    tabber->AddItem("Item 1", true);
     tabber->AddItem("Item 2");
     tabber->AddItem("Item 3");
 
