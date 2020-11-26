@@ -8,4 +8,4 @@
 | BUTTON_OK | enum | Specifies a button that is activated by the enter key. |
 | BUTTON_TOGGLE | enum | Specifies a toggle button. |
 | BUTTON_TOOLBAR | enum | Specifies a toolbar button. |
-| [CreateButton](API_CreateButton.md) | Function | Creates a new Button widget. |
+| [CreateButton](CPP_CreateButton.md) | Function | Creates a new Button widget. |
