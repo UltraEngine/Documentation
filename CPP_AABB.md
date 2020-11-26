@@ -2,9 +2,7 @@
 
 This class describes an axis-aligned bounding box.
 
-## Properties ##
-
-| Name | Type | Description |
+| Property | Type | Description |
 | ----- | ----- | ----- |
 | AABB | Constructor | AABB() |
 | AABB | Constructor | AABB(const [Vec3](CPP_Vec3.md)& min, const [Vec3](CPP_Vec3.md)& max) |
