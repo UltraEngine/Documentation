@@ -17,4 +17,4 @@ This class handle user interface elements.
 | [GetText](CPP_Widget_GetText.md) | Method | |
 | [SetColor](CPP_Widget_SetColor.md) | Method | |
 | [SetPixmap](CPP_Widget_SetPixmap.md) | Method | |
-| [CreateButton](CPP_CreateButton.md) | Function | Creates a new button widget. |
+
