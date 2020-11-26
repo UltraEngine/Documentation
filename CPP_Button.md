@@ -1,4 +1,5 @@
 # Button #
+The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items.
 
 | Property | Type | Description |
 | --- | --- | --- |
