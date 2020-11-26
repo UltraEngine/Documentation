@@ -1,4 +1,4 @@
-# CreateProgressBar 3
+# CreateProgressBar #
 
 ## Example ##
 ```c++
