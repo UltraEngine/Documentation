@@ -41,11 +41,11 @@ int main(int argc, const char* argv[])
     //Create model
     auto box1 = CreateBox(world, 0.8, 0.8, 0.8);
     box1->SetColor(0.5);
-    box1->SetPhysicsMode(PHYSICS_NONE);
+    box1->SetPhysicsMode(PHYSICS_DISABLED);
 
     auto box2 = CreateBox(world, 0.8, 0.8, 0.8);
     box2->SetColor(0.5);
-    box2->SetPhysicsMode(PHYSICS_NONE);
+    box2->SetPhysicsMode(PHYSICS_DISABLED);
 
     int n = 0;
     float pos[2] = { -1, 1 };
