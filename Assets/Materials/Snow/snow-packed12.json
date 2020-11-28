@@ -17,12 +17,12 @@
 				"slot": "DISPLACEMENT",
 				"file": "./snow-packed12-Height.basis",
 				"scale": 0.02
-            },
-            {
+			},
+			{
 				"slot": "METALLIC_ROUGHNESS",
-                "file": "./snow-packed12-Metal_Roughness.basis"
-            },
-            {
+				"file": "./snow-packed12-Metal_Roughness.basis"
+			},
+			{
 				"slot": "OCCLUSION",
 				"file": "./snow-packed12-ao.basis"
 			},
