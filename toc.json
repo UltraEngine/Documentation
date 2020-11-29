@@ -159,10 +159,6 @@
                                     "filename": "API_Entity_Point_FP"
                                 },
                                 {
-                                    "title": "Reset",
-                                    "filename": "API_Entity_Reset"
-                                },
-                                {
                                     "title": "SetCollider",
                                     "filename": "API_Entity_SetCollider"
                                 },
@@ -215,13 +211,17 @@
                                     "filename": "API_Entity_Show"
                                 },
                                 {
+                                    "title": "Sync",
+                                    "filename": "API_Entity_Sync"
+                                },				    
+                                {
                                     "title": "Translate",
                                     "filename": "API_Entity_Translate_FP"
                                 },
                                 {
                                     "title": "Turn",
                                     "filename": "API_Entity_Turn_FP"
-                                }								
+                                }				    
                             ]
                         },
                         {
