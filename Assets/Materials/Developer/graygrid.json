@@ -1,0 +1,15 @@
+{
+	"material":
+	{
+		"color": [ 1, 1, 1, 1 ],
+		"emission": [ 0, 0, 0 ],
+		"baseTexture":
+		{
+			"file": "./graygrid.dds"
+		},
+		"brdfTexture":
+		{
+			"path": "Materials/BRDF/default.dds"
+		}
+	}
+}
