@@ -7,6 +7,7 @@ The Lua state of each entity in the scene will be serialized in the saved file. 
 - Table keys that are booleans will be stored as the strings "true" or "false".
 - A string value that can be converted to a number will be loaded as a number.
 - Entity values will be saved as a string indicating the entity's GUID.
+- A string value in the GUID format ("xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx") will be converted to the matching entity if it exists in the scene file. If the entity cannot be found the key pair will not be loaded.
 - Tables keys that are the strings "true" or "false" will be converted to a boolean value when loaded.
 
 ## Syntax ##
