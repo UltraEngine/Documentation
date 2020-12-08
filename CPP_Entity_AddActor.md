@@ -15,17 +15,6 @@ This method adds an actor to an entity. An actor is a user-defined class derived
 #include "pch.h"
 #include "Project.h"
 
-class Spinner : public Component
-{
-public:
-    Vec3 speed;
-
-    virtual void Update()
-    {
-        GetEntity()->Turn(speed);
-    }
-};
-
 int main(int argc, const char* argv[])
 {
     //Create window
