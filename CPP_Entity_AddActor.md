@@ -45,7 +45,7 @@ int main(int argc, const char* argv[])
     auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
 
-    //Attach an actor
+    //Attach a component
     auto spinner = make_shared<Spinner>();
     spinner->speed = Vec3(0, 0, -5);
     fan->AddComponent(spinner);
