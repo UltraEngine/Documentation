@@ -286,6 +286,10 @@
 					{
 						"title": "SetLODScreenSize",
 						"filename": "API_Model_SetLODScreenSize"
+					},
+					{
+						"title": "AddLOD",
+						"filename": "API_Model_AddLOD"
 					}
 				]				
                         },
