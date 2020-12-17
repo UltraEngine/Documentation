@@ -1,7 +1,7 @@
 # Model::AddLOD #
 
 ## Syntax ##
-- int AddLOD()
+- int **AddLOD**()
 
 ## Example ##
 ```c++
