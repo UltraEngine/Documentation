@@ -1,8 +1,8 @@
-# Model::SetLODScreensize #
+# Model::SetLODScreenSize #
 Sets the approximate screen size of the model at which this LOD level or higher will be displayed. The screen size is calculated based on the extents of the model bounding box. This method will account for camera FOV, screen DPI and resolution, as well as distance from the camera.
 
 ## Syntax ##
-- void SetLODDistance(const int level, const float screenpixels)
+- void SetLODScreenSize(const int level, const float screenpixels)
 
 ## Example ##
 ```c++
