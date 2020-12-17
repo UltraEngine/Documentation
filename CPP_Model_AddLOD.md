@@ -1,7 +1,9 @@
 # Model::AddLOD #
+Adds a new level of detail to the model. The LOD can be empty or copied from another model. If another model is specified, its entity hierarchy must match this model's subhierarchy.
 
 ## Syntax ##
 - int **AddLOD**()
+- int **AddLOD**(shared_ptr<Model\> lodmodel)
 
 ## Example ##
 ```c++
