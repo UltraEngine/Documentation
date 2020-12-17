@@ -15,7 +15,7 @@ void main(const char* args, const int argc)
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
