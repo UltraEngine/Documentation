@@ -1,0 +1,71 @@
+# Model::SetLODScreensize #
+
+## Syntax ##
+- void SetLODDistance(const int level, const float screenpixels)
+
+## Example ##
+```c++
+#include "pch.h"
+
+using namespace UltraEngine;
+
+void main(const char* args, const int argc)
+{
+    //Get the displays
+    auto displays = ListDisplays();
+
+    //Create a window
+    auto window = CreateWindow("", 0, 0, 1280, 720, displays[0]);
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a light
+    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    light->SetRotation(45, 35, 0);
+
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->Move(0, 0, -3);
+
+    //Create box and set its orientation
+    auto model = CreateSphere(world, 0.5, 64);
+    auto lod1 = CreateSphere(world, 0.5, 8);
+    auto lod2 = CreateSphere(world, 0.5, 4);
+
+    model->AddLOD(lod1);
+    model->AddLOD(lod2);
+
+    model->SetLODScreensize(1, 300);
+    model->SetLODScreensize(2, 100);
+
+    lod1 = NULL;
+    lod2 = NULL;
+
+    float zoom = 1;
+
+    //Main loop
+    while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
+    {
+        model->Turn(0, 1, 0);
+
+        //  Up/Down keys move forward and back
+        if (window->KeyDown(KEY_UP)) camera->Move(0, 0, 0.03);
+        if (window->KeyDown(KEY_DOWN)) camera->Move(0, 0, -0.03);
+
+        // +/- keys zoom in and out
+        if (window->KeyDown(KEY_EQUALS)) zoom *= 1.01;;
+        if (window->KeyDown(KEY_SUBTRACT)) zoom /= 1.01;
+        camera->SetZoom(zoom);
+
+        //Update world
+        world->Update();
+
+        //Render world
+        world->Render(framebuffer);
+    }
+}
+```
