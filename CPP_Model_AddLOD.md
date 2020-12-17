@@ -50,6 +50,11 @@ void main(const char* args, const int argc)
     lod2 = NULL;
     lod3 = NULL;
 
+    //Set LOD pixel sizes (optional)
+    model->SetLODScreensize(1, 256);
+    model->SetLODScreensize(2, 128);
+    model->SetLODScreensize(3, 64);
+
     float zoom = 1;
 
     //Main loop
