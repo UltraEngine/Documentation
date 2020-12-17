@@ -280,7 +280,14 @@
                         },							
                         {
                             "title": "Model",
-                            "filename": "API_Model"
+                            "filename": "API_Model",
+				"topics":
+				[
+					{
+						"title": "SetLODScreenSize",
+						"filename": "API_Model_SetLODScreenSize"
+					}
+				]				
                         },
                         {
                             "title": "Prefab",
