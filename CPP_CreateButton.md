@@ -18,60 +18,40 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
-
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
-
-    //Create a world
-    auto world = CreateWorld();
-
-    //Create a camera
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->Move(0, 0, -2);
-    camera->SetFOV(70);
-
-    //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
-    light->SetRotation(45, 35, 0);
-
-    //Create model
-    auto box = CreateBox(world);
-    box->SetColor(0.5);
-
-    //Create a canvas
-    auto canvas = CreateCanvas(world);
-    camera->AddCanvas(canvas);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR|WINDOW_CENTER);
 
     //Create User Interface
-    auto ui = CreateInterface(canvas, framebuffer);
-    
-    //Create widget
-    auto sz = framebuffer->GetSize();
-    auto panel = CreatePanel(50, 50, 400, 300, ui);
+    auto ui = CreateInterface(window);
+
+    //Main panel
+    auto sz = window->ClientSize();
+    auto panel = CreatePanel(0, 0, sz.x, sz.y, ui);
 
     //Create buttons
     int y = 20;
-    int sep = 36;
+    int sep = 40;
+    
     auto button = CreateButton("Button", 20, y, 120, 30, panel);
     y += sep;
+    
     auto toggle = CreateButton("Toggle", 20, y, 120, 30, panel, BUTTON_TOGGLE);
     y += sep;
+    
+    auto toolbar = CreateButton("Toolbar", 20, y, 120, 30, panel, BUTTON_TOOLBAR);
+    y += sep;
+
     auto checkbox = CreateButton("Checkbox", 20, y, 120, 30, panel, BUTTON_CHECKBOX);
     y += sep;
-    auto toolbar = CreateButton("Toolbar", 20, y, 120, 30, panel, BUTTON_TOOLBAR);
-    y += sep;    
+    
     auto radio1 = CreateButton("Option 1", 20, y, 120, 30, panel, BUTTON_RADIO);
-    radio1->SetState(true);
+    radio1->SetState(WIDGETSTATE_SELECTED);
+    
     y += sep;
     auto radio2 = CreateButton("Option 2", 20, y, 120, 30, panel, BUTTON_RADIO);
 
     while (window->Closed() == false)
     {
-        box->Turn(0, 1, 0);
-        world->Update();
-        world->Render(framebuffer);
+        WaitEvent();
     }
     return 0;
 }
