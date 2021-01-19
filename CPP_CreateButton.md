@@ -14,9 +14,6 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Load plugins
-    auto plugin_svg = LoadPlugin("Plugins/SVG.*");
-
     //Get the displays
     auto displays = ListDisplays();
 
@@ -63,6 +60,8 @@ int main(int argc, const char* argv[])
     y += sep;
     auto checkbox = CreateButton("Checkbox", 20, y, 120, 30, panel, BUTTON_CHECKBOX);
     y += sep;
+    auto toolbar = CreateButton("Toolbar", 20, y, 120, 30, panel, BUTTON_TOOLBAR);
+    y += sep;    
     auto radio1 = CreateButton("Option 1", 20, y, 120, 30, panel, BUTTON_RADIO);
     radio1->SetState(WIDGETSTATE_SELECTED);
     y += sep;
