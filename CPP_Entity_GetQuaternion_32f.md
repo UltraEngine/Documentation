@@ -2,7 +2,7 @@
 This method retrieves the entity rotation as a quaternion.
 
 ## Syntax ##
-- [Quat](CPP_Quat.md) **GetQuaternion**()
+- [xQuat](xQuat.md) **GetQuaternion**()
 
 ## Returns ##
 Returns the entity rotation as a quaternion.
