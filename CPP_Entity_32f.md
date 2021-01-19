@@ -9,13 +9,13 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | Name | Description |
 |---|---|
 | wstring **name** | name of the entity | 
-| const [Vec3](CPP_Vec3.md)& **position** | read-only position in local space |
-| const [Vec3](CPP_Vec3.md)& **rotation** | read-only Euler rotation in local space | 
-| const [Quat](CPP_Quat.md)& **quaternion** | read-only rotation in local space |
-| const [Vec3](CPP_Vec3.md)& **scale** | read-only scale |
-| const [Mat4](CPP_Mat4.md)& **matrix** | read-only 4x4 matrix |
-| const [Vec4](CPP_Vec4.md)& **color** | read-only object color |
-| vector<shared_ptr<[Entity](CPP_Entity_32f.md)\> \>& **kids** | read-only array of child entities |
+| const [Vec3](xVec3.md)& **position** | read-only position in local space |
+| const [Vec3](xVec3.md)& **rotation** | read-only Euler rotation in local space | 
+| const [Quat](xQuat.md)& **quaternion** | read-only rotation in local space |
+| const [Vec3](xVec3.md)& **scale** | read-only scale |
+| const [Mat4](xMat4.md)& **matrix** | read-only 4x4 matrix |
+| const [Vec4](Vec4.md)& **color** | read-only object color |
+| vector<shared_ptr<[Entity](Entity.md)\> \>& **kids** | read-only array of child entities |
 
 ## Methods ##
 
