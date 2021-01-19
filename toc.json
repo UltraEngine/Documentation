@@ -18,347 +18,347 @@
                     [
                         {
                             "title": "Camera",
-                            "filename": "API_Camera"
+                            "filename": "Camera"
                         },									
                         {
                             "title": "Entity",
-                            "filename": "API_Entity_FP",
+                            "filename": "Entity_FP",
                             "topics":
                             [
                                 {
                                     "title": "AddActor",
-                                    "filename": "API_Entity_AddActor"
+                                    "filename": "Entity_AddActor"
                                 },										
                                 {
                                     "title": "AddForce",
-                                    "filename": "API_Entity_AddForce_FP"
+                                    "filename": "Entity_AddForce_FP"
                                 },
                                 {
                                     "title": "AddPointForce",
-                                    "filename": "API_Entity_AddPointForce_FP"
+                                    "filename": "Entity_AddPointForce_FP"
                                 },
                                 {
                                     "title": "AddScript",
-                                    "filename": "API_Entity_AddScript"
+                                    "filename": "Entity_AddScript"
                                 },										
                                 {
                                     "title": "AddTorque",
-                                    "filename": "API_Entity_AddTorque_FP"
+                                    "filename": "Entity_AddTorque_FP"
                                 },
                                 {
                                     "title": "AlignToVector",
-                                    "filename": "API_Entity_AlignToVector_FP"
+                                    "filename": "Entity_AlignToVector_FP"
                                 },										
                                 {
                                     "title": "Attach",
-                                    "filename": "API_Entity_Attach"
+                                    "filename": "Entity_Attach"
                                 },
                                 {
                                     "title": "Copy",
-                                    "filename": "API_Entity_Copy"
+                                    "filename": "Entity_Copy"
                                 },
                                 {
                                     "title": "Detach",
-                                    "filename": "API_Entity_Detach"
+                                    "filename": "Entity_Detach"
                                 },		
                                 {
                                     "title": "FindChild",
-                                    "filename": "API_Entity_FindChild"
+                                    "filename": "Entity_FindChild"
                                 },
                                 {
                                     "title": "GetCollider",
-                                    "filename": "API_Entity_GetCollider"
+                                    "filename": "Entity_GetCollider"
                                 },										
                                 {
                                     "title": "GetCollisionType",
-                                    "filename": "API_Entity_GetCollisionType"
+                                    "filename": "Entity_GetCollisionType"
                                 },
                                 {
                                     "title": "GetColor",
-                                    "filename": "API_Entity_GetColor"
+                                    "filename": "Entity_GetColor"
                                 },
                                 {
                                     "title": "GetBounds",
-                                    "filename": "API_Entity_GetBounds_FP"
+                                    "filename": "Entity_GetBounds_FP"
                                 },
                                 {
                                     "title": "GetDistance",
-                                    "filename": "API_Entity_GetDistance_FP"
+                                    "filename": "Entity_GetDistance_FP"
                                 },
                                 {
                                     "title": "GetMass",
-                                    "filename": "API_Entity_GetMass_FP"
+                                    "filename": "Entity_GetMass_FP"
                                 },
                                 {
                                     "title": "GetAngularVelocity",
-                                    "filename": "API_Entity_GetOmega_FP"
+                                    "filename": "Entity_GetOmega_FP"
                                 },
                                 {
                                     "title": "GetParent",
-                                    "filename": "API_Entity_GetParent"
+                                    "filename": "Entity_GetParent"
                                 },
                                 {
                                     "title": "GetPickMode",
-                                    "filename": "API_Entity_GetPickMode"
+                                    "filename": "Entity_GetPickMode"
                                 },
                                 {
                                     "title": "GetPosition",
-                                    "filename": "API_Entity_GetPosition_FP"
+                                    "filename": "Entity_GetPosition_FP"
                                 },
                                 {
                                     "title": "GetRotation",
-                                    "filename": "API_Entity_GetRotation_FP"
+                                    "filename": "Entity_GetRotation_FP"
                                 },										
                                 {
                                     "title": "GetQuaternion",
-                                    "filename": "API_Entity_GetQuaternion_FP"
+                                    "filename": "Entity_GetQuaternion_FP"
                                 },
                                 {
                                     "title": "GetScale",
-                                    "filename": "API_Entity_GetScale_FP"
+                                    "filename": "Entity_GetScale_FP"
                                 },										
                                 {
                                     "title": "GetShadowMode",
-                                    "filename": "API_Entity_GetCShadowMode"
+                                    "filename": "Entity_GetCShadowMode"
                                 },
                                 {
                                     "title": "GetVelocity",
-                                    "filename": "API_Entity_GetVelocity_FP"
+                                    "filename": "Entity_GetVelocity_FP"
                                 },
                                 {
                                     "title": "GetWorld",
-                                    "filename": "API_Entity_GetWorld"
+                                    "filename": "Entity_GetWorld"
                                     
                                 },
                                 {
                                     "title": "Hide",
-                                    "filename": "API_Entity_Hide"
+                                    "filename": "Entity_Hide"
                                 },
                                 {
                                     "title": "Hidden",
-                                    "filename": "API_Entity_Hidden"
+                                    "filename": "Entity_Hidden"
                                 },
                                 {
                                     "title": "Instantiate",
-                                    "filename": "API_Entity_Instantiate"
+                                    "filename": "Entity_Instantiate"
                                 },
                                 {
                                     "title": "MakeStatic",
-                                    "filename": "API_Entity_MakeStatic"
+                                    "filename": "Entity_MakeStatic"
                                 },
                                 {
                                     "title": "Move",
-                                    "filename": "API_Entity_Move_FP"
+                                    "filename": "Entity_Move_FP"
                                 },
                                 {
                                     "title": "Pick",
-                                    "filename": "API_Entity_Pick_FP"
+                                    "filename": "Entity_Pick_FP"
                                 },
                                 {
                                     "title": "Point",
-                                    "filename": "API_Entity_Point_FP"
+                                    "filename": "Entity_Point_FP"
                                 },
                                 {
                                     "title": "SetCollider",
-                                    "filename": "API_Entity_SetCollider"
+                                    "filename": "Entity_SetCollider"
                                 },
                                 {
                                     "title": "SetCollisionType",
-                                    "filename": "API_Entity_SetCollisionType"
+                                    "filename": "Entity_SetCollisionType"
                                 },
                                 {
                                     "title": "SetColor",
-                                    "filename": "API_Entity_SetColor"
+                                    "filename": "Entity_SetColor"
                                 },
                                 {
                                     "title": "SetMass",
-                                    "filename": "API_Entity_SetMass_FP"
+                                    "filename": "Entity_SetMass_FP"
                                 },
                                 {
                                     "title": "SetAngularVelocity",
-                                    "filename": "API_Entity_SetOmega_FP"
+                                    "filename": "Entity_SetOmega_FP"
                                 },
                                 {
                                     "title": "SetParent",
-                                    "filename": "API_Entity_SetParent"
+                                    "filename": "Entity_SetParent"
                                 },
                                 {
                                     "title": "SetPickMode",
-                                    "filename": "API_Entity_SetPickMode"
+                                    "filename": "Entity_SetPickMode"
                                 },
                                 {
                                     "title": "SetPosition",
-                                    "filename": "API_Entity_SetPosition_FP"
+                                    "filename": "Entity_SetPosition_FP"
                                 },
                                 {
                                     "title": "SetRotation",
-                                    "filename": "API_Entity_SetRotation_FP"
+                                    "filename": "Entity_SetRotation_FP"
                                 },
                                 {
                                     "title": "SetScale",
-                                    "filename": "API_Entity_SetScale_FP"
+                                    "filename": "Entity_SetScale_FP"
                                 },
                                 {
                                     "title": "SetShadowMode",
-                                    "filename": "API_Entity_SetShadowMode"
+                                    "filename": "Entity_SetShadowMode"
                                 },
                                 {
                                     "title": "SetVelocity",
-                                    "filename": "API_Entity_SetVelocity_FP"
+                                    "filename": "Entity_SetVelocity_FP"
                                 },
                                 {
                                     "title": "Show",
-                                    "filename": "API_Entity_Show"
+                                    "filename": "Entity_Show"
                                 },
                                 {
                                     "title": "Sync",
-                                    "filename": "API_Entity_Sync"
+                                    "filename": "Entity_Sync"
                                 },				    
                                 {
                                     "title": "Translate",
-                                    "filename": "API_Entity_Translate_FP"
+                                    "filename": "Entity_Translate_FP"
                                 },
                                 {
                                     "title": "Turn",
-                                    "filename": "API_Entity_Turn_FP"
+                                    "filename": "Entity_Turn_FP"
                                 }				    
                             ]
                         },
                         {
                             "title": "LOD",
-                            "filename": "API_LOD"
+                            "filename": "LOD"
                         },
                         {
                             "title": "Light",
-                            "filename": "API_Light",
+                            "filename": "Light",
                             "topics":
                             [
                                 {
                                     "title": "GetConeAngles",
-                                    "filename": "API_Light_GetConeAngles"
+                                    "filename": "Light_GetConeAngles"
                                 },
                                 {
                                     "title": "SetConeAngles",
-                                    "filename": "API_Light_SetConeAngles"
+                                    "filename": "Light_SetConeAngles"
                                 },
                                 {
                                     "title": "GetFalloffMode",
-                                    "filename": "API_Light_GetFalloffMode"
+                                    "filename": "Light_GetFalloffMode"
                                 },
                                 {
                                     "title": "SetFalloffMode",
-                                    "filename": "API_Light_SetFalloffMode"
+                                    "filename": "Light_SetFalloffMode"
                                 },						
                                 {
                                     "title": "GetRange",
-                                    "filename": "API_Light_GetRange"
+                                    "filename": "Light_GetRange"
                                 },
                                 {
                                     "title": "SetRange",
-                                    "filename": "API_Light_SetRange"
+                                    "filename": "Light_SetRange"
                                 },					
                                 {
                                     "title": "CreateLight",
-                                    "filename": "API_CreateLight"
+                                    "filename": "CreateLight"
                                 }
                             ]
                         },						
                         {
                             "title": "Material",
-                            "filename": "API_Material",
+                            "filename": "Material",
                             "topics":
                             [
                                 {
                                     "title": "SetRefraction",
-                                    "filename": "API_Material_SetRefraction"
+                                    "filename": "Material_SetRefraction"
                                 }
                             ]
                         },
                         {
                             "title": "Mesh",
-                            "filename": "API_Mesh"
+                            "filename": "Mesh"
                         },							
                         {
                             "title": "Model",
-                            "filename": "API_Model",
+                            "filename": "Model",
 				"topics":
 				[
 					{
 						"title": "SetLODScreenSize",
-						"filename": "API_Model_SetLODScreenSize"
+						"filename": "Model_SetLODScreenSize"
 					},
 					{
 						"title": "AddLOD",
-						"filename": "API_Model_AddLOD"
+						"filename": "Model_AddLOD"
 					}
 				]				
                         },
                         {
                             "title": "Prefab",
-                            "filename": "API_Prefab"
+                            "filename": "Prefab"
                         },			
                         {
                             "title": "Scene",
-                            "filename": "API_Scene"
+                            "filename": "Scene"
                         },				
                         {
                             "title": "ShaderFamily",
-                            "filename": "API_ShaderFamily"
+                            "filename": "ShaderFamily"
                         },
                         {
                             "title": "Terrain",
-                            "filename": "API_Terrain",
+                            "filename": "Terrain",
                             "topics":
                             [
                                 {
                                     "title": "StreamingTerrain",
-                                    "filename": "API_StreamingTerrain",
+                                    "filename": "StreamingTerrain",
                                     "topics":
                                     [
                                         {
                                             "title": "CreateStreamingTerrain",
-                                            "filename": "API_CreateStreamingTerrain"
+                                            "filename": "CreateStreamingTerrain"
                                         }								
                                     ]						
                                 },					
                                 {
                                     "title": "SetDeformation",
-                                    "filename": "API_Terrain_SetDeformation"
+                                    "filename": "Terrain_SetDeformation"
                                 }								
                             ]					
                         },				
                         {
                             "title": "Texture",
-                            "filename": "API_Texture"
+                            "filename": "Texture"
                         },		
                         {
                             "title": "Vertex",
-                            "filename": "API_Vertex"
+                            "filename": "Vertex"
                         },						
                         {
                             "title": "World",
-                            "filename": "API_World",
+                            "filename": "World",
                             "topics":
                             [
                                 {
                                     "title": "Pick",
-                                    "filename": "API_World_Pick_FP"
+                                    "filename": "World_Pick_FP"
                                 },
                                 {
                                     "title": "RecordStats",
-                                    "filename": "API_World_RecordStats"
+                                    "filename": "World_RecordStats"
                                 },
                                 {
                                     "title": "Render",
-                                    "filename": "API_World_Render"
+                                    "filename": "World_Render"
                                 },
                                 {
                                     "title": "SetSkyColor",
-                                    "filename": "API_World_SetSkyColor"
+                                    "filename": "World_SetSkyColor"
                                 },						
                                 {
                                     "title": "Update",
-                                    "filename": "API_World_Update"
+                                    "filename": "World_Update"
                                 }								
                             ]					
                         }						
@@ -370,11 +370,11 @@
                     [
                         {
                             "title": "Bone",
-                            "filename": "API_Bone"
+                            "filename": "Bone"
                         },
                         {
                             "title": "Skeleton",
-                            "filename": "API_Skeleton"
+                            "filename": "Skeleton"
                         }						
                     ]					
                 },
@@ -384,15 +384,15 @@
                     [
                         {
                             "title": "Listener",
-                            "filename": "API_Listener"
+                            "filename": "Listener"
                         },
                         {
                             "title": "Sound",
-                            "filename": "API_Sound"
+                            "filename": "Sound"
                         },
                         {
                             "title": "Speaker",
-                            "filename": "API_Speaker"
+                            "filename": "Speaker"
                         }				
                     ]							
                 },				
@@ -403,23 +403,23 @@
                     [		
                         {
                             "title": "Brush",
-                            "filename": "API_Brush"
+                            "filename": "Brush"
                         },
                         {
                             "title": "BSPTree",
-                            "filename": "API_BSPTree"
+                            "filename": "BSPTree"
                         },				
                         {
                             "title": "ConvexHull",
-                            "filename": "API_ConvexHull_FP"
+                            "filename": "ConvexHull_FP"
                         },
                         {
                             "title": "Edge",
-                            "filename": "API_Edge"
+                            "filename": "Edge"
                         },
                         {
                             "title": "Face",
-                            "filename": "API_Face"
+                            "filename": "Face"
                         }				
                     ]
                 },
@@ -429,19 +429,19 @@
                     [
                         {
                             "title": "Assert",
-                            "filename": "API_Assert"
+                            "filename": "Assert"
                         },
                         {
                             "title": "DebugLog",
-                            "filename": "API_DebugLog"
+                            "filename": "DebugLog"
                         },						
                         {
                             "title": "RuntimeError",
-                            "filename": "API_RuntimeError"
+                            "filename": "RuntimeError"
                         },
                         {
                             "title": "Warn",
-                            "filename": "API_Warn"
+                            "filename": "Warn"
                         }						
                     ]					
                 },
@@ -451,23 +451,23 @@
                     [
                         {
                             "title": "Actor",
-                            "filename": "API_Actor"
+                            "filename": "Actor"
                         },				
                         {
                             "title": "Asset",
-                            "filename": "API_Asset"
+                            "filename": "Asset"
                         },
                         {
                             "title": "Language",
-                            "filename": "API_Language"
+                            "filename": "Language"
                         },
                         {
                             "title": "Object",
-                            "filename": "API_Object"
+                            "filename": "Object"
                         },
                         {
                             "title": "Workflow",
-                            "filename": "API_Workflow"
+                            "filename": "Workflow"
                         }				
                     ]							
                 },
@@ -481,36 +481,36 @@
                     [
                         {
                             "title": "BufferStream",
-                            "filename": "API_BufferStream"
+                            "filename": "BufferStream"
                         },
                         {
                             "title": "FileSystemWatcher",
-                            "filename": "API_FileSystemWatcher",
+                            "filename": "FileSystemWatcher",
                             "topics":
                             [
                                 {
                                     "title": "CreateFileSystemWatcher",
-                                    "filename": "API_CreateFileSystemWatcher"
+                                    "filename": "CreateFileSystemWatcher"
                                 }
                             ]						
                         },
                         {
                             "title": "Package",
-                            "filename": "API_Package",
+                            "filename": "Package",
                             "topics":
                             [
                             ]
                         },
                         {
                             "title": "Stream",
-                            "filename": "API_Stream",
+                            "filename": "Stream",
                             "topics":
                             [
                             ]
                         },				
                         {
                             "title": "OpenDir",
-                            "filename": "API_OpenDir"
+                            "filename": "OpenDir"
                         }
                     ]							
                 },
@@ -539,7 +539,7 @@
                 },		
                 {
                     "title": "Float Precision",
-                    "filename": "API_Float_Precision"
+                    "filename": "Float_Precision"
                 },
                 {
                     "title": "Graphics",
@@ -548,28 +548,28 @@
                     [				
                         {
                             "title": "Display",
-                            "filename": "API_Display",
+                            "filename": "Display",
                             "topics":
                             [
                                 {
                                     "title": "GetScale",
-                                    "filename": "API_Display_GetScale"
+                                    "filename": "Display_GetScale"
                                 },
                                 {
                                     "title": "GetSize",
-                                    "filename": "API_Display_GetSize"
+                                    "filename": "Display_GetSize"
                                 },
                                 {
                                     "title": "GetPosition",
-                                    "filename": "API_Display_GetPosition"
+                                    "filename": "Display_GetPosition"
                                 },
                                 {
                                     "title": "GraphicsModes",
-                                    "filename": "API_Display_GraphicsModes"
+                                    "filename": "Display_GraphicsModes"
                                 },											
                                 {
                                     "title": "ListDisplays",
-                                    "filename": "API_ListDisplays"
+                                    "filename": "ListDisplays"
                                 }
                             ]							
                         },
@@ -579,55 +579,55 @@
                         },			
                         {
                             "title": "Framebuffer",
-                            "filename": "API_Framebuffer",
+                            "filename": "Framebuffer",
                             "topics":
                             [
                                 {
                                     "title": "CreateFramebuffer",
-                                    "filename": "API_CreateFramebuffer"
+                                    "filename": "CreateFramebuffer"
                                 },
                                 {
                                     "title": "GetSize",
-                                    "filename": "API_Framebuffer_GetSize"
+                                    "filename": "Framebuffer_GetSize"
                                 }						
                             ]
                         },
                         {
                             "title": "Pixmap",
-                            "filename": "API_Pixmap",
+                            "filename": "Pixmap",
                             "topics":
                             [
                                 {
                                     "title": "Convert",
-                                    "filename": "API_Pixmap_Convert"
+                                    "filename": "Pixmap_Convert"
                                 },
                                 {
                                     "title": "Fill",
-                                    "filename": "API_Pixmap_Fill"
+                                    "filename": "Pixmap_Fill"
                                 },
                                 {
                                     "title": "MakeNormalMap",
-                                    "filename": "API_Pixmap_MakeNormalMap"
+                                    "filename": "Pixmap_MakeNormalMap"
                                 },
                                 {
                                     "title": "ReadPixel",
-                                    "filename": "API_Pixmap_ReadPixel"
+                                    "filename": "Pixmap_ReadPixel"
                                 },
                                 {
                                     "title": "Resize",
-                                    "filename": "API_Pixmap_Resize"
+                                    "filename": "Pixmap_Resize"
                                 },
                                 {
                                     "title": "Save",
-                                    "filename": "API_Pixmap_Save"
+                                    "filename": "Pixmap_Save"
                                 },
                                 {
                                     "title": "Swizzle",
-                                    "filename": "API_Pixmap_Swizzle"
+                                    "filename": "Pixmap_Swizzle"
                                 },
                                 {
                                     "title": "WritePixel",
-                                    "filename": "API_Pixmap_WritePixel"
+                                    "filename": "Pixmap_WritePixel"
                                 }							
                             ]
                         },
@@ -638,37 +638,37 @@
                             [
                                 {
                                     "title": "LoadPostEffect",
-                                    "filename": "API_LoadPostEffect"
+                                    "filename": "LoadPostEffect"
                                 }							
                             ]
                         },		
                         {
                             "title": "Sprite",
-                            "filename": "API_Sprite"
+                            "filename": "Sprite"
                         },
                         {
                             "title": "SpriteLayer",
-                            "filename": "API_SpriteLayer"
+                            "filename": "SpriteLayer"
                         },				
                         {
                             "title": "TextureBuffer",
-                            "filename": "API_TextureBuffer",
+                            "filename": "TextureBuffer",
                             "topics":
                             [
                                 {
                                     "title": "CreateTextureBuffer",
-                                    "filename": "API_CreateTextureBuffer"
+                                    "filename": "CreateTextureBuffer"
                                 }
                             ]
                         },
                         {
                             "title": "Window",
-                            "filename": "API_Window",
+                            "filename": "Window",
                             "topics":
                             [
                                 {
                                     "title": "CreateWindow",
-                                    "filename": "API_CreateWindow"
+                                    "filename": "CreateWindow"
                                 }
                             ]
                         }						
@@ -680,150 +680,150 @@
                     [
                         {
                             "title": "Event",
-                            "filename": "API_Event"
+                            "filename": "Event"
                         },				
                         {
                             "title": "Interface",
-                            "filename": "API_Interface"
+                            "filename": "Interface"
                         },
                         {
                             "title": "TreeViewNode",
-                            "filename": "API_TreeViewNode"
+                            "filename": "TreeViewNode"
                         },			    
                         {
                             "title": "Widget",
-                            "filename": "API_Widget",
+                            "filename": "Widget",
                             "topics":
                             [
                                 {
                                     "title": "Button",
-                                    "filename": "API_Button",
+                                    "filename": "Button",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateButton",
-                                        "filename": "API_CreateButton"
+                                        "filename": "CreateButton"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "ComboBox",
-                                    "filename": "API_ComboBox",
+                                    "filename": "ComboBox",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateComboBox",
-                                        "filename": "API_CreateComboBox"
+                                        "filename": "CreateComboBox"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "Label",
-                                    "filename": "API_Label",
+                                    "filename": "Label",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateLabel",
-                                        "filename": "API_CreateLabel"
+                                        "filename": "CreateLabel"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "ListBox",
-                                    "filename": "API_ListBox",
+                                    "filename": "ListBox",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateListBox",
-                                        "filename": "API_CreateListBox"
+                                        "filename": "CreateListBox"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "Menu",
-                                    "filename": "API_Menu",
+                                    "filename": "Menu",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateMenu",
-                                        "filename": "API_CreateMenu"
+                                        "filename": "CreateMenu"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "Panel",
-                                    "filename": "API_Panel",
+                                    "filename": "Panel",
                                     "topics":
                                     [
                                         {
                                         "title": "CreatePanel",
-                                        "filename": "API_CreatePanel"
+                                        "filename": "CreatePanel"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "ProgressBar",
-                                    "filename": "API_ProgressBar",
+                                    "filename": "ProgressBar",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateProgressBar",
-                                        "filename": "API_CreateProgressBar"
+                                        "filename": "CreateProgressBar"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "Slider",
-                                    "filename": "API_Slider",
+                                    "filename": "Slider",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateSlider",
-                                        "filename": "API_CreateSlider"
+                                        "filename": "CreateSlider"
                                         }
                                     ]
 				},
 				{
                                     "title": "Tabber",
-                                    "filename": "API_Tabber",
+                                    "filename": "Tabber",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateTabber",
-                                        "filename": "API_CreateTabber"
+                                        "filename": "CreateTabber"
                                         }
                                     ]
                                 },
                                 {  
                                     "title": "TextArea",
-                                    "filename": "API_TextArea",
+                                    "filename": "TextArea",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateTextArea",
-                                        "filename": "API_CreateTextArea"
+                                        "filename": "CreateTextArea"
                                         }
                                     ]
                                 },
                                 {
                                     "title": "TextField",
-                                    "filename": "API_TextField",
+                                    "filename": "TextField",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateTextField",
-                                        "filename": "API_CreateTextField"
+                                        "filename": "CreateTextField"
                                         }
                                     ]
                                 },
                                 {                                                                                                                                     
                                     "title": "TreeView",
-                                    "filename": "API_TreeView",
+                                    "filename": "TreeView",
                                     "topics":
                                     [
                                         {
                                         "title": "CreateTreeView",
-                                        "filename": "API_CreateTreeView"
+                                        "filename": "CreateTreeView"
                                         }
                                     ]                                    				
                                 }
@@ -833,148 +833,148 @@
                 },		
                 {
                     "title": "Math",
-                    "filename": "API_Math",
+                    "filename": "Math",
                     "topics":
                     [
                         {
                             "title": "AABB",
-                            "filename": "API_AABB"
+                            "filename": "AABB"
                         },									
                         {
                             "title": "dAABB",
-                            "filename": "API_dAABB"
+                            "filename": "dAABB"
                         },
                         {
                             "title": "dMat3",
-                            "filename": "API_dMat3"
+                            "filename": "dMat3"
                         },
                         {
                             "title": "dMat4",
-                            "filename": "API_dMat4"
+                            "filename": "dMat4"
                         },
                         {
                             "title": "dPlane",
-                            "filename": "API_dPlane"
+                            "filename": "dPlane"
                         },
                         {
                             "title": "dQuat",
-                            "filename": "API_dQuat"
+                            "filename": "dQuat"
                         },						
                         {
                             "title": "dVec2",
-                            "filename": "API_dVec2"
+                            "filename": "dVec2"
                         },						
                         {
                             "title": "dVec3",
-                            "filename": "API_dVec3"
+                            "filename": "dVec3"
                         },
                         {
                             "title": "dVec4",
-                            "filename": "API_dVec4"
+                            "filename": "dVec4"
                         },
                         {
                             "title": "iVec2",
-                            "filename": "API_iVec2"
+                            "filename": "iVec2"
                         },						
                         {
                             "title": "iVec3",
-                            "filename": "API_iVec3"
+                            "filename": "iVec3"
                         },
                         {
                             "title": "iVec4",
-                            "filename": "API_iVec4"
+                            "filename": "iVec4"
                         },				
                         {
                             "title": "Mat3",
-                            "filename": "API_Mat3"
+                            "filename": "Mat3"
                         },
                         {
                             "title": "Mat4",
-                            "filename": "API_Mat4"
+                            "filename": "Mat4"
                         },			
                         {
                             "title": "Plane",
-                            "filename": "API_Plane"
+                            "filename": "Plane"
                         },
                         {
                             "title": "Quat",
-                            "filename": "API_Quat"
+                            "filename": "Quat"
                         },
                         {
                             "title": "TransformAABB",
-                            "filename": "API_TransformAABB"
+                            "filename": "TransformAABB"
                         },
                         {
                             "title": "TransformNormal",
-                            "filename": "API_TransformNormal"
+                            "filename": "TransformNormal"
                         },				
                         {
                             "title": "TransformPlane",
-                            "filename": "API_TransformPlane"
+                            "filename": "TransformPlane"
                         },			
                         {
                             "title": "TransformPoint",
-                            "filename": "API_TransformPoint"
+                            "filename": "TransformPoint"
                         },
                         {
                             "title": "TransformRotation",
-                            "filename": "API_TransformRotation"
+                            "filename": "TransformRotation"
                         },
                         {
                             "title": "TransformVector",
-                            "filename": "API_TransformVector"
+                            "filename": "TransformVector"
                         },			
                         {
                             "title": "Vec2",
-                            "filename": "API_Vec2"
+                            "filename": "Vec2"
                         },						
                         {
                             "title": "Vec3",
-                            "filename": "API_Vec3",
+                            "filename": "Vec3",
                             "topics":
                             [
                                 {
                                     "title": "DistanceToPoint",
-                                    "filename": "API_Vec3_DistanceToPoint"
+                                    "filename": "Vec3_DistanceToPoint"
                                 },
                                 {
                                     "title": "Dot",
-                                    "filename": "API_Vec3_Dot"
+                                    "filename": "Vec3_Dot"
                                 },
                                 {
                                     "title": "Inverse",
-                                    "filename": "API_Vec3_Inverse"
+                                    "filename": "Vec3_Inverse"
                                 },
                                 {
                                     "title": "Length",
-                                    "filename": "API_Vec3_Length"
+                                    "filename": "Vec3_Length"
                                 },
                                 {
                                     "title": "Normalize",
-                                    "filename": "API_Vec3_Normalize"
+                                    "filename": "Vec3_Normalize"
                                 },
                                 {
                                     "title": "Cross",
-                                    "filename": "API_Vec3_Cross"
+                                    "filename": "Vec3_Cross"
                                 },
                                 {
                                     "title": "Reflect",
-                                    "filename": "API_Vec3_Reflect"
+                                    "filename": "Vec3_Reflect"
                                 }								
                             ]
                         },
                         {
                             "title": "Vec4",
-                            "filename": "API_Vec4",
+                            "filename": "Vec4",
                             "topics":
                             [
                                 {
                                     "title": "Length",
-                                    "filename": "API_Vec4_Length"
+                                    "filename": "Vec4_Length"
                                 },
                                 {
                                     "title": "Normalize",
-                                    "filename": "API_Vec4_Normalize"
+                                    "filename": "Vec4_Normalize"
                                 }
                             ]							
                         }				
@@ -986,103 +986,103 @@
                     [
                         {
                             "title": "Buffer",
-                            "filename": "API_Buffer",
+                            "filename": "Buffer",
                             "topics":
                             [									
                                 {
                                     "title": "Clear",
-                                    "filename": "API_Buffer_Clear"
+                                    "filename": "Buffer_Clear"
                                 },
                                 {
                                     "title": "Copy",
-                                    "filename": "API_Buffer_Copy"
+                                    "filename": "Buffer_Copy"
                                 },
                                 {
                                     "title": "CreateBuffer",
-                                    "filename": "API_CreateBuffer"
+                                    "filename": "CreateBuffer"
                                 },
                                 {
                                     "title": "CreateStaticBuffer",
-                                    "filename": "API_CreateStaticBuffer"
+                                    "filename": "CreateStaticBuffer"
                                 },										
                                 {
                                     "title": "data",
-                                    "filename": "API_Buffer_data"
+                                    "filename": "Buffer_data"
                                 },
                                 {
                                     "title": "GetSize",
-                                    "filename": "API_Buffer_GetSize"
+                                    "filename": "Buffer_GetSize"
                                 },
                                 {
                                     "title": "LoadBuffer",
-                                    "filename": "API_LoadBuffer"
+                                    "filename": "LoadBuffer"
                                 },											
                                 {
                                     "title": "PeekByte",
-                                    "filename": "API_Buffer_PeekByte"
+                                    "filename": "Buffer_PeekByte"
                                 },
                                 {
                                     "title": "PeekInt",
-                                    "filename": "API_Buffer_PeekInt"
+                                    "filename": "Buffer_PeekInt"
                                 },
                                 {
                                     "title": "PeekFloat",
-                                    "filename": "API_Buffer_PeekFloat"
+                                    "filename": "Buffer_PeekFloat"
                                 },
                                 {
                                     "title": "PeekShort",
-                                    "filename": "API_Buffer_PeekShort"
+                                    "filename": "Buffer_PeekShort"
                                 },
                                 {
                                     "title": "PeekString",
-                                    "filename": "API_Buffer_PeekString"
+                                    "filename": "Buffer_PeekString"
                                 },
                                 {
                                     "title": "PeekWString",
-                                    "filename": "API_Buffer_PeekWString"
+                                    "filename": "Buffer_PeekWString"
                                 },
                                 {
                                     "title": "PokeByte",
-                                    "filename": "API_Buffer_PokeByte"
+                                    "filename": "Buffer_PokeByte"
                                 },
                                 {
                                     "title": "PokeInt",
-                                    "filename": "API_Buffer_PokeInt"
+                                    "filename": "Buffer_PokeInt"
                                 },
                                 {
                                     "title": "PokeFloat",
-                                    "filename": "API_Buffer_PokeFloat"
+                                    "filename": "Buffer_PokeFloat"
                                 },
                                 {
                                     "title": "PokeShort",
-                                    "filename": "API_Buffer_PokeShort"
+                                    "filename": "Buffer_PokeShort"
                                 },
                                 {
                                     "title": "PokeString",
-                                    "filename": "API_Buffer_PokeString"
+                                    "filename": "Buffer_PokeString"
                                 },
                                 {
                                     "title": "PokeWString",
-                                    "filename": "API_Buffer_PokeWString"
+                                    "filename": "Buffer_PokeWString"
                                 },
                                 {
                                     "title": "Resize",
-                                    "filename": "API_Buffer_Resize"
+                                    "filename": "Buffer_Resize"
                                 },
                                 {
                                     "title": "Save",
-                                    "filename": "API_Buffer_Save"
+                                    "filename": "Buffer_Save"
                                 }										
                             ]							
                         },
                         {
                             "title": "StreamBuffer",
-                            "filename": "API_StreamBuffer",
+                            "filename": "StreamBuffer",
                             "topics": 
                             [
                                 {
                                     "title": "CreateStreamBuffer",
-                                    "filename": "API_CreateStreamBuffer"
+                                    "filename": "CreateStreamBuffer"
                                 }
                             ]
                         }			
@@ -1097,51 +1097,51 @@
                     [
                         {
                             "title": "Mutex",
-                            "filename": "API_Mutex",
+                            "filename": "Mutex",
                             "topics": 
                             [
                                 {
                                     "title": "CreateMutex",
-                                    "filename": "API_CreateMutex"
+                                    "filename": "CreateMutex"
                                 },
                                 {
                                     "title": "Lock",
-                                    "filename": "API_Mutex_Lock"
+                                    "filename": "Mutex_Lock"
                                 },
                                 {
                                     "title": "Unlock",
-                                    "filename": "API_Mutex_Unlock"
+                                    "filename": "Mutex_Unlock"
                                 }
                             ]
                         },				
                         {
                             "title": "Thread",
-                            "filename": "API_Thread",
+                            "filename": "Thread",
                             "topics": 
                             [
                                 {
                                     "title": "CreateThread",
-                                    "filename": "API_CreateThread"
+                                    "filename": "CreateThread"
                                 },
                                 {
                                     "title": "GetState",
-                                    "filename": "API_Thread_GetState"
+                                    "filename": "Thread_GetState"
                                 },						
                                 {
                                     "title": "Pause",
-                                    "filename": "API_Thread_Pause"
+                                    "filename": "Thread_Pause"
                                 },
                                 {
                                     "title": "Resume",
-                                    "filename": "API_Thread_Resume"
+                                    "filename": "Thread_Resume"
                                 },
                                 {
                                     "title": "SetPriority",
-                                    "filename": "API_Thread_SetPriority"
+                                    "filename": "Thread_SetPriority"
                                 },						
                                 {
                                     "title": "Wait",
-                                    "filename": "API_Thread_Wait"
+                                    "filename": "Thread_Wait"
                                 }						
                             ]
                         }
@@ -1153,11 +1153,11 @@
                     [
                         {
                             "title": "NavAgent",
-                            "filename": "API_NavAgent"
+                            "filename": "NavAgent"
                         },				
                         {
                             "title": "NavMesh",
-                            "filename": "API_NavMesh"
+                            "filename": "NavMesh"
                         }
                     ]							
                 },
@@ -1167,81 +1167,81 @@
                     [
                         {
                             "title": "Collider",
-                            "filename": "API_Collider",
+                            "filename": "Collider",
                             "topics":
                             [
                                 {
                                     "title": "ClosestPoint",
-                                    "filename": "API_Collider_ClosestPoint_FP"							
+                                    "filename": "Collider_ClosestPoint_FP"							
                                 },
                                 {
                                     "title": "Collide",
-                                    "filename": "API_Collider_Collide_FP"							
+                                    "filename": "Collider_Collide_FP"							
                                 },						
                                 {
                                     "title": "CreateBoxCollider",
-                                    "filename": "API_CreateCollisionBox_FP"
+                                    "filename": "CreateCollisionBox_FP"
                                 },
                                 {
                                     "title": "CreateCompoundCollider",
-                                    "filename": "API_CreateCollisionCompound"
+                                    "filename": "CreateCollisionCompound"
                                 },
                                 {
                                     "title": "CreateConeCollider",
-                                    "filename": "API_CreateCollisionCone_FP"
+                                    "filename": "CreateCollisionCone_FP"
                                 },												
                                 {
                                     "title": "CreateCylinderCollider",
-                                    "filename": "API_CreateCollisionCylinder_FP"
+                                    "filename": "CreateCollisionCylinder_FP"
                                 },												
                                 {
                                     "title": "CreateConvexHullCollider",
-                                    "filename": "API_CreateCollisionConvexHull"
+                                    "filename": "CreateCollisionConvexHull"
                                 },									
                                 {
                                     "title": "CreateMeshCollider",
-                                    "filename": "API_CreateCollisionMesh"
+                                    "filename": "CreateCollisionMesh"
                                 },
                                 {
                                     "title": "CreateSphereCollider",
-                                    "filename": "API_CreateCollisionSphere_FP"
+                                    "filename": "CreateCollisionSphere_FP"
                                 },
                                 {
                                     "title": "GetBounds",
-                                    "filename": "API_Collider_GetBounds_FP"							
+                                    "filename": "Collider_GetBounds_FP"							
                                 },
                                 {
                                     "title": "IntersectsPoint",
-                                    "filename": "API_Collider_IntersectsPoint_FP"							
+                                    "filename": "Collider_IntersectsPoint_FP"							
                                 },						
                                 {
                                     "title": "LoadCollider",
-                                    "filename": "API_LoadCollision"
+                                    "filename": "LoadCollision"
                                 },
                                 {
                                     "title": "Pick",
-                                    "filename": "API_Collider_Pick_FP"							
+                                    "filename": "Collider_Pick_FP"							
                                 }							
                             ]
                         },
                         {
                             "title": "Collision",
-                            "filename": "API_Collision_FP"
+                            "filename": "Collision_FP"
                         },				
                         {
                             "title": "Joint",
-                            "filename": "API_Joint"
+                            "filename": "Joint"
                         }						
                     ]							
                 },
                 {
                     "title": "Plugins",
-                    "filename": "API_Plugin",
+                    "filename": "Plugin",
                     "topics":
                     [
                         {
                             "title": "LoadPlugin",
-                            "filename": "API_LoadPlugin"
+                            "filename": "LoadPlugin"
                         },
                         {
                             "title": "SDK",
@@ -1251,12 +1251,12 @@
                 },		
                 {
                     "title": "Ray Casting",
-                    "filename": "API_RayCasting",
+                    "filename": "RayCasting",
                     "topics":
                     [
                         {
                             "title": "PickInfo",
-                            "filename": "API_PickInfo_FP"
+                            "filename": "PickInfo_FP"
                         }
                     ]							
                 },
@@ -1267,13 +1267,13 @@
                     [
                         {
                             "title": "LuaState",
-                            "filename": "API_LuaState",
+                            "filename": "LuaState",
                             "hideFromLua": true,
                             "hideFromCSharp": true
                         },				
                         {
                             "title": "RunScript",
-                            "filename": "API_RunScript"
+                            "filename": "RunScript"
                         }
                     ]							
                 },
@@ -1283,21 +1283,21 @@
                     [
                         {
                             "title": "AnimationStats",
-                            "filename": "API_AnimationStats"
+                            "filename": "AnimationStats"
                         },
                         {
                             "title": "PhysicsStats",
-                            "filename": "API_PhysicsStats"
+                            "filename": "PhysicsStats"
                         },
                         {
                             "title": "RenderStats",
-                            "filename": "API_RenderStats"
+                            "filename": "RenderStats"
                         }										
                     ]
                 },
                 {
                     "title": "Steamworks",
-                    "filename": "API_Steam_Integration"
+                    "filename": "Steam_Integration"
                 },
                 {
                     "title": "System",
@@ -1306,39 +1306,39 @@
                     [				
                         {
                             "title": "Confirm",
-                            "filename": "API_Confirm"
+                            "filename": "Confirm"
                         },
                         {
                             "title": "Input",
-                            "filename": "API_Input"
+                            "filename": "Input"
                         },				
                         {
                             "title": "Millisecs",
-                            "filename": "API_Millisecs"
+                            "filename": "Millisecs"
                         },				
                         {
                             "title": "Notify",
-                            "filename": "API_Notify"
+                            "filename": "Notify"
                         },
                         {
                             "title": "Proceed",
-                            "filename": "API_Proceed"
+                            "filename": "Proceed"
                         },
                         {
                             "title": "Print",
-                            "filename": "API_Print"
+                            "filename": "Print"
                         },					
                         {
                             "title": "RequestDir",
-                            "filename": "API_RequestDir"
+                            "filename": "RequestDir"
                         },
                         {
                             "title": "RequestFile",
-                            "filename": "API_RequestFile"
+                            "filename": "RequestFile"
                         },
                         {
                             "title": "Sleep",
-                            "filename": "API_Sleep"
+                            "filename": "Sleep"
                         }				
                     ]			
                 }
