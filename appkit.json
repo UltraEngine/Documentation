@@ -518,20 +518,6 @@
 			]							
 		},
 		{
-			"title": "Pathfinding",
-			"topics":
-			[
-				{
-					"title": "NavAgent",
-					"filename": "API_NavAgent"
-				},				
-				{
-					"title": "NavMesh",
-					"filename": "API_NavMesh"
-				}
-			]							
-		},
-		{
 			"title": "Plugins",
 			"filename": "API_Plugin",
 			"topics":
