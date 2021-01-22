@@ -94,29 +94,6 @@
 					"filename": "API_OpenDir"
 				}
 			]							
-		},
-		{
-			"title": "File Formats",
-			"topics":
-			[
-				{
-					"title": "Collision",
-					"filename": "Collision_File_Format"
-				},
-				{
-					"title": "Language"
-				},
-				{
-					"title": "Material",
-					"filename": "Material_File_Format"
-				},
-				{
-					"title": "Shader Family"
-				},
-				{
-					"title": "Workflow"
-				}						
-			]
 		},		
 		{
 			"title": "Graphics",
