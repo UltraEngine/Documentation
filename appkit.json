@@ -195,37 +195,13 @@
 			"topics":
 			[
 				{
-					"title": "AABB",
-					"filename": "API_AABB"
-				},
-				{
 					"title": "iVec2",
 					"filename": "API_iVec2"
 				},						
 				{
-					"title": "iVec3",
-					"filename": "API_iVec3"
-				},
-				{
 					"title": "iVec4",
 					"filename": "API_iVec4"
 				},				
-				{
-					"title": "Mat3",
-					"filename": "API_Mat3"
-				},
-				{
-					"title": "Mat4",
-					"filename": "API_Mat4"
-				},			
-				{
-					"title": "Plane",
-					"filename": "API_Plane"
-				},
-				{
-					"title": "Quat",
-					"filename": "API_Quat"
-				},		
 				{
 					"title": "Vec2",
 					"filename": "API_Vec2"
