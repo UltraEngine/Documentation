@@ -130,21 +130,6 @@
 				{
 					"title": "Font",
 					"filename": "Font"
-				},			
-				{
-					"title": "Framebuffer",
-					"filename": "API_Framebuffer",
-					"topics":
-					[
-						{
-							"title": "CreateFramebuffer",
-							"filename": "API_CreateFramebuffer"
-						},
-						{
-							"title": "GetSize",
-							"filename": "API_Framebuffer_GetSize"
-						}						
-					]
 				},
 				{
 					"title": "Pixmap",
