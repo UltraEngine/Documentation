@@ -209,38 +209,6 @@
 				{
 					"title": "AABB",
 					"filename": "API_AABB"
-				},									
-				{
-					"title": "dAABB",
-					"filename": "API_dAABB"
-				},
-				{
-					"title": "dMat3",
-					"filename": "API_dMat3"
-				},
-				{
-					"title": "dMat4",
-					"filename": "API_dMat4"
-				},
-				{
-					"title": "dPlane",
-					"filename": "API_dPlane"
-				},
-				{
-					"title": "dQuat",
-					"filename": "API_dQuat"
-				},						
-				{
-					"title": "dVec2",
-					"filename": "API_dVec2"
-				},						
-				{
-					"title": "dVec3",
-					"filename": "API_dVec3"
-				},
-				{
-					"title": "dVec4",
-					"filename": "API_dVec4"
 				},
 				{
 					"title": "iVec2",
