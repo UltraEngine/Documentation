@@ -209,36 +209,6 @@
 					]
 				},
 				{
-					"title": "PostEffect",
-					"filename": "PostEffect",
-					"topics":
-					[
-						{
-							"title": "LoadPostEffect",
-							"filename": "API_LoadPostEffect"
-						}							
-					]
-				},		
-				{
-					"title": "Sprite",
-					"filename": "API_Sprite"
-				},
-				{
-					"title": "SpriteLayer",
-					"filename": "API_SpriteLayer"
-				},				
-				{
-					"title": "TextureBuffer",
-					"filename": "API_TextureBuffer",
-					"topics":
-					[
-						{
-							"title": "CreateTextureBuffer",
-							"filename": "API_CreateTextureBuffer"
-						}
-					]
-				},
-				{
 					"title": "Window",
 					"filename": "API_Window",
 					"topics":
@@ -600,79 +570,6 @@
 			]							
 		},
 		{
-			"title": "Physics",
-			"topics":
-			[
-				{
-					"title": "Collider",
-					"filename": "API_Collider",
-					"topics":
-					[
-						{
-							"title": "ClosestPoint",
-							"filename": "API_Collider_ClosestPoint_FP"							
-						},
-						{
-							"title": "Collide",
-							"filename": "API_Collider_Collide_FP"							
-						},						
-						{
-							"title": "CreateBoxCollider",
-							"filename": "API_CreateCollisionBox_FP"
-						},
-						{
-							"title": "CreateCompoundCollider",
-							"filename": "API_CreateCollisionCompound"
-						},
-						{
-							"title": "CreateConeCollider",
-							"filename": "API_CreateCollisionCone_FP"
-						},												
-						{
-							"title": "CreateCylinderCollider",
-							"filename": "API_CreateCollisionCylinder_FP"
-						},												
-						{
-							"title": "CreateConvexHullCollider",
-							"filename": "API_CreateCollisionConvexHull"
-						},									
-						{
-							"title": "CreateMeshCollider",
-							"filename": "API_CreateCollisionMesh"
-						},
-						{
-							"title": "CreateSphereCollider",
-							"filename": "API_CreateCollisionSphere_FP"
-						},
-						{
-							"title": "GetBounds",
-							"filename": "API_Collider_GetBounds_FP"							
-						},
-						{
-							"title": "IntersectsPoint",
-							"filename": "API_Collider_IntersectsPoint_FP"							
-						},						
-						{
-							"title": "LoadCollider",
-							"filename": "API_LoadCollision"
-						},
-						{
-							"title": "Pick",
-							"filename": "API_Collider_Pick_FP"							
-						}							
-					]
-				},
-				{
-					"title": "Collision",
-					"filename": "API_Collision_FP"
-				},				
-				{
-					"title": "Joint",
-					"filename": "API_Joint"
-				}						
-			]							
-		},
-		{
 			"title": "Plugins",
 			"filename": "API_Plugin",
 			"topics":
@@ -686,56 +583,6 @@
 					"filename": "PluginSDK"
 				}				
 			]		
-		},		
-		{
-			"title": "Ray Casting",
-			"filename": "API_RayCasting",
-			"topics":
-			[
-				{
-					"title": "PickInfo",
-					"filename": "API_PickInfo_FP"
-				}
-			]							
-		},
-		{
-			"title": "Scripting",
-			"filename": "Script",
-			"topics":
-			[
-				{
-					"title": "LuaState",
-					"filename": "API_LuaState",
-					"hideFromLua": true,
-					"hideFromCSharp": true
-				},				
-				{
-					"title": "RunScript",
-					"filename": "API_RunScript"
-				}
-			]							
-		},
-		{
-			"title": "Statistics",
-			"topics":
-			[
-				{
-					"title": "AnimationStats",
-					"filename": "API_AnimationStats"
-				},
-				{
-					"title": "PhysicsStats",
-					"filename": "API_PhysicsStats"
-				},
-				{
-					"title": "RenderStats",
-					"filename": "API_RenderStats"
-				}										
-			]
-		},
-		{
-			"title": "Steamworks",
-			"filename": "API_Steam_Integration"
 		},
 		{
 			"title": "System",
