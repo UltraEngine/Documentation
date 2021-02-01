@@ -490,12 +490,12 @@
 			[
 				{
 					"title": "Timer",
-					"filename": "Timer.md",
+					"filename": "Timer",
 					"topics":
 					[
 						{
 							"title": "CreateTimer",
-							"filename": "CreateTimer.md"
+							"filename": "CreateTimer"
 						}
 					]				
 				},
