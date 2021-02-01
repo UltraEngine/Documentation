@@ -2,8 +2,8 @@
 This function waits for a line of text to be input into the program console.
 
 ## Syntax ##
-- string **Input**(const wstring& message)
-- wstring **Input**(const wstring& message)
+- [String](String) **Input**(const [String](String)& message)
+- [WString](WString) **Input**(const [WString](WString)& message)
 
 | Parameter | Description |
 | ----- | ----- |
