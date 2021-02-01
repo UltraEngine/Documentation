@@ -5,4 +5,4 @@ This method returns the thread's current state.
 - ThreadState GetState()
 
 ## Returns ##
-The returned thread state may be THREAD_READY, THREAD_RUNNING, THREAD_PAUSED, or THREAD_FINISHED.
+The returned value may be THREAD_READY, THREAD_RUNNING, THREAD_PAUSED, or THREAD_FINISHED.
