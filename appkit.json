@@ -183,6 +183,17 @@
 					"filename": "Interface"
 				},
 				{
+					"title": "Timer",
+					"filename": "Timer",
+					"topics":
+					[
+						{
+							"title": "CreateTimer",
+							"filename": "CreateTimer"
+						}
+					]				
+				},
+				{
 					"title": "Widget",
 					"filename": "Widget"
 				}				
@@ -483,27 +494,6 @@
 					"filename": "Sleep"
 				}				
 			]			
-		},
-		{
-			"title": "Timing",
-			"topics":
-			[
-				{
-					"title": "Timer",
-					"filename": "Timer",
-					"topics":
-					[
-						{
-							"title": "CreateTimer",
-							"filename": "CreateTimer"
-						}
-					]				
-				},
-				{
-					"title": "Millisecs",
-					"filename": "Millisecs.md"
-				}				
-			]		
 		}		
 	]
 }
