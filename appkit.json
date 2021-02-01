@@ -205,6 +205,17 @@
 				{
 					"title": "Vec2",
 					"filename": "Vec2"
+					"topics":
+					[
+						{
+							"title": "Length",
+							"filename": "Vec2_Length"
+						},
+						{
+							"title": "Normalize",
+							"filename": "Vec2_Normalize"
+						}				
+					]
 				},						
 				{
 					"title": "Vec3",
@@ -243,18 +254,7 @@
 				},
 				{
 					"title": "Vec4",
-					"filename": "Vec4",
-					"topics":
-					[
-						{
-							"title": "Length",
-							"filename": "Vec4_Length"
-						},
-						{
-							"title": "Normalize",
-							"filename": "Vec4_Normalize"
-						}
-					]							
+					"filename": "Vec4"						
 				}				
 			]
 		},				
