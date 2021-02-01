@@ -91,17 +91,6 @@
 			"topics":
 			[
 				{
-					"title": "BufferStream",
-					"filename": "BufferStream",
-					"topics":
-					[
-						{
-							"title": "CreateBufferStream",
-							"filename": "CreateBufferStream"
-						}
-					]
-				},
-				{
 					"title": "FileSystemWatcher",
 					"filename": "FileSystemWatcher",
 					"topics":
@@ -124,6 +113,17 @@
 					"filename": "Stream",
 					"topics":
 					[
+						{
+							"title": "BufferStream",
+							"filename": "BufferStream",
+							"topics":
+							[
+								{
+									"title": "CreateBufferStream",
+									"filename": "CreateBufferStream"
+								}
+							]
+						},						
 						{
 							"title": "Close",
 							"filename": "Stream_Close"
