@@ -7,12 +7,12 @@ The button widget can be used to create push buttons, checkboxes, radio buttons,
 ### Parameters ###
 | Name | Description |
 | --- | --- |
-| text | |
-| x | |
-| y | |
-| width | |
-| height | |
-| parent | |
+| text | widget text |
+| x | widget x position |
+| y | widget y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
 | style | optional button style, can be any combination of BUTTON_CANCEL, BUTTON_CHECKBOX, BUTTON_RADIO, BUTTON_OK, BUTTON_TOGGLE, and BUTTON_TOOLBAR. |
 
 ## Returns ##
