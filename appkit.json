@@ -11,15 +11,7 @@
 			"title": "Asset",
 			"filename": "Asset",
 			"topics":
-			[
-				{
-					"title": "Reload",
-					"filename": "Asset_Reload"
-				},
-				{
-					"title": "Save",
-					"filename": "Asset_Save"
-				},				
+			[				
 				{
 					"title": "Icon",
 					"filename": "Icon"
@@ -50,7 +42,15 @@
 							"filename": "Pixmap_WritePixel"
 						}							
 					]
-				}			
+				},
+				{
+					"title": "Reload",
+					"filename": "Asset_Reload"
+				},
+				{
+					"title": "Save",
+					"filename": "Asset_Save"
+				}				
 			]
 		},		
 		{
