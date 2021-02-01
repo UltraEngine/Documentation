@@ -477,7 +477,7 @@
 					"filename": "LoadPlugin"
 				},
 				{
-					"title": "SDK",
+					"title": "Plugin SDK",
 					"filename": "PluginSDK"
 				}				
 			]		
