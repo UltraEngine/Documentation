@@ -632,7 +632,18 @@
 					"title": "Buffer",
 					"filename": "Buffer",
 					"topics":
-					[									
+					[	
+						{
+							"title": "StreamBuffer",
+							"filename": "StreamBuffer",
+							"topics": 
+							[
+								{
+									"title": "CreateStreamBuffer",
+									"filename": "CreateStreamBuffer"
+								}
+							]
+						},					
 						{
 							"title": "Clear",
 							"filename": "Buffer_Clear"
@@ -718,17 +729,6 @@
 							"filename": "Buffer_Save"
 						}										
 					]							
-				},
-				{
-					"title": "StreamBuffer",
-					"filename": "StreamBuffer",
-					"topics": 
-					[
-						{
-							"title": "CreateStreamBuffer",
-							"filename": "CreateStreamBuffer"
-						}
-					]
 				}			
 			]							
 		},
