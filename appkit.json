@@ -276,7 +276,38 @@
 				},				
 				{
 					"title": "Interface",
-					"filename": "Interface"
+					"filename": "Interface",
+					"topics":
+					[
+						{
+							"title": "CreateInterface",
+							"filename": "CreateInterface"
+						},
+						{
+							"title": "LoadColorScheme",
+							"filename": "Interface_LoadColorScheme"
+						},						
+						{
+							"title": "LoadInterface",
+							"filename": "LoadInterface"
+						},						
+						{
+							"title": "SetScale",
+							"filename": "Interface_SetScale"
+						},
+						{
+							"title": "Save",
+							"filename": "Interface_Save"
+						},
+						{
+							"title": "SaveColorScheme",
+							"filename": "Interface_SaveColorScheme"
+						},						
+						{
+							"title": "Reload",
+							"filename": "Interface_Reload"
+						}												
+					]
 				},
 				{
 					"title": "Timer",
