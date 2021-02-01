@@ -4,5 +4,7 @@ This class provides an interface to manipulate part of a file as if it was a mem
 ## Base Class ##
 - [Buffer](CPP_Buffer.md)
 
-## Functions ##
-- [CreateStreamBuffer](CPP_CreateStreamBuffer.md)
+### Properties ###
+| Name | Type | Description |
+|-|-|-|
+| [CreateStreamBuffer](CPP_CreateStreamBuffer.md) | Function | creates a new StreamBuffer object |
