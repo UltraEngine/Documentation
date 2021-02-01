@@ -2,8 +2,8 @@
 This function is used to create a new window.
 
 ## Syntax ##
-- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(shared_ptr<[Display](CPP_Display)\> display, const string& title, const int x, const int y, const int width, const int height, const [WindowStyle](CPP_Window) style = WINDOW_TITLEBAR, shared_ptr<[Window](CPP_Window)\> parent = NULL)
-- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(shared_ptr<[Display](CPP_Display)\> display, const wstring& title, const int x, const int y, const int width, const int height, const [WindowStyle](CPP_Window) style = WINDOW_TITLEBAR, shared_ptr<[Window](CPP_Window)\> parent = NULL)
+- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(const WString& title, const int x, const int y, const int width, const int height, shared_ptr<[Display](Display.md)\> display, const [WindowStyle](CPP_Window) style = WINDOW_DEFAULT)
+- shared_ptr<[Window](CPP_Window)\> **CreateWindow**(const WString& title, const int x, const int y, const int width, const int height, shared_ptr<[Window](Window.md)\> display, const [WindowStyle](CPP_Window) style = WINDOW_DEFAULT)
 
 ## Parameters ##
 | Name | Description |
@@ -20,7 +20,8 @@ This function is used to create a new window.
 ## Example ##
 ```c++
 #include "pch.h"
-#include "Project.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
