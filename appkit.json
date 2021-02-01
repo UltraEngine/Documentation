@@ -727,6 +727,25 @@
 			]		
 		},
 		{
+			"title": "Process",
+			"filename": "Process",
+			"topics":
+			[
+				{
+					"title": "CreateProcess",
+					"filename": "CreateProcess"
+				},
+				{
+					"title": "Close",
+					"filename": "Process_Close"
+				},
+				{
+					"title": "Wait",
+					"filename": "Process_Wait"
+				}				
+			]		
+		},		
+		{
 			"title": "Strings",
 			"topics":
 			[
