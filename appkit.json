@@ -38,24 +38,12 @@
 							"filename": "Pixmap_Fill"
 						},
 						{
-							"title": "MakeNormalMap",
-							"filename": "Pixmap_MakeNormalMap"
-						},
-						{
 							"title": "ReadPixel",
 							"filename": "Pixmap_ReadPixel"
 						},
 						{
 							"title": "Resize",
 							"filename": "Pixmap_Resize"
-						},
-						{
-							"title": "Save",
-							"filename": "Pixmap_Save"
-						},
-						{
-							"title": "Swizzle",
-							"filename": "Pixmap_Swizzle"
 						},
 						{
 							"title": "WritePixel",
