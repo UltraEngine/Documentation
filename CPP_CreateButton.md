@@ -1,10 +1,22 @@
 # CreateButton #
-
-This function creates a button widget.
+The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
 
 ## Syntax ##
-- shared_ptr<Widget\> **CreateButton**(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<Widget\> parent, ButtonStyle = BUTTON_DEFAULT)
-- shared_ptr<Widget\> **CreateButton**(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<Interface\> interface, ButtonStyle = BUTTON_DEFAULT)
+- shared_ptr<Widget\> CreateButton(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = BUTTON_DEFAULT)
+
+### Parameters ###
+| Name | Description |
+| --- | --- |
+| text | |
+| x | |
+| y | |
+| width | |
+| height | |
+| parent | |
+| style | optional button style, can be any combination of BUTTON_CANCEL, BUTTON_CHECKBOX, BUTTON_RADIO, BUTTON_OK, BUTTON_TOGGLE, and BUTTON_TOOLBAR. |
+
+## Returns ##
+Returns a new button object.
 
 ## Example ##
 ```c++
