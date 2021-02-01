@@ -7,9 +7,12 @@ The window class provides an interface for creating system application windows.
 | Name | Type | Description |
 |---|---|---|
 | [Activate](Window_Activate.md) | Method | activates the window |
+| [ClientSize](Window_ClientSize.md) | Method | Returns the window dimensions |
 | [Close](Window_Close.md) | Method | sets the closed state to true |
 | [Closed](Window_Closed.md) | Method | returns true if the user has closed the window |
 | [GetHandle](Window_GetHandle.md) | Method | Returns the system window object |
+| [GetPosition](Window_GetPosition.md) | Method | Returns the window position |
+| [GetSize](Window_GetSize.md) | Method | Returns the window dimensions |
 | [Maximize](Window_Minimize.md) | Method | minimizes the window |
 | [Minimize](Window_Maximize.md) | Method | maximizes the window |
 | [Restore](Window_Minimize.md) | Method | restores the window from the minimized or maximized state |
