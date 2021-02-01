@@ -30,32 +30,33 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR|WINDOW_CENTER);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
     //Create User Interface
     auto ui = CreateInterface(window);
 
     //Create buttons
-    int y = 20;
+    int x = (window->ClientSize().x - 120) / 2;
+    int y = 50;
     int sep = 40;
-    
-    auto button = CreateButton("Button", 20, y, 120, 30, ui->root);
-    y += sep;
-    
-    auto toggle = CreateButton("Toggle", 20, y, 120, 30, panel, BUTTON_TOGGLE);
-    y += sep;
-    
-    auto toolbar = CreateButton("Toolbar", 20, y, 120, 30, panel, BUTTON_TOOLBAR);
+
+    auto button = CreateButton("Button", x, y, 120, 30, ui->root);
     y += sep;
 
-    auto checkbox = CreateButton("Checkbox", 20, y, 120, 30, panel, BUTTON_CHECKBOX);
+    auto toggle = CreateButton("Toggle", x, y, 120, 30, ui->root, BUTTON_TOGGLE);
     y += sep;
-    
-    auto radio1 = CreateButton("Option 1", 20, y, 120, 30, panel, BUTTON_RADIO);
+
+    auto toolbar = CreateButton("Toolbar", x, y, 120, 30, ui->root, BUTTON_TOOLBAR);
+    y += sep;
+
+    auto checkbox = CreateButton("Checkbox", x, y, 120, 30, ui->root, BUTTON_CHECKBOX);
+    y += sep;
+
+    auto radio1 = CreateButton("Option 1", x, y, 120, 30, ui->root, BUTTON_RADIO);
     radio1->SetState(WIDGETSTATE_SELECTED);
-    
+
     y += sep;
-    auto radio2 = CreateButton("Option 2", 20, y, 120, 30, panel, BUTTON_RADIO);
+    auto radio2 = CreateButton("Option 2", x, y, 120, 30, ui->root, BUTTON_RADIO);
 
     while (window->Closed() == false)
     {
