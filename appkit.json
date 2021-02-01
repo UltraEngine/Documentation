@@ -116,13 +116,29 @@
 					]
 				},				
 				{
+					"title": "LoadDir",
+					"filename": "LoadDir"
+				},
+				{
 					"title": "OpenDir",
 					"filename": "OpenDir"
 				},
 				{
+					"title": "OpenFile",
+					"filename": "OpenFile"
+				},
+				{
+					"title": "ReadFile",
+					"filename": "ReadFile"
+				},				
+				{
 					"title": "RunFile",
 					"filename": "RunFile"
-				}				
+				},
+				{
+					"title": "WriteFile",
+					"filename": "WriteFile"
+				},
 			]							
 		},		
 		{
