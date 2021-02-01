@@ -49,7 +49,7 @@ can save model files and load a new texture format. However, it is best to limit
 | [SaveTexture]() | Saves an image to memory in a specific format. |
 | [Cleanup]() | Called after load and save commands to free allocated resources. |
 
-A package plugin is different in that it must contain a set of commands in order to work:
+A package plugin must contain all of the following commands:
 
 | Function | Description |
 | ---- | ---- |
