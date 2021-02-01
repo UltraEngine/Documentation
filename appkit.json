@@ -464,6 +464,20 @@
 			]		
 		},
 		{
+			"title": "Strings",
+			"topics":
+			[
+				{
+					"title": "String",
+					"filename": "String"
+				},
+				{
+					"title": "WString",
+					"filename": "WString"
+				}				
+			]		
+		},		
+		{
 			"title": "System",
 			"filename": "System",
 			"topics":
