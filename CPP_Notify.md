@@ -2,7 +2,7 @@
 This functions displays a message box.
 
 ## Syntax ##
-- void **Notify**(const WString& message, const WString& title = L"", const bool serious = false)
+- void **Notify**(const [WString](WString)& message, const [WString](WString)& title = L"", const bool serious = false)
 
 | Parameter | Description |
 | ----- | ----- |
