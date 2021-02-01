@@ -367,7 +367,6 @@
 		},
 		{
 			"title": "Multithreading",
-			"filename": "Multithreading",
 			"hideFromLua": true,
 			"hideFromCS": true,
 			"topics":
