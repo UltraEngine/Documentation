@@ -1,13 +1,12 @@
 # iVec3 #
 This class describes a three-dimensional integer vector.
 
-## Members ##
-- int **x**, **width**
-- int **y**, **height**
-- int **z**, **depth**
-
-## Constructors ##
-- **iVec3**()
-- **iVec3**(const int x)
-- **iVec3**(const int x, const int y)
-- **iVec3**(const int x, const int y, const int z)
+### Properties ###
+| Name | Type | Description |
+|-|-|-|
+| x | int | x component of the vector |
+| y | int | y component of the vector |
+| z | int | z component of the vector |
+| **iVec3**() | Constructor | |
+| **iVec3**(const int x) | Constructor | |
+| **iVec3**(const int x, const int y, const int z) | Constructor | |
