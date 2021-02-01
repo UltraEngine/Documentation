@@ -5,4 +5,4 @@ Extracts the alpha component from a packed [RGBA](RGBA.md) value.
 - unsigned char **Alpha**(const unsigned int rgba)
 
 ## Returns ##
-Returns the alpha value from the color.
+Returns the alpha component of the color.
