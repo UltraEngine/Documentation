@@ -5,7 +5,7 @@ This class provides an interface for allocating, writing, and reading blocks of 
 
 ### Properties ###
 | Name | Type | Description |
-|-|-|
+| --- | --- | --- |
 | [Clear](CPP_Buffer_Clear.md) | Method |  |
 | [Copy](CPP_Buffer_Copy.md) | Method |  |
 | [data](CPP_Buffer_data.md) | Method |  |
