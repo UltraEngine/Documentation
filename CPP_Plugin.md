@@ -1,6 +1,6 @@
 # Plugin #
 
-**Base Class:** [Asset](API_Asset.md)
+**Base class**: [Asset](API_Asset.md)
 
 This class provides an interface by which modular functionality can be added to Leadwerks 5. Plugins can be used to add support for loading and saving new file and package formats, and for converting image data between pixel formats. New plugins can be created with the [plugin SDK](PluginSDK.md).
 
