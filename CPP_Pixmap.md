@@ -6,11 +6,11 @@ This class provides an interface for loading, manipulating, and saving image dat
 
 | Name | Type | Description |
 | ----- | ----- | ----- |
-| **format** | const [TextureFormat](Constants.md#TextureFormat)&  | format of the pixel data |
-| **size** | const iVec2&  | size of the pixmap |
-| **blocks** | const iVec2&  | number of blocks in the image, for compressed formats |
-| **pixels** | const shared_ptr<[Buffer](Buffer.md)\>&  | buffer containing pixel data |
-| **blocksize** | const int&  | size of each block, for compressed formats |
+| format | const [TextureFormat](Constants.md#TextureFormat)&  | format of the pixel data |
+| size | const iVec2&  | size of the pixmap |
+| blocks | const iVec2&  | number of blocks in the image, for compressed formats |
+| pixels | const shared_ptr<[Buffer](Buffer.md)\>&  | buffer containing pixel data |
+| blocksize | const int&  | size of each block, for compressed formats |
 | Convert | Method | converts a pixmap to another format |
 | Fill | Method | |
 | MakeNormalMap | Method | |
