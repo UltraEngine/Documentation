@@ -87,6 +87,13 @@
 				{
 					"title": "BufferStream",
 					"filename": "BufferStream"
+					"topics":
+					[
+						{
+							"title": "CreateBufferStream",
+							"filename": "CreateBufferStream"
+						}
+					]
 				},
 				{
 					"title": "FileSystemWatcher",
