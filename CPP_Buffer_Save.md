@@ -2,8 +2,7 @@
 Thie method saves the buffer's contents to a file.
 
 ## Syntax ##
-- bool **Save**(const string& path)
-- bool **Save**(const wstring& path)
+- bool **Save**(const WString& path)
 
 ### Parameters ###
 |Name|Description|
