@@ -5,7 +5,7 @@ This class contains information for events emitted by the GUI and other systems.
 | Property | Type | Description |
 |-----|-----|-----|
 | data | int | Extra field for data |
-| id | [EventID]() | Event type |
+| id | EventID | Event type |
 | extra | shared_ptr<[Object](API_Object.md)\> | Extra field for additional information. |
 | position | [iVec2](API_iVec2.md) | Screen coordinate at which event occurred. |
 | size | [iVec2](API_iVec2.md) | Size of the event source when the event occurred. |
