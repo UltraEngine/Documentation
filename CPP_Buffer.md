@@ -1,11 +1,7 @@
 # Buffer #
 This class provides an interface for allocating, writing, and reading blocks of memory.
 
-## Base Class ##
-- [Object](CPP_Object.md)
-
-## Derived Classes ##
-- [StreamBuffer](CPP_StreamBuffer.md)
+**Base Class:** [Object](CPP_Object.md)
 
 ### Properties ###
 | Name | Type | Description |
