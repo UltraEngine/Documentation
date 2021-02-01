@@ -18,40 +18,40 @@
 				},
 				{
 					"title": "Pixmap",
-					"filename": "API_Pixmap",
+					"filename": "Pixmap",
 					"topics":
 					[
 						{
 							"title": "Convert",
-							"filename": "API_Pixmap_Convert"
+							"filename": "Pixmap_Convert"
 						},
 						{
 							"title": "Fill",
-							"filename": "API_Pixmap_Fill"
+							"filename": "Pixmap_Fill"
 						},
 						{
 							"title": "MakeNormalMap",
-							"filename": "API_Pixmap_MakeNormalMap"
+							"filename": "Pixmap_MakeNormalMap"
 						},
 						{
 							"title": "ReadPixel",
-							"filename": "API_Pixmap_ReadPixel"
+							"filename": "Pixmap_ReadPixel"
 						},
 						{
 							"title": "Resize",
-							"filename": "API_Pixmap_Resize"
+							"filename": "Pixmap_Resize"
 						},
 						{
 							"title": "Save",
-							"filename": "API_Pixmap_Save"
+							"filename": "Pixmap_Save"
 						},
 						{
 							"title": "Swizzle",
-							"filename": "API_Pixmap_Swizzle"
+							"filename": "Pixmap_Swizzle"
 						},
 						{
 							"title": "WritePixel",
-							"filename": "API_Pixmap_WritePixel"
+							"filename": "Pixmap_WritePixel"
 						}							
 					]
 				}			
@@ -63,19 +63,19 @@
 			[
 				{
 					"title": "Assert",
-					"filename": "API_Assert"
+					"filename": "Assert"
 				},
 				{
 					"title": "DebugLog",
-					"filename": "API_DebugLog"
+					"filename": "DebugLog"
 				},						
 				{
 					"title": "RuntimeError",
-					"filename": "API_RuntimeError"
+					"filename": "RuntimeError"
 				},
 				{
 					"title": "Warn",
-					"filename": "API_Warn"
+					"filename": "Warn"
 				}						
 			]					
 		},	
@@ -86,36 +86,36 @@
 			[
 				{
 					"title": "BufferStream",
-					"filename": "API_BufferStream"
+					"filename": "BufferStream"
 				},
 				{
 					"title": "FileSystemWatcher",
-					"filename": "API_FileSystemWatcher",
+					"filename": "FileSystemWatcher",
 					"topics":
 					[
 						{
 							"title": "CreateFileSystemWatcher",
-							"filename": "API_CreateFileSystemWatcher"
+							"filename": "CreateFileSystemWatcher"
 						}
 					]						
 				},
 				{
 					"title": "Package",
-					"filename": "API_Package",
+					"filename": "Package",
 					"topics":
 					[
 					]
 				},
 				{
 					"title": "Stream",
-					"filename": "API_Stream",
+					"filename": "Stream",
 					"topics":
 					[
 					]
 				},				
 				{
 					"title": "OpenDir",
-					"filename": "API_OpenDir"
+					"filename": "OpenDir"
 				}
 			]							
 		},		
@@ -126,39 +126,39 @@
 			[				
 				{
 					"title": "Display",
-					"filename": "API_Display",
+					"filename": "Display",
 					"topics":
 					[
 						{
 							"title": "GetScale",
-							"filename": "API_Display_GetScale"
+							"filename": "Display_GetScale"
 						},
 						{
 							"title": "GetSize",
-							"filename": "API_Display_GetSize"
+							"filename": "Display_GetSize"
 						},
 						{
 							"title": "GetPosition",
-							"filename": "API_Display_GetPosition"
+							"filename": "Display_GetPosition"
 						},
 						{
 							"title": "GraphicsModes",
-							"filename": "API_Display_GraphicsModes"
+							"filename": "Display_GraphicsModes"
 						},											
 						{
 							"title": "ListDisplays",
-							"filename": "API_ListDisplays"
+							"filename": "ListDisplays"
 						}
 					]							
 				},
 				{
 					"title": "Window",
-					"filename": "API_Window",
+					"filename": "Window",
 					"topics":
 					[
 						{
 							"title": "CreateWindow",
-							"filename": "API_CreateWindow"
+							"filename": "CreateWindow"
 						}
 					]
 				}						
@@ -170,86 +170,86 @@
 			[
 				{
 					"title": "Event",
-					"filename": "API_Event"
+					"filename": "Event"
 				},				
 				{
 					"title": "Interface",
-					"filename": "API_Interface"
+					"filename": "Interface"
 				},
 				{
 					"title": "Widget",
-					"filename": "API_Widget"
+					"filename": "Widget"
 				}				
 			]							
 		},		
 		{
 			"title": "Math",
-			"filename": "API_Math",
+			"filename": "Math",
 			"topics":
 			[
 				{
 					"title": "iVec2",
-					"filename": "API_iVec2"
+					"filename": "iVec2"
 				},						
 				{
 					"title": "iVec3",
-					"filename": "API_iVec3"
+					"filename": "iVec3"
 				},				
 				{
 					"title": "iVec4",
-					"filename": "API_iVec4"
+					"filename": "iVec4"
 				},				
 				{
 					"title": "Vec2",
-					"filename": "API_Vec2"
+					"filename": "Vec2"
 				},						
 				{
 					"title": "Vec3",
-					"filename": "API_Vec3",
+					"filename": "Vec3",
 					"topics":
 					[
 						{
 							"title": "DistanceToPoint",
-							"filename": "API_Vec3_DistanceToPoint"
+							"filename": "Vec3_DistanceToPoint"
 						},
 						{
 							"title": "Dot",
-							"filename": "API_Vec3_Dot"
+							"filename": "Vec3_Dot"
 						},
 						{
 							"title": "Inverse",
-							"filename": "API_Vec3_Inverse"
+							"filename": "Vec3_Inverse"
 						},
 						{
 							"title": "Length",
-							"filename": "API_Vec3_Length"
+							"filename": "Vec3_Length"
 						},
 						{
 							"title": "Normalize",
-							"filename": "API_Vec3_Normalize"
+							"filename": "Vec3_Normalize"
 						},
 						{
 							"title": "Cross",
-							"filename": "API_Vec3_Cross"
+							"filename": "Vec3_Cross"
 						},
 						{
 							"title": "Reflect",
-							"filename": "API_Vec3_Reflect"
+							"filename": "Vec3_Reflect"
 						}								
 					]
 				},
 				{
 					"title": "Vec4",
-					"filename": "API_Vec4",
+					"filename": "Vec4",
 					"topics":
 					[
 						{
 							"title": "Length",
-							"filename": "API_Vec4_Length"
+							"filename": "Vec4_Length"
 						},
 						{
 							"title": "Normalize",
-							"filename": "API_Vec4_Normalize"
+							"filename": "Vec4_Normalize"
 						}
 					]							
 				}				
@@ -261,103 +261,103 @@
 			[
 				{
 					"title": "Buffer",
-					"filename": "API_Buffer",
+					"filename": "Buffer",
 					"topics":
 					[									
 						{
 							"title": "Clear",
-							"filename": "API_Buffer_Clear"
+							"filename": "Buffer_Clear"
 						},
 						{
 							"title": "Copy",
-							"filename": "API_Buffer_Copy"
+							"filename": "Buffer_Copy"
 						},
 						{
 							"title": "CreateBuffer",
-							"filename": "API_CreateBuffer"
+							"filename": "CreateBuffer"
 						},
 						{
 							"title": "CreateStaticBuffer",
-							"filename": "API_CreateStaticBuffer"
+							"filename": "CreateStaticBuffer"
 						},										
 						{
 							"title": "data",
-							"filename": "API_Buffer_data"
+							"filename": "Buffer_data"
 						},
 						{
 							"title": "GetSize",
-							"filename": "API_Buffer_GetSize"
+							"filename": "Buffer_GetSize"
 						},
 						{
 							"title": "LoadBuffer",
-							"filename": "API_LoadBuffer"
+							"filename": "LoadBuffer"
 						},											
 						{
 							"title": "PeekByte",
-							"filename": "API_Buffer_PeekByte"
+							"filename": "Buffer_PeekByte"
 						},
 						{
 							"title": "PeekInt",
-							"filename": "API_Buffer_PeekInt"
+							"filename": "Buffer_PeekInt"
 						},
 						{
 							"title": "PeekFloat",
-							"filename": "API_Buffer_PeekFloat"
+							"filename": "Buffer_PeekFloat"
 						},
 						{
 							"title": "PeekShort",
-							"filename": "API_Buffer_PeekShort"
+							"filename": "Buffer_PeekShort"
 						},
 						{
 							"title": "PeekString",
-							"filename": "API_Buffer_PeekString"
+							"filename": "Buffer_PeekString"
 						},
 						{
 							"title": "PeekWString",
-							"filename": "API_Buffer_PeekWString"
+							"filename": "Buffer_PeekWString"
 						},
 						{
 							"title": "PokeByte",
-							"filename": "API_Buffer_PokeByte"
+							"filename": "Buffer_PokeByte"
 						},
 						{
 							"title": "PokeInt",
-							"filename": "API_Buffer_PokeInt"
+							"filename": "Buffer_PokeInt"
 						},
 						{
 							"title": "PokeFloat",
-							"filename": "API_Buffer_PokeFloat"
+							"filename": "Buffer_PokeFloat"
 						},
 						{
 							"title": "PokeShort",
-							"filename": "API_Buffer_PokeShort"
+							"filename": "Buffer_PokeShort"
 						},
 						{
 							"title": "PokeString",
-							"filename": "API_Buffer_PokeString"
+							"filename": "Buffer_PokeString"
 						},
 						{
 							"title": "PokeWString",
-							"filename": "API_Buffer_PokeWString"
+							"filename": "Buffer_PokeWString"
 						},
 						{
 							"title": "Resize",
-							"filename": "API_Buffer_Resize"
+							"filename": "Buffer_Resize"
 						},
 						{
 							"title": "Save",
-							"filename": "API_Buffer_Save"
+							"filename": "Buffer_Save"
 						}										
 					]							
 				},
 				{
 					"title": "StreamBuffer",
-					"filename": "API_StreamBuffer",
+					"filename": "StreamBuffer",
 					"topics": 
 					[
 						{
 							"title": "CreateStreamBuffer",
-							"filename": "API_CreateStreamBuffer"
+							"filename": "CreateStreamBuffer"
 						}
 					]
 				}			
@@ -372,51 +372,51 @@
 			[
 				{
 					"title": "Mutex",
-					"filename": "API_Mutex",
+					"filename": "Mutex",
 					"topics": 
 					[
 						{
 							"title": "CreateMutex",
-							"filename": "API_CreateMutex"
+							"filename": "CreateMutex"
 						},
 						{
 							"title": "Lock",
-							"filename": "API_Mutex_Lock"
+							"filename": "Mutex_Lock"
 						},
 						{
 							"title": "Unlock",
-							"filename": "API_Mutex_Unlock"
+							"filename": "Mutex_Unlock"
 						}
 					]
 				},				
 				{
 					"title": "Thread",
-					"filename": "API_Thread",
+					"filename": "Thread",
 					"topics": 
 					[
 						{
 							"title": "CreateThread",
-							"filename": "API_CreateThread"
+							"filename": "CreateThread"
 						},
 						{
 							"title": "GetState",
-							"filename": "API_Thread_GetState"
+							"filename": "Thread_GetState"
 						},						
 						{
 							"title": "Pause",
-							"filename": "API_Thread_Pause"
+							"filename": "Thread_Pause"
 						},
 						{
 							"title": "Resume",
-							"filename": "API_Thread_Resume"
+							"filename": "Thread_Resume"
 						},
 						{
 							"title": "SetPriority",
-							"filename": "API_Thread_SetPriority"
+							"filename": "Thread_SetPriority"
 						},						
 						{
 							"title": "Wait",
-							"filename": "API_Thread_Wait"
+							"filename": "Thread_Wait"
 						}						
 					]
 				}
@@ -424,12 +424,12 @@
 		},
 		{
 			"title": "Plugins",
-			"filename": "API_Plugin",
+			"filename": "Plugin",
 			"topics":
 			[
 				{
 					"title": "LoadPlugin",
-					"filename": "API_LoadPlugin"
+					"filename": "LoadPlugin"
 				},
 				{
 					"title": "SDK",
@@ -444,39 +444,39 @@
 			[				
 				{
 					"title": "Confirm",
-					"filename": "API_Confirm"
+					"filename": "Confirm"
 				},
 				{
 					"title": "Input",
-					"filename": "API_Input"
+					"filename": "Input"
 				},				
 				{
 					"title": "Millisecs",
-					"filename": "API_Millisecs"
+					"filename": "Millisecs"
 				},				
 				{
 					"title": "Notify",
-					"filename": "API_Notify"
+					"filename": "Notify"
 				},
 				{
 					"title": "Proceed",
-					"filename": "API_Proceed"
+					"filename": "Proceed"
 				},
 				{
 					"title": "Print",
-					"filename": "API_Print"
+					"filename": "Print"
 				},					
 				{
 					"title": "RequestDir",
-					"filename": "API_RequestDir"
+					"filename": "RequestDir"
 				},
 				{
 					"title": "RequestFile",
-					"filename": "API_RequestFile"
+					"filename": "RequestFile"
 				},
 				{
 					"title": "Sleep",
-					"filename": "API_Sleep"
+					"filename": "Sleep"
 				}				
 			]			
 		}	
