@@ -5,7 +5,7 @@ This class handle user interface elements.
 
 | Name | Type | Description
 |---|---|---|
-| kids | const vector<shared_ptr<[Widget](API_Widget.md)\> \>& | |
+| kids | const vector<shared_ptr<[Widget](API_Widget.md)\> \>& | read-only list of child widgets |
 | [GetText](CPP_Widget_GetText.md) | Method | |
 | [GetParent](CPP_Widget_GetParent.md) | Method | |
 | [GetState](CPP_Widget_GetState.md) | Method | Gets the button state. |
