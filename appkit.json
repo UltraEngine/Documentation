@@ -295,6 +295,58 @@
 					"topics":
 					[
 						{
+							"title": "GetInteractive",
+							"filename": "Widget_GetInteractive"
+						},
+						{
+							"title": "GetText",
+							"filename": "Widget_GetText"
+						},						
+						{
+							"title": "GetParent",
+							"filename": "Widget_GetParent"
+						},
+						{
+							"title": "GetState",
+							"filename": "Widget_GetState"
+						},
+						{
+							"title": "GetText",
+							"filename": "Widget_GetText"
+						},
+						{
+							"title": "FilterItems",
+							"filename": "Widget_FilterItems"
+						},
+						{
+							"title": "SetShape",
+							"filename": "Widget_SetShape"
+						},
+						{
+							"title": "SetState",
+							"filename": "Widget_SetState"
+						},
+						{
+							"title": "SetText",
+							"filename": "Widget_SetText"
+						},
+						{
+							"title": "SetColor",
+							"filename": "Widget_SetColor"
+						},
+						{
+							"title": "SetIcon",
+							"filename": "Widget_SetIcon"
+						},
+						{
+							"title": "SetInteractive",
+							"filename": "Widget_SetInteractive"
+						},						
+						{
+							"title": "SetPixmap",
+							"filename": "Widget_SetPixmap"
+						},
+						{
 							"title": "CreateButton",
 							"filename": "CreateButton"
 						},
