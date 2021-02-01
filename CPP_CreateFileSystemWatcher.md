@@ -15,10 +15,10 @@ Returns a new FileSystemWatcher object if the specified directory exists, otherw
 
 ## Remarks ##
 Once the FileSystemWatcher object is created, it will monitor the directory to detect changes. When changes occur an event will be emitted. The event ID will be one of the following
-- EVENT_FILE_CREATE
-- EVENT_FILE_DELETE
-- EVENT_FILE_RENAME
-- EVENT_FILE_CHANGE
+- EVENT_FILECREATE
+- EVENT_FILEDELETE
+- EVENT_FILERENAME
+- EVENT_FILECHANGE
 
 ## Example ##
 ```c++
