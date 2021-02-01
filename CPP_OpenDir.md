@@ -1,9 +1,8 @@
 # OpenDir #
-This function opens a folder. If a file name is specified, the folder will be opened with that file selected.
+This function opens a folder in the default system file browser. If a file name is specified, the folder will be opened with that file selected.
 
 ## Syntax ##
-- bool **OpenDir**(const string& path)
-- bool **OpenDir**(const wstring& path)
+- bool **OpenDir**(const WString& path)
 
 ### Parameters ###
 | Name | Description |
