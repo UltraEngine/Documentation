@@ -113,6 +113,86 @@
 					"filename": "Stream",
 					"topics":
 					[
+						{
+							"title": "Close",
+							"filename": "Stream_Close"
+						},
+						{
+							"title": "Flush",
+							"filename": "Stream_Flush"
+						},
+						{
+							"title": "GetPos",
+							"filename": "Stream_GetPos"
+						},
+						{
+							"title": "GetSize",
+							"filename": "Stream_GetSize"
+						},
+						{
+							"title": "ReadByte",
+							"filename": "Stream_ReadByte"
+						},
+						{
+							"title": "ReadDouble",
+							"filename": "Stream_ReadDouble"
+						},
+						{
+							"title": "ReadFloat",
+							"filename": "Stream_ReadFloat"
+						},
+						{
+							"title": "ReadInt",
+							"filename": "Stream_ReadInt"
+						},
+						{
+							"title": "ReadLine",
+							"filename": "Stream_ReadLine"
+						},
+						{
+							"title": "ReadWLine",
+							"filename": "Stream_ReadWLine"
+						},
+						{
+							"title": "ReadWString",
+							"filename": "Stream_ReadWString"
+						},
+						{
+							"title": "Seek",
+							"filename": "Stream_Seek"
+						},				
+						{
+							"title": "WriteByte",
+							"filename": "Stream_WriteByte"
+						},
+						{
+							"title": "WriteDouble",
+							"filename": "Stream_WriteDouble"
+						},
+						{
+							"title": "WriteFloat",
+							"filename": "Stream_WriteFloat"
+						},
+						{
+							"title": "WriteInt",
+							"filename": "Stream_WriteInt"
+						},
+						{
+							"title": "WriteLine",
+							"filename": "Stream_WriteLine"
+						},
+						{
+							"title": "WriteString",
+							"filename": "Stream_WriteString"
+						},
+						{
+							"title": "WriteWLine",
+							"filename": "Stream_WriteWLine"
+						},
+						{
+							"title": "WriteWString",
+							"filename": "Stream_WriteWString"
+						}
 					]
 				},				
 				{
