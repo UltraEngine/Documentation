@@ -433,6 +433,10 @@
 							"filename": "CreateThread"
 						},
 						{
+							"title": "GetResult",
+							"filename": "Thread_GetResult"
+						},						
+						{
 							"title": "GetState",
 							"filename": "Thread_GetState"
 						},						
