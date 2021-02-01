@@ -19,7 +19,8 @@ Caution should be exercised when using this command. The buffer cannot be resize
 ## Example ##
 ```c++
 #include "pch.h"
-#include "Project.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
