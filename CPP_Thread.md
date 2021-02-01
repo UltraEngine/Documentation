@@ -1,7 +1,8 @@
 # Thread #
 This class provides an interface for creating multithreaded applications.
 
-## Properties ##
+### Properties ###
+
 | Name | Type | Description |
 |---|---|---|
 | [Pause](Thread_Pause.md) | Method | pauses thread execution |
