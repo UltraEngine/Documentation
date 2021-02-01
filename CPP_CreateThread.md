@@ -10,7 +10,7 @@
 | --- | --- |
 | entrypoint | function the thread will execute when it begins |
 | extra | extra value passed to the entrypoint function |
-| start | if set to true the thread will begin execution immediately, otherwise it will begin in the paused state |
+| start | if set to true the thread will begin execution immediately, otherwise it will begin in the ready state |
 
 ## Returns ##
 Returns a new thread.
