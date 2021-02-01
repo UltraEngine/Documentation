@@ -732,11 +732,113 @@
 			[
 				{
 					"title": "String",
-					"filename": "String"
+					"filename": "String",
+					"topics":
+					[
+						{
+							"title": "Find",
+							"filename": "String_Find"
+						},
+						{
+							"title": "Left",
+							"filename": "String_Left"
+						},
+						{
+							"title": "Len",
+							"filename": "String_Len"
+						},
+						{
+							"title": "Lower",
+							"filename": "String_Lower"
+						},
+						{
+							"title": "Match",
+							"filename": "String_Match"
+						},
+						{
+							"title": "Mid",
+							"filename": "String_Mid"
+						},
+						{
+							"title": "Replace",
+							"filename": "String_Replace"
+						},
+						{
+							"title": "Right",
+							"filename": "String_Right"
+						},
+						{
+							"title": "Split",
+							"filename": "String_Split"
+						},
+						{
+							"title": "Trim",
+							"filename": "String_Trim"
+						},
+						{
+							"title": "Upper",
+							"filename": "String_Upper"
+						},
+						{
+							"title": "XOR",
+							"filename": "String_XOR"
+						}
+					]					
 				},
 				{
 					"title": "WString",
-					"filename": "WString"
+					"filename": "WString",
+					"topics":
+					[
+						{
+							"title": "Find",
+							"filename": "WString_Find"
+						},
+						{
+							"title": "Left",
+							"filename": "WString_Left"
+						},
+						{
+							"title": "Len",
+							"filename": "WString_Len"
+						},
+						{
+							"title": "Lower",
+							"filename": "WString_Lower"
+						},
+						{
+							"title": "Match",
+							"filename": "WString_Match"
+						},
+						{
+							"title": "Mid",
+							"filename": "WString_Mid"
+						},
+						{
+							"title": "Replace",
+							"filename": "WString_Replace"
+						},
+						{
+							"title": "Right",
+							"filename": "WString_Right"
+						},
+						{
+							"title": "Split",
+							"filename": "WString_Split"
+						},
+						{
+							"title": "Trim",
+							"filename": "WString_Trim"
+						},
+						{
+							"title": "Upper",
+							"filename": "WString_Upper"
+						},
+						{
+							"title": "XOR",
+							"filename": "WString_XOR"
+						}
+					]					
 				}				
 			]		
 		},		
