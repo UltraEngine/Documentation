@@ -483,6 +483,27 @@
 					"filename": "Sleep"
 				}				
 			]			
-		}	
+		},
+		{
+			"title": "Timing",
+			"topics":
+			[
+				{
+					"title": "Timer",
+					"filename": "Timer.md",
+					"topics":
+					[
+						{
+							"title": "CreateTimer",
+							"filename": "CreateTimer.md"
+						}
+					]				
+				},
+				{
+					"title": "Millisecs",
+					"filename": "Millisecs.md"
+				}				
+			]		
+		},		
 	]
 }
