@@ -20,7 +20,7 @@ This class handle user interface elements.
 | [SetPixmap](CPP_Widget_SetPixmap.md) | Method | |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
-| [CreateLabel](CreateLabel.md) | Function | creates a button widget |
+| [CreateLabel](CreateLabel.md) | Function | creates a label widget |
 | [CreateListBox](CreateMenu.md) | Function | creates a listbox widget |
 | [CreateMenu](CreateMenu.md) | Function | creates a menu widget |
 | [CreatePanel](CreatePanel.md) | Function | creates a panel widget |
