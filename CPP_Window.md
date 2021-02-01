@@ -23,8 +23,9 @@ The window class provides an interface for creating system application windows.
 | [FlushKeys](Window_FlushKeys.md) | Method | resets the keyboard button press states |
 | [ShowMouse](Window_ShowMouse.md) | Method | shows the mouse pointer |
 | [HideMouse](Window_HideMouse.md) | Method | hides the mouse pointer |
-| [SetMousePosition](Window_SetMousePosition.md) | Method | moves the mouse to the specified position |
-| [GetMousePosition](Window_GetMousePosition.md) | Method | gets the current mouse position |
+| [MoveMouse](Window_MoveMouse.md) | Method | moves the mouse to the specified position |
+| [MousePosition](Window_MousePosition.md) | Method | gets the current mouse position |
+| [MouseSpeed](Window_MouseSpeed.md) | Method | gets the mouse movement speed in high-precision coordinates |
 | [Maximize](Window_Minimize.md) | Method | minimizes the window |
 | [Minimize](Window_Maximize.md) | Method | maximizes the window |
 | [Restore](Window_Minimize.md) | Method | restores the window from the minimized or maximized state |
