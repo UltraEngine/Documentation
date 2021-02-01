@@ -5,4 +5,4 @@ This method casts the object to a derived type.
 - shared_ptr<T\> As<T\>()
 
 ## Returns ##
-Returns the object as a derived type, or NULL if the object cannot be cast to the specified type.
+Returns the object as a derived type T, or NULL if the object cannot be cast to the specified type.
