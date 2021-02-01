@@ -1,10 +1,9 @@
 # StreamBuffer #
 This class provides an interface to manipulate part of a file as if it was a memory block, without loading the entire file into memory at once. This can be useful when working with very large files.
 
-## Base Class ##
-- [Buffer](CPP_Buffer.md)
+**Base Class:** [Buffer](Buffer.md)
 
 ### Properties ###
 | Name | Type | Description |
 |-|-|-|
-| [CreateStreamBuffer](CPP_CreateStreamBuffer.md) | Function | creates a new StreamBuffer object |
+| [CreateStreamBuffer](CreateStreamBuffer.md) | Function | creates a new StreamBuffer object |
