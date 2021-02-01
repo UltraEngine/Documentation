@@ -2,9 +2,9 @@
 This function constrains a value between a lower and upper limit.
 
 ## Syntax ##
-- float Clamp(const float value, const float minimum, const float maximum)
-- double Clamp(const double value, const double minimum, const double maximum)
-- int Clamp(const int value, const int minimum, const int maximum)
+- float **Clamp**(const float value, const float minimum, const float maximum)
+- double **Clamp**(const double value, const double minimum, const double maximum)
+- int **Clamp**(const int value, const int minimum, const int maximum)
 
 ### Parameters ###
 | Name | Description |
