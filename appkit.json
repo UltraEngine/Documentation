@@ -426,10 +426,6 @@
 							"filename": "Thread_Resume"
 						},
 						{
-							"title": "SetPriority",
-							"filename": "Thread_SetPriority"
-						},						
-						{
 							"title": "Wait",
 							"filename": "Thread_Wait"
 						}						
