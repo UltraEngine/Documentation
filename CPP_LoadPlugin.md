@@ -13,4 +13,22 @@ The file extension of plugin modules varies by platform. You can use an asterisk
 
 ## Example ##
 ```c++
+#include "pch.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+	auto plugin = LoadPlugin("Plugins/Basis.*");
+
+	if (plugin)
+	{
+		Print(plugin->description);
+	}
+	else
+	{
+		Print("Failed to load plugin.");
+	}
+	return 0;
+}
 ```
