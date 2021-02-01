@@ -1,5 +1,5 @@
 # Mutex #
-A mutex ("mutually exclusive") is used to defined a block of code that two threads may not access at the same time.
+A mutex ("mutually exclusive") is used to defined a block of code that two threads may not execute at the same time.
 
 ### Proeprties ###
 | Name | Type | Description |
