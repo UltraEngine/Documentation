@@ -17,6 +17,10 @@
 					"filename": "Font"
 				},
 				{
+					"title": "Icon",
+					"filename": "Icon"
+				},				
+				{
 					"title": "Pixmap",
 					"filename": "Pixmap",
 					"topics":
