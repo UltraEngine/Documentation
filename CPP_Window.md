@@ -35,3 +35,4 @@ The window class provides an interface for creating system application windows.
 | [SetShape](Window_SetShape.md) | Method | sets the window position and size |
 | [Show](Window_Show.md) | Method | makes the window visible |
 | [CreateWindow](CreateWindow) | Function | creates a new window |
+| [TransformCoord](TransformCoord.md) | Function | transforms coordinates from one window to another |
