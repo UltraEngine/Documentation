@@ -15,7 +15,8 @@ When the user enters some text and presses enter, the typed input is returned.
 ## Example ##
 ```c++
 #include "pch.h"
-#include "Project.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
