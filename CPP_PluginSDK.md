@@ -1,5 +1,5 @@
 # Plugin SDK #
-The Leadwerks 5 plugin SDK allows modular functionality to be added to the engine.
+The Ultra Engine plugin SDK allows modular functionality to be added to the engine.
 
 ## Overview ##
 A plugin can be loaded by any Leadwerks 5 program using the [LoadPlugin](API_LoadPlugin.md) command. Plugins must be compiled separately for each supported platform.
