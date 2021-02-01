@@ -20,7 +20,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 { 
-  Notify("Hello, world!");
-  return 0;
+	Notify("Hello, world!");
+	return 0;
 }
 ```
