@@ -7,7 +7,8 @@ When a buffer is first created its contents are random. This method sets each by
 ## Example ##
 ```c++
 #include "pch.h"
-#include "Project.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
