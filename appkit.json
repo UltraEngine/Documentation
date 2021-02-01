@@ -195,7 +195,26 @@
 				},
 				{
 					"title": "Widget",
-					"filename": "Widget"
+					"filename": "Widget",
+					"topics":
+					[
+						{
+							"title": "Button",
+							"filename": "Button"
+						},
+						{
+							"title": "ComboBox",
+							"filename": "ComboBox"
+						},
+						{
+							"title": "Label",
+							"filename": "Label"
+						},
+						{
+							"title": "TreeView",
+							"filename": "TreeView"
+						}							
+					]						
 				}				
 			]							
 		},		
