@@ -6,7 +6,7 @@ This class provides an interface for reading and writing files.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| path | const WString& | Read-only file name or URL. |
+| path | const [WString](WString.md)& | Read-only file name or URL. |
 | [Close](Stream_Close.md) | Method | closes the stream |
 | [Flush](Stream_Flush.md) | Method | flushes the stream |
 | [ReadByte](Stream_ReadByte.md) | Method | reads a byte from the stream |
