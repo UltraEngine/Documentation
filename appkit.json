@@ -118,7 +118,11 @@
 				{
 					"title": "OpenDir",
 					"filename": "OpenDir"
-				}
+				},
+				{
+					"title": "RunFile",
+					"filename": "RunFile"
+				}				
 			]							
 		},		
 		{
