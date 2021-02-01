@@ -7,8 +7,8 @@ This function can be used to create an object that monitors a specified director
 ### Parameters ###
 |Name|Description|
 |---|---|
-|**path**|path to folder to watch|
-|**recursive**|set to true to detect changes to the subdirectory|
+|path|path to folder to watch|
+|recursive|set to true to detect changes to the subdirectory|
 
 ## Returns ##
 Returns a new FileSystemWatcher object if the specified directory exists, otherwise NULL is returned.
