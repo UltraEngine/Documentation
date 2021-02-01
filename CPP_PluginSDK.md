@@ -2,7 +2,7 @@
 The Ultra Engine plugin SDK allows modular functionality to be added to the engine.
 
 ## Overview ##
-A plugin can be loaded by any Leadwerks 5 program using the [LoadPlugin](API_LoadPlugin.md) command. Plugins must be compiled separately for each supported platform.
+A plugin can be loaded by any Leadwerks 5 program using the [LoadPlugin](LoadPlugin.md) command. Plugins must be compiled separately for each supported platform.
 Windows uses DLL files for plugins. MacOS uses DYLIB files. Linux uses SO files. You can use an asterisk for the file extension in the LoadPlugin command, and the engine will choose a file extension based on the current platform:
 
 ```c++
@@ -42,8 +42,6 @@ can save model files and load a new texture format. However, it is best to limit
 | Function | Description |
 | ---- | ---- |
 | [GetPluginInfo](PluginSDK_GetPluginInfo.md) | Required function that returns information about the plugin. |
-| [LoadModel](PluginSDK_LoadModel.md) | Loads a model from memory in a specific format. |
-| [SaveModel]() | Saves a model to memory in a specific format. |
 | [ConvertPixmap]() | Converts pixel data between formats. |
 | [LoadTexture]() | Loads an image from memory in a specific format. |
 | [SaveTexture]() | Saves an image to memory in a specific format. |
