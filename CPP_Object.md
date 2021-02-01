@@ -1,5 +1,5 @@
 # Object #
-This is the base class for all other classes in the engine.
+This is the base class for most types in the engine.
 
 | Property | Type | Description |
 |-|-|-|
