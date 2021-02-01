@@ -18,3 +18,11 @@ This class handle user interface elements.
 | [SetText](CPP_Widget_SetText.md) | Method | |
 | [SetColor](CPP_Widget_SetColor.md) | Method | |
 | [SetPixmap](CPP_Widget_SetPixmap.md) | Method | |
+| [CreateButton](CreateButton.md) | Function | creates a button widget |
+| [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
+| [CreateLabel](CreateLabel.md) | Function | creates a button widget |
+| [CreateListBox](CreateMenu.md) | Function | creates a listbox widget |
+| [CreateMenu](CreateMenu.md) | Function | creates a menu widget |
+| [CreateProgressBar](CreateProgressBar.md) | Function | creates a progress bar widget |
+| [CreateTextArea](CreateTextArea.md) | Function | creates a text area widget |
+| [CreateTextField](CreateTextField.md) | Function | creates a text field widget |
