@@ -8,6 +8,6 @@ This class provides an interface for loading and rasterising vector images. Icon
 
 | Name | Type | Description |
 | ----- | ----- | ----- |
-| size | const iVec2&  | default size of the image, in pixels |
-| [Rasterize](Icon_Rasterize) | Method | Generates a pixmap |
+| size | const [iVec2](iVec2.md)&  | default size of the image, in pixels |
+| [Rasterize](Icon_Rasterize.md) | Method | Generates a pixmap |
 | [LoadIcon](LoadIcon.md) | Function | Loads an icon object from a file |
