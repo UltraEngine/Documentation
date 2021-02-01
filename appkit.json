@@ -434,6 +434,21 @@
 			]							
 		},
 		{
+			"title": "Object",
+			"filename": "Object",
+			"topics":
+			[
+				{
+					"title": "As",
+					"filename": "Object_As"
+				},
+				{
+					"title": "Self",
+					"filename": "Object_Self"
+				}				
+			]		
+		},		
+		{
 			"title": "Plugins",
 			"filename": "Plugin",
 			"topics":
