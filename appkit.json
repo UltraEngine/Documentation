@@ -14,7 +14,18 @@
 			[				
 				{
 					"title": "Icon",
-					"filename": "Icon"
+					"filename": "Icon",
+					"topics":
+					[
+						{
+							"title": "LoadIcon",
+							"filename": "LoadIcon"
+						},
+						{
+							"title": "Rasterize",
+							"filename": "Icon_Rasterize"
+						}						
+					]
 				},				
 				{
 					"title": "Pixmap",
