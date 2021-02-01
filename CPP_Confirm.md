@@ -3,7 +3,7 @@
 This function displays a message dialog box with the options "OK" and "Cancel".
 
 ## Syntax ##
-- int Confirm(const WString& message, const WString& title = "", const bool serious = false)
+- int **Confirm**(const [WString](WString.md)& message, const [WString](WString.md)& title = "", const bool serious = false)
 
 ### Parameters ###
 | Name | Description |
