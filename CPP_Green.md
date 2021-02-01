@@ -5,4 +5,4 @@ Extracts the green component from a packed [RGBA](RGBA.md) value.
 - unsigned char **Green**(const unsigned int rgba)
 
 ## Returns ##
-Returns the green value fromt the color.
+Returns the green component of the color.
