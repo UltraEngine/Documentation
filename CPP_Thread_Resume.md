@@ -2,4 +2,4 @@
 This method resumes execution of a thread.
 
 ## Syntax ##
-- void Resume()
+- void **Resume**()
