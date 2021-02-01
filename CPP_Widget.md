@@ -1,7 +1,7 @@
 # Widget #
 This class handle user interface elements.
 
-## Properties ##
+### Properties ###
 
 | Name | Type | Description
 |---|---|---|
