@@ -8,7 +8,8 @@ This function displays a file dialog and lets the user select a folder.
 ## Example ##
 ```c++
 #include "pch.h"
-#include "Project.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
