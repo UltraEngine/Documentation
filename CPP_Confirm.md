@@ -1,4 +1,4 @@
-## Example ##
+# Confirm #
 
 This function displays a message dialog box with the options "OK" and "Cancel".
 
