@@ -315,7 +315,119 @@
 				{
 					"title": "Vec4",
 					"filename": "Vec4"						
-				}				
+				}
+				{
+					"title": "Alpha",
+					"filename": "Alpha"
+				},
+				{
+					"title": "Red",
+					"filename": "Red"
+				},
+				{
+					"title": "Green",
+					"filename": "Green"
+				},
+				{
+					"title": "Blue",
+					"filename": "Blue"
+				},
+				{
+					"title": "RGBA",
+					"filename": "RGBA"
+				},
+				{
+					"title": "Abs",
+					"filename": "Abs"
+				},
+				{
+					"title": "Round",
+					"filename": "Round"
+				},
+				{
+					"title": "Floor",
+					"filename": "Floor"
+				},
+				{
+					"title": "Ceil",
+					"filename": "Ceil"
+				},
+				{
+					"title": "Sin",
+					"filename": "Sin"
+				},
+				{
+					"title": "Cos",
+					"filename": "Cos"
+				},			
+				{
+					"title": "Tan",
+					"filename": "Tan"
+				},
+				{
+					"title": "ASin",
+					"filename": "ASin"
+				},
+				{
+					"title": "ACos",
+					"filename": "ACos"
+				},			
+				{
+					"title": "ATan",
+					"filename": "ATan"
+				},
+				{
+					"title": "Min",
+					"filename": "Min"
+				},
+				{
+					"title": "Max",
+					"filename": "Max"
+				},
+				{
+					"title": "Degrees",
+					"filename": "Degrees"
+				},
+				{
+					"title": "Radians",
+					"filename": "Radians"
+				},
+				{
+					"title": "Hex",
+					"filename": "Hex"
+				},
+				{
+					"title": "Dec",
+					"filename": "Dec"
+				},
+				{
+					"title": "Mix",
+					"filename": "Mix"
+				},
+				{
+					"title": "CurveValue",
+					"filename": "CurveValue"
+				},
+				{
+					"title": "CurveAngle",
+					"filename": "CurveAngle"
+				},
+				{
+					"title": "Mod",
+					"filename": "Mod"
+				},
+				{
+					"title": "DeltaAngle",
+					"filename": "DeltaAngle"
+				},
+				{
+					"title": "Random",
+					"filename": "Random"
+				},
+				{
+					"title": "SeedRandom",
+					"filename": "SeedRandom"
+				}
 			]
 		},				
 		{
