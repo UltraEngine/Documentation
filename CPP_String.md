@@ -8,8 +8,8 @@ The String class provides an interface for manipulating ASCII text strings.
 | Name | Type | Description |
 |---|---|---|
 | [Find](String_Find.md) | Method | performs a search operation |
-| [Len](String_Len.md) | Method | returns the length of the string |
 | [Left](String_Left.md) | Method | returns leftmost characters |
+| [Len](String_Len.md) | Method | returns the length of the string |
 | [Lower](String_Lower.md) | Method | converts the string to lowercase |
 | [Match](String_Match.md) | Method | performs a string comparison operation |
 | [Mid](String_Mid.md) | Method | returns the length of the string |
