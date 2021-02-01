@@ -23,6 +23,9 @@ This class handle user interface elements.
 | [CreateLabel](CreateLabel.md) | Function | creates a button widget |
 | [CreateListBox](CreateMenu.md) | Function | creates a listbox widget |
 | [CreateMenu](CreateMenu.md) | Function | creates a menu widget |
+| [CreatePanel](CreatePanel.md) | Function | creates a panel widget |
 | [CreateProgressBar](CreateProgressBar.md) | Function | creates a progress bar widget |
+| [CreateSlider](CreateSlider.md) | Function | creates a slider widget |
 | [CreateTextArea](CreateTextArea.md) | Function | creates a text area widget |
 | [CreateTextField](CreateTextField.md) | Function | creates a text field widget |
+| [CreateTreeView](CreateSlider.md) | Function | creates a treeview widget |
