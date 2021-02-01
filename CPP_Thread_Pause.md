@@ -2,4 +2,4 @@
 This method pauses execution of a thread.
 
 ## Syntax ##
-- void Pause()
+- void **Pause**()
