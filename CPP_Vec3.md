@@ -8,9 +8,9 @@ This structure describes a three-dimensional vector.
 | y | float | y component of the vector |
 | z | float | z component of the vector |
 | Vec3() | Constructor | |
-| Vec3(const float x) | Constructor | |
-| Vec3(const float x, const float y) | Constructor | |
-| Vec3(const float x, const float y, const float z) | Constructor | |
+| Vec3 | Constructor | Vec3(const float x) |
+| Vec3 | Constructor |Vec3(const float x, const float y) |
+| Vec3 | Constructor | Vec3(const float x, const float y, const float z)|
 | [DistanceToPoint](Vec3_DistanceToPoint.md) | Method | |
 | [Dot](Vec3_Dot.md) | Method | |
 | [Cross](Vec3_Cross.md) | Method | |
