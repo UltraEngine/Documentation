@@ -8,14 +8,14 @@ This function is used to create a new window.
 ### Parameters ###
 | Name | Description |
 | ------ | ------ |
-| display |  |
-| title |  |
-| x | |
-| y |  |
-| width | |
-| height | |
-| style |  |
-| parent |  |
+| title | text to display in the titlebar |
+| x | initial x position of the window |
+| y | initial y position of the window |
+| width | initial width of the window |
+| height | initial height of the window |
+| display | Display to create the window on |
+| parent | parent Window |
+| style | can be any combination of WINDOW_TITLEBAR, WINDOW_RESiZABLE, WINDOW_CENTER, WINDOW_HIDDEN, WINDOW_DOUBLEBUFFERED and WINDOW_CLIENTCOORDS |
 
 ## Example ##
 ```c++
