@@ -8,8 +8,8 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 | Name | Type | Description |
 |---|---|---|
 | [Find](WString_Find.md) | Method | performs a search operation |
-| [Len](WString_Len.md) | Method | returns the length of the string |
 | [Left](WString_Left.md) | Method | returns leftmost characters |
+| [Len](WString_Len.md) | Method | returns the length of the string |
 | [Lower](WString_Lower.md) | Method | converts the string to lowercase |
 | [Match](WString_Match.md) | Method | performs a string comparison operation |
 | [Mid](WString_Mid.md) | Method | returns the length of the string |
