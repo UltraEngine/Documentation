@@ -2,19 +2,11 @@
 
 **Base Class:** [Object](CPP_Object.md)
 
-This is the base class of all game media classes.
+This is the base class for all media classes.
 
-## Derived Classes ##
-- [Collision](CPP_Collision.md)
-- Font
-- Material
-- ShaderFamily
-- Sound
-- Texture
-
-## Members ##
-- const wstring& path
-
-## Methods ##
-- [Reload](CPP_Asset_Reload.md)
-- [Save](CPP_Asset_Save.md)
+### Properties ###
+| Name | Type | Description |
+| --- | --- | --- |
+| path | const WString& path | read-only string containing the path to the file the asset was loaded from |
+| [Reload](CPP_Asset_Reload.md) | Method | reloads an asset from the file it was originally loaded from |
+| [Save](CPP_Asset_Save.md) | Method | saves an asset to a file |
