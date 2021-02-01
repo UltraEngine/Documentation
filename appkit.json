@@ -365,6 +365,10 @@
 					"filename": "Floor"
 				},
 				{
+					"title": "Clamp",
+					"filename": "Clamp"
+				},
+				{
 					"title": "Ceil",
 					"filename": "Ceil"
 				},
