@@ -211,9 +211,41 @@
 							"filename": "Label"
 						},
 						{
+							"title": "Menu",
+							"filename": "Menu"
+						},
+						{
+							"title": "ListBox",
+							"filename": "ListBox"
+						},						
+						{
+							"title": "ProgressBar",
+							"filename": "ProgressBar"
+						},
+						{
+							"title": "Slider",
+							"filename": "Slider"
+						},
+						{
+							"title": "Tabber",
+							"filename": "Tabber"
+						},						
+						{
+							"title": "TextField",
+							"filename": "TextField"
+						},
+						{
+							"title": "TextArea",
+							"filename": "TextArea"
+						},
+						{
 							"title": "TreeView",
 							"filename": "TreeView"
-						}							
+						}
+						{
+							"title": "TreeViewNode",
+							"filename": "TreeViewNode"
+						}						
 					]						
 				}				
 			]							
