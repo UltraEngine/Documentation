@@ -6,7 +6,7 @@ The window class provides an interface for creating system application windows.
 ### Properties ###
 | Name | Type | Description |
 |---|---|---|
-| display | const shared_ptr<[Display](Display.md)> | display the window resides on |
+| display | const shared_ptr<[Display](Display.md)\>& | display the window resides on |
 | text | const [WString](WString.md)& | text shown in the window titlebar |
 | [Activate](Window_Activate.md) | Method | activates the window |
 | [ClientSize](Window_ClientSize.md) | Method | returns the window dimensions |
