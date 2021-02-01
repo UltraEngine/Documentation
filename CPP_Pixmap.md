@@ -7,17 +7,17 @@ This class provides an interface for loading, manipulating, and saving image dat
 | Name | Type | Description |
 | ----- | ----- | ----- |
 | **format** | const [TextureFormat](Constants.md#TextureFormat)&  | format of the pixel data |
-| **size** | const iVec2&  | format of the pixel data |
-| **blocks** | const iVec2&  |  format of the pixel data |
-| **pixels** | const shared_ptr<Buffer>&  | format of the pixel data |
-| **blocksize** | const int&  | format of the pixel data |
-| Convert | Method | |
+| **size** | const iVec2&  | size of the pixmap |
+| **blocks** | const iVec2&  | number of blocks in the image, for compressed formats |
+| **pixels** | const shared_ptr\<[Buffer](Buffer.md)\>&  | buffer containing pixel data |
+| **blocksize** | const int&  | size of each block, for compressed formats |
+| Convert | Method | converts a pixmap to another format |
 | Fill | Method | |
 | MakeNormalMap | Method | |
 | ReadPixel | Method | |
 | Resize | Method | |
-| [Save](API_Pixmap_Save.md) | Saves a pixmap to an image or texture file. |Method | |
+| [Save](Pixmap_Save.md) | Saves a pixmap to an image or texture file. |Method | |
 | Swizzle | Method | |
 | WritePixel | Method | |
-| [CreatePixmap](API_LoadPixmap.md) | Function | Creates a new pixmap object. |
-| [LoadPixmap](API_LoadPixmap.md) | Function | Loads a pixmap object from a file. |
+| [CreatePixmap](LoadPixmap.md) | Function | Creates a new pixmap object. |
+| [LoadPixmap](LoadPixmap.md) | Function | Loads a pixmap object from a file. |
