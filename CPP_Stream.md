@@ -6,7 +6,7 @@ This class provides an interface for reading and writing files.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| path | const wstring& | Read-only file name or URL. |
+| path | const WString& | Read-only file name or URL. |
 | WriteInt | Method | |
 | ReadInt | Method | |
 | [OpenFile](API_OpenFile) | Function | |
