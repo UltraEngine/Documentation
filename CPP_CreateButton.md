@@ -35,15 +35,11 @@ int main(int argc, const char* argv[])
     //Create User Interface
     auto ui = CreateInterface(window);
 
-    //Main panel
-    auto sz = window->ClientSize();
-    auto panel = CreatePanel(0, 0, sz.x, sz.y, ui);
-
     //Create buttons
     int y = 20;
     int sep = 40;
     
-    auto button = CreateButton("Button", 20, y, 120, 30, panel);
+    auto button = CreateButton("Button", 20, y, 120, 30, ui->root);
     y += sep;
     
     auto toggle = CreateButton("Toggle", 20, y, 120, 30, panel, BUTTON_TOGGLE);
