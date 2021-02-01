@@ -1,4 +1,4 @@
-# PluginSDK::GetPluginInfo #
+# GetPluginInfo #
 
 ## Syntax ##
 - int GetPluginInfo(unsigned char* info, const int length)
