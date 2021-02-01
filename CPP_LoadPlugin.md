@@ -9,7 +9,7 @@ This function loads a plugin module. The plugin's functionality will be availabl
 | path | file path of the module to load |
 
 ## Remarks ##
-The file extension of plugin modules varies by platform. You can use an asterisk (.\*) for the file extension and the engine will select the correct file extension based on the current platform.
+The file extension of plugin modules varies by platform. You can use an asterisk (\*) for the file extension and the engine will select the correct file extension based on the current platform.
 
 ## Example ##
 ```c++
