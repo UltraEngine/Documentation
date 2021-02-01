@@ -13,4 +13,4 @@ This function combines four 8-bit color channels into a single packed RGBA color
 | a | alpha component |
 
 ## Returns ##
-Returns an RGBA color packed into a single integer. The individual color channel values can be extracted with the [Red](CPP_Red), [Green](CPP_Green.md), [Blue](CPP_Blue.md), and [Alpha](CPP_Alpha.md) functions.
+Returns an RGBA color packed into a single integer. The individual color channel values can be extracted with the [Red](Red), [Green](Green.md), [Blue](Blue.md), and [Alpha](Alpha.md) functions.
