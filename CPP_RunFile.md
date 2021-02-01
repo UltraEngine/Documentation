@@ -2,7 +2,7 @@
 Executes a file with the default system file handler for this file type. This can be used to open an image, text file, or other known file type, or to open a URL in the default web browser.
 
 ## Syntax ##
-- bool **RunFile**(const WString& path)
+- bool **RunFile**(const [WString](WString.md)& path)
 
 ### Parameters ###
 | Name | Description |
