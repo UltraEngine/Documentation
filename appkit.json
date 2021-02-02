@@ -225,7 +225,15 @@
 				{
 					"title": "CurentDir",
 					"filename": "CurrentDir"
-				},				
+				},								
+				{
+					"title": "ExtractDir",
+					"filename": "ExtractDir"
+				},
+				{
+					"title": "ExtractExt",
+					"filename": "ExtractExt"
+				},
 				{
 					"title": "FileHidden",
 					"filename": "FileHidden"
@@ -258,6 +266,18 @@
 					"title": "RunFile",
 					"filename": "RunFile"
 				},
+				{
+					"title": "StripDir",
+					"filename": "StripDir"
+				},
+				{
+					"title": "StripExt",
+					"filename": "StripExt"
+				},				
+				{
+					"title": "StripAll",
+					"filename": "StripAll"
+				},				
 				{
 					"title": "WriteFile",
 					"filename": "WriteFile"
