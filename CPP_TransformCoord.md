@@ -2,8 +2,8 @@
 This function transforms a screen coordinate from one window to another, from a window to the desktop, or from the desktop to a window.
 
 ## Syntax ##
-- iVec2 TransformCoord(const int x, const int y, shared_ptr<[Window](Window.md)\> src, shared_ptr<[Window](Window.md)\> dst)
-- iVec2 TransformCoord(const iVec2& coord, shared_ptr<[Window](Window.md)\> src, shared_ptr<[Window](Window.md)\> dst)
+- [iVec2](iVec2.md) **TransformCoord**(const int x, const int y, shared_ptr<[Window](Window.md)\> src, shared_ptr<[Window](Window.md)\> dst)
+- [iVec2](iVec2.md) **TransformCoord**(const [iVec2](iVec2.md)& coord, shared_ptr<[Window](Window.md)\> src, shared_ptr<[Window](Window.md)\> dst)
 
 ### Parameters ###
 | Name | Description |
