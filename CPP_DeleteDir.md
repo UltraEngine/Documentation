@@ -15,4 +15,4 @@ Returns true if the folder was successfully deleted.
 # Remarks #
 If any files or subfolders exist within the specified folder, it will not be deleted unless the recursive option is set to true.
 
-It is not possible to restore deleted files. Use this feature with caution.
+It is not possible to restore deleted folders. Use this feature with caution.
