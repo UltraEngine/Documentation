@@ -627,7 +627,11 @@
 							"filename": "Widget_SetPixmap"
 						}				
 					]						
-				}				
+				},
+				{
+					"title": "WidgetItem",
+					"filename": "WidgetItem"
+				}
 			]							
 		},		
 		{
