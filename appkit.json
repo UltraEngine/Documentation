@@ -275,17 +275,17 @@
 					"filename": "RunFile"
 				},
 				{
+					"title": "StripAll",
+					"filename": "StripAll"
+				},					
+				{
 					"title": "StripDir",
 					"filename": "StripDir"
 				},
 				{
 					"title": "StripExt",
 					"filename": "StripExt"
-				},				
-				{
-					"title": "StripAll",
-					"filename": "StripAll"
-				},				
+				},							
 				{
 					"title": "WriteFile",
 					"filename": "WriteFile"
