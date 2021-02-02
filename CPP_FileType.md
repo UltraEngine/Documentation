@@ -2,7 +2,7 @@
 This function detects the type of a specified file path.
 
 ## Syntax ##
-- int **FileType**(const WString& path)
+- int **FileType**(const [WString](WString.md)& path)
 
 | Parameter | Description |
 | --- | --- |
