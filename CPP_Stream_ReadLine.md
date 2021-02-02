@@ -4,7 +4,7 @@ This method reads a line of text from the stream.
 
 ## Syntax ##
 
-- String **ReadLine**()
+- [String](String.md) **ReadLine**()
 
 ## Returns ##
 
