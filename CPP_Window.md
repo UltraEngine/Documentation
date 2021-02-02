@@ -25,7 +25,7 @@ The window class provides an interface for creating system application windows.
 | [HideMouse](Window_HideMouse.md) | Method | hides the mouse pointer |
 | [MoveMouse](Window_MoveMouse.md) | Method | moves the mouse to the specified position |
 | [MousePosition](Window_MousePosition.md) | Method | gets the current mouse position |
-| [MouseSpeed](Window_MouseSpeed.md) | Method | gets the mouse movement speed in high-precision coordinates |
+| [MouseMovement](Window_MouseMovement.md) | Method | gets the mouse movement speed in high-precision coordinates |
 | [Maximize](Window_Minimize.md) | Method | minimizes the window |
 | [Minimize](Window_Maximize.md) | Method | maximizes the window |
 | [Restore](Window_Minimize.md) | Method | restores the window from the minimized or maximized state |
