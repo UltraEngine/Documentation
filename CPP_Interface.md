@@ -1,5 +1,5 @@
 # Interface #
-This class is used to create a graphical user interface (GUI).
+This class is used to create a graphical user interface.
 
 ### Properties ###
 | Name | Type | Description |
