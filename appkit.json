@@ -8,21 +8,6 @@
 			"selected": true
 		},
 		{
-			"title": "Asset",
-			"filename": "Asset",
-			"topics":
-			[				
-				{
-					"title": "Reload",
-					"filename": "Asset_Reload"
-				},
-				{
-					"title": "Save",
-					"filename": "Asset_Save"
-				}				
-			]
-		},		
-		{
 			"title": "Debugging",
 			"topics":
 			[
@@ -993,6 +978,21 @@
 			"filename": "Object",
 			"topics":
 			[
+				{
+					"title": "Asset",
+					"filename": "Asset",
+					"topics":
+					[				
+						{
+							"title": "Reload",
+							"filename": "Asset_Reload"
+						},
+						{
+							"title": "Save",
+							"filename": "Asset_Save"
+						}				
+					]
+				},		
 				{
 					"title": "As",
 					"filename": "Object_As"
