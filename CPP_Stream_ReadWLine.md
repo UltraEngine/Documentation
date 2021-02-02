@@ -4,7 +4,7 @@ This method reads line of wide text from the stream.
 
 ## Syntax ##
 
-- WString **ReadWLine**()
+- [WString](WString.md) **ReadWLine**()
 
 ## Returns ##
 
