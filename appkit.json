@@ -603,10 +603,6 @@
 							"filename": "Widget_GetText"
 						},
 						{
-							"title": "FilterItems",
-							"filename": "Widget_FilterItems"
-						},
-						{
 							"title": "SetShape",
 							"filename": "Widget_SetShape"
 						},
