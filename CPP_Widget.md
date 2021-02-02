@@ -7,17 +7,19 @@ This class handle user interface elements.
 |---|---|---|
 | kids | const vector<shared_ptr<[Widget](API_Widget.md)\> \>& | read-only list of child widgets |
 | text | const [WString](WString.md)& | read-only widget text |
+| items | const vector<[WidgetItem](WidgetItem.md)> | read-only array of widget items |
+| [AddItem](Widget_AddItem.md) | Method | adds a widget item |
+| [ClearItems](Clearitems.md) | Method | removes all widget items |
 | [FilterItems](CPP_Widget_FilterItems.md) | Method | filters the items with a search term |
 | [GetParent](CPP_Widget_GetParent.md) | Method | returns the widget parent |
 | [GetState](CPP_Widget_GetState.md) | Method | gets the button state |
 | [GetText](CPP_Widget_GetText.md) | Method | gets the widget text |
-| [SetColor](CPP_Widget_SetColor.md) | Method | |
-| [SetPosition](CPP_Widget_SetPosition.md) | Method | |
-| [SetSize](CPP_Widget_SetSize.md) | Method | |
+| [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
+| [SetColor](CPP_Widget_SetColor.md) | Method | sets the widget color |
 | [SetShape](CPP_Widget_SetShape.md) | Method | sets the widget position sna size |
 | [SetState](CPP_Widget_SetState.md) | Method | sets the button state |
-| [SetText](CPP_Widget_SetText.md) | Method | |
-| [SetPixmap](CPP_Widget_SetPixmap.md) | Method | |
+| [SetText](CPP_Widget_SetText.md) | Method | sets the widget color |
+| [SetPixmap](CPP_Widget_SetPixmap.md) | Method | sets a pixmap for the widget |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
 | [CreateLabel](CreateLabel.md) | Function | creates a label widget |
