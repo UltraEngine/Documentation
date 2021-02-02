@@ -527,6 +527,50 @@
 					"topics":
 					[
 						{
+							"title": "CreateButton",
+							"filename": "CreateButton"
+						},
+						{
+							"title": "CreateComboBox",
+							"filename": "CreateComboBox"
+						},
+						{
+							"title": "CreateLabel",
+							"filename": "CreateLabel"
+						},
+						{
+							"title": "CreateMenu",
+							"filename": "CreateMenu"
+						},
+						{
+							"title": "CreateListBox",
+							"filename": "CreateListBox"
+						},						
+						{
+							"title": "ProgressBar",
+							"filename": "ProgressBar"
+						},
+						{
+							"title": "CreateSlider",
+							"filename": "CreateSlider"
+						},
+						{
+							"title": "CreateTabber",
+							"filename": "CreateTabber"
+						},						
+						{
+							"title": "CreateTextField",
+							"filename": "CreateTextField"
+						},
+						{
+							"title": "CreateTextArea",
+							"filename": "CreateTextArea"
+						},
+						{
+							"title": "CreateTreeView",
+							"filename": "CreateTreeView"
+						},
+						{
 							"title": "GetInteractive",
 							"filename": "Widget_GetInteractive"
 						},
@@ -577,51 +621,7 @@
 						{
 							"title": "SetPixmap",
 							"filename": "Widget_SetPixmap"
-						},
-						{
-							"title": "CreateButton",
-							"filename": "CreateButton"
-						},
-						{
-							"title": "CreateComboBox",
-							"filename": "CreateComboBox"
-						},
-						{
-							"title": "CreateLabel",
-							"filename": "CreateLabel"
-						},
-						{
-							"title": "CreateMenu",
-							"filename": "CreateMenu"
-						},
-						{
-							"title": "CreateListBox",
-							"filename": "CreateListBox"
-						},						
-						{
-							"title": "ProgressBar",
-							"filename": "ProgressBar"
-						},
-						{
-							"title": "CreateSlider",
-							"filename": "CreateSlider"
-						},
-						{
-							"title": "CreateTabber",
-							"filename": "CreateTabber"
-						},						
-						{
-							"title": "CreateTextField",
-							"filename": "CreateTextField"
-						},
-						{
-							"title": "CreateTextArea",
-							"filename": "CreateTextArea"
-						},
-						{
-							"title": "CreateTreeView",
-							"filename": "CreateTreeView"
-						}					
+						}				
 					]						
 				}				
 			]							
