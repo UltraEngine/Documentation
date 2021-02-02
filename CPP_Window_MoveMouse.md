@@ -1,4 +1,4 @@
-# Window::MouseMove #
+# Window::MoveMouse #
 This method moves the mouse pointer to the specified window coordinates.
 
 ## Syntax ##
