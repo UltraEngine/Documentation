@@ -8,4 +8,4 @@ This function waits until an event is available in the event queue and returns t
 Returns the oldest event in the queue.
 
 ## Remarks ##
-Use [PeekEvent](PeekEvent.md) to check if any events are available if you don't want the application to pause when this function is called.
+Use [PeekEvent](PeekEvent.md) to check if any events are available before calling this function, if you don't want the application to pause.
