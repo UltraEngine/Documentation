@@ -213,7 +213,35 @@
 							"filename": "Stream_WriteWString"
 						}
 					]
+				},
+				{
+					"title": "AppDir",
+					"filename": "AppDir"
+				},
+				{
+					"title": "ChangeDir",
+					"filename": "ChangeDir"
+				},
+				{
+					"title": "CurentDir",
+					"filename": "CurrentDir"
 				},				
+				{
+					"title": "FileHidden",
+					"filename": "FileHidden"
+				},
+				{
+					"title": "FileType",
+					"filename": "FileType"
+				},
+				{
+					"title": "FileTime",
+					"filename": "FileTime"
+				},
+				{
+					"title": "FileHidden",
+					"filename": "FileHidden"
+				},
 				{
 					"title": "LoadDir",
 					"filename": "LoadDir"
