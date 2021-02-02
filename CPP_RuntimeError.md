@@ -7,4 +7,4 @@ This function generates a critical error and exits the program.
 ### Parameters ###
 | Name | Description |
 | --- | --- |
-| message | text to print |
+| message | error message to print |
