@@ -445,10 +445,6 @@
 							"filename": "Interface_Save"
 						},
 						{
-							"title": "SaveColorScheme",
-							"filename": "Interface_SaveColorScheme"
-						},	
-						{
 							"title": "SetScale",
 							"filename": "Interface_SetScale"
 						}												
