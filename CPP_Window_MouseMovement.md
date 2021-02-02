@@ -8,6 +8,9 @@ Thie method returns the physical distance the mouse has travelled since the last
 |---|---|
 | dpi | mouse movement increments per inch physical distance traveled |
 
+## Returns ##
+Returns the physical distance traveled by the mouse, in inches.
+
 ## Remarks ##
 This method uses raw mouse input and does not correlate to a cursor position onscreen. Whereas the [MousePosition](Window_MousePosition.md) method returns integer coordinates based on screen pixels, this method allow higher precision input and is useful for games.
 
