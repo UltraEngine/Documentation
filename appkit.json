@@ -141,6 +141,10 @@
 							"filename": "Stream_GetSize"
 						},
 						{
+							"title": "Read",
+							"filename": "Stream_Read"
+						},
+						{
 							"title": "ReadByte",
 							"filename": "Stream_ReadByte"
 						},
@@ -171,7 +175,11 @@
 						{
 							"title": "Seek",
 							"filename": "Stream_Seek"
-						},				
+						},
+						{
+							"title": "Write",
+							"filename": "Stream_Write"
+						},						
 						{
 							"title": "WriteByte",
 							"filename": "Stream_WriteByte"
