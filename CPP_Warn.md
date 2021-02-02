@@ -7,4 +7,4 @@ This function can be used to print a non-critical error. Each unique message thi
 ### Parameters ###
 | Name | Description |
 | --- | --- |
-| message | text to print |
+| message | warning message to print |
