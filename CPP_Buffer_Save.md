@@ -2,7 +2,7 @@
 Thie method saves the buffer's contents to a file.
 
 ## Syntax ##
-- bool **Save**(const WString& path)
+- bool **Save**(const [WString](WString.md)& path)
 
 ### Parameters ###
 |Name|Description|
