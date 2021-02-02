@@ -9,4 +9,4 @@ This function removes the folder part from a file path and returns the result.
 | path | full file path |
 
 ## Returns ##
-Returns file path with the folder part removed.
+Returns the file path with the folder removed.
