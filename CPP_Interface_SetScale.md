@@ -4,9 +4,9 @@ This method sets the DPI scaling value of an interface.
 
 ## Syntax ##
 
-- void SetScale(const float dpiscale)
+- void SetScale(const float scale)
 
 ### Parameters ###
 | Name | Description |
 | --- | --- |
-| dpiscale | DPI scaling value to set |
+| scale | DPI scaling value to set |
