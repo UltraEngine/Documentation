@@ -587,10 +587,6 @@
 							"filename": "Widget_GetInteractive"
 						},
 						{
-							"title": "GetText",
-							"filename": "Widget_GetText"
-						},						
-						{
 							"title": "GetParent",
 							"filename": "Widget_GetParent"
 						},
