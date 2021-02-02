@@ -41,7 +41,7 @@ can save model files and load a new texture format. However, it is best to limit
 
 | Function | Description |
 | ---- | ---- |
-| [GetPluginInfo](PluginSDK_GetPluginInfo.md) | Required function that returns information about the plugin. |
+| [GetPluginInfo](PluginSDK/GetPluginInfo.md) | Required function that returns information about the plugin. |
 | [ConvertPixmap]() | Converts pixel data between formats. |
 | [LoadTexture]() | Loads an image from memory in a specific format. |
 | [SaveTexture]() | Saves an image to memory in a specific format. |
