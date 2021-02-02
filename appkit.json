@@ -437,9 +437,9 @@
 							"filename": "LoadInterface"
 						},						
 						{
-							"title": "SetScale",
-							"filename": "Interface_SetScale"
-						},
+							"title": "Reload",
+							"filename": "Interface_Reload"
+						},						
 						{
 							"title": "Save",
 							"filename": "Interface_Save"
@@ -447,10 +447,10 @@
 						{
 							"title": "SaveColorScheme",
 							"filename": "Interface_SaveColorScheme"
-						},						
+						},	
 						{
-							"title": "Reload",
-							"filename": "Interface_Reload"
+							"title": "SetScale",
+							"filename": "Interface_SetScale"
 						}												
 					]
 				},
