@@ -2,7 +2,7 @@
 
 This class provides an interface for loading and rasterising vector images. Icons can be used for resolution-independent graphics.
 
-**Base class**: [Object](Object.md)
+**Base class**: [Asset](Asset.md)
 
 ### Properties ###
 
