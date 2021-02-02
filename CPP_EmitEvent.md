@@ -9,3 +9,11 @@ This function adds an event to the event queue and triggers any callbacks added 
 | Name | Description |
 | --- | --- |
 | [Event](Event.md) | event to emit |
+| id | event ID |
+| source | event source |
+| data | event data |
+| x | X component of event position |
+| y | Y component of event position |
+| width | X compononent of event size | 
+| height | Y component of event size |
+| extra | event extra data |
