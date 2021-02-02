@@ -1,5 +1,7 @@
 # Pixmap #
 
+**Base class**: [Asset](Asset.md)
+
 This class provides an interface for loading, manipulating, and saving image data.
 
 ### Properties ###
