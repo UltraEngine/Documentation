@@ -41,11 +41,11 @@ can save model files and load a new texture format. However, it is best to limit
 
 | Function | Description |
 | ---- | ---- |
-| [GetPluginInfo](PluginSDK/GetPluginInfo.md) | Required function that returns information about the plugin. |
-| [ConvertPixmap]() | Converts pixel data between formats. |
-| [LoadTexture]() | Loads an image from memory in a specific format. |
-| [SaveTexture]() | Saves an image to memory in a specific format. |
-| [Cleanup]() | Called after load and save commands to free allocated resources. |
+| GetPluginInfo | Required function that returns information about the plugin. |
+| ConvertPixmap | Converts pixel data between formats. |
+| LoadTexture | Loads an image from memory in a specific format. |
+| SaveTexture | Saves an image to memory in a specific format. |
+| Cleanup | Called after load and save commands to free allocated resources. |
 
 A package plugin must contain all of the following commands:
 
@@ -58,3 +58,4 @@ A package plugin must contain all of the following commands:
 | FreePackage | Loads a model from memory in a specific format. |
 | GetPackageFileName | Loads a model from memory in a specific format. |
 
+See the Ultra Engine Plugin SDK on Github for more information.
