@@ -227,6 +227,14 @@
 					"filename": "CurrentDir"
 				},								
 				{
+					"title": "DeleteDir",
+					"filename": "DeleteDir"
+				},
+				{
+					"title": "DeleteFile",
+					"filename": "DeleteFile"
+				},
+				{
 					"title": "ExtractDir",
 					"filename": "ExtractDir"
 				},
