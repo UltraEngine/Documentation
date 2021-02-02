@@ -2,7 +2,7 @@
 This method saves the interface to a file or stream.
 
 ## Syntax ##
-- bool **Save**(const WString& path, const SaveFlags flags = SAVE_DEFAULT)
+- bool **Save**(const [WString](WString)& path, const SaveFlags flags = SAVE_DEFAULT)
 - bool **Save**(shared_ptr<Stream> stream, const SaveFlags flags = SAVE_DEFAULT)
 
 ## Returns ##
