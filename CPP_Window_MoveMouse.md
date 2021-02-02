@@ -3,7 +3,7 @@ This method moves the mouse pointer to the specified window coordinates.
 
 ## Syntax ##
 - void **MoveMouse**(const int x, const int y)
-- void **MoveMouse**(const iVec2& coord)
+- void **MoveMouse**(const [iVec2](iVec2.md)& coord)
 
 ### Parameters ###
 | Name | Description |
