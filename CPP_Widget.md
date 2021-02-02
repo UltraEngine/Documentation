@@ -16,10 +16,11 @@ This class handle user interface elements.
 | [GetText](CPP_Widget_GetText.md) | Method | gets the widget text |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](CPP_Widget_SetColor.md) | Method | sets the widget color |
+| [SetIcon](CPP_Widget_SetIcon.md) | Method | applies an icon to the widget |
+| [SetPixmap](CPP_Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
 | [SetShape](CPP_Widget_SetShape.md) | Method | sets the widget position sna size |
 | [SetState](CPP_Widget_SetState.md) | Method | sets the button state |
 | [SetText](CPP_Widget_SetText.md) | Method | sets the widget color |
-| [SetPixmap](CPP_Widget_SetPixmap.md) | Method | sets a pixmap for the widget |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
 | [CreateLabel](CreateLabel.md) | Function | creates a label widget |
