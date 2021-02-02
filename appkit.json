@@ -205,12 +205,12 @@
 					"filename": "FileHidden"
 				},
 				{
-					"title": "FileType",
-					"filename": "FileType"
-				},
-				{
 					"title": "FileTime",
 					"filename": "FileTime"
+				},
+				{
+					"title": "FileType",
+					"filename": "FileType"
 				},
 				{
 					"title": "LoadDir",
