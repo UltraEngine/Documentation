@@ -2,7 +2,7 @@
 This function deletes a folder in the file system.
 
 ## Syntax ##
-- bool DeleteDir(const [WString](WString)& path, const bool recursive = false)
+- bool **DeleteDir**(const [WString](WString)& path, const bool recursive = false)
 
 | Parameter | Description |
 | --- | --- |
