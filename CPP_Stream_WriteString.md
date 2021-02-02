@@ -2,7 +2,7 @@
 This method writes a string to the stream at the current position.
 
 ## Syntax ##
-- void **WriteString**(const [WString](WString.md)& s, const bool terminate = true)
+- void **WriteString**(const [String](String.md)& s, const bool terminate = true)
 
 ### Parameters ###
 | Name | Description |
