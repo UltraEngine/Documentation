@@ -16,12 +16,12 @@ This class provides an interface for reading and writing files.
 | [ReaddFloat](Stream_ReadFloat.md) | Method | reads a float value from the stream |
 | [ReadInt](Stream_ReadInt.md) | Method | reads an integer from the stream |
 | [ReadLine](Stream_ReadLine.md) | Method | reads a line of text |
-| [ReadInt](Stream_ReadString.md) | Method | reads a string from the stream |
+| [ReadString](Stream_ReadString.md) | Method | reads a string from the stream |
 | [ReadWLine](Stream_ReadWLine.md) | Method | reads a line of text |
 | [ReadWString](Stream_ReadWString.md) | Method | reads a wide string from the stream |
 | [Seek](Stream_Seek.md) | Method | changes the file read position |
 | [WriteByte](Stream_WriteByte.md) | Method | writes a byte to the stream |
-| [WriteFloat](Stream_WriteDouble.md) | Method | writes a double float value to the stream |
+| [WriteDouble](Stream_WriteDouble.md) | Method | writes a double float value to the stream |
 | [WriteFloat](Stream_WriteFloat.md) | Method | writes a float value to the stream |
 | [WriteInt](Stream_WriteInt.md) | Method | writes an integer to the stream |
 | [WriteLine](Stream_WriteLine.md) | Method | writes a line of text |
