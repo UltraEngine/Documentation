@@ -2,15 +2,14 @@
 This method reads a block of memory from a stream.
 
 ## Syntax ##
-- uint64_t **Read**(shared_ptr<[Buffer](Buffer.md)> buffer, const uint64_t offset, const uint64_t size)
+- uint64_t **Read**(shared_ptr<[Buffer](Buffer.md)> data, const uint64_t offset, const uint64_t size)
 - uint64_t **Read**(const void* data, const uint64_t size)
 
 ### Parameters ###
 | Name | Description |
 | --- | --- |
-| buffer | memory buffer to write to |
 | offset | offset in bytes from memory buffer beginning |
-| data | pointer to write to |
+| data | buffer or pointer to write to |
 | size | number of bytes to read |
 
 ## Returns ##
