@@ -2,7 +2,7 @@
 This function opens a folder in the default system file browser. If a file name is specified, the folder will be opened with that file selected.
 
 ## Syntax ##
-- bool **OpenDir**(const WString& path)
+- bool **OpenDir**(const [WString](WString.md)& path)
 
 ### Parameters ###
 | Name | Description |
