@@ -410,8 +410,8 @@
 							"filename": "EmitEvent"
 						},			
 						{
-							"title": "WaitEvent",
-							"filename": "WaitEvent"
+							"title": "PeekEvent",
+							"filename": "PeekEvent"
 						},						
 						{
 							"title": "WaitEvent",
