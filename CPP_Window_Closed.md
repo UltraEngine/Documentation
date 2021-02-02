@@ -2,7 +2,7 @@
 This method returns true if the window has been closed since the last call, or since the creation of the window.
 
 ## Syntax ##
-- bool Closed()
+- bool **Closed**()
 
 ## Returns ##
 Returns the window closed state and resets the state to false.
