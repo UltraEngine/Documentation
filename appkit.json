@@ -527,6 +527,14 @@
 					"topics":
 					[
 						{
+							"title": "AddItem",
+							"filename": "AddItem"
+						},
+						{
+							"title": "ClearItems",
+							"filename": "ClearItems"
+						},						
+						{
 							"title": "CreateButton",
 							"filename": "CreateButton"
 						},
@@ -570,6 +578,10 @@
 							"title": "CreateTreeView",
 							"filename": "CreateTreeView"
 						},
+						{
+							"title": "FilterItems",
+							"filename": "FilterItems"
+						},						
 						{
 							"title": "GetInteractive",
 							"filename": "Widget_GetInteractive"
