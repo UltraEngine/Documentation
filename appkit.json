@@ -697,120 +697,120 @@
 					"filename": "Vec4"						
 				},
 				{
-					"title": "Alpha",
-					"filename": "Alpha"
-				},
-				{
-					"title": "Red",
-					"filename": "Red"
-				},
-				{
-					"title": "Green",
-					"filename": "Green"
-				},
-				{
-					"title": "Blue",
-					"filename": "Blue"
-				},
-				{
-					"title": "RGBA",
-					"filename": "RGBA"
-				},
-				{
 					"title": "Abs",
 					"filename": "Abs"
-				},
-				{
-					"title": "Round",
-					"filename": "Round"
-				},
-				{
-					"title": "Floor",
-					"filename": "Floor"
-				},
-				{
-					"title": "Clamp",
-					"filename": "Clamp"
-				},
-				{
-					"title": "Ceil",
-					"filename": "Ceil"
-				},
-				{
-					"title": "Sin",
-					"filename": "Sin"
-				},
-				{
-					"title": "Cos",
-					"filename": "Cos"
-				},			
-				{
-					"title": "Tan",
-					"filename": "Tan"
-				},
-				{
-					"title": "ASin",
-					"filename": "ASin"
 				},
 				{
 					"title": "ACos",
 					"filename": "ACos"
 				},			
 				{
+					"title": "Alpha",
+					"filename": "Alpha"
+				},
+				{
+					"title": "ASin",
+					"filename": "ASin"
+				},
+				{
 					"title": "ATan",
 					"filename": "ATan"
 				},
 				{
-					"title": "Min",
-					"filename": "Min"
+					"title": "Blue",
+					"filename": "Blue"
+				},			
+				{
+					"title": "Ceil",
+					"filename": "Ceil"
 				},
 				{
-					"title": "Max",
-					"filename": "Max"
-				},
+					"title": "Clamp",
+					"filename": "Clamp"
+				},	
 				{
-					"title": "Degrees",
-					"filename": "Degrees"
-				},
+					"title": "Cos",
+					"filename": "Cos"
+				},			
 				{
-					"title": "Radians",
-					"filename": "Radians"
-				},
-				{
-					"title": "Hex",
-					"filename": "Hex"
-				},
-				{
-					"title": "Dec",
-					"filename": "Dec"
-				},
-				{
-					"title": "Mix",
-					"filename": "Mix"
+					"title": "CurveAngle",
+					"filename": "CurveAngle"
 				},
 				{
 					"title": "CurveValue",
 					"filename": "CurveValue"
 				},
 				{
-					"title": "CurveAngle",
-					"filename": "CurveAngle"
+					"title": "Dec",
+					"filename": "Dec"
 				},
 				{
-					"title": "Mod",
-					"filename": "Mod"
+					"title": "Degrees",
+					"filename": "Degrees"
 				},
 				{
 					"title": "DeltaAngle",
 					"filename": "DeltaAngle"
+				},				
+				{
+					"title": "Floor",
+					"filename": "Floor"
+				},				
+				{
+					"title": "Green",
+					"filename": "Green"
+				},
+				{
+					"title": "Hex",
+					"filename": "Hex"
+				},				
+				{
+					"title": "Max",
+					"filename": "Max"
+				},
+				{
+					"title": "Min",
+					"filename": "Min"
+				},
+				{
+					"title": "Mix",
+					"filename": "Mix"
+				},
+				{
+					"title": "Mod",
+					"filename": "Mod"
+				},				
+				{
+					"title": "Radians",
+					"filename": "Radians"
 				},
 				{
 					"title": "Random",
 					"filename": "Random"
+				},				
+				{
+					"title": "Red",
+					"filename": "Red"
+				},
+				{
+					"title": "RGBA",
+					"filename": "RGBA"
+				},
+				{
+					"title": "Round",
+					"filename": "Round"
 				},
 				{
 					"title": "SeedRandom",
 					"filename": "SeedRandom"
+				},
+				{
+					"title": "Sin",
+					"filename": "Sin"
+				},			
+				{
+					"title": "Tan",
+					"filename": "Tan"
 				}
 			]
 		},				
