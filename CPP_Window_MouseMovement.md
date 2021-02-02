@@ -4,6 +4,7 @@ Thie method returns the physical distance the mouse has travelled since the last
 ## Syntax ##
 - Vec2 **MouseMovement**(const int dpi = 1000)
 
+### Parameters ###
 | Name | Description |
 |---|---|
 | dpi | mouse movement increments per inch physical distance traveled |
