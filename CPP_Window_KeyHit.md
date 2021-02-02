@@ -2,7 +2,7 @@
 Returns true if the specified key has been pressed since the last call to KeyHit, or since the creation of the window.
 
 ## Syntax ##
-- bool KeyHit(const KeyCode key)
+- bool **KeyHit**(const KeyCode key)
 
 ### Parameters ###
 | Name | Description |
