@@ -9,4 +9,4 @@ This function removes the file extension part from a file path and returns the r
 | path | full file path |
 
 ## Returns ##
-Returns file path with the extension removed.
+Returns the file path with the extension removed.
