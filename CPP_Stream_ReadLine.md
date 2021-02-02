@@ -1,6 +1,6 @@
 # Stream::ReadLine #
 
-This method reads an integer value from the stream.
+This method reads a line of text from the stream.
 
 ## Syntax ##
 
