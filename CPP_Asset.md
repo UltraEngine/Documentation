@@ -1,6 +1,6 @@
 # Asset #
 
-**Base class**: [Object](CPP_Object.md)
+**Base class**: [Object](Object.md)
 
 This is the base class for all media classes.
 
