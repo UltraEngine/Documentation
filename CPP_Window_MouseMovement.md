@@ -17,4 +17,6 @@ This method uses raw mouse input and does not correlate to a cursor position ons
 
 The DPI value should be adjustable by the end user to adjust the mouse precision. Most mice will use a DPI in the range of 800-1200 but high-precision gaming mice can use much greater values.
 
-Calls to [MoveMouse](Window_MoveMouse.md) have no effect on raw mouse input. Raw mouse movement is not bound by the edges of the screen.
+Calls to [MoveMouse](Window_MoveMouse.md) have no effect on raw mouse input.
+
+Raw mouse movement is not bound by the edges of the screen.
