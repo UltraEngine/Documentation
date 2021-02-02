@@ -239,10 +239,6 @@
 					"filename": "FileTime"
 				},
 				{
-					"title": "FileHidden",
-					"filename": "FileHidden"
-				},
-				{
 					"title": "LoadDir",
 					"filename": "LoadDir"
 				},
