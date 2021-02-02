@@ -9,3 +9,6 @@ This method loads a color scheme from a JSON file.
 |---|---|
 | path | file path to load |
 | flags | optional load flags |
+
+## Returns ##
+Returns true if the color scheme was successfully loaded, otherwise false is returned.
