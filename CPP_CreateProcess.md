@@ -8,7 +8,7 @@ This function launches an external executable and returns a handle that can be u
 | Name | Description |
 |---|---|
 | path | file path of the executable to launch |
-| commandline | command line to pass to the program |
+| commandline | optional command line to pass to the program |
 
 ## Returns ##
 If the program was launched a new process is returned, otherwise NULL is returned.
