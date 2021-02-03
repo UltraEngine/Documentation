@@ -42,7 +42,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	string file = RequestFile("Open File");
+	WString file = RequestFile("Open File");
 	Print(file);
 	return 0;
 }
