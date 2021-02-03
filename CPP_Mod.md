@@ -5,7 +5,7 @@ This function performs a modulus operation and returns the result.
 ## Syntax ##
 
 - float **Mod**(const float value, const float divisor)
-- float **Mod**(const double value, const double divisor)
+- double **Mod**(const double value, const double divisor)
 
 | Parameter | Description |
 | --- | --- |
