@@ -1,6 +1,6 @@
 # Random #
 
-This function returns a random value within the specified range. If no range is specified, the result will be between 0 and 1.
+This function returns a psuedorandom value within the specified range. If no range is specified, the result will be between 0 and 1.
 
 ## Syntax ##
 
@@ -13,4 +13,4 @@ This function returns a random value within the specified range. If no range is 
 
 ## Returns ##
 
-Returns a random number.
+Returns a psuedorandom number.
