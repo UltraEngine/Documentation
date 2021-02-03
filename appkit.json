@@ -1060,8 +1060,8 @@
 							"filename": "String_Left"
 						},
 						{
-							"title": "Len",
-							"filename": "String_Len"
+							"title": "Length",
+							"filename": "String_Length"
 						},
 						{
 							"title": "Lower",
@@ -1115,8 +1115,8 @@
 							"filename": "WString_Left"
 						},
 						{
-							"title": "Len",
-							"filename": "WString_Len"
+							"title": "Length",
+							"filename": "WString_Length"
 						},
 						{
 							"title": "Lower",
