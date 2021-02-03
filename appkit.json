@@ -596,6 +596,10 @@
 							"filename": "Widget_GetText"
 						},
 						{
+							"title": "Lock",
+							"filename": "Widget_Lock"
+						},						
+						{
 							"title": "SetFontScale",
 							"filename": "Widget_SetFontScale"
 						},
@@ -630,7 +634,11 @@
 						{
 							"title": "SetPixmap",
 							"filename": "Widget_SetPixmap"
-						}				
+						},
+						{
+							"title": "Unlock",
+							"filename": "Widget_Unlock"
+						}
 					]						
 				},
 				{
