@@ -8,7 +8,6 @@ The button widget can be used to create push buttons, checkboxes, radio buttons,
 
 | Parameter | Description |
 | --- | --- |
-| text | widget text |
 | x | widget X position |
 | y | widget Y position |
 | width | widget width |
