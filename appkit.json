@@ -580,6 +580,14 @@
 							"filename": "Widget_GetParent"
 						},
 						{
+							"title": "GetPosition",
+							"filename": "Widget_GetPositione"
+						},						
+						{
+							"title": "GetSize",
+							"filename": "Widget_GetSize"
+						},						
+						{
 							"title": "GetState",
 							"filename": "Widget_GetState"
 						},
