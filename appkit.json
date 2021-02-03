@@ -1068,10 +1068,6 @@
 							"filename": "String_Lower"
 						},
 						{
-							"title": "Match",
-							"filename": "String_Match"
-						},
-						{
 							"title": "Mid",
 							"filename": "String_Mid"
 						},
@@ -1121,10 +1117,6 @@
 						{
 							"title": "Lower",
 							"filename": "WString_Lower"
-						},
-						{
-							"title": "Match",
-							"filename": "WString_Match"
 						},
 						{
 							"title": "Mid",
