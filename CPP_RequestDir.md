@@ -2,8 +2,7 @@
 This function displays a file dialog and lets the user select a folder.
 
 ## Syntax ##
-- string RequestDir(const string& title = "Open Folder", const string& dir = "");
-- wstring RequestDir(const wstring& title = L"Open Folder", const wstring& dir = L"");
+- [WString](WString.md) **RequestDir**(const [WString](WString.md)& title = "Open Folder", const [WString](WString.md)& dir = "");
 
 ## Example ##
 ```c++
