@@ -13,6 +13,8 @@ This class handle user interface elements.
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [FilterItems](CPP_Widget_FilterItems.md) | Method | filters the items with a search term |
 | [GetParent](CPP_Widget_GetParent.md) | Method | returns the widget parent |
+| [GetPosition](CPP_Widget_GetPosition.md) | Method | gets the button position |
+| [GetSize](CPP_Widget_GetSize.md) | Method | gets the button size |
 | [GetState](CPP_Widget_GetState.md) | Method | gets the button state |
 | [GetText](CPP_Widget_GetText.md) | Method | gets the widget text |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
