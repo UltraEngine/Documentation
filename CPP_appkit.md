@@ -16,3 +16,7 @@ If you are running the program for the first time the new project dialog will be
 The *Source* folder contains source code files used in your project. The *Plugins* folder contains optional plugins your application can load and use. The *Themes* folder contains color themes your application can load to change its appearance.
 
 Open the Visual Studio solution (.sln) file to begin programming with Ultra App Kit.
+
+## Programming with Ultra App Kit @@
+
+The documentation here contains hundreds of examples for every available command in the SDK. If you are just getting started we suggest the beginner tutorials [here](.).
