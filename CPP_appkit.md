@@ -5,8 +5,7 @@ Welcome to the official Ultra App Kit documentation. You are about to start lear
 
 ## Getting Started ##
 
-To get started you will need Microsoft Visual Studio. You can download it for free here:
-https://visualstudio.microsoft.com/downloads/
+To get started you will need Microsoft Visual Studio. You can download it for free [here](https://visualstudio.microsoft.com/downloads/).
 
 ## Creating a Project ##
 
