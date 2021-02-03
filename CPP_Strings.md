@@ -8,7 +8,7 @@ String s = "Hello!";
 WString ws = s;
 ```
 
-Because wide to narrow string can involve a loss of data, the [WString::ToString](WString_ToString.md) method must be explicitly called:
+Because wide to narrow string conversion can involve a loss of data, the [WString::ToString](WString_ToString.md) method must be explicitly called:
 ```c++
 WString ws = "Hello!";
 String s = ws.ToString();
