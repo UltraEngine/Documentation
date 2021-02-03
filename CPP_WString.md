@@ -7,6 +7,7 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 
 | Name | Type | Description |
 |---|---|---|
+| WString | Constructor | WString(const char* c) |
 | WString | Constructor | WString(const wchar_t* c) |
 | WString | Constructor | WString(const int i) |
 | WString | Constructor | WString(const float f) |
