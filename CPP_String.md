@@ -7,6 +7,10 @@ The String class provides an interface for manipulating ASCII text strings.
 
 | Name | Type | Description |
 |---|---|---|
+| String | Constructor | String(const char* c) |
+| String | Constructor | String(const int i) |
+| String | Constructor | String(const float f) |
+| String | Constructor | String(const double f) |
 | [Find](String_Find.md) | Method | performs a search operation |
 | [Left](String_Left.md) | Method | returns leftmost characters |
 | [Len](String_Len.md) | Method | returns the length of the string |
