@@ -1,6 +1,7 @@
-# WString::Upper #
+# String::Upper, WString::Upper #
 This method returns the uppercase version of the string.
 
+- [String](String.md) **Upper**()
 - [WString](WString.md) **Upper**()
 
 ## Returns ##
