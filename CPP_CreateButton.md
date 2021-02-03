@@ -4,8 +4,7 @@ The button widget can be used to create push buttons, checkboxes, radio buttons,
 ## Syntax ##
 - shared_ptr<Widget\> CreateButton(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = BUTTON_DEFAULT)
 
-### Parameters ###
-| Name | Description |
+| Parameter | Description |
 | --- | --- |
 | text | widget text |
 | x | widget x position |
