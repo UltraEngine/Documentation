@@ -7,6 +7,10 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 
 | Name | Type | Description |
 |---|---|---|
+| WString | Constructor | WString(const wchar_t* c) |
+| WString | Constructor | WString(const int i) |
+| WString | Constructor | WString(const float f) |
+| WString | Constructor | WString(const double f) |
 | [Find](WString_Find.md) | Method | performs a search operation |
 | [Left](WString_Left.md) | Method | returns leftmost characters |
 | [Len](WString_Len.md) | Method | returns the length of the string |
