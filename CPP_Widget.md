@@ -19,6 +19,8 @@ This class handle user interface elements.
 | [GetText](CPP_Widget_GetText.md) | Method | gets the widget text |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](CPP_Widget_SetColor.md) | Method | sets the widget color |
+| [SetFontScale](CPP_Widget_SetFontScale.md) | Method | sets the widget font scale |
+| [SetFontWeight](CPP_Widget_SetFontWeight.md) | Method | sets the widget font weight |
 | [SetIcon](CPP_Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](CPP_Widget_SetInteractive.md) | Method | applies an icon to the widget |
 | [SetPixmap](CPP_Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
