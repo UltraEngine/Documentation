@@ -904,19 +904,19 @@
 							"title": "Save",
 							"filename": "Buffer_Save"
 						}										
-					],
-					{
-						"title": "StreamBuffer",
-						"filename": "StreamBuffer",
-						"topics": 
-						[
-							{
-								"title": "CreateStreamBuffer",
-								"filename": "CreateStreamBuffer"
-							}
-						]
-					}				
-				}			
+					]				
+				},
+				{
+					"title": "StreamBuffer",
+					"filename": "StreamBuffer",
+					"topics": 
+					[
+						{
+							"title": "CreateStreamBuffer",
+							"filename": "CreateStreamBuffer"
+						}
+					]
+				}				
 			]							
 		},
 		{
