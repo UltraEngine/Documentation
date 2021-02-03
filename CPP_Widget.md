@@ -9,6 +9,7 @@ This class handle user interface elements.
 | text | const [WString](WString.md)& | read-only widget text |
 | items | const vector<[WidgetItem](WidgetItem.md)> | read-only array of widget items |
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
+| [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Clearitems.md) | Method | removes all widget items |
 | [FilterItems](CPP_Widget_FilterItems.md) | Method | filters the items with a search term |
 | [GetParent](CPP_Widget_GetParent.md) | Method | returns the widget parent |
