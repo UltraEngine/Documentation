@@ -2,7 +2,7 @@
 The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
 
 ## Syntax ##
-- shared_ptr<[Widget](Widget.md)\> CreateButton(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = BUTTON_DEFAULT)
+- shared_ptr<[Widget](Widget.md)\> **CreateButton**(const [WString](WString.md)& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = BUTTON_DEFAULT)
 
 | Parameter | Description |
 | --- | --- |
