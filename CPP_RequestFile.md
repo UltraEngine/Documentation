@@ -2,8 +2,7 @@
 This function opens a file browser dialog and lets the user select a file to open or save.
 
 ## Syntax ##
-- string **RequestFile**(const string& title = "Open File", const string& file = "", const string& filetypes = "All Files:*", const int typeindex = 0, const bool save = false);
-- wstring **RequestFile**(const wstring& title = L"Open File", const wstring& file = L"", const wstring& filetypes = L"All Files:*", const int defaulttype = 0, const bool save = false);
+- [WString](WString.md) **RequestFile**(const [WString](WString.md)& title = "Open File", const [WString](WString.md)& file = "", const [WString](WString.md)& filetypes = "All Files:\*", const int defaulttype = 0, const bool save = false);
 
 | Parameter | Description |
 | ----- | ----- |
