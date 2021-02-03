@@ -19,4 +19,6 @@ Open the Visual Studio solution (.sln) file to begin programming with Ultra App 
 
 ## Programming with Ultra App Kit ##
 
-The documentation here contains [hundreds of examples](CreateButton.md) for every available command in the SDK. If you are just getting started we suggest the beginner tutorials [here](.).
+The documentation here contains [hundreds of examples](CreateButton.md) for every available command in the SDK. Just copy any example's code and paste it into the *main.cpp* source code file to run the example.
+
+If you are just getting started we suggest the beginner tutorials [here](.).
