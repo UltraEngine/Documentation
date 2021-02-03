@@ -2,7 +2,7 @@
 This method saves the object to a file.
 
 ## Syntax ##
-- bool **Save**(const WString& path, const SaveFlags flags = SAVE_DEFAULT)
+- bool **Save**(const [WString](WString.md)& path, const SaveFlags flags = SAVE_DEFAULT)
 
 ### Parameters ###
 |Name|Description|
