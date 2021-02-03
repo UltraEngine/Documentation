@@ -5,6 +5,6 @@ This method sets the font scale to make text relatively larger or smaller. The f
 
 - void **SetFontScale**(const float scale)
 
-| Paramter | Description |
+| Parameter | Description |
 | --- | --- |
 | scale | font scale to set (default is 1.0) |
