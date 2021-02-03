@@ -20,6 +20,7 @@ This class handle user interface elements.
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](CPP_Widget_SetColor.md) | Method | sets the widget color |
 | [SetIcon](CPP_Widget_SetIcon.md) | Method | applies an icon to the widget |
+| [SetInteractive](CPP_Widget_SetInteractive.md) | Method | applies an icon to the widget |
 | [SetPixmap](CPP_Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
 | [SetShape](CPP_Widget_SetShape.md) | Method | sets the widget position sna size |
 | [SetState](CPP_Widget_SetState.md) | Method | sets the button state |
