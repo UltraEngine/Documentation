@@ -1,6 +1,14 @@
 # Strings #
 Strings in Ultra Engine are handled with two classes. The [String](String.md) class defines a narrow string and is derived from both the std::string and [Object](Object.md) classes. The [WString](WString.md) class defines a wide string and is derived from both the std::wstring and [Object](Object.md) classes. It is preferable to use the [WString](WString.md) class, as this will handle all characters of all languages.
 
+## Constructors ##
+Common data types can be converted to a string with a constructor:
+```c++
+String s1 = WString(2);// integer to string conversion
+String s2 = WString(2.43434f);// float to string conversion
+WString s3 = WString(2343432.343243);// double to wide string conversion
+```
+
 ## String Conversion ##
 Narrow to wide string conversion is automatic:
 ```c++
