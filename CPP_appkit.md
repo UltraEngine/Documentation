@@ -8,3 +8,8 @@ Welcome to the official Ultra App Kit documentation. You are about to start lear
 To get started you will need Microsoft Visual Studio. You can download it for free here:
 https://visualstudio.microsoft.com/downloads/
 
+## Creating a Project ##
+
+When you first run Ultra App Kit the project manager will appear. This allows you to create new projects, view existing projects, and also contains links to documentation, community features, and other resources.
+
+To create a new project click the "New" link under the Projects tab. Enter the name and location of the project and press Next.
