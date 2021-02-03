@@ -13,7 +13,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	string file = RequestDir("Open Folder");
+	WString file = RequestDir("Open Folder");
 	Print(file);
 	return 0;
 }
