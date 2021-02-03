@@ -24,15 +24,21 @@ Text Files (*.txt):txt
 
 You can specify multiple extensions for a file type by separating them with a comma:
 
-```JPEG Image (*.jpg, *.jpeg):jpg,jpeg```
+```
+JPEG Image (*.jpg, *.jpeg):jpg,jpeg
+```
 
 You can use a wildcard to specify a range of extensions:
 
-```All Files:*```
+```
+All Files:*
+```
 
 Use a semicolon to specify multiple file extensions for one file type:
 
-```Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg```
+```
+Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg
+```
 
 ## Example ##
 
