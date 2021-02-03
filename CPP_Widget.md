@@ -11,22 +11,22 @@ This class handle user interface elements.
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
-| [FilterItems](CPP_Widget_FilterItems.md) | Method | filters the items with a search term |
-| [GetParent](CPP_Widget_GetParent.md) | Method | returns the widget parent |
-| [GetPosition](CPP_Widget_GetPosition.md) | Method | gets the button position |
-| [GetSize](CPP_Widget_GetSize.md) | Method | gets the button size |
-| [GetState](CPP_Widget_GetState.md) | Method | gets the button state |
-| [GetText](CPP_Widget_GetText.md) | Method | gets the widget text |
+| [FilterItems](Widget_FilterItems.md) | Method | filters the items with a search term |
+| [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
+| [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
+| [GetSize](Widget_GetSize.md) | Method | gets the button size |
+| [GetState](Widget_GetState.md) | Method | gets the button state |
+| [GetText](Widget_GetText.md) | Method | gets the widget text |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
-| [SetColor](CPP_Widget_SetColor.md) | Method | sets the widget color |
-| [SetFontScale](CPP_Widget_SetFontScale.md) | Method | sets the widget font scale |
-| [SetFontWeight](CPP_Widget_SetFontWeight.md) | Method | sets the widget font weight |
-| [SetIcon](CPP_Widget_SetIcon.md) | Method | applies an icon to the widget |
-| [SetInteractive](CPP_Widget_SetInteractive.md) | Method | applies an icon to the widget |
-| [SetPixmap](CPP_Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
-| [SetShape](CPP_Widget_SetShape.md) | Method | sets the widget position sna size |
-| [SetState](CPP_Widget_SetState.md) | Method | sets the button state |
-| [SetText](CPP_Widget_SetText.md) | Method | sets the widget color |
+| [SetColor](Widget_SetColor.md) | Method | sets the widget color |
+| [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
+| [SetFontWeight](Widget_SetFontWeight.md) | Method | sets the widget font weight |
+| [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
+| [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
+| [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
+| [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
+| [SetState](Widget_SetState.md) | Method | sets the button state |
+| [SetText](Widget_SetText.md) | Method | sets the widget color |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
 | [CreateLabel](CreateLabel.md) | Function | creates a label widget |
