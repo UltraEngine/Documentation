@@ -1143,6 +1143,10 @@
 							"filename": "WString_Split"
 						},
 						{
+							"title": "ToString",
+							"filename": "WString_ToString"
+						},						
+						{
 							"title": "Trim",
 							"filename": "WString_Trim"
 						},
