@@ -6,7 +6,7 @@ This method extracts a partial string and returns it.
 
 | Parameter | Description |
 | --- | --- |
-| pos | position in the string to start |
+| pos | 0-based position in the string to start |
 | length | maximum number of characters to return |
 
 ## Returns ##
