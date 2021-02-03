@@ -516,6 +516,10 @@
 							"filename": "AddItem"
 						},
 						{
+							"title": "AddNode",
+							"filename": "AddNode"
+						},						
+						{
 							"title": "ClearItems",
 							"filename": "ClearItems"
 						},						
