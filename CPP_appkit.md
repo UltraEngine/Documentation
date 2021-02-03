@@ -17,6 +17,6 @@ The *Source* folder contains source code files used in your project. The *Plugin
 
 Open the Visual Studio solution (.sln) file to begin programming with Ultra App Kit.
 
-## Programming with Ultra App Kit @@
+## Programming with Ultra App Kit ##
 
 The documentation here contains hundreds of examples for every available command in the SDK. If you are just getting started we suggest the beginner tutorials [here](.).
