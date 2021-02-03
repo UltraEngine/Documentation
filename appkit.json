@@ -517,7 +517,7 @@
 						},
 						{
 							"title": "AddNode",
-							"filename": "AddNode"
+							"filename": "Widget_AddNode"
 						},						
 						{
 							"title": "ClearItems",
