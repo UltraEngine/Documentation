@@ -1,6 +1,6 @@
 # Widget::GetSelectedItem #
 
-This method gets the selected widget item.
+For use with listbox and combobox widgets, this method gets the selected widget item.
 
 ## Syntax ##
 
