@@ -4,7 +4,7 @@ This method selects a widget item.
 
 ## Syntax ##
 
--void **SelectItem**(const int index)
+- void **SelectItem**(const int index)
 
 | Parameter | Description |
 |-|-|
