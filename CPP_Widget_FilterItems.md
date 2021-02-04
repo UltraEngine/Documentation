@@ -4,3 +4,7 @@ This method filters a widget's items with a search term. All items that do not c
 
 ## Syntax ##
 - void **FilterItems**(const [WString](WString.md)& filter)
+
+| Parameter | Description |
+| --- | --- |
+| filter | search text to match, or an empty string to remove the filter |
