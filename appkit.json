@@ -606,6 +606,10 @@
 						{
 							"title": "Lock",
 							"filename": "Widget_Lock"
+						},
+						{
+							"title": "RemoveItem",
+							"filename": "Widget_RemoveItem"
 						},						
 						{
 							"title": "SetFontScale",
