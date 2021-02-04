@@ -1,6 +1,6 @@
 # CreateComboBox #
 
-The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
+The combobox widget displays a drop-down box the user can select an item from. The EDTIABLE style allows the user to input their own values in the textfield.
 
 ## Syntax ##
 - shared_ptr<[Widget](Widget.md)\> **CreateComboBox**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ComboBoxStyle = COMBOBOX_DEFAULT)
