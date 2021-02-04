@@ -6,6 +6,8 @@ When a new node is selected the WIDGETSELECT event will be emitted, with the tre
 
 If the DRAGANDDROP style is used, the widget will emit a WIDGETDROP event when a node is dragged onto another node, with the source node as the event source and the destination node stored in the event extra member. If the DRAGINSERT style is also used, the event data member will be set to 0 when the node is dropped onto another node, -1 when it is dropped above it, and 1 when it is dropped below it.
 
+If the MULTISELECT style is used, the user can select multiple nodes in the tree at once by holding using the control or shift keys when clicking.
+
 The SORT style can be used to automatically sort treeview nodes alphabetically.
 
 ## Syntax ##
