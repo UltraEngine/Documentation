@@ -1,6 +1,6 @@
 # CreateComboBox #
 
-The combobox widget displays a drop-down box the user can select an item from. The EDTIABLE style allows the user to input their own values in the textfield.
+The combobox widget displays a drop-down box the user can select an item from. The EDTIABLE style allows the user to input their own values in the textfield. This widget emits a WIDGETSELECT event when a new item is selected.
 
 ## Syntax ##
 - shared_ptr<[Widget](Widget.md)\> **CreateComboBox**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ComboBoxStyle = COMBOBOX_DEFAULT)
