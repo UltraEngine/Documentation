@@ -1,6 +1,6 @@
 # Widget::SelectItem #
 
-This method selects a widget item.
+For use with listbox and combobox widgets, this method selects a widget item.
 
 ## Syntax ##
 
