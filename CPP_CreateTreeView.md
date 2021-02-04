@@ -1,5 +1,20 @@
 # CreateTreeView #
 
+The treeview widget displays a hierarchy of nodes that can be selected, opened and closed, double-clicked, and moved.
+
+## Syntax ##
+
+- shared_ptr<[Widget](Widget.md)\> **CreateTreeView**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const TreeViewStyle style = TREEVIEW_DEFAULT)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | treeview style, can be any combination of TREEVIEW_MULTISELECT, TREEVIEW_DRAGANDDROP, TREEVIEW_SORT, and TREEVIEW_DRAGINSERT |
+
 ## Example ##
 ```c++
 #include "pch.h"
