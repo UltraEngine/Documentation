@@ -590,7 +590,11 @@
 						{
 							"title": "GetPosition",
 							"filename": "Widget_GetPosition"
-						},						
+						},	
+						{
+							"title": "GetSelectedItem",
+							"filename": "Widget_GetSelectedItem"
+						},
 						{
 							"title": "GetSize",
 							"filename": "Widget_GetSize"
@@ -610,7 +614,11 @@
 						{
 							"title": "RemoveItem",
 							"filename": "Widget_RemoveItem"
-						},						
+						},
+						{
+							"title": "SelectItem",
+							"filename": "Widget_SelectItem"
+						},
 						{
 							"title": "SetFontScale",
 							"filename": "Widget_SetFontScale"
