@@ -1,6 +1,6 @@
 # CreateTextField #
 
-The tabber widget is a tabbed panel that allows the user to select different "pages" in a user interface.
+The textfield widget is an editable input box.
 
 ## Syntax ##
 
