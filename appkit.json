@@ -80,12 +80,12 @@
 							"filename": "Stream_Flush"
 						},
 						{
-							"title": "Position",
-							"filename": "Stream_Position"
-						},
-						{
 							"title": "GetSize",
 							"filename": "Stream_GetSize"
+						},
+						{
+							"title": "Position",
+							"filename": "Stream_Position"
 						},
 						{
 							"title": "Read",
