@@ -2,6 +2,18 @@
 
 ## Syntax ##
 
+- shared_ptr<[Widget](Widget.md)\> **CreateLabel**(const [WString](WString.md)& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = LABEL_DEFAULT)
+
+|Parameter|Description|
+|---|---|
+| text | widget text |
+| x | widget x position |
+| y | widget y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | optional button style, can be any combination of LABEL_LEFT. LABEL_RIGHT, LABEL_CENTER, LABEL_TOP, LABEL_MIDDLE, LABEL_BOTTOM, and LABEL_BORDER |
+
 ## Example ##
 ```c++
 #include "pch.h"
@@ -10,55 +22,22 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Load plugins
-    auto plugin_svg = LoadPlugin("Plugins/SVG.*");
-
     //Get the displays
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
-
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
-
-    //Create a world
-    auto world = CreateWorld();
-
-    //Create a camera
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->Move(0, 0, -2);
-    camera->SetFOV(70);
-
-    //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
-    light->SetRotation(45, 35, 0);
-
-    //Create model
-    auto box = CreateBox(world);
-    box->SetColor(0.5);
-
-    //Create a canvas
-    auto canvas = CreateCanvas(world);
-    camera->AddCanvas(canvas);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
     //Create User Interface
-    auto ui = CreateInterface(canvas, framebuffer);
-    
-    //Create widget
-    auto sz = framebuffer->GetSize();
-    auto panel = CreatePanel(50, 50, 400, 300, ui);
+    auto ui = CreateInterface(window);
 
     //Create widget
-    auto label1 = CreateLabel("Label", 20, 20, 120, 30, panel);
-    auto label2 = CreateLabel("Border Label", 20, 50, 120, 30, panel, LABEL_BORDER | LABEL_CENTER | LABEL_MIDDLE);
+    auto label1 = CreateLabel("Label", 20, 20, 120, 30, ui->root);
+    auto label2 = CreateLabel("Border Label", 20, 50, 120, 30, ui->root, LABEL_BORDER | LABEL_CENTER | LABEL_MIDDLE);
 
     while (window->Closed() == false)
     {
-        box->Turn(0, 1, 0);
-        world->Update();
-        world->Render(framebuffer);
+        WaitEvent();
     }
     return 0;
 }
