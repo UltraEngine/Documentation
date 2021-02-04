@@ -1,5 +1,20 @@
 # CreateTextField #
 
+The tabber widget is a tabbed panel that allows the user to select different "pages" in a user interface.
+
+## Syntax ##
+
+- shared_ptr<[Widget](Widget.md)\> **CreateTextField**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const TextField style = TEXTFIELD_DEFAULT)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | textfield style, can be TEXTFIELD_DEFAULT, TEXTFIELD_READONLY, TEXTFIELD_DYNAMIC, TEXTFIELD_NUMBER, or TEXTFIELD_INTEGER |
+
 ## Example ##
 ```c++
 #include "pch.h"
