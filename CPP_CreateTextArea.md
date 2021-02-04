@@ -1,5 +1,20 @@
 # CreateTextArea #
 
+The text area widget is a read-only multiline text display.
+
+## Syntax ##
+
+- shared_ptr<[Widget](Widget.md)\> **CreateTextArea**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const TextField style = TEXTAREA_DEFAULT)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | textfield style, can be TEXTAREA_DEFAULT or TEXTAREA_WORDWRAP |
+
 ## Example ##
 ```c++
 #include "pch.h"
