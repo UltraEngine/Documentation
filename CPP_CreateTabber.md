@@ -1,5 +1,19 @@
 # CreateTabber #
 
+The tabber widget is a tabbed panel that allows the user to select different "pages" in a user interface.
+
+## Syntax ##
+
+- shared_ptr<[Widget](Widget.md)\> **CreateTabber**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+
 ## Example ##
 ```c++
 #include "pch.h"
