@@ -14,4 +14,4 @@ This class contains information for events emitted by the GUI and other systems.
 | [EmitEvent](EmitEvent.md) | Function | adds an event to the event queue |
 | [PeekEvent](PeekEvent.md) | Function | checkd for the ID of the next event on the queue |
 | [ListenEvent](ListenEvent.md) | Function | sets a callback function to execute when an event occurs |
-| [WaitEvent](WaitEvent.md) | Function | waitd until an event occurs and return it |
+| [WaitEvent](WaitEvent.md) | Function | wait until an event occurs and return it |
