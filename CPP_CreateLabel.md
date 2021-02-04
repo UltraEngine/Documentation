@@ -1,5 +1,7 @@
 # CreateLabel #
 
+The label widget displays a read-only block of text.
+
 ## Syntax ##
 
 - shared_ptr<[Widget](Widget.md)\> **CreateLabel**(const [WString](WString.md)& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = LABEL_DEFAULT)
