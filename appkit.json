@@ -526,6 +526,10 @@
 						{
 							"title": "ClearItems",
 							"filename": "Widget_ClearItems"
+						},
+						{
+							"title": "ClientSize",
+							"filename": "Widget_ClientSize"
 						},						
 						{
 							"title": "CreateButton",
