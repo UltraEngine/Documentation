@@ -3,7 +3,7 @@
 This function creates a menu widget.
 
 ## Syntax ##
-- shared_ptr<[Widget](Widget.md)> **CreateMenu**(const WString& text, shared_ptr<[Widget](Widget.md)> parent);
+- shared_ptr<[Widget](Widget.md)> **CreateMenu**(const [WString](WString.md)& text, shared_ptr<[Widget](Widget.md)> parent);
 
 | Parent | Description |
 | --- | --- |
