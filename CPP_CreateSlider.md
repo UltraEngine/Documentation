@@ -1,6 +1,23 @@
 # CreateSlider #
 
+The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected. The default slider style is a horizontal scrollbar.
+
 ## Syntax ##
+
+- shared_ptr<[Widget](Widget.md)\> **CreateSlider**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const SliderStyle style = SLIDER_DEFAULT)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | slider style, can be any combination of SLIDER_SCROLLBAR, SLIDER_STEPPER, SLIDER_TRACKBAR, SLIDER_HORIZONTAL, and SLIDER_VERTICAL |
+
+## Returns ##
+
+Returns a new slider widget.
 
 ## Example ##
 ```c++
