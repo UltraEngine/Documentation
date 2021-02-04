@@ -668,15 +668,15 @@
 					[
 						{
 							"title": "SetIcon",
-							"filename": "Widgetitem_SetIcon"
+							"filename": "WidgetItem_SetIcon"
 						},
 						{
 							"title": "SetPixmap",
-							"filename": "Widgetitem_SetPixmap"
+							"filename": "WidgetItem_SetPixmap"
 						},
 						{
 							"title": "SetText",
-							"filename": "Widgetitem_SetText"
+							"filename": "WidgetItem_SetText"
 						}
 					]
 				}
