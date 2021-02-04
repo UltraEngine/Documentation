@@ -13,4 +13,5 @@ This class contains information for events emitted by the GUI and other systems.
 | Event | Constructor | Event(const EventID id, shared_ptr<[Object](Object.md)\> source, const int data=0, [iVec2](iVec2.md) position = 0, [iVec2](iVec2.md) size = 0, shared_ptr<[Object](Object.md)\> extra = NULL) |
 | [EmitEvent](EmitEvent.md) | Function | adds an event to the event queue |
 | [PeekEvent](PeekEvent.md) | Function | checkd for the ID of the next event on the queue |
+| [ListenEvent](ListenEvent.md) | Function | sets a callback function to execute when an event occurs |
 | [WaitEvent](WaitEvent.md) | Function | waitd until an event occurs and return it |
