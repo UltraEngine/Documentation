@@ -12,6 +12,7 @@ This class handle user interface elements.
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
+| [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
 | [FilterItems](Widget_FilterItems.md) | Method | filters the items with a search term |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
