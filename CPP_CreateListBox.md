@@ -1,6 +1,18 @@
 # CreateListBox #
 
+The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
+
 ## Syntax ##
+- shared_ptr<[Widget](Widget.md)\> **CreateListBox**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ListBoxStyle = LISTBOX_DEFAULT)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | optional combobox style, can be LISTBOX_DEFAULT or LISTBOX_MULTISELECT |
 
 ## Example ##
 ```c++
