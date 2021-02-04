@@ -8,4 +8,4 @@ This method selects a widget item.
 
 | Parameter | Description |
 |-|-|
-| index | widget item index, in the range from zero to the number of items minus one |
+| index | widget item index, in the range from zero to the number of items minus one, or -1 to deselect all items |
