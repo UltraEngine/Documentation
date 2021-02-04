@@ -544,8 +544,8 @@
 							"filename": "CreateListBox"
 						},						
 						{
-							"title": "ProgressBar",
-							"filename": "ProgressBar"
+							"title": "CreateProgressBar",
+							"filename": "CreateProgressBar"
 						},
 						{
 							"title": "CreateSlider",
