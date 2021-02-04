@@ -8,7 +8,7 @@ This function adds an event to the event queue and triggers any callbacks added 
 ### Parameters ###
 | Name | Description |
 | --- | --- |
-| [Event](Event.md) | event to emit |
+| event | event to emit |
 | id | event ID |
 | source | event source |
 | data | event data |
