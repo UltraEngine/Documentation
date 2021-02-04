@@ -390,10 +390,6 @@
 							"filename": "Window_Minimized"
 						},						
 						{
-							"title": "MouseMovement",
-							"filename": "Window_MouseMovement"
-						},
-						{
 							"title": "Minimized",
 							"filename": "Window_Minimized"
 						},
