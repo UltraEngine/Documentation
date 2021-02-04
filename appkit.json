@@ -572,6 +572,10 @@
 							"filename": "CreateTreeView"
 						},
 						{
+							"title": "FilterInput",
+							"filename": "Widget_FilterInput"
+						},
+						{
 							"title": "FilterItems",
 							"filename": "Widget_FilterItems"
 						},						
