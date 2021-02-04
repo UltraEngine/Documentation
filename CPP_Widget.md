@@ -14,6 +14,7 @@ This class handle user interface elements.
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
 | [FilterItems](Widget_FilterItems.md) | Method | filters the items with a search term |
+| [FilterInput](Widget_FilterInput.md) | Method | filters keyboard input |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
 | [GetSelectedItem](Widget_GetSelectedItem.md) | Method | gets the selected widget item |
