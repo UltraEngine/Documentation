@@ -72,12 +72,16 @@
 							"filename": "Stream_Close"
 						},
 						{
+							"title": "EOF",
+							"filename": "Stream_EOF"
+						},
+						{
 							"title": "Flush",
 							"filename": "Stream_Flush"
 						},
 						{
-							"title": "GetPos",
-							"filename": "Stream_GetPos"
+							"title": "Position",
+							"filename": "Stream_Position"
 						},
 						{
 							"title": "GetSize",
