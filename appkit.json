@@ -636,6 +636,10 @@
 							"filename": "Widget_SetPixmap"
 						},
 						{
+							"title": "SetProgress",
+							"filename": "Widget_SetProgress"
+						},
+						{
 							"title": "Unlock",
 							"filename": "Widget_Unlock"
 						}
