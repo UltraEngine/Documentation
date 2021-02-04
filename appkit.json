@@ -663,10 +663,25 @@
 				},
 				{
 					"title": "WidgetItem",
-					"filename": "WidgetItem"
+					"filename": "WidgetItem",
+					"topics":
+					[
+						{
+							"title": "SetIcon",
+							"filename": "Widgetitem_SetIcon"
+						},
+						{
+							"title": "SetPixmap",
+							"filename": "Widgetitem_SetPixmap"
+						},
+						{
+							"title": "SetText",
+							"filename": "Widgetitem_SetText"
+						}
+					]
 				}
-			]							
-		},		
+			]
+		},
 		{
 			"title": "Math",
 			"topics":
