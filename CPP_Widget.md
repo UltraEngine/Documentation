@@ -16,6 +16,7 @@ This class handle user interface elements.
 | [FilterItems](Widget_FilterItems.md) | Method | filters the items with a search term |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
+| [GetSelectedItem](Widget_GetSelectedItem.md) | Method | gets the selected widget item |
 | [GetSize](Widget_GetSize.md) | Method | gets the button size |
 | [GetState](Widget_GetState.md) | Method | gets the button state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
@@ -31,6 +32,7 @@ This class handle user interface elements.
 | [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
+| [SelectItem](Widget_SelectItem.md) | Method | selects a widget item |
 | [Unlock](Widget_Unlock.md) | Method | resumes widget drawing |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
