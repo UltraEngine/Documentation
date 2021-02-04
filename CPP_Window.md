@@ -17,6 +17,7 @@ The window class provides an interface for creating system application windows.
 | [GetHandle](Window_GetHandle.md) | Method | returns the system window object |
 | [GetPosition](Window_GetPosition.md) | Method | returns the window screen position |
 | [GetSize](Window_GetSize.md) | Method | returns the window dimensions |
+| [Hidden](Window_Hidden.md) | Method | makes the window invisible |
 | [Hide](Window_Hide.md) | Method | makes the window invisible |
 | [HideMouse](Window_HideMouse.md) | Method | hides the mouse pointer |
 | [KeyDown](Window_KeyDown.md) | Method | returns true if the key is pressed |
