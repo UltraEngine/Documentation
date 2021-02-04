@@ -1,6 +1,6 @@
 # CreateTreeView #
 
-The treeview widget displays a hierarchy of nodes that can be selected, opened and closed, double-clicked, and moved.
+The treeview widget displays a hierarchy of nodes that can be selected, opened and closed, double-clicked, and moved. When a new node is selected the WIDGETSELECT event will be emitted, with the treeview node stored in the event extra member. When a node is double-clicked, a WIDGETACTION event will be emitted, with the treeview node stored in the event extra member. 
 
 ## Syntax ##
 
