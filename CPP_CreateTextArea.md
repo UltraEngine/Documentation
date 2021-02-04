@@ -1,6 +1,6 @@
 # CreateTextArea #
 
-The text area widget is a read-only multiline text display.
+The text area widget is a read-only multiline text display. If the WORDWRAP style is used the text will be adjusted to fit in the horizontal space of the widget.
 
 ## Syntax ##
 
