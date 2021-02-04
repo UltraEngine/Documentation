@@ -2,8 +2,6 @@
 
 The listbox widget displays a vertical list of items. The widget emits a WIDGETACTION event when an item is double-clicked, or when the enter key is pressed, with the item index stored in the event data member. The widget emits a WIDGETSELECT event when a new item is selected, with the item index stored in the event data member.
 
-. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
-
 ## Syntax ##
 - shared_ptr<[Widget](Widget.md)\> **CreateListBox**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent)
 
