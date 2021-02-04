@@ -25,6 +25,7 @@ This class handle user interface elements.
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
 | [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
+| [SetProgress](Widget_SetProgress.md) | Method | sets the progress complete for a progress bar widget |
 | [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
