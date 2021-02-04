@@ -1,6 +1,6 @@
 # CreateProgressBar #
 
-The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
+The progressbar widget displays a horizontal bar that indicates the progress of some task. The progress complete can be set using the [Widget::SetProgress](SetProgress.md) method.
 
 ## Syntax ##
 - shared_ptr<[Widget](Widget.md)\> **CreateProgressBar**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent)
@@ -13,8 +13,8 @@ The button widget can be used to create push buttons, checkboxes, radio buttons,
 | height | widget height |
 | parent | parent widget |
 
-
 ## Example ##
+
 ```c++
 #include "pch.h"
 
