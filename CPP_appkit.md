@@ -5,17 +5,13 @@ Welcome to the official Ultra App Kit documentation. You are about to start lear
 
 ## Getting Started ##
 
-To get started you will need Microsoft Visual Studio. You can download it for free [here](https://visualstudio.microsoft.com/downloads/).
-
-## Creating a Project ##
-
 When you first run Ultra App Kit the project manager will appear. This allows you to create new projects, view existing projects, and also contains links to documentation, community features, and other resources.
 
 If you are running the program for the first time the new project dialog will be shown automatically. You can get back to this screen later by clicking the "New" link under the Projects tab. Enter the name and location of the project and press Next to create your first project. The project folder will be opened in the system file browser.
 
 The *Source* folder contains source code files used in your project. The *Plugins* folder contains optional plugins your application can load and use. The *Themes* folder contains color themes your application can load to change its appearance.
 
-Open the Visual Studio solution (.sln) file to begin programming with Ultra App Kit.
+Open the Visual Studio solution (.sln) file to begin programming with Ultra App Kit. You can download Microsoft Visual Studio for free [here](https://visualstudio.microsoft.com/downloads/).
 
 ## Programming with Ultra App Kit ##
 
