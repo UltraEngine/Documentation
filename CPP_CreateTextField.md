@@ -1,6 +1,6 @@
 # CreateTextField #
 
-The textfield widget is an editable input box. It will emit a WIDGETACTION event if the text changes and the widget loses the focus or the enter key is pressed. If the DYNAMIC style is used, a WIDGETACTION event will be emitted whenever the widget text changes. The INTEGER and NUMBER styles allow for numeric-only input. If the READONLY style is used the widget text will not be editable.
+The textfield widget is an editable input box. It will emit a WIDGETACTION event if the text changes and the widget loses the focus or the enter key is pressed. If the DYNAMIC style is used, a WIDGETACTION event will be emitted whenever the widget text changes. The INTEGER and NUMBER styles allow for numeric-only input. The FILEPATH style allows only valid system file paths. If the READONLY style is used the widget text will not be editable.
 
 ## Syntax ##
 
@@ -13,7 +13,7 @@ The textfield widget is an editable input box. It will emit a WIDGETACTION event
 | width | widget width |
 | height | widget height |
 | parent | parent widget |
-| style | textfield style, can be TEXTFIELD_DEFAULT, TEXTFIELD_READONLY, TEXTFIELD_DYNAMIC, TEXTFIELD_NUMBER, or TEXTFIELD_INTEGER |
+| style | textfield style, can be TEXTFIELD_DEFAULT, TEXTFIELD_READONLY, TEXTFIELD_DYNAMIC, TEXTFIELD_NUMBER, TEXTFIELD_INTEGER, or TEXTFIELD_FILEPATH |
 
 ## Example ##
 ```c++
