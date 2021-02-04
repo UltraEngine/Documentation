@@ -5,10 +5,10 @@ This class handle user interface elements.
 
 | Name | Type | Description
 |---|---|---|
+| items | const vector<[WidgetItem](WidgetItem.md)> | read-only array of widget items |
 | kids | const vector<shared_ptr<[Widget](API_Widget.md)\> \>& | read-only list of child widgets |
 | size | const iVec2& | read-only widget size |
 | text | const [WString](WString.md)& | read-only widget text |
-| items | const vector<[WidgetItem](WidgetItem.md)> | read-only array of widget items |
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
