@@ -12,4 +12,4 @@ This method should *always* be used in place of the C++ keyword "this" for all o
 
 This method should *never* be called in a class constructor or destructor.
 
-You can cast to a derived type using the [Object::As](Object_As.md) mthoed.
+You can cast to a derived type using the [Object::As](Object_As.md) method.
