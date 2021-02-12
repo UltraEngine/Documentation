@@ -25,7 +25,8 @@ int main(int argc, const char* argv[])
 {
 	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.bin";
 
-	if (!CreateFile(path))
+	CreateFile(path);
+	if (!FileType(path) != 1)
 	{
 		Print("Failed to write file.");
 		return 0;
