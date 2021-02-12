@@ -7,7 +7,7 @@ This function creates a new file on the user's hard drive. The new file will ini
 
 | Parameter | Description |
 |---|---|
-| path | file path to create a file at |
+| path | full or relative path to the new file |
 
 ## Example
 ```c++
