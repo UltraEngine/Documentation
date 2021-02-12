@@ -15,7 +15,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-  Print(CurrentDir());
-  return 0;
+    Print(CurrentDir());
+    return 0;
 }
 ```
