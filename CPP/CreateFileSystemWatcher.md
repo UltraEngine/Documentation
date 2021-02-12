@@ -61,7 +61,7 @@ int main(int argc, const char* argv[])
             //Cast event.extra to a WString   
             shared_ptr<WString> filepathptr = e.extra->As<WString>();
             
-            //Get the shared pointer's object
+            //Convert the shared pointer into an object
             WString filepath = *filepathptr.get();
 
             //Look for a loaded asset with this file path
