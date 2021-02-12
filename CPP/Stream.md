@@ -18,6 +18,7 @@ This class provides an interface for reading and writing files.
 | [ReaddFloat](Stream_ReadFloat.md) | Method | reads a float value from the stream |
 | [ReadInt](Stream_ReadInt.md) | Method | reads an integer from the stream |
 | [ReadLine](Stream_ReadLine.md) | Method | reads a line of text |
+| [ReadShort](Stream_ReadShort.md) | Method | reads an unsigned short from the stream |
 | [ReadString](Stream_ReadString.md) | Method | reads a string from the stream |
 | [ReadWLine](Stream_ReadWLine.md) | Method | reads a line of text |
 | [ReadWString](Stream_ReadWString.md) | Method | reads a wide string from the stream |
@@ -28,6 +29,7 @@ This class provides an interface for reading and writing files.
 | [WriteFloat](Stream_WriteFloat.md) | Method | writes a float value to the stream |
 | [WriteInt](Stream_WriteInt.md) | Method | writes an integer to the stream |
 | [WriteLine](Stream_WriteLine.md) | Method | writes a line of text |
+| [WriteShort](Stream_WriteShort.md) | Method | writes an unsigned short to the stream |
 | [WriteString](Stream_WriteString.md) | Method | writes a string to the stream |
 | [WriteWLine](Stream_WriteWLine.md) | Method | writes a line of text |
 | [WriteWString](Stream_WriteWString.md) | Method | writes a wide string to the stream |
