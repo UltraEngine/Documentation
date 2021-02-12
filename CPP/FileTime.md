@@ -19,18 +19,18 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-  WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
+    WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
 
-  //Create a new file
-  if (!CreateFile(path))
-  {
-    Print("Failed to write file.");
+    //Create a new file
+    if (!CreateFile(path))
+    {
+      Print("Failed to write file.");
+      return 0;
+    }
+
+    uint64_t time = FileTime(path);
+    Print("File time: " + String(time));
+
     return 0;
-  }
-
-  uint64_t time = FileTime(path);
-  Print("File time: " + String(time));
-
-  return 0;
 }
 ```
