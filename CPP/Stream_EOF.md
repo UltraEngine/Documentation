@@ -24,8 +24,8 @@ int main(int argc, const char* argv[])
     auto stream = OpenFile(path);
     if (stream == NULL)
     {
-    Print("Failed to write file.");
-    return 0;
+        Print("Failed to write file.");
+        return 0;
     }
 
     //Write some data
