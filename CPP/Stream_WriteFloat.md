@@ -4,6 +4,10 @@ This method writes a float value to the stream at the current position.
 ## Syntax ##
 - void **WriteFloat**(const float f)
 
+| Parameter | Description |
+| --- | --- |
+| f | value to write |
+
 ## Example
 
 ```c++
