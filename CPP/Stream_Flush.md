@@ -15,7 +15,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
+    WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.bin";
 
     //Write a new file
     auto stream = WriteFile(path);
