@@ -24,8 +24,8 @@ int main(int argc, const char* argv[])
     //Create a new file
     if (!CreateFile(path))
     {
-      Print("Failed to write file.");
-      return 0;
+        Print("Failed to write file.");
+        return 0;
     }
 
     uint64_t time = FileTime(path);
