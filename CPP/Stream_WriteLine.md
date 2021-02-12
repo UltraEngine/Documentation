@@ -4,6 +4,10 @@ This method writes a line of text to the stream at the current position.
 ## Syntax ##
 - void **WriteLine**(const [String](String.md)& s)
 
+| Parameter | Description |
+| --- | --- |
+| s | value to write |
+
 ## Example
 
 ```c++
