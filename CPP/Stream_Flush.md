@@ -29,11 +29,11 @@ int main(int argc, const char* argv[])
 
     stream->Write(&data[0], data.size() * sizeof(data[0]));
 
-    Print(String(FileSize(path)));
+    Print("Size before Stream::Flush(): " + String(FileSize(path)));
 
     stream->Flush();
 
-    Print(String(FileSize(path)));
+    Print("Size after Stream::Flush(): " + String(FileSize(path)));
 
     return 0;
 }
