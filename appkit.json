@@ -218,8 +218,12 @@
 					"filename": "OpenFile"
 				},
 				{
-					"title": "ReadFile",
+					"title": "\",
 					"filename": "ReadFile"
+				},
+				{
+					"title": "RenameFile",
+					"filename": "RenameFile"
 				},				
 				{
 					"title": "RunFile",
