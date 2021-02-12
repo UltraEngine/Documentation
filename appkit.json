@@ -166,6 +166,10 @@
 					"filename": "AppDir"
 				},
 				{
+					"title": "CasedPath",
+					"filename": "CasedPath"
+				},
+				{
 					"title": "ChangeDir",
 					"filename": "ChangeDir"
 				},
