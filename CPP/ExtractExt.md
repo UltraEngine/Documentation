@@ -4,7 +4,7 @@ This function returns the extension part of a file path.
 
 ## Syntax ##
 
-- [WString](WString) ExtractExt(const [WString](WString)& path)
+- [WString](WString) **ExtractExt**(const [WString](WString)& path)
 
 | Parameter | Description |
 | --- | --- |
