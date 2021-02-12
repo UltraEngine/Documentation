@@ -10,4 +10,4 @@ The label widget displays a string of text. This widget does not emit any events
 | LABEL_MIDDLE | enum | |
 | LABEL_CENTER | enum | |
 | LABEL_BORDER | enum | |
-| [CreateLabel](CPP_CreateLabel.md) | Function | Creates a new label widget. |
+| [CreateLabel](CreateLabel.md) | Function | Creates a new label widget. |

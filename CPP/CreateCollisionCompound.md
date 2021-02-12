@@ -2,7 +2,7 @@
 This function creates a complex collision shape that is made up of multiple sub-shapes.
 
 ## Syntax ##
-- shared_ptr<[Collider](CPP_Collision.md)\> **CreateCompoundCollider**(vector<shared_ptr<[Collider](CPP_Collision.md)\> \> subshapes)
+- shared_ptr<[Collider](Collision.md)\> **CreateCompoundCollider**(vector<shared_ptr<[Collider](Collision.md)\> \> subshapes)
 
 ## Parameters ##
 |   |   |

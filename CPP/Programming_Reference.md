@@ -1,15 +1,15 @@
 # Programming Reference #
 
 ## 2D Graphics ##
-- [Font](CPP_Font.md)
-- [Pixmap](CPP_Pixmap.md)
+- [Font](Font.md)
+- [Pixmap](Pixmap.md)
 - [Sprite](Sprite.md)
 - [SpriteLayer](SpriteLayer.md)
 
 ## 3D Graphics ##
 - ConvexHull
 - Edge
-- [Entity](CPP_Entity_32f.md)
+- [Entity](Entity_32f.md)
 - Face
 - LOD
 - Material
@@ -71,8 +71,8 @@
 - Vec4
 
 ## Memory ##
-- [Buffer](CPP_Buffer.md)
-- [StreamBuffer](CPP_StreamBuffer.md)
+- [Buffer](Buffer.md)
+- [StreamBuffer](StreamBuffer.md)
 
 ## Multithreading ##
 - Mutex

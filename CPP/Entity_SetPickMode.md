@@ -1,7 +1,7 @@
 # Entity::SetPickMode #
 
 ## Syntax ##
-- void **SetPickMode**(const [PickMode](CPP_Constants.md) pickmode)
+- void **SetPickMode**(const [PickMode](Constants.md) pickmode)
 
 ### Parameters ###
 | Name | Description |

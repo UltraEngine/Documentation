@@ -2,10 +2,10 @@
 This function creates a collision box shape for physics interactions.
 
 ## Syntax ##
-- [Collision](CPP_Collision.md) **CreateCollisionBox**(number w, number h, number d)
-- [Collision](CPP_Collision.md) **CreateCollisionBox**(number w, number h, number d, number x, number y, number z)
-- [Collision](CPP_Collision.md) **CreateCollisionBox**(number w, number h, number d, number x, number y, number z, number rx, number ry, number rz)
-- [Collision](CPP_Collision.md) **CreateCollisionBox**([Vec3](CPP_Vec3.md) size, [Vec3](CPP_Vec3.md) offset = 0, [Vec3](CPP_Vec3.md) rotation = 0)
+- [Collision](Collision.md) **CreateCollisionBox**(number w, number h, number d)
+- [Collision](Collision.md) **CreateCollisionBox**(number w, number h, number d, number x, number y, number z)
+- [Collision](Collision.md) **CreateCollisionBox**(number w, number h, number d, number x, number y, number z, number rx, number ry, number rz)
+- [Collision](Collision.md) **CreateCollisionBox**([Vec3](Vec3.md) size, [Vec3](Vec3.md) offset = 0, [Vec3](Vec3.md) rotation = 0)
 
 ## Parameters ##
 |Name|Description|

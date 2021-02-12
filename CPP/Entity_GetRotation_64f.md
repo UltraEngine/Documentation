@@ -2,7 +2,7 @@
 This method retrieves the entity's rotation.
 
 ## Syntax ##
-- [dVec3](CPP_dVec3.md) **GetRotation**(const bool global  = false)
+- [dVec3](dVec3.md) **GetRotation**(const bool global  = false)
 
 ## Parameters ##
 | Name | Description |

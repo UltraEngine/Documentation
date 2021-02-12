@@ -4,8 +4,8 @@ This class handles outdoor landscapes.
 | Property | Type | Description |
 |-----|-----|-----|
 | resolution | iVec2 | |
-| [Transform](CPP_Terrain_Transform.md) | Method | |
-| [CreateTerrain](CPP_CreateTerrain.md) | Function | |
+| [Transform](Terrain_Transform.md) | Method | |
+| [CreateTerrain](CreateTerrain.md) | Function | |
 
 ## Example ##
 ```c++

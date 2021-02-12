@@ -5,4 +5,4 @@ The listbox widget displays a series of items that can be selected. Selecting an
 | --- | --- | --- |
 | LISTBOX_DRAGANDDROP | enum |  |
 | LISTBOX_MULTISELECT | enum |  |
-| [CreateListBox](CPP_CreateListBox.md) | Function | Creates a new listbox widget. |
+| [CreateListBox](CreateListBox.md) | Function | Creates a new listbox widget. |

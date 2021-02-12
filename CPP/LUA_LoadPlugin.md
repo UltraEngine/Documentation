@@ -2,7 +2,7 @@
 This function loads a plugin module. The plugin's functionality will be available immediately. When the plugin object goes out of scope it will be deleted, and its functionality will no longer be available.
 
 ## Syntax ##
-- [Plugin](API_Plugin.md) LoadPlugin(string path)
+- [Plugin](Plugin.md) LoadPlugin(string path)
 
 | Parameter | Description |
 | ----- | ----- |

@@ -3,8 +3,8 @@ This method turns an entity. This will produce smooth rotation free from Gimbal 
 
 ## Syntax ##
 - void **Turn**(const double pitch, const double yaw, const double roll, const bool global = false)
-- void **Turn**(const [dVec3](CPP_dVec3.md)& rotation, const bool global = false)
-- void **Turn**(const [dQuat](CPP_dQuat.md)& rotation, const bool global = false)
+- void **Turn**(const [dVec3](dVec3.md)& rotation, const bool global = false)
+- void **Turn**(const [dQuat](dQuat.md)& rotation, const bool global = false)
 
 ### Parameters ###
 | Name | Description |

@@ -4,7 +4,7 @@ This function creates a new file and returns a stream for write operations.
 
 ## Syntax
 
-- shared_ptr<[Stream](CPP_Stream.md)\> **WriteFile**(const [WString](WString.md)& path)
+- shared_ptr<[Stream](Stream.md)\> **WriteFile**(const [WString](WString.md)& path)
 
 | Parameter | Description |
 |--|--|

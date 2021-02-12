@@ -1,9 +1,9 @@
 # LoadSound #
 
 ## Syntax ##
-- shared_ptr<[Sound](API_Sound)> **LoadSound**(const string& path, const [LoadFlags](API_LoadFlags) flags = LOAD_DEFAULT)
-- shared_ptr<[Sound](API_Sound)> **LoadSound**(const wstring& path, const [LoadFlags](API_LoadFlags) flags = LOAD_DEFAULT)
-- shared_ptr<[Sound](API_Sound)> **LoadSound**(shared_ptr<[Stream](API_Stream)> stream, const [LoadFlags](API_LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(const string& path, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(const wstring& path, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(shared_ptr<[Stream](Stream)> stream, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
 
 ## Parameters ##
 |Name|Description|

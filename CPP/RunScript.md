@@ -12,4 +12,3 @@ This function executes a Lua script from a file or string.
 
 ## Returns ##
 Returns true if the script was successfully run, otherwise false is returned.
-

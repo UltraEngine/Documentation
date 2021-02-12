@@ -1,8 +1,8 @@
 # CreateMeshCollider #
 
 ## Syntax ##
-- shared_ptr<[Collider](CPP_Collision.md)\> **CreateMeshCollider**(shared_ptr<[Mesh](CPP_Mesh.md)\> geometry)
-- shared_ptr<[Collider](CPP_Collision.md)\> **CreateMeshCollider**(shared_ptr<[Model](CPP_Model.md)\> geometry)
+- shared_ptr<[Collider](Collision.md)\> **CreateMeshCollider**(shared_ptr<[Mesh](Mesh.md)\> geometry)
+- shared_ptr<[Collider](Collision.md)\> **CreateMeshCollider**(shared_ptr<[Model](Model.md)\> geometry)
 
 ## Parameters ##
 |Name|Description|

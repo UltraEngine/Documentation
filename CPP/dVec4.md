@@ -12,4 +12,3 @@ This structure describes a four-dimensional vector with double float precision.
 - **dVec4**(const double x, const double y)
 - **dVec4**(const double x, const double y, const double z)
 - **dVec4**(const double x, const double y, const double z, const double w)
-

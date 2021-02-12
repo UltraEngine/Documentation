@@ -4,7 +4,7 @@ This method sets the scale of an entity in local 3-dimensional space.
 ## Syntax
 * void **SetScale**(const double x, const double y, const double z)
 * void **SetScale**(const double scale)
-* void **SetScale**(const [dVec3](CPP_dVec3.md)& scale)
+* void **SetScale**(const [dVec3](dVec3.md)& scale)
 
 ### Parameters
 | Name | Description |

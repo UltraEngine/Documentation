@@ -1,13 +1,13 @@
 # Joint #
 
-**Base Class:** [Object](CPP_Object.md)
+**Base Class:** [Object](Object.md)
 
 This class creates a physical constraint between two entities. Joints can use limits and actuators (motors) to control their range of motion and movement.
 
 | Property | Type | Description |
 |---|---|----|
-| parent | const shared_ptr<[Entity](CPP_Entity_32f.md)\>& | Read-only parent entity. |
-| child | const shared_ptr<[Entity](CPP_Entity_32f.md)\>& | Read-only child entity. |
+| parent | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only parent entity. |
+| child | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only child entity. |
 | Break | Method | Breaks the joint. |
 | SetSpring | Method | Breaks the joint. |
 | GetSpring | Method | Breaks the joint. |

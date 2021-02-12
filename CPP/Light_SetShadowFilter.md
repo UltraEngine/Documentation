@@ -10,7 +10,7 @@ This method specifies whether a light should affect static objects, dynamic obje
 
 ## Example ##
 
-![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/API_Light_SetShadowFilter.gif)
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/Light_SetShadowFilter.gif)
 
 ```c++
 #include "pch.h"

@@ -2,7 +2,7 @@
 This method returns the dot product of this vector and the specified vector.
 
 ## Syntax ##
-- float **Dot**(const [Vec3](CPP_Vec3.md)& v)
+- float **Dot**(const [Vec3](Vec3.md)& v)
 
 | Parameter | Description |
 |-|-|

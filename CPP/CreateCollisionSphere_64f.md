@@ -2,8 +2,8 @@
 This function creates a collision sphere shape for physics interactions.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionSphere**(const double radius, const double depth, const double x = 0.0, const double y = 0.0, const double z = 0.0)
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionSphere**(const double radius, const [dVec3](CPP_dVec3.md)& offset)
+- shared_ptr<[Collision](Collision.md)> **CreateCollisionSphere**(const double radius, const double depth, const double x = 0.0, const double y = 0.0, const double z = 0.0)
+- shared_ptr<[Collision](Collision.md)> **CreateCollisionSphere**(const double radius, const [dVec3](dVec3.md)& offset)
 
 ## Parameters ##
 |Name|Description|

@@ -2,7 +2,7 @@
 This methods retrieves the display size.
 
 ## Syntax ##
-- [iVec2](CPP_iVec2.md) GetSize()
+- [iVec2](iVec2.md) GetSize()
 
 ## Returns ##
 Returns the display's size, in screen pixels.

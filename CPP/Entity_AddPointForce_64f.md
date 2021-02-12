@@ -3,7 +3,7 @@ This method applies a force, measured in Newtons, to an entity at a specified po
 
 ## Syntax ##
 - void **AddPointForce**(const double fx, const double fy, const double fz, const double x, const double y, const double z, const bool 
-- void **AddPointForce**(const [dVec3](CPP_dVec3.md)& force, const [dVec3](CPP_dVec3.md)& position), const bool global = true)
+- void **AddPointForce**(const [dVec3](dVec3.md)& force, const [dVec3](dVec3.md)& position), const bool global = true)
 
 ### Parameters ###
 | Name | Description |

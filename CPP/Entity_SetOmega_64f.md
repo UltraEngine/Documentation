@@ -3,7 +3,7 @@ This method sets the angular velocity of an entity.
 
 ## Syntax ##
 - void **SetOmega**(const double x, const double y, const double z, const bool recursive = true)
-- void **SetOmega**(const [dVec3](CPP_dVec3.md)& omega, const bool recursive = true)
+- void **SetOmega**(const [dVec3](dVec3.md)& omega, const bool recursive = true)
 
 ### Parameters ###
 | Name | Description |

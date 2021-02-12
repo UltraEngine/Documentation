@@ -4,7 +4,7 @@ This function opens a file and returns a stream for read and write operations. I
 
 ## Syntax
 
-- shared_ptr<[Stream](CPP_Stream.md)\> **OpenFile**(const [WString](WString.md)& path)
+- shared_ptr<[Stream](Stream.md)\> **OpenFile**(const [WString](WString.md)& path)
 
 | Parameter | Description |
 |---|---|

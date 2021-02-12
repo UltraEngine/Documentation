@@ -2,8 +2,8 @@
 This function creates a collision box shape for physics interactions.
 
 ## Syntax ##
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionBox**(const double width, const double height, const double depth, const double x = 0.0, const double y = 0.0, const double z = 0.0, const double pitch = 0.0, const double yaw = 0.0, const double roll = 0.0)
-- shared_ptr<[Collision](CPP_Collision.md)> **CreateCollisionBox**(const [dVec3](CPP_dVec3.md)& size, const [dVec3](CPP_dVec3.md)& offset = 0.0, const [dVec3](CPP_dVec3.md)& rotation = 0.0)
+- shared_ptr<[Collision](Collision.md)> **CreateCollisionBox**(const double width, const double height, const double depth, const double x = 0.0, const double y = 0.0, const double z = 0.0, const double pitch = 0.0, const double yaw = 0.0, const double roll = 0.0)
+- shared_ptr<[Collision](Collision.md)> **CreateCollisionBox**(const [dVec3](dVec3.md)& size, const [dVec3](dVec3.md)& offset = 0.0, const [dVec3](dVec3.md)& rotation = 0.0)
 
 ## Parameters ##
 |Name|Description|

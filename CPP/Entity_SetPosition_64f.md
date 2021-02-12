@@ -3,7 +3,7 @@ This method sets the position of an entity in 3-dimensional space, using local o
 
 ## Syntax
 * void **SetPosition**(const double x, const double y, const double z, const bool global = false)
-* void **SetPosition**(const [dVec3](CPP_dVec3.md)& position, const bool global = false)
+* void **SetPosition**(const [dVec3](dVec3.md)& position, const bool global = false)
 
 ### Parameters
 | Name | Description |

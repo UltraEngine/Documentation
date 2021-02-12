@@ -2,7 +2,7 @@
 This method retrieves the entity velocity, in global or local space.
 
 ## Syntax ##
-- [dVec3](CPP_dVec3.md) **GetVelocity**(const bool global = true)
+- [dVec3](dVec3.md) **GetVelocity**(const bool global = true)
 
 ### Parameters ###
 | Name | Description |

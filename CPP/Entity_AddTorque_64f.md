@@ -3,7 +3,7 @@ This method adds physical torque to the entity, measured in Newton metres.
 
 ## Syntax ##
 - void **AddTorque**(const double x, const double y, const double z, const bool global = true)
-- void **AddTorque**(const [dVec3](CPP_dVec3.md)& torque, const bool global = true)
+- void **AddTorque**(const [dVec3](dVec3.md)& torque, const bool global = true)
 
 ### Parameters ###
 | Name | Description |

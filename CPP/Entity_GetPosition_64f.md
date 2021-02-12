@@ -1,7 +1,7 @@
 # Entity::GetPosition #
 
 ## Syntax ##
-- [dVec3](CPP_dVec3.md) **GetPosition**(const bool global  = false)
+- [dVec3](dVec3.md) **GetPosition**(const bool global  = false)
 
 ## Parameters ##
 

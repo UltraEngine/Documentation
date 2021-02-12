@@ -3,8 +3,8 @@ This method sets the rotation of an entity in 3-dimensional space, using local o
 
 ### Syntax
 * void SetRotation(const float pitch, const float yaw, const float roll, const bool global = false)
-* void SetRotation(const [Vec3](CPP_Vec3.md)& rotation, const bool global = false)
-* void SetRotation(const [Quat](CPP_Quat.md)& rotation, const bool global = false)
+* void SetRotation(const [Vec3](Vec3.md)& rotation, const bool global = false)
+* void SetRotation(const [Quat](Quat.md)& rotation, const bool global = false)
 
 ### Parameters
 | Name | Description |

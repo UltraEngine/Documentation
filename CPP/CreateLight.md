@@ -1,7 +1,7 @@
 # CreateLight #
 
 ## Syntax ##
-- shared_ptr<[Light](CPP_Light.md)\> CreateLight(shared_ptr<World\> world, const LightType type = LIGHT_POINT)
+- shared_ptr<[Light](Light.md)\> CreateLight(shared_ptr<World\> world, const LightType type = LIGHT_POINT)
 
 | Parameter | Description |
 | ----- | ----- |

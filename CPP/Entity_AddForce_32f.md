@@ -3,7 +3,7 @@ This method adds a physical force to the object, measured in Newtons.
 
 ## Syntax ##
 - void **AddForce**(const float x, const float y, const float z, const bool global = true)
-- void **AddForce**(const [Vec3](CPP_Vec3.md)& force, const bool global = true)
+- void **AddForce**(const [Vec3](Vec3.md)& force, const bool global = true)
 
 ### Parameters ###
 | Name | Description |

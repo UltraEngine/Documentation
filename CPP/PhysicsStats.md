@@ -1,5 +1,5 @@
 # PhysicsStats #
-This class contains information about the physics thread. To enable statistics recording, you must call the [World::RecordStats](API_World_RecordStats.md) method.
+This class contains information about the physics thread. To enable statistics recording, you must call the [World::RecordStats](World_RecordStats.md) method.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |

@@ -2,7 +2,7 @@
 This function loads a buffer from a file.
 
 ## Syntax ##
-- shared_ptr<[Buffer](CPP_Buffer.md)\> **LoadBuffer**(const [WString](WString.md)& path, const [LoadFlags](CPP_Constants.md) flags = LOAD_DEFAULT)
+- shared_ptr<[Buffer](Buffer.md)\> **LoadBuffer**(const [WString](WString.md)& path, const [LoadFlags](Constants.md) flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 | ----- | ----- |

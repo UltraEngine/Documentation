@@ -1,5 +1,5 @@
 # AnimationStats #
-This class contains information about the animation threads. To enable statistics recording, you must call the [World::RecordStats](API_World_RecordStats.md) method.
+This class contains information about the animation threads. To enable statistics recording, you must call the [World::RecordStats](World_RecordStats.md) method.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
@@ -7,4 +7,3 @@ This class contains information about the animation threads. To enable statistic
 |		 skeletons | int | Number of skeletons updated in the previous frame. |
 | 		 threads | int | Number of animation threads currently in use. |
 |		 time | int | Combined time taken to update animations, in milliseconds. |
-

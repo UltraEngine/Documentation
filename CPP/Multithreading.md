@@ -6,5 +6,5 @@ Multithreading is an advanced feature and should only be used by expert programm
 ### Classes ###
 | Name | Description |
 | ----- | ----- |
-| [Mutex](API_Mutex.md) | | 
-| [Thread](API_Thread.md) | |
+| [Mutex](Mutex.md) | | 
+| [Thread](Thread.md) | |

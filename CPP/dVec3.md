@@ -14,9 +14,9 @@ Thi1s structure describes a three-dimensional vector with double float precision
 
 ## Methods ##
 - DistanceToPoint
-- [Dot](CPP_dVec3_Dot)
+- [Dot](dVec3_Dot)
 - Cross
 - Inverse
 - Length
-- [Normalize](CPP_dVec3_Normalize)
+- [Normalize](dVec3_Normalize)
 - Reflect

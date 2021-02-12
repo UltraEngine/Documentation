@@ -3,8 +3,8 @@ This structure describes a quaternion rotation. Quaternions are more accurate th
 
 ## Constructors ##
 - **Quat**(const float x, const float y, const float z, const float w)
-- **Quat**(const [Vec3](CPP_Vec3.md)& euler)
-- **Quat**(const float angle, const [Vec3](CPP_Vec3.md)& axis)
+- **Quat**(const [Vec3](Vec3.md)& euler)
+- **Quat**(const float angle, const [Vec3](Vec3.md)& axis)
 
 ## Members ##
 - float **x**

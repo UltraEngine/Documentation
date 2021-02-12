@@ -2,7 +2,7 @@
 This function can be used to create an object that monitors a specified directory for changes.
 
 ## Syntax ##
-- shared_ptr<[FileSystemWatcher](CPP_FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const [WString](WString.md)& path, const bool recursive = true)
+- shared_ptr<[FileSystemWatcher](FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const [WString](WString.md)& path, const bool recursive = true)
 
 ### Parameters ###
 |Name|Description|

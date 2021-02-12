@@ -2,10 +2,10 @@
 This method attaches an entity to a model bone or a navigation agent. This provides a way of "gluing" an entity to a non-entity object.
 
 ## Syntax ##
-- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, shared_ptr<[Bone](CPP_Bone.md)> bone);
-- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, const string& name);
-- bool **Attach**(shared_ptr<[Model](CPP_Model.md)> model, const wstring& name);
-- bool **Attach**(shared_ptr<[NavAgent](CPP_NavAgent.md)> agent);
+- bool **Attach**(shared_ptr<[Model](Model.md)> model, shared_ptr<[Bone](Bone.md)> bone);
+- bool **Attach**(shared_ptr<[Model](Model.md)> model, const string& name);
+- bool **Attach**(shared_ptr<[Model](Model.md)> model, const wstring& name);
+- bool **Attach**(shared_ptr<[NavAgent](NavAgent.md)> agent);
 
 ### Parameters ###
 | Name | Description |

@@ -2,7 +2,7 @@
 This function creates a new memory buffer object.
 
 ## Syntax ##
-- shared_ptr<[Buffer](CPP_Buffer.md)\> CreateBuffer(const uint64_t size)
+- shared_ptr<[Buffer](Buffer.md)\> CreateBuffer(const uint64_t size)
 
 ### Parameters ###
 | Name | Description |

@@ -3,7 +3,7 @@ This method performs a raycast on the world.
 
 ## Syntax ##
 - bool Pick(const double x0, const double y0, const double z0, const double x1, const double y1, const double z1, PickInfo& pick, const double radius = 0.0, const bool closest = false, const CollisionType collisiontype = COLLISION_NONE)
-- bool Pick(const [dVec3](CPP_dVec3.md)& p0, const [dVec3](CPP_dVec3.md)& p1, PickInfo& pick, const double radius = 0.0, const bool closest = false, const CollisionType collisiontype = COLLISION_NONE)
+- bool Pick(const [dVec3](dVec3.md)& p0, const [dVec3](dVec3.md)& p1, PickInfo& pick, const double radius = 0.0, const bool closest = false, const CollisionType collisiontype = COLLISION_NONE)
 
 ### Parameters ###
 |   |   |

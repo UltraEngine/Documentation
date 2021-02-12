@@ -2,9 +2,9 @@
 The first overload of this method will perform a ray intersection test on the entity's world, between the entity's global position and a position directly in front of the entity. The second two overloads will perform a ray intersection test on the entity itself, using the specific points as the ends of the line.
 
 ## Syntax ##
-- bool **Pick**(const float distance, [PickInfo](CPP_PickInfo_32f.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
-- bool **Pick**(const float x0, const float y0, const float z0, const float x1, const float y1, const float z1, [PickInfo](CPP_PickInfo_32f.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
-- bool **Pick**(const [Vec3](CPP_Vec3.md)& p0, const [Vec3](CPP_Vec3.md)& p1, [PickInfo](CPP_PickInfo_32f.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](CPP_Constants.md) collisiontype = COLLISION_NONE)
+- bool **Pick**(const float distance, [PickInfo](PickInfo_32f.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE)
+- bool **Pick**(const float x0, const float y0, const float z0, const float x1, const float y1, const float z1, [PickInfo](PickInfo_32f.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE)
+- bool **Pick**(const [Vec3](Vec3.md)& p0, const [Vec3](Vec3.md)& p1, [PickInfo](PickInfo_32f.md)& pickinfo, const float radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE)
 
 | Parameter | Description |
 | --- | --- |

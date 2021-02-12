@@ -21,11 +21,11 @@ At this point, your project should be able to compile successfully.
 ## Usage ##
 In "main.cpp", at the start of your program add this line of code:
 ```c++
-SteamAPI_Init()
+SteamInit()
 ```
 At the end of the main function, add this line of code:
 ```c++
-SteamAPI_Shutdown()
+SteamShutdown()
 ```
 Your main.cpp file should now look something like this:
 ```c++
@@ -34,12 +34,12 @@ Your main.cpp file should now look something like this:
 
 int main(int argc, const char* argv[])
 {
-    SteamAPI_Init();
+    SteamInit();
 
     ...
 
 
-    SteamAPI_Shutdown();
+    SteamShutdown();
     return 0;
 }
 ```
@@ -61,6 +61,6 @@ Make sure this is added for all configurations, and the non-Steam version of you
 bool InitSteam()
 {
     if (FileType(AppDir() + "steam_api64.dll ") != 1) RuntimeError("steam_api64.dll is missing.");
-    return SteamAPI_Init();
+    return SteamInit();
 }
 ```

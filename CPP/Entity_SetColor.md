@@ -2,7 +2,7 @@
 This method can be used to colorize a visible entity such as a model or light.
 
 ## Syntax ##
-- void **SetColor**(const [Vec4](CPP_Vec4.md)& color, const bool recursive = false)
+- void **SetColor**(const [Vec4](Vec4.md)& color, const bool recursive = false)
 - void **SetColor**(const float r, const float g, const float b, const float a, const bool recursive = false)
 - void **SetColor**(const float r, const float g, const float b, const bool recursive = false)
 - void **SetColor**(const float luminance, const bool recursive = false)

@@ -6,4 +6,3 @@
 | Parameter | Description |
 | ----- | ----- |
 | realtime | If set to true the camera will render in real-time |
-
