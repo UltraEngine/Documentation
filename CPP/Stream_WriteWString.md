@@ -13,7 +13,6 @@ This method writes a wide string to the stream at the current position.
 ## Example ##
 
 ```c++
-
 #include "pch.h"
 
 using namespace UltraEngine;
