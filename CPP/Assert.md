@@ -13,3 +13,24 @@ This function produces a runtime error if the supplied condition or object is fa
 | condition | if false a runtime error is generated |
 | o | if NULL a runtime error is generated |
 | message | error message to display |
+
+## Example
+```c++
+#include "pch.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    try
+    {
+        Assert(false);
+    }
+    catch (exception e)
+    {
+        WString error = e.what();
+        DebugBreak();
+    }
+    return 0;
+}
+```
