@@ -2,7 +2,7 @@
 This method returns a double float value from the memory buffer.
 
 ## Syntax ##
-- float **PeekDouble**(const uint64_t pos)
+- double **PeekDouble**(const uint64_t pos)
 
 ### Parameters ###
 | Name | Description |
@@ -13,4 +13,4 @@ This method returns a double float value from the memory buffer.
 Returns a double float value.
 
 ## Remarks ##
-A runtime error will occur if the read range lies outside of the buffer extents.
+A runtime error will occur if the read range lies outside of the buffer extents. Note that a double value is 8 bytes, twice the size of an int or float value.
