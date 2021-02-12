@@ -7,7 +7,7 @@ This function creates a new BufferStream object that allows read and writing to 
 
 | Parameter | Description |
 | --- | --- |
-| **data** | can be used to specify an existing data buffer to use |
+| **data** | can be used to specify an existing data buffer for the stream to use |
 | **path** | sets the Stream path member to simulate a file |
 
 ## Returns ##
