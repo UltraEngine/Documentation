@@ -19,7 +19,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
+	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
 
 	//Create a new file
 	if (!CreateFile(path))
@@ -28,12 +28,12 @@ int main(int argc, const char* argv[])
 		return 0;
 	}
 
-    //Rename the file
-    if (!RenameFile(path, ExtractDir(path) + "/temp2.txt"))
-    {
-        Print("Failed to rename file.");
-    }
+	//Rename the file
+	if (!RenameFile(path, ExtractDir(path) + "/temp2.txt"))
+	{
+		Print("Failed to rename file.");
+	}
 
-    return 0;
+	return 0;
 }
 ```
