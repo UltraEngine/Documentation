@@ -30,7 +30,7 @@ int main(int argc, const char* argv[])
 	//Create static buffer
 	auto buffer = CreateStaticBuffer(&v, sizeof(v));
 	
-	//Print out the contents
+	//Print out the contents. Make sure the variable v is still in scope when you do this!
 	Print(buffer->PeekFloat(offsetof(Vec3, x)));
 	Print(buffer->PeekFloat(offsetof(Vec3, y)));
 	Print(buffer->PeekFloat(offsetof(Vec3, z)));
