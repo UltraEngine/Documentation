@@ -2,7 +2,7 @@
 This method reads an unsigned short value from the stream.
 
 ## Syntax ##
-- int **ReadShort**()
+- unsigned short **ReadShort**()
 
 ## Returns ##
 Returns an unsigned short value read from the stream.
