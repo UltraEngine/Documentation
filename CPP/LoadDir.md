@@ -15,13 +15,13 @@ using namespace UltraEngine;
  
 int main(int argc, const char* argv[])
 {
-  WString path = "C:/Windows";
+    WString path = "C:/Windows";
 
-  auto dir = LoadDir(path);
-  for (auto file : dir)
-  {
-    Print(file);
-  }
-  return 0;
- }
+    auto dir = LoadDir(path);
+    for (auto file : dir)
+    {
+        Print(file);
+    }
+    return 0;
+}
  ```
