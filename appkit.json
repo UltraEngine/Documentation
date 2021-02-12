@@ -940,6 +940,10 @@
 							"filename": "Buffer_PeekByte"
 						},
 						{
+							"title": "PeekDouble",
+							"filename": "Buffer_PeekDouble"
+						},						
+						{
 							"title": "PeekInt",
 							"filename": "Buffer_PeekInt"
 						},
@@ -963,6 +967,10 @@
 							"title": "PokeByte",
 							"filename": "Buffer_PokeByte"
 						},
+						{
+							"title": "PokeDouble",
+							"filename": "Buffer_PokeDouble"
+						},						
 						{
 							"title": "PokeInt",
 							"filename": "Buffer_PokeInt"
