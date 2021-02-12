@@ -116,6 +116,10 @@
 							"filename": "Stream_ReadWLine"
 						},
 						{
+							"title": "ReadShort",
+							"filename": "Stream_ReadShort"
+						},							
+						{
 							"title": "ReadString",
 							"filename": "Stream_ReadString"
 						},						
@@ -151,6 +155,10 @@
 							"title": "WriteLine",
 							"filename": "Stream_WriteLine"
 						},
+						{
+							"title": "WriteShort",
+							"filename": "Stream_WriteShort"
+						},						
 						{
 							"title": "WriteString",
 							"filename": "Stream_WriteString"
