@@ -11,12 +11,14 @@ This class provides an interface for allocating, writing to, and reading from bl
 | [data](Buffer_data.md) | Method |  |
 | [GetSize](Buffer_GetSize.md) | Method |  |
 | [PeekByte](Buffer_PeekByte) | Method |  |
+| [PeekDouble](Buffer_PeekDouble) | Method |  |
 | [PeekInt](Buffer_PeekInt) | Method |  |
 | [PeekFloat](Buffer_PeekFloat) | Method |  |
 | [PeekShort](Buffer_PeekShort) | Method |  |
 | [PeekString](Buffer_PeekString) | Method |  |
 | [PeekWString](Buffer_PeekWString) | Method |  |
 | [PokeByte](Buffer_PokeByte) | Method |  |
+| [PokeDouble](Buffer_PokeDouble) | Method |  |
 | [PokeInt](Buffer_PokeInt) | Method |  |
 | [PokeFloat](Buffer_PokeFloat) | Method |  |
 | [PokeShort](Buffer_PokeShort) | Method |  |
