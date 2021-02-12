@@ -15,7 +15,7 @@ This class provides an interface for reading and writing files.
 | [Read](Stream_Read.md) | Method | reads block of data from the stream |
 | [ReadByte](Stream_ReadByte.md) | Method | reads a byte from the stream |
 | [ReadDouble](Stream_ReadDouble.md) | Method | reads a double float value from the stream |
-| [ReaddFloat](Stream_ReadFloat.md) | Method | reads a float value from the stream |
+| [ReadFloat](Stream_ReadFloat.md) | Method | reads a float value from the stream |
 | [ReadInt](Stream_ReadInt.md) | Method | reads an integer from the stream |
 | [ReadLine](Stream_ReadLine.md) | Method | reads a line of text |
 | [ReadShort](Stream_ReadShort.md) | Method | reads an unsigned short from the stream |
