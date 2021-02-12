@@ -14,3 +14,46 @@ This method writes a block of memory to the stream.
 
 ## Returns ##
 Returns the number of bytes that were written to the stream.
+
+## Example
+```c++
+#include "pch.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.bin";
+
+	//Open a stream and read and write permissions
+	auto stream = OpenFile(path);
+	if (stream == NULL)
+	{
+		Print("Failed to write file.");
+		return 0;
+	}
+
+	//Initialize data
+	std::array<int, 10> data;
+	for (int n = 0; n < 10; ++n)
+	{
+		data[n] = 100 + n;
+	}
+
+	//Write data to the stream
+	stream->Write(&data[0], sizeof(data[0]) * data.size());
+
+	//Change the stream positio
+	stream->Seek(0);
+
+	//Read back the data	
+	stream->Read(&data[0], sizeof(data[0]) * data.size());
+
+	for (int n = 0; n < 10; ++n)
+	{
+		Print(data[n]);
+	}
+
+	return 0;
+}
+```
