@@ -25,7 +25,7 @@ int main(int argc, const char* argv[])
 {
 	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.bin";
 
-	//Open a stream and read and write permissions
+	//Open a stream with read and write permissions
 	DeleteFile(path);
 	auto stream = OpenFile(path);
 	if (stream == NULL)
