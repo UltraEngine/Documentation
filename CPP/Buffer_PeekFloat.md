@@ -1,5 +1,5 @@
 # Buffer::PeekFloat #
-This method returns an integer value from the memory buffer.
+This method returns a float value from the memory buffer.
 
 ## Syntax ##
 - float **PeekFloat**(const uint64_t pos)
