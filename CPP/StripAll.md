@@ -10,3 +10,22 @@ This function removes the folder and file extension parts from a file path and r
 
 ## Returns ##
 Returns the file path with the folder and extension removed.
+
+## Example
+```c++
+#include "pch.h"
+
+using namesoace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+	WString path = "C:/Windows/explorer.exe";
+
+	Print("Full path: " + path);
+	Print("File name: " + StripDir(path));
+	Print("File directory: " + ExtractDir(path));
+	Print("File extension: " + ExtractExt(path));	
+	Print("File name without extension: " + StripAll(path));
+	Print("File path without extension: " + StripExt(path));
+}
+```
