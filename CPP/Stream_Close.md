@@ -5,7 +5,7 @@ This method manually closes the stream for further read and write operations.
 - void **Close**()
 
 ## Remarks ##
-It is not necessary to call this method, as a stream will automatically close when it is deleted, but this method provides an additional mechanism to explicitly close it.
+It is not necessary to call this method, as a stream will automatically close when it is deleted, but this method provides an additional mechanism to explicitly close it. This could be useful if you are not sure if the shared pointer is stored somewhere else in your program.
 
 ## Example
 
