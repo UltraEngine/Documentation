@@ -1,5 +1,5 @@
 # OpenFile #
-This function opens a file and returns a stream for read and write operations.
+This function opens a file and returns a stream for read and write operations. If no file exists at the specified path, a new empty file will be created.
 
 ## Syntax ##
 - shared_ptr<[Stream](CPP_Stream.md)\> **OpenFile**(const [WString](WString.md)& path)
