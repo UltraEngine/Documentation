@@ -30,5 +30,6 @@ int main(int argc, const char* argv[])
 	Print("File extension: " + ExtractExt(path));	
 	Print("File name without extension: " + StripAll(path));
 	Print("File path without extension: " + StripExt(path));
+	return 0;
 }
 ```
