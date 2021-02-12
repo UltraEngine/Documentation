@@ -18,13 +18,11 @@ int main(int argc, const char* argv[])
 	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
 
 	//Create a new file
-	auto stream = WriteFile(path);
-	if (stream == NULL)
+	if (!CreateFile(path))
 	{
 		Print("Failed ti write file.");
 		return 0;
 	}
-	stream->Close();
 
 	bool hidden = FileHidden(path);
 	Print("File hidden: " + String(hidden));
