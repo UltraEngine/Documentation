@@ -21,14 +21,12 @@ int main(int argc, const char* argv[])
 {
     WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.txt";
 
-    //Create a new file
-    auto stream = WriteFile(path);
-    if (stream == NULL)
-    {
-        Print("Failed ti write file.");
-        return 0;
-    }
-    stream->Close();
+	//Create a new file
+	if (!CreateFile(path))
+	{
+		Print("Failed ti write file.");
+		return 0;
+	}
 
     //Rename the file
     if (!RenameFile(path, ExtractDir(path) + "/temp2.txt"))
