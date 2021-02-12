@@ -9,6 +9,9 @@ This function changes the name of an existing file.
 | src | existing file path |
 | dest | new file name |
 
+## Returns
+Returns true if the file was successfully renamed, otherwise false is returned.
+
 ```c++
 #include "pch.h"
 
