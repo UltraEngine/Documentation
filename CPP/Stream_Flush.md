@@ -1,6 +1,6 @@
 # Stream::Flush
 
-This method writes all queued data to the stream. You generally do not need to call this.
+This method writes all queued data to the stream. You generally do not need to call this, as it will be done automatically.
 
 ## Syntax
 
