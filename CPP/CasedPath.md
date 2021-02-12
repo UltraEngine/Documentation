@@ -21,7 +21,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    WString path = argv[0];
+    WString path = CurrentDir();
 
     //Convert to lowercase
     path = path.Lower();
