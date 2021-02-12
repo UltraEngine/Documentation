@@ -116,6 +116,10 @@
 							"filename": "Stream_ReadWLine"
 						},
 						{
+							"title": "ReadString",
+							"filename": "Stream_ReadString"
+						},						
+						{
 							"title": "ReadWString",
 							"filename": "Stream_ReadWString"
 						},
