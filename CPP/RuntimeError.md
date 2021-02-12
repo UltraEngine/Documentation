@@ -4,7 +4,26 @@ This function generates a critical error and exits the program.
 ## Syntax ##
 - void **RuntimeError**(const [WString](WString.md)& message)
 
-### Parameters ###
-| Name | Description |
+| Parameter | Description |
 | --- | --- |
 | message | error message to print |
+
+## Example
+```c++
+#include "pch.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    try
+    {
+        RuntimeError("Something went wrong!");
+    }
+    catch (exception e)
+    {
+        WString error = e.what();
+        DebugBreak();
+    }
+    return 0;
+}
