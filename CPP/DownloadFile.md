@@ -13,4 +13,4 @@ This function downloads a file from a web server and saves it to the user's hard
 Returns true if the download succeeds, otherwise false is returned.
 
 ## Remarks
-Downloaded files are stored in a local cache. You do not need to implement a caching system.
+Downloaded files are stored in a local cache. You do not need to implement an additional caching system.
