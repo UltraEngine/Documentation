@@ -20,8 +20,8 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-  RunFile("https://www.ultraengine.com");
-  return 0;
+	RunFile("https://www.ultraengine.com");
+	return 0;
 }
 
 ```
