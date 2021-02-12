@@ -21,10 +21,10 @@ using namespace UltraEngine;
  
 int main(int argc, const char* argv[])
 {
-  WString s = L"Привет, как ты сегодня? Я в порядке.";
-  auto strean = WriteFile("utf-16.txt");
-  stream->WriteByte(255);
-  stream->WriteByte(254);
-  stream->WriteWString(s, false);
+    WString s = L"Привет, как ты сегодня? Я в порядке.";
+    auto strean = WriteFile("utf-16.txt");
+    stream->WriteByte(255);
+    stream->WriteByte(254);
+    stream->WriteWString(s, false);
 }
 ```
