@@ -15,13 +15,23 @@ using namespace UltraEngine;
  
 int main(int argc, const char* argv[])
 {
-    WString path = CurrentDir();
+	WString path = CurrentDir();
 
-    auto dir = LoadDir(path);
-    for (auto file : dir)
-    {
-        Print(file);
-    }
-    return 0;
+	auto dir = LoadDir(path);
+	if (path == "") path = ".";
+	for (auto file : dir)
+	{
+		Print("Name: " + file);
+
+		if (path != "") file = path + "/" + file;
+
+		Print("Type: " + String(FileType(file)));
+		Print("Time: " + String(FileTime(file)));
+		Print("Size: " + String(FileSize(file)));
+		Print("Hidden: " + String(FileHidden(file)));
+
+		Print("");
+	}
+	return 0;
 }
  ```
