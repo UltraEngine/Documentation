@@ -182,6 +182,10 @@
 					"filename": "DeleteFile"
 				},
 				{
+					"title": "DownloadFile",
+					"filename": "DownloadFile"
+				},				
+				{
 					"title": "ExtractDir",
 					"filename": "ExtractDir"
 				},
