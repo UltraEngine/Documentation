@@ -7,7 +7,7 @@ This method returns a float value from the memory buffer.
 ### Parameters ###
 | Name | Description |
 | ----- | ----- |
-| **pos** | offset from the start of the buffer, in bytes |
+| pos | offset from the start of the buffer, in bytes |
 
 ## Returns ##
 Returns a float value.
