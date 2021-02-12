@@ -2,7 +2,7 @@
 This functions changes the current directory. Relative file paths will loaded from the new directory.
 
 ## Syntax ##
-- bool ChangeDir(const [WString](WString)& path)
+- bool **ChangeDir**(const [WString](WString)& path)
 
 | Parameter | Description |
 | --- | --- |
