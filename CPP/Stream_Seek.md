@@ -4,6 +4,10 @@ This method sets the stream position for reading or writing.
 ## Syntax ##
 - void **Seek**(const uint64_t pos)
 
+| Parameter | Description |
+| --- | --- |
+| pos | new position, between zero and the stream size |
+
 ## Example
 
 ```c++
