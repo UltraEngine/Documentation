@@ -2,7 +2,7 @@
 This function removes the folder and file extension parts from a file path and returns the result.
 
 ## Syntax ##
-- [WString](WString) StripAll(const [WString](WString)& path)
+- [WString](WString) **StripAll**(const [WString](WString)& path)
 
 | Parameter | Description |
 | --- | --- |
