@@ -13,6 +13,4 @@ This function deletes a folder in the file system.
 Returns true if the folder was successfully deleted.
 
 # Remarks #
-If any files or subfolders exist within the specified folder, it will not be deleted unless the recursive option is set to true.
-
-It is not possible to restore deleted folders. Use this feature with caution.
+If any files or subfolders exist within the specified folder, it will not be deleted unless the recursive option is set to true. **Use this option with caution.**
