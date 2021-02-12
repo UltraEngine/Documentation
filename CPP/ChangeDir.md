@@ -10,3 +10,24 @@ This functions changes the current directory. Relative file paths will loaded fr
 
 ## Returns ##
 Returns true if the directory was successfully changed, otherwise false is returned.
+
+## Example
+```c++
+#include "pch.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Print starting directory
+    Print(CurrentDir());
+    
+    //Navigate up one directory level
+    ChangeDir("..")
+    
+    //Print new directory
+    Print(CurrentDir());
+    
+    return 0;
+}
+```
