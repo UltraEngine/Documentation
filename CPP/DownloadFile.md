@@ -1,5 +1,5 @@
 # DownloadFile
-This function downloads a file from a web server and saves it on the user's hard drive.
+This function downloads a file from a web server and saves it to the user's hard drive.
 
 ## Syntax 
 - bool **DownloadFile**(const [WString](WString.md)& src, const [WString](WString.md)& dest)
