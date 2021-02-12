@@ -20,7 +20,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-  OpenDir(CurrentDir());
-  return 0;
+    OpenDir(CurrentDir());
+    return 0;
 }
 ```
