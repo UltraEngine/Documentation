@@ -4,7 +4,7 @@ This function returns the path of the folder the application executable is in. T
 
 ## Syntax
 
-- [WString](WString.md) AppDir()
+- [WString](WString.md) **AppDir**()
 
 ## Returns
 
