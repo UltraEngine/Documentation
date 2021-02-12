@@ -226,6 +226,10 @@
 					"filename": "ReadFile"
 				},
 				{
+					"title": "RealPath",
+					"filename": "RealPath"
+				},				
+				{
 					"title": "RenameFile",
 					"filename": "RenameFile"
 				},				
