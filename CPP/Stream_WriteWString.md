@@ -11,7 +11,6 @@ This method writes a wide string to the stream at the current position.
 | terminate | if true an extra short with a value of zero will be written at the end of the string |
 
 ## Example ##
-This example will save a wide string to a UTF-16 encoded text file.
 
 ```c++
 
@@ -21,6 +20,7 @@ using namespace UltraEngine;
  
 int main(int argc, const char* argv[])
 {
+    //Saves a wide string to a UTF-16 encoded text file.
     WString s = L"Привет, как ты сегодня? Я в порядке.";
     auto strean = WriteFile("utf-16.txt");
     stream->WriteByte(255);
