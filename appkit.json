@@ -85,7 +85,7 @@
 						},
 						{
 							"title": "Position",
-							"filename": "Stream_Position"
+							"filename": "Stream_GetPosition"
 						},
 						{
 							"title": "Read",
