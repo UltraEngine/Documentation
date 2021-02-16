@@ -13,7 +13,7 @@ The String class provides an interface for manipulating ASCII text strings.
 | String | Constructor | String(const double f) |
 | [Find](String_Find.md) | Method | performs a search operation |
 | [Left](String_Left.md) | Method | returns leftmost characters |
-| [Length](String_Length.md) | Method | returns the length of the string |
+| [GetSize](String_GetSize.md) | Method | returns the length of the string |
 | [Lower](String_Lower.md) | Method | converts the string to lowercase |
 | [Mid](String_Mid.md) | Method | returns the length of the string |
 | [Replace](String_Replace.md) | Method | performs a search and replace operation |
