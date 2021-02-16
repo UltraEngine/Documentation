@@ -1155,8 +1155,8 @@
 							"filename": "String_Left"
 						},
 						{
-							"title": "Length",
-							"filename": "String_Length"
+							"title": "GetSize",
+							"filename": "String_GetSize"
 						},
 						{
 							"title": "Lower",
@@ -1206,8 +1206,8 @@
 							"filename": "WString_Left"
 						},
 						{
-							"title": "Length",
-							"filename": "WString_Length"
+							"title": "GetSize",
+							"filename": "WString_GetSize"
 						},
 						{
 							"title": "Lower",
