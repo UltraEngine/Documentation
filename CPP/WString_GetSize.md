@@ -1,4 +1,4 @@
-# WString::Length #
+# WString::GetSize #
 This method returns the number of characters in the string.
 
 ## Syntax ##
