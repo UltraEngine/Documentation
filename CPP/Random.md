@@ -8,6 +8,7 @@ This function returns a psuedorandom value within the specified range. If no ran
 - float **Random**(const float minima, const float maxima)
 
 | Parameter | Description |
+|---|---|
 | minima | minimum value that can be returned |
 | maxima | maximum value that can be returned |
 
