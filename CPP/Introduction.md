@@ -1,5 +1,3 @@
-![](https://github.com/Leadwerks/Documentation/raw/master/Images/appkit_logo.png)
-
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/appkit_logo.png' width='400px'/>
 
 Welcome to the **Ultra Engine SDK** documentation. You're about to learn how to use the fastest 3D engine in the world to create high-performance simulations and games.
