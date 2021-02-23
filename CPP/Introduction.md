@@ -12,4 +12,4 @@ To start programming with C++ you need to install the free [Visual Studio 2019 C
 
 ## Additional Resources
 - [Video Tutorials](https://www.leadwerks.com/community/video/browse/3-tutorials/)
-- [Forum](https://www.leadwerks.com/community/)
+- [Technical Assistance](https://www.leadwerks.com/community/forum/91-technical-assistance/)
