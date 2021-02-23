@@ -218,6 +218,10 @@
 					"filename": "FileHidden"
 				},
 				{
+					"title": "FileIcon",
+					"filename": "FileIcon"
+				},				
+				{
 					"title": "FileTime",
 					"filename": "FileTime"
 				},
@@ -225,6 +229,10 @@
 					"title": "FileType",
 					"filename": "FileType"
 				},
+				{
+					"title": "HideFile",
+					"filename": "HideFile"
+				},				
 				{
 					"title": "LoadDir",
 					"filename": "LoadDir"
@@ -253,6 +261,10 @@
 					"title": "RunFile",
 					"filename": "RunFile"
 				},
+				{
+					"title": "ShowFile",
+					"filename": "ShowFile"
+				},				
 				{
 					"title": "StripAll",
 					"filename": "StripAll"
