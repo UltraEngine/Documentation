@@ -1,5 +1,5 @@
 # HideFile
-This function makes the specified file or folder hidden.
+This function makes the specified file or folder hidden in the file system.
 
 ## Syntax
 - bool **HideFile**(const [WString](WString.md)& path)
