@@ -13,7 +13,7 @@ The textfield widget is an editable input box. It will emit a WIDGETACTION event
 | width | widget width |
 | height | widget height |
 | parent | parent widget |
-| style | textfield style, can be TEXTFIELD_DEFAULT, TEXTFIELD_READONLY, TEXTFIELD_DYNAMIC, TEXTFIELD_NUMBER, TEXTFIELD_INTEGER, or TEXTFIELD_FILEPATH |
+| style | textfield style, can be TEXTFIELD_DEFAULT, TEXTFIELD_READONLY, TEXTFIELD_DYNAMIC, TEXTFIELD_PASSWORD, TEXTFIELD_NUMBER, TEXTFIELD_INTEGER, or TEXTFIELD_FILEPATH |
 
 ## Example ##
 ```c++
