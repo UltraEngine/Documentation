@@ -216,11 +216,7 @@
 				{
 					"title": "FileHidden",
 					"filename": "FileHidden"
-				},
-				{
-					"title": "FileIcon",
-					"filename": "FileIcon"
-				},				
+				},			
 				{
 					"title": "FileTime",
 					"filename": "FileTime"
