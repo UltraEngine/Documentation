@@ -26,6 +26,6 @@ The project folder will be opened automatically. Double-click the .sln file to o
 
 Once Visual Studio is opened, you can compile and run the project by selecting the **Debug > Start Debugging** menu item:
 
-<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_Visual_Studio.png' width='600px'/>
+<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_Visual_Studio.png' width='800px'/>
 
 You can copy any code samples in the documentation into the *main.cpp* file to run the sample.
