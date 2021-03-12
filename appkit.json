@@ -590,7 +590,11 @@
 						{
 							"title": "CreateListBox",
 							"filename": "CreateListBox"
-						},						
+						},
+						{
+							"title": "CreatePanel",
+							"filename": "CreatePanel"
+						},
 						{
 							"title": "CreateProgressBar",
 							"filename": "CreateProgressBar"
