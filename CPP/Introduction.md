@@ -4,7 +4,7 @@ Welcome to the **Ultra App Kit** documentation. You're about to learn how to eas
 
 ## Getting Started ##
 
-When you first run Ultra App Kit you will be prompted to sign into your Ultra Engine account:
+When you first run Ultra App Kit you will be prompted to sign into your Ultra Engine account. This only needs to be done once for each new computer you install the program on:
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/signin.png' width='300px'/>
 
 If you do not have an account you can create one [here](https://www.leadwerks.com/community/register/).
