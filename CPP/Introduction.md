@@ -30,5 +30,5 @@ Once Visual Studio is opened, you can compile and run the project by selecting t
 
 ## Learning Resources ##
 - The documentation here describes all available classes and functions in the SDK. You can copy any code samples in the documentation into the *main.cpp* file to run that sample.
-- Officlal video tutorials are available (here)[https://www.leadwerks.com/community/video/browse/3-tutorials].
+- Officlal video tutorials are available [https://www.leadwerks.com/community/video/browse/3-tutorials](here).
 - You can ask questions and get answers from staff and other developers in the (technical assistance forum)[https://www.leadwerks.com/community/forum/91-technical-assistance].
