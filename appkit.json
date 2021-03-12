@@ -666,10 +666,6 @@
 						{
 							"title": "SetFontScale",
 							"filename": "Widget_SetFontScale"
-						},
-						{
-							"title": "SetFontWeight",
-							"filename": "Widget_SetFontWeight"
 						},						
 						{
 							"title": "SetShape",
