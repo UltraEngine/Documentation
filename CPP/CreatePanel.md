@@ -2,7 +2,7 @@
 This function creates a Panel widget. The Panel widget is a rectangular area for framing child widgets.
 
 ## Syntax ##
-- shared_ptr<shared_ptr<[Widget](Widget.md)\> \> **CreatePanel**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const PanelStyle style = PANEL_DEFAULT)
+- shared_ptr<[Widget](Widget.md)\> **CreatePanel**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const PanelStyle style = PANEL_DEFAULT)
 
 | Parameter | Description |
 |---|---|
