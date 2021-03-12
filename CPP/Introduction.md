@@ -31,6 +31,6 @@ Once Visual Studio is opened, you can compile and run the project by selecting t
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_Visual_Studio.png' width='1000px'/>
 
 ## Learning Resources ##
-- The documentation here describes all available classes and functions in the SDK. You can copy any code samples in the documentation into the *main.cpp* file to run that sample. 
+- The documentation here describes all available classes and functions in the SDK. You can copy any code samples in the documentation into the *main.cpp* file to run that sample. Try running the code example [here](https://www.ultraengine.com/learn/CPP/CreateButton) in your project.
 - Officlal video tutorials are available [here](https://www.leadwerks.com/community/video/browse/3-tutorials).
 - You can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
