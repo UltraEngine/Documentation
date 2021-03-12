@@ -17,7 +17,7 @@ The **Community** panel contains links to community features, including forums, 
 
 To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
 
-To create a new project click the **Create** link under the **Projects** tab. Enter the project name and location, then click the **Create** button to generate the new project:
+To create a new project click the **Create** link in the **Projects** panel. Enter the project name and location, then click the **Create** button to generate the new project:
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_create_project.png' width='500px'/>
 
 The project folder will be opened automatically. Double-click the .sln file to open the Visual Studio solution:
