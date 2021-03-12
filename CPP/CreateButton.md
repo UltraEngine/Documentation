@@ -57,9 +57,15 @@ int main(int argc, const char* argv[])
     y += sep;
     auto radio2 = CreateButton("Option 2", x, y, 120, 30, ui->root, BUTTON_RADIO);
 
-    while (window->Closed() == false)
+    while (true)
     {
-        WaitEvent();
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+            case EVENT_WINDOWCLOSE:
+                return 0;
+                break;
+        }
     }
     return 0;
 }
