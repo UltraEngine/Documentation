@@ -1,6 +1,6 @@
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/appkit_logo.png' width='400px'/>
 
-Welcome to the **Ultra App Kit** documentation. You're about to learn how to easily create desktop GUI applications.
+Welcome to the **Ultra App Kit** documentation. You're about to learn how to easily create fast and responsive desktop GUI applications with pixel-perfect DPI scaling.
 
 ## Getting Started ##
 
