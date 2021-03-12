@@ -5,7 +5,7 @@ Welcome to the **Ultra App Kit** documentation. You're about to learn how to eas
 ## Getting Started ##
 
 When you run Ultra App Kit the program interface will look like this:
-<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_interface.png' width='500px'/>
+<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_interface.png' width='600px'/>
 
 The program is separated into three main panels that can be shown by selecting the tabs at the top of the window.
 
