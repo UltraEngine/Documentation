@@ -1,5 +1,5 @@
 # CreateTimer #
-This function creates a new timer object. A timer emits a TIMERTICK event at a regular frequency.
+This function creates a new timer object. A timer emits a TIMERTICK event at a regular frequency. The event source will be the timer object, and the event data value will be the timer tick count.
 
 ## Syntax ##
 - shared_ptr<[Timer](Timer.md)\> **CreateTimer**(const int frequency)
