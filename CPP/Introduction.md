@@ -1,14 +1,20 @@
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/appkit_logo.png' width='400px'/>
 
-Welcome to the **Ultra Engine SDK** documentation. You're about to learn how to use the fastest 3D engine in the world to create high-performance simulations and games.
-
-Leadwerks 5 SDK supports three programming languages. C++ offers the fastest code execution speed, best compatibility with third-party libraries, and is suitable for advanced projects. C# offers fast compilation times, easier syntax, and is fast enough for most projects. Lua is lightweight, easy to learn, and is suitable for simple projects. Additionally, Lua scripts can be combined with programs written in C++ and C#.
+Welcome to the **Ultra App Kit** documentation. You're about to learn how to easily create desktop GUI applications.
 
 ## Getting Started ##
 
-You currently have selected the C++ language documentation. You can change this by clicking on the language links in the header at the top of this page.
-
 To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
+
+When you run Ultra App Kit the program interface will look like this:
+<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_interface.png' width='640px'/>
+
+To create a new project click the **Create** link under the **Projects** tab. Enter the project name and location, then click the **Create** button to generate the new project:
+<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_create_project.png' width='640px'/>
+
+The **Learn** tab contains links to documentation and other online resources.
+
+The **Community** tab contains links to community features.
 
 ## Additional Resources
 - [Video Tutorials](https://www.leadwerks.com/community/video/browse/3-tutorials/)
