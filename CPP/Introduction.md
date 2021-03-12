@@ -12,6 +12,10 @@ When you run Ultra App Kit the program interface will look like this:
 To create a new project click the **Create** link under the **Projects** tab. Enter the project name and location, then click the **Create** button to generate the new project:
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_create_project.png' width='500px'/>
 
+The project folder will be opened automatically. Double-click the .sln file to open the Visual Studio solution:
+
+<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_project_folder.png' width='500px'/>
+
 The **Learn** tab contains links to documentation and other online resources including video tutorials and the technical assistance forum.
 
 The **Community** tab contains links to community features, including forums, blogs, and the Ultra Engine Marketplace.
