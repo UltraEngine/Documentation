@@ -25,7 +25,7 @@ The SORT style can be used to automatically sort treeview nodes alphabetically.
 
 ## Example ##
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
@@ -35,7 +35,7 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
     //Create User Interface
     auto ui = CreateInterface(window);
