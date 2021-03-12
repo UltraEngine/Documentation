@@ -16,7 +16,7 @@ The tabber widget is a tabbed panel that allows the user to select different "pa
 
 ## Example ##
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
@@ -29,50 +29,56 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
-
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
-
-    //Create a world
-    auto world = CreateWorld();
-
-    //Create a camera
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->Move(0, 0, -2);
-    camera->SetFOV(70);
-
-    //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
-    light->SetRotation(45, 35, 0);
-
-    //Create model
-    auto box = CreateBox(world);
-    box->SetColor(0.5);
-
-    //Create a canvas
-    auto canvas = CreateCanvas(world);
-    camera->AddCanvas(canvas);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
     //Create User Interface
-    auto ui = CreateInterface(canvas, framebuffer);
-    
-    //Create widget
-    auto panel = CreatePanel(50, 50, 400, 300, ui);
+    auto ui = CreateInterface(window);
 
     //Create widget
-    auto sz = panel->ClientSize();
-    auto tabber = CreateTabber(10, 10, sz.x - 20, sz.y - 20, panel);
+    auto sz = ui->root->ClientSize();
+    auto tabber = CreateTabber(10, 10, sz.x - 20, sz.y - 20, ui->root);
     tabber->AddItem("Item 1", true);
     tabber->AddItem("Item 2");
     tabber->AddItem("Item 3");
 
-    while (window->Closed() == false)
+    array<shared_ptr<Widget>, 3> panels;
+    sz = tabber->ClientSize();
+    panels[0] = CreatePanel(0, 0, sz.x, sz.y, tabber);
+    panels[1] = CreatePanel(0, 0, sz.x, sz.y, tabber);
+    panels[2] = CreatePanel(0, 0, sz.x, sz.y, tabber);
+
+    panels[0]->SetColor(1, 0, 0, 1);
+    panels[1]->SetColor(0, 1, 0, 1);
+    panels[2]->SetColor(0, 0, 1, 1);
+
+    panels[1]->Hide();
+    panels[2]->Hide();
+
+    while (true)
     {
-        box->Turn(0, 1, 0);
-        world->Update();
-        world->Render(framebuffer);
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WIDGETSELECT:
+            if (ev.source == tabber)
+            {
+                for (int n = 0; n < tabber->items.size(); ++n)
+                {
+                    if (n == ev.data)
+                    {
+                        panels[n]->Show();
+                    }
+                    else
+                    {
+                        panels[n]->Hide();
+                    }
+                }
+            }
+            break;
+        case EVENT_WINDOWCLOSE:
+            return 0;
+            break;
+        }
     }
     return 0;
 }
