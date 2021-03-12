@@ -24,7 +24,6 @@ This class handle user interface elements.
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](Widget_SetColor.md) | Method | sets the widget color |
 | [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
-| [SetFontWeight](Widget_SetFontWeight.md) | Method | sets the widget font weight |
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
 | [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
