@@ -7,54 +7,38 @@ This function creates a Panel widget. The Panel widget is a rectangular area for
 
 ## Example ##
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Load plugins
+    auto plugin_svg = LoadPlugin("Plugins/SVG.*");
+
     //Get the displays
     auto displays = ListDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
-
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
-
-    //Create a world
-    auto world = CreateWorld();
-
-    //Create a camera
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->Move(0, 0, -2);
-    camera->SetFOV(70);
-
-    //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
-    light->SetRotation(45, 35, 0);
-
-    //Create model
-    auto box = CreateBox(world);
-    box->SetColor(0.5);
-
-    //Create a canvas
-    auto canvas = CreateCanvas(world);
-    camera->AddCanvas(canvas);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
     //Create User Interface
-    auto ui = CreateInterface(canvas,framebuffer);
-    auto sz = framebuffer->GetSize();
+    auto ui = CreateInterface(window);
+    auto sz = ui->root->ClientSize();
 
     //Create widget
-    auto panel = CreatePanel(50,50,300, framebuffer->GetSize().y - 100, ui);
+    auto panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui->root);
+    panel->SetColor(0, 0, 0, 1);
 
-    while (window->Closed() == false)
+    while (true)
     {
-        box->Turn(0, 1, 0);
-        world->Update();
-        world->Render(framebuffer);
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WINDOWCLOSE:
+            return 0;
+            break;
+        }
     }
     return 0;
 }
