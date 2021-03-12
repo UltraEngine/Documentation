@@ -3,7 +3,7 @@ This function is used to create a new window.
 
 ## Syntax ##
 - shared_ptr<[Window](Window)\> **CreateWindow**(const WString& title, const int x, const int y, const int width, const int height, shared_ptr<[Display](Display.md)\> display, const [WindowStyle](Window) style = WINDOW_DEFAULT)
-- shared_ptr<[Window](Window)\> **CreateWindow**(const WString& title, const int x, const int y, const int width, const int height, shared_ptr<[Window](Window.md)\> display, const [WindowStyle](Window) style = WINDOW_DEFAULT)
+- shared_ptr<[Window](Window)\> **CreateWindow**(const WString& title, const int x, const int y, const int width, const int height, shared_ptr<[Window](Window.md)\> parent, const [WindowStyle](Window) style = WINDOW_DEFAULT)
 
 ### Parameters ###
 | Name | Description |
