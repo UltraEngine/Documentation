@@ -35,7 +35,7 @@ Once Visual Studio is opened, you can compile and run the project by selecting t
 
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_Visual_Studio.png' width='1000px'/>
 
-- The documentation here describes all available classes and functions in the SDK. You can copy any code samples in the documentation into the *main.cpp* file to run that sample. Try running the code example [here](CreateButton.md) in your project.
+This documentation system describes all available classes and functions in the SDK. You can copy any code samples in the documentation into the *main.cpp* file to run that sample. Try running the code example [here](CreateButton.md) in your project.
 
 ## Additional Resources ##
 - Officlal video tutorials are available [here](https://www.leadwerks.com/community/video/browse/3-tutorials).
