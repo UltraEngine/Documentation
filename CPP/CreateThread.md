@@ -56,7 +56,7 @@ int main(int argc, const char* argv[])
     auto elapsed = Millisecs() - starttime;
     Print(String(elapsed) + " milliseconds");
 
-    int threadcount = MaxThreads();
+    int threadcount = 4;
     Print("Multi-threaded test (" + String(threadcount)+ " threads):");
     vector<shared_ptr<Thread> > threads(threadcount);
     starttime = Millisecs();
