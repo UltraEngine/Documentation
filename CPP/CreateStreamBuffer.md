@@ -6,3 +6,6 @@ This function creates a new StreamBuffer object. A StreamBuffer is a file stream
 
 ## Returns ##
 Returns a new StreamBuffer object.
+
+## Remarks ##
+If the [Buffer::Data()](Buffer_data.md) method is called on a StreamBuffer object, it will return NULL since the data is not loaded in memory.
