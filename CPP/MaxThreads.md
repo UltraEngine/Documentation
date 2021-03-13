@@ -9,3 +9,17 @@ This function returns the maximum number of simultaneous threads the CPU can exe
 ## Returns ##
 
 Returns the maximum number of threads that can run at once. 
+
+## Example ##
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    Print(String(MaxThreads()) + " threads are supported on this machine.");
+    return 0;
+}
+```
