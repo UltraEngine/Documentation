@@ -33,6 +33,7 @@ public:
 
     void Update()
     {
+        //Pass a shared pointer to this object to the function
         MyFunc(Self());
     }
 };
