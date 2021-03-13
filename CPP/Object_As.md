@@ -4,7 +4,7 @@ This method casts the object to a derived type.
 ## Syntax ##
 - shared_ptr<T\> **As**<T\>()
 
-| Parameter } Description |
+| Parameter | Description |
 |---|---|
 | T | type to cast to |
 
