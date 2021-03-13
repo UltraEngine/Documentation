@@ -13,3 +13,35 @@ This method should *always* be used in place of the C++ keyword "this" for all o
 This method should *never* be called in a class constructor or destructor.
 
 You can cast to a derived type using the [Object::As](Object_As.md) method.
+
+## Example ##
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+class MyClass : public Object
+{
+public:
+    WString text;
+
+    static void MyFunc(shared_ptr<Object> o)
+    {
+        Print(o->As<MyClass>()->text);
+    }
+
+    void Update()
+    {
+        MyFunc(Self());
+    }
+};
+
+int main(int argc, const char* argv[])
+{
+    auto o = make_shared<MyClass>();
+    o->text = "Hello!";
+    o->Update();
+    return 0;
+}
+```
