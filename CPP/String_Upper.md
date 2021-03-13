@@ -5,3 +5,19 @@ This method returns the uppercase version of the string.
 
 ## Returns ##
 Returns the string, converted to uppercase.
+
+## Example ##
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    String s = "Hello, how are you today?";
+    Print(s.Upper());
+
+    return 0;
+}
+```
