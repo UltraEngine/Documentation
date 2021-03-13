@@ -8,7 +8,7 @@ This is the equivalent to calling the C++ **this** keyword inside a class method
 Returns a shared pointer to this object.
 
 ### Remarks
-This method should *always* be used in place of the C++ keyword "this" for all objects created as a shared pointer.
+This method should *always* be used inside a class method, in place of the C++ keyword "this", for all objects created as a shared pointer.
 
 This method should *never* be called in a class constructor or destructor.
 
