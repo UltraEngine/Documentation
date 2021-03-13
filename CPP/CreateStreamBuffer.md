@@ -28,6 +28,11 @@ int main(int argc, const char* argv[])
 {
     //Load FreeImage plugin
     auto plugin = LoadPlugin("Plugins/FITextureLoader.*");
+    if (plugin == NULL)
+    {
+        Print("Failed to load FreeImage plugin.");
+        return 0;
+    }
 
     //Load heightmap data
     auto stream = ReadFile("https://github.com/Leadwerks/Documentation/raw/master/Assets/Terrain/1024.r16");
