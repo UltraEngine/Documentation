@@ -1055,7 +1055,11 @@
 						{
 							"title": "GetState",
 							"filename": "Thread_GetState"
-						},						
+						},					
+						{
+							"title": "MaxThreads",
+							"filename": "MaxThreads"
+						},
 						{
 							"title": "Pause",
 							"filename": "Thread_Pause"
