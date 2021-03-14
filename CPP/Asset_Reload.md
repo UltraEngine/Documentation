@@ -12,7 +12,3 @@ This method reloads an asset from a file on the disk. If changes were made to th
 ## Returns ##
 If successful true is returned, otherwise false is returned.
 
-## Example ##
-```c++
-
-```
