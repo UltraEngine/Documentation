@@ -17,6 +17,7 @@ A runtime error will occur if the read range lies outside of the buffer extents.
 
 ## Example
 
+```c++
 #include "UltraEngine.h"
 
 using namespace UltraEngine;
@@ -40,3 +41,4 @@ int main(int argc, const char* argv[])
 
 	return 0;
 }
+```
