@@ -2,10 +2,17 @@
 This method converts the wide string to a narrow string and returns it. Narrow to wide string conversion is automatic, but wide to narrow conversion may cause characters to be lost and must be called explicitly.
 
 ## Syntax
-[String](String.md) **ToString**()
+[String](String.md) **ToString**(const bool utf8 = false)
+
+| Parameter | Description |
+|---|---|
+| utf8 | if set to true, a UTF8 string is returned |
 
 ## Returns
 Returns a narrow string.
+
+## Remarks
+The UTF8 option can be used to store a larger range of widestring characters in a narrow string. However, some string operations will not work correctly with a UTF8 string.
 
 ## Example
 
