@@ -20,7 +20,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    String s = "Hello, how are you today?";
+    WString s = "Hello, how are you today?";
     Print(s.Find("today"));
 
     return 0;
