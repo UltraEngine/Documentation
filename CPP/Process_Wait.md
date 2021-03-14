@@ -1,11 +1,14 @@
 # Process::Wait #
+
 This method pauses the calling thread until the process finishes running and exits.
 
 ## Syntax ##
+
 - int **Wait**()
 
 ## Returns ##
-Returns the exit code the process returns.
+
+Returns the process exit code.
 
 ## Example ##
 
