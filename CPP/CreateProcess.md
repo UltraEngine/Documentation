@@ -12,3 +12,21 @@ This function launches an external executable and returns a handle that can be u
 
 ## Returns ##
 If the program was launched a new process is returned, otherwise NULL is returned.
+
+## Example ##
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    Print("Launching process");
+    auto proc = CreateProcess("C:/Windows/notepad.exe");
+    Print("Process running");
+    int exitcode = proc->Wait();
+    Print("Process ended (" + String(exitcode) + ")");
+    return 0;
+}
+```
