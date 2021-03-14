@@ -10,6 +10,9 @@ This method pauses the calling thread until the process finishes running and exi
 
 Returns the process exit code.
 
+## Remarks ##
+This method will close the handle to the finished process. You do not need to call [Process::Close](Process_Close.md) after calling this method.
+
 ## Example ##
 
 ```c++
