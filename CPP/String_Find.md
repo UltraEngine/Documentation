@@ -1,7 +1,7 @@
 # String::Find #
 This method performs a search for the specified term.
 
-## SEyntax ##
+## Syntax ##
 - int **Find**(const [String](String.md)& token)
 
 | Parameter | Description |
