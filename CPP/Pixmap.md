@@ -20,5 +20,5 @@ This class provides an interface for loading, manipulating, and saving image dat
 | Resize | Method | |
 | Swizzle | Method | |
 | WritePixel | Method | |
-| [CreatePixmap](LoadPixmap.md) | Function | Creates a new pixmap object. |
+| [CreatePixmap](CreatePixmap.md) | Function | Creates a new pixmap object. |
 | [LoadPixmap](LoadPixmap.md) | Function | Loads a pixmap object from a file. |
