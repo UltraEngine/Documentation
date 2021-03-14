@@ -1,6 +1,6 @@
 # Process::Close #
 
-This method closes the handle a running process.
+This method closes a running process.
 
 ## Syntax ##
 
@@ -8,7 +8,7 @@ This method closes the handle a running process.
 
 ## Remarks ##
 
-The [Process::Wait](Process_Wait.md) method should generally be called before calling this method, in order to ensure the process has finished execution. Otherwise this method may forcefully terminate a running process.
+This method can forcefully terminate a running process. The [Process::Wait](Process_Wait.md) method should generally be called instead of this method, to ensure the process has finished execution.
 
 ## Example ##
 
