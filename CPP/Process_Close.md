@@ -4,7 +4,7 @@ This method closes a running process and returns its exit code.
 
 ## Syntax ##
 
-- void **Close**()
+- int **Close**()
 
 ## Returns
 
