@@ -19,7 +19,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    String s = "    Hello!  ";
+    WString s = "    Hello!  ";
     Print("\"" + s.Trim() + "\"");
 
     return 0;
