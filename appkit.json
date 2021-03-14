@@ -1127,12 +1127,12 @@
 			"topics":
 			[
 				{
-					"title": "CreateProcess",
-					"filename": "CreateProcess"
-				},
-				{
 					"title": "Close",
 					"filename": "Process_Close"
+				},
+				{
+					"title": "CreateProcess",
+					"filename": "CreateProcess"
 				},
 				{
 					"title": "GetStatus",
