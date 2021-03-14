@@ -1135,6 +1135,10 @@
 					"filename": "Process_Close"
 				},
 				{
+					"title": "GetStatus",
+					"filename": "Process_GetStatus"
+				},
+				{
 					"title": "Wait",
 					"filename": "Process_Wait"
 				}				
