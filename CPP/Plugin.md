@@ -8,7 +8,7 @@ Plugins will be utilized automatically by the engine as the program runs. For ex
 
 When a plugin is deleted it will be automatically unloaded and its functionality will no longer be available to the engine. Therefore, you must maintain a variable for a loaded plugin and not let it go out of scope. One way of doing this is to place a Lua script in the "Scripts\\Start\\Autoload" folder that loaded the plugin and stores it in a global variable. For example, you could create a script called "Scripts\\Start\\Autoload\\Basis.lua" with these contents:
 ```lua
-PLUGIN_BASIS = LoadPlugin("Plugins/Basis.*")
+PLUGIN_BASIS = LoadPlugin("Plugins/FITextureLoader.*")
 ```
 The script will be automatically run every time your program starts and the plugin will be loaded.
 
