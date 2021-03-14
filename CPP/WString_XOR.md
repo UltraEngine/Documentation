@@ -1,8 +1,8 @@
-# WString::XOR #
+# WString::XOR
 
 This method encrypts the string with an XOR cipher and returns the result.
 
-## Syntax ##
+## Syntax
 
 - [WString](WString.md) **XOR**(const [WString](WString.md)& key)
 
@@ -10,6 +10,28 @@ This method encrypts the string with an XOR cipher and returns the result.
 | --- | --- |
 | key | encryption key |
 
-## Returns ##
+## Returns
 
 Returns the encrypted string.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    WString password = "HaikuMockingBonanzaTumble";
+    WString key = "d'U0)Ez[^?2?=^X|y49dKurq9mASp`5}";
+    WString encrypted = password.XOR(key);
+
+    Print("Encrypted string: " + encrypted);
+
+    WString decrypted = encrypted.XOR(key);
+    Print("Decrypted string: " + decrypted);
+
+    return 0;
+}
+```
