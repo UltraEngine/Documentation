@@ -924,8 +924,8 @@
 							"filename": "CreateStaticBuffer"
 						},										
 						{
-							"title": "data",
-							"filename": "Buffer_data"
+							"title": "Data",
+							"filename": "Buffer_Data"
 						},
 						{
 							"title": "GetSize",
