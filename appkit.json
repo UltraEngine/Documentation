@@ -1135,7 +1135,7 @@
 					"filename": "Process_Close"
 				},
 				{
-					"title": "Wait",
+					"title": "Terminate",
 					"filename": "Process_Terminate"
 				},
 				{
