@@ -1,14 +1,41 @@
-# Buffer::PokeDouble #
+# Buffer::PokeDouble
 This method inserts a double float value into the memory buffer.
 
-## Syntax ##
+## Syntax
 - void **PokeDouble**(const uint64_t pos, const double f)
-
-### Parameters ###
-| Name | Description |
+ 
+| Parameter | Description |
 | ----- | ----- |
 | pos | offset from the start of the buffer, in bytes |
 | f | value to insert |
 
-## Remarks ##
+## Remarks
 A runtime error will occur if the destination range lies outside of the buffer extents. Note that a double value is 8 bytes, twice the size of an int or float value.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+	//Create a buffer
+	auto buffer = CreateBuffer(20 * sizeof(double));
+	
+	//Poke data to the buffer
+	for (int n = 0; n < buffer->GetSize() / sizeof(double); ++n)
+	{
+		buffer->PokeDouble(n * sizeof(double), n + 1);
+	}
+
+	//Peek and display data from the buffer
+	for (int n = 0; n < buffer->GetSize() / sizeof(double); ++n)
+	{
+		Print(buffer->PeekDouble(n * sizeof(double)));
+	}
+
+	return 0;
+}
+```
