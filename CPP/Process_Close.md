@@ -1,10 +1,14 @@
 # Process::Close #
 
-This method closes a running process.
+This method closes a running process and returns its exit code.
 
 ## Syntax ##
 
 - void **Close**()
+
+## Returns
+
+Returns the process exit code.
 
 ## Remarks ##
 
