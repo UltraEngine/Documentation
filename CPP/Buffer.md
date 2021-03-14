@@ -6,9 +6,9 @@ This class provides an interface for allocating, writing to, and reading from bl
 ### Properties ###
 | Name | Type | Description |
 | --- | --- | --- |
-| data | const char*& |  |
 | [Clear](Buffer_Clear.md) | Method |  |
 | [Copy](Buffer_Copy.md) | Method |  |
+| [Data](Buffer_Data.md) | Method |  |
 | [GetSize](Buffer_GetSize.md) | Method |  |
 | [PeekByte](Buffer_PeekByte) | Method |  |
 | [PeekDouble](Buffer_PeekDouble) | Method |  |
