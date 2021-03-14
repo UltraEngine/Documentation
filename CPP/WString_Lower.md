@@ -15,7 +15,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    String s = "John Smith";
+    WString s = "John Smith";
     Print(s.Lower());
 
     return 0;
