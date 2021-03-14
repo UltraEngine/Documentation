@@ -10,5 +10,23 @@ This method inserts a wide string into a memory buffer.
 | **pos** | offset from the start of the buffer, in bytes |
 | **s** | value to insert |
 
-## Remarks ##
-A runtime error will occur if the destination range lies outside of the buffer extents.
+## Remarks
+The buffer must have enough space to store the string plus an extra NULL short value. A runtime error will occur if the destination range lies outside of the buffer extents.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+	WString s = "Hello, how are you today?";
+	auto buffer = CreateBuffer(s.GetSize() + 2);
+	buffer->PokeWString(0, s);
+	Print(buffer->PeekWString(0));
+
+	return 0;
+}
+```
