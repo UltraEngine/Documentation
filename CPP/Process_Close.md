@@ -12,7 +12,7 @@ Returns the process exit code.
 
 ## Remarks ##
 
-To avoid forcefully terminating a running process call [Process::Wait](Process_Wait.md) instead of this method, or wait for [Process::GetStatus](Process_GetStatus.md) to return PROCESS_FINISHED.
+To avoid forcefully terminating a running process call the [Process::Wait](Process_Wait.md) method instead of this method, or wait for [Process::GetStatus](Process_GetStatus.md) to return PROCESS_FINISHED before calling this method.
 
 ## Example ##
 
