@@ -8,7 +8,7 @@ This method returns the current status of a running process.
 
 ## Returns
 
-Returns the process status. This may be PROCESS_RUNNING or PROCESS_FINISHED. The [Process::Close](Process_Close.md) method should be called once this method returns PROCESS_FINISHED.
+Returns the process status. This may be PROCESS_RUNNING or PROCESS_FINISHED. The [Process::Close](Process_Close.md) method should be called to close the handle and retrieve the  exit code once this method returns PROCESS_FINISHED.
 
 ## Example
 
