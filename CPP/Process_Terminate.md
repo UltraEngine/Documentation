@@ -1,10 +1,14 @@
 # Process::Terminate #
 
-This method forcefully quits a running process. Generally you should use [Process::Wait](Process_Wait.md) to wait for a running process to exit on its own.
+This method forcefully quits a running process.
 
 ## Syntax ##
 
 - void **Terminate**()
+
+## Remarks ##
+
+Generally you should not terminate a running process, but should call [Process::Wait](Process_Wait.md) to wait for the process to exit on its own.
 
 ## Example ##
 
