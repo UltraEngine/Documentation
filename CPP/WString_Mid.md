@@ -11,3 +11,19 @@ This method extracts a partial string and returns it.
 
 ## Returns ##
 Returns a string extracted from the specified position and length.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    WString s = "Hello, how are you today?";
+    Print(s.Mid(7,3));
+
+    return 0;
+}
+```
