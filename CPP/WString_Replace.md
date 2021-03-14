@@ -11,3 +11,19 @@ This method performs a search and replace operation on the string and returns th
 
 ## Returns ##
 Returns the string with all instances of the search term replaced with the replacement text.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    WString s = "Hello, how are you today?";
+    Print(s.Replace("you", "we"));
+
+    return 0;
+}
+```
