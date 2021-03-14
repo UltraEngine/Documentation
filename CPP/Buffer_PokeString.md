@@ -22,7 +22,7 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
 	String s = "Hello, how are you today?";
-	auto buffer = CreateBuffer(s.GetSize() + 1);
+	auto buffer = CreateBuffer((s.GetSize() + 1) * sizeof(s[0]));
 	buffer->PokeString(0, s);
 	Print(buffer->PeekString(0));
 
