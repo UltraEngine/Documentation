@@ -441,10 +441,6 @@
 							"filename": "Window_MouseHit"
 						},	
 						{
-							"title": "MouseDown",
-							"filename": "Window_MouseDown"
-						},
-						{
 							"title": "Maximized",
 							"filename": "Window_Maximized"
 						},
