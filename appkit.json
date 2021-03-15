@@ -441,16 +441,16 @@
 							"filename": "Window_MouseHit"
 						},	
 						{
+							"title": "Maximize",
+							"filename": "Window_Maximize"
+						},
+						{
 							"title": "Maximized",
 							"filename": "Window_Maximized"
 						},
 						{
 							"title": "Minimize",
 							"filename": "Window_Minimize"
-						},
-						{
-							"title": "Minimized",
-							"filename": "Window_Minimized"
 						},						
 						{
 							"title": "Minimized",
