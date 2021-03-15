@@ -1,5 +1,15 @@
 # Pixmap::Fill
 
+This method writes each pixel of the pixmap with the specified color.
+
+## Syntax
+
+- void **Fill**(const int color)
+
+| Parameter | Description |
+|---|---|
+| color | [RGBA](RGBA.md) color |
+
 ## Example
 
 ```c++
