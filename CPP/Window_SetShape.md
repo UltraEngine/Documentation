@@ -14,3 +14,41 @@ This method sets the window's position and size.
 | width | X component of the new window size |
 | height | Y component of the new window size |
 | size | new window size |
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = ListDisplays();
+
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+
+    //Create user interface
+    auto ui = CreateInterface(window);
+
+    //Adjust window position
+    auto dsz = displays[0]->GetSize();
+    auto wsz = window->GetSize();
+    window->SetShape((dsz.x - wsz.x) / 2, (dsz.y - wsz.y) / 2, wsz.x, wsz.y);
+
+    while (true)
+    {
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WINDOWCLOSE:
+            return 0;
+            break;
+        }
+    }
+
+    return 0;
+}
+```
