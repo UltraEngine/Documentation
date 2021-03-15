@@ -1,6 +1,6 @@
 # Window::SetMousePosition
 
-This method moves the mouse pointer to the specified window coordinates.
+This method moves the mouse pointer to the specified window coordinate.
 
 ## Syntax
 
