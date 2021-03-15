@@ -1,6 +1,6 @@
 # Icon #
 
-This class provides an interface for loading and rasterising vector images. Icons can be used for resolution-independent graphics.
+This class provides an interface for loading and rasterising vector images. Unlike [pixmaps](Pixmap.md), icons can be used for resolution-independent graphics.
 
 **Base class**: [Asset](Asset.md)
 
