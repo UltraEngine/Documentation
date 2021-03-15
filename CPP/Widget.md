@@ -21,6 +21,7 @@ This class handle user interface elements.
 | [GetState](Widget_GetState.md) | Method | gets the button state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
 | [Lock](Widget_Lock.md) | Method | pauses widget drawing |
+| [Paint](Widget_Paint.md) | Method | redraws a widget |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](Widget_SetColor.md) | Method | sets the widget color |
 | [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
