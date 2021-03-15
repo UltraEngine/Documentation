@@ -17,6 +17,8 @@ This functions loads a vector image from a file path or stream.
 
 Returns the loaded icon object if successful, otherwise NULL is returned.
 
+## Example
+
 ```c++
 #include "UltraEngine.h"
 
