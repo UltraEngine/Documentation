@@ -2,6 +2,8 @@
 
 This method splits the string by a delimiter and returns an array of parts.
 
+## Syntax
+
 - vector<[WString](WString.md)\> **Split**(const [WString](WString.md)& delimiter)
 
 | Parameters | Description |
