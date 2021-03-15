@@ -409,6 +409,10 @@
 							"filename": "Window_GetHandle"
 						},
 						{
+							"title": "GetMousePosition",
+							"filename": "Window_GetMousePosition"
+						},
+						{
 							"title": "GetPosition",
 							"filename": "Window_GetPosition"
 						},
@@ -457,10 +461,6 @@
 							"filename": "Window_Minimized"
 						},
 						{
-							"title": "MousePosition",
-							"filename": "Window_MousePosition"
-						},
-						{
 							"title": "MoveMouse",
 							"filename": "Window_MoveMouse"
 						},
@@ -471,7 +471,11 @@
 						{
 							"title": "SetMinSize",
 							"filename": "Window_SetMinSize"
-						},	
+						},
+						{
+							"title": "SetMousePosition",
+							"filename": "Window_SetMousePosition"
+						},		
 						{
 							"title": "SetShape",
 							"filename": "Window_SetShape"
