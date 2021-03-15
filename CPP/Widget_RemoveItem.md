@@ -4,11 +4,11 @@ This method removes the item at the specified index.
 
 ## Syntax
 
-- void **RemoveItem**(const int index)
+- void **RemoveItem**(const int item)
 
 | Parameter | Description |
 |---|---|
-| index | item index to remove, in the range from zero to the number of items minus one |
+| item | item index to remove, in the range from zero to the number of items minus one |
 
 ## Example
 
