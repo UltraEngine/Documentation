@@ -6,6 +6,10 @@ This method maximizes the window to fill the entire dekstop client area.
 
 - void **Maximize**()
 
+## Remarks
+
+The window should be created with the WINDOW_RESIZABLE style flag included.
+
 ## Example
 
 ```c++
