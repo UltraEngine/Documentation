@@ -14,3 +14,9 @@ shared_ptr<[Interface](Interface.md)\> **LoadInterface**(const [WString](WString
 ## Returns
 
 Returns a new interface if it was successfully loaded, otherwise NULL is returned.
+
+## Example
+
+```c++
+
+```
