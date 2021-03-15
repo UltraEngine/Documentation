@@ -20,7 +20,6 @@ This class handle user interface elements.
 | [GetSize](Widget_GetSize.md) | Method | gets the button size |
 | [GetState](Widget_GetState.md) | Method | gets the button state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
-| [Lock](Widget_Lock.md) | Method | pauses widget drawing |
 | [Paint](Widget_Paint.md) | Method | redraws a widget |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](Widget_SetColor.md) | Method | sets the widget color |
@@ -35,7 +34,6 @@ This class handle user interface elements.
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
 | [SelectItem](Widget_SelectItem.md) | Method | selects a widget item |
-| [Unlock](Widget_Unlock.md) | Method | resumes widget drawing |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
 | [CreateLabel](CreateLabel.md) | Function | creates a label widget |
