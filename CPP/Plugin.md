@@ -14,8 +14,8 @@ The script will be automatically run every time your program starts and the plug
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| description | const WString& | Read-only description of functionality loaded from the plugin |
-| title | const WString& | Read-only title loaded from plugin |
+| description | const WString& | read-only description of functionality loaded from the plugin |
+| title | const WString& | read-only title loaded from plugin |
 | properties | nlohmann::json | JSON structure containing plugin information |
-| [LoadPlugin](LoadPlugin.md) | Function | Loads a plugin module |
+| [LoadPlugin](LoadPlugin.md) | Function | loads a plugin module |
 
