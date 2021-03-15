@@ -1,8 +1,14 @@
-# Mutex::Lock #
+# Mutex::Lock
+
 This method locks a mutex. When a mutex is locked, other threads that lock the mutex will pause until the locking thread calls [Mutex::Unlock()](Mutex_Unlock.md).
 
-## Syntax ##
+## Syntax
+
 - void **Lock**()
+
+## Remarks
+
+Use of mutexes locks should be minimized, as they can slow down multithreaded code so that it loses its advantages over single-threaded code.
 
 ```c++
 //-----------------------------------------------------------------------------------------------
