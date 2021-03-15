@@ -11,7 +11,49 @@
 			"title": "Asset",
 			"filename": "Asset",
 			"topics":
-			[				
+			[
+				{
+					"title": "Icon",
+					"filename": "Icon",
+					"topics":
+					[
+						{
+							"title": "LoadIcon",
+							"filename": "LoadIcon"
+						},
+						{
+							"title": "Rasterize",
+							"filename": "Icon_Rasterize"
+						}						
+					]
+				},				
+				{
+					"title": "Pixmap",
+					"filename": "Pixmap",
+					"topics":
+					[
+						{
+							"title": "Convert",
+							"filename": "Pixmap_Convert"
+						},
+						{
+							"title": "Fill",
+							"filename": "Pixmap_Fill"
+						},
+						{
+							"title": "ReadPixel",
+							"filename": "Pixmap_ReadPixel"
+						},
+						{
+							"title": "Resize",
+							"filename": "Pixmap_Resize"
+						},
+						{
+							"title": "WritePixel",
+							"filename": "Pixmap_WritePixel"
+						}							
+					]
+				},
 				{
 					"title": "Reload",
 					"filename": "Asset_Reload"
@@ -20,7 +62,7 @@
 					"title": "Save",
 					"filename": "Asset_Save"
 				}				
-			]
+			}
 		},
 		{
 			"title": "Debugging",
@@ -324,48 +366,6 @@
 							"filename": "ListDisplays"
 						}
 					]							
-				},
-				{
-					"title": "Icon",
-					"filename": "Icon",
-					"topics":
-					[
-						{
-							"title": "LoadIcon",
-							"filename": "LoadIcon"
-						},
-						{
-							"title": "Rasterize",
-							"filename": "Icon_Rasterize"
-						}						
-					]
-				},				
-				{
-					"title": "Pixmap",
-					"filename": "Pixmap",
-					"topics":
-					[
-						{
-							"title": "Convert",
-							"filename": "Pixmap_Convert"
-						},
-						{
-							"title": "Fill",
-							"filename": "Pixmap_Fill"
-						},
-						{
-							"title": "ReadPixel",
-							"filename": "Pixmap_ReadPixel"
-						},
-						{
-							"title": "Resize",
-							"filename": "Pixmap_Resize"
-						},
-						{
-							"title": "WritePixel",
-							"filename": "Pixmap_WritePixel"
-						}							
-					]
 				},				
 				{
 					"title": "Window",
