@@ -78,6 +78,7 @@ int main(int argc, const char* argv[])
             }
         }
         mutex->Unlock();
+        Sleep(1);
     }
     return 0;
 }
