@@ -4,7 +4,7 @@ This method returns the mouse position relative to the window, in integer screen
 
 ## Syntax
 
-- iVec3 **MousePosition**()
+- [iVec3](iVec3.md) **MousePosition**()
 
 ## Returns
 
