@@ -15,10 +15,8 @@ This class provides an interface for loading, manipulating, and saving image dat
 | blocksize | const int&  | size of each block, for compressed formats |
 | Convert | Method | converts a pixmap to another format |
 | Fill | Method | |
-| MakeNormalMap | Method | |
 | ReadPixel | Method | |
 | Resize | Method | |
-| Swizzle | Method | |
 | WritePixel | Method | |
 | [CreatePixmap](CreatePixmap.md) | Function | Creates a new pixmap object. |
 | [LoadPixmap](LoadPixmap.md) | Function | Loads a pixmap object from a file. |
