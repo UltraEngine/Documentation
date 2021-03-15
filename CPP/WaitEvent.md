@@ -27,7 +27,7 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create window
-    auto window = CreateWindow("Parent window", 0, 0, 800, 600, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
     //Create user interface
     auto ui = CreateInterface(window);
