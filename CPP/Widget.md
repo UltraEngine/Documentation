@@ -5,7 +5,6 @@ This class handle user interface elements.
 
 | Name | Type | Description
 |---|---|---|
-| items | const vector<[WidgetItem](WidgetItem.md)> | read-only array of widget items |
 | kids | const vector<shared_ptr<[Widget](Widget.md)\> \>& | read-only list of child widgets |
 | size | const [iVec2](iVec2.md)& | read-only widget size |
 | text | const [WString](WString.md)& | read-only widget text |
