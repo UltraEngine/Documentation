@@ -37,8 +37,16 @@
 							"filename": "Pixmap_Convert"
 						},
 						{
+							"title": "CreatePixmap",
+							"filename": "CreatePixmap"
+						},						
+						{
 							"title": "Fill",
 							"filename": "Pixmap_Fill"
+						},
+						{
+							"title": "LoadPixmap",
+							"filename": "LoadPixmap"
 						},
 						{
 							"title": "ReadPixel",
