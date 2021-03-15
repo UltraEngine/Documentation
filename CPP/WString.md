@@ -21,7 +21,7 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 | [Right](WString_Right.md) | Method | returns rightmost characters |
 | [Split](WString_Split.md) | Method | segments the string |
 | [ToString](WString_ToString.md) | Method | returns a narrow string containing only ASCII characters |
-| [ToString](WString_ToUTF8String.md) | Method | returns a narrow string with UTF-8 encoding |
+| [ToUTF8String](WString_ToUTF8String.md) | Method | returns a narrow string with UTF-8 encoding |
 | [Trim](WString_Trim.md) | Method | removes whitespace characters from the ends of the string |
 | [Upper](WString_Upper.md) | Method | converts the string to uppercase |
 | [XOR](WString_XOR.md) | Method | performs an XOR operation |
