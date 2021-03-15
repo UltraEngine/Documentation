@@ -1,6 +1,6 @@
 # ActiveWindow
 
-This functions returns the focused application window, or NULL if no application window has the focus.
+This functions returns the focused application window.
 
 ## Syntax
 
@@ -8,9 +8,9 @@ shared_ptr<[Window](Window.md)\> **ActiveWindow**()
 
 ## Returns
 
-Returns the focused window.
+Returns the focused window, or NULL if no application window has the focus.
 
-# Example
+## Example
 
 ```c++
 #include "UltraEngine.h"
