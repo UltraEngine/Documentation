@@ -8,7 +8,7 @@ This method converts the wide string to a narrow string using UTF-8 encoding. Th
 
 ## Returns
 
-Returns a narrow string.
+Returns a narrow string with UTF-8 encoding.
 
 ## Example
 
