@@ -42,7 +42,7 @@ int main(int argc, const char* argv[])
     {
         if (window->KeyDown(KEY_SPACE))
         {
-            ui->root->SetColor(1,0,0,1);
+            ui->root->SetColor(1, 0, 0, 1);
         }
         else
         {
