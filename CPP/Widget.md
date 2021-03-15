@@ -27,8 +27,6 @@ This class handle user interface elements.
 | [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
-| [SetItemIcon](Widget_SetItemIcon.md) | Method | modifies the item icon |
-| [SetItemPixmap](Widget_SetItemPixmap.md) | Method | modifies the item pixmap |
 | [SetItemText](Widget_SetItemText.md) | Method | modifies the item text |
 | [SetLayout](Widget_SetLayout.md) | Method | controls the way a widget behaves during resizing |
 | [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
