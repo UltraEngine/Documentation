@@ -671,10 +671,6 @@
 							"filename": "Widget_GetText"
 						},
 						{
-							"title": "Lock",
-							"filename": "Widget_Lock"
-						},
-						{
 							"title": "Paint",
 							"filename": "Widget_Paint"
 						},						
@@ -725,10 +721,6 @@
 						{
 							"title": "SetProgress",
 							"filename": "Widget_SetProgress"
-						},
-						{
-							"title": "Unlock",
-							"filename": "Widget_Unlock"
 						}
 					]						
 				}
