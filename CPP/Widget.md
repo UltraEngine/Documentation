@@ -27,6 +27,7 @@ This class handle user interface elements.
 | [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
+| [SetLayout](Widget_SetLayout.md) | Method | controls the way a widget behaves during resizing |
 | [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
 | [SetProgress](Widget_SetProgress.md) | Method | sets the progress complete for a progress bar widget |
 | [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
