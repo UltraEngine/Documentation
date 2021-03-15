@@ -1,12 +1,12 @@
-# Window::Maximized #
+# Window::Maximized
 
 This method returns true is the window is maximized.
 
-## Syntax ##
+## Syntax
 
 - bool **Maximized**()
 
-## Returns ##
+## Returns
 
 Returns true if the window is maximized, otherwise false is returned.
 
