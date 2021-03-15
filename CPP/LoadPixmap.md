@@ -1,5 +1,7 @@
 # LoadPixmap
 
+This function loads a pixmap from a file path or stream.
+
 ## Syntax
 
 - shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(const WString& path, const int miplevel = 0, const int face = 0, const LoadFlags flags = LOAD_DEFAULT)
@@ -15,3 +17,42 @@
 
 ## Returns
 Returns the loaded pixmap, or NULL if no pixmap was loaded.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = ListDisplays();
+
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+
+    //Create user interface
+    auto ui = CreateInterface(window);
+
+    //Create a pixmap
+    auto pixmap = LoadPixmap("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds");
+
+    //Show the pixmap
+    ui->root->SetPixmap(pixmap);
+
+    while (true)
+    {
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WINDOWCLOSE:
+            return 0;
+            break;
+        }
+    }
+
+    return 0;
+}
+```
