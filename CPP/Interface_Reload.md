@@ -13,4 +13,4 @@ This method reloads the interface from a file or stream. The hierarchy in the sa
 | flags | optional load flags |
 
 ## Returns ##
-True is returned if the interface was successfully reloaded, otherwise false is returned.
+Returns true if the interface was successfully reloaded, otherwise false is returned.
