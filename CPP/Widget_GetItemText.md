@@ -4,7 +4,7 @@ This method returns the text of the specified widget item.
 
 ## Syntax
 
-- WString **GetItemText*(const int item)
+- WString **GetItemText**(const int item)
 
 | Parameter | Description |
 | --- | --- |
