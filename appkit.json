@@ -1240,6 +1240,10 @@
 						{
 							"title": "ToString",
 							"filename": "WString_ToString"
+						},
+						{
+							"title": "ToUTF8String",
+							"filename": "WString_ToUTF8String"
 						},						
 						{
 							"title": "Trim",
