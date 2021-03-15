@@ -7,6 +7,16 @@ This functions loads a vector image from a file path or stream.
 - shared_ptr<[Pixmap](Pixmap.md)\> **LoadIcon**(const WString& path, const LoadFlags flags = LOAD_DEFAULT)
 - shared_ptr<[Pixmap](Pixmap.md)\> **LoadIcon**(const [Stream](Stream.md) stream, const LoadFlags flags = LOAD_DEFAULT)
 
+| Parameter | Description |
+|---|---|
+| path | file path to load the icon from |
+| stream | stream to load the icon from |
+| flags | optional loading flags |
+
+## Returns
+
+Returns the loaded icon object if successful, otherwise NULL is returned.
+
 ```c++
 #include "UltraEngine.h"
 
