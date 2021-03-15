@@ -14,9 +14,9 @@ This class provides an interface for loading, manipulating, and saving image dat
 | pixels | const shared_ptr<[Buffer](Buffer.md)\>&  | buffer containing pixel data |
 | blocksize | const int&  | size of each block, for compressed formats |
 | Convert | Method | converts a pixmap to another format |
-| Fill | Method | |
-| ReadPixel | Method | |
-| Resize | Method | |
-| WritePixel | Method | |
+| Fill | Method | writes each pixel with the specified color |
+| ReadPixel | Method | reads a single pixel |
+| Resize | Method | resizes the pixmap |
+| WritePixel | Method | writes a single pixel |
 | [CreatePixmap](CreatePixmap.md) | Function | Creates a new pixmap object. |
 | [LoadPixmap](LoadPixmap.md) | Function | Loads a pixmap object from a file. |
