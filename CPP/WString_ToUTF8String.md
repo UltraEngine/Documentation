@@ -4,7 +4,7 @@ This method converts the wide string to a narrow string using UTF-8 encoding. Th
 
 ## Syntax
 
-[String](String.md) **ToUTF8String**()
+- [String](String.md) **ToUTF8String**()
 
 ## Returns
 
