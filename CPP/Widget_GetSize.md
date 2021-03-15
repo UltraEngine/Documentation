@@ -1,13 +1,16 @@
-# Widget::GetSize #
+# Widget::GetSize
+
 This method returns the dimensions of the widget. To retrieve the area inside the widget excluding any padding, use the [ClientSize](Widget_ClientSize.md) method.
 
-## Syntax ##
-- [iVec2](iVec2.md) **ClientSize**()
+## Syntax
 
-## Returns ##
+- [iVec2](iVec2.md) **GetSize**()
+
+## Returns
+
 Returns the widget size.
 
-## Example ##
+## Example
 
 ```c++
 #include "UltraEngine.h"
