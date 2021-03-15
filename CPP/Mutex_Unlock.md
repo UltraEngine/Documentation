@@ -1,8 +1,14 @@
-# Mutex::Unlock #
+# Mutex::Unlock
+
 This method unlocks a mutex and allows other threads to execute the enclosed code.
 
-## Syntax ##
+## Syntax
+
 - void **Unlock**()
+
+## Remarks
+
+Use of mutexes locks should be minimized, as they can slow down multithreaded code so that it loses its advantages over single-threaded code.
 
 ```c++
 //-----------------------------------------------------------------------------------------------
