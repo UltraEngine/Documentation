@@ -731,25 +731,6 @@
 							"filename": "Widget_Unlock"
 						}
 					]						
-				},
-				{
-					"title": "WidgetItem",
-					"filename": "WidgetItem",
-					"topics":
-					[
-						{
-							"title": "SetIcon",
-							"filename": "WidgetItem_SetIcon"
-						},
-						{
-							"title": "SetPixmap",
-							"filename": "WidgetItem_SetPixmap"
-						},
-						{
-							"title": "SetText",
-							"filename": "WidgetItem_SetText"
-						}
-					]
 				}
 			]
 		},
