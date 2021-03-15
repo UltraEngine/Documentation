@@ -1,6 +1,6 @@
 # Window::Minimize
 
-This method minimizes the window to fill the entire dekstop client area.
+This method minimizes the window to the desktop taskbar.
 
 ## Syntax
 
