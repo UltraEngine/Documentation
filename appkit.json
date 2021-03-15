@@ -667,6 +667,10 @@
 							"filename": "Widget_Lock"
 						},
 						{
+							"title": "Paint",
+							"filename": "Widget_Paint"
+						},						
+						{
 							"title": "RemoveItem",
 							"filename": "Widget_RemoveItem"
 						},
