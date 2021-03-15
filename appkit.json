@@ -641,6 +641,10 @@
 						{
 							"title": "FilterItems",
 							"filename": "Widget_FilterItems"
+						},
+						{
+							"title": "GetItemText",
+							"filename": "Widget_GetItemText"
 						},						
 						{
 							"title": "GetParent",
@@ -685,7 +689,7 @@
 						{
 							"title": "SetFontScale",
 							"filename": "Widget_SetFontScale"
-						},
+						},					
 						{
 							"title": "SetLayout",
 							"filename": "Widget_SetLayout"
@@ -709,6 +713,18 @@
 						{
 							"title": "SetIcon",
 							"filename": "Widget_SetIcon"
+						},
+						{
+							"title": "SetItemIcon",
+							"filename": "Widget_SetItemIcon"
+						},
+						{
+							"title": "SetItemPixmap",
+							"filename": "Widget_SetItemPixmap"
+						},
+						{
+							"title": "SetItemText",
+							"filename": "Widget_SetItemText"
 						},						
 						{
 							"title": "SetPixmap",
