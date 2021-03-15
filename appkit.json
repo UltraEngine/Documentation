@@ -661,7 +661,7 @@
 						{
 							"title": "GetSize",
 							"filename": "Widget_GetSize"
-						},						
+						},				
 						{
 							"title": "GetState",
 							"filename": "Widget_GetState"
@@ -689,6 +689,10 @@
 						{
 							"title": "SetFontScale",
 							"filename": "Widget_SetFontScale"
+						},
+						{
+							"title": "SetLayout",
+							"filename": "Widget_SetLayout"
 						},						
 						{
 							"title": "SetShape",
