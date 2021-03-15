@@ -715,14 +715,6 @@
 							"filename": "Widget_SetIcon"
 						},
 						{
-							"title": "SetItemIcon",
-							"filename": "Widget_SetItemIcon"
-						},
-						{
-							"title": "SetItemPixmap",
-							"filename": "Widget_SetItemPixmap"
-						},
-						{
 							"title": "SetItemText",
 							"filename": "Widget_SetItemText"
 						},						
