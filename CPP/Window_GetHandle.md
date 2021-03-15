@@ -4,7 +4,7 @@ This method returns a handle to the system window object.
 
 ## Syntax
 
-HWND **GetHandle**()
+- HWND **GetHandle**()
 
 ## Returns
 
