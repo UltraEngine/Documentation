@@ -461,10 +461,6 @@
 							"filename": "Window_Minimized"
 						},
 						{
-							"title": "MoveMouse",
-							"filename": "Window_MoveMouse"
-						},
-						{
 							"title": "Restore",
 							"filename": "Window_Restore"
 						},
