@@ -19,7 +19,7 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
     while (!window->Closed())
     {
