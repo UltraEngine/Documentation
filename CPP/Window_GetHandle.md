@@ -27,12 +27,10 @@ int main(int argc, const char* argv[])
 
     //Modify the window handle with system commands
 #ifdef _WIN32
-
     HWND hwnd = window->GetHandle();
     auto style = GetWindowLong(hwnd, GWL_EXSTYLE);
     style |= WS_EX_CONTEXTHELP;
     SetWindowLong(hwnd, GWL_EXSTYLE, style);
-
 #endif
 
     while (true)
