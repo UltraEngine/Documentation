@@ -3,12 +3,6 @@
 You can use OpenGL or another graphics API to create a 3D viewport in a GUI application. The example below shows minimal OpenGL context creation on a standard window:
 
 ```c++
-//---------------------------------------------------------------
-//
-// This example creates an OpenGL rendering context on a window
-// 
-//---------------------------------------------------------------
-
 #include "UltraEngine.h"
 
 #include <GL/GL.h>
@@ -48,21 +42,11 @@ int main(int argc, const char* argv[])
 		0, 0, 0
 	};
 
-	if (SetPixelFormat(hdc, 1, &pfd) == 0)
-	{
-		Print("SetPixelFormat() failed.");
-		return 0;
-	}
+	if (SetPixelFormat(hdc, 1, &pfd) == 0) RuntimeError("SetPixelFormat() failed.");
 
 	HGLRC glcontext = wglCreateContext(hdc);
 	
-	if (glcontext == NULL)
-	{
-		auto err = GetLastError();
-		if (err == 2000) Print("Invalid pixel format.");
-		Print("wglCreateContext() failed.");
-		return 0;
-	}
+	if (glcontext == NULL) RuntimeError("wglCreateContext() failed.");
 
 	wglMakeCurrent(hdc, glcontext);
 
@@ -75,10 +59,7 @@ int main(int argc, const char* argv[])
 			switch (ev.id)
 			{
 			case EVENT_WINDOWCLOSE:
-				if (ev.source == window)
-				{
-					return 0;
-				}
+				if (ev.source == window) return 0;
 				break;
 			}
 		}
