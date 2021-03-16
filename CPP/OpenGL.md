@@ -24,11 +24,6 @@ int main(int argc, const char* argv[])
 	//Create a window
 	auto window = CreateWindow("OpenGL Example", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
 
-	while (PeekEvent())
-	{
-		WaitEvent();
-	}
-
 	//Initialize OpenGL context
 	HWND hwnd = window->GetHandle();
 	HDC hdc = GetDC(hwnd);
