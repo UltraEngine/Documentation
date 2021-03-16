@@ -1,0 +1,190 @@
+{
+	"interface": {
+		"scale": 1.0,
+		"widgets": [
+			{
+				"alignment": [
+					1,
+					1,
+					1,
+					1
+				],
+				"edgedistance": [
+					0,
+					0,
+					0,
+					0
+				],
+				"kids": [
+					{
+						"alignment": [
+							1,
+							0,
+							1,
+							0
+						],
+						"edgedistance": [
+							251,
+							251,
+							50,
+							353
+						],
+						"position": [
+							251,
+							50
+						],
+						"scale": 1.0,
+						"size": [
+							120,
+							30
+						],
+						"style": 0,
+						"text": "Button",
+						"type": "BUTTON"
+					},
+					{
+						"alignment": [
+							1,
+							0,
+							1,
+							0
+						],
+						"edgedistance": [
+							251,
+							251,
+							90,
+							313
+						],
+						"position": [
+							251,
+							90
+						],
+						"scale": 1.0,
+						"size": [
+							120,
+							30
+						],
+						"style": 1,
+						"text": "Toggle",
+						"type": "BUTTON"
+					},
+					{
+						"alignment": [
+							1,
+							0,
+							1,
+							0
+						],
+						"edgedistance": [
+							251,
+							251,
+							130,
+							273
+						],
+						"position": [
+							251,
+							130
+						],
+						"scale": 1.0,
+						"size": [
+							120,
+							30
+						],
+						"style": 32,
+						"text": "Toolbar",
+						"type": "BUTTON"
+					},
+					{
+						"alignment": [
+							1,
+							0,
+							1,
+							0
+						],
+						"edgedistance": [
+							251,
+							251,
+							170,
+							233
+						],
+						"position": [
+							251,
+							170
+						],
+						"scale": 1.0,
+						"size": [
+							120,
+							30
+						],
+						"style": 4,
+						"text": "Checkbox",
+						"type": "BUTTON"
+					},
+					{
+						"alignment": [
+							1,
+							0,
+							1,
+							0
+						],
+						"edgedistance": [
+							251,
+							251,
+							210,
+							193
+						],
+						"position": [
+							251,
+							210
+						],
+						"scale": 1.0,
+						"size": [
+							120,
+							30
+						],
+						"style": 2,
+						"text": "Option 1",
+						"type": "BUTTON"
+					},
+					{
+						"alignment": [
+							1,
+							0,
+							1,
+							0
+						],
+						"edgedistance": [
+							251,
+							251,
+							250,
+							153
+						],
+						"position": [
+							251,
+							250
+						],
+						"scale": 1.0,
+						"size": [
+							120,
+							30
+						],
+						"style": 2,
+						"text": "Option 2",
+						"type": "BUTTON"
+					}
+				],
+				"position": [
+					0,
+					0
+				],
+				"scale": 1.0,
+				"size": [
+					622,
+					433
+				],
+				"style": 0,
+				"type": "PANEL"
+			}
+		]
+	}
+}
