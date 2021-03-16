@@ -64,6 +64,8 @@ int main(int argc, const char* argv[])
 
 The next example mixes GUI interface elements with OpenGL rendering by creatign the OpenGL context on a child window. This application uses event-driven timing instead of continuously rendering the viewport. A callback is used to resize the viewport window when the parent window is resized.
 
+<img src = 'https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/opengl_window.png' />
+
 ```c++
 #include "UltraEngine.h"
 
