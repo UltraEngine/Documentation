@@ -23,7 +23,9 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
     Print("Launching process");
+#ifdef _WIN32
     auto proc = CreateProcess("C:/Windows/notepad.exe");
+#endif
     Print("Process running");
     int exitcode = proc->Wait();
     Print("Process ended (" + String(exitcode) + ")");
