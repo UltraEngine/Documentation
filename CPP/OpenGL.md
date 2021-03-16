@@ -50,7 +50,7 @@ int main(int argc, const char* argv[])
 
 	if (SetPixelFormat(hdc, 1, &pfd) == 0)
 	{
-		Print("ChooosePixelFormat() failed.");
+		Print("SetPixelFormat() failed.");
 		return 0;
 	}
 
