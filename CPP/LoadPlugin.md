@@ -20,7 +20,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	auto plugin = LoadPlugin("Plugins/Basis.*");
+	auto plugin = LoadPlugin("Plugins/FITextureLoader.*");
 
 	if (plugin)
 	{
