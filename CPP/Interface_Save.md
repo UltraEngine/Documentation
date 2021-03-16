@@ -14,73 +14,49 @@ Returns true if the interface is successfully saved, otherwise false is returned
 ## Example
 
 ```c++
-//---------------------------------------------------------------------------------------------------
-//
-// This example demonstrates an easy way to handle DPI scaling for resolution-independent interfaces.
-// The user interface is created using 100 scaling and then the interface is rescaled if the display
-// scale is not 100%. The program listens for additional window DPI scale change events in case the user
-// changes this value in the system settings while this program is running.
-// 
-// This version saves the user interface laytout before scaling and then reloads it after scaling.
-// It is possible this could cause small losses of precision under some circumstances but should be fine 
-// for most use cases. It would also be possible to save the user interface once immediately after creating
-// the program interface, and then reload it each time from the original version.
-// 
-//---------------------------------------------------------------------------------------------------
-
 #include "UltraEngine.h"
 
 using namespace UltraEngine;
-
-bool EventCallback(const Event& ev, shared_ptr<Object> extra)
-{
-    //Resize window if desired
-    auto window = ev.source->As<Window>();
-    if (window)
-    {
-        window->SetShape(ev.position, ev.size);
-    }
-
-    //Get the user interface
-    auto ui = extra->As<Interface>();
-    if (ui)
-    {
-        //Save the user interface
-        nlohmann::json j3;
-        ui->Save(j3);
-
-        //Change the user interface scale
-        ui->SetScale(float(ev.data) / 100.0f);
-
-        //Reload the user interface
-        ui->Reload(j3);
-    }
-
-    return true;
-}
 
 int main(int argc, const char* argv[])
 {
     //Get the displays
     auto displays = ListDisplays();
 
-    //Create window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
-    //Create user interface
+    //Create User Interface
     auto ui = CreateInterface(window);
 
-    //Create widget
-    iVec2 sz = ui->root->ClientSize();
-    auto button = CreateButton("Button", 10, 10, 150, 30, ui->root);
+    //Create buttons
+    int x = (window->ClientSize().x - 120) / 2;
+    int y = 50;
+    int sep = 40;
 
-    ListenEvent(EVENT_WINDOWDPICHANGED, window, EventCallback, ui);
+    auto button = CreateButton("Button", x, y, 120, 30, ui->root);
+    y += sep;
 
-    //Trigger a rescale if the display scale is not 100%
-    if (displays[0]->scale != 1.0f)
-    {
-        EmitEvent(EVENT_WINDOWDPICHANGED, window, Round(displays[0]->scale * 100.0f), 0, 0, 800 * displays[0]->scale, 600 * displays[0]->scale);
-    }
+    auto toggle = CreateButton("Toggle", x, y, 120, 30, ui->root, BUTTON_TOGGLE);
+    y += sep;
+
+    auto toolbar = CreateButton("Toolbar", x, y, 120, 30, ui->root, BUTTON_TOOLBAR);
+    y += sep;
+
+    auto checkbox = CreateButton("Checkbox", x, y, 120, 30, ui->root, BUTTON_CHECKBOX);
+    y += sep;
+
+    auto radio1 = CreateButton("Option 1", x, y, 120, 30, ui->root, BUTTON_RADIO);
+    radio1->SetState(WIDGETSTATE_SELECTED);
+
+    y += sep;
+    auto radio2 = CreateButton("Option 2", x, y, 120, 30, ui->root, BUTTON_RADIO);
+
+    //Save the user interface
+    ui->Save(FolderLocation(FOLDER_DOCUMENTS) + "/temp.json");
+
+    //Open the file
+    RunFile(FolderLocation(FOLDER_DOCUMENTS) + "/temp.json");
 
     while (true)
     {
@@ -88,10 +64,7 @@ int main(int argc, const char* argv[])
         switch (ev.id)
         {
         case EVENT_WINDOWCLOSE:
-            if (ev.source == window)
-            {
-                return 0;
-            }
+            return 0;
             break;
         }
     }
