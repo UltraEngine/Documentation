@@ -11,4 +11,3 @@ This class is used to create a graphical user interface.
 | [Save](Interface_Save.md) | Method | saves the graphical user interface to a JSON file |
 | [SetScale](Interface_SetScale.md) | Method | sets the interface DPI scaling value |
 | [CreateInterface](CreateInterface.md) | Function | creates a new graphical user interface |
-| [LoadInterface](LoadInterface.md) | Function | loads a graphical user interface from a JSON file |
