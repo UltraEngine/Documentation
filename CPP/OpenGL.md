@@ -1,4 +1,4 @@
-# OpenGL
+# OpenGL Rendering
 
 You can use OpenGL or another graphics API to create a 3D viewport in a GUI application. The example below shows minimal OpenGL context creation on a standard window and renders an empty scene in real-time.
 
@@ -176,3 +176,5 @@ int main(int argc, const char* argv[])
 	return 0;
 }
 ```
+
+You can use these features to create tools that provide a graphical user interface combined with 3D rendering.
