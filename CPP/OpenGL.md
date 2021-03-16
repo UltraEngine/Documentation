@@ -50,21 +50,8 @@ int main(int argc, const char* argv[])
 
 	wglMakeCurrent(hdc, glcontext);
 
-	while (true)
+	while (!window->Closed())
 	{
-		//Check for events
-		while (PeekEvent())
-		{
-			const Event ev = WaitEvent();
-			switch (ev.id)
-			{
-			case EVENT_WINDOWCLOSE:
-				if (ev.source == window) return 0;
-				break;
-			}
-		}
-
-		//OpenGL rendering
 		iVec2 sz = window->ClientSize();
 		glViewport(0, 0, sz.x, sz.y);
 		glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
