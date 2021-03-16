@@ -34,6 +34,4 @@ Once Visual Studio is opened, you can compile and run the project by selecting t
 
 This documentation system describes all available classes and functions in the SDK. You can copy any code samples in the documentation into the *main.cpp* file to run that sample. Try running the code example [here](CreateButton.md) in your project.
 
-## Additional Resources ##
-- Officlal video tutorials are available [here](https://www.leadwerks.com/community/video/browse/3-tutorials).
-- You can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
+For further assistance, you can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
