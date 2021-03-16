@@ -534,10 +534,6 @@
 							"filename": "Interface_LoadColorScheme"
 						},						
 						{
-							"title": "LoadInterface",
-							"filename": "LoadInterface"
-						},						
-						{
 							"title": "Reload",
 							"filename": "Interface_Reload"
 						},						
