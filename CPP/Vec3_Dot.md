@@ -17,3 +17,21 @@ The dot product is a measure of how similar two vector are. If the vectors point
 ## Returns
 
 Returns the dot product of this vector and the specified vector.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    Vec3 v0 = Vec3(1, 0, 0);
+    Vec3 v1 = Vec3(-1, 0, 0);
+
+    Print(v0.Dot(v1));
+
+    return 0;
+}
+```
