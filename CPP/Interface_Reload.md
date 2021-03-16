@@ -71,14 +71,30 @@ int main(int argc, const char* argv[])
     auto displays = ListDisplays();
 
     //Create window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
+    window->SetMinSize(640, 480);
 
     //Create user interface
     auto ui = CreateInterface(window);
 
-    //Create widget
+    //Create widgets
     iVec2 sz = ui->root->ClientSize();
-    auto button = CreateButton("Button", 10, 10, 150, 30, ui->root);
+
+    auto leftpanel = CreatePanel(10, 10, 200, sz.y  -20, ui->root);
+    leftpanel->SetLayout(1, 0, 1, 1);
+    leftpanel->SetColor(0, 0, 0, 1);
+
+    auto rightpanel = CreatePanel(sz.x - 10 - 200, 10, 200, sz.y - 20, ui->root);
+    rightpanel->SetLayout(0, 1, 1, 1);
+    rightpanel->SetColor(0, 0, 0, 1);
+
+    auto mainpanel = CreatePanel(10 + 200 + 10, 10, sz.x - 10 * 4 - 200 * 2, sz.y - 10 * 3 - 100, ui->root);
+    mainpanel->SetLayout(1, 1, 1, 1);
+    mainpanel->SetColor(0, 0, 0, 1);
+
+    auto bottompanel = CreatePanel(10 + 200 + 10, sz.y - 10 - 100, sz.x - 10 * 4 - 200 * 2, 100, ui->root);
+    bottompanel->SetLayout(1, 1, 0, 1);
+    bottompanel->SetColor(0, 0, 0, 1);
 
     ListenEvent(EVENT_WINDOWDPICHANGED, window, EventCallback, ui);
 
