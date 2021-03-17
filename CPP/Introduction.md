@@ -50,7 +50,7 @@ For further assistance, you can ask questions and get answers from staff and oth
 ```
 
 THe following preprocessor definitions:
-```
+```txt
 _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING
 _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 _WINSOCK_DEPRECATED_NO_WARNINGS
