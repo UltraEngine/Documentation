@@ -37,6 +37,27 @@ This documentation system describes all available classes and functions in the S
 For further assistance, you can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
 
 ## Add to an Existing Project
+
+Add this code in your main project header to include the Ultra App Kit library. You may need to edit the location of the header and library files to match your machine's configuration:
+
+```c++
+//Include header file
+#include "C:/Program Files/Ultra App Kit/Include/UltraEngine.h"
+
+//Compile library into project
+#ifdef _WIN32
+  #ifdef _WIN64
+    #ifdef _DEBUG
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win64\\App Kit_d.lib")
+    #else
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
+    #endif
+  #endif  
+#endif
+```
+
+If you are using Ultra App Kit on Steam here is the code for the default install location:
+
 ```c++
 //Include header file
 #include "C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include/UltraEngine.h"
