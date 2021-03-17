@@ -38,6 +38,8 @@ For further assistance, you can ask questions and get answers from staff and oth
 
 ## Add to an Existing Project
 
+If you have an existing project and you want to add the Ultra App Kit library to provide a front-end interface, you can accomplish this with the steps below.
+
 ### Header Search Paths
 
 You must add a header search path in your project settings, for both release and debug configurations:
