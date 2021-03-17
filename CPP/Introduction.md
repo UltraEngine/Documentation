@@ -76,15 +76,6 @@ If you are using Ultra App Kit on Steam here is the code for the default install
 #endif
 ```
 
-THe following preprocessor definitions:
-```txt
-_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING
-_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
-_WINSOCK_DEPRECATED_NO_WARNINGS
-_HAS_STD_BYTE=0
-_CRT_NONSTDC_NO_DEPRECATE
-_CRT_SECURE_NO_WARNINGS
-```
-Additionally, the _DEBUG preprocessor definition should be present in the debug build.
+You must add _ULTRA_APPKIT to the preprocessor definitions for both the release and debug builds. Additionally, the _DEBUG preprocessor definition should be present in the debug build.
 
 Ultra App Kit requires x64 (64-bit) compilation.
