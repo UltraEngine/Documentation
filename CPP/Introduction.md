@@ -38,6 +38,20 @@ For further assistance, you can ask questions and get answers from staff and oth
 
 ## Add to an Existing Project
 
+### Header Search Paths
+
+You must add a header search path in your project settings, for both release and debug configurations:
+```txt
+C:/Program Files/Ultra App Kit/Include
+```
+
+If you are using Ultra App Kit on Steam the default location will be here:
+```txt
+C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include
+```
+
+### Include Header and lLibrary
+
 Add this code in your main project header to include the Ultra App Kit library. You may need to edit the location of the header and library files to match your machine's configuration:
 
 ```c++
@@ -76,6 +90,10 @@ If you are using Ultra App Kit on Steam here is the code for the default install
 #endif
 ```
 
+### Preprcessor Definitions
+
 You must add _ULTRA_APPKIT to the preprocessor definitions for both the release and debug builds. Additionally, the _DEBUG preprocessor definition should be present in the debug build.
+
+<img src = 'https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/preprocessor_definitions.png' />
 
 Ultra App Kit requires x64 (64-bit) compilation.
