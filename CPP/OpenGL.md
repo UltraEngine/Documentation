@@ -150,7 +150,7 @@ int main(int argc, const char* argv[])
 		case EVENT_WINDOWPAINT:
 			if (ev.source == subwindow)
 			{
-				iVec2 sz = window->ClientSize();
+				iVec2 sz = subwindow->ClientSize();
 				glViewport(0, 0, sz.x, sz.y);
 				glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
 				glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
