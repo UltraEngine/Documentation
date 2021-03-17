@@ -36,7 +36,7 @@ This documentation system describes all available classes and functions in the S
 
 For further assistance, you can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
 
-## Importing Ultra App Kit in an Existing Project
+## Adding Ultra App Kit to an Existing Project
 
 ```c++
 //Include header file
