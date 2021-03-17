@@ -17,7 +17,7 @@ The **Learn** panel contains links to documentation and other online resources i
 
 The **Community** panel contains links to community features, including forums, blogs, and the Ultra Engine Marketplace.
 
-## Creating a Project ##
+## Create a Project ##
 
 To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
 
@@ -36,7 +36,7 @@ This documentation system describes all available classes and functions in the S
 
 For further assistance, you can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
 
-## Adding Ultra App Kit to an Existing Project
+## Add to an Existing Project
 
 ```c++
 //Include header file
