@@ -41,9 +41,8 @@ For further assistance, you can ask questions and get answers from staff and oth
 Add this code in your main project header to include the Ultra App Kit library. You may need to edit the location of the header and library files to match your machine's configuration:
 
 ```c++
-#define _ULTRA_APPKIT
-
 //Include header file
+#define _ULTRA_APPKIT
 #include "C:/Program Files/Ultra App Kit/Include/UltraEngine.h"
 
 //Compile library into project
@@ -61,9 +60,8 @@ Add this code in your main project header to include the Ultra App Kit library. 
 If you are using Ultra App Kit on Steam here is the code for the default install location:
 
 ```c++
-#define _ULTRA_APPKIT
-
 //Include header file
+#define _ULTRA_APPKIT
 #include "C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include/UltraEngine.h"
 
 //Compile library into project
