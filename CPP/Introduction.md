@@ -37,13 +37,16 @@ This documentation system describes all available classes and functions in the S
 For further assistance, you can ask questions and get answers from staff and other developers in the [technical assistance forum](https://www.leadwerks.com/community/forum/91-technical-assistance).
 
 ## Add to an Existing Project
-
 ```c++
 //Include header file
-#include "C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include"
+#include "C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include/UltraEngine.h"
 
 //Compile library into project
-#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Include")
+#ifdef _DEBUG
+  #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit_d.lib")
+#else
+  #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
+#endif
 ```
 
 THe following preprocessor definitions:
@@ -57,3 +60,5 @@ _CRT_SECURE_NO_WARNINGS
 _ULTRA_APPKIT
 ```
 Additionally, the _DEBUG preprocessor definition should be present in the debug build.
+
+Ultra App Kit requires x64 (64-bit) compilation.
