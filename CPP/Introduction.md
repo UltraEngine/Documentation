@@ -50,7 +50,7 @@ If you are using Ultra App Kit on Steam the default location will be here:
 C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include
 ```
 
-### Include Header and lLibrary
+### Include Header and Library
 
 Add this code in your main project header to include the Ultra App Kit library. You may need to edit the location of the header and library files to match your machine's configuration:
 
@@ -90,7 +90,7 @@ If you are using Ultra App Kit on Steam here is the code for the default install
 #endif
 ```
 
-### Preprcessor Definitions
+### Preprocessor Definitions
 
 You must add _ULTRA_APPKIT to the preprocessor definitions for both the release and debug builds. Additionally, the _DEBUG preprocessor definition should be present in the debug build.
 
