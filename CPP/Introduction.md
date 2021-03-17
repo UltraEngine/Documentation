@@ -43,11 +43,13 @@ For further assistance, you can ask questions and get answers from staff and oth
 
 //Compile library into project
 #ifdef _WIN32
-  #ifdef _DEBUG
-    #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit_d.lib")
-  #else
-    #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
-  #endif
+  #ifdef _WIN64
+    #ifdef _DEBUG
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit_d.lib")
+    #else
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
+    #endif
+  #endif  
 #endif
 ```
 
