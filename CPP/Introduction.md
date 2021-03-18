@@ -59,7 +59,7 @@ Add this code in your main project header to include the Ultra App Kit library. 
 ```c++
 //Include header file
 #define _ULTRA_APPKIT
-#include "C:/Program Files/Ultra App Kit/Include/UltraEngine.h"
+#include "C:\\Program Files\\Ultra App Kit\\Include\\UltraEngine.h"
 
 //Compile library into project
 #ifdef _WIN32
@@ -78,7 +78,7 @@ If you are using Ultra App Kit on Steam here is the code for the default install
 ```c++
 //Include header file
 #define _ULTRA_APPKIT
-#include "C:/Program Files (x86)/Steam/steamapps/common/Ultra App Kit/Include/UltraEngine.h"
+#include "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Include\\UltraEngine.h"
 
 //Compile library into project
 #ifdef _WIN32
