@@ -4,7 +4,7 @@ This class contains information for events emitted by the GUI and other systems.
 
 | Property | Type | Description |
 |-----|-----|-----|
-| data | int | Extra field for data |
+| data | int | field for event data value |
 | extra | shared_ptr<[Object](Object.md)\> | extra value associated witht the event |
 | id | EventID | Event type |
 | position | [iVec2](iVec2.md) | screen coordinate at which event occurred |
