@@ -52,21 +52,21 @@ int main(int argc, const char* argv[])
 
 	while (!window->Closed())
 	{
-                iVec2 sz = subwindow->ClientSize();
-                glViewport(0, 0, sz.x, sz.y);
-                glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
-                glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		iVec2 sz = subwindow->ClientSize();
+		glViewport(0, 0, sz.x, sz.y);
+		glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-                glBegin(GL_TRIANGLES);
-                glColor3f(1, 0, 0);
-                glVertex3f(0, 0.5, 0);
-                glColor3f(0, 1, 0);
-                glVertex3f(0.5, -0.5, 0);
-                glColor3f(0, 0, 1);
-                glVertex3f(-0.5, -0.5, 0);
-                glEnd();
+		glBegin(GL_TRIANGLES);
+		glColor3f(1, 0, 0);
+		glVertex3f(0, 0.5, 0);
+		glColor3f(0, 1, 0);
+		glVertex3f(0.5, -0.5, 0);
+		glColor3f(0, 0, 1);
+		glVertex3f(-0.5, -0.5, 0);
+		glEnd();
 
-                SwapBuffers(hdc);
+		SwapBuffers(hdc);
 	}
 	return 0;
 }
