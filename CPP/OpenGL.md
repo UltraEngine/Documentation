@@ -52,7 +52,7 @@ int main(int argc, const char* argv[])
 
 	while (!window->Closed())
 	{
-		iVec2 sz = subwindow->ClientSize();
+		iVec2 sz = window->ClientSize();
 		glViewport(0, 0, sz.x, sz.y);
 		glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
