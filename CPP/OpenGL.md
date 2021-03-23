@@ -42,7 +42,10 @@ int main(int argc, const char* argv[])
 		0, 0, 0
 	};
 
-	if (SetPixelFormat(hdc, 1, &pfd) == 0) RuntimeError("SetPixelFormat() failed.");
+	// Select an appropriate pixel format that is supported by the hdc
+	int format = ChoosePixelFormat(hdc, &pfd);
+
+	if (SetPixelFormat(hdc, format, &pfd) == 0) RuntimeError("SetPixelFormat() failed.");
 
 	HGLRC glcontext = wglCreateContext(hdc);
 	
@@ -147,7 +150,10 @@ int main(int argc, const char* argv[])
         0, 0, 0
     };
 
-    if (SetPixelFormat(hdc, 1, &pfd) == 0) RuntimeError("SetPixelFormat() failed.");
+    // Select an appropriate pixel format that is supported by the hdc
+    int format = ChoosePixelFormat(hdc, &pfd);
+
+    if (SetPixelFormat(hdc, format, &pfd) == 0) RuntimeError("SetPixelFormat() failed.");
 
     HGLRC glcontext = wglCreateContext(hdc);
 
