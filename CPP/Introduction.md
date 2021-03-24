@@ -67,6 +67,12 @@ Add this code in your main project header to include the Ultra App Kit library. 
     #else
       #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
     #endif
+  #else
+    #ifdef _DEBUG
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\App Kit_d.lib")
+    #else
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\App Kit.lib")
+    #endif  
   #endif  
 #endif
 ```
@@ -86,14 +92,12 @@ If you are using Ultra App Kit on Steam here is the code for the default install
     #else
       #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
     #endif
+  #else
+    #ifdef _DEBUG
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win32\\App Kit_d.lib")
+    #else
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win32\\App Kit.lib")
+    #endif
   #endif  
 #endif
 ```
-
-### Preprocessor Definitions
-
-You must add _ULTRA_APPKIT to the preprocessor definitions for both the release and debug builds. Additionally, the _DEBUG preprocessor definition should be present in the debug build.
-
-<img src = 'https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/preprocessor_definitions.png' />
-
-Ultra App Kit requires x64 (64-bit) compilation.
