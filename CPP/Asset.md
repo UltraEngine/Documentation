@@ -4,7 +4,7 @@
 
 This is the base class for all media classes.
 
-### Properties ###
+## Properties
 | Name | Type | Description |
 | --- | --- | --- |
 | path | const WString& path | read-only string containing the path to the file the asset was loaded from |
