@@ -4,8 +4,8 @@ This functions loads a vector image from a file path or stream.
 
 ## Syntax
 
-- shared_ptr<[Pixmap](Pixmap.md)\> **LoadIcon**(const WString& path, const LoadFlags flags = LOAD_DEFAULT)
-- shared_ptr<[Pixmap](Pixmap.md)\> **LoadIcon**(const [Stream](Stream.md) stream, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Icon](Icon.md)\> **LoadIcon**(const WString& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Icon](Icon.md)\> **LoadIcon**(const [Stream](Stream.md) stream, const LoadFlags flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
