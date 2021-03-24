@@ -1,4 +1,4 @@
-# Asset #
+# Asset
 
 **Base class**: [Object](Object.md)
 
