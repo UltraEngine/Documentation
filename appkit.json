@@ -499,6 +499,7 @@
 		},		
 		{
 			"title": "GUI",
+			"filename": "GUI.md",
 			"topics":
 			[
 				{
