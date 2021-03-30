@@ -2,7 +2,7 @@
 This function retrievs a list of hardware monitors that are currently in use.
 
 ## Syntax ##
-- vector<shared_ptr<[Display](Display.md)\> \> **ListDisplays**()
+- vector<shared_ptr<[Display](Display.md)\> \> **GetDisplays**()
 
 ## Returns ##
 Returns an array of all displays currently in use, with the primary display in the first index.
