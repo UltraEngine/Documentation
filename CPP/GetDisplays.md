@@ -1,4 +1,4 @@
-# ListDisplays #
+# GetDisplays #
 This function retrievs a list of hardware monitors that are currently in use.
 
 ## Syntax ##
