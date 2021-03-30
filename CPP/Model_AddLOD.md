@@ -14,7 +14,7 @@ using namespace UltraEngine;
 void main(const char* args, const int argc)
 {
     //Get the displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
 
     //Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);

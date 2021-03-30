@@ -18,7 +18,7 @@ int main(int argc, const char* argv[])
     auto plugin = LoadPlugin("Plugins/Basis.*");
 
     //Get the primary display
-    auto displaylist = ListDisplays();
+    auto displaylist = GetDisplays();
     auto display = displaylist[0];
     Vec2 displayscale = display->GetScale();
 

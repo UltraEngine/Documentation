@@ -1,5 +1,5 @@
 --Get the primary display
-local displaylist = ListDisplays()
+local displaylist = GetDisplays()
 local display = displaylist[1];
 
 --Create a window

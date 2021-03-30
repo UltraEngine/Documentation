@@ -18,7 +18,7 @@ This method adds an actor to an entity. An actor is a user-defined class derived
 int main(int argc, const char* argv[])
 {
     //Create window
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     float displayscale = displays[0]->GetScale().x;
     auto window = CreateWindow(displays[0], "", 0, 0, 1280 * displayscale, 720 * displayscale);
 

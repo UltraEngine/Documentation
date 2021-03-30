@@ -9,7 +9,7 @@ This method sets the global sky color for reflections.
 ## Example ##
 ```lua
 --Get the primary display
-local displays = ListDisplays()
+local displays = GetDisplays()
 
 --Create a window
 local window = CreateWindow(displays[1], "Ultra Engine", 0, 0, 1280, 720, WINDOW_TITLEBAR + WINDOW_CENTER + WINDOW_CLIENT_COORDS)

@@ -19,7 +19,7 @@
 
 int main(int argc, const char* argv[])
 {
-	auto displays = ListDisplays();
+	auto displays = GetDisplays();
 	Vec2 displayscale = displays[0]->GetScale();
 	auto window = CreateWindow(displays[0], "Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y);
 

@@ -68,7 +68,7 @@ bool EventCallback(const Event& ev, shared_ptr<Object> extra)
 int main(int argc, const char* argv[])
 {
     //Get the displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
 
     //Create window
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);

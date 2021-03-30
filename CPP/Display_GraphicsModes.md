@@ -15,7 +15,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	auto displays = ListDisplays();
+	auto displays = GetDisplays();
 	for (int k=0; k < displays.size(); ++k)
 	{
 		Print("Display " + String(k) + ":");

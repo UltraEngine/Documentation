@@ -34,7 +34,7 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
     // Get the primary display
-    auto displaylist = ListDisplays();
+    auto displaylist = GetDisplays();
     auto display = displaylist[0];
     auto displayscale = display->GetScale();
 

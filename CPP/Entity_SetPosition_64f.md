@@ -27,7 +27,7 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 void main(const char* args, const int argc)
 {
 	//Get the displays
-	auto displays = ListDisplays();
+	auto displays = GetDisplays();
   
 	//Create a window
 	auto window = CreateWindow(displays[0], "", 0, 0, 1280, 720);

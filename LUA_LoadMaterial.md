@@ -25,7 +25,7 @@ Any of the values below may be combined in the flags parameter:
 ### Example
 ```lua
 --Get the primary display
-local displaylist = ListDisplays()
+local displaylist = GetDisplays()
 local display = displaylist[1];
 if display == nil then RuntimeError("Primary display not found.") end
 local displayscale = display:GetScale()

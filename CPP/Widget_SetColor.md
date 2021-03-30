@@ -45,7 +45,7 @@ int main(int argc, const char* argv[])
     auto plugin_svg = LoadPlugin("Plugins/SVG.*");
 
     //Get the displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
 
     //Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);

@@ -17,7 +17,7 @@ This function creates a convex hull that encapsulates all vertices of the input 
 
 int main(int argc, const char* argv[])
 {
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     Vec2 displayscale = displays[0]->GetScale();
 
     auto window = CreateWindow(displays[0], L"Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y);

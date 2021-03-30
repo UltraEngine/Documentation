@@ -81,7 +81,7 @@ int main(const char* args, const int argc)
     const int patchsize = 64;
 
     //Get the displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
 
     //Create a window
     auto window = CreateWindow(displays[0], "Ultra Engine", 0, 0, 1280, 720, WINDOW_TITLEBAR | WINDOW_CENTER | WINDOW_CLIENT_COORDS);

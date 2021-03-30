@@ -16,7 +16,7 @@ This function creates a complex collision shape that is made up of multiple sub-
 
 int main(int argc, const char* argv[])
 {
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     
     auto window = CreateWindow("Example", 0, 0, 1280, 720, displays[0]);
 

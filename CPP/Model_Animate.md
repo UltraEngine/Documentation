@@ -21,7 +21,7 @@ This method causes an animation sequence to play.
 int main(int argc, const char* argv[])
 {
 	//Get the displays
-	auto displays = ListDisplays();
+	auto displays = GetDisplays();
 
 	//Create a window
 	auto window = CreateWindow(displays[0], L"", 0, 0, 1280, 720, WINDOW_CENTER | WINDOW_TITLEBAR);

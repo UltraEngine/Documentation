@@ -16,7 +16,7 @@ In this example the scene is optimized to make non-moving objects static, result
 int main(int argc, const char* argv[])
 {
     //Get display
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     auto display = displays[0];
 
     //Create window

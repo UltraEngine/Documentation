@@ -15,7 +15,7 @@ This class handles outdoor landscapes.
 int main(int argc, const char* argv[])
 {
     //Get the displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     Vec2 dpiscale = displays[0]->GetScale();
 
     //Create a window

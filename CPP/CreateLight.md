@@ -19,7 +19,7 @@
 int main(int argc, const char* argv[])
 {
     //Create window
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     float displayscale = displays[0]->GetScale().y;
     auto window = CreateWindow(displays[0], "", 0, 0, 1280 * displayscale, 720 * displayscale);
 

@@ -7,7 +7,7 @@
 int main(int argc, const char* argv[])
 {
     //Create window
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     auto window = CreateWindow(displays[0], "", 0, 0, 1280 * displays[0]->scale.x, 720 * displays[0]->scale.y);
 
     //Create framebuffer

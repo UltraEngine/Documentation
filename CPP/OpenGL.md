@@ -13,7 +13,7 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
 	//Get the available displays
-	auto displays = ListDisplays();
+	auto displays = GetDisplays();
 
 	//Create a window
 	auto window = CreateWindow("OpenGL Example", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
@@ -102,7 +102,7 @@ bool ResizeViewport(const Event& ev, shared_ptr<Object> extra)
 int main(int argc, const char* argv[])
 {
     //Get the available displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
 
     //Create a window
     auto window = CreateWindow("OpenGL Example", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);

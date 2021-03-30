@@ -26,7 +26,7 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
     //Get the display
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
     Vec2 displayscale = displays[0]->GetScale();
 
     //Create a window

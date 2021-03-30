@@ -29,7 +29,7 @@ int main(int argc, const char* argv[])
 #endif
 
     //Get the displays
-    auto displays = ListDisplays();
+    auto displays = GetDisplays();
 
     //Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 460, 480, displays[0]);

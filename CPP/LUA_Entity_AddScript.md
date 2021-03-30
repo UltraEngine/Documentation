@@ -19,7 +19,7 @@ You can add multiple scripts to an entity. If scripts contain overlapping proper
 ## Example ##
 ```lua
 --Get the primary display
-local displaylist = ListDisplays()
+local displaylist = GetDisplays()
 local display = displaylist[1];
 
 --Create a window

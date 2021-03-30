@@ -24,7 +24,7 @@ The engine uses a left-handed coordinate system. The X axis points right, the Y 
 void main(string[] args)
 {
 	//Get the displays
-	var displays = ListDisplays();
+	var displays = GetDisplays();
   
 	//Create a window
 	var window = CreateWindow(displays[0], "", 0, 0, 1280, 720, null, WINDOW_CENTER | WINDOW_TITLEBAR);
