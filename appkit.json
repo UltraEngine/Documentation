@@ -347,6 +347,14 @@
 					"topics":
 					[
 						{
+							"title": "GetDisplays",
+							"filename": "GetDisplays"
+						},						
+						{
+							"title": "GetPosition",
+							"filename": "Display_GetPosition"
+						},
+						{
 							"title": "GetScale",
 							"filename": "Display_GetScale"
 						},
@@ -355,16 +363,8 @@
 							"filename": "Display_GetSize"
 						},
 						{
-							"title": "GetPosition",
-							"filename": "Display_GetPosition"
-						},
-						{
 							"title": "GraphicsModes",
 							"filename": "Display_GraphicsModes"
-						},											
-						{
-							"title": "ListDisplays",
-							"filename": "ListDisplays"
 						}
 					]							
 				},
