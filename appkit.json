@@ -508,6 +508,10 @@
 					"topics":
 					[
 						{
+							"title": "AllocEventID",
+							"filename": "AllocEventID"
+						},						
+						{
 							"title": "EmitEvent",
 							"filename": "EmitEvent"
 						},			
