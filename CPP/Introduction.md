@@ -1,5 +1,7 @@
 **Welcome to the Ultra App Kit documentation. You're about to learn how to easily create fast and responsive desktop GUI applications with pixel-perfect DPI scaling.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oV7Xbj6I6ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Getting Started ##
 
 When you first run Ultra App Kit you will be prompted to sign into your Ultra Engine account. This only needs to be done once for each new computer you install the program on. If you do not have an account you can create one [here](https://www.ultraengine.com/community/register/).
