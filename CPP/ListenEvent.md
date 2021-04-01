@@ -60,7 +60,7 @@ using namespace UltraEngine;
 
 bool EventCallback(const Event& ev, shared_ptr<Object> extra)
 {
-    auto panel = o->As<Widget>();
+    auto panel = extra->As<Widget>();
     iVec2 sz = panel->GetParent()->ClientSize();
     panel->SetShape(50, 50, sz.x - 100, sz.y - 100);
     panel->SetText(String(sz.x) + " x " + String(sz.y));
