@@ -25,7 +25,7 @@ The first example shows another way to quit the program when the window is close
 
 using namespace UltraEngine;
 
-bool EventCallback(const Event& ev, shared_ptr<Object> o)
+bool EventCallback(const Event& ev, shared_ptr<Object> extra)
 {
     exit(0);
 }
@@ -58,7 +58,7 @@ The example below demonstrates how an event listener can be used for custom resi
 
 using namespace UltraEngine;
 
-bool EventCallback(const Event& ev, shared_ptr<Object> o)
+bool EventCallback(const Event& ev, shared_ptr<Object> extra)
 {
     auto panel = o->As<Widget>();
     iVec2 sz = panel->GetParent()->ClientSize();
