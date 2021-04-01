@@ -18,7 +18,7 @@ Internally, this function will store a weak pointer to the event source and a sh
 
 ## Example
 
-This example shows another way to quit the program when the window is closed:
+The first example shows another way to quit the program when the window is closed:
 
 ```c++
 #include "UltraEngine.h"
@@ -51,7 +51,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-The example below demonstrates how an even listener can be used for custom resizing behavior:
+The example below demonstrates how an event listener can be used for custom resizing behavior:
 
 ```c++
 #include "UltraEngine.h"
