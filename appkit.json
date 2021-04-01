@@ -541,14 +541,6 @@
 						{
 							"title": "LoadColorScheme",
 							"filename": "Interface_LoadColorScheme"
-						},						
-						{
-							"title": "Reload",
-							"filename": "Interface_Reload"
-						},						
-						{
-							"title": "Save",
-							"filename": "Interface_Save"
 						},
 						{
 							"title": "SetScale",
