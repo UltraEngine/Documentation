@@ -35,16 +35,32 @@ int main(int argc, const char* argv[])
 
     //Create widget
     iVec2 sz = ui->root->ClientSize();
-    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
+    auto button_dark = CreateButton("Dark Theme", sz.x / 4 - 75, sz.y / 4 - 15, 150, 30, ui->root);
+    auto button_light = CreateButton("Light Theme", sz.x / 4 * 3 - 75, sz.y / 4 - 15, 150, 30, ui->root);
 
-    //Load color scheme
-    ui->LoadColorScheme("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/light.json");
+    //Text area
+    auto textarea = CreateTextArea(8,sz.y/2,sz.x-16,sz.y/2-8,ui->root);
+    textarea->SetText(LoadString("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/dark.json"));
 
     while (true)
     {
         const Event ev = WaitEvent();
         switch (ev.id)
         {
+        case EVENT_WIDGETACTION:
+            if (ev.source == button_dark)
+            {
+                //Load dark color scheme
+                ui->LoadColorScheme("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/dark.json");
+                textarea->SetText(LoadString("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/dark.json"));
+            }
+            else if (ev.source == button_light)
+            {
+                //Load light color scheme
+                ui->LoadColorScheme("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/light.json");
+                textarea->SetText(LoadString("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/light.json"));
+            }
+            break;
         case EVENT_WINDOWCLOSE:
             if (ev.source == window)
             {
