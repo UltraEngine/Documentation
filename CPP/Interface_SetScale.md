@@ -20,40 +20,21 @@ This method sets the DPI scaling value of an interface.
 // scale is not 100%. The program listens for additional window DPI scale change events in case the user
 // changes this value in the system settings while this program is running.
 // 
-// This version saves the user interface laytout before scaling and then reloads it after scaling.
-// It is possible this could cause small losses of precision under some circumstances but should be fine 
-// for most use cases. It would also be possible to save the user interface once immediately after creating
-// the program interface, and then reload it each time from the original version.
-// 
 //---------------------------------------------------------------------------------------------------
 
 #include "UltraEngine.h"
 
 using namespace UltraEngine;
 
-bool EventCallback(const Event& ev, shared_ptr<Object> extra)
+bool Callback(const Event& ev, shared_ptr<Object> extra)
 {
     //Resize window if desired
     auto window = ev.source->As<Window>();
-    if (window)
-    {
-        window->SetShape(ev.position, ev.size);
-    }
-
+    window->SetShape(ev.position, ev.size);
+    
     //Get the user interface
     auto ui = extra->As<Interface>();
-    if (ui)
-    {
-        //Save the user interface
-        nlohmann::json j3;
-        ui->Save(j3);
-
-        //Change the user interface scale
-        ui->SetScale(float(ev.data) / 100.0f);
-
-        //Reload the user interface
-        ui->Reload(j3);
-    }
+    ui->SetScale(float(ev.data) / 100.0f);
 
     return true;
 }
@@ -73,7 +54,7 @@ int main(int argc, const char* argv[])
     //Create widgets
     iVec2 sz = ui->root->ClientSize();
 
-    auto leftpanel = CreatePanel(10, 10, 200, sz.y  -20, ui->root);
+    auto leftpanel = CreatePanel(10, 10, 200, sz.y - 20, ui->root);
     leftpanel->SetLayout(1, 0, 1, 1);
     leftpanel->SetColor(0, 0, 0, 1);
 
@@ -89,7 +70,7 @@ int main(int argc, const char* argv[])
     bottompanel->SetLayout(1, 1, 0, 1);
     bottompanel->SetColor(0, 0, 0, 1);
 
-    ListenEvent(EVENT_WINDOWDPICHANGED, window, EventCallback, ui);
+    ListenEvent(EVENT_WINDOWDPICHANGED, window, Callback, ui);
 
     //Trigger a rescale if the display scale is not 100%
     if (displays[0]->scale != 1.0f)
