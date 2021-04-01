@@ -18,6 +18,8 @@ Internally, this function will store a weak pointer to the event source and a sh
 
 ## Example
 
+This example shows another way to quit the program when the window is closed:
+
 ```c++
 #include "UltraEngine.h"
 
@@ -44,6 +46,58 @@ int main(int argc, const char* argv[])
     while (true)
     {
         WaitEvent();
+    }
+    return 0;
+}
+```
+
+The example below demonstrates how an even listener can be used for custom resizing behavior:
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+bool EventCallback(const Event& ev, shared_ptr<Object> o)
+{
+    auto panel = o->As<Widget>();
+    iVec2 sz = panel->GetParent()->ClientSize();
+    panel->SetShape(50, 50, sz.x - 100, sz.y - 100);
+    panel->SetText(String(sz.x) + " x " + String(sz.y));
+    return true;
+}
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
+
+    //Create user interface
+    auto ui = CreateInterface(window);
+    iVec2 sz = ui->root->ClientSize();
+    auto panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui->root);
+    panel->SetColor(0, 0, 0);
+
+    //Comment this line out to see why it is needed. ;)
+    ListenEvent(EVENT_WINDOWSIZE, window, EventCallback, panel);
+
+    while (true)
+    {
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WINDOWCLOSE:
+            if (ev.source == window) return 0;
+            break;
+        case EVENT_WINDOWSIZE:
+            sz = panel->GetParent()->ClientSize();
+            panel->SetShape(50, 50, sz.x - 100, sz.y - 100);
+            panel->SetText(String(sz.x) + " x " + String(sz.y));
+            break;
+        }
     }
     return 0;
 }
