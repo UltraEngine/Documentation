@@ -4,7 +4,7 @@ It is possible to integrate Ultra App Kit into an existing 3D engine if the engi
 
 In this example we will describe how [Leadwerks Game Engine](https://www.leadwerks.com) can use Ultra App Kit to embed a 3D graphics viewport in a GUI application.
 
-You can download a working project [here](https://www.ultraengine.com/community/files/file/288-leadwerks-ultra-app-kit-project/).
+You can download a working project [here](https://www.ultraengine.com/community/files/file/288-leadwerks-ultra-app-kit-project/) or follow the instructions below to create a new project.
 
 ## Setting up the Project
 
