@@ -120,3 +120,93 @@ int main(int argc,const char *argv[])
 ```
 
 ## Advanced Example
+
+This example demonstrates a 3D rendering viewport embedded in a GUI application.
+
+```c++
+#include "App.h"
+
+using namespace Leadwerks;
+
+Context* context = NULL;
+World* world = NULL;
+
+int main(int argc,const char *argv[])
+{
+    // Get the available displays
+    auto displays = UltraEngine::GetDisplays();
+
+    // Create a window
+    auto mainwindow = CreateWindow("Leadwerks", 0, 0, 800, 600, displays[0], UltraEngine::WINDOW_TITLEBAR | UltraEngine::WINDOW_RESIZABLE);
+
+    // Create user interface
+    auto ui = UltraEngine::CreateInterface(mainwindow);
+
+    // Get the size of the user-interface
+    UltraEngine::iVec2 sz = ui->root->ClientSize();
+
+    // Create a treeview widget
+    auto treeview = UltraEngine::CreateTreeView(8, 8, 200 - 16, sz.y - 16, ui->root);
+
+    // Anchor left, top and bottom of treeview widget
+    treeview->SetLayout(1, 0, 1, 1);
+
+    // Add nodes to the treeview widget
+    treeview->root->AddNode("Object 1");
+    treeview->root->AddNode("Object 2");
+    treeview->root->AddNode("Object 3");
+
+    // Create a viewport window
+    auto viewport = CreateWindow("", 200, 8, sz.x - 200 - 8, sz.y - 16, mainwindow, UltraEngine::WINDOW_CHILD);
+    
+    //Leadwerks custom window
+    Leadwerks::Window* window = Leadwerks::Window::Create(viewport->GetHandle());
+    context = Context::Create(window);
+    
+    world = World::Create();
+    
+    Camera* camera = Camera::Create();
+    camera->Move(0, 0, -3);
+
+    Light* light = DirectionalLight::Create();
+    light->SetRotation(35, 45, 0);
+
+    //Create a model
+    auto model = Model::Box();
+    model->SetColor(0.0, 0.0, 1.0);
+    
+    while (true)
+    {
+        if (mainwindow->Closed() or mainwindow->KeyDown(UltraEngine::KEY_ESCAPE)) break;
+
+        model->Turn(0, Leadwerks::Time::GetSpeed() * 0.5, 0);
+        
+        while (UltraEngine::PeekEvent())
+        {
+            const auto ev = UltraEngine::WaitEvent();
+            switch (ev.id)
+            {
+            case UltraEngine::EVENT_WINDOWSIZE:
+                if (ev.source == mainwindow)
+                {
+                    // If the window resize event is captured
+                    auto window = ev.source->As<UltraEngine::Window>();
+
+                    // Get the new size of the applications window
+                    UltraEngine::iVec2 sz = mainwindow->ClientSize();
+
+                    // Set the position and size of the viewport window
+                    viewport->SetShape(200, 8, sz.x - 200 - 8, sz.y - 16);
+                }
+                break;
+            }
+        }
+
+        Leadwerks::Time::Update();
+        world->Update();
+        world->Render();
+        context->Sync();
+    }
+    return 0;
+}
+```
