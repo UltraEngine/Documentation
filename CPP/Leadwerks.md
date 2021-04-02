@@ -4,6 +4,8 @@ It is possible to integrate Ultra App Kit into an existing 3D engine if the engi
 
 In this example we will describe how [Leadwerks Game Engine](https://www.leadwerks.com) can use Ultra App Kit to embed a 3D graphics viewport in a GUI application.
 
+You can download a working project [here](https://www.ultraengine.com/community/files/file/288-leadwerks-ultra-app-kit-project/).
+
 ## Setting up the Project
 
 Create a new blank project with the Professional Edition of Leadwerks Game Engine, and open it with Visual Studio.
@@ -213,4 +215,5 @@ int main(int argc,const char *argv[])
 }
 ```
 When you run the program it will appear like this:
+
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/Leadwerks.jpg)
