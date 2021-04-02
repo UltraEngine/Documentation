@@ -210,3 +210,5 @@ int main(int argc,const char *argv[])
     return 0;
 }
 ```
+When you run the program it will appear like this:
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/Leadwerks.jpg)
