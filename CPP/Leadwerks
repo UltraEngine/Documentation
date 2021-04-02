@@ -1,0 +1,122 @@
+# Using a 3D Engine
+
+It is possible to integrate Ultra App Kit into an existing 3D engine. In this article we will describe how [Leadwerks Game Engine](https://www.leadwerks.com) can use Ultra App Kit to embed a 3D graphics viewport in a GUI application.
+
+## Setting up the Project
+
+Create a new blank project with the Professional Edition of Leadwerks Game Engine, and open it with Visual Studio.
+
+Add this header search paths, for both debug and release build configurations:
+
+```txt
+C:\Program Files\Ultra App Kit\Include
+```
+
+If you are using Ultra App Kit on Steam, the default include path will be as follows:
+
+```txt
+C:\Program Files (x86)\Steam\steamapps\common\Ultra App Kit\Include
+```
+
+Open the App.h file and add this text to the end of it:
+```c++
+#undef GMF_FLOAT
+#undef GMF_DOUBLE
+#undef COPY_INSTANCE
+#undef COPY_DUPLICATE
+#undef CLEAR_COLOR
+#undef CLEAR_DEPTH
+#undef LUA_VERSION
+#undef STREAM_READ
+#undef STREAM_WRITE
+
+//Include header file
+#define _ULTRA_APPKIT
+#include "C:\\Program Files\\Ultra App Kit\\Include\\UltraEngine.h"
+
+//Compile library into project
+#ifdef _WIN32
+#ifdef _DEBUG
+#pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Libs\\win32\\App Kit_d.lib")
+#else
+#pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Libs\\win32\\App Kit.lib")
+#endif  
+#endif
+```
+
+If you are using Ultra App Kit on Steam, add this text instead:
+
+```c++
+#undef GMF_FLOAT
+#undef GMF_DOUBLE
+#undef COPY_INSTANCE
+#undef COPY_DUPLICATE
+#undef CLEAR_COLOR
+#undef CLEAR_DEPTH
+#undef LUA_VERSION
+#undef STREAM_READ
+#undef STREAM_WRITE
+
+//Include header file
+#define _ULTRA_APPKIT
+#include "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Include\\UltraEngine.h"
+
+//Compile library into project
+#ifdef _WIN32
+#ifdef _DEBUG
+#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Libs\\win32\\App Kit_d.lib")
+#else
+#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Libs\\win32\\App Kit.lib")
+#endif  
+#endif
+```
+
+At this point you should be able to compile the project without errors, in debug or release mode.
+
+## Basic Example
+
+The following program will create a window with Ultra App Kit and then retrieve the window handle to create a Leadwerks custom window and a 3D rendering context:
+
+```c++
+#include "App.h"
+
+using namespace Leadwerks;
+
+int main(int argc,const char *argv[])
+{
+    //Ultra App Kit window
+	auto displays = UltraEngine::GetDisplays();
+	auto mainwindow = UltraEngine::CreateWindow("Leadwerks", 0, 0, 1024, 768, displays[0]);
+
+    //Leadwerks custom window
+    Leadwerks::Window* window = Leadwerks::Window::Create(mainwindow->GetHandle());
+    Context* context = Context::Create(window);
+    
+    World* world = World::Create();
+    
+    Camera* camera = Camera::Create();
+    camera->Move(0, 0, -3);
+
+    Light* light = DirectionalLight::Create();
+    light->SetRotation(35, 45, 0);
+
+    //Create a model
+    auto model = Model::Box();
+    model->SetColor(0.0, 0.0, 1.0);
+    
+    while (true)
+    {
+        if (mainwindow->Closed() or mainwindow->KeyDown(UltraEngine::KEY_ESCAPE)) break;
+
+        model->Turn(0, Leadwerks::Time::GetSpeed() * 0.5, 0);
+        
+        Leadwerks::Time::Update();
+        world->Update();
+        world->Render();
+        context->Sync();
+    }
+    return 0;
+}
+```
+
+## Advanced Example
