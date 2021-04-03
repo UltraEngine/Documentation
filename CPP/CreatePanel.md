@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
 
     //Create User Interface
     auto ui = CreateInterface(window);
@@ -40,6 +40,7 @@ int main(int argc, const char* argv[])
     //Create widget
     auto panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui->root);
     panel->SetColor(0, 0, 0, 1);
+    panel->SetLayout(1, 1, 1, 1);
 
     while (true)
     {
