@@ -45,6 +45,12 @@ int main(int argc, const char* argv[])
         const Event ev = WaitEvent();
         switch (ev.id)
         {
+        case EVENT_WIDGETACTION:
+            Print("Item " + String(ev.data) + " action");
+            break;
+        case EVENT_WIDGETSELECT:
+            Print("Item " + String(ev.data) +" selected");
+            break;
         case EVENT_WINDOWCLOSE:
             return 0;
             break;
