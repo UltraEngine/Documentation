@@ -62,6 +62,9 @@ int main(int argc, const char* argv[])
         const Event ev = WaitEvent();
         switch (ev.id)
         {
+            case EVENT_WIDGETACTION:
+                Print(ev.source->As<Widget>()->text);
+                break;
             case EVENT_WINDOWCLOSE:
                 return 0;
                 break;
