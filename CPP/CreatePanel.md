@@ -11,7 +11,7 @@ This function creates a Panel widget. The Panel widget is a rectangular area for
 | width | initial width of the widget |
 | height | initial height of the widget |
 | parent | parent of the widget |
-| style | optional widget style |
+| style | optional widget style, can be PANEL_DEFAULT, PANEL_BORDER, or PANEL_GROUP |
 
 ## Returns ##
 Returns a new panel widget.
