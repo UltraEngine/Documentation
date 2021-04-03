@@ -89,11 +89,11 @@ using namespace Leadwerks;
 int main(int argc,const char *argv[])
 {
     //Ultra App Kit window
-	auto displays = UltraEngine::GetDisplays();
-	auto mainwindow = UltraEngine::CreateWindow("Leadwerks", 0, 0, 1024, 768, displays[0]);
+    auto displays = UltraEngine::GetDisplays();
+    auto mainwindow = UltraEngine::CreateWindow("Leadwerks", 0, 0, 1024, 768, displays[0]);
 
     //Leadwerks custom window
-    Leadwerks::Window* window = Leadwerks::Window::Create(mainwindow->GetHandle());
+    Window* window = Window::Create(mainwindow->GetHandle());
     Context* context = Context::Create(window);
     
     World* world = World::Create();
@@ -114,7 +114,7 @@ int main(int argc,const char *argv[])
 
         model->Turn(0, Leadwerks::Time::GetSpeed() * 0.5, 0);
         
-        Leadwerks::Time::Update();
+        Time::Update();
         world->Update();
         world->Render();
         context->Sync();
@@ -164,7 +164,7 @@ int main(int argc,const char *argv[])
     auto viewport = CreateWindow("", 200, 8, sz.x - 200 - 8, sz.y - 16, mainwindow, UltraEngine::WINDOW_CHILD);
     
     //Leadwerks custom window
-    Leadwerks::Window* window = Leadwerks::Window::Create(viewport->GetHandle());
+    Window* window = Window::Create(viewport->GetHandle());
     context = Context::Create(window);
     
     world = World::Create();
@@ -206,7 +206,7 @@ int main(int argc,const char *argv[])
             }
         }
 
-        Leadwerks::Time::Update();
+        Time::Update();
         world->Update();
         world->Render();
         context->Sync();
