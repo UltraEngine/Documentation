@@ -12,7 +12,6 @@ The combobox widget displays a drop-down box the user can select an item from. T
 | width | widget width |
 | height | widget height |
 | parent | parent widget |
-| style | optional combobox style, can be COMBOBOX_DEFAULT or COMBOBOX_EDTABLE |
 
 ## Example ##
 ```c++
@@ -33,7 +32,7 @@ int main(int argc, const char* argv[])
 
     //Create widget
     auto sz = ui->root->ClientSize();
-    auto combobox = CreateComboBox((sz.x - 300) / 2, (sz.y - 30) / 2, 300, 30, ui->root, COMBOBOX_EDITABLE);
+    auto combobox = CreateComboBox((sz.x - 300) / 2, (sz.y - 30) / 2, 300, 30, ui->root);
     combobox->AddItem("Item 1", true);
     combobox->AddItem("Item 2");
     combobox->AddItem("Item 3");
