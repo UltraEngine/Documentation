@@ -112,7 +112,7 @@ int main(int argc,const char *argv[])
     {
         if (mainwindow->Closed() or mainwindow->KeyDown(UltraEngine::KEY_ESCAPE)) break;
 
-        model->Turn(0, Leadwerks::Time::GetSpeed() * 0.5, 0);
+        model->Turn(0, Time::GetSpeed() * 0.5, 0);
         
         Time::Update();
         world->Update();
@@ -183,7 +183,7 @@ int main(int argc,const char *argv[])
     {
         if (mainwindow->Closed() or mainwindow->KeyDown(UltraEngine::KEY_ESCAPE)) break;
 
-        model->Turn(0, Leadwerks::Time::GetSpeed() * 0.5, 0);
+        model->Turn(0, Time::GetSpeed() * 0.5, 0);
         
         while (UltraEngine::PeekEvent())
         {
