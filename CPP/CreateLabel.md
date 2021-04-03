@@ -14,7 +14,7 @@ The label widget displays a read-only block of text.
 | width | widget width |
 | height | widget height |
 | parent | parent widget |
-| style | optional button style, can be any combination of LABEL_LEFT. LABEL_RIGHT, LABEL_CENTER, LABEL_TOP, LABEL_MIDDLE, LABEL_BOTTOM, and LABEL_BORDER |
+| style | optional button style, can be any combination of LABEL_LEFT, LABEL_RIGHT, LABEL_CENTER, LABEL_TOP, LABEL_MIDDLE, LABEL_BOTTOM, and LABEL_BORDER |
 
 ## Example ##
 ```c++
