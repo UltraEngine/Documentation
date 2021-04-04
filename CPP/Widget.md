@@ -17,8 +17,8 @@ This class handle user interface elements.
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
 | [GetSelectedItem](Widget_GetSelectedItem.md) | Method | gets the selected widget item |
-| [GetSize](Widget_GetSize.md) | Method | gets the button size |
-| [GetState](Widget_GetState.md) | Method | gets the button state |
+| [GetSize](Widget_GetSize.md) | Method | gets the widget size |
+| [GetState](Widget_GetState.md) | Method | gets the widget state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
 | [Paint](Widget_Paint.md) | Method | redraws a widget |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
