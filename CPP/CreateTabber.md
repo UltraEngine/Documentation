@@ -44,9 +44,9 @@ int main(int argc, const char* argv[])
     panels[1] = CreatePanel(0, 0, sz.x, sz.y, tabber);
     panels[2] = CreatePanel(0, 0, sz.x, sz.y, tabber);
 
-    panels[0]->SetColor(1, 0, 0, 1);
-    panels[1]->SetColor(0, 1, 0, 1);
-    panels[2]->SetColor(0, 0, 1, 1);
+    //panels[0]->SetColor(0.15, 0.1, 0.1, 1);
+    panels[1]->SetColor(0.1, 0.15, 0.1, 1);
+    panels[2]->SetColor(0.1, 0.1, 0.15, 1);
 
     panels[1]->Hide();
     panels[2]->Hide();
