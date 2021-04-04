@@ -46,6 +46,15 @@ int main(int argc, const char* argv[])
     auto menu_recentfile3 = CreateMenu("Recent file 3", menu_recentfiles);
     CreateMenu("", menu_file);
     auto menu_exit = CreateMenu("Exit", menu_file);
+    
+    auto menu_tools = CreateMenu("Tools", menu);
+    const auto menu_option = CreateMenu("Option", menu_tools);
+
+    auto menu_help = CreateMenu("Help", menu);
+    const auto menu_helpcontents = CreateMenu("Help Contents", menu_help);
+
+    auto panel = CreatePanel(0, menu->size.y, sz.x, sz.y - menu->size.y, ui->root);
+    panel->SetColor(0.15, 0.15, 0.15);
 
     while (true)
     {
@@ -61,9 +70,20 @@ int main(int argc, const char* argv[])
             {
                 RequestFile();
             }
+            else if (ev.source == menu_option)
+            {
+                if (menu_option->GetState() == WIDGETSTATE_SELECTED)
+                {
+                    menu_option->SetState(WIDGETSTATE_UNSELECTED);
+                }
+                else
+                {
+                    menu_option->SetState(WIDGETSTATE_SELECTED);
+                }
+            }
             else if (ev.source == menu_save)
             {
-                RequestFile("Save File","","All Files:*",0,true);
+                RequestFile("Save File", "", "All Files:*", 0, true);
             }
             else if (ev.source == menu_exit)
             {
@@ -81,8 +101,13 @@ int main(int argc, const char* argv[])
             {
                 Notify("Recent file 3");
             }
+            else if (ev.source == menu_helpcontents)
+            {
+                RunFile("https://www.ultraengine.com/learn");
+            }
             break;
         case EVENT_WINDOWCLOSE:
+            if (ev.source == window) return 0;
             break;
         }
     }
