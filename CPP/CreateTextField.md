@@ -35,7 +35,8 @@ int main(int argc, const char* argv[])
     //Create widget
     auto sz = ui->root->ClientSize();
     auto textfield = CreateTextField(20, 20, 300, 32, ui->root);
-    textfield->SetText("Here is some text!");  
+    textfield->SetText("Here is some text!");
+    textfield->SelectText(0,textfield->text.size());
 
     while (true)
     {
