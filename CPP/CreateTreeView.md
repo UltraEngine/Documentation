@@ -1,4 +1,4 @@
-# CreateTreeView #
+# CreateTreeView
 
 The treeview widget displays a hierarchy of nodes that can be selected, opened and closed, double-clicked, and moved. The [Widget::AddNode](Widget_AddNode.md) method is used to add nodes to the tree hierarchy.
 
@@ -10,7 +10,7 @@ If the MULTISELECT style is used, the user can select multiple nodes in the tree
 
 The SORT style can be used to automatically sort treeview nodes alphabetically.
 
-## Syntax ##
+## Syntax
 
 - shared_ptr<[Widget](Widget.md)\> **CreateTreeView**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const TreeViewStyle style = TREEVIEW_DEFAULT)
 
@@ -23,7 +23,8 @@ The SORT style can be used to automatically sort treeview nodes alphabetically.
 | parent | parent widget |
 | style | treeview style, can be any combination of TREEVIEW_MULTISELECT, TREEVIEW_DRAGANDDROP, TREEVIEW_SORT, and TREEVIEW_DRAGINSERT |
 
-## Example ##
+## Example
+
 ```c++
 #include "UltraEngine.h"
 
@@ -42,7 +43,7 @@ int main(int argc, const char* argv[])
 
     //Create widget
     auto sz = ui->root->ClientSize();
-    auto treeview = CreateTreeView(10, 10, sz.x - 20, sz.y - 20, ui->root);
+    auto treeview = CreateTreeView(10, 10, sz.x - 20, sz.y - 20, ui->root, TREEVIEW_DRAGANDDROP | TREEVIEW_DRAGINSERT);
 
     auto node = treeview->root->AddNode("Node 1");
     node->AddNode("Subnode 1");
@@ -64,6 +65,34 @@ int main(int argc, const char* argv[])
         const auto& event = WaitEvent();
         switch (event.id)
         {
+        case EVENT_WIDGETSELECT:
+            if (event.data == 1)
+            {
+                Print("Selected: " + event.extra->As<Widget>()->text);
+            }
+            break;
+        case EVENT_WIDGETACTION:
+            Print("Action: " + event.extra->As<Widget>()->text);
+            node = event.extra->As<Widget>();
+            if (!node->kids.empty())
+            {
+                if (node->Collapsed())
+                {
+                    node->Expand();
+                }
+                else
+                {
+                    node->Collapse();
+                }
+            }
+            break;
+        case EVENT_WIDGETDROP:
+            {
+                auto child = event.extra->As<TreeViewNode>();
+                auto parent = event.source->As<TreeViewNode>();
+                parent->Insert(child, event.data);
+            }
+            break;
         case EVENT_WINDOWCLOSE:
             return 0;
             break;
