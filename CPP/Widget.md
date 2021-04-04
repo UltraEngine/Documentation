@@ -13,7 +13,6 @@ This class handle user interface elements.
 | [CountItems](Widget_CountItems.md) | Method | counts the widget items |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
-| [FilterItems](Widget_FilterItems.md) | Method | filters the items with a search term |
 | [GetItemText](Widget_GetItemText.md) | Method | gets the widget item text |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
