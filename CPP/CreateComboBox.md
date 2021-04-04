@@ -26,22 +26,26 @@ int main(int argc, const char* argv[])
 
     //Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0]);
-    
+
     //Create User Interface
     auto ui = CreateInterface(window);
 
     //Create widget
     auto sz = ui->root->ClientSize();
     auto combobox = CreateComboBox((sz.x - 300) / 2, (sz.y - 30) / 2, 300, 30, ui->root);
-    combobox->AddItem("Item 1", true);
-    combobox->AddItem("Item 2");
-    combobox->AddItem("Item 3");
+    for (int n = 0; n < 20; ++n)
+    {
+        combobox->AddItem("Item " + String(n), n == 0);
+    }
 
     while (true)
     {
         const Event ev = WaitEvent();
         switch (ev.id)
         {
+        case EVENT_WIDGETSELECT:
+            Print("Item " + String(ev.data) + " selected");
+            break;
         case EVENT_WINDOWCLOSE:
             return 0;
             break;
