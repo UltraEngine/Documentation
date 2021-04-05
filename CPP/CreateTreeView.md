@@ -68,14 +68,15 @@ int main(int argc, const char* argv[])
         case EVENT_WIDGETSELECT:
             if (event.data == 1)
             {
-                Print("Selected: " + event.extra->As<Widget>()->text);
+                node = event.extra->As<Widget>();
+                Print("Selected: " + node->text);
             }
             break;
         case EVENT_WIDGETACTION:
             if (event.source == treeview)
             {
-                Print("Action: " + event.extra->As<Widget>()->text);
                 node = event.extra->As<Widget>();
+                Print("Action: " + node->text);
                 if (!node->kids.empty())
                 {
                     if (node->Collapsed())
