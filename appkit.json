@@ -681,6 +681,10 @@
 							"filename": "Widget_SetLayout"
 						},						
 						{
+							"title": "SetParent",
+							"filename": "Widget_SetParent"
+						},						
+						{
 							"title": "SetShape",
 							"filename": "Widget_SetShape"
 						},
