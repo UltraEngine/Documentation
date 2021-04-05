@@ -92,6 +92,7 @@ int main(int argc, const char* argv[])
             }
             break;
         case EVENT_WIDGETDROP:
+            if (event.source == treeview)
             {
                 auto child = event.extra->As<TreeViewNode>();
                 auto parent = event.source->As<TreeViewNode>();
