@@ -67,7 +67,7 @@ int main(int argc, const char* argv[])
         switch (event.id)
         {
         case EVENT_WIDGETSELECT:
-            if (event.data == 1)
+            if (event.source == treeview and event.data == 1)
             {
                 node = event.extra->As<Widget>();
                 Print("Selected: " + node->text);
