@@ -28,6 +28,7 @@ This class handle user interface elements.
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
 | [SetItemText](Widget_SetItemText.md) | Method | modifies the item text |
 | [SetLayout](Widget_SetLayout.md) | Method | controls the way a widget behaves during resizing |
+| [SetParent](Widget_SetParent.md) | Method | makes this widget the child of the parent widget |
 | [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
 | [SetProgress](Widget_SetProgress.md) | Method | sets the progress complete for a progress bar widget |
 | [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
