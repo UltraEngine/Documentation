@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
 
     //Create User Interface
     auto ui = CreateInterface(window);
@@ -44,6 +44,7 @@ int main(int argc, const char* argv[])
     //Create widget
     auto sz = ui->root->ClientSize();
     auto treeview = CreateTreeView(10, 10, sz.x - 20, sz.y - 20, ui->root, TREEVIEW_DRAGANDDROP | TREEVIEW_DRAGINSERT);
+    treeview->SetLayout(1, 1, 1, 1);
 
     auto node = treeview->root->AddNode("Node 1");
     node->AddNode("Subnode 1");
