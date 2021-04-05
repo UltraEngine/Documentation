@@ -9,42 +9,71 @@ You can create new types of widgets in C++ by extending the base [Widget](Widget
 
 using namespace UltraEngine;
 
+//Declare new style constants
 enum CustomWidgetStyle
 {
     CUSTOMWIDGET_DEFAULT = 0
 };
 
+//Declare new widget class
 class CustomWidget : public Widget
 {
+    //Custom members
     bool hover;
+
 protected:
+    
+    //Called when the mouse moves if this widget has the focus
     virtual void MouseMove(const int x, const int y) {}
     
+    //Called when the mouse cursor enters the widget bounds
     virtual void MouseEnter(const int x, const int y)
     {
         hover = true;
         Redraw();
     }
     
+    //Called when the mouse cursor leaves the widget bounds
     virtual void MouseLeave(const int x, const int y)
     {
         hover = false;
         Redraw();
     }
 
-    virtual void MouseDown(const MouseButton button, const int x, const int y) {}
-    virtual void MouseRepeat(const MouseButton button, const int x, const int y) {}
+    //Called when the mouse button is pressed
+    virtual void MouseDown(const MouseButton button, const int x, const int y)
+    {
+        if (button == MOUSE_LEFT) EmitEvent(EVENT_WIDGETACTION, Self());
+    }
+    
+    //Called when the mouse button is released
     virtual void MouseUp(const MouseButton button, const int x, const int y) {}
+    
+    //Called when another widget becomes selected
     virtual void LoseFocus() {}
+    
+    //Called when mouse double-click occurs
     virtual void DoubleClick(const MouseButton button, const int x, const int y) {}
+    
+    //Called when mouse triple-click occurs
     virtual void TripleClick(const MouseButton button, const int x, const int y) {}
+    
+    //Called when widget is selected
     virtual void GainFocus() {}
+    
+    //Called when key is pressed
     virtual void KeyDown(const KeyCode key) {}
+    
+    //Called when key is released
     virtual void KeyUp(const KeyCode key) {}
+    
+    //Called for each keydown event
     virtual void KeyChar(const int keychar) {}
+    
+    //Called when mouse wheel turns and mouse is hovered over this widget
     virtual void MouseWheel(const int delta, const int x, const int y) {}
-    virtual void Activate() {}
-
+    
+    //Called each time the widget is redrawn
     virtual void Draw(const int x, const int y, const int width, const int height)
     {
         blocks.clear();
@@ -58,10 +87,13 @@ protected:
         AddBlock(text, iVec2(0), this->size, Vec4(1), TEXT_CENTER | TEXT_MIDDLE);
     }
 public:
+
+    //Constructor
     CustomWidget() : hover(false)
     {}
 };
 
+//Create function
 shared_ptr<Widget> CreateCustomWidget(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<Widget> parent, const CustomWidgetStyle style)
 {
     auto widget = make_shared<CustomWidget>();
