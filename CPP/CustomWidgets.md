@@ -1,6 +1,6 @@
 # Custom Widgets
 
-You can create new types of widgets in C++ by extending the base [Widget](Widget.md) class.
+You can create new types of widgets in C++ by extending the base [Widget](Widget.md) class. The widget's behavior is controlled by overriding the Widget class methods.
 
 ## Example
 
