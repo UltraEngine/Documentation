@@ -93,9 +93,9 @@ int main(int argc, const char* argv[])
             break;
         case EVENT_WIDGETDROP:
             {
-                auto child = event.extra->As<TreeViewNode>();
-                auto parent = event.source->As<TreeViewNode>();
-                parent->SetParent(child, event.data);
+                auto child = event.source->As<TreeViewNode>();
+                auto parent = event.extra->As<TreeViewNode>();
+                child->SetParent(parent, event.data);
             }
             break;
         case EVENT_WINDOWCLOSE:
