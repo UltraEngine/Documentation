@@ -1,8 +1,9 @@
-# CreateMenu #
+# CreateMenu
 
 This function creates a menu widget. A menu item emits a WIDGETACTION event when it is selected.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[Widget](Widget.md)> **CreateMenu**(const [WString](WString.md)& text, shared_ptr<[Widget](Widget.md)> parent);
 
 | Parent | Description |
@@ -10,7 +11,7 @@ This function creates a menu widget. A menu item emits a WIDGETACTION event when
 | text | initial widget text |
 | parent | widget parent |
 
-## Returns ##
+## Returns
 
 Returns a new widget.
 
