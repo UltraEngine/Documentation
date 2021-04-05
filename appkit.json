@@ -633,6 +633,10 @@
 							"filename": "CreateTreeView"
 						},
 						{
+							"title": "Custom Widgets",
+							"filename": "CustomWidgets"
+						},
+						{
 							"title": "GetItemText",
 							"filename": "Widget_GetItemText"
 						},						
