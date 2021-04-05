@@ -94,7 +94,7 @@ int main(int argc, const char* argv[])
             {
                 auto child = event.extra->As<TreeViewNode>();
                 auto parent = event.source->As<TreeViewNode>();
-                parent->Insert(child, event.data);
+                parent->SetParent(child, event.data);
             }
             break;
         case EVENT_WINDOWCLOSE:
