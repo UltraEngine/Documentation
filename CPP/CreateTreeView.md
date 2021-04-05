@@ -72,17 +72,20 @@ int main(int argc, const char* argv[])
             }
             break;
         case EVENT_WIDGETACTION:
-            Print("Action: " + event.extra->As<Widget>()->text);
-            node = event.extra->As<Widget>();
-            if (!node->kids.empty())
+            if (event.source == treeview)
             {
-                if (node->Collapsed())
+                Print("Action: " + event.extra->As<Widget>()->text);
+                node = event.extra->As<Widget>();
+                if (!node->kids.empty())
                 {
-                    node->Expand();
-                }
-                else
-                {
-                    node->Collapse();
+                    if (node->Collapsed())
+                    {
+                        node->Expand();
+                    }
+                    else
+                    {
+                        node->Collapse();
+                    }
                 }
             }
             break;
