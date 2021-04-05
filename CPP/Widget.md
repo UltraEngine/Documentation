@@ -1,7 +1,8 @@
-# Widget #
-This class handle user interface elements.
+# Widget
 
-### Properties ###
+This class handle user interface elements. A variety of widget types are supported. You can also create [custom widgets](CustomWidgets.md) by extending this class.
+
+## Properties
 
 | Name | Type | Description
 |---|---|---|
