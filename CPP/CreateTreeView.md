@@ -93,8 +93,8 @@ int main(int argc, const char* argv[])
             break;
         case EVENT_WIDGETDROP:
             {
-                auto child = event.source->As<TreeViewNode>();
-                auto parent = event.extra->As<TreeViewNode>();
+                auto child = event.source->As<Widget>();
+                auto parent = event.extra->As<Widget>();
                 child->SetParent(parent, event.data);
             }
             break;
