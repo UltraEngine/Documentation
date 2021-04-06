@@ -20,6 +20,8 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 | [Replace](WString_Replace.md) | Method | performs a search and replace operation |
 | [Right](WString_Right.md) | Method | returns rightmost characters |
 | [Split](WString_Split.md) | Method | segments the string |
+| [ToFloat](String_ToFloat.md) | Method | converts the string to a floating point value |
+| [ToInt](String_ToInt.md) | Method | converts the string to an integer value |
 | [ToString](WString_ToString.md) | Method | returns a narrow string containing only ASCII characters |
 | [ToUTF8String](WString_ToUTF8String.md) | Method | returns a narrow string with UTF-8 encoding |
 | [Trim](WString_Trim.md) | Method | removes whitespace characters from the ends of the string |
