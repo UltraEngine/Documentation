@@ -19,6 +19,8 @@ The String class provides an interface for manipulating ASCII text strings.
 | [Replace](String_Replace.md) | Method | performs a search and replace operation |
 | [Right](String_Right.md) | Method | returns rightmost characters |
 | [Split](String_Split.md) | Method | segments the string |
+| [ToFloat](String_ToFloat.md) | Method | converts the string to a floating point value |
+| [ToInt](String_ToInt.md) | Method | converts the string to an integer value |
 | [Trim](String_Trim.md) | Method | removes whitespace characters from the ends of the string |
 | [Upper](String_Upper.md) | Method | converts the string to uppercase |
 | [XOR](String_XOR.md) | Method | performs an XOR operation |
