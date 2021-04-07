@@ -1237,21 +1237,21 @@
 							"filename": "WString_Split"
 						},
 						{
-							"title": "ToString",
-							"filename": "WString_ToString"
-						},
-						{
-							"title": "ToUTF8String",
-							"filename": "WString_ToUTF8String"
-						},
-						{
 							"title": "ToFloat",
 							"filename": "WString_ToFloat"
 						},
 						{
 							"title": "ToInt",
 							"filename": "WString_ToInt"
-						},						
+						},	
+						{
+							"title": "ToString",
+							"filename": "WString_ToString"
+						},
+						{
+							"title": "ToUTF8String",
+							"filename": "WString_ToUTF8String"
+						},					
 						{
 							"title": "Trim",
 							"filename": "WString_Trim"
