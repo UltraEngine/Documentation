@@ -4,7 +4,7 @@ This method converts the string into a floating point value.
 
 ## Syntax
 
-- double ToFloat()
+- double **ToFloat**()
 
 ## Returns
 
