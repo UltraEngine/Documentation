@@ -1178,6 +1178,14 @@
 							"filename": "String_Split"
 						},
 						{
+							"title": "ToFloat",
+							"filename": "String_ToFloat"
+						},
+						{
+							"title": "ToInt",
+							"filename": "String_ToInt"
+						},												
+						{
 							"title": "Trim",
 							"filename": "String_Trim"
 						},
@@ -1235,6 +1243,14 @@
 						{
 							"title": "ToUTF8String",
 							"filename": "WString_ToUTF8String"
+						},
+						{
+							"title": "ToFloat",
+							"filename": "WString_ToFloat"
+						},
+						{
+							"title": "ToInt",
+							"filename": "WString_ToInt"
 						},						
 						{
 							"title": "Trim",
