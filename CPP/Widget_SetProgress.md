@@ -3,7 +3,7 @@
 This method sets the progress complete to display, for a progress bar widget.
 
 ## Syntax ##
-- void **SetProgress**(const float progress)
+- void **SetProgress**(const double progress)
 
 | Parameter | Description |
 | --- | --- |
