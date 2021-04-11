@@ -11,7 +11,6 @@ This class handle user interface elements. A variety of widget types are support
 | text | const [WString](WString.md)& | read-only widget text |
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
-| [CountItems](Widget_CountItems.md) | Method | counts the widget items |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
 | [GetItemText](Widget_GetItemText.md) | Method | gets the widget item text |
