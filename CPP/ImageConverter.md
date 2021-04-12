@@ -61,7 +61,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-To use our converter we can drag an image file onto the compiled executable. For testing, we can set the command line in the project properties. Set **Debugging \> Command Arguments** to the text below.
+To use our converter we can drag an image file onto the compiled executable, or use the file requester to select a file to convert. For testing, we can set the command line in the project properties. Set **Debugging \> Command Arguments** to the text below.
 
 ```txt
 https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds
