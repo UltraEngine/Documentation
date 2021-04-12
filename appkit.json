@@ -23,6 +23,14 @@
 				{
 					"title": "Creating a File Browser",
 					"filename": "FileBrowser"
+				},
+				{
+					"title": "OpenGL Rendering",
+					"filename": "OpenGL"
+				},
+				{
+					"title": "Using a 3D Engine",
+					"filename": "Leadwerks"
 				}
 			]
 		},
@@ -514,14 +522,6 @@
 									"filename": "TransformCoord"
 								}						
 							]
-						},
-						{
-							"title": "OpenGL Rendering",
-							"filename": "OpenGL"
-						},
-						{
-							"title": "Using a 3D Engine",
-							"filename": "Leadwerks"
 						}
 					]						
 				},		
