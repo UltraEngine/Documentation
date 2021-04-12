@@ -31,10 +31,6 @@
 				{
 					"title": "Creating a File Browser",
 					"filename": "FileBrowser"
-				},
-				{
-					"title": "Plugin SDK",
-					"filename": "PluginSDK"
 				},				
 				{
 					"title": "OpenGL Rendering",
@@ -43,6 +39,10 @@
 				{
 					"title": "Using a 3D Engine",
 					"filename": "Leadwerks"
+				},
+				{
+					"title": "Plugin SDK",
+					"filename": "PluginSDK"
 				}				
 			]
 		},
