@@ -12,6 +12,10 @@
 			"filename": "ImageConverter"
 		},
 		{
+			"title": "Creating an Image Viewer",
+			"filename": "ImageViewer"
+		},		
+		{
 			"title": "Creating a File Browser",
 			"filename": "FileBrowser"
 		},		
