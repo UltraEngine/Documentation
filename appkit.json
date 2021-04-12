@@ -8,6 +8,10 @@
 			"selected": true
 		},
 		{
+			"title": "Creating a File Browser",
+			"filename": "FileBrowser"
+		},		
+		{
 			"title": "Programming Reference",
 			"openstate": true,
 			"topics":
