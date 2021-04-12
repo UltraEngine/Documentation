@@ -224,3 +224,4 @@ We also need to modify our node toggle code. Calling Widget::Expand will not emi
             }
 ```
 
+Now when we run the code we have the best of both worlds. The program starts up quickly and we can browser the entire directory stucture, loading subfolders as we go.
