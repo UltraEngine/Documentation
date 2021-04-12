@@ -21,15 +21,15 @@
 					"filename": "ImportLibrary"
 				},				
 				{
-					"title": "Creating an Image Converter",
+					"title": "Create an Image Converter",
 					"filename": "ImageConverter"
 				},
 				{
-					"title": "Creating an Image Viewer",
+					"title": "Create an Image Viewer",
 					"filename": "ImageViewer"
 				},		
 				{
-					"title": "Creating a File Browser",
+					"title": "Create a File Browser",
 					"filename": "FileBrowser"
 				},				
 				{
