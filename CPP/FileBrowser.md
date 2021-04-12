@@ -65,11 +65,44 @@ void PopulateTree(shared_ptr<Widget> node, const WString& path)
 Now add this line of code after the filebrowser treeview widget is created:
 ```c++
     //Load folder contents into treeview
-    PopulateTree(folderbrowser->root, FolderLocation(FOLDER_DOCUMENTS));
+    WString rootpath = FolderLocation(FOLDER_DOCUMENTS);
+    PopulateTree(folderbrowser->root, rootpath);
 ```
-We will also add some code to make it so when we double-click on a treeview node, it will expand or collapse the node if it has any children. This makes navigating the tree a little easier. Insert this case into the switch statement in the while loop:
+
+When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview.
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png)
+
+Now we will add some event handling to make the behavior of our program more interesting. You can replace the entire while loop with this code:
+
 ```c++
+    while (true)
+    {
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WIDGETSELECT:
+
+            // Load the folder contents and display in the file list
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                WString path = GetNodePath(node);
+                auto dir = LoadDir(rootpath + "/" + path);
+                filelist->ClearItems();
+                for (const WString& file : dir)
+                {
+                    if (FileType(rootpath + "/" + path + "/" + file) == 1)
+                    {
+                        filelist->AddItem(file);
+                    }
+                }
+            }
+            break;
+
         case EVENT_WIDGETACTION:
+            
+            // Toggle treeview nodes open and closed when they are double-clicked
             if (ev.source == folderbrowser)
             {
                 auto node = ev.extra->As<Widget>();
@@ -85,10 +118,23 @@ We will also add some code to make it so when we double-click on a treeview node
                     }
                 }
             }
+
+            // Open a file with the default program when it is double-clicked
+            if (ev.source == filelist)
+            {
+                auto node = folderbrowser->GetSelectedNode();
+                WString path = GetNodePath(node);
+                RunFile(rootpath + "/" + path + "/" + filelist->items[ev.data].text);
+            }
+
             break;
+
+        case EVENT_WINDOWCLOSE:
+
+            // Exit the program when the window is closed
+            if (ev.source == window) return 0;
+
+            break;
+        }
+    }
 ```
-
-When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview.
-
-![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png)
-
