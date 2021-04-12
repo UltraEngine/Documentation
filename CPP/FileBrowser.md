@@ -63,7 +63,27 @@ Next we will add a function to load folders into the treeview. Add this code abo
 ```
 Now add this line of code after the filebrowser treeview widget is created:
 ```c++
-//Load folder contents into treeview
-PopulateTree(folderbrowser->root, FolderLocation(FOLDER_DOCUMENTS));
+    //Load folder contents into treeview
+    PopulateTree(folderbrowser->root, FolderLocation(FOLDER_DOCUMENTS));
+```
+We will also add some code to make it so when we double-click on a treeview node, it will expand or collapse the node if it has any children. This makes navigating the tree a little easier. Insert this case into the switch statement in the while loop:
+```c++
+        case EVENT_WIDGETACTION:
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                if (!node->kids.empty())
+                {
+                    if (node->Collapsed())
+                    {
+                        node->Expand();
+                    }
+                    else
+                    {
+                        node->Collapse();
+                    }
+                }
+            }
+            break;
 ```
 When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview.
