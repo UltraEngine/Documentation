@@ -57,6 +57,10 @@ int main(int argc, const char* argv[])
 }
 ```
 
+When we run the program it will look like the image below.
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/imageviewer1.png)
+
 ## Image Loading
 
 We need to load the FreeImage plugin to support common image file formats. Add this code in the beginning of the main function:
@@ -91,6 +95,10 @@ Now add this code in the EVENT_WIDGETACTION case in the switch statement. When t
                 }
             }
 ```
+
+We can now select an image to load and display in the main panel.
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/imageviewer2.png)
 
 ## Image Saving
 
