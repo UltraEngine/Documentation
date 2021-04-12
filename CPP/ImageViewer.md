@@ -1,4 +1,4 @@
-# Creating an Image Viewer
+# Create an Image Viewer
 
 This page describes how to create a simple image viewing program.
 
