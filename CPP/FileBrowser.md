@@ -1,5 +1,9 @@
 # Creating a File Browser
 
+This article demonstrates how to create a program that can browser a folder, display a list of files, and open files with the default program for that file type.
+
+## Program Interface
+
 We'll start by establishing the basic layout of the application interface. We will use a treeview widget on the left side of the window that is locked to the left edge, and a listbox widget in the remaining space on the right. The listbox will stretchin all directions when the window is resized.
 
 ```c++
@@ -45,6 +49,8 @@ When we run the code above here is the result:
 
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser1.png)
 
+## Populating the Folder Browser
+
 Next we will add a function to load folders into the treeview. Add this code above the main function:
 ```c++
 void PopulateTree(shared_ptr<Widget> node, const WString& path)
@@ -69,7 +75,7 @@ Now add this line of code after the filebrowser treeview widget is created:
     PopulateTree(folderbrowser->root, rootpath);
 ```
 
-When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview.
+When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview. This may be quite slow depending on how many folders you have to load, but we will come back to optimize this design later.
 
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png)
 
@@ -140,3 +146,5 @@ Now we will add some event handling to make the behavior of our program more int
 ```
 
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser3.png)
+
+## Optimization
