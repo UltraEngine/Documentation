@@ -25,13 +25,17 @@
 					"filename": "FileBrowser"
 				},
 				{
+					"title": "Plugin SDK",
+					"filename": "PluginSDK"
+				},				
+				{
 					"title": "OpenGL Rendering",
 					"filename": "OpenGL"
 				},
 				{
 					"title": "Using a 3D Engine",
 					"filename": "Leadwerks"
-				}
+				}				
 			]
 		},
 		{
@@ -1129,10 +1133,6 @@
 						{
 							"title": "LoadPlugin",
 							"filename": "LoadPlugin"
-						},
-						{
-							"title": "Plugin SDK",
-							"filename": "PluginSDK"
 						}				
 					]		
 				},
