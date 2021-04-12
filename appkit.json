@@ -8,17 +8,24 @@
 			"selected": true
 		},
 		{
-			"title": "Creating an Image Converter",
-			"filename": "ImageConverter"
+			"title": "Examples",
+			"openstate": true,
+			"topics":
+			[
+				{
+					"title": "Creating an Image Converter",
+					"filename": "ImageConverter"
+				},
+				{
+					"title": "Creating an Image Viewer",
+					"filename": "ImageViewer"
+				},		
+				{
+					"title": "Creating a File Browser",
+					"filename": "FileBrowser"
+				}
+			]
 		},
-		{
-			"title": "Creating an Image Viewer",
-			"filename": "ImageViewer"
-		},		
-		{
-			"title": "Creating a File Browser",
-			"filename": "FileBrowser"
-		},		
 		{
 			"title": "Programming Reference",
 			"openstate": true,
