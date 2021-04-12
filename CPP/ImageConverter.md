@@ -12,12 +12,20 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
     //Get the input file path
-    if (argc < 2)
+    WString path;
+    if (argc > 1)
     {
-        Print("No file path specified.");
-        return 1;
+        path = argv[1];
     }
-    WString path = argv[1];
+    else
+    {
+        path = RequestFile("Open Image");
+        if (path == "")
+        {
+            Print("No file path specified.");
+            return 1;
+        }
+    }
 
     // Load the FreeImage plugin
     auto plugin = LoadPlugin("Plugins/FITextureLoader.*");
