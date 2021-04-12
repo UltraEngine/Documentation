@@ -148,3 +148,35 @@ Now we will add some event handling to make the behavior of our program more int
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser3.png)
 
 ## Optimization
+
+At this point our program startup is quite slow because we are recursively loading the entire directory structure of the folder path we are browsing. It would be better if we only loaded the contents of folder we are currently browsing, and just loaded new directories as needed. However, in order to make treeview nodes expandable, they must have at least one child node. If we replace our PopulateTree function with the code below, it will do this.
+
+```c++
+void PopulateTree(shared_ptr<Widget> node, const WString& path)
+{
+    auto dir = LoadDir(path);
+    for (const auto& file : dir)
+    {
+        switch (FileType(path + "/" + file))
+        {
+        case 2:
+            auto subnode = node->AddNode(file);
+            auto subdir = LoadDir(path + "/" + file);
+            for (const auto& subfile : subdir)
+            {
+                if (FileType(path + "/" + file + "/" + subfile) == 2)
+                {
+                    subnode->AddNode("Loading...");
+                    node->SetValue(1);
+                    break;
+                }
+            }
+            break;
+        }
+    }
+}
+```
+
+When we run the program it will now start up much faster, but of course none of the subfolders are being loaded yet.
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser4.png)
