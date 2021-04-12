@@ -1,6 +1,6 @@
 # Creating a File Browser
 
-This article demonstrates how to create a program that can browser a folder, display a list of files, and open files with the default program for that file type.
+This page describes how to create a program that can browser a folder, display a list of files, and open files with the default program for that file type.
 
 ## Program Interface
 
