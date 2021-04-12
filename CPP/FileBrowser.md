@@ -87,4 +87,8 @@ We will also add some code to make it so when we double-click on a treeview node
             }
             break;
 ```
+
 When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview.
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png)
+
