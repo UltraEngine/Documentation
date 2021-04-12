@@ -180,3 +180,47 @@ void PopulateTree(shared_ptr<Widget> node, const WString& path)
 When we run the program it will now start up much faster, but of course none of the subfolders are being loaded yet.
 
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser4.png)
+
+To handle folder loading we will add a new case inside the switch statement. We're going to use the [Widget::GetValue](Widget_GetValue) method to see if the folder has already been loaded. The widget value is not normally used with treeviews, but it provides a convenient way for us to store an extra parameter. By default it is equal to 0, so we can just use this as an indiction that the folder for the selected treeview node has not been loaded yet. After it is loaded we set the value to 1 so it won't get loaded again.
+
+```c++
+        case EVENT_WIDGETOPEN:
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                if (node->GetValue() == 0)
+                {
+                    while (!node->kids.empty())
+                    {
+                        node->kids[0]->SetParent(NULL);
+                    }
+                    PopulateTree(node, rootpath + "/" + GetNodePath(node));
+                    node->SetValue(1);
+                }
+            }
+            break;
+```
+
+We also need to modify our node toggle code. Calling Widget::Expand will not emit an event, so we need to add these events ourselves.
+
+```c++
+            // Toggle treeview nodes open and closed when they are double-clicked
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                if (!node->kids.empty())
+                {
+                    if (node->Collapsed())
+                    {
+                        node->Expand();
+                        EmitEvent(EVENT_WIDGETOPEN, ev.source, 0, 0, 0, 0, 0, ev.extra);
+                    }
+                    else
+                    {
+                        node->Collapse();
+                        EmitEvent(EVENT_WIDGETCLOSE, ev.source, 0, 0, 0, 0, 0, ev.extra);
+                    }
+                }
+            }
+```
+
