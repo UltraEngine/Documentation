@@ -8,6 +8,10 @@
 			"selected": true
 		},
 		{
+			"title": "Creating an Image Converter",
+			"filename": "ImageConverter"
+		},
+		{
 			"title": "Creating a File Browser",
 			"filename": "FileBrowser"
 		},		
