@@ -42,6 +42,12 @@ int main(int argc, const char* argv[])
         const Event ev = WaitEvent();
         switch (ev.id)
         {
+        case EVENT_WIDGETACTION:
+            if (ev.source == menu_quit)
+            {
+                return 0;
+            }
+            break;
         case EVENT_WINDOWCLOSE:
             if (ev.source == window) return 0;
             break;
@@ -49,4 +55,59 @@ int main(int argc, const char* argv[])
     }
     return 0;
 }
+```
+
+## Image Loading
+
+We need to load the FreeImage plugin to support common image file formats. Add this code in the beginning of the main function:
+
+```c++
+    auto plugin = LoadPlugin("Plugins/FITextureLoader.*");
+    if (plugin == NULL)
+    {
+        Print("Failed to load FreeImage plugin.");
+        return 0;
+    }
+```
+
+Now add this code in the EVENT_WIDGETACTION case in the switch statement. When the user selects the **File \> Open** menu item, this will show a file request dialog and allow them to select an image to load and display.
+
+```c++
+            if (ev.source == menu_open)
+            {
+                WString path = RequestFile("Open Image");
+                if (path != "")
+                {
+                    auto pixmap = LoadPixmap(path);
+                    if (pixmap)
+                    {
+                        mainpanel->SetPixmap(pixmap, PIXMAP_CONTAIN);
+                    }
+                    else
+                    {
+                        Notify("Failed to load pixmap \"" + path + "\"", "Error", true);
+                    }
+                }
+            }
+```
+
+## Image Saving
+
+To enable save behabior we just add some new code in the EVENT_WIDGETACTION case to handle when the **File \> Save** menu item is selected:
+
+```c++
+            if (ev.source == menu_save)
+            {
+                if (mainpanel->pixmap)
+                {
+                    WString path = RequestFile("Save Image", "", "Portable Network Graphics:png;JPEG:jpg;Bitmap:bmp", 0, true);
+                    if (path != "")
+                    {
+                        if (!mainpanel->pixmap->Save(path))
+                        {
+                            Notify("Failed to save pixmap \"" + path + "\"", "Error", true);
+                        }
+                    }
+                }
+            }
 ```
