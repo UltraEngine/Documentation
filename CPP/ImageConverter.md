@@ -1,4 +1,4 @@
-# Creating an Image Converter
+# Create an Image Converter
 
 This page describes how to create a simple image converter utility.
 
