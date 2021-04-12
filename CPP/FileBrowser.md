@@ -42,7 +42,8 @@ int main(int argc, const char* argv[])
 ```
 
 When we run the code above here is the result:
-<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser1.png' />
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser1.png)
 
 Next we will add a function to load folders into the treeview. Add this code above the main function:
 ```c++void PopulateTree(shared_ptr<Widget> node, const WString& path)
