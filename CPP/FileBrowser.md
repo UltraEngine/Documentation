@@ -46,7 +46,8 @@ When we run the code above here is the result:
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser1.png)
 
 Next we will add a function to load folders into the treeview. Add this code above the main function:
-```c++void PopulateTree(shared_ptr<Widget> node, const WString& path)
+```c++
+void PopulateTree(shared_ptr<Widget> node, const WString& path)
 {
     auto dir = LoadDir(path);
     for (const auto& file : dir)
