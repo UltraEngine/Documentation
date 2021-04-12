@@ -73,7 +73,7 @@ When we run the resulting code, there is a pause while the contents of the Docum
 
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png)
 
-Now we will add some event handling to make the behavior of our program more interesting. You can replace the entire while loop with this code:
+Now we will add some event handling to make the behavior of our program more interesting. You can replace the entire while loop with this code. This will add a lot of interesting behaviors. When a treeview node is selected in the folder browser, the contents of that folder will be loaded and displayed in the file listbox. Double-clicking a treeview node will make it expand or collapse. Double-clicking on an item in the listbox will open the file with the default program for that file type.
 
 ```c++
     while (true)
@@ -138,3 +138,5 @@ Now we will add some event handling to make the behavior of our program more int
         }
     }
 ```
+
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser3.png)
