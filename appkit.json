@@ -2,16 +2,16 @@
 	"topics":
 	[
 		{
-			"title": "Introduction",
-			"filename": "Introduction",
-			"openstate": false,
-			"selected": true
-		},
-		{
-			"title": "Examples",
+			"title": "Tutorials",
 			"openstate": true,
 			"topics":
 			[
+				{
+					"title": "Introduction",
+					"filename": "Introduction",
+					"openstate": false,
+					"selected": true
+				},
 				{
 					"title": "Creating an Image Converter",
 					"filename": "ImageConverter"
