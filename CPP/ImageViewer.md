@@ -82,6 +82,7 @@ Now add this code in the EVENT_WIDGETACTION case in the switch statement. When t
                     if (pixmap)
                     {
                         mainpanel->SetPixmap(pixmap, PIXMAP_CONTAIN);
+                        window->SetText("Image Viewer - " + StripDir(path));
                     }
                     else
                     {
