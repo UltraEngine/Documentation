@@ -13,6 +13,14 @@
 					"selected": true
 				},
 				{
+					"title": "Creating a Prokect",
+					"filename": "ProjectCreation"
+				},
+				{
+					"title": "Add to an Existing Project",
+					"filename": "ImportLibrary"
+				},				
+				{
 					"title": "Creating an Image Converter",
 					"filename": "ImageConverter"
 				},
