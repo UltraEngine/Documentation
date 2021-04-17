@@ -199,8 +199,8 @@ int main(int argc, const char* argv[])
 	auto mainviewport = CreatePanel(4, 4, mainpanel->size.x - SIDEPANELWIDTH - 8, mainpanel->size.y - 8 - CONSOLEHEIGHT, mainpanel, PANEL_BORDER);
 	mainviewport->SetLayout(1, 1, 1, 1);
 	mainviewport->SetColor(0, 0, 0);
-	//auto pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/TheZone.jpg");
-	//mainviewport->SetPixmap(pixmap, PIXMAP_COVER);
+	auto pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/viewport.jpg");
+	mainviewport->SetPixmap(pixmap, PIXMAP_COVER);
 
 	//Craete side panel
 	auto sidepanel = CreateTabber(sz.x - SIDEPANELWIDTH, 0, SIDEPANELWIDTH, sz.y, mainpanel);
