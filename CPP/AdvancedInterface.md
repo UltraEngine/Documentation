@@ -71,7 +71,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-Finished:
+## Final Version
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/application.jpg' style = 'width:800px;' />
 
