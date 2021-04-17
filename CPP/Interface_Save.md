@@ -53,10 +53,10 @@ int main(int argc, const char* argv[])
     auto radio2 = CreateButton("Option 2", x, y, 120, 30, ui->root, BUTTON_RADIO);
 
     //Save the user interface
-    ui->Save(FolderLocation(FOLDER_DOCUMENTS) + "/temp.json");
+    ui->Save(GetPath(PATH_DOCUMENTS) + "/temp.json");
 
     //Open the file
-    RunFile(FolderLocation(FOLDER_DOCUMENTS) + "/temp.json");
+    RunFile(GetPath(PATH_DOCUMENTS) + "/temp.json");
 
     while (true)
     {

@@ -29,7 +29,7 @@ int main(int argc, const char* argv[])
 	buffer->PokeInt(12, 4);
 
 	//Save the buffer
-	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.bin";
+	WString path = GetPath(PATH_DOCUMENTS) + "/temp.bin";
 	if (!buffer->Save(path)) RuntimeError("Failed to save buffer.");
 
 	//Load the buffer

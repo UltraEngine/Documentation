@@ -24,7 +24,7 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
 	WString src = "https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/ultraengine_logo.png";
-	WString dst = FolderLocation(FOLDER_DOCUMENTS) + "/temp.png";
+	WString dst = GetPath(PATH_DOCUMENTS) + "/temp.png";
 
 	Print("Downloading...");
 	if (DownloadFile(src,dst))

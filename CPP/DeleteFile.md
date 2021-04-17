@@ -23,7 +23,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.bin";
+	WString path = GetPath(PATH_DOCUMENTS) + "/temp.bin";
 
 	CreateFile(path);
 	if (!FileType(path) != 1)

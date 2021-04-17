@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Load an asset
-    WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.dds";
+    WString path = GetPath(PATH_DOCUMENTS) + "/temp.dds";
     if (!CopyFile("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds", path))
     {
         RuntimeError("Failed to download pixmap.");

@@ -28,7 +28,7 @@ int main(int argc, const char* argv[])
 	auto pixmap = LoadPixmap("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Brick/brickwall01.dds");
 
 	//Save the asset
-	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/temp.dds";
+	WString path = GetPath(PATH_DOCUMENTS) + "/temp.dds";
 	pixmap->Save(path);
 
 	//Open the file

@@ -26,7 +26,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	WString path = FolderLocation(FOLDER_DOCUMENTS) + "/Temp Folder";
+	WString path = GetPath(PATH_DOCUMENTS) + "/Temp Folder";
 
 	CreateDir(path);
 	if (FileType(path) != 2)

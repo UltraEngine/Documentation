@@ -71,7 +71,7 @@ void PopulateTree(shared_ptr<Widget> node, const WString& path)
 Now add this line of code after the filebrowser treeview widget is created:
 ```c++
     //Load folder contents into treeview
-    WString rootpath = FolderLocation(FOLDER_DOCUMENTS);
+    WString rootpath = GetPath(PATH_DOCUMENTS);
     PopulateTree(folderbrowser->root, rootpath);
 ```
 
