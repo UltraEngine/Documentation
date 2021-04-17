@@ -72,6 +72,9 @@ int main(int argc, const char* argv[])
 ```
 
 Finished:
+
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/application.jpg' style = 'width:800px;' />
+
 ```c++
 #include "UltraEngine.h"
 
