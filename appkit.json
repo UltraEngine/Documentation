@@ -31,7 +31,11 @@
 				{
 					"title": "Create a File Browser",
 					"filename": "FileBrowser"
-				},				
+				},		
+				{
+					"title": "Advanced Application Interface",
+					"filename": "AdvancedInterface.md"
+				},
 				{
 					"title": "OpenGL Rendering",
 					"filename": "OpenGL"
