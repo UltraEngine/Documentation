@@ -197,9 +197,11 @@ int main(int argc, const char* argv[])
 
 	auto plugin = LoadPlugin("Plugins/FITextureLoader.dll");
 
-	auto console = CreateTextArea(4, mainpanel->size.y - CONSOLEHEIGHT, mainpanel->size.x - SIDEPANELWIDTH - 8, CONSOLEHEIGHT, mainpanel);
+	auto console = CreateTextArea(4, mainpanel->size.y - CONSOLEHEIGHT, mainpanel->size.x - SIDEPANELWIDTH - 8, CONSOLEHEIGHT - 28 - 4, mainpanel);
 	console->SetLayout(1, 1, 0, 1);
 	console->SetText("Starting program...");
+	auto widget_input = CreateTextField(4, mainpanel->size.y - 28, mainpanel->size.x - SIDEPANELWIDTH - 8, 28, mainpanel, TEXTFIELD_ENTERKEYACTIONEVENT);
+	widget_input->SetLayout(1, 1, 0, 1);
 
 	auto mainviewport = CreatePanel(4, 4, mainpanel->size.x - SIDEPANELWIDTH - 8, mainpanel->size.y - 8 - CONSOLEHEIGHT, mainpanel, PANEL_BORDER);
 	mainviewport->SetLayout(1, 1, 1, 1);
@@ -259,17 +261,33 @@ int main(int argc, const char* argv[])
 	node->AddNode("Box 1");
 	node->AddNode("Box 2");
 	node->AddNode("Box 3");
+	y += scenebrowser->size.y + x;
+
+	auto propertiespanel = CreatePanel(x, y, sz.x, sz.y - 400 - y, scenepanel);
+	propertiespanel->SetLayout(1, 1, 0, 1);
+
+	y = 8;
+	CreateLabel("Name:", x, y + 4, 60, 30, propertiespanel);
+	auto widget_name = CreateTextField(x * 2 + 60, y, sz.x - 2 * x - 60, 30, propertiespanel);
+	widget_name->SetText("Box 1");
+	y += 40;
+
+	CreateLabel("Value:", x, y + 4, 60, 30, propertiespanel);
+	CreateSlider(x * 2 + 60, y, sz.x - 2 * x - 60, 30, propertiespanel, SLIDER_HORIZONTAL | SLIDER_TRACKBAR);
+	y += 40;
 
 	//Options window
 	auto optionswindow = CreateWindow("Options",0,0,400,500,mainwindow, WINDOW_HIDDEN | WINDOW_TITLEBAR | WINDOW_CENTER);
 	auto optionsui = CreateInterface(optionswindow);
 	sz = optionsui->root->ClientSize(); 
 
-	CreateButton("Option 1", x, y, 300, 30, optionsui->root, BUTTON_CHECKBOX);
+	auto button_option1 = CreateButton("Option 1", x, y, 300, 30, optionsui->root, BUTTON_CHECKBOX);
+	button_option1->SetState(WIDGETSTATE_SELECTED);
 	y += 32;
-	CreateButton("Option 2", x, y, 300, 30, optionsui->root, BUTTON_CHECKBOX);
+	auto button_option2 = CreateButton("Option 2", x, y, 300, 30, optionsui->root, BUTTON_RADIO);
+	button_option2->SetState(WIDGETSTATE_SELECTED);
 	y += 32;
-	CreateButton("Option 3", x, y, 300, 30, optionsui->root, BUTTON_CHECKBOX);
+	auto button_option3 = CreateButton("Option 3", x, y, 300, 30, optionsui->root, BUTTON_RADIO);
 
 	auto button_applyoptions = CreateButton("OK", sz.x - 2 * (8 + 80), sz.y - 8 - 30, 80, 30, optionsui->root, BUTTON_OK);
 	auto button_closeoptions = CreateButton("Cancel", sz.x - 8 - 80, sz.y - 8 - 30, 80, 30, optionsui->root, BUTTON_CANCEL);
@@ -281,6 +299,7 @@ int main(int argc, const char* argv[])
 		{
 
 		case EVENT_WIDGETSELECT:
+			Print("SELECT");
 			if (event.source == sidepanel)
 			{
 				for (int n = 0; n < sidepanel->items.size(); ++n)
@@ -305,6 +324,15 @@ int main(int argc, const char* argv[])
 			if (event.source == menu_exit)
 			{
 				EmitEvent(EVENT_WINDOWCLOSE, mainwindow);
+			}
+			else if (event.source == widget_input)
+			{
+				if (!widget_input->text.empty())
+				{
+					console->AddText("\n" + widget_input->text);
+					widget_input->SetText("");
+				}
+				widget_input->Activate();
 			}
 			else if (event.source == menu_open or event.source == toolbarbutton_open)
 			{
@@ -358,6 +386,7 @@ int main(int argc, const char* argv[])
 			}
 			break;
 		}
+
 		if (event.id == EVENT_WIDGETACTION or event.id == EVENT_WIDGETSELECT)
 		{
 			shared_ptr<Widget> widget;
