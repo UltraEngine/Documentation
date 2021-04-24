@@ -34,7 +34,7 @@
 				},		
 				{
 					"title": "Advanced Application Interface",
-					"filename": "AdvancedInterface.md"
+					"filename": "AdvancedInterface"
 				},
 				{
 					"title": "OpenGL Rendering",
