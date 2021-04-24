@@ -4,7 +4,7 @@ This page describes how to create a more complex application interface. The inte
 
 ## Application Layout
 
-We will color each panel separately so we can easily see what our application layout looks like.
+The first step is to divide our application up into a series of panels. The layout for each panel will be adjusted, for resizing and DPI scaling. We will color each panel separately so we can easily see what our application layout looks like.
 
 ```c++
 #include "UltraEngine.h"
