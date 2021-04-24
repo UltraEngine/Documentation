@@ -1,6 +1,8 @@
 # Advanced Application Interface
 
-This page describes how to create a more complex application interface.
+This page describes how to create a more complex application interface. The interface will consist of a main panel with a viewport and a text console, as well as a side panel divided into several tabbed panels. We will add some simple behavior to our application to demonstrate how a real application can be programmed. We will also add a child window with a few settings and show how to show and hide it.
+
+## Application Layout
 
 We will color each panel separately so we can easily see what our application layout looks like.
 
