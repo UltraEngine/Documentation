@@ -417,6 +417,52 @@ Our example program is starting to look like a real application now:
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_tabs.gif' style = 'width:800px;' />
 
+## Build the Main Panel
+
+We're now going to add a program console and a simulated 3D viewport to the main panel. Replace the main panel creation code with this:
+
+```c++
+	//-------------------------------------------------------
+	// Create main panel
+	//-------------------------------------------------------
+
+	auto mainpanel = CreatePanel(0, toolbar->position.y + toolbar->size.y, sz.x, sz.y - toolbar->size.y - toolbar->position.y - statusbar->size.y, ui->root);
+	mainpanel->SetLayout(1, 1, 1, 1);
+	sz = mainpanel->ClientSize();
+	
+	//Create console
+	auto console = CreateTextArea(4, mainpanel->size.y - CONSOLEHEIGHT, mainpanel->size.x - SIDEPANELWIDTH - 8, CONSOLEHEIGHT - 28 - 4, mainpanel);
+	console->SetLayout(1, 1, 0, 1);
+	console->SetText("Starting program...");
+	auto widget_input = CreateTextField(4, mainpanel->size.y - 28, mainpanel->size.x - SIDEPANELWIDTH - 8, 28, mainpanel, TEXTFIELD_ENTERKEYACTIONEVENT);
+	widget_input->SetLayout(1, 1, 0, 1);
+
+	//Main viewport
+	auto mainviewport = CreatePanel(4, 4, mainpanel->size.x - SIDEPANELWIDTH - 8, mainpanel->size.y - 8 - CONSOLEHEIGHT, mainpanel, PANEL_BORDER);
+	mainviewport->SetLayout(1, 1, 1, 1);
+	mainviewport->SetColor(0, 0, 0);
+```
+
+Add this code into the EVENT_WIDGETACTION case statement in the main loop, to handle console text input events:
+
+```c++
+			else if (event.source == widget_input)
+			{
+				if (!widget_input->text.empty())
+				{
+					console->AddText("\n" + widget_input->text);
+					widget_input->SetText("");
+				}
+				widget_input->Activate();
+			}
+```
+
+The program will now appear like the image below. If we enter some text in the console text field and press the enter key, it will be added to the text area:
+
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_console.png' style = 'width:800px;' />
+
+
+
 ## Final Version
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/application.jpg' style = 'width:800px;' />
