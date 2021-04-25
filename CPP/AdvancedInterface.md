@@ -300,7 +300,7 @@ Now find the code in the EVENT_WIDGETACTION case statement, in the main loop, th
 
 The status bar text will now update to match the current selected view mode in the window menu.
 
-<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_status.png' style = 'width:800px;' />
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_statusbar.png' style = 'width:800px;' />
 
 
 ## Final Version
