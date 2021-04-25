@@ -1,4 +1,4 @@
-﻿#include "UltraEngine.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
