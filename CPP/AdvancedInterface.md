@@ -202,14 +202,74 @@ When the **Open file** menu item is selected a file open dialog will be shown.
 
 When the **Save** or **Save as** menu item is selected a file save dialog will be shown.
 
-When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK.
-
 When any of the menu items in the **View** sub-menu are selected, that item will display a checkmark next to the menu text.
 
 When the **Help Contents** menu item is selected, a web page will be opened in the system web browser.
 
 When the **About** menu item is selected, a notification box will be displayed.
 
+When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK. Note that the event evaluation code emits a WINDOWCLOSE event when the **Exit** menu item is selected. This event is then detected and evaluated as if the user had actually closed the window. This allows us to reuse the same code. If we wish to change the behavior in the future, we only have to modify a single block of code.
+
+## Build the Toolbar
+
+The toolbar will contain a row of buttons that will provide quick access to functionality of commonly used menu items. In this example, we will use Emojis for our toolbar button icons, but in your application you may wish to use [SVG vector images](Widget_SetIcon) instead.
+
+Replace the toolbar creation code with the code below:
+
+```c++
+	//-------------------------------------------------------
+	// Create toolbar
+	//-------------------------------------------------------
+
+	auto toolbar = CreatePanel(0, mainmenu->size.y, sz.x, TOOLBARHEIGHT, ui->root);
+	toolbar->SetLayout(1, 1, 1, 0);
+	int x = 4, y = 4;
+	auto toolbarbutton_new = CreateButton(L"🗎", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
+	toolbarbutton_new->SetFontScale(2);
+	x += TOOLBARHEIGHT;
+
+	auto toolbarbutton_open = CreateButton(L"📁", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
+	toolbarbutton_open->SetFontScale(2);
+	x += TOOLBARHEIGHT;
+
+	auto toolbarbutton_save = CreateButton(L"🖫", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
+	toolbarbutton_save->SetFontScale(2);
+	x += TOOLBARHEIGHT;
+
+	auto toolbarbutton_options = CreateButton(L"⚙", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
+	toolbarbutton_options->SetFontScale(2);
+	x += TOOLBARHEIGHT;
+
+	auto toolbarbutton_help = CreateButton(L"?", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
+	toolbarbutton_help->SetFontScale(2);
+```
+
+Rather than re-code all the functionality of the menu items, we can just emit new events when a toolbar button is pressed, and trick the program into thinking the associated menu item was selected. Add this code in the EVENT_WIDGETACTION case statement in the main loop and run the program:
+
+```c++
+			else if (event.source == toolbarbutton_open)
+			{
+				EmitEvent(EVENT_WIDGETACTION, menu_open);
+			}
+			else if (event.source == toolbarbutton_save)
+			{
+				EmitEvent(EVENT_WIDGETACTION, menu_save);
+			}
+			else if (event.source == toolbarbutton_options)
+			{
+				EmitEvent(EVENT_WIDGETACTION, menu_options);
+			}
+			else if (event.source == toolbarbutton_help)
+			{
+				EmitEvent(EVENT_WIDGETACTION, menu_helpcontents);
+			}
+```
+
+You can now activate the menu items by pressing the equivalent toolbar button. The **Options** menu item doesn't do anything yet, but when we add this functionality it will be automatically triggered when the associated toolbar button is pressed.
+
+At this point the program will look like this:
+
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/apptoolbar.png' style = 'width:800px;' />
 
 
 ## Final Version
