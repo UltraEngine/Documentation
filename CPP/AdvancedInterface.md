@@ -212,7 +212,7 @@ Note that the event evaluation code emits a WINDOWCLOSE event when the **Exit** 
 
 The toolbar will contain a row of buttons that will provide quick access to functionality of commonly used menu items. In this example, we will use Emojis for our toolbar button icons, but in your application you may wish to use [SVG vector images](Widget_SetIcon) instead.
 
-Replace the toolbar creation code with the code below:
+Replace the toolbar creation code with the code below. Note that the strings are preceeded by "L", indicating that a wide string should be used, in order to support the special unicode characters.
 
 ```c++
 	//-------------------------------------------------------
