@@ -98,7 +98,68 @@ When we run this code we can see the user interface is divided into different re
 
 ## Build the Menu
 
+We will now add items to the main menu. The main menu will contain four sub-menus called **File**, **Edit**, **View**, **Tools**, and **Help**. Each sub-menu will contain various menu items. The **File** menu will also contain a sub-menu of its own where we can display a list of recently opened files.
 
+Replace the menu creation block of code with the code below:
+
+```c++
+	//-------------------------------------------------------
+	// Create main menu
+	//-------------------------------------------------------
+
+	auto mainmenu = CreateMenu("", ui->root);
+	
+	//File menu
+	auto menu_file = CreateMenu("File", mainmenu);
+	CreateMenu("New", menu_file);
+	CreateMenu("", menu_file);
+	auto menu_open = CreateMenu("Open", menu_file);
+	auto menu_save = CreateMenu("Save", menu_file);
+	auto menu_saveas = CreateMenu("Save as...", menu_file);
+	CreateMenu("", menu_file);
+	auto menu_recentfiles = CreateMenu("Recent files", menu_file);
+	array<shared_ptr<Widget>, 10> menu_recentfile;
+	for (int n = 0; n < menu_recentfile.size(); ++n)
+	{
+		menu_recentfile[n] = CreateMenu("Recent file " + String(n + 1), menu_recentfiles);
+	}
+	CreateMenu("", menu_file);
+	auto menu_exit = CreateMenu("Exit", menu_file);
+
+	//Edit menu
+	auto menu_edit = CreateMenu("Edit", mainmenu);
+	CreateMenu("Undo", menu_edit);
+	CreateMenu("Redo", menu_edit);
+	CreateMenu("", menu_edit);
+	CreateMenu("Cut", menu_edit);
+	CreateMenu("Copy", menu_edit);
+	CreateMenu("Past", menu_edit);
+	CreateMenu("", menu_edit);
+	CreateMenu("Select all", menu_edit);
+	CreateMenu("Select none", menu_edit);
+	CreateMenu("Invert selection", menu_edit);
+
+	//View menu
+	auto menu_view = CreateMenu("View", mainmenu);
+	auto menu_perspective = CreateMenu("Perspective", menu_view);
+	auto menu_top = CreateMenu("XZ - Top", menu_view);
+	auto menu_side = CreateMenu("XZ - Side", menu_view);
+	auto menu_front = CreateMenu("XY - Front", menu_view);
+	menu_perspective->SetState(true);
+
+	//Tools menu
+	auto menu_tools = CreateMenu("Tools", mainmenu);
+	auto menu_options = CreateMenu("Options", menu_tools);
+
+	//Help menu
+	auto menu_help = CreateMenu("Help", mainmenu);
+	auto menu_helpcontents = CreateMenu("Help Contents", menu_help);
+	auto menu_about = CreateMenu("About", menu_help);
+```
+
+When we run the program we can see an interactive menu with many items.
+
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/appmenu.png' style = 'width:800px;' />
 
 ## Final Version
 
