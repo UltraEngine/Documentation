@@ -161,6 +161,8 @@ When we run the program we can see an interactive menu with many items.
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/appmenu.png' style = 'width:800px;' />
 
+We can add some interactivity to our application to perform various actions when different menu items are selected by the user.
+
 Replace the EVENT_WIDGETACTION case statement in the main loop with the code below and run the program:
 
 ```c++
@@ -195,8 +197,6 @@ Replace the EVENT_WIDGETACTION case statement in the main loop with the code bel
 			}
 			break;
 ```
-
-We can add some interactivity to our application with the code below. This will perform various actions when different menu items are selected by the user.
 
 When the **Open file** menu item is selected a file open dialog will be shown.
 
