@@ -49,7 +49,7 @@ int main(int argc, const char* argv[])
 	sz = mainpanel->ClientSize();
 	mainpanel->SetColor(0, 0, 1);
 	
-	//Craete side panel
+	//Create side panel
 	auto sidepanel = CreatePanel(sz.x - SIDEPANELWIDTH, 0, SIDEPANELWIDTH, sz.y, mainpanel);
 	sidepanel->SetLayout(0, 1, 1, 1);
 	sidepanel->SetColor(1, 0, 0);
@@ -217,7 +217,7 @@ int main(int argc, const char* argv[])
 	auto pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/viewport.jpg");
 	mainviewport->SetPixmap(pixmap, PIXMAP_COVER);
 
-	//Craete side panel
+	//Create side panel
 	auto sidepanel = CreateTabber(sz.x - SIDEPANELWIDTH, 0, SIDEPANELWIDTH, sz.y, mainpanel);
 	sidepanel->SetLayout(0, 1, 1, 1);
 	sidepanel->AddItem("Objects", true);
