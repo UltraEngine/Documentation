@@ -302,6 +302,25 @@ The status bar text will now update to match the current selected view mode in t
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_statusbar.png' style = 'width:800px;' />
 
+## Build the Side Panel
+
+Now we will add a tabbed panel into the side panel and populate it with various widgets. Replace the side panel creation code with the code below and run the program.
+
+```c++
+	//-------------------------------------------------------
+	// Create side panel
+	//-------------------------------------------------------	
+	
+	auto sidepanel = CreatePanel(sz.x - SIDEPANELWIDTH, 0, SIDEPANELWIDTH, sz.y, mainpanel);
+	sidepanel->SetLayout(0, 1, 1, 1);
+	auto tabber = CreateTabber(0, 0, SIDEPANELWIDTH, sz.y, sidepanel);
+	tabber->SetLayout(1, 1, 1, 1);
+	tabber->AddItem("Objects", true);
+	tabber->AddItem("Scene");
+```
+
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_tabber.png' style = 'width:800px;' />
+
 
 ## Final Version
 
