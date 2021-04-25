@@ -69,6 +69,10 @@ int main(int argc, const char* argv[])
 	sidepanel->SetLayout(0, 1, 1, 1);
 	sidepanel->SetColor(1, 0, 0);
 
+	//-------------------------------------------------------
+	// Main loop
+	//-------------------------------------------------------
+	
 	while (true)
 	{
 		const Event event = WaitEvent();
