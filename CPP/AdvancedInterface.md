@@ -77,6 +77,10 @@ int main(int argc, const char* argv[])
 }
 ```
 
+When we run this code we can see the user interface is divided into different regions. When we resize the window the panels stretch to cover the window client area.
+
+<img src = 'https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/applayout.png' style = 'width:800px;' />
+
 ## Final Version
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/application.jpg' style = 'width:800px;' />
