@@ -161,21 +161,7 @@ When we run the program we can see an interactive menu with many items.
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/appmenu.png' style = 'width:800px;' />
 
-We can add some interactivity to our application with the code below. This will perform various actions when different menu items are selected by the user.
-
-When the **Open file** menu item is selected a file open dialog will be shown.
-
-When the **Save** or **Save as** menu item is selected a file save dialog will be shown.
-
-When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK.
-
-When any of the menu items in the **View** sub-menu are selected, that item will display a checkmark next to the menu text.
-
-When the **Help Contents** menu item is selected, a web page will be opened in the system web browser.
-
-When the **About** menu item is selected, a notification box will be displayed.
-
-Replace the EVENT_WIDGETACTION case statement in the main loop with the code below.
+Replace the EVENT_WIDGETACTION case statement in the main loop with the code below and run the program:
 
 ```c++
 		case EVENT_WIDGETACTION:
@@ -209,6 +195,22 @@ Replace the EVENT_WIDGETACTION case statement in the main loop with the code bel
 			}
 			break;
 ```
+
+We can add some interactivity to our application with the code below. This will perform various actions when different menu items are selected by the user.
+
+When the **Open file** menu item is selected a file open dialog will be shown.
+
+When the **Save** or **Save as** menu item is selected a file save dialog will be shown.
+
+When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK.
+
+When any of the menu items in the **View** sub-menu are selected, that item will display a checkmark next to the menu text.
+
+When the **Help Contents** menu item is selected, a web page will be opened in the system web browser.
+
+When the **About** menu item is selected, a notification box will be displayed.
+
+
 
 ## Final Version
 
