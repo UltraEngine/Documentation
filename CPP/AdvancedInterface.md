@@ -53,7 +53,7 @@ int main(int argc, const char* argv[])
 	statusbar->SetColor(0, 1, 0);
 
 	//-------------------------------------------------------
-	// Create main background panel
+	// Create main panel
 	//-------------------------------------------------------
 
 	auto mainpanel = CreatePanel(0, toolbar->position.y + toolbar->size.y, sz.x, sz.y - toolbar->size.y - toolbar->position.y - statusbar->size.y, ui->root);
