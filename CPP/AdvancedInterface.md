@@ -469,7 +469,10 @@ The program will now appear like the image below. If we enter some text in the c
 The last feature we will add demonstrates how to use multiple windows in an application and guide the user's actions. Add the code below anywhere after the main window is created. Note that the window styles include the WINDOW_HIDDEN style, so the window will be invisible until it is shown.
 
 ```c++
-	//Options window
+	//-------------------------------------------------------
+	// Options window
+	//-------------------------------------------------------
+	
 	auto optionswindow = CreateWindow("Options",0,0,400,500,mainwindow, WINDOW_HIDDEN | WINDOW_TITLEBAR | WINDOW_CENTER);
 	auto optionsui = CreateInterface(optionswindow);
 	sz = optionsui->root->ClientSize(); 
