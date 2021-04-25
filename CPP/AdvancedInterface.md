@@ -419,7 +419,9 @@ Our example program is starting to look like a real application now:
 
 ## Build the Main Panel
 
-We're now going to add a program console and a simulated 3D viewport to the main panel. Replace the main panel creation code with this:
+We're now going to add a program console and a simulated viewport to the main panel. The viewport could be a window that uses [OpenGL rendering](OpenGL.md), a [3D engine](Leadwerks.md), or just a panel that displays an image. Since we are not building a real application, we will just use a panel with a black background.
+
+Replace the main panel creation code with this:
 
 ```c++
 	//-------------------------------------------------------
