@@ -85,10 +85,7 @@ int main(int argc, const char* argv[])
 		case EVENT_WINDOWCLOSE:
 			if (event.source == mainwindow)
 			{
-				if (Confirm("Are you sure you want to quit?"))
-				{
-					return 0;
-				}
+				if (Confirm("Are you sure you want to quit?")) return 0;
 			}
 		}
 	}
