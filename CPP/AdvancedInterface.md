@@ -304,7 +304,7 @@ The status bar text will now update to match the current selected view mode in t
 
 ## Build the Side Panel
 
-Now we will add a tabbed panel into the side panel and populate it with various widgets. Replace the side panel creation code with the code below and run the program.
+Now we will add a tabbed panel into the side panel and populate it with various widgets. Replace the side panel creation code with the code below and run the program. A tabbed panel will appear with two tabs named **Objects** and **Scene**.
 
 ```c++
 	//-------------------------------------------------------
@@ -317,10 +317,105 @@ Now we will add a tabbed panel into the side panel and populate it with various 
 	tabber->SetLayout(1, 1, 1, 1);
 	tabber->AddItem("Objects", true);
 	tabber->AddItem("Scene");
+
+	//Object panel
+	sz = tabber->ClientSize();
+	auto objectpanel = CreatePanel(0, 0, sz.x, sz.y, tabber);
+	objectpanel->SetLayout(1, 1, 1, 1);
+	tabber->items[0].extra = objectpanel;
+
+	//Scene panel
+	auto scenepanel = CreatePanel(0, 0, sz.x, sz.y, tabber);
+	scenepanel->Hide();
+	scenepanel->SetLayout(1, 1, 1, 1);
+	tabber->items[1].extra = scenepanel;
 ```
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_tabber.png' style = 'width:800px;' />
 
+Replace the EVENT_WIDGETSELECT case statement with the code below. This will show and hide the scene and object panel depending on which tab is selected. You can change the color of the objectpanel or scenepanel widget to verify that this working.
+
+```c++
+		case EVENT_WIDGETSELECT:
+			if (event.source == tabber)
+			{
+				for (int n = 0; n < tabber->items.size(); ++n)
+				{
+					if (tabber->items[n].extra)
+					{
+						auto panel = tabber->items[n].extra->As<Widget>();
+						if (n == event.data)
+						{
+							panel->Show();
+						}
+						else
+						{
+							panel->Hide();
+						}
+					}
+				}
+			}
+			break;
+```
+
+Finally, we can add some code that will create a lot of widgets in the scene and object panels. Add the code below into your program, right after the sidepanel creation code:
+
+```c++
+x = 8;
+	y = 12;
+
+	CreateLabel("Category:", x, y, 200, 30, objectpanel);
+	y += 24;
+	auto objectcategorybox = CreateComboBox(x, y, sz.x - x * 2, 30, objectpanel);
+	objectcategorybox->SetLayout(1, 1, 1, 0);
+	objectcategorybox->AddItem("Primitives", true);
+	objectcategorybox->AddItem("Extended primitives");
+	objectcategorybox->AddItem("Cameras");
+	objectcategorybox->AddItem("Lights");
+	objectcategorybox->AddItem("Splines");
+	y += 44;
+
+	CreateLabel("Object:", x, y, 200, 30, objectpanel);
+	y += 24;
+	auto objectbox = CreateComboBox(x, y, sz.x - x * 2, 30, objectpanel);
+	objectbox->SetLayout(1, 1, 1, 0);
+	objectbox->AddItem("Box", true);
+	objectbox->AddItem("Wedge");
+	objectbox->AddItem("Cylinder");
+	objectbox->AddItem("Sphere");
+	y += 44;
+
+	x = 80;
+	CreateButton("Create", x, y, sz.x - 2 * x, 28, objectpanel);
+
+	x = 8;
+	y = 12;
+	auto scenebrowser = CreateTreeView(x, y, sz.x - 2 * x, 400 - y, scenepanel);
+	scenebrowser->SetLayout(1, 1, 1, 1);
+	auto node = scenebrowser->root->AddNode("Scene");
+	node->Expand();
+	node->AddNode("Box 1");
+	node->AddNode("Box 2");
+	node->AddNode("Box 3");
+	y += scenebrowser->size.y + x;
+
+	auto propertiespanel = CreatePanel(x, y, sz.x, sz.y - y, scenepanel);
+	propertiespanel->SetLayout(1, 1, 0, 1);
+
+	y = 8;
+	CreateLabel("Name:", x, y + 4, 60, 30, propertiespanel);
+	auto widget_name = CreateTextField(x * 2 + 60, y, sz.x - 4 * x - 60, 30, propertiespanel);
+	widget_name->SetText("Box 1");
+	y += 40;
+	 
+	CreateLabel("Value:", x, y + 4, 60, 30, propertiespanel);
+	CreateSlider(x * 2 + 60, y, sz.x - 4 * x - 60, 30, propertiespanel, SLIDER_HORIZONTAL | SLIDER_TRACKBAR);
+	y += 40;
+```
+
+Our example program is starting to look like a real application now:
+
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_tabs.gif' style = 'width:800px;' />
 
 ## Final Version
 
