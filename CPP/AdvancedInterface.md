@@ -11,7 +11,7 @@ The first step is to divide our application up into a series of panels. The layo
 
 using namespace UltraEngine;
 
-const int TOOLBARHEIGHT = 48;
+const int TOOLBARHEIGHT = 48; 
 const int STATUSBARHEIGHT = 32;
 const int SIDEPANELWIDTH = 300;
 const int CONSOLEHEIGHT = 120;
@@ -29,27 +29,42 @@ int main(int argc, const char* argv[])
 	auto ui = CreateInterface(mainwindow);
 	iVec2 sz = ui->root->ClientSize();
 
-	//Create main menu
+	//-------------------------------------------------------
+	// Create main menu
+	//-------------------------------------------------------
+	
 	auto mainmenu = CreateMenu("", ui->root);
 	mainmenu->SetColor(0, 1, 1);
 
-	//Create toolbar
+	//-------------------------------------------------------
+	// Create toolbar
+	//-------------------------------------------------------
+
 	auto toolbar = CreatePanel(0, mainmenu->size.y, sz.x, TOOLBARHEIGHT, ui->root);
 	toolbar->SetLayout(1, 1, 1, 0);
 	toolbar->SetColor(1, 1, 0);
 
-	//Create status bar
+	//-------------------------------------------------------
+	// Create status bar
+	//-------------------------------------------------------
+		
 	auto statusbar = CreatePanel(0, sz.y - STATUSBARHEIGHT, sz.x, STATUSBARHEIGHT, ui->root);
 	statusbar->SetLayout(1, 1, 0, 1);
 	statusbar->SetColor(0, 1, 0);
 
-	//Create main background panel
+	//-------------------------------------------------------
+	// Create main background panel
+	//-------------------------------------------------------
+
 	auto mainpanel = CreatePanel(0, toolbar->position.y + toolbar->size.y, sz.x, sz.y - toolbar->size.y - toolbar->position.y - statusbar->size.y, ui->root);
 	mainpanel->SetLayout(1, 1, 1, 1);
 	sz = mainpanel->ClientSize();
 	mainpanel->SetColor(0, 0, 1);
 	
-	//Create side panel
+	//-------------------------------------------------------
+	// Create side panel
+	//-------------------------------------------------------
+	
 	auto sidepanel = CreatePanel(sz.x - SIDEPANELWIDTH, 0, SIDEPANELWIDTH, sz.y, mainpanel);
 	sidepanel->SetLayout(0, 1, 1, 1);
 	sidepanel->SetColor(1, 0, 0);
@@ -80,6 +95,10 @@ int main(int argc, const char* argv[])
 When we run this code we can see the user interface is divided into different regions. When we resize the window the panels stretch to cover the window client area.
 
 <img src = 'https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/applayout.png' style = 'width:800px;' />
+
+## Build the Menu
+
+
 
 ## Final Version
 
