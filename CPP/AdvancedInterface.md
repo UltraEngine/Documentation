@@ -161,6 +161,55 @@ When we run the program we can see an interactive menu with many items.
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/appmenu.png' style = 'width:800px;' />
 
+We can add some interactivity to our application with the code below. This will perform various actions when different menu items are selected by the user.
+
+When the **Open file** menu item is selected a file open dialog will be shown.
+
+When the **Save** or **Save as** menu item is selected a file save dialog will be shown.
+
+When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK.
+
+When any of the menu items in the **View** sub-menu are selected, that item will display a checkmark next to the menu text.
+
+When the **Help Contents** menu item is selected, a web page will be opened in the system web browser.
+
+When the **About** menu item is selected, a notification box will be displayed.
+
+Replace the EVENT_WIDGETACTION case statement in the main loop with the code below.
+
+```c++
+		case EVENT_WIDGETACTION:
+			if (event.source == menu_exit)
+			{
+				EmitEvent(EVENT_WINDOWCLOSE, mainwindow);
+			}
+			else if (event.source == menu_open)
+			{
+				RequestFile("Open File");
+			}
+			else if (event.source == menu_save or event.source == menu_saveas)
+			{
+				RequestFile("Save File", "", "All Files", 0, true);
+			}
+			else if (event.source == menu_helpcontents)
+			{
+				RunFile("https://www.ultraengine.com/learn");
+			}
+			else if (event.source == menu_about)
+			{
+				Notify("Ultra App Kit");
+			}
+			else if (event.source == menu_perspective or event.source == menu_top or event.source == menu_side or event.source == menu_front)
+			{
+				menu_perspective->SetState(WIDGETSTATE_UNSELECTED);
+				menu_top->SetState(WIDGETSTATE_UNSELECTED);
+				menu_side->SetState(WIDGETSTATE_UNSELECTED);
+				menu_front->SetState(WIDGETSTATE_UNSELECTED);
+				event.source->As<Widget>()->SetState(WIDGETSTATE_SELECTED);
+			}
+			break;
+```
+
 ## Final Version
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/application.jpg' style = 'width:800px;' />
