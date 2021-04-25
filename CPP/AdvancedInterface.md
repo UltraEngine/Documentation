@@ -477,13 +477,11 @@ The last feature we will add demonstrates how to use multiple windows in an appl
 	auto optionsui = CreateInterface(optionswindow);
 	sz = optionsui->root->ClientSize(); 
 
-	auto button_option1 = CreateButton("Option 1", x, y, 300, 30, optionsui->root, BUTTON_CHECKBOX);
+	auto button_option1 = CreateButton("Option 1", 12, 12, 300, 30, optionsui->root, BUTTON_CHECKBOX);
 	button_option1->SetState(WIDGETSTATE_SELECTED);
-	y += 32;
-	auto button_option2 = CreateButton("Option 2", x, y, 300, 30, optionsui->root, BUTTON_RADIO);
+	auto button_option2 = CreateButton("Option 2", 12, 12 + 32, 300, 30, optionsui->root, BUTTON_RADIO);
 	button_option2->SetState(WIDGETSTATE_SELECTED);
-	y += 32;
-	auto button_option3 = CreateButton("Option 3", x, y, 300, 30, optionsui->root, BUTTON_RADIO);
+	auto button_option3 = CreateButton("Option 3", 12, 12 + 32 * 2, 300, 30, optionsui->root, BUTTON_RADIO);
 
 	auto button_applyoptions = CreateButton("OK", sz.x - 2 * (8 + 80), sz.y - 8 - 30, 80, 30, optionsui->root, BUTTON_OK);
 	auto button_closeoptions = CreateButton("Cancel", sz.x - 8 - 80, sz.y - 8 - 30, 80, 30, optionsui->root, BUTTON_CANCEL);
