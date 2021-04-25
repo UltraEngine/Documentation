@@ -519,4 +519,4 @@ When we run the program, we can open the options window by selecting the **Tools
 
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/app_options.png' style = 'width:800px;' />
 
-You can download the complete source code for this example [here](https://raw.githubusercontent.com/Leadwerks/Documentation/master/CPP/Advaned%20Interface.cpp).
+You can download the complete source code for this example [here](https://raw.githubusercontent.com/Leadwerks/Documentation/master/CPP/AdvancedInterface.cpp).
