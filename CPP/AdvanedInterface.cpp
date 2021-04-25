@@ -201,7 +201,10 @@ int main(int argc, const char* argv[])
 	CreateSlider(x * 2 + 60, y, sz.x - 4 * x - 60, 30, propertiespanel, SLIDER_HORIZONTAL | SLIDER_TRACKBAR);
 	y += 40;
 
-	//Options window
+	//-------------------------------------------------------
+	// Options window
+	//-------------------------------------------------------
+	
 	auto optionswindow = CreateWindow("Options", 0, 0, 400, 500, mainwindow, WINDOW_HIDDEN | WINDOW_TITLEBAR | WINDOW_CENTER);
 	auto optionsui = CreateInterface(optionswindow);
 	sz = optionsui->root->ClientSize();
@@ -217,6 +220,10 @@ int main(int argc, const char* argv[])
 	auto button_applyoptions = CreateButton("OK", sz.x - 2 * (8 + 80), sz.y - 8 - 30, 80, 30, optionsui->root, BUTTON_OK);
 	auto button_closeoptions = CreateButton("Cancel", sz.x - 8 - 80, sz.y - 8 - 30, 80, 30, optionsui->root, BUTTON_CANCEL);
 
+	//-------------------------------------------------------
+	// Main loop
+	//-------------------------------------------------------
+	
 	while (true)
 	{
 		const Event event = WaitEvent();
