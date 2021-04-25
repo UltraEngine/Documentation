@@ -198,17 +198,15 @@ Replace the EVENT_WIDGETACTION case statement in the main loop with the code bel
 			break;
 ```
 
-When the **Open file** menu item is selected a file open dialog will be shown.
-
-When the **Save** or **Save as** menu item is selected a file save dialog will be shown.
-
-When any of the menu items in the **View** sub-menu are selected, that item will display a checkmark next to the menu text.
-
-When the **Help Contents** menu item is selected, a web page will be opened in the system web browser.
-
-When the **About** menu item is selected, a notification box will be displayed.
-
-When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK. Note that the event evaluation code emits a WINDOWCLOSE event when the **Exit** menu item is selected. This event is then detected and evaluated as if the user had actually closed the window. This allows us to reuse the same code. If we wish to change the behavior in the future, we only have to modify a single block of code.
+We can observe the following behavior:
+- When the **Open file** menu item is selected a file open dialog will be shown.
+- When the **Save** or **Save as** menu item is selected a file save dialog will be shown.
+- When any of the menu items in the **View** sub-menu are selected, that item will display a checkmark next to the menu text.
+- When the **Help Contents** menu item is selected, a web page will be opened in the system web browser.
+- When the **About** menu item is selected, a notification box will be displayed.
+- When the **Exit** menu item is selected, a confirmation dialog will be shown, and the program will end if the user clicks OK.
+ 
+Note that the event evaluation code emits a WINDOWCLOSE event when the **Exit** menu item is selected. This event is then detected and evaluated as if the user had actually closed the window. This allows us to reuse the same code. If we wish to change the behavior in the future, we only have to modify a single block of code.
 
 ## Build the Toolbar
 
