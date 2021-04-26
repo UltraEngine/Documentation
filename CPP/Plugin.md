@@ -12,6 +12,12 @@ When a plugin is deleted it will be automatically unloaded and its functionality
 auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader.*")
 ```
 
+If you are building a 32-bit application then the 32-bit version of the plugin should be loaded:
+
+```c++
+auto plugin_freeimage = LoadPlugin("Plugins (x86)/FITextureLoader.*")
+```
+
 | Property | Type | Description |
 | ----- | ----- | ----- |
 | description | const WString& | read-only description of functionality loaded from the plugin |
