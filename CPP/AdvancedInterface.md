@@ -223,10 +223,7 @@ Replace the toolbar creation code with the code below. Note that the strings are
 	auto toolbar = CreatePanel(0, mainmenu->size.y, sz.x, TOOLBARHEIGHT, ui->root);
 	toolbar->SetLayout(1, 1, 1, 0);
 	int x = 4, y = 4;
-	auto toolbarbutton_new = CreateButton(L"🗎", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
-	toolbarbutton_new->SetFontScale(2);
-	x += TOOLBARHEIGHT;
-
+	
 	auto toolbarbutton_open = CreateButton(L"📁", x, y, TOOLBARHEIGHT - 8, TOOLBARHEIGHT - 8, toolbar, BUTTON_TOOLBAR);
 	toolbarbutton_open->SetFontScale(2);
 	x += TOOLBARHEIGHT;
