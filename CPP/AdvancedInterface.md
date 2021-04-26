@@ -359,7 +359,7 @@ Replace the EVENT_WIDGETSELECT case statement with the code below. This will sho
 Finally, we can add some code that will create a lot of widgets in the scene and object panels. Add the code below into your program, right after the sidepanel creation code:
 
 ```c++
-x = 8;
+	x = 8;
 	y = 12;
 
 	CreateLabel("Category:", x, y, 200, 30, objectpanel);
