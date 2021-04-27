@@ -6,7 +6,7 @@ A plugin can be loaded by any Leadwerks 5 program using the [LoadPlugin](LoadPlu
 Windows uses DLL files for plugins. MacOS uses DYLIB files. Linux uses SO files. You can use an asterisk for the file extension in the LoadPlugin command, and the engine will choose a file extension based on the current platform:
 
 ```c++
-LoadPlugin("Plugins/Basis.*");
+LoadPlugin("Plugins/FITextureLoader.*");
 ```
 
 A plugin is only required to have one function called "GetPluginInfo". This will return a string in JSON format containing information about the plugin. A top-level plugin object must be specified. This object is required to have string elements for "title" and "description". You can optionally include some text about the author:
