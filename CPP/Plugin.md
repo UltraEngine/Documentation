@@ -15,7 +15,7 @@ auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader.*")
 If you are building a 32-bit application then the 32-bit version of the plugin should be loaded:
 
 ```c++
-auto plugin_freeimage = LoadPlugin("Plugins (x86)/FITextureLoader.*")
+auto plugin_freeimage = LoadPlugin("Plugins/x86/FITextureLoader.*")
 ```
 
 | Property | Type | Description |
