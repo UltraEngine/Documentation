@@ -47,7 +47,7 @@ int main(int argc, const char* argv[])
 
 When we run the code above here is the result:
 
-![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser1.png)
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser1.png' width='800px' />
 
 ## Populating the Folder Browser
 
@@ -77,7 +77,7 @@ Now add this line of code after the filebrowser treeview widget is created:
 
 When we run the resulting code, there is a pause while the contents of the Documents folder are loaded into the treeview. This may be quite slow depending on how many folders you have to load, but we will come back to optimize this design later.
 
-![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png)
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser2.png' width='800px' />
 
 Now we will add some event handling to make the behavior of our program more interesting. You can replace the entire while loop with this code. This will add a lot of interesting behaviors. When a treeview node is selected in the folder browser, the contents of that folder will be loaded and displayed in the file listbox. Double-clicking a treeview node will make it expand or collapse. Double-clicking on an item in the listbox will open the file with the default program for that file type.
 
@@ -145,7 +145,7 @@ Now we will add some event handling to make the behavior of our program more int
     }
 ```
 
-![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser3.png)
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser3.png' width='800px' />
 
 ## Optimization
 
@@ -179,7 +179,7 @@ void PopulateTree(shared_ptr<Widget> node, const WString& path)
 
 When we run the program it will now start up much faster, but of course none of the subfolders are being loaded yet.
 
-![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser4.png)
+<img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser4.png' width='800px' />
 
 To handle folder loading we will add a new case inside the switch statement. We're going to use the [Widget::GetValue](Widget_GetValue) method to see if the folder has already been loaded. The widget value is not normally used with treeviews, but it provides a convenient way for us to store an extra parameter. By default it is equal to 0, so we can just use this as an indiction that the folder for the selected treeview node has not been loaded yet. After it is loaded we set the value to 1 so it won't get loaded again.
 
