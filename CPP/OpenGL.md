@@ -1,6 +1,6 @@
 # OpenGL Rendering
 
-You can use [OpenGL](https://www.opengl.org) or another graphics API to create a 3D viewport in a GUI application. The example below shows minimal OpenGL context creation on a standard window and renders an empty scene in real-time.
+You can use [OpenGL](https://www.khronos.org/opengl/) or another graphics API to create a 3D viewport in a GUI application. The example below shows minimal OpenGL context creation on a standard window and renders an empty scene in real-time.
 
 ```c++
 #include "UltraEngine.h"
