@@ -1,7 +1,9 @@
-# CreateButton #
+# CreateButton
+
 The button widget can be used to create push buttons, checkboxes, radio buttons, and toolbar items. Buttons emit a WIDGETACTION event when pushed. Some styles use the widget state to indicate whether they are selected.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[Widget](Widget.md)\> **CreateButton**(const [WString](WString.md)& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const ButtonStyle = BUTTON_DEFAULT)
 
 | Parameter | Description |
@@ -14,10 +16,14 @@ The button widget can be used to create push buttons, checkboxes, radio buttons,
 | parent | parent widget |
 | style | optional button style, can be any combination of BUTTON_CANCEL, BUTTON_CHECKBOX, BUTTON_RADIO, BUTTON_OK, BUTTON_TOGGLE, and BUTTON_TOOLBAR. |
 
-## Returns ##
+## Returns
+
 Returns a new button object.
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateButton.png)
+
 ```c++
 #include "pch.h"
 
