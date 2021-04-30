@@ -21,6 +21,8 @@ Returns a new slider widget.
 
 ## Example
 
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateSlider.png)
+
 ```c++
 #include "UltraEngine.h"
 
