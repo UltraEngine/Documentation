@@ -4,7 +4,10 @@ This function displays a file dialog and lets the user select a folder.
 ## Syntax ##
 - [WString](WString.md) **RequestDir**(const [WString](WString.md)& title = "Open Folder", const [WString](WString.md)& dir = "");
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/RequestDir.png)
+
 ```c++
 #include "pch.h"
 
