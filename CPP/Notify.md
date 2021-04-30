@@ -10,7 +10,9 @@ This functions displays a message box.
 | title | optional title of message box window | 
 | serious | If set to true a warning icon will be displayed |
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/Notify.png)
 
 ```c++
 #include "pch.h"
