@@ -15,7 +15,10 @@ The text area widget is a read-only multiline text display. If the WORDWRAP styl
 | parent | parent widget |
 | style | textfield style, can be TEXTAREA_DEFAULT or TEXTAREA_WORDWRAP |
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateTextArea.png)
+
 ```c++
 #include "UltraEngine.h"
 
