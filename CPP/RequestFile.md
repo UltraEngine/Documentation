@@ -40,7 +40,9 @@ Use a semicolon to specify multiple file extensions for one file type:
 Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg
 ```
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/RequestFile.png)
 
 ```c++
 #include "pch.h"
