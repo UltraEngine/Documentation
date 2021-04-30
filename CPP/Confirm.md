@@ -15,6 +15,10 @@ This function displays a message dialog box with the options "OK" and "Cancel".
 ## Returns ##
 If the user pressed the OK button 1 is returned. If the user presses the cancel button 0 is returned.
 
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/Confirm.png)
+
 ```c++
 #include "pch.h"
 
