@@ -15,6 +15,9 @@ The tabber widget is a tabbed panel that allows the user to select different "pa
 | parent | parent widget |
 
 ## Example ##
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateTabber.png)
+
 ```c++
 #include "UltraEngine.h"
 
