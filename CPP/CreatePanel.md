@@ -1,7 +1,9 @@
-# CreatePanel #
+# CreatePanel
+
 This function creates a Panel widget. The Panel widget is a rectangular area for framing child widgets.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[Widget](Widget.md)\> **CreatePanel**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const PanelStyle style = PANEL_DEFAULT)
 
 | Parameter | Description |
@@ -13,10 +15,14 @@ This function creates a Panel widget. The Panel widget is a rectangular area for
 | parent | parent of the widget |
 | style | optional widget style, can be PANEL_DEFAULT, PANEL_BORDER, or PANEL_GROUP |
 
-## Returns ##
+## Returns
+
 Returns a new panel widget.
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreatePanel.png)
+
 ```c++
 #include "UltraEngine.h"
 
