@@ -25,6 +25,8 @@ The SORT style can be used to automatically sort treeview nodes alphabetically.
 
 ## Example
 
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateTreeView.png)
+
 ```c++
 #include "UltraEngine.h"
 
