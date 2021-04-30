@@ -15,6 +15,10 @@ This function creates a menu widget. A menu item emits a WIDGETACTION event when
 
 Returns a new widget.
 
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateMenu.png)
+
 ```c++
 #include "UltraEngine.h"
 
