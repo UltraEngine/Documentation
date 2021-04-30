@@ -15,6 +15,8 @@ The progressbar widget displays a horizontal bar that indicates the progress of 
 
 ## Example ##
 
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateProgressBar.png)
+
 ```c++
 #include "UltraEngine.h"
 
