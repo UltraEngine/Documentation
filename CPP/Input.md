@@ -11,7 +11,10 @@ This function waits for a line of text to be input into the program console.
 ## Returns ##
 When the user enters some text and presses enter, the typed input is returned.
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/Input.png)
+
 ```c++
 #include "pch.h"
 
