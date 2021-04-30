@@ -15,7 +15,10 @@ This function displays a message dialog box with the options "Yes", "No", and "C
 ## Returns ##
 If the user pressed the Yes button 1 is returned. If the user presses the cancel button 0 is returned. If the user presses the No button -1 is returned.
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/Proceed.png)
+
 ```c++
 #include "pch.h"
 
