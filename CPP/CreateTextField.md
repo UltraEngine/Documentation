@@ -1,8 +1,8 @@
-# CreateTextField #
+# CreateTextField
 
 The textfield widget is an editable input box. It will emit a WIDGETACTION event if the text changes and the widget loses the focus or the enter key is pressed. If the DYNAMIC style is used, a WIDGETACTION event will be emitted whenever the widget text changes. If the READONLY style is used the widget text will not be editable.
 
-## Syntax ##
+## Syntax
 
 - shared_ptr<[Widget](Widget.md)\> **CreateTextField**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent, const TextField style = TEXTFIELD_DEFAULT)
 
@@ -19,7 +19,10 @@ The textfield widget is an editable input box. It will emit a WIDGETACTION event
 
 The TEXTFIELD_DEFAULT style flag is equal to TEXTFIELD_LOSEFOCUSACTIONEVENT + TEXTFIELD_ENTERKEYACTIONEVENT.
 
-## Example ##
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateTextField.png)
+
 ```c++
 #include "UltraEngine.h"
 
