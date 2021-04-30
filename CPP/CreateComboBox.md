@@ -14,6 +14,9 @@ The combobox widget displays a drop-down box the user can select an item from. T
 | parent | parent widget |
 
 ## Example ##
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateComboBox.png)
+
 ```c++
 #include "UltraEngine.h"
 
