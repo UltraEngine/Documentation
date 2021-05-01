@@ -2,6 +2,8 @@
 
 This function displays a message dialog box with the options "OK" and "Cancel".
 
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/Confirm.png)
+
 ## Syntax ##
 - int **Confirm**(const [WString](WString.md)& message, const [WString](WString.md)& title = "", const bool serious = false)
 
@@ -16,8 +18,6 @@ This function displays a message dialog box with the options "OK" and "Cancel".
 If the user pressed the OK button 1 is returned. If the user presses the cancel button 0 is returned.
 
 ## Example
-
-![](https://github.com/Leadwerks/Documentation/raw/master/Images/Confirm.png)
 
 ```c++
 #include "pch.h"
