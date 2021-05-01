@@ -65,3 +65,11 @@ If you are using Ultra App Kit on Steam here is the code for the default install
   #endif  
 #endif
 ```
+
+You can add this code to your header if you want to start using the API commands without specifying the namespace:
+
+```c++
+using namespace UltraEngine;
+```
+
+That's it! You're ready to start using Ultra App Kit in your own project.
