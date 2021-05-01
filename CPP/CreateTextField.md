@@ -1,6 +1,6 @@
 # CreateTextField
 
-The textfield widget is an editable input box. It will emit a WIDGETACTION event if the text changes and the widget loses the focus or the enter key is pressed. If the READONLY style is used the widget text will not be editable. If the PASSWORD style is used the widget text will be masked.
+The textfield widget is an editable input box. It will emit a WIDGETACTION event if the text changes and the widget loses the focus or the enter key is pressed. If the READONLY style is used the widget text will not be editable. If the PASSWORD style is used the widget text will appear as a series of dots.
 
 ## Syntax
 
