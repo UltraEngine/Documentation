@@ -25,12 +25,13 @@ int main(int argc, const char* argv[])
     //Create window
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR);
 
-    //Modify the window handle with system commands
+    auto handle = window->GetHandle();
+
 #ifdef _WIN32
-    HWND hwnd = window->GetHandle();
-    auto style = GetWindowLong(hwnd, GWL_EXSTYLE);
+    //Modify the window handle with system commands
+    auto style = GetWindowLong(handle, GWL_EXSTYLE);
     style |= WS_EX_CONTEXTHELP;
-    SetWindowLong(hwnd, GWL_EXSTYLE, style);
+    SetWindowLong(handle, GWL_EXSTYLE, style);
 #endif
 
     while (true)
