@@ -20,36 +20,35 @@ This class contains information for events emitted by the GUI and other systems.
 The following event IDs may be emitted by the program:
 | ID | Description |
 |---|---|
-| EVENT_WINDOWCLOSE |  |
-| EVENT_WINDOWPAINT |  |
-| EVENT_WINDOWSIZE |  |
-| EVENT_MOUSEMOVE |  | |
-| EVENT_MOUSEUP |  |
- || EVENT_MOUSEDOWN |  |
-|  |EVENT_KEYUP |  |
-| EV |ENT_KEYDOWN |  |
-| EVEN |T_WINDOWMOVE |  |
-| EVENT_MOUSEWHEEL |  |
-| EVENT_KEYCHAR |  |
-| EVENT_TIMERTICK |  |
-| EVENT_DOUBLECLICK |  |
-| EVENT_TRIPLECLICK |  |
-| EVENT_MOUSELEAVE |  |
-| EVENT_MOUSEENTER |  |
-| EVENT_WIDGETSELECT |  |
-| EVENT_WIDGETOPEN | |  |
-| EVENT_WIDGETCLOSE  |  |
-| EVENT_WIDGETACTION |  | 
-| EVENT_WIDGETCT |  |
-| E |VENT_WIDGETMENU |  | 
-| EVE |NT_WINDOWSELECT |  |
-| EVE  N_WINDOWDESELECT |  |
-| EVEN T_KEYREPEAT |  |
-| EVENT_M |OUSEREPEAT |  |
-| EVENT_WIND  |OWDRAGBEGIN |  |
-| EVENT_WINDOWD |RAGEND |  |
-| EVENT_WIDGETGAI |NFOCUS |  |
-| EVENT_WIDGETLOSEF |OCUS |  |
-| EVENT_CURSORBLINK |  | |
-| EVENT_WIDGETDROP |  | |
-| EVENT_WINDOWDPICHANGE | |D |  | | | | |
+| EVENT_WINDOWCLOSE | window is closed |
+| EVENT_WINDOWPAINT | window region is drawn |
+| EVENT_WINDOWSIZE | window is resized |
+| EVENT_MOUSEMOVE | mouse cursor moves |
+| EVENT_MOUSEUP | mouse button released |
+| EVENT_MOUSEDOWN | mouse button pressed |
+| EVENT_KEYUP | key is released |
+| EVENT_KEYDOWN | key is pressed |
+| EVENT_WINDOWMOVE | window position changed |
+| EVENT_MOUSEWHEEL | mouse wheel turned |
+| EVENT_KEYCHAR | key is pressed. The ASCII character is stored in the data member |
+| EVENT_TIMERTICK | timer tick occurs |
+| EVENT_DOUBLECLICK | mouse button is double-clicked |
+| EVENT_TRIPLECLICK | mouse button is triple-clicked |
+| EVENT_MOUSELEAVE | mouse cursor leaves the window client area |
+| EVENT_MOUSEENTER | mouse cursor enters the window client area |
+| EVENT_WIDGETDESELECT | widget item is deselected |
+| EVENT_WIDGETOPEN | treeview node is expanded |
+| EVENT_WIDGETCLOSE | treeview node is collapsed |
+| EVENT_WIDGETACTION | widget action occurs | 
+| EVENT_WIDGETSELECT | widget item is selected |
+| EVENT_WIDGETMENU | widget menu is activated | 
+| EVENT_WINDOWSELECT | new window gains the focus |
+| EVENT_WINDOWDESELECT | window loses the focus |
+| EVENT_KEYREPEAT | key is held down for an amount of time |
+| EVENT_MOUSEREPEAT | mouse button is held down for an amount of time |
+| EVENT_WINDOWDRAGBEGIN | window move or resize loop begins |
+| EVENT_WINDOWDRAGEND | window move or resize loop ends |
+| EVENT_WIDGETGAINFOCUS | widget loses the focus |
+| EVENT_WIDGETLOSEFOCUS | new widget is gains the focus |
+| EVENT_WIDGETDROP | drag-and-drop operation occurs |
+| EVENT_WINDOWDPICHANGE | the display of a window has changed its DPI scale |
