@@ -18,8 +18,9 @@ This class contains information for events emitted by the GUI and other systems.
 | [WaitEvent](WaitEvent.md) | Function | wait until an event occurs and return it |
 
 The following event IDs may be emitted by the program. Additional event ID can be created with the [AllocEventID](AllocEventID.md) command.
+
 | ID | Description |
-|---|---|
+| --- | --- |
 | EVENT_WINDOWCLOSE | window is closed |
 | EVENT_WINDOWPAINT | window region is drawn |
 | EVENT_WINDOWSIZE | window is resized |
