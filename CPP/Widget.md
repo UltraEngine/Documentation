@@ -9,6 +9,7 @@ This class handle user interface elements. A variety of widget types are support
 | kids | const vector<shared_ptr<[Widget](Widget.md)\> \>& | read-only list of child widgets |
 | size | const [iVec2](iVec2.md)& | read-only widget size |
 | text | const [WString](WString.md)& | read-only widget text |
+| [AddBlock](Widget_AddBlock.md) | Method | adds a widget block |
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
