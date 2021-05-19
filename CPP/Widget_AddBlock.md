@@ -25,6 +25,9 @@ This method adds a widget block to a custom widget, for displaying a rectangle, 
 | scale | icon scale, independent from DPI scaling |
 | pixmap | pixmap to display 
 
+## Returns
+Returns the index of the new widget block.
+
 ## Example
 
 ```c++
