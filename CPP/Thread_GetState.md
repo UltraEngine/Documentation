@@ -5,7 +5,7 @@ This method returns the thread's current state.
 - ThreadState **GetState**()
 
 ## Returns ##
-The returned value may be THREAD_READY, THREAD_RUNNING, THREAD_PAUSED, or THREAD_FINISHED.
+The returned value may be THREAD_READY, THREAD_RUNNING, or THREAD_FINISHED.
 
 ## Example ##
 ```c++
@@ -27,9 +27,6 @@ void PrintState(shared_ptr<Thread> thread)
         break;
     case THREAD_RUNNING:
         Print("Running");
-        break;
-    case THREAD_PAUSED:
-        Print("Paused");
         break;
     case THREAD_FINISHED:
         Print("Finished");
