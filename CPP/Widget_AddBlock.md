@@ -5,8 +5,8 @@ This method adds a widget block to a custom widget, for displaying a rectangle, 
 ## Syntax
 
 - int **AddBlock**(const [iVec2](iVec2)& position, const [iVec2](iVec2)& size, const [Vec4](Vec4)& color = [Vec4](Vec4)(0), const bool wireframe = false, const float radius = 0.0f, const float gradient = 1.0f);
-- int **AddBlock**(const [WString](WString.md)& text, const [iVec2](iVec2)& position, const [iVec2](iVec2)& size, const Vec4& color, const TextAlignment alignment = 0);
-- int **AddBlock**(shared_ptr<[Icon](Icon.md)> icon, const [iVec2](iVec2)& position, const float scale = 1.0f, const Vec4& color = 1.0f);
+- int **AddBlock**(const [WString](WString.md)& text, const [iVec2](iVec2)& position, const [iVec2](iVec2)& size, const [Vec4](Vec4)& color, const TextAlignment alignment = 0);
+- int **AddBlock**(shared_ptr<[Icon](Icon.md)> icon, const [iVec2](iVec2)& position, const float scale = 1.0f, const [Vec4](Vec4)& color = 1.0f);
 - int **AddBlock**(shared_ptr<[Pixmap](Pixmap.md)> pixmap, const [iVec2](iVec2)& position, const [Vec4](Vec4)& color = 1.0f);
 
 ## Parameters
