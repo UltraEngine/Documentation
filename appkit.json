@@ -609,6 +609,10 @@
 							"topics":
 							[
 								{
+									"title": "AddBlock",
+									"filename": "Widget_AddBlock"
+								},
+								{
 									"title": "AddItem",
 									"filename": "Widget_AddItem"
 								},
