@@ -20,7 +20,7 @@ This method adds a widget block to a custom widget, for displaying a rectangle, 
 | radius | for rounded rectangles, radius of the corners |
 | gradient | color multiplier for vertical gradient |
 | text | text to display |
-| alignement | text alignment, can be any combination of TEXT_LEFT, TEXT_CENTER, or TEXT_RIGHT and TEXT_TOP, TEXT_MIDDLE, and TEXT_BOTTOM
+| alignment | text alignment, can be any combination of TEXT_LEFT, TEXT_CENTER, or TEXT_RIGHT and TEXT_TOP, TEXT_MIDDLE, and TEXT_BOTTOM
 | icon | icon to display |
 | scale | icon scale, independent from DPI scaling |
 | pixmap | pixmap to display 
