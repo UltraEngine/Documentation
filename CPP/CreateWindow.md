@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
 
     //Create a window
     auto style = WINDOW_TITLEBAR | WINDOW_CENTER;
-    auto window = CreateWindow(displays[0], "Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y, style);
+    auto window = CreateWindow("Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y, displays[0], style);
 
     //Main loop
     while (window->Closed() == false)
