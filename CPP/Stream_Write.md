@@ -1,21 +1,26 @@
-# Stream::Write #
-This method writes a block of memory to the stream.
+# Stream::Write
 
-## Syntax ##
+This method writes a block of memory to the stream. This can be more efficient than writing one value at a time, and supports additional data types there is not an explicit write method for.
+
+## Syntax
+
 - uint64_t **Write**(shared_ptr<[Buffer](Buffer.md)> data, const uint64_t offset, const uint64_t size)
 - uint64_t **Write**(const void* data, const uint64_t size)
 
-### Parameters ###
+### Parameters
+
 | Name | Description |
 | --- | --- |
 | data | buffer or pointer to read from |
 | offset | offset in bytes from memory buffer beginning |
 | size | number of bytes to write |
 
-## Returns ##
+## Returns
+
 Returns the number of bytes that were written to the stream.
 
 ## Example
+
 ```c++
 #include "pch.h"
 
