@@ -26,8 +26,7 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Create a pixmap
-    auto pixmap = CreatePixmap(512,512);
-    pixmap->Fill(RGBA(0, 0, 255, 255));
+    auto pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.dds");
 
     //Show the pixmap
     ui->root->SetPixmap(pixmap);
