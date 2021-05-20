@@ -2,7 +2,7 @@
 This function loads a plugin module. The plugin's functionality will be available immediately. When the plugin object goes out of scope it will be deleted, and its functionality will no longer be available.
 
 ## Syntax ##
-- shared_ptr<[Plugin](Plugin.md)\> LoadPlugin(const WString& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Plugin](Plugin.md)\> LoadPlugin(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 | ----- | ----- |
