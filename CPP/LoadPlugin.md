@@ -25,7 +25,6 @@ int main(int argc, const char* argv[])
 #else
 	auto plugin = LoadPlugin("Plugins/x86/FITextureLoader.*");
 #endif
-
 	if (plugin)
 	{
 		Print(plugin->description);
