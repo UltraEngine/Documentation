@@ -1,5 +1,5 @@
 # Stream::Read #
-This method reads a block of memory from a stream. This can be more efficient than reading one value at a time.
+This method reads a block of memory from a stream. This can be more efficient than reading one value at a time, and supports additional data types there is not an explicit read method for.
 
 ## Syntax ##
 - uint64_t **Read**(shared_ptr<[Buffer](Buffer.md)> data, const uint64_t offset, const uint64_t size)
