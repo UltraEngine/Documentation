@@ -4,7 +4,7 @@ This method sets the block position and size.
 
 ## Syntax
 
-- **SetShape**([iVec2](iVec2.md)> position, [iVec2](iVec2.md)> size)
+- **SetShape**(const [iVec2](iVec2.md)& position, const [iVec2](iVec2.md)& size)
 
 | Parameter | Description |
 | --- | --- |
