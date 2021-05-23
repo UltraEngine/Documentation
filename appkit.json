@@ -765,6 +765,29 @@
 									"filename": "Widget_SetProgress"
 								}
 							]						
+						},
+						{
+							"title": "WidgetBlock",
+							"filename": "WidgetBlock",
+							"topics":
+							[
+								{
+									"title": "SetIcon",
+									"filename": "WidgetBlock_SetIcon"
+								},									
+								{
+									"title": "SetPixmap",
+									"filename": "WidgetBlock_SetPixmap"
+								},									
+								{
+									"title": "SetShape",
+									"filename": "WidgetBlock_SetShape"
+								},								
+								{
+									"title": "SetText",
+									"filename": "WidgetBlock_SetText"
+								}
+							}
 						}
 					]
 				},
