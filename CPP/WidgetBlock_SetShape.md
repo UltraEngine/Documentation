@@ -1,6 +1,6 @@
 # WidgetBlock::SetShape
 
-This method sets the block position and size.
+This method allows you to dynamically modify the widget block position and size. This can be more efficient than clearing and re-creating all widget blocks.
 
 ## Syntax
 
@@ -10,9 +10,3 @@ This method sets the block position and size.
 | --- | --- |
 | position | block position relative to the widget |
 | size | width and height of the block |
-
-## Example
-
-```c++
-
-```
