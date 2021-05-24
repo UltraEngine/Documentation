@@ -1,6 +1,6 @@
 # WidgetBlock::SetText
 
-This method sets defines a block of text to display.
+This method allows you to dynamically modify the text a widget block displays. This can be more efficient than clearing and re-creating all widget blocks.
 
 ## Syntax
 
@@ -8,10 +8,4 @@ This method sets defines a block of text to display.
 
 | Parameter | Description |
 | --- | --- |
-| text | text to display |
-
-## Example
-
-```c++
-
-```
+| text | new text to display |
