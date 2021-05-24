@@ -1,6 +1,6 @@
 # Widget::AddBlock
 
-This method adds a widget block to a custom widget, for displaying a rectangle, image, or text.
+This method adds a widget block to a custom widget, for displaying a rectangle, image, or text. Generally, this method will be called inside the Draw method of a custom class derived from the [Widget](Widget.md) class.
 
 ## Syntax
 
