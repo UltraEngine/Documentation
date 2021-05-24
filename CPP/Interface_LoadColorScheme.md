@@ -15,6 +15,30 @@ This method loads a color scheme from a JSON file.
 
 Returns true if the color scheme was successfully loaded, otherwise false is returned.
 
+## Remarks
+
+Color schemes are stored in JSON format and define an RGB color for various widget attributes:
+
+```javascript
+{
+	"colorScheme": {
+		"background": "#333333",
+		"border": "#000000",
+		"foreground": "#FFFFFF",
+		"highlight": "#424242",
+		"menuBorder": "#333333",
+		"popup": "#1A1A1A",
+		"raised": "#3B3B3B",
+		"selectedText": "#FFFFFF",
+		"selection": "#2979FF",
+		"sliderArrow": "#686868",
+		"sliderTrack": "#666666",
+		"sliderTrackHovered": "#999999",
+		"sunken": "#262626"
+	}
+}
+```
+
 ## Example
 
 ```c++
