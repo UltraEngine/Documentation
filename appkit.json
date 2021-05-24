@@ -778,11 +778,7 @@
 								{
 									"title": "SetPixmap",
 									"filename": "WidgetBlock_SetPixmap"
-								},									
-								{
-									"title": "SetShape",
-									"filename": "WidgetBlock_SetShape"
-								},								
+								},																
 								{
 									"title": "SetText",
 									"filename": "WidgetBlock_SetText"
