@@ -1,6 +1,6 @@
 # WidgetBlock::SetIcon
 
-This method sets an icon to display on the widget block.
+This method allows you to dynamically modify the icon a widget block displays. This can be more efficient than clearing and re-creating all widget blocks.
 
 ## Syntax
 
@@ -8,10 +8,4 @@ This method sets an icon to display on the widget block.
 
 | Parameter | Description |
 | --- | --- |
-| icon | icon to display |
-
-## Example
-
-```c++
-
-```
+| icon | new icon to display |
