@@ -30,7 +30,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
 
     //Create User Interface
     auto ui = CreateInterface(window);
@@ -47,6 +47,7 @@ it made my host’s strained, immobile face and listless hands look damnably abn
 though I saw him nod stiffly once in a while.";
 
     textarea->SetText(s);
+    textarea->SetLayout(1,1,1,1);
 
     while (true)
     {
