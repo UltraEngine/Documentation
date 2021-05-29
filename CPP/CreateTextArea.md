@@ -15,6 +15,14 @@ The text area widget is a read-only multiline text display. If the WORDWRAP styl
 | parent | parent widget |
 | style | textfield style, can be TEXTAREA_DEFAULT or TEXTAREA_WORDWRAP |
 
+## Returns
+
+Returns a new TextArea widget.
+
+## Remarks
+
+When the TEXTAREA_WORDWRAP style is used whitespace characters may be optimized for faster layout calculation.
+
 ## Example
 
 ![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateTextArea.png)
