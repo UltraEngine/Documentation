@@ -17,4 +17,4 @@ The **Community** panel contains links to community features, including forums, 
 
 ## Other Resources
 - [Video Tutorials](https://www.ultraengine.com/community/video/browse/3-tutorials/)
-- [Technical Assistance Forum](https://www.ultraengine.com/community/forum/91-technical-assistance/)
+- [Community Forum](https://www.ultraengine.com/community/forum/)
