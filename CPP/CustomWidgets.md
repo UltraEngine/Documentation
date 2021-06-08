@@ -2,6 +2,23 @@
 
 You can create new types of widgets in C++ by extending the base [Widget](Widget.md) class. The widget's behavior is controlled by overriding the Widget class methods. Drawing is accomplished by adding WidgetBlock objects to the blocks member.
 
+The following methods can be overridden to control custom widget behavior:
+
+| Name | Description |
+|---|---|
+| Draw | called each time the widget is painted |
+| GainFocus | called when the widget is selected |
+| KeyDown | called when a keyboard key is pressed |
+| KeyUp | called when a keyboard key is released |
+| KeyChar | called when a keyboard character is entered |
+| LoseFocus | called when the widget is deselected |
+| MouseMove | called whenever the mouse moves, with coordinates relative to the active window |
+| MouseLeave | called when the mouse cursor leaves the active window bounds |
+| MouseEnter | called when the mouse cursor enters the active window bounds |
+| MouseDown | called when a mouse button is pressed |
+| MouseUp | called when a mouse button is released |
+| MouseWheel | called when the mouse wheel turns |
+
 ## Example
 
 ```c++
