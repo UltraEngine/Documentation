@@ -19,7 +19,7 @@ The following methods can be overridden to control custom widget behavior:
 | MouseDown | called when a mouse button is pressed |
 | MouseUp | called when a mouse button is released |
 | MouseWheel | called when the mouse wheel turns |
-| TripleCLick | called when a mouse button is clicked rapidly three times |
+| TripleClick | called when a mouse button is clicked rapidly three times |
 
 ## Example
 
