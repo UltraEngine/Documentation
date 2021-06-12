@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Create a pixmap
-    auto icon = LoadIcon("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Logos/23.svg");
+    auto icon = LoadIcon("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Logos/23.svg");
 
     //Show the icon
     ui->root->SetIcon(icon);
