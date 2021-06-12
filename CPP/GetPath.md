@@ -1,0 +1,31 @@
+# GetPath
+
+This function returns a system path.
+
+## SyntaX
+
+WString **GetPath**(const UserPath path)
+
+| Parameter | Description |
+|---|---|
+| path | indicates which system path to retrieve, can be PATH_DEKTOP, PATH_DOCUMENTS, or PATH_DOWNLOADS |
+
+## Returns
+
+Returns a string containing a file path.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    Print(GetPath(PATH_DESKTOP));
+    Print(GetPath(PATH_DOCUMENTS));
+    Print(GetPath(PATH_DOWNLAODS));
+    return 0;
+}      
+```   
