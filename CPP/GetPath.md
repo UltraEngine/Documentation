@@ -25,7 +25,7 @@ int main(int argc, const char* argv[])
 {
     Print(GetPath(PATH_DESKTOP));
     Print(GetPath(PATH_DOCUMENTS));
-    Print(GetPath(PATH_DOWNLAODS));
+    Print(GetPath(PATH_DOWNLOADS));
     return 0;
 }      
 ```   
