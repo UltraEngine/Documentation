@@ -8,7 +8,7 @@ WString **GetPath**(const UserPath path)
 
 | Parameter | Description |
 |---|---|
-| path | indicates which system path to retrieve, can be PATH_DEKTOP, PATH_DOCUMENTS, or PATH_DOWNLOADS |
+| path | indicates which system path to retrieve, can be PATH_DESKTOP, PATH_DOCUMENTS, or PATH_DOWNLOADS |
 
 ## Returns
 
