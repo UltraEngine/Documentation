@@ -430,10 +430,6 @@
 									"filename": "Window_ClientSize"
 								},
 								{
-									"title": "Close",
-									"filename": "Window_Close"
-								},
-								{
 									"title": "Closed",
 									"filename": "Window_Closed"
 								},
