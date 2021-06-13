@@ -751,11 +751,7 @@
 								{
 									"title": "SetProgress",
 									"filename": "Widget_SetProgress"
-								},
-								{
-									"title": "SetText",
-									"filename": "Widget_SetText"
-								},								
+								},							
 								{
 									"title": "SetShape",
 									"filename": "Widget_SetShape"
@@ -763,6 +759,10 @@
 								{
 									"title": "SetState",
 									"filename": "Widget_SetState"
+								},	
+								{
+									"title": "SetText",
+									"filename": "Widget_SetText"
 								}								
 							]						
 						},
