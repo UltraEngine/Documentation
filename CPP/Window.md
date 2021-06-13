@@ -10,7 +10,6 @@ The window class provides an interface for creating system application windows.
 | text | const [WString](WString.md)& | text shown in the window titlebar |
 | [Activate](Window_Activate.md) | Method | activates the window |
 | [ClientSize](Window_ClientSize.md) | Method | returns the window dimensions |
-| [Close](Window_Close.md) | Method | sets the closed state to true |
 | [Closed](Window_Closed.md) | Method | returns true if the user has closed the window |
 | [FlushKeys](Window_FlushKeys.md) | Method | resets the keyboard button press states |
 | [FlushMouse](Window_FlushMouse.md) | Method | resets the mouse button press states |
