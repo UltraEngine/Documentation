@@ -46,7 +46,6 @@ The following event IDs may be emitted by the program. Additional event ID can b
 | EVENT_WINDOWSELECT | new window gains the focus |
 | EVENT_WINDOWDESELECT | window loses the focus |
 | EVENT_KEYREPEAT | key is held down for an amount of time |
-| EVENT_MOUSEREPEAT | mouse button is held down for an amount of time |
 | EVENT_WINDOWDRAGBEGIN | window move or resize loop begins |
 | EVENT_WINDOWDRAGEND | window move or resize loop ends |
 | EVENT_WIDGETGAINFOCUS | widget loses the focus |
