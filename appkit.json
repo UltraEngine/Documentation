@@ -721,41 +721,29 @@
 									"filename": "Widget_SelectItem"
 								},
 								{
-									"title": "SetFontScale",
-									"filename": "Widget_SetFontScale"
-								},					
-								{
-									"title": "SetLayout",
-									"filename": "Widget_SetLayout"
-								},						
-								{
-									"title": "SetParent",
-									"filename": "Widget_SetParent"
-								},						
-								{
-									"title": "SetShape",
-									"filename": "Widget_SetShape"
-								},
-								{
-									"title": "SetState",
-									"filename": "Widget_SetState"
-								},
-								{
-									"title": "SetText",
-									"filename": "Widget_SetText"
-								},
-								{
 									"title": "SetColor",
 									"filename": "Widget_SetColor"
 								},
 								{
+									"title": "SetFontScale",
+									"filename": "Widget_SetFontScale"
+								},	
+								{
 									"title": "SetIcon",
 									"filename": "Widget_SetIcon"
-								},
+								},																
 								{
 									"title": "SetItemText",
 									"filename": "Widget_SetItemText"
-								},						
+								},
+								{
+									"title": "SetLayout",
+									"filename": "Widget_SetLayout"
+								},								
+								{
+									"title": "SetParent",
+									"filename": "Widget_SetParent"
+								},								
 								{
 									"title": "SetPixmap",
 									"filename": "Widget_SetPixmap"
@@ -763,7 +751,19 @@
 								{
 									"title": "SetProgress",
 									"filename": "Widget_SetProgress"
-								}
+								},
+								{
+									"title": "SetText",
+									"filename": "Widget_SetText"
+								},								
+								{
+									"title": "SetShape",
+									"filename": "Widget_SetShape"
+								},
+								{
+									"title": "SetState",
+									"filename": "Widget_SetState"
+								}								
 							]						
 						},
 						{
