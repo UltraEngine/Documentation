@@ -27,7 +27,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-  Print(Command("echo Hello!"));
-  return 0;
+	Print(Command("echo Hello!"));
+	return 0;
 }
 ```
