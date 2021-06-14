@@ -4,7 +4,7 @@ This function allows you to interact with the operating system terminal or conso
 
 ## Syntax
 
-[WString](WString.md) **Command**(const WString& command)
+[WString](WString.md) **Command**(const [WString](WString.md)& command)
 
 | Parameter | Description |
 |---|---|
