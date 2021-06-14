@@ -4,15 +4,15 @@ This function prints a line of text to the program output.
 
 ## Syntax
 
-- void **Print**(const WString& data)
-- void **Print**(const String& data)
-- void **Print**(const int data)
-- void **Print**(const float data)
-- void **Print**(const double data)
+- void **Print**(const WString& value)
+- void **Print**(const String& value)
+- void **Print**(const int value)
+- void **Print**(const float value)
+- void **Print**(const double value)
 
 | Parameter | Description |
 |---|---|
-| data | data to display as a string |
+| value | string or data to display |
 
 ## Example
 
