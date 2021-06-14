@@ -7,6 +7,7 @@ This function allows you to interact with the operating system terminal or conso
 [WString](WString.md) **Command**(const WString& command)
 
 | Parameter | Description |
+|---|---|
 | command | command to send |
 
 ## Returns
