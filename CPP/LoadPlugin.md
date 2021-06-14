@@ -23,10 +23,12 @@ int main(int argc, const char* argv[])
 	shared_ptr<PLugin> plugin;
 	if (sizeof(void*) == 4)
 	{
+		// 32-bit build
 		plugin = LoadPlugin("Plugins/x86/FITextureLoader.*");
 	}
 	else
 	{
+		// 64-bit build
 		plugin = LoadPlugin("Plugins/FITextureLoader.*");
 	}
 	if (plugin)
