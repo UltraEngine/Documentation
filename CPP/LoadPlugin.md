@@ -20,11 +20,15 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-#ifdef _WIN64
-	auto plugin = LoadPlugin("Plugins/FITextureLoader.*");
-#else
-	auto plugin = LoadPlugin("Plugins/x86/FITextureLoader.*");
-#endif
+	shared_ptr<PLugin> plugin;
+	if (sizeof(void*) == 4)
+	{
+		plugin = LoadPlugin("Plugins/x86/FITextureLoader.*");
+	}
+	else
+	{
+		plugin = LoadPlugin("Plugins/FITextureLoader.*");
+	}
 	if (plugin)
 	{
 		Print(plugin->description);
