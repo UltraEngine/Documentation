@@ -4,8 +4,8 @@ This function prints a line of text to the program output.
 
 ## Syntax
 
-- void **Print**(const WString& value)
-- void **Print**(const String& value)
+- void **Print**(const [WString](WString.md)& value)
+- void **Print**(const [String](String.md)& value)
 - void **Print**(const int value)
 - void **Print**(const float value)
 - void **Print**(const double value)
