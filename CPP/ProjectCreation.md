@@ -1,6 +1,10 @@
 # Create a Project
 
-To start programming with C++ you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
+To start programming with C++ on Windows you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
+
+To start programming with C++ on macOS you need to install the free [Xcode](https://apps.apple.com/us/app/xcode/id497799835) IDE from Apple.
+
+To start programming with C++ on Linux you should install the free [Visual Studio Code](https://code.visualstudio.com/) IDE from Microsoft.
 
 To create a new project click the **Create** link in the **Projects** panel. Enter the project name and location, then click the **Create** button to generate the new project:
 <img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_create_project.png' width='600px'/>
