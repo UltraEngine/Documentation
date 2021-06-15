@@ -1,6 +1,6 @@
 # Create a Project
 
-To start programming with C++ on Windows you need to install the free [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
+To start programming with C++ on Windows you need to install the free [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/) from Microsoft.
 
 To start programming with C++ on macOS you need to install the free [Xcode](https://apps.apple.com/us/app/xcode/id497799835) IDE from Apple.
 
