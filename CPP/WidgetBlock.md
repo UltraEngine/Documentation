@@ -1,6 +1,6 @@
 # WidgetBlock
 
-This class is used by a custom widget to define a rectangle, image, or a block of text.
+This class is used by a [custom widget](CustomWidgets.md) to define a rectangle, image, or a block of text.
 
 | Property | Type | Description |
 | --- | --- | --- |
