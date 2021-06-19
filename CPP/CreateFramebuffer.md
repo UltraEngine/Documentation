@@ -46,7 +46,5 @@ void main(const char* args, const int argc)
         //Render world
         world->Render(framebuffer, true);
     }
-
-    window->Hide();
 }  
 ```
