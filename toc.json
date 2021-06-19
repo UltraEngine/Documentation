@@ -417,6 +417,17 @@
 							]							
 						},
 						{
+							"title": "Framebuffer",
+							"filename": "Framebuffer",
+							"topics":
+							[
+								{
+									"title": "CreateFramebuffer",
+									"filename": "CreateFramebuffer"
+								}
+							]							
+						},						
+						{
 							"title": "Window",
 							"filename": "Window",
 							"topics":
