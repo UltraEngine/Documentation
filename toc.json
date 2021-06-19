@@ -419,6 +419,7 @@
 						{
 							"title": "Framebuffer",
 							"filename": "Framebuffer",
+							"2DK": true,
 							"topics":
 							[
 								{
