@@ -4,6 +4,7 @@ This class provides an interface for querying and managing computer display scre
 ### Properties ###
 | Name | Type | Description |
 | --- | --- | --- |
+| graphicsmodes | const vector<[iVec2](iVec2.md)>& | read-only available screen resolutions |
 | position | const [iVec2](iVec2.md)& | read-only screen position on the virtual desktop |
 | scale | const float& | read-only DPI scaling value |
 | size | const [iVec2](iVec2.md)& | read-only screen dimensions |
