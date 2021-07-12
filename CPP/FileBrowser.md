@@ -145,6 +145,29 @@ Now we will add some event handling to make the behavior of our program more int
     }
 ```
 
+You also need to add this function before the main loop. This will construct a relative file path from the treeview node names:
+
+```c++
+WString GetNodePath(shared_ptr<Widget> node)
+{
+    WString path;
+    std::list<WString> list;
+    while (true)
+    {
+        list.push_front(node->text);
+        node = node->GetParent();
+        if (node == NULL) break;
+        if (node->As<TreeViewNode>() == NULL) break;
+    }
+    for (auto s : list)
+    {
+        if (!path.empty()) path += L"/";
+        path += s;
+    }
+    return path;
+}
+```
+
 <img src='https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/filebrowser3.png' width='800px' />
 
 ## Optimization
