@@ -248,3 +248,160 @@ We also need to modify our node toggle code. Calling Widget::Expand will not emi
 ```
 
 Now when we run the code we have the best of both worlds. The program starts up quickly and we can browser the entire directory stucture, loading subfolders as we go.
+
+Here is our final code:
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+void PopulateTree(shared_ptr<Widget> node, const WString& path)
+{
+    auto dir = LoadDir(path);
+    for (const auto& file : dir)
+    {
+        switch (FileType(path + "/" + file))
+        {
+        case 2:
+            auto subnode = node->AddNode(file);
+            auto subdir = LoadDir(path + "/" + file);
+            for (const auto& subfile : subdir)
+            {
+                if (FileType(path + "/" + file + "/" + subfile) == 2)
+                {
+                    subnode->AddNode("Loading...");
+                    node->SetValue(1);
+                    break;
+                }
+            }
+            break;
+        }
+    }
+}
+
+WString GetNodePath(shared_ptr<Widget> node)
+{
+    WString path;
+    std::list<WString> list;
+    while (true)
+    {
+        list.push_front(node->text);
+        node = node->GetParent();
+        if (node == NULL) break;
+        if (node->As<TreeViewNode>() == NULL) break;
+    }
+    for (auto s : list)
+    {
+        if (!path.empty()) path += L"/";
+        path += s;
+    }
+    return path;
+}
+
+int main(int argc, const char* argv[])
+{
+    // Get the available displays
+    auto displays = GetDisplays();
+
+    // Create a window
+    auto window = CreateWindow("File Browser", 0, 0, 1024, 768, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE | WINDOW_CENTER);
+
+    // Create user interface
+    auto ui = CreateInterface(window);
+    iVec2 sz = ui->root->ClientSize();
+
+    // Create folder browser widget
+    auto folderbrowser = CreateTreeView(8, 8, 300, sz.y - 15, ui->root);
+    folderbrowser->SetLayout(1, 0, 1, 1);
+
+    //Load folder contents into treeview
+    WString rootpath = GetPath(PATH_DOCUMENTS);
+    PopulateTree(folderbrowser->root, rootpath);
+
+    // Create file list widget
+    auto filelist = CreateListBox(300 + 16, 8, sz.x - 300 - 8 * 3, sz.y - 16, ui->root);
+    filelist->SetLayout(1, 1, 1, 1);
+
+    while (true)
+    {
+        const Event ev = WaitEvent();
+        switch (ev.id)
+        {
+        case EVENT_WIDGETSELECT:
+
+            // Load the folder contents and display in the file list
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                WString path = GetNodePath(node);
+                auto dir = LoadDir(rootpath + "/" + path);
+                filelist->ClearItems();
+                for (const WString& file : dir)
+                {
+                    if (FileType(rootpath + "/" + path + "/" + file) == 1)
+                    {
+                        filelist->AddItem(file);
+                    }
+                }
+            }
+            break;
+
+        case EVENT_WIDGETACTION:
+
+            // Toggle treeview nodes open and closed when they are double-clicked
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                if (!node->kids.empty())
+                {
+                    if (node->Collapsed())
+                    {
+                        node->Expand();
+                        EmitEvent(EVENT_WIDGETOPEN, ev.source, 0, 0, 0, 0, 0, ev.extra);
+                    }
+                    else
+                    {
+                        node->Collapse();
+                        EmitEvent(EVENT_WIDGETCLOSE, ev.source, 0, 0, 0, 0, 0, ev.extra);
+                    }
+                }
+            }
+
+            // Open a file with the default program when it is double-clicked
+            if (ev.source == filelist)
+            {
+                auto node = folderbrowser->GetSelectedNode();
+                WString path = GetNodePath(node);
+                RunFile(rootpath + "/" + path + "/" + filelist->items[ev.data].text);
+            }
+
+            break;
+
+        case EVENT_WINDOWCLOSE:
+
+            // Exit the program when the window is closed
+            if (ev.source == window) return 0;
+
+            break;
+
+        case EVENT_WIDGETOPEN:
+            if (ev.source == folderbrowser)
+            {
+                auto node = ev.extra->As<Widget>();
+                if (node->GetValue() == 0)
+                {
+                    while (!node->kids.empty())
+                    {
+                        node->kids[0]->SetParent(NULL);
+                    }
+                    PopulateTree(node, rootpath + "/" + GetNodePath(node));
+                    node->SetValue(1);
+                }
+            }
+            break;
+        }
+    }
+    return 0;
+}
+```
