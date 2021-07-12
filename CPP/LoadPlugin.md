@@ -20,7 +20,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	shared_ptr<PLugin> plugin;
+	shared_ptr<Plugin> plugin;
 	if (sizeof(void*) == 4)
 	{
 		// 32-bit build
