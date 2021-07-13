@@ -1,13 +1,14 @@
-# Widget::SetPixmap #
+# Widget::SetPixmap
 
 This method sets a widget pixmap. It is preferable to use the [Widget::SetIcon](Widget_SetIcon.md) method if the vector image is available, we this will be resolution-independent.
 
-## Syntax ##
-- void **SetPixmap**(shared_ptr<[Pixmap](Pixmap.md)\> pixmap)
+## Syntax
+- void **SetPixmap**(shared_ptr<[Pixmap](Pixmap.md)\> pixmap, PixmapAlignment alignment = PIXMAP_CENTER)
 
 | Parameter | Description |
 |---|---|
 | pixmap | pixmap to set |
+| alignment | may be set to PIXMAP_CENTER, PIXMAP_CONTAIN, PIXMAP_COVER, or PIXMAP_STRETCH |
 
 ```c++
 #include "UltraEngine.h"
