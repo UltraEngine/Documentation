@@ -9,26 +9,47 @@ Returns an array of all displays currently in use, with the primary display in t
 
 ## Example ##
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
+
+
 
 using namespace UltraEngine;
 
+
+
 int main(int argc, const char* argv[])
+
 {
-	auto displays = GetDisplays();
-	for (int k=0; k < displays.size(); ++k)
-	{
-		Print("Display " + String(k) + ":");
-		Print("	Position: " + String(displays[k]->GetPosition()));
-		Print("	Size: " + String(displays[k]->GetSize()));
-		Print("	Scale: " + String(displays[k]->GetScale()));
-		Print("	Graphics Modes:");
-		auto gfxmodes = displays[k]->GraphicsModes();
-		for (int n=0; n < gfxmodes.size(); ++n)
-		{
-			Print("		" + String(n) + ": " + String(gfxmodes[n]));
-		}
-	}
-	return 0;
+
+    auto displays = GetDisplays();
+
+    for (int k=0; k < displays.size(); ++k)
+
+    {
+
+        Print("Display " + WString(k) + ":");
+
+        Print(" Position: " + WString(displays[k]->GetPosition()));
+
+        Print(" Size: " + WString(displays[k]->GetSize()));
+
+        Print(" Scale: " + WString(displays[k]->GetScale()));
+
+        Print(" Graphics Modes:");
+
+        auto gfxmodes = displays[k]->graphicsmodes;
+
+        for (int n=0; n < gfxmodes.size(); ++n)
+
+        {
+
+            Print("     " + WString(n) + ": " + WString(gfxmodes[n]));
+
+        }
+
+    }
+
+    return 0;
+
 }
 ```
