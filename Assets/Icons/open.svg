@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="OpenIcon">
+        <g transform="matrix(1,0,0,1,-171.144,-224.223)">
+            <path d="M178.605,234.105C177.148,234.485 176.071,235.81 176.071,237.386L176.071,253.205C176.071,255.076 177.59,256.595 179.461,256.595L202.827,256.595C204.698,256.595 206.217,255.076 206.217,253.205L206.217,237.386C206.217,235.515 204.698,233.996 202.827,233.996L191.144,233.996L191.144,232.879C191.144,232.262 190.643,231.762 190.027,231.762L179.722,231.762C179.106,231.762 178.605,232.262 178.605,232.879L178.605,234.105Z" style="fill:none;stroke:white;stroke-width:1px;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-171.144,-225.295)">
+            <path d="M178.605,240.725L178.605,257.668L203.227,257.668C204.877,257.668 206.217,256.328 206.217,254.678L206.217,240.725C206.217,239.075 204.877,237.735 203.227,237.735L181.595,237.735C179.945,237.735 178.605,239.075 178.605,240.725Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>
