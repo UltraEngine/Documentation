@@ -409,10 +409,6 @@
 								{
 									"title": "GetSize",
 									"filename": "Display_GetSize"
-								},
-								{
-									"title": "GraphicsModes",
-									"filename": "Display_GraphicsModes"
 								}
 							]							
 						},
