@@ -11,5 +11,4 @@ This class provides an interface for querying and managing computer display scre
 | [GetPosition](Display_GetPosition.md) | Method | returns the position of the display on the virtual monitor space |
 | [GetSize](Display_GetSize.md) | Method | returns the display dimensions in pixels |
 | [GetScale](Display_GetScale.md) | Method | returns the current DPI scale value |
-| [GraphicsModes](Display_GraphicsModes.md) | Method | returns a list of supported graphics resolutions |
 | [GetDisplays](GetDisplays.md) | Function | returns a list of hardware displays in use |
