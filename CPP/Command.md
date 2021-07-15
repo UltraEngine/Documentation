@@ -27,7 +27,11 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	Print(Command("echo Hello!"));
+#ifdef _WIN32
+	Print(Command("systeminfo | findstr /B /C:\"OS Name\""));
+#else
+	Print(Command("uname -r"));
+#endif
 	return 0;
 }
 ```
