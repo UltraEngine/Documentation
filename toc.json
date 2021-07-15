@@ -332,6 +332,10 @@
 							"filename": "FileType"
 						},
 						{
+							"title": "GetPath",
+							"filename": "GetPath"
+						},						
+						{
 							"title": "HideFile",
 							"filename": "HideFile"
 						},				
