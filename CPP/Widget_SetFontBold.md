@@ -22,7 +22,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
     //Create User Interface
     auto ui = CreateInterface(window);
@@ -30,7 +30,7 @@ int main(int argc, const char* argv[])
 
     auto label = CreateLabel("Font scale:", 10, 10, sz.x - 20, 30, ui->root);
 
-    auto checkbox = CreateButton("Bold", 10, 40, sz.x - 20, 30, ui->root, BUTTON_CHECKBOX);
+    auto checkbox = CreateButton("Normal", 10, 40, sz.x - 20, 30, ui->root, BUTTON_CHECKBOX);
 
     auto textarea = CreateTextArea(10, 75, sz.x - 20, sz.y - 85, ui->root, TEXTAREA_WORDWRAP);
     textarea->SetText("The quick brown fox jumps over the lazy dog.");
@@ -44,6 +44,14 @@ int main(int argc, const char* argv[])
             if (ev.source == checkbox)
             {
                 textarea->SetFontBold(ev.data);
+                if (ev.data)
+                {
+                    checkbox->SetText("Bold");
+                }
+                else
+                {
+                    checkbox->SetText("Normal");
+                }
             }
             break;
         case EVENT_WINDOWCLOSE:
