@@ -332,6 +332,10 @@
 							"filename": "FileType"
 						},
 						{
+							"title": "GetPath",
+							"filename": "GetPath"
+						},						
+						{
 							"title": "HideFile",
 							"filename": "HideFile"
 						},				
@@ -394,6 +398,10 @@
 							"filename": "Display",
 							"topics":
 							[
+								{
+									"title": "ClientArea",
+									"filename": "Display_ClientArea"
+								},								
 								{
 									"title": "GetDisplays",
 									"filename": "GetDisplays"
@@ -946,7 +954,7 @@
 							"filename": "Round"
 						},
 						{
-							"title": "SeedRandom",
+							"title": "Seed",
 							"filename": "SeedRandom"
 						},
 						{
@@ -1122,8 +1130,8 @@
 									"filename": "MaxThreads"
 								},
 								{
-									"title": "Resume",
-									"filename": "Thread_Resume"
+									"title": "Start",
+									"filename": "Thread_Start"
 								},
 								{
 									"title": "Wait",
