@@ -1,8 +1,8 @@
 # CreateThread #
 
 ## Syntax ##
-- shared_ptr<[Thread](Thread.md)> **CreateThread**(shared_ptr<[Object](Object.md)\> entrypoint(shared_ptr<[Object](Object.md)\> extra), shared_ptr<[Object](Object.md)\> extra = NULL, const bool start = false);
-- shared_ptr<[Thread](Thread.md)> **CreateThread**(function<void()> entrypoint, const bool start = false);
+- shared_ptr<[Thread](Thread.md)> **CreateThread**(shared_ptr<[Object](Object.md)\> entrypoint(shared_ptr<[Object](Object.md)\> extra), shared_ptr<[Object](Object.md)\> extra = NULL, const bool start = true);
+- shared_ptr<[Thread](Thread.md)> **CreateThread**(function<void()> entrypoint, const bool start = true);
 
 ### Parameters ###
 
