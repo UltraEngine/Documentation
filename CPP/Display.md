@@ -8,6 +8,7 @@ This class provides an interface for querying and managing computer display scre
 | position | const [iVec2](iVec2.md)& | read-only screen position on the virtual desktop |
 | scale | const float& | read-only DPI scaling value |
 | size | const [iVec2](iVec2.md)& | read-only screen dimensions |
+| [ClientArea](Display_ClientArea.md) | Method | returns the usable area within the screen |
 | [GetPosition](Display_GetPosition.md) | Method | returns the position of the display on the virtual monitor space |
 | [GetSize](Display_GetSize.md) | Method | returns the display dimensions in pixels |
 | [GetScale](Display_GetScale.md) | Method | returns the current DPI scale value |
