@@ -737,6 +737,10 @@
 									"filename": "Widget_SetColor"
 								},
 								{
+									"title": "SetFontBold",
+									"filename": "Widget_SetFontBold"
+								},								
+								{
 									"title": "SetFontScale",
 									"filename": "Widget_SetFontScale"
 								},	
