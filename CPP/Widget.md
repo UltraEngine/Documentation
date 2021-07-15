@@ -24,6 +24,7 @@ This class handle user interface elements. A variety of widget types are support
 | [Paint](Widget_Paint.md) | Method | redraws a widget |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](Widget_SetColor.md) | Method | sets the widget color |
+| [SetFontBold](Widget_SetFontBold.md) | Method | sets the widget font weight |
 | [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
