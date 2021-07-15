@@ -1342,7 +1342,11 @@
 				{
 					"title": "System",
 					"topics":
-					[				
+					[
+						{
+							"title": "Command",
+							"filename": "Command"
+						},						
 						{
 							"title": "Confirm",
 							"filename": "Confirm"
