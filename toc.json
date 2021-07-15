@@ -395,6 +395,10 @@
 							"topics":
 							[
 								{
+									"title": "ClientArea",
+									"filename": "Display_ClientArea"
+								},						
+								{
 									"title": "GetDisplays",
 									"filename": "GetDisplays"
 								},						
@@ -409,10 +413,6 @@
 								{
 									"title": "GetSize",
 									"filename": "Display_GetSize"
-								},
-								{
-									"title": "GraphicsModes",
-									"filename": "Display_GraphicsModes"
 								}
 							]							
 						},
@@ -962,7 +962,7 @@
 							"filename": "Round"
 						},
 						{
-							"title": "SeedRandom",
+							"title": "Seed",
 							"filename": "SeedRandom"
 						},
 						{
