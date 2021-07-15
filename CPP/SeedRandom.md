@@ -1,9 +1,9 @@
-# SeedRandom
+# Seed
 This functions sets the seed for psuedorandom number calculation.
 
 ## Syntax
 
-- void **SeedRandom**(const int seed)
+- void **Seed**(const int seed)
 
 ## Example
 
@@ -14,7 +14,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    SeedRandom(Millisecs());
+    Seed(Millisecs());
 
     Print(Random());
     Print(Random(10));
