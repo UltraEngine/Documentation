@@ -34,7 +34,7 @@ To compile Ultra App Kit on Linux [Visual Studio Code](https://code.visualstudio
 
 In the Makefile tools tab, set **Configuration** to **Debug**, set **Build Target** to **x64**, and set **Launch Target** to the debug build of your project, which is the project name followed by "_d".
 
-
+<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/linuxbuild.png' />
 
 In the same panel, press the build button to compile your project and the debug button to launch. **Do not** switch to the main build / run panel because it will not work with C++ code.
 
