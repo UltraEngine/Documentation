@@ -1,6 +1,6 @@
 # Add to an Existing Project
 
-If you have an existing project and you want to add the Ultra App Kit library to provide a front-end interface, you can accomplish this with the steps below.
+If you have an existing project and you want to add the Ultra App Kit library to provide a front-end interface, you can accomplish this with the steps below. Although this article focuses on Windows development with Visual Studio, Linux and macOS projects will work in a similar manner.
 
 ### Header Search Paths
 
