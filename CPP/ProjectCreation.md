@@ -33,7 +33,7 @@ You must install required development libraries by running this line in the term
 sudo apt install build-essential libx11-dev libxmu-dev libxft-dev libxcursor-dev
 ```
 
-To compile Ultra App Kit on Linux [Visual Studio Code](https://www.leadwerks.com/community/clients/purchases) is recommended. Select the **File > Open Folder** menu item and choose your project's folder. The two extensions below are required to compile C++ code:
+To compile Ultra App Kit on Linux [Visual Studio Code](https://code.visualstudio.com) is recommended. Select the **File > Open Folder** menu item and choose your project's folder. The two extensions below are required to compile C++ code:
 
 - [C++ Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - [Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)
