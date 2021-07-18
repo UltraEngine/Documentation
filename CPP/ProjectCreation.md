@@ -17,11 +17,11 @@ Once Visual Studio is opened, you can compile and run the project by selecting t
 
 ## Compiling on macOS
 
-Double-click the .xcodeproj file to open the macOS project in [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 12.2 or later. Press command + R to build and run your project.
+Double-click the .xcodeproj file to open the macOS project in [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 12.2 or later. Press **Command + R** to build and run your project.
 
 ## Compiling on Linux
 
-You must install required development libraries by running this line in the terminal:
+You must install the GCC compiler and required development libraries by running this line in the terminal:
 
 ```txt
 sudo apt install build-essential libx11-dev libxmu-dev libxft-dev libxcursor-dev
