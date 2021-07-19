@@ -7,13 +7,7 @@ The project folder will be opened automatically.
 
 ## Compiling on Windows
 
-Double-click the .sln file to open the [Visual Studio](https://visualstudio.microsoft.com/vs/) solution:
-
-<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_project_folder.png' width='500px'/>
-
-Once Visual Studio is opened, you can compile and run the project by selecting the **Debug > Start Debugging** menu item:
-
-<img src='https://github.com/Leadwerks/Documentation/raw/master/Images/UltraAppKit_Visual_Studio.png' width='1000px'/>
+Double-click the .sln file to open the [Visual Studio](https://visualstudio.microsoft.com/vs/) solution. Once Visual Studio is opened, you can compile and run the project by selecting the **Debug > Start Debugging** menu item.
 
 ## Compiling on macOS
 
