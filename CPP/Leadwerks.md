@@ -41,9 +41,9 @@ Open the App.h file and add this text to the end of it:
 //Compile library into project
 #ifdef _WIN32
 #ifdef _DEBUG
-#pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Libs\\win32\\App Kit_d.lib")
+#pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Library\\Windows\\x86\\Debug\\AppKit.lib")
 #else
-#pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Libs\\win32\\App Kit.lib")
+#pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Library\\Windows\\x86\\Release\\AppKit.lib")
 #endif  
 #endif
 ```
@@ -68,9 +68,9 @@ If you are using Ultra App Kit on Steam, add this text instead:
 //Compile library into project
 #ifdef _WIN32
 #ifdef _DEBUG
-#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Libs\\win32\\App Kit_d.lib")
+#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Library\\Windows\\x86\\Debug\\AppKit.lib")
 #else
-#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Libs\\win32\\App Kit.lib")
+#pragma comment (lib, "C:\\Program Files (x86)\\Steam\\\steamapps\\common\\Ultra App Kit\\Library\\Windows\\x86\\Release\\AppKit.lib")
 #endif  
 #endif
 ```
@@ -82,7 +82,7 @@ At this point you should be able to compile the project without errors, in debug
 The following program will create a window with Ultra App Kit and then retrieve the window handle to create a Leadwerks custom window and a 3D rendering context:
 
 ```c++
-#include "App.h"
+#include "UltraEngine.h"
 
 using namespace Leadwerks;
 
@@ -128,7 +128,7 @@ int main(int argc,const char *argv[])
 This example demonstrates a 3D rendering viewport embedded in a GUI application.
 
 ```c++
-#include "App.h"
+#include "UltraEngine.h"
 
 using namespace Leadwerks;
 
