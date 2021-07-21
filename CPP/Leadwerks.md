@@ -22,8 +22,32 @@ If you are using Ultra App Kit on Steam, the default include path will be as fol
 C:\Program Files (x86)\Steam\steamapps\common\Ultra App Kit\Include
 ```
 
-Open the App.h file and add this text to the end of it:
+Open the App.h file and replace the code with this:
+
 ```c++
+#pragma once
+
+#include "Leadwerks.h"
+
+#undef GetFileType
+
+using namespace Leadwerks;
+
+class App
+{
+public:
+	Leadwerks::Window* window;
+	Context* context;
+	World* world;
+	Camera* camera;
+
+	App();
+	virtual ~App();
+
+    bool Start();
+    bool Loop();
+};
+
 #undef GMF_FLOAT
 #undef GMF_DOUBLE
 #undef COPY_INSTANCE
@@ -33,6 +57,8 @@ Open the App.h file and add this text to the end of it:
 #undef LUA_VERSION
 #undef STREAM_READ
 #undef STREAM_WRITE
+#undef dFloat
+#undef MAX_TERRAIN_LAYERS
 
 //Include header file
 #define _ULTRA_APPKIT
@@ -51,6 +77,29 @@ Open the App.h file and add this text to the end of it:
 If you are using Ultra App Kit on Steam, add this text instead:
 
 ```c++
+#pragma once
+
+#include "Leadwerks.h"
+
+#undef GetFileType
+
+using namespace Leadwerks;
+
+class App
+{
+public:
+	Leadwerks::Window* window;
+	Context* context;
+	World* world;
+	Camera* camera;
+
+	App();
+	virtual ~App();
+
+    bool Start();
+    bool Loop();
+};
+
 #undef GMF_FLOAT
 #undef GMF_DOUBLE
 #undef COPY_INSTANCE
@@ -60,6 +109,8 @@ If you are using Ultra App Kit on Steam, add this text instead:
 #undef LUA_VERSION
 #undef STREAM_READ
 #undef STREAM_WRITE
+#undef dFloat
+#undef MAX_TERRAIN_LAYERS
 
 //Include header file
 #define _ULTRA_APPKIT
@@ -82,7 +133,7 @@ At this point you should be able to compile the project without errors, in debug
 The following program will create a window with Ultra App Kit and then retrieve the window handle to create a Leadwerks custom window and a 3D rendering context:
 
 ```c++
-#include "UltraEngine.h"
+#include "App.h"
 
 using namespace Leadwerks;
 
@@ -128,7 +179,7 @@ int main(int argc,const char *argv[])
 This example demonstrates a 3D rendering viewport embedded in a GUI application.
 
 ```c++
-#include "UltraEngine.h"
+#include "App.h"
 
 using namespace Leadwerks;
 
