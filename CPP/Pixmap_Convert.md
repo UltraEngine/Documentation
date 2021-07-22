@@ -29,7 +29,7 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Load a pixmap
-    auto pixmap = LoadPixmap("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds");
+    auto pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.dds");
     
     //Convert to single red channel
     pixmap = pixmap->Convert(TEXTURE_RED);
