@@ -27,15 +27,15 @@ Add this code in your main project header to include the Ultra App Kit library. 
 #ifdef _WIN32
   #ifdef _WIN64
     #ifdef _DEBUG
-      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win64\\App Kit_d.lib")
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Library\\win64\\Debug\\AppKit.lib")
     #else
-      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Library\\win64\\Release\\AppKit.lib")
     #endif
   #else
     #ifdef _DEBUG
-      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\App Kit_d.lib")
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\Debug\\AppKit.lib")
     #else
-      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\App Kit.lib")
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\Release\\AppKit.lib")
     #endif  
   #endif  
 #endif
@@ -52,15 +52,15 @@ If you are using Ultra App Kit on Steam here is the code for the default install
 #ifdef _WIN32
   #ifdef _WIN64
     #ifdef _DEBUG
-      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit_d.lib")
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Library\\win64\\Debug\\AppKit.lib")
     #else
-      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win64\\App Kit.lib")
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Library\\win64\\Release\\AppKit.lib")
     #endif
   #else
     #ifdef _DEBUG
-      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win32\\App Kit_d.lib")
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Library\\win32\\Debug\\AppKit.lib")
     #else
-      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Lib\\win32\\App Kit.lib")
+      #pragma comment (lib, "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultra App Kit\\Library\\win32\\Release\\AppKit.lib")
     #endif
   #endif  
 #endif
