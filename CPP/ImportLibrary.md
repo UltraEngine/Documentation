@@ -33,9 +33,9 @@ Add this code in your main project header to include the Ultra App Kit library. 
     #endif
   #else
     #ifdef _DEBUG
-      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\Debug\\AppKit.lib")
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Library\\win32\\Debug\\AppKit.lib")
     #else
-      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Lib\\win32\\Release\\AppKit.lib")
+      #pragma comment (lib, "C:\\Program Files\\Ultra App Kit\\Library\\win32\\Release\\AppKit.lib")
     #endif  
   #endif  
 #endif
