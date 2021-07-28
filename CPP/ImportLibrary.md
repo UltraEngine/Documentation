@@ -71,6 +71,6 @@ You can add this code to your header if you want to call the API commands withou
 ```c++
 using namespace UltraEngine;
 ```
-If you are using Xcode on macOS you will need to add the library to your project. If you are using a makefile on Linux you will need to add the library into your build process.
+If you are using Xcode on macOS you will need to add the library to your project. If you are using a make file on Linux you will need to add the library into your build process.
 
 That's it! You're ready to start using Ultra App Kit in your own project.
