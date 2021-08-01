@@ -46,7 +46,7 @@ int main(int argc, const char* argv[])
     //Main loop
     while (!window->Closed() and !window->KeyHit(KEY_ESCAPE))
     {
-        sprite->Turn(1);
+        sprite->Turn(1.0);
         world->Update();
         world->Render(framebuffer,true);
     }
