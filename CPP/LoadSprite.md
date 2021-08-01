@@ -4,7 +4,7 @@ This function loads a texture, creates a sprite with the dimensions of the textu
 
 ## Syntax
 
-- shared_ptr<Sprite> **LoadSprite**(const WString& path)
+- shared_ptr<Sprite> **LoadSprite**(const [WString](WString)& path)
   
 ## Returns
   
