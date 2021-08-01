@@ -6,14 +6,14 @@ This function loads a texture, creates a sprite with the dimensions of the textu
 
 - shared_ptr<Sprite> **LoadSprite**(const WString& path)
   
-  ## Returns
+## Returns
   
-  If the texture is successfully loaded a new sprite is returned, otherwise NULL is returned.
+If the texture is successfully loaded a new sprite is returned, otherwise NULL is returned.
   
-  ## Example
+## Example
   
-  ```c++
-  #include "UltraEngine.h"
+```c++
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
