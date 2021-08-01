@@ -431,6 +431,18 @@
 									"filename": "CreateFramebuffer"
 								}
 							]							
+						},
+						{
+							"title": "Sprite",
+							"filename": "Sprite",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "CreateSpriter",
+									"filename": "CreateSprite"
+								}
+							]							
 						},						
 						{
 							"title": "Window",
