@@ -439,8 +439,8 @@
 							"topics":
 							[
 								{
-									"title": "CreateSpriter",
-									"filename": "CreateSprite"
+									"title": "LoadSpriter",
+									"filename": "LoadSprite"
 								}
 							]							
 						},						
