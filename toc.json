@@ -61,6 +61,18 @@
 					"topics":
 					[							
 						{
+							"title": "Font",
+							"filename": "Font",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "LoadFont",
+									"filename": "LoadFont"
+								}
+							]
+						},	
+						{
 							"title": "Icon",
 							"filename": "Icon",
 							"topics":
