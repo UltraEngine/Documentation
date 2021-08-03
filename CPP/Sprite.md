@@ -1,8 +1,8 @@
 # Sprite
 
-This class provides 2D shapes and images on the screen.
-
 **Base class:** [Object](Object.md)
+
+This class provides 2D shapes and images on the screen.
 
 ## Properties
 
