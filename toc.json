@@ -776,6 +776,10 @@
 									"filename": "Widget_GetSelectedItem"
 								},
 								{
+									"title": "GetSelectedNode",
+									"filename": "Widget_GetSelectedNode"
+								},
+								{
 									"title": "GetSize",
 									"filename": "Widget_GetSize"
 								},				
