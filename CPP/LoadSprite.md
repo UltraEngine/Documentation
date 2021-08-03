@@ -4,14 +4,14 @@ This function loads a texture, creates a sprite with the dimensions of the textu
 
 ## Syntax
 
-- shared_ptr<Sprite> **LoadSprite**(const [WString](WString.md)& path)
-  
+- shared_ptr<[Sprite](Sprite.md)\> **LoadSprite**(const [WString](WString.md)& path)
+
 ## Returns
-  
+
 If the texture is successfully loaded a new sprite is returned, otherwise NULL is returned.
-  
+
 ## Example
-  
+
 ```c++
 #include "UltraEngine.h"
 
