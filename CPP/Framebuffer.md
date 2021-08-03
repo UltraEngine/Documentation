@@ -2,7 +2,7 @@
 
 This class provides an interface for displaying Vulkan graphics on the screen.
 
-**Base Class:** [Object](Object)
+**Base class:** [Object](Object)
 
 ## Properties
 
