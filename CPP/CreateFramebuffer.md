@@ -3,7 +3,7 @@
 This function creates a new framebuffer object for 2D and 3D rendering.
 
 ## Syntax
-- shared_ptr<Framebuffer> **CreateFramebuffer**(shared_ptr<[Window](Window.md)\> window)
+- shared_ptr<Framebuffer\> **CreateFramebuffer**(shared_ptr<[Window](Window.md)\> window)
 
 | Parameter | Description |
 | --- | --- |
