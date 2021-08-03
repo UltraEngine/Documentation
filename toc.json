@@ -111,17 +111,6 @@
 							]
 						},
 						{
-							"title": "Sound",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "LoadSound",
-									"filename": "LoadSound"
-								}			
-							]
-						},
-						{
 							"title": "Texture",
 							"filename": "Texture",
 							"2dk": true,
@@ -1312,7 +1301,18 @@
 							"filename": "Process_Wait"
 						}				
 					]		
-				},		
+				},
+				{
+					"title": "Sound",
+					"2dk": true,
+					"topics":
+					[
+						{
+							"title": "LoadSound",
+							"filename": "LoadSound"
+						}			
+					]
+				},
 				{
 					"title": "Strings",
 					"filename": "Strings",
