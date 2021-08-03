@@ -800,6 +800,10 @@
 									"filename": "Widget_SelectItem"
 								},
 								{
+									"title": "SelectNode",
+									"filename": "Widget_SelectNode"
+								},
+								{
 									"title": "SetColor",
 									"filename": "Widget_SetColor"
 								},
