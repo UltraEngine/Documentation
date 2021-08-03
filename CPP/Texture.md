@@ -1,8 +1,8 @@
 # Texture
 
-A texture is an image that can be applied to 2D or 3D surfaces.
-
 **Base class:** [Asset](Asset.md)
+
+A texture is an image that can be applied to 2D or 3D surfaces.
 
 ## Properties
 
