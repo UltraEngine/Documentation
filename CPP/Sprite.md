@@ -12,6 +12,7 @@ This class provides 2D shapes and images on the screen.
 | rotation | dFloat | read-only screen position |
 | scale | [Vec2](Vec2.md) | read-only scale |
 | size | [iVec2](iVec2.md) | read-only dimensions |
+| [SetCollider](Sprite_SetCollider.md) | Method | sets the sprite collider |
 | [SetColor](Sprite_SetColor.md) | Method | sets the sprite color |
 | [SetPosition](Sprite_SetPosition.md) | Method | sets the sprite position onscreen |
 | [SetRotation](Sprite_SetRotation.md) | Methods | sets the sprite rotation onscreen |
