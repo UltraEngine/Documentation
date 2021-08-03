@@ -111,14 +111,6 @@
 							]
 						},
 						{
-							"title": "Reload",
-							"filename": "Asset_Reload"
-						},
-						{
-							"title": "Save",
-							"filename": "Asset_Save"
-						},
-						{
 							"title": "Texture",
 							"filename": "Texture",
 							"2dk": true,
@@ -129,7 +121,15 @@
 									"filename": "LoadTexture"
 								}
 							]							
-						}						
+						},						
+						{
+							"title": "Reload",
+							"filename": "Asset_Reload"
+						},
+						{
+							"title": "Save",
+							"filename": "Asset_Save"
+						}			
 					]
 				},
 				{
