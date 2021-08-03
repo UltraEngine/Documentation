@@ -10,7 +10,7 @@ This function creates a new pixmap with the specified size and format.
 |---|---|
 | width | width of the pixmap |
 | height | height of the pixmap |
-| format | pixmap pixel format |
+| format | pixmap pixel format, can be TEXTURE_RGBA, TEXTURE_RGB, TEXTURE_RG, TEXTURE_BGRA, TEXTURE_BGR, TEXTURE_RED, TEXTURE_RED16, or the compressed formats TEXTURE_BC1, TEXTURE_BC3, TEXTURE_BC5, or TEXTURE_BC7 |
 | pixeldata | if specified the pixmap pixel data will be filled with the buffer contents |
 
 ## Returns
