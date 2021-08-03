@@ -4,9 +4,7 @@
 
 This class provides 2D shapes and images on the screen.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | position | [Vec2](Vec2.md) | read-only screen position |
 | rotation | float | read-only screen position |
