@@ -61,6 +61,18 @@
 					"topics":
 					[
 						{
+							"title": "Collider",
+							"filename": "Collider",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "LoadCollider",
+									"filename": "LoadCollider"
+								}					
+							]
+						},							
+						{
 							"title": "Icon",
 							"filename": "Icon",
 							"topics":
