@@ -18,6 +18,7 @@ This class handle user interface elements. A variety of widget types are support
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
 | [GetSelectedItem](Widget_GetSelectedItem.md) | Method | gets the selected widget item |
+| [GetSelectedNode](Widget_GetSelectedNode.md) | Method | gets the selected treeview node |
 | [GetSize](Widget_GetSize.md) | Method | gets the widget size |
 | [GetState](Widget_GetState.md) | Method | gets the widget state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
@@ -37,6 +38,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
 | [SelectItem](Widget_SelectItem.md) | Method | selects a widget item |
+| [SelectNode](Widget_SelectNode.md) | Method | selects a treeview node |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
 | [CreateLabel](CreateLabel.md) | Function | creates a label widget |
