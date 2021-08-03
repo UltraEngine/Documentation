@@ -59,19 +59,7 @@
 					"title": "Asset",
 					"filename": "Asset",
 					"topics":
-					[
-						{
-							"title": "Collider",
-							"filename": "Collider",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "LoadCollider",
-									"filename": "LoadCollider"
-								}					
-							]
-						},							
+					[							
 						{
 							"title": "Icon",
 							"filename": "Icon",
@@ -446,7 +434,19 @@
 				{
 					"title": "Graphics",
 					"topics":
-					[				
+					[
+						{
+							"title": "Canvas",
+							"filename": "Canvas",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "CreateCanvas",
+									"filename": "CreateCanvas"
+								}
+							]	
+						},
 						{
 							"title": "Display",
 							"filename": "Display",
@@ -1249,7 +1249,36 @@
 							"filename": "Object_Self"
 						}				
 					]		
-				},		
+				},
+				{
+					"title": "Physics",
+					"2dk": true,
+					"topics":
+					[
+						{
+							"title": "Collider",
+							"filename": "Collider",
+							"topics":
+							[
+								{
+									"title": "LoadCollider",
+									"filename": "LoadCollider"
+								}
+							]						
+						},
+						{
+							"title": "Joint",
+							"filename": "Joint",
+							"topics":
+							[
+								{
+									"title": "CreateHingeJoint",
+									"filename": "CreateHingeJoint"
+								}
+							]						
+						}						
+					]	
+				},				
 				{
 					"title": "Plugins",
 					"filename": "Plugin",
