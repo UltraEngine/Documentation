@@ -111,6 +111,17 @@
 							]
 						},
 						{
+							"title": "Sound",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "LoadSound",
+									"filename": "LoadSound"
+								}			
+							]
+						},
+						{
 							"title": "Texture",
 							"filename": "Texture",
 							"2dk": true,
@@ -151,6 +162,23 @@
 						{
 							"title": "Warn",
 							"filename": "Warn"
+						}						
+					]					
+				},
+				{
+					"title": "Entity",
+					"topics":
+					[
+						{
+							"title": "Camera",
+							"filename": "Camera",
+							"topics":
+							[
+								{
+									"title": "CreateCamera",
+									"filename": "CreateCamera"
+								}						
+							]							
 						}						
 					]					
 				},	
@@ -1374,7 +1402,7 @@
 							]					
 						}				
 					]		
-				},		
+				},				
 				{
 					"title": "System",
 					"topics":
