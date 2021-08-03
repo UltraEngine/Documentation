@@ -2,7 +2,7 @@
 
 This class provides 2D shapes and images on the screen.
 
-**Base class:** [Asset](Asset.md)
+**Base class:** [Object](Object.md)
 
 ## Properties
 
