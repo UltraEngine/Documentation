@@ -9,7 +9,7 @@ This class provides 2D shapes and images on the screen.
 | Name | Type | Description |
 | --- | --- | --- |
 | position | [Vec2](Vec2.md) | read-only screen position |
-| rotation | dFloat | read-only screen position |
+| rotation | float | read-only screen position |
 | scale | [Vec2](Vec2.md) | read-only scale |
 | size | [iVec2](iVec2.md) | read-only dimensions |
 | [SetCollider](Sprite_SetCollider.md) | Method | sets the sprite collider |
