@@ -1315,6 +1315,21 @@
 					]
 				},
 				{
+					"title": "Statistics",
+					"2dk": true,
+					"topics":
+					[
+						{
+							"title": "PhysicsStats",
+							"filename": "PhysicsStats"
+						},
+						{
+							"title": "RenderStats",
+							"filename": "RenderStats"
+						}						
+					]
+				},				
+				{
 					"title": "Strings",
 					"filename": "Strings",
 					"topics":
