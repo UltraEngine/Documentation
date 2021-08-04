@@ -6,15 +6,15 @@ This class provides an interface to control the way a sound behaves when played.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| [Play] | Method | |
-| [Pause] | Method | |
-| [Stop] | Method | |
-| [GetState] | Method | |
-| [SetLoopMode] | Method | |
-| [SetPitch] | Method | |
-| [GetPitch] | Method | |
-| [SetVolume] | Method | |
-| [GetVolume] | Method | |
-| [SetTime] | Method | |
-| [GetTime] | Method | |
+| [Play](Speaker_Play.md) | Method | |
+| [Pause](Speaker_Pause.md) | Method | |
+| [Stop](Speaker_Stop.md) | Method | |
+| [GetState](Speaker_GetState.md) | Method | |
+| [SetLoopMode](Speaker_SetLoopMode.md) | Method | |
+| [SetPitch](Speaker_SetPitch.md) | Method | |
+| [GetPitch](Speaker_GetPitch.md) | Method | |
+| [SetVolume](Speaker_SetVolume.md) | Method | |
+| [GetVolume](Speaker_GetVolume.md) | Method | |
+| [SetTime](Speaker_SetTime.md) | Method | |
+| [GetTime](Speaker_GetTime.md) | Method | |
 | [CreateSpeaker](CreateSpeaker.md) | Function | creates a new speaker object |
