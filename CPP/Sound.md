@@ -1,5 +1,7 @@
 # Sound
 
+**Base class:** [Asset](Asset.md)
+
 A sound file stores a waveform that can be used to play noises.
 
 ## Properties
