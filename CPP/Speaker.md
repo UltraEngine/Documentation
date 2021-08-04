@@ -4,6 +4,6 @@
 
 This class provides an interface to control the way a sound behaves when played.
 
-|Property|Type|Description|
-|-|-|-|
-| | | |
+| Property | Type | Description |
+| --- | --- | --- |
+| [CreateSpeaker](CreateSpeaker.md) | Function | creates a new speaker object |
