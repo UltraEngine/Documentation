@@ -1,8 +1,14 @@
 # Sound::Play
 
+This method plays a sound once and returns a speaker object.
+
 ## Syntax
 
 - shared_ptr<[Speaker](Speaker.md)\> **Play**()
+
+## Returns
+
+Returns a new speaker object that can be used to control the sound.
 
 ## Example
 
