@@ -15,13 +15,15 @@
 ```c++
 #include "UltraEngine.h"
 
+using namespace UltraEngine;
+
 int main(int argc, const char* argv[])
 {
 	//Get the displays
 	auto displays = GetDisplays();
-	
+
 	//Create window
-	auto window = CreateWindow(displays[0], "Example", 0, 0, 400, 300, WINDOW_TITLEBAR | WINDOW_CENTER);
+	auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
 	//Load sound
 	auto sound = LoadSound("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Sound/notification.wav");
