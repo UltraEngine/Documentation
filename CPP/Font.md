@@ -1,6 +1,6 @@
 # Font
 
-**Base clasd:** [Asset](Asset.md)
+**Base class:** [Asset](Asset.md)
 
 This class provides an interface for loading and rasterizing fonts for text drawing. Once a font is loaded, a [Sprite](Sprite.md) can be created to display text on the screen.
 
