@@ -15,7 +15,7 @@ This function loads a texture from a file path or stream.
 
 ## Returns
 
-Returns the loaded texture, or NULL if no pixmap was loaded.
+Returns the loaded texture, or NULL if no texture was loaded.
 
 ## Example
 
