@@ -18,9 +18,11 @@
 
 int main(int argc, const char* argv[])
 {
+	//Get the displays
 	auto displays = GetDisplays();
-	Vec2 displayscale = displays[0]->GetScale();
-	auto window = CreateWindow(displays[0], "Example", 0, 0, 400 * displayscale.x, 300 * displayscale.y);
+	
+	//Create window
+	auto window = CreateWindow(displays[0], "Example", 0, 0, 400, 300, WINDOW_TITLEBAR | WINDOW_CENTER);
 
 	//Load sound
 	auto sound = LoadSound("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Sound/notification.wav");
