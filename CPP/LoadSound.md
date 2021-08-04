@@ -1,18 +1,18 @@
-# LoadSound #
+# LoadSound
 
-## Syntax ##
+## Syntax
 - shared_ptr<[Sound](Sound)> **LoadSound**(const string& path, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
 - shared_ptr<[Sound](Sound)> **LoadSound**(const wstring& path, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
 - shared_ptr<[Sound](Sound)> **LoadSound**(shared_ptr<[Stream](Stream)> stream, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
 
-## Parameters ##
-|Name|Description|
+|Parameter|Description|
 |-|-|
 |path|file name to load|
 |stream|stream to load the file from|
 |flags|optional loading flags|
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 #include "Project.h"
