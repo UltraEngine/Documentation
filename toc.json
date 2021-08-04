@@ -1339,7 +1339,11 @@
 						{
 							"title": "LoadSound",
 							"filename": "LoadSound"
-						}			
+						},
+						{
+							"title": "Play",
+							"filename": "Sound_Play"
+						}
 					]
 				},
 				{
