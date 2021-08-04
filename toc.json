@@ -155,9 +155,13 @@
 							"topics":
 							[
 								{
+									"title": "GetLength",
+									"filename": "Sound_GetLength"
+								},
+								{
 									"title": "LoadSound",
 									"filename": "LoadSound"
-								},
+								},								
 								{
 									"title": "Play",
 									"filename": "Sound_Play"
