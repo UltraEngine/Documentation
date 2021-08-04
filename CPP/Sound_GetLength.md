@@ -4,7 +4,7 @@ This method returns the length of the sound file.
 
 ## Syntax
 
--float **GetLangth**()
+- float **GetLangth**()
 
 ## Returns
 
