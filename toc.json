@@ -145,6 +145,40 @@
 					]
 				},
 				{
+					"title": "Audio",
+					"filename": "Audio",
+					"2dk": true,
+					"topics":
+					[
+						{
+							"title": "Sound",
+							"filename": "Sound",
+							"topics":
+							[
+								{
+									"title": "LoadSound",
+									"filename": "LoadSound"
+								},
+								{
+									"title": "Play",
+									"filename": "Sound_Play"
+								}						
+							]
+						},						
+						{
+							"title": "Speaker",
+							"filename": "Speaker",
+							"topics":
+							[
+								{
+									"title": "CreateSpeaker",
+									"filename": "CreateSpeaker"
+								}
+							]							
+						}
+					]
+				},				
+				{
 					"title": "Debugging",
 					"topics":
 					[
@@ -1329,22 +1363,6 @@
 							"filename": "Process_Wait"
 						}				
 					]		
-				},
-				{
-					"title": "Sound",
-					"filename": "Sound",
-					"2dk": true,
-					"topics":
-					[
-						{
-							"title": "LoadSound",
-							"filename": "LoadSound"
-						},
-						{
-							"title": "Play",
-							"filename": "Sound_Play"
-						}
-					]
 				},
 				{
 					"title": "Statistics",
