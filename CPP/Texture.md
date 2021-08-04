@@ -2,7 +2,7 @@
 
 **Base class:** [Asset](Asset.md)
 
-A texture is an image that can be applied to 2D or 3D surfaces.
+A texture is an image that can be applied to 2D or 3D surfaces. Textures can be loaded from DDS files or other file formats loaded with plugins.
 
 ## Properties
 
