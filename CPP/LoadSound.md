@@ -1,15 +1,14 @@
 # LoadSound
 
 ## Syntax
-- shared_ptr<[Sound](Sound)> **LoadSound**(const string& path, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
-- shared_ptr<[Sound](Sound)> **LoadSound**(const wstring& path, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
-- shared_ptr<[Sound](Sound)> **LoadSound**(shared_ptr<[Stream](Stream)> stream, const [LoadFlags](LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(shared_ptr<[Stream](Stream.md)> stream, const LoadFlags flags = LOAD_DEFAULT)
 
 |Parameter|Description|
 |-|-|
 |path|file name to load|
 |stream|stream to load the file from|
-|flags|optional loading flags|
+|flags|optional loading flags, can be LOAD_DEFAULT or any combination of LOAD_UNMANAGED and LOAD_QUIET |
 
 ## Example
 
