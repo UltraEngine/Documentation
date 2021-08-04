@@ -494,6 +494,14 @@
 							"topics":
 							[
 								{
+									"title": "CreateSprite",
+									"filename": "CreateSprite"
+								},
+								{
+									"title": "CreateText",
+									"filename": "CreateText"
+								},								
+								{
 									"title": "LoadSprite",
 									"filename": "LoadSprite"
 								}
