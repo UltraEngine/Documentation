@@ -1,10 +1,11 @@
 # CreateSprite
 
-This function creates a sprite that displays a solid or wireframe rectangle.
+This function creates a sprite that displays a rectangle or a string of text.
 
 ## Syntax
 
 - shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[Canvas](Canvas.md)\> canvas, const int width, const int height, const bool wireframe = false, const radius = 0.0f)
+- shared_ptr<[Canvas](Canvas.md)\> **CreateText**(shared_ptr<[Canvas](Canvas.md)\> canvas, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size)
 
 | Parameter | Description |
 | --- | --- |
@@ -13,10 +14,13 @@ This function creates a sprite that displays a solid or wireframe rectangle.
 | height | height of the sprite, in pixels |
 | wireframe | set to true for wireframe or false for solid |
 | radius | corner radius, for rounded rectangles |
+| text | text to display |
+| font | font to render text with |
+| size | font size |
 
 ## Returns
 
-Returns a new sprite that displays a rectangle.
+Returns a new sprite object.
 
 ## Example
 
