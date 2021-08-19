@@ -25,8 +25,8 @@ This class handle user interface elements. A variety of widget types are support
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
 | [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
 | [GainFocus](Widget_GainFocus.md) | Method | called when the widget is selected |
-| [KeyDown](Widget_KeyDown.md) | Method | called when a keyboard key is pressed |
 | [KeyChar](Widget_KeyChar.md) | Method | called when a keyboard character is entered |
+| [KeyDown](Widget_KeyDown.md) | Method | called when a keyboard key is pressed |
 | [KeyUp](Widget_KeyUp.md) | Method | called when a keyboard key is released |
 | [LoseFocus](Widget_LoseFocus.md) |  Method | called when the widget is deselected |
 | [MouseDown](Widget_MouseDown.md) |  Method | called when a mouse button is pressed |
