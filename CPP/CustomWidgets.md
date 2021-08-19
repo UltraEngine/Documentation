@@ -6,20 +6,20 @@ The following methods can be overridden to control custom widget behavior:
 
 | Name | Description |
 |---|---|
-| Draw | called each time the widget is painted |
-| DoubleClick | called when a mouse button is clicked twice in rapid succession |
-| GainFocus | called when the widget is selected |
-| KeyDown | called when a keyboard key is pressed |
-| KeyUp | called when a keyboard key is released |
-| KeyChar | called when a keyboard character is entered |
-| LoseFocus | called when the widget is deselected |
-| MouseMove | called whenever the mouse moves, with coordinates relative to the active window |
-| MouseLeave | called when the mouse cursor leaves the active window bounds |
-| MouseEnter | called when the mouse cursor enters the active window bounds |
-| MouseDown | called when a mouse button is pressed |
-| MouseUp | called when a mouse button is released |
-| MouseWheel | called when the mouse wheel turns |
-| TripleClick | called when a mouse button is clicked rapidly three times |
+| [Draw](Widget_Draw.md) | called each time the widget is painted |
+| [DoubleClick](Widget_DoubleClick.md) | called when a mouse button is clicked twice in rapid succession |
+| [GainFocus](Widget_GainFocus.md) | called when the widget is selected |
+| [KeyDown](Widget_KeyDown.md) | called when a keyboard key is pressed |
+| [KeyUp](Widget_KeyUp.md) | called when a keyboard key is released |
+| [KeyChar](Widget_KeyChar.md) | called when a keyboard character is entered |
+| [LoseFocus](Widget_LoseFocus.md) | called when the widget is deselected |
+| [MouseMove](Widget_MouseMove.md) | called whenever the mouse moves, with coordinates relative to the active window |
+| [MouseLeave](Widget_MouseLeave.md) | called when the mouse cursor leaves the active window bounds |
+| [MouseEnter](Widget_MouseEnter.md) | called when the mouse cursor enters the active window bounds |
+| [MouseDown](Widget_MouseDown.md) | called when a mouse button is pressed |
+| [MouseUp](Widget_MouseUp.md) | called when a mouse button is released |
+| [MouseWheel](Widget_MouseWheel.md) | called when the mouse wheel turns |
+| [TripleClick](Widget_TripleClick.md) | called when a mouse button is clicked rapidly three times |
 
 ## Example
 
