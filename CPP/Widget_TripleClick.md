@@ -10,7 +10,7 @@ This method is called when a mouse button is clicked rapidly three times.
 |---|---|
 | button | mouse button pressed |
 | x | mouse x screen coordinate |
-| y | mouse y screen coordinate  |
+| y | mouse y screen coordinate |
 
 ## Remarks
 
