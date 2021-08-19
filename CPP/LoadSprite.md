@@ -4,7 +4,7 @@ This function loads a texture, creates a sprite with the dimensions of the textu
 
 ## Syntax
 
-- shared_ptr<[Sprite](Sprite.md)\> **LoadSprite**(const [WString](WString.md)& path)
+- shared_ptr<[Sprite](Sprite.md)\> **LoadSprite**(const [WString](WString.md)& path, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
 
 ## Returns
 
