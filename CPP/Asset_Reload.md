@@ -4,7 +4,7 @@ This method reloads an asset from a file on the disk. If changes were made to th
 
 ## Syntax
 
-- bool **Reload**(const LoadFlags flags = LOAD_DEFAULT)
+- bool **Reload**(const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
