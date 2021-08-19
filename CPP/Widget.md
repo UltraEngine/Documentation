@@ -4,7 +4,7 @@ This class handle user interface elements. A variety of widget types are support
 
 ## Properties
 
-| Name | Type | Description
+| Name | Type | Description |
 |---|---|---|
 | kids | const vector<shared_ptr<[Widget](Widget.md)\> \>& | read-only list of child widgets |
 | size | const [iVec2](iVec2.md)& | read-only widget size |
@@ -14,6 +14,7 @@ This class handle user interface elements. A variety of widget types are support
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
+| [Draw](Widget_Draw.md) | Method | called each time the widget is redrawn |
 | [GetItemText](Widget_GetItemText.md) | Method | gets the widget item text |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
@@ -22,6 +23,18 @@ This class handle user interface elements. A variety of widget types are support
 | [GetSize](Widget_GetSize.md) | Method | gets the widget size |
 | [GetState](Widget_GetState.md) | Method | gets the widget state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
+| [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
+| [GainFocus](Widget_GainFocus.md) | Method | called when the widget is selected |
+| [KeyDown](Widget_KeyDown.md) | Method | called when a keyboard key is pressed |
+| [KeyChar](Widget_KeyChar.md) | called when a keyboard character is entered |
+| [KeyUp](Widget_KeyUp.md) | called when a keyboard key is released |
+| [LoseFocus](Widget_LoseFocus.md) | called when the widget is deselected |
+| [MouseDown](Widget_MouseDown.md)_ | called when a mouse button is pressed |
+| [MouseEnter](Widget_MouseEnter.md) | called when the mouse cursor enters the active window bounds |
+| [MouseLeave](Widget_MouseLeave.md) | called when the mouse cursor leaves the active window bounds |
+| [MouseMove](Widget_MouseMove.md) | called whenever the mouse moves, with coordinates relative to the active window |
+| [MouseUp](Widget_MouseUp.md) | called when a mouse button is released |
+| [MouseWheel](Widget_MouseWheel.md) | called when the mouse wheel turns |
 | [Paint](Widget_Paint.md) | Method | redraws a widget |
 | [RemoveItem](Widget_RemoveItem.md) | Method | removes a widget item |
 | [SetColor](Widget_SetColor.md) | Method | sets the widget color |
@@ -39,6 +52,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
 | [SelectItem](Widget_SelectItem.md) | Method | selects a widget item |
 | [SelectNode](Widget_SelectNode.md) | Method | selects a treeview node |
+| [TripleClick](Widget_TripleClick.md) | called when a mouse button is clicked rapidly three times |
 | [CreateButton](CreateButton.md) | Function | creates a button widget |
 | [CreateComboBox](CreateComboBox.md) | Function | creates a combobox widget |
 | [CreateLabel](CreateLabel.md) | Function | creates a label widget |
