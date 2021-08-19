@@ -4,7 +4,7 @@ This method is called each time the widget is redrawn.
 
 ## Syntax
 
-- void **Draw**(const int x, const int y, const int width, const int height);
+- void **Draw**(const int x, const int y, const int width, const int height)
 
 | Parameter | Description |
 |---|---|
