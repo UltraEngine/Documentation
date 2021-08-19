@@ -14,4 +14,4 @@ This method is called when a mouse button is clicked twice in rapid succession.
 
 ## Remarks
 
-This is a *protected* method. It can only be used by declaring it in a custom widget.
+This is a protected virtual method. It can only be used by declaring it in a custom widget.
