@@ -861,17 +861,17 @@
 									"filename": "Widget_GetText"
 								},
 								{
+									"title": "KeyChar",
+									"filename": "Widget_KeyChar"
+								},
+								{
 									"title": "KeyDown",
 									"filename": "Widget_KeyDown"
 								},				
 								{
 									"title": "KeyUp",
 									"filename": "Widget_KeyUp"
-								},
-								{
-									"title": "KeyChar",
-									"filename": "Widget_KeyChar"
-								},		
+								},	
 								{
 									"title": "LoseFocus",
 									"filename": "Widget_LoseFocus"
