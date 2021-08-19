@@ -12,3 +12,7 @@ This method is called each time the widget is redrawn.
 | y  | width and height of the block clipping region |
 | width | block color |
 | height | if set to true a rectangle outline will be drawn, otherwise a filled rectangle is drawn |
+
+## Remarks
+
+This is a protected virtual method. It can only be used by declaring it in a custom widget.
