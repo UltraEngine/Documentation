@@ -2,7 +2,7 @@
 This method returns the thread's current state.
 
 ## Syntax ##
-- [ThreadState](Constants#ThreadState) **GetState**()
+- [ThreadState](Constants.md#ThreadState) **GetState**()
 
 ## Returns ##
 The returned value may be THREAD_READY, THREAD_RUNNING, or THREAD_FINISHED.
