@@ -1,6 +1,8 @@
-# Widget::DoubleClick (protected)
+# Widget::DoubleClick
 
-This method is called when a mouse button is clicked twice in rapid succession
+This method is called when a mouse button is clicked twice in rapid succession.
+
+This is a protected method. It can only be used by declaring it in a custom widget.
 
 ## Syntax
 
