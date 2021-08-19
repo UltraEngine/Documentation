@@ -13,10 +13,10 @@ The following methods can be overridden to control custom widget behavior:
 | [KeyUp](Widget_KeyUp.md) | called when a keyboard key is released |
 | [KeyChar](Widget_KeyChar.md) | called when a keyboard character is entered |
 | [LoseFocus](Widget_LoseFocus.md) | called when the widget is deselected |
-| [MouseMove](Widget_MouseMove.md) | called whenever the mouse moves, with coordinates relative to the active window |
-| [MouseLeave](Widget_MouseLeave.md) | called when the mouse cursor leaves the active window bounds |
-| [MouseEnter](Widget_MouseEnter.md) | called when the mouse cursor enters the active window bounds |
 | [MouseDown](Widget_MouseDown.md) | called when a mouse button is pressed |
+| [MouseEnter](Widget_MouseEnter.md) | called when the mouse cursor enters the active window bounds |
+| [MouseLeave](Widget_MouseLeave.md) | called when the mouse cursor leaves the active window bounds |
+| [MouseMove](Widget_MouseMove.md) | called whenever the mouse moves, with coordinates relative to the active window |
 | [MouseUp](Widget_MouseUp.md) | called when a mouse button is released |
 | [MouseWheel](Widget_MouseWheel.md) | called when the mouse wheel turns |
 | [TripleClick](Widget_TripleClick.md) | called when a mouse button is clicked rapidly three times |
