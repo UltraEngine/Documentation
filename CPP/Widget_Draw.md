@@ -8,10 +8,10 @@ This method is called each time the widget is redrawn.
 
 | Parameter | Description |
 |---|---|
-| x | screen coordinates of the block within the widget |
-| y  | width and height of the block clipping region |
-| width | block color |
-| height | if set to true a rectangle outline will be drawn, otherwise a filled rectangle is drawn |
+| x | x screen coordinate of drawn area |
+| y  | y screen coordinate of drawn area |
+| width | width of the drawn area |
+| height | height of the drawn area |
 
 ## Remarks
 
