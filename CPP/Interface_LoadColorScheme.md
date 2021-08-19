@@ -4,7 +4,7 @@ This method loads a color scheme from a JSON file.
 
 ## Syntax
 
-- bool **LoadColorScheme**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+- bool **LoadColorScheme**(const [WString](WString.md)& path, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
