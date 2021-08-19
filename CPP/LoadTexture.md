@@ -4,8 +4,8 @@ This function loads a texture from a file path or stream.
 
 ## Syntax
 
-- shared_ptr<[Texture](Texture.md)\> LoadTexture(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
-- shared_ptr<[Texture](Texture.md)\> LoadTexture(shared_ptr<[Stream](Stream.md)\>,const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Texture](Texture.md)\> LoadTexture(const [WString](WString.md)& path, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[Texture](Texture.md)\> LoadTexture(shared_ptr<[Stream](Stream.md)\>,const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
