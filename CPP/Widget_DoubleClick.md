@@ -1,4 +1,4 @@
-# Widget::DoubleClick
+# Widget::DoubleClick (protected)
 
 This method is called when a mouse button is clicked twice in rapid succession
 
