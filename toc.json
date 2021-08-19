@@ -813,6 +813,18 @@
 									"filename": "CustomWidgets"
 								},
 								{
+									"title": "Draw",
+									"filename": "Widget_Draw"
+								},
+								{
+									"title": "DoubleClick",
+									"filename": "Widget_DoubleClick"
+								},
+								{
+									"title": "GainFocus",
+									"filename": "Widget_GainFocus"
+								},									
+								{
 									"title": "GetItemText",
 									"filename": "Widget_GetItemText"
 								},						
@@ -844,6 +856,46 @@
 									"title": "GetText",
 									"filename": "Widget_GetText"
 								},
+								{
+									"title": "KeyDown",
+									"filename": "Widget_KeyDown"
+								},				
+								{
+									"title": "KeyUp",
+									"filename": "Widget_KeyUp"
+								},
+								{
+									"title": "KeyChar",
+									"filename": "Widget_KeyChar"
+								},		
+								{
+									"title": "LoseFocus",
+									"filename": "Widget_LoseFocus"
+								},	
+								{
+									"title": "MouseDown",
+									"filename": "Widget_MouseDown"
+								},					
+								{
+									"title": "MouseEnter",
+									"filename": "Widget_MouseEnter"
+								},					
+								{
+									"title": "MouseLeave",
+									"filename": "Widget_MouseLeave"
+								},
+								{
+									"title": "MouseMove",
+									"filename": "Widget_MouseMove"
+								},					
+								{
+									"title": "MouseUp",
+									"filename": "Widget_MouseUp"
+								},			
+								{
+									"title": "MouseWheel",
+									"filename": "Widget_MouseWheel"
+								},													
 								{
 									"title": "Paint",
 									"filename": "Widget_Paint"
@@ -907,6 +959,10 @@
 								{
 									"title": "SetText",
 									"filename": "Widget_SetText"
+								},
+								{
+									"title": "TripleClick",
+									"filename": "Widget_TripleClick"
 								}								
 							]						
 						},
