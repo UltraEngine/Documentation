@@ -4,7 +4,7 @@ This method is called when the mouse wheel turns.
 
 ## Syntax
 
-- void **MouseWheel**(const int delta, const int x, const int y);
+- void **MouseWheel**(const int delta, const int x, const int y)
 
 
 | Parameter | Description |
