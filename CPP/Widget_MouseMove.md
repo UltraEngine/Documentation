@@ -4,7 +4,7 @@ This method is called whenever the mouse moves, with coordinates relative to the
 
 ## Syntax
 
-- void **MouseMove**(const int x, const int y);
+- void **MouseMove**(const int x, const int y)
 
 
 | Parameter | Description |
