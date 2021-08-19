@@ -9,9 +9,9 @@ The following methods can be overridden to control custom widget behavior:
 | [Draw](Widget_Draw.md) | called each time the widget is painted |
 | [DoubleClick](Widget_DoubleClick.md) | called when a mouse button is clicked twice in rapid succession |
 | [GainFocus](Widget_GainFocus.md) | called when the widget is selected |
+| [KeyChar](Widget_KeyChar.md) | called when a keyboard character is entered |
 | [KeyDown](Widget_KeyDown.md) | called when a keyboard key is pressed |
 | [KeyUp](Widget_KeyUp.md) | called when a keyboard key is released |
-| [KeyChar](Widget_KeyChar.md) | called when a keyboard character is entered |
 | [LoseFocus](Widget_LoseFocus.md) | called when the widget is deselected |
 | [MouseDown](Widget_MouseDown.md) | called when a mouse button is pressed |
 | [MouseEnter](Widget_MouseEnter.md) | called when the mouse cursor enters the active window bounds |
