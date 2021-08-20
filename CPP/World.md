@@ -1,5 +1,7 @@
 # World
 
+The world class is a container for all entities.
+
 ## Properties
 
 | Name | Type | Description |
