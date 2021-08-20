@@ -11,7 +11,11 @@ This function creates a new framebuffer object for 2D and 3D rendering.
 
 ## Returns
 
-Returns a new framebuffer object.
+Returns a new framebuffer object if one is successfully created, otherwise NULL is returned.
+
+## Remarks
+
+A framebuffer cannot be created on a window that uses the WINDOW_RESIZABLE window style, unless the multi-threaded renderer is disabled.
 
 ## Example
   
