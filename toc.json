@@ -121,18 +121,6 @@
 									"filename": "Pixmap_WritePixel"
 								}							
 							]
-						},
-						{
-							"title": "Texture",
-							"filename": "Texture",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "LoadTexture",
-									"filename": "LoadTexture"
-								}
-							]							
 						},						
 						{
 							"title": "Reload",
@@ -568,6 +556,18 @@
 								}
 							]							
 						},
+						{
+							"title": "Texture",
+							"filename": "Texture",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "LoadTexture",
+									"filename": "LoadTexture"
+								}
+							]							
+						},						
 						{
 							"title": "TextureBuffer",
 							"filename": "TextureBuffer",
