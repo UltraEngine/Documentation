@@ -529,6 +529,30 @@
 							]							
 						},
 						{
+							"title": "Material",
+							"filename": "Material",
+							"2dk": true,
+							"topics":
+							[								
+								{
+									"title": "CreateMaterial",
+									"filename": "CreateMaterial"
+								},
+								{
+									"title": "GetTransparent",
+									"filename": "GetTransparent"
+								},					
+								{
+									"title": "LoadMaterial",
+									"filename": "LoadMaterial"
+								},
+								{
+									"title": "SetTransparent",
+									"filename": "SetTransparent"
+								}							
+							]							
+						},						
+						{
 							"title": "Sprite",
 							"filename": "Sprite",
 							"2dk": true,
