@@ -11,7 +11,7 @@ A texture is an image that can be applied to 2D or 3D surfaces. Textures can be 
 | size | [iVec3](iVec3.md) | read-only dimensions |
 | [LoadTexture](LoadTexture.md) | Function | loads a texture from a file or stream |
 
-## Texture Limits
+### Texture Limits
 
 Some of the performance optimizations Ultra Engine uses require a hard limit on the maximum number of textures that can be loaded at once. This value can be increased by defining the following values in a file called "Ultra.json", in your game's directory:
 
