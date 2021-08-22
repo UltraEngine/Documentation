@@ -38,3 +38,5 @@ You must also define the same values in the shader file "Shaders/Base/Limits.gls
 #define MAX_TEXTURES_CUBE_SHADOW 32
 #define MAX_VOLUME_TEXTURES 32
 ```
+
+An error will result if the limits defined in the shader do not match the limits defined in the JSON file.
