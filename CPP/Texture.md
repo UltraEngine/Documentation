@@ -15,15 +15,17 @@ A texture is an image that can be applied to 2D or 3D surfaces. Textures can be 
 
 Some of the performance optimizations Ultra Engine uses require a hard limit on the maximum number of textures that can be loaded at once. This value can be increased by defining the following values in a file called "Ultra.json", in your game's directory:
 
-| Name | Default |
-|--|--|
-| maxTextures | 512 |
-| maxCubemaps | 16 |
-| maxShadowmaps | 64 |
-| maxIntegerTextures | 32 |
-| maxUIntegerTextures | 32 |
-| maxCubeShadowmaps | 64 |
-| maxVolumeTextures | 32 |
+```json
+{
+  "maxTextures": 512,
+  "maxCubemaps": 16,
+  "maxShadowmaps": 64,
+  "maxIntegerTextures": 32,
+  "maxUIntegerTextures": 32,
+  "maxCubeShadowmaps": 32,
+  "maxVolumeTextures": 32
+}
+```
 
 You must also define the same values in the shader file "Shaders/Base/Limits.glsl" and recompile all shaders:
 
