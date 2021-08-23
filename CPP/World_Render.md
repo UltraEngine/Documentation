@@ -58,7 +58,7 @@ int main(int argc, const char* argv[])
                 }
                 else
                 {
-                    Notify("Error: Renderer failed to initialize.", "Error", true);
+                    Notify("Renderer failed to initialize.", "Error", true);
                     return 0;
                 }
                 break;
