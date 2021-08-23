@@ -37,6 +37,7 @@ The following event IDs may be emitted by the program. Additional event ID can b
 | EVENT_TRIPLECLICK | mouse button is triple-clicked |
 | EVENT_MOUSELEAVE | mouse cursor leaves the window client area |
 | EVENT_MOUSEENTER | mouse cursor enters the window client area |
+| EVENT_STARTRENDERER | if data is 1 the renderer has been initialized and the graphics device name is stored in the event text, otherwise it failed to initialize and an error message is stored in the Event text | 
 | EVENT_WIDGETDESELECT | widget item is deselected |
 | EVENT_WIDGETOPEN | treeview node is expanded |
 | EVENT_WIDGETCLOSE | treeview node is collapsed |
