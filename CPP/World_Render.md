@@ -60,7 +60,7 @@ int main(int argc, const char* argv[])
                 else
                 {
                     //Show error message
-                    Notify("Renderer failed to initialize.", "Error", true);
+                    Notify("Renderer failed to initialize.\n\n" + e.text, "Error", true);
                     return 0;
                 }
                 break;
