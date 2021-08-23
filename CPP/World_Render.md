@@ -54,10 +54,12 @@ int main(int argc, const char* argv[])
             case EVENT_STARTRENDERER:
                 if (e.data == 1)
                 {
+                    //Print the graphics device name
                     Print("Renderer started: " + e.text);
                 }
                 else
                 {
+                    //Show error message
                     Notify("Renderer failed to initialize.", "Error", true);
                     return 0;
                 }
