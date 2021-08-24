@@ -1,6 +1,6 @@
 # Condition::Signal
 
-This method sets the conditoin to the signaled state and releases any threads that are waiting on it.
+This method sets the condition to the signaled state and releases any threads that are waiting on it.
 
 ## Syntax
 
