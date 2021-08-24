@@ -1,5 +1,7 @@
 # Condition
 
+**Base class**: [Object](Object.md)
+
 This class allows multithreaded applications to perform blocking operations. A condition can be signaled by one thread and waited on by another thread, for thread synchronization.
 
 ## Properties
