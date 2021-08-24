@@ -4,7 +4,7 @@ This method sends all queued rendering instructions to the rendering thread and 
 
 ## Syntax
 
-- void **Render**(shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer, const bool vsync = true)
+- void **Render**(shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer, const bool vsync = false)
 
 | Parameter | Description |
 |---|---|
