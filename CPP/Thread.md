@@ -1,7 +1,8 @@
 # Thread
-This class provides an interface for creating multithreaded applications.
 
 **Base class**: [Object](Object.md)
+
+This class provides an interface for creating multithreaded applications.
 
 ## Properties
 
