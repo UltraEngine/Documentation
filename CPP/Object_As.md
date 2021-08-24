@@ -1,17 +1,25 @@
-# Object::As #
+# Object::As
+
 This method casts the object to a derived type.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<T\> **As**<T\>()
 
 | Parameter | Description |
 |---|---|
 | T | type to cast to |
 
-## Returns ##
+## Returns
+
 Returns the object as a derived type **T**, or NULL if the object cannot be cast to the specified type.
 
-## Example ##
+## Remarks
+
+This method should *never* be called in a class constructor or destructor.
+
+## Example
+
 ```c++
 #include "pch.h"
 
