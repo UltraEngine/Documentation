@@ -4,7 +4,7 @@ This function creates a sprite that displays a rectangle or a string of text.
 
 ## Syntax
 
-- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[Canvas](Canvas.md)\> canvas, const float width, const float height, const bool wireframe = false, const radius = 0)
+- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[Canvas](Canvas.md)\> canvas, const float width, const float height, const bool wireframe = false, const float radius = 0)
 - shared_ptr<[Canvas](Canvas.md)\> **CreateText**(shared_ptr<[Canvas](Canvas.md)\> canvas, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size)
 
 | Parameter | Description |
