@@ -4,12 +4,12 @@ This function creates a sprite that displays a rectangle or a string of text.
 
 ## Syntax
 
-- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[Canvas](Canvas.md)\> canvas, const float width, const float height, const bool wireframe = false, const float radius = 0)
-- shared_ptr<[Canvas](Canvas.md)\> **CreateText**(shared_ptr<[Canvas](Canvas.md)\> canvas, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size)
+- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const float width, const float height, const bool wireframe = false, const float radius = 0)
+- shared_ptr<[Canvas](Canvas.md)\> **CreateText**(shared_ptr<[World](World.md)\> world, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size)
 
 | Parameter | Description |
 | --- | --- |
-| canvas | canvas to add the sprite to |
+| world | canvas to add the sprite to |
 | width | width of the sprite, in pixels |
 | height | height of the sprite, in pixels |
 | wireframe | set to true for wireframe or false for solid |
