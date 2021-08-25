@@ -11,3 +11,5 @@ This class The camera class is an entity used to render the world.
 | Render | Method | |
 | Unproject | Method | |
 | [SetRealTime](Camera_SetRealTime.md) | Method | |
+| [CreateCamera](CreateCamera.md) | Function | creates a new camera entity |
+ 
