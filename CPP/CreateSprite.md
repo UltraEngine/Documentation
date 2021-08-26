@@ -5,7 +5,7 @@ This function creates a sprite that displays a rectangle or a string of text.
 ## Syntax
 
 - shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const float width, const float height, const bool wireframe = false, const float radius = 0)
-- shared_ptr<[Canvas](Canvas.md)\> **CreateText**(shared_ptr<[World](World.md)\> world, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size)
+- shared_ptr<[Canvas](Canvas.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size)
 
 | Parameter | Description |
 | --- | --- |
@@ -45,15 +45,11 @@ int main(int argc, const char* argv[])
 
     //Create camera
     auto camera = CreateCamera(world);
-    camera->SetClearColor(0, 0, 1);
-
-    //Create canvas
-    auto canvas = CreateCanvas(camera);
-
+    camera->SetClearColor(0.125);
+    
     //Create sprite
-    auto sprite = CreateSprite(canvas, 100, 100);
-    sprite->SetPosition(10, 10);
-
+    auto sprite = CreateSprite(world, 100, 100);
+   
     //Main loop
     while (window->Closed()==false and window->KeyHit(KEY_ESCAPE)==false)
     {
