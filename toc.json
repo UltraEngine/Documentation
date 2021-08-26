@@ -211,6 +211,22 @@
 									"filename": "CreateCamera"
 								}						
 							]							
+						},
+						{
+							"title": "Sprite",
+							"filename": "Sprite",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "CreateSprite",
+									"filename": "CreateSprite"
+								},						
+								{
+									"title": "LoadSprite",
+									"filename": "LoadSprite"
+								}
+							]							
 						}						
 					]					
 				},	
@@ -538,22 +554,6 @@
 									"title": "SetTransparent",
 									"filename": "SetTransparent"
 								}							
-							]							
-						},						
-						{
-							"title": "Sprite",
-							"filename": "Sprite",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "CreateSprite",
-									"filename": "CreateSprite"
-								},						
-								{
-									"title": "LoadSprite",
-									"filename": "LoadSprite"
-								}
 							]							
 						},
 						{
