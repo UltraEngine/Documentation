@@ -1,7 +1,7 @@
-# Display #
-This class provides an interface for querying and managing computer display screens such as hardware monitors.
+# Display
+This class provides an interface for querying and managing hardware monitors.
 
-### Properties ###
+## Properties
 | Name | Type | Description |
 | --- | --- | --- |
 | graphicsmodes | const vector<[iVec2](iVec2.md)>& | read-only available screen resolutions |
