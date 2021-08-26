@@ -1,6 +1,6 @@
 # Sprite
 
-**Base class:** [Object](Object.md)
+**Base class:** [Entity](Entity.md)
 
 This class provides 2D shapes and images on the screen.
 
