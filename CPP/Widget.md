@@ -15,8 +15,8 @@ This class handle user interface elements. A variety of widget types are support
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
-| [Draw](Widget_Draw.md) | Method | called each time the widget is redrawn |
 | [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
+| [Draw](Widget_Draw.md) | Method | called each time the widget is redrawn |
 | [GetItemText](Widget_GetItemText.md) | Method | gets the widget item text |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
