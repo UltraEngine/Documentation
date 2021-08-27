@@ -16,6 +16,7 @@ This class handle user interface elements. A variety of widget types are support
 | [ClearItems](Widget_ClearItems.md) | Method | removes all widget items |
 | [ClientSize](Widget_ClientSize.md) | Method | returns the client area |
 | [Draw](Widget_Draw.md) | Method | called each time the widget is redrawn |
+| [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
 | [GetItemText](Widget_GetItemText.md) | Method | gets the widget item text |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
@@ -25,7 +26,6 @@ This class handle user interface elements. A variety of widget types are support
 | [GetState](Widget_GetState.md) | Method | gets the widget state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
 | [GetValue](Widget_GetValue.md) | Method | gets a slider's value |
-| [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
 | [GainFocus](Widget_GainFocus.md) | Method | called when the widget is selected |
 | [KeyChar](Widget_KeyChar.md) | Method | called when a keyboard character is entered |
 | [KeyDown](Widget_KeyDown.md) | Method | called when a keyboard key is pressed |
