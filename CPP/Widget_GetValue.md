@@ -4,7 +4,7 @@ This method gets the value of a slider widget.
 
 ## Syntax
 
-- shared_ptr<[Widget::GetValue](Widget_GetValue.md)\> **GetValue**()
+- int **GetValue**()
 
 ## Returns
 
