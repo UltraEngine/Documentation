@@ -885,6 +885,10 @@
 									"filename": "Widget_GetText"
 								},
 								{
+									"title": "GetValue",
+									"filename": "Widget_GetValue"
+								},
+								{
 									"title": "KeyChar",
 									"filename": "Widget_KeyChar"
 								},
@@ -975,7 +979,11 @@
 								{
 									"title": "SetProgress",
 									"filename": "Widget_SetProgress"
-								},							
+								},
+								{
+									"title": "SetRange",
+									"filename": "Widget_SetRange"
+								},
 								{
 									"title": "SetShape",
 									"filename": "Widget_SetShape"
@@ -988,6 +996,10 @@
 									"title": "SetText",
 									"filename": "Widget_SetText"
 								},
+								{
+									"title": "SetValue",
+									"filename": "Widget_SetValue"
+								},								
 								{
 									"title": "TripleClick",
 									"filename": "Widget_TripleClick"
