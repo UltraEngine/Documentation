@@ -2,7 +2,7 @@
 
 This page describes how to create a simple image converter utility.
 
-Start with a new console application and insert the code below into main.cpp.
+Start with a new application and insert the code below into main.cpp.
 
 ```c++
 #include "UltraEngine.h"
