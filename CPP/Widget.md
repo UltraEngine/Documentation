@@ -50,7 +50,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetPixmap](Widget_SetPixmap.md) | Method | applies a pixmap to the widget |
 | [SetProgress](Widget_SetProgress.md) | Method | sets the progress complete for a progress bar widget |
 | [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
-| [SetRange](Widget_SetRangen.md) | Method | sets the range of a slider widget |
+| [SetRange](Widget_SetRange.md) | Method | sets the range of a slider widget |
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
 | [SetValue](Widget_SetValue.md) | Method | sets the value of a slider |
