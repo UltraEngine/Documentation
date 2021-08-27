@@ -24,6 +24,7 @@ This class handle user interface elements. A variety of widget types are support
 | [GetSize](Widget_GetSize.md) | Method | gets the widget size |
 | [GetState](Widget_GetState.md) | Method | gets the widget state |
 | [GetText](Widget_GetText.md) | Method | gets the widget text |
+| [GetValue](Widget_GetValue.md) | Method | gets a slider's value |
 | [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
 | [GainFocus](Widget_GainFocus.md) | Method | called when the widget is selected |
 | [KeyChar](Widget_KeyChar.md) | Method | called when a keyboard character is entered |
@@ -51,6 +52,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetShape](Widget_SetShape.md) | Method | sets the widget position sna size |
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
+| [SetValue](Widget_SetValue.md) | Method | sets the value of a slider |
 | [SelectItem](Widget_SelectItem.md) | Method | selects a widget item |
 | [SelectNode](Widget_SelectNode.md) | Method | selects a treeview node |
 | [TripleClick](Widget_TripleClick.md) |  Method | called when a mouse button is clicked rapidly three times |
