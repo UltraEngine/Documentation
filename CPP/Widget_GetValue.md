@@ -39,7 +39,8 @@ int main(int argc, const char* argv[])
 
     //Create trackbar
     auto slider3 = CreateSlider(10, 10 + 100, 200, 30, ui->root, SLIDER_TRACKBAR);
-    slider2->SetRange(10, 20);
+    slider3->SetRange(10, 20);
+    slider3->SetValue(15);
 
     while (true)
     {
@@ -49,7 +50,7 @@ int main(int argc, const char* argv[])
         {
         case EVENT_WIDGETACTION:
             widget = ev.source->As<Widget>();
-            Print(widget->GetValue());
+            Print("Slider value:"  + String(widget->GetValue()));
             break;
         case EVENT_WINDOWCLOSE:
             return 0;
