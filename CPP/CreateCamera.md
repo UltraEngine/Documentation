@@ -25,4 +25,6 @@ If orthographic projection is used, the new camera will have a depth range of (-
 
 If perspective projection is used, the new camera will have a near depth range of 0.1 (ten centimeters) and a far depth range of 1000 (one kilometer).
 
+Any camera in the sequence can use post-processing effects, but only the first camera's post-processing effects will be used and subsequent cameras will have post-processing effects ignored. Transparency with refraction counts as a post-processing effect.
+
 ## Example
