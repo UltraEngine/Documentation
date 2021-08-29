@@ -17,7 +17,7 @@ You can create multiple cameras to render with. Cameras will be rendered in the 
 
 You can control which entities are visible to a camera with the [Entity::SetRenderLayer](Entity_SetRenderLayer.md) method.
 
-There are no 2D objects or drawing commands in Ultra Engine. Instead, all rendering is done through a uniform pipeline and a camera can be created with the orhtographic projection mode to display objects in 2D space. If you want to render 2D objects on top of a 3D scene, as you would for a head-up display in a game, you can create an extra camera to render in 2D in top of the perspective camera.
+There are no 2D objects or drawing commands in Ultra Engine. Instead, all rendering is done through a uniform pipeline and the camera projection mode is used to control whether objects appear in 3D or 2D space. If you want to render 2D objects on top of a 3D scene, as you would for a head-up display in a game, you can create an extra camera to render in 2D in top of the perspective camera.
 
 If orthographic projection is used, the new camera will have a depth range of (-1,1). With the default zoom (1.0) one pixel onscreen will be equal to one meter in space.
 
