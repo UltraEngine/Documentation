@@ -1,8 +1,14 @@
 # PostEffect
 
+**Base class:** [Asset](Asset.md)
+
 This class handles fullscreen post-porcessing shader effects.
 
+## Properties
 
+| Name | Type | Description |
+|---|---|---|
+| LoadPostEffect | Function | loads a post-processing effect from a JSON file |
 
 ## JSON Format
 
