@@ -21,6 +21,4 @@ If orthographic projection is used, the new camera will have a depth range of (-
 
 If perspective projection is used, the new camera will have a near depth range of 0.1 (ten centimeters) and a far depth range of 1000 (one kilometer).
 
-**Ultra 2D Kit** does not support the perspective projection mode.
-
 ## Example
