@@ -14,4 +14,5 @@ In order for the transparency refraction effect to be visible the following cond
 - A material with a refraction value greater than zero must be visible.
 - The material must have transparency set to true.
 - The material must have a normal map set.
+- The renderer must not be using the fallback for old graphics cards.
 
