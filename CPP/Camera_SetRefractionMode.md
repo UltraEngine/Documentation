@@ -8,4 +8,10 @@ This method controls the camera refraction effect.
 
 ## Remarks
 
-In order for the transparency refraction effect to be visible, the camera refraction mode must be set to true and a material with transparency enabled, a normal map, and a refraction index less than one must be visible in the scene.
+In order for the transparency refraction effect to be visible the following conditions must exist:
+
+- Camera refraction mode must be set to true.
+- A material with a refraction value greater than zero must be visible.
+- The material must have transparency set to true.
+- The material must have a normal map set.
+
