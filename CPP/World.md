@@ -6,6 +6,7 @@ The world class is a container for entities.
 
 | Name | Type | Description |
 |---|---|---|
+| collisions | const std::vector<[Collision](Collision.md)\> collisions | read-only list of collisions recorded in previous physics update |
 | physicsstats | [PhysicsStats](PhysicsStats.md) |  |
 | renderstats | [RenderStats](RenderStats.md) |  |
 | GetEntitiesInArea | Method | |
