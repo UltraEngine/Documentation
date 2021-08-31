@@ -3,11 +3,12 @@
 This method sets the entity collision type, for filtering collisions for physics.
 
 ## Syntax
-- void **SetCollisionType**(const [CollisionType](Constants.md) collisiontype)
+- void **SetCollisionType**(const [CollisionType](Constants.md) collisiontype, const bool recursive = false)
 
 | Parameter | Description |
 |---|---|
 | collisiontype | entity collision type to set |
+| recursive | if set to true all children in the sub-hierarchy wlll also be set |
 
 ## Remarks
 
