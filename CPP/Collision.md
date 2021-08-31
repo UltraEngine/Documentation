@@ -1,5 +1,7 @@
 # Collision
 
+**Base class:** [Object](Object.md)
+
 This class stores information about a collision.
 
 ## Parameters
