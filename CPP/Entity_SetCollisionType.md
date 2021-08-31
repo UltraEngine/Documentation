@@ -20,6 +20,8 @@ The collision type can be any integer value or predefined collision type:
 - COLLISIONTYPE_DEBRIS
 - COLLISIONTYPE_PROJECTILE
 
+Collision responses can be controlled with the [World::SetCollsiionResponse](World_SetCollsiionResponse.md) command.
+
 The table below shows the default collision responses the engine defines for each new world:
 
 | Type 1 | Type 2 | Response |
