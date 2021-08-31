@@ -65,7 +65,7 @@ int main(int argc, const char* argv[])
             }
         }
         world->Update();
-        world->Render(framebuffer, true);
+        world->Render(framebuffer);
     }
     return 0;
 }
