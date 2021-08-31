@@ -557,6 +557,18 @@
 							]							
 						},
 						{
+							"title": "PostEffect",
+							"filename": "PostEffect",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "LoadPostEffect",
+									"filename": "LoadPostEffect"
+								}
+							]							
+						},							
+						{
 							"title": "Texture",
 							"filename": "Texture",
 							"2dk": true,
