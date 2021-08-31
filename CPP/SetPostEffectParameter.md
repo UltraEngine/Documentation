@@ -2,10 +2,10 @@
 
 ## Syntax
 
-- bool **SetPostEffectParameter**(const int index, const WString& name, const float value)
-- bool **SetPostEffectParameter**(const int index, const WString& name, const Vec2& value)
-- bool **SetPostEffectParameter**(const int index, const WString& name, const Vec3& value)
-- bool **SetPostEffectParameter**(const int index, const WString& name, const Vec4& value)
+- bool **SetPostEffectParameter**(const int index, const [WString](WString.md)& name, const float value)
+- bool **SetPostEffectParameter**(const int index, const [WString](WString.md)& name, const [Vec2](Vec2.md)& value)
+- bool **SetPostEffectParameter**(const int index, const [WString](WString.md)& name, const [Vec3](Vec3.md)& value)
+- bool **SetPostEffectParameter**(const int index, const [WString](WString.md)& name, const [Vec4](Vec4.md)& value)
 
 | Parameter | Description |
 |---|---|
