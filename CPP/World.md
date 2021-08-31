@@ -13,7 +13,7 @@ The world class is a container for entities.
 | GetEntitiesInArea | Method | |
 | [RecordStats](World_RecordStats.md) | Method | |
 | [Render](World_Render.md) | Method | |
-| SetCollisionResponse | Method | |
+| [SetCollisionResponse](World_SetCollisionResponse.md) | Method | |
 | SetGravity | Method | |
 | [Update](World_Update.md) | Method | |
 | [CreateWorld](CreateWorld.md) | Function | |
