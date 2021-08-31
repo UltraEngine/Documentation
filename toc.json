@@ -213,6 +213,17 @@
 							]							
 						},
 						{
+							"title": "ParticleSystem",
+							"filename": "ParticleSystem",
+							"topics":
+							[
+								{
+									"title": "CreateParticleSystem",
+									"filename": "CreateParticleSystem"
+								}						
+							]							
+						},						
+						{
 							"title": "Sprite",
 							"filename": "Sprite",
 							"2dk": true,
