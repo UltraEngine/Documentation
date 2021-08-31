@@ -8,71 +8,66 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 |---|---|---|
 | | | |
 
-## Members
+## Properties
 
-| Name | Description |
-|---|---|
-| wstring **name** | name of the entity | 
-| const [xVec3](xVec3.md)& **position** | read-only position in local space |
-| const [xVec3](xVec3.md)& **rotation** | read-only Euler rotation in local space | 
-| const [xQuat](xQuat.md)& **quaternion** | read-only rotation in local space |
-| const [xVec3](xVec3.md)& **scale** | read-only scale |
-| const [xMat4](xMat4.md)& **matrix** | read-only 4x4 matrix |
-| const [Vec4](Vec4.md)& **color** | read-only object color |
-| vector<shared_ptr<[Entity](Entity.md)\> \>& **kids** | read-only array of child entities |
-
-## Methods
-
-| Name | Description |
-|---|---|
-| [AddActor](Entity_AddActor.md) | Adds an actor to the entity. |
-| [AddForce](Entity_AddForce_32f.md) | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
-| [AddPointForce](Entity_AddPointForce_32f.md) | |
-| [AddScript](Entity_AddScript.md) | |
-| [AddTorque](Entity_AddTorque_32f.md) | |
-| [AlignToVector](Entity_AlignToVector_32f.md) | |
-| [Attach](Entity_Attach.md) | |
-| [Copy](Entity_Copy.md) | |
-| [Detach](Entity_Detach.md) | |
-| [FindChild](Entity_FindChild.md) | |
-| [GetCollision](Entity_GetCollision.md) | |
-| [GetCollisionType](Entity_GetCollisionType.md) | |
-| [GetColor](Entity_GetColor.md) | |
-| [GetBounds](Entity_GetBounds_32f.md) | |
-| [GetDistance](Entity_GetDistance_32f.md) | |
-| [GetMass](Entity_GetMass_32f.md) | |
-| [GetAngularVelocity](Entity_GetOmega_32f.md) | |
-| [GetEmission](GetEmission.md) | |
-| [GetParent](Entity_GetParent.md) | |
-| [GetPickMode](Entity_GetPickMode.md) | |
-| [GetPosition](Entity_GetPosition_32f.md) | |
-| [GetRotation](Entity_GetRotation_32f.md) | |
-| [GetQuaternion](Entity_GetQuaternion_32f.md) | |
-| [GetScale](Entity_GetScale_32f.md) | |
-| [GetShadowMode](Entity_GetShadowMode.md) | |
-| [GetVelocity](Entity_GetVelocity_32f.md) | |
-| [GetWorld](Entity_GetWorld.md) | |
-| [Hide](Entity_Hide.md) | |
-| [Hidden](Entity_Hidden.md) | |
-| [Instantiate](Entity_Instantiate.md) | |
-| [MakeStatic](Entity_MakeStatic.md) | |
-| [Move](Entity_Move_32f.md) | |
-| [Pick](Entity_Pick_32f.md) | |
-| [Point](Entity_Point_32f.md) | |
-| [Reset](Entity_Reset.md) | |
-| [SetCollision](Entity_SetCollision.md) | |
-| [SetCollisionType](Entity_SetCollisionType.md) | |
-| [SetColor](Entity_SetColor.md) | |
-| [SetMass](Entity_SetMass.md) | |
-| [SetAngularVelocity](Entity_SetOmega_32f.md) | |
-| [SetEmission](SetEmission.md) | |
-| [SetParent](Entity_SetParent.md) | |
-| [SetPickMode](Entity_SetPickMode.md) | |
-| [SetPosition](Entity_SetPosition_32f.md) | |
-| [SetRotation](Entity_SetRotation_32f.md) | |
-| [SetScale](Entity_SetScale_32f.md) | |
-| [SetShadowMode](Entity_SetShadowMode.md) | |
-| [SetVelocity](Entity_SetVelocity_32f.md) | |
-| [Show](Entity_Show.md) | |
-| [Translate](Entity_Translate_32f.md) | |
-| [Turn](Entity_Turn_32f.md) | |
+| Name | Type | Description |
+|---|---|---|
+| name | [WString](WString.md) | name of the entity | 
+| position | const [xVec3](xVec3.md)& | read-only position in local space |
+| rotation | const [xVec3](xVec3.md)& | read-only Euler rotation in local space | 
+| quaternion | const [xQuat](xQuat.md)& | read-only rotation in local space |
+| scale | const [xVec3](xVec3.md)& | read-only scale |
+| matrix | const [xMat4](xMat4.md)& | read-only 4x4 matrix |
+| color | const [Vec4](Vec4.md)& | read-only object color |
+| kids | vector<shared_ptr<[Entity](Entity.md)\> \>& **kids** | read-only array of child entities |
+| [AddActor](Entity_AddActor.md) | Method | Adds an actor to the entity. |
+| [AddForce](Entity_AddForce_32f.md) | Method | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
+| [AddPointForce](Entity_AddPointForce_32f.md) |Method |  |
+| [AddScript](Entity_AddScript.md) |Method |  |
+| [AddTorque](Entity_AddTorque_32f.md) |Method |  |
+| [AlignToVector](Entity_AlignToVector_32f.md) |Method |  |
+| [Attach](Entity_Attach.md) | Method | |
+| [Copy](Entity_Copy.md) |Method |  |
+| [Detach](Entity_Detach.md) | Method | |
+| [FindChild](Entity_FindChild.md) |Method |  |
+| [GetCollision](Entity_GetCollision.md) | Method | |
+| [GetCollisionType](Entity_GetCollisionType.md) | Method | |
+| [GetColor](Entity_GetColor.md) | Method | |
+| [GetBounds](Entity_GetBounds_32f.md) |Method |  |
+| [GetDistance](Entity_GetDistance_32f.md) |Method |  |
+| [GetMass](Entity_GetMass_32f.md) |Method |  |
+| [GetAngularVelocity](Entity_GetOmega_32f.md) | Method | |
+| [GetEmission](GetEmission.md) |Method |  |
+| [GetParent](Entity_GetParent.md) | Method | |
+| [GetPickMode](Entity_GetPickMode.md) | Method | |
+| [GetPosition](Entity_GetPosition_32f.md) |Method |  |
+| [GetRotation](Entity_GetRotation_32f.md) | Method | |
+| [GetQuaternion](Entity_GetQuaternion_32f.md) | Method | |
+| [GetScale](Entity_GetScale_32f.md) | Method | |
+| [GetShadowMode](Entity_GetShadowMode.md) |Method |  |
+| [GetVelocity](Entity_GetVelocity_32f.md) |Method |  |
+| [GetWorld](Entity_GetWorld.md) | Method | |
+| [Hide](Entity_Hide.md) |Method |  |
+| [Hidden](Entity_Hidden.md) | Method | |
+| [Instantiate](Entity_Instantiate.md) |Method |  |
+| [MakeStatic](Entity_MakeStatic.md) | Method | |
+| [Move](Entity_Move_32f.md) | Method | |
+| [Pick](Entity_Pick_32f.md) | Method | |
+| [Point](Entity_Point_32f.md) | Method | |
+| [Reset](Entity_Reset.md) | Method | |
+| [SetCollision](Entity_SetCollision.md) |Method |  |
+| [SetCollisionType](Entity_SetCollisionType.md) | Method | |
+| [SetColor](Entity_SetColor.md) | Method | |
+| [SetMass](Entity_SetMass.md) | Method | |
+| [SetAngularVelocity](Entity_SetOmega_32f.md) |Method |  |
+| [SetEmission](SetEmission.md) | Method | |
+| [SetParent](Entity_SetParent.md) | Method | |
+| [SetPickMode](Entity_SetPickMode.md) | Method | |
+| [SetPosition](Entity_SetPosition_32f.md) | Method | |
+| [SetRotation](Entity_SetRotation_32f.md) | Method | |
+| [SetScale](Entity_SetScale_32f.md) | Method | |
+| [SetShadowMode](Entity_SetShadowMode.md) | Method | |
+| [SetVelocity](Entity_SetVelocity_32f.md) | Method | |
+| [Show](Entity_Show.md) | Method | |
+| [Translate](Entity_Translate_32f.md) | Method | |
+| [Turn](Entity_Turn_32f.md) | Method | |
