@@ -22,3 +22,38 @@ By default, the physics engine will perform iterations until an exact solution i
 By default the engine will allocate a number of threads for physics calculations. You can control this number by supplying a value greater than zero in the threads paramter.
 
 For greater precision, you can split physics updating up into multiple sub-steps by providing a value greater than one in the substeps paramter. This can be useful when very precise physics behavior is needed, but more substeps can cause slower performance.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create a camera
+    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    camera->SetClearColor(0.125);
+    
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        world->Update();
+        world->Render(framebuffer);
+    }
+    return 0;
+}
+```
