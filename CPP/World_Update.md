@@ -4,7 +4,7 @@ This method updates timing, physics, and other systems. This should be called on
 
 ## Syntax
 
-- void **Update**(const int frequency = 60, const int threads = 0, const int iterations = 1, const int substeps = 1)
+- void **Update**(const int frequency = 60, const int threads = 0, const int iterations = 0, const int substeps = 1)
 
 | Parameter | Description |
 | --- | --- |
