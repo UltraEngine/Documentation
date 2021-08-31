@@ -9,7 +9,7 @@ shared_ptr<[Camera](Camera.md)\> **CreateCamera**(shared_ptr<[World](World.md)\>
 | Parameter | Description |
 |---|---|
 | world | |
-| projecitonmode | |
+| projectionmode | |
 
 ## Remarks
 
