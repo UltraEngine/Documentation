@@ -26,7 +26,7 @@ int main(int argc, const char* argv[])
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a world
-    auto world = CreateWorld();
+    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
