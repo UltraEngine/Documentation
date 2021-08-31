@@ -55,7 +55,6 @@ int main(int argc, const char* argv[])
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
- 
         world->Update();
         world->Render(framebuffer);
     }
