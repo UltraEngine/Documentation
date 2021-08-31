@@ -28,3 +28,37 @@ If perspective projection is used, the new camera will have a near depth range o
 Any camera in the sequence can use post-processing effects, but only the first camera's post-processing effects will be used and subsequent cameras will have post-processing effects ignored. Transparency with refraction counts as a post-processing effect.
 
 ## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create a camera
+    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    camera->SetClearColor(0.125);
+    
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+ 
+        world->Update();
+        world->Render(framebuffer);
+    }
+    return 0;
+}
+```
