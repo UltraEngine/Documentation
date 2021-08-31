@@ -19,7 +19,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | scale | const [xVec3](xVec3.md)& | read-only scale |
 | matrix | const [xMat4](xMat4.md)& | read-only 4x4 matrix |
 | color | const [Vec4](Vec4.md)& | read-only object color |
-| kids | vector<shared_ptr<[Entity](Entity.md)\> \>& **kids** | read-only array of child entities |
+| kids | vector<shared_ptr<[Entity](Entity.md)\> \>& | read-only array of child entities |
 | [AddActor](Entity_AddActor.md) | Method | Adds an actor to the entity. |
 | [AddForce](Entity_AddForce_32f.md) | Method | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
 | [AddPointForce](Entity_AddPointForce_32f.md) |Method |  |
