@@ -1,4 +1,7 @@
-# Camera #
+# Camera
+
+**Base class:** [Entity](Entity.md)
+
 This class The camera class is an entity used to render the world.
 
 | Property | Type | Description |
