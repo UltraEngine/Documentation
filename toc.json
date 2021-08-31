@@ -493,18 +493,6 @@
 					"topics":
 					[
 						{
-							"title": "Canvas",
-							"filename": "Canvas",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "CreateCanvas",
-									"filename": "CreateCanvas"
-								}
-							]	
-						},
-						{
 							"title": "Display",
 							"filename": "Display",
 							"topics":
