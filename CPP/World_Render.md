@@ -54,8 +54,8 @@ int main(int argc, const char* argv[])
             case EVENT_STARTRENDERER:
                 if (e.data == 1)
                 {
-                    //Print the graphics device name
-                    Print("Renderer started: " + e.text);
+                    //Display the graphics device name
+                    window->SetText(window->text + " - " + e.text);
                 }
                 else
                 {
