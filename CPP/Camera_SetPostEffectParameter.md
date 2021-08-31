@@ -22,21 +22,21 @@ Returns true if the value is successfully set, otherwise false is returned.
 Post-processing effect parameters are defined in JSON files in a parameters object:
 
 ```json
-        "parameters":
-        [
-            {
+"parameters":
+[
+        {
                 "name": "strength",
                 "offset": 0,
                 "size": 1,
                 "default": 1.2
-            },
-            {
+        },
+        {
                 "name": "samples",
                 "offset": 2,
                 "size": 2,
                 "default": [8,8]
-            }
-        ]
+        }
+]
 ```
 
 ## Example
