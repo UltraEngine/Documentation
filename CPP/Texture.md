@@ -8,7 +8,7 @@ A texture is an image that can be applied to 2D or 3D surfaces. Textures can be 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| size | [iVec3](iVec3.md) | read-only dimensions |
+| size | const [iVec3](iVec3.md)& | read-only dimensions |
 | [LoadTexture](LoadTexture.md) | Function | loads a texture from a file or stream |
 
 ### Texture Limits
