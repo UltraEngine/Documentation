@@ -594,19 +594,7 @@
 									"filename": "LoadTexture"
 								}
 							]							
-						},						
-						{
-							"title": "TextureBuffer",
-							"filename": "TextureBuffer",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "CreateTextureBuffer",
-									"filename": "CreateTextureBuffer"
-								}
-							]							
-						},						
+						},					
 						{
 							"title": "Window",
 							"filename": "Window",
