@@ -1,6 +1,6 @@
 # 2D Platformer Controls
 
-This example demonstrates how to create a 2D platformer player and control movement and jumping.
+This example demonstrates how to create a 2D platformer player and control movement and jumping. A raycast is used to determine if the player is on the ground, and whether they can jump.
 
 ```c++
 #include "UltraEngine.h"
