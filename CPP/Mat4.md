@@ -1,28 +1,27 @@
-# Mat4 #
-This structure describes a 4x4 matrix.
+# Mat4
 
-## Members ##
-- [Vec4](Vec4) **i**
-- [Vec4](Vec4) **j**
-- [Vec4](Vec4) **k**
-- [Vec4](Vec4) **t**
+This class describes a 4x4 matrix used for 3D orientations in space.
 
-## Constructors ##
-- **Mat4**()
-- **Mat4**(const float scale)
-- **Mat4**(const [Vec4](Vec4)& i, const [Vec4](Vec4)& j, const [Vec4](Vec4)& k, const [Vec4](Vec4)& t)
-- **Mat4**(const [Vec3](Vec3)& translation, const [Vec3](Vec3)& rotation, const [Vec3](Vec3)& scale)
-- **Mat4**(const [Vec3](Vec3)& translation, const [Quat](Quat)& rotation, const [Vec3](Vec3)& scale)
-- **Mat4**(const float ix, const float iy, const float iz, const float iw, const float jx, const float jy, const float jz, const float jw, const float kx, const float ky, const float kz, const float kw, const float tx, const float ty, const float tz, const float tw)
+## Properties
 
-## Methods ##
-- Determinant
-- GetTranslation
-- GetQuaternion
-- GetRotation
-- GetScale
-- Inverse
-- Ortho
-- Perspective
-- Transpose
-- Normalize
+| Name | Type | Description |
+|---|---|---|
+| i | [Vec4](Vec4) | first matrix row |
+| j | [Vec4](Vec4) | second matrix row |
+| k | [Vec4](Vec4) | third matrix row |
+| t | [Vec4](Vec4) | fourth matrix row |
+| Mat4 | Constructor | Mat4() |
+| Mat4 | Constructor | Mat4(const float scale) |
+| Mat4 | Constructor | Mat4(const [Vec4](Vec4)& i, const [Vec4](Vec4)& j, const [Vec4](Vec4)& k, const [Vec4](Vec4)& t) |
+| Mat4 | Constructor | Mat4(const [Vec3](Vec3)& translation, const [Vec3](Vec3)& rotation, const [Vec3](Vec3)& scale) |
+| Mat4 | Constructor | Mat4(const [Vec3](Vec3)& translation, const [Quat](Quat)& rotation, const [Vec3](Vec3)& scale) |
+| Determinant | Method | |
+| GetTranslation | Method | |
+| GetQuaternion | Method | |
+| GetRotation | Method | |
+| GetScale | Method | |
+| Inverse | Method | |
+| Ortho | Method | |
+| Perspective | Method | |
+| Transpose | Method | |
+| Normalize | Method | |
