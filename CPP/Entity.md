@@ -18,7 +18,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | scale | const [xVec3](xVec3.md)& | read-only scale |
 | [AddForce](Entity_AddForce_32f.md) | Method | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
 | [AddPointForce](Entity_AddPointForce_32f.md) |Method |  |
-[comment]: <> (| [AddComponent](Entity_AddComponent.md) | Method |  |)
+[3dkit]: | [AddComponent](Entity_AddComponent.md) | Method |  |
 | [AddTorque](Entity_AddTorque_32f.md) |Method |  |
 | [AlignToVector](Entity_AlignToVector_32f.md) |Method |  |
 | [Copy](Entity_Copy.md) |Method |  |
