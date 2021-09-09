@@ -3,8 +3,8 @@ This method will align one axis of an entity along a specified vector in global 
 
 ## Syntax
 
-- void **AlignToVector**(const float x, const float y, const float z, const int axis = 2, const float rate = 1.0, const float roll = 0.0)
-- void **AlignToVector**(const [Vec3](Vec3.md)& v, const int axis = 2, const float rate = 1.0, const float roll = 0.0)
+- void **AlignToVector**(const dFloat x, const dFloat y, const dFloat z, const int axis = 2, const dFloat rate = 1.0, const dFloat roll = 0.0)
+- void **AlignToVector**(const [xVec3](xVec3.md)& v, const int axis = 2, const dFloat rate = 1.0, const dFloat roll = 0.0)
 
 | Parameter | Description |
 | --- | --- |
