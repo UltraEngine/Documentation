@@ -4,8 +4,8 @@ This method performs a ray intersection test on the world.
 
 ## Syntax
 
-- bool **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, [PickInfo](PickInfo_32f.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE, const bool usecollider = false)
 - bool **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, [PickInfo](PickInfo.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE, const bool usecollider = false)
+- bool **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, [PickInfo](PickInfo_32f.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE, const bool usecollider = false)
 
 | Parameter | Description |
 | --- | --- |
