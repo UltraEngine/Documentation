@@ -45,9 +45,8 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [Move](Entity_Move.md) | Method | |
 | [Pick](Entity_Pick.md) | Method | |
 | [Point](Entity_Point.md) | Method | |
-| [Reset](Entity_Reset.md) | Method | |
 | [RecordCollisions](Entity_RecordCollisions.md) | Method | sets the recording mode for entity collision detection |
-| [SetCollision](Entity_SetCollision.md) | Method |  |
+| [SetCollider](Entity_SetCollider.md) | Method |  |
 | [SetCollisionType](Entity_SetCollisionType.md) | Method | |
 | [SetColor](Entity_SetColor.md) | Method | |
 | [SetMass](Entity_SetMass.md) | Method | |
@@ -59,5 +58,6 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [SetScale](Entity_SetScale.md) | Method | |
 | [SetVelocity](Entity_SetVelocity.md) | Method | |
 | [Show](Entity_Show.md) | Method | |
+| [Sync](Entity_Sync.md) | Method | |
 | [Translate](Entity_Translate.md) | Method | |
 | [Turn](Entity_Turn.md) | Method | |
