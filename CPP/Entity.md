@@ -30,7 +30,6 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [GetDistance](Entity_GetDistance_32f.md) |Method |  |
 | [GetMass](Entity_GetMass_32f.md) |Method |  |
 | [GetAngularVelocity](Entity_GetOmega_32f.md) | Method | |
-| [GetEmission](GetEmission.md) |Method |  |
 | [GetParent](Entity_GetParent.md) | Method | |
 | [GetPickMode](Entity_GetPickMode.md) | Method | |
 | [GetPosition](Entity_GetPosition_32f.md) |Method |  |
