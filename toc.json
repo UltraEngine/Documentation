@@ -207,6 +207,34 @@
 							"topics":
 							[
 								{
+									"title": "AddPostEffect",
+									"filename": "Camera_AddPostEffect"
+								},
+								{
+									"title": "ClearPostEffects",
+									"filename": "Camera_ClearPostEffects"
+								},
+								{
+									"title": "Pick",
+									"filename": "Camera_Pick"
+								},
+								{
+									"title": "Project",
+									"filename": "Camera_Project"
+								},
+								{
+									"title": "SetPostEffectParameter",
+									"filename": "Camera_SetPostEffectParameter"
+								},
+								{
+									"title": "Unproject",
+									"filename": "Camera_Unproject"
+								},
+								{
+									"title": "SetRealTime",
+									"filename": "Camera_SetRealTime"
+								},
+								{
 									"title": "CreateCamera",
 									"filename": "CreateCamera"
 								}						
