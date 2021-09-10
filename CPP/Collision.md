@@ -4,7 +4,7 @@
 
 This class stores information about a collision.
 
-## Parameters
+## Properties
 
 | Name | Type | Description |
 |---|---|---|
