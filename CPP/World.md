@@ -1,5 +1,7 @@
 # World
 
+**Base class:** [Object](Object.md)
+
 The world class is a container for entities.
 
 ## Properties
