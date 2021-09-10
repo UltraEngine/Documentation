@@ -6,8 +6,8 @@ This class creates a physical constraint between two entities. Joints can use li
 
 | Property | Type | Description |
 |---|---|----|
-| parent | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only parent entity. |
-| child | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only child entity. |
+| child | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only child entity |
+| parent | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only parent entity |
 | Break | Method | Breaks the joint. |
 | SetSpring | Method | Breaks the joint. |
 | GetSpring | Method | Breaks the joint. |
