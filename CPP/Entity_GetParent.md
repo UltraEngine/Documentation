@@ -4,7 +4,7 @@ This method retrieves an entity's parent.
 
 ## Syntax
 
-- shared_ptr<[Entity](Entity.md)\> GetParent()
+- shared_ptr<[Entity](Entity.md)\> **GetParent**()
 
 ## Returns
 
