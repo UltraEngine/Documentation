@@ -1695,6 +1695,50 @@
 								{
 									"title": "CreateHingeJoint",
 									"filename": "CreateHingeJoint"
+								},
+								{
+									"title": "CreateKinematicJoint",
+									"filename": "CreateKinematicJoint"
+								},								
+								{
+									"title": "CreateSliderJoint",
+									"filename": "CreateSliderJoint"
+								},
+								{
+									"title": "EnableLimits",
+									"filename": "Joint_EnableLimits"
+								},
+								{
+									"title": "EnableMotor",
+									"filename": "Joint_EnableMotor"
+								},
+								{
+									"title": "GetLimits",
+									"filename": "Joint_GetLimits"
+								},
+								{
+									"title": "GetMotorSpeed",
+									"filename": "Joint_GetMotorSpeed"
+								},
+								{
+									"title": "SetLimits",
+									"filename": "Joint_SetLimits"
+								},
+								{
+									"title": "SetMaxForce",
+									"filename": "Joint_SetMaxForce"
+								},
+								{
+									"title": "SetMaxTorque",
+									"filename": "Joint_SetMaxTorque"
+								},
+								{
+									"title": "SetPosition",
+									"filename": "Joint_SetPosition"
+								},
+								{
+									"title": "SetRotation",
+									"filename": "Joint_SetRotation"
 								}
 							]						
 						}						
