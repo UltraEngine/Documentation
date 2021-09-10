@@ -1698,12 +1698,32 @@
 					"topics":
 					[
 						{
-							"title": "Update",
-							"filename": "World_Update"
-						},						
+							"title": "ClearCollisionResponses",
+							"filename": "World_ClearCollisionResponses"
+						},
+						{
+							"title": "GetEntitiesInArea",
+							"filename": "World_GetEntitiesInArea"
+						},
+						{
+							"title": "RecordStats",
+							"filename": "World_RecordStats"
+						},
 						{
 							"title": "Render",
 							"filename": "World_Render"
+						},
+						{
+							"title": "SetCollisionResponse",
+							"filename": "World_SetCollisionResponse"
+						},
+						{
+							"title": "SetGravity",
+							"filename": "World_SetGravity"
+						},
+						{
+							"title": "Update",
+							"filename": "World_Update"
 						},
 						{
 							"title": "CreateWorld",
