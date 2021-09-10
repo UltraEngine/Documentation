@@ -8,10 +8,10 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 
 ## Syntax
 
-- void **SetPosition**(const float x, const float y, const float z, const bool global = false) 
-- void **SetPosition**(const [Vec3](Vec3.md)& position, const bool global = false) 
-- void **SetPosition**(const float x, const float y)
-- void **SetPosition**(const [Vec2](Vec2.md)& position)
+- void **SetPosition**(const [xVec3](xVec3.md)& position, const bool global = false) 
+- void **SetPosition**(const [xVec2](xVec2.md)& position)
+- void **SetPosition**(const dFloat x, const dFloat y, const dFloat z, const bool global = false) 
+- void **SetPosition**(const dFloat x, const dFloat y)
 
 | Parameter | Description |
 | ------ | ------ |
@@ -24,8 +24,9 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 ## Example
 
 ```C++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 void main(const char* args, const int argc)
 {
