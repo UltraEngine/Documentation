@@ -23,7 +23,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [AlignToVector](Entity_AlignToVector.md) | Method |  |
 | [Copy](Entity_Copy.md) | Method |  |
 | [FindChild](Entity_FindChild.md) | Method |  |
-| [GetAngularVelocity](Entity_GetOmega.md) | Method | |
+| [GetAngularVelocity](Entity_GetAngularVelocity.md) | Method | |
 | [GetCollider](Entity_GetCollider.md) | Method | |
 | [GetCollisionType](Entity_GetCollisionType.md) | Method | |
 | [GetColor](Entity_GetColor.md) | Method | |
@@ -46,7 +46,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [Pick](Entity_Pick.md) | Method | |
 | [Point](Entity_Point.md) | Method | |
 | [RecordCollisions](Entity_RecordCollisions.md) | Method | sets the recording mode for entity collision detection |
-| [SetAngularVelocity](Entity_SetOmega.md) |Method |  |
+| [SetAngularVelocity](Entity_SetAngularVelocity.md) |Method |  |
 | [SetCollider](Entity_SetCollider.md) | Method |  |
 | [SetCollisionType](Entity_SetCollisionType.md) | Method | |
 | [SetColor](Entity_SetColor.md) | Method | |
