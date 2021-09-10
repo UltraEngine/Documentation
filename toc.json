@@ -1720,6 +1720,10 @@
 							"filename": "World_GetEntitiesInArea"
 						},
 						{
+							"title": "Pick",
+							"filename": "World_Pick"
+						},						
+						{
 							"title": "RecordStats",
 							"filename": "World_RecordStats"
 						},
