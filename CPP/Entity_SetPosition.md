@@ -10,15 +10,11 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 
 - void **SetPosition**(const [xVec3](xVec3.md)& position, const bool global = false) 
 - void **SetPosition**(const [xVec2](xVec2.md)& position)
-- void **SetPosition**(const dFloat x, const dFloat y, const dFloat z, const bool global = false) 
-- void **SetPosition**(const dFloat x, const dFloat y)
+- void **SetPosition**(const dFloat x, const dFloat y, const dFloat z = 0.0, const bool global = false) 
 
 | Parameter | Description |
 | ------ | ------ |
-| x | X component of the specified position |
-| y | Y component of the specified position |
-| z | Z component of the specified position |
-| position | The position to set |
+| position, (x, y, z) | The position to set |
 | global | Indicates whether the position should be set in global or local space |
 
 ## Example
