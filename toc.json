@@ -422,10 +422,6 @@
 							"filename": "Entity_SetPosition"
 						},
 						{
-							"title": "SetQuaternion",
-							"filename": "Entity_SetQuaternion"
-						},
-						{
 							"title": "SetRotation",
 							"filename": "Entity_SetRotation"
 						},
