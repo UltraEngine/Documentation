@@ -222,11 +222,21 @@
 									"filename": "CreateParticleSystem"
 								}						
 							]							
-						},						
+						},
+						{
+							"title": "Pivot",
+							"filename": "Pivot",
+							"topics":
+							[
+								{
+									"title": "CreatePivote",
+									"filename": "CreatePivote"
+								}
+							]							
+						},
 						{
 							"title": "Sprite",
 							"filename": "Sprite",
-							"2dk": true,
 							"topics":
 							[
 								{
