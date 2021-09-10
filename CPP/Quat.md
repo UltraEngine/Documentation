@@ -13,7 +13,7 @@ This class describes a quaternion rotation. Quaternions are more accurate than E
 | y | float | Y component |
 | z | float | Z component |
 | w | float | W component |
-| [ToEuler](Quat_ToEuler.md) | Method | converts the quaternion to a Euler angle |
 | [Inverse](Quat_Inverse.md) | Method | |
 | [Normalize](Quat_Normalize.md) | Method | |
 | [Slerp](Quat_Slerp.md) | Method | spherical linear interpolation for smooth transitions between 3D rotations |
+| [ToEuler](Quat_ToEuler.md) | Method | converts the quaternion to a Euler angle |
