@@ -406,6 +406,18 @@
 							"filename": "Entity_SetColor"
 						},
 						{
+							"title": "SetDamping",
+							"filename": "Entity_SetDamping"
+						},
+						{
+							"title": "SetElasicity",
+							"filename": "Entity_SetElasicity"
+						},
+						{
+							"title": "SetFriction",
+							"filename": "Entity_SetFriction"
+						},
+						{
 							"title": "SetMass",
 							"filename": "Entity_SetMass"
 						},
