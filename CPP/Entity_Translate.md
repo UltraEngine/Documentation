@@ -9,8 +9,5 @@ This method repositions an entity relative to its parent orientation.
 
 | Parameter | Description |
 |---|---|
-| translation | movement to apply to the entity |
-| x | X component of translation |
-| y | Y component of translation |
-| z | Z component of translation |
+| translation, (x, y, z) | movement to apply to the entity |
 | global | if set to false movement occurs relative to the parent space, otherwise world space is used |
