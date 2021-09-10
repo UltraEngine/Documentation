@@ -39,8 +39,8 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 [3dkit] | [GetShadowMode](Entity_GetShadowMode.md) | Method |  |
 | [GetVelocity](Entity_GetVelocity.md) | Method |  |
 | [GetWorld](Entity_GetWorld.md) | Method | |
-| [Hide](Entity_Hide.md) | Method |  |
 | [Hidden](Entity_Hidden.md) | Method | |
+| [Hide](Entity_Hide.md) | Method |  |
 | [Instantiate](Entity_Instantiate.md) | Method |  |
 | [Move](Entity_Move.md) | Method | |
 | [Pick](Entity_Pick.md) | Method | |
