@@ -15,6 +15,7 @@ The world class is a container for entities.
 | [ClearCollisionResponses](World_ClearCollisionResponses.md) | Method | |
 | [GetCollisionResponse](World_GetCollisionResponse.md) | Method | |
 | [GetEntitiesInArea](World_GetEntitiesInArea.md) | Method | |
+| [Pick](World_Pick.md) | Method | |
 | [RecordStats](World_RecordStats.md) | Method | |
 | [Render](World_Render.md) | Method | |
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | |
