@@ -276,6 +276,90 @@
 									"filename": "LoadSprite"
 								}
 							]							
+						},
+						{
+							"title": "AddForce",
+							"filename": "Entity_AddForce"
+						},
+						{
+							"title": "AddPointForce",
+							"filename": "Entity_AddPointForce"
+						},
+						{
+							"title": "AddTorque",
+							"filename": "Entity_AddTorque"
+						},
+						{
+							"title": "AlignToVector",
+							"filename": "Entity_AlignToVector"
+						},
+						{
+							"title": "Copy",
+							"filename": "Entity_Copy"
+						},
+						{
+							"title": "FindChild",
+							"filename": "Entity_FindChild"
+						},
+						{
+							"title": "GetCollider",
+							"filename": "Entity_GetCollider"
+						},
+						{
+							"title": "GetCollisionType",
+							"filename": "Entity_GetCollisionType"
+						},
+						{
+							"title": "GetColor",
+							"filename": "Entity_GetColor"
+						},
+						{
+							"title": "GetBounds",
+							"filename": "Entity_GetBounds"
+						},
+						{
+							"title": "GetDistance",
+							"filename": "Entity_GetDistance"
+						},
+						{
+							"title": "GetMass",
+							"filename": "Entity_GetMass"
+						},
+						{
+							"title": "GetAngularVelocity",
+							"filename": "Entity_GetAngularVelocity"
+						},
+						{
+							"title": "GetParent",
+							"filename": "Entity_GetParent"
+						},
+						{
+							"title": "GetPickMode",
+							"filename": "Entity_GetPickMode"
+						},
+						{
+							"title": "GetPosition",
+							"filename": "Entity_GetPosition"
+						},
+						{
+							"title": "GetRotation",
+							"filename": "Entity_GetRotation"
+						},
+						{
+							"title": "GetQuaternion",
+							"filename": "Entity_GetQuaternion"
+						},
+						{
+							"title": "GetScale",
+							"filename": "Entity_GetScale"
+						},
+						{
+							"title": "GetVelocity",
+							"filename": "Entity_GetVelocity"
+						},
+						{
+							"title": "GetWorld",
+							"filename": "Entity_GetWorld"
 						}						
 					]					
 				},	
