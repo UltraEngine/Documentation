@@ -1712,6 +1712,10 @@
 							"filename": "World_ClearCollisionResponses"
 						},
 						{
+							"title": "GetCollisionResponse",
+							"filename": "World_GetCollisionResponse"
+						},						
+						{
 							"title": "GetEntitiesInArea",
 							"filename": "World_GetEntitiesInArea"
 						},
