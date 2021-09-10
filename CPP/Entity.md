@@ -23,13 +23,13 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [AlignToVector](Entity_AlignToVector.md) | Method |  |
 | [Copy](Entity_Copy.md) | Method |  |
 | [FindChild](Entity_FindChild.md) | Method |  |
+| [GetAngularVelocity](Entity_GetOmega.md) | Method | |
 | [GetCollider](Entity_GetCollider.md) | Method | |
 | [GetCollisionType](Entity_GetCollisionType.md) | Method | |
 | [GetColor](Entity_GetColor.md) | Method | |
 | [GetBounds](Entity_GetBounds.md) | Method |  |
 | [GetDistance](Entity_GetDistance.md) | Method |  |
 | [GetMass](Entity_GetMass.md) | Method |  |
-| [GetAngularVelocity](Entity_GetOmega.md) | Method | |
 | [GetParent](Entity_GetParent.md) | Method | |
 | [GetPickMode](Entity_GetPickMode.md) | Method | |
 | [GetPosition](Entity_GetPosition.md) | Method |  |
