@@ -4,8 +4,8 @@ This function loads a collision shape from a [collision file](Collision_File_For
 
 ## Syntax
 
-- shared_ptr<[Collider](Collision.md)\> **LoadCollider**(const WString& path, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
-- shared_ptr<[Collider](Collision.md)\> **LoadCollider**(shared_ptr<[Stream](Stream.md)\> stream, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
+- shared_ptr<[Collider](Collider.md)\> **LoadCollider**(const WString& path, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
+- shared_ptr<[Collider](Collider.md)\> **LoadCollider**(shared_ptr<[Stream](Stream.md)\> stream, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
 
 |Parameter|Description|
 |---|---|
