@@ -4,14 +4,13 @@ This method returns a unique copy of the entity. Resources such as model meshes 
 
 ## Syntax
 
-- shared_ptr<[Entity](Entity_32f.md)\> Copy()
-- shared_ptr<[Entity](Entity_32f.md)\> Copy(shared_ptr<[World](World.md)> world, const bool recursive = true, const bool callstart = true)
+- shared_ptr<[Entity](Entity.md)\> **Copy**(shared_ptr<[World](World.md)> world, const bool recursive = true, const bool callstart = true)
 
 | Parameter | Description |
 | --- | --- |
-| **world** | world to create new copy in | 
-| **recursive** | if set to true the entity subhierarchy will also be copied |
-| **callstart** | if set to true the Start function will be called for all attached actors and scripts |
+| world | world to create new copy in | 
+| recursive | if set to true the entity subhierarchy will also be copied |
+| callstart | if set to true the Start function will be called for all attached actors and scripts |
 
 ```c++
 #include "UltraEngine.h"
