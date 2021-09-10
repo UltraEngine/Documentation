@@ -9,14 +9,8 @@ This method performs a ray intersection test on the world.
 
 | Parameter | Description |
 | --- | --- |
-| p0 | ray start position, in local space |
-| p1 | ray end position, in local space |
-| x0 | X component of the ray start position |
-| y0 | Y component of the ray start position |
-| z0 | Z component of the ray start position |
-| x1 | X component of the ray end position |
-| y1 | Y component of the ray end position |
-| z1 | Z component of the ray end position |
+| p0, (x0, y0, z0) | ray start position |
+| p1, (x1, y1, z1) | ray end position |
 | pickinfo | structure containing information about the ray intersection result |
 | radius | if greater than zero a swept sphere intersection test will be performed |
 | closest | if set to true the closest intersected point will be found, otherwise the routine will return on the first hit |
