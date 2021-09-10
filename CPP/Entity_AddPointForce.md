@@ -4,19 +4,19 @@ This method applies a force, measured in Newtons, to an entity at a specified po
 
 ## Syntax
 
-- void **AddPointForce**(const float fx, const float fy, const float fz, const float x, const float y, const float z, const bool 
-- void **AddPointForce**(const [Vec3](Vec3.md)& force, const [Vec3](Vec3.md)& position), const bool global = true)
+- void **AddPointForce**(const dFloat fx, const dFloat fy, const dFloat fz, const dFloat x, const dFloat y, const dFloat z, const bool 
+- void **AddPointForce**(const [xVec3](xVec3.md)& force, const [xVec3](xVec3.md)& position), const bool global = true)
 
 | Parameter | Description |
 | --- | --- |
-| **fx** | x component of the force to add |
-| **fy** | y component of the force to add |
-| **fz** | z component of the force to add |
-| **x** | x component of point where the force is applied |
-| **y** | y component of point where the force is applied |
-| **z** | z component of point where the force is applied |
-| **force** | force to add |
-| **position** | point where the force is applied |
+| force | force to add |
+| position | point where the force is applied |
+| fx | X component of the force to add |
+| fy | Y component of the force to add |
+| fz | Z component of the force to add |
+| x | X component of point where the force is applied |
+| y | Y component of point where the force is applied |
+| z | Z component of point where the force is applied |
 
 ## Example
 
