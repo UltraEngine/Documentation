@@ -16,48 +16,48 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | rotation | const [xVec3](xVec3.md)& | read-only Euler rotation in local space | 
 | quaternion | const [xQuat](xQuat.md)& | read-only rotation in local space |
 | scale | const [xVec3](xVec3.md)& | read-only scale |
-| [AddForce](Entity_AddForce_32f.md) | Method | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
-| [AddPointForce](Entity_AddPointForce_32f.md) |Method |  |
+| [AddForce](Entity_AddForce.md) | Method | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
+| [AddPointForce](Entity_AddPointForce.md) | Method |  |
 [3dkit] | [AddComponent](Entity_AddComponent.md) | Method |  |
-| [AddTorque](Entity_AddTorque_32f.md) |Method |  |
-| [AlignToVector](Entity_AlignToVector_32f.md) |Method |  |
-| [Copy](Entity_Copy.md) |Method |  |
-| [FindChild](Entity_FindChild.md) |Method |  |
+| [AddTorque](Entity_AddTorque.md) | Method |  |
+| [AlignToVector](Entity_AlignToVector.md) | Method |  |
+| [Copy](Entity_Copy.md) | Method |  |
+| [FindChild](Entity_FindChild.md) | Method |  |
 | [GetCollider](Entity_GetCollider.md) | Method | |
 | [GetCollisionType](Entity_GetCollisionType.md) | Method | |
 | [GetColor](Entity_GetColor.md) | Method | |
-| [GetBounds](Entity_GetBounds_32f.md) |Method |  |
-| [GetDistance](Entity_GetDistance_32f.md) |Method |  |
-| [GetMass](Entity_GetMass_32f.md) |Method |  |
-| [GetAngularVelocity](Entity_GetOmega_32f.md) | Method | |
+| [GetBounds](Entity_GetBounds.md) | Method |  |
+| [GetDistance](Entity_GetDistance.md) | Method |  |
+| [GetMass](Entity_GetMass.md) | Method |  |
+| [GetAngularVelocity](Entity_GetOmega.md) | Method | |
 | [GetParent](Entity_GetParent.md) | Method | |
 | [GetPickMode](Entity_GetPickMode.md) | Method | |
-| [GetPosition](Entity_GetPosition_32f.md) |Method |  |
-| [GetRotation](Entity_GetRotation_32f.md) | Method | |
-| [GetQuaternion](Entity_GetQuaternion_32f.md) | Method | |
-| [GetScale](Entity_GetScale_32f.md) | Method | |
-| [GetShadowMode](Entity_GetShadowMode.md) |Method |  |
-| [GetVelocity](Entity_GetVelocity_32f.md) |Method |  |
+| [GetPosition](Entity_GetPosition.md) | Method |  |
+| [GetRotation](Entity_GetRotation.md) | Method | |
+| [GetQuaternion](Entity_GetQuaternion.md) | Method | |
+| [GetScale](Entity_GetScale.md) | Method | |
+[3dkit] | [GetShadowMode](Entity_GetShadowMode.md) | Method |  |
+| [GetVelocity](Entity_GetVelocity.md) | Method |  |
 | [GetWorld](Entity_GetWorld.md) | Method | |
-| [Hide](Entity_Hide.md) |Method |  |
+| [Hide](Entity_Hide.md) | Method |  |
 | [Hidden](Entity_Hidden.md) | Method | |
-| [Instantiate](Entity_Instantiate.md) |Method |  |
-| [Move](Entity_Move_32f.md) | Method | |
-| [Pick](Entity_Pick_32f.md) | Method | |
-| [Point](Entity_Point_32f.md) | Method | |
+| [Instantiate](Entity_Instantiate.md) | Method |  |
+| [Move](Entity_Move.md) | Method | |
+| [Pick](Entity_Pick.md) | Method | |
+| [Point](Entity_Point.md) | Method | |
 | [Reset](Entity_Reset.md) | Method | |
 | [RecordCollisions](Entity_RecordCollisions.md) | Method | sets the recording mode for entity collision detection |
-| [SetCollision](Entity_SetCollision.md) |Method |  |
+| [SetCollision](Entity_SetCollision.md) | Method |  |
 | [SetCollisionType](Entity_SetCollisionType.md) | Method | |
 | [SetColor](Entity_SetColor.md) | Method | |
 | [SetMass](Entity_SetMass.md) | Method | |
-| [SetAngularVelocity](Entity_SetOmega_32f.md) |Method |  |
+| [SetAngularVelocity](Entity_SetOmega.md) |Method |  |
 | [SetParent](Entity_SetParent.md) | Method | |
 | [SetPickMode](Entity_SetPickMode.md) | Method | |
-| [SetPosition](Entity_SetPosition_32f.md) | Method | |
-| [SetRotation](Entity_SetRotation_32f.md) | Method | |
-| [SetScale](Entity_SetScale_32f.md) | Method | |
-| [SetVelocity](Entity_SetVelocity_32f.md) | Method | |
+| [SetPosition](Entity_SetPosition.md) | Method | |
+| [SetRotation](Entity_SetRotation.md) | Method | |
+| [SetScale](Entity_SetScale.md) | Method | |
+| [SetVelocity](Entity_SetVelocity.md) | Method | |
 | [Show](Entity_Show.md) | Method | |
-| [Translate](Entity_Translate_32f.md) | Method | |
-| [Turn](Entity_Turn_32f.md) | Method | |
+| [Translate](Entity_Translate.md) | Method | |
+| [Turn](Entity_Turn.md) | Method | |
