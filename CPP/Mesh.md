@@ -1,8 +1,10 @@
-# Mesh #
+# Mesh
 
 The mesh class is a collection of vertices and polygons that are visible in the 3D world.
 
-| Property | Type | Description |
+## Properties
+
+| Name | Type | Description |
 | --- | --- | --- |
 | indices | vector<uint32_t\> | Array of polygon indices. |
 | material | shared_ptr<[Material](Material.md)\>& | Read-only material object. |
