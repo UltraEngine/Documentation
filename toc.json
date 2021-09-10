@@ -1269,6 +1269,10 @@
 							"filename": "iVec4"
 						},				
 						{
+							"title": "Quat",
+							"filename": "Quat"
+						},				
+						{
 							"title": "Vec2",
 							"filename": "Vec2",
 							"topics":
