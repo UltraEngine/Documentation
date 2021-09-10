@@ -5,7 +5,7 @@ This method adds a physical force to the object, measured in Newtons.
 ## Syntax
 
 - void **AddForce**(const dFloat x, const dFloat y, const dFloat z, const bool global = true)
-- void **AddForce**(const [Vec3](Vec3.md)& force, const bool global = true)
+- void **AddForce**(const [xVec3](xVec3.md)& force, const bool global = true)
 
 | Parameter | Description |
 | ------ | ------ |
