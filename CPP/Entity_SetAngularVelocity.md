@@ -9,7 +9,7 @@ This method sets the angular velocity of an entity.
 
 | Parameter | Description |
 | --- | --- |
-| omega | angular velocity to set, in radians per second |
+| omega | angular velocity to set, in degrees per second |
 | x | X component of angular velocity |
 | y | Y component of angular velocity |
 | z | Z component of angular velocity |
