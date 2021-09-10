@@ -4,7 +4,7 @@ This function creates a new slider joint. A hinge joint spins around an axis.
 
 ## Syntax
 
-shared_ptr<[Joint](Joint.md)> **CreateKinematicJoint**(shared_ptr<[Entity](Entity.md)> entity)
+- shared_ptr<[Joint](Joint.md)> **CreateKinematicJoint**(shared_ptr<[Entity](Entity.md)> entity)
 
 ## Returns
 
