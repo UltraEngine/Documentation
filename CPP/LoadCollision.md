@@ -1,7 +1,9 @@
-# LoadCollider #
+# LoadCollider
+
 This function loads a collision shape from a [collision file](Collision_File_Format.md). Collision objects can be saved to a file by calling the [Save](Asset_Save.md) method.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[Collider](Collision.md)\> **LoadCollider**(const WString& path, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
 - shared_ptr<[Collider](Collision.md)\> **LoadCollider**(shared_ptr<[Stream](Stream.md)\> stream, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
 
@@ -11,10 +13,12 @@ This function loads a collision shape from a [collision file](Collision_File_For
 |stream|open stream to read from|
 |flags|optional load settings|
 
-## Returns ##
+## Returns
+
 Returns the loaded collider object if it was successfully loaded, otherwise NULL is returned.
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 #include "Project.h"
