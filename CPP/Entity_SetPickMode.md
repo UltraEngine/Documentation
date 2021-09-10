@@ -1,9 +1,10 @@
-# Entity::SetPickMode #
+# Entity::SetPickMode
 
-## Syntax ##
-- void **SetPickMode**(const [PickMode](Constants.md) pickmode)
+This sets the pick mode of an entity for raycasting operations.
 
-### Parameters ###
-| Name | Description |
+## Syntax
+- void **SetPickMode**(const [PickMode](Constants.md#PickMode) pickmode)
+
+| Parameter | Description |
 | -----|-----|
-| **pickmode** | pickmode to set (PICK_NONE, PICK_SPHERE, or PICK_MESH) |
+| pickmode | pickmode to set (PICK_NONE, PICK_SPHERE, or PICK_MESH) |
