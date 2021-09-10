@@ -9,6 +9,6 @@ This class stores information about a collision.
 | Name | Type | Description |
 |---|---|---|
 | entities | array<[Entity](Entity.md), 2> | colliding entities |
-| position | [Vec3](Vec3.md) | collision position |
-| normal | [Vec3](Vec3.md) | collision normal |
-| speed | float | collision speed |
+| position | [xVec3](xVec3.md) | collision position |
+| normal | [xVec3](xVec3.md) | collision normal |
+| speed | dFloat | collision speed |
