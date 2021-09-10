@@ -1,4 +1,4 @@
-# Joint #
+# Joint
 
 **Base Class:** [Object](Object.md)
 
@@ -8,24 +8,19 @@ This class creates a physical constraint between two entities. Joints can use li
 
 | Name | Type | Description |
 |---|---|----|
-| child | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only child entity |
-| parent | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only parent entity |
-| Break | Method | Breaks the joint. |
-| SetSpring | Method | Breaks the joint. |
-| GetSpring | Method | Breaks the joint. |
-| SetLimits | Method | Breaks the joint. |
-| GetLimits | Method | Breaks the joint. |
-| SetStiffness | Method | Breaks the joint. |
-| GetStiffness | Method | Breaks the joint. |
-| EnableLimits | Method | Breaks the joint. |
-| DisableLimits | Method | Breaks the joint. |
-| SetActuatorSpeed | Method | Breaks the joint. |
-| SetActuatorPower | Method | Breaks the joint. |
-| GetActuatorSpeed | Method | Breaks the joint. |
-| SetFriction | Method | Breaks the joint. |
-| GetFriction | Method | Breaks the joint. |
-| CreateBallAndSocketJoint | Function | Creates a new ball and soxket joint. |
-| CreateHingeJoint | Function | Creates a new hinge joint. |
-| CreateKinematicJoint | Function | Creates a new kinematic joint. |
-| CreatePlaneJoint | Function | Creates a new plane joint. |
-| CreateSliderJoint | Function | Creates a new slider joint. |
+| child | const shared_ptr<[Entity](Entity.md)\>& | Read-only child entity |
+| parent | const shared_ptr<[Entity](Entity.md)\>& | Read-only parent entity |
+| [SetLimits](Joint_SetLimits.md) | Method | Breaks the joint |
+| [GetLimits](Joint_GetLimits.md) | Method | Breaks the joint |
+| [EnableLimits](Joint_EnableLimits.md) | Method | Breaks the joint |
+| [EnableMotor](Joint_EnableMotor.md) | Method | Breaks the joint |
+| [SetMaxForce](Joint_SetMaxForce.md) | Method | Breaks the joint |
+| [SetMaxTorque](Joint_SetMaxTorque.md) | Method | Breaks the joint |(Joint_GetMotorSpeed.md)
+| [SetMotorSpeed](Joint_SetMotorSpeed.md) | Method | Breaks the joint |
+| [SetMotorPower](Joint_SetMotorPower.md) | Method | Breaks the joint |
+| [SetPosition](Joint_SetPosition.md) | Method | Breaks the j(Joint_GetMotorSpeed.md)oint |
+| [SetRotation](Joint_SetRotation.md) | Method | Breaks the joint |
+| [GetMotorSpeed](Joint_GetMotorSpeed.md) | Method | Breaks the joint |
+| [CreateHingeJoint](CreateHingeJoint.md) | Function | Creates a new hinge joint |
+| [CreateKinematicJoint](CreateKinematicJoint.md) | Function | Creates a new kinematic joint |
+| [CreateSliderJoint](CreateSliderJoint.md) | Function | Creates a new slider joint |
