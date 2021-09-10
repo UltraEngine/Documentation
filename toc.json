@@ -786,6 +786,11 @@
 							]							
 						},
 						{
+							"title": "Mesh",
+							"filename": "Mesh",
+							"2dk": true
+						},						
+						{
 							"title": "PostEffect",
 							"filename": "PostEffect",
 							"2dk": true,
@@ -820,7 +825,12 @@
 									"filename": "LoadTexture"
 								}
 							]							
-						},					
+						},
+						{
+							"title": "Vertex",
+							"filename": "Vertex",
+							"2dk": true
+						},						
 						{
 							"title": "Window",
 							"filename": "Window",
