@@ -4,7 +4,9 @@
 
 This class creates a physical constraint between two entities. Joints can use limits and actuators (motors) to control their range of motion and movement.
 
-| Property | Type | Description |
+## Properties
+
+| Name | Type | Description |
 |---|---|----|
 | child | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only child entity |
 | parent | const shared_ptr<[Entity](Entity_32f.md)\>& | Read-only parent entity |
