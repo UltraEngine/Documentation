@@ -15,10 +15,10 @@ This class creates a physical constraint between two entities. Joints can use li
 | [EnableLimits](Joint_EnableLimits.md) | Method | Breaks the joint |
 | [EnableMotor](Joint_EnableMotor.md) | Method | Breaks the joint |
 | [SetMaxForce](Joint_SetMaxForce.md) | Method | Breaks the joint |
-| [SetMaxTorque](Joint_SetMaxTorque.md) | Method | Breaks the joint |(Joint_GetMotorSpeed.md)
+| [SetMaxTorque](Joint_SetMaxTorque.md) | Method | Breaks the joint |
 | [SetMotorSpeed](Joint_SetMotorSpeed.md) | Method | Breaks the joint |
 | [SetMotorPower](Joint_SetMotorPower.md) | Method | Breaks the joint |
-| [SetPosition](Joint_SetPosition.md) | Method | Breaks the j(Joint_GetMotorSpeed.md)oint |
+| [SetPosition](Joint_SetPosition.md) | Method | Breaks the joint |
 | [SetRotation](Joint_SetRotation.md) | Method | Breaks the joint |
 | [GetMotorSpeed](Joint_GetMotorSpeed.md) | Method | Breaks the joint |
 | [CreateHingeJoint](CreateHingeJoint.md) | Function | Creates a new hinge joint |
