@@ -1999,6 +1999,10 @@
 							"filename": "World_ClearCollisionResponses"
 						},
 						{
+							"title": "CreateWorld",
+							"filename": "CreateWorld"
+						},
+						{
 							"title": "GetCollisionResponse",
 							"filename": "World_GetCollisionResponse"
 						},						
@@ -2029,10 +2033,6 @@
 						{
 							"title": "Update",
 							"filename": "World_Update"
-						},
-						{
-							"title": "CreateWorld",
-							"filename": "CreateWorld"
 						}		
 					]			
 				}				
