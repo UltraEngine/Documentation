@@ -360,7 +360,99 @@
 						{
 							"title": "GetWorld",
 							"filename": "Entity_GetWorld"
-						}						
+						},
+						{
+							"title": "Hidden",
+							"filename": "Entity_Hidden"
+						},
+						{
+							"title": "Hide",
+							"filename": "Entity_Hide"
+						},
+						{
+							"title": "Instantiate",
+							"filename": "Entity_Instantiate"
+						},
+						{
+							"title": "Move",
+							"filename": "Entity_Move"
+						},
+						{
+							"title": "Pick",
+							"filename": "Entity_Pick"
+						},
+						{
+							"title": "Point",
+							"filename": "Entity_Point"
+						},
+						{
+							"title": "RecordCollisions",
+							"filename": "Entity_RecordCollisions"
+						},
+						{
+							"title": "SetCollider",
+							"filename": "Entity_SetCollider"
+						},
+						{
+							"title": "SetCollisionType",
+							"filename": "Entity_SetCollisionType"
+						},
+						{
+							"title": "SetColor",
+							"filename": "Entity_SetColor"
+						},
+						{
+							"title": "SetMass",
+							"filename": "Entity_SetMass"
+						},
+						{
+							"title": "SetAngularVelocity",
+							"filename": "Entity_SetAngularVelocity"
+						},
+						{
+							"title": "SetParent",
+							"filename": "Entity_SetParent"
+						},
+						{
+							"title": "SetPickMode",
+							"filename": "Entity_SetPickMode"
+						},
+						{
+							"title": "SetPosition",
+							"filename": "Entity_SetPosition"
+						},
+						{
+							"title": "SetQuaternion",
+							"filename": "Entity_SetQuaternion"
+						},
+						{
+							"title": "SetRotation",
+							"filename": "Entity_SetRotation"
+						},
+						{
+							"title": "SetScale",
+							"filename": "Entity_SetScale"
+						},
+						{
+							"title": "SetVelocity",
+							"filename": "Entity_SetVelocity"
+						},
+						{
+							"title": "Show",
+							"filename": "Entity_Show"
+						},
+						{
+							"title": "Sync",
+							"filename": "Entity_Sync"
+						},
+						{
+							"title": "Translate",
+							"filename": "Entity_Translate"
+						},
+						{
+							"title": "Turn",
+							"filename": "Entity_Turn"
+						}
 					]					
 				},	
 				{
