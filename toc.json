@@ -1267,10 +1267,21 @@
 						{
 							"title": "iVec4",
 							"filename": "iVec4"
-						},				
+						},	
+						{
+							"title": "Mat3",
+							"filename": "Mat3",
+							"2dk": true
+						},
+						{
+							"title": "Mat4",
+							"filename": "Mat4",
+							"2dk": true
+						},
 						{
 							"title": "Quat",
-							"filename": "Quat"
+							"filename": "Quat",
+							"2dk": true
 						},				
 						{
 							"title": "Vec2",
