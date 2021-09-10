@@ -1,5 +1,7 @@
 # Mesh
 
+**Base class:** [Object](Object.md)
+
 The mesh class is a collection of vertices and polygons that are visible in the 3D world.
 
 ## Properties
