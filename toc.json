@@ -302,6 +302,10 @@
 							"filename": "Entity_FindChild"
 						},
 						{
+							"title": "GetAngularVelocity",
+							"filename": "Entity_GetAngularVelocity"
+						},
+						{
 							"title": "GetCollider",
 							"filename": "Entity_GetCollider"
 						},
@@ -324,11 +328,7 @@
 						{
 							"title": "GetMass",
 							"filename": "Entity_GetMass"
-						},
-						{
-							"title": "GetAngularVelocity",
-							"filename": "Entity_GetAngularVelocity"
-						},
+						},						
 						{
 							"title": "GetParent",
 							"filename": "Entity_GetParent"
@@ -390,6 +390,10 @@
 							"filename": "Entity_RecordCollisions"
 						},
 						{
+							"title": "SetAngularVelocity",
+							"filename": "Entity_SetAngularVelocity"
+						},
+						{
 							"title": "SetCollider",
 							"filename": "Entity_SetCollider"
 						},
@@ -404,10 +408,6 @@
 						{
 							"title": "SetMass",
 							"filename": "Entity_SetMass"
-						},
-						{
-							"title": "SetAngularVelocity",
-							"filename": "Entity_SetAngularVelocity"
 						},
 						{
 							"title": "SetParent",
