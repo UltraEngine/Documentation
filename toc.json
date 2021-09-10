@@ -1666,6 +1666,18 @@
 							"topics":
 							[
 								{
+									"title": "CreateCompoundCollider",
+									"filename": "CreateCompoundCollider"
+								},
+								{
+									"title": "CreateCircleCollider",
+									"filename": "CreateCircleCollider"
+								},
+								{
+									"title": "CreateRectCollider",
+									"filename": "CreateRectCollider"
+								},					
+								{
 									"title": "LoadCollider",
 									"filename": "LoadCollider"
 								}
