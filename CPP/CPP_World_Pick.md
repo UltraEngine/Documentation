@@ -22,6 +22,6 @@ This method performs a ray intersection test on the world.
 | closest | if set to true the closest intersected point will be found, otherwise the routine will return on the first hit |
 | collisiontype | optional collision type filter |
 
-# Returns
+## Returns
 
 If the ray intersects the entity, the PickInfo structure is filled in and true is returned, otherwise false is returned.
