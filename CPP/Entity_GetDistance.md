@@ -4,7 +4,7 @@ This method is used to calculate the distance in meters to another entity or to 
 
 ## Syntax
 
-- dFloat **GetDistance**(shared_ptr<[Entity](Entity_.md)\> entity)
+- dFloat **GetDistance**(shared_ptr<[Entity](Entity.md)\> entity)
 - dFloat **GetDistance**(const dFloat x, const dFloat y, const dFloat z)
 - dFloat **GetDistance**(shared_ptr<[xVec3](xVec3.md)\> point)
 
