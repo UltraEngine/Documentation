@@ -10,10 +10,10 @@ The world class is a container for entities.
 | physicsengine | const [PhysicsEngine](Constants.md#PhysicsEngine)& | read-only physics engine in use |
 | physicsstats | [PhysicsStats](PhysicsStats.md) |  |
 | renderstats | [RenderStats](RenderStats.md) |  |
-| GetEntitiesInArea | Method | |
+| [GetEntitiesInArea](World_GetEntitiesInArea.md) | Method | |
 | [RecordStats](World_RecordStats.md) | Method | |
 | [Render](World_Render.md) | Method | |
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | |
-| SetGravity | Method | |
+| [SetGravity](World_SetGravity.md) | Method | |
 | [Update](World_Update.md) | Method | |
 | [CreateWorld](CreateWorld.md) | Function | |
