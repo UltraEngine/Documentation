@@ -4,7 +4,9 @@
 
 This class provides an interface for loading and creating collision shapes for physics interactions.
 
-| Property | Type | Description |
+## Properties
+
+| Name | Type | Description |
 | ----- | ----- | ----- |
 [3dkit] | [CreateBoxCollider](CreateCollisionBox_FP.md) | Function | Creates a box collision shape for physics interactions. |
 | [CreateCompoundCollider](CreateCollisionCompound.md) | Function | Creates a compound collision shape for physics interactions. |
@@ -17,7 +19,7 @@ This class provides an interface for loading and creating collision shapes for p
 [3dkit] | [CreateSphereCollider](CreateCollisionSphere_32f.md) | Function | Creates a sphere collision shape for physics interactions. |
 | [LoadCollider](LoadCollider.md) | Function | Loads a collision shape from a file |
 
-#### JSON File Structure
+## JSON File Structure
 
 The collider file format is a JSON-based ASCII format. PHY files consist of one top-level *collision* object that contains an array of shapes.
 
