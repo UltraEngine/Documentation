@@ -51,6 +51,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [SetCollisionType](Entity_SetCollisionType.md) | Method | |
 | [SetColor](Entity_SetColor.md) | Method | |
 | [SetDamping](Entity_SetDamping.md) | Method | |
+| [SetElasticity](Entity_SetElasticity.md) | Method | |
 | [SetFriction](Entity_SetFriction.md) | Method | |
 | [SetMass](Entity_SetMass.md) | Method | |
 | [SetParent](Entity_SetParent.md) | Method | |
