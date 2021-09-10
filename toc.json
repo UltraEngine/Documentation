@@ -422,6 +422,10 @@
 							"filename": "Entity_SetPosition"
 						},
 						{
+							"title": "SetRenderLayers",
+							"filename": "Entity_SetRenderLayers"
+						},
+						{
 							"title": "SetRotation",
 							"filename": "Entity_SetRotation"
 						},
