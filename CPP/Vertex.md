@@ -1,6 +1,6 @@
 # Vertex
 
-This class stores properties for a single mesh vertex.
+This class stores properties for a single mesh vertex. THe minimal amount of data is efficiently packed into a small structure in order to maximize speed.
 
 ## Properties
 
