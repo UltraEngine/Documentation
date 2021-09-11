@@ -4,9 +4,9 @@ This method adds a polygon to a mesh.
 
 ## Syntax
 
-- int **AddPolygon**(const int a, const int b)
-- int **AddPolygon**(const int a, const int b, const int c)
-- int **AddPolygon**(const int a, const int b, const int c, const int d)
+- uint32_t **AddPolygon**(const uint32_t a, const uint32_t b)
+- uint32_t **AddPolygon**(const uint32_t a, const uint32_t b, const uint32_t c)
+- uint32_t **AddPolygon**(const uint32_t a, const uint32_t b, const uint32_t c, const uint32_t d)
 
 | Parameter | Description |
 |---|---|
