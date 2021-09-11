@@ -4,6 +4,8 @@
 
 This class allows multithreaded applications to perform blocking operations. A condition can be signaled by one thread and waited on by another thread, for thread synchronization.
 
+A condition will provide faster threading performance than frequent mutex locks.
+
 ## Properties
 
 | Name | Type | Description |
