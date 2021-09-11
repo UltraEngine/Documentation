@@ -15,4 +15,8 @@ The mesh class is a collection of vertices and polygons that are visible in the 
 | [AddPolygon](Mesh_AddPolygon.md) | Method | adds a new polygon to the mesh |
 | [Finalize](Mesh_Finalize.md) | Method | sends the mesh data to the rendering thread |
 | [SetMaterial](Mesh_SetMaterial.md) | Method | sets the mesh material |
+| [SetVertexPosition](Mesh_SetVertexPosition) | Method | sets the position of a single vertex |
+| [SetVertexNormal](Mesh_SetVertezNormal) | Method | sets the position of a single vertex |
+| [SetVertexTexCoords](Mesh_SetVertexTexCoords) | Method | sets the texture coordinates of a single vertex |
+| [SetVertexDisplacement](Mesh_SetVertexDisplacement) | Method | sets the displacement of a single vertex |
 | [CreateMesh](Mesh_CreateMesh.md) | Function | creates a new mesh object |
