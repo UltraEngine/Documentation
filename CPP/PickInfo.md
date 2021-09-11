@@ -2,7 +2,7 @@
 
 **Base class:** [Object](Object.md)
 
-This class contains information from the results of a ray cast test.
+This class contains information from the results of a ray cast.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
