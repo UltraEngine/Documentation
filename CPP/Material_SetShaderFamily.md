@@ -6,3 +6,6 @@ This methods sets the shader family of the material.
 
 - void **SetShaderFamily**(shared_ptr<[ShaderFamily](ShaderFamily.md)\> shaderfamily)
 
+| Parameter | Description |
+|---|---|
+| shaderfamily | shader family to set |
