@@ -713,7 +713,28 @@
 							"filename": "WriteFile"
 						}
 					]							
-				},		
+				},
+				{
+					"title": "Geometry",
+					"2dk": true,
+					"topics":
+					[
+						{
+							"title": "Mesh",
+							"filename": "Mesh"							
+						},
+						{
+							"title": "PickInfo",
+							"filename": "PickInfo"
+						},						
+						{
+							"title": "Vertex",
+							"filename": "Vertex",
+							"2dk": true
+						},
+						
+					]
+				},
 				{
 					"title": "Graphics",
 					"topics":
@@ -784,11 +805,6 @@
 									"filename": "Material_SetTransparent"
 								}							
 							]							
-						},
-						{
-							"title": "Mesh",
-							"filename": "Mesh",
-							"2dk": true
 						},						
 						{
 							"title": "PostEffect",
@@ -825,12 +841,7 @@
 									"filename": "LoadTexture"
 								}
 							]							
-						},
-						{
-							"title": "Vertex",
-							"filename": "Vertex",
-							"2dk": true
-						},						
+						},					
 						{
 							"title": "Window",
 							"filename": "Window",
@@ -1804,17 +1815,6 @@
 						}				
 					]		
 				},
-				{
-					"title": "Raycasting",
-					"filename": "Raycasting",
-					"topics":
-					[
-						{
-							"title": "PickInfo",
-							"filename": "PickInfo"
-						}				
-					]		
-				},				
 				{
 					"title": "Statistics",
 					"2dk": true,
