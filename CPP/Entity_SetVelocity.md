@@ -9,8 +9,5 @@ This method sets the velocity of an entity.
 
 | Parameter | Description |
 | --- | --- |
-| velocity | velocity to set, in meters per second |
-| x | X component of velocity |
-| y | Y component of velocity |
-| z | Z component of velocity |
+| velocity, (x, y, z) | velocity to set, in meters per second |
 | global | if set to true velocity is in global space, otherwise local space is used |
