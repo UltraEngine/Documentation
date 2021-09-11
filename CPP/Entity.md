@@ -9,7 +9,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | Name | Type | Description |
 |---|---|---|
 | color | const [Vec4](Vec4.md)& | read-only object color |
-| kids | vector<shared_ptr<[Entity](Entity.md)\> \>& | read-only array of child entities |
+| kids | const vector<shared_ptr<[Entity](Entity.md)\> \>& | read-only array of child entities |
 | name | [WString](WString.md) | name of the entity | 
 | matrix | const [xMat4](xMat4.md)& | read-only 4x4 matrix |
 | position | const [xVec3](xVec3.md)& | read-only position in local space |
