@@ -4,7 +4,7 @@
 
 ## Syntax 
 
-- void **SetTexture**(shared_ptr<[Texture](Texture)\>& texture, const [TextureSlot](Constants.md#TextureSlot) index)
+- void **SetTexture**(shared_ptr<[Texture](Texture)\> texture, const [TextureSlot](Constants.md#TextureSlot) index)
 
 | Parameter | Description |
 |---|---|
