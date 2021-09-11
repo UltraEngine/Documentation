@@ -7,23 +7,17 @@ This class stores properties for a single mesh vertex.
 | Name | Type | Description |
 |---|---|---|
 | position | [Vec3](Vec3.md) | vertex position |
+| normal | array<unsigned char, 3> | |
+| displacement | signed char | |
+| texcoords | array<short, 2> | |
+| tangent | array<unsigned char, 4> | |
+| boneweights | array<unsigned char, 4> | |
+| boneindices | array<unsigned char, 4> | |
 | [SetTexCoords](Vertex_SetTexCoords.md) | Method | sets the vertex texture coordinates |
-
-- [Vec3](Vec3) position
-- int materialindex
-- array<unsigned char, 3> normal
-- signed char displacement
-- array<short, 4> texcoords;
-- array<unsigned char, 4> color
-- array<unsigned char, 4> tangent
-- array<unsigned char, 4> boneweights
-- array<unsigned char, 4> boneindices
-- GetBitangent
-- GetColor
-- GetNormal
-- GetTexCoords
-- GetTangent
-- SetColor
-- SetNormal
-- SetTangent
-- SetTexCoords
+| GetBitangent | Method | |
+| GetNormal | Method | |
+| GetTexCoords | Method | |
+| GetTangent | Method | |
+| SetNormal | Method | |
+| SetTangent | Method | |
+| SetTexCoords | Method | |
