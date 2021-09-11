@@ -11,5 +11,5 @@ This class contains information from the results of a ray cast test.
 | entity | [Entity](Entity.md) | |
 | mesh | [Mesh](Mesh.md) | |
 | face | [Face](Face.md) | |
-| polygon | int | |
+| polygon | uint32_t | |
 | [GetTexCoords](PickInfo_GetTexCoords.md) | Method | |
