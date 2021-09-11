@@ -24,7 +24,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [SetVertexBoneWeights](Mesh_SetVertexBoneWeights.md) | Method | sets the bone weighting of a single vertex |
 | [SetVertexDisplacement](Mesh_SetVertexDisplacement.md) | Method | sets the displacement of a single vertex |
 | [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | sets the position of a single vertex |
-| [SetVertexNormal](Mesh_SetVertezNormal.md) | Method | sets the position of a single vertex |
+| [SetVertexNormal](Mesh_SetVertexNormal.md) | Method | sets the position of a single vertex |
 | [SetVertexTexCoords](Mesh_SetVertexTexCoords.md) | Method | sets the texture coordinates of a single vertex |
 | [Translate](Mesh_Translate.md) | Method | |
 | [Transform](Mesh_Transform.md) | Method | |
