@@ -19,5 +19,4 @@ This class stores properties for a single mesh vertex. A minimal amount of data 
 | GetTexCoords | Method | |
 | GetTangent | Method | |
 | SetNormal | Method | |
-| SetTangent | Method | |
 | SetTexCoords | Method | |
