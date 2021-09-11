@@ -7,12 +7,12 @@ This class stores properties for a single mesh vertex.
 | Name | Type | Description |
 |---|---|---|
 | position | [Vec3](Vec3.md) | vertex position |
-| normal | array<unsigned char, 3> | |
-| displacement | signed char | |
-| texcoords | array<short, 2> | |
-| tangent | array<unsigned char, 4> | |
-| boneweights | array<unsigned char, 4> | |
-| boneindices | array<unsigned char, 4> | |
+| normal | array<unsigned char, 3> | vertex normal |
+| displacement | signed char | vertex displacement, for tessellation |
+| texcoords | array<short, 2> | vertex texture coordinates |
+| tangent | array<unsigned char, 4> | vertex tangent, for normal mapping |
+| boneweights | array<unsigned char, 4> | vertex bone weights, for skinned animation |
+| boneindices | array<unsigned char, 4> | vertex bone indices, for skinned animation |
 | [SetTexCoords](Vertex_SetTexCoords.md) | Method | sets the vertex texture coordinates |
 | GetBitangent | Method | |
 | GetNormal | Method | |
