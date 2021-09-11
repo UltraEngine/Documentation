@@ -30,4 +30,4 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [Transform](Mesh_Transform.md) | Method | |
 | [UpdateBounds](Mesh_UpdateBounds.md) | Method | |
 | [UpdateTangents](Mesh_UpdateTangents.md) | Method | |
-| [CreateMesh](Mesh_CreateMesh.md) | Function | creates a new mesh object |
+| [CreateMesh](CreateMesh.md) | Function | creates a new mesh object |
