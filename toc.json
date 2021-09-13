@@ -326,6 +326,10 @@
 							"filename": "Entity_GetDistance"
 						},
 						{
+							"title": "GetHidden",
+							"filename": "Entity_GetHidden"
+						},						
+						{
 							"title": "GetMass",
 							"filename": "Entity_GetMass"
 						},						
@@ -360,14 +364,6 @@
 						{
 							"title": "GetWorld",
 							"filename": "Entity_GetWorld"
-						},
-						{
-							"title": "Hidden",
-							"filename": "Entity_Hidden"
-						},
-						{
-							"title": "Hide",
-							"filename": "Entity_Hide"
 						},
 						{
 							"title": "Instantiate",
@@ -448,10 +444,6 @@
 						{
 							"title": "SetVelocity",
 							"filename": "Entity_SetVelocity"
-						},
-						{
-							"title": "Show",
-							"filename": "Entity_Show"
 						},
 						{
 							"title": "Sync",
