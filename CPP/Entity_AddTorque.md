@@ -9,10 +9,7 @@ This method adds physical torque to the entity, measured in Newton metres.
 
 | Parameter | Description |
 | - | - |
-| torque | torque to add |
-| x | x component of torque to add |
-| y | y component of torque to add |
-| z | z component of torque to add |
+| torque, (x, y, z) | torque to add |
 | global | set to true to indicate a rotation in global space, otherwise the rotation will be in local space |
 
 ```c++
