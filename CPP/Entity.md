@@ -29,6 +29,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [GetColor](Entity_GetColor.md) | Method | |
 | [GetBounds](Entity_GetBounds.md) | Method |  |
 | [GetDistance](Entity_GetDistance.md) | Method |  |
+| [GetHidden](Entity_GetHidden.md) | Method | |
 | [GetMass](Entity_GetMass.md) | Method |  |
 | [GetParent](Entity_GetParent.md) | Method | |
 | [GetPickMode](Entity_GetPickMode.md) | Method | |
@@ -39,8 +40,6 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 [3dkit] | [GetShadowMode](Entity_GetShadowMode.md) | Method |  |
 | [GetVelocity](Entity_GetVelocity.md) | Method |  |
 | [GetWorld](Entity_GetWorld.md) | Method | |
-| [Hidden](Entity_Hidden.md) | Method | |
-| [Hide](Entity_Hide.md) | Method |  |
 | [Instantiate](Entity_Instantiate.md) | Method |  |
 | [Move](Entity_Move.md) | Method | |
 | [Pick](Entity_Pick.md) | Method | |
@@ -53,6 +52,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [SetDamping](Entity_SetDamping.md) | Method | |
 | [SetElasticity](Entity_SetElasticity.md) | Method | |
 | [SetFriction](Entity_SetFriction.md) | Method | |
+| [SetHidden](Entity_SetHidden.md) | Method |  |
 | [SetMass](Entity_SetMass.md) | Method | |
 | [SetParent](Entity_SetParent.md) | Method | |
 | [SetPickMode](Entity_SetPickMode.md) | Method | |
@@ -61,7 +61,6 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [SetRotation](Entity_SetRotation.md) | Method | |
 | [SetScale](Entity_SetScale.md) | Method | |
 | [SetVelocity](Entity_SetVelocity.md) | Method | |
-| [Show](Entity_Show.md) | Method | |
 | [Sync](Entity_Sync.md) | Method | |
 | [Translate](Entity_Translate.md) | Method | |
 | [Turn](Entity_Turn.md) | Method | |
