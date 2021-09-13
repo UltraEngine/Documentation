@@ -10,10 +10,7 @@ This method sets the rotation of an entity in 3-dimensional space, using local o
 
 | Parameter | Description |
 | ------ | ------ |
-| pitch | X component of the specified rotation |
-| yaw | Y component of the specified rotation |
-| roll | Z component of the specified rotation |
-| rotation | the rotation to set, either as a Euler or quaternion |
+| rotation, (pitch, yaw, roll) | the rotation to set, either as a Euler or quaternion |
 | global | indicates whether the rotation should be set in global or local space |
 
 ## Remarks
