@@ -5,6 +5,7 @@ This method sets the target rotation of a motorized hinge or kinematic joint.
 ## Syntax
 
 - void **SetTargetRotation**(const dFloat rotation)
+- void **SetTargetRotation**(const [xQuat](xQuat.md)& rotation)
 - void **SetTargetRotation**(const [xVec3](xVec3.md)& rotation)
 - void **SetTargetRotation**(const dFloat pitch, const dFloat yaw, const dFloat roll)
 
