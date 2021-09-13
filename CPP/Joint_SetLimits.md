@@ -13,7 +13,7 @@ This method sets the angular limit of a hinge joint.
 
 ## Remarks
 
-If both minangle and maxangle are set to zero, joint limits will be disabled.
+If both the minimum and maximum angle are set to zero, joint limits will be disabled.
 
 ## Example
 
