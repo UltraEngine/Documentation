@@ -795,12 +795,28 @@
 									"filename": "LoadMaterial"
 								},
 								{
+									"title": "SetColor",
+									"filename": "Material_SetColor"
+								},
+								{
+									"title": "SetDepthTest",
+									"filename": "Material_SetDepthTest"
+								},
+								{
+									"title": "SetShaderFamily",
+									"filename": "Material_SetShaderFamily"
+								},
+								{
 									"title": "SetTexture",
 									"filename": "Material_SetTexture"
 								},								
 								{
 									"title": "SetTransparent",
 									"filename": "Material_SetTransparent"
+								},								
+								{
+									"title": "SetZSort",
+									"filename": "Material_SetZSort"
 								}							
 							]							
 						},						
