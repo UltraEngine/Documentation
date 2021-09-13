@@ -1,7 +1,14 @@
 # Entity::SetElasticity
 
+This methods sets the elasticity of the entity.
 
 ## Syntax
+
+- void **SetElasticity**(const dFloat elasticity)
+
+| Parameter | Description |
+|---|---|
+| elasticity | elasticity value, between 0 and 1 |
 
 ## Example
 
