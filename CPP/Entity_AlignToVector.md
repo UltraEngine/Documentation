@@ -9,10 +9,7 @@ This method will align one axis of an entity along a specified vector in global 
 
 | Parameter | Description |
 | --- | --- |
-| v | alignment vector  |
-| x | x component of the alignment vector  |
-| y | y component of the alignment vector |
-| z | z component of the alignment vector  |
+| v, (x, y, z) | alignment vector  |
 | axis | entity axis to align to the vector (0, 1, or 2) |
 | rate | can be used to gradually align vector |
 | roll | rotation around axis |
