@@ -11,7 +11,7 @@ This method sets the target rotation of a motorized hinge or kinematic joint.
 
 | Parameter | Description |
 |---|---|
-| position, (pitch, yaw, roll) | target rotation to set |
+| rotation, (pitch, yaw, roll) | target rotation to set |
 
 ## Remarks
 
