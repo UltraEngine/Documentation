@@ -11,6 +11,8 @@ This class creates a physical constraint between two entities. Joints can use li
 | child | const shared_ptr<[Entity](Entity.md)\>& | Read-only child entity |
 | parent | const shared_ptr<[Entity](Entity.md)\>& | Read-only parent entity |
 | [GetLimits](Joint_GetLimits.md) | Method | Breaks the joint |
+| [GetMaxForce](Joint_GetMaxForce.md) | Method | Breaks the joint |
+| [GetMaxTorque](Joint_GetMaxTorque.md) | Method | Breaks the joint |
 | [GetPosition](Joint_GetPosition.md) | Method | Breaks the joint |
 | [GetRotation](Joint_GetRotation.md) | Method | Breaks the joint |
 | [SetLimits](Joint_SetLimits.md) | Method | Breaks the joint |
