@@ -725,12 +725,52 @@
 							"topics":
 							[
 								{
+									"title": "AddPolygon",
+									"filename": "Mesh_AddPolygons"									
+								},
+								{
+									"title": "AddVertex",
+									"filename": "Mesh_AddVertex"									
+								},								
+								{
+									"title": "Copy",
+									"filename": "Mesh_Copy"									
+								},								
+								{
+									"title": "CountPolygons",
+									"filename": "Mesh_CountPolygons"									
+								},								
+								{
+									"title": "Finalize",
+									"filename": "Mesh_Finalize"									
+								},
+								{
+									"title": "Recenter",
+									"filename": "Mesh_Recenter"									
+								},									
+								{
+									"title": "Rotate",
+									"filename": "Mesh_Rotate"									
+								},									
+								{
+									"title": "Scale",
+									"filename": "Mesh_Scale"									
+								},
+								{
+									"title": "Transform",
+									"filename": "Mesh_Transformy"									
+								},									
+								{
+									"title": "Translate",
+									"filename": "Mesh_Translate"									
+								},							
+								{
 									"title": "UpdateBounds",
-									"filename": "PickInfo_UpdateBounds"									
+									"filename": "Mesh_UpdateBounds"									
 								},
 								{
 									"title": "UpdateTangents",
-									"filename": "PickInfo_UpdateTangents"									
+									"filename": "Mesh_UpdateTangents"									
 								}					
 							]							
 						},
