@@ -1,6 +1,6 @@
 # CreateSliderJoint
 
-This function creates a new slider joint. A hinge joint spins around an axis.
+This function creates a new slider joint. A hinge joint moves freely along the joint axis.
 
 ## Syntax
 
