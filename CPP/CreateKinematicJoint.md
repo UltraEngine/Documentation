@@ -16,7 +16,7 @@ Returns a new joint object.
 
 ## Remarks
 
-The kinematic joint can control the entity position and/or rotation.
+A kinematic joint can control the entity position, rotation, or both.
 
 To control the entity position, you must call [Joint::SetMaxForce](Joint_SetMaxForce.md) and [Joint::SetTargetPosition](Joint_SetTargetPosition.md).
 
