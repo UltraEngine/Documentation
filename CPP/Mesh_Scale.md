@@ -10,3 +10,7 @@ This method scales all vertex positions by the specified value.
 | Parameter | Description |
 |---|---|
 | scale, (x, y, z) | mesh vertex scale |
+
+## Remarks
+
+A call to [Mesh::Finalize](Mesh_Finalize.md) must be made before the results of this command are visible.
