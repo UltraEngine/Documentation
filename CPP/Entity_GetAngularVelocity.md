@@ -1,6 +1,6 @@
 # Entity::GetAngularVelocity
 
-Thsi method retrieves the entity's angular velocity.
+This method retrieves the entity's angular velocity after the previous physics update, in degrees per second.
 
 ## Syntax
 
