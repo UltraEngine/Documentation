@@ -10,7 +10,4 @@ This method sets the scale of an entity on all three axes.
 
 | Parameter | Description |
 | ------ | ------ |
-| x | X component of the specified scale. |
-| y | Y component of the specified scale. |
-| z | Z component of the specified scale. |
-| scale | the scale to set, either a Vec3 or a uniform scale value. |
+| scale, (x, y, z) | the scale to set, either a Vec3 or a uniform scale value. |
