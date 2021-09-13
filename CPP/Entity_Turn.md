@@ -10,8 +10,5 @@ This method turns an entity. This will produce smooth rotation free from Gimbal 
 
 | Parameter | Description |
 | --- | --- |
-| **pitch** | x component of the rotation |
-| **yaw** | y component of the rotation |
-| **roll** | z component of the rotation |
-| **rotation** | translation vector |
-| **global** | if set to true global space is used, otherwise local space is used |
+| rotation, (pitch, yaw, roll) | rotation to apply |
+| global | if set to true global space is used, otherwise local space is used |
