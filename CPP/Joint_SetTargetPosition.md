@@ -6,7 +6,7 @@ This method sets the target rotation of a motorized hinge or kinematic joint.
 
 - void **SetTargetPosition**(const dFloat position)
 - void **SetTargetPosition**(const [xVec3](xVec3.md)& position)
-- void **SetTargetPosition**(const dFloat x, const dFloat y, const dFloat z)
+- void **SetTargetPosition**(const dFloat x, const dFloat y, const dFloat z = 0)
 
 | Parameter | Description |
 |---|---|
