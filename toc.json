@@ -410,8 +410,8 @@
 							"filename": "Entity_SetDamping"
 						},
 						{
-							"title": "SetElasicity",
-							"filename": "Entity_SetElasicity"
+							"title": "SetElasticity",
+							"filename": "Entity_SetElasticity"
 						},
 						{
 							"title": "SetFriction",
