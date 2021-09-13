@@ -4,9 +4,9 @@ This method aligns an axis of the entity to point to another entity or a point i
 
 ## Syntax
 
-- void **Point**(shared_ptr<[Entity](Entity.md)\> entity, const int axis = 2, const dFloat rate = 1.0, const dFloat roll = 0.0) 
-- void **Point**(const dFloat x, const dFloat y, const dFloat z, const int axis = 2, const dFloat rate = 1.0, const dFloat roll = 0.0) 
-- void **Point**(const [xVec3](xVec3.md)& position, const int axis = 2, const dFloat rate = 1.0, const dFloat roll = 0.0) 
+- void **Point**(shared_ptr<[Entity](Entity.md)\> entity, const int axis = 2, const dFloat rate = 1, const dFloat roll = 0) 
+- void **Point**(const dFloat x, const dFloat y, const dFloat z, const int axis = 2, const dFloat rate = 1, const dFloat roll = 0) 
+- void **Point**(const [xVec3](xVec3.md)& position, const int axis = 2, const dFloat rate = 1, const dFloat roll = 0) 
 
 | Parameter | Description |
 | --- | --- |
