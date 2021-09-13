@@ -14,6 +14,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | vertices | vector<[Vertex](Vertex.md)\> | array of mesh vertices |
 | [AddVertex](Mesh_AddVertex.md) | Method | adds a new vertex to the mesh |
 | [AddPolygon](Mesh_AddPolygon.md) | Method | adds a new polygon to the mesh |
+| [CountPolygons](Mesh_CountPolygons.md) | Method | |
 | [Copy](Mesh_Copy.md) | Method | |
 | [Finalize](Mesh_Finalize.md) | Method | sends the mesh data to the rendering thread |
 | [Recenter](Mesh_Recenter.md) | Method | |
