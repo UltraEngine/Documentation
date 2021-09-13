@@ -1,19 +1,19 @@
 # Joint::SetLimits
 
-This method sets the angular limit of a hinge joint.
+This method sets the limits of a hinge or slider joint.
 
 ## Syntax
 
-- void **SetLimits**(const dFloat minangle, const dFloat maxangle)
+- void **SetLimits**(const dFloat minlimit, const dFloat maxlimit)
 
 | Parameter | Description |
 |---|---|
-| minangle | minimum joint angle, in degrees |
-| maxangle | maximum joint angle, in degrees |
+| minlimit | minimum joint angle or offset |
+| maxlimit | maximum joint angle or offset |
 
 ## Remarks
 
-If both the minimum and maximum angle are set to zero, joint limits will be disabled.
+If both the minimum and maximum limits are set to zero, joint limits will be disabled.
 
 ## Example
 
