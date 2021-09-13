@@ -1,6 +1,6 @@
 # Mesh::Scale
 
-This method translates all vertex positions by the specified offset.
+This method scales all vertex positions by the specified value.
 
 ## Syntax 
 
@@ -9,4 +9,4 @@ This method translates all vertex positions by the specified offset.
 
 | Parameter | Description |
 |---|---|
-| scale, (x, y, z) | offset to scale mesh vertices by |
+| scale, (x, y, z) | mesh vertex scale |
