@@ -785,11 +785,7 @@
 								{
 									"title": "CreateMaterial",
 									"filename": "CreateMaterial"
-								},
-								{
-									"title": "GetTransparent",
-									"filename": "Material_GetTransparent"
-								},					
+								},				
 								{
 									"title": "LoadMaterial",
 									"filename": "LoadMaterial"
