@@ -9,7 +9,6 @@ This class is used to control the appearance of rendered surfaces.
 | textures | const vector<shared_ptr<[Texture](Texture.md)> >& | read-only list of material textures |
 | color | const [Vec4](Vec4)& | read-only material color |
 | [SetColor](Material_SetColor.md) | Method | sets the material color |
-| [SetDepthTest](Material_SetDepthTest.md) | Method | sets the material depth test mode |
 | [SetShaderFamily](Material_SetShaderFamily.md) | Method | sets the material shader family |
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
 | [SetTransparent](Material_SetTransparent.md) | Method | sets the material transparency mode |
