@@ -6,10 +6,10 @@ This method is used to enable or disable Z-sorting on a per-material basis. Mate
 
 - void **SetZSort**(const bool mode)
 
-## Remarks
-
-Z-sorting should only be used when you have transparent objects that you want to appear in front of other transparent objects. Large numbers of objects that use Z-sorting may result in slower performance.
-
 | Parameter | Description |
 |---|---|
 | mode | Z-sorting mode |
+
+## Remarks
+
+Z-sorting should only be used when you have transparent objects that you want to appear in front of other transparent objects. Large numbers of objects that use Z-sorting may result in slower performance.
