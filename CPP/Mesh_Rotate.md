@@ -11,3 +11,7 @@ This method rotates all vertex positions by the specified rotation.
 | Parameter | Description |
 |---|---|
 | rotation, (pitch, yaw, roll) | rotation of mesh vertices |
+
+## Remarks
+
+A call to [Mesh::Finalize](Mesh_Finalize.md) must be made before the results of this command are visible.
