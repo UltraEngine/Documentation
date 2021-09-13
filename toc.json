@@ -795,6 +795,26 @@
 									"filename": "LoadMaterial"
 								},
 								{
+									"title": "GetColor",
+									"filename": "Material_GetColor"
+								},
+								{
+									"title": "GetShaderFamily",
+									"filename": "Material_GetShaderFamily"
+								},
+								{
+									"title": "GetTexture",
+									"filename": "Material_GetTexture"
+								},								
+								{
+									"title": "GetTransparent",
+									"filename": "Material_GetTransparent"
+								},								
+								{
+									"title": "GetZSort",
+									"filename": "Material_GetZSort"
+								},
+								{
 									"title": "SetColor",
 									"filename": "Material_SetColor"
 								},
