@@ -414,6 +414,10 @@
 							"filename": "Entity_SetFriction"
 						},
 						{
+							"title": "SetHidden",
+							"filename": "Entity_SetHidden"
+						},
+						{
 							"title": "SetMass",
 							"filename": "Entity_SetMass"
 						},
