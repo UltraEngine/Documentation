@@ -8,6 +8,11 @@ This class is used to control the appearance of rendered surfaces.
 |---|---|---|
 | textures | const vector<shared_ptr<[Texture](Texture.md)> >& | read-only list of material textures |
 | color | const [Vec4](Vec4)& | read-only material color |
+| [GetColor](Material_GetColor.md) | Method | gets the material color |
+| [GetShaderFamily](Material_GetShaderFamily.md) | Method | gets the material shader family |
+| [GetTexture](Material_GetTexture.md) | Method | gets a material texture |
+| [GetTransparent](Material_GetTransparent.md) | Method | gets the material transparency mode |
+| [GetZSort](Material_GetZSort.md) | Method | gets the material z-sort mode |
 | [SetColor](Material_SetColor.md) | Method | sets the material color |
 | [SetShaderFamily](Material_SetShaderFamily.md) | Method | sets the material shader family |
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
