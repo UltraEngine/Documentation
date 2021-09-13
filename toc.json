@@ -721,11 +721,29 @@
 					[
 						{
 							"title": "Mesh",
-							"filename": "Mesh"							
+							"filename": "Mesh",
+							"topics":
+							[
+								{
+									"title": "UpdateBounds",
+									"filename": "PickInfo_UpdateBounds"									
+								},
+								{
+									"title": "UpdateTangents",
+									"filename": "PickInfo_UpdateTangents"									
+								}					
+							]							
 						},
 						{
 							"title": "PickInfo",
-							"filename": "PickInfo"
+							"filename": "PickInfo",
+							"topics":
+							[
+								{
+									"title": "GetTexCoords",
+									"filename": "PickInfo_GetTexCoords"									
+								}
+							]
 						},						
 						{
 							"title": "Vertex",
