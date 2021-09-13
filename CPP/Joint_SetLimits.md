@@ -1,5 +1,20 @@
 # Joint::SetLimits
 
+This method sets the angular limit of a hinge joint.
+
+## Syntax
+
+- void **SetLimits**(const dFloat minangle, const dFloat maxangle)
+
+| Parameter | Description |
+|---|---|
+| minangle | minimum joint angle, in degrees |
+| maxangle | maximum joint angle, in degrees |
+
+## Remarks
+
+If both minangle and maxangle are set to zero, joint limits will be disabled.
+
 ## Example
 
 ```c++
@@ -48,7 +63,6 @@ int main(int argc, const char* argv[])
 
     //Create a joint
     auto joint = CreateHingeJoint(Vec3(0), Vec3(0, 0, 1), NULL, sprite1);
-    joint->EnableLimits(true);
     joint->SetLimits(-35,35);
 
     //Main loop
