@@ -9,14 +9,8 @@ This method applies a force, measured in Newtons, to an entity at a specified po
 
 | Parameter | Description |
 | --- | --- |
-| force | force to add |
-| position | point where the force is applied |
-| fx | X component of the force to add |
-| fy | Y component of the force to add |
-| fz | Z component of the force to add |
-| x | X component of point where the force is applied |
-| y | Y component of point where the force is applied |
-| z | Z component of point where the force is applied |
+| force, (fx, fy, fz) | force to add |
+| position, (x, y, z) | point where the force is applied |
 
 ## Example
 
