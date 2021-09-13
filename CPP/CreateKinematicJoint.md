@@ -6,6 +6,10 @@ This function creates a new kinematic joint. A kinematic joint can be used to co
 
 - shared_ptr<[Joint](Joint.md)> **CreateKinematicJoint**(shared_ptr<[Entity](Entity.md)> entity)
 
+| Parameter | Description |
+|---|---|
+| child | joint child |
+
 ## Returns
 
 Returns a new joint object.
