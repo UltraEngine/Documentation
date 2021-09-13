@@ -799,10 +799,6 @@
 									"filename": "Material_SetColor"
 								},
 								{
-									"title": "SetDepthTest",
-									"filename": "Material_SetDepthTest"
-								},
-								{
 									"title": "SetShaderFamily",
 									"filename": "Material_SetShaderFamily"
 								},
