@@ -1,6 +1,6 @@
 # CreateKinematicJoint
 
-This function creates a new slider joint. A hinge joint spins around an axis.
+This function creates a new kinematic joint. A kinematic joint can be used to control the orientation of an entity with physics forces.
 
 ## Syntax
 
