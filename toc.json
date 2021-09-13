@@ -1772,22 +1772,6 @@
 									"filename": "CreateSliderJoint"
 								},
 								{
-									"title": "EnableLimits",
-									"filename": "Joint_EnableLimits"
-								},
-								{
-									"title": "EnableMotor",
-									"filename": "Joint_EnableMotor"
-								},
-								{
-									"title": "GetLimits",
-									"filename": "Joint_GetLimits"
-								},
-								{
-									"title": "GetMotorSpeed",
-									"filename": "Joint_GetMotorSpeed"
-								},
-								{
 									"title": "SetLimits",
 									"filename": "Joint_SetLimits"
 								},
@@ -1800,12 +1784,12 @@
 									"filename": "Joint_SetMaxTorque"
 								},
 								{
-									"title": "SetPosition",
-									"filename": "Joint_SetPosition"
+									"title": "SetTargetPosition",
+									"filename": "Joint_SetTargetPosition"
 								},
 								{
-									"title": "SetRotation",
-									"filename": "Joint_SetRotation"
+									"title": "SetTargetRotation",
+									"filename": "Joint_SetTargetRotation"
 								}
 							]						
 						}						
