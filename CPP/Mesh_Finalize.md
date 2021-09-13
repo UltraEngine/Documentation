@@ -1,6 +1,6 @@
 # Mesh::Finalize
 
-This method is used to submit a mesh to the renderer.
+This method submits the mesh to the renderer and updates its bounding box.
 
 ## Syntax
 
