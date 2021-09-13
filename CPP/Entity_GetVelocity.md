@@ -1,6 +1,6 @@
 # Entity::GetVelocity
 
-This method retrieves the entity velocity, in global or local space.
+This method retrieves the entity velocity after the previous physics update, in global or local space.
 
 ## Syntax
 
