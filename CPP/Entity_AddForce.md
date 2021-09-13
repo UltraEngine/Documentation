@@ -9,10 +9,7 @@ This method adds a physical force to the object, measured in Newtons.
 
 | Parameter | Description |
 | ------ | ------ |
-| x | x component of force to add |
-| y | y component of force to add |
-| z | z component of force to add |
-| force | force to add |
+| force, (x, y, z) | force to add |
 | global | set to true to indicate a vector in global space, otherwise the vector will be in local space |
 
 ## Example
