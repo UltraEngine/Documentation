@@ -14,6 +14,6 @@ This method sets the target rotation of a motorized hinge or kinematic joint.
 
 ## Remarks
 
-A hinge joint accepts a single rotation value. A kinematic joint requires a quaternion or Euler rotation.
+A slider joint accepts a single offset value. A kinematic joint requires a position in 3D space.
 
-You must call [Joint::SetMaxForce](Joint_SetMaxForce.md) and specify a non-zero torque before this command will have any effect.
+You must call [Joint::SetMaxForce](Joint_SetMaxForce.md) and specify a non-zero force before this command will have any effect.
