@@ -1,11 +1,11 @@
-# Material::SetDepthTest
+# Material::SetZSort
 
-This method is used to enable or disable depth testing on a per-material basis. Materials with depth testing disabled will be rendered after other materials.
+This method is used to enable or disable Z-sorting on a per-material basis. Materials with Z-sorting enabled will be rendered after other objects, sorted by distance to the camera, from far to near.
 
 ## Syntax
 
-- void **SetDepthTest**(const bool mode)
+- void **SetZSort**(const bool mode)
 
 | Parameter | Description |
 |---|---|
-| mode | depth testing mode |
+| mode | Z-sorting mode |
