@@ -1,5 +1,19 @@
 # Entity::SetFriction
 
+This method sets the friction of the entity.
+
+## Syntax
+
+- void **SetFriction**(const dFloat kinematicfriction, const dFloat staticfriction = 0)
+
+| Parameter | Description |
+|---|---|
+| kinematicfriction | friction of an object in motion |
+| staticfriction | initial friction a stationary object must overcome to begin sliding |
+
+## Remarks
+
+The Box2D physics engine only uses kinematic friction.
 
 ## Example
 
