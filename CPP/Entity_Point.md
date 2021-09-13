@@ -11,10 +11,7 @@ This method aligns an axis of the entity to point to another entity or a point i
 | Parameter | Description |
 | --- | --- |
 | entity | entity to point to |
-| position | position in space to point to |
-| x | X component of the position to point to |
-| y | Y component of the position to point to |
-| z | Z component of the position to point to |
+| position, (x, y, z) | position in space to point to |
 | axis | axis to align (0, 1, or 2) | 
 | rate | can be used to gradually align the entity | 
 | roll | rotation around the axis |
