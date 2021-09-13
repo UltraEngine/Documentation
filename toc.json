@@ -757,6 +757,10 @@
 									"filename": "Mesh_Scale"									
 								},
 								{
+									"title": "SetMaterial",
+									"filename": "Mesh_SetMaterial"									
+								},
+								{
 									"title": "Transform",
 									"filename": "Mesh_Transformy"									
 								},									
