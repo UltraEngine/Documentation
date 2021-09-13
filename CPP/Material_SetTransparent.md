@@ -4,11 +4,11 @@ This method sets the transparency mode of the material.
 
 ## Syntax
 
-- void **SetTransparent**(const bool transparent)
+- void **SetTransparent**(const bool mode)
 
 | Parameter | Description |
 |---|---|
-| transparent | true for transparent materials, false for opaque |
+| mode | true for transparent materials, false for opaque |
 
 ## Remarks
 
