@@ -9,8 +9,5 @@ This method sets the angular velocity of an entity.
 
 | Parameter | Description |
 | --- | --- |
-| omega | angular velocity to set, in degrees per second |
-| x | X component of angular velocity |
-| y | Y component of angular velocity |
-| z | Z component of angular velocity |
+| omega, (x, y, z) | angular velocity to set, in degrees per second |
 | global | if set to true angular velocity is in global space, otherwise local space is used |
