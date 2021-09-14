@@ -1,15 +1,17 @@
-# CreateCompoundCollider #
+# CreateCompoundCollider
+
 This function creates a complex collision shape that is made up of multiple sub-shapes.
 
-## Syntax ##
-- shared_ptr<[Collider](Collision.md)\> **CreateCompoundCollider**(vector<shared_ptr<[Collider](Collision.md)\> \> subshapes)
+## Syntax
 
-## Parameters ##
-|   |   |
+- shared_ptr<[Collider](Collider.md)\> **CreateCompoundCollider**(vector<shared_ptr<[Collider](Collider.md)\> \> subshapes)
+
+| Parameter | Description |
 |---|---|
-|**subshapes**|array of collision objects to be combined into the created shape|
+| subshapes | array of collision objects to be combined into the created shape |
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 #include "Project.h"
