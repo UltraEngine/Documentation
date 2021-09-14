@@ -1,6 +1,6 @@
 # LoadCollider
 
-This function loads a collision shape from a [collision file](Collision_File_Format.md). Collision objects can be saved to a file by calling the [Save](Asset_Save.md) method.
+This function loads a collision shape from a JSON file. Collision objects can be saved to a file by calling the [Save](Asset_Save.md) method.
 
 ## Syntax
 
