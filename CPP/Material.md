@@ -16,6 +16,7 @@ This class is used to control the appearance of rendered surfaces.
 | [SetColor](Material_SetColor.md) | Method | sets the material color |
 | [SetShaderFamily](Material_SetShaderFamily.md) | Method | sets the material shader family |
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
+| [SetTextureScrollSpeed](Material_SetTextureScrollSpeed.md) | Method | simple texture animation |
 | [SetTransparent](Material_SetTransparent.md) | Method | sets the material transparency mode |
 | [SetZSort](Material_SetZSort.md) | Method | sets the material z-sort mode |
 | [CreateMaterial](CreateMaterial.md) | Function | creates a new material |
