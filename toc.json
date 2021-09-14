@@ -71,22 +71,7 @@
 									"filename": "LoadFont"
 								}
 							]
-						},	
-						{
-							"title": "Icon",
-							"filename": "Icon",
-							"topics":
-							[
-								{
-									"title": "LoadIcon",
-									"filename": "LoadIcon"
-								},
-								{
-									"title": "Rasterize",
-									"filename": "Icon_Rasterize"
-								}						
-							]
-						},				
+						},					
 						{
 							"title": "Pixmap",
 							"filename": "Pixmap",
@@ -1113,7 +1098,22 @@
 									"filename": "WaitEvent"
 								}
 							]
-						},				
+						},
+						{
+							"title": "Icon",
+							"filename": "Icon",
+							"topics":
+							[
+								{
+									"title": "LoadIcon",
+									"filename": "LoadIcon"
+								},
+								{
+									"title": "Rasterize",
+									"filename": "Icon_Rasterize"
+								}						
+							]
+						},						
 						{
 							"title": "Interface",
 							"filename": "Interface",
