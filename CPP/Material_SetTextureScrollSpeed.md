@@ -4,7 +4,7 @@ This method can be used to enable a simple texture scroll for moving water and o
 
 ## Syntax
 
-- void **SetTextureScrollSpeed**(const float u, const float v, const float w)
+- void **SetTextureScrollSpeed**(const float u, const float v, const float w = 0)
 
 | Parameter | Description |
 |-----|-----|
