@@ -16,7 +16,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | rotation | const [xVec3](xVec3.md)& | read-only Euler rotation in local space | 
 | quaternion | const [xQuat](xQuat.md)& | read-only rotation in local space |
 | scale | const [xVec3](xVec3.md)& | read-only scale |
-| [AddForce](Entity_AddForce.md) | Method | Applies a force, measured in Newtons, to an entity at a specified point. This can result in both movement and rotation of the entity. |
+| [AddForce](Entity_AddForce.md) | Method | applies a force |
 | [AddPointForce](Entity_AddPointForce.md) | Method | apply force at a position |
 [3dkit] | [AddComponent](Entity_AddComponent.md) | Method | add a script component |
 | [AddTorque](Entity_AddTorque.md) | Method | apply torque |
