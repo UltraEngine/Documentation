@@ -59,54 +59,7 @@
 					"title": "Asset",
 					"filename": "Asset",
 					"topics":
-					[							
-						{
-							"title": "Font",
-							"filename": "Font",
-							"2dk": true,
-							"topics":
-							[
-								{
-									"title": "LoadFont",
-									"filename": "LoadFont"
-								}
-							]
-						},					
-						{
-							"title": "Pixmap",
-							"filename": "Pixmap",
-							"topics":
-							[
-								{
-									"title": "Convert",
-									"filename": "Pixmap_Convert"
-								},
-								{
-									"title": "CreatePixmap",
-									"filename": "CreatePixmap"
-								},						
-								{
-									"title": "Fill",
-									"filename": "Pixmap_Fill"
-								},
-								{
-									"title": "LoadPixmap",
-									"filename": "LoadPixmap"
-								},
-								{
-									"title": "ReadPixel",
-									"filename": "Pixmap_ReadPixel"
-								},
-								{
-									"title": "Resize",
-									"filename": "Pixmap_Resize"
-								},
-								{
-									"title": "WritePixel",
-									"filename": "Pixmap_WritePixel"
-								}							
-							]
-						},						
+					[				
 						{
 							"title": "Reload",
 							"filename": "Asset_Reload"
@@ -843,6 +796,18 @@
 							]							
 						},
 						{
+							"title": "Font",
+							"filename": "Font",
+							"2dk": true,
+							"topics":
+							[
+								{
+									"title": "LoadFont",
+									"filename": "LoadFont"
+								}
+							]
+						},						
+						{
 							"title": "Framebuffer",
 							"filename": "Framebuffer",
 							"2dk": true,
@@ -909,6 +874,41 @@
 									"filename": "Material_SetZSort"
 								}							
 							]							
+						},					
+						{
+							"title": "Pixmap",
+							"filename": "Pixmap",
+							"topics":
+							[
+								{
+									"title": "Convert",
+									"filename": "Pixmap_Convert"
+								},
+								{
+									"title": "CreatePixmap",
+									"filename": "CreatePixmap"
+								},						
+								{
+									"title": "Fill",
+									"filename": "Pixmap_Fill"
+								},
+								{
+									"title": "LoadPixmap",
+									"filename": "LoadPixmap"
+								},
+								{
+									"title": "ReadPixel",
+									"filename": "Pixmap_ReadPixel"
+								},
+								{
+									"title": "Resize",
+									"filename": "Pixmap_Resize"
+								},
+								{
+									"title": "WritePixel",
+									"filename": "Pixmap_WritePixel"
+								}							
+							]
 						},						
 						{
 							"title": "PostEffect",
