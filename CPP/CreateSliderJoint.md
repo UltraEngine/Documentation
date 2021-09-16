@@ -61,19 +61,17 @@ int main(int argc, const char* argv[])
 
     //Create a motorized hinge joint
     auto joint = CreateHingeJoint(Vec3(0), Vec3(0, 0, 1), NULL, sprite1);
-    joint->EnableMotor(true);
     joint->SetMaxTorque(10000);
 
     //Create a slider joint
     auto slider = CreateSliderJoint(Vec3(0), Vec3(1, 0, 0), sprite1, sprite2);
     slider->SetLimits(-400, -50);
-    slider->EnableLimits(true);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         //Update joint motor rotation
-        joint->SetRotation(sprite1->rotation.z + 3);
+        joint->SetTargetRotation(sprite1->rotation.z + 3);
 
         world->Update();
         world->Render(framebuffer);
