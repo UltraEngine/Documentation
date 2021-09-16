@@ -4,12 +4,13 @@ This method sends all queued rendering instructions to the rendering thread and 
 
 ## Syntax
 
-- void **Render**(shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer, const bool vsync = false)
+- void **Render**(shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer, const bool vsync = true, const int maxframerate = 0)
 
 | Parameter | Description |
 |---|---|
 | framebuffer | framebuffer to render to |
 | vsync | if set to true vertical sync is enabled |
+| maxframerate | maximum allowed framerate, or zero for unlimited |
 
 ## Remarks
 
