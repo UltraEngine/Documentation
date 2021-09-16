@@ -42,7 +42,7 @@ int main(int argc, const char* argv[])
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a camera
-    auto camera = CreateCamera(world);
+    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
     camera->SetClearColor(0.125);
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
