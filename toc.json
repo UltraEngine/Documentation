@@ -1134,17 +1134,6 @@
 							]
 						},
 						{
-							"title": "Timer",
-							"filename": "Timer",
-							"topics":
-							[
-								{
-									"title": "CreateTimer",
-									"filename": "CreateTimer"
-								}
-							]				
-						},
-						{
 							"title": "Widget",
 							"filename": "Widget",
 							"topics":
@@ -2065,7 +2054,7 @@
 							]					
 						}				
 					]		
-				},
+				},			
 				{
 					"title": "System",
 					"topics":
@@ -2112,6 +2101,32 @@
 						}				
 					]			
 				},
+				{
+					"title": "Timing",
+					"topics":
+					[
+						{
+							"title": "Microsecs",
+							"filename": "Microsecs",
+							"2dk": true
+						},						
+						{
+							"title": "Millisecs",
+							"filename": "Millisecs"				
+						},						
+						{
+							"title": "Timer",
+							"filename": "Timer",
+							"topics":
+							[
+								{
+									"title": "CreateTimer",
+									"filename": "CreateTimer"
+								}
+							]				
+						}
+					]
+				},				
 				{
 					"title": "World",
 					"filename": "World",
