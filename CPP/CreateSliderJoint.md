@@ -25,6 +25,8 @@ Returns a new joint object.
 
 using namespace UltraEngine;
 
+const float PhysicsScale = 50;
+
 int main(int argc, const char* argv[])
 {
     //Get the displays
@@ -35,6 +37,7 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld(PHYSICSENGINE_BOX2D);
+    world->SetGravity(0, -9.81 * PhysicsScale, 0);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -58,10 +61,10 @@ int main(int argc, const char* argv[])
     sprite2->SetMass(1);
     sprite2->SetPosition(200, -25, -1);
     sprite2->SetColor(1, 0, 0);
-
+    
     //Create a motorized hinge joint
     auto joint = CreateHingeJoint(Vec3(0), Vec3(0, 0, 1), NULL, sprite1);
-    joint->SetMaxTorque(10000);
+    joint->SetMaxTorque(100000);
 
     //Create a slider joint
     auto slider = CreateSliderJoint(Vec3(0), Vec3(1, 0, 0), sprite1, sprite2);
