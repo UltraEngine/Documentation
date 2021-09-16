@@ -400,7 +400,23 @@
 							"filename": "Entity_Turn"
 						}
 					]					
-				},	
+				},
+				{
+					"title": "Entity Component System",
+					"filename": "EntityComponentSystem",
+					"2dk": true,
+					"topics":
+					[
+						{
+							"title": "Actor",
+							"filename": "Camera"
+						},
+						{
+							"title": "Component",
+							"filename": "Component"
+						}						
+					]
+				},
 				{
 					"title": "File System",
 					"topics":
