@@ -1,14 +1,21 @@
-# Sleep #
+# Sleep
+
 This function pauses the current thread for the specified number of milliseconds.
 
-## Syntax ##
+## Syntax
+
 - void **Sleep**(const int time)
 
 | Parameter | Description |
 | ----- | ----- |
-| time | Number of milliseconds to pause. |
+| time | number of milliseconds to pause |
 
-## Example ##
+## Remarks
+
+This function should not be used to regulate time-sensitive processes. The accuracy of the sleep period can vary by as much as 15 milliseconds, or more.
+
+## Example
+
 ```c++
 #include "pch.h"
 
