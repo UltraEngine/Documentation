@@ -12,15 +12,7 @@ This function pauses the current thread for the specified number of milliseconds
 
 ## Remarks
 
-This function should not be used to regulate time-sensitive processes. The accuracy of the sleep period can vary by as much as 15 milliseconds, or more. A higher resolution delay can be executed like this:
-
-```c++
-uint64_t time = 1000;
-auto start = Microsecs();
-while (Microsecs() - start * 1000 < tm) {}
-```
-
-The above code will provide a more precise delay, but will result in high CPU usage on the calling thread.
+This function should not be used to regulate time-sensitive processes. The accuracy of the sleep period can vary by as much as 15 milliseconds, or more.
 
 ## Example
 
