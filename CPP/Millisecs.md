@@ -1,13 +1,17 @@
-# Millisecs #
+# Millisecs
+
 This function returns the current system time, in milliseconds.
 
-## Syntax ##
+## Syntax
+
 - uint64_t **Millisecs**()
 
-## Returns ##
+## Returns
+
 Returns the current system time, in milliseconds.
 
-## Example ##
+## Example
+
 ```c+
 #include "pch.h"
 
