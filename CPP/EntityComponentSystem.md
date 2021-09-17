@@ -45,7 +45,7 @@ actor->playercontroller->Kill();
 You access members of an individual component:
 
 ```c++
-actor->playercontroller->health = 99;
+actor->GetComponent<PlayerController>()->health = 99;
 ```
 
 But it is better to call a method, as this will call the same method for each component that has it:
@@ -54,7 +54,7 @@ But it is better to call a method, as this will call the same method for each co
 actor->SetHealth(99);
 ```
 
-You copy an actor. The entity will be instantiated and all components will be copied to the new actor, with their current properties intact:
+You can copy an actor. The entity will be instantiated and all components will be copied to the new actor, with their current properties intact:
 
 ```c++
 auto actor2 = actor->Copy();
