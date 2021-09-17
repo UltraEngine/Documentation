@@ -1,4 +1,4 @@
-# AddComponent
+# Actor::AddComponent
 
 ## Syntax
 
