@@ -27,7 +27,7 @@ auto actor = CreateActor(entity);
 You can add components to the actor like this:
 
 ```c++
-actor->PlayerController();
+actor->AddComponent<PlayerController>();
 ```
 
 You can call any methods of any components, and allcomponent methods by the same name will be called:
@@ -39,5 +39,5 @@ actor->Kill();
 You also can call a method for just one specific component:
 
 ```c++
-actor->PlayerController()->Kill();
+actor->playercontroller->Kill();
 ```
