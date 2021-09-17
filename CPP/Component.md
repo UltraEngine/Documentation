@@ -1,5 +1,6 @@
 # Component
 
+This class can be extended to add behavior and properties to an [Actor](Actor.md).
 
 ## Properties
 
