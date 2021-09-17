@@ -6,7 +6,7 @@ The entity component system consists of internal engine elements combined with a
 
 ### Actors
 
-In the base API you are accustomed to using entities. In the entity component system, the actor is our main object type. The actor poseesses an entity as and additional modular "blocks" of behavior called components. One actor has only one entity, and one entity can only have one actor, but an actor may have many different components.
+In the base API you are accustomed to using entities. In the entity component system, the actor is our main object type. The actor poseesses an entity as and additional modular "blocks" of behavior called components. An actor has only one entity but can have multiple components.
 
 ### Components
 
