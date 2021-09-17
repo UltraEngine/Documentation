@@ -39,7 +39,7 @@ actor->Kill();
 You also can call a method for just one specific component:
 
 ```c++
-actor->playercontroller->Kill();
+actor->GetComponent<PlayerController>()->Kill();
 ```
 
 You access members of an individual component:
