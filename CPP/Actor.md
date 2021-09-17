@@ -1,6 +1,6 @@
 # Actor
 
-An actor is a container that holds an entity and may have one or more components.
+In the entity component system, the actor is our main object type. The actor poseesses an entity as and additional modular "blocks" of behavior called [components](Component.md). An actor has only one entity but can have multiple components.
 
 ## Properties
 
