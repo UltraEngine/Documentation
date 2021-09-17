@@ -41,3 +41,21 @@ You also can call a method for just one specific component:
 ```c++
 actor->playercontroller->Kill();
 ```
+
+You access members of an individual component:
+
+```c++
+actor->playercontroller->health = 99;
+```
+
+But it is better to call a method, as this will call the same method for each component that has it:
+
+```c++
+actor->SetHealth(99);
+```
+
+You copy an actor, and its state will be copied to the new actor:
+
+```c++
+auto actor2 = actor->Copy();
+```
