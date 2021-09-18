@@ -41,10 +41,6 @@
 					"filename": "OpenGL"
 				},
 				{
-					"title": "Using a 3D Engine",
-					"filename": "Leadwerks"
-				},
-				{
 					"title": "Plugin SDK",
 					"filename": "PluginSDK"
 				}				
