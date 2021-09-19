@@ -21,6 +21,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 [3dkit] | [AddComponent](Entity_AddComponent.md) | Method | add a script component |
 | [AddTorque](Entity_AddTorque.md) | Method | apply torque |
 | [AlignToVector](Entity_AlignToVector.md) | Method | align the entity to an axis |
+| [BuildShape](Entity_BuildShape.md) | Method | creates a collider for the entity |
 | [Copy](Entity_Copy.md) | Method | make a copy of the entity |
 | [FindChild](Entity_FindChild.md) | Method | search for one or multiple children |
 | [GetAngularVelocity](Entity_GetAngularVelocity.md) | Method | retrieves the angular velocity |
