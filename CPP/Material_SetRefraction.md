@@ -16,7 +16,7 @@ int main(int argc, const char* argv[])
     //Create world
     auto world = CreateWorld();
     world->SetAmbientLight(0.1);
-    world->SetSkybox(""https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Sky/sunset.basis");
+    world->SetSkybox("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Sky/sunset.basis");
 
     //Create camera
     auto camera = CreateCamera(world);
