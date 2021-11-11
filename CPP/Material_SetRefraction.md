@@ -16,7 +16,7 @@ int main(int argc, const char* argv[])
     //Create world
     auto world = CreateWorld();
     world->SetAmbientLight(0.1);
-    world->SetSkybox("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Sky/sunset.basis");
+    world->SetSkybox(""https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Sky/sunset.basis");
 
     //Create camera
     auto camera = CreateCamera(world);
@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
     mtl->SetRefractiveIndex(0.95);
 
     //Load model
-    auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Stanford/dragon.glb");
+    auto model = LoadModel(world,"https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Models/Stanford/dragon.glb");
     model->SetMaterial(mtl, true);
    
     //Main loop
