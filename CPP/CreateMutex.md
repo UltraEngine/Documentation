@@ -1,10 +1,13 @@
-# CreateMutex #
-- shared_ptr<Mutex\> **CreateMutex**()
+# CreateMutex
 
-## Syntax ##
+This function creates a new Mutex object.
+
+## Syntax
+
 - shared_ptr<[Mutex](Mutex.md)\> **CreateMutex**()
 
-## Returns ##
+## Returns
+
 Returns a new Mutex object.
 
 ```c++
