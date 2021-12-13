@@ -20,5 +20,6 @@ The world class is a container for entities.
 | [Render](World_Render.md) | Method | |
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | |
 | [SetGravity](World_SetGravity.md) | Method | |
+| [SetSkybox](World_SetSkybox.md) | Method | |
 | [Update](World_Update.md) | Method | |
 | [CreateWorld](CreateWorld.md) | Function | |
