@@ -17,6 +17,11 @@ This function loads a texture from a file path or stream.
 
 Returns the loaded texture, or NULL if no texture was loaded.
 
+## Remarks
+
+If the LOAD_MIPCHAIN flag is specified, the pixel data of the texture will be saved in system memory, and will be available in the *mipchains* texture member.
+
+
 ## Example
 
 ```c++
