@@ -7,6 +7,7 @@ This class handle user interface elements. A variety of widget types are support
 | Name | Type | Description |
 |---|---|---|
 | blocks | const vector<shared_ptr<[WidgetBlock](WidgetBlock.md)\> \>& | read-only container of widget blocks |
+| items | const std::vector<[WidgetItem](WidgetItem.md)>& | read-only items list |
 | kids | const vector<shared_ptr<[Widget](Widget.md)\> \>& | read-only container of child widgets |
 | size | const [iVec2](iVec2.md)& | read-only widget size |
 | text | const [WString](WString.md)& | read-only widget text |
