@@ -1809,6 +1809,34 @@
 					]							
 				},
 				{
+					"title": "Networking",
+					"hideFromLua": true,
+					"hideFromCS": true,
+					"topics":
+					[
+						{
+							"title": "Address",
+							"filename": "Address"
+						},
+						{
+							"title": "Client",
+							"filename": "Client"
+						},
+						{
+							"title": "Message",
+							"filename": "Message"
+						},						
+						{
+							"title": "Peer",
+							"filename": "Peer"
+						},
+						{
+							"title": "Server",
+							"filename": "Server"
+						}						
+					]							
+				},				
+				{
 					"title": "Object",
 					"filename": "Object",
 					"topics":
