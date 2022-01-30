@@ -13,6 +13,7 @@ This class The camera class is an entity used to render the world.
 | [Pick](Camera_Pick.md) | Method | performs a raycast at the specified screen coordinates |
 | [Project](Camera_Project.md) | Method | projects a position from world to screen space |
 | [Render](Camera_Render.md) | Method | refreshes a camera view, for non-realtime cameras |
+| [SetGI](Camera_SetGI.md) | Method | sets the camera global illumination mode |
 | [SetPostEffectParameter](Camera_SetPostEffectParameter.md) | Method | sets a post-processing effect setting |
 | [SetRealTime](Camera_SetRealTime.md) | Method | sets realtime rendering mode |
 | [Unproject](Camera_Unproject.md) | Method | unprojects a position from screen to world space |
