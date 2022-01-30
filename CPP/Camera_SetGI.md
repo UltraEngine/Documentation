@@ -6,5 +6,5 @@
 
 | Parameter | Description |
 |---|---|
-| mode | global illumination mode, can be GI_DISABLED or GI_SVOGI |
+| mode | global illumination mode, can be GI_NONE or GI_SVOGI |
 
