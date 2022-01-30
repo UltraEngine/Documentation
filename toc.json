@@ -175,6 +175,41 @@
 							]							
 						},
 						{
+							"title": "Light",
+							"filename": "Light",
+							"topics":
+							[
+								{
+									"title": "GetConeAngles",
+									"filename": "Light_GetConeAngles"
+								},								
+								{
+									"title": "GetRange",
+									"filename": "Light_GetRange"
+								},
+								{
+									"title": "GetShadowMapSize",
+									"filename": "Light_GetShadowMapSize"
+								},							
+								{
+									"title": "SetConeAngles",
+									"filename": "Light_SetConeAngles"
+								},								
+								{
+									"title": "SetRange",
+									"filename": "Light_SetRange"
+								},								
+								{
+									"title": "SetShadowMapSize",
+									"filename": "Light_SetShadowMapSize"
+								},								
+								{
+									"title": "CreateLight",
+									"filename": "CreateLight"
+								}						
+							]							
+						},						
+						{
 							"title": "ParticleSystem",
 							"filename": "ParticleSystem",
 							"topics":
@@ -400,7 +435,6 @@
 				{
 					"title": "Entity Component System",
 					"filename": "EntityComponentSystem",
-					"2dk": true,
 					"topics":
 					[
 						{
