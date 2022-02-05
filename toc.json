@@ -68,7 +68,6 @@
 				},
 				{
 					"title": "Audio",
-					"2dk": true,
 					"topics":
 					[
 						{
@@ -132,7 +131,6 @@
 				{
 					"title": "Entity",
 					"filename": "Entity",
-					"2dk": true,
 					"topics":
 					[
 						{
@@ -696,7 +694,6 @@
 				},
 				{
 					"title": "Geometry",
-					"2dk": true,
 					"topics":
 					[
 						{
@@ -844,7 +841,6 @@
 						{
 							"title": "Font",
 							"filename": "Font",
-							"2dk": true,
 							"topics":
 							[
 								{
@@ -856,7 +852,6 @@
 						{
 							"title": "Framebuffer",
 							"filename": "Framebuffer",
-							"2dk": true,
 							"topics":
 							[
 								{
@@ -868,7 +863,6 @@
 						{
 							"title": "Material",
 							"filename": "Material",
-							"2dk": true,
 							"topics":
 							[								
 								{
@@ -959,7 +953,6 @@
 						{
 							"title": "PostEffect",
 							"filename": "PostEffect",
-							"2dk": true,
 							"topics":
 							[
 								{
@@ -971,7 +964,6 @@
 						{
 							"title": "ShaderFamily",
 							"filename": "ShaderFamily",
-							"2dk": true,
 							"topics":
 							[
 								{
@@ -983,7 +975,6 @@
 						{
 							"title": "Texture",
 							"filename": "Texture",
-							"2dk": true,
 							"topics":
 							[
 								{
@@ -1472,18 +1463,15 @@
 						},	
 						{
 							"title": "Mat3",
-							"filename": "Mat3",
-							"2dk": true
+							"filename": "Mat3"
 						},
 						{
 							"title": "Mat4",
-							"filename": "Mat4",
-							"2dk": true
+							"filename": "Mat4"
 						},
 						{
 							"title": "Quat",
-							"filename": "Quat",
-							"2dk": true
+							"filename": "Quat"
 						},				
 						{
 							"title": "Vec2",
@@ -1888,7 +1876,6 @@
 				},
 				{
 					"title": "Physics",
-					"2dk": true,
 					"topics":
 					[
 						{
@@ -1995,7 +1982,6 @@
 				},
 				{
 					"title": "Statistics",
-					"2dk": true,
 					"topics":
 					[
 						{
@@ -2177,8 +2163,7 @@
 						},
 						{
 							"title": "Microsecs",
-							"filename": "Microsecs",
-							"2dk": true
+							"filename": "Microsecs"
 						},						
 						{
 							"title": "Millisecs",
@@ -2213,7 +2198,6 @@
 				{
 					"title": "World",
 					"filename": "World",
-					"2dk": true,
 					"topics":
 					[
 						{
