@@ -17,7 +17,7 @@
 					"filename": "ImportLibrary"
 				},
 				{
-					"title": "Tutorials",
+					"title": "GUI",
 					"topics": [{
 							"title": "Create an Image Converter",
 							"filename": "ImageConverter"
