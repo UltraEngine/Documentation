@@ -1,12 +1,8 @@
-{ 
-	"topics":
-	[
-		{
+{
+	"topics": [{
 			"title": "Tutorials",
 			"openstate": true,
-			"topics":
-			[
-				{
+			"topics": [{
 					"title": "Introduction",
 					"filename": "Introduction",
 					"openstate": false,
@@ -20,89 +16,78 @@
 					"title": "Add to an Existing Project",
 					"filename": "ImportLibrary"
 				},
-				"title": "Tutorials",
-				"topics":
-				[
-					{
-						"title": "Create an Image Converter",
-						"filename": "ImageConverter"
-					},
-					{
-						"title": "Create an Image Viewer",
-						"filename": "ImageViewer"
-					},		
-					{
-						"title": "Create a File Browser",
-						"filename": "FileBrowser"
-					},		
-					{
-						"title": "Advanced Application Interface",
-						"filename": "AdvancedInterface"
-					},
-					{
-						"title": "OpenGL Rendering",
-						"filename": "OpenGL"
-					}
-				],
+				{
+					"title": "Tutorials",
+					"topics": [{
+							"title": "Create an Image Converter",
+							"filename": "ImageConverter"
+						},
+						{
+							"title": "Create an Image Viewer",
+							"filename": "ImageViewer"
+						},
+						{
+							"title": "Create a File Browser",
+							"filename": "FileBrowser"
+						},
+						{
+							"title": "Advanced Application Interface",
+							"filename": "AdvancedInterface"
+						},
+						{
+							"title": "OpenGL Rendering",
+							"filename": "OpenGL"
+						}
+					]
+				},
 				{
 					"title": "Plugin SDK",
 					"filename": "PluginSDK"
-				}				
+				}
 			]
 		},
 		{
 			"title": "Programming Reference",
 			"openstate": true,
-			"topics":
-			[
-				{
+			"topics": [{
 					"title": "Asset",
 					"filename": "Asset",
-					"topics":
-					[				
-						{
+					"topics": [{
 							"title": "Reload",
 							"filename": "Asset_Reload"
 						},
 						{
 							"title": "Save",
 							"filename": "Asset_Save"
-						}			
+						}
 					]
 				},
 				{
 					"title": "Audio",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Sound",
 							"filename": "Sound",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "GetLength",
 									"filename": "Sound_GetLength"
 								},
 								{
 									"title": "LoadSound",
 									"filename": "LoadSound"
-								},								
+								},
 								{
 									"title": "Play",
 									"filename": "Sound_Play"
-								}						
+								}
 							]
-						},						
+						},
 						{
 							"title": "Speaker",
 							"filename": "Speaker",
-							"topics":
-							[
-								{
-									"title": "CreateSpeaker",
-									"filename": "CreateSpeaker"
-								}
-							]							
+							"topics": [{
+								"title": "CreateSpeaker",
+								"filename": "CreateSpeaker"
+							}]
 						}
 					]
 				},
@@ -112,16 +97,14 @@
 				},
 				{
 					"title": "Debugging",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Assert",
 							"filename": "Assert"
 						},
 						{
 							"title": "DebugLog",
 							"filename": "DebugLog"
-						},						
+						},
 						{
 							"title": "RuntimeError",
 							"filename": "RuntimeError"
@@ -129,20 +112,16 @@
 						{
 							"title": "Warn",
 							"filename": "Warn"
-						}						
-					]					
+						}
+					]
 				},
 				{
 					"title": "Entity",
 					"filename": "Entity",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Camera",
 							"filename": "Camera",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "AddPostEffect",
 									"filename": "Camera_AddPostEffect"
 								},
@@ -173,18 +152,16 @@
 								{
 									"title": "CreateCamera",
 									"filename": "CreateCamera"
-								}						
-							]							
+								}
+							]
 						},
 						{
 							"title": "Light",
 							"filename": "Light",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "GetConeAngles",
 									"filename": "Light_GetConeAngles"
-								},								
+								},
 								{
 									"title": "GetRange",
 									"filename": "Light_GetRange"
@@ -192,61 +169,53 @@
 								{
 									"title": "GetShadowMapSize",
 									"filename": "Light_GetShadowMapSize"
-								},							
+								},
 								{
 									"title": "SetConeAngles",
 									"filename": "Light_SetConeAngles"
-								},								
+								},
 								{
 									"title": "SetRange",
 									"filename": "Light_SetRange"
-								},								
+								},
 								{
 									"title": "SetShadowMapSize",
 									"filename": "Light_SetShadowMapSize"
-								},								
+								},
 								{
 									"title": "CreateLight",
 									"filename": "CreateLight"
-								}						
-							]							
-						},						
+								}
+							]
+						},
 						{
 							"title": "ParticleSystem",
 							"filename": "ParticleSystem",
-							"topics":
-							[
-								{
-									"title": "CreateParticleSystem",
-									"filename": "CreateParticleSystem"
-								}						
-							]							
+							"topics": [{
+								"title": "CreateParticleSystem",
+								"filename": "CreateParticleSystem"
+							}]
 						},
 						{
 							"title": "Pivot",
 							"filename": "Pivot",
-							"topics":
-							[
-								{
-									"title": "CreatePivot",
-									"filename": "CreatePivot"
-								}
-							]							
+							"topics": [{
+								"title": "CreatePivot",
+								"filename": "CreatePivot"
+							}]
 						},
 						{
 							"title": "Sprite",
 							"filename": "Sprite",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "CreateSprite",
 									"filename": "CreateSprite"
-								},						
+								},
 								{
 									"title": "LoadSprite",
 									"filename": "LoadSprite"
 								}
-							]							
+							]
 						},
 						{
 							"title": "AddForce",
@@ -299,11 +268,11 @@
 						{
 							"title": "GetHidden",
 							"filename": "Entity_GetHidden"
-						},						
+						},
 						{
 							"title": "GetMass",
 							"filename": "Entity_GetMass"
-						},						
+						},
 						{
 							"title": "GetParent",
 							"filename": "Entity_GetParent"
@@ -432,54 +401,42 @@
 							"title": "Turn",
 							"filename": "Entity_Turn"
 						}
-					]					
+					]
 				},
 				{
 					"title": "Entity Component System",
 					"filename": "EntityComponentSystem",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Actor",
 							"filename": "Actor"
 						},
 						{
 							"title": "Component",
 							"filename": "Component"
-						}						
+						}
 					]
 				},
 				{
 					"title": "File System",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "FileSystemWatcher",
 							"filename": "FileSystemWatcher",
-							"topics":
-							[
-								{
-									"title": "CreateFileSystemWatcher",
-									"filename": "CreateFileSystemWatcher"
-								}
-							]						
+							"topics": [{
+								"title": "CreateFileSystemWatcher",
+								"filename": "CreateFileSystemWatcher"
+							}]
 						},
 						{
 							"title": "Stream",
 							"filename": "Stream",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "BufferStream",
 									"filename": "BufferStream",
-									"topics":
-									[
-										{
-											"title": "CreateBufferStream",
-											"filename": "CreateBufferStream"
-										}
-									]
-								},						
+									"topics": [{
+										"title": "CreateBufferStream",
+										"filename": "CreateBufferStream"
+									}]
+								},
 								{
 									"title": "Close",
 									"filename": "Stream_Close"
@@ -531,11 +488,11 @@
 								{
 									"title": "ReadShort",
 									"filename": "Stream_ReadShort"
-								},							
+								},
 								{
 									"title": "ReadString",
 									"filename": "Stream_ReadString"
-								},						
+								},
 								{
 									"title": "ReadWString",
 									"filename": "Stream_ReadWString"
@@ -547,7 +504,7 @@
 								{
 									"title": "Write",
 									"filename": "Stream_Write"
-								},						
+								},
 								{
 									"title": "WriteByte",
 									"filename": "Stream_WriteByte"
@@ -571,7 +528,7 @@
 								{
 									"title": "WriteShort",
 									"filename": "Stream_WriteShort"
-								},						
+								},
 								{
 									"title": "WriteString",
 									"filename": "Stream_WriteString"
@@ -601,11 +558,11 @@
 						{
 							"title": "CreateFile",
 							"filename": "CreateFile"
-						},				
+						},
 						{
 							"title": "CurrentDir",
 							"filename": "CurrentDir"
-						},								
+						},
 						{
 							"title": "DeleteDir",
 							"filename": "DeleteDir"
@@ -617,7 +574,7 @@
 						{
 							"title": "DownloadFile",
 							"filename": "DownloadFile"
-						},				
+						},
 						{
 							"title": "ExtractDir",
 							"filename": "ExtractDir"
@@ -629,7 +586,7 @@
 						{
 							"title": "FileHidden",
 							"filename": "FileHidden"
-						},			
+						},
 						{
 							"title": "FileTime",
 							"filename": "FileTime"
@@ -641,11 +598,11 @@
 						{
 							"title": "GetPath",
 							"filename": "GetPath"
-						},						
+						},
 						{
 							"title": "HideFile",
 							"filename": "HideFile"
-						},				
+						},
 						{
 							"title": "LoadDir",
 							"filename": "LoadDir"
@@ -665,11 +622,11 @@
 						{
 							"title": "RealPath",
 							"filename": "RealPath"
-						},				
+						},
 						{
 							"title": "RenameFile",
 							"filename": "RenameFile"
-						},				
+						},
 						{
 							"title": "RunFile",
 							"filename": "RunFile"
@@ -677,11 +634,11 @@
 						{
 							"title": "ShowFile",
 							"filename": "ShowFile"
-						},				
+						},
 						{
 							"title": "StripAll",
 							"filename": "StripAll"
-						},					
+						},
 						{
 							"title": "StripDir",
 							"filename": "StripDir"
@@ -689,93 +646,84 @@
 						{
 							"title": "StripExt",
 							"filename": "StripExt"
-						},							
+						},
 						{
 							"title": "WriteFile",
 							"filename": "WriteFile"
 						}
-					]							
+					]
 				},
 				{
 					"title": "Geometry",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Mesh",
 							"filename": "Mesh",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "AddPolygon",
-									"filename": "Mesh_AddPolygon"									
+									"filename": "Mesh_AddPolygon"
 								},
 								{
 									"title": "AddVertex",
-									"filename": "Mesh_AddVertex"									
-								},								
+									"filename": "Mesh_AddVertex"
+								},
 								{
 									"title": "Copy",
-									"filename": "Mesh_Copy"									
-								},								
+									"filename": "Mesh_Copy"
+								},
 								{
 									"title": "CountPolygons",
-									"filename": "Mesh_CountPolygons"									
-								},								
+									"filename": "Mesh_CountPolygons"
+								},
 								{
 									"title": "Finalize",
-									"filename": "Mesh_Finalize"									
+									"filename": "Mesh_Finalize"
 								},
 								{
 									"title": "Recenter",
-									"filename": "Mesh_Recenter"									
-								},									
+									"filename": "Mesh_Recenter"
+								},
 								{
 									"title": "Rotate",
-									"filename": "Mesh_Rotate"									
-								},									
+									"filename": "Mesh_Rotate"
+								},
 								{
 									"title": "Scale",
-									"filename": "Mesh_Scale"									
+									"filename": "Mesh_Scale"
 								},
 								{
 									"title": "SetMaterial",
-									"filename": "Mesh_SetMaterial"									
+									"filename": "Mesh_SetMaterial"
 								},
 								{
 									"title": "Transform",
-									"filename": "Mesh_Transform"									
-								},									
+									"filename": "Mesh_Transform"
+								},
 								{
 									"title": "Translate",
-									"filename": "Mesh_Translate"									
-								},							
+									"filename": "Mesh_Translate"
+								},
 								{
 									"title": "UpdateBounds",
-									"filename": "Mesh_UpdateBounds"									
+									"filename": "Mesh_UpdateBounds"
 								},
 								{
 									"title": "UpdateTangents",
-									"filename": "Mesh_UpdateTangents"									
-								}					
-							]							
+									"filename": "Mesh_UpdateTangents"
+								}
+							]
 						},
 						{
 							"title": "PickInfo",
 							"filename": "PickInfo",
-							"topics":
-							[
-								{
-									"title": "GetTexCoords",
-									"filename": "PickInfo_GetTexCoords"									
-								}
-							]
-						},						
+							"topics": [{
+								"title": "GetTexCoords",
+								"filename": "PickInfo_GetTexCoords"
+							}]
+						},
 						{
 							"title": "Vertex",
 							"filename": "Vertex",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "GetBitangent",
 									"filename": "Vertex_GetBitangent"
 								},
@@ -806,28 +754,24 @@
 								{
 									"title": "SetTexCoords",
 									"filename": "Vertex_SetTexCoords"
-								}								
+								}
 							]
-						}						
+						}
 					]
 				},
 				{
 					"title": "Graphics",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Display",
 							"filename": "Display",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "ClientArea",
 									"filename": "Display_ClientArea"
-								},						
+								},
 								{
 									"title": "GetDisplays",
 									"filename": "GetDisplays"
-								},						
+								},
 								{
 									"title": "GetPosition",
 									"filename": "Display_GetPosition"
@@ -840,39 +784,31 @@
 									"title": "GetSize",
 									"filename": "Display_GetSize"
 								}
-							]							
+							]
 						},
 						{
 							"title": "Font",
 							"filename": "Font",
-							"topics":
-							[
-								{
-									"title": "LoadFont",
-									"filename": "LoadFont"
-								}
-							]
-						},						
+							"topics": [{
+								"title": "LoadFont",
+								"filename": "LoadFont"
+							}]
+						},
 						{
 							"title": "Framebuffer",
 							"filename": "Framebuffer",
-							"topics":
-							[
-								{
-									"title": "CreateFramebuffer",
-									"filename": "CreateFramebuffer"
-								}
-							]							
+							"topics": [{
+								"title": "CreateFramebuffer",
+								"filename": "CreateFramebuffer"
+							}]
 						},
 						{
 							"title": "Material",
 							"filename": "Material",
-							"topics":
-							[								
-								{
+							"topics": [{
 									"title": "CreateMaterial",
 									"filename": "CreateMaterial"
-								},				
+								},
 								{
 									"title": "LoadMaterial",
 									"filename": "LoadMaterial"
@@ -888,11 +824,11 @@
 								{
 									"title": "GetTexture",
 									"filename": "Material_GetTexture"
-								},								
+								},
 								{
 									"title": "GetTransparent",
 									"filename": "Material_GetTransparent"
-								},								
+								},
 								{
 									"title": "GetZSort",
 									"filename": "Material_GetZSort"
@@ -908,30 +844,28 @@
 								{
 									"title": "SetTexture",
 									"filename": "Material_SetTexture"
-								},								
+								},
 								{
 									"title": "SetTransparent",
 									"filename": "Material_SetTransparent"
-								},								
+								},
 								{
 									"title": "SetZSort",
 									"filename": "Material_SetZSort"
-								}							
-							]							
-						},					
+								}
+							]
+						},
 						{
 							"title": "Pixmap",
 							"filename": "Pixmap",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "Convert",
 									"filename": "Pixmap_Convert"
 								},
 								{
 									"title": "CreatePixmap",
 									"filename": "CreatePixmap"
-								},						
+								},
 								{
 									"title": "Fill",
 									"filename": "Pixmap_Fill"
@@ -951,48 +885,37 @@
 								{
 									"title": "WritePixel",
 									"filename": "Pixmap_WritePixel"
-								}							
+								}
 							]
-						},						
+						},
 						{
 							"title": "PostEffect",
 							"filename": "PostEffect",
-							"topics":
-							[
-								{
-									"title": "LoadPostEffect",
-									"filename": "LoadPostEffect"
-								}
-							]							
+							"topics": [{
+								"title": "LoadPostEffect",
+								"filename": "LoadPostEffect"
+							}]
 						},
 						{
 							"title": "ShaderFamily",
 							"filename": "ShaderFamily",
-							"topics":
-							[
-								{
-									"title": "LoadShaderFamily",
-									"filename": "LoadShaderFamily"
-								}
-							]							
-						},						
+							"topics": [{
+								"title": "LoadShaderFamily",
+								"filename": "LoadShaderFamily"
+							}]
+						},
 						{
 							"title": "Texture",
 							"filename": "Texture",
-							"topics":
-							[
-								{
-									"title": "LoadTexture",
-									"filename": "LoadTexture"
-								}
-							]							
-						},					
+							"topics": [{
+								"title": "LoadTexture",
+								"filename": "LoadTexture"
+							}]
+						},
 						{
 							"title": "Window",
 							"filename": "Window",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "Activate",
 									"filename": "Window_Activate"
 								},
@@ -1043,7 +966,7 @@
 								{
 									"title": "KeyHit",
 									"filename": "Window_KeyHit"
-								},						
+								},
 								{
 									"title": "MouseDown",
 									"filename": "Window_MouseDown"
@@ -1051,7 +974,7 @@
 								{
 									"title": "MouseHit",
 									"filename": "Window_MouseHit"
-								},	
+								},
 								{
 									"title": "Maximize",
 									"filename": "Window_Maximize"
@@ -1063,7 +986,7 @@
 								{
 									"title": "Minimize",
 									"filename": "Window_Minimize"
-								},						
+								},
 								{
 									"title": "Minimized",
 									"filename": "Window_Minimized"
@@ -1079,19 +1002,19 @@
 								{
 									"title": "SetMousePosition",
 									"filename": "Window_SetMousePosition"
-								},		
+								},
 								{
 									"title": "SetShape",
 									"filename": "Window_SetShape"
-								},	
+								},
 								{
 									"title": "Show",
 									"filename": "Window_Show"
-								},		
+								},
 								{
 									"title": "ShowMouse",
 									"filename": "Window_ShowMouse"
-								},					
+								},
 								{
 									"title": "ActiveWindow",
 									"filename": "ActiveWindow"
@@ -1103,37 +1026,33 @@
 								{
 									"title": "TransformCoord",
 									"filename": "TransformCoord"
-								}						
+								}
 							]
 						}
-					]						
-				},		
+					]
+				},
 				{
 					"title": "GUI",
 					"filename": "GUI",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Event",
 							"filename": "Event",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "AllocEventID",
 									"filename": "AllocEventID"
-								},						
+								},
 								{
 									"title": "EmitEvent",
 									"filename": "EmitEvent"
-								},			
+								},
 								{
 									"title": "ListenEvent",
 									"filename": "ListenEvent"
-								},	
+								},
 								{
 									"title": "PeekEvent",
 									"filename": "PeekEvent"
-								},						
+								},
 								{
 									"title": "WaitEvent",
 									"filename": "WaitEvent"
@@ -1143,24 +1062,20 @@
 						{
 							"title": "Icon",
 							"filename": "Icon",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "LoadIcon",
 									"filename": "LoadIcon"
 								},
 								{
 									"title": "Rasterize",
 									"filename": "Icon_Rasterize"
-								}						
+								}
 							]
-						},						
+						},
 						{
 							"title": "Interface",
 							"filename": "Interface",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "CreateInterface",
 									"filename": "CreateInterface"
 								},
@@ -1171,26 +1086,21 @@
 								{
 									"title": "SetScale",
 									"filename": "Interface_SetScale"
-								}												
+								}
 							]
 						},
 						{
 							"title": "Timer",
 							"filename": "Timer",
-							"topics":
-							[
-								{
-									"title": "CreateTimer",
-									"filename": "CreateTimer"
-								}
-							]				
-						},						
+							"topics": [{
+								"title": "CreateTimer",
+								"filename": "CreateTimer"
+							}]
+						},
 						{
 							"title": "Widget",
 							"filename": "Widget",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "AddBlock",
 									"filename": "Widget_AddBlock"
 								},
@@ -1201,7 +1111,7 @@
 								{
 									"title": "AddNode",
 									"filename": "Widget_AddNode"
-								},						
+								},
 								{
 									"title": "ClearItems",
 									"filename": "Widget_ClearItems"
@@ -1209,7 +1119,7 @@
 								{
 									"title": "ClientSize",
 									"filename": "Widget_ClientSize"
-								},						
+								},
 								{
 									"title": "CreateButton",
 									"filename": "CreateButton"
@@ -1245,7 +1155,7 @@
 								{
 									"title": "CreateTabber",
 									"filename": "CreateTabber"
-								},						
+								},
 								{
 									"title": "CreateTextField",
 									"filename": "CreateTextField"
@@ -1273,11 +1183,11 @@
 								{
 									"title": "GainFocus",
 									"filename": "Widget_GainFocus"
-								},									
+								},
 								{
 									"title": "GetItemText",
 									"filename": "Widget_GetItemText"
-								},						
+								},
 								{
 									"title": "GetParent",
 									"filename": "Widget_GetParent"
@@ -1285,7 +1195,7 @@
 								{
 									"title": "GetPosition",
 									"filename": "Widget_GetPosition"
-								},	
+								},
 								{
 									"title": "GetSelectedItem",
 									"filename": "Widget_GetSelectedItem"
@@ -1297,7 +1207,7 @@
 								{
 									"title": "GetSize",
 									"filename": "Widget_GetSize"
-								},				
+								},
 								{
 									"title": "GetState",
 									"filename": "Widget_GetState"
@@ -1317,23 +1227,23 @@
 								{
 									"title": "KeyDown",
 									"filename": "Widget_KeyDown"
-								},				
+								},
 								{
 									"title": "KeyUp",
 									"filename": "Widget_KeyUp"
-								},	
+								},
 								{
 									"title": "LoseFocus",
 									"filename": "Widget_LoseFocus"
-								},	
+								},
 								{
 									"title": "MouseDown",
 									"filename": "Widget_MouseDown"
-								},					
+								},
 								{
 									"title": "MouseEnter",
 									"filename": "Widget_MouseEnter"
-								},					
+								},
 								{
 									"title": "MouseLeave",
 									"filename": "Widget_MouseLeave"
@@ -1341,19 +1251,19 @@
 								{
 									"title": "MouseMove",
 									"filename": "Widget_MouseMove"
-								},					
+								},
 								{
 									"title": "MouseUp",
 									"filename": "Widget_MouseUp"
-								},			
+								},
 								{
 									"title": "MouseWheel",
 									"filename": "Widget_MouseWheel"
-								},													
+								},
 								{
 									"title": "Paint",
 									"filename": "Widget_Paint"
-								},						
+								},
 								{
 									"title": "RemoveItem",
 									"filename": "Widget_RemoveItem"
@@ -1373,15 +1283,15 @@
 								{
 									"title": "SetFontBold",
 									"filename": "Widget_SetFontBold"
-								},								
+								},
 								{
 									"title": "SetFontScale",
 									"filename": "Widget_SetFontScale"
-								},	
+								},
 								{
 									"title": "SetIcon",
 									"filename": "Widget_SetIcon"
-								},																
+								},
 								{
 									"title": "SetItemText",
 									"filename": "Widget_SetItemText"
@@ -1389,11 +1299,11 @@
 								{
 									"title": "SetLayout",
 									"filename": "Widget_SetLayout"
-								},								
+								},
 								{
 									"title": "SetParent",
 									"filename": "Widget_SetParent"
-								},								
+								},
 								{
 									"title": "SetPixmap",
 									"filename": "Widget_SetPixmap"
@@ -1413,7 +1323,7 @@
 								{
 									"title": "SetState",
 									"filename": "Widget_SetState"
-								},	
+								},
 								{
 									"title": "SetText",
 									"filename": "Widget_SetText"
@@ -1421,26 +1331,24 @@
 								{
 									"title": "SetValue",
 									"filename": "Widget_SetValue"
-								},								
+								},
 								{
 									"title": "TripleClick",
 									"filename": "Widget_TripleClick"
-								}								
-							]						
+								}
+							]
 						},
 						{
 							"title": "WidgetBlock",
 							"filename": "WidgetBlock",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "SetIcon",
 									"filename": "WidgetBlock_SetIcon"
-								},									
+								},
 								{
 									"title": "SetPixmap",
 									"filename": "WidgetBlock_SetPixmap"
-								},																
+								},
 								{
 									"title": "SetText",
 									"filename": "WidgetBlock_SetText"
@@ -1451,20 +1359,18 @@
 				},
 				{
 					"title": "Math",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "iVec2",
 							"filename": "iVec2"
-						},						
+						},
 						{
 							"title": "iVec3",
 							"filename": "iVec3"
-						},				
+						},
 						{
 							"title": "iVec4",
 							"filename": "iVec4"
-						},	
+						},
 						{
 							"title": "Mat3",
 							"filename": "Mat3"
@@ -1476,28 +1382,24 @@
 						{
 							"title": "Quat",
 							"filename": "Quat"
-						},				
+						},
 						{
 							"title": "Vec2",
 							"filename": "Vec2",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "Length",
 									"filename": "Vec2_Length"
 								},
 								{
 									"title": "Normalize",
 									"filename": "Vec2_Normalize"
-								}				
+								}
 							]
-						},						
+						},
 						{
 							"title": "Vec3",
 							"filename": "Vec3",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "DistanceToPoint",
 									"filename": "Vec3_DistanceToPoint"
 								},
@@ -1524,12 +1426,12 @@
 								{
 									"title": "Reflect",
 									"filename": "Vec3_Reflect"
-								}								
+								}
 							]
 						},
 						{
 							"title": "Vec4",
-							"filename": "Vec4"						
+							"filename": "Vec4"
 						},
 						{
 							"title": "Abs",
@@ -1538,7 +1440,7 @@
 						{
 							"title": "ACos",
 							"filename": "ACos"
-						},			
+						},
 						{
 							"title": "Alpha",
 							"filename": "Alpha"
@@ -1554,7 +1456,7 @@
 						{
 							"title": "Blue",
 							"filename": "Blue"
-						},			
+						},
 						{
 							"title": "Ceil",
 							"filename": "Ceil"
@@ -1562,7 +1464,7 @@
 						{
 							"title": "Clamp",
 							"filename": "Clamp"
-						},	
+						},
 						{
 							"title": "Cos",
 							"filename": "Cos"
@@ -1578,11 +1480,11 @@
 						{
 							"title": "DeltaAngle",
 							"filename": "DeltaAngle"
-						},				
+						},
 						{
 							"title": "Floor",
 							"filename": "Floor"
-						},				
+						},
 						{
 							"title": "Green",
 							"filename": "Green"
@@ -1590,7 +1492,7 @@
 						{
 							"title": "Hex",
 							"filename": "Hex"
-						},				
+						},
 						{
 							"title": "Max",
 							"filename": "Max"
@@ -1606,7 +1508,7 @@
 						{
 							"title": "Mod",
 							"filename": "Mod"
-						},				
+						},
 						{
 							"title": "Radians",
 							"filename": "Radians"
@@ -1614,7 +1516,7 @@
 						{
 							"title": "Random",
 							"filename": "Random"
-						},				
+						},
 						{
 							"title": "Red",
 							"filename": "Red"
@@ -1634,23 +1536,19 @@
 						{
 							"title": "Sin",
 							"filename": "Sin"
-						},			
+						},
 						{
 							"title": "Tan",
 							"filename": "Tan"
 						}
 					]
-				},				
+				},
 				{
 					"title": "Memory",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Buffer",
 							"filename": "Buffer",
-							"topics":
-							[						
-								{
+							"topics": [{
 									"title": "Clear",
 									"filename": "Buffer_Clear"
 								},
@@ -1665,7 +1563,7 @@
 								{
 									"title": "CreateStaticBuffer",
 									"filename": "CreateStaticBuffer"
-								},										
+								},
 								{
 									"title": "Data",
 									"filename": "Buffer_Data"
@@ -1677,7 +1575,7 @@
 								{
 									"title": "LoadBuffer",
 									"filename": "LoadBuffer"
-								},											
+								},
 								{
 									"title": "PeekByte",
 									"filename": "Buffer_PeekByte"
@@ -1685,7 +1583,7 @@
 								{
 									"title": "PeekDouble",
 									"filename": "Buffer_PeekDouble"
-								},						
+								},
 								{
 									"title": "PeekInt",
 									"filename": "Buffer_PeekInt"
@@ -1713,7 +1611,7 @@
 								{
 									"title": "PokeDouble",
 									"filename": "Buffer_PokeDouble"
-								},						
+								},
 								{
 									"title": "PokeInt",
 									"filename": "Buffer_PokeInt"
@@ -1741,34 +1639,27 @@
 								{
 									"title": "Save",
 									"filename": "Buffer_Save"
-								}										
-							]				
+								}
+							]
 						},
 						{
 							"title": "StreamBuffer",
 							"filename": "StreamBuffer",
-							"topics": 
-							[
-								{
-									"title": "CreateStreamBuffer",
-									"filename": "CreateStreamBuffer"
-								}
-							]
-						}				
-					]							
+							"topics": [{
+								"title": "CreateStreamBuffer",
+								"filename": "CreateStreamBuffer"
+							}]
+						}
+					]
 				},
 				{
 					"title": "Multithreading",
 					"hideFromLua": true,
 					"hideFromCS": true,
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Condition",
 							"filename": "Condition",
-							"topics": 
-							[
-								{
+							"topics": [{
 									"title": "CreateCondition",
 									"filename": "CreateCondition"
 								},
@@ -1781,13 +1672,11 @@
 									"filename": "Condition_Wait"
 								}
 							]
-						},						
+						},
 						{
 							"title": "Mutex",
 							"filename": "Mutex",
-							"topics": 
-							[
-								{
+							"topics": [{
 									"title": "CreateMutex",
 									"filename": "CreateMutex"
 								},
@@ -1800,24 +1689,22 @@
 									"filename": "Mutex_Unlock"
 								}
 							]
-						},				
+						},
 						{
 							"title": "Thread",
 							"filename": "Thread",
-							"topics": 
-							[
-								{
+							"topics": [{
 									"title": "CreateThread",
 									"filename": "CreateThread"
 								},
 								{
 									"title": "GetResult",
 									"filename": "Thread_GetResult"
-								},						
+								},
 								{
 									"title": "GetState",
 									"filename": "Thread_GetState"
-								},					
+								},
 								{
 									"title": "MaxThreads",
 									"filename": "MaxThreads"
@@ -1829,19 +1716,17 @@
 								{
 									"title": "Wait",
 									"filename": "Thread_Wait"
-								}						
+								}
 							]
 						}
-					]							
+					]
 				},
 				{
 					"title": "Networking",
 					"filename": "Networking",
 					"hideFromLua": true,
 					"hideFromCS": true,
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Address",
 							"filename": "Address"
 						},
@@ -1852,7 +1737,7 @@
 						{
 							"title": "Message",
 							"filename": "Message"
-						},						
+						},
 						{
 							"title": "Peer",
 							"filename": "Peer"
@@ -1860,34 +1745,28 @@
 						{
 							"title": "Server",
 							"filename": "Server"
-						}						
-					]							
-				},				
+						}
+					]
+				},
 				{
 					"title": "Object",
 					"filename": "Object",
-					"topics":
-					[		
-						{
+					"topics": [{
 							"title": "As",
 							"filename": "Object_As"
 						},
 						{
 							"title": "Self",
 							"filename": "Object_Self"
-						}				
-					]		
+						}
+					]
 				},
 				{
 					"title": "Physics",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Collider",
 							"filename": "Collider",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "CreateCompoundCollider",
 									"filename": "CreateCompoundCollider"
 								},
@@ -1898,30 +1777,28 @@
 								{
 									"title": "CreateRectCollider",
 									"filename": "CreateRectCollider"
-								},					
+								},
 								{
 									"title": "LoadCollider",
 									"filename": "LoadCollider"
 								}
-							]						
+							]
 						},
 						{
 							"title": "Collision",
-							"filename": "Collision"					
-						},						
+							"filename": "Collision"
+						},
 						{
 							"title": "Joint",
 							"filename": "Joint",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "CreateHingeJoint",
 									"filename": "CreateHingeJoint"
 								},
 								{
 									"title": "CreateKinematicJoint",
 									"filename": "CreateKinematicJoint"
-								},								
+								},
 								{
 									"title": "CreateSliderJoint",
 									"filename": "CreateSliderJoint"
@@ -1946,27 +1823,22 @@
 									"title": "SetTargetRotation",
 									"filename": "Joint_SetTargetRotation"
 								}
-							]						
-						}						
-					]	
-				},				
+							]
+						}
+					]
+				},
 				{
 					"title": "Plugins",
 					"filename": "Plugin",
-					"topics":
-					[
-						{
-							"title": "LoadPlugin",
-							"filename": "LoadPlugin"
-						}				
-					]		
+					"topics": [{
+						"title": "LoadPlugin",
+						"filename": "LoadPlugin"
+					}]
 				},
 				{
 					"title": "Process",
 					"filename": "Process",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Close",
 							"filename": "Process_Close"
 						},
@@ -1981,34 +1853,28 @@
 						{
 							"title": "Wait",
 							"filename": "Process_Wait"
-						}				
-					]		
+						}
+					]
 				},
 				{
 					"title": "Statistics",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "PhysicsStats",
 							"filename": "PhysicsStats"
 						},
 						{
 							"title": "RenderStats",
 							"filename": "RenderStats"
-						}						
+						}
 					]
-				},				
+				},
 				{
 					"title": "Strings",
 					"filename": "Strings",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "String",
 							"filename": "String",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "Find",
 									"filename": "String_Find"
 								},
@@ -2047,7 +1913,7 @@
 								{
 									"title": "ToInt",
 									"filename": "String_ToInt"
-								},												
+								},
 								{
 									"title": "Trim",
 									"filename": "String_Trim"
@@ -2060,14 +1926,12 @@
 									"title": "XOR",
 									"filename": "String_XOR"
 								}
-							]					
+							]
 						},
 						{
 							"title": "WString",
 							"filename": "WString",
-							"topics":
-							[
-								{
+							"topics": [{
 									"title": "Find",
 									"filename": "WString_Find"
 								},
@@ -2106,7 +1970,7 @@
 								{
 									"title": "ToInt",
 									"filename": "WString_ToInt"
-								},	
+								},
 								{
 									"title": "ToString",
 									"filename": "WString_ToString"
@@ -2114,7 +1978,7 @@
 								{
 									"title": "ToUTF8String",
 									"filename": "WString_ToUTF8String"
-								},					
+								},
 								{
 									"title": "Trim",
 									"filename": "WString_Trim"
@@ -2127,15 +1991,13 @@
 									"title": "XOR",
 									"filename": "WString_XOR"
 								}
-							]					
-						}				
-					]		
+							]
+						}
+					]
 				},
 				{
 					"title": "Scene",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "AddEntity",
 							"filename": "Scene_AddEntity"
 						},
@@ -2146,17 +2008,15 @@
 						{
 							"title": "Save",
 							"filename": "Scene_Save"
-						}						
+						}
 					]
 				},
 				{
 					"title": "System",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "Command",
 							"filename": "Command"
-						},						
+						},
 						{
 							"title": "Confirm",
 							"filename": "Confirm"
@@ -2168,11 +2028,11 @@
 						{
 							"title": "Microsecs",
 							"filename": "Microsecs"
-						},						
+						},
 						{
 							"title": "Millisecs",
 							"filename": "Millisecs"
-						},				
+						},
 						{
 							"title": "Notify",
 							"filename": "Notify"
@@ -2184,7 +2044,7 @@
 						{
 							"title": "Print",
 							"filename": "Print"
-						},					
+						},
 						{
 							"title": "RequestDir",
 							"filename": "RequestDir"
@@ -2196,15 +2056,13 @@
 						{
 							"title": "Sleep",
 							"filename": "Sleep"
-						}				
-					]			
-				},				
+						}
+					]
+				},
 				{
 					"title": "World",
 					"filename": "World",
-					"topics":
-					[
-						{
+					"topics": [{
 							"title": "ClearCollisionResponses",
 							"filename": "World_ClearCollisionResponses"
 						},
@@ -2215,7 +2073,7 @@
 						{
 							"title": "GetCollisionResponse",
 							"filename": "World_GetCollisionResponse"
-						},						
+						},
 						{
 							"title": "GetEntitiesInArea",
 							"filename": "World_GetEntitiesInArea"
@@ -2223,7 +2081,7 @@
 						{
 							"title": "Pick",
 							"filename": "World_Pick"
-						},						
+						},
 						{
 							"title": "RecordStats",
 							"filename": "World_RecordStats"
@@ -2243,9 +2101,9 @@
 						{
 							"title": "Update",
 							"filename": "World_Update"
-						}		
-					]			
-				}				
+						}
+					]
+				}
 			]
 		}
 	]
