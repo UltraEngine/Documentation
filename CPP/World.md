@@ -13,6 +13,7 @@ The world class is a container for entities.
 | physicsstats | [PhysicsStats](PhysicsStats.md) |  |
 | renderstats | [RenderStats](RenderStats.md) |  |
 | [ClearCollisionResponses](World_ClearCollisionResponses.md) | Method | |
+| [GetAmbientLight](World_GetAmbientLight.md) | Method | |
 | [GetCollisionResponse](World_GetCollisionResponse.md) | Method | |
 | [GetEntitiesInArea](World_GetEntitiesInArea.md) | Method | |
 | [Pick](World_Pick.md) | Method | |
@@ -21,5 +22,6 @@ The world class is a container for entities.
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | |
 | [SetGravity](World_SetGravity.md) | Method | |
 | [SetSkybox](World_SetSkybox.md) | Method | |
+| [SetAmbientLight](World_SetAmbientLight.md) | Method | |
 | [Update](World_Update.md) | Method | |
 | [CreateWorld](CreateWorld.md) | Function | |
