@@ -2,7 +2,7 @@
 
 ## Syntax
 
-- void **SetGI**(const bool mode, const int resolution = 64, const float scale = 0.125, const int cascades = 3, const int bounces = 1)
+- void **SetGI**(const bool mode, const int resolution = 64, const float scale = 0.125, const int cascades = 3, const int bounces = 2)
 
 | Parameter | Description |
 |---|---|
