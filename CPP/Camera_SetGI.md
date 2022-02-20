@@ -10,7 +10,7 @@
 | resolution | voxel grid resolution, can be 32, 64, 128, 256, or 512 |
 | scale | size of one voxel |
 | cascades | number of stages, can be 1, 2, 3, or 4 |
-| bounces | number of light bounces, can be 1, 2, or 3 |
+| bounces | number of light bounces, can be 1 or 2 |
 
 ## Remarks
 
