@@ -27,8 +27,8 @@ The window class provides an interface for creating system application windows.
 | [MouseDown](Window_MouseDown.md) | Method | returns true if the mouse button is pressed |
 | [MouseHit](Window_MouseHit.md) | Method | returns true if the mouse button has been pressed since the last call |
 | [Maximized](Window_Maximized.md) | Method | returns true if the window is currently maximized |
-| [Maximize](Window_Minimize.md) | Method | minimizes the window |
-| [Minimize](Window_Maximize.md) | Method | maximizes the window |
+| [Maximize](Window_Maximize.md) | Method | maximizes the window |
+| [Minimize](Window_Minimize.md) | Method | minimizes the window |
 | [Minimized](Window_Minimized.md) | Method | returns true if the window is currently minimized |
 | [Restore](Window_Restore.md) | Method | restores the window from the minimized or maximized state |
 | [SetMinSize](Window_SetMinSize.md) | Method | sets the minimum size the window can be resized to |
