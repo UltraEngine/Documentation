@@ -4,15 +4,23 @@
 
 ### Textures
 
+- [FreePBR](https://www.freepbr.com/)
+- [Polyhaven](https://polyhaven.com/textures)
+
 ### Models
 
 ### Sounds
 
 ## Tools
 
-### Image Editors
+### Paint Applications
 
-### Vector Image Editors
+- [Corel Paint Shop Pro](https://www.paintshoppro.com)
+- [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
+- [Affinity Photo](https://affinity.serif.com/photo)
+- [Gimp](https://www.gimp.org/)
+- [Paint.net](https://www.getpaint.net/)
 
-### Sound Editor
+### Design Applications
 
+### Sound Applications
