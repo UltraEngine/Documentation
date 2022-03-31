@@ -18,7 +18,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | scale | const [xVec3](xVec3.md)& | read-only scale |
 | [AddForce](Entity_AddForce.md) | Method | applies a force |
 | [AddPointForce](Entity_AddPointForce.md) | Method | apply force at a position |
-[3dkit] | [AddComponent](Entity_AddComponent.md) | Method | add a script component |
+| [AddComponent](Entity_AddComponent.md) | Method | add a script component |
 | [AddTorque](Entity_AddTorque.md) | Method | apply torque |
 | [AlignToVector](Entity_AlignToVector.md) | Method | align the entity to an axis |
 | [BuildShape](Entity_BuildShape.md) | Method | creates a collider for the entity |
@@ -38,7 +38,7 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 | [GetRotation](Entity_GetRotation.md) | Method | retrieves the local or global rotation |
 | [GetQuaternion](Entity_GetQuaternion.md) | Method | retrieves the local or global rotation |
 | [GetScale](Entity_GetScale.md) | Method | retrieves the scale |
-[3dkit] | [GetShadowMode](Entity_GetShadowMode.md) | Method | retrieves the scale mode |
+| [GetShadowMode](Entity_GetShadowMode.md) | Method | retrieves the scale mode |
 | [GetVelocity](Entity_GetVelocity.md) | Method | retrieves the velocity |
 | [GetWorld](Entity_GetWorld.md) | Method | retrieves the entity's world |
 | [Instantiate](Entity_Instantiate.md) | Method | creates an instance of the entity |
