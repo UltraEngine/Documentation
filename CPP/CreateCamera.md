@@ -4,7 +4,7 @@ This function creates a new camera entity.
 
 ## Syntax 
 
-shared_ptr<[Camera](Camera.md)\> **CreateCamera**(shared_ptr<[World](World.md)\> world, const [CameraProjectionMode](Constants.md#CameraProjectionMode) projectionmode)
+shared_ptr<[Camera](Camera.md)\> **CreateCamera**(shared_ptr<[World](World.md)\> world)
 
 | Parameter | Description |
 |---|---|
@@ -49,7 +49,7 @@ int main(int argc, const char* argv[])
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a camera
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
     
     //Main loop
