@@ -13,6 +13,6 @@ This method sets the entity reflectivity mode, which indicates whether the entit
 
 ## Remarks
 
-When a reflective object near the camera moves or changes, it triggers the global illumination system to recalculate indirect lighting.
+When a reflective object near the camera moves or changes, it triggers the global illumination system to recalculate indirect lighting. It is best to minimize the frequency of global illumination updates, as continuous updating can cause flickering artifacts and slow performance.
 
 Most entity types use the automatic reflection mode by default, meaning that reflection is enabled for static objects and disabled for dynamic objects. Lights have reflectivity enabled by default. You may with to disable reflectivity on lights that move or change colors, to prevent tha constant recalculation of indirect lighting.
