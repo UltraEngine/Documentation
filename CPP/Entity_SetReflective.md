@@ -4,14 +4,15 @@ This method sets the entity reflectivity mode, which indicates whether the entit
 
 ## Syntax
 
-- void **SetReflective**(const int reflect)
+- void **SetReflective**(const int reflect, const bool recursive = false)
 
 | Parameters | Description |
 |---|---|
-| reflect | Reflection mode to set, can be 0 (disabled), 1 (enabled), or 2 (automatic)
+| reflect | reflection mode to set, can be 0 (disabled), 1 (enabled), or 2 (automatic)
+| recursive | if set to true, recursively apply the setting to all subobjects in the entity hierarchy |
 
 ## Remarks
 
 When a reflective object near the camera moves or changes, it triggers the global illumination system to recalculate indirect lighting.
 
-Most entity types use the automatic reflection mode by default, meaning that reflection is enabled for static objects and disabled for dynamic objects. Directional lights have reflectivity enabled by default.
+Most entity types use the automatic reflection mode by default, meaning that reflection is enabled for static objects and disabled for dynamic objects. Lights have reflectivity enabled by default. You may with to disable reflectivity on lights that move or change colors, to prevent tha constant recalculation of indirect lighting.
