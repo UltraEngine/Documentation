@@ -8,9 +8,9 @@ This entity emits light in a defined pattern.
 | ----- | ----- | ----- |
 | [GetConeAngles](Light_SetConeAngles.md) | Method |  |
 | [SetConeAngles](Light_SetConeAngles.md) | Method |  |
-| [GetFalloffMode](Light_SetFalloffMode.md) | Method |  |
+| [GetFalloff](Light_GetFalloff.md) | Method |  |
 | [GetShadowMapSize](Light_GetShadowMapSize.md) | Method |  |
-| [SetFalloffMode](Light_GetFalloffMode.md) | Method |  |
+| [SetFalloff](Light_SetFalloff.md) | Method |  |
 | [GetRange](Light_SetRange.md) | Method |  |
 | [SetRange](Light_SetRange.md) | Method |  |
 | [SetShadowMapSize](Light_SetShadowMapSize.md) | Method |  |
