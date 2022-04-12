@@ -2,5 +2,5 @@
 
 ## Syntax
 
-- void **SetFalloff*(const LightFalloffMode falloff)
+- void **SetFalloff**(const [LightFalloffMode](Constants.md) falloff)
 
