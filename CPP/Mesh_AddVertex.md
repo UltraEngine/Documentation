@@ -9,10 +9,10 @@ This methods adds a new vertex to the mesh.
 
 | Parameter | Description |
 |---|---|
-| position, (x, y, z) | |
-| normal, (nx, ny, nz) | |
-| texcoords, (u, v) | |
-| displacement | |
+| position, (x, y, z) | vertex position |
+| normal, (nx, ny, nz) | vertex normal |
+| texcoords, (u, v) | vertex texture coordinates |
+| displacement | maximum tessellation displacement value |
 
 ## Returns
 
