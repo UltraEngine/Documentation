@@ -197,6 +197,19 @@
 							]
 						},
 						{
+							"title": "Model",
+							"filename": "Model",
+							"topics": [{
+									"title": "CreateModel",
+									"filename": "CreateModel"
+								},
+								{
+									"title": "LoadModel",
+									"filename": "LoadModel"
+								}
+							]
+						},						   
+						{
 							"title": "ParticleSystem",
 							"filename": "ParticleSystem",
 							"topics": [{
