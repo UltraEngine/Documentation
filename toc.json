@@ -2018,6 +2018,7 @@
 				},
 				{
 					"title": "Scene",
+					"filename": "Scene.md",
 					"topics": [{
 							"title": "AddEntity",
 							"filename": "Scene_AddEntity"
