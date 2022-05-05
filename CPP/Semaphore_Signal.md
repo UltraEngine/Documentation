@@ -1,6 +1,6 @@
 # Semaphore::Signal
 
-This method sets the condition to the signaled state and releases any threads that are waiting on it.
+This method sets the semaphore to the signaled state and releases any threads that are waiting on it.
 
 ## Syntax
 
@@ -16,10 +16,10 @@ using namespace UltraEngine;
 shared_ptr<Object> EntryPoint(shared_ptr<Object> extra)
 {
     //Cast to Condition object
-    auto cond = extra->As<Condition>();
+    auto semaphore = extra->As<Semaphore>();
 
     //Wait for signaled state
-    cond->Wait();
+    semaphore->Wait();
 
     return NULL;
 }
@@ -33,15 +33,15 @@ int main(int argc, const char* argv[])
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a condition
-    auto cond = CreateCondition();
+    auto semaphore = CreateSemaphore();
 
     //Create a thread
     auto thread = CreateThread(EntryPoint, cond);
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        //Press space to signal the condition
-        if (window->KeyHit(KEY_SPACE)) cond->Signal();
+        //Press space to signal the semaphore
+        if (window->KeyHit(KEY_SPACE)) semaphore->Signal();
 
         //Detect thread finished
         if (thread->GetState() == THREAD_FINISHED)
