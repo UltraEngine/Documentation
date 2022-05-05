@@ -4,11 +4,11 @@ This function creates a condition object which can be signaled by one thread and
 
 ## Syntax
 
-- shared_ptr<[Condition](Condition.md)\> **CreateCondition**()
+- shared_ptr<[Semaphore](Condition.md)\> **CreateSemaphore**()
 
 ## Returns
 
-Returns a new condition object.
+Returns a new semaphore object.
 
 ## Example
 
@@ -20,7 +20,7 @@ using namespace UltraEngine;
 shared_ptr<Object> EntryPoint(shared_ptr<Object> extra)
 {
     //Cast to Condition object
-    auto cond = extra->As<Condition>();
+    auto cond = extra->As<Semaphore>();
 
     //Wait for signaled state
     cond->Wait();
@@ -37,14 +37,14 @@ int main(int argc, const char* argv[])
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a condition
-    auto cond = CreateCondition();
+    auto cond = CreateSemaphore();
 
     //Create a thread
     auto thread = CreateThread(EntryPoint, cond);
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        //Press space to signal the condition
+        //Press space to signal the semaphore
         if (window->KeyHit(KEY_SPACE)) cond->Signal();
 
         //Detect thread finished
