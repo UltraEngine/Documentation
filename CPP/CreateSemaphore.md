@@ -20,10 +20,10 @@ using namespace UltraEngine;
 shared_ptr<Object> EntryPoint(shared_ptr<Object> extra)
 {
     //Cast to Condition object
-    auto cond = extra->As<Semaphore>();
+    auto semaphore = extra->As<Semaphore>();
 
     //Wait for signaled state
-    cond->Wait();
+    semaphore->Wait();
 
     return NULL;
 }
@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a condition
-    auto cond = CreateSemaphore();
+    auto semaphore = CreateSemaphore();
 
     //Create a thread
     auto thread = CreateThread(EntryPoint, cond);
@@ -45,7 +45,7 @@ int main(int argc, const char* argv[])
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         //Press space to signal the semaphore
-        if (window->KeyHit(KEY_SPACE)) cond->Signal();
+        if (window->KeyHit(KEY_SPACE)) semaphore->Signal();
 
         //Detect thread finished
         if (thread->GetState() == THREAD_FINISHED)
