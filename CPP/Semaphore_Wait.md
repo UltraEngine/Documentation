@@ -1,4 +1,4 @@
-# Condition::Wait
+# Semaphore::Wait
 
 This method waits until the condition is signaled by another thread. If the condition has already been set to the signaled state, this method will return immediately. This method will reset the condition signaled state so it can be signaled again.
 
