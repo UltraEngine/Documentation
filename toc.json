@@ -904,6 +904,10 @@
 									"filename": "Pixmap_Resize"
 								},
 								{
+									"title": "Sample",
+									"filename": "Pixmap_Sample"
+								},								   
+								{
 									"title": "WritePixel",
 									"filename": "Pixmap_WritePixel"
 								}
