@@ -1,10 +1,10 @@
 # CreateSemaphore
 
-This function creates a condition object which can be signaled by one thread and waited on by another thread, for thread synchronization.
+This function creates a semaphore object which can be signaled by one thread and waited on by another thread, for thread synchronization.
 
 ## Syntax
 
-- shared_ptr<[Semaphore](Condition.md)\> **CreateSemaphore**()
+- shared_ptr<[Semaphore](Semaphore.md)\> **CreateSemaphore**()
 
 ## Returns
 
