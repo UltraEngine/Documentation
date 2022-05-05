@@ -1,4 +1,4 @@
-# Condition::Signal
+# Semaphore::Signal
 
 This method sets the condition to the signaled state and releases any threads that are waiting on it.
 
