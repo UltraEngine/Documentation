@@ -17,6 +17,7 @@ This class provides an interface for loading, manipulating, and saving image dat
 | [Fill](Pixmap_Fill.md) | Method | writes each pixel with the specified color |
 | [ReadPixel](Pixmap_ReadPixel.md) | Method | reads a single pixel |
 | [Resize](Pixmap_Resize.md) | Method | resizes the pixmap |
+| [Sample](Pixmap_Sample.md) | Method | reads a pixel sample with bilinear filtering |
 | [WritePixel](Pixmap_WritePixel.md) | Method | writes a single pixel |
 | [CreatePixmap](CreatePixmap.md) | Function | Creates a new pixmap object. |
 | [LoadPixmap](LoadPixmap.md) | Function | Loads a pixmap object from a file. |
