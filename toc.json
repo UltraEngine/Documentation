@@ -1677,23 +1677,7 @@
 					"title": "Multithreading",
 					"hideFromLua": true,
 					"hideFromCS": true,
-					"topics": [{
-							"title": "Condition",
-							"filename": "Condition",
-							"topics": [{
-									"title": "CreateCondition",
-									"filename": "CreateCondition"
-								},
-								{
-									"title": "Signal",
-									"filename": "Condition_Signal"
-								},
-								{
-									"title": "Wait",
-									"filename": "Condition_Wait"
-								}
-							]
-						},
+					"topics": [
 						{
 							"title": "Mutex",
 							"filename": "Mutex",
@@ -1711,6 +1695,23 @@
 								}
 							]
 						},
+						{
+							"title": "Semaphore",
+							"filename": "Semaphore",
+							"topics": [{
+									"title": "CreateSemaphore",
+									"filename": "CreateSemaphore"
+								},
+								{
+									"title": "Signal",
+									"filename": "Semaphore_Signal"
+								},
+								{
+									"title": "Wait",
+									"filename": "Semaphore_Wait"
+								}
+							]
+						},						
 						{
 							"title": "Thread",
 							"filename": "Thread",
