@@ -16,7 +16,3 @@ The **Projects** panel contains a list of recent projects and allows you to crea
 The **Learn** panel contains links to documentation and other online resources including video tutorials and the technical assistance forum.
 
 The **Community** panel contains links to community features, including forums, blogs, and the Ultra Engine Marketplace.
-
-## Other Resources
-- [Video Tutorials](https://www.ultraengine.com/community/video/browse/3-tutorials/)
-- [Community Forum](https://www.ultraengine.com/community/forums/)
