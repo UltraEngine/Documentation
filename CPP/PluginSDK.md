@@ -17,7 +17,7 @@ A plugin is only required to have one function called "GetPluginInfo". This will
   {
     "title": "Plugin Title",
     "description": "Description of the plugin and its functionality.",
-    "author": "Copyright John Smith Current Year."
+    "author": "John Smith"
   }
 }
 ```
