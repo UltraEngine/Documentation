@@ -6,6 +6,11 @@ A texture is an image that can be applied to 2D or 3D surfaces. Textures can be 
 
 ## Properties
 
+TEXTURE_CLAMPUVW
+TEXTURE_STORAGE
+TEXTURE_BUFFER
+TEXTURE_MIPMAPS
+
 | Name | Type | Description |
 | --- | --- | --- |
 | size | const [iVec3](iVec3.md)& | read-only dimensions |
