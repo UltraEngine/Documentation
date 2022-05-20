@@ -2,7 +2,7 @@
 The Ultra Engine plugin SDK allows modular functionality to be added to the engine.
 
 ## Overview ##
-A plugin can be loaded by any Leadwerks 5 program using the [LoadPlugin](LoadPlugin.md) command. Plugins must be compiled separately for each supported platform.
+A plugin can be loaded by any Ultra Engine application using the [LoadPlugin](LoadPlugin.md) command. Plugins must be compiled separately for each supported platform.
 Windows uses DLL files for plugins. MacOS uses DYLIB files. Linux uses SO files. You can omit the file extension in the plugin file path, and the engine will choose a file extension based on the current platform:
 
 ```c++
