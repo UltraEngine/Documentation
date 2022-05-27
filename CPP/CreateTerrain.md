@@ -1,9 +1,13 @@
-# CreateTerrain #
+# CreateTerrain
 
-## Syntax ##
-- shared_ptr<Terrain\> CreateTerrain(shared_ptr<World\> world, const int resolution, const int ...)
 
-## Example ##
+
+## Syntax
+
+- shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const int resolution, const int ...)
+
+## Example
+
 ```
 #include "pch.h"
 #include "Project.h"
