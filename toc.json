@@ -208,14 +208,6 @@
 									"filename": "LoadModel"
 								}
 							]
-						},						   
-						{
-							"title": "ParticleSystem",
-							"filename": "ParticleSystem",
-							"topics": [{
-								"title": "CreateParticleSystem",
-								"filename": "CreateParticleSystem"
-							}]
 						},
 						{
 							"title": "Pivot",
