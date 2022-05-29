@@ -29,11 +29,11 @@
 							"filename": "cameras"
 						},
 						{
-							"title": "Models",
+							"title": "3D Models",
 							"filename": "models"
 						},
 						{
-							"title": "Lights",
+							"title": "Lighting",
 							"filename": "lights"
 						},
 						{
