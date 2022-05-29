@@ -52,38 +52,6 @@
 				{
 					"title": "Add to an Existing Project",
 					"filename": "ImportLibrary"
-				},
-				{
-					"title": "GUI",
-					"topics": [{
-							"title": "Create an Image Converter",
-							"filename": "ImageConverter"
-						},
-						{
-							"title": "Create an Image Viewer",
-							"filename": "ImageViewer"
-						},
-						{
-							"title": "Create a File Browser",
-							"filename": "FileBrowser"
-						},
-						{
-							"title": "Advanced Application Interface",
-							"filename": "AdvancedInterface"
-						},
-						{
-							"title": "OpenGL Rendering",
-							"filename": "OpenGL"
-						}
-					]
-				},
-				{
-					"title": "Plugin SDK",
-					"filename": "PluginSDK"
-				},
-				{
-					"title": "Additional Resources",
-					"filename": "Resources"
 				}				   
 			]
 		},
