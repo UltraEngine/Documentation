@@ -16,9 +16,11 @@ Other file formats can be loaded if a plugin exists for that format.
 
 ## Edge Clamp
 
+
+
 ## Filter
 
-
+Textures can use linear or nearest filtering. Linear filtering should be used for most textures.
 
 ## Pixel Formats
 
