@@ -11,7 +11,40 @@
 				},
 				{
 					"title": "3D Graphics",
-					"filename": "3dgraphics"
+					"filename": "3dgraphics",
+					"topics": [{
+							"title": "Textures",
+							"filename": "textures"
+						},
+						{
+							"title": "Shaders",
+							"filename": "shader"
+						},
+						{
+							"title": "Material",
+							"filename": "materials"
+						},
+						{
+							"title": "Models",
+							"filename": "models"
+						},
+						{
+							"title": "Lights",
+							"filename": "lights"
+						},
+						{
+							"title": "Animation",
+							"filename": "animation"
+						},
+						{
+							"title": "Terrain",
+							"filename": "terrain"
+						},
+						{
+							"title": "Post-processing Effects",
+							"filename": "posteffects"
+						}						   
+					]
 				},				   
 				{
 					"title": "2D Graphics",
