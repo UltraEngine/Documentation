@@ -4,7 +4,7 @@
 
 Textures can be loaded from DDS files, or a variety of files using the FreeImage texture plugin, including PNG, JPEG, BMP, TGA, and PCX, GIF, and PSD. Leadwerks TEX files can be loaded using the Leadwerks plugin.
 
-DDS textures are generally recommended because they support mipmaps and compression, but many glTF files use PNG or JPEG images for textures. Ultra Engine can load and save DDS files in glTF models using Microsoft's [MSFT_texture_dds](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/MSFT_texture_dds) glTF extension.
+DDS textures are generally recommended because they support stored mipmaps and compression, but many glTF files use PNG or JPEG images for textures. Ultra Engine can load and save DDS files in glTF models using Microsoft's [MSFT_texture_dds](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/MSFT_texture_dds) glTF extension.
 
 Other file formats can be loaded if a plugin exists for that format.
 
