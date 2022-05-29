@@ -10,6 +10,38 @@
 					"selected": true
 				},
 				{
+					"title": "3D Graphics",
+					"filename": "3DGraphics"
+				},				   
+				{
+					"title": "2D Graphics",
+					"filename": "2DGraphics"
+				},
+				{
+					"title": "Physics",
+					"filename": "Physics"
+				},
+				{
+					"title": "Sound",
+					"filename": "Sound"
+				},
+				{
+					"title": "User Interface",
+					"filename": "UserInterface"
+				},
+				{
+					"title": "Multiplayer",
+					"filename": "Multiplayer"
+				},
+				{
+					"title": "Game Save",
+					"filename": "GameSaves"
+				},
+				{
+					"title": "Packaging and Distribution",
+					"filename": "PackagingAndDistribution"
+				},				   
+				{
 					"title": "Create a Project",
 					"filename": "ProjectCreation"
 				},
