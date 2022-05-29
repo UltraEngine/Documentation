@@ -30,16 +30,20 @@
 					"filename": "UserInterface"
 				},
 				{
-					"title": "Multiplayer",
-					"filename": "Multiplayer"
+					"title": "AI",
+					"filename": "AI"
 				},
 				{
 					"title": "Game Saves",
 					"filename": "GameSaves"
+				},				   
+				{
+					"title": "Multiplayer",
+					"filename": "Multiplayer"
 				},
 				{
-					"title": "Packaging and Distribution",
-					"filename": "PackagingAndDistribution"
+					"title": "Publishing",
+					"filename": "Publishing"
 				},				   
 				{
 					"title": "Create a Project",
