@@ -1,4 +1,4 @@
-# Scene::Save #
+# Scene:Save #
 This method saves a scene to a stream or file.
 
 The Lua state of each entity in the scene will be serialized in the saved file. Because of differences between the Lua language and the JSON schematic, the following rules should be noted:
