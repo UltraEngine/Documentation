@@ -30,8 +30,8 @@
 					"filename": "UserInterface"
 				},
 				{
-					"title": "AI",
-					"filename": "AI"
+					"title": "Enemies and NPCs",
+					"filename": "EnemiesAndNPCs"
 				},
 				{
 					"title": "Saved Games and Settings",
