@@ -1,6 +1,6 @@
 # Physics
 
-Ultra Engine uses [Newton Dynamics](http://newtondynamics.com) to provide fast and stable real-time physics suitable for games and simulations.
+Ultra Engine uses [Newton Dynamics](http://newtondynamics.com) to provide fast and stable physics suitable for games and real-time simulations.
 
 ## Gravity
 
