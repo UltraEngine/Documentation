@@ -1,4 +1,4 @@
-# Quat.Euler #
+# Quat:Euler #
 
 ## Syntax ##
 - [Vec3]() **Euler**()
