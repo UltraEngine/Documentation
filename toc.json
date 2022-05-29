@@ -1,7 +1,7 @@
 {
 	"topics": [{
 			"title": "Topics",
-			"openstate": true,
+			"openstate": false,
 			"useLanguage": false,
 			"topics": [{
 					"title": "Introduction",
