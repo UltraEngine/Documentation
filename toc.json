@@ -34,7 +34,7 @@
 					"filename": "AI"
 				},
 				{
-					"title": "Game Saves",
+					"title": "Saved Games and Settings",
 					"filename": "GameSaves"
 				},				   
 				{
@@ -44,14 +44,6 @@
 				{
 					"title": "Publishing",
 					"filename": "Publishing"
-				},				   
-				{
-					"title": "Create a Project",
-					"filename": "ProjectCreation"
-				},
-				{
-					"title": "Add to an Existing Project",
-					"filename": "ImportLibrary"
 				}				   
 			]
 		},
