@@ -21,8 +21,12 @@
 							"filename": "shader"
 						},
 						{
-							"title": "Material",
+							"title": "Materials",
 							"filename": "materials"
+						},
+						{
+							"title": "Cameras",
+							"filename": "cameras"
 						},
 						{
 							"title": "Models",
