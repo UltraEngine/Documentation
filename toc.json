@@ -1,6 +1,6 @@
 {
 	"topics": [{
-			"title": "Topics",
+			"title": "User Guide",
 			"openstate": false,
 			"useLanguage": false,
 			"topics": [{
@@ -11,15 +11,15 @@
 				},
 				{
 					"title": "3D Graphics",
-					"filename": "3DGraphics"
+					"filename": "3dgraphics"
 				},				   
 				{
 					"title": "2D Graphics",
-					"filename": "2DGraphics"
+					"filename": "2dgraphics"
 				},
 				{
 					"title": "Physics",
-					"filename": "Physics"
+					"filename": "physics"
 				},
 				{
 					"title": "Sound",
@@ -27,23 +27,27 @@
 				},
 				{
 					"title": "User Interfaces",
-					"filename": "UserInterface"
+					"filename": "userinterfaces"
 				},
 				{
-					"title": "Enemies and NPCs",
-					"filename": "EnemiesAndNPCs"
+					"title": "Enemies & NPCs",
+					"filename": "pathfinding"
 				},
 				{
-					"title": "Saved Games and Settings",
-					"filename": "GameSaves"
+					"title": "Saved Games & Settings",
+					"filename": "savedgames"
+				},
+				{
+					"title": "Virtual Reality",
+					"filename": "vr"
 				},				   
 				{
 					"title": "Multiplayer",
-					"filename": "Multiplayer"
+					"filename": "multiplayer"
 				},
 				{
-					"title": "Publishing",
-					"filename": "Publishing"
+					"title": "Packaging & Distribution",
+					"filename": "publishing"
 				}				   
 			]
 		},
