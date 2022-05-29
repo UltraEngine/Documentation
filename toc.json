@@ -49,7 +49,7 @@
 		},
 		{
 			"title": "Programming Reference",
-			"openstate": true,
+			"openstate": false,
 			"topics": [{
 					"title": "Asset",
 					"filename": "Asset",
