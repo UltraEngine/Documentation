@@ -26,7 +26,7 @@
 					"filename": "Sound"
 				},
 				{
-					"title": "User Interface",
+					"title": "User Interfaces",
 					"filename": "UserInterface"
 				},
 				{
@@ -34,7 +34,7 @@
 					"filename": "Multiplayer"
 				},
 				{
-					"title": "Game Save",
+					"title": "Game Saves",
 					"filename": "GameSaves"
 				},
 				{
