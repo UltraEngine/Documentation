@@ -25,6 +25,7 @@ Other file formats can be loaded if a plugin exists for that format.
 
 ### Compressed Textures
 
+BC7 compression format is recommended for most texture files, while BC5 is recommended for normal maps. Both of these formats are supported by the DDS file format.
 
 ## Cubemaps
 
