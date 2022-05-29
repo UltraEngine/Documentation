@@ -1,3 +1,0 @@
-# Materials
-
-Ultra Engine uses materials with physically-based rendering. Each material has properties to indicate how metallic and rough the surface should be...
