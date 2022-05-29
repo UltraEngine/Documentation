@@ -1,13 +1,5 @@
 # Entity::SetPosition
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 This method sets the position of an entity in 3-dimensional space, using local or global coordinates.
 
 An entity can be positioned in local or global coordinates. Local coordinates are relative to the entity parent's space. If the entity does not have a parent, local and global coordinates are the same.
