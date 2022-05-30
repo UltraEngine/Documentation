@@ -97,8 +97,8 @@
 					"filename": "Animation",
 					"topics": [
 						{
-							"title": "AnimationSequence",
-							"filename": "AnimationSequence"
+							"title": "Sequence",
+							"filename": "Sequence"
 						},
 						{
 							"title": "Bone",
