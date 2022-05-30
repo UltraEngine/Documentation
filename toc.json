@@ -731,6 +731,14 @@
 					"title": "Geometry",
 					"topics": [
 						{
+							"title": "Face",
+							"filename": "Face",
+							"topics": [{
+								"title": "Face",
+								"filename": "Face"
+							}]
+						},
+						{
 							"title": "PickInfo",
 							"filename": "PickInfo",
 							"topics": [{
