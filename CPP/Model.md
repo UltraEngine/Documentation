@@ -9,13 +9,13 @@ The main supported model file format is the [glTF](https://www.khronos.org/gltf/
 ## Members
 | Name | Description |
 |---|---|
-| const vector<shared_ptr<[LOD](LOD.md)\> \>& lods | Read-only array of LODs |
+| const vector<shared_ptr<[Lod](Lod.md)\> \>& lods | Read-only array of Lods |
 | const shared_ptr<[Skeleton](Skeleton.md)\>& skeleton | Read-only skeleton object |
 
 ## Methods
 | Name | Description |
 |---|---|
-| [AddLOD](Model_AddLOD.md) | Adds a new level-of-detail to the model. |
+| [AddLod](Model_AddLod.md) | Adds a new level-of-detail to the model. |
 | [Animate](Model_Animate.md) | |
 | [Save](Model_Save.md) | Saves the model to a file. |
 | [SetLODScreenSize](Model_SetLODScreenSize.md) | Sets the screen size at which a level-of-detail is used. |
