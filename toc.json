@@ -95,7 +95,12 @@
 				{
 					"title": "Animation",
 					"filename": "Animation",
-					"topics": [{
+					"topics": [
+						{
+							"title": "Animation",
+							"filename": "Animation"
+						},
+						{
 							"title": "Bone",
 							"filename": "Bone"
 						},
