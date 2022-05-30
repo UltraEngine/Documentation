@@ -1803,6 +1803,19 @@
 					]
 				},
 				{
+					"title": "PathFinding",
+					"filename": "PathFinding",
+					"topics": [{
+							"title": "NavAgent",
+							"filename": "NavAgent"
+						},
+						{
+							"title": "NavMesh",
+							"filename": "NavMesh"
+						}
+					]
+				},		   
+				{
 					"title": "Physics",
 					"topics": [{
 							"title": "Collider",
