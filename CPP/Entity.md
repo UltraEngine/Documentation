@@ -1,4 +1,4 @@
-# Entity
+# Entity ![](../Images/icon-programming.png)
 
 **Base class:** [Object](Object.md)
 
