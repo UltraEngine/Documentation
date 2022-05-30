@@ -1059,40 +1059,7 @@
 						},
 						{
 							"title": "Vertex",
-							"filename": "Vertex",
-							"topics": [{
-									"title": "GetBitangent",
-									"filename": "Vertex_GetBitangent"
-								},
-								{
-									"title": "GetNormal",
-									"filename": "Vertex_GetNormal"
-								},
-								{
-									"title": "GetTangent",
-									"filename": "Vertex_GetTangent"
-								},
-								{
-									"title": "GetTexCoords",
-									"filename": "Vertex_GetTexCoords"
-								},
-								{
-									"title": "SetBitangent",
-									"filename": "Vertex_SetBitangent"
-								},
-								{
-									"title": "SetNormal",
-									"filename": "Vertex_SetNormal"
-								},
-								{
-									"title": "SetTangent",
-									"filename": "Vertex_SetTangent"
-								},
-								{
-									"title": "SetTexCoords",
-									"filename": "Vertex_SetTexCoords"
-								}
-							]
+							"filename": "Vertex"
 						}						   
 					]
 				},
