@@ -91,7 +91,21 @@
 		{
 			"title": "Programming Reference",
 			"openstate": false,
-			"topics": [{
+			"topics": [
+				{
+					"title": "Animation",
+					"filename": "Animation",
+					"topics": [{
+							"title": "Bone",
+							"filename": "Bone"
+						},
+						{
+							"title": "Skeleton",
+							"filename": "Skeleton"
+						}
+					]
+				},				
+				{
 					"title": "Asset",
 					"filename": "Asset",
 					"topics": [{
