@@ -715,63 +715,7 @@
 				},
 				{
 					"title": "Geometry",
-					"topics": [{
-							"title": "Mesh",
-							"filename": "Mesh",
-							"topics": [{
-									"title": "AddPolygon",
-									"filename": "Mesh_AddPolygon"
-								},
-								{
-									"title": "AddVertex",
-									"filename": "Mesh_AddVertex"
-								},
-								{
-									"title": "Copy",
-									"filename": "Mesh_Copy"
-								},
-								{
-									"title": "CountPolygons",
-									"filename": "Mesh_CountPolygons"
-								},
-								{
-									"title": "Finalize",
-									"filename": "Mesh_Finalize"
-								},
-								{
-									"title": "Recenter",
-									"filename": "Mesh_Recenter"
-								},
-								{
-									"title": "Rotate",
-									"filename": "Mesh_Rotate"
-								},
-								{
-									"title": "Scale",
-									"filename": "Mesh_Scale"
-								},
-								{
-									"title": "SetMaterial",
-									"filename": "Mesh_SetMaterial"
-								},
-								{
-									"title": "Transform",
-									"filename": "Mesh_Transform"
-								},
-								{
-									"title": "Translate",
-									"filename": "Mesh_Translate"
-								},
-								{
-									"title": "UpdateBounds",
-									"filename": "Mesh_UpdateBounds"
-								},
-								{
-									"title": "UpdateTangents",
-									"filename": "Mesh_UpdateTangents"
-								}
-							]
-						},
+					"topics": [
 						{
 							"title": "PickInfo",
 							"filename": "PickInfo",
@@ -779,43 +723,6 @@
 								"title": "GetTexCoords",
 								"filename": "PickInfo_GetTexCoords"
 							}]
-						},
-						{
-							"title": "Vertex",
-							"filename": "Vertex",
-							"topics": [{
-									"title": "GetBitangent",
-									"filename": "Vertex_GetBitangent"
-								},
-								{
-									"title": "GetNormal",
-									"filename": "Vertex_GetNormal"
-								},
-								{
-									"title": "GetTangent",
-									"filename": "Vertex_GetTangent"
-								},
-								{
-									"title": "GetTexCoords",
-									"filename": "Vertex_GetTexCoords"
-								},
-								{
-									"title": "SetBitangent",
-									"filename": "Vertex_SetBitangent"
-								},
-								{
-									"title": "SetNormal",
-									"filename": "Vertex_SetNormal"
-								},
-								{
-									"title": "SetTangent",
-									"filename": "Vertex_SetTangent"
-								},
-								{
-									"title": "SetTexCoords",
-									"filename": "Vertex_SetTexCoords"
-								}
-							]
 						}
 					]
 				},
@@ -915,6 +822,63 @@
 								}
 							]
 						},
+						{
+							"title": "Mesh",
+							"filename": "Mesh",
+							"topics": [{
+									"title": "AddPolygon",
+									"filename": "Mesh_AddPolygon"
+								},
+								{
+									"title": "AddVertex",
+									"filename": "Mesh_AddVertex"
+								},
+								{
+									"title": "Copy",
+									"filename": "Mesh_Copy"
+								},
+								{
+									"title": "CountPolygons",
+									"filename": "Mesh_CountPolygons"
+								},
+								{
+									"title": "Finalize",
+									"filename": "Mesh_Finalize"
+								},
+								{
+									"title": "Recenter",
+									"filename": "Mesh_Recenter"
+								},
+								{
+									"title": "Rotate",
+									"filename": "Mesh_Rotate"
+								},
+								{
+									"title": "Scale",
+									"filename": "Mesh_Scale"
+								},
+								{
+									"title": "SetMaterial",
+									"filename": "Mesh_SetMaterial"
+								},
+								{
+									"title": "Transform",
+									"filename": "Mesh_Transform"
+								},
+								{
+									"title": "Translate",
+									"filename": "Mesh_Translate"
+								},
+								{
+									"title": "UpdateBounds",
+									"filename": "Mesh_UpdateBounds"
+								},
+								{
+									"title": "UpdateTangents",
+									"filename": "Mesh_UpdateTangents"
+								}
+							]
+						},						   
 						{
 							"title": "Pixmap",
 							"filename": "Pixmap",
@@ -1092,7 +1056,44 @@
 									"filename": "TransformCoord"
 								}
 							]
-						}
+						},
+						{
+							"title": "Vertex",
+							"filename": "Vertex",
+							"topics": [{
+									"title": "GetBitangent",
+									"filename": "Vertex_GetBitangent"
+								},
+								{
+									"title": "GetNormal",
+									"filename": "Vertex_GetNormal"
+								},
+								{
+									"title": "GetTangent",
+									"filename": "Vertex_GetTangent"
+								},
+								{
+									"title": "GetTexCoords",
+									"filename": "Vertex_GetTexCoords"
+								},
+								{
+									"title": "SetBitangent",
+									"filename": "Vertex_SetBitangent"
+								},
+								{
+									"title": "SetNormal",
+									"filename": "Vertex_SetNormal"
+								},
+								{
+									"title": "SetTangent",
+									"filename": "Vertex_SetTangent"
+								},
+								{
+									"title": "SetTexCoords",
+									"filename": "Vertex_SetTexCoords"
+								}
+							]
+						}						   
 					]
 				},
 				{
