@@ -105,6 +105,10 @@
 							"filename": "Bone"
 						},
 						{
+							"title": "KeyFrame",
+							"filename": "KeyFrame"
+						},						
+						{
 							"title": "Skeleton",
 							"filename": "Skeleton"
 						}
