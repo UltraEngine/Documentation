@@ -947,6 +947,14 @@
 							}]
 						},
 						{
+							"title": "Shader",
+							"filename": "Shader",
+							"topics": [{
+								"title": "CreateShader",
+								"filename": "CreateShader"
+							}]
+						},
+						{
 							"title": "ShaderFamily",
 							"filename": "ShaderFamily",
 							"topics": [{
@@ -961,7 +969,7 @@
 								"title": "LoadShaderModule",
 								"filename": "LoadShaderModule"
 							}]
-						},						   
+						},					   
 						{
 							"title": "Texture",
 							"filename": "Texture",
