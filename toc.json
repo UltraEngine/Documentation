@@ -1922,6 +1922,19 @@
 					]
 				},
 				{
+					"title": "Script",
+					"filename": "Script",
+					"topics": [{
+							"title": "RunScript",
+							"filename": "RunScript"
+						},
+						{
+							"title": "ExecuteString",
+							"filename": "ExecuteString"
+						}
+					]
+				},				   
+				{
 					"title": "Statistics",
 					"topics": [{
 							"title": "PhysicsStats",
