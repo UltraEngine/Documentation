@@ -1447,7 +1447,11 @@
 									"filename": "WidgetBlock_SetText"
 								}
 							]
-						}
+						},
+						{
+							"title": "WidgetItem",
+							"filename": "WidgetItem"
+						}						   
 					]
 				},
 				{
