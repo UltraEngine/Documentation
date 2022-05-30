@@ -933,6 +933,14 @@
 							}]
 						},
 						{
+							"title": "ShaderModule",
+							"filename": "ShaderModule",
+							"topics": [{
+								"title": "LoadShaderModule",
+								"filename": "LoadShaderModule"
+							}]
+						},						   
+						{
 							"title": "Texture",
 							"filename": "Texture",
 							"topics": [{
