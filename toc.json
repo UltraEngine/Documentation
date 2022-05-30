@@ -1966,14 +1966,15 @@
 				{
 					"title": "Script",
 					"filename": "Script",
-					"topics": [{
-							"title": "RunScript",
-							"filename": "RunScript"
-						},
+					"topics": [
 						{
 							"title": "ExecuteString",
 							"filename": "ExecuteString"
-						}
+						},
+						{
+							"title": "RunScript",
+							"filename": "RunScript"
+						}						
 					]
 				},				   
 				{
