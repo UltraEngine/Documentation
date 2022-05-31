@@ -19,6 +19,7 @@ The world class is a container for entities.
 | [Pick](World_Pick.md) | Method | |
 | [RecordStats](World_RecordStats.md) | Method | |
 | [Render](World_Render.md) | Method | |
+| [Save](World_Save.md) | Method | serializes the world to a file |
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | |
 | [SetGravity](World_SetGravity.md) | Method | |
 | [SetSkybox](World_SetSkybox.md) | Method | |
