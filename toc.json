@@ -308,10 +308,15 @@
 						{
 							"title": "Terrain",
 							"filename": "Terrain",
-							"topics": [{
+							"topics": [
+								{
 									"title": "CreateTerrain",
 									"filename": "CreateTerrain"
-								}
+								},
+								{
+									"title": "Terrain_SetHeight",
+									"filename": "Terrain_SetHeight"
+								}								   
 							]
 						},						   
 						{
