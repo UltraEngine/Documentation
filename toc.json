@@ -311,9 +311,9 @@
 									"filename": "CreateTerrain"
 								},
 								{
-									"title": "Terrain_SetHeight",
+									"title": "SetHeight",
 									"filename": "Terrain_SetHeight"
-								}								   
+								}
 							]
 						},						   
 						{
