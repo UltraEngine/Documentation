@@ -4,7 +4,9 @@
 
 ## Syntax
 
-- shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const int resolution, const int ...)
+- shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const int xres, const int yres)
+
+
 
 ## Example
 
