@@ -24,6 +24,10 @@
 						{
 							"title": "Lighting",
 							"filename": "lights"
+						},
+						{
+							"title": "Materials",
+							"filename": "materials"
 						},						
 						{
 							"title": "Textures",
@@ -32,10 +36,6 @@
 						{
 							"title": "Shaders",
 							"filename": "shader"
-						},
-						{
-							"title": "Materials",
-							"filename": "materials"
 						},
 						{
 							"title": "Animation",
