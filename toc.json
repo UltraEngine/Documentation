@@ -12,18 +12,7 @@
 				{
 					"title": "3D Graphics",
 					"filename": "3dgraphics",
-					"topics": [{
-							"title": "Textures",
-							"filename": "textures"
-						},
-						{
-							"title": "Shaders",
-							"filename": "shader"
-						},
-						{
-							"title": "Materials",
-							"filename": "materials"
-						},
+					"topics": [
 						{
 							"title": "Cameras",
 							"filename": "cameras"
@@ -35,6 +24,18 @@
 						{
 							"title": "Lighting",
 							"filename": "lights"
+						},						
+						{
+							"title": "Textures",
+							"filename": "textures"
+						},
+						{
+							"title": "Shaders",
+							"filename": "shader"
+						},
+						{
+							"title": "Materials",
+							"filename": "materials"
 						},
 						{
 							"title": "Animation",
@@ -155,10 +156,6 @@
 							}]
 						}
 					]
-				},
-				{
-					"title": "Constants",
-					"filename": "Constants"
 				},
 				{
 					"title": "Debugging",
