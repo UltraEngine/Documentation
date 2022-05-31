@@ -1,13 +1,15 @@
-# Terrain #
+# Terrain
+
 This class handles outdoor landscapes.
 
 | Property | Type | Description |
 |-----|-----|-----|
 | resolution | iVec2 | |
-| [Transform](Terrain_Transform.md) | Method | |
+| [SetHeight](Terrain_SetHeight.md) | Method | |
 | [CreateTerrain](CreateTerrain.md) | Function | |
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 #include "Project.h"
