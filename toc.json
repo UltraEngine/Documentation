@@ -34,10 +34,6 @@
 							"filename": "textures"
 						},
 						{
-							"title": "Shaders",
-							"filename": "shader"
-						},
-						{
 							"title": "Animation",
 							"filename": "animation"
 						},
