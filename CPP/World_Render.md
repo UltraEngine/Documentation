@@ -23,7 +23,7 @@ If your game spendsa significant amount of time initializing a scene, you can sa
 ## Example
 
 ```c++
-#import UltraEngine
+#import UltraEngine;
 
 using namespace UltraEngine;
 
