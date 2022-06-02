@@ -9,6 +9,14 @@ This method sets the terrain material at any point on the heightmap. Up to four 
 - void **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints)
 - void **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints, const [Vec3](Vec3.md)& elevationconstraints)
 
+| Parameter | Description |
+|---|---|
+| material | material to apply |
+| weight | influence the material has at this point |
+| recursive | if set to true, the material will be applied to all children in the entity's subhierarchy |
+| slopeconstraints | minimum and maximum slope over which the material will appear, and blending range, in degrees |
+| elevationconstraints | minimum and maximum elevation over which the material will appear, and blending range, in meters |
+
 ## Returns
 
 The first variation of this method returns true if the material is successfully applied to the terrain, otherwise false is returned.
