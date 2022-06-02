@@ -17,4 +17,6 @@ The second variation will apply the material to the entire terrain.
 
 The third and fourth variations will apply the material to the entire terrain, using slope and height constraints to determine where it should appear. The x coordinate of the constraint is the minimum value above which the material will appear. The y coordinate is the maximum value below which the material will appear. The z coordinate is a range over which the material will be blended in.
 
+If the terrain point already has four materials applied, the material with the lowest inflience will be replaced.
+
 If material is NULL, with any variation of this method, all materials will be removed.
