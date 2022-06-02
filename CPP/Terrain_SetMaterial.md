@@ -5,9 +5,9 @@ This method sets the terrain material at any point on the heightmap. Up to four 
 ## Syntax
 
 - bool **SetMaterial**(const int x, const int y, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f)
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const bool recursive = false)
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints)
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints, const [Vec3](Vec3.md)& elevationconstraints)
+- void **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const bool recursive = false)
+- void **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints)
+- void **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints, const [Vec3](Vec3.md)& elevationconstraints)
 
 ## Remarks
 
@@ -20,3 +20,9 @@ The third and fourth variations will apply the material to the entire terrain, u
 If the terrain point already has four materials applied, the material with the lowest influence less than or equal to the influence parameter will be replaced. If all materials have a higher influence than the new material, no change will occur.
 
 If material is NULL, with any variation of this method, all materials will be removed.
+
+If the terrain already is using the maximum number of materials, no change will occur.
+
+## Returns
+
+The first variation of this method returns true if the material is successfully applied to the terrain, otherwise false is returned.
