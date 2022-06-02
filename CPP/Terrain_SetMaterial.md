@@ -11,8 +11,10 @@ This method sets the terrain material at any point on the heightmap. Up to four 
 
 ## Remarks
 
-The first variation of this method will apply the specified material to one point on the terrain, with a weighting value. Up to four materials can be applied to any terrain point. Their weights will be normalized before rendering.
+The first variation of this method will apply the specified material to one point on the terrain, with a weighting value. Up to four materials can be applied to any terrain point. Their weights will be normalized before rendering. If the material has already been applied at this terrain point, its weighting value will be replaced.
 
 The second variation will apply the material to the entire terrain.
 
 The third and fourth variations will apply the material to the entire terrain, using slope and height constraints to determine where it should appear. The x coordinate of the constraint is the minimum value above which the material will appear. The y coordinate is the maximum value below which the material will appear. The z coordinate is a range over which the material will be blended in.
+
+If material is NULL, with any variation of this method, all materials will be removed.
