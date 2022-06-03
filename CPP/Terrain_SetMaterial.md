@@ -38,7 +38,7 @@ If the terrain already is using the maximum number of materials, no change will 
 ## Example
 
 ```c++
-auto terrain = CreateTerrain(world, 512, 512, true);
+auto terrain = LoadTerrain(world, "terrain.r16");
 auto grass = LoadMaterial("grass.json");
 auto rock = LoadMaterial("rocks.json");
 auto snow = LoadMaterial("snow.json");
