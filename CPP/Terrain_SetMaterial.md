@@ -19,7 +19,7 @@ This method sets the terrain material at any point on the heightmap. Up to four 
 
 ## Returns
 
-The first variation of this method returns true if the material is successfully applied to the terrain, otherwise false is returned.
+If the terrain is already using the maximum number of materials false is returned, otherwise true is returned.
 
 ## Remarks
 
