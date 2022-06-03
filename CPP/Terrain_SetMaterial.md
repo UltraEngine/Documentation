@@ -34,3 +34,21 @@ If the terrain point already has four materials applied, the material with the l
 If material is NULL, with any variation of this method, all materials will be removed.
 
 If the terrain already is using the maximum number of materials, no change will occur.
+
+## Example
+
+```c++
+auto terrain = CreateTerrain(world, 512, 512, true);
+auto grass = LoadMaterial("grass.json");
+auto rock = LoadMaterial("rocks.json");
+auto snow = LoadMaterial("snow.json");
+
+//Apply grass everywhere
+terrain->SetMaterial(grass);
+
+//Apply rocks to steep surfaces
+terrain->SetMaterial(rocks, Vec3(15,90,5));
+
+//Apply snow to flat areas at high elevation
+terrain->SetMaterial(snow, Vec3(0,24,10), Vec3(500,1000,10));
+```
