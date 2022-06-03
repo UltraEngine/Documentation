@@ -44,6 +44,19 @@ auto terrain = LoadTerrain(world, "terrain.r16");
 auto grass = LoadMaterial("grass.json");
 terrain->SetMaterial(grass);
 
+//Apply random patches of dirt
+auto dirt = LoadMaterial("dirt.json");
+auto noisemap = GenerateNoiseMap(64,64);
+for (int x = 0; x < terrain->resolution.x; ++x)
+{
+  for (int y = 0; y < terrain->resolution.y; ++y)
+  {
+    unsigned int rgba = noisemap->ReadPixel(Mod(x, noisemap->size.x), Mod(y, noisemap->size.y));
+    float influence = float(Red(rgba)) / 255.0f;
+    if (influence > 0.0f) terrain->SetMaterial(x, y, dirt, influence);
+  }
+}
+
 //Apply rocks to steep surfaces
 auto rock = LoadMaterial("rocks.json");
 terrain->SetMaterial(rocks, Vec3(15,90,5));
