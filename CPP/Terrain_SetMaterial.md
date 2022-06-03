@@ -39,16 +39,16 @@ If the terrain already is using the maximum number of materials, no change will 
 
 ```c++
 auto terrain = LoadTerrain(world, "terrain.r16");
-auto grass = LoadMaterial("grass.json");
-auto rock = LoadMaterial("rocks.json");
-auto snow = LoadMaterial("snow.json");
 
 //Apply grass everywhere
+auto grass = LoadMaterial("grass.json");
 terrain->SetMaterial(grass);
 
 //Apply rocks to steep surfaces
+auto rock = LoadMaterial("rocks.json");
 terrain->SetMaterial(rocks, Vec3(15,90,5));
 
 //Apply snow to flat areas at high elevation
 terrain->SetMaterial(snow, Vec3(0,24,10), Vec3(500,1000,10));
+auto snow = LoadMaterial("snow.json");
 ```
