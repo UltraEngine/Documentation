@@ -6,6 +6,7 @@ This class handles outdoor landscapes.
 |-----|-----|-----|
 | resolution | iVec2 | |
 | [SetHeight](Terrain_SetHeight.md) | Method | |
+| [SetElevation](Terrain_SetElevation.md) | Method | |
 | [SetMaterial](Terrain_SetMaterial.md) | Method | |
 | [CreateTerrain](CreateTerrain.md) | Function | |
 
