@@ -14,6 +14,7 @@ TEXTURE_MIPMAPS
 | Name | Type | Description |
 | --- | --- | --- |
 | size | const [iVec3](iVec3.md)& | read-only dimensions |
+| [BuildMipmaps](BuildMipmaps.md) | Method | generates mipmaps for the texture |
 | [LoadTexture](LoadTexture.md) | Function | loads a texture from a file or stream |
 
 ### Texture Limits
