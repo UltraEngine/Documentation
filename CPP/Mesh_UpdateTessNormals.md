@@ -28,7 +28,6 @@ for (auto mesh : model->lods[0]->meshes)
         vertex.normal = TransformNormal(vertex.normal, piv, model);
         vertex.tangent = TransformNormal(vertex.tangent, piv, model);
         vertex.bitangent = TransformNormal(vertex.bitangent, piv, model);
-        //if (vertex.tessnormal != Vec3(0.0f)) vertex.tessnormal = TransformNormal(vertex.tessnormal, piv, model);
     }
     mesh->UpdateTessNormals();
     mesh->Finalize();
