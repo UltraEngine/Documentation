@@ -4,4 +4,4 @@ Ultra Engine's MegaPoly technology is a set of techniques that dynamically upsam
 
 - Resolution-independent curved surfaces
 - Dynamic view-based level of detail
-- Geometric surface detail
+- Geometric surface detail without cracks
