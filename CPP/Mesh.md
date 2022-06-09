@@ -12,7 +12,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | indices | vector<uint32_t\> | array of polygon indices |
 | material | shared_ptr<[Material](Material.md)\>& | read-only material object |
 | vertices | vector<[Vertex](Vertex.md)\> | array of mesh vertices |
-| [AddPolygon](Mesh_AddPolygon.md) | Method | adds a new polygon to the mesh |
+| [AddPrimitive](Mesh_AddPrimitive.md) | Method | adds a new polygon to the mesh |
 | [AddVertex](Mesh_AddVertex.md) | Method | adds a new vertex to the mesh |
 | [Copy](Mesh_Copy.md) | Method | |
 | [CountPolygons](Mesh_CountPolygons.md) | Method | |
