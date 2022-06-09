@@ -1,6 +1,6 @@
 # MegaPoly
 
-Ultra Engine's MegaPoly technology is a set of techniques that dynamically upsample low-detail meshes to make resolution-independent 3D models suitable for VR, while eliminating excess polygons and other problems conventional tessellation techniques usually suffer from.
+Ultra Engine's MegaPoly technology is a set of techniques and tools that can be used to dynamically upsample low-detail meshes to make resolution-independent 3D models suitable for VR, while eliminating excess polygons and other problems conventional tessellation techniques usually suffer from.
 
 The following features are supported:
 
