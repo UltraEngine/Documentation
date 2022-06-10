@@ -34,8 +34,6 @@ The table below describes the bitwise values that can be specified in the *flags
 | PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges and in the interior |
 | PRIMITIVE_COPLANAR | indicates all vertices of the primitive are coplanar, even after tessellation |
 
-Since PRIMITIVE_DEFAULT uses no tessellation, it is the least expensive to render. Combining PRIMITIVE_TESSELLATE_OUTER0, PRIMITIVE_TESSELLATE_OUTER1, and PRIMITIVE_TESSELLATE_OUTER2 (for triangles) or PRIMITIVE_TESSELLATE_OUTER0, PRIMITIVE_TESSELLATE_OUTER1, PRIMITIVE_TESSELLATE_OUTER2, and PRIMITIVE_TESSELLATE_OUTER3 (for quads) is actually less expensive to render than setting only some edges to be tessellated.
-
 ## Returns
 
 Returns the index of the added primitive.
