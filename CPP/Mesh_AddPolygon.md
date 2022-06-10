@@ -27,10 +27,10 @@ The table below describes the bitwise values that can be specified in the *flags
 | Flag | Description |
 | --- | --- |
 | PRIMITIVE_TESSELLATE_NONE | no tessellation |
-| PRIMITIVE_TESSELLATE_OUTER0 | primitive is tessellated along the outside of the edge between indices 0 and 1 |
-| PRIMITIVE_TESSELLATE_OUTER1 | primitive is tessellated along the outside of the edge between indices 1 and 2 |
-| PRIMITIVE_TESSELLATE_OUTER2 | primitive is tessellated along the outside of the edge between indices 2 and 3 |
-| PRIMITIVE_TESSELLATE_OUTER3 | for quads only, primitive is tessellated along the outside of the edge between indices 3 and 0 |
+| PRIMITIVE_TESSELLATE_EDGE0 | primitive is tessellated along edge 0 |
+| PRIMITIVE_TESSELLATE_EDGE1 | primitive is tessellated along edge 1 |
+| PRIMITIVE_TESSELLATE_EDGE2 | primitive is tessellated along edge 2 |
+| PRIMITIVE_TESSELLATE_EDGE3 | for quads only, primitive is tessellated along edge 3 |
 | PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges and in the interior |
 | PRIMITIVE_COPLANAR | indicates all vertices of the primitive are coplanar, even after tessellation |
 
