@@ -20,6 +20,8 @@ This method adds a primtive to a mesh.
 
 The number of indices being added must match the number of polygon vertices the mesh uses. For example, you must use the overload of the method that adds three indices if the mesh is a triangle mesh.
 
+Once a mesh has been finalized, additional primitives cannot be added to it.
+
 ## Returns
 
 Returns the index of the added primitive.
