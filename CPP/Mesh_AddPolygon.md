@@ -22,4 +22,4 @@ The number of indices being added must match the number of polygon vertices the 
 
 ## Returns
 
-Returns the polygon index, or -1 if the polygon could not be added.
+Returns the index of the added primitive.
