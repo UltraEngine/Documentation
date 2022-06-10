@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     auto semaphore = CreateSemaphore();
 
     //Create a thread
-    auto thread = CreateThread(EntryPoint, cond);
+    auto thread = CreateThread(EntryPoint, semaphore);
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
