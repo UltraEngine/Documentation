@@ -1,6 +1,6 @@
 # Mesh::AddPrimitive
 
-This method adds a polygon to a mesh.
+This method adds a primtive to a mesh.
 
 ## Syntax
 
