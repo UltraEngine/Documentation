@@ -1,6 +1,6 @@
 # Pixmap::WritePixel
 
-This method writes each pixel of the pixmap with the specified color. This command is safe to call from multiple threads, as long as they do not write to the same pixels.
+This method sets a single pixel in the pixmap to the specified color.
 
 ## Syntax
 
@@ -11,6 +11,10 @@ This method writes each pixel of the pixmap with the specified color. This comma
 | x | x position of the pixel to write |
 | y | y position of the pixel to write |
 | color | [RGBA](RGBA.md) color |
+
+## Remarks
+
+This command is thread-safe, as long as multiple threads do not write to the same region.
 
 ## Example
 
