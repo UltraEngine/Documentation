@@ -31,7 +31,7 @@ The table below describes the bitwise values that can be specified in the *flags
 | PRIMITIVE_TESSELLATE_EDGE1 | primitive is tessellated along edge 1 |
 | PRIMITIVE_TESSELLATE_EDGE2 | primitive is tessellated along edge 2 |
 | PRIMITIVE_TESSELLATE_EDGE3 | for quads only, primitive is tessellated along edge 3 |
-| PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges and in the interior |
+| PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges |
 | PRIMITIVE_COPLANAR | indicates all vertices of the primitive are coplanar, even after tessellation |
 
 ## Returns
