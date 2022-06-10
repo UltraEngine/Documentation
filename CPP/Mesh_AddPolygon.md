@@ -4,9 +4,9 @@ This method adds a polygon to a mesh.
 
 ## Syntax
 
-- uint32_t **AddPrimitive**(const uint32_t a, const uint32_t b, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
-- uint32_t **AddPrimitive**(const uint32_t a, const uint32_t b, const uint32_t c, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
-- uint32_t **AddPrimitive**(const uint32_t a, const uint32_t b, const uint32_t c, const uint32_t d, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
+- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
+- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const unsigned int c, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
+- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const unsigned int c, const unsigned int d, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
 
 | Parameter | Description |
 |---|---|
