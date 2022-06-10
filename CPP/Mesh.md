@@ -1,8 +1,9 @@
 # Mesh
 
+The mesh class is a collection of vertices and polygons that form visible surfaces.
+
 **Base class:** [Object](Object.md)
 
-The mesh class is a collection of vertices and polygons that form visible surfaces.
 
 ## Properties
 
