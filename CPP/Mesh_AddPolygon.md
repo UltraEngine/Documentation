@@ -14,7 +14,7 @@ This method adds a primtive to a mesh.
 | b | second indice |
 | c | third indice, for a triangle or quad mesh |
 | d | fourth indice, for a quad mesh |
-| flags | primitive flags, can be PRIMITIVE_DEFAULT or any combination of values in the table below |
+| flags | primitive flags, can be PRIMITIVE_DEFAULT or any combination of values from the table below |
 
 ## Remarks
 
