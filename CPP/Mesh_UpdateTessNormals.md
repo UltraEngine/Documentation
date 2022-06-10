@@ -4,7 +4,7 @@ This method attempts to automatically construct tessellation normals for the mod
 
 ## Syntax
 
--void **UpdateTessNormals**()
+- void **UpdateTessNormals**()
 
 ## Example
 
