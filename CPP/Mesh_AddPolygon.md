@@ -14,9 +14,15 @@ This method adds a primtive to a mesh.
 | b | second indice |
 | c | third indice, for a triangle or quad mesh |
 | d | fourth indice, for a quad mesh |
-| flags | primitive flags, can be PRIMITIVE_DEFAULT or any combination of values in the table below. |
+| flags | primitive flags, can be PRIMITIVE_DEFAULT or any combination of values in the table below |
 
 ## Remarks
+
+The number of indices being added must match the number of polygon vertices the mesh uses. For example, you must use the overload of the method that adds three indices if the mesh is a triangle mesh.
+
+Once a mesh has been finalized, additional primitives cannot be added to it.
+
+The table below describes the bitwise values that can be specified in the *flags* parameter.
 
 | Flag | Description |
 | --- | --- |
@@ -27,10 +33,6 @@ This method adds a primtive to a mesh.
 | PRIMITIVE_TESSELLATE_INNER0 | interior of primitive is tessellated |
 | PRIMITIVE_TESSELLATE_INNER1 | for quads only, interior of primitive is tessellated |
 | PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges |
-
-The number of indices being added must match the number of polygon vertices the mesh uses. For example, you must use the overload of the method that adds three indices if the mesh is a triangle mesh.
-
-Once a mesh has been finalized, additional primitives cannot be added to it.
 
 ## Returns
 
