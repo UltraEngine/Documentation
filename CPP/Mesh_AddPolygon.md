@@ -1,12 +1,12 @@
-# Mesh::AddPolygon
+# Mesh::AddPrimitive
 
 This method adds a polygon to a mesh.
 
 ## Syntax
 
-- uint32_t **AddPolygon**(const uint32_t a, const uint32_t b)
-- uint32_t **AddPolygon**(const uint32_t a, const uint32_t b, const uint32_t c)
-- uint32_t **AddPolygon**(const uint32_t a, const uint32_t b, const uint32_t c, const uint32_t d)
+- uint32_t **AddPrimitive**(const uint32_t a, const uint32_t b, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
+- uint32_t **AddPrimitive**(const uint32_t a, const uint32_t b, const uint32_t c, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
+- uint32_t **AddPrimitive**(const uint32_t a, const uint32_t b, const uint32_t c, const uint32_t d, const PrimitiveFlags flags = PRIMITIVE_DEFAULT)
 
 | Parameter | Description |
 |---|---|
@@ -14,6 +14,7 @@ This method adds a polygon to a mesh.
 | b | second indice |
 | c | third indice, for a triangle or quad mesh |
 | d | fourth indice, for a quad mesh |
+| flags | primitive flags, can be PRIMITIVE_DEFAULT or any combination of PRIMITIVE_FLAT, PRIMITIVE_TESSELLATE_OUTER0, PRIMITIVE_TESSELLATE_OUTER1, PRIMITIVE_TESSELLATE_OUTER2, PRIMITIVE_TESSELLATE_OUTER3, PRIMITIVE_TESSELLATE_INNER0, and PRIMITIVE_TESSELLATE_INNER1 |
 
 ## Remarks
 
