@@ -33,7 +33,7 @@ The table below describes the bitwise values that can be specified in the *flags
 | PRIMITIVE_TESSELLATE_OUTER3 | for quads only, primitive is tessellated along the outside of the edge between indices 3 and 0 |
 | PRIMITIVE_TESSELLATE_INNER0 | interior of primitive is tessellated |
 | PRIMITIVE_TESSELLATE_INNER1 | for quads only, interior of primitive is tessellated |
-| PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges |
+| PRIMITIVE_TESSELLATE_ALL | primitive is tessellated along all edges and in the interior |
 
 Since PRIMITIVE_DEFAULT uses no tessellation, it is the least expensive to render. Combining PRIMITIVE_TESSELLATE_OUTER0, PRIMITIVE_TESSELLATE_OUTER1, and PRIMITIVE_TESSELLATE_OUTER2 (for triangles) or PRIMITIVE_TESSELLATE_OUTER0, PRIMITIVE_TESSELLATE_OUTER1, PRIMITIVE_TESSELLATE_OUTER2, and PRIMITIVE_TESSELLATE_OUTER3 (for quads) is actually less expensive to render than setting only some edges to be tessellated.
 
