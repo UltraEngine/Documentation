@@ -14,7 +14,7 @@ This method sets a single pixel in the pixmap to the specified color.
 
 ## Remarks
 
-This command is thread-safe, as long as multiple threads do not write to the same region.
+This command is thread-safe, as long as multiple threads do not write to the same region. See the [ThreadPool](ThreadPool_Execute.md) class for an example of multi-threaded use.
 
 ## Example
 
