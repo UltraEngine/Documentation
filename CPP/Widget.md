@@ -68,4 +68,4 @@ This class handle user interface elements. A variety of widget types are support
 | [CreateSlider](CreateSlider.md) | Function | creates a slider widget |
 | [CreateTextArea](CreateTextArea.md) | Function | creates a text area widget |
 | [CreateTextField](CreateTextField.md) | Function | creates a text field widget |
-| [CreateTreeView](CreateSlider.md) | Function | creates a treeview widget |
+| [CreateTreeView](CreateTreeView.md) | Function | creates a treeview widget |
