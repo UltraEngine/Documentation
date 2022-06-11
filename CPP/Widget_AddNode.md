@@ -1,7 +1,9 @@
-# Widget::AddNode #
+# Widget::AddNode
+
 This method adds a node to a treeview widget.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[Widget](Widget.md)\> AddNode(const [WString](WString.md)& text, shared_ptr<[Icon](Icon.md)> icon = NULL)
 
 | Parameter | Description |
@@ -9,10 +11,11 @@ This method adds a node to a treeview widget.
 | text | treeview node text |
 | icon | treeview node icon |
 
-# Returns #
+## Returns
+
 Returns a new treeview node if called by a treeview widget, otherwise NULL is returned.
 
-## Example ##
+## Example
 
 ```c++
 #include "UltraEngine.h"
