@@ -8,6 +8,6 @@ The following features are supported:
 - Dynamic view-based level of detail for organic or mechanical shapes
 - Geometric surface detail without cracks or holes
 
-MegaPoly works with most of your existing 3D models, with minimal adjustment. Typically, MegaPoly models will produce 1-2 orders of magnitude fewer triangles than conventional tessellation.
+MegaPoly works with most of your existing 3D models, with minimal adjustment. Quad-based meshes work best. Typically, MegaPoly models will produce 1-2 orders of magnitude fewer triangles than conventional tessellation.
 
 This feature is still in development and should be considered experimental.
