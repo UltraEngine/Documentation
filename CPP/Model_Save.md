@@ -1,14 +1,19 @@
-# Model::Save #
-This method saves the model to a file.
+# Model::Save
 
-## Syntax ##
-- bool **Save**(const string& filename, const SaveFlags = SAVE_DEFAULT)
-- bool **Save**(const wstring& filename, const SaveFlags = SAVE_DEFAULT)
+This method saves the model to a file, in [glTF](https://www.khronos.org/gltf/) or Wavefront OBJ format.
 
-## Example ##
+## Syntax
+
+- bool **Save**(const [WString](WString.md)& filename, const SaveFlags = SAVE_DEFAULT)
+
+| Parameter | Description |
+|---|---|
+|||
+
+## Example
+
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
 
 int main(int argc, const char* argv[])
 {
