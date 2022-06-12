@@ -34,6 +34,7 @@ for (auto mesh : model->lods[0]->meshes)
         vertex.bitangent = TransformNormal(vertex.bitangent, piv, model);
     }
     mesh->UpdateTessellation();
+    mesh->UpdateBounds();
     mesh->Finalize();
 }
 model->UpdateBounds();
