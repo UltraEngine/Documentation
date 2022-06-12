@@ -35,6 +35,6 @@ for (auto mesh : model->lods[0]->meshes)
     }
     mesh->UpdateTessellation();
     mesh->Finalize();
-    model->UpdateBounds();
 }
+model->UpdateBounds();
 ```
