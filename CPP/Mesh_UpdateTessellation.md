@@ -1,10 +1,14 @@
-# Mesh::UpdateTessNormals
+# Mesh::UpdateTessellation
 
 This method attempts to automatically construct tessellation normals for the model. You must call [Mesh::Finalize](Mesh_Finalize.md) after calling this method before any changes will be visible.
 
 ## Syntax
 
-- void **UpdateTessNormals**()
+- void **UpdateTessellation**(const float tolerance = 0.01f)
+
+| Parameter | Description |
+|---|---|
+| tolerance | linear distance tolerance for matching primitive edges |
 
 ## Example
 
@@ -29,7 +33,7 @@ for (auto mesh : model->lods[0]->meshes)
         vertex.tangent = TransformNormal(vertex.tangent, piv, model);
         vertex.bitangent = TransformNormal(vertex.bitangent, piv, model);
     }
-    mesh->UpdateTessNormals();
+    mesh->UpdateTessellation();
     mesh->Finalize();
     model->UpdateBounds();
 }
