@@ -13,3 +13,4 @@ To bind C++ classes and functions to Lua, we use the [sol2](https://github.com/T
 | [ExecuteString](ExecuteString.md) | Function | |
 | [RunScript](RunScript.md) | Function | |
 | [LuaState](LuaState.md) | Function | |
+| [SandBoxLua](SandBoxLua.md) | Function | |
