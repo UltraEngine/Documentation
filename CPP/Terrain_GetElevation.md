@@ -1,0 +1,6 @@
+# Terrain::GetElevation
+
+## Syntax
+
+
+## Returns
