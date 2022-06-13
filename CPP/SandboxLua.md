@@ -11,3 +11,11 @@ By default, Lua scripts do not have access to features that could potentially ca
 | Parameter | Description |
 |---|---|
 |sandboxmode| if set to true sandboxing is enabled, otherwise it is disabled |
+
+```c++
+main()
+{
+  SandboxLua(false);
+  ExecuteString("CreateFile(GetPath(PATH_DESKTOP)..'/TESTFILE.txt')");
+}
+```
