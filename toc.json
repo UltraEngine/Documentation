@@ -307,9 +307,37 @@
 									"filename": "CreateTerrain"
 								},
 								{
+									"title": "GetElevation",
+									"filename": "Terrain_GetElevation"
+								},								
+								{
+									"title": "GetHeight",
+									"filename": "Terrain_GetHeight"
+								},	
+								{
+									"title": "GetNormal",
+									"filename": "Terrain_GetNormal"
+								},
+								{
+									"title": "GetSlope",
+									"filename": "Terrain_GetSlope"
+								},
+								{
+									"title": "LoadHeightmap",
+									"filename": "Terrain_LoadHeightmap"
+								},								
+								{
+									"title": "SetElevation",
+									"filename": "Terrain_SetElevation"
+								},
+								{
 									"title": "SetHeight",
 									"filename": "Terrain_SetHeight"
-								}
+								},
+								{
+									"title": "SetMaterial",
+									"filename": "Terrain_SetMaterial"
+								}								
 							]
 						},						   
 						{
