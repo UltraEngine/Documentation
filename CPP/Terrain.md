@@ -4,7 +4,13 @@ This class handles outdoor landscapes.
 
 | Property | Type | Description |
 |-----|-----|-----|
-| resolution | iVec2 | |
+| heightmap | const shared_ptr<[Material](Material.md)\>& | read-only material containing height and normal maps |
+| resolution | const iVec2& | read-only terrain resolution |
+| [GetElevation](Terrain_GetElevation.md) | Method | |
+| [GetHeight](Terrain_GetHeight.md) | Method | |
+| [GetNormal](Terrain_GetNormal.md) | Method | |
+| [GetSlope](Terrain_GetSlope.md) | Method | |
+| [LoadHeightmap](Terrain_LoadHeightmap.md) | Method | |
 | [SetHeight](Terrain_SetHeight.md) | Method | |
 | [SetElevation](Terrain_SetElevation.md) | Method | |
 | [SetMaterial](Terrain_SetMaterial.md) | Method | |
