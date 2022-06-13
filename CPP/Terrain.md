@@ -13,7 +13,9 @@ This class handles outdoor landscapes.
 ## Example
 
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
