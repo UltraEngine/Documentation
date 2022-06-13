@@ -10,4 +10,4 @@ By default, Lua scripts do not have access to features that could potentially ca
 
 | Parameter | Description |
 |---|---|
-|sanboxmode| if set to true sandboxing is enabled, otherwise it is disabled |
+|sandboxmode| if set to true sandboxing is enabled, otherwise it is disabled |
