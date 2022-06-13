@@ -4,8 +4,8 @@ This method sets the height of the terrain in global space.
 
 ## Syntax
 
-- void **SetElevation**(const int x, const int y, const float elevation)
 - void **SetElevation**(const [iVec2](iVec2.md)& position, const float elevation)
+- void **SetElevation**(const int x, const int y, const float elevation)
 
 | Parameter | Description |
 |---|---|
