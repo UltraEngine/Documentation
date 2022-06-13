@@ -10,6 +10,6 @@ To bind C++ classes and functions to Lua, we use the [Sol](https://github.com/Th
 
 | Name | Type | Description |
 |-----|-----|-----|
-| ExecuteString | Function | |
-| RunScript | Function | |
-| LuaState | Function | |
+| [ExecuteString](ExecuteString.md) | Function | |
+| [RunScript](RunScript.md) | Function | |
+| [LuaState](LuaState.md) | Function | |
