@@ -4,9 +4,8 @@ An entity is the base class for all "things" in 3D space. A light is an entity. 
 
 **Base class:** [Object](Object.md)
 
-## Properties
 
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | color | const [Vec4](Vec4.md)& | read-only object color |
 | kids | const vector<shared_ptr<[Entity](Entity.md)\> \>& | read-only array of child entities |
