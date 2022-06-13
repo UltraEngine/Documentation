@@ -1,8 +1,8 @@
-# Vec4 #
+# Vec4
+
 This class describes a four-dimensional vector or an RGBA color.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 | - | - | - |
 | x, r | float | x component of the vector, or red channel of color |
 | y, g | float | y component of the vector, or green channel of color |
