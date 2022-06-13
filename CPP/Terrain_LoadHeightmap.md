@@ -23,7 +23,6 @@ int main(int argc, const char* argv[])
     
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
-    framebuffer->GetSize();
 
     //Create a world
     auto world = CreateWorld();
