@@ -49,7 +49,7 @@ int main(int argc, const char* argv[])
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         world->Update();
-        world->Render(framebuffer, false);
+        world->Render(framebuffer);
     }
     return 0;
 }
