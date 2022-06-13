@@ -1,12 +1,11 @@
 # CreateTerrain
 
-
+This function creates a new terrain entity.
 
 ## Syntax
 
+- shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const [iVec2](iVec2.md) resolution)
 - shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const int xres, const int yres)
-
-
 
 ## Example
 
