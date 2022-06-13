@@ -4,7 +4,15 @@ This method sets the height of the terrain in global space.
 
 ## Syntax
 
-- void **SetElevation**(const int, const int y, const float elevation)
+- void **SetElevation**(const int x, const int y, const float elevation)
+- void **SetElevation**(const [iVec2](iVec2.md)& position, const float elevation)
+
+| Parameter | Description |
+|---|---|
+| x | x coordinate of the point to modify |
+| y | y coordinate of the point to modify |
+| position | position of the point to modify |
+| elevation | height to set, between 0.0 and the terrain's vertical scale |
 
 ## Example
 
