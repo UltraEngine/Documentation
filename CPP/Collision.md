@@ -8,7 +8,7 @@ This class stores information about a collision.
 
 | Name | Type | Description |
 |---|---|---|
-| entities | array<[Entity](Entity.md), 2> | colliding entities |
+| entities | array<shared_ptr<[Entity](Entity.md)\>, 2> | colliding entities |
 | position | [xVec3](xVec3.md) | collision position |
 | normal | [xVec3](xVec3.md) | collision normal |
 | speed | dFloat | collision speed |
