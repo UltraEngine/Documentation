@@ -1,5 +1,7 @@
 # Terrain
 
+Base class: [Entity](Entity.md)
+
 This class handles outdoor landscapes.
 
 | Property | Type | Description |
