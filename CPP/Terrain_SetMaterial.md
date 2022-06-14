@@ -113,7 +113,7 @@ int main(int argc, const char* argv[])
 
         if (ActiveWindow() == window) camera->UpdateControls(window);
         world->Update();
-        world->Render(framebuffer, false);
+        world->Render(framebuffer);
     }
     return 0;
 }
