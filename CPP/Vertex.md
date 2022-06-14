@@ -1,10 +1,10 @@
 # Vertex
 
+Base class: [Object](Object.md)
+
 This class stores properties for a single mesh vertex.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | bitangent | [Vec3](Vec3.md) | vertex bitangent |
 | boneindices | array<unsigned char, 4> | vertex bone indices, for skinned animation |
