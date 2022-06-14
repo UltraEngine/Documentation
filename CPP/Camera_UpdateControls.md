@@ -4,7 +4,7 @@ This method provides simple free-look camera controls for easily navigating a sc
 
 ## SyntaX
 
-- void **UpdateControls**(shared_ptr<[Window](Window.md)/> window, const float mousespeed = 1.0f, const float mousesmoothing = 0.0f)
+- void **UpdateControls**(shared_ptr<[Window](Window.md)\> window, const float mousespeed = 1.0f, const float mousesmoothing = 0.0f)
 
 | Parameter | Description |
 |---|---|
