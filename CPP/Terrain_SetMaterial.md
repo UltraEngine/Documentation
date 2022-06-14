@@ -1,7 +1,5 @@
 # Terrain::SetMaterial
 
-Class: [Terrain](Terrain.md)
-
 This method sets the terrain material at any point on the heightmap. Up to four materials can be set per point.
 
 ## Syntax
