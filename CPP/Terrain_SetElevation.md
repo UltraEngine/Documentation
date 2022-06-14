@@ -18,8 +18,6 @@ This method sets the height of the terrain in global space.
 
 ## Example
 
-Needs work...
-
 ```c++
 #include "UltraEngine.h"
 
