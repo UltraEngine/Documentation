@@ -21,4 +21,5 @@ This class The camera class is an entity used to render the world.
 | [SetPostEffectParameter](Camera_SetPostEffectParameter.md) | Method | sets a post-processing effect setting |
 | [SetRealTime](Camera_SetRealTime.md) | Method | sets realtime rendering mode |
 | [Unproject](Camera_Unproject.md) | Method | unprojects a position from screen to world space |
+| [UpdateControls](Camera_UpdateControls.md) | Method | provides simple free-look camera controls |
 | [CreateCamera](CreateCamera.md) | Function | creates a new camera entity |
