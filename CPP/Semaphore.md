@@ -1,6 +1,6 @@
 # Semaphore
 
-**Base class**: [Object](Object.md)
+Base class: [Object](Object.md)
 
 This class allows multithreaded applications to perform blocking operations. A semaphore can be signaled by one thread and waited on by another thread, for thread synchronization.
 
