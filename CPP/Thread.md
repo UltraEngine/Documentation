@@ -1,6 +1,6 @@
 # Thread
 
-**Base class**: [Object](Object.md)
+Base class: [Object](Object.md)
 
 This class provides an interface for creating multithreaded applications.
 
