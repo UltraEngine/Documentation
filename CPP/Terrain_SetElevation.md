@@ -1,5 +1,7 @@
 # Terrain::SetElevation
 
+Class: [Terrain](Terrain.md)
+
 This method sets the height of the terrain in global space.
 
 ## Syntax
