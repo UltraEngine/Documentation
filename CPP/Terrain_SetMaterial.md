@@ -40,30 +40,81 @@ If the terrain already is using the maximum number of materials, no change will 
 ## Example
 
 ```c++
-auto terrain = LoadTerrain(world, "terrain.r16");
+#include "UltraEngine.h"
 
-//Apply grass everywhere
-auto grass = LoadMaterial("grass.json");
-terrain->SetMaterial(grass);
+using namespace UltraEngine;
 
-//Apply random patches of dirt
-auto dirt = LoadMaterial("dirt.json");
-auto noisemap = GenerateNoiseMap(64,64);
-for (int x = 0; x < terrain->resolution.x; ++x)
+int main(int argc, const char* argv[])
 {
-  for (int y = 0; y < terrain->resolution.y; ++y)
-  {
-    unsigned int rgba = noisemap->ReadPixel(Mod(x, noisemap->size.x), Mod(y, noisemap->size.y));
-    float influence = float(Red(rgba)) / 255.0f;
-    if (influence > 0.0f) terrain->SetMaterial(x, y, dirt, influence);
-  }
+    //Create a window
+    auto window = CreateWindow("Terrain Paint", 0, 0, 1280, 720);
+
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+    
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->SetFOV(70);
+    camera->SetPosition(0, 15, -15);
+    camera->SetClearColor(0.125);
+
+    //Sunlight
+    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    light->SetRotation(65, 35, 0);
+
+    //Create terrain
+    auto terrain = CreateTerrain(world, 512);
+    terrain->SetScale(1, 100, 1);
+
+    //Create base material
+    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/groundsoil.dds");
+    auto normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/groundsoil_dot3.dds");
+    auto mtl = CreateMaterial();
+    mtl->SetTexture(diffusemap, TEXTURE_DIFFUSE);
+    mtl->SetTexture(normalmap, TEXTURE_NORMAL);
+    terrain->SetMaterial(mtl);
+
+    //Create paint material
+    auto mtl2 = CreateMaterial();
+    mtl2->SetColor(0, 1, 1, 1);
+
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        if (window->MouseDown(MOUSE_LEFT))
+        {
+            auto mousepos = window->GetMousePosition();
+            PickInfo pickinfo;
+            if (camera->Pick(framebuffer, mousepos.x, mousepos.y, pickinfo))
+            {
+                if (pickinfo.entity == terrain)
+                {
+                    iVec2 pos;
+                    pos.x = Round(pickinfo.position.x) + terrain->resolution.x / 2;
+                    pos.y = Round(pickinfo.position.z) + terrain->resolution.y / 2;
+                    int radius = 20;
+                    for (int x = pos.x - radius; x < pos.x + radius; ++x)
+                    {
+                        for (int y = pos.y - radius; y < pos.y + radius; ++y)
+                        {
+                            float strength = 1.0f - Vec3(x, y, 0).DistanceToPoint(Vec3(pos.x, pos.y, 0)) / float(radius);
+                            if (strength <= 0.0f) continue;
+                            float wt = terrain->GetMaterialWeight(x, y, mtl2);
+                            wt += 0.02f;
+                            terrain->SetMaterial(x, y, mtl2, wt, true);
+                        }
+                    }
+                }
+            }
+        }
+
+        if (ActiveWindow() == window) camera->UpdateControls(window);
+        world->Update();
+        world->Render(framebuffer, false);
+    }
+    return 0;
 }
-
-//Apply rocks to steep surfaces
-auto rock = LoadMaterial("rocks.json");
-terrain->SetMaterial(rocks, Vec3(15,90,5));
-
-//Apply snow to flat areas at high elevation
-terrain->SetMaterial(snow, Vec3(0,24,10), Vec3(500,1000,10));
-auto snow = LoadMaterial("snow.json");
 ```
