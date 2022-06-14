@@ -1,10 +1,10 @@
-# Window #
+# Window
+
 The window class provides an interface for creating system application windows.
 
-**Base class**: [Object](Object)
+Base class: [Object](Object)
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | display | const shared_ptr<[Display](Display.md)\>& | read-only display the window resides on |
 | position | const [iVec2](iVec2)& | read-only window position |
