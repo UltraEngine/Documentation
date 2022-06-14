@@ -1,8 +1,10 @@
-# Process #
+# Process
+
+Base class: [Object](Object.md)
+
 A process is an external executable your program can launch and interact with.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | errorstream | const shared_ptr<[Stream](Stream.md)\>& | read-only pointer to stream for reading process error output |
 | path | const WString& | read-only path to process executable |
