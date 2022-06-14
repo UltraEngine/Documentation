@@ -1,6 +1,6 @@
 # Light #
 
-**Base Class:** [Entity](Entity_FP.md)
+**Base class:** [Entity](Entity_FP.md)
 
 This entity emits light in a defined pattern.
 
