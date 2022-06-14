@@ -1,6 +1,6 @@
 # Collider
 
-**Base Class:** [Asset](Asset.md)
+**Base class:** [Asset](Asset.md)
 
 This class provides an interface for loading and creating collision shapes for physics interactions.
 
