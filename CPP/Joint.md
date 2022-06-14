@@ -1,6 +1,6 @@
 # Joint
 
-**Base Class:** [Object](Object.md)
+**Base class:** [Object](Object.md)
 
 This class creates a physical constraint between two entities. Joints can use limits and actuators (motors) to control their range of motion and movement.
 
