@@ -1,7 +1,7 @@
 # Buffer #
 This class provides an interface for allocating, writing to, and reading from blocks of memory.
 
-**Base class**: [Object](Object.md)
+**Base class:** [Object](Object.md)
 
 ### Properties ###
 | Name | Type | Description |
