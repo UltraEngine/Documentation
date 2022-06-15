@@ -65,8 +65,6 @@ int main(int argc, const char* argv[])
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
-    //terrain->LoadHeightmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Terrain/1024.r16");
-    terrain->SetScale(1, 50, 1);
      
     //Create base material
     auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
