@@ -1,6 +1,6 @@
 # Terrain::SetElevation
 
-This method sets the height of the terrain in global space.
+This method sets the height of the terrain, taking into account its vertical scale.
 
 ## Syntax
 
