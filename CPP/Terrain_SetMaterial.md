@@ -23,7 +23,7 @@ If the terrain is not currently using the specified material but is already usin
 
 ## Remarks
 
-Up to four materials can influence each point. Terrains can use a maximum of 256 different materials each.
+Terrains can use a maximum of 256 different materials each. Up to four materials can influence each point.
 
 The first variation of this method will apply the specified material to one point on the terrain, with a weighting value. Up to four materials can be applied to any terrain point. Their weights will be normalized before rendering. If the material has already been applied at this terrain point, its weighting value will be replaced.
 
