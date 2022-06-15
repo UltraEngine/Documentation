@@ -67,9 +67,9 @@ int main(int argc, const char* argv[])
     auto terrain = CreateTerrain(world, 512);
      
     //Create base material
+    auto ground = CreateMaterial();    
     auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
     auto normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
-    auto ground = CreateMaterial();
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
     terrain->SetMaterial(ground);
