@@ -4,12 +4,7 @@
 			"openstate": false,
 			"filename": "introduction",
 			"useLanguage": false,
-			"topics": [{
-					"title": "Introduction",
-					"filename": "introduction",
-					"openstate": false,
-					"selected": true
-				},
+			"topics": [
 				{
 					"title": "3D Graphics",
 					"filename": "3dgraphics",
