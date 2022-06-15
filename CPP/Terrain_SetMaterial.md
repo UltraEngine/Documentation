@@ -1,6 +1,6 @@
 # Terrain::SetMaterial
 
-This method sets the terrain material at any point on the heightmap. Up to four materials can be set per point.
+This method sets the terrain material at any point on the heightmap. Up to four materials can be set per point. Terrains can use a maximum of 256 different materials each.
 
 ## Syntax
 
