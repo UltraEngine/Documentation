@@ -764,6 +764,15 @@
 					]
 				},
 				{
+					"title": "GamePad",
+					"topics": [
+						{
+							"title": "GamePadConnected",
+							"filename": "GamePadConnected"
+						}
+					]
+				},				
+				{
 					"title": "Geometry",
 					"topics": [
 						{
