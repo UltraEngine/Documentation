@@ -2,6 +2,7 @@
 	"topics": [{
 			"title": "User Guide",
 			"openstate": false,
+			"filename": "introduction",
 			"useLanguage": false,
 			"topics": [{
 					"title": "Introduction",
