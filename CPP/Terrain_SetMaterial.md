@@ -7,8 +7,6 @@ This method sets the terrain material at any point on the heightmap. Up to four 
 - bool **SetMaterial**(const [iVec2](iVec2.md) coord, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f, const bool normalize = true)
 - bool **SetMaterial**(const int x, const int y, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f, const bool normalize = true)
 - bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const bool recursive = false)
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints)
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const [Vec3](Vec3.md)& slopeconstraints, const [Vec3](Vec3.md)& elevationconstraints)
 
 | Parameter | Description |
 |---|---|
@@ -16,8 +14,6 @@ This method sets the terrain material at any point on the heightmap. Up to four 
 | weight | influence the material has at this point |
 | normalize | if set to true, other materials at this point will be adjusted so the sum of all material weights is 1.0 |
 | recursive | if set to true, the material will be applied to all children in the entity's subhierarchy |
-| slopeconstraints | minimum and maximum slope over which the material will appear, and blending range, in degrees |
-| elevationconstraints | minimum and maximum elevation over which the material will appear, and blending range, in meters |
 
 ## Returns
 
