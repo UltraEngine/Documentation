@@ -37,6 +37,8 @@ If the terrain already is using the maximum number of materials, no change will 
 
 ## Example
 
+This example lets you paint a material onto the terrain.
+
 ![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/terrain_setmaterial.jpg)
 
 ```c++
