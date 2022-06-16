@@ -11,6 +11,7 @@ This method sets the terrain material at any point on the heightmap.
 |---|---|
 | material | material to apply |
 | recursive | if set to true, the material will be applied to all children in the entity's subhierarchy |
+| coord, (x, y) | terrain point to modify |
 | weight | influence the material has at this point |
 | normalize | if set to true, other materials at this point will be adjusted so the sum of all material weights is 1.0 |
 
