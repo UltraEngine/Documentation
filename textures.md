@@ -27,7 +27,11 @@ Textures can use linear or nearest filtering. Linear filtering should be used fo
 
 ### Compressed Textures
 
-BC7 compression format is recommended for most texture files, while BC5 is recommended for normal maps. Both of these formats are supported by the DDS file format.
+BC7 compression format is recommended for most color texture files.
+
+BC5 stores two channels with higher precision, which makes it ideal for normal maps. You should not use any other compression format with normal maps.
+
+BC4 stores a single channel at higher precision, making this format the most suitable for displacement maps.
 
 ## Cubemaps
 
