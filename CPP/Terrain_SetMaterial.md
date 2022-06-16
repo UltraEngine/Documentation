@@ -37,6 +37,8 @@ If the terrain already is using the maximum number of materials, no change will 
 
 ## Example
 
+![](https://raw.githubusercontent.com/Leadwerks/Documentation/master/Images/terrain_setmaterial.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
@@ -44,8 +46,11 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Get the display list
+    auto displays = GetDisplays();
+
     //Create a window
-    auto window = CreateWindow("Terrain Paint", 0, 0, 1280, 720);
+    auto window = CreateWindow("Terrain Paint", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a world
     auto world = CreateWorld();
@@ -56,18 +61,22 @@ int main(int argc, const char* argv[])
     //Create a camera
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
-    camera->SetPosition(0, 15, -15);
+    camera->SetPosition(0, 60, -60);
+    camera->SetRotation(-45, 0, 0);
     camera->SetClearColor(0.125);
-    
+    //camera->SetTessellation(8);// uncomment this line for tessellation
+
     //Sunlight
     auto light = CreateLight(world, LIGHT_DIRECTIONAL);
     light->SetRotation(65, 35, 0);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
-     
+    terrain->LoadHeightmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Terrain/512.r16");
+    terrain->SetScale(1, 100, 1);
+    
     //Create base material
-    auto ground = CreateMaterial();    
+    auto ground = CreateMaterial();
     auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
     auto normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
@@ -76,10 +85,12 @@ int main(int argc, const char* argv[])
 
     //Create paint material
     auto rocks = CreateMaterial();
-    diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocks_ground_02_col_4k.dds");
-    normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocks_ground_02_nor_4k.dds");
+    diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k.dds");
+    normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_dot3.dds");
+    auto dispmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_disp.dds");
     rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
+    rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
