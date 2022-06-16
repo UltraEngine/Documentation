@@ -3,17 +3,16 @@
 This method sets the terrain material at any point on the heightmap. 
 
 ## Syntax
-
+- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const bool recursive = false)
 - bool **SetMaterial**(const [iVec2](iVec2.md) coord, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f, const bool normalize = true)
 - bool **SetMaterial**(const int x, const int y, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f, const bool normalize = true)
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const bool recursive = false)
 
 | Parameter | Description |
 |---|---|
 | material | material to apply |
+| recursive | if set to true, the material will be applied to all children in the entity's subhierarchy |
 | weight | influence the material has at this point |
 | normalize | if set to true, other materials at this point will be adjusted so the sum of all material weights is 1.0 |
-| recursive | if set to true, the material will be applied to all children in the entity's subhierarchy |
 
 ## Returns
 
