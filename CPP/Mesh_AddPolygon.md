@@ -14,7 +14,7 @@ This method adds a primtive to a mesh.
 | b | second indice |
 | c | third indice, for a triangle or quad mesh |
 | d | fourth indice, for a quad mesh |
-| flags | primitive flags, can be any combination of values from the table below |
+| attributes | primitive attributes, can be any combination of values from the table below |
 
 ## Remarks
 
@@ -24,7 +24,7 @@ Once a mesh has been finalized, additional primitives cannot be added to it.
 
 The table below describes the bitwise values that can be specified in the *flags* parameter.
 
-| Flag | Description |
+| Attribute | Description |
 | --- | --- |
 | PRIMITIVE_TESSELLATE_NONE | no tessellation |
 | PRIMITIVE_TESSELLATE_EDGE0 | primitive is tessellated along edge 0 |
