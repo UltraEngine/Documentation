@@ -4,9 +4,9 @@ This method adds a primtive to a mesh.
 
 ## Syntax
 
-- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const PrimitiveFlags flags = PRIMITIVE_TESSELLATE_NONE)
-- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const unsigned int c, const PrimitiveFlags flags = PRIMITIVE_TESSELLATE_NONE)
-- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const unsigned int c, const unsigned int d, const PrimitiveFlags flags = PRIMITIVE_TESSELLATE_NONE)
+- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const PrimitiveAttributes attributes = PRIMITIVE_TESSELLATE_NONE)
+- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const unsigned int c, const PrimitiveAttributes attributes = PRIMITIVE_TESSELLATE_NONE)
+- unsigned int **AddPrimitive**(const unsigned int a, const unsigned int b, const unsigned int c, const unsigned int d, const PrimitiveAttributes attributes = PRIMITIVE_TESSELLATE_NONE)
 
 | Parameter | Description |
 |---|---|
