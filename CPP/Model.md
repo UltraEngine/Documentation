@@ -15,6 +15,7 @@ The main supported model file format is the [glTF](https://www.khronos.org/gltf/
 ## Methods
 | Name | Description |
 |---|---|
+| [AddMesh](Model_AddMesh.md) | Adds a new mesh to the model |
 | [AddLod](Model_AddLod.md) | Adds a new level-of-detail to the model. |
 | [Animate](Model_Animate.md) | |
 | [Save](Model_Save.md) | Saves the model to a file. |
