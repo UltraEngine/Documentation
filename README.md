@@ -2,4 +2,5 @@
 This is the documentation system for Ultra Engine:
 https://www.ultraengine.com/learn
 
-The table of contents is stored in "toc.json". Each page's contents are stored in a markdown file.
+All files are stored on a separate branch here, to prevent search engine indexing:
+https://github.com/Leadwerks/Documentation/tree/private
