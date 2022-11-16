@@ -1981,21 +1981,7 @@
 							"filename": "Process_Wait"
 						}
 					]
-				},
-				{
-					"title": "Script",
-					"filename": "Script",
-					"topics": [
-						{
-							"title": "ExecuteString",
-							"filename": "ExecuteString"
-						},
-						{
-							"title": "RunScript",
-							"filename": "RunScript"
-						}						
-					]
-				},				   
+				},			   
 				{
 					"title": "Statistics",
 					"topics": [{
