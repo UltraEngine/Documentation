@@ -14,4 +14,7 @@ This entity emits light in a defined pattern.
 | [GetRange](Light_SetRange.md) | Method |  |
 | [SetRange](Light_SetRange.md) | Method |  |
 | [SetShadowMapSize](Light_SetShadowMapSize.md) | Method |  |
-| [CreateLight](CreateLight.md)| Function | Creates a new light. |
+| [CreateBoxLight](CreateBoxLight.md)| Function | Creates a new box light |
+| [CreateDirectionalLight](CreateBoxLight.md)| Function | Creates a new directional light |
+| [CreatePointLight](CreatePointLight.md)| Function | Creates a new point light |
+| [CreateSpotLight](CreateSpotLight.md)| Function | Creates a new spot light |
