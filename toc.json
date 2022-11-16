@@ -1016,123 +1016,6 @@
 							}]
 						},
 						{
-							"title": "Window",
-							"filename": "Window",
-							"topics": [{
-									"title": "Activate",
-									"filename": "Window_Activate"
-								},
-								{
-									"title": "ClientSize",
-									"filename": "Window_ClientSize"
-								},
-								{
-									"title": "Closed",
-									"filename": "Window_Closed"
-								},
-								{
-									"title": "FlushKeys",
-									"filename": "Window_FlushKeys"
-								},
-								{
-									"title": "FlushMouse",
-									"filename": "Window_FlushMouse"
-								},
-								{
-									"title": "GetHandle",
-									"filename": "Window_GetHandle"
-								},
-								{
-									"title": "GetMousePosition",
-									"filename": "Window_GetMousePosition"
-								},
-								{
-									"title": "GetPosition",
-									"filename": "Window_GetPosition"
-								},
-								{
-									"title": "GetSize",
-									"filename": "Window_GetSize"
-								},
-								{
-									"title": "Hide",
-									"filename": "Window_Hide"
-								},
-								{
-									"title": "HideMouse",
-									"filename": "Window_HideMouse"
-								},
-								{
-									"title": "KeyDown",
-									"filename": "Window_KeyDown"
-								},
-								{
-									"title": "KeyHit",
-									"filename": "Window_KeyHit"
-								},
-								{
-									"title": "MouseDown",
-									"filename": "Window_MouseDown"
-								},
-								{
-									"title": "MouseHit",
-									"filename": "Window_MouseHit"
-								},
-								{
-									"title": "Maximize",
-									"filename": "Window_Maximize"
-								},
-								{
-									"title": "Maximized",
-									"filename": "Window_Maximized"
-								},
-								{
-									"title": "Minimize",
-									"filename": "Window_Minimize"
-								},
-								{
-									"title": "Minimized",
-									"filename": "Window_Minimized"
-								},
-								{
-									"title": "Restore",
-									"filename": "Window_Restore"
-								},
-								{
-									"title": "SetMinSize",
-									"filename": "Window_SetMinSize"
-								},
-								{
-									"title": "SetMousePosition",
-									"filename": "Window_SetMousePosition"
-								},
-								{
-									"title": "SetShape",
-									"filename": "Window_SetShape"
-								},
-								{
-									"title": "Show",
-									"filename": "Window_Show"
-								},
-								{
-									"title": "ShowMouse",
-									"filename": "Window_ShowMouse"
-								},
-								{
-									"title": "ActiveWindow",
-									"filename": "ActiveWindow"
-								},
-								{
-									"title": "CreateWindow",
-									"filename": "CreateWindow"
-								},
-								{
-									"title": "TransformCoord",
-									"filename": "TransformCoord"
-								}
-							]
-						},
-						{
 							"title": "Vertex",
 							"filename": "Vertex"
 						}						   
@@ -1465,6 +1348,123 @@
 						{
 							"title": "WidgetItem",
 							"filename": "WidgetItem"
+						},
+						{
+							"title": "Window",
+							"filename": "Window",
+							"topics": [{
+									"title": "Activate",
+									"filename": "Window_Activate"
+								},
+								{
+									"title": "ClientSize",
+									"filename": "Window_ClientSize"
+								},
+								{
+									"title": "Closed",
+									"filename": "Window_Closed"
+								},
+								{
+									"title": "FlushKeys",
+									"filename": "Window_FlushKeys"
+								},
+								{
+									"title": "FlushMouse",
+									"filename": "Window_FlushMouse"
+								},
+								{
+									"title": "GetHandle",
+									"filename": "Window_GetHandle"
+								},
+								{
+									"title": "GetMousePosition",
+									"filename": "Window_GetMousePosition"
+								},
+								{
+									"title": "GetPosition",
+									"filename": "Window_GetPosition"
+								},
+								{
+									"title": "GetSize",
+									"filename": "Window_GetSize"
+								},
+								{
+									"title": "Hide",
+									"filename": "Window_Hide"
+								},
+								{
+									"title": "HideMouse",
+									"filename": "Window_HideMouse"
+								},
+								{
+									"title": "KeyDown",
+									"filename": "Window_KeyDown"
+								},
+								{
+									"title": "KeyHit",
+									"filename": "Window_KeyHit"
+								},
+								{
+									"title": "MouseDown",
+									"filename": "Window_MouseDown"
+								},
+								{
+									"title": "MouseHit",
+									"filename": "Window_MouseHit"
+								},
+								{
+									"title": "Maximize",
+									"filename": "Window_Maximize"
+								},
+								{
+									"title": "Maximized",
+									"filename": "Window_Maximized"
+								},
+								{
+									"title": "Minimize",
+									"filename": "Window_Minimize"
+								},
+								{
+									"title": "Minimized",
+									"filename": "Window_Minimized"
+								},
+								{
+									"title": "Restore",
+									"filename": "Window_Restore"
+								},
+								{
+									"title": "SetMinSize",
+									"filename": "Window_SetMinSize"
+								},
+								{
+									"title": "SetMousePosition",
+									"filename": "Window_SetMousePosition"
+								},
+								{
+									"title": "SetShape",
+									"filename": "Window_SetShape"
+								},
+								{
+									"title": "Show",
+									"filename": "Window_Show"
+								},
+								{
+									"title": "ShowMouse",
+									"filename": "Window_ShowMouse"
+								},
+								{
+									"title": "ActiveWindow",
+									"filename": "ActiveWindow"
+								},
+								{
+									"title": "CreateWindow",
+									"filename": "CreateWindow"
+								},
+								{
+									"title": "TransformCoord",
+									"filename": "TransformCoord"
+								}
+							]
 						}						   
 					]
 				},
