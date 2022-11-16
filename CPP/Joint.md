@@ -13,8 +13,9 @@ This class creates a physical constraint between two entities. Joints can use li
 | [SetLimits](Joint_SetLimits.md) | Method | sets joint limites |
 | [SetMaxForce](Joint_SetMaxForce.md) | Method | sets the max force of a motorized or kinematic joint |
 | [SetMaxTorque](Joint_SetMaxTorque.md) | Method | sets the max torque of a motorized or kinematic joint |
-| [SetTargetPosition](Joint_SetTargetPosition.md) | Method | sets the target position of a slider or kinematic joint |
-| [SetTargetRotation](Joint_SetTargetRotation.md) | Method | sets the target rotation of a hinge or kinematic joint |
+| [SetPose](Joint_SetTargetPosition.md) | Method | sets the target position and/or rotation of a hinge, slider, or kinematic joint |
+| [CreateBallAndSocketJoint](CreateHingeJoint.md) | Function | Creates a new ball and socket joint |
 | [CreateHingeJoint](CreateHingeJoint.md) | Function | Creates a new hinge joint |
 | [CreateKinematicJoint](CreateKinematicJoint.md) | Function | Creates a new kinematic joint |
+| [CreatePlaneJoint](CreatePlaneJoint.md) | Function | Creates a new plane joint |
 | [CreateSliderJoint](CreateSliderJoint.md) | Function | Creates a new slider joint |
