@@ -1972,12 +1972,8 @@
 									"filename": "Joint_SetMaxTorque"
 								},
 								{
-									"title": "SetTargetPosition",
-									"filename": "Joint_SetTargetPosition"
-								},
-								{
-									"title": "SetTargetRotation",
-									"filename": "Joint_SetTargetRotation"
+									"title": "SetPose",
+									"filename": "Joint_SetPose"
 								}
 							]
 						}
