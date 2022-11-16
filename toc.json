@@ -1927,6 +1927,10 @@
 									"filename": "CreateBallAndSocketJoint"
 								},
 								{
+									"title": "CreateBallAndSocketJoint",
+									"filename": "CreateBallAndSocketJoint"
+								},								   
+								{
 									"title": "CreateHingeJoint",
 									"filename": "CreateHingeJoint"
 								},
@@ -1934,6 +1938,10 @@
 									"title": "CreateKinematicJoint",
 									"filename": "CreateKinematicJoint"
 								},
+								{
+									"title": "CreatePlaneJoint",
+									"filename": "CreatePlaneJoint"
+								},								   
 								{
 									"title": "CreateSliderJoint",
 									"filename": "CreateSliderJoint"
