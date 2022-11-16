@@ -1,5 +1,20 @@
 # CreateBallAndSocketJoint
 
+This function creates a plane joint. Plane joints can be used to lock an entity to a plane, for 2D game physics.
+
+## Syntax
+
+shared_ptr<[Joint](Joint.md)\> **CreateBallAndSocketJoint**(const [Vec3](Vec3.md)& position,shared_ptr<[Entity](Entity.md)\> parent, shared_ptr<[Entity](Entity.md)\> child)
+
+| Parameter | Description |
+|---|---|
+| position | joint position |
+| parent | parent entity, or NULL for a fixed position |
+| child | child entity |
+
+## Returns
+
+Returns a new joint.
 
 ## Example
 
