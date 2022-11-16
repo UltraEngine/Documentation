@@ -783,31 +783,7 @@
 				},
 				{
 					"title": "Graphics",
-					"topics": [{
-							"title": "Display",
-							"filename": "Display",
-							"topics": [{
-									"title": "ClientArea",
-									"filename": "Display_ClientArea"
-								},
-								{
-									"title": "GetDisplays",
-									"filename": "GetDisplays"
-								},
-								{
-									"title": "GetPosition",
-									"filename": "Display_GetPosition"
-								},
-								{
-									"title": "GetScale",
-									"filename": "Display_GetScale"
-								},
-								{
-									"title": "GetSize",
-									"filename": "Display_GetSize"
-								}
-							]
-						},
+					"topics": [
 						{
 							"title": "Font",
 							"filename": "Font",
@@ -1025,6 +1001,31 @@
 					"title": "GUI",
 					"filename": "GUI",
 					"topics": [{
+							"title": "Display",
+							"filename": "Display",
+							"topics": [{
+									"title": "ClientArea",
+									"filename": "Display_ClientArea"
+								},
+								{
+									"title": "GetDisplays",
+									"filename": "GetDisplays"
+								},
+								{
+									"title": "GetPosition",
+									"filename": "Display_GetPosition"
+								},
+								{
+									"title": "GetScale",
+									"filename": "Display_GetScale"
+								},
+								{
+									"title": "GetSize",
+									"filename": "Display_GetSize"
+								}
+							]
+						},
+						{
 							"title": "Event",
 							"filename": "Event",
 							"topics": [{
