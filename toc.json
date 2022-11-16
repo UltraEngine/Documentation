@@ -768,31 +768,6 @@
 							"filename": "GamePadConnected"
 						}
 					]
-				},				
-				{
-					"title": "Geometry",
-					"topics": [
-						{
-							"title": "Face",
-							"filename": "Face",
-							"topics": [{
-								"title": "Face",
-								"filename": "Face"
-							}]
-						},
-						{
-							"title": "Lod",
-							"filename": "Lod"
-						},						
-						{
-							"title": "PickInfo",
-							"filename": "PickInfo",
-							"topics": [{
-								"title": "GetTexCoords",
-								"filename": "PickInfo_GetTexCoords"
-							}]
-						}
-					]
 				},
 				{
 					"title": "Graphics",
@@ -837,6 +812,10 @@
 								"filename": "CreateFramebuffer"
 							}]
 						},
+						{
+							"title": "Lod",
+							"filename": "Lod"
+						},							   
 						{
 							"title": "Material",
 							"filename": "Material",
