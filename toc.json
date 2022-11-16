@@ -1,90 +1,14 @@
 {
 	"topics": [{
-			"title": "User Guide",
+			"title": "Introduction",
 			"openstate": false,
 			"filename": "introduction",
-			"useLanguage": false,
-			"topics": [
-				{
-					"title": "3D Graphics",
-					"filename": "3dgraphics",
-					"topics": [
-						{
-							"title": "Cameras",
-							"filename": "cameras"
-						},
-						{
-							"title": "3D Models",
-							"filename": "models"
-						},
-						{
-							"title": "Lighting",
-							"filename": "lights"
-						},
-						{
-							"title": "Materials",
-							"filename": "materials"
-						},						
-						{
-							"title": "Textures",
-							"filename": "textures"
-						},
-						{
-							"title": "Animation",
-							"filename": "animation"
-						},
-						{
-							"title": "Terrain",
-							"filename": "terrain"
-						},
-						{
-							"title": "Post-processing Effects",
-							"filename": "posteffects"
-						}						   
-					]
-				},				   
-				{
-					"title": "2D Graphics",
-					"filename": "2dgraphics"
-				},
-				{
-					"title": "Physics",
-					"filename": "physics"
-				},
-				{
-					"title": "Sound",
-					"filename": "sound"
-				},
-				{
-					"title": "User Interfaces",
-					"filename": "userinterfaces"
-				},
-				{
-					"title": "Enemies & NPCs",
-					"filename": "pathfinding"
-				},
-				{
-					"title": "Saved Games & Settings",
-					"filename": "savedgames"
-				},
-				{
-					"title": "Virtual Reality",
-					"filename": "vr"
-				},				   
-				{
-					"title": "Multiplayer",
-					"filename": "multiplayer"
-				},
-				{
-					"title": "Packaging & Distribution",
-					"filename": "publishing"
-				}				   
-			]
+			"useLanguage": false
 		},
 		{
 			"title": "Programming Reference",
 			"filename": "API",
-			"openstate": false,
+			"openstate": true,
 			"topics": [
 				{
 					"title": "Animation",
