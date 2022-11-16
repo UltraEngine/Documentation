@@ -1925,10 +1925,7 @@
 						{
 							"title": "Joint",
 							"filename": "Joint",
-							"topics": [{
-									"title": "CreateBallAndSocketJoint",
-									"filename": "CreateBallAndSocketJoint"
-								},
+							"topics": [
 								{
 									"title": "CreateBallAndSocketJoint",
 									"filename": "CreateBallAndSocketJoint"
