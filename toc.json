@@ -219,6 +219,22 @@
 							"title": "Light",
 							"filename": "Light",
 							"topics": [{
+									"title": "CreateBoxLight",
+									"filename": "CreateBoxLight"
+								},
+								{
+									"title": "CreateDirectionalLight",
+									"filename": "CreateDirectionalLight"
+								},
+								{
+									"title": "CreatePointLight",
+									"filename": "CreatePointLight"
+								},
+								{
+									"title": "CreateSpotLight",
+									"filename": "CreateSpotLight"
+								},				
+								{
 									"title": "GetConeAngles",
 									"filename": "Light_GetConeAngles"
 								},
@@ -241,10 +257,6 @@
 								{
 									"title": "SetShadowMapSize",
 									"filename": "Light_SetShadowMapSize"
-								},
-								{
-									"title": "CreateLight",
-									"filename": "CreateLight"
 								}
 							]
 						},
