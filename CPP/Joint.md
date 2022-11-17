@@ -10,10 +10,13 @@ This class creates a physical constraint between two entities. Joints can use li
 |---|---|----|
 | child | const shared_ptr<[Entity](Entity.md)\>& | Read-only child entity |
 | parent | const shared_ptr<[Entity](Entity.md)\>& | Read-only parent entity |
+| [GetLimits](Joint_SetLimits.md) | Method | sets joint limites |
+| [SetFriction](Joint_SetFriction.md) | Method | sets joint friction |
 | [SetLimits](Joint_SetLimits.md) | Method | sets joint limites |
 | [SetMaxForce](Joint_SetMaxForce.md) | Method | sets the max force of a motorized or kinematic joint |
 | [SetMaxTorque](Joint_SetMaxTorque.md) | Method | sets the max torque of a motorized or kinematic joint |
 | [SetPose](Joint_SetTargetPosition.md) | Method | sets the target position and/or rotation of a hinge, slider, or kinematic joint |
+| [SetSpring](Joint_SetSpring.md) | Method | adds spring behavior to a hinge or slider joint |
 | [CreateBallAndSocketJoint](CreateHingeJoint.md) | Function | Creates a new ball and socket joint |
 | [CreateHingeJoint](CreateHingeJoint.md) | Function | Creates a new hinge joint |
 | [CreateKinematicJoint](CreateKinematicJoint.md) | Function | Creates a new kinematic joint |
