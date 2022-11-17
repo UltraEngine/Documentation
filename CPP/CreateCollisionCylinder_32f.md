@@ -22,37 +22,45 @@ This function creates a collision cylinder shape for physics interactions.
 |rotation|rotation of shape|
 
 ## Returns
+
 Returns a new collider object.
 
 ## Example
 
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Get the display list
     auto displays = GetDisplays();
-    Vec2 displayscale = displays[0]->GetScale();
 
-    auto window = CreateWindow(displays[0], L"Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y);
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
+    //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
+    //Create world
     auto world = CreateWorld();
 
+    //Create camera
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
     camera->Turn(15, 0, 0);
     camera->Move(0, 2, -8);
     camera->SetClearColor(0.125);
 
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    //Create light
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(45, 35, 0);
 
     //Create ground
     auto ground = CreateBox(world, 10, 1, 10);
     ground->SetPosition(0, -0.5, 0);
+    ground->SetColor(0, 1, 0);
 
     //Create model
     auto model = CreateCylinder(world, 0.5, 4);
@@ -62,9 +70,9 @@ int main(int argc, const char* argv[])
     model->SetMass(1);
     model->AddForce(100, 0, 0);
 
-    //Create collision
-    auto collision = CreateCylinderCollider(0.5,4);
-    model->SetCollider(collision);
+    //Create collider
+    auto collider = CreateCylinderCollider(0.5, 4);
+    model->SetCollider(collider);
 
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
