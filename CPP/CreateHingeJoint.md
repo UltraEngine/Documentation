@@ -25,47 +25,42 @@ Returns a new joint object.
 
 using namespace UltraEngine;
 
-const float PhysicsScale = 50.0f;
-
 int main(int argc, const char* argv[])
 {
     //Get the displays
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
-
-    //Create a world
-    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
-    world->SetGravity(0, -9.81f * PhysicsScale, 0);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
+    //Create a world
+    auto world = CreateWorld();
+
     //Create a camera    
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
+    camera->SetPosition(0, 0, -6);
 
-    //Create the ground sprite
-    auto ground = CreateSprite(world, framebuffer->size.x, 50, false, 0, true);
-    ground->SetPosition(-framebuffer->size.x / 2, -framebuffer->size.y / 2);
-    ground->SetColor(0, 1, 0);
+    //Create light
+    auto light = CreateDirectionalLight(world);
+    light->SetRotation(35, 35, 0);
+    light->SetColor(3);
 
-    //Add some boxes
-    auto sprite1 = CreateSprite(world, 400, 25, false, 0, true);
-    sprite1->SetMass(1);
-    sprite1->SetPosition(-200, -12.5, 0);
-    sprite1->SetColor(0, 0, 1);
+    auto parent = CreateBox(world);
+    parent->SetColor(0, 0, 1);
+    
+    auto child = CreateBox(world);
+    child->SetPosition(4, 0, 0);
+    child->SetMass(1);
+    child->SetColor(0, 1, 0);
 
-    auto sprite2 = CreateSprite(world, 50, 50, false, 0, true);
-    sprite2->SetMass(1);
-    sprite2->SetPosition(100, 5000, 0);
-    sprite2->SetColor(1, 0, 0);
-
-    //Create a joint
-    auto joint = CreateHingeJoint(Vec3(0), Vec3(0, 0, 1), NULL, sprite1);
+    auto joint = CreateHingeJoint(parent->position, Vec3(0, 0, 1), parent, child);
     
     //Main loop
+    float a = 0;
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         world->Update();
