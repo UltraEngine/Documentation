@@ -45,7 +45,8 @@ int main(int argc, const char* argv[])
     camera->SetPosition(0, 0, -6);
 
     //Create light
-    auto light = CreateDirectionalLight(world);
+    auto light = CreateBoxLight(world);
+    light->SetRange(-20, 20);
     light->SetRotation(35, 35, 0);
     light->SetColor(3);
 
