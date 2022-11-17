@@ -35,44 +35,40 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
-
-    //Create a world
-    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
+    //Create a world
+    auto world = CreateWorld();
+
     //Create a camera    
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
-    camera->SetPosition(framebuffer->size.x / 2, framebuffer->size.y / 2);
+    camera->SetPosition(0, 0, -5);
+
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(35, 35, 0);
+    light->SetRange(-20, 20);
     
-    //Create the ground sprite
-    auto ground = CreateSprite(world, framebuffer->size.x, 50, false, 0, true);
-    ground->SetColor(0, 1, 0);
+    auto box = CreateBox(world);
+    box->SetMass(1);
+    box->SetColor(0, 1, 0);
 
-    //Create a sprite
-    auto collider = CreateRectCollider(-50,-50,100,100);
-    auto player = CreateSprite(world, 100, 100);
-    player->SetPosition(framebuffer->size.x / 2, framebuffer->size.y / 2);
-    player->mesh->Recenter();
-    player->mesh->Finalize();
-    player->UpdateBounds();
-    player->SetCollider(collider);
-    player->SetMass(1);
-    player->SetColor(1, 0, 0);
-
-    //Create kinamatic joint
-    auto joint = CreateKinematicJoint(player->position + Vec3(50, 50, 0), player);
-    joint->SetMaxForce(100000);
-    joint->SetMaxTorque(1000);
+    auto joint = CreateKinematicJoint(box->position, box);
 
     //Main loop
+    float a = 0, y = 0;
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        auto mousepos = window->GetMousePosition();
-        joint->SetPosition(mousepos.x, framebuffer->size.y - mousepos.y, 0);
+        if (window->KeyDown(KEY_RIGHT)) a -= 2;
+        if (window->KeyDown(KEY_LEFT)) a += 2;
+        if (window->KeyDown(KEY_UP)) y += 0.1;
+        if (window->KeyDown(KEY_DOWN)) y -= 0.1;
+
+        joint->SetPose(Vec3(0, y, 0), Vec3(0, 0, a));
 
         world->Update();
         world->Render(framebuffer);
