@@ -1,6 +1,6 @@
 # CreateBallAndSocketJoint
 
-This function creates a plane joint. Plane joints can be used to lock an entity to a plane, for 2D game physics.
+This function creates a ball and socket joint.
 
 ## Syntax
 
