@@ -1,11 +1,15 @@
-# CreateBoxCollider #
+# CreateBoxCollider
+
 This function creates a collider box shape for physics interactions.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[Collider](Collision.md)> **CreateBoxCollider**(const float width, const float height, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
+
 - shared_ptr<[Collider](Collision.md)> **CreateBoxCollider**(const [Vec3](Vec3.md)& size, const [Vec3](Vec3.md)& offset = 0.0, const [Vec3](Vec3.md)& rotation = 0.0)
 
-## Parameters ##
+## Parameters
+
 | Name | Description |
 |---|----|
 |**width**|width of box|
@@ -21,12 +25,14 @@ This function creates a collider box shape for physics interactions.
 |**offset**|offset of box|
 |**rotation**|rotation of box|
 
-## Returns ##
+## Returns
+
 Returns a new collider object.
 
-## Example ##
+## Example
+
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
@@ -51,17 +57,17 @@ int main(int argc, const char* argv[])
     camera->SetFOV(70);
 
     //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(45, 35, 0);
 
     //Create ground
     auto ground = CreateBox(world, 10, 1, 10);
     ground->SetPosition(0, -0.5, 0);
-    ground->SetColor(0.5);
+    ground->SetColor(0, 1, 0);
 
     //Load model
-    auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.glb");
-    model->SetPosition(0, 3, 0);
+    auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Containers/crate01.glb");
+    model->SetPosition(0, 5, 0);
     model->SetRotation(0, 0, 15);
     model->SetMass(1);
 
