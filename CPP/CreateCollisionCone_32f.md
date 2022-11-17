@@ -3,9 +3,9 @@
 This function creates a collision cone shape for physics interactions.
 
 ## Syntax
-- shared_ptr<[Collider](Collision.md)> **CreateConeCollider**(const float radius, const float height, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
+- shared_ptr<[Collider](Collider.md)> **CreateConeCollider**(const dFloat radius, const dFloat height, const dFloat x = 0, const dFloat y = 0, const dFloat z = 0, const dFloat pitch = 0, const dFloat yaw = 0, const dFloat roll = 0)
 
-- shared_ptr<[Collider](Collision.md)> **CreateConeCollider**(const float radius, const float height, const [Vec3](Vec3.md)& offset, const [Vec3](Vec3.md)& rotation = 0.0)
+- shared_ptr<[Collider](Collider.md)> **CreateConeCollider**(const dFloat radius, const dFloat height, const [xVec3](xVec3.md)& offset, const [xVec3](xVec3.md)& rotation = 0)
 
 |Parameter|Description|
 |---|---|
