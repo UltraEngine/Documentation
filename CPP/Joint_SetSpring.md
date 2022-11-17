@@ -8,7 +8,7 @@ This method adds spring behavior to a hinge or slider joint.
 
 | Parameter | Description |
 |---|---|
-| relaxation | sprin damper relaxation |
+| relaxation | spring damper relaxation |
 | spring | spring constant |
 | damper | damping value |
 
