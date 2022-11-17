@@ -28,46 +28,47 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
-
-    //Create a world
-    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
+    //Create a world
+    auto world = CreateWorld();
+
     //Create a camera    
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
+    camera->SetPosition(0, 0, -6);
+
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-20, 20);
+    light->SetRotation(35, 35, 0);
+    light->SetColor(3);
+
+    auto parent = CreateBox(world);
+    parent->SetMass(1);
+    parent->SetColor(0, 0, 1);
+
+    auto child = CreateBox(world);
+    child->SetPosition(4, 0, 0);
+    child->SetMass(1);
+    child->SetColor(0, 1, 0);
+
+    auto hinge = CreateHingeJoint(parent->position, Vec3(0, 0, 1), NULL, parent);
+    hinge->SetMaxTorque(100);
     
-    //Create the ground sprite
-    auto ground = CreateSprite(world, framebuffer->size.x, 50, false, 0, true);
-    ground->SetPosition(-framebuffer->size.x / 2, -framebuffer->size.y/2);
-    ground->SetColor(0, 1, 0);
-    
-    //Add some boxes
-    auto sprite1 = CreateSprite(world, 400, 25, false, 0, true);
-    sprite1->SetMass(1);
-    sprite1->SetPosition(-200, -12.5, 0);
-    sprite1->SetColor(0, 0, 1);
+    auto slider = CreateSliderJoint(parent->position, Vec3(-1, 0, 0), parent, child);
+    slider->SetLimits(0, 8);
 
-    auto sprite2 = CreateSprite(world, 50, 50, false, 0, true);
-    sprite2->SetMass(1);
-    sprite2->SetPosition(100, 500, 0);
-    sprite2->SetColor(1, 0, 0);
-
-    auto sprite3 = CreateSprite(world, 50, 50, false, 0, true);
-    sprite3->SetMass(1);
-    sprite3->SetPosition(-150, 2000, 0);
-    sprite3->SetColor(1, 1, 0);
-
-    //Create a joint
-    auto joint = CreateHingeJoint(Vec3(0), Vec3(0, 0, 1), NULL, sprite1);
-    joint->SetLimits(-35,35);
+    float a = 0;
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        a += 1;
+        hinge->SetPose(a);
         world->Update();
         world->Render(framebuffer);
     }
