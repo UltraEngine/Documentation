@@ -60,7 +60,6 @@ int main(int argc, const char* argv[])
     auto joint = CreateHingeJoint(parent->position, Vec3(0, 0, 1), parent, child);
     
     //Main loop
-    float a = 0;
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         world->Update();
