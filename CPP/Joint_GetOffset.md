@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
 
     //Create a camera    
     auto camera = CreateCamera(world);
-    camera->SetClearColor(0,0,1);
+    camera->SetClearColor(0.125);
     camera->SetPosition(0, 0, -6);
 
     //Create light
