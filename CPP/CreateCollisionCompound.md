@@ -13,36 +13,44 @@ This function creates a complex collision shape that is made up of multiple sub-
 ## Example
 
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Get the displays
     auto displays = GetDisplays();
-    
-    auto window = CreateWindow("Example", 0, 0, 1280, 720, displays[0]);
 
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
+
+    //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
+    //Create world
     auto world = CreateWorld();
 
+    //Create camera
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
     camera->Turn(15, 0, 0);
     camera->Move(0, 2, -8);
     camera->SetClearColor(0.125);
 
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    //Create light
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(45, -35, 0);
 
     //Create ground
-    auto ground = CreateBox(world, 10, 1, 10);
+    auto ground = CreateBox(world, 20, 1, 20);
     ground->SetPosition(0, -0.5, 0);
-    ground->SetColor(0.5);
 
     //Create model
     auto model = CreateSphere(world, 1);
+    model->SetMass(1);
     model->SetColor(0, 0, 1);
+    model->AddForce(10, 0, -10);
 
     //Add some parts
     auto part = CreateCone(world);
@@ -81,8 +89,12 @@ int main(int argc, const char* argv[])
     part->SetParent(model);
 
     model->SetPosition(0, 5, 0);
-    model->SetMass(1);
-    model->AddForce(10, 0, -10);
+    
+    //Remove colliders from child primitives
+    for (auto child : model->kids)
+    {
+        child->SetCollider(NULL);
+    }
 
     //Create collision
     vector<shared_ptr<Collider> > collisions;
