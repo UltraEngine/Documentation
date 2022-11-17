@@ -1,23 +1,27 @@
-# CreateSphereCollider #
+# CreateSphereCollider
+
 This function creates a collision sphere shape for physics interactions.
 
-## Syntax ##
-- shared_ptr<[Collider](Collision.md)> **CreateSphereCollider**(const float radius, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0)
-- shared_ptr<[Collider](Collision.md)> **CreateSphereCollider**(const float radius, const [Vec3](Vec3.md)& offset)
+## Syntax
 
-## Parameters ##
-|Name|Description|
+- shared_ptr<[Collider](Collider.md)> **CreateSphereCollider**(const float radius, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0)
+- shared_ptr<[Collider](Collider.md)> **CreateSphereCollider**(const float radius, const [Vec3](Vec3.md)& offset)
+
+## Parameters
+| Name | Description |
 |---|----|
-|**radius**|radius of shape|
-|**x**|x component of shape offset|
-|**y**|y component of shape offset|
-|**z**|z component of shape offset|
-|**offset**|offset of shape|
+| radius |radius of shape|
+| x |x component of shape offset|
+| y |y component of shape offset|
+| z |z component of shape offset|
+| offset |offset of shape|
 
-## Returns ##
+## Returns
+
 Returns a new collider object.
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 #include "Project.h"
