@@ -1872,6 +1872,18 @@
 									"filename": "CreateSliderJoint"
 								},
 								{
+									"title": "GetLimits",
+									"filename": "Joint_GetLimits"
+								},
+								{
+									"title": "GetOffset",
+									"filename": "Joint_GetOffset"
+								},
+								{
+									"title": "SetFriction",
+									"filename": "Joint_SetFriction"
+								},
+								{
 									"title": "SetLimits",
 									"filename": "Joint_SetLimits"
 								},
@@ -1886,7 +1898,11 @@
 								{
 									"title": "SetPose",
 									"filename": "Joint_SetPose"
-								}
+								},
+								{
+									"title": "SetSpring",
+									"filename": "Joint_SetSpring"
+								}								
 							]
 						}
 					]
