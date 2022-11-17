@@ -1,28 +1,31 @@
-# CreateCylinderCollider #
+# CreateCylinderCollider
+
 This function creates a collision cylinder shape for physics interactions.
 
-## Syntax ##
-- shared_ptr<[Collider](Collision.md)> **CreateCylinderCollider**(const float radius, const float height, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
-- shared_ptr<[Collider](Collision.md)> **CreateCylinderCollider**(const float radius, const float height, const [Vec3](Vec3.md)& offset, const [Vec3](Vec3.md)& rotation = 0.0)
+## Syntax
 
-## Parameters ##
-|Name|Description|
+- shared_ptr<[Collider](Collider.md)> **CreateCylinderCollider**(const float radius, const float height, const float x = 0.0, const float y = 0.0, const float z = 0.0, const float pitch = 0.0, const float yaw = 0.0, const float roll = 0.0)
+
+- shared_ptr<[Collider](Collider.md)> **CreateCylinderCollider**(const float radius, const float height, const [Vec3](Vec3.md)& offset, const [Vec3](Vec3.md)& rotation = 0.0)
+
+|Parameter|Description|
 |---|----|
-|**radius**|radius of shape|
-|**height**|height of shape|
-|**x**|x component of shape offset|
-|**y**|y component of shape offset|
-|**z**|z component of shape offset|
-|**pitch**|pitch of shape rotation|
-|**yaw**|yaw of shape rotation|
-|**roll**|roll of shape rotation|
-|**offset**|offset of shape|
-|**rotation**|rotation of shape|
+|radius|radius of shape|
+|height|height of shape|
+|x|x component of shape offset|
+|y|y component of shape offset|
+|z|z component of shape offset|
+|pitch|pitch of shape rotation|
+|yaw|yaw of shape rotation|
+|roll|roll of shape rotation|
+|offset|offset of shape|
+|rotation|rotation of shape|
 
-## Returns ##
+## Returns
 Returns a new collider object.
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 #include "Project.h"
