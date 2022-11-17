@@ -4,26 +4,26 @@ This function creates a collider box shape for physics interactions.
 
 ## Syntax
 
-- shared_ptr<[Collider](Collision.md)> **CreateBoxCollider**(const float width, const float height, const float depth, const float x = 0, const float y = 0, const float z = 0, const float pitch = 0, const float yaw = 0, const float roll = 0)
+- shared_ptr<[Collider](Collider.md)> **CreateBoxCollider**(const float width, const float height, const float depth, const float x = 0, const float y = 0, const float z = 0, const float pitch = 0, const float yaw = 0, const float roll = 0)
 
-- shared_ptr<[Collider](Collision.md)> **CreateBoxCollider**(const [Vec3](Vec3.md)& size, const [Vec3](Vec3.md)& offset = 0, const [Vec3](Vec3.md)& rotation = 0)
+- shared_ptr<[Collider](Collider.md)> **CreateBoxCollider**(const [Vec3](Vec3.md)& size, const [Vec3](Vec3.md)& offset = 0, const [Vec3](Vec3.md)& rotation = 0)
 
 ## Parameters
 
 | Name | Description |
 |---|----|
-|**width**|width of box|
-|**height**|height of box|
-|**depth**|depth of box|
-|**x**|x component of box offset|
-|**y**|y component of box offset|
-|**z**|z component of box offset|
-|**pitch**|pitch of box rotation|
-|**yaw**|yaw of box rotation|
-|**roll**|roll of box rotation|
-|**size**|size of box|
-|**offset**|offset of box|
-|**rotation**|rotation of box|
+|width|width of box|
+|height|height of box|
+|depth|depth of box|
+|x|x component of box offset|
+|y|y component of box offset|
+|z|z component of box offset|
+|pitch|pitch of box rotation|
+|yaw|yaw of box rotation|
+|roll|roll of box rotation|
+|size|size of box|
+|offset|offset of box|
+|rotation|rotation of box|
 
 ## Returns
 
