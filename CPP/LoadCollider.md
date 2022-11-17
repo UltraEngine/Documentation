@@ -20,8 +20,9 @@ Returns the loaded collider object if it was successfully loaded, otherwise NULL
 ## Example
 
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
@@ -29,7 +30,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow(displays[0], L"", 0, 0, 1280, 720, WINDOW_CENTER | WINDOW_TITLEBAR);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -44,7 +45,7 @@ int main(int argc, const char* argv[])
     camera->SetFOV(70);
 
     //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(45, 35, 0);
 
     //Create ground
@@ -52,13 +53,13 @@ int main(int argc, const char* argv[])
     ground->SetPosition(0, -0.5, 0);
 
     //Load model
-    auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.glb");
+    auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Containers/crate01.glb");
     model->SetPosition(0, 3, 0);
     model->SetRotation(0, 0, 15);
     model->SetMass(1);
 
     //Load collision
-    auto collision = LoadCollider("https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Containers/crate01.phy");
+    auto collision = LoadCollider("https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Containers/crate01.phy");
     model->SetCollider(collision);
 
     while (window->Closed() == false)
