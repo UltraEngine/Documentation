@@ -60,7 +60,7 @@ int main(int argc, const char* argv[])
     auto font = LoadFont("Fonts/Arial.ttf");
     auto sprite = CreateSprite(world, font, "0", 18);
     sprite->SetRenderLayers(RENDERLAYER_7);
-    sprite->SetPosition(0, framebuffer->size.y - font->GetHeight(18), 0);
+    sprite->SetPosition(2, framebuffer->size.y - font->GetHeight(18) - 2, 0);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
