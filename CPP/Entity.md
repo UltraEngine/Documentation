@@ -1,5 +1,7 @@
 # Entity
 
+Base class: [Object](Object.md)
+
 This is the base class for all 3D objects in a world.
 
 | Parameter | Type | Description |
