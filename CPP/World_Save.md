@@ -12,4 +12,4 @@ This method serializes the world to a file that can be loaded later. This can be
 
 ## Remarks
 
-The save routine works with the entity component system to save your own C++ classes.
+The save routine works with the [entity component system](EntityComponentSystem.md) to save your own C++ classes.
