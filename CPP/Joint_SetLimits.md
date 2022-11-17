@@ -1,6 +1,6 @@
 # Joint::SetLimits
 
-This method sets the limits of a hinge or slider joint.
+This method sets the limits of a hinge, slider, or ball and socket joint.
 
 ## Syntax
 
@@ -13,7 +13,11 @@ This method sets the limits of a hinge or slider joint.
 
 ## Remarks
 
-If both the minimum and maximum limits are set to zero, joint limits will be disabled.
+For hinge and slider joints, if both the minimum and maximum limits are set to zero, joint limits will be disabled.
+
+For ball and socket joints, the minimum limit will be used as a maximum cone angle, and the maximum limit will be used for the maximum twist angle.
+
+For ball and socket joints, if the minimum limit is set to zero and the maximum limit is set to 360, joint limits will be disabled.
 
 ## Example
 
