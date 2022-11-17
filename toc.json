@@ -1826,17 +1826,33 @@
 							"title": "Collider",
 							"filename": "Collider",
 							"topics": [{
+									"title": "CreateBoxCollider",
+									"filename": "CreateBoxCollider"
+								},
+								{
 									"title": "CreateCompoundCollider",
 									"filename": "CreateCompoundCollider"
 								},
 								{
-									"title": "CreateCircleCollider",
-									"filename": "CreateCircleCollider"
+									"title": "CreateConeCollider",
+									"filename": "CreateConeCollider"
 								},
 								{
-									"title": "CreateRectCollider",
-									"filename": "CreateRectCollider"
+									"title": "CreateCylinderCollider",
+									"filename": "CreateCylinderCollider"
 								},
+								{
+									"title": "CreateConvexHullCollider",
+									"filename": "CreateConvexHullCollider"
+								},	
+								{
+									"title": "CreateMeshCollider",
+									"filename": "CreateMeshCollider"
+								},
+								{
+									"title": "CreateSphereCollider",
+									"filename": "CreateSphereCollider"
+								},								   
 								{
 									"title": "LoadCollider",
 									"filename": "LoadCollider"
