@@ -8,7 +8,7 @@ This method sets the maximum torque a motorized hinge or kinematic joint can app
 
 | Parameter | Description |
 |---|---|
-| torque | max torque, in Newton-meters |
+| torque | maximum torque in Newton-meters |
 
 
 ## Example
