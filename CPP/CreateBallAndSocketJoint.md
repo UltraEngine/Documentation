@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     //Create a camera    
     auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
-    camera->SetPosition(0,0,-4);
+    camera->SetPosition(0, 0, -6);
 
     //Create light
     auto light = CreateDirectionalLight(world);
@@ -48,31 +48,21 @@ int main(int argc, const char* argv[])
     light->SetColor(3);
 
     auto parent = CreateBox(world);
-    parent->SetMass(1);
-    //parent->SetGravityMode(false);
+    parent->SetColor(0, 0, 1);
 
-    auto joint = CreateBallAndSocketJoint(Vec3(0,2,0), parent, NULL);
-    //parent->AddTorque(0, 100, 0);
-    //joint->SetMaxTorque(10000);
-    //joint->SetLimits(-2, 2);
-    //joint->SetMotorSpeed(360);
-    //joint->SetMaxForce(100);
+    auto child = CreateBox(world);
+    child->SetPosition(4, 0, 0);
+    child->SetMass(1);
+    child->SetColor(0, 1, 0);
+    child->AddForce(0, 0, 100);
+    child->AddTorque(100, 0, 0);
 
-    joint->SetLimits(45, 360);
+    auto joint = CreateBallAndSocketJoint(parent->position, parent, child);
+    joint->SetLimits(0, 360);
 
     //Main loop
-    float a = 0;
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        if (window->KeyHit(KEY_F)) parent->AddTorque(0, -50, 0, false);
-        if (window->KeyHit(KEY_G)) parent->AddTorque(0, 50, 0, false);
-        if (window->KeyHit(KEY_R)) parent->AddForce(100, 0, 0, false);
-        if (window->KeyHit(KEY_T)) parent->AddForce(0, 0, 100, false);
-
-        if (window->KeyDown(KEY_RIGHT)) a += 1;
-        if (window->KeyDown(KEY_LEFT)) a -= 1;
-        //joint->SetPose(Vec3(0), Vec3(0,0,a));
-
         world->Update();
         world->Render(framebuffer);
     }
