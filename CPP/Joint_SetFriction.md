@@ -8,7 +8,7 @@ This methods sets the friction of a hinge or slider joint.
 
 | Parameter | Description |
 |---|---|
-| friction | joint friction, in Newtons |
+| friction | joint friction, in Newtons for a slider and Newton-meters for a hinge |
 
 ## Example
 
