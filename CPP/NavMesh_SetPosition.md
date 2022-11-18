@@ -5,7 +5,7 @@ This method can be used to move a navigation mesh.
 ## Syntax
 
 - void **SetPosition**(const dFloat x, const dFloat y, const dFloat z)
-- void **SetPosition**(const [Vec3](Vec3.md)& position)
+- void **SetPosition**(const [xVec3](xVec3.md)& position)
 
 | Parameter | Description |
 |---|---|
