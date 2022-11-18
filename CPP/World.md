@@ -9,7 +9,6 @@ The world class is a container for entities.
 | Name | Type | Description |
 |---|---|---|
 | collisions | const vector<[Collision](Collision.md)\> collisions | read-only list of collisions recorded in previous physics update |
-| physicsengine | const [PhysicsEngine](Constants.md#PhysicsEngine)& | read-only physics engine in use |
 | physicsstats | [PhysicsStats](PhysicsStats.md) |  |
 | renderstats | [RenderStats](RenderStats.md) |  |
 | [ClearCollisionResponses](World_ClearCollisionResponses.md) | Method | |
