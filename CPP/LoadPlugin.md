@@ -14,23 +14,13 @@ The file extension of plugin modules varies by platform. You can use an asterisk
 
 ## Example ##
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	shared_ptr<Plugin> plugin;
-	if (sizeof(void*) == 4)
-	{
-		// 32-bit build
-		plugin = LoadPlugin("Plugins/x86/FITextureLoader.*");
-	}
-	else
-	{
-		// 64-bit build
-		plugin = LoadPlugin("Plugins/FITextureLoader.*");
-	}
+	auto plugin = LoadPlugin("Plugins/FITextureLoader");
 	if (plugin)
 	{
 		Print(plugin->description);
