@@ -14,6 +14,8 @@ This method can be used to rotate a navigation mesh. You can make characters tha
 
 ## Example
 
+This example tilts the scene and the navigation mesh by 45 degrees.
+
 ```c++
 #include "UltraEngine.h"
 
