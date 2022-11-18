@@ -1,6 +1,6 @@
 # NavMesh::SetRotation
 
-This method can be used to rotate a navigation mesh. You can make characters that can walk on the ceiling, or handle navigation in a space simulation that has no uniform "up" direction.
+This method can be used to rotate a navigation mesh. You can make characters that walk on the ceiling, or handle navigation in a space simulation that has no uniform "up" direction.
 
 ## Syntax
 
