@@ -20,6 +20,27 @@ This is the base class for all 3D objects in a world.
 | [Copy](Entity_Copy.md) | Method | duplicates the entity |
 | [FindChild](Entity_FindChild.md) | Method | searches for a child by name |
 | [GetAngularVelocity](Entity_GetAngularVelocity.md) | Method | returns the entity angular velocity |
+| [GetCollider](Entity_GetCollider.md) | Method | returns the physics collider |
+| [GetCollisionType](Entity_GetCollisionType.md) | Method | returns the collision type |
+| [GetColor](Entity_GetColor.md) | Method | returns the entity color |
+| [GetBounds](Entity_GetBounds.md) | Method | returns an axis-aligned bounding box |
+| [GetDistance](Entity_GetDistance.md) | Method | calculates distance to another entity |
+| [GetHidden](Entity_GetHidden.md) | Method | returns the entity hide state |
+| [GetMass](Entity_GetMass.md) | Method | returns the entity mass |
+| [GetParent](Entity_GetParent.md) | Method | returns the parent entity |
+| [GetPickMode](Entity_GetPickMode.md) | Method | returns the entity pick mode |
+| [GetPosition](Entity_GetPosition.md) | Method | returns the entity position |
+| [GetRotation](Entity_GetRotation.md) | Method | returns the entity Euler rotation |
+| [GetQuaternion](Entity_GetQuaternion.md) | Method | returns the entity rotation |
+| [GetScale](Entity_GetScale.md) | Method | returns the entity scale |
+| [GetVelocity](Entity_GetVelocity.md) | Method | returns the entity linear velocity |
+| [GetWorld](Entity_GetWorld.md) | Method | returns the world the entity resides in |
+
+
+
+
+
+
 
 
 
