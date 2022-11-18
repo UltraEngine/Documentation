@@ -9,13 +9,7 @@ Plugins will be utilized automatically by the engine as the program runs. For ex
 When a plugin is deleted it will be automatically unloaded and its functionality will no longer be available to the engine. Therefore, you must maintain a variable for a loaded plugin and not let it go out of scope using the [LoadPlugin](LoadPlugin.md) function.
 
 ```c++
-auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader.*")
-```
-
-If you are building a 32-bit application then the 32-bit version of the plugin should be loaded:
-
-```c++
-auto plugin_freeimage = LoadPlugin("Plugins/x86/FITextureLoader.*")
+auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader")
 ```
 
 | Property | Type | Description |
