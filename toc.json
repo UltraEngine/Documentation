@@ -1940,6 +1940,10 @@
 					"topics": [{
 						"title": "LoadPlugin",
 						"filename": "LoadPlugin"
+					},
+					{
+						"title": "Plugin SDK",
+						"filename": "PluginSDK"
 					}]
 				},
 				{
