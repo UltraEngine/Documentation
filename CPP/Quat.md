@@ -1,6 +1,6 @@
 # Quat
 
-This class describes a quaternion rotation. Quaternions are more accurate than Euler angles because they do not suffer from Gimbal lock, but they more difficult to intuitively understand.
+This class describes a quaternion rotation. Quaternions are more accurate than Euler angles and do not suffer from Gimbal lock, but they more difficult to intuitively understand.
 
 ## Properties
 
