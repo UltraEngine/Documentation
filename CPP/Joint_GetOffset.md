@@ -59,7 +59,7 @@ int main(int argc, const char* argv[])
     cam2d->SetClearMode(CLEAR_DEPTH);
     cam2d->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f);
 
-    auto font = LoadFont("Fonts/Arial.ttf");
+    auto font = LoadFont("Fonts/arial.ttf");
     auto sprite = CreateSprite(world, font, "0", 18);
     sprite->SetRenderLayers(RENDERLAYER_7);
     sprite->SetPosition(2, framebuffer->size.y - font->GetHeight(18) - 2, 0);
