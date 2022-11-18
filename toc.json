@@ -712,6 +712,14 @@
 							"title": "Font",
 							"filename": "Font",
 							"topics": [{
+								"title": "GetHeight",
+								"filename": "GetHeight"
+							},
+							{
+								"title": "GetTextWidth",
+								"filename": "GetTextWidth"
+							},
+							{
 								"title": "LoadFont",
 								"filename": "LoadFont"
 							}]
