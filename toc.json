@@ -2236,6 +2236,10 @@
 							"filename": "CreateWorld"
 						},
 						{
+							"title": "GetAmbientLight",
+							"filename": "World_GetAmbientLight"
+						},						   
+						{
 							"title": "GetCollisionResponse",
 							"filename": "World_GetCollisionResponse"
 						},
@@ -2260,12 +2264,20 @@
 							"filename": "World_Save"
 						},
 						{
+							"title": "SetAmbientLight",
+							"filename": "World_SetAmbientLight"
+						},
+						{
 							"title": "SetCollisionResponse",
 							"filename": "World_SetCollisionResponse"
 						},
 						{
 							"title": "SetGravity",
 							"filename": "World_SetGravity"
+						},
+						{
+							"title": "SetEnvironmentMap",
+							"filename": "World_SetEnvironmentMap"
 						},
 						{
 							"title": "Update",
