@@ -698,11 +698,28 @@
 				},
 				{
 					"title": "GamePad",
+					"filename": "GamePad",
 					"topics": [
 						{
 							"title": "GamePadConnected",
 							"filename": "GamePadConnected"
-						}
+						},
+						{
+							"title": "GamePadButtonDown",
+							"filename": "GamePadButtonDown"
+						},
+						{
+							"title": "GamePadButtonHit",
+							"filename": "GamePadButtonHit"
+						},
+						{
+							"title": "GamePadAxisPosition",
+							"filename": "GamePadAxisPosition"
+						},
+						{
+							"title": "GamePadRumble",
+							"filename": "GamePadRumble"
+						}					
 					]
 				},
 				{
