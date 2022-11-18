@@ -5,8 +5,8 @@ This method can be used to rotate a navigation mesh. You can make characters tha
 ## Syntax
 
 - void **SetRotation**(const dFloat pitch, const dFloat yaw, const dFloat roll)
-- void **SetRotation**(const [Vec3](Vec3.md)& rotation)
-- void **SetRotation**(const [Quat](Quat.md)& rotation)
+- void **SetRotation**(const [xVec3](xVec3.md)& rotation)
+- void **SetRotation**(const [xQuat](xQuat.md)& rotation)
 
 | Parameter | Description |
 |---|---|
