@@ -4,14 +4,14 @@ This method searches the entity subhierarchy for a child with a specified name. 
 
 ## Syntax
 
-- shared_ptr<[Entity](Entity.md)\> **FindChild**(const [WString](WString.md)& name, const bool casesensitive = true)
-- int **FindChild**(const [WString](WString.md)& name, vector<shared_ptr<[Entity](Entity.md)\>\> results, const bool casesensitive = true)
+- shared_ptr<[Entity](Entity.md)\> **FindChild**(const [WString](WString.md)& name, const bool cased = true)
+- int **FindChild**(const [WString](WString.md)& name, vector<shared_ptr<[Entity](Entity.md)\>\> results, const bool cased = true)
 
 | Parameter | Description |
 | --- | --- |
-| **name** | name of the entity to find |
-| **casesensitive** | if set to true the name search will be case-sensitive |
-| **results** | all matching children will be added to the end of the array |
+| name | name of the entity to find |
+| cased | if set to true the name search will be case-sensitive |
+| results | all matching children will be added to the end of the array |
 
 ## Returns
 
