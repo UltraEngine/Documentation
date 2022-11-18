@@ -9,3 +9,4 @@ This class is used to create to plot navigation paths and perform crowd movement
 | [SetPosition](NavAgent_SetPosition.md) | Method | |
 | [SetRotation](NavAgent_SetRotation.md) | Method | |
 | [Stop](NavAgent_Stop.md) | Method | |
+| [CreateNavAgent](CreateNavAgent.md) | Function | creates a new navigation agent |
