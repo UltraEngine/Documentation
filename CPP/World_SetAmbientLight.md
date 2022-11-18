@@ -9,7 +9,4 @@ This method sets the ambient light level for the world.
 
 | Parameter | Description |
 |---|---|
-| r | red component of the ambient light level |
-| g | green component of the ambient light level |
-| b | blue component of the ambient light level |
-| ambientlight | ambient light level |
+| ambientlight, (r, g, b) | ambient light level |
