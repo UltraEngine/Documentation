@@ -1,5 +1,7 @@
 # Server
 
+Base class: [Object](Object.md)
+
 This class handles network server functionality.
 
 | Property | Type | Description |
