@@ -1821,7 +1821,6 @@
 				},
 				{
 					"title": "PathFinding",
-					"filename": "PathFinding",
 					"topics": [{
 							"title": "NavAgent",
 							"filename": "NavAgent"
