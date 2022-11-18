@@ -9,7 +9,7 @@ This method can be used to move a navigation mesh.
 
 | Parameter | Description |
 |---|---|
-| position (x, y z) | navigation mesh position |
+| position (x, y, z) | navigation mesh position |
 
 ## Example
 
