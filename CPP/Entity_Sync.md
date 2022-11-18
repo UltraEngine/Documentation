@@ -12,9 +12,12 @@ Rendering is performed on a separate thread, and is likely to run at a different
 
 Note that if physics are enabled it may introduce additional interpolation if the entity has a non-zero mass.
 
-## Example ##
+## Example
+
+In this example the box on the top will use rendering interpolation, while the box on the bottom will continously call Sync() to prevent interpolation.
+
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
@@ -39,16 +42,18 @@ int main(int argc, const char* argv[])
     camera->SetFOV(70);
 
     //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateBoxLight(world);
+    light->SetRange(-20, 20);
+    light->SetArea(20, 20);
     light->SetRotation(45, 35, 0);
 
     //Create model
     auto box1 = CreateBox(world, 0.8, 0.8, 0.8);
-    box1->SetColor(0.5);
+    box1->SetColor(0,0,1);
     box1->SetPhysicsMode(PHYSICS_DISABLED);
 
     auto box2 = CreateBox(world, 0.8, 0.8, 0.8);
-    box2->SetColor(0.5);
+    box2->SetColor(0,1,0);
     box2->SetPhysicsMode(PHYSICS_DISABLED);
 
     int n = 0;
@@ -56,8 +61,8 @@ int main(int argc, const char* argv[])
 
     while (window->Closed() == false)
     {
-        box1->SetPosition(pos[n],0.5,0);
-        box2->SetPosition(pos[n],-0.5,0);
+        box1->SetPosition(pos[n], 0.5, 0);
+        box2->SetPosition(pos[n], -0.5, 0);
         box2->Sync();
 
         n++;
