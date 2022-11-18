@@ -29,6 +29,7 @@ int main(int argc, const char* argv[])
 
     //Create the server
     auto server = CreateServer(port);
+    if (server == NULL) RuntimeError("Failed to create server");
 
     //Create a client and connect
     auto client = CreateClient();
@@ -62,7 +63,7 @@ int main(int argc, const char* argv[])
             break;
         }
 
-        Sleep(5);
+        Sleep(10);
     }
     return 0;
 }
