@@ -1827,7 +1827,33 @@
 						},
 						{
 							"title": "NavMesh",
-							"filename": "NavMesh"
+							"filename": "NavMesh",
+							"topics": [
+								{
+									"title": "Build",
+									"filename": "NavMesh_Build"
+								},
+								{
+									"title": "CreateNavMesh",
+									"filename": "CreateNavMesh"
+								},								
+								{
+									"title": "PlotPath",
+									"filename": "NavMesh_PlotPath"
+								},
+								{
+									"title": "RandomPoint",
+									"filename": "NavMesh_RandomPoint"
+								},
+								{
+									"title": "SetPosition",
+									"filename": "NavMesh_SetPosition"
+								},
+								{
+									"title": "SetRotation",
+									"filename": "NavMesh_SetRotation"
+								}								
+							]							
 						}
 					]
 				},		   
