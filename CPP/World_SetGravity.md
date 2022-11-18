@@ -9,7 +9,4 @@ The methods sets the gravitational vector applied uniformly across the world.
 
 | Parameter | Description |
 |---|---|
-| gravity | gravitional force to set, in meters per second squared |
-| x | x component of gravity |
-| y | y component of gravity |
-| z | z component of gravity |
+| gravity, (x, y, z) | gravitional force to set, in meters per second squared |
