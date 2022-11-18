@@ -4,11 +4,12 @@ This method serializes the world to a file that can be loaded later. This can be
 
 ## Syntax
 
-- bool **Save**(const [WString](WString.md)& path, const LoadFlags flags)
+- bool **Save**(const [WString](WString.md)& path, const SaveFlags flags = SAVE_DEFAULT)
 
 | Parameter | Description |
 |---|---|
-|||
+| path | file path to save |
+| flags | optional save flags |
 
 ## Remarks
 
