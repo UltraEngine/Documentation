@@ -5,9 +5,11 @@ This function creates a collision sphere shape for physics interactions.
 ## Syntax
 
 - shared_ptr<[Collider](Collider.md)> **CreateSphereCollider**(const float radius, const float depth, const float x = 0.0, const float y = 0.0, const float z = 0.0)
+
 - shared_ptr<[Collider](Collider.md)> **CreateSphereCollider**(const float radius, const [Vec3](Vec3.md)& offset)
 
 ## Parameters
+
 | Name | Description |
 |---|----|
 | radius |radius of shape|
