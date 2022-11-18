@@ -16,6 +16,8 @@ A framebuffer can only be created on a resizable window when multithreaded rende
 
 ## Example
 
+This example creates an event-based application with a resizable window and 3D rendering.
+
 ```c++
 #include "UltraEngine.h"
 
