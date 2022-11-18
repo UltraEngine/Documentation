@@ -1823,7 +1823,37 @@
 					"title": "PathFinding",
 					"topics": [{
 							"title": "NavAgent",
-							"filename": "NavAgent"
+							"filename": "NavAgent",
+							"topics": [
+								{
+									"title": "CreateNavAgent",
+									"filename": "CreateNavAgent"
+								},									
+								{
+									"title": "Navigate",
+									"filename": "NavAgent_Navigate"
+								},
+								{
+									"title": "SetMaxAcceleration",
+									"filename": "NavAgent_SetMaxAcceleration"
+								},								
+								{
+									"title": "SetMaxSpeed",
+									"filename": "NavAgent_SetMaxSpeed"
+								},
+								{
+									"title": "SetPosition",
+									"filename": "NavAgent_SetPosition"
+								},
+								{
+									"title": "SetRotation",
+									"filename": "NavAgent_SetRotation"
+								},
+								{
+									"title": "Stop",
+									"filename": "NavAgent_Stop"
+								}								
+							]							
 						},
 						{
 							"title": "NavMesh",
