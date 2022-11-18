@@ -10,7 +10,7 @@ This method can be used to rotate a navigation mesh. You can make characters tha
 
 | Parameter | Description |
 |---|---|
-| rotation (pitch, yaw roll) | navigation mesh rotation |
+| rotation (pitch, yaw, roll) | navigation mesh rotation |
 
 ## Example
 
