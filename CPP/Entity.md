@@ -4,7 +4,7 @@ Base class: [Object](Object.md)
 
 This is the base class for all 3D objects in a world.
 
-| Parameter | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | extra | shared_ptr<[Object](Object.md)\> | user-defined object |
 | kids | vector<shared_ptr<[Entity](Entity.md)\> \> | read-only array of child entities |
