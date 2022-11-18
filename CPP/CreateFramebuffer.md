@@ -30,7 +30,7 @@ void main(const char* args, const int argc)
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280 * displays[0]->scale, 720 * displays[0]->scale, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
