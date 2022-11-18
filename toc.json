@@ -2164,7 +2164,7 @@
 				},
 				{
 					"title": "Scene",
-					"filename": "Scene.md",
+					"filename": "Scene",
 					"topics": [
 						{
 							"title": "LoadScene",
