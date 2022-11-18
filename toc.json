@@ -1784,10 +1784,7 @@
 					"filename": "Networking",
 					"hideFromLua": true,
 					"hideFromCS": true,
-					"topics": [{
-							"title": "Address",
-							"filename": "Address"
-						},
+					"topics": [
 						{
 							"title": "Client",
 							"filename": "Client"
