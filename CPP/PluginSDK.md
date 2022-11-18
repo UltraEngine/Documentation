@@ -57,5 +57,3 @@ A package plugin must contain all of the following commands:
 | LoadPackageFile | Loads a model from memory in a specific format. |
 | FreePackage | Loads a model from memory in a specific format. |
 | GetPackageFileName | Loads a model from memory in a specific format. |
-
-See the [Plugin SDK on Github](https://github.com/Leadwerks/PluginSDK) for more information.
