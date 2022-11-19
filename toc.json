@@ -956,11 +956,7 @@
 									"filename": "Mesh_UpdateTangents"
 								}
 							]
-						},
-						{
-							"title": "PickInfo",
-							"filename": "PickInfo"
-						},						
+						},					
 						{
 							"title": "PostEffect",
 							"filename": "PostEffect",
@@ -2171,6 +2167,10 @@
 									"filename": "Joint_SetSpring"
 								}								
 							]
+						},
+						{
+							"title": "PickInfo",
+							"filename": "PickInfo"
 						}
 					]
 				},
