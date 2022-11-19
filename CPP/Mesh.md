@@ -26,6 +26,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [Scale](Mesh_Scale.md) | Method | |
 | [SetMaterial](Mesh_SetMaterial.md) | Method | sets the mesh material |
 | [SetPrimitiveAttributes](Mesh_SetPrimitiveAttributes.md) | Method | sets attributes of a single primitive |
+| [SetSkinned](Mesh_SetSkinned.md) | Method | |
 | [Transform](Mesh_Transform.md) | Method | |
 | [Translate](Mesh_Translate.md) | Method | |
 | [UpdateBounds](Mesh_UpdateBounds.md) | Method | |
