@@ -4,9 +4,7 @@ Base class: [Object](Object.md)
 
 This class provides an interface for creating multithreaded applications. Ultra Engine already uses extensive multithreading, and you generally do not need to use these commands yourself, but they are available for advanced programmers.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | [GetResult](Thread_GetResult.md) | Method | returns the thread result |
 | [GetState](Thread_GetState.md) | Method | returns the current thread state |
