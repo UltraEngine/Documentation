@@ -10,4 +10,6 @@ This method returns the OpenAL albuffer object associated with this sound.
 
 Returns the OpenAL albuffer object.
 
-See the [OpenAL documentation](https://openal.org/documentation/) for more information.
+## Remarks
+
+This feature is intended for advanced programmers. See the [OpenAL documentation](https://openal.org/documentation/) for more information.
