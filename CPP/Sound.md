@@ -8,6 +8,7 @@ A sound file stores a waveform that can be used to play noises.
 
 | Name | Type | Description |
 |---|---|---|
+| [GetHandle](Sound_GetHandle.md) | Method | returns the OpenAL buffer for this sound |
 | [GetLength](Sound_GetLength.md) | Method | returns the length of the sound, in seconds |
 | [Play](Sound_Play.md) | Method | plays the sound once |
 | [LoadSound](LoadSound.md) | Function | loads a sound from a file or stream |
