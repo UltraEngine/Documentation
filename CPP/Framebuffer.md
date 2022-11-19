@@ -2,11 +2,9 @@
 
 This class provides an interface for displaying Vulkan graphics on the screen.
 
-**Base class:** [Object](Object)
+Base class: [Object](Object)
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | size | const [iVec2](iVec2.md)& | read-only dimensions |
 | window | const shared_ptr<[Window](Window.md)\>& | read-only window object |
