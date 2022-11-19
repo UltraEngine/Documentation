@@ -1,8 +1,10 @@
-# Interface #
+# Interface
+
+Base class: [Object](Object.md)
+
 This class is used to create a graphical user interface.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | root | const shared_ptr<[Widget](Widget.md)>& | read-only pointer to root panel widget |
 | scale | const float& | read-only interface DPI scaling value |
