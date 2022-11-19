@@ -12,11 +12,7 @@ In the core Ultra Engine API you are accustomed to using entities. In the entity
 
 Components are "blocks" of functionality that can be added to an actor.
 
-### Connections
-
-Actors can have connections defined that create a logical sequence of events when a method call occurs.
-
-## Usage
+### Usage
 
 To start using the entity component system, create an actor:
 
