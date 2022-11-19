@@ -4,7 +4,7 @@ This function creates a new speaker object.
 
 ## Syntax
 
-- shared_ptr<[Speaker](Speaker.md)> CreateSpeaker()
+- shared_ptr<[Speaker](Speaker.md)> **CreateSpeaker**()
 
 ## Returns
 
