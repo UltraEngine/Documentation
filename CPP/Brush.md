@@ -13,3 +13,4 @@ This class provides an interface for building level geometry with constructive s
 | [Slice](Brush_Slice.md) | Method | | 
 | [CreateBoxBrush](CreateBoxBrush.md) | Function | |
 | [CreateBrush](CreateBrush.md) | Function | |
+ 
