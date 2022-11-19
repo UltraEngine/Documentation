@@ -846,10 +846,6 @@
 									"filename": "Mesh_Scale"
 								},
 								{
-									"title": "Scale",
-									"filename": "Mesh_Scale"
-								},
-								{
 									"title": "SetMaterial",
 									"filename": "Mesh_SetMaterial"
 								},
