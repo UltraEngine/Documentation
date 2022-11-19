@@ -55,21 +55,24 @@ int main(int argc, const char* argv[])
     //Create brush
     auto brush = CreateBoxBrush(world, 10, 2, 2);
     
-    //Slice in half
+    //Slice brush
+    auto A = CreateBrush(world);
+    auto B = CreateBrush(world);
     Plane sliceplane = Plane(1, 1, -1, 0);
-    auto operands = brush->Slice(sliceplane);
-    brush = NULL;
-
-    if (operands[0])
+    if (brush->Slice(sliceplane, A, B))
     {
-        operands[0]->Move(-0.75, 0, 0);
-        operands[0]->SetColor(0, 1, 0);
+        A->SetColor(0, 1, 0);
+        A->Move(-0.75, 0, 0);
+
+        B->SetColor(0, 0, 1);
+        B->Move(0.75, 0, 0);
+
+        brush = NULL;
     }
-
-    if (operands[1])
+    else
     {
-        operands[1]->Move(0.75, 0, 0);
-        operands[1]->SetColor(0, 0, 1);
+        A = NULL;
+        B = NULL;
     }
 
     //Main loop
