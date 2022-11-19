@@ -4,7 +4,7 @@ This method will slice a brush in half along a plane and return the two resultin
 
 ## Syntax
 
-- array< shared_ptr<[Brush](Brush.md)\>, 2\> **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001)
+- array<shared_ptr<[Brush](Brush.md)\>, 2\> **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001)
 
 | Parameter | Description |
 |---|---|
@@ -14,4 +14,4 @@ This method will slice a brush in half along a plane and return the two resultin
 
 ## Returns
 
-If the plane does not intersect the brush, the returned array will be of length zero. Otherwise, the returned array will contain two resulting brushes.
+If the plane does not intersect the brush, the returned array will be empty. Otherwise, the returned array will contain two resulting brushes.
