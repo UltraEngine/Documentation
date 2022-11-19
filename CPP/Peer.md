@@ -2,7 +2,7 @@
 
 Base class: [Object](Object.md)
 
-This class is an object representing another computer a server is connected to.
+This class is an object representing another computer this machine is connected to.
 
 | Property | Type | Description |
 |---|---|---|
