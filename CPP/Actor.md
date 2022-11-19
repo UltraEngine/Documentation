@@ -2,9 +2,7 @@
 
 In the entity component system, the actor is our main object type. The actor poseesses an entity as and additional modular "blocks" of behavior called [components](Component.md). An actor has only one entity but can have multiple components.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | entity | const shared_ptr<[Entity](Entity.md)>& | entity this actor controls |
 | [AddComponent](Actor_AddComponent.md) | Method | adds a new component to the actor |
