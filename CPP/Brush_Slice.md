@@ -1,20 +1,24 @@
 # Brush::Slice
 
-This method will slice a brush in half along a plane and return the two resulting pieces. The original brush will be unharmed.
+This method will slice a brush along a plane and return the two resulting pieces. The original brush will be unharmed.
 
 ## Syntax
 
-- array<shared_ptr<[Brush](Brush.md)\>, 2\> **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001)
+- bool **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Brush](Brush.md)> operandA, shared_ptr<[Brush](Brush.md)> operandB, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001)
 
 | Parameter | Description |
 |---|---|
 | plane | slice plane |
+| operandA | brush to receive the volume behind the slice plane |
+| operandB | brush to receive the volume in front of the slice plane |
 | tolerance | error tolerance, should be greater than zero |
 | sliceface | if provided, material and texture mapping settings will be copied from this face to the end caps of the resulting brushes. This is useful for boolean operations, where one brush carves a volume out of another.
 
 ## Returns
 
-If the plane does not intersect the brush, the returned array will be empty. Otherwise, the returned array will contain two resulting brushes.
+If the plane intersects the brush true is returned, otherwise false is returned. The results of the slice operation will be added to operandA and operandB.
+
+Either operandA or operandB may be NULL, but if both are NULL the operation will always return false.
 
 ## Example
 
