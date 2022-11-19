@@ -1,6 +1,6 @@
 # Server::Update
 
-This method checks for incoming messages and send any queued messages.
+This method checks for incoming messages and sends any queued messages.
 
 ## Syntax
 
