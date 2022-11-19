@@ -2,7 +2,7 @@
 
 This method can be used to set custom collision responses between different collision types.
 
-- void **SetCollisionResponse**(const [CollisionType](Constants.md#CollisionType) type1, const [CollisionType](Constants.md#CollisionType) type2, const [CollisionResponse](Constants.md#CollisionResponse) response)
+- void **SetCollisionResponse**(const int type1, const int type2, const CollisionResponse response)
 
 | Parameter | Description |
 |---|---|
