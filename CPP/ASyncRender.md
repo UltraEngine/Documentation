@@ -58,7 +58,7 @@ int main(const char* args, const int argc)
             return 0;
             break;
         case EVENT_WINDOWPAINT:
-            world->Render(framebuffer, false);
+            world->Render(framebuffer);
             break;
         }
     }
