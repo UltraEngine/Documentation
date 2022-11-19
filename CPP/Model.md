@@ -11,7 +11,9 @@ Ultra Engine natively supports loading and saving of models in the [glTF](https:
 | lods | const vector<shared_ptr<[Lod](Lod.md)\> \>& | Read-only array of Lods |
 | skeleton | const shared_ptr<[Skeleton](Skeleton.md)\>& | Read-only skeleton object |
 | [AddMesh](Model_AddMesh.md) | Method | Adds a new mesh to the model |
-| [AddLod](Model_AddLod.md) | Method |  Adds a new level-of-detail to the model. |
+| [AddLod](Model_AddLod.md) | Method |  Adds a new level-of-detail to the model |
 | [Animate](Model_Animate.md) | Method |  |
-| [Save](Model_Save.md) | Method |  Saves the model to a file. |
-| [SetMaterial](Model_SetMaterial.md) | Method |  Applies a material to the model's meshes. |
+| [Save](Model_Save.md) | Method |  Saves the model to a file |
+| [SetMaterial](Model_SetMaterial.md) | Method |  Applies a material to the model's meshes |
+| [CreateModel](CreateModel.md) | Function | creates a new model |
+| [LoadModel](LoadModel.md) | Function | loads a model from a file |
