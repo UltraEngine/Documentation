@@ -14,5 +14,4 @@ The main supported model file format is the [glTF](https://www.khronos.org/gltf/
 | [AddLod](Model_AddLod.md) | Method |  Adds a new level-of-detail to the model. |
 | [Animate](Model_Animate.md) | Method |  |
 | [Save](Model_Save.md) | Method |  Saves the model to a file. |
-| [SetLODScreenSize](Model_SetLODScreenSize.md) | Method |  Sets the screen size at which a level-of-detail is used. |
 | [SetMaterial](Model_SetMaterial.md) | Method |  Applies a material to the model's meshes. |
