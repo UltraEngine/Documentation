@@ -884,6 +884,18 @@
 									"filename": "Mesh_Finalize"
 								},
 								{
+									"title": "GetVertexPosition",
+									"filename": "Mesh_GetVertexPosition"
+								},
+								{
+									"title": "GetVertexNormal",
+									"filename": "Mesh_GetVertexNormal"
+								},
+								{
+									"title": "GetVertexTexCoords",
+									"filename": "Mesh_GetVertexTexCoords"
+								},								   
+								{
 									"title": "Recenter",
 									"filename": "Mesh_Recenter"
 								},
@@ -898,6 +910,18 @@
 								{
 									"title": "SetMaterial",
 									"filename": "Mesh_SetMaterial"
+								},
+								{
+									"title": "SetVertexPosition",
+									"filename": "Mesh_SetVertexPosition"
+								},
+								{
+									"title": "SetVertexNormal",
+									"filename": "Mesh_SetVertexNormal"
+								},
+								{
+									"title": "SetVertexTexCoords",
+									"filename": "Mesh_SetVertexTexCoords"
 								},
 								{
 									"title": "Transform",
