@@ -16,9 +16,9 @@ This is the base class for all 3D objects in a world.
 | rotation | const [xVec3](xVec3.md)& | read-only Euler rotation |
 | scale | const [xVec3](xVec3.md)& | read-only scale |
 | tags | const set<[WString](WString.md)\>& | read-only container of tags |
-| [AddTag](Entity_AddTag.md) | Method | adds a tag |
 | [AddForce](Entity_AddForce.md) | Method | apply linear force to the entity |
 | [AddPointForce](Entity_AddPointForce.md) | Method | apply linear force at a specific point |
+| [AddTag](Entity_AddTag.md) | Method | adds a tag |
 | [AddTorque](Entity_AddTorque.md) | Method | apply torque to the entity |
 | [AlignToVector](Entity_AlignToVector.md) | Method | aligns an axis to a vector |
 | [Attach](Entity_Attach.md) | Method | attaches the entity to a bone or navigation agent |
