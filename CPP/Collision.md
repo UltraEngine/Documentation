@@ -1,12 +1,10 @@
 # Collision
 
-**Base class:** [Object](Object.md)
+Base class: [Object](Object.md)
 
 This class stores information about a collision.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | entities | array<shared_ptr<[Entity](Entity.md)\>, 2> | colliding entities |
 | position | [xVec3](xVec3.md) | collision position |
