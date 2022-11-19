@@ -30,7 +30,7 @@ You can add components to the actor like this:
 actor->AddComponent<PlayerController>();
 ```
 
-You can call any methods of any components, and allcomponent methods by the same name will be called:
+You can call any methods of any components, and all component methods by the same name will be called:
 
 ```c++
 actor->Kill();
@@ -59,3 +59,5 @@ You can copy an actor. The entity will be instantiated and all components will b
 ```c++
 auto actor2 = actor->Copy();
 ```
+
+The entity component system works together with the [World::Save](World_Save.md) method to save your entity components to a file and load them back into the program.
