@@ -4,7 +4,7 @@ Base class: [Entity](Entity.md)
 
 The model class is used for visible 3D objects. Models can be loaded from files or created from scratch.
 
-The main supported model file format is the [glTF](https://www.khronos.org/gltf/) format. Other model formats can be loaded via the [plugin](Plugins.md) system.
+Ultra Engine natively supports loading and saving of models from the [glTF](https://www.khronos.org/gltf/) and Wavefront OBJ file formats. Other model formats can be loaded via the [plugin](Plugins.md) system.
 
 | Property | Type | Description |
 |---|---|---|
