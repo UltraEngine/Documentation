@@ -4,11 +4,9 @@
 
 This class creates a physical constraint between two entities. Joints can use limits and actuators (motors) to control their range of motion and movement.
 
-## Properties
-
 | Name | Type | Description |
 |---|---|----|
-| child | const shared_ptr<[Entity](Entity.md)\>& | Read-only child entity |
+| Property | const shared_ptr<[Entity](Entity.md)\>& | Read-only child entity |
 | parent | const shared_ptr<[Entity](Entity.md)\>& | Read-only parent entity |
 | [GetLimits](Joint_GetLimits.md) | Method | returns the minimum and maximum joint limits |
 | [GetOffset](Joint_GetOffset.md) | Method | gets the current angle of a hinge or position of a slider joint |
