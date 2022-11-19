@@ -8,4 +8,4 @@ This class contains an item in a listbox or combobox widget.
 | icon | shared_ptr<[Icon](Icon.md)> | widget item icon |
 | pixmap | shared_ptr<[Pixmap](Pixmap.md)> | widget item pixmap |
 | state | WidgetState | widget item state |
-| text | const WString& | read-only widget item text |
+| text | const [WString](WString.md)& | read-only widget item text |
