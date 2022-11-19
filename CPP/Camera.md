@@ -1,12 +1,10 @@
 # Camera
 
-**Base class:** [Entity](Entity.md)
+Base class: [Entity](Entity.md)
 
 The camera class is an entity used to render the world.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 | ----- | ----- | ----- |
 | [AddPostEffect](Camera_AddPostEffect.md) | Method | Adds a post-processing effect to the post-processing effects stack. | 
 | [ClearPostEffects](ClearPostEffects.md) | Method | Clears the post-processing effects stack. |
