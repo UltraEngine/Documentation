@@ -1,12 +1,10 @@
 # World
 
-**Base class:** [Object](Object.md)
+Base class: [Object](Object.md)
 
 The world class is a container for entities.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | collisions | const vector<[Collision](Collision.md)\> collisions | read-only list of collisions recorded in previous physics update |
 | physicsstats | [PhysicsStats](PhysicsStats.md) | physics statistics |
