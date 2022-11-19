@@ -315,12 +315,20 @@
 							"filename": "Entity_AddPointForce"
 						},
 						{
+							"title": "AddTag",
+							"filename": "Entity_AddTag"
+						},
+						{
 							"title": "AddTorque",
 							"filename": "Entity_AddTorque"
 						},
 						{
 							"title": "AlignToVector",
 							"filename": "Entity_AlignToVector"
+						},
+						{
+							"title": "ClearTags",
+							"filename": "Entity_ClearTags"
 						},
 						{
 							"title": "Copy",
@@ -413,6 +421,10 @@
 						{
 							"title": "RecordCollisions",
 							"filename": "Entity_RecordCollisions"
+						},
+						{
+							"title": "RemoveTags",
+							"filename": "Entity_RemoveTags"
 						},
 						{
 							"title": "SetAngularVelocity",
