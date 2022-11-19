@@ -4,9 +4,7 @@ Base class: [Object](Object.md)
 
 The mesh class is a collection of vertices and polygons that form visible surfaces.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | bounds | [AABB](AABB.md) | read-only mesh bounding box |
 | indices | vector<uint32_t\> | read-only array of primitive indices |
