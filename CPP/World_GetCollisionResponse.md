@@ -2,7 +2,7 @@
 
 This method can be used to get the collision response between different collision types.
 
-- [CollisionResponse](Constants.md#CollisionResponse) **GetCollisionResponse**(const [CollisionType](Constants.md#CollisionType) type1, const [CollisionType](Constants.md#CollisionType) type2)
+- [CollisionResponse](Constants.md#CollisionResponse) **GetCollisionResponse**(const int type1, const int type2)
 
 | Parameter | Description |
 |---|---|
