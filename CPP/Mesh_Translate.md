@@ -10,7 +10,3 @@ This method translates all vertex positions by the specified offset.
 | Parameter | Description |
 |---|---|
 | offset, (x, y, z) | offset to translate mesh vertices by |
-
-## Remarks
-
-A call to [Mesh::Finalize](Mesh_Finalize.md) must be made before the results of this command are visible.
