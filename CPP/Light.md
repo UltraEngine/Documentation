@@ -2,7 +2,7 @@
 
 Base class: [Entity](Entity.md)
 
-This entity emits light in a defined pattern.
+This entity emits light in a defined volume.
 
 | Property | Type | Description | 
 | ----- | ----- | ----- |
