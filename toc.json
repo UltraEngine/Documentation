@@ -2428,10 +2428,6 @@
 							"filename": "World_GetTaggedEntities"
 						},
 						{
-							"title": "GetTaggedEntities",
-							"filename": "World_GetTaggedEntities"
-						},
-						{
 							"title": "Pick",
 							"filename": "World_Pick"
 						},
