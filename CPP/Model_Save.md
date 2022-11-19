@@ -19,12 +19,9 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-  //Load plugin for model saving
-  auto plugin = LoadPlugin("Plugins/OBJ.*");
-  
   //Create model
   auto model = CreateBox(NULL);
-  
+
   //Save to file
   if (model->Save("box.obj"))
   {
