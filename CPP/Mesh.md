@@ -32,7 +32,6 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | |
 | [SetVertexNormal](Mesh_SetVertexNormal.md) | Method | |
 | [SetVertexTexCoords](Mesh_SetVertexTexCoords.md) | Method | |
-| [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | |
 | [Transform](Mesh_Transform.md) | Method | |
 | [Translate](Mesh_Translate.md) | Method | |
 | [UpdateBounds](Mesh_UpdateBounds.md) | Method | |
