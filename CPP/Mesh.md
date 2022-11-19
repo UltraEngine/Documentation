@@ -20,12 +20,19 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [CountPrimitives](Mesh_CountPrimitives.md) | Method | |
 | [CountVertices](Mesh_CountVertices.md) | Method | |
 | [GetPrimitiveAttributes](Mesh_GetPrimitiveAttributes.md) | Method | gets attributes of a single primitive |
+| [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | |
+| [GetVertexNormal](Mesh_GetVertexNormal.md) | Method | |
+| [GetVertexTexCoords](Mesh_GetVertexTexCoords.md) | Method | |
 | [Recenter](Mesh_Recenter.md) | Method | |
 | [Rotate](Mesh_Rotate.md) | Method | |
 | [Scale](Mesh_Scale.md) | Method | |
 | [SetMaterial](Mesh_SetMaterial.md) | Method | sets the mesh material |
 | [SetPrimitiveAttributes](Mesh_SetPrimitiveAttributes.md) | Method | sets attributes of a single primitive |
 | [SetSkinned](Mesh_SetSkinned.md) | Method | |
+| [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | |
+| [SetVertexNormal](Mesh_SetVertexNormal.md) | Method | |
+| [SetVertexTexCoords](Mesh_SetVertexTexCoords.md) | Method | |
+| [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | |
 | [Transform](Mesh_Transform.md) | Method | |
 | [Translate](Mesh_Translate.md) | Method | |
 | [UpdateBounds](Mesh_UpdateBounds.md) | Method | |
