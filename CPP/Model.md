@@ -6,15 +6,10 @@ The model class is used for visible 3D objects. Models can be loaded from files 
 
 The main supported model file format is the [glTF](https://www.khronos.org/gltf/) format by Khronos. Other model formats can be loaded via the [plugin](Plugins.md) system.
 
-## Members
-| Name | Description |
-|---|---|
+| Property | Type | Description |
+|---|---|---|
 | const vector<shared_ptr<[Lod](Lod.md)\> \>& lods | Read-only array of Lods |
 | const shared_ptr<[Skeleton](Skeleton.md)\>& skeleton | Read-only skeleton object |
-
-## Methods
-| Name | Description |
-|---|---|
 | [AddMesh](Model_AddMesh.md) | Adds a new mesh to the model |
 | [AddLod](Model_AddLod.md) | Adds a new level-of-detail to the model. |
 | [Animate](Model_Animate.md) | |
