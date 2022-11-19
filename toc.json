@@ -826,8 +826,8 @@
 									"filename": "Mesh_Copy"
 								},
 								{
-									"title": "CountPolygons",
-									"filename": "Mesh_CountPolygons"
+									"title": "CountPrimitives",
+									"filename": "Mesh_CountPrimitives"
 								},
 								{
 									"title": "Finalize",
