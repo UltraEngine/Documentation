@@ -2,9 +2,7 @@
 
 This class handle user interface elements. A variety of widget types are supported. You can also create [custom widgets](CustomWidgets.md) by extending this class.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | blocks | const vector<shared_ptr<[WidgetBlock](WidgetBlock.md)\> \>& | read-only container of widget blocks |
 | items | const std::vector<[WidgetItem](WidgetItem.md)>& | read-only items list |
