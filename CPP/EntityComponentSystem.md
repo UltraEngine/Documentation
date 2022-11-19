@@ -60,4 +60,4 @@ You can copy an actor. The entity will be instantiated and all components will b
 auto actor2 = actor->Copy();
 ```
 
-The entity component system works together with the [World::Save](World_Save.md) method to save your entity components to a file and load them back into the program.
+The entity component system works together with the [World::Save](World_Save.md) method to save your entity components to a file and load them back into the program. This can be used for game saves or serializing the game state to send over a network to another player.
