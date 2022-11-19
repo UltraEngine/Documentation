@@ -1,8 +1,10 @@
 # Display
+
+Base class: [Object](Object.md)
+
 This class provides an interface for querying and managing hardware monitors.
 
-## Properties
-| Name | Type | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | graphicsmodes | const vector<[iVec2](iVec2.md)>& | read-only available screen resolutions |
 | position | const [iVec2](iVec2.md)& | read-only screen position on the virtual desktop |
