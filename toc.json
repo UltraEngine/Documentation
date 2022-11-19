@@ -1804,7 +1804,24 @@
 					"topics": [
 						{
 							"title": "Client",
-							"filename": "Client"
+							"filename": "Client",
+							"topics": [{
+									"title": "Disconnect",
+									"filename": "Client_Disconnect"
+								},
+								{
+									"title": "Send",
+									"filename": "Client_Send"
+								},
+								{
+									"title": "Update",
+									"filename": "Client_Update"
+								},
+								{
+									"title": "CreateClient",
+									"filename": "CreateClient"
+								}
+							]
 						},
 						{
 							"title": "Message",
@@ -1816,7 +1833,28 @@
 						},
 						{
 							"title": "Server",
-							"filename": "Server"
+							"filename": "Server",
+							"topics": [{
+									"title": "Broadcast",
+									"filename": "Server_Broadcast"
+								},
+								{
+									"title": "Disconnect",
+									"filename": "Server_Disconnect"
+								},
+								{
+									"title": "Send",
+									"filename": "Server_Send"
+								},
+								{
+									"title": "Update",
+									"filename": "Server_Update"
+								},
+								{
+									"title": "CreateServer",
+									"filename": "CreateServer"
+								}
+							]
 						}
 					]
 				},
