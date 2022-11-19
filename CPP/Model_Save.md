@@ -15,6 +15,8 @@ This method saves the model to a file, in [glTF](https://www.khronos.org/gltf/) 
 ```c++
 #include "UltraEngine.h"
 
+using namespace UltraEngine;
+
 int main(int argc, const char* argv[])
 {
   //Load plugin for model saving
