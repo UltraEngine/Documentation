@@ -10,7 +10,7 @@ This function creates a new terrain entity.
 | Parameter | Description |
 |---|---|
 | world | world to create the terrain in |
-| resolution (width, height) | number of terrain points on each axis |
+| resolution, (width, height) | number of terrain points on each axis |
 
 ## Example
 
