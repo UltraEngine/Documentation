@@ -24,7 +24,7 @@ Boolean addition and subtraction can be performed by slicing multiple planes, di
 
 ## Example
 
-This example will create a box brush and cut it into two pieces.
+This example will create a brush and cut it into two pieces.
 
 ![](https://github.com/UltraEngine/Documentation/raw/master/Images/brush_slice.jpg)
 
