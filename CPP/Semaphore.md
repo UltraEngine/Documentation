@@ -6,9 +6,7 @@ This class allows multithreaded applications to perform blocking operations. A s
 
 A semaphore will provide faster threading performance than frequent mutex locks.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | [Signal](Semaphore_Signal.md) | Method | sets the semaphore to the signaled state and releases any blocked threads waiting for it |
 | [Wait](Semaphore_Wait.md) | Method | waits for the semaphore to reach the signaled state, and then resets it to the unsignaled state |
