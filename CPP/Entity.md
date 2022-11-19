@@ -16,8 +16,8 @@ This is the base class for all 3D objects in a world.
 | quaternion | const [xQuat](xQuat.md)& | read-only rotation |
 | rotation | const [xVec3](xVec3.md)& | read-only Euler rotation |
 | scale | const [xVec3](xVec3.md)& | read-only scale |
-| velocity | const [xVec3](xVec3.md)& | read-only linear velocity |
 | tags | const set<[WString](WString.md)\>& | read-only container of tags |
+| velocity | const [xVec3](xVec3.md)& | read-only linear velocity |
 | [AddForce](Entity_AddForce.md) | Method | apply linear force to the entity |
 | [AddPointForce](Entity_AddPointForce.md) | Method | apply linear force at a specific point |
 | [AddTag](Entity_AddTag.md) | Method | adds a tag |
