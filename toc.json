@@ -1950,7 +1950,12 @@
 						{
 							"title": "Client",
 							"filename": "Client",
-							"topics": [{
+							"topics": [
+								{
+									"title": "CreateClient",
+									"filename": "CreateClient"
+								},
+								{
 									"title": "Disconnect",
 									"filename": "Client_Disconnect"
 								},
@@ -1961,11 +1966,7 @@
 								{
 									"title": "Update",
 									"filename": "Client_Update"
-								},
-								{
-									"title": "CreateClient",
-									"filename": "CreateClient"
-								}
+								}								
 							]
 						},
 						{
@@ -1979,9 +1980,14 @@
 						{
 							"title": "Server",
 							"filename": "Server",
-							"topics": [{
+							"topics": [								
+								{
 									"title": "Broadcast",
 									"filename": "Server_Broadcast"
+								},
+								{
+									"title": "CreateServer",
+									"filename": "CreateServer"
 								},
 								{
 									"title": "Disconnect",
@@ -1994,11 +2000,7 @@
 								{
 									"title": "Update",
 									"filename": "Server_Update"
-								},
-								{
-									"title": "CreateServer",
-									"filename": "CreateServer"
-								}
+								}								
 							]
 						}
 					]
