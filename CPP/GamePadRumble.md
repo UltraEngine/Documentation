@@ -8,6 +8,6 @@ This function controls gamepad haptic feedback.
 
 | Parameter | Description |
 |---|---|
-| left | frequency of left motor |
-| right | frequency of right motor |
+| left | frequency of left motor, between 0.0 and 1.0 |
+| right | frequency of right motor, between 0.0 and 1.0 |
 | index | controller index |
