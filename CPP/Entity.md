@@ -21,6 +21,7 @@ This is the base class for all 3D objects in a world.
 | [AddPointForce](Entity_AddPointForce.md) | Method | apply linear force at a specific point |
 | [AddTorque](Entity_AddTorque.md) | Method | apply torque to the entity |
 | [AlignToVector](Entity_AlignToVector.md) | Method | aligns an axis to a vector |
+| [Attach](Entity_Attach.md) | Method | attaches the entity to a bone or navigation agent |
 | [ClearTags](Entity_ClearTags.md) | Method | removes all tags |
 | [Copy](Entity_Copy.md) | Method | duplicates the entity |
 | [FindChild](Entity_FindChild.md) | Method | searches for a child by name |
