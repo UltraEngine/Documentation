@@ -831,10 +831,6 @@
 									"filename": "CreateMaterial"
 								},
 								{
-									"title": "LoadMaterial",
-									"filename": "LoadMaterial"
-								},
-								{
 									"title": "GetColor",
 									"filename": "Material_GetColor"
 								},
@@ -858,6 +854,10 @@
 									"title": "GetTransparent",
 									"filename": "Material_GetTransparent"
 								},
+								{
+									"title": "LoadMaterial",
+									"filename": "LoadMaterial"
+								},								   
 								{
 									"title": "SetColor",
 									"filename": "Material_SetColor"
