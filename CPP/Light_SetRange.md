@@ -9,5 +9,5 @@ This method sets the distance to which the light illuminates.
 
 | Parameter | Description |
 |---|---|
-| nearrange | |
-|farrange | |
+| nearrange | shadow mapping camera near range |
+| farrange | light range |
