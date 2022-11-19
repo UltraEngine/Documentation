@@ -4,7 +4,7 @@ This method will slice a brush in half along a plane and return the two resultin
 
 ## Syntax
 
-- std::vector<shared_ptr<[Brush](Brush.md) \> \> **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Face](Face)> sliceface = NULL, const float tolerance = 0.001)
+- std::vector<shared_ptr<[Brush](Brush.md) \> \> **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001)
 
 | Parameter | Description |
 |---|---|
