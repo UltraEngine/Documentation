@@ -1,6 +1,6 @@
 # GamePadRumble
 
-This functions controls gamepad haptic feedback.
+This function controls gamepad haptic feedback.
 
 ## Syntax
 
