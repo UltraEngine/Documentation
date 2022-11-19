@@ -50,7 +50,12 @@
 					"topics": [{
 							"title": "Sound",
 							"filename": "Sound",
-							"topics": [{
+							"topics": [
+								{
+									"title": "GetHandle",
+									"filename": "Sound_GetHandleh"
+								},
+								{
 									"title": "GetLength",
 									"filename": "Sound_GetLength"
 								},
@@ -67,10 +72,60 @@
 						{
 							"title": "Speaker",
 							"filename": "Speaker",
-							"topics": [{
-								"title": "CreateSpeaker",
-								"filename": "CreateSpeaker"
-							}]
+							"topics": [
+								{
+									"title": "GetHandle",
+									"filename": "Speaker_GetHandle"
+								},
+								{
+									"title": "GetPitch",
+									"filename": "Speaker_GetPitch"
+								},
+								{
+									"title": "GetState",
+									"filename": "Speaker_GetState"
+								},
+								{
+									"title": "GetTime",
+									"filename": "Speaker_GetTime"
+								},
+								{
+									"title": "GetVolume",
+									"filename": "Speaker_GetVolume"
+								},
+								{
+									"title": "Pause",
+									"filename": "Speaker_Pause"
+								},
+								{
+									"title": "Play",
+									"filename": "Speaker_Play"
+								},
+								{
+									"title": "SetLooping",
+									"filename": "Speaker_SetLooping"
+								},
+								{
+									"title": "SetPitch",
+									"filename": "Speaker_SetPitch"
+								},
+								{
+									"title": "SetTime",
+									"filename": "Speaker_SetTime"
+								},
+								{
+									"title": "SetVolume",
+									"filename": "Speaker_SetVolume"
+								},
+								{
+									"title": "Stop",
+									"filename": "Speaker_Stop"
+								},
+								{
+									"title": "CreateSpeaker",
+									"filename": "CreateSpeaker"
+								}
+							]
 						}
 					]
 				},
