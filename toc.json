@@ -945,6 +945,14 @@
 							}]
 						},
 						{
+							"title": "TextureBuffer",
+							"filename": "TextureBuffer",
+							"topics": [{
+								"title": "CreateTextureBuffer",
+								"filename": "CreateTextureBuffer"
+							}]
+						},						
+						{
 							"title": "Vertex",
 							"filename": "Vertex"
 						},
