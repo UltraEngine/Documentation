@@ -839,6 +839,14 @@
 									"filename": "Material_GetColor"
 								},
 								{
+									"title": "GetMetalness",
+									"filename": "Material_GetMetalness"
+								},
+								{
+									"title": "GetRoughness",
+									"filename": "Material_GetRoughness"
+								},
+								{
 									"title": "GetShaderFamily",
 									"filename": "Material_GetShaderFamily"
 								},
@@ -851,13 +859,17 @@
 									"filename": "Material_GetTransparent"
 								},
 								{
-									"title": "GetZSort",
-									"filename": "Material_GetZSort"
-								},
-								{
 									"title": "SetColor",
 									"filename": "Material_SetColor"
 								},
+								{
+									"title": "SetMetalness",
+									"filename": "Material_SetMetalness"
+								},	
+								{
+									"title": "SetRoughness",
+									"filename": "Material_SetRoughness"
+								},								   
 								{
 									"title": "SetShaderFamily",
 									"filename": "Material_SetShaderFamily"
@@ -869,10 +881,6 @@
 								{
 									"title": "SetTransparent",
 									"filename": "Material_SetTransparent"
-								},
-								{
-									"title": "SetZSort",
-									"filename": "Material_SetZSort"
 								}
 							]
 						},
