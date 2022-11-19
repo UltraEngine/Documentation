@@ -1,7 +1,5 @@
 # Message
 
-Base class: [Object](Object.md)
-
 This class stores a networking message.
 
 | Property | Type | Description |
