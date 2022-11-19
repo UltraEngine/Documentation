@@ -1,12 +1,10 @@
-# Pixmap #
+# Pixmap
 
-**Base class**: [Asset](Asset.md)
+Base class: [Asset](Asset.md)
 
 This class provides an interface for loading, manipulating, and saving image data.
 
-### Properties ###
-
-| Name | Type | Description |
+| Property | Type | Description |
 | ----- | ----- | ----- |
 | format | const [TextureFormat](Constants.md#TextureFormat)&  | format of the pixel data |
 | size | const iVec2&  | size of the pixmap |
