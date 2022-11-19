@@ -8,6 +8,6 @@ This class provides an interface for building level geometry with constructive s
 |---|---|---|
 | [AddFace](Brush_AddFace.md) | Method | | 
 | [AddVertex](Brush_AddVertex.md) | Method | | 
-| [Build](Brush_Build.md) | Method | | 
+| [Build](Brush_Build.md) | Method | updates texture mapping, physics collider, and visible meshes | 
 | [IntersectsBrush](Brush_IntersectsBrush.md) | Method | | 
 | [Slice](Brush_Slice.md) | Method | | 
