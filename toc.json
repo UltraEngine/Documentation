@@ -974,27 +974,11 @@
 							}]
 						},
 						{
-							"title": "Shader",
-							"filename": "Shader",
-							"topics": [{
-								"title": "CreateShader",
-								"filename": "CreateShader"
-							}]
-						},
-						{
 							"title": "ShaderFamily",
 							"filename": "ShaderFamily",
 							"topics": [{
 								"title": "LoadShaderFamily",
 								"filename": "LoadShaderFamily"
-							}]
-						},
-						{
-							"title": "ShaderModule",
-							"filename": "ShaderModule",
-							"topics": [{
-								"title": "LoadShaderModule",
-								"filename": "LoadShaderModule"
 							}]
 						},
 						{
