@@ -7,7 +7,7 @@ This is the base class for all 3D objects in a world.
 | Property | Type | Description |
 |---|---|---|
 | extra | shared_ptr<[Object](Object.md)\> | user-defined object |
-| kids | vector< shared_ptr<[Entity](Entity.md)\> \> | read-only array of child entities |
+| kids | const vector< shared_ptr<[Entity](Entity.md)\> \>& | read-only array of child entities |
 | matrix | const [xMat4](xMat4.md)& | read-only 4x4 matrix |
 | name | [WString](WString.md) | entity name |
 | parent | const shared_ptr<[Entity](Entity.md)\>& | entity parent |
