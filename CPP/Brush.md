@@ -1,15 +1,6 @@
-# Brush #
-The brush class provides an interface for building level geometry with constructive solid geometry modeling.
+# Brush
 
-## Members ##
-- shared_ptr<[ConvexHull](ConvexHull_32f.md)\> convexhull
+Base class: [Entity](Entity.md)
 
-## Methods ##
-- AddFace
-- AddVertex
-- Build
-- Center
-- ShiftTextureMapping
+This class provides an interface for building level geometry with constructive solid geometry modeling.
 
-## Functions ##
-- CreateBrush
