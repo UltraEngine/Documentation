@@ -4,8 +4,13 @@ This function creates a new terrain entity.
 
 ## Syntax
 
+- shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const int width, const int height)
 - shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const [iVec2](iVec2.md) resolution)
-- shared_ptr<[Terrain](Terrain.md)\> **CreateTerrain**(shared_ptr<[World](World.md)\> world, const int xres, const int yres)
+
+| Parameter | Description |
+|---|---|
+| world | world to create the terrain in |
+| resolution (width, height) | number of terrain points on each axis |
 
 ## Example
 
