@@ -1,6 +1,6 @@
 # GamePadFlush
 
-This function resets all button hit states for the specififed controller.
+This function resets all button hit states for the specified controller.
 
 ## Syntax
 
