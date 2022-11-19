@@ -1,16 +1,11 @@
-# WidgetItem #
+# WidgetItem
 
 This class contains an item in a listbox or combobox widget.
 
-### Properties ###
-
-| Name | Type | Description |
+| Property | Type | Description |
 | --- | --- | --- |
+| extra | shared_ptr<[Object](Object.md)> | user-defined object |
+| icon | shared_ptr<[Icon](Icon.md)> | widget item icon |
+| pixmap | shared_ptr<[Pixmap](Pixmap.md)> | widget item pixmap |
+| state | WidgetState | widget item state |
 | text | const WString& | read-only widget item text |
-
-		float iconscale;
-		WString text;
-		shared_ptr<Icon> icon;
-		shared_ptr<Pixmap> pixmap;
-		shared_ptr<Object> extra;
-		WidgetState state;
