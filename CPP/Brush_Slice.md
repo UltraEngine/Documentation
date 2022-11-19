@@ -18,6 +18,8 @@ If the plane does not intersect the brush, the returned array will be empty. Oth
 
 ## Example
 
+This example will create a box brush and cut it into two pieces.
+
 ![](https://github.com/UltraEngine/Documentation/raw/master/Images/brush_slice.jpg)
 
 ```c++
