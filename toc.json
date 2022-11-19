@@ -52,6 +52,10 @@
 							"filename": "Speaker",
 							"topics": [
 								{
+									"title": "CreateSpeaker",
+									"filename": "CreateSpeaker"
+								},								
+								{
 									"title": "GetHandle",
 									"filename": "Speaker_GetHandle"
 								},
@@ -98,10 +102,6 @@
 								{
 									"title": "Stop",
 									"filename": "Speaker_Stop"
-								},
-								{
-									"title": "CreateSpeaker",
-									"filename": "CreateSpeaker"
 								}
 							]
 						}
