@@ -1,6 +1,6 @@
 # World::Pick
 
-This method performs a ray intersection test on the world.
+This method performs a line segment intersection test on all the entities in the world.
 
 ## Syntax
 
@@ -9,8 +9,8 @@ This method performs a ray intersection test on the world.
 
 | Parameter | Description |
 | --- | --- |
-| p0, (x0, y0, z0) | ray start position |
-| p1, (x1, y1, z1) | ray end position |
+| p0, (x0, y0, z0) | line start position |
+| p1, (x1, y1, z1) | line end position |
 | pickinfo | structure containing information about the ray intersection result |
 | radius | if greater than zero a swept sphere intersection test will be performed |
 | closest | if set to true the closest intersected point will be found, otherwise the routine will return on the first hit |
@@ -19,4 +19,4 @@ This method performs a ray intersection test on the world.
 
 ## Returns
 
-If the ray intersects the entity, the PickInfo structure is filled in and true is returned, otherwise false is returned.
+If the line segment intersects the entity, the resulting PickInfo's *success* member will be set to true, otherwise it will be false.
