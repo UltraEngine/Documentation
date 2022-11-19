@@ -2,7 +2,7 @@
 
 Base class: [Object](Object.md)
 
-This class handles network server functionality.
+This class handles network client functionality.
 
 | Property | Type | Description |
 |---|---|---|
