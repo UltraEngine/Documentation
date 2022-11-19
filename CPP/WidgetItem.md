@@ -1,7 +1,5 @@
 # WidgetItem
 
-Base class: [Object](Object.md)
-
 This class contains an item in a listbox or combobox widget.
 
 | Property | Type | Description |
