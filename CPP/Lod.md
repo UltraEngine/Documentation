@@ -1,4 +1,7 @@
 # Lod
+
+Base class: [Object](Object.md)
+
 Thia class stores mesh data for one level of detail in a [Model](Model.md).
 
 | Property | Type | Description |
