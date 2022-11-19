@@ -16,8 +16,6 @@ This class is used to control the appearance of rendered surfaces.
 | [GetTransparent](Material_GetTransparent.md) | Method | gets the material transparency mode |
 | [SetColor](Material_SetColor.md) | Method | sets the material color |
 | [SetMetalness](Material_SetMetalness.md) | Method | sets the material metalness |
-| [SetRefraction](Material_SetRefraction.md) | Method | sets a material refraction index |
-| [SetReflection](Material_SetReflection.md) | Method | sets a material's reflection mode |
 | [SetRoughness](Material_SetRoughness.md) | Method | sets the material rougness |
 | [SetShaderFamily](Material_SetShaderFamily.md) | Method | sets the material shader family |
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
