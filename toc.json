@@ -947,10 +947,32 @@
 						{
 							"title": "TextureBuffer",
 							"filename": "TextureBuffer",
-							"topics": [{
-								"title": "CreateTextureBuffer",
-								"filename": "CreateTextureBuffer"
-							}]
+							"topics": [
+								{
+									"title": "CreateTextureBuffer",
+									"filename": "CreateTextureBuffer"
+								},
+								{
+									"title": "GetColorAttachment",
+									"filename": "TextureBuffer_GetColorAttachment"
+								},
+								{
+									"title": "GetDepthAttachment",
+									"filename": "TextureBuffer_GetDepthAttachment"
+								},
+								{
+									"title": "GetSize",
+									"filename": "TextureBuffer_GetSize"
+								},
+								{
+									"title": "SetColorAttachment",
+									"filename": "TextureBuffer_SetColorAttachment"
+								},
+								{
+									"title": "SetDepthAttachment",
+									"filename": "TextureBuffer_SetDepthAttachment"
+								}								
+							]
 						},						
 						{
 							"title": "Vertex",
