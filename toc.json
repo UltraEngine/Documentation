@@ -156,6 +156,10 @@
 									"filename": "Camera_ClearPostEffects"
 								},
 								{
+									"title": "CreateCamera",
+									"filename": "CreateCamera"
+								},
+								{
 									"title": "Pick",
 									"filename": "Camera_Pick"
 								},
@@ -164,24 +168,24 @@
 									"filename": "Camera_Project"
 								},
 								{
-									"title": "SetGI",
-									"filename": "Camera_SetGI"
+									"title": "Render",
+									"filename": "Camera_Render"
 								},
 								{
-									"title": "SetPostEffectParameter",
-									"filename": "Camera_SetPostEffectParameter"
-								},
-								{
-									"title": "Unproject",
-									"filename": "Camera_Unproject"
+									"title": "SetDepthPrepass",
+									"filename": "Camera_SetDepthPrepass"
 								},
 								{
 									"title": "SetRealTime",
 									"filename": "Camera_SetRealTime"
 								},
 								{
-									"title": "CreateCamera",
-									"filename": "CreateCamera"
+									"title": "Unproject",
+									"filename": "Camera_Unproject"
+								},
+								{
+									"title": "UpdateControls",
+									"filename": "Camera_UpdateControls"
 								}
 							]
 						},
