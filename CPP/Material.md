@@ -12,7 +12,6 @@ This class is used to control the appearance of rendered surfaces.
 | [GetShaderFamily](Material_GetShaderFamily.md) | Method | gets the material shader family |
 | [GetTexture](Material_GetTexture.md) | Method | gets a material texture |
 | [GetTransparent](Material_GetTransparent.md) | Method | gets the material transparency mode |
-| [GetZSort](Material_GetZSort.md) | Method | gets the material z-sort mode |
 | [SetColor](Material_SetColor.md) | Method | sets the material color |
 | [SetMetalness](Material_SetMetalness.md) | Method | sets the material metalness |
 | [SetRefraction](Material_SetRefraction.md) | Method | sets a material refraction index |
@@ -22,6 +21,5 @@ This class is used to control the appearance of rendered surfaces.
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
 | [SetTextureScrollSpeed](Material_SetTextureScrollSpeed.md) | Method | simple texture animation |
 | [SetTransparent](Material_SetTransparent.md) | Method | sets the material transparency mode |
-| [SetZSort](Material_SetZSort.md) | Method | sets the material z-sort mode |
 | [CreateMaterial](CreateMaterial.md) | Function | creates a new material |
 | [LoadMaterial](LoadMaterial.md) | Function | loads a material from a file |
