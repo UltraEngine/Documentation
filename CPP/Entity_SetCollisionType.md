@@ -3,7 +3,7 @@
 This method sets the entity collision type, for filtering collisions for physics.
 
 ## Syntax
-- void **SetCollisionType**(const [CollisionType](Constants.md) collisiontype, const bool recursive = false)
+- void **SetCollisionType**(const int collisiontype, const bool recursive = false)
 
 | Parameter | Description |
 |---|---|
