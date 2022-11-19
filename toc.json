@@ -952,7 +952,11 @@
 									"filename": "Mesh_UpdateTangents"
 								}
 							]
-						},						   
+						},
+						{
+							"title": "PickInfo",
+							"filename": "PickInfo"
+						},						
 						{
 							"title": "PostEffect",
 							"filename": "PostEffect",
