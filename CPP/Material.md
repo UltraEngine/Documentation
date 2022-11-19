@@ -1,5 +1,7 @@
 # Material
 
+Base class: [Asset](Asset.md)
+
 This class is used to control the appearance of rendered surfaces.
 
 | Property | Type | Description |
