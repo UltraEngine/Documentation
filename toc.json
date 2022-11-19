@@ -2412,6 +2412,10 @@
 							"filename": "World_GetEntitiesInArea"
 						},
 						{
+							"title": "GetTaggedEntities",
+							"filename": "World_GetTaggedEntities"
+						},
+						{
 							"title": "Pick",
 							"filename": "World_Pick"
 						},
