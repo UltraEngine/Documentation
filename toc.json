@@ -97,7 +97,20 @@
 				{
 					"title": "Entity",
 					"filename": "Entity",
-					"topics": [					
+					"topics": [
+						{
+							"title": "Brush",
+							"filename": "Brush",
+							"topics": [{
+									"title": "CreateBrush",
+									"filename": "CreateBrush"
+								},
+								{
+									"title": "AddFace",
+									"filename": "Brush_AddFace"
+								}
+							]
+						},						
 						{
 							"title": "Camera",
 							"filename": "Camera",
