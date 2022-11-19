@@ -9,29 +9,7 @@
 			"title": "Programming Reference",
 			"filename": "API",
 			"openstate": true,
-			"topics": [
-				{
-					"title": "Animation",
-					"filename": "Animation",
-					"topics": [
-						{
-							"title": "Bone",
-							"filename": "Bone"
-						},
-						{
-							"title": "KeyFrame",
-							"filename": "KeyFrame"
-						},
-						{
-							"title": "Sequence",
-							"filename": "Sequence"
-						},						
-						{
-							"title": "Skeleton",
-							"filename": "Skeleton"
-						}
-					]
-				},				
+			"topics": [			
 				{
 					"title": "Asset",
 					"filename": "Asset",
@@ -798,6 +776,10 @@
 					"title": "Graphics",
 					"topics": [
 						{
+							"title": "Bone",
+							"filename": "Bone"
+						},						
+						{
 							"title": "Font",
 							"filename": "Font",
 							"topics": [{
@@ -966,7 +948,11 @@
 								"title": "LoadShaderModule",
 								"filename": "LoadShaderModule"
 							}]
-						},					   
+						},
+						{
+							"title": "Skeleton",
+							"filename": "Skeleton"
+						}						
 						{
 							"title": "Texture",
 							"filename": "Texture",
