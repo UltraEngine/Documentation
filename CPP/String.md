@@ -1,11 +1,10 @@
-# String #
+# String
+
 The String class provides an interface for manipulating ASCII text strings.
 
-**Base class**: [Object](Object.md), std::string
+Base class: [Object](Object.md), std::string
 
-### Properties ###
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | String | Constructor | String(const char* c) |
 | String | Constructor | String(const int i) |
