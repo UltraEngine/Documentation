@@ -32,8 +32,8 @@ int main(int argc, const char* argv[])
     if (server == NULL) RuntimeError("Failed to create server");
 
     //Create a client and connect
-    auto client = CreateClient();
-    client->Connect("127.0.0.1", port);
+    auto client = CreateClient("127.0.0.1", port);
+    if (client == NULL) RuntimeError("Failed to create client");
     
     while (true)
     {
