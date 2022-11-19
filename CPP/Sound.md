@@ -1,12 +1,10 @@
 # Sound
 
-**Base class:** [Asset](Asset.md)
+Base class: [Asset](Asset.md)
 
 A sound file stores a waveform that can be used to play noises.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | [GetHandle](Sound_GetHandle.md) | Method | returns the OpenAL albuffer for this sound |
 | [GetLength](Sound_GetLength.md) | Method | returns the length of the sound, in seconds |
