@@ -237,13 +237,34 @@
 						{
 							"title": "Model",
 							"filename": "Model",
-							"topics": [{
+							"topics": [
+								{
+									"title": "AddLod",
+									"filename": "Model_AddLod"
+								},
+								{
+									"title": "AddMesh",
+									"filename": "Model_AddMesh"
+								},
+								{
+									"title": "Animate",
+									"filename": "Model_Animate"
+								},
+								{
 									"title": "CreateModel",
 									"filename": "CreateModel"
 								},
 								{
 									"title": "LoadModel",
 									"filename": "LoadModel"
+								},
+								{
+									"title": "Save",
+									"filename": "Model_Save"
+								},								
+								{
+									"title": "UpdateNormals",
+									"filename": "Model_UpdateNormals"
 								}
 							]
 						},
