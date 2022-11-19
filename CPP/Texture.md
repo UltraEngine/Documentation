@@ -4,14 +4,7 @@
 
 A texture is an image that can be applied to 2D or 3D surfaces. Textures can be loaded from DDS files or other file formats loaded with plugins.
 
-## Properties
-
-TEXTURE_CLAMPUVW
-TEXTURE_STORAGE
-TEXTURE_BUFFER
-TEXTURE_MIPMAPS
-
-| Name | Type | Description |
+| Property | Type | Description |
 | --- | --- | --- |
 | size | const [iVec3](iVec3.md)& | read-only dimensions |
 | [BuildMipmaps](BuildMipmaps.md) | Method | generates mipmaps for the texture |
