@@ -16,6 +16,8 @@ Metallic materials use reflections for their color. Therefore you should call [W
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/material_setroughness.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
