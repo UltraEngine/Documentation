@@ -7,6 +7,4 @@ The skeleton class is a hierarchy of [bones](Bone.md) used for animation. A [mod
 | Property | Type | Description |
 |---|---|---|
 | root | shared_ptr<[Bone](Bone.md)\> | top-level bone in the hierarchy |
-| [Animate](Skeleton_Animate.md) | Method |  |
-| [GetBone](Skeleton_GetBone.md) | Method |  |
-| [FindBone](Skeleton_FindBone.md) | Method |  |
+| [FindBone](Skeleton_FindBone.md) | Method | searches for a bone with the specified name |
