@@ -1,6 +1,12 @@
 # CreateBrush
 
-## Examples
+This function creates a new empty brush entity.
+
+## Syntax
+
+- shared_ptr<[Brush](Brush.md)\> **CreateBrush**(shared_ptr<[World](World.md)\>)
+
+## Example
 
 This example creates a box brush from scratch.
 
