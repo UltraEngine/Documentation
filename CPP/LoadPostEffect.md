@@ -4,7 +4,7 @@ This function loads a post-processing effect from a JSON file.
 
 ## Syntax
 
-- shared_ptr<[PostEffect](PostEffect.md)> **LoadPostEffect**(const [WString](WString.md)& path, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[PostEffect](PostEffect.md)> **LoadPostEffect**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
