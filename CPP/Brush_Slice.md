@@ -20,6 +20,8 @@ If the plane intersects the brush true is returned, otherwise false is returned.
 
 Either operandA or operandB may be NULL, but if both are NULL the operation will always return false.
 
+Brushes can be fractured by performing multiple slices.
+
 Boolean addition and subtraction can be performed by slicing multiple planes, discarding one operand, and grouping the resulting brushes.
 
 ## Example
