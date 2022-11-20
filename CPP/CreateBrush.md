@@ -4,7 +4,7 @@ This function creates a new empty brush entity.
 
 ## Syntax
 
-- shared_ptr<[Brush](Brush.md)\> **CreateBrush**(shared_ptr<[World](World.md)\>)
+- shared_ptr<[Brush](Brush.md)\> **CreateBrush**(shared_ptr<[World](World.md)\> world)
 
 ## Example
 
