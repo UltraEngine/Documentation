@@ -1619,6 +1619,10 @@
 							"filename": "Mat4"
 						},
 						{
+							"title": "Plane",
+							"filename": "Plane"
+						},						   
+						{
 							"title": "Quat",
 							"filename": "Quat"
 						},
