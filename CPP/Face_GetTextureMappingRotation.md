@@ -1,10 +1,10 @@
-# Face::GetTextureMappingROtation
+# Face::GetTextureMappingRotation
 
 This method returns the texture mapping rotation for this face.
 
 ## Syntax 
 
-- float **GetTextureMappingROtation**()
+- float **GetTextureMappingRotation**()
 
 ## Returns
 
