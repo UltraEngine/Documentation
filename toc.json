@@ -1088,10 +1088,24 @@
 						{
 							"title": "Texture",
 							"filename": "Texture",
-							"topics": [{
-								"title": "LoadTexture",
-								"filename": "LoadTexture"
-							}]
+							"topics": [
+								{
+									"title": "BuildMipmaps",
+									"filename": "Texture_BuildMipmaps"
+								},
+								{
+									"title": "LoadTexture",
+									"filename": "LoadTexture"
+								},
+								{
+									"title": "SetPixels",
+									"filename": "Texture_SetPixels"
+								},
+								{																
+									"title": "SetSubPixels",
+									"filename": "Texture_SetSubPixels"
+								}								
+							]
 						},
 						{
 							"title": "TextureBuffer",
