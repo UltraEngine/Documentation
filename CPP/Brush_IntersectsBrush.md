@@ -57,7 +57,7 @@ int main(int argc, const char* argv[])
     auto A = CreateBrush(world);
     auto B = CreateBrush(world);
     Plane sliceplane = Plane(1, 1, -1, 0);
-    (brush->Slice(sliceplane, A, B);
+    brush->Slice(sliceplane, A, B);
     A->SetColor(0, 1, 0);
     A->Move(-0.75, 0, 0);
     B->SetColor(0, 0, 1);
