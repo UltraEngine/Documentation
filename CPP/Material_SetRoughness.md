@@ -8,7 +8,7 @@ This method sets the roughness of a material. A material with low roughness will
 
 | Parameter | Description |
 |---|---|
-| roughness | surface roughness |
+| roughness | surface roughness between 0 and 1 |
 
 ## Example
 
