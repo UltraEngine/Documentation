@@ -4,7 +4,7 @@ THis method manually sets the face texture mapping planes, overriding the defaul
 
 ## Syntax
 
-- void **SetTextureMappingTranslation(const [Plane](Plane)& plane, const float x, const float y)
+- void **SetTextureMappingTranslation(const float x, const float y)
 
 | Parameter | Description |
 |---|---|
