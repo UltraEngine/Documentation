@@ -14,41 +14,53 @@ This method causes an animation sequence to play.
 | mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP |
 
 ## Example
+
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	//Get the displays
-	auto displays = GetDisplays();
+    //Get the displays
+    auto displays = GetDisplays();
 
-	//Create a window
-	auto window = CreateWindow(displays[0], L"", 0, 0, 1280, 720, WINDOW_CENTER | WINDOW_TITLEBAR);
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
-	//Create a framebuffer
-	auto framebuffer = CreateFramebuffer(window);
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
 
-	//Create a world
-	auto world = CreateWorld();
+    //Create a world
+    auto world = CreateWorld();
 
-	//Create a camera
-	auto camera = CreateCamera(world);
-	camera->SetClearColor(0.125);
-	camera->Move(0, 0, -4);
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125);
+    camera->SetFOV(70);
+    camera->Move(0, 2, -8);
 
-	//Load a model
-	auto model = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Fox.glb");
-	model->Animate();
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(45, 35, 0);
+    light->SetRange(-10, 10);
 
-	//Main loop
-	while (window->Closed() == false)
-	{
-		model->Turn(0, 0.1, 0);
+    //Load FreeImage plugin
+    auto plugin = LoadPlugin("Plugins/FITextureLoader");
 
-		world->Update();
-		world->Render(framebuffer);
-	}
-	return 0;
+    //Load a model
+    auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/Fox.glb");
+    model->SetScale(0.05);
+    model->Animate(1);
+
+    //Main loop
+    while (window->Closed() == false)
+    {
+        model->Turn(0, 0.2, 0);
+
+        world->Update();
+        world->Render(framebuffer);
+    }
+    return 0;
 }
 ```
