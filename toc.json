@@ -847,7 +847,7 @@
 					"topics": [
 						{
 							"title": "Bone",
-							"filename": "Bone"
+							"filename": "Bone",
 							"topics": [
 								{
 									"title": "GetMatrix",
