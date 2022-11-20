@@ -14,26 +14,25 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | vertices | const vector<[Vertex](Vertex.md)\>& | read-only array of mesh vertices |
 | [AddPrimitive](Mesh_AddPrimitive.md) | Method | adds a new polygon to the mesh |
 | [AddVertex](Mesh_AddVertex.md) | Method | adds a new vertex to the mesh |
-| [Copy](Mesh_Copy.md) | Method | |
-| [CountPrimitives](Mesh_CountPrimitives.md) | Method | |
-| [CountVertices](Mesh_CountVertices.md) | Method | |
+| [Copy](Mesh_Copy.md) | Method | makes a copy of the mesh |
+| [CountPrimitives](Mesh_CountPrimitives.md) | Method | returns the number of mesh primitives |
+| [CountVertices](Mesh_CountVertices.md) | Method | returns the number of mesh vertices |
 | [GetPrimitiveAttributes](Mesh_GetPrimitiveAttributes.md) | Method | gets attributes of a single primitive |
-| [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | |
-| [GetVertexNormal](Mesh_GetVertexNormal.md) | Method | |
-| [GetVertexTexCoords](Mesh_GetVertexTexCoords.md) | Method | |
-| [Recenter](Mesh_Recenter.md) | Method | |
-| [Rotate](Mesh_Rotate.md) | Method | |
-| [Scale](Mesh_Scale.md) | Method | |
+| [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | gets the position of s vertex |
+| [GetVertexNormal](Mesh_GetVertexNormal.md) | Method | gets the normal of a vertex |
+| [GetVertexTexCoords](Mesh_GetVertexTexCoords.md) | Method | gets the texture coordinates of a vertex |
+| [Recenter](Mesh_Recenter.md) | Method | recenters a mesh along one or more axes |
+| [Rotate](Mesh_Rotate.md) | Method | rotates a mesh |
+| [Scale](Mesh_Scale.md) | Method | scales a mesh |
 | [SetMaterial](Mesh_SetMaterial.md) | Method | sets the mesh material |
 | [SetPrimitiveAttributes](Mesh_SetPrimitiveAttributes.md) | Method | sets attributes of a single primitive |
-| [SetSkinned](Mesh_SetSkinned.md) | Method | |
-| [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | |
-| [SetVertexNormal](Mesh_SetVertexNormal.md) | Method | |
-| [SetVertexTexCoords](Mesh_SetVertexTexCoords.md) | Method | |
-| [Transform](Mesh_Transform.md) | Method | |
-| [Translate](Mesh_Translate.md) | Method | |
-| [UpdateBounds](Mesh_UpdateBounds.md) | Method | |
-| [UpdateNormals](Mesh_UpdateNormals.md) | Method | |
-| [UpdateTangents](Mesh_UpdateTangents.md) | Method |  |
-| [UpdateTessellation](Mesh_UpdateTessellation.md) | Method | |
+| [SetSkinned](Mesh_SetSkinned.md) | Method | enables or disables mesh skinning |
+| [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | sets the position of a vertex |
+| [SetVertexNormal](Mesh_SetVertexNormal.md) | Method | sets the normal of a vertex  |
+| [SetVertexTexCoords](Mesh_SetVertexTexCoords.md) | Method | sets the texture coordinates of one vertex |
+| [Transform](Mesh_Transform.md) | Method | transforms a mesh |
+| [Translate](Mesh_Translate.md) | Method | translates a mesh |
+| [UpdateBounds](Mesh_UpdateBounds.md) | Method | updates the mesh bounding box |
+| [UpdateNormals](Mesh_UpdateNormals.md) | Method | calculates new mesh normals |
+| [UpdateTangents](Mesh_UpdateTangents.md) | Method | updates the mesh tangents |
 | [CreateMesh](CreateMesh.md) | Function | creates a new mesh object |
