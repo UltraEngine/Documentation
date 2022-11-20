@@ -1,5 +1,7 @@
 # NavAgent
 
+Base class: [Object](Object.md)
+
 This class is used to create to plot navigation paths and perform crowd movement.
 
 | Property | Type | Description |
