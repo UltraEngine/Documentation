@@ -5,3 +5,8 @@ THis method will create a new mipmap chain from the base image level. The textur
 ## Syntax
 
 - void **BuildMipmaps**()
+- void **BuildMipmaps**(const int layer)
+
+| Paramter | Description |
+|---|---|
+| layer | texture layer or cubemap face to build, or all layers if not specified |
