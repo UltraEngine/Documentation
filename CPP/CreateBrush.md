@@ -17,31 +17,31 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Get the displays
-    auto displays = GetDisplays();
+	//Get the displays
+	auto displays = GetDisplays();
 
-    //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+	//Create a window
+	auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
+	//Create a framebuffer
+	auto framebuffer = CreateFramebuffer(window);
 
-    //Create a world
-    auto world = CreateWorld();
+	//Create a world
+	auto world = CreateWorld();
 
-    //Create a camera    
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->Turn(35, 0, 0);
-    camera->Move(0, 0, -4);
-	
-    //Create light
-    auto light = CreateBoxLight(world);
-    light->SetRange(-20, 20);
-    light->SetArea(20, 20);
-    light->SetRotation(35, 35, 0);
+	//Create a camera    
+	auto camera = CreateCamera(world);
+	camera->SetClearColor(0.125);
+	camera->Turn(35, 0, 0);
+	camera->Move(0, 0, -4);
 
-    //Create brush
+	//Create light
+	auto light = CreateBoxLight(world);
+	light->SetRange(-20, 20);
+	light->SetArea(20, 20);
+	light->SetRotation(35, 35, 0);
+
+	//Create brush
 	auto brush = CreateBrush(world);
 	brush->SetColor(0, 0, 1);
 
@@ -96,12 +96,12 @@ int main(int argc, const char* argv[])
 	//Finalize the brush
 	brush->Build();
 	
-    //Main loop
-    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
-    {
-        world->Update();
-        world->Render(framebuffer);
-    }
-    return 0;
+	//Main loop
+	while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+	{
+		world->Update();
+		world->Render(framebuffer);
+	}
+	return 0;
 }
 ```
