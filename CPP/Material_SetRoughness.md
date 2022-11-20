@@ -1,5 +1,14 @@
 # Material::SetRoughness
 
+This method sets the roughness of a material.
+
+## Syntax
+
+- void **SetRoughness**(const float roughness)
+
+| Parameter | Description |
+|---|---|
+| roughness | surface roughness |
 
 ## Example
 
