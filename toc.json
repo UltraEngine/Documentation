@@ -209,6 +209,10 @@
 									"filename": "Camera_SetRealTime"
 								},
 								{
+									"title": "SetRefraction",
+									"filename": "Camera_SetRefraction"
+								},
+								{
 									"title": "Unproject",
 									"filename": "Camera_Unproject"
 								},
