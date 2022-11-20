@@ -843,7 +843,53 @@
 						},
 						{
 							"title": "Face",
-							"filename": "Face"
+							"filename": "Face",
+							"topics": [
+								{
+									"title": "AddIndice",
+									"filename": "Face_AddIndice"
+								},
+								{
+									"title": "GetMaterial",
+									"filename": "Face_GetMaterial"
+								},
+								{
+									"title": "GetTextureMappingPlane",
+									"filename": "Face_GetTextureMappingPlane"
+								},
+								{
+									"title": "GetTextureMappingRotation",
+									"filename": "Face_GetTextureMappingRotation"
+								},
+								{
+									"title": "GetTextureMappingScale",
+									"filename": "Face_GetTextureMappingScale"
+								},
+								{
+									"title": "GetTextureMappingTranslation",
+									"filename": "Face_GetTextureMappingTranslation"
+								},
+								{
+									"title": "SetMaterial",
+									"filename": "Face_SetMaterial"
+								},
+								{
+									"title": "SetTextureMappingPlane",
+									"filename": "Face_SetTextureMappingPlane"
+								},
+								{
+									"title": "SetTextureMappingRotation",
+									"filename": "Face_SetTextureMappingRotation"
+								},
+								{
+									"title": "SetTextureMappingScale",
+									"filename": "Face_SetTextureMappingScale"
+								},
+								{
+									"title": "SetTextureMappingTranslation",
+									"filename": "Face_SetTextureMappingTranslation"
+								}
+							]
 						},
 						{
 							"title": "Font",
