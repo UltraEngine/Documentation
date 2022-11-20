@@ -8,7 +8,7 @@ This method sets the metallic property of a material.
 
 | Parameter | Description |
 |---|---|
-| metallic | metalness value |
+| metallic | metalness value between 0 and 1 |
 
 ## Remarks
 
