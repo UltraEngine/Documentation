@@ -4,7 +4,7 @@ THis method manually sets the face texture mapping planes, overriding the defaul
 
 ## Syntax
 
-- void **SetTextureMappingRotation(const float angle)
+- void **SetTextureMappingRotation**(const float angle)
 
 | Parameter | Description |
 |---|---|
