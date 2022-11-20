@@ -1094,6 +1094,10 @@
 									"filename": "Texture_BuildMipmaps"
 								},
 								{
+									"title": "CreateTexture",
+									"filename": "CreateTexture"
+								},
+								{
 									"title": "LoadTexture",
 									"filename": "LoadTexture"
 								},
