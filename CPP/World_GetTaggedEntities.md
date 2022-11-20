@@ -4,7 +4,7 @@ This method retrieves all entities in the world with the specified tag.
 
 ## Syntax
 
-- vector<shared_ptr<[Entity](Entity.md) \> \> **GetTaggedEntities**(const [WString](WString.md)& tag)
+- vector<shared_ptr<[Entity](Entity.md)\> \> **GetTaggedEntities**(const [WString](WString.md)& tag)
 
 | Parameter | Description |
 |---|---|
