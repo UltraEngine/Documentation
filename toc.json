@@ -879,7 +879,7 @@
 								},
 								{
 									"title": "SetRotation",
-									"filename": "Bone_GSetRotation"
+									"filename": "Bone_SetRotation"
 								},
 								{
 									"title": "SetScale",
