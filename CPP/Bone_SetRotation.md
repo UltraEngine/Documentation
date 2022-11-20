@@ -4,13 +4,14 @@ This method can be used to manually rotate a bone. You can control skinned model
 
 ## Syntax
 
-- void **SetRotation**(const float pitch, const float yaw, const float roll)
-- void **SetRotation**(const [Vec3](Vec3.md)& rotation)
-- void **SetRotation**(const [Quat](Quat.md)& rotation)
+- void **SetRotation**(const float pitch, const float yaw, const float roll, const bool global = false)
+- void **SetRotation**(const [Vec3](Vec3.md)& rotation, const bool global = false)
+- void **SetRotation**(const [Quat](Quat.md)& rotation, const bool global = false)
 
 | Parameter | Description |
 |---|---|
 | rotation, (pitch, yaw, roll) | rotation to set |
+| global | if set to true, rotation is global (relative to the skeleton, not to any model using the skeleton) | 
 
 ## Remarks
 
