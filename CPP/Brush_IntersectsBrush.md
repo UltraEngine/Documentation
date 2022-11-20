@@ -57,21 +57,12 @@ int main(int argc, const char* argv[])
     auto A = CreateBrush(world);
     auto B = CreateBrush(world);
     Plane sliceplane = Plane(1, 1, -1, 0);
-    if (brush->Slice(sliceplane, A, B))
-    {
-        A->SetColor(0, 1, 0);
-        A->Move(-0.75, 0, 0);
-
-        B->SetColor(0, 0, 1);
-        B->Move(0.75, -0.5, 0.5);
-
-        brush = NULL;
-    }
-    else
-    {
-        A = NULL;
-        B = NULL;
-    }
+    (brush->Slice(sliceplane, A, B);
+    A->SetColor(0, 1, 0);
+    A->Move(-0.75, 0, 0);
+    B->SetColor(0, 0, 1);
+    B->Move(0.75, -0.5, 0.5);
+    brush = NULL;
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
