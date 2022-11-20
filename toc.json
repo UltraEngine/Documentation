@@ -848,6 +848,48 @@
 						{
 							"title": "Bone",
 							"filename": "Bone"
+							"topics": [
+								{
+									"title": "GetMatrix",
+									"filename": "Bone_GetMatrix"
+								},							
+								{
+									"title": "GetPosition",
+									"filename": "Bone_GetPosition"
+								},
+								{
+									"title": "GetRotation",
+									"filename": "Bone_GetRotation"
+								},
+								{
+									"title": "GetScale",
+									"filename": "Bone_GetScale"
+								},
+								{
+									"title": "GetPosition",
+									"filename": "Bone_GetPosition"
+								},
+								{
+									"title": "SetMatrix",
+									"filename": "Bone_SetMatrix"
+								},
+								{
+									"title": "SetPosition",
+									"filename": "Bone_SetPosition"
+								},
+								{
+									"title": "SetRotation",
+									"filename": "Bone_GSetRotation"
+								},
+								{
+									"title": "SetScale",
+									"filename": "Bone_SetScale"
+								},
+								{
+									"title": "Turn",
+									"filename": "Bone_Turn"
+								}
+							}
 						},
 						{
 							"title": "Face",
