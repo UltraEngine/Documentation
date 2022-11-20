@@ -17,4 +17,8 @@ Returns true of the color attachment is set, otherwise false is returned.
 
 ## Remarks
 
-The specified texture must use a renderable color format and must have been created with the TEXTURE_BUFFER flag.
+The specified texture must use a renderable color format.
+
+The specified texture must have been created with the TEXTURE_BUFFER flag.
+
+The specified texture must be the same dimensions as the texture buffer.
