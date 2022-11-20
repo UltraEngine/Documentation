@@ -18,6 +18,8 @@ Returns true of the two brushes overlap, otherwise false is returned.
 
 Use the left and right key to move the blue brush. When the two objects intersects, it will turn red.
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/brush_intersectsbrush.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
