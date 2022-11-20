@@ -1,8 +1,15 @@
 # Bone::SetRotation
 
+This method can be used to manually rotate a bone. You can control skinned models enirely in code or apply your own movements on top of animation.
+
 ## Syntax
 
-- void **SetRotation**()
+- void **SetRotation**(const float pitch, const float yaw, const float roll)
+- void **SetRotation**(const [Vec3](Vec3.md)& rotation)
+
+| Parameter | Description |
+|---|---|
+| rotation, (pitch, yaw, roll) | rotation to set |
 
 ## Remarks
 
