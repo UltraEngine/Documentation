@@ -6,14 +6,17 @@ This method causes an animation sequence to play.
 * void **Animate**(const string sequence, const float speed = 1.0f, const int blendtime = 250, const [AnimationMode](Model) mode = ANIMATION_LOOP)
 * void **Animate**(const wstring sequence, const float speed = 1.0f, const int blendtime = 250, const [AnimationMode](Model) mode = ANIMATION_LOOP)
 
-### Parameters
-| Name | Description |
+| Parameter | Description |
 | ------ | ------ |
 | sequence | animation sequence to play. |
 | blendtime | animation transition time, in milliseconds |
 | mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP |
 
 ## Example
+
+This example loads and displays an animated model.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/model_animate.jpg)
 
 ```c++
 #include "UltraEngine.h"
