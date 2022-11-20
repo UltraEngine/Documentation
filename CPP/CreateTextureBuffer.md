@@ -9,7 +9,7 @@ This function creates a new texture buffer, for render-to-texture operations.
 | Parameter | Description |
 |---|---|
 | width, height | dimensions of the texture buffer |
-| colorattachments | number of color textures to add |
+| colorattachments | number of color textures to add, between 0 and 7 |
 | depthattachment | set to true to add a depth texture |
 
 ## Returns
