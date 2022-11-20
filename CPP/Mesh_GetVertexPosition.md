@@ -4,11 +4,11 @@ This method gets the position of the specified vertex.
 
 ## Syntax
 
-- [Vec3](Vec3.md) **GetVertexPosition**(const uint32_t v)
+- [Vec3](Vec3.md) **GetVertexPosition**(const uint32_t index)
 
 | Parameter | Description |
 |-|-|
-| v | vertex index |
+| index | vertex index |
 
 ## Returns
 
