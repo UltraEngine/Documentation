@@ -6,6 +6,7 @@ This method can be used to manually rotate a bone. You can control skinned model
 
 - void **SetRotation**(const float pitch, const float yaw, const float roll)
 - void **SetRotation**(const [Vec3](Vec3.md)& rotation)
+- void **SetRotation**(const [Quat](Quat.md)& rotation)
 
 | Parameter | Description |
 |---|---|
