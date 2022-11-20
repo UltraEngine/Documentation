@@ -815,7 +815,11 @@
 						{
 							"title": "Bone",
 							"filename": "Bone"
-						},						
+						},
+						{
+							"title": "Face",
+							"filename": "Face"
+						},
 						{
 							"title": "Font",
 							"filename": "Font",
