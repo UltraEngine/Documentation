@@ -134,13 +134,42 @@
 						{
 							"title": "Brush",
 							"filename": "Brush",
-							"topics": [{
-									"title": "CreateBrush",
-									"filename": "CreateBrush"
-								},
+							"topics": [
 								{
 									"title": "AddFace",
 									"filename": "Brush_AddFace"
+								},
+								{
+									"title": "AddVertex",
+									"filename": "Brush_AddVertex"
+								},
+								{
+									"title": "Build",
+									"filename": "Brush_Build"
+								},
+								{
+									"title": "CreateBoxBrush",
+									"filename": "CreateBoxBrush"
+								},								
+								{
+									"title": "CreateBrush",
+									"filename": "CreateBrush"
+								},								
+								{
+									"title": "IntersectsBrush",
+									"filename": "Brush_IntersectsBrush"
+								},
+		   						{
+									"title": "IntersectsPoint",
+									"filename": "Brush_IntersectsPoint"
+								},
+								{
+									"title": "SetVertexPosition",
+									"filename": "Brush_SetVertexPosition"
+								},
+								{
+									"title": "Slice",
+									"filename": "Brush_Slice"
 								}
 							]
 						},						
