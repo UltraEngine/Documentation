@@ -14,6 +14,7 @@ Ultra Engine natively supports loading and saving of models in the [glTF](https:
 | [AddLod](Model_AddLod.md) | Method | adds a new level-of-detail to the model |
 | [Animate](Model_Animate.md) | Method | animates the model |
 | [Save](Model_Save.md) | Method | saves the model to a file |
+| [SetSkeleton](Model_SetSkeleton) | Method | allows models to share a single skeleton |
 | [UpdateNormals](Model_UpdateNormals.md) | Method | calculates new mesh normals |
 | [CreateModel](CreateModel.md) | Function | creates a new model |
 | [LoadModel](LoadModel.md) | Function | loads a model from a file |
