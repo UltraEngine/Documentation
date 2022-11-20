@@ -4,7 +4,7 @@ This method gets the texture coordinates of the specified vertex.
 
 ## Syntax
 
-- [Vec3](Vec3.md) **GetVertexTexCoords**(const uint32_t index, const int texcoordset = 0)
+- [Vec2](Vec2.md) **GetVertexTexCoords**(const uint32_t index, const int texcoordset = 0)
 
 | Parameter | Description |
 |-|-|
