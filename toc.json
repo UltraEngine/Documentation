@@ -290,7 +290,11 @@
 								{
 									"title": "Save",
 									"filename": "Model_Save"
-								},								
+								},
+								{
+									"title": "SetSkeleton",
+									"filename": "Model_SetSkeleton"
+								},	
 								{
 									"title": "UpdateNormals",
 									"filename": "Model_UpdateNormals"
