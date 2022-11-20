@@ -6,6 +6,7 @@ This class provides an interface for building level geometry with constructive s
 
 | Property | Type | Description |
 |---|---|---|
+| faces | vector<shared_ptr<[Face.md](Face.md)\> \> | read-only array of faces |
 | [AddFace](Brush_AddFace.md) | Method | adds a new face to the brush | 
 | [AddVertex](Brush_AddVertex.md) | Method | add a new vertex to the brush | 
 | [Build](Brush_Build.md) | Method | updates texture mapping, physics collider, and visible meshes | 
