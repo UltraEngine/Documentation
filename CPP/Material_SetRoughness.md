@@ -1,6 +1,6 @@
 # Material::SetRoughness
 
-This method sets the roughness of a material.
+This method sets the roughness of a material. A material with low roughness will appear more reflective than a rough surface.
 
 ## Syntax
 
