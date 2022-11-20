@@ -10,6 +10,10 @@ This function creates a new empty brush entity.
 |---|---|
 | world | world to create the brush in |
 
+## Returns
+
+Returns a new brush entity.
+
 ## Example
 
 This example creates a box brush from scratch.
