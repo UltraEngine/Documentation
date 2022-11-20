@@ -17,3 +17,5 @@ This method sets the image data for an area of the texture.
 ## Remarks
   
 The provided pixmap must use the same format as the texture, and have the same dimensions as the specified miplevel.
+
+If the specified area lies outside the bounds of the source or destinaton image, it will be automatically trimmed.
