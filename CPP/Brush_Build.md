@@ -1,6 +1,6 @@
 # Brush::Build
 
-This method calculates face planes, checked for flipped faces, updates texture mapping, updates the brush bounding boxes, and builds a physics collider.
+This method calculates face planes, checked for flipped faces, updates texture mapping, updates the brush bounding boxes, builds a physics collider, and builds visible meshes.
 
 ## Syntax
 
