@@ -12,6 +12,8 @@ This method sets the roughness of a material. A material with low roughness will
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/material_setroughness.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
