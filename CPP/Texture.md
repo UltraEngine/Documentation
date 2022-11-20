@@ -7,7 +7,8 @@ A texture is an image that can be applied to 2D or 3D surfaces. Textures can be 
 | Property | Type | Description |
 | --- | --- | --- |
 | size | const [iVec3](iVec3.md)& | read-only dimensions |
-| [BuildMipmaps](BuildMipmaps.md) | Method | generates mipmaps for the texture |
+| [BuildMipmaps](Texture_BuildMipmaps.md) | Method | generates mipmaps for the texture |
+| [SetPixels](Texture_SetPixels.md) | Method | sets the texture image data |
 | [LoadTexture](LoadTexture.md) | Function | loads a texture from a file or stream |
 
 ### Texture Limits
