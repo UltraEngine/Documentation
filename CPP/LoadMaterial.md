@@ -8,4 +8,4 @@ This function loads a material from a file.
 
 ## Returns
 
-Returns a new material object.
+Returns a material object if the file is loaded successfully, otherwise NULL is returned.
