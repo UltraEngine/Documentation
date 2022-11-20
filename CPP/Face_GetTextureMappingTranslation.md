@@ -1,6 +1,6 @@
 # Face::GetTextureMappingTranslation
 
-This method returns the texture mapping plane for this face.
+This method returns the texture mapping translation for this face.
 
 ## Syntax 
 
