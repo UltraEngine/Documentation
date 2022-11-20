@@ -1004,10 +1004,6 @@
 									"filename": "Mesh_CountPrimitives"
 								},
 								{
-									"title": "Finalize",
-									"filename": "Mesh_Finalize"
-								},
-								{
 									"title": "GetVertexPosition",
 									"filename": "Mesh_GetVertexPosition"
 								},
