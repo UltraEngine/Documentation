@@ -9,7 +9,7 @@ This class describes a flat surface of a [Brush](Brush.md) entity.
 | plane | const [Plane](Plane)& | read-only face plane equation |
 | [AddIndice](Face_AddIndice.md) | Method | adds an indice to the face |
 | [GetMaterial](Face_GetMaterial.md) | Method | returns the face material |
-| [SGetTextureMappingPlane](Face_GetTextureMappingPlane.md) | Method | returns the face texture mapping planes |
+| [GetTextureMappingPlane](Face_GetTextureMappingPlane.md) | Method | returns the face texture mapping planes |
 | [GetTextureMappingRotation](Face_GetTextureMappingRotation.md) | Method | returns the face texture mapping rotation |
 | [GetTextureMappingScale](Face_GetTextureMappingScale.md) | Method | returns the face texture mapping scale |
 | [GetTextureMappingTranslation](Face_GetTextureMappingTranslation.md) | Method | returns the face texture mapping translation |
