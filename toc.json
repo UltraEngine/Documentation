@@ -436,10 +436,6 @@
 							"filename": "Entity_Move"
 						},
 						{
-							"title": "Pick",
-							"filename": "Entity_Pick"
-						},
-						{
 							"title": "Point",
 							"filename": "Entity_Point"
 						},
