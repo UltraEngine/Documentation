@@ -11,7 +11,7 @@ This method can be used to manually rotate a bone. You can control skinned model
 | Parameter | Description |
 |---|---|
 | rotation, (pitch, yaw, roll) | rotation to set |
-| global | if set to true, rotation is global (relative to the skeleton, not to any model using the skeleton) | 
+| global | if set to true rotation is relative to the skeleton, otherwise it is relative to the bone's parent |
 
 ## Remarks
 
