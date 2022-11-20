@@ -18,6 +18,10 @@ To combine programmatic movement with animation, this method should be called af
 
 ## Example
 
+This example will load and display an animated model, but we will add code to turn the character's head back and forth as they walk.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/bone_setrotation.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
