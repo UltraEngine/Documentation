@@ -7,6 +7,11 @@ This method adds a new vertex to a brush.
 - int **AddVertex**(const float x, const float y, const float z)
 - int **AddVertex**(const [Vec3](Vec3)& position)
 
+
+| Parameter | Description |
+|---|---|
+| position, (x, y, z) | position to set |
+
 ## Returns
 
 Returns the new vertex index.
