@@ -1,5 +1,7 @@
 # Face
 
+Base class: [Object](Object.md)
+
 This class describes a flat surface of a [Brush](Brush.md) entity.
 
 | Property | Type | Description |
