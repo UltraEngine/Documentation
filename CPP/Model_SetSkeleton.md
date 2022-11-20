@@ -61,7 +61,7 @@ int main(int argc, const char* argv[])
     auto model2 = model->Instantiate(world)->As<Model>();// copy and cast to the Model class
     model2->SetPosition(1.5, 0, 0);
 
-    //One skeleton two foxes
+    //Two foxes one skeleton
     model2->SetSkeleton(model->skeleton);
 
     //Main loop
