@@ -13,6 +13,7 @@ The camera class is an entity used to render the world.
 | [Render](Camera_Render.md) | Method | refreshes a camera view, for non-realtime cameras |
 | [SetDepthPrepass](Camera_SetDepthPrepass.md) | Method | sets the camera depth pre-pass mode |
 | [SetRealTime](Camera_SetRealTime.md) | Method | sets realtime rendering mode |
+| [SetRefraction](Camera_SetRefraction.md) | Method | enables or disables transparency refraction |
 | [Unproject](Camera_Unproject.md) | Method | unprojects a position from screen to world space |
 | [UpdateControls](Camera_UpdateControls.md) | Method | provides simple free-look camera controls |
 | [CreateCamera](CreateCamera.md) | Function | creates a new camera entity |
