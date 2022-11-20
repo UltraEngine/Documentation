@@ -8,12 +8,12 @@ You can attach an entity to a bone with the [Entity::Attach](Entity_Attach.md) m
 
 | Property | Type | Description |
 |---|---|---|
+| [GetMatrix](Bone_GetMatrix.md) | Method | |
 | [GetPosition](Bone_GetPosition.md) | Method | |
 | [GetRotation](Bone_GetRotation.md) | Method | |
 | [GetScale](Bone_GetScale.md) | Method | |
-| [GetMatrix](Bone_GetMatrix.md) | Method | |
+| [SetMatrix](Bone_SetMatrix.md) | Method | |
 | [SetPosition](Bone_SetPosition.md) | Method | |
 | [SetRotation](Bone_SetRotation.md) | Method | |
 | [SetScale](Bone_SetScale.md) | Method | |
-| [SetMatrix](Bone_SetMatrix.md) | Method | |
 | [Turn](Bone_Turn.md) | Method | |
