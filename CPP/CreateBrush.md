@@ -33,8 +33,8 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
     camera->Turn(35, 0, 0);
-    camera->Move(0, 0, -6);
-
+    camera->Move(0, 0, -4);
+	
     //Create light
     auto light = CreateBoxLight(world);
     light->SetRange(-20, 20);
@@ -42,58 +42,59 @@ int main(int argc, const char* argv[])
     light->SetRotation(35, 35, 0);
 
     //Create brush
-    auto brush = CreateBrush(world);
+	auto brush = CreateBrush(world);
+	brush->SetColor(0, 0, 1);
 
-    //Add brush vertices
-    float w = 1; float h = 1; float d = 1;
-    brush->AddVertex(w * 0.5, h * 0.5, d * 0.5);
-    brush->AddVertex(-w * 0.5, h * 0.5, d * 0.5);
-    brush->AddVertex(-w * 0.5, h * 0.5, -d * 0.5);
-    brush->AddVertex(w * 0.5, h * 0.5, -d * 0.5);
-    brush->AddVertex(w * 0.5, -h * 0.5, d * 0.5);
-    brush->AddVertex(-w * 0.5, -h * 0.5, d * 0.5);
-    brush->AddVertex(-w * 0.5, -h * 0.5, -d * 0.5);
-    brush->AddVertex(w * 0.5, -h * 0.5, -d * 0.5);
+	//Add brush vertices
+	float w = 1; float h = 1; float d = 1;
+	brush->AddVertex(w * 0.5, h * 0.5, d * 0.5);
+	brush->AddVertex(-w * 0.5, h * 0.5, d * 0.5);
+	brush->AddVertex(-w * 0.5, h * 0.5, -d * 0.5);
+	brush->AddVertex(w * 0.5, h * 0.5, -d * 0.5);
+	brush->AddVertex(w * 0.5, -h * 0.5, d * 0.5);
+	brush->AddVertex(-w * 0.5, -h * 0.5, d * 0.5);
+	brush->AddVertex(-w * 0.5, -h * 0.5, -d * 0.5);
+	brush->AddVertex(w * 0.5, -h * 0.5, -d * 0.5);
 
-    //Add faces
-    auto face = brush->AddFace();
-    face->AddIndice(0);
-    face->AddIndice(1);
-    face->AddIndice(2);
-    face->AddIndice(3);
+	//Add faces
+	auto face = brush->AddFace();
+	face->AddIndice(0);
+	face->AddIndice(1);
+	face->AddIndice(2);
+	face->AddIndice(3);
 
-    face = brush->AddFace();
-    face->AddIndice(4);
-    face->AddIndice(5);
-    face->AddIndice(6);
-    face->AddIndice(7);
+	face = brush->AddFace();
+	face->AddIndice(4);
+	face->AddIndice(5);
+	face->AddIndice(6);
+	face->AddIndice(7);
 
-    face = brush->AddFace();
-    face->AddIndice(0);
-    face->AddIndice(1);
-    face->AddIndice(5);
-    face->AddIndice(4);
+	face = brush->AddFace();
+	face->AddIndice(0);
+	face->AddIndice(1);
+	face->AddIndice(5);
+	face->AddIndice(4);
 
-    face = brush->AddFace();
-    face->AddIndice(2);
-    face->AddIndice(3);
-    face->AddIndice(7);
-    face->AddIndice(6);
+	face = brush->AddFace();
+	face->AddIndice(2);
+	face->AddIndice(3);
+	face->AddIndice(7);
+	face->AddIndice(6);
 
-    face = brush->AddFace();
-    face->AddIndice(1);
-    face->AddIndice(2);
-    face->AddIndice(6);
-    face->AddIndice(5);
+	face = brush->AddFace();
+	face->AddIndice(1);
+	face->AddIndice(2);
+	face->AddIndice(6);
+	face->AddIndice(5);
 
-    face = brush->AddFace();
-    face->AddIndice(0);
-    face->AddIndice(3);
-    face->AddIndice(7);
-    face->AddIndice(4);
+	face = brush->AddFace();
+	face->AddIndice(0);
+	face->AddIndice(3);
+	face->AddIndice(7);
+	face->AddIndice(4);
 
-    //Finalize the brush
-    brush->Build();
+	//Finalize the brush
+	brush->Build();
 	
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
