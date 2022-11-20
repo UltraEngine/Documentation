@@ -6,5 +6,5 @@ This class is an object representing another computer this machine is connected 
 
 | Property | Type | Description |
 |---|---|---|
-| host | [String](String.md) | read-only IP address |
-| port | int | read-only port number |
+| host | const [String](String.md)& | read-only IP address |
+| port | const int& | read-only port number |
