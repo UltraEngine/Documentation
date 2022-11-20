@@ -14,7 +14,7 @@ This method can be used to manually rotate a bone. You can control skinned model
 
 ## Remarks
 
-To combine animation with programmatic movement, this method should be called after [World::Update](World_Update.md) and before [World::Render](World_Render.md).
+To combine programmatic movement with animation, this method should be called after [World::Update](World_Update.md) and before [World::Render](World_Render.md).
 
 ## Example
 
