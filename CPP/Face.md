@@ -6,7 +6,7 @@ This class describes a flat surface of a [Brush](Brush.md) entity.
 
 | Property | Type | Description |
 |---|---|---|
-| plane | const [Plane](Plane)& | read-only face plane equation |
+| plane | const [Plane](Plane)& | read-only face plane |
 | [AddIndice](Face_AddIndice.md) | Method | adds an indice to the face |
 | [GetMaterial](Face_GetMaterial.md) | Method | returns the face material |
 | [GetTextureMappingPlane](Face_GetTextureMappingPlane.md) | Method | returns the face texture mapping planes |
