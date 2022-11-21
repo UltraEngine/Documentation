@@ -852,11 +852,7 @@
 						{
 							"title": "Bone",
 							"filename": "Bone",
-							"topics": [
-								{
-									"title": "GetMatrix",
-									"filename": "Bone_GetMatrix"
-								},							
+							"topics": [							
 								{
 									"title": "GetPosition",
 									"filename": "Bone_GetPosition"
@@ -868,10 +864,6 @@
 								{
 									"title": "GetScale",
 									"filename": "Bone_GetScale"
-								},
-								{
-									"title": "SetMatrix",
-									"filename": "Bone_SetMatrix"
 								},
 								{
 									"title": "SetPosition",
