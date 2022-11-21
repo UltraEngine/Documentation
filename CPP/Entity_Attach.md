@@ -21,6 +21,8 @@ Returns true if the attachment is valid, otherwise false is returned.
 
 For bone attachments, the bone must belong to the skeleton the model is currently using.
 
+The entity's local orientation at the time this method is called will be used to orient around the attachment.
+
 ## Example
 
 This example will load an animated model and add some headgear to keep him warm.
