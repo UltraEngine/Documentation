@@ -53,7 +53,8 @@ int main(int argc, const char* argv[])
     //Load FreeImage plugin
     auto plugin = LoadPlugin("Plugins/FITextureLoader");
 
-    //Load a model
+    //Model by PixelMannen
+    //https://opengameart.org/content/fox-and-shiba
     auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/Fox.glb");
     model->SetScale(0.05);
     model->Animate(1);
