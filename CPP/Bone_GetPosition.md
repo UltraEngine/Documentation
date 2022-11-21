@@ -9,3 +9,7 @@ This method returns the position of a bone.
 | Parameter | Description |
 |---|---|
 | global | if set to true position is relative to the skeleton, otherwise it is relative to the bone's parent |
+
+## Returns
+
+Returns the bone's position.
