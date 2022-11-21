@@ -8,7 +8,7 @@ This method causes an animation sequence to play.
 
 | Parameter | Description |
 | ------ | ------ |
-| sequence | animation sequence index or name |
+| sequence | animation sequence index or name. Sequence names are not case-sensitve |
 | blendtime | animation transition time, in milliseconds |
 | mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP |
 
