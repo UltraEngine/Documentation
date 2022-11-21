@@ -4,12 +4,11 @@ This method causes an animation sequence to play.
 
 ## Syntax
 * void **Animate**(const int sequence = 0, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
-* void **Animate**(const string sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
-* void **Animate**(const wstring sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
+* void **Animate**(const [WString](WString.md)& sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP)
 
 | Parameter | Description |
 | ------ | ------ |
-| sequence | animation sequence to play. |
+| sequence | animation sequence index or name |
 | blendtime | animation transition time, in milliseconds |
 | mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP |
 
