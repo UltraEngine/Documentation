@@ -4,8 +4,8 @@ This method attaches an entity to a model bone or a navigation agent. This provi
 
 ## Syntax
 
-- bool **Attach**(shared_ptr<[NavAgent](NavAgent.md)> agent);
-- bool **Attach**(shared_ptr<[Model](Model.md)> model, shared_ptr<[Bone](Bone.md)> bone);
+- bool **Attach**(shared_ptr<[NavAgent](NavAgent.md)> agent)
+- bool **Attach**(shared_ptr<[Model](Model.md)> model, shared_ptr<[Bone](Bone.md)> bone)
 
 | Parameter | Description |
 | --- | --- |
