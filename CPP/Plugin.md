@@ -14,7 +14,7 @@ auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader")
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| description | const WString& | read-only description of functionality loaded from the plugin |
-| title | const WString& | read-only title loaded from plugin |
+| description | const [WString](WString.md)& | read-only description of functionality loaded from the plugin |
+| title | const [WString](WString.md)& | read-only title loaded from plugin |
 | properties | nlohmann::json | JSON structure containing plugin information |
 | [LoadPlugin](LoadPlugin.md) | Function | loads a plugin module |
