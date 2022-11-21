@@ -389,6 +389,10 @@
 							"filename": "Entity_AlignToVector"
 						},
 						{
+							"title": "Attach",
+							"filename": "Entity_Attach"
+						},
+						{
 							"title": "ClearTags",
 							"filename": "Entity_ClearTags"
 						},
@@ -864,10 +868,6 @@
 								{
 									"title": "GetScale",
 									"filename": "Bone_GetScale"
-								},
-								{
-									"title": "GetPosition",
-									"filename": "Bone_GetPosition"
 								},
 								{
 									"title": "SetMatrix",
