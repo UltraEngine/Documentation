@@ -23,7 +23,7 @@ auto actor = CreateActor(entity);
 You can add components to the actor like this:
 
 ```c++
-actor->AddComponent<PlayerController>();
+actor->AddComponent<Mover>();
 ```
 
 You can call any methods of any components, and all component methods by the same name will be called:
@@ -32,19 +32,19 @@ You can call any methods of any components, and all component methods by the sam
 actor->Kill();
 ```
 
-You also can call a method for just one specific component:
+You also can call a method for just one specific component, but it is generally better to call the actor method so that all components are have this method called:
 
 ```c++
 actor->GetComponent<PlayerController>()->Kill();
 ```
 
-You access members of an individual component:
+You can access members of an individual component:
 
 ```c++
 actor->GetComponent<PlayerController>()->health = 99;
 ```
 
-But it is better to call a method, as this will call the same method for each component that has it:
+But it is usually better to call a method, as this will call the same method for each component that has it:
 
 ```c++
 actor->SetHealth(99);
