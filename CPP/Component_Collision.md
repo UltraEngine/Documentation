@@ -4,12 +4,11 @@ This method is called evefy time the entity collides with another object.
 
 ## Syntax
 
-- void **Collision**(shared_ptr<[Entity](Entity.md)> collidedentity, shared_ptr<[Actor](Actor.md)> collidedactor, const [Vec3](Vec3.md)& position, const [Vec3](Vec3.md)& normal, const dFloat speed)
+- void **Collision**(shared_ptr<[Actor](Actor.md)> collidedactor, const [Vec3](Vec3.md)& position, const [Vec3](Vec3.md)& normal, const dFloat speed)
 
 | Parameter | Description |
 |---|---|
-| collidedentity | entity that has been collided with |
-| collidedactor | collided entity's actor, or NULL if it has none |
+| collidedactor | collided entity's actor. If the entity does not have an actor, an empty one will be created and assigned to it |
 | position | point the collision occured at |
 | normal | direction of the collision |
 | speed | speed of collision |
