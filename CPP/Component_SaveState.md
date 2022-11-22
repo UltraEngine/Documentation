@@ -50,6 +50,7 @@ This method can be overridden to add your own custom handling. For example, your
 bool SaveState(nlohmann::json& j3)
 {
   if (!Component::SaveState(j3)) return false;
-  j3["customdata"]["myvalue"] = 32;
+  j3["customdata"]["myvalue"] = this->customvalue;
+  return true;
 }
 ```
