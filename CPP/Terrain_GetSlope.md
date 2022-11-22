@@ -1,15 +1,22 @@
 # Terrain::GetSlope
 
-This method gets the slopw of the terrain at the specified point.
+This method gets the terrain slope at the specified coordinate or 3D position.
 
 ## Syntax
 
-- float **GetSlope**(const [iVec2](iVec2.md)& position)
-- float **GetSlope**(const int x, const int y)
+- float **GetSlope**(const int tx, const int ty)
+- float **GetSlope**(const [iVec2](iVec2.md)& coord)
+- float **GetSlope**(const [xVec3](xVec3.md)& coord)
+- float **GetSlope**(const dFloat x, const dFloat y, const dFloat z)
+
+| Parameter | Description |
+|---|---|
+| coord, (tx, ty) | terrain coordinate |
+| position, (x, y, z) | position in global space |
 
 ## Returns
 
-Returns the terrain slope in degrees.
+Returns the terrain slope in degrees at the specified coordinate or the interpolated normal at the specified position in global space.
 
 ## Example
 
