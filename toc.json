@@ -1730,7 +1730,41 @@
 						},
 						{
 							"title": "Mat4",
-							"filename": "Mat4"
+							"filename": "Mat4",
+							"topics": [
+								{
+									"title": "Determinant",
+									"filename": "Mat4_Determinant"
+								},
+								{
+									"title": "GetQuaternion",
+									"filename": "Mat4_GetQuaternion"
+								},
+								{
+									"title": "GetRotation",
+									"filename": "Mat4_GetRotation"
+								},
+								{
+									"title": "GetScale",
+									"filename": "Mat4_GetScale"
+								},
+								{
+									"title": "GetTranslation",
+									"filename": "Mat4_GetTranslation"
+								},
+								{
+									"title": "Inverse",
+									"filename": "Mat4_Inverse"
+								},
+								{
+									"title": "Normalize",
+									"filename": "Mat4_Normalize"
+								},
+								{
+									"title": "Transpose",
+									"filename": "Mat4_Transpose"
+								}
+							]
 						},
 						{
 							"title": "Plane",
