@@ -1,7 +1,14 @@
 # Camera::SetDepthPrepass
 
+This method enables or disables early Z-pass for the camera.
 
-## 
+## Syntax
+
+- void **SetDepthPrepass**(const bool mode)
+
+| Parameter | Description |
+|---|---|
+| mode | if set to true early Z pass will be enabled |
 
 ## Remarks
 
