@@ -8,7 +8,6 @@ In the entity component system, the actor is our main object type. The actor pos
 | [AddComponent](Actor_AddComponent.md) | Method | adds a new component to the actor |
 | [Copy](Actor_Copy.md) | Method | makes a copy of the actor |
 | [GetComponent](Actor_GetComponent.md) | Method | gets the component of the specified type, if it exists |
-| [Start](Actor_Start.md) | Method | called once when the component is created |
 | [CreateActor](CreateActor.md) | Function | creates a new actor |
 | [GetEntityActor](GetEntityActor.md) | Function | retrieves an entity's actor |
 
