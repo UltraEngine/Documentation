@@ -44,6 +44,7 @@ int main(int argc, const char* argv[])
     //Create light
     auto light = CreateSpotLight(world);
     light->SetPosition(0,1,0);
+    light->SetColor(2);
 
     //Create ground
     auto ground = CreateBox(world, 20, 1, 20);
