@@ -11,7 +11,9 @@ This class can be extended to add behavior and properties to an [Actor](Actor.md
 | [SaveState](Component_SaveState.md) | Method | called when an actor is saved or copied |
 | [Update](Component_Update.md) | Method | called once for each actor in [World::Update](World_Update.md) |
 
-You can override these methods or add your own in your component class. 
+You can override these methods or add your own in your component class. To add a new component, just create a new .hpp file in your "Source\Components" folder. Compile your project once and the precompiler will detect your new file and update the component system code. The precompiler will automatically generate the files "ComponentSystem.h" and "ComponentSystem.cpp". These files should never be changed by hand, since they will be overwritten every time the precompiler runs.
+
+The precompiler is limited in its ability to parse C++ declarations, so it's a good idea to stick to straightforward C++ syntax.
 
 ### Example Component
 
