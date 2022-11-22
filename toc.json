@@ -1767,11 +1767,11 @@
 							"filename": "Plane",
 							"topics": [
 								{
-									"name": "DistanceToPoint",
+									"title": "DistanceToPoint",
 									"filename": "Plane_DistanceToPoint"
 								},
 								{
-									"name": "IntersectsLine",
+									"title": "IntersectsLine",
 									"filename": "Plane_IntersectsLine"
 								}
 							]
