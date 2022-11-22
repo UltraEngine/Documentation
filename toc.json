@@ -1767,11 +1767,11 @@
 							"filename": "Plane",
 							"topics": [
 								{
-									"name": "DistanceToPoint"
+									"name": "DistanceToPoint",
 									"filename": "Plane_DistanceToPoint"
 								},
 								{
-									"name": "IntersectsLine"
+									"name": "IntersectsLine",
 									"filename": "Plane_IntersectsLine"
 								}
 							]
@@ -1781,19 +1781,19 @@
 							"filename": "Quat",
 							"topics": [
 								{
-									"name": "Inverse"
+									"name": "Inverse",
 									"filename": "Quat_Inverse"
 								},
 								{
-									"name": "Normalize"
+									"name": "Normalize",
 									"filename": "Quat_Normalize"
 								},
 								{
-									"name": "Slerp"
+									"name": "Slerp",
 									"filename": "Quat_Slerp"
 								},
 								{
-									"name": "ToEuler"
+									"name": "ToEuler",
 									"filename": "Quat_ToEuler"
 								}
 							]
