@@ -1,10 +1,10 @@
-# Camera::SetRealTime
+# Camera::SetRealtime
 
 This method allows you to control whether a camera renders continously or only when prompted to.
 
 ## Syntax
 
-- void **SetRealTime**(const bool mode)
+- void **SetRealtime**(const bool mode)
 
 | Parameter | Description |
 |---|---|
