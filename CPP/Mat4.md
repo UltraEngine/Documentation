@@ -22,6 +22,4 @@ This class describes a 4x4 matrix used for 3D orientations in space.
 | [GetTranslation](Mat4_GetTranslation.md) | Method | |
 | [Inverse](Mat4_Inverse.md) | Method | |
 | [Normalize](Mat4_Normalize.md) | Method | |
-| [Ortho](Mat4_Ortho.md) | Method | |
-| [Perspective](Mat4_Perspective.md) | Method | |
 | [Transpose](Mat4_Transpose.md) | Method | |
