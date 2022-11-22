@@ -15,7 +15,7 @@ shared_ptr<[Camera](Camera.md)\> **CreateCamera**(shared_ptr<[World](World.md)\>
 
 You can create multiple cameras to render with. Cameras will be rendered in the order they are created. In most cases you will want to call [Camera::SetClearMode](Camera_SetClearMode.md) with CLEAR_DEPTH as the argument, for all cameras created after the first one. This will ensure that the results of the previous camera render remain visible on the screen.
 
-You can control which entities are visible to a camera with the [Entity::SetRenderLayer](Entity_SetRenderLayer.md) method.
+You can control which entities are visible to a camera with the [Entity::SetRenderLayers](Entity_SetRenderLayers.md) method.
 
 There are no 2D objects or drawing commands in Ultra Engine. Instead, all rendering is done through one uniform pipeline and the camera projection mode is used to control whether objects appear in 3D or 2D space. This has the benefits of very fast performance for 3D and 2D rendering, as well as effortless application of 3D effects in 2D, 2D physics in a 3D world, and other possibilities.
 
