@@ -17,9 +17,3 @@ Returns the index of the added post-processing effect, or negative one if the ef
 ## Remarks
 
 A camera may have up to eight post-processing effects added.
-
-## Example
-
-```c++
-
-```
