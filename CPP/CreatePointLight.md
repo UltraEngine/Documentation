@@ -1,6 +1,6 @@
 # CreatePointLight
 
-This function creates a new spot light.
+This function creates a new point light.
 
 ## Syntax
 
