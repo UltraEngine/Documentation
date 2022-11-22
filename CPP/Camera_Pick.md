@@ -4,8 +4,8 @@ This method performs a raycast at the specified screen coordinate.
 
 ## Syntax
 
-- [PickInfo](PickInfo.md) Pick(shared_ptr<Framebuffer> framebuffer, const float x, const float y, const float radius = 0.0, const bool closest = false, const int collisiontype = COLLISION_NONE)
-- [PickInfo](PickInfo.md) Pick(shared_ptr<Framebuffer> buffer, const Vec2& screencoord, const float radius = 0.0, const bool closest = false, const int collisiontype = 0)
+- [PickInfo](PickInfo.md) Pick(shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer, const float x, const float y, const float radius = 0.0, const bool closest = false, const int collisiontype = COLLISION_NONE)
+- [PickInfo](PickInfo.md) Pick(shared_ptr<[Framebuffer](Framebuffer.md)\> buffer, const [Vec2](Vec2.md)& screencoord, const float radius = 0.0, const bool closest = false, const int collisiontype = 0)
 
 | Parameter | Description |
 | ----- | ----- |
