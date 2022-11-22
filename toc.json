@@ -292,6 +292,22 @@
 									"filename": "CreateModel"
 								},
 								{
+									"title": "CreateBox",
+									"filename": "CreateBox"
+								},
+								{
+									"title": "CreateCone",
+									"filename": "CreateCone"
+								},
+								{
+									"title": "CreateCylinder",
+									"filename": "CreateCylinder"
+								},
+								{
+									"title": "CreateSphere",
+									"filename": "CreateSphere"
+								},
+								{
 									"title": "LoadModel",
 									"filename": "LoadModel"
 								},
