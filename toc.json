@@ -205,8 +205,8 @@
 									"filename": "Camera_SetDepthPrepass"
 								},
 								{
-									"title": "SetRealTime",
-									"filename": "Camera_SetRealTime"
+									"title": "SetRealtime",
+									"filename": "Camera_SetRealtime"
 								},
 								{
 									"title": "SetRefraction",
