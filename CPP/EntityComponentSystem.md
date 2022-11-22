@@ -44,7 +44,7 @@ You can access members of an individual component:
 actor->GetComponent<PlayerController>()->health = 99;
 ```
 
-But it is usually better to call a method, as this will call the same method for each component that has it:
+You can also call a method to set a value, and this will call the same method for each component that has it:
 
 ```c++
 actor->SetHealth(99);
