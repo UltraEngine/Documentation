@@ -1723,11 +1723,7 @@
 						{
 							"title": "iVec4",
 							"filename": "iVec4"
-						},
-						{
-							"title": "Mat3",
-							"filename": "Mat3"
-						},
+						},						
 						{
 							"title": "Mat4",
 							"filename": "Mat4",
