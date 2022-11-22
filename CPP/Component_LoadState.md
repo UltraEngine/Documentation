@@ -44,4 +44,13 @@ The Ultra Engine entity component system will automatically save and load the fo
   
 Additionally, [Entity](Entity.md) shared pointers are supported, as long as the entity is stored in the same file.
 
-This method can be overridden to add your own custom handling. For example, your component might need to create extra entities to use.
+This method can be overridden to add your own custom handling. For example, your component might need to create extra entities to use. If you do so, you will probably want to call the base method without your method, to load the built-in supported data types, like so:
+
+```c++
+bool LoadState(nlohmann::json& j3)
+{
+  if (!Component::LoadState(j3)) return false;
+  this->customvalue = j3["customdata"]["myvalue"];
+  return true;
+}
+```
