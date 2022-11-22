@@ -12,7 +12,7 @@ This method sets the distance to which the light illuminates.
 | nearrange | near range used for shadow map rendering |
 | farrange | the maximum distance the light can reach |
 
-# Remarks
+## Remarks
 
 Point and spot lights should use a near and far range above zero.
 
