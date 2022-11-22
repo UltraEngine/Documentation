@@ -1778,7 +1778,25 @@
 						},						   
 						{
 							"title": "Quat",
-							"filename": "Quat"
+							"filename": "Quat",
+							"topics": [
+								{
+									"name": "Inverse"
+									"filename": "Quat_Inverse"
+								},
+								{
+									"name": "Normalize"
+									"filename": "Quat_Normalize"
+								},
+								{
+									"name": "Slerp"
+									"filename": "Quat_Slerp"
+								},
+								{
+									"name": "ToEuler"
+									"filename": "Quat_ToEuler"
+								}
+							]
 						},
 						{
 							"title": "Vec2",
