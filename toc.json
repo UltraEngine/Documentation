@@ -595,7 +595,34 @@
 					"filename": "EntityComponentSystem",
 					"topics": [{
 							"title": "Actor",
-							"filename": "Actor"
+							"filename": "Actor",
+							"topics":
+							[
+								{
+									"title": "AddComponent",
+									"filename": "Actor_AddComponent.md"									
+								},
+								{
+									"title": "Copy",
+									"filename": "Actor_Copy.md"									
+								},
+								{
+									"title": "CraeteActor",
+									"filename": "CreateActor.md"									
+								}
+								{
+									"title": "GetComponent",
+									"filename": "Actor_GetComponent.md"									
+								},
+						   		{
+									"title": "GetEntityActor",
+									"filename": "GetEntityActor.md"									
+								},
+								{
+									"title": "Start",
+									"filename": "Actor_Start.md"									
+								}
+							]
 						},
 						{
 							"title": "Component",
@@ -603,27 +630,27 @@
 							"topics":
 							[
 								{
-									"title": "GetActor"
+									"title": "GetActor",
 									"filename": "Component_GetActor"
 								},
 								{
-									"title": "Collision"
+									"title": "Collision",
 									"filename": "Component_Collision"									
 								},
 								{
-									"title": "LoadState"
+									"title": "LoadState",
 									"filename": "Component_LoadState"									
 								},
 								{
-									"title": "SaveState"
+									"title": "SaveState",
 									"filename": "Component_SaveState"									
 								},
 								{
-									"title": "Start"
+									"title": "Start",
 									"filename": "Component_Start"									
 								},
 								{
-									"title": "Update"
+									"title": "Update",
 									"filename": "Component_Update"									
 								}
 							]
