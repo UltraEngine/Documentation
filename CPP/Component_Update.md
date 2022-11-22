@@ -1,6 +1,6 @@
 # Component::Update
 
-THis method is called once per call to [World::Update](World_Update.md).
+This method is called once per call to [World::Update](World_Update.md).
 
 ## Syntax
 
