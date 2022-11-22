@@ -246,6 +246,10 @@
 									"filename": "Light_GetConeAngles"
 								},
 								{
+									"title": "GetFalloff",
+									"filename": "Light_GetFalloff"
+								},							   
+								{
 									"title": "GetRange",
 									"filename": "Light_GetRange"
 								},
@@ -256,6 +260,10 @@
 								{
 									"title": "SetConeAngles",
 									"filename": "Light_SetConeAngles"
+								},
+								{
+									"title": "SetFalloff",
+									"filename": "Light_SetFalloff"
 								},
 								{
 									"title": "SetRange",
