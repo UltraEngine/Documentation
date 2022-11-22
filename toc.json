@@ -1764,7 +1764,17 @@
 						},
 						{
 							"title": "Plane",
-							"filename": "Plane"
+							"filename": "Plane",
+							"topics": [
+								{
+									"name": "DistanceToPoint"
+									"filename": "Plane_DistanceToPoint"
+								},
+								{
+									"name": "IntersectsLine"
+									"filename": "Plane_IntersectsLine"
+								}
+							]
 						},						   
 						{
 							"title": "Quat",
