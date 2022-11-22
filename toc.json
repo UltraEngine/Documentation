@@ -1781,19 +1781,19 @@
 							"filename": "Quat",
 							"topics": [
 								{
-									"name": "Inverse",
+									"title": "Inverse",
 									"filename": "Quat_Inverse"
 								},
 								{
-									"name": "Normalize",
+									"title": "Normalize",
 									"filename": "Quat_Normalize"
 								},
 								{
-									"name": "Slerp",
+									"title": "Slerp",
 									"filename": "Quat_Slerp"
 								},
 								{
-									"name": "ToEuler",
+									"title": "ToEuler",
 									"filename": "Quat_ToEuler"
 								}
 							]
