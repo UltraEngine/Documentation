@@ -600,27 +600,27 @@
 							[
 								{
 									"title": "AddComponent",
-									"filename": "Actor_AddComponent.md"									
+									"filename": "Actor_AddComponent"									
 								},
 								{
 									"title": "Copy",
-									"filename": "Actor_Copy.md"									
+									"filename": "Actor_Copy"									
 								},
 								{
 									"title": "CreateActor",
-									"filename": "CreateActor.md"									
+									"filename": "CreateActor"									
 								},
 								{
 									"title": "GetComponent",
-									"filename": "Actor_GetComponent.md"									
+									"filename": "Actor_GetComponent"									
 								},
 						   		{
 									"title": "GetEntityActor",
-									"filename": "GetEntityActor.md"									
+									"filename": "GetEntityActor"									
 								},
 								{
 									"title": "Start",
-									"filename": "Actor_Start.md"									
+									"filename": "Actor_Start"									
 								}
 							]
 						},
