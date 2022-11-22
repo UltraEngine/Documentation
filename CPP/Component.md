@@ -11,7 +11,41 @@ This class can be extended to add behavior and properties to an [Actor](Actor.md
 | [SaveState](Component_SaveState.md) | Method | called when an actor is saved or copied |
 | [Update](Component_Update.md) | Method | called once for each actor in [World::Update](World_Update.md) |
 
-You can override these methods or add your own in your component class. When calling methods within methods, you should call the actor method like this:
+You can override these methods or add your own in your component class. 
+
+### Example Component
+
+The Mover component is about as simple as it gets. It just stores some motion parameters and moves or turns the entity each time Update is called:
+```c++
+#pragma once
+#include "UltraEngine.h"
+#include "../ComponentSystem.h"
+
+class Mover : public Component
+{
+public: 
+     
+    Vec3 movement;
+    Vec3 rotation;
+    bool globalcoords = false;
+    
+    virtual void Update()
+    {
+        if (globalcoords)
+        {
+            this->entity->Translate(movement / 60.0f, true);
+        }
+        else
+        {
+            this->entity->Move(movement / 60.0f);
+        }
+        this->entity->Turn(rotation / 60.0f, globalcoords);
+    }
+}; 
+```
+### Calling Methods
+
+When calling methods within methods, you should call the actor method like this:
 ```c++
 void HealthManager::TakeDamage(const int damage)
 {
