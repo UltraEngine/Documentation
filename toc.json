@@ -1145,7 +1145,13 @@
 						},
 						{
 							"title": "Skeleton",
-							"filename": "Skeleton"
+							"filename": "Skeleton",
+							"topics": [
+								{
+									"title": "FindBone",
+									"filename": "Skeleton_FindBone.md"
+								}
+							]
 						},					
 						{
 							"title": "Texture",
