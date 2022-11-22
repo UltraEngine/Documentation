@@ -11,4 +11,4 @@ This method is called evefy time the entity collides with another object.
 | collidedactor | collided entity's actor. If the entity does not have an actor, an empty one will be created and assigned to it |
 | position | point the collision occured at |
 | normal | direction of the collision |
-| speed | speed of collision |
+| speed | speed of the collision |
