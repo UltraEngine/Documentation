@@ -14,7 +14,7 @@ This method performs a raycast at the specified screen coordinate.
 | radius | pick sphere radius |
 | closest | if true the closest point will be determined |
 | collisiontype | optional collision type to test with |
-  
+
 ## Returns
   
 Returns a [PickInfo](PickInfo.md) structure. If the *success* member of the structure is true an object was hit, otherwise it will be false.
