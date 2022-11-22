@@ -23,6 +23,8 @@ For bone attachments, the bone must belong to the skeleton the model is currentl
 
 The entity's local orientation at the time this method is called will be used to orient around the attachment.
 
+A bone's scale will be disregarded in the entity placement.
+
 ## Example
 
 This example will load an animated model and add some headgear to keep him warm.
@@ -76,8 +78,8 @@ int main(int argc, const char* argv[])
     //Model by alissvetlana
     //https://sketchfab.com/3d-models/hat-a7f54e87bea94730b4a1827ec1f770df
     auto hat = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/hat.glb");
-    hat->SetScale(0.5);
-    hat->SetPosition(-5, 10, 0);
+    hat->SetScale(0.025);
+    hat->SetPosition(-0.3, 0.4, 0);
     hat->Attach(model, head);
     
     //Main loop
@@ -87,7 +89,7 @@ int main(int argc, const char* argv[])
 
         rotation.y = Cos(float(Millisecs()) / 10.0f) * 65.0f;
         neck->SetRotation(rotation);
-
+       
         world->Render(framebuffer);
     }
     return 0;
