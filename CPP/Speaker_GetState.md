@@ -1,6 +1,6 @@
 # Speaker::GetState
 
-This method gets the speaker pitch setting
+This method gets the speaker state.
 
 ## Syntax
 
