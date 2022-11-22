@@ -4,12 +4,12 @@ This function creates a new camera entity.
 
 ## Syntax 
 
-shared_ptr<[Camera](Camera.md)\> **CreateCamera**(shared_ptr<[World](World.md)\> world)
+shared_ptr<[Camera](Camera.md)\> **CreateCamera**(shared_ptr<[World](World.md)\> world, const projectionmode = PROJECTION_PERSPECTIVE)
 
 | Parameter | Description |
 |---|---|
 | world | |
-| projectionmode | |
+| projectionmode | this can be PROJECTION_PERSPECTIVE or PROJECTION_ORTHOGRAPHIC |
 
 ## Remarks
 
