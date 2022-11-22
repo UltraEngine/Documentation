@@ -617,10 +617,6 @@
 						   		{
 									"title": "GetEntityActor",
 									"filename": "GetEntityActor"									
-								},
-								{
-									"title": "Start",
-									"filename": "Actor_Start"									
 								}
 							]
 						},
