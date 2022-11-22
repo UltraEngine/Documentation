@@ -300,6 +300,10 @@
 									"filename": "CreateCone"
 								},
 								{
+									"title": "CreateCubeSphere",
+									"filename": "CreateCubeSphere"
+								},
+								{
 									"title": "CreateCylinder",
 									"filename": "CreateCylinder"
 								},
