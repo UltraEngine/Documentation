@@ -599,7 +599,34 @@
 						},
 						{
 							"title": "Component",
-							"filename": "Component"
+							"filename": "Component",
+							"topics":
+							[
+								{
+									"title": "GetActor"
+									"filename": "Component_GetActor"
+								},
+								{
+									"title": "Collision"
+									"filename": "Component_Collision"									
+								},
+								{
+									"title": "LoadState"
+									"filename": "Component_LoadState"									
+								},
+								{
+									"title": "SaveState"
+									"filename": "Component_SaveState"									
+								},
+								{
+									"title": "Start"
+									"filename": "Component_Start"									
+								},
+								{
+									"title": "Update"
+									"filename": "Component_Update"									
+								}
+							]
 						}
 					]
 				},
