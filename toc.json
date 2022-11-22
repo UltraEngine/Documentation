@@ -215,10 +215,6 @@
 								{
 									"title": "Unproject",
 									"filename": "Camera_Unproject"
-								},
-								{
-									"title": "UpdateControls",
-									"filename": "Camera_UpdateControls"
 								}
 							]
 						},
