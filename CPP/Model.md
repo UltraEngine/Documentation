@@ -18,6 +18,7 @@ Ultra Engine natively supports loading and saving of models in the [glTF](https:
 | [UpdateNormals](Model_UpdateNormals.md) | Method | calculates new mesh normals |
 | [CreateBox](CreateBox.md) | Function | creates a new box model |
 | [CreateCone](CreateCone.md) | Function | creates a new cone model |
+| [CreateCubeSphere](CreateCubeSphere.md) | Function | creates a new sphere model |
 | [CreateCylinder](CreateCylinder.md) | Function | creates a new cylinder model |
 | [CreateSphere](CreateSphere.md) | Function | creates a new sphere model |
 | [CreateModel](CreateModel.md) | Function | creates a new model |
