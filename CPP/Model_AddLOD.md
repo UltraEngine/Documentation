@@ -7,7 +7,7 @@ Adds a new level of detail to the model. The LOD can be empty or copied from ano
 
 ## Example ##
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
@@ -26,7 +26,7 @@ void main(const char* args, const int argc)
     auto world = CreateWorld();
 
     //Create a light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(45, 35, 0);
 
     //Create a camera
