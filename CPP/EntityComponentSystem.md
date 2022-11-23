@@ -1,6 +1,9 @@
 # Entity Component System
 
-The Ultra Engine Entity Component System is a high-level system for developing games and simulations. The system provides a uniform structure that allows addition of modular logical components, without increasing the overall complexity of the program.
+The Ultra Engine Entity Component System is a high-level system for developing games and simulations. The component system is designed to meet three goals:
+1. Allow addition of modular logical components without increasing the overall complexity of the program.
+2. Support saving and loading of game states.
+3. Support evolving emergent behavior as components interact.
 
 The entity component system consists of internal engine elements combined with a [preprocessor](https://github.com/UltraEngine/Preprocessor) that generates code for your game. The type of components that are available will vary depending on what code files you have present in your project directory.
 
