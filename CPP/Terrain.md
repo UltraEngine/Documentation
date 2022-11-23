@@ -15,6 +15,7 @@ This class handles outdoor landscapes.
 | [GetMaterialWeight](Terrain_GetMaterialWeight.md) | Method | returns the weights of the materials in use at the specified point |
 | [GetNormal](Terrain_GetNormal.md) | Method | returns the normal of the terrain at the specified position |
 | [GetSlope](Terrain_GetSlope.md) | Method | returns the slope of the terrain at the specified position |
+| [GetTileHidden](Terrain_GetTileHidden.md) | Method | gets the visibility of a single terrain tile |
 | [LoadHeightmap](Terrain_LoadHeightmap.md) | Method | loads a heightmap from a file |
 | [SetHeight](Terrain_SetHeight.md) | Method | sets the terrain height at the specified point |
 | [SetElevation](Terrain_SetElevation.md) | Method | sets the terrain scaled height at the specified point |
