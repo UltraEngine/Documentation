@@ -93,7 +93,11 @@ int main(int argc, const char* argv[])
     rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
-
+    
+    //Camera controls
+    auto actor = CreateActor(camera);
+    actor->AddComponent<CameraControls>();
+    
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
@@ -123,10 +127,6 @@ int main(int argc, const char* argv[])
                 }
             }
         }
-
-        //Simple camera controls
-        if (ActiveWindow() == window) camera->UpdateControls(window);
-
         world->Update();
         world->Render(framebuffer);
     }
