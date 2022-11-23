@@ -9,6 +9,5 @@ This method sets a terrain point's height. The height value will be clamped betw
 
 | Parameter | Description |
 |---|---|
-| coord | terrain coorinate to modify |
-| x, y | terrain coordinate |
+| coord, (x, y) | terrain coorinate |
 | height | height to set |
