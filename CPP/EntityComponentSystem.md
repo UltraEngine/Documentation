@@ -10,7 +10,7 @@ The entity component system consists of internal engine elements combined with a
 
 ### Actors
 
-In the core Ultra Engine API you are accustomed to using entities. In the entity component system, the [Actor](Actor.md) is our main object type. The actor poseesses an entity as and additional modular "blocks" of behavior called components. An actor has only one entity but can have multiple components.
+In the core Ultra Engine API you are accustomed to using entities. In the entity component system, the [Actor](Actor.md) is our main object type. The actor poseesses an entity as and additional modular "blocks" of behavior called components.
 
 ### Components
 
