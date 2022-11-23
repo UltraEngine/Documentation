@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
     camera->SetPosition(0, 50, -50);
-    camera->SetRotation(-45, 0, 0);
+    camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
     
     //Sunlight
