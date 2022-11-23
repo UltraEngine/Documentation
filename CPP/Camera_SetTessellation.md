@@ -1,16 +1,25 @@
-# Camera::SetTessellation #
+# Camera::SetTessellation
 
-## Syntax ##
-- SetTessellation(number polygonsize)
+This method sets the desired polygon edge size for tessellated materials.
+
+## Syntax
+
+- void **SetTessellation**(const int polygonsize)
 
 | Parameter | Description |
 | --- | --- |
-| polygonsize | |
+| polygonsize | desired polygon edge length, in screen pixels |
 
-## Example ##
+## Remarks
+
+A *polygonsize* value of 4 is suitable for high quality tessellation. If it is zero then tessellation will be disabled.
+
+## Example
+
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
