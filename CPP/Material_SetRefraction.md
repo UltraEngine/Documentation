@@ -1,8 +1,7 @@
 ## Example ##
 
 ```c++
-#include "pch.h"
-#include "Project.h"
+#include "UltraEngine.h"
 
 int main(int argc, const char* argv[])
 {
@@ -24,7 +23,7 @@ int main(int argc, const char* argv[])
     camera->SetFOV(70);
 
     //Create light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetColor(1);
     light->SetRotation(9, 90, 0);
 
