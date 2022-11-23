@@ -17,6 +17,7 @@ This example lets you cut holes in the terrain.
 
 ```c++
 #include "UltraEngine.h"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
