@@ -63,6 +63,7 @@ This is the base class for all 3D objects in a world.
 | [SetRotation](Entity_SetRotation.md) | Method | sets the entity rotation in local or global space |
 | [SetScale](Entity_SetScale.md) | Method | sets the entity scale |
 | [SetVelocity](Entity_SetVelocity.md) | Method | sets the entity linear velocity |
+| [Staticize](Entity_Staticize.md) | Method | permanently makes an entity static |
 | [Sync](Entity_Sync.md) | Method | resets rendering interpolation |
 | [Translate](Entity_Translate.md) | Method | translates the entity position in local or global space |
 | [Turn](Entity_Turn.md) | Method | turns the entity in local or global space |
