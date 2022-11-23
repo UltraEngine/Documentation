@@ -99,11 +99,8 @@ int main(int argc, const char* argv[])
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        //Update the world
         world->Update();
-
-        //Render the world
-        world->Render(framebuffer, false);
+        world->Render(framebuffer);
     }
     return 0;
 }
