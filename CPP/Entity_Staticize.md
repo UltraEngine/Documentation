@@ -28,7 +28,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
     
     //Create window
-    auto window = CreateWindow("", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
     //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
