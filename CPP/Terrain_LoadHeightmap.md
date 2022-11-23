@@ -35,7 +35,7 @@ int main(int argc, const char* argv[])
     camera->Move(0, 0, -500);
     
     //Create a light
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(45, 45, 0);
 
     //Create terrain
