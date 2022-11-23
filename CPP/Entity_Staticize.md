@@ -12,6 +12,8 @@ In this example the scene is optimized to make non-moving objects static, result
 
 ![](https://github.com/UltraEngine/Documentation/raw/master/Images/API_Entity_MakeStatic.gif)
 
+TODO - this sample doesn't work right
+
 ```c++
 #include "UltraEngine.h"
 
@@ -19,12 +21,14 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Plugin for texture loading
+    auto plugin = LoadPlugin("Plugins/FITextureLoader");
+
     //Get display
     auto displays = GetDisplays();
-    auto display = displays[0];
-
+    
     //Create window
-    auto window = CreateWindow(display, "", 0, 0, 1280 * display->scale.x, 720 * display->scale.y);
+    auto window = CreateWindow("", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
     //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -41,14 +45,14 @@ int main(int argc, const char* argv[])
     camera->Move(0, 0, -5);
 
     //Build scene
-    auto tunnel = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
+    auto tunnel = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
     tunnel->SetRotation(0, 180, 0);
-    tunnel->MakeStatic();
+    tunnel->Staticize();
 
-    auto cage = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
-    cage->MakeStatic();
+    auto cage = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
+    cage->Staticize();
 
-    auto fan = LoadModel(world, "https://github.com/Leadwerks/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
+    auto fan = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
 
     auto light = CreatePointLight(world);
@@ -58,15 +62,22 @@ int main(int argc, const char* argv[])
     light->SetColor(4.0);
 
     //Display text
-    auto spritelayer = CreateSpriteLayer(world);
-    camera->AddSpriteLayer(spritelayer);
+    auto orthocam = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    orthocam->SetClearMode(CLEAR_DEPTH);
+    orthocam->SetRenderLayers(RENDERLAYER_7);
+    orthocam->SetPosition(float(framebuffer->size.x) * 0.5, float(framebuffer->size.y) * 0.5f);
+
     auto font = LoadFont("Fonts/arial.ttf");
 
-    auto text = CreateText(spritelayer, font, "Shadow polygons: 0", 14.0 * display->scale.y);
-    text->SetPosition(2, 2);
+    auto text = CreateSprite(world, font, "Shadow polygons: 0", 14.0 * displays[0]->scale);
+    text->SetPosition(2, framebuffer->size.y - 16.0f * displays[0]->scale);
+    text->SetRenderLayers(RENDERLAYER_7);
 
-    auto text2 = CreateText(spritelayer, font, "Press space to make the light static.", 14.0 * display->scale.y);
-    text2->SetPosition(2, 20 * display->scale.y);
+    auto text2 = CreateSprite(world, font, "Press space to make the light static.", 14.0 * displays[0]->scale);
+    text2->SetPosition(2, framebuffer->size.y - 16.0f * 2.0f * displays[0]->scale);
+    text2->SetRenderLayers(RENDERLAYER_7);
+
+    world->RecordStats(true);
 
     //Main loop
     while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
@@ -78,8 +89,8 @@ int main(int argc, const char* argv[])
 
         if (window->KeyHit(KEY_SPACE))
         {
-            light->MakeStatic();
-            text2->Hide();
+            light->Staticize();
+            text2->SetHidden(true);
         }
 
         text->SetText("Shadow polygons: " + String(world->renderstats.shadowpolygons));
