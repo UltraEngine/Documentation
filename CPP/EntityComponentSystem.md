@@ -14,7 +14,7 @@ In the core Ultra Engine API you are accustomed to using entities. In the entity
 
 ### Components
 
-[Components](Component.md) are blocks of functionality that can be added to an actor.
+[Components](Component.md) are blocks of functionality that can be added to an actor. An actor can have multiple components, but only one component of each type.
 
 ### Usage
 
