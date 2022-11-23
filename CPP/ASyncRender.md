@@ -20,7 +20,7 @@ Once the engine is initialized, the multithreaded rendering mode cannot be chang
 
 ## Example
 
-This example creates an event-based application with a resizable window and 3D rendering.
+This example creates an event-based application with a resizable window and 3D viewport.
 
 ```c++
 #include "UltraEngine.h"
