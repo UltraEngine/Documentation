@@ -593,6 +593,10 @@
 							"filename": "Entity_SetVelocity"
 						},
 						{
+							"title": "Staticize",
+							"filename": "Entity_Staticize"
+						},
+						{
 							"title": "Sync",
 							"filename": "Entity_Sync"
 						},
