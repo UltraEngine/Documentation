@@ -5,10 +5,11 @@ This method is used to show or hide a single terrain tile.
 ## Syntax
 
 - void **SetTileHidden**(const int x, const int y, const bool hidden)
+- void **SetTileHidden**(const [iVec2](iVec2.md) coord, const bool hidden)
 
 | Parameter | Description |
 |---|---|
-| x, y | tile coordinate |
+| coord, (x, y) | tile coordinate |
 | hidden | if set to true the tile will be hidden, otherwise it will be visible |
 
 ## Example
