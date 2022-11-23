@@ -53,7 +53,7 @@ int main(int argc, const char* argv[])
     camera->SetDepthPrepass(false);
     
     //Sunlight
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(65, 35, 0);
      
     //Create terrain
