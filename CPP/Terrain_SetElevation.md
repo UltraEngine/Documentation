@@ -34,22 +34,22 @@ int main(int argc, const char* argv[])
     //Create a camera
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
-    camera->SetPosition(0, 50, -50);
+    camera->SetPosition(0, 100, -100);
     camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
-    
+
     //Sunlight
     auto light = CreateDirectionalLight(world);
     light->SetRotation(65, 35, 0);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
-    terrain->LoadHeightmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Terrain/512.r16");
+    terrain->LoadHeightmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Terrain/512.r16");
     terrain->SetScale(1, 100, 1);
 
     //Create base material
-    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
-    auto normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
+    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
+    auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
     auto ground = CreateMaterial();
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
@@ -57,9 +57,9 @@ int main(int argc, const char* argv[])
 
     //Create paint material
     auto rocks = CreateMaterial();
-    diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocks_ground_02_col_4k.dds");
-    normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocks_ground_02_nor_gl_4k.dds");
-    auto dispmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocks_ground_02_height_4k.dds");
+    diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02_col_4k.dds");
+    normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02_nor_gl_4k.dds");
+    auto dispmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02_height_4k.dds");
     rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
@@ -89,9 +89,9 @@ int main(int argc, const char* argv[])
                         {
                             float strength = 1.0f - Vec3(x, y, 0).DistanceToPoint(Vec3(pos.x, pos.y, 0)) / float(radius);
                             if (strength <= 0.0f) continue;
-                            float wt = terrain->GetMaterialWeight(x, y, rocks);
-                            wt += 0.1f;
-                            terrain->SetMaterial(x, y, rocks, wt);
+                            float h = terrain->GetElevation(x, y);
+                            h += 0.1 * strength;
+                            terrain->SetElevation(x, y, h);
                         }
                     }
                 }
