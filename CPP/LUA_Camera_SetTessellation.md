@@ -1,13 +1,16 @@
 # Camera.SetTessellation #
 
-## Syntax ##
-- SetTessellation(number polygonsize)
+## Syntax
+- void **SetTessellation**(number polygonsize)
 
 | Parameter | Description |
 | --- | --- |
-| polygonsize | |
+| polygonsize | desired polygon edge length, in screen pixels |
 
-## Example ##
+## Example
+
+TODO
+
 ```lua
 --Load plugin for texture loading
 local plugin = LoadPlugin("Plugins/Basis.*")
