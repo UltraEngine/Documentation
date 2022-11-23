@@ -49,7 +49,7 @@ int main(int argc, const char* argv[])
     camera->SetTessellation(8); //Tessellated primitives are n pixels wide(zero or less disables tessellation)
 
     //Create a light
-    auto  light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto  light = CreateDirectionalLight(world);
     light->SetRotation(35, -55, 0);
     light->SetColor(1.2);
 
