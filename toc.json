@@ -379,6 +379,10 @@
 									"filename": "Terrain_GetSlope"
 								},
 								{
+									"title": "GetTileHidden",
+									"filename": "Terrain_GetTileHidden"
+								},
+								{
 									"title": "LoadHeightmap",
 									"filename": "Terrain_LoadHeightmap"
 								},								
@@ -393,7 +397,11 @@
 								{
 									"title": "SetMaterial",
 									"filename": "Terrain_SetMaterial"
-								}								
+								},
+								{
+									"title": "SetTileHidden",
+									"filename": "Terrain_SetTileHidden"
+								}
 							]
 						},						   
 						{
