@@ -32,7 +32,7 @@ int main(int argc, const char* argv[])
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
-    
+
     //Create a camera
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
@@ -40,16 +40,16 @@ int main(int argc, const char* argv[])
     camera->SetRotation(-45, 0, 0);
     camera->SetClearColor(0.125);
     camera->SetTessellation(8);
-    
+
     //Sunlight
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(65, 35, 0);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
     terrain->LoadHeightmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Terrain/512.r16");
     terrain->SetScale(1, 100, 1);
-    
+
     //Create base material
     auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
     auto normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
@@ -77,8 +77,8 @@ int main(int argc, const char* argv[])
         if (window->MouseDown(MOUSE_LEFT))
         {
             auto mousepos = window->GetMousePosition();
-            PickInfo pickinfo;
-            if (camera->Pick(framebuffer, mousepos.x, mousepos.y, pickinfo))
+            auto pickinfo = camera->Pick(framebuffer, mousepos.x, mousepos.y);
+            if (pickinfo.success)
             {
                 if (pickinfo.entity == terrain)
                 {
