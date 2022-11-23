@@ -53,15 +53,15 @@ When calling methods within methods, you should call the actor method like this:
 void HealthManager::TakeDamage(const int damage)
 {
   health -= damage;
-  if (health <= 0) GetActor()->Kill();
+  if (health <= 0) actor->Kill();
 }
 ```
-Don't call the component method directly:
+Don't call the component's own method directly unless you are sure you want to:
 ```c++
 void HealthManager::TakeDamage(const int damage)
 {
   health -= damage;
-  if (health <= 0) this->Kill();
+  if (health <= 0) Kill();
 }
 ```
-When you call the actor method, all components with the called method will be executed, allowing for more emergent behavior between components.
+When you call the actor method, all components with the called method will be executed, allowing for more emergent behavior between components. For example, another component might have a Kill() method that plays a sound when called, and this functionality will be automatically triggered by calling Actor::Kill() instead of HealthManager::Kill().
