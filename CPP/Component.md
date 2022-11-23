@@ -48,7 +48,7 @@ public:
 ```
 ### Calling Methods
 
-When calling methods within methods, you should call the actor method like this:
+When calling methods, you should call the actor method like this:
 ```c++
 void HealthManager::TakeDamage(const int damage)
 {
