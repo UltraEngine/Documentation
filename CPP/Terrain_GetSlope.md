@@ -91,12 +91,13 @@ int main(int argc, const char* argv[])
         }
     }
 
+    //Camera controls
+    auto actor = CreateActor(camera);
+    actor->AddComponent<CameraControls>();
+
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        //Simple camera controls
-        if (ActiveWindow() == window) camera->UpdateControls(window);
-
         //Update the world
         world->Update();
 
