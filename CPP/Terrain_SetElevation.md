@@ -55,15 +55,6 @@ int main(int argc, const char* argv[])
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
     terrain->SetMaterial(ground);
 
-    //Create paint material
-    auto rocks = CreateMaterial();
-    diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02_col_4k.dds");
-    normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02_nor_gl_4k.dds");
-    auto dispmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02_height_4k.dds");
-    rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
-    rocks->SetTexture(normalmap, TEXTURE_NORMAL);
-    rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
-
     //Camera controls
     auto actor = CreateActor(camera);
     actor->AddComponent<CameraControls>();
