@@ -2005,6 +2005,10 @@
 							"filename": "Mix"
 						},
 						{
+							"title": "MixAngle",
+							"filename": "MixAngle"
+						},
+						{
 							"title": "Mod",
 							"filename": "Mod"
 						},
