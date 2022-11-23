@@ -43,29 +43,29 @@ int main(int argc, const char* argv[])
     camera->SetClearColor(0.125);
     camera->SetDepthPrepass(false);
     camera->SetTessellation(8);// uncomment this line for tessellation
-    
+
     //Sunlight
-    auto light = CreateLight(world, LIGHT_DIRECTIONAL);
+    auto light = CreateDirectionalLight(world);
     light->SetRotation(65, 35, 0);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
-    terrain->LoadHeightmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Terrain/512.r16");
+    terrain->LoadHeightmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Terrain/512.r16");
     terrain->SetScale(1, 200, 1);
 
     //Create base material
     auto ground = CreateMaterial();
-    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
-    auto normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
+    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
+    auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
     terrain->SetMaterial(ground);
 
     //Create paint material
     auto rocks = CreateMaterial();
-    diffusemap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k.dds");
-    normalmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_dot3.dds");
-    auto dispmap = LoadTexture("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_disp.dds");
+    diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k.dds");
+    normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_dot3.dds");
+    auto dispmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_disp.dds");
     rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
@@ -74,7 +74,7 @@ int main(int argc, const char* argv[])
     {
         for (int y = 0; y < terrain->resolution.y / 2; ++y)
         {
-         //   terrain->SetTileHidden(x, y, true);
+            //   terrain->SetTileHidden(x, y, true);
         }
     }
 
@@ -88,8 +88,8 @@ int main(int argc, const char* argv[])
         if (window->MouseDown(MOUSE_LEFT))
         {
             auto mousepos = window->GetMousePosition();
-            PickInfo pickinfo;
-            if (camera->Pick(framebuffer, mousepos.x, mousepos.y, pickinfo))
+            auto pickinfo = camera->Pick(framebuffer, mousepos.x, mousepos.y);
+            if (pickinfo.success)
             {
                 if (pickinfo.entity == terrain)
                 {
