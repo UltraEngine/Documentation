@@ -64,4 +64,4 @@ void HealthManager::TakeDamage(const int damage)
   if (health <= 0) Kill();
 }
 ```
-When you call the actor method, all components with the called method will be executed, allowing for more emergent behavior between components. For example, another component might have a Kill() method that plays a sound when called, and this functionality will be automatically triggered by calling Actor::Kill() instead of HealthManager::Kill().
+When you call the actor method, all components with the called method will be executed, allowing for more emergent behavior between components. For example, another component might have a Kill() method that plays a sound when called, and this functionality will be automatically triggered by calling Actor::Kill().
