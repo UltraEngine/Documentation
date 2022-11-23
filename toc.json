@@ -365,7 +365,11 @@
 								{
 									"title": "GetHeight",
 									"filename": "Terrain_GetHeight"
-								},	
+								},
+								{
+									"title": "GetMaterialWeight",
+									"filename": "Terrain_GetMaterialWeight"
+								},
 								{
 									"title": "GetNormal",
 									"filename": "Terrain_GetNormal"
