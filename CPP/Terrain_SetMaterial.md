@@ -43,6 +43,7 @@ This example lets you paint a material onto the terrain.
 
 ```c++
 #include "UltraEngine.h"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
