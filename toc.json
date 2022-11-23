@@ -213,6 +213,10 @@
 									"filename": "Camera_SetRefraction"
 								},
 								{
+									"title": "SetTessellation",
+									"filename": "Camera_SetTessellation"
+								},
+								{
 									"title": "Unproject",
 									"filename": "Camera_Unproject"
 								}
