@@ -10,6 +10,5 @@ This method sets a terrain point's height. The height value will be clamped betw
 | Parameter | Description |
 |---|---|
 | coord | terrain coorinate to modify |
-| x | x component of the terrain coordinate |
-| y | y component of the terrain coordinage |
+| x, y | terrain coordinate |
 | height | height to set |
