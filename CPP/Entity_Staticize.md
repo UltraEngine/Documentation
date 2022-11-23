@@ -1,6 +1,6 @@
 # Entity::Staticize
 
-This method makes the entity static. A static entity cannot move and can be much more efficient for rendering, pathfinding, and physics, to make your application run even faster. This operation is one-way and cannot be reversed.
+This method makes the entity static. A static entity cannot move and can be much more efficient to render. This operation is one-way and cannot be reversed.
 
 ## Syntax
 
