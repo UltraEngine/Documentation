@@ -624,11 +624,7 @@
 							"title": "Component",
 							"filename": "Component",
 							"topics":
-							[
-								{
-									"title": "GetActor",
-									"filename": "Component_GetActor"
-								},
+							[								
 								{
 									"title": "Collision",
 									"filename": "Component_Collision"									
