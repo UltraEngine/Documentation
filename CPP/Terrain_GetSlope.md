@@ -50,8 +50,7 @@ int main(int argc, const char* argv[])
     camera->SetPosition(0, 50, 0);
     camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
-    camera->SetDepthPrepass(false);
-    
+
     //Sunlight
     auto light = CreateDirectionalLight(world);
     light->SetRotation(65, 35, 0);
