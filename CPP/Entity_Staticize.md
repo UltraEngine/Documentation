@@ -8,7 +8,7 @@ This method makes the entity static. A static entity cannot move and can be much
 
 ## Example
 
-In this example the scene is optimized to make non-moving objects static, resulting in a lower shadow polygon count. In large scenes with many lights this can result in a large reduction of rendered polygons and faster performance.
+THis example shows how a scene can be optimized to make non-moving objects static, resulting in a lower shadow polygon count. In large scenes with many lights this can result in a large reduction of rendered polygons and faster performance.
 
 ![](https://github.com/UltraEngine/Documentation/raw/master/Images/API_Entity_MakeStatic.gif)
 
