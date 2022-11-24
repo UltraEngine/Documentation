@@ -81,8 +81,6 @@ int main(int argc, const char* argv[])
                     pos.x = Round(pickinfo.position.x) + terrain->resolution.x / 2;
                     pos.y = Round(pickinfo.position.z) + terrain->resolution.y / 2;
                     int radius = 10;
-                    auto layer = rocks;
-                    if (window->KeyDown(KEY_CONTROL)) layer = ground;
                     for (int x = pos.x - radius; x < pos.x + radius; ++x)
                     {
                         for (int y = pos.y - radius; y < pos.y + radius; ++y)
