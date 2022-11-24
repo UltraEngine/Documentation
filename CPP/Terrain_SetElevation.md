@@ -22,8 +22,11 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    //Get the displays list
+    auto displays = GetDisplays();
+
     //Create a window
-    auto window = CreateWindow("Terrain Paint", 0, 0, 1280, 720);
+    auto window = CreateWindow("Terrain Sculpt", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
     //Create a world
     auto world = CreateWorld();
@@ -81,7 +84,7 @@ int main(int argc, const char* argv[])
                             float strength = 1.0f - Vec3(x, y, 0).DistanceToPoint(Vec3(pos.x, pos.y, 0)) / float(radius);
                             if (strength <= 0.0f) continue;
                             float h = terrain->GetElevation(x, y);
-                            h += 0.1 * strength;
+                            h += 0.5 * strength;
                             terrain->SetElevation(x, y, h);
                         }
                     }
