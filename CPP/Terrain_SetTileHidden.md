@@ -14,8 +14,6 @@ This method is used to show or hide a single terrain tile.
 
 ## Example
 
-TODO sample not working
-
 This example lets you cut holes in the terrain.
 
 ```c++
