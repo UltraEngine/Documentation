@@ -1682,10 +1682,15 @@
 						{
 							"title": "Window",
 							"filename": "Window",
-							"topics": [{
+							"topics": [
+								{
 									"title": "Activate",
 									"filename": "Window_Activate"
 								},
+								{
+									"title": "ActiveWindow",
+									"filename": "ActiveWindow"
+								},								
 								{
 									"title": "ClientSize",
 									"filename": "Window_ClientSize"
@@ -1694,6 +1699,10 @@
 									"title": "Closed",
 									"filename": "Window_Closed"
 								},
+								{
+									"title": "CreateWindow",
+									"filename": "CreateWindow"
+								},								   
 								{
 									"title": "FlushKeys",
 									"filename": "Window_FlushKeys"
@@ -1783,17 +1792,9 @@
 									"filename": "Window_ShowMouse"
 								},
 								{
-									"title": "ActiveWindow",
-									"filename": "ActiveWindow"
-								},
-								{
-									"title": "CreateWindow",
-									"filename": "CreateWindow"
-								},
-								{
 									"title": "TransformCoord",
 									"filename": "TransformCoord"
-								}
+								}								   
 							]
 						}						   
 					]
