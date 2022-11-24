@@ -75,8 +75,6 @@ int main(int argc, const char* argv[])
     text2->SetPosition(2, framebuffer->size.y - 16.0f * 2.0f * displays[0]->scale);
     text2->SetRenderLayers(RENDERLAYER_7);
 
-    world->RecordStats(true);
-
     //Main loop
     while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
     {
