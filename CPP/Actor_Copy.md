@@ -1,6 +1,6 @@
 # Actor::Copy
 
-This method makes a copy of an actor, including its entity.
+This method makes a copy of an actor including its entity and all components.
 
 - shared_ptr<[Actor](Actor.md)> **Copy**()
 
