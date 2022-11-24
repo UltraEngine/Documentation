@@ -12,8 +12,6 @@ In this example the scene is optimized to make non-moving objects static, result
 
 ![](https://github.com/UltraEngine/Documentation/raw/master/Images/API_Entity_MakeStatic.gif)
 
-TODO - this sample doesn't work right
-
 ```c++
 #include "UltraEngine.h"
 
