@@ -1164,6 +1164,10 @@
 									"filename": "Mesh_SetMaterial"
 								},
 								{
+									"title": "SetSkinned",
+									"filename": "Mesh_SetSkinned"
+								},
+								{
 									"title": "SetVertexPosition",
 									"filename": "Mesh_SetVertexPosition"
 								},
