@@ -4,7 +4,7 @@ This function controls gamepad haptic feedback.
 
 ## Syntax
 
-- void **Rumble**(const float left, const float right, const int index = 0)
+- void **Rumble**(const float left, const float right)
 
 | Parameter | Description |
 |---|---|
