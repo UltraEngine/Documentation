@@ -922,13 +922,13 @@
 							"filename": "GamePad_ButtonHit"
 						},
 						{
+							"title": "GetAxisPosition",
+							"filename": "GamePad_GetAxisPosition"
+						},
+						{
 							"title": "GetConnected",
 							"filename": "GamePad_GetConnected"
 						},
-						{
-							"title": "GetAxisPosition",
-							"filename": "GamePad_GetAxisPosition"
-						},			
 						{
 							"title": "GetGamePads",
 							"filename": "GetGamePads"
