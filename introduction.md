@@ -52,3 +52,5 @@ The debug build stores the physics library as separate DLLs for external debuggi
 Your game should not include the shader source code files (.vert, .frag., .geom, .comp, .tese, .tesc). Only the compiled .spv files should be included.
 
 If your code does not load any plugins you do not need to include the DLLs in the "Plugins" directory.
+
+The only required software your end users need to worry about is the [Microsoft Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe). You can package this with your installer or select it in the install settings for your game on Steam.
