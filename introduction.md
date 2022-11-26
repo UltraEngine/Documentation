@@ -88,6 +88,6 @@ There's a lot more technology on the way! Here are some of the main features in 
 - New visual editor with customizable extensions
 - C# programming support
 - Lua programming support
-- More advanced global illumination and reflections
+- Advanced global illumination and reflections
 - Box2D physics support
 - Newton Dynamics 4 physics support
