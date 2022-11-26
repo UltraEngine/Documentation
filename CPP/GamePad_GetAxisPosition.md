@@ -1,6 +1,6 @@
 # GamePad::GetAxisPosition
 
-This function gets the current position of a thumbstick or trigger.
+This method gets the current position of a thumbstick or trigger.
 
 ## Syntax
 
