@@ -91,7 +91,7 @@ This is just the beginning. There's a lot more great technology on the way! Here
 - C# programming support
 - Lua programming support
 - Advanced global illumination and reflections
-- Box2D physics support
-- Newton Dynamics 4 physics support
+- Box2D physics
+- Newton Dynamics 4 physics
 
 Your feedback is always valued, so feel free to [make a suggestion](https://www.ultraengine.com/community/forum/3-suggestion-box/) for any features you'd like to see in upcoming releases.
