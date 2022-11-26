@@ -4,7 +4,7 @@ This function detects whether a gamepad button has been pressed since the last t
 
 ## Syntax
 
-- bool **ButtonHit**(const GamePadButton button, const int index = 0)
+- bool **ButtonHit**(const GamePadButton button)
 
 | Parameter | Description |
 |---|---|
