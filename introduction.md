@@ -14,7 +14,11 @@ You can try running the [Ultra Engine benchmarks](https://github.com/UltraEngine
 
 First, download and run the [Ultra Engine Client](https://www.ultraengine.com/files/UltraEngineClient.exe). This application will allow you to install different versions of the software and receive updates. When you open the application you will be prompted to sign into your Ultra Engine account. If you do not have an account yet, you can create one [here](https://www.ultraengine.com/community/register).
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_signin.png)
+
 When you sign into your account in the application, it will look like this:
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_start.png)
 
 The **Projects** tab displays a list of your projects for easy access, and allows new project creation.
 
