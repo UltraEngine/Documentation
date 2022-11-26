@@ -52,7 +52,13 @@ Your project will be listed in the projects panel for easy access:
 
 ## Updating
 
-The **Updates** tab will show an indicator when an update is available. After installing the update, you may see an icon indicating that some of your projects are out of date. This happens when the files in the project templates receive any changes. You can click the icon to see a list of all the files that have been modified. When you press the **OK** button to update the project, the new files will overwrite your existing project files. To prevent accidental data loss, a copy of your project file will be saved in the "backup" folder in your project directory.
+The **Updates** tab will show an indicator when an update is available. After installing the update, you may see an icon indicating that some of your projects are out of date. This happens when the files in the project templates receive any changes.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projectoutdated.png)
+
+You can click the icon to see a list of all the files that have been modified. When you press the **OK** button to update the project, the new files will overwrite your existing project files. To prevent accidental data loss, a copy of your project file will be saved in the "backup" folder in your project directory.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projectsync.png)
 
 You can view changes in text-based files by pressing the **Diff** button. This will open both versions of the file side-by-side and allow you to pick and choose which changes you want to insert. This feature requires [Visual Studio Code](https://code.visualstudio.com/download) to be installed, or you can set your own diff tool and command line in the **Settings** tab.
 
