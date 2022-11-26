@@ -12,4 +12,4 @@ Ultra Engine provides built-in support for XBox One and XBox 360 game controller
 | [GetConnected](GamePad_GetConnected.md) | Method | returns true as long as the game pad is connected |
 | [Flush](GamePad_Flush.md) | Method | flushes the game pad buttons |
 | [Rumble](GamePad_Rumble.md) | Method | controls haptic feedback |
-| [GetGamePads](GetGamePads.md) | Function | gets a list of game pads |
+| [GetGamePads](GetGamePads.md) | Function | gets a list of connected game pads |
