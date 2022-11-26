@@ -40,7 +40,7 @@ The default channel will contain the current stable build, which does not change
 
 Once the engine is installed you can create a new project in the **Projects** tab. Press the **Create** button, fill in the required information, and press okay to get started.
 
-
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_newproject.png)
 
 ## Updating
 
@@ -48,7 +48,7 @@ The **Updates** tab will show an indicator when an update is available. After in
 
 You can view changes in text-based files by pressing the **Diff** button. This will open both versions of the file side-by-side and allow you to pick and choose which changes you want to insert. This feature requires [Visual Studio Code](https://code.visualstudio.com/download) to be installed, or you can set your own diff tool and command line in the **Settings** tab.
 
-## Packaging
+## Distribution
 
 Only the release build of your game should be distributed. The debug build of your game will end with the suffix "_d.exe" and should not be distributed.
 
@@ -60,5 +60,7 @@ The debug build stores the physics library as separate DLLs for external debuggi
 Your game should not include the shader source code files (.vert, .frag., .geom, .comp, .tese, .tesc). Only the compiled .spv files should be included.
 
 If your code does not load any plugins you do not need to include the DLLs in the "Plugins" directory.
+
+You should not distribute any files from the client application folder like the library, headers, template files, etc.
 
 The only required software your end users need to worry about is the [Microsoft Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe). You can package this with your installer or select it in the install settings for your game on Steam.
