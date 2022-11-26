@@ -22,7 +22,7 @@ When you sign into your account in the application, it will look like this:
 
 The **Projects** tab displays a list of your projects for easy access, and allows new project creation.
 
-The **Update** tab allows you to select and install a version of the engine.
+The **Updates** tab allows you to select and install a version of the engine.
 
 The **Community** tab contains links to community features you can access on our site.
 
@@ -32,7 +32,7 @@ The **Billing** tab contains information about your account and plan.
 
 The **Settings** tab contains various settings for the cient application.
 
-When your subscription plan is active, you will be able to select a channel in the **Update** panel and install the engine. If you need to activate your plan, you can do so [here](https://www.ultraengine.com/community/store)
+When your subscription plan is active, you will be able to select a channel in the **Updates** panel and install the engine. If you need to activate your plan, you can do so [here](https://www.ultraengine.com/community/store)
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_install.png)
 
