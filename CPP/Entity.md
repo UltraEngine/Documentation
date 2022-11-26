@@ -2,7 +2,7 @@
 
 Base class: [Object](Object.md)
 
-This is the base class for all 3D objects in a world.
+This is the base class for all 3D objects in a world. Terrain, lights, 3D models, and other types of objects all share this class in common.
 
 | Property | Type | Description |
 |---|---|---|
