@@ -1,6 +1,6 @@
 # GamePad::GetConnected
 
-This function can be used to check if one or more game controllers are connected.
+This method can be used to check if one or more game controllers are connected.
 
 ## Syntax
 
