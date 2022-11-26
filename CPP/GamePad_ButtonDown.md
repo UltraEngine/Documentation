@@ -4,7 +4,7 @@ This function detects whether a gamepad button is currently pressed.
 
 ## Syntax
 
-- bool **ButtonDown**(const GamePadButton button, const int index = 0)
+- bool **ButtonDown**(const GamePadButton button)
 
 | Parameter | Description |
 |---|---|
