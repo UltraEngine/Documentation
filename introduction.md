@@ -38,7 +38,7 @@ When your subscription plan is active, you will be able to select a channel in t
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_install.png)
 
-The default channel will contain the current stable build, which does not change. You can select a development channel and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
+The default channel will contain the current stable build, which does not change. You can select a newer version and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
 
 Once the engine is installed you can create a new project in the **Projects** tab. Press the **Create** button, fill in the required information, and press okay to get started.
 
