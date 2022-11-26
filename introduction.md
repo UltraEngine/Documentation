@@ -46,7 +46,7 @@ The folder containing your project will be opened. You can open the .sln file wi
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.png)
 
-Your project will now appear in the projects panel for easy access:
+Your project will be listed in the projects panel for easy access:
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projects.png)
 
