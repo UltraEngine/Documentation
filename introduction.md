@@ -66,7 +66,7 @@ You can view changes in text-based files by pressing the **Diff** button. This w
 
 ## Distribution
 
-Only the release build of your game should be distributed. The debug build of your game will end with the suffix "_d.exe" and should not be distributed.
+Only the release build of your game should be distributed. The debug build of your game will end with the suffix "_d.exe" and should not be included.
 
 The debug build stores the physics library as separate DLLs for external debugging. The release build does not need these DLLs:
 - newton_d.dll
