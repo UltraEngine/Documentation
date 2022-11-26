@@ -40,3 +40,15 @@ The **Updates** tab will show an indicator when an update is available. After in
 
 You can view changes in text-based files by pressing the **Diff** button. This will open both versions of the file side-by-side and allow you to pick and choose which changes you want to insert. This feature requires [Visual Studio Code](https://code.visualstudio.com/download) to be installed, or you can set your own diff tool and command line in the **Settings** tab.
 
+## Packaging
+
+Only the release build of your game should be distributed. The debug build of your game will end with the suffix "_d.exe" and should not be distributed.
+
+The debug build stores the physics library as separate DLLs for external debugging. The release build does not need these DLLs:
+- newton_d.dll
+- dCustomJoints_d.dll
+- dContainers_d.dll
+
+Your game should not include the shader source code files (.vert, .frag., .geom, .comp, .tese, .tesc). Only the compiled .spv files should be included.
+
+If your code does not load any plugins you do not need to include the DLLs in the "Plugins" directory.
