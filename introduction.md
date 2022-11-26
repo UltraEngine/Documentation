@@ -2,6 +2,8 @@
 
 Welcome to the Ultra Engine documentation. Here you will learn how to use the software to build high-performance games and applications.
 
+Ultra Engine is currently available in "early access" mode, consisting of a C++ programming SDK for Windows that serves as a foundation for future development.
+
 ## System Requirements
 
 - Discrete GPU with support for Vulkan 1.3 (Integrated graphics are not supported yet)
@@ -78,3 +80,14 @@ If your code does not load any plugins you do not need to include the DLLs in th
 You should not distribute any files from the client application folder like the library, headers, template files, etc.
 
 The only dependency your end users need to install is the [Microsoft Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe). There's a good chance they already have it installed from another game or application, but you should package this in your installer or select it in the install settings for your game on Steam.
+
+## Future Development
+
+There's a lot more on the way! Here are some of the main features in development:
+
+- New visual editor with customizable extensions
+- C# programming support
+- Lua programming support
+- More advanced global illumination and reflections
+- Box2D physics support
+- Newton Dynamics 4 physics support
