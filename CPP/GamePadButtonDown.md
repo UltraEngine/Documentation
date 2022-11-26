@@ -1,15 +1,14 @@
-# GamePadButtonDown
+# GamePad::ButtonDown
 
 This function detects whether a gamepad button is currently pressed.
 
 ## Syntax
 
-- bool **GamePadButtonDown**(const GamePadButton button, const int index = 0)
+- bool **ButtonDown**(const GamePadButton button, const int index = 0)
 
 | Parameter | Description |
 |---|---|
 | button | gamepad button ID from the list below |
-| index | controller index, to support multiple gamepads |
 
 ## Returns
 
