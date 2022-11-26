@@ -86,6 +86,8 @@ The only dependency your end users need to install is the [Microsoft Visual Stud
 There's a lot more great technology on the way! Here are some of the main features in development:
 
 - New visual editor with customizable extensions
+- VR support
+- Linux and Mac support
 - C# programming support
 - Lua programming support
 - Advanced global illumination and reflections
