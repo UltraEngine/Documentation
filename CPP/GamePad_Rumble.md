@@ -1,6 +1,6 @@
 # GamePad::Rumble
 
-This function controls gamepad haptic feedback.
+This method controls gamepad haptic feedback.
 
 ## Syntax
 
