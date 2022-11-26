@@ -7,7 +7,6 @@ Welcome to the Ultra Engine documentation. Here you will learn how to use the so
 - Discrete GPU with support for Vulkan 1.3 (Integrated graphics are not supported yet)
 - Windows 10 or 11
 - [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/) (Community, Professional, or Enterprise)
-- The latest graphics drivers are recommended
 
 You can try running the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
 
