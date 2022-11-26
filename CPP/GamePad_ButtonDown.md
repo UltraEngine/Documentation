@@ -1,6 +1,6 @@
 # GamePad::ButtonDown
 
-This function detects whether a gamepad button is currently pressed.
+This method detects whether a gamepad button is currently pressed.
 
 ## Syntax
 
