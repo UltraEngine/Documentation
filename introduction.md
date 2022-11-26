@@ -87,7 +87,7 @@ There's a lot more great technology on the way! Here are some of the main featur
 
 - New visual editor with customizable extensions
 - VR support
-- Linux and Mac support
+- Linux and Mac versions
 - C# programming support
 - Lua programming support
 - Advanced global illumination and reflections
