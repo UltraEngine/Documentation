@@ -91,3 +91,5 @@ There's a lot more great technology on the way! Here are some of the main featur
 - Advanced global illumination and reflections
 - Box2D physics support
 - Newton Dynamics 4 physics support
+
+Your feedback is always valued, so feel free to [make a suggestion](https://www.ultraengine.com/community/forum/3-suggestion-box/) for more features you'd like to see.
