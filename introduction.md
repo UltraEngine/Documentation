@@ -10,7 +10,7 @@ Ultra Engine is currently available in "early access" mode, consisting of a C++ 
 - Windows 10 or 11
 - [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/) (Community, Professional, or Enterprise)
 
-You can try running the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
+You can run the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
 
 ## Installation
 
