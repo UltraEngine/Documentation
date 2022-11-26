@@ -914,28 +914,32 @@
 					"filename": "GamePad",
 					"topics": [
 						{
-							"title": "GamePadAxisPosition",
-							"filename": "GamePadAxisPosition"
+							"title": "ButtonDown",
+							"filename": "GamePad_ButtonDown"
 						},
 						{
-							"title": "GamePadButtonDown",
-							"filename": "GamePadButtonDown"
+							"title": "ButtonHit",
+							"filename": "GamePad_ButtonHit"
 						},
 						{
-							"title": "GamePadButtonHit",
-							"filename": "GamePadButtonHit"
+							"title": "GetConnected",
+							"filename": "GamePad_GetConnected"
 						},
 						{
-							"title": "GamePadConnected",
-							"filename": "GamePadConnected"
+							"title": "GetAxisPosition",
+							"filename": "GamePad_GetAxisPosition"
+						},			
+						{
+							"title": "GetGamePads",
+							"filename": "GetGamePads"
+						},			
+						{
+							"title": "Flush",
+							"filename": "GamePad_Flush"
 						},
 						{
-							"title": "GamePadFlush",
-							"filename": "GamePadFlush"
-						},
-						{
-							"title": "GamePadRumble",
-							"filename": "GamePadRumble"
+							"title": "Rumble",
+							"filename": "GamePad_Rumble"
 						}					
 					]
 				},
