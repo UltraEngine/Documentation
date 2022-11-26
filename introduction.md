@@ -42,6 +42,14 @@ Once the engine is installed you can create a new project in the **Projects** ta
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_newproject.png)
 
+The folder containing your project will be opened. You can open the .sln file with Visual Studio and start coding:
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.png)
+
+Your project will now appear in the projects panel for easy access:
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projects.png)
+
 ## Updating
 
 The **Updates** tab will show an indicator when an update is available. After installing the update, you may see an icon indicating that some of your projects are out of date. This happens when the files in the project templates receive any changes. You can click the icon to see a list of all the files that have been modified. When you press the **OK** button to update the project, the new files will overwrite your existing project files. To prevent accidental data loss, a copy of your project file will be saved in the "backup" folder in your project directory.
