@@ -1,15 +1,14 @@
-# GamePadButtonHit
+# GamePad::ButtonHit
 
 This function detects whether a gamepad button has been pressed since the last time it was checked.
 
 ## Syntax
 
-- bool **GamePadButtonHit**(const GamePadButton button, const int index = 0)
+- bool **ButtonHit**(const GamePadButton button, const int index = 0)
 
 | Parameter | Description |
 |---|---|
 | button | gamepad button ID from the list below |
-| index | controller index, to support multiple gamepads |
 
 ## Returns
 
