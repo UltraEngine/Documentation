@@ -34,7 +34,7 @@ The **Settings** tab contains various settings for the cient application.
 
 When your subscription plan is active, you will be able to select a channel in the **Update** panel and install the engine. If you need to activate your plan, you can do so [here](https://www.ultraengine.com/community/store)
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_start.png)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_install.png)
 
 The default channel will contain the current stable build, which does not change. You can select a development channel and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
 
