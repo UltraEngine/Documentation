@@ -1,6 +1,6 @@
 # GamePad::ButtonHit
 
-This function detects whether a gamepad button has been pressed since the last time it was checked.
+This method detects whether a gamepad button has been pressed since the last time it was checked.
 
 ## Syntax
 
