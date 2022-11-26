@@ -83,7 +83,7 @@ The only dependency your end users need to install is the [Microsoft Visual Stud
 
 ## Future Development
 
-There's a lot more on the way! Here are some of the main features in development:
+There's a lot more technology on the way! Here are some of the main features in development:
 
 - New visual editor with customizable extensions
 - C# programming support
