@@ -44,6 +44,7 @@ This is the base class for all 3D objects in a world.
 | [GetVelocity](Entity_GetVelocity.md) | Method | returns the entity linear velocity |
 | [GetWorld](Entity_GetWorld.md) | Method | returns the world the entity resides in |
 | [Instantiate](Entity_Instantiate.md) | Method | creates an instanced copy of the entity |
+| [Listen](Entity_Listen.md) | Method | uses the entity for sound spatialization |
 | [Move](Entity_Move.md) | Method | moves the entity |
 | [Point](Entity_Point.md) | Method | points one entity at another |
 | [RecordCollisions](Entity_RecordCollisions.md) | Method | enables collision recording |
