@@ -1,5 +1,7 @@
 # GamePad
 
+Base class: [Object](Object.md)
+
 Ultra Engine provides built-in support for XBox One and XBox 360 game controllers on Windows.
 
 | Property | Type | Description |
