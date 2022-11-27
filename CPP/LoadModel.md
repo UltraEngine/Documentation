@@ -22,7 +22,7 @@ Ultra Engine natively supports glTF, OBJ, and Leadwerks MDL files. JPEG and PNG 
 
 ## Example
 
-This example loads and displays a model.
+This example loads and displays a 3D model.
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/loadmodel.jpg)
 
