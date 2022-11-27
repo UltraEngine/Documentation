@@ -129,7 +129,7 @@ int main(int argc, const char* argv[])
             }
 
             //Set input
-            player->Control(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
+            player->SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
         }
 
         world->Update();
