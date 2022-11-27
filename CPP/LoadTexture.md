@@ -19,4 +19,4 @@ Returns the loaded texture, or NULL if no texture was loaded.
 
 ## Remarks
 
-If the LOAD_MIPCHAIN flag is specified, the pixel data of the texture will be saved in system memory, and will be available in the *mipchains* texture member.
+Ultra Engine natively supports the DDS and Leadwerks TEX texture file formats. The FITextureLoader plugin supports JPEG, PNG, TGA, GIF, and HDR files.
