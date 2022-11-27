@@ -448,9 +448,17 @@
 							"filename": "Entity_FindChild"
 						},
 						{
+							"title": "GetAirborne",
+							"filename": "Entity_GetAirborne"
+						},						
+						{
 							"title": "GetAngularVelocity",
 							"filename": "Entity_GetAngularVelocity"
 						},
+						{
+							"title": "GetBounds",
+							"filename": "Entity_GetBounds"
+						},						
 						{
 							"title": "GetCollider",
 							"filename": "Entity_GetCollider"
@@ -464,8 +472,8 @@
 							"filename": "Entity_GetColor"
 						},
 						{
-							"title": "GetBounds",
-							"filename": "Entity_GetBounds"
+							"title": "GetCrouched",
+							"filename": "Entity_GetCrouched"
 						},
 						{
 							"title": "GetDistance",
