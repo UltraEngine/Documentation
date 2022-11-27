@@ -492,6 +492,10 @@
 							"filename": "Entity_GetParent"
 						},
 						{
+							"title": "GetPhysicsMode",
+							"filename": "Entity_GetPhysicsMode"
+						},
+						{
 							"title": "GetPickMode",
 							"filename": "Entity_GetPickMode"
 						},
@@ -586,6 +590,10 @@
 						{
 							"title": "SetParent",
 							"filename": "Entity_SetParent"
+						},
+						{
+							"title": "SetPhysicsMode",
+							"filename": "Entity_SetPhysicsMode"
 						},
 						{
 							"title": "SetPickMode",
