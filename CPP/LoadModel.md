@@ -16,6 +16,10 @@ This function loads a model from a file.
 
 Returns the loaded model if successful, otherwise NULL is returned.
 
+## Remarks
+
+Ultra Engine natively supports glTF, OBJ, and Leadwerks MDL files. JPEG and PNG texture files are loaded using the FITextureLoader plugin.
+
 ## Example
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/loadmodel.jpg)
