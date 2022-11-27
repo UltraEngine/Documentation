@@ -18,7 +18,7 @@ This method sets player input for an entity that has its physics mode set to PHY
 
 ## Remarks
 
-You can set the entity physics mode with the [Entity::SetPhysics](Entity_SetPhysics.md) method.
+You can set the entity physics mode with the [Entity::SetPhysicsMode](Entity_SetPhysicsMode.md) method.
 
 You can use the [Entity::GetAirborne](Entity_GetAirborne.md) method to check if the entity is standing on the ground and able to jump.
 
