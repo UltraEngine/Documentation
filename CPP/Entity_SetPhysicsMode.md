@@ -1,6 +1,8 @@
 # Entity::SetPhysicsMode
 
-This method selected the entity physics behavior.
+This method selects the entity physics behavior.
+
+## Syntax
 
 - void **SetPhysicsMode**(const PhysicsMode mode)
 
