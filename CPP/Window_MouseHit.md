@@ -8,7 +8,7 @@ Returns true if the specified mouse button has been pressed since the last call 
 
 | Parameter | Description |
 |---|---|
-| button | mouse button to check the state of |
+| button | mouse button to test, can be MOUSE_LEFT, MOUSE_RIGHT, or MOUSE_MIDDLE |
 
 ## Returns
 
