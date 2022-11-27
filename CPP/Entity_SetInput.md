@@ -1,10 +1,10 @@
-# Entity::Control
+# Entity::SetInput
 
 This method sets player input for an entity that has its physics mode set to PHYSICS_PLAYER.
 
 ## Syntax
 
-- void **Control**(const dFloat angle, const dFloat move, const dFloat strafe = 0, const dFloat jump = 0, const bool crouch = false, const dFloat maxaccel = 40, const dFloat maxdecel = 15)
+- void **SetInput**(const dFloat angle, const dFloat move, const dFloat strafe = 0, const dFloat jump = 0, const bool crouch = false, const dFloat maxaccel = 40, const dFloat maxdecel = 15)
 
 | Paraeeter | Description |
 |---|---|
