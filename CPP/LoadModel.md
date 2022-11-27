@@ -64,7 +64,7 @@ int main(int argc, const char* argv[])
     world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
 
     //Load a model
-    // Battle Damaged Sci-fi Helmet - PBR by theblueturtle_, published under a Creative Commons Attribution-NonCommercial license
+    // Battle Damaged Sci-fi Helmet - PBR by theblueturtle_
     // https://sketchfab.com/models/b81008d513954189a063ff901f7abfe4
     auto model = LoadModel(world, remotepath + "Models/DamagedHelmet.glb");
    
