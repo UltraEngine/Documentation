@@ -101,7 +101,7 @@ int main(int argc, const char* argv[])
             float jump = window->KeyHit(KEY_SPACE) * 8;
              
             //Set input
-            player->Control(camrotation.y, move, strafe, jump, false, maxaccel, maxdecel);
+            player->SetInput(camrotation.y, move, strafe, jump, false, maxaccel, maxdecel);
         }
 
         world->Update();
