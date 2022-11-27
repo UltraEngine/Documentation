@@ -59,6 +59,7 @@ This is the base class for all 3D objects in a world. Terrain, lights, 3D models
 | [SetElasticity](Entity_SetElasticity.md) | Method | sets the entity physics elasticity |
 | [SetFriction](Entity_SetFriction.md) | Method | sets the entity physics friction |
 | [SetHidden](Entity_SetHidden.md) | Method | hides or shows the entity |
+| [SetInput](Entity_SetInput.md) | Method | handles controls for player movement |
 | [SetMass](Entity_SetMass.md) | Method | sets the entity physical mass |
 | [SetMaterial](Entity_SetMaterial.md) | Method | applies a material to the entity |
 | [SetParent](Entity_SetParent.md) | Method | parents one entity to another |
