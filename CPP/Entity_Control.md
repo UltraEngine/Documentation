@@ -1,5 +1,26 @@
 # Entity::Control
 
+This method sets player input for an entity that has its physics mode set to PHYSICS_PLAYER.
+
+## Syntax
+
+- void **Control**(const dFloat angle, const dFloat move, const dFloat strafe = 0, const dFloat jump = 0, const bool crouch = false, const dFloat maxaccel = 0, const dFloat maxdecel = 0)
+
+| Paraeeter | Description |
+|---|---|
+| angle | rotation of the character in degrees |
+| move | forward or backwards movement |
+| strafe | right or left movement |
+| jump | jump force |
+| crouch | crouch state |
+| maxaccel | max acceleration |
+| maxdecel | max deceleration |
+
+## Remarks
+
+You can set the entity physics mode with the [Entity::SetPhysics](Entity_SetPhysics.md) method.
+
+You can use the [Entity::GetAirborne](Entity_GetAirborne.md) method to check if the entity is standing on the ground and able to jump.
 
 ## Example
 
