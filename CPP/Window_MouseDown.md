@@ -8,7 +8,7 @@ Returns the current press state of the specified mouse button.
 
 | Parameter | Description |
 |---|---|
-| button | mouse button to check the state of |
+| button | mouse button to test, can be MOUSE_LEFT, MOUSE_RIGHT, or MOUSE_MIDDLE |
 
 ## Returns
 
