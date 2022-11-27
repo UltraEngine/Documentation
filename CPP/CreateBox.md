@@ -35,7 +35,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a world
     auto world = CreateWorld();
@@ -52,14 +52,16 @@ int main(int argc, const char* argv[])
     auto light = CreateBoxLight(world);
     light->SetRotation(45, 35, 0);
     light->SetRange(-10, 10);
+    light->SetColor(2);
 
     //Create a model
     auto model = CreateBox(world);
-    model->SetColor(0,0,1);
+    model->SetColor(0, 0, 1);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        model->Turn(0, 1, 0);
         world->Update();
         world->Render(framebuffer);
     }
