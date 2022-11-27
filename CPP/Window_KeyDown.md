@@ -4,7 +4,7 @@ Returns the current key state of the specified key.
 
 ## Syntax
 
-- bool **KeyDown**(const [KeyCode](Constants.md#KeyCode) key)
+- bool **KeyDown**(const KeyCode key)
 
 | Parameter | Description |
 |---|---|
