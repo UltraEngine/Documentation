@@ -315,6 +315,10 @@
 									"filename": "CreateCylinder"
 								},
 								{
+									"title": "CreatePlane",
+									"filename": "CreatePlane"
+								},
+								{
 									"title": "CreateSphere",
 									"filename": "CreateSphere"
 								},
