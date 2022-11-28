@@ -21,6 +21,7 @@ Ultra Engine natively supports loading and saving of models in the [glTF](https:
 | [CreateCone](CreateCone.md) | Function | creates a new cone model |
 | [CreateCubeSphere](CreateCubeSphere.md) | Function | creates a new sphere model |
 | [CreateCylinder](CreateCylinder.md) | Function | creates a new cylinder model |
-| [CreateSphere](CreateSphere.md) | Function | creates a new sphere model |
 | [CreateModel](CreateModel.md) | Function | creates a new model |
+| [CreatePlane](CreatePlane.md) | Function | creates a new plane model |
+| [CreateSphere](CreateSphere.md) | Function | creates a new sphere model |
 | [LoadModel](LoadModel.md) | Function | loads a model from a file |
