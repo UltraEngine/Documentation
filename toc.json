@@ -331,6 +331,10 @@
 									"filename": "Model_Save"
 								},
 								{
+									"title": "SetLodDistance",
+									"filename": "Model_SetLodDistance"
+								},
+								{
 									"title": "SetSkeleton",
 									"filename": "Model_SetSkeleton"
 								},	
