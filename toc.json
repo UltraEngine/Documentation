@@ -291,6 +291,10 @@
 									"filename": "Model_Animate"
 								},
 								{
+									"title": "Clear",
+									"filename": "Model_Clear"
+								},
+								{
 									"title": "CreateModel",
 									"filename": "CreateModel"
 								},
