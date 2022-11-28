@@ -4,8 +4,8 @@ This method performs a batch modification of mesh data.
 
 ## Syntax
 
-- void **Modify**(const vector<[Vertex](Vertex.md)>& vertices)
-- void **Modify**(const vector<uint32_t>& indices)
+- void **Modify**(const vector<[Vertex](Vertex.md)\>& vertices)
+- void **Modify**(const vector<uint32_t\>& indices)
 
 | Parameter | Description |
 |---|---|
