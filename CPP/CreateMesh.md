@@ -4,7 +4,7 @@ This function creates a new mesh.
 
 ## Syntax
 
-- shared_ptr<[Mesh](Mesh.md)\> **CreateMesh**(const MeshPrimitives primitive = MESH_TRIANGLES, const std::vector<[Vertex](Vertex.md)>& vertices = {}, const std::vector<uint32_t>& indices = {})
+- shared_ptr<[Mesh](Mesh.md)\> **CreateMesh**(const MeshPrimitives primitive = MESH_TRIANGLES, const std::vector<[Vertex](Vertex.md)\>& vertices = {}, const std::vector<uint32_t\>& indices = {})
   
 | Parameter | Description |
 |---|---|
