@@ -295,10 +295,6 @@
 									"filename": "Model_Clear"
 								},
 								{
-									"title": "CreateModel",
-									"filename": "CreateModel"
-								},
-								{
 									"title": "CreateBox",
 									"filename": "CreateBox"
 								},
@@ -314,6 +310,10 @@
 									"title": "CreateCylinder",
 									"filename": "CreateCylinder"
 								},
+								{
+									"title": "CreateModel",
+									"filename": "CreateModel"
+								},								
 								{
 									"title": "CreatePlane",
 									"filename": "CreatePlane"
