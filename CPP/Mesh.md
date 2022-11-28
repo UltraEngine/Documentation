@@ -21,6 +21,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | gets the position of s vertex |
 | [GetVertexNormal](Mesh_GetVertexNormal.md) | Method | gets the normal of a vertex |
 | [GetVertexTexCoords](Mesh_GetVertexTexCoords.md) | Method | gets the texture coordinates of a vertex |
+| [Modify](Mesh_Modify.md) | Method | batch modify vertices and indices |
 | [Recenter](Mesh_Recenter.md) | Method | recenters a mesh along one or more axes |
 | [Rotate](Mesh_Rotate.md) | Method | rotates a mesh |
 | [Scale](Mesh_Scale.md) | Method | scales a mesh |
