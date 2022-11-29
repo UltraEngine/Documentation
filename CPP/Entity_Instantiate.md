@@ -11,3 +11,7 @@ This method returns an instanced copy of the entity. Resources such as model mes
 | world | world to create new instance in | 
 | recursive | if set to true the entity subhierarchy will also be copied |
 | callstart | if set to true the Start function will be called for all attached actors and scripts |
+
+## Returns
+
+Returns an instanced copy of the entity.
