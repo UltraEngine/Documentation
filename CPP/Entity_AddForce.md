@@ -31,25 +31,31 @@ int main(int argc, const char* argv[])
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a world
-    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
+    auto world = CreateWorld();
 
     //Create a camera
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    auto camera = CreateCamera(world);
+    camera->SetPosition(0, 0, -2);
     camera->SetClearColor(0.125);
 
-    //Create a sprite
-    auto sprite = CreateSprite(world, 100, 100, false, 0, true);
-    sprite->SetMass(1);
-    sprite->SetColor(1, 0, 0);
-    sprite->SetPosition(-500, 0);
-    sprite->SetGravityMode(false);
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(2);
+
+    //Create model
+    auto box = CreateBox(world);
+    box->SetMass(1);
+    box->SetColor(0, 0, 1);
+    box->SetGravityMode(false);
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         //Press the space key to apply a force
         if (window->KeyHit(KEY_SPACE))
         {
-            sprite->AddForce(10000, 0, 0);
+            box->AddForce(100, 0, 0);
         }
 
         world->Update();
