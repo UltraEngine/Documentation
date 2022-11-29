@@ -4,8 +4,8 @@ This method saves a scene to a file or stream.
 
 ## Syntax
 
-- bool **Save**(const [WString](WString.md)& path, const [SaveFlags](Constants.md) flags = SAVE_DEFAULT)
-- bool **Save**(shared_ptr<[Stream](Stream.md)> stream, shared_ptr<[Stream](Stream.md)> binstream, const [SaveFlags](Constants.md) flags = SAVE_DEFAULT)
+- bool **Save**(const [WString](WString.md)& path, const SaveFlags flags = SAVE_DEFAULT)
+- bool **Save**(shared_ptr<[Stream](Stream.md)> stream, shared_ptr<[Stream](Stream.md)> binstream, const SaveFlags flags = SAVE_DEFAULT)
 
 | Parameter | Description |
 |---|---|
