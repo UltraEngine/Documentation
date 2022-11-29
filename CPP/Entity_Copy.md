@@ -29,9 +29,8 @@ int main(int argc, const char* argv[])
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a world
-    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
-    world->SetGravity(0, -9.81 * 100, 0);
-
+    auto world = CreateWorld();
+    
     //Create a camera
     auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
     camera->SetClearColor(0.125);
@@ -39,7 +38,7 @@ int main(int argc, const char* argv[])
     //Create a sprite
     auto sprite = CreateSprite(world, 100, 100);
     sprite->SetPosition(200 - 50, -50);
-    sprite->SetColor(1, 0, 0);
+    sprite->SetColor(0, 0, 1);
 
     //Make an instance
     auto sprite2 = sprite->Copy(world);
