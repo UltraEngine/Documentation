@@ -39,12 +39,16 @@ int main(int argc, const char* argv[])
     camera->SetClearColor(0.125);
 
     //Create light
-    auto light = CreateDirectionalLight(world);
-    light->SetRotation(45, -35, 0);
+    auto light = CreateBoxLight(world);
+    light->SetRange(-20, 20);
+    light->SetArea(30, 30);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(2);
 
     //Create ground
     auto ground = CreateBox(world, 20, 1, 20);
     ground->SetPosition(0, -0.5, 0);
+    ground->SetColor(0, 1, 0);
 
     //Create model
     auto model = CreateSphere(world, 1);
@@ -54,42 +58,42 @@ int main(int argc, const char* argv[])
 
     //Add some parts
     auto part = CreateCone(world);
-    part->SetColor(0, 1, 0);
+    part->SetColor(1, 0, 0);
     part->SetPosition(1, 0, 0);
     part->SetRotation(0, 0, -90);
     part->SetParent(model);
 
     part = CreateCone(world);
-    part->SetColor(0, 1, 0);
+    part->SetColor(1, 0, 0);
     part->SetPosition(-1, 0, 0);
     part->SetRotation(0, 0, 90);
     part->SetParent(model);
 
     part = CreateCone(world);
-    part->SetColor(0, 1, 0);
+    part->SetColor(1, 0, 0);
     part->SetPosition(0, 0, 1);
     part->SetRotation(90, 0, 0);
     part->SetParent(model);
 
     part = CreateCone(world);
-    part->SetColor(0, 1, 0);
+    part->SetColor(1, 0, 0);
     part->SetPosition(0, 0, -1);
     part->SetRotation(-90, 0, 0);
     part->SetParent(model);
 
     part = CreateCone(world);
-    part->SetColor(0, 1, 0);
+    part->SetColor(1, 0, 0);
     part->SetPosition(0, -1, 0);
     part->SetRotation(180, 0, 0);
     part->SetParent(model);
 
     part = CreateCone(world);
-    part->SetColor(0, 1, 0);
+    part->SetColor(1, 0, 0);
     part->SetPosition(0, 1, 0);
     part->SetParent(model);
 
     model->SetPosition(0, 5, 0);
-    
+
     //Remove colliders from child primitives
     for (auto child : model->kids)
     {
