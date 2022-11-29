@@ -11,3 +11,7 @@ This method returns a unique copy of the entity. Resources such as model meshes 
 | world | world to create new copy in | 
 | recursive | if set to true the entity subhierarchy will also be copied |
 | callstart | if set to true the Start function will be called for all attached actors and scripts |
+
+## Returns
+
+Returns a copy of the entity.
