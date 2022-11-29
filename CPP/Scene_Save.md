@@ -18,6 +18,10 @@ This method saves a scene to a file or stream.
 
 If the scene is successfully saved true is returned, otherwise false is returned.
 
+## Remarks
+
+This feature is in continued development and its behavior may change somewhat in future updates.
+
 ## Example
 
 This example saves the starting scene and reloads it when the space key is pressed.
