@@ -20,7 +20,9 @@ Returns true of the scene was successfully reloaded, otherwise false is returned
 
 ## Remarks
 
-This feature is in continued development and its behavior may change somewhat in updates.
+This method can be faster than [LoadScene](LoadScene.md) because it does not create any new objects. It may be able to handle scenes that been updated since the saved scene was created.
+
+This feature is in continued development and its behavior may change somewhat in future updates.
 
 ## Example
 
