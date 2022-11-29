@@ -33,28 +33,32 @@ int main(int argc, const char* argv[])
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a world
-    auto world = CreateWorld(PHYSICSENGINE_BOX2D);
-    world->SetGravity(0, -9.81 * 100, 0);
+    auto world = CreateWorld();
 
     //Create a camera
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    auto camera = CreateCamera(world);
+    camera->SetPosition(0, 0, -2);
     camera->SetClearColor(0.125);
 
-    //Create a sprite
-    auto sprite = CreateSprite(world, 10, 100);
-    sprite->SetColor(1, 0, 0);
-    sprite->mesh->Recenter(true, false, false);
-    sprite->mesh->Finalize();
-    sprite->UpdateBounds();
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(2);
+
+    //Create model
+    auto box = CreateBox(world);
+    box->SetColor(0, 0, 1);
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        //Move the mouse to point the box
         auto mousepos = window->GetMousePosition();
         Vec3 dir;
         dir.x = mousepos.x - framebuffer->size.x / 2;
         dir.y = -(mousepos.y - framebuffer->size.y / 2);
-        sprite->AlignToVector(dir, 1, 0.1);
-        
+        box->AlignToVector(dir, 1, 0.1);
+
         world->Update();
         world->Render(framebuffer);
     }
