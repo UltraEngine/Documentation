@@ -4,11 +4,7 @@ This function creates a new world object.
 
 ## Syntax
 
-- shared_ptr<[World](World.md)\> **CreateWorld**(const PhysicsEngine physics = PHYSICSENGINE_NEWTON3)
-
-| Parameter | Description |
-|---|---|
-| physics | physics engine to use, can be PHYSICSENGINE_NONE or PHYSICSENGINE_NEWTON3 |
+- shared_ptr<[World](World.md)\> **CreateWorld**()
 
 ## Returns
 
