@@ -11,6 +11,10 @@ This command loads a scene from a file path or stream.
 
 If the scene is successfully loaded a new scene object is returned, otherwise NULL is returned.
 
+## Remarks
+
+This feature is in continued development and its behavior may change somewhat in future updates.
+
 ## Example
 
 This example saves the starting scene and reloads it when the space key is pressed.
