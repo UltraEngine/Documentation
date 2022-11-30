@@ -60,4 +60,73 @@ You can copy an actor. The entity will be instantiated and all components will b
 auto actor2 = actor->Copy();
 ```
 
-The entity component system works together with the [Scene](Scene.md) system to save your entity components to a file and load them back into the program. This can be used for game saves or serializing the game state to send over a network to another player.
+The entity component system works together with the [Scene](Scene.md) system to save your entity components to a file and load them back into the program. This can be used for game saves or serializing the game state to send over a network to another player. In the example below, a scene is created, saved, and loaded again with C++ member values intact:
+
+```c++
+#include "UltraEngine.h"
+#include "ComponentSystem.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125);
+    camera->SetPosition(0, 0, -4);
+
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(45, 35, 0);
+    light->SetRange(-10, 10);
+    light->SetColor(2);
+
+    //Streams for storing the scene
+    shared_ptr<BufferStream> stream = CreateBufferStream();
+    shared_ptr<BufferStream> binstream = CreateBufferStream();
+
+    //Put this in brackets and all the variables will go out of scope at the end
+    {
+        //Create an actor
+        auto box = CreateBox(world);
+        box->SetColor(0, 0, 1);
+        auto actor = CreateActor(box);
+
+        //Add a component
+        auto mover = actor->AddComponent<Mover>();
+
+        //Set a member of the component
+        mover->rotation.y = -45;
+
+        //Save a scene
+        auto scene = CreateScene();
+        scene->AddEntity(box);
+        scene->Save(stream, binstream);
+    }
+
+    //Load the scene
+    stream->Seek(0);
+    binstream->Seek(0);
+    auto scene = LoadScene(world, stream, binstream);
+
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        world->Update();
+        world->Render(framebuffer);
+    }
+    return 0;
+}
+```
