@@ -97,7 +97,7 @@ int main(int argc, const char* argv[])
     shared_ptr<BufferStream> stream = CreateBufferStream();
     shared_ptr<BufferStream> binstream = CreateBufferStream();
 
-    //Put this in brackets and all the variables will go out of scope at the end
+    //Put this in brackets and all the variables will go out of scope at the end, and the objects will be deleted
     {
         //Create an actor
         auto box = CreateBox(world);
