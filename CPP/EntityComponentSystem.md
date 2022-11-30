@@ -114,6 +114,10 @@ int main(int argc, const char* argv[])
         auto scene = CreateScene();
         scene->AddEntity(box);
         scene->Save(stream, binstream);
+        
+        //Change some settings just to prove that it's working
+        box->SetColor(1, 0, 0);
+        mover->rotation.y = 0;
     }
 
     //Load the scene
