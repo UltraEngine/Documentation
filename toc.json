@@ -2719,6 +2719,10 @@
 					"filename": "Scene",
 					"topics": [
 						{
+							"title": "CreateScene",
+							"filename": "CreateScene"
+						},
+						{
 							"title": "LoadScene",
 							"filename": "LoadScene"
 						},
