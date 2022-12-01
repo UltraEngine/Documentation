@@ -200,6 +200,10 @@
 									"filename": "Camera_Render"
 								},
 								{
+									"title": "SetClearMode",
+									"filename": "Camera_SetClearMode"
+								},
+								{
 									"title": "SetDepthPrepass",
 									"filename": "Camera_SetDepthPrepass"
 								},
