@@ -689,7 +689,7 @@
 							"topics":
 							[								
 								{
-									"title": "Collision",
+									"title": "Collide",
 									"filename": "Component_Collide"									
 								},
 								{
