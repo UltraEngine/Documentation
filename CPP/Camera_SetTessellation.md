@@ -54,7 +54,7 @@ int main(int argc, const char* argv[])
     light->SetColor(1.2);
 
     //Display material
-    auto model = CreateQuadSphere(world, 0.5, 8, true);
+    auto model = CreateCubeSphere(world, 0.5, 8, true);
     auto mtl = LoadMaterial("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl");
     model->SetMaterial(mtl);
 
