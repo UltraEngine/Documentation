@@ -25,6 +25,7 @@ To add a new component class, create a new .hpp file in "Source/Components" with
 class MyComponent : public Component
 {
 public: 
+
     virtual void Start()
     {
     
