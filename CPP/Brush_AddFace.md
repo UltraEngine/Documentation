@@ -44,6 +44,7 @@ int main(int argc, const char* argv[])
 	light->SetRange(-20, 20);
 	light->SetArea(20, 20);
 	light->SetRotation(35, 35, 0);
+	light->SetColor(2);
 
 	//Create brush
 	auto brush = CreateBrush(world);
