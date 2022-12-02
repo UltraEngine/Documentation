@@ -16,6 +16,32 @@ In the core Ultra Engine API you are accustomed to using entities. In the entity
 
 [Components](Component.md) are blocks of functionality that can be added to an actor. An actor can have multiple components, but only one component of each type.
 
+To add a new component class, create a new .hpp file in "Source/Components" with the name of the class. The name of the file must match the class name and cannot contain any spaces. For example "Source/Components/MyComponent.hpp". Open the file and add this code:
+```c++
+#pragma once
+#include "UltraEngine.h"
+#include "../ComponentSystem.h"
+
+class MyComponent : public Component
+{
+public: 
+    virtual void Start()
+    {
+    
+    }
+
+    virtual void Update()
+    {
+    
+    }
+    
+    virtual void Collision(shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
+    {
+    
+    }
+}; 
+```
+
 ### Usage
 
 To start using the entity component system, create an actor:
