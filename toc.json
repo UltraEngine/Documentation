@@ -2606,13 +2606,13 @@
 									"filename": "String_Find"
 								},
 								{
-									"title": "Left",
-									"filename": "String_Left"
-								},
-								{
 									"title": "GetSize",
 									"filename": "String_GetSize"
 								},
+								{
+									"title": "Left",
+									"filename": "String_Left"
+								},								   
 								{
 									"title": "Lower",
 									"filename": "String_Lower"
