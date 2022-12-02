@@ -701,6 +701,10 @@
 									"filename": "Component_SaveState"									
 								},
 								{
+									"title": "Start",
+									"filename": "Component_Start"									
+								},
+								{
 									"title": "Update",
 									"filename": "Component_Update"									
 								}
