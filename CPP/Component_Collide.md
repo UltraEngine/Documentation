@@ -1,10 +1,10 @@
-# Component::Collision
+# Component::Collide
 
 This method is called evefy time the entity collides with another object.
 
 ## Syntax
 
-- void **Collision**(shared_ptr<[Actor](Actor.md)> collidedactor, const [Vec3](Vec3.md)& position, const [Vec3](Vec3.md)& normal, const dFloat speed)
+- void **Collide**(shared_ptr<[Actor](Actor.md)> collidedactor, const [Vec3](Vec3.md)& position, const [Vec3](Vec3.md)& normal, const dFloat speed)
 
 | Parameter | Description |
 |---|---|
