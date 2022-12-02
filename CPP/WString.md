@@ -12,8 +12,8 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 | WString | Constructor | WString(const float f) |
 | WString | Constructor | WString(const double f) |
 | [Find](WString_Find.md) | Method | performs a search operation |
-| [Left](WString_Left.md) | Method | returns leftmost characters |
 | [GetSize](WString_GetSize.md) | Method | returns the length of the string |
+| [Left](WString_Left.md) | Method | returns leftmost characters |
 | [Lower](WString_Lower.md) | Method | converts the string to lowercase |
 | [Mid](WString_Mid.md) | Method | returns the length of the string |
 | [Replace](WString_Replace.md) | Method | performs a search and replace operation |
