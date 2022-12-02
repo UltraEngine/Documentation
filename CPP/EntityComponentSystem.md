@@ -43,6 +43,8 @@ public:
 }; 
 ```
 
+You can omit any of the above methods if you are not using them. At scale, it will make your program more efficient if you declare only the methods you actually use.
+
 ### Usage
 
 To start using the entity component system, create an actor:
