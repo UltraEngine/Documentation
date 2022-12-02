@@ -26,7 +26,7 @@ int main(int argc, const char* argv[])
     {
         Assert(false);
     }
-    catch (exception e)
+    catch (std::exception e)
     {
         WString error = e.what();
         DebugBreak();
