@@ -20,7 +20,7 @@ int main(int argc, const char* argv[])
     {
         RuntimeError("Something went wrong!");
     }
-    catch (exception e)
+    catch (std::exception e)
     {
         WString error = e.what();
         DebugBreak();
