@@ -2844,12 +2844,12 @@
 							"filename": "World_SetCollisionResponse"
 						},
 						{
-							"title": "SetGravity",
-							"filename": "World_SetGravity"
-						},
-						{
 							"title": "SetEnvironmentMap",
 							"filename": "World_SetEnvironmentMap"
+						},
+						{
+							"title": "SetGravity",
+							"filename": "World_SetGravity"
 						},
 						{
 							"title": "Update",
