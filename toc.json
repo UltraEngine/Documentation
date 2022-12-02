@@ -690,7 +690,7 @@
 							[								
 								{
 									"title": "Collision",
-									"filename": "Component_Collision"									
+									"filename": "Component_Collide"									
 								},
 								{
 									"title": "LoadState",
