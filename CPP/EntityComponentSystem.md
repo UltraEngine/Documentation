@@ -16,35 +16,6 @@ In the core Ultra Engine API you are accustomed to using entities. In the entity
 
 [Components](Component.md) are blocks of functionality that can be added to an actor. An actor can have multiple components, but only one component of each type.
 
-To add a new component class, create a new .hpp file in "Source/Components" with the name of the class. The name of the file must match the class name and cannot contain any spaces. For example "Source/Components/MyComponent.hpp". Open the file and add this code:
-```c++
-#pragma once
-#include "UltraEngine.h"
-#include "../ComponentSystem.h"
-
-class MyComponent : public Component
-{
-public: 
-
-    virtual void Start()
-    {
-    
-    }
-
-    virtual void Update()
-    {
-    
-    }
-    
-    virtual void Collide(shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
-    {
-    
-    }
-}; 
-```
-
-You can omit any of the above methods if you are not using them. At scale, it will make your program more efficient if you declare only the methods you actually use.
-
 ### Usage
 
 To start using the entity component system, create an actor:
@@ -88,6 +59,8 @@ You can copy an actor. The entity will be instantiated and all components will b
 ```c++
 auto actor2 = actor->Copy();
 ```
+
+### Saving and Loading
 
 The entity component system works together with the [Scene](Scene.md) system to save your entity components to a file and load them back into the program. This can be used for game saves or serializing the game state to send over a network to another player. In the example below, a scene is created, saved, and loaded again with C++ member values intact:
 
@@ -163,3 +136,34 @@ int main(int argc, const char* argv[])
     return 0;
 }
 ```
+
+### Creating New Components
+
+To add a new component class, create a new .hpp file in "Source/Components" with the name of the class. The name of the file must match the class name and cannot contain any spaces. For example "Source/Components/MyComponent.hpp". Open the file and add this code:
+```c++
+#pragma once
+#include "UltraEngine.h"
+#include "../ComponentSystem.h"
+
+class MyComponent : public Component
+{
+public: 
+
+    virtual void Start()
+    {
+    
+    }
+
+    virtual void Update()
+    {
+    
+    }
+    
+    virtual void Collide(shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
+    {
+    
+    }
+}; 
+```
+
+You can omit any of the above methods if you are not using them. At scale, it will make your program more efficient if you declare only the methods you actually use.
