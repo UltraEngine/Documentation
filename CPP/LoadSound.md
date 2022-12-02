@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
 	//Play sound
 	auto speaker = CreateSpeaker();
 	speaker->SetSound(sound);
-	speaker->SetLoopMode(true);
+	speaker->SetLooping(true);
 	speaker->Play();
 
 	while (window->Closed() == false)
