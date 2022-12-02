@@ -36,7 +36,7 @@ public:
     
     }
     
-    virtual void Collision(shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
+    virtual void Collide(shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
     {
     
     }
