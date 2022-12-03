@@ -4,7 +4,7 @@ This methods retrieves the display size.
 
 ## Syntax
 
-- [iVec2](iVec2.md) GetSize()
+- [iVec2](iVec2.md) **GetSize**()
 
 ## Returns
 
