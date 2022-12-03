@@ -1,8 +1,8 @@
-# ExtractDir #
+# ExtractDir
 
 This function returns the folder part of a file path.
 
-## Syntax ##
+## Syntax
 
 - [WString](WString) **ExtractDir**(const [WString](WString)& path)
 
@@ -10,15 +10,16 @@ This function returns the folder part of a file path.
 | --- | --- |
 | path | full file path |
 
-## Returns ##
+## Returns
 
 Returns the folder part of the specified path.
 
 ## Example
+
 ```c++
 #include "pch.h"
 
-using namesoace UltraEngine;
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
