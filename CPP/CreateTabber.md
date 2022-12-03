@@ -1,8 +1,8 @@
-# CreateTabber #
+# CreateTabber
 
 The tabber widget is a tabbed panel that allows the user to select different "pages" in a user interface.
 
-## Syntax ##
+## Syntax
 
 - shared_ptr<[Widget](Widget.md)\> **CreateTabber**(const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)\> parent)
 
@@ -14,7 +14,7 @@ The tabber widget is a tabbed panel that allows the user to select different "pa
 | height | widget height |
 | parent | parent widget |
 
-## Example ##
+## Example
 
 ![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateTabber.png)
 
@@ -41,7 +41,7 @@ int main(int argc, const char* argv[])
     tabber->AddItem("Item 2");
     tabber->AddItem("Item 3");
 
-    array<shared_ptr<Widget>, 3> panels;
+    std::array<std::shared_ptr<Widget>, 3> panels;
     sz = tabber->ClientSize();
     panels[0] = CreatePanel(0, 0, sz.x, sz.y, tabber);
     panels[1] = CreatePanel(0, 0, sz.x, sz.y, tabber);
@@ -51,8 +51,8 @@ int main(int argc, const char* argv[])
     panels[1]->SetColor(0.1, 0.15, 0.1, 1);
     panels[2]->SetColor(0.1, 0.1, 0.15, 1);
 
-    panels[1]->Hide();
-    panels[2]->Hide();
+    panels[1]->SetHidden(true);
+    panels[2]->SetHidden(true);
 
     while (true)
     {
@@ -66,11 +66,11 @@ int main(int argc, const char* argv[])
                 {
                     if (n == ev.data)
                     {
-                        panels[n]->Show();
+                        panels[n]->SetHidden(false);
                     }
                     else
                     {
-                        panels[n]->Hide();
+                        panels[n]->SetHidden(true);
                     }
                 }
             }
