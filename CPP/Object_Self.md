@@ -40,7 +40,7 @@ public:
 
 int main(int argc, const char* argv[])
 {
-    auto o = make_shared<MyClass>();
+    auto o = std::make_shared<MyClass>();
     o->text = "Hello!";
     o->Update();
     return 0;
