@@ -122,7 +122,7 @@ public:
 //Create function
 shared_ptr<Widget> CreateCustomWidget(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<Widget> parent, const CustomWidgetStyle style)
 {
-    auto widget = make_shared<CustomWidget>();
+    auto widget = std::make_shared<CustomWidget>();
     widget->Initialize(text, x, y, width, height, parent, style);
     return widget;
 }
