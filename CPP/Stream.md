@@ -8,7 +8,7 @@ This class provides an interface for reading and writing files.
 | ----- | ----- | ----- |
 | path | const [WString](WString.md)& | Read-only file name or URL. |
 | [Close](Stream_Close.md) | Method | closes the stream |
-| [EOF](Stream_EOF.md) | Method | returns true when the end of the stream is reached |
+| [EoF](Stream_EoF.md) | Method | returns true when the end of the stream is reached |
 | [Flush](Stream_Flush.md) | Method | flushes the stream |
 | [GetSize](Stream_GetSize.md) | Method | returns the stream size |
 | [GetPosition](Stream_GetPosition.md) | Method | returns the current position for read and write operations |
