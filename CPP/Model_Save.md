@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
   if (model->Save("box.obj"))
   {
     //Show file
-    OpenDir("box.obj")
+    OpenDir("box.obj");
   }
 }
 ```
