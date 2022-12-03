@@ -1825,6 +1825,10 @@
 									"filename": "Window_Restore"
 								},
 								{
+									"title": "SetCursor",
+									"filename": "Window_SetCursor"
+								},
+								{
 									"title": "SetHidden",
 									"filename": "Window_SetHidden"
 								},
