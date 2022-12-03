@@ -746,12 +746,12 @@
 									"filename": "Stream_Flush"
 								},
 								{
+									"title": "GetPosition",
+									"filename": "Stream_GetPosition"
+								},							   
+								{
 									"title": "GetSize",
 									"filename": "Stream_GetSize"
-								},
-								{
-									"title": "Position",
-									"filename": "Stream_GetPosition"
 								},
 								{
 									"title": "Read",
