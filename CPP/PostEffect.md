@@ -21,8 +21,11 @@ A post effect file specifies one or more shader passes. For each subpass, a text
             {
                 "shader":
                 {
-                    "vertex": "Shaders/PostEffects/PostEffect.vert.spv",
-                    "fragment": "Shaders/PostEffects/Grayscale.frag.spv"
+                    "float32":
+                    {
+                        "vertex": "Shaders/PostEffects/PostEffect.vert.spv",
+                        "fragment": "Shaders/PostEffects/Grayscale.frag.spv"
+                    }
                 }
             }
         ]
@@ -48,15 +51,21 @@ You can specify sized texture buffers and render to those instead of to a textur
                 "target": 0,
                 "shader":
                 {
-                    "vertex": "Shaders/PostEffects/PostEffect.vert.spv",
-                    "fragment": "Shaders/PostEffects/SSAO.frag.spv"
+                    "float32":
+                    {
+                        "vertex": "Shaders/PostEffects/PostEffect.vert.spv",
+                        "fragment": "Shaders/PostEffects/SSAO.frag.spv"
+                    }
                 }
             },
             {
                 "shader":
                 {
-                    "vertex": "Shaders/PostEffects/PostEffect.vert.spv",
-                    "fragment": "Shaders/PostEffects/SSAODenoiser.frag.spv"
+                    "float32"
+                    {
+                        "vertex": "Shaders/PostEffects/PostEffect.vert.spv",
+                        "fragment": "Shaders/PostEffects/SSAODenoiser.frag.spv"
+                    }
                 }
             }                            
         ]
