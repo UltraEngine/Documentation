@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
     camera->SetFOV(70);
     camera->SetClearColor(0.125);
     camera->SetPosition(0, 3, -6);
-    camera->SetRotation(35,0,0);
+    camera->SetRotation(35, 0, 0);
 
     //Create light
     auto light = CreateBoxLight(world);
@@ -65,16 +65,12 @@ int main(int argc, const char* argv[])
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        if (window->MouseHit(MOUSE_LEFT))
+        //Press the space key to reposition the agent
+        if (window->KeyHit(KEY_SPACE))
         {
-            auto mousepos = window->GetMousePosition();
-            auto rayinfo = camera->Raycast(framebuffer, mousepos.x, mousepos.y);
-            if (rayinfo.success)
-            {
-                agent->Navigate(rayinfo.position);
-            }
+            agent->SetPosition(navmesh->RandomPoint());
+            player->Sync();
         }
-        if (window->KeyHit(KEY_SPACE)) agent->Stop();
 
         world->Update();
         world->Render(framebuffer);
