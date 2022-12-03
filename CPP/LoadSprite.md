@@ -23,33 +23,29 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
-    
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+
     //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
-    
+
     //Create world
     auto world = CreateWorld();
-    
+
     //Create camera
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0,0,1);
-    
-    //Create canvas
-    auto canvas = CreateCanvas(camera);
-    
+    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    camera->SetClearColor(0.125);
+
     //Create sprite
-    auto sprite = LoadSprite(canvas, "https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Sprites/nightraider.dds");
-    sprite->MidHandle();
-    sprite->SetPosition(framebuffer->size.x * 0.5, framebuffer->size.y * 0.5);
-    
+    auto sprite = LoadSprite(world, "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Sprites/nightraider.dds");
+    sprite->SetPosition(-sprite->size.x * 0.5f, -sprite->size.y * 0.5f);
+    sprite->mesh->material->SetAlphaMask(true);
+
     //Main loop
-    while (!window->Closed() and !window->KeyHit(KEY_ESCAPE))
+    while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
-        sprite->Turn(1.0);
         world->Update();
-        world->Render(framebuffer,true);
+        world->Render(framebuffer);
     }
     return 0;
 }
-  ```
+```
