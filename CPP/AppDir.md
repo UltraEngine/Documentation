@@ -13,6 +13,10 @@ Returns the starting folder the application is launched in.
 ## Example
 
 ```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
 int main(int argc, const char* argv[])
 {
     Print(AppDir());
