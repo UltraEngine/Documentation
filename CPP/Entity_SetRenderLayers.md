@@ -1,5 +1,7 @@
 # Entity::SetRenderLayers
 
+This method is used to control which cameras an entty is visible in.
+
 ## Syntax
 
 - void **SetRenderLayers**(const unsigned int renderlayers)
