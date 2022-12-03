@@ -1563,6 +1563,10 @@
 									"filename": "Widget_GetItemText"
 								},
 								{
+									"title": "GetHidden",
+									"filename": "Widget_GetHidden"
+								},
+								{
 									"title": "GetParent",
 									"filename": "Widget_GetParent"
 								},
@@ -1661,6 +1665,10 @@
 								{
 									"title": "SetFontScale",
 									"filename": "Widget_SetFontScale"
+								},
+								{
+									"title": "SetHidden",
+									"filename": "Widget_SetHidden"
 								},
 								{
 									"title": "SetIcon",
