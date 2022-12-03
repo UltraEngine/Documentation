@@ -1,26 +1,28 @@
 # CreateFileSystemWatcher #
 This function can be used to create an object that monitors a specified directory for changes.
 
-## Syntax ##
+## Syntax
 - shared_ptr<[FileSystemWatcher](FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const [WString](WString.md)& path, const bool recursive = true)
 
-### Parameters ###
-|Name|Description|
+|Parameter|Description|
 |---|---|
 |path|path to folder to watch|
 |recursive|set to true to detect changes to the subdirectory|
 
-## Returns ##
+## Returns
+
 Returns a new FileSystemWatcher object if the specified directory exists, otherwise NULL is returned.
 
-## Remarks ##
+## Remarks
+
 Once the FileSystemWatcher object is created, it will monitor the directory to detect changes. When changes occur an event will be emitted. The event ID will be one of the following
 - EVENT_FILECREATE
 - EVENT_FILEDELETE
 - EVENT_FILERENAME
 - EVENT_FILECHANGE
 
-## Example ##
+## Example
+
 ```c++
 #include "pch.h"
 
@@ -36,10 +38,9 @@ int main(int argc, const char* argv[])
     // Get the primary display
     auto displaylist = GetDisplays();
     auto display = displaylist[0];
-    auto displayscale = display->GetScale();
 
     // Create a window
-    auto window = CreateWindow("Example", 0, 0, 1280 * displayscale.x, 720 * displayscale.y, display, WINDOW_TITLEBAR);
+    auto window = CreateWindow("Example", 0, 0, 1280, 720, display, WINDOW_TITLEBAR | WINDOW_CENTER);
 
     // Download the texture file
     CreateDir("Download");
