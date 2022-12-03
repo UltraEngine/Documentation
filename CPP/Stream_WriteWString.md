@@ -1,29 +1,38 @@
-# Stream::WriteWString #
+# Stream::WriteWString
+
 This method writes a wide string to the stream at the current position.
 
-## Syntax ##
+## Syntax
+
 - void **WriteWString**(const [WString](WString.md)& s, const bool terminate = true)
 
-### Parameters ###
-| Name | Description |
+| Parameter | Description |
 |---|---|
 | s | string to write |
 | terminate | if true an extra short with a value of zero will be written at the end of the string |
 
-## Example ##
+## Example
 
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
- 
+
+//This example saves a wide string to a UTF-16 encoded text file.
+
 int main(int argc, const char* argv[])
 {
-    //Saves a wide string to a UTF-16 encoded text file.
     WString s = L"Привет, как ты сегодня? Я в порядке.";
-    auto strean = WriteFile("utf-16.txt");
+
+    WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
+    auto stream = WriteFile(path);
     stream->WriteByte(255);
     stream->WriteByte(254);
     stream->WriteWString(s, false);
+    stream->Close();
+
+    RunFile(path);
+
+    return 0;
 }
 ```
