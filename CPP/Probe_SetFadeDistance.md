@@ -13,6 +13,8 @@ This method sets the probe volume edge fade. This can be used to make specified 
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/probe.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
@@ -34,7 +36,7 @@ int main(int argc, const char* argv[])
 
     //Create world
     auto world = CreateWorld();
-    world->SetAmbientLight(0.1);
+    world->SetAmbientLight(0.05);
 
     //Set environment maps
     auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
