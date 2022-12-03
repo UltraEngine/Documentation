@@ -1,7 +1,9 @@
-# Stream::WriteWLine #
+# Stream::WriteWLine
+
 This method writes a line of wide text to the stream at the current position.
 
-## Syntax ##
+## Syntax
+
 - void **WriteWLine**(const [WString](WString.md)& s)
 
 | Parameter | Description |
@@ -11,28 +13,24 @@ This method writes a line of wide text to the stream at the current position.
 ## Example
 
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
+//This example saves a wide string to a UTF-16 encoded text file.
+
 int main(int argc, const char* argv[])
 {
-	WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
+    WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
+    auto stream = WriteFile(path);
+    stream->WriteByte(255);
+    stream->WriteByte(254);
+    stream->WriteWLine(L"Привет, как ты сегодня?");
+    stream->WriteWLine(L"Я в порядке.");
+    stream->Close();
 
-	//Write a new file
-	auto stream = WriteFile(path);
-	if (stream == NULL)
-	{
-		Print("Failed to write file.");
-		return 0;
-	}
+    RunFile(path);
 
-	stream->WriteWLine("Hello, world!");
-	stream->Close();
-
-	stream = ReadFile(path);
-	Print(stream->ReadWLine());
-
-	return 0;
+    return 0;
 }
 ```
