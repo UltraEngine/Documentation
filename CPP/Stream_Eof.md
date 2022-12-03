@@ -1,4 +1,4 @@
-# Stream::EoF
+# Stream::Eof
 
 This method returns true when the end of the stream is reached.
 
