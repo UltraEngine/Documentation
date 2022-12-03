@@ -1785,10 +1785,6 @@
 									"filename": "Window_GetSize"
 								},
 								{
-									"title": "HideMouse",
-									"filename": "Window_HideMouse"
-								},
-								{
 									"title": "KeyDown",
 									"filename": "Window_KeyDown"
 								},
@@ -1843,14 +1839,6 @@
 								{
 									"title": "SetShape",
 									"filename": "Window_SetShape"
-								},
-								{
-									"title": "Show",
-									"filename": "Window_Show"
-								},
-								{
-									"title": "ShowMouse",
-									"filename": "Window_ShowMouse"
 								},
 								{
 									"title": "TransformCoord",
