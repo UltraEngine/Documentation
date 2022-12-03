@@ -71,7 +71,7 @@ int main(int argc, const char* argv[])
         world->Update();
 
         rotation.y = Cos(float(Millisecs()) / 10.0f) * 65.0f;
-        neck->Turn(rotation);
+        neck->Turn(rotation, true);
 
         world->Render(framebuffer);
     }
