@@ -11,6 +11,10 @@ This method saves the model to a file, in [glTF](https://www.khronos.org/gltf/) 
 | path | file path to save |
 | flags | optional save flags |
 
+## Returns
+
+Returns true if the model is successfully saved, otherwise false is returned.
+
 ## Example
 
 ```c++
