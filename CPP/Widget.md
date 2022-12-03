@@ -19,6 +19,7 @@ This class handle user interface elements. A variety of widget types are support
 | [DoubleClick](Widget_DoubleClick.md) | Method | called when a mouse button is clicked twice in rapid succession
 | [Draw](Widget_Draw.md) | Method | called each time the widget is redrawn |
 | [GetItemText](Widget_GetItemText.md) | Method | gets the widget item text |
+| [GetHidden](Widget_GetHidden.md) | Method | returns the widget visibility |
 | [GetParent](Widget_GetParent.md) | Method | returns the widget parent |
 | [GetPosition](Widget_GetPosition.md) | Method | gets the button position |
 | [GetSelectedItem](Widget_GetSelectedItem.md) | Method | gets the selected widget item |
@@ -43,6 +44,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetColor](Widget_SetColor.md) | Method | sets the widget color |
 | [SetFontBold](Widget_SetFontBold.md) | Method | sets the widget font weight |
 | [SetFontScale](Widget_SetFontScale.md) | Method | sets the widget font scale |
+| [SetHidden](Widget_SetHidden.md) | Method | hides or shows the widget |
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
 | [SetItemText](Widget_SetItemText.md) | Method | modifies the item text |
