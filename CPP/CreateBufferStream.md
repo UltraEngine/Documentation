@@ -33,7 +33,7 @@ int main(int argc, const char* argv[])
 	auto stream = CreateBufferStream(buffer);
 
 	//Read from the memory buffer as if it were a file
-	while (!stream->EOF())
+	while (!stream->EoF())
 	{
 		Print(stream->ReadInt());
 	}
