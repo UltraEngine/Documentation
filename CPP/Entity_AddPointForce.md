@@ -53,7 +53,7 @@ int main(int argc, const char* argv[])
 
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        //Press the space key to apply a force
+        //Click the mouse to apply a force
         if (window->MouseHit(MOUSE_LEFT))
         {
             auto mousepos = window->GetMousePosition();
