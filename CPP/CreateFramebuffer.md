@@ -40,6 +40,7 @@ void main(const char* args, const int argc)
 
     //Create a camera
     auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125f);
     
     //Main loop
     while (!window->Closed() and !window->KeyHit(KEY_ESCAPE))
