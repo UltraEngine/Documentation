@@ -738,8 +738,8 @@
 									"filename": "Stream_Close"
 								},
 								{
-									"title": "EoF",
-									"filename": "Stream_EoF"
+									"title": "Eof",
+									"filename": "Stream_Eof"
 								},
 								{
 									"title": "Flush",
