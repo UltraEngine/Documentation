@@ -18,7 +18,7 @@ Returns the extension part of the specified path.
 ```c++
 #include "pch.h"
 
-using namesoace UltraEngine;
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
