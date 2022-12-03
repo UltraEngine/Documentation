@@ -63,7 +63,7 @@ int main(int argc, const char* argv[])
         if (window->MouseHit(MOUSE_LEFT))
         {
             auto mousepos = window->GetMousePosition();
-            auto rayinfo = camera->Raycast(framebuffer, mousepos.x, mousepos.y);
+            auto rayinfo = camera->Pick(framebuffer, mousepos.x, mousepos.y);
             if (rayinfo.success)
             {
                 agent->Navigate(rayinfo.position);
