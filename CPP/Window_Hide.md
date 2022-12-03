@@ -42,7 +42,8 @@ int main(int argc, const char* argv[])
         case EVENT_WIDGETACTION:
             if (ev.source == button)
             {
-                subwindow->SetHidden(true);
+                subwindow->SetHidden(false);
+                subwindow->Activate();
             }
             break;
 
@@ -53,7 +54,7 @@ int main(int argc, const char* argv[])
             }
             else if (ev.source == subwindow)
             {
-                subwindow->SetHidden(false);
+                subwindow->SetHidden(true);
             }
             break;
         }
