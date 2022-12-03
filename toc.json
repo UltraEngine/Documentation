@@ -560,8 +560,8 @@
 							"filename": "Entity_RecordCollisions"
 						},
 						{
-							"title": "RemoveTags",
-							"filename": "Entity_RemoveTags"
+							"title": "RemoveTag",
+							"filename": "Entity_RemoveTag"
 						},
 						{
 							"title": "SetAngularVelocity",
