@@ -15,7 +15,7 @@ Returns the file path with the extension removed.
 ```c++
 #include "pch.h"
 
-using namesoace UltraEngine;
+using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
