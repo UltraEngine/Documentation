@@ -1163,8 +1163,8 @@
 							"title": "Mesh",
 							"filename": "Mesh",
 							"topics": [{
-									"title": "AddPolygon",
-									"filename": "Mesh_AddPolygon"
+									"title": "AddPrimitive",
+									"filename": "Mesh_AddPrimitive"
 								},
 								{
 									"title": "AddVertex",
