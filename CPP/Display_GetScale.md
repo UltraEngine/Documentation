@@ -4,7 +4,7 @@ This methods retrieves the display scaling factor that is currently in use on th
 
 ## Syntax
 
-- float GetScale()
+- float **GetScale**()
 
 ## Returns
 
