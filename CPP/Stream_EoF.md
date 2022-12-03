@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     stream->Seek(0);
 
     //Read back the data
-    while (!stream->EOF())
+    while (!stream->EoF())
     {
         Print(stream->ReadInt());
     }
