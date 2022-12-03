@@ -13,27 +13,31 @@ This function changes the name of an existing file.
 Returns true if the file was successfully renamed, otherwise false is returned.
 
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
+    WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
 
-	//Create a new file
-	if (!CreateFile(path))
-	{
-		Print("Failed ti write file.");
-		return 0;
-	}
+    //Create a new file
+    if (!CreateFile(path))
+    {
+        Print("Failed to write file.");
+        return 0;
+    }
 
-	//Rename the file
-	if (!RenameFile(path, ExtractDir(path) + "/temp2.txt"))
-	{
-		Print("Failed to rename file.");
-	}
+    //Rename the file
+    auto dst = ExtractDir(path) + "/temp2.txt";
+    DeleteFile(dst);
+    if (!RenameFile(path, dst))
+    {
+        Print("Failed to rename file.");
+    }
 
-	return 0;
+    OpenDir(dst);
+
+    return 0;
 }
 ```
