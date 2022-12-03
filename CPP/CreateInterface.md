@@ -20,6 +20,8 @@ Returns a new interface object.
 
 ## Example
 
+The first example shows how to create an interface directly on a window for an event-based application.
+
 ```c++
 #include "UltraEngine.h"
 
@@ -31,7 +33,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
 
     //Create user interface
     auto ui = CreateInterface(window);
@@ -52,6 +54,67 @@ int main(int argc, const char* argv[])
             }
             break;
         }
+    }
+    return 0;
+}
+```
+
+The second example shows how to create an interface that appears in a 3D rendering biewport.
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
+
+    //Create framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create world
+    auto world = CreateWorld();
+
+    //Load a font
+    auto font = LoadFont("Fonts/arial.ttf");
+
+    //Create user interface
+    auto ui = CreateInterface(world, font, framebuffer->size);
+
+    //Create widget
+    iVec2 sz = ui->root->ClientSize();
+    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
+
+    //Create camera
+    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    camera->SetPosition(framebuffer->size.x / 2, framebuffer->size.y / 2, 0);
+
+    while (true)
+    {
+        while (PeekEvent())
+        {
+            const Event ev = WaitEvent();
+            switch (ev.id)
+            {
+            case EVENT_WINDOWCLOSE:
+                if (ev.source == window)
+                {
+                    return 0;
+                }
+                break;
+            default:
+                ui->ProcessEvent(ev);
+                break;
+            }
+        }
+
+        world->Update();
+        world->Render(framebuffer);
     }
     return 0;
 }
