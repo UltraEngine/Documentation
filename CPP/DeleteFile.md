@@ -1,17 +1,21 @@
-# DeleteFile #
+# DeleteFile
+
 This function deletes a file in the file system.
 
-## Syntax ##
+## Syntax
+
 - bool **DeleteFile**(const [WString](WString)& path)
 
 | Parameter | Description |
 | --- | --- |
 | path | location of file to delete |
 
-# Returns #
+## Returns
+
 Returns true if the file was successfully deleted.
 
-# Remarks #
+## Remarks
+
 It is not possible to restore deleted files. Use this feature with caution.
 
 ## Example
