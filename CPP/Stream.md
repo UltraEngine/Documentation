@@ -10,8 +10,8 @@ This class provides an interface for reading and writing files.
 | [Close](Stream_Close.md) | Method | closes the stream |
 | [EoF](Stream_EoF.md) | Method | returns true when the end of the stream is reached |
 | [Flush](Stream_Flush.md) | Method | flushes the stream |
-| [GetSize](Stream_GetSize.md) | Method | returns the stream size |
 | [GetPosition](Stream_GetPosition.md) | Method | returns the current position for read and write operations |
+| [GetSize](Stream_GetSize.md) | Method | returns the stream size |
 | [Read](Stream_Read.md) | Method | reads block of data from the stream |
 | [ReadByte](Stream_ReadByte.md) | Method | reads a byte from the stream |
 | [ReadDouble](Stream_ReadDouble.md) | Method | reads a double float value from the stream |
