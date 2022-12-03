@@ -12,6 +12,8 @@ Returns a new probe entity.
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/probe.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
@@ -33,7 +35,7 @@ int main(int argc, const char* argv[])
 
     //Create world
     auto world = CreateWorld();
-    world->SetAmbientLight(0.1);
+    world->SetAmbientLight(0.05);
 
     //Set environment maps
     auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
