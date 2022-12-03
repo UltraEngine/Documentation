@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     auto display = displaylist[0];
 
     // Create a window
-    auto window = CreateWindow("Example", 0, 0, 1280, 720, display, WINDOW_TITLEBAR | WINDOW_CENTER);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, display, WINDOW_TITLEBAR | WINDOW_CENTER);
 
     // Download the texture file
     CreateDir("Download");
