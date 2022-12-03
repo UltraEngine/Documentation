@@ -357,6 +357,20 @@
 							}]
 						},
 						{
+							"title": "Probe",
+							"filename": "Probe",
+							"topics": [
+								{
+									"title": "CreateProbe",
+									"filename": "CreateProbe"
+								},
+								{
+									"title": "SetFadeDistance",
+									"filename": "Probe_SetFadeDistance"
+								}
+							}
+						},
+						{
 							"title": "Sprite",
 							"filename": "Sprite",
 							"topics": [{
