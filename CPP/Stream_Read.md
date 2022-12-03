@@ -1,7 +1,9 @@
-# Stream::Read #
+# Stream::Read
+
 This method reads a block of memory from a stream. This can be more efficient than reading one value at a time, and supports additional data types there is not an explicit read method for.
 
-## Syntax ##
+## Syntax
+
 - uint64_t **Read**(shared_ptr<[Buffer](Buffer.md)> data, const uint64_t offset, const uint64_t size)
 - uint64_t **Read**(const void* data, const uint64_t size)
 
@@ -11,10 +13,12 @@ This method reads a block of memory from a stream. This can be more efficient th
 | data | buffer or pointer to write to |
 | size | number of bytes to read |
 
-## Returns ##
+## Returns
+
 Returns the number of bytes that were read from the stream.
 
 ## Example
+
 ```c++
 #include "pch.h"
 
