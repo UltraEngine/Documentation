@@ -1769,6 +1769,10 @@
 									"filename": "Window_GetHandle"
 								},
 								{
+									"title": "GetHidden",
+									"filename": "Window_GetHidden"
+								},								   
+								{
 									"title": "GetMousePosition",
 									"filename": "Window_GetMousePosition"
 								},
@@ -1779,10 +1783,6 @@
 								{
 									"title": "GetSize",
 									"filename": "Window_GetSize"
-								},
-								{
-									"title": "Hide",
-									"filename": "Window_Hide"
 								},
 								{
 									"title": "HideMouse",
@@ -1823,6 +1823,10 @@
 								{
 									"title": "Restore",
 									"filename": "Window_Restore"
+								},
+								{
+									"title": "SetHidden",
+									"filename": "Window_SetHidden"
 								},
 								{
 									"title": "SetMinSize",
