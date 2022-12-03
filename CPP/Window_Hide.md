@@ -1,10 +1,14 @@
-# Window::Hide
+# Window::SetHidden
 
 This method hides a window.
 
 ## Syntax
 
-- void **Hide**()
+- void **SetHidden**(const bool hide)
+
+| Parameter | Description |
+|---|---|
+| hide | window visibility |
 
 ## Example
 
@@ -38,7 +42,7 @@ int main(int argc, const char* argv[])
         case EVENT_WIDGETACTION:
             if (ev.source == button)
             {
-                subwindow->Show();
+                subwindow->SetHidden(true);
             }
             break;
 
@@ -49,7 +53,7 @@ int main(int argc, const char* argv[])
             }
             else if (ev.source == subwindow)
             {
-                subwindow->Hide();
+                subwindow->SetHidden(false);
             }
             break;
         }
