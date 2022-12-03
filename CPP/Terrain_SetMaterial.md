@@ -57,6 +57,7 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld();
+    world->SetAmbientLight(0);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -64,13 +65,14 @@ int main(int argc, const char* argv[])
     //Create a camera
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
-    camera->SetPosition(0, 60, -60);
-    camera->SetRotation(-45, 0, 0);
+    camera->SetPosition(0, 100, -100);
+    camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
 
     //Sunlight
     auto light = CreateDirectionalLight(world);
-    light->SetRotation(65, 35, 0);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(2);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
