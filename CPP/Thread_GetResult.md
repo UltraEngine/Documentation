@@ -16,7 +16,7 @@ using namespace UltraEngine;
 //The returned value of the thread entry point will be used as the thread result
 shared_ptr<Object> MyFunc(shared_ptr<Object> o)
 {
-    return make_shared<String>("Hello!");
+    return std::make_shared<String>("Hello!");
 }
 
 int main(int argc, const char* argv[])
