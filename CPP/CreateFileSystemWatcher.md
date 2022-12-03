@@ -44,7 +44,7 @@ int main(int argc, const char* argv[])
 
     // Download the texture file
     CreateDir("Download");
-    CopyFile("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.jpg", "Download/dirt01.jpg");
+    CopyFile("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/dirt01.jpg", "Download/dirt01.jpg");
     OpenDir("Download/dirt01.jpg");
 
     //Create FileSystemWatcher to detect changes to files
