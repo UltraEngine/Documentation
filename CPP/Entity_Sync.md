@@ -69,7 +69,7 @@ int main(int argc, const char* argv[])
         if (n == 2) n = 0;
 
         world->Update();
-        world->Render(framebuffer);
+        world->Render(framebuffer, false);
     }
     return 0;
 }
