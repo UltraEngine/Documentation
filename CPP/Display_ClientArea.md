@@ -4,7 +4,7 @@ This method returns the usable area within a screen, excluding system task bars 
 
 ## Syntax
 
-[iVec4](iVec4.md) ClientArea()
+[iVec4](iVec4.md) **ClientArea**()
 
 ## Returns
 
