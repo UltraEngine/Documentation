@@ -4,8 +4,8 @@ This method sets the texture coordinates of a single vertex in the mesh.
 
 ## Syntax
 
-- void **SetVertexTexCoords**(const uint32_t index, const [Vec2](Vec2.md) texcoords, const int texcoordset = 0)
 - void **SetVertexTexCoords**(const uint32_t index, const float u, const float v, const int texcoordset = 0)
+- void **SetVertexTexCoords**(const uint32_t index, const [Vec2](Vec2.md) texcoords, const int texcoordset = 0)
 
 | Parameter | Description |
 |---|---|
