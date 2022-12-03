@@ -29,6 +29,7 @@ Base class: [Object](Object)
 | [Minimize](Window_Minimize.md) | Method | minimizes the window |
 | [Minimized](Window_Minimized.md) | Method | returns true if the window is currently minimized |
 | [Restore](Window_Restore.md) | Method | restores the window from the minimized or maximized state |
+| [SetCursor](Window_SetCursor.md) | Method | sets the window cursor |
 | [SetHidden](Window_SetHidden.md) | Method | hide and show the window |
 | [SetMinSize](Window_SetMinSize.md) | Method | sets the minimum size the window can be resized to |
 | [SetMousePosition](Window_SetMousePosition.md) | Method | sets the mouse position |
