@@ -35,7 +35,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
@@ -44,17 +44,20 @@ int main(int argc, const char* argv[])
     auto world = CreateWorld();
 
     //Create camera
-    auto camera = CreateCamera(world);
+    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
     camera->SetClearColor(0.125);
-    
+    camera->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0.0f);
+
     //Create sprite
     auto sprite = CreateSprite(world, 100, 100);
-   
+    sprite->SetColor(0, 0, 1);
+    sprite->SetPosition(10, 10);
+
     //Main loop
-    while (window->Closed()==false and window->KeyHit(KEY_ESCAPE)==false)
+    while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
         world->Update();
-        world->Render(framebuffer, true);
+        world->Render(framebuffer);
     }
     return 0;
 }
