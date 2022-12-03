@@ -30,7 +30,7 @@ using namespace UltraEngine;
 
 //---------------------------------------------------------------------------------------------------
 // This example demonstrates use of a FileSystemWatcher to allow dynamic asset reloading.
-// Run the example and modify the texture file in a paint program to see your changes appear as the program is running.
+// Run the example and modify the image file in a paint program to see your changes appear as the program is running.
 //---------------------------------------------------------------------------------------------------
 
 int main(int argc, const char* argv[])
@@ -43,12 +43,18 @@ int main(int argc, const char* argv[])
     auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, display, WINDOW_TITLEBAR | WINDOW_CENTER);
 
     // Download the texture file
-    CreateDir("Download");
-    CopyFile("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/dirt01.jpg", "Download/dirt01.jpg");
-    OpenDir("Download/dirt01.jpg");
+    auto path = GetPath(PATH_DOCUMENTS) + "/Temp";
+    CreateDir(path);
+    CopyFile("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/dirt01.jpg", path + "/dirt01.jpg");
+    OpenDir(path + "/dirt01.jpg");
 
     //Create FileSystemWatcher to detect changes to files
-    auto watcher = CreateFileSystemWatcher("Download");
+    auto watcher = CreateFileSystemWatcher(path);
+
+    auto plugin = LoadPlugin("Plugins/FITextureLoader");
+    auto ui = CreateInterface(window);
+    auto panel = CreatePanel(0, 0, window->ClientSize().x, window->ClientSize().y, ui->root);
+    panel->SetPixmap(LoadPixmap(path + "/dirt01.jpg"));
 
     // Main loop
     while (window->Closed() == false)
@@ -59,14 +65,8 @@ int main(int argc, const char* argv[])
         //Look for file change or create events. Some programs delete the file and then recreate it when they save.
         if (e.id == EVENT_FILECHANGE or e.id == EVENT_FILECREATE)
         {
-            //Cast event.extra to a WString   
-            shared_ptr<WString> filepathptr = e.extra->As<WString>();
-            
-            //Convert the shared pointer into an object
-            WString filepath = *filepathptr.get();
-
             //Look for a loaded asset with this file path
-            auto asset = FindCachedAsset(filepath);
+            auto asset = FindCachedAsset(e.text);
             if (asset)
             {
                 //Reload the modified asset
