@@ -78,8 +78,8 @@ int main(int argc, const char* argv[])
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         //Move the camera forward and backwards to change detail levels
-        if (window->KeyDown(KEY_UP)) z += 0.05f;
-        if (window->KeyDown(KEY_DOWN)) z -= 0.05f;
+        if (window->KeyDown(KEY_UP)) z += 0.005f;
+        if (window->KeyDown(KEY_DOWN)) z -= 0.005f;
         z = Min(-1.0f, z);
         camera->SetPosition(0,0,z);
 
