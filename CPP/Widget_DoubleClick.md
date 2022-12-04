@@ -4,7 +4,7 @@ This method is called when a mouse button is clicked twice in rapid succession.
 
 ## Syntax
 
-- void **DoubleClick**(const [MouseButton](Constants#MouseButton) button, const int x, const int y)
+- void **DoubleClick**(const MouseButton button, const int x, const int y)
 
 | Parameter | Description |
 |---|---|
