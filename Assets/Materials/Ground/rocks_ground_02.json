@@ -3,7 +3,7 @@
 	{
 		"color": [1,1,1,1],
 		"emission": [0,0,0],
-		"metallic": 1,
+		"metallic": 0,
 		"roughness": 1,
 		"tessellation": true,
 		"texture0": "rocks_ground_02_col_4k.dds",
