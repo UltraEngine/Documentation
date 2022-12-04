@@ -16,6 +16,8 @@ A polygonsize value of 4 is suitable for high quality tessellation. If it is zer
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/tessellation.jpg)
+
 ```c++
 #include "UltraEngine.h"
 
@@ -36,32 +38,34 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld();
-    auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
-    auto diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds");
-    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
-    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
+    world->SetAmbientLight(0);
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->SetPosition(0, 0, -0.85);
+    camera->SetPosition(0, 0, -1);
+    camera->SetFov(70);
     camera->SetClearColor(0.125);
     camera->SetTessellation(4);
 
     //Create a light
     auto  light = CreateBoxLight(world);
     light->SetRange(-10, 10);
-    light->SetRotation(45, 35, 0);
-    light->SetColor(2);
+    light->SetRotation(35, 35, 0);
+    light->SetColor(4);
 
     //Display material
     auto model = CreateCubeSphere(world, 0.5, 8, MESH_QUADS);
     auto mtl = LoadMaterial(remotepath + "/Materials/Ground/rocks_ground_02.json");
-    mtl->SetDisplacement(0.05f);
+    mtl->SetDisplacement(0.075f);
     model->SetMaterial(mtl);
 
     //Main loop
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
+        //Arrow keys move
+        if (window->KeyDown(KEY_DOWN)) camera->Move(0, 0, -0.01);
+        if (window->KeyDown(KEY_UP)) camera->Move(0, 0, 0.01);
+
         //Show wireframe render when key is pressed
         camera->SetWireframe(window->KeyDown(KEY_W));
 
