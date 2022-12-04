@@ -57,7 +57,7 @@ int main(int argc, const char* argv[])
     model->Animate(1);
 
     //Main loop
-    while (window->Closed() == false)
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
         model->Turn(0, 0.2, 0);
 
