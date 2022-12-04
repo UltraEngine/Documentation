@@ -44,7 +44,7 @@ int main(int argc, const char* argv[])
     //Create a light
     auto  light = CreateBoxLight(world);
     light->SetRange(-10, 10);
-    light->SetRotation(35, 45, 0);
+    light->SetRotation(15, 15, 0);
     light->SetColor(2);
 
     //Display material
