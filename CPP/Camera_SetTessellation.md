@@ -54,7 +54,7 @@ int main(int argc, const char* argv[])
     light->SetColor(2);
 
     //Display material
-    auto model = CreateCubeSphere(world, 0.5, 8, true);
+    auto model = CreateCubeSphere(world, 0.5, 8, MESH_QUADS);
     auto mtl = LoadMaterial(remotepath + "/Materials/Ground/rocks_ground_02.json");
     mtl->SetDisplacement(0.05f);
     model->SetMaterial(mtl);
