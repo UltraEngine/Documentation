@@ -4,7 +4,7 @@ This method is called called when a keyboard key is released.
 
 ## Syntax
 
-- void **KeyUp**(const [KeyCode](Constants.md#KeyCode) key)
+- void **KeyUp**(const KeyCode key)
 
 | Parameter | Description |
 |---|---|
