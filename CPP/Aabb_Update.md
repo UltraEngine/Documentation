@@ -1,4 +1,4 @@
-# AABB::Update #
+# Aabb::Update #
 This method calculates the bounding box size, center, and radius from the minimum and maximum extents.
 
 ## Syntax ##
@@ -6,7 +6,7 @@ This method calculates the bounding box size, center, and radius from the minimu
 
 ## Example ##
 ```c++
-AABB aabb;
+Aabb aabb;
 aabb.min = Vec3(2);
 aabb.max = Vec3(3);
 
