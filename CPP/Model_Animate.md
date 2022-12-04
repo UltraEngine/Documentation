@@ -40,13 +40,19 @@ int main(int argc, const char* argv[])
     //Create a camera
     auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->Move(0, 2, -8);
 
     //Create light
     auto light = CreateBoxLight(world);
     light->SetRotation(45, 35, 0);
     light->SetRange(-10, 10);
+    light->SetArea(20, 20);
+
+    //Create ground
+    auto ground = CreateBox(world, 10, 1, 10);
+    ground->SetColor(0, 1, 0);
+    ground->SetPosition(0, -0.5, 0);
 
     //Load FreeImage plugin
     auto plugin = LoadPlugin("Plugins/FITextureLoader");
@@ -54,13 +60,12 @@ int main(int argc, const char* argv[])
     //Load a model
     auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/Fox.glb");
     model->SetScale(0.05);
+    model->SetRotation(0, -90, 0);
     model->Animate(1);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        model->Turn(0, 0.2, 0);
-
         world->Update();
         world->Render(framebuffer);
     }
