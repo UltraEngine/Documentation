@@ -12,7 +12,7 @@ This method sets the desired polygon edge size for tessellated materials.
 
 ## Remarks
 
-A *polygonsize* value of 4 is suitable for high quality tessellation. If it is zero then tessellation will be disabled.
+A polygonsize value of 4 is suitable for high quality tessellation. If it is zero then tessellation will be disabled.
 
 ## Example
 
