@@ -21,6 +21,8 @@ A polygonsize value of 4 is suitable for high quality tessellation. If it is zer
 
 using namespace UltraEngine;
 
+const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
+
 int main(int argc, const char* argv[])
 {
     //Get the primary display
@@ -34,22 +36,26 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld();
+    auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
+    auto diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds");
+    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
+    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
 
     //Create a camera
     auto camera = CreateCamera(world);
     camera->SetPosition(0, 0, -0.85);
     camera->SetClearColor(0.125);
-    camera->SetTessellation(8);
+    camera->SetTessellation(4);
 
     //Create a light
     auto  light = CreateBoxLight(world);
     light->SetRange(-10, 10);
-    light->SetRotation(15, 15, 0);
+    light->SetRotation(45, 35, 0);
     light->SetColor(2);
 
     //Display material
     auto model = CreateCubeSphere(world, 0.5, 8, true);
-    auto mtl = LoadMaterial("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02.json");
+    auto mtl = LoadMaterial(remotepath + "/Materials/Ground/rocks_ground_02.json");
     model->SetMaterial(mtl);
 
     //Main loop
