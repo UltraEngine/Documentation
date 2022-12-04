@@ -1991,6 +1991,10 @@
 									"filename": "Vec3_Dot"
 								},
 								{
+									"title": "Hsl",
+									"filename": "Vec3_Hsl"
+								},
+								{
 									"title": "Inverse",
 									"filename": "Vec3_Inverse"
 								},
@@ -2009,7 +2013,11 @@
 								{
 									"title": "Reflect",
 									"filename": "Vec3_Reflect"
-								}
+								},
+								{
+									"title": "Rgb",
+									"filename": "Vec3_Rgb"
+								}								   
 							]
 						},
 						{
