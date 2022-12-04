@@ -1,4 +1,4 @@
-# CountColorAttachments
+# TextureBuffer::CountColorAttachments
 
 This method returns the number of color attachments the texture buffer has.
 
