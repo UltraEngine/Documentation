@@ -17,6 +17,7 @@ This method sets the probe volume edge fade. This can be used to make specified 
 
 ```c++
 #include "UltraEngine.h"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
@@ -58,20 +59,20 @@ int main(int argc, const char* argv[])
     auto wall = CreateBox(world, 10, 5, 0.5);
     wall->SetPosition(0, 2.5, 4.75);
     wall->SetColor(0, 1, 1);
-    
+
     auto wall2 = CreateBox(world, 10, 5, 0.5);
     wall2->SetPosition(0, 2.5, -4.75);
     wall2->SetColor(1, 0, 0);
 
     auto wall3 = CreateBox(world, 0.5, 5, 9);
     wall3->SetPosition(-4.75, 2.5, 0);
-    
+
     auto floor = CreateBox(world, 20, 1, 20);
     floor->SetPosition(0, -0.5f, 0);
 
     auto ceil = CreateBox(world, 10, 0.5f, 10);
     ceil->SetPosition(0, 5.25, 0);
-    
+
     auto drag = LoadModel(world, remotepath + "/Models/Stanford/dragon.glb");
     drag->SetScale(0.1f);
     drag->SetColor(1, 1, 1, 1, true);
@@ -80,12 +81,6 @@ int main(int argc, const char* argv[])
     mtl->SetMetalness(0.75);
     mtl->SetRoughness(0);
     drag->SetMaterial(mtl, true);
-
-    auto mousepos = window->GetMouseAxis();
-    Vec3 camerarotation = Vec3(0, -90, 0);
-    const float mouselookspeed = 100.0f;
-    Vec3 lookchange;
-    const float mousesmoothing = 0.5f;
 
     //Create environment probe
     auto probe = CreateProbe(world);
@@ -98,31 +93,13 @@ int main(int argc, const char* argv[])
     probe->SetFadeDistance(0, CUBEMAP_POSITIVE_Z);
     probe->SetFadeDistance(0, CUBEMAP_NEGATIVE_Z);
 
+    //Camera controls
+    auto actor = CreateActor(camera);
+    actor->AddComponent<CameraControls>();
+
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        auto newmousepos = window->GetMouseAxis();
-        if (ActiveWindow() == window)
-        {
-            lookchange.x = lookchange.x * mousesmoothing + (newmousepos.y - mousepos.y) * mouselookspeed * (1.0f - mousesmoothing);
-            lookchange.y = lookchange.y * mousesmoothing + (newmousepos.x - mousepos.x) * mouselookspeed * (1.0f - mousesmoothing);
-            camerarotation.x += lookchange.x;
-            camerarotation.y += lookchange.y;
-            camera->SetRotation(camerarotation);
-        }
-        else
-        {
-            lookchange = Vec3(0.0f);
-        }
-        mousepos = newmousepos;
-
-        if (window->KeyDown(KEY_E)) camera->Translate(0, 0.1, 0);
-        if (window->KeyDown(KEY_Q)) camera->Translate(0, -0.1, 0);
-        if (window->KeyDown(KEY_D)) camera->Move(0.1, 0, 0);
-        if (window->KeyDown(KEY_A)) camera->Move(-0.1, 0, 0);
-        if (window->KeyDown(KEY_W)) camera->Move(0, 0, 0.1);
-        if (window->KeyDown(KEY_S)) camera->Move(0, 0, -0.1);
-        
         world->Update();
         world->Render(framebuffer, true);
     }
