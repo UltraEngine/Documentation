@@ -203,6 +203,10 @@
 									"filename": "Camera_SetDepthPrepass"
 								},
 								{
+									"title": "SetFov",
+									"filename": "Camera_SetFov"
+								},
+								{
 									"title": "SetRealtime",
 									"filename": "Camera_SetRealtime"
 								},
@@ -214,6 +218,10 @@
 									"title": "SetTessellation",
 									"filename": "Camera_SetTessellation"
 								},
+								{
+									"title": "SetZooom",
+									"filename": "Camera_SetZoom"
+								},								   
 								{
 									"title": "Unproject",
 									"filename": "Camera_Unproject"
