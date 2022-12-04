@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     //Create light
     auto light = CreateBoxLight(world);
     light->SetRange(-10, 10);
-    light->SetRotation(45, 35, 0);
+    light->SetRotation(15, 15, 0);
     light->SetColor(2);
 
     //Create camera
@@ -54,14 +54,16 @@ int main(int argc, const char* argv[])
     
     auto cone = CreateCone(world);
     cone->SetPosition(1.25, 0, 0);
+    cone->SetColor(0, 0, 1);
 
     auto sphere = CreateSphere(world);
     sphere->SetPosition(-1.25, 0, 0);
+    sphere->SetColor(1, 0, 0);
 
     //Create camera and texture buffer
     auto texbuffer = CreateTextureBuffer(256, 256);
     auto cam2 = CreateCamera(world);
-    cam2->SetClearColor(0, 0, 1);
+    cam2->SetClearColor(1, 1, 1);
     cam2->SetRenderTarget(texbuffer);
 
     //Create material
