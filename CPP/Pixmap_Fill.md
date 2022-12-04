@@ -8,7 +8,7 @@ This method writes each pixel of the pixmap with the specified color.
 
 | Parameter | Description |
 |---|---|
-| color | [RGBA](RGBA.md) color |
+| color | [RGBA](Rgba.md) color |
 
 ## Example
 
@@ -46,7 +46,7 @@ int main(int argc, const char* argv[])
             if (ev.source == button)
             {
                 //Fill the pixmap with a new color
-                pixmap->Fill(RGBA(Random(255), Random(255), Random(255), 255));
+                pixmap->Fill(Rgba(Random(255), Random(255), Random(255), 255));
 
                 //Redraw the panel
                 ui->root->Paint();
