@@ -4,9 +4,9 @@ The first overload of this method will perform a ray intersection test on the en
 
 ## Syntax
 
-- bool **Pick**(const float distance, [PickInfo](PickInfo.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE)
+- bool **Pick**(const float distance, [PickInfo](PickInfo.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const bool recursive = false, const CollisionType collisiontype = COLLISION_NONE)
 - bool **Pick**(const float x0, const float y0, const float z0, const float x1, const float y1, const float z1, [PickInfo](PickInfo.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE)
-- bool **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, [PickInfo](PickInfo.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const bool recursive = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE)
+- bool **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, [PickInfo](PickInfo.md)& pickinfo, const dFloat radius = 0.0, const bool closest = false, const bool recursive = false, const CollisionType collisiontype = COLLISION_NONE)
 
 | Parameter | Description |
 | --- | --- |
