@@ -22,7 +22,7 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 | [ToFloat](WString_ToFloat.md) | Method | converts the string to a floating point value |
 | [ToInt](WString_ToInt.md) | Method | converts the string to an integer value |
 | [ToString](WString_ToString.md) | Method | returns a narrow string containing only ASCII characters |
-| [ToUTF8String](WString_ToUTF8String.md) | Method | returns a narrow string with UTF-8 encoding |
+| [ToUtf8String](WString_ToUtf8String.md) | Method | returns a narrow string with UTF-8 encoding |
 | [Trim](WString_Trim.md) | Method | removes whitespace characters from the ends of the string |
 | [Upper](WString_Upper.md) | Method | converts the string to uppercase |
-| [XOR](WString_XOR.md) | Method | performs an XOR operation |
+| [Xor](WString_Xor.md) | Method | performs an XOR operation |
