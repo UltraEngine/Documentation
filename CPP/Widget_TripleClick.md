@@ -4,7 +4,7 @@ This method is called when a mouse button is clicked rapidly three times.
 
 ## Syntax
 
-- void **TripleClick**(const [MouseButton](Constants.md#MouseButton) button, const int x, const int y)
+- void **TripleClick**(const MouseButton button, const int x, const int y)
 
 | Parameter | Description |
 |---|---|
