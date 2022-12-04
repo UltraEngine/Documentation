@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->Move(0, 0, -0.75);
+    camera->SetPosition(0, 0, -0.85);
     camera->SetClearColor(0.125);
     camera->SetTessellation(8);
 
@@ -55,7 +55,12 @@ int main(int argc, const char* argv[])
     //Main loop
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
+        //Show wireframe render when key is pressed
+        camera->SetWireframe(window->KeyDown(KEY_W));
+
+        //Rotate the model
         model->Turn(0, 0.1, 0);
+
         world->Update();
         world->Render(framebuffer);
     }
