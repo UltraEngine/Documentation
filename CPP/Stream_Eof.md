@@ -4,7 +4,7 @@ This method returns true when the end of the stream is reached.
 
 ## Syntax
 
-- bool **EoF**()
+- bool **Eof**()
 
 ## Returns
 
@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     stream->Seek(0);
 
     //Read back the data
-    while (!stream->EoF())
+    while (!stream->Eof())
     {
         Print(stream->ReadInt());
     }
