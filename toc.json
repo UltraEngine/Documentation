@@ -546,9 +546,13 @@
 							"filename": "Entity_GetScale"
 						},
 						{
+							"title": "GetUuid",
+							"filename": "Entity_GetUuid"
+						},
+						{
 							"title": "GetVelocity",
 							"filename": "Entity_GetVelocity"
-						},
+						},						   
 						{
 							"title": "GetWorld",
 							"filename": "Entity_GetWorld"
