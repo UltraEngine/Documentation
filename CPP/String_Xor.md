@@ -1,8 +1,8 @@
-# String::Xor #
+# String::Xor
 
 This method encrypts the string with an XOR cipher and returns the result.
 
-## Syntax ##
+## Syntax
 
 - [String](String.md) **Xor**(const [String](String.md)& key)
 
@@ -10,11 +10,11 @@ This method encrypts the string with an XOR cipher and returns the result.
 | --- | --- |
 | key | encryption key |
 
-## Returns ##
+## Returns
 
 Returns the encrypted string.
 
-## Example ##
+## Example
 
 ```c++
 #include "UltraEngine.h"
@@ -25,7 +25,7 @@ int main(int argc, const char* argv[])
 {
     String password = "HaikuMockingBonanzaTumble";
     String key = "d'U0)Ez[^?2?=^X|y49dKurq9mASp`5}";
-    String encrypted = password.XOR(key);
+    String encrypted = password.Xor(key);
 
     Print("Encrypted string: " + encrypted);
     
