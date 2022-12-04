@@ -4,8 +4,8 @@ This method performs a line segment intersection test on all the entities in the
 
 ## Syntax
 
-- [PickInfo](PickInfo.md) **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, const dFloat radius = 0.0, const bool closest = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE, const bool usecollider = false)
-- [PickInfo](PickInfo.md) **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, const dFloat radius = 0.0, const bool closest = false, const [CollisionType](Constants.md) collisiontype = COLLISION_NONE, const bool usecollider = false)
+- [PickInfo](PickInfo.md) **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, const dFloat radius = 0.0, const bool closest = false, const CollisionType collisiontype = COLLISION_NONE, const bool usecollider = false)
+- [PickInfo](PickInfo.md) **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, const dFloat radius = 0.0, const bool closest = false, const CollisionType collisiontype = COLLISION_NONE, const bool usecollider = false)
 
 | Parameter | Description |
 | --- | --- |
