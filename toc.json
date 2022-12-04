@@ -2675,6 +2675,10 @@
 									"filename": "String_Upper"
 								},
 								{
+									"title": "Uuid",
+									"filename": "Uuid"
+								},
+								{
 									"title": "Xor",
 									"filename": "String_Xor"
 								}
