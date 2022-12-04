@@ -1,8 +1,8 @@
 # LoadSound
 
 ## Syntax
-- shared_ptr<[Sound](Sound)> **LoadSound**(const [WString](WString.md)& path, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
-- shared_ptr<[Sound](Sound)> **LoadSound**(shared_ptr<[Stream](Stream.md)> stream, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Sound](Sound)> **LoadSound**(shared_ptr<[Stream](Stream.md)> stream, const LoadFlags flags = LOAD_DEFAULT)
 
 |Parameter|Description|
 |-|-|
