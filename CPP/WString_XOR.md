@@ -1,10 +1,10 @@
-# WString::XOR
+# WString::Xor
 
 This method encrypts the string with an XOR cipher and returns the result.
 
 ## Syntax
 
-- [WString](WString.md) **XOR**(const [WString](WString.md)& key)
+- [WString](WString.md) **Xor**(const [WString](WString.md)& key)
 
 | Parameter | Description |
 | --- | --- |
@@ -29,7 +29,7 @@ int main(int argc, const char* argv[])
 
     Print("Encrypted string: " + encrypted);
 
-    WString decrypted = encrypted.XOR(key);
+    WString decrypted = encrypted.Xor(key);
     Print("Decrypted string: " + decrypted);
 
     return 0;
