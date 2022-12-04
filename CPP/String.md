@@ -23,3 +23,4 @@ Base class: [Object](Object.md), std::string
 | [Trim](String_Trim.md) | Method | removes whitespace characters from the ends of the string |
 | [Upper](String_Upper.md) | Method | converts the string to uppercase |
 | [Xor](String_Xor.md) | Method | performs an XOR operation |
+| [Uuid](Uuid.md) | Function | creates a unique universal identifier |
