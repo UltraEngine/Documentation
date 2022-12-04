@@ -1,6 +1,6 @@
 # Alpha
 
-Extracts the alpha component from a packed [RGBA](RGBA.md) value.
+Extracts the alpha component from a packed [RGBA](Rgba.md) value.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    int color = RGBA(220,64,128,255);
+    int color = Rgba(220,64,128,255);
 
     Print(Red(color));
     Print(Green(color));
