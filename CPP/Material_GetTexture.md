@@ -4,11 +4,11 @@ This method retrieves a texture from the material.
 
 ## Syntax
 
-- shared_ptr<[Material](Material.md)> **GetTexture**(const [TextureSlot](Constants.md#TextureSlot) index = TEXTURE_BASE)
+- shared_ptr<[Material](Material.md)> **GetTexture**(const int index = TEXTURE_BASE)
 
 | Parameter | Description |
 |----|----|
-| index | texture slot |
+| index | texture slot between 0 and 15 |
 
 ## Returns
 
