@@ -1,10 +1,10 @@
-# AllocEventID
+# AllocEventId
 
 This function allocates a unique event ID you can use for user-defined events.
 
 ## Syntax
 
-- EventID **AllocEventID**()
+- EventID **AllocEventId**()
 
 ## Returns
 
@@ -19,7 +19,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	const EventID EVENT_CUSTOM = AllocEventID();
+	const EventID EVENT_CUSTOM = AllocEventId();
 	EmitEvent(EVENT_CUSTOM);
 	while (PeekEvent())
 	{
