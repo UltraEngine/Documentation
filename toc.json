@@ -1137,6 +1137,10 @@
 									"filename": "Material_SetColor"
 								},
 								{
+									"title": "SetDisplacement",
+									"filename": "Material_SetDisplacement"
+								},
+								{
 									"title": "SetMetalness",
 									"filename": "Material_SetMetalness"
 								},
