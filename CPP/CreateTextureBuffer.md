@@ -9,7 +9,7 @@ This function creates a new texture buffer, for render-to-texture operations.
 | Parameter | Description |
 |---|---|
 | width, height | dimensions of the texture buffer |
-| colorattachments | number of color textures to add, between 0 and 7 |
+| colorattachments | number of color textures to add, between 0 and 4 |
 | depthattachment | set to true to add a depth texture |
 
 ## Returns
@@ -17,10 +17,6 @@ This function creates a new texture buffer, for render-to-texture operations.
 Returns a new texture buffer object.
 
 ## Example
-
-**WORK IN PROGRESS**
-
-**WARNING: THIS WILL CRASH YOUR GRAPHICS DRIVER**
 
 ```c++
 #include "UltraEngine.h"
