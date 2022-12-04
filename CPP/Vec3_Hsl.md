@@ -1,6 +1,6 @@
 # Vec3::Hsl
 
-This method converts and RGB color to an HSL value.
+This method converts an RGB color to an HSL value.
 
 ## Syntax
 
