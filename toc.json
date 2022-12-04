@@ -1874,7 +1874,12 @@
 				},
 				{
 					"title": "Math",
-					"topics": [{
+					"topics": [
+						{
+							"title": "Aabb",
+							"filename": "Aabb"
+						},
+						{
 							"title": "iVec2",
 							"filename": "iVec2"
 						},
