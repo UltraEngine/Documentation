@@ -4,7 +4,7 @@ This method retrieves the entity collision type.
 
 ## Syntax
 
-- [CollisionType](Constants.md#CollisionType) **GetCollisionType**()
+- CollisionType **GetCollisionType**()
 
 ## Returns
 
