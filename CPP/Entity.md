@@ -35,7 +35,7 @@ This is the base class for all 3D objects in a world. Terrain, lights, 3D models
 | [GetCrouched](Entity_GetCrouched.md) | Method | returns the crouched state of a player |
 | [GetBounds](Entity_GetBounds.md) | Method | returns an axis-aligned bounding box |
 | [GetDistance](Entity_GetDistance.md) | Method | calculates distance to another entity |
-| [GetGUID](Entity_GetGUID.md) | Method | returns the entity's unique identifier |
+| [GetUuid](Entity_GetUuid.md) | Method | returns the entity's unique identifier |
 | [GetHidden](Entity_GetHidden.md) | Method | returns the entity hide state |
 | [GetMass](Entity_GetMass.md) | Method | returns the entity mass |
 | [GetParent](Entity_GetParent.md) | Method | returns the parent entity |
