@@ -8,7 +8,7 @@ This method retrieves a texture from the material.
 
 | Parameter | Description |
 |----|----|
-| index | texture slot between 0 and 15 |
+| index | texture slot from 0 to 15 |
 
 ## Returns
 
