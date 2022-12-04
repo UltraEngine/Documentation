@@ -219,7 +219,7 @@
 									"filename": "Camera_SetTessellation"
 								},
 								{
-									"title": "SetZooom",
+									"title": "SetZoom",
 									"filename": "Camera_SetZoom"
 								},								   
 								{
