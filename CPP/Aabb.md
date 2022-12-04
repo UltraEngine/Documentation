@@ -12,6 +12,6 @@ This class describes an axis-aligned bounding box.
 | center | [Vec3](Vec3.md) | Halfway point between the minimum and maximum extents |
 | size | [Vec3](Vec3.md) | Distance between the minimum and maximum extents |
 | radius | float | Radius of a sphere that complete encloses the bounding box. |
-| += | Operator | Expands one AABB to enclose another. |
-| + | Operator | Expands one AABB to enclose another and returns the result. |
+| += | Operator | Expands one Aabb to enclose another. |
+| + | Operator | Expands one Aabb to enclose another and returns the result. |
 | [Update](Aabb_Update.md) | Method | Calculates the bounding box size, center, and radius from the minimum and maximum extents. |
