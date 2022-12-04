@@ -4,7 +4,7 @@ This function combines four 8-bit color channels into a single packed RGBA color
 
 ## Syntax
 
-- unsigned int Rgba(const unsigned char r, const unsigned char g, const unsigned char b, const unsigned char a = 255)
+- unsigned int **Rgba**(const unsigned char r, const unsigned char g, const unsigned char b, const unsigned char a = 255)
 
 | Parameter | Description |
 | --- | --- |
