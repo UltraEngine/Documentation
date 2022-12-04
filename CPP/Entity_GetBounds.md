@@ -4,7 +4,7 @@ This method retrieves the entity bounding box.
 
 ## Syntax
 
-- [xAabb](xAabb.md) **GetBounds**(const [EntityBounds](Constants.md#EntityBounds) mode = BOUNDS_GLOBAL)
+- [xAabb](xAabb.md) **GetBounds**(const EntityBounds mode = BOUNDS_GLOBAL)
 
 | Parameter | Description |
 | --- | --- |
