@@ -1308,6 +1308,10 @@
 									"filename": "CreateTextureBuffer"
 								},
 								{
+									"title": "CountColorAttachments",
+									"filename": "TextureBuffer_CountColorAttachments"
+								},
+								{
 									"title": "GetColorAttachment",
 									"filename": "TextureBuffer_GetColorAttachment"
 								},
