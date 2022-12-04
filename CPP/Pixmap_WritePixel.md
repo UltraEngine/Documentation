@@ -10,7 +10,7 @@ This method sets a single pixel in the pixmap to the specified color.
 |---|---|
 | x | x position of the pixel to write |
 | y | y position of the pixel to write |
-| color | [RGBA](RGBA.md) color |
+| color | [RGBA](Rgba.md) color |
 
 ## Remarks
 
@@ -42,7 +42,7 @@ int main(int argc, const char* argv[])
     {
         for (int y = 0; y < 512; ++y)
         {
-            pixmap->WritePixel(x, y, RGBA(255 * float(x) / 512.0f, 255 * float(y) / 512.0f, 0, 255));
+            pixmap->WritePixel(x, y, Rgba(255 * float(x) / 512.0f, 255 * float(y) / 512.0f, 0, 255));
         }
     }
 
