@@ -13,7 +13,7 @@ This method writes each pixel of the pixmap with the specified color.
 
 ## Returns
 
-Returns the [RGBA](RGBA.md) color of the specified pixel.
+Returns the [RGBA](Rgba.md) color of the specified pixel.
 
 ## Example
 
@@ -46,7 +46,7 @@ int main(int argc, const char* argv[])
             int r = Red(rgba);
             int g = 0;
             int b = 0;
-            rgba = RGBA(r, g, b, 255);
+            rgba = Rgba(r, g, b, 255);
             pixmap->WritePixel(x, y, rgba);
         }
     }
