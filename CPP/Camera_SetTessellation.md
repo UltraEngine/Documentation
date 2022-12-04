@@ -23,43 +23,37 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Load plugin for texture loading
-    auto plugin = LoadPlugin("Plugins/Basis.*");
-
     //Get the primary display
-    auto displaylist = GetDisplays();
-    auto display = displaylist[0];
-    Vec2 displayscale = display->GetScale();
+    auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow(display, "Tessellation", 0, 0, 1280 * displayscale.x, 720 * displayscale.y);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a rendering framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a world
     auto world = CreateWorld();
-    world->SetSkybox("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Sky/sunset.basis");
-    world->SetAmbientLight(0);
 
     //Create a camera
     auto camera = CreateCamera(world);
     camera->Move(0, 0, -0.75);
-    camera->SetClearColor(0.25);
-    camera->SetTessellation(8); //Tessellated primitives are n pixels wide(zero or less disables tessellation)
+    camera->SetClearColor(0.125);
+    camera->SetTessellation(8);
 
     //Create a light
-    auto  light = CreateDirectionalLight(world);
-    light->SetRotation(35, -55, 0);
-    light->SetColor(1.2);
+    auto  light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetRotation(35, 45, 0);
+    light->SetColor(2);
 
     //Display material
     auto model = CreateCubeSphere(world, 0.5, 8, true);
-    auto mtl = LoadMaterial("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl");
+    auto mtl = LoadMaterial("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/rocks_ground_02.json");
     model->SetMaterial(mtl);
 
     //Main loop
-    while (window->Closed() == false)
+    while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
         model->Turn(0, 0.1, 0);
         world->Update();
