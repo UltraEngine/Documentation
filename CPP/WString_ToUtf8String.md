@@ -1,10 +1,10 @@
-# WString::ToUTF8String
+# WString::ToUtf8String
 
 This method converts the wide string to a narrow string using UTF-8 encoding. This allows a narrow string to store a larger range of widestring characters in a narrow string. However, some string operations will not work correctly with a UTF8 string.
 
 ## Syntax
 
-- [String](String.md) **ToUTF8String**()
+- [String](String.md) **ToUtf8String**()
 
 ## Returns
 
@@ -34,7 +34,7 @@ int main(int argc, const char* argv[])
 
     Print("");
 
-    s = ws.ToUTF8String();
+    s = ws.ToUtf8String();
 
     Print(s);
     if (ws == s)
