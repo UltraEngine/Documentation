@@ -1,10 +1,10 @@
-# String::XOR #
+# String::Xor #
 
 This method encrypts the string with an XOR cipher and returns the result.
 
 ## Syntax ##
 
-- [String](String.md) **XOR**(const [String](String.md)& key)
+- [String](String.md) **Xor**(const [String](String.md)& key)
 
 | Parameter | Description |
 | --- | --- |
@@ -29,7 +29,7 @@ int main(int argc, const char* argv[])
 
     Print("Encrypted string: " + encrypted);
     
-    String decrypted = encrypted.XOR(key);
+    String decrypted = encrypted.Xor(key);
     Print("Decrypted string: " + decrypted);
 
     return 0;
