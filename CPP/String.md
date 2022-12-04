@@ -22,4 +22,4 @@ Base class: [Object](Object.md), std::string
 | [ToInt](String_ToInt.md) | Method | converts the string to an integer value |
 | [Trim](String_Trim.md) | Method | removes whitespace characters from the ends of the string |
 | [Upper](String_Upper.md) | Method | converts the string to uppercase |
-| [XOR](String_XOR.md) | Method | performs an XOR operation |
+| [Xor](String_Xor.md) | Method | performs an XOR operation |
