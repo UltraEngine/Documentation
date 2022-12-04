@@ -3,7 +3,8 @@
 This sets the pick mode of an entity for raycasting operations.
 
 ## Syntax
-- void **SetPickMode**(const [PickMode](Constants.md#PickMode) pickmode)
+
+- void **SetPickMode**(const PickMode pickmode)
 
 | Parameter | Description |
 | -----|-----|
