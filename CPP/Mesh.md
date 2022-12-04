@@ -6,7 +6,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 
 | Property | Type | Description |
 | --- | --- | --- |
-| bounds | const [AABB](AABB.md)& | read-only mesh bounding box |
+| bounds | const [Aabb](Aabb.md)& | read-only mesh bounding box |
 | indices | const vector<uint32_t\>& | read-only array of primitive indices |
 | material | const shared_ptr<[Material](Material.md)\>& | read-only material object |
 | primitives | const vector<[Primitive](Primitive.md)\>& | read-only array of mesh primitives |
