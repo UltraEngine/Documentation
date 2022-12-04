@@ -37,27 +37,49 @@ int main(int argc, const char* argv[])
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
-    //Create a camera
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(2);
+
+    //Create camera
     auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
-    camera->SetPosition(0, 0, -10);
+    camera->SetPosition(0, 0, -3);
     camera->SetFOV(70);
 
-    auto specmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Environment/Storm/specular.dds");
-    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND);
-
-    auto texbuffer = CreateTextureBuffer(512, 512, 0, true);
-    auto cam2 = CreateCamera(world);
-    cam2->SetRotation(-90, 0, 0);
-    cam2->SetRenderTarget(texbuffer);
+    //Create scenery
     auto box = CreateBox(world);
+    
+    auto cone = CreateCone(world);
+    cone->SetPosition(1.25, 0, 0);
+
+    auto sphere = CreateSphere(world);
+    sphere->SetPosition(-1.25, 0, 0);
+
+    //Create camera and texture buffer
+    auto texbuffer = CreateTextureBuffer(256, 256);
+    auto cam2 = CreateCamera(world);
+    cam2->SetClearColor(0, 0, 1);
+    cam2->SetRenderTarget(texbuffer);
+
+    //Create material
     auto mtl = CreateMaterial();
-    mtl->SetTexture(texbuffer->GetColorAttachment());
+    auto tex = texbuffer->GetColorAttachment();
+    mtl->SetTexture(tex);
     box->SetMaterial(mtl);
+    cone->SetMaterial(mtl);
+    sphere->SetMaterial(mtl);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        //Orient the texturebuffer camera
+        cam2->SetPosition(0, 0, 0);
+        cam2->Turn(0, 1, 0);
+        cam2->Move(0, 0, -3);
+
         world->Update();
         world->Render(framebuffer);
     }
