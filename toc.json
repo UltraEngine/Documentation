@@ -2642,8 +2642,8 @@
 									"filename": "String_Upper"
 								},
 								{
-									"title": "XOR",
-									"filename": "String_XOR"
+									"title": "Xor",
+									"filename": "String_Xor"
 								}
 							]
 						},
@@ -2707,8 +2707,8 @@
 									"filename": "WString_Upper"
 								},
 								{
-									"title": "XOR",
-									"filename": "WString_XOR"
+									"title": "Xor",
+									"filename": "WString_Xor"
 								}
 							]
 						}
