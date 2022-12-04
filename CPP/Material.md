@@ -20,7 +20,6 @@ This class is used to control the appearance of rendered surfaces.
 | [SetRoughness](Material_SetRoughness.md) | Method | sets the material rougness |
 | [SetShaderFamily](Material_SetShaderFamily.md) | Method | sets the material shader family |
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
-| [SetTextureScrollSpeed](Material_SetTextureScrollSpeed.md) | Method | simple texture animation |
 | [SetTransparent](Material_SetTransparent.md) | Method | sets the material transparency mode |
 | [CreateMaterial](CreateMaterial.md) | Function | creates a new material |
 | [LoadMaterial](LoadMaterial.md) | Function | loads a material from a file |
