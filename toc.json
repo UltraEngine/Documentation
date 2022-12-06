@@ -215,6 +215,10 @@
 									"filename": "Camera_SetRefraction"
 								},
 								{
+									"title": "SetRenderTarget",
+									"filename": "Camera_SetRenderTarget"
+								},
+								{
 									"title": "SetTessellation",
 									"filename": "Camera_SetTessellation"
 								},
