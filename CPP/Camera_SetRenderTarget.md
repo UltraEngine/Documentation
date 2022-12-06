@@ -4,7 +4,7 @@ This method sets a camera to render to a texture buffer.
 
 ## Syntax
 
-- void **SetRenderTarget**(shared_ptr<[TextureBuffer](TextureBuffer.md)\> texturebuffer, const int layer = 0)
+- void **SetRenderTarget**(shared_ptr<[TextureBuffer](TextureBuffer.md)\> texturebuffer)
 
 | Parameter | Description |
 |---|---|
