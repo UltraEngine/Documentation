@@ -10,9 +10,10 @@ This method enables or disables the transparency refraction setting for the came
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/refraction.jpg)
+
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
@@ -49,35 +50,46 @@ int main(int argc, const char* argv[])
 
     //Create camera
     auto camera = CreateCamera(world);
-    camera->SetFOV(70);
-    camera->SetPosition(0, 1, -4);
+    camera->SetFov(70);
+    camera->SetPosition(0, 1.5, -4);
+    camera->SetClearColor(0.125);
     camera->SetRefraction(true);
 
     //Create the scene
     auto floor = CreateBox(world, 20, 1, 20);
     floor->SetPosition(0, -0.5f, 0);
-    floor->SetColor(0, 1, 0);
+    auto floormtl = CreateMaterial();
+    floormtl->SetTexture(LoadTexture(remotepath + "/Materials/tiles.dds"));
+    floor->SetMaterial(floormtl);
 
     auto drag = LoadModel(world, remotepath + "/Models/Stanford/dragon.glb");
     drag->SetScale(0.1f);
     drag->SetColor(1, 1, 1, 1, true);
-    drag->SetReflection(false);
-
+    
     //Transparent material
     auto mtl = CreateMaterial();
-    mtl->SetColor(1, 1, 1, 0.25);
+    mtl->SetColor(1, 1, 1, 0.5);
     mtl->SetMetalness(0.5);
-    mtl->SetRoughness(0);
+    mtl->SetRoughness(0.5);
     mtl->SetTransparent(true);
     drag->SetMaterial(mtl, true);
 
-    //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    Vec3 camerarotation;
+    Vec2 axis = window->GetMouseAxis();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        //Camera rotate controls
+        auto newpos = window->GetMouseAxis();
+        auto diff = newpos - axis;
+        axis = newpos;
+        camerarotation.x += diff.y * 50.0f;
+        camerarotation.y += diff.x * 50.0f;
+        camera->SetPosition(0, 1.5, 0);
+        camera->SetRotation(camerarotation);
+        camera->Move(0, 0, -4);
+
         world->Update();
         world->Render(framebuffer, true);
     }
