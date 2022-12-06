@@ -1,6 +1,6 @@
 # Camera::SetRefraction
 
-This method enables or disables the transparency refraction setting for the camera.
+This method enables or disables the transparency refraction setting for the camera. This effect will make transparent surfaces appear to bend light as it passes through them.
 
 - void **SetRefraction**(const bool mode)
 
