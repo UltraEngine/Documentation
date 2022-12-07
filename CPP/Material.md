@@ -19,6 +19,7 @@ This class is used to control the appearance of rendered surfaces.
 | [SetMetalness](Material_SetMetalness.md) | Method | sets the material metalness |
 | [SetRoughness](Material_SetRoughness.md) | Method | sets the material rougness |
 | [SetShaderFamily](Material_SetShaderFamily.md) | Method | sets the material shader family |
+| [SetTessellation](Material_SetTessellation.md) | Method | controls material tessellation |
 | [SetTexture](Material_SetTexture.md) | Method | sets a material texture |
 | [SetTransparent](Material_SetTransparent.md) | Method | sets the material transparency mode |
 | [CreateMaterial](CreateMaterial.md) | Function | creates a new material |
