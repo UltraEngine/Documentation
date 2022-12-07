@@ -56,6 +56,7 @@ int main(int argc, const char* argv[])
     //Display material
     auto model = CreateCubeSphere(world, 0.5, 8, MESH_QUADS);
     auto mtl = LoadMaterial(remotepath + "/Materials/Ground/rocks_ground_02.json");
+    mtl->SetTessellation(true);
     mtl->SetDisplacement(0.075f);
     model->SetMaterial(mtl);
 
