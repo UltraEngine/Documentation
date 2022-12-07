@@ -25,77 +25,54 @@ const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Docume
 
 int main(int argc, const char* argv[])
 {
-    //Get the displays
+    //Get the primary display
     auto displays = GetDisplays();
 
-    //Create window
+    //Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
-    //Create framebuffer
+    //Create a rendering framebuffer
     auto framebuffer = CreateFramebuffer(window);
-    framebuffer->GetSize();
 
-    //Create world
+    //Create a world
     auto world = CreateWorld();
-    world->SetAmbientLight(0.05);
+    world->SetAmbientLight(0);
 
-    //Set environment maps
-    auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
-    auto diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds");
-    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND);
-    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
-    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
-
-    //Create light
-    auto light = CreateBoxLight(world);
-    light->SetRotation(45, 35, 0);
-    light->SetArea(30, 30);
-    light->SetRange(-20, 20);
-
-    //Create camera
+    //Create a camera
     auto camera = CreateCamera(world);
+    camera->SetPosition(0, 0, -1);
     camera->SetFov(70);
-    camera->SetPosition(0, 1.5, -4);
     camera->SetClearColor(0.125);
-    camera->SetRefraction(true);
+    camera->SetTessellation(4);
 
-    //Create the scene
-    auto floor = CreateBox(world, 20, 1, 20);
-    floor->SetPosition(0, -0.5f, 0);
-    auto floormtl = CreateMaterial();
-    floormtl->SetTexture(LoadTexture(remotepath + "/Materials/tiles.dds"));
-    floor->SetMaterial(floormtl);
+    //Create a light
+    auto  light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetRotation(35, 35, 0);
+    light->SetColor(4);
 
-    auto drag = LoadModel(world, remotepath + "/Models/Stanford/dragon.glb");
-    drag->SetScale(0.1f);
-    drag->SetColor(1, 1, 1, 1, true);
-
-    //Transparent material
-    auto mtl = CreateMaterial();
-    mtl->SetColor(1, 1, 1, 0.5);
-    mtl->SetMetalness(0.5);
-    mtl->SetRoughness(0.5);
-    mtl->SetTransparent(true);
-    drag->SetMaterial(mtl, true);
-
-    Vec3 camerarotation;
-    Vec2 axis = window->GetMouseAxis();
+    //Display material
+    auto model = CreateCubeSphere(world, 0.5, 8, MESH_QUADS);
+    auto mtl = LoadMaterial(remotepath + "/Materials/Ground/rocks_ground_02.json");
+    mtl->SetTessellation(true);
+    mtl->SetDisplacement(0.075f);
+    model->SetMaterial(mtl);
 
     //Main loop
-    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
     {
-        //Camera rotate controls
-        auto newpos = window->GetMouseAxis();
-        auto diff = newpos - axis;
-        axis = newpos;
-        camerarotation.x += diff.y * 50.0f;
-        camerarotation.y += diff.x * 50.0f;
-        camera->SetPosition(0, 1.5, 0);
-        camera->SetRotation(camerarotation);
-        camera->Move(0, 0, -4);
+        //Arrow keys move
+        if (window->KeyDown(KEY_DOWN)) camera->Move(0, 0, -0.01);
+        if (window->KeyDown(KEY_UP)) camera->Move(0, 0, 0.01);
+
+        //Show wireframe render when key is pressed
+        camera->SetWireframe(window->KeyDown(KEY_W));
+
+        //Rotate the model
+        model->Turn(0, 0.1, 0);
 
         world->Update();
-        world->Render(framebuffer, true);
+        world->Render(framebuffer);
     }
     return 0;
 }
