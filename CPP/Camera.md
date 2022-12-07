@@ -19,5 +19,5 @@ The camera class is an entity used to render the world.
 | [SetRenderTarget](Camera_SetRenderTarget.md) | Method | for render-to-texture |
 | [SetTessellation](Camera_SetTessellation.md) | Method | sets camera tessellation density |
 | [SetZoom](Camera_SetZoom.md) | Method | sets the camera zoom |
-| [Unproject](Camera_Unproject.md) | Method | unprojects a position from screen to world space |
+| [UnProject](Camera_UnProject.md) | Method | unprojects a position from screen to world space |
 | [CreateCamera](CreateCamera.md) | Function | creates a new camera entity |
