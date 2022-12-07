@@ -1,10 +1,10 @@
-# Camera::Unproject
+# Camera::UnProject
 
 This method projects 2D screen coordinate to a point.
 
 ## Syntax
 
-- [Vec3](Vec3.md) **Unproject**(const [Vec3](Vec3.md)& coord, shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer)
+- [Vec3](Vec3.md) **UnProject**(const [Vec3](Vec3.md)& coord, shared_ptr<[Framebuffer](Framebuffer.md)\> framebuffer)
 
 | Parameter | Description |
 |---|---|
