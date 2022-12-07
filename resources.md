@@ -6,6 +6,7 @@
 
 - [FreePBR](https://www.freepbr.com/)
 - [Polyhaven](https://polyhaven.com/textures)
+- [Texture Ninja](https://texture.ninja)
 
 ### Models
 
