@@ -1169,6 +1169,10 @@
 									"filename": "Material_SetShaderFamily"
 								},
 								{
+									"title": "SetTessellation",
+									"filename": "Material_SetTessellation"
+								},
+								{
 									"title": "SetTexture",
 									"filename": "Material_SetTexture"
 								},
