@@ -1,6 +1,6 @@
 # FetchUrl
 
-This functions returns the contents of a web page or online file as a string.
+This functions returns the contents of a web page or online file as a UTF8 string.
 
 ## Syntax
 
@@ -12,4 +12,8 @@ This functions returns the contents of a web page or online file as a string.
 
 ## Returns
 
-Returns the contents of the specified URL.
+Returns the contents of the specified URL as a UTF8 string.
+
+## Remarks
+
+No caching will be used, so this function is appropriate for use with Web APIs.
