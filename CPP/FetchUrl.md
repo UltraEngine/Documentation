@@ -12,7 +12,7 @@ This functions returns the contents of a web page or online file as a UTF8 strin
 
 ## Returns
 
-Returns the contents of the specified URL as a UTF8 string.
+Returns the contents of the specified URL as a UTF-8 string.
 
 ## Remarks
 
