@@ -16,11 +16,15 @@ This method is used to show or hide a single terrain tile.
 
 This example lets you cut holes in the terrain.
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/terrain_settilehidden.jpg)
+
 ```c++
 #include "UltraEngine.h"
 #include "ComponentSystem.h"
 
 using namespace UltraEngine;
+
+const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
 
 int main(int argc, const char* argv[])
 {
@@ -38,24 +42,25 @@ int main(int argc, const char* argv[])
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->SetPosition(0, 100, -100);
     camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
-    
+
     //Sunlight
     auto light = CreateDirectionalLight(world);
-    light->SetRotation(65, 35, 0);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(2);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
-    terrain->LoadHeightmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Terrain/512.r16");
+    terrain->LoadHeightmap(remotepath + "/Terrain/512.r16");
     terrain->SetScale(1, 100, 1);
 
     //Create base material
     auto ground = CreateMaterial();
-    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
-    auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
+    auto diffusemap = LoadTexture(remotepath + "/Materials/Ground/river_small_rocks_diff_4k.dds");
+    auto normalmap = LoadTexture(remotepath + "/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
     terrain->SetMaterial(ground);
