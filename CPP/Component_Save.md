@@ -1,10 +1,10 @@
-# Component::SaveState
+# Component::Save
 
 This method is called when an actor is saved to a file or copied.
 
 ## Syntax
 
-- bool **SaveState**([nlohmann::json](https://json.nlohmann.me/)& j3)
+- bool **Save**([nlohmann::json](https://json.nlohmann.me/)& j3)
 
 | Parameter | Description |
 |---|---|
@@ -19,9 +19,9 @@ Returns true if the component is successfully saved, otherwise false is returned
 This method can be overridden to add your own custom handling. For example, your component might need to save some extra information or write to another file. If you do so, you will probably want to call the base method without your method, to load the built-in supported data types, like so:
 
 ```c++
-bool SaveState(nlohmann::json& j3)
+bool Save(nlohmann::json& j3)
 {
-  if (!Component::SaveState(j3)) return false;
+  if (!Component::Save(j3)) return false;
   j3["customdata"]["myvalue"] = this->customvalue;
   return true;
 }
