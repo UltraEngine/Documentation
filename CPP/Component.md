@@ -7,8 +7,8 @@ This class can be extended to add behavior and properties to an [Actor](Actor.md
 | actor | [Actor](Actor.md)* | actor this component belongs to |
 | entity | shared_ptr<[Entity](Entity.md)\> | entity this component's actor contains |
 | [Collide](Component_Collide.md) | Method | called whenever a physics collision occurs |
-| [LoadState](Component_LoadState.md) | Method | called when an actor is loaded or copied |
-| [SaveState](Component_SaveState.md) | Method | called when an actor is saved or copied |
+| [Load](Component_Load.md) | Method | called when an actor is loaded or copied |
+| [Save](Component_Save.md) | Method | called when an actor is saved or copied |
 | [Start](Component_Start.md) | Method | called when a component is added |
 | [Update](Component_Update.md) | Method | called once for each actor in [World::Update](World_Update.md) |
 
