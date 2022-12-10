@@ -12,9 +12,11 @@ This function creates a new kinematic joint. A kinematic joint can be used to co
 
 ## Returns
 
-Returns a new joint object.
+Returns a new joint object, or NULL if the joint could not be created.
 
 ## Remarks
+
+The entity's mass must be greater than zero.
 
 A kinematic joint can control the entity position, rotation, or both.
 
