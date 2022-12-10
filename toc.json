@@ -711,11 +711,11 @@
 									"filename": "Component_Collide"
 								},
 								{
-									"title": "LoadState",
+									"title": "Load",
 									"filename": "Component_Load"
 								},
 								{
-									"title": "SaveState",
+									"title": "Save",
 									"filename": "Component_Save"
 								},
 								{
