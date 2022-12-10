@@ -712,11 +712,11 @@
 								},
 								{
 									"title": "LoadState",
-									"filename": "Component_LoadState"
+									"filename": "Component_Load"
 								},
 								{
 									"title": "SaveState",
-									"filename": "Component_SaveState"
+									"filename": "Component_Save"
 								},
 								{
 									"title": "Start",
