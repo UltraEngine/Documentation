@@ -163,6 +163,18 @@ public:
     {
     
     }
+    
+    virtual bool Save(nlohmann::json& j3)
+    {
+        if (!Component::Save(j3)) return false;
+        return true;
+    }
+    
+    virtual bool Load(nlohmann::json& j3)
+    {
+        if (!Component::Load(j3)) return false;
+        return true;
+    }
 }; 
 ```
 
