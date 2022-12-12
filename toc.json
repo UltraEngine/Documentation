@@ -2270,10 +2270,7 @@
 					"topics": [{
 							"title": "Mutex",
 							"filename": "Mutex",
-							"topics": [{
-									"title": "CommandBuffer",
-									"filename": "CommandBuffer"
-								},
+							"topics": [
 								{
 									"title": "CreateMutex",
 									"filename": "CreateMutex"
