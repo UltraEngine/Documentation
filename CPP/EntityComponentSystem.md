@@ -145,6 +145,8 @@ To add a new component class, create a new .hpp file in "Source/Components" with
 #include "UltraEngine.h"
 #include "../ComponentSystem.h"
 
+using namespace UltraEngine;
+
 class MyComponent : public Component
 {
 public: 
@@ -159,7 +161,7 @@ public:
     
     }
     
-    virtual void Collide(shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
+    virtual void Collide(std::shared_ptr<Actor> actor, const Vec3& position, const Vec3& normal, const float speed)
     {
     
     }
