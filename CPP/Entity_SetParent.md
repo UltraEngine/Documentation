@@ -2,7 +2,7 @@
 This method retrieves an entity's parent, if it exists.
 
 ## Syntax
-- void **SetParent**(shared_ptr<[Entity](README.md)> parent, const bool global = true)
+- void **SetParent**(shared_ptr<[Entity](Entity.md)> parent, const bool global = true)
 
 | Parameter | Description |
 | ------ | ------ |
