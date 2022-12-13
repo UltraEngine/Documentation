@@ -14,7 +14,7 @@ You can run the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchma
 
 ## Installation
 
-First, download and install the [Ultra Engine Client](https://ultraengine.github.io/files/UltraEngineClient.exe). This application will allow you to install different versions of the software and receive updates. When you open the application you will be prompted to sign into your Ultra Engine account. If you do not have an account yet, you can create one [here](https://www.ultraengine.com/community/register).
+First, download and install the [Ultra Engine Client](https://ultraengine.github.io/files/UltraClient.exe). This application will allow you to install different versions of the software and receive updates. When you open the application you will be prompted to sign into your Ultra Engine account. If you do not have an account yet, you can create one [here](https://www.ultraengine.com/community/register).
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_signin.png)
 
