@@ -17,22 +17,66 @@ The file extension of plugin modules varies by platform. You can use an asterisk
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/loadplugin.jpg)
+
 ```c++
 #include "UltraEngine.h"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-	auto plugin = LoadPlugin("Plugins/FITextureLoader");
-	if (plugin)
-	{
-		Print(plugin->description);
-	}
-	else
-	{
-		Print("Failed to load plugin.");
-	}
-	return 0;
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+
+    //Create a world
+    auto world = CreateWorld();
+    world->SetAmbientLight(0);
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Load FreeImage plugin
+    auto plg = LoadPlugin("Plugins/FITextureLoader");
+
+    //Load model
+    auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/cyber_samurai.glb");
+    model->Turn(0, 180, 0, true);
+
+    //Environment maps
+    auto specmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/specular.dds");
+    auto diffmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/diffuse.dds");
+    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_BACKGROUND);
+    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
+    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
+
+    //Create a camera    
+    auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125);
+    camera->SetPosition(0, 1.4, -1);
+    camera->SetFov(70);
+    
+    //Camera controls
+    auto actor = CreateActor(camera);
+    actor->AddComponent<CameraControls>();
+
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetArea(15, 15);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(1.2);
+
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        world->Update();
+        world->Render(framebuffer);
+    }
+    return 0;
 }
 ```
