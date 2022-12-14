@@ -15,6 +15,8 @@ This method sets the world skybox or specular and diffuse reflection maps.
 
 For best results, environment maps should be generated from HDR images using the [glTF IBL Sampler](https://github.com/KhronosGroup/glTF-IBL-Sampler) tool from Khronos.
 
+YOu can access a collection of ready-to-use environment maps [here](https://github.com/UltraEngine/Assets/tree/main/Materials/Environment).
+
 ## Example
 
 ```c++
