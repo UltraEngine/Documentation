@@ -11,7 +11,7 @@ This function loads a texture from a file path or stream.
 |---|---|
 | path | file path to load the pixmap from |
 | stream | stream to load the pixmap from |
-| flags | optional load flags |
+| flags | optional load flags, can be  |
 
 ## Returns
 
@@ -20,3 +20,5 @@ Returns the loaded texture, or NULL if no texture was loaded.
 ## Remarks
 
 Ultra Engine natively supports the DDS and Leadwerks TEX texture file formats. The FITextureLoader plugin supports JPEG, PNG, TGA, GIF, and HDR files.
+
+If the LOAD_MIPCHAIN LoadFlag is included, the texture mipmaps will be loaded into the mipmaps member of the texture.
