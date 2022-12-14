@@ -44,6 +44,7 @@ int main(int argc, const char* argv[])
     auto plg = LoadPlugin("Plugins/FITextureLoader");
 
     //Load model
+    //Cyber Samurai by Khoa Minh: https://sketchfab.com/3d-models/cyber-samurai-26ccafaddb2745ceb56ae5cfc65bfed5
     auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/cyber_samurai.glb");
     model->Turn(0, 180, 0, true);
 
