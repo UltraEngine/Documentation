@@ -6,6 +6,7 @@ A texture is an image that can be applied to 2D or 3D surfaces. Textures can be 
 
 | Property | Type | Description |
 | --- | --- | --- |
+| mipchain | const std::vector<std::vector<shared_ptr<[Pixmap](Pixmap.md)\> > >& | stores texture mipmaps when loaded with LOAD_MIPCHAIN |
 | size | const [iVec3](iVec3.md)& | read-only dimensions |
 | [BuildMipmaps](Texture_BuildMipmaps.md) | Method | generates mipmaps for the texture |
 | [SetPixels](Texture_SetPixels.md) | Method | sets the texture image data |
