@@ -21,4 +21,4 @@ Returns the loaded texture, or NULL if no texture was loaded.
 
 Ultra Engine natively supports the DDS and Leadwerks TEX texture file formats. The FITextureLoader plugin supports JPEG, PNG, TGA, GIF, and HDR files.
 
-If the LOAD_MIPCHAIN LoadFlag is included, the texture mipmaps will be loaded into the mipmaps member of the texture.
+If the LOAD_MIPCHAIN LoadFlag is included, the texture mipmaps will be loaded into the mipchain member of the texture.
