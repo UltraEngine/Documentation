@@ -18,6 +18,8 @@ This method sets the world skybox or specular and diffuse reflection maps.
 
 using namespace UltraEngine;
 
+const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
+
 int main(int argc, const char* argv[])
 {
     //Get the displays
@@ -37,8 +39,8 @@ int main(int argc, const char* argv[])
     camera->SetClearColor(0.125);
     camera->SetPosition(0, 0, -2);
 
-    auto specmap = LoadTexture("Materials/Environment/Storm/specular.dds");
-    auto diffmap = LoadTexture("Materials/Environment/Storm/diffuse.dds");
+    auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
+    auto diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds");
 
     world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND);
     world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
