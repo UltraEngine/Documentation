@@ -1,4 +1,4 @@
-# Plugin #
+# Plugin
 
 **Base class**: [Asset](Asset.md)
 
@@ -18,3 +18,13 @@ auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader")
 | title | const [WString](WString.md)& | read-only title loaded from plugin |
 | properties | nlohmann::json | JSON structure containing plugin information |
 | [LoadPlugin](LoadPlugin.md) | Function | loads a plugin module |
+
+## Stock Plugins
+
+The following plugins are provided:
+
+| Name | Description |
+|---|---|
+| FITextureLoader | Loads and saves many image formats including JPEG, PNG, BMP, PSD, TGA, GIF, HDR, and EXR |
+| ISPTexComp | Provides fast BC5, BC6, and BC7 pixmap format conversion |
+| KTX2TextureLoader | Loads and saves Khronos KTX2 texture files |
