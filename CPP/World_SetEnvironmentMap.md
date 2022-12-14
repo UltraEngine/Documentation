@@ -11,6 +11,10 @@ This method sets the world skybox or specular and diffuse reflection maps.
 | texture | cubemap to set |
 | id | environment map ID, may be ENVIRONMENT_BACKGROUND, ENVIRONMENT_SPECULAR, or ENVIRONMENT_DIFFUSE
 
+## Remarks
+
+For best results, environment maps should be generated from HDR images using the [glTF IBL Sampler](https://github.com/KhronosGroup/glTF-IBL-Sampler) tool from Khronos.
+
 ## Example
 
 ```c++
