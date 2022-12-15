@@ -22,20 +22,16 @@ Ultra Engine natively supports glTF, OBJ, and Leadwerks MDL files. JPEG and PNG 
 
 ## Example
 
-This example loads and displays a 3D model.
-
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/loadmodel.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/loadplugin.jpg)
 
 ```c++
 #include "UltraEngine.h"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Plugin fpr texture loading
-    auto plugin = LoadPlugin("Plugins/FITextureLoader");
-
     //Get the displays
     auto displays = GetDisplays();
 
@@ -44,40 +40,47 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld();
-    world->SetAmbientLight(0.25);
+    world->SetAmbientLight(0);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
-    //Create a camera
-    auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->SetPosition(0, 0, -2);
-    camera->SetFOV(70);
+    //Load FreeImage plugin
+    auto plg = LoadPlugin("Plugins/FITextureLoader");
 
-    //Create a light
-    auto light = CreateBoxLight(world);
-    light->SetRotation(45, 35, 0);
-    light->SetRange(-10, 10);
-    light->SetColor(2);
+    //Load model
+    //Cyber Samurai by Khoa Minh: https://sketchfab.com/3d-models/cyber-samurai-26ccafaddb2745ceb56ae5cfc65bfed5
+    auto model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Characters/cyber_samurai.glb");
+    model->Turn(0, 180, 0, true);
 
-    WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/";
-
-    //Set environment for PBR materials
-    auto specmap = LoadTexture(remotepath + "Materials/Environment/Storm/specular.dds");
-    auto diffmap = LoadTexture(remotepath + "Materials/Environment/Storm/diffuse.dds");
+    //Environment maps
+    auto specmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/specular.dds");
+    auto diffmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/diffuse.dds");
+    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_BACKGROUND);
     world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
     world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
 
-    //Load a model
-    // Battle Damaged Sci-fi Helmet - PBR by theblueturtle_
-    // https://sketchfab.com/models/b81008d513954189a063ff901f7abfe4
-    auto model = LoadModel(world, remotepath + "Models/DamagedHelmet.glb");
-   
+    //Create a camera    
+    auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125);
+    camera->SetPosition(0, 1.4, -1);
+    camera->SetFov(70);
+    camera->AddPostEffect(LoadPostEffect("Shaders/PostEffects/FXAA.json"));
+    
+    //Camera controls
+    auto actor = CreateActor(camera);
+    actor->AddComponent<CameraControls>();
+
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-10, 10);
+    light->SetArea(15, 15);
+    light->SetRotation(45, 35, 0);
+    light->SetColor(1.2);
+
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        model->Turn(0, 1, 0, true);
         world->Update();
         world->Render(framebuffer);
     }
