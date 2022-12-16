@@ -22,5 +22,6 @@ The world class is a container for entities.
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | sets the collision response for collisions between the specified collision types |
 | [SetEnvironmentMap](World_SetEnvironmentMap.md) | Method | sets the skybox or specular and diffuse reflection maps |
 | [SetGravity](World_SetGravity.md) | Method | sets the world gravity force |
+| [SetIBLIntensity](World_SetIBLIntensity.md) | Method | adjusts the strength of environment map reflections |
 | [Update](World_Update.md) | Method | updates physics, pathfinding, and other systems |
 | [CreateWorld](CreateWorld.md) | Function | creates a new world |
