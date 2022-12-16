@@ -20,7 +20,7 @@ First, download and install the [Ultra Engine Client](https://ultraengine.github
 
 When you sign into your account in the application, it will look like this:
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_start.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_start.png)
 
 The **Projects** tab displays a list of your projects for easy access, and allows new project creation.
 
@@ -36,31 +36,31 @@ The **Settings** tab contains various settings for the cient application.
 
 When your subscription plan is active, you can select a channel in the **Updates** panel and install the engine. If your plan is not active, you can renew it [here](https://www.ultraengine.com/community/store).
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_install.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_install.png)
 
 The default channel will contain the current stable build, which does not change. You can select a newer version and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
 
 Once the engine is installed you can create a new project in the **Projects** tab. Press the **Create** button, fill in the required information, and press okay to get started.
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_newproject.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_newproject.png)
 
 The folder containing your project will be opened. You can open the .sln file with Visual Studio and start coding. You can run any of the [examples](LoadModel.md) in this documentation by copying and pasting the code into your main.cpp file. Compile and run the project and the example will be shown.
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.png)
 
 Your project will be listed in the projects panel for easy access.
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projects.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projects.png)
 
 ## Updating
 
 The **Updates** tab will show an indicator when an update is available. After installing the update, you may see an icon indicating that some of your projects are out of date. This happens when the files in the project templates receive any changes.
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projectoutdated.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projectoutdated.png)
 
 You can click the icon to see a list of all the files that have been modified. When you press the **OK** button to update the project, the new files will overwrite your existing project files. To prevent accidental data loss, a copy of your project file will be saved in the "backup" folder in your project directory.
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projectsync.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projectsync.png)
 
 You can view changes in text-based files by pressing the **Diff** button. This will open both versions of the file side-by-side and allow you to pick and choose which changes you want to insert. This feature requires [Visual Studio Code](https://code.visualstudio.com/download) to be installed, or you can set your own diff tool and command line in the **Settings** tab.
 
