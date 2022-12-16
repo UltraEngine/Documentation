@@ -4,8 +4,8 @@ This method performs a line segment intersection test on all the entities in the
 
 ## Syntax
 
-- [PickInfo](PickInfo.md) **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, const dFloat radius = 0.0, const bool closest = false, bool filter(shared_ptr<Entity>, shared_ptr<Object>) = NULL, shared_ptr<Object> extra = NULL)
-- [PickInfo](PickInfo.md) **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, const dFloat radius = 0.0, const bool closest = false, bool filter(shared_ptr<Entity>, shared_ptr<Object>) = NULL, shared_ptr<Object> extra = NULL)
+- [PickInfo](PickInfo.md) **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, const dFloat radius = 0.0, const bool closest = false, bool filter(shared_ptr<[Entity](Entity.md)>, shared_ptr<[Object](Object.md)>) = NULL, shared_ptr<[Object](Object.md)> extra = NULL)
+- [PickInfo](PickInfo.md) **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, const dFloat radius = 0.0, const bool closest = false, bool filter(shared_ptr<[Entity](Entity.md)>, shared_ptr<[Object](Object.md)>) = NULL, shared_ptr<[Object](Object.md)> extra = NULL)
 
 | Parameter | Description |
 | --- | --- |
