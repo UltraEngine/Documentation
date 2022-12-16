@@ -13,7 +13,7 @@ This method performs a raycast at the specified screen coordinate.
 | screencoord, (x, y) | screen coordinate to pick |
 | radius | pick sphere radius |
 | closest | if true the closest point will be determined |
-| filter | optional callback to discard object |
+| filter | optional callback to filter objects |
 | extra | extra value to send to filter callback |
 
 ## Returns
