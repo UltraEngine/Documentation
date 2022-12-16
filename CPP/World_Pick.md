@@ -13,7 +13,7 @@ This method performs a line segment intersection test on all the entities in the
 | p1, (x1, y1, z1) | line end position |
 | radius | if greater than zero a swept sphere intersection test will be performed |
 | closest | if set to true the closest intersected point will be found, otherwise the routine will return on the first hit |
-| filter | optional callback for discarding objects |
+| filter | optional callback to filter objects |
 | extra | optional extra value to pass to filter |
 
 ## Returns
