@@ -2889,6 +2889,10 @@
 							"filename": "World_SetGravity"
 						},
 						{
+							"title": "SetIblIntensity",
+							"filename": "World_SetIblIntensity"
+						},
+						{
 							"title": "Update",
 							"filename": "World_Update"
 						}
