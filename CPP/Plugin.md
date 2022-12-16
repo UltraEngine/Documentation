@@ -26,5 +26,5 @@ The following plugins are provided:
 | Name | Description |
 |---|---|
 | FITextureLoader | Loads and saves many image formats including JPEG, PNG, BMP, PSD, TGA, GIF, HDR, and EXR |
-| ISPTexComp | Provides fast BC5, BC6, and BC7 pixmap format conversion |
+| ISPCTexComp | Provides fast BC5, BC6, and BC7 pixmap format conversion |
 | KTX2TextureLoader | Loads and saves Khronos KTX2 texture files |
