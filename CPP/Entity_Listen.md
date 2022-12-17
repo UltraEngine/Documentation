@@ -19,7 +19,7 @@ int main(int argc, const char* argv[])
 	auto displays = GetDisplays();
 
 	//Create a window
-	auto window = UltraEngine::CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+	auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create a world
 	auto world = CreateWorld();
