@@ -10,7 +10,7 @@ This method returns a handle to the system window object.
 
 ## Returns
 
-Returns the system window handle.
+Returns the system window handle. The return type depends on the platform the program is compiled for.
 
 ## Example
 
