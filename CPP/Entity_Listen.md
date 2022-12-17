@@ -6,6 +6,8 @@ This method will cause the entity to be used for the listener's orientation for 
 
 - void **Listen**()
 
+## Example
+
 ```c++
 #include "UltraEngine.h"
 
