@@ -15,7 +15,7 @@ Returns a new framebuffer object if one is successfully created, otherwise NULL 
 
 ## Remarks
 
-A framebuffer cannot be created on a window that uses the WINDOW_RESIZABLE window style, unless the multi-threaded renderer is disabled by calling [ASyncRender](ASyncRender.md) prior to engine initialization.
+A framebuffer cannot be created on a window that uses the WINDOW_RESIZABLE window style, unless the multi-threaded renderer is disabled by calling [AsyncRender](AsyncRender.md) prior to engine initialization.
 
 ## Example
   
