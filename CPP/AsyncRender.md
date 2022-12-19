@@ -1,10 +1,10 @@
-# ASyncRender
+# AsyncRender
 
 This function can be used to disable multithreaded rendering.
 
 ## Syntax
 
-- void **ASyncRender**(const bool mode)
+- void **AsyncRender**(const bool mode)
 
 | Parameter | Description |
 |---|---|
@@ -30,7 +30,7 @@ using namespace UltraEngine;
 int main(const char* args, const int argc)
 {
     //Disable multithreaded rendering
-    ASyncRender(false);
+    AsyncRender(false);
 
     //Get the displays
     auto displays = GetDisplays();
