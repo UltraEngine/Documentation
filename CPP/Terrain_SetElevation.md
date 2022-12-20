@@ -43,7 +43,7 @@ int main(int argc, const char* argv[])
 
     //Sunlight
     auto light = CreateDirectionalLight(world);
-    light->SetRotation(65, 35, 0);
+    light->SetRotation(45, 35, 0);
 
     //Create terrain
     auto terrain = CreateTerrain(world, 512);
