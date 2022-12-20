@@ -65,7 +65,7 @@ int main(int argc, const char* argv[])
     model2->SetSkeleton(model->skeleton);
 
     //Main loop
-    while (window->Closed() == false)
+    while (window->Closed() == false or window->KeyHit(KEY_ESCAPE))
     {
         world->Update();
         world->Render(framebuffer);
