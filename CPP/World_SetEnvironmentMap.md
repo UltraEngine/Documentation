@@ -43,11 +43,10 @@ int main(int argc, const char* argv[])
     camera->SetClearColor(0.125);
     camera->SetPosition(0, 0, -2);
 
+    //Set environment maps
     const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
-
     auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
     auto diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds");
-
     world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND);
     world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
     world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
