@@ -24,8 +24,6 @@ You can access a collection of ready-to-use environment maps [here](https://gith
 
 using namespace UltraEngine;
 
-const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
-
 int main(int argc, const char* argv[])
 {
     //Get the displays
@@ -44,6 +42,8 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
     camera->SetPosition(0, 0, -2);
+
+    const WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
 
     auto specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds");
     auto diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds");
