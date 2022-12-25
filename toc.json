@@ -745,11 +745,11 @@
 							"filename": "Package",
 							"topics": [
 								{
-									"title": "Package_FileSize",
+									"title": "FileSize",
 									"filename": "Package_FileSize"
 								},
 								{
-									"title": "Package_FileType",
+									"title": "FileType",
 									"filename": "Package_FileType"
 								},
 								{
@@ -757,11 +757,11 @@
 									"filename": "LoadPackage"
 								},								
 								{
-									"title": "Package_ReadFile",
+									"title": "ReadFile",
 									"filename": "Package_ReadFile"
 								},
 								{
-									"title": "Package_SetPassword",
+									"title": "SetPassword",
 									"filename": "Package_SetPassword"
 								}								
 							]
