@@ -741,6 +741,32 @@
 							}]
 						},
 						{
+							"title": "Package",
+							"filename": "Package",
+							"topics": [
+								{
+									"title": "Package_FileSize",
+									"filename": "Package_FileSize"
+								},
+								{
+									"title": "Package_FileType",
+									"filename": "Package_FileType"
+								},
+								{
+									"title": "LoadPackage",
+									"filename": "LoadPackage"
+								},								
+								{
+									"title": "Package_ReadFile",
+									"filename": "Package_ReadFile"
+								},
+								{
+									"title": "Package_SetPassword",
+									"filename": "Package_SetPassword"
+								}								
+							]
+						},   
+						{
 							"title": "Stream",
 							"filename": "Stream",
 							"topics": [{
