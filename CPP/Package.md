@@ -1,6 +1,6 @@
 # Package
 
-**Base class**: [Asset](Asset.md)
+Base class: [Asset](Asset.md)
 
 This class provides an interface for loading files from compressed and encrypted archives. Ultra Engine includes built-in support for Zip packages. Other archive formats can be added with the plugins system.
 
