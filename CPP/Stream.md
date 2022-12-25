@@ -10,6 +10,7 @@ This class provides an interface for reading and writing files.
 | [Close](Stream_Close.md) | Method | closes the stream |
 | [Eof](Stream_Eof.md) | Method | returns true when the end of the stream is reached |
 | [Flush](Stream_Flush.md) | Method | flushes the stream |
+| [GetPackage](Stream_GetPackage.md) | Method | returns the package the stream was loaded from |
 | [GetPosition](Stream_GetPosition.md) | Method | returns the current position for read and write operations |
 | [GetSize](Stream_GetSize.md) | Method | returns the stream size |
 | [Read](Stream_Read.md) | Method | reads block of data from the stream |
