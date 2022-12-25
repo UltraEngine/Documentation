@@ -790,6 +790,10 @@
 									"filename": "Stream_Flush"
 								},
 								{
+									"title": "GetPackage",
+									"filename": "Stream_GetPackage"
+								},
+								{
 									"title": "GetPosition",
 									"filename": "Stream_GetPosition"
 								},
