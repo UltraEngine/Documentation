@@ -8,7 +8,7 @@ This method returns the size of a file in the archive.
 
 | Parameter | Description |
 |---|---|
-| path | relative path to load |
+| path | relative file path |
 
 ## Returns
 
