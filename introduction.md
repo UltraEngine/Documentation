@@ -76,6 +76,8 @@ auto pak = LoadPackage("gamedata.zip");// load the archive
 pak->SetPassword("xxxxxxxxxxxxx");// set your own password here
 ```
 
+Note that AES encryption is not supported. If your Zip compression program has an option for legacy encryption, you should use that.
+
 The debug build stores the physics library as separate DLLs for external debugging. The release build does not need these DLLs:
 - newton_d.dll
 - dCustomJoints_d.dll
