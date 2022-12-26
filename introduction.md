@@ -69,6 +69,13 @@ You can view changes in text-based files by pressing the **Diff** button. This w
 
 Only the release build of your game should be distributed. The debug build of your game will end with the suffix "_d.exe" and should not be included.
 
+You can pack all game data files (models, textures, etc.) into an [encrypted Zip package](https://www.ultraengine.com/learn/Package) to protect them. Just load the archive at the beginning of your program with this code:
+
+```c++
+auto pak = LoadPackage("gamedata.zip");// load the archive
+pak->SetPassword("xxxxxxxxxxxxx");// set your own password here
+```
+
 The debug build stores the physics library as separate DLLs for external debugging. The release build does not need these DLLs:
 - newton_d.dll
 - dCustomJoints_d.dll
