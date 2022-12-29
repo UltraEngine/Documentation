@@ -1,4 +1,4 @@
-# Ultra Engine Documentation
+# Documentation
 
 Welcome to the Ultra Engine documentation. Here you will learn how to use the software to build high-performance games and applications.
 
