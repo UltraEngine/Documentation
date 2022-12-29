@@ -27,7 +27,6 @@ int main(int argc, const char* argv[])
     camera->SetFov(70);
     camera->SetPosition(0, 0, -3);
     camera->Listen();
-    camera->Turn(0, 45, 0);
 
     //Create a light
     auto light = CreateBoxLight(world);
