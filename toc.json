@@ -1485,6 +1485,10 @@
 								{
 									"title": "SetScale",
 									"filename": "Interface_SetScale"
+								},
+								{
+									"title": "SetSize",
+									"filename": "Interface_SetSize"
 								}
 							]
 						},
