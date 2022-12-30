@@ -1,5 +1,5 @@
 # WString::Find #
-This method performs a search for the specified term.
+This method performs a search for the specified term in the wide string.
 
 ## Syntax ##
 - int **Find**(const [WString](WString.md)& token)
