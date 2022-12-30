@@ -1,5 +1,5 @@
 # WString::Replace #
-This method performs a search and replace operation on the string and returns the result.
+This method performs a search and replace operation on the wide string and returns the result.
 
 ## Syntax ##
 - [WString](WString.md) **Replace**(const [WString](WString.md)& searchtext, const [WString](WString)& replacetext)
