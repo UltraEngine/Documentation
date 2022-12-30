@@ -1,5 +1,5 @@
 # WString::Lower
-This method returns the lowercase version of the string.
+This method returns the lowercase version of the wide string.
 
 - [WString](WString.md) **Lower**()
 
