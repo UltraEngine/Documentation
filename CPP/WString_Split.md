@@ -1,6 +1,6 @@
 # WString::Split
 
-This method splits the string by a delimiter and returns an array of parts.
+This method splits the wide string by a delimiter and returns an array of parts.
 
 ## Syntax
 
