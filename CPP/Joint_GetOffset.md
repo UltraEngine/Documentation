@@ -55,13 +55,13 @@ int main(int argc, const char* argv[])
 
     //Setup 2D display
     auto cam2d = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-    cam2d->SetRenderLayers(RENDERLAYER_7);
+    cam2d->SetRenderLayers(128);
     cam2d->SetClearMode(CLEAR_DEPTH);
     cam2d->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f);
 
     auto font = LoadFont("Fonts/arial.ttf");
     auto sprite = CreateSprite(world, font, "0", 18);
-    sprite->SetRenderLayers(RENDERLAYER_7);
+    sprite->SetRenderLayers(128);
     sprite->SetPosition(2, framebuffer->size.y - font->GetHeight(18) - 2, 0);
 
     //Main loop
