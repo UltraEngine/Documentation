@@ -1,6 +1,6 @@
 # WString::ToFloat
 
-This method converts the string into a floating point value.
+This method converts the wide string into a floating point value.
 
 ## Syntax
 
