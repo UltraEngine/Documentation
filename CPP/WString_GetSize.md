@@ -1,5 +1,5 @@
 # WString::GetSize #
-This method returns the number of characters in the string.
+This method returns the number of characters in the wide string.
 
 ## Syntax ##
 - int **GetSize**()
