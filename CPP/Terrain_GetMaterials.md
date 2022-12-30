@@ -1,6 +1,6 @@
 # Terrain::GetMaterials
 
-This method gets all the materials in use at the specified coordinate.
+This method gets all the materials in use on the terrain at the specified coordinate.
 
 ## Syntax
 
