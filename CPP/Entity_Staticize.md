@@ -66,18 +66,18 @@ int main(int argc, const char* argv[])
     //Display text
     auto orthocam = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
     orthocam->SetClearMode(CLEAR_DEPTH);
-    orthocam->SetRenderLayers(RENDERLAYER_7);
+    orthocam->SetRenderLayers(128);
     orthocam->SetPosition(float(framebuffer->size.x) * 0.5, float(framebuffer->size.y) * 0.5f);
 
     auto font = LoadFont("Fonts/arial.ttf");
 
     auto text = CreateSprite(world, font, "Shadow polygons: 0", 14.0 * displays[0]->scale);
     text->SetPosition(2, framebuffer->size.y - 16.0f * displays[0]->scale);
-    text->SetRenderLayers(RENDERLAYER_7);
+    text->SetRenderLayers(128);
 
     auto text2 = CreateSprite(world, font, "Press space to make the light static.", 14.0 * displays[0]->scale);
     text2->SetPosition(2, framebuffer->size.y - 16.0f * 2.0f * displays[0]->scale);
-    text2->SetRenderLayers(RENDERLAYER_7);
+    text2->SetRenderLayers(128);
 
     //Main loop
     while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
