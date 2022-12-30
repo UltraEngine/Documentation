@@ -1,6 +1,6 @@
 # Lod
 
-Thia class stores mesh data for one level of detail in a [Model](Model.md).
+This class stores mesh data for one level of detail in a [Model](Model.md).
 
 | Property | Type | Description |
 |---|---|---|
