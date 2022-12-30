@@ -1,6 +1,6 @@
 # WString::Xor
 
-This method encrypts the string with an XOR cipher and returns the result.
+This method encrypts the wide string with an XOR cipher and returns the result.
 
 ## Syntax
 
