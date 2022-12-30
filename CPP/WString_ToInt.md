@@ -1,6 +1,6 @@
 # WString::ToInt
 
-This method converts the string into an integer value.
+This method converts the wide string into an integer value.
 
 ## Syntax
 
