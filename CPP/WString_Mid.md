@@ -1,5 +1,5 @@
 # WString::Mid #
-This method extracts a partial string and returns it.
+This method extracts a partial wide string and returns it.
 
 ## Syntax ##
 - [WString](WString.md) **Mid**(const int pos, const int length)
