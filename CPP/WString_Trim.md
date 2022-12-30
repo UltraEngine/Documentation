@@ -1,6 +1,6 @@
 # WString::Trim
 
-This method removes whitespace characters from the beginning and end of the string and returns the result.
+This method removes whitespace characters from the beginning and end of the wide string and returns the result.
 
 ## Syntax
 
