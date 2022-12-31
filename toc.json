@@ -23,7 +23,17 @@
 				},
 				{
 					"title": "Audio",
-					"topics": [{
+					"topics": [
+						{
+							"title": "AudioFilter",
+							"filename": "AudioFilter",
+							"topics": [{
+									"title": "LoadAudioFilter",
+									"filename": "LoadAudioFilter"
+								}
+							]
+						},						
+						{
 							"title": "Sound",
 							"filename": "Sound",
 							"topics": [{
@@ -78,6 +88,10 @@
 								{
 									"title": "Play",
 									"filename": "Speaker_Play"
+								},
+								{
+									"title": "SetFilter",
+									"filename": "Speaker_SetFilter"
 								},
 								{
 									"title": "SetLooping",
