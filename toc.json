@@ -910,6 +910,10 @@
 							"filename": "AppDir"
 						},
 						{
+							"title": "AppPath",
+							"filename": "AppPath"
+						},
+						{
 							"title": "CasedPath",
 							"filename": "CasedPath"
 						},
