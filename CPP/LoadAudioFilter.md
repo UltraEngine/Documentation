@@ -1,5 +1,20 @@
 # LoadAudioFilter
 
+This function loads an audio filter from a file. Audio filters are stored in JSON files and can be found in the "Sound/Filters" directory of a new project.
+
+## Syntax
+
+- shared_ptr<[AudioFilter](AudioFilter.md)\> **LoadAudioFilter**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+
+| Parameter | Description |
+|---|---|
+| path | file path to load |
+| flags | optional load flags |
+
+## Returns
+
+Returns the loaded audio filter is successful, otherwise NULL is returned.
+
 ## Example
 
 ```c++
