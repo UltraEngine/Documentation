@@ -16,6 +16,7 @@ This class provides an interface to control the way a sound behaves when played.
 | [SetLooping](Speaker_SetLooping.md) | Method | set the speaker loop mode |
 | [SetPitch](Speaker_SetPitch.md) | Method | sets the speaker pitch |
 | [SetTime](Speaker_SetTime.md) | Method | jumps to the specified sound time |
+| [SetFilter](Speaker_SetFilter.md) | Method | adds an audio filter |
 | [SetVolume](Speaker_SetVolume.md) | Method | sets the speaker volume |
 | [Stop](Speaker_Stop.md) | Method | stops the speaker |
 | [CreateSpeaker](CreateSpeaker.md) | Function | creates a new speaker object |
