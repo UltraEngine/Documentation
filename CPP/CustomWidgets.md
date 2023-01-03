@@ -41,17 +41,22 @@ class CustomWidget : public Widget
     bool hover;
 
 protected:
-    
+
+    virtual bool Initialize(const WString& text, const int x, const int y, const int width, const int height, shared_ptr<Widget> parent, const int style)
+    {
+        return Widget::Initialize(text, x, y, width, height, parent, style);
+    }
+
     //Called when the mouse moves if this widget has the focus
     virtual void MouseMove(const int x, const int y) {}
-    
+
     //Called when the mouse cursor enters the widget bounds
     virtual void MouseEnter(const int x, const int y)
     {
         hover = true;
         Redraw();
     }
-    
+
     //Called when the mouse cursor leaves the widget bounds
     virtual void MouseLeave(const int x, const int y)
     {
@@ -64,34 +69,34 @@ protected:
     {
         if (button == MOUSE_LEFT) EmitEvent(EVENT_WIDGETACTION, Self());
     }
-    
+
     //Called when the mouse button is released
     virtual void MouseUp(const MouseButton button, const int x, const int y) {}
-    
+
     //Called when another widget becomes selected
     virtual void LoseFocus() {}
-    
+
     //Called when mouse double-click occurs
     virtual void DoubleClick(const MouseButton button, const int x, const int y) {}
-    
+
     //Called when mouse triple-click occurs
     virtual void TripleClick(const MouseButton button, const int x, const int y) {}
-    
+
     //Called when widget is selected
     virtual void GainFocus() {}
-    
+
     //Called when key is pressed
     virtual void KeyDown(const KeyCode key) {}
-    
+
     //Called when key is released
     virtual void KeyUp(const KeyCode key) {}
-    
+
     //Called for each keydown event
     virtual void KeyChar(const int keychar) {}
-    
+
     //Called when mouse wheel turns and mouse is hovered over this widget
     virtual void MouseWheel(const int delta, const int x, const int y) {}
-    
+
     //Called each time the widget is redrawn
     virtual void Draw(const int x, const int y, const int width, const int height)
     {
@@ -110,6 +115,8 @@ public:
     //Constructor
     CustomWidget() : hover(false)
     {}
+
+    friend shared_ptr<Widget> CreateCustomWidget(const WString&, const int, const int, const int, const int, shared_ptr<Widget>, const CustomWidgetStyle);
 };
 
 //Create function
@@ -132,7 +139,7 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Create widget
-    auto widget = CreateCustomWidget("Custom",20,20,120,36,ui->root, CUSTOMWIDGET_DEFAULT);
+    auto widget = CreateCustomWidget("Custom", 20, 20, 120, 36, ui->root, CUSTOMWIDGET_DEFAULT);
 
     while (true)
     {
