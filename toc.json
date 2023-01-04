@@ -1497,6 +1497,10 @@
 									"filename": "Interface_LoadColorScheme"
 								},
 								{
+									"title": "ProcessEvent",
+									"filename": "Interface_ProcessEvent"
+								},								   
+								{
 									"title": "SetRenderLayers",
 									"filename": "Interface_SetRenderLayers"
 								},
