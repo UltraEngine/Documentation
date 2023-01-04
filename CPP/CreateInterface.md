@@ -59,7 +59,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-The second example shows how to create an interface that appears in a 3D rendering biewport.
+The second example shows how to create an interface that appears in a 3D rendering viewport. Note that in this example you must send events to the interface with the [ProcessEvent](Interface_ProcessEvent.md) method.
 
 ```c++
 #include "UltraEngine.h"
