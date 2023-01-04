@@ -92,7 +92,7 @@ int main(int argc, const char* argv[])
 
     //Create camera
     auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-    camera->SetPosition(framebuffer->size.x / 2, framebuffer->size.y / 2, 0);
+    camera->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0);
 
     while (true)
     {
