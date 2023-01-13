@@ -14,3 +14,5 @@ This method applies a texture to the widget. Typically this is used to display t
 ## Remarks
 
 This method will only work with a widget created in a 3D interface.
+
+This method works by creating a "virtual pixmap" and assigning it to the widget. If you retrieve this pixmap it will be incompatible with pixmap commands that read or write pixel data.
