@@ -1799,6 +1799,10 @@
 									"filename": "Widget_SetText"
 								},
 								{
+									"title": "SetTexture",
+									"filename": "Widget_SetTexture"
+								},
+								{
 									"title": "SetValue",
 									"filename": "Widget_SetValue"
 								},
