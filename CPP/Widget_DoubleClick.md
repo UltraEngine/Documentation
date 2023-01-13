@@ -8,7 +8,7 @@ This method is called when a mouse button is clicked twice in rapid succession.
 
 | Parameter | Description |
 |---|---|
-| button | which mouse button that was clicked, can be MOUSE_LEFT, MOUSE_RIGHT, MOUSE_MIDDLE, MOUSE_BACK, or MOUSE_FORWARD |
+| button | which mouse button that was clicked, can be MOUSE_LEFT, MOUSE_RIGHT, or MOUSE_MIDDLE |
 | x  | mouse x position when clicked |
 | y  | mouse y position when clicked |
 
