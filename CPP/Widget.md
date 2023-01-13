@@ -56,6 +56,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetRange](Widget_SetRange.md) | Method | sets the range of a slider widget |
 | [SetState](Widget_SetState.md) | Method | sets the button state |
 | [SetText](Widget_SetText.md) | Method | sets the widget color |
+| [SetTexture](Widget_SetTexture.md) | Method | applies a texture to a widget in a 3D interface |
 | [SetValue](Widget_SetValue.md) | Method | sets the value of a slider |
 | [SelectItem](Widget_SelectItem.md) | Method | selects a widget item |
 | [SelectNode](Widget_SelectNode.md) | Method | selects a treeview node |
