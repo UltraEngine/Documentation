@@ -8,7 +8,7 @@ This method is called when a mouse button is clicked rapidly three times.
 
 | Parameter | Description |
 |---|---|
-| button | mouse button pressed, can be MOUSE_LEFT, MOUSE_RIGHT, MOUSE_MIDDLE, MOUSE_BACK, or MOUSE_FORWARD |
+| button | mouse button pressed, can be MOUSE_LEFT, MOUSE_RIGHT, or MOUSE_MIDDLE |
 | x | mouse x screen coordinate |
 | y | mouse y screen coordinate |
 
