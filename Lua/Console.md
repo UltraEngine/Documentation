@@ -14,3 +14,13 @@ The console displays printed program output and allows the user to enter command
 | logbutton | [Widget](Widget.md) | button for selecting log display |
 | AddMessage | Method | adds a warning, error, or line of text to the console |
 | Clear | Method | clears the console log, error list, or warnings list |
+
+Here is an example of an extension that displays a notification box whenever an error is sent to the console:
+
+```lua
+function ConsoleErrorListener(event)
+  Notify(program.mainwindow.text, event.text, true)
+end
+
+ListenEvent(EVENT_CONSOLEERROR, program.console, ConsoleErrorListener)
+```
