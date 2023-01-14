@@ -6,6 +6,10 @@ This method will trigger a refresh of a camera that is set to only render interm
 
 - void **Render**()
 
+## Remarks
+
+Because rendering in Ultra Engine is asynchronous, the camera is not immediately rendered when this method is called. A call to this method guarantees the camera will render at least one more time before it stops refreshing, with whatever settings it has at the time of the next call to [World::Render](World_Render.md).
+
 ## Example
 
 ```c++
