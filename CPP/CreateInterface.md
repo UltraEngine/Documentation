@@ -166,7 +166,7 @@ int main(int argc, const char* argv[])
     // Create user interface
     auto ui = CreateInterface(window);
 
-    // Get the size of the user-interface
+    // Get the size of the user interface
     iVec2 sz = ui->background->ClientSize();
 
     // Create a treeview widget
