@@ -206,6 +206,7 @@ int main(int argc, const char* argv[])
     auto model = CreateSphere(world);
     model->SetColor(0, 0, 1);
 
+    // This varialble will be used for viewport refreshing
     bool dirty = false;
 
     // Main loop
