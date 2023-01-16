@@ -11,4 +11,4 @@ This class contains
 | window | Window | |
 | assetbrowser | AssetBrowser | |
 | ResetLayout | Method | |
-| Quit | Method | |
+| Quit | Method | exits the program |
