@@ -12,8 +12,9 @@ The console displays printed program output and allows the user to enter command
 | errorbutton | [Widget](Widget.md) | button for selecting error display |
 | warningbutton | [Widget](Widget.md) | button for selecting warning display |
 | logbutton | [Widget](Widget.md) | button for selecting log display |
-| AddMessage | Method | adds a warning, error, or line of text to the console |
+| SetInput | Method | adds a warning, error, or line of text to the console |
 | Clear | Method | clears the console log, error list, or warnings list |
+| Flush | Method | Flushes the console contents |
 
 The console will emit the following events:
 
