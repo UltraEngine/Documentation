@@ -13,7 +13,12 @@ This method attempts to exit the program. If any unsaved files are open the prog
 ## Example
 
 ```lua
-program.sidepanel.tabber:AddItem("Turboquit", true);
+--[[
+Are you tired of exiting programs the boring old way?
+This amazing extension will bring new life to your computing experience!
+]]
+
+program.sidepanel.tabber:AddItem("Extension", true);
 
 local sz = program.sidepanel.tabber:ClientSize();
 
@@ -22,8 +27,10 @@ local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel. tabber);
 local button = CreateButton("Quit", 20, 20, sz.x - 40, 30, panel);
 
 local function hook()
-    program:Quit();
-end;
+    if Confirm("Do you really want to quit?") == 1 then
+        program:Quit();
+    end
+end
 
 ListenEvent(EVENT_WIDGETACTION, button, hook);
 ```
