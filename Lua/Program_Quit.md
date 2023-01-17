@@ -18,19 +18,21 @@ Are you tired of exiting programs the boring old way?
 This amazing extension will bring new life to your computing experience!
 ]]
 
-program.sidepanel.tabber:AddItem("Turboquit", true);
+program.sidepanel:AddItem("Turboquit", true)
 
-local sz = program.sidepanel.tabber:ClientSize();
+local sz = program.sidepanel:ClientSize()
 
-local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel.tabber);
+local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel)
+panel:SetLayout(1,1,1,1)
 
-local button = CreateButton("Quit", 20, 20, sz.x - 40, 30, panel);
+local button = CreateButton("Quit", 20, 20, sz.x - 40, 30, panel)
+button:SetLayout(1,1,1,0)
 
 local function hook()
     if Confirm("Do you really want to quit?", program.title) == 1 then
-        program:Quit();
+        program:Quit()
     end
 end
 
-ListenEvent(EVENT_WIDGETACTION, button, hook);
+ListenEvent(EVENT_WIDGETACTION, button, hook)
 ```
