@@ -22,7 +22,7 @@ program.sidepanel.tabber:AddItem("Turboquit", true);
 
 local sz = program.sidepanel.tabber:ClientSize();
 
-local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel. tabber);
+local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel.tabber);
 
 local button = CreateButton("Quit", 20, 20, sz.x - 40, 30, panel);
 
