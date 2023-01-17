@@ -9,6 +9,7 @@ This class contains
 | menu | Menu | |
 | world | World | |
 | window | Window | |
+| sidepanel | TabbedPanel | |
 | assetbrowser | AssetBrowser | |
 | ResetLayout | Method | resets the interface to the default layout |
 | UpdateLayout | Method | adjusts the shape of the main panel elements based on the visibility of the toolbar, object bar, and status bar |
