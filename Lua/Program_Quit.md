@@ -27,7 +27,7 @@ local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel. tabber);
 local button = CreateButton("Quit", 20, 20, sz.x - 40, 30, panel);
 
 local function hook()
-    if Confirm("Do you really want to quit?") == 1 then
+    if Confirm("Do you really want to quit?", program.title) == 1 then
         program:Quit();
     end
 end
