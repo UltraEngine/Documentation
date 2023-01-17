@@ -9,3 +9,21 @@ This method attempts to exit the program. If any unsaved files are open the prog
 | Parameter | Description |
 |---|---|
 | force | if set to true the program will immediately close without saving open files |
+
+## Example
+
+```lua
+program.sidepanel.tabber:AddItem("Turboquit", true);
+
+local sz = program.sidepanel.tabber:ClientSize();
+
+local panel = CreatePanel(0, 0, sz.x, sz.y, program.sidepanel. tabber);
+
+local button = CreateButton("Quit", 20, 20, sz.x - 40, 30, panel);
+
+local function hook()
+    program:Quit();
+end;
+
+ListenEvent(EVENT_WIDGETACTION, button, hook);
+```
