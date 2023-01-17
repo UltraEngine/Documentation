@@ -18,7 +18,7 @@ Are you tired of exiting programs the boring old way?
 This amazing extension will bring new life to your computing experience!
 ]]
 
-program.sidepanel.tabber:AddItem("Extension", true);
+program.sidepanel.tabber:AddItem("Turboquit", true);
 
 local sz = program.sidepanel.tabber:ClientSize();
 
