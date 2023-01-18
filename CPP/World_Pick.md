@@ -100,7 +100,7 @@ int main(int argc, const char* argv[])
         target_pos = TransformPoint(target_pos, Mat4(), pivot->GetMatrix(true).Inverse());
 
         // Perform a ray cast
-        auto pick_info = world->Pick(pivot->GetPosition(true), target_pos, 0.25f, true, PickFilter, nullptr);
+        auto pick_info = world->Pick(pivot->GetPosition(true), target_pos, 0.25f, true, PickFilter);
         if (pick_info.success) {
             sphere->SetPosition(pick_info.position, true);
         }
