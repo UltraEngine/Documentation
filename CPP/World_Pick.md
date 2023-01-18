@@ -24,6 +24,8 @@ If a filter callback is provided it will be called for each entity that is evalu
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/World_Pick.gif)
+
 ```c++
 #include "UltraEngine.h"
 
