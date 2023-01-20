@@ -1450,10 +1450,7 @@
 						{
 							"title": "Event",
 							"filename": "Event",
-							"topics": [{
-									"title": "AllocEventId",
-									"filename": "AllocEventId"
-								},
+							"topics": [
 								{
 									"title": "EmitEvent",
 									"filename": "EmitEvent"
