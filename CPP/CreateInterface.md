@@ -145,7 +145,7 @@ bool ResizeViewport(const Event& ev, shared_ptr<Object> extra)
 
     // Set the position and size of the viewport window
     viewport->SetShape(SidePanelWidth, Indent, sz.x - SidePanelWidth - Indent, sz.y - Indent * 2);
-    
+
     return true;
 }
 
@@ -218,8 +218,25 @@ int main(int argc, const char* argv[])
         // Evaluate event
         switch (ev.id)
         {
-
-        //Close window when escape key is pressed
+        case EVENT_WINDOWMOVE:
+            Print("Window move");
+            if (not dirty)
+            {
+                dirty = true;
+                EmitEvent(EVENT_VIEWPORTRENDER, viewport);
+                Print("viewport refresh");
+            }
+            break;
+        case EVENT_WINDOWSIZE:
+            Print("Window size");
+            if (not dirty)
+            {
+                dirty = true;
+                EmitEvent(EVENT_VIEWPORTRENDER, viewport);
+                Print("viewport refresh");
+            }
+            break;
+            //Close window when escape key is pressed
         case EVENT_KEYDOWN:
             if (ev.source == window and ev.data == KEY_ESCAPE) return 0;
             break;
@@ -229,7 +246,7 @@ int main(int argc, const char* argv[])
             break;
 
         case EVENT_WINDOWPAINT:
-            if (ev.source == viewport)
+            //if (ev.source == viewport)
             {
                 Print("Window paint");
                 if (not dirty)
