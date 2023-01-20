@@ -1459,8 +1459,8 @@
 									"filename": "EmitEvent"
 								},
 								{
-									"title": "FlushEvent",
-									"filename": "FlushEvent"
+									"title": "FlushEvents",
+									"filename": "FlushEvents"
 								},
 								{
 									"title": "ListenEvent",
