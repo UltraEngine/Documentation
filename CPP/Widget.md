@@ -47,6 +47,7 @@ This class handle user interface elements. A variety of widget types are support
 | [SetHidden](Widget_SetHidden.md) | Method | hides or shows the widget |
 | [SetIcon](Widget_SetIcon.md) | Method | applies an icon to the widget |
 | [SetInteractive](Widget_SetInteractive.md) | Method | applies an icon to the widget |
+| [SetItemState](Widget_SetItemState.md) | Method | modifies the item state |
 | [SetItemText](Widget_SetItemText.md) | Method | modifies the item text |
 | [SetLayout](Widget_SetLayout.md) | Method | controls the way a widget behaves during resizing |
 | [SetParent](Widget_SetParent.md) | Method | makes this widget the child of the parent widget |
