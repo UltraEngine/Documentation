@@ -1763,6 +1763,10 @@
 									"filename": "Widget_SetIcon"
 								},
 								{
+									"title": "SetItemState",
+									"filename": "Widget_SetItemState"
+								},
+								{
 									"title": "SetItemText",
 									"filename": "Widget_SetItemText"
 								},
