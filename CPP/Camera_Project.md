@@ -13,4 +13,4 @@ This method projects a 3D position onto 2D screen space.
 
 ## Returns
 
-Returns a screencoordinate, plus the distance in front of the camera stored in the Z component.
+Returns a screen coordinate with the distance in front of the camera stored in the Z component.
