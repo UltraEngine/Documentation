@@ -348,9 +348,8 @@ int main(int argc, const char* argv[])
                 auto pick = camera->Pick(framebuffer, ev.position.x, ev.position.y, 0, true);
                 if (pick.success and pick.entity == box)
                 {
-                    Vec2 tc = pick.GetTexCoords();
-                    ev.position.x = Round(tc.x * 256.0f);
-                    ev.position.y = Round(tc.y * 256.0f);
+                    ev.position.x = Round(pick.texcoords[0].x * 256.0f);
+                    ev.position.y = Round(pick.texcoords[0].y * 256.0f);
                     ui->ProcessEvent(ev);
                 }
                 break;
