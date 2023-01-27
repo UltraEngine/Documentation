@@ -18,7 +18,8 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [CountPrimitives](Mesh_CountPrimitives.md) | Method | returns the number of mesh primitives |
 | [CountVertices](Mesh_CountVertices.md) | Method | returns the number of mesh vertices |
 | [GetPrimitiveAttributes](Mesh_GetPrimitiveAttributes.md) | Method | gets attributes of a single primitive |
-| [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | gets the position of s vertex |
+| [GetVertexColor](Mesh_GetVertexColor.md) | Method | gets the color of a vertex |
+| [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | gets the position of a vertex |
 | [GetVertexNormal](Mesh_GetVertexNormal.md) | Method | gets the normal of a vertex |
 | [GetVertexTexCoords](Mesh_GetVertexTexCoords.md) | Method | gets the texture coordinates of a vertex |
 | [Modify](Mesh_Modify.md) | Method | batch modify vertices and indices |
