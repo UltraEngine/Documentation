@@ -7,6 +7,11 @@ This method can be used to modify the color of a single vertex.
 - void **SetVertexColor(const uint32_t index, const float r, const float g, const float b, const float a = 1.0f)
 - void **SetVertexColor(const uint32_t index, const [Vec4](Vec4.md)& color)
 
+| Parameter | Description |
+|---|---|
+| index | vertex indice |
+| color (r,g,b,a) | color to set |
+
 ## Remarks
 
 Vertex colors are not compatible with skinned meshes.
