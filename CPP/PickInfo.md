@@ -11,4 +11,4 @@ This class contains information from the results of a ray cast.
 | polygon | uint32_t | |
 | position | [xVec3](xVec3.md) | |
 | success | bool | |
-| [GetTexCoords](PickInfo_GetTexCoords.md) | Method | |
+| texcoords | array<[Vec2](Vec2.md), 2> | |
