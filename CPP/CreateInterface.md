@@ -20,7 +20,7 @@ Returns a new interface object.
 
 ## Example
 
-Three examples are shown below to demonstrate different types of programs you can create.
+Four examples are shown below to demonstrate different types of programs you can create.
 
 The first example shows how to create an interface directly on a window for an event-based desktop application.
 
@@ -267,6 +267,98 @@ int main(int argc, const char* argv[])
             Print("Viewport render");
             break;
         }
+    }
+    return 0;
+}
+```
+The last example shows how to create an interactive user interface that is displayed on a 3D surface:
+```c++
+#include "UltraEngine.h"
+#include "ComponentSystem.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0]);
+
+    //Create framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create world
+    auto world = CreateWorld();
+
+    //Load a font
+    auto font = LoadFont("Fonts/arial.ttf");
+
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->SetPosition(0, 0, -2);
+    camera->SetClearColor(0.125);
+    
+    //Camera controls
+    auto actor = CreateActor(camera);
+    actor->AddComponent<CameraControls>();
+
+    //Create a model
+    auto box = CreateBox(world);
+    box->SetRotation(0, 45, 0);
+
+    //Create light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(45, 35, 0);
+    light->SetRange(-10, 10);
+    light->SetColor(4);
+
+    //Create user interface
+    auto ui = CreateInterface(world, font, iVec2(256));
+    ui->SetRenderLayers(2);
+
+    //Create widget
+    iVec2 sz = ui->root->ClientSize();
+    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
+    
+    //Create camera
+    auto uicamera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    uicamera->SetClearColor(1, 0, 0, 1);
+    uicamera->SetPosition(128.0f, 128.0f, 0);
+    uicamera->SetRenderLayers(2);
+
+    auto texbuffer = CreateTextureBuffer(256, 256);
+    uicamera->SetRenderTarget(texbuffer);
+
+    auto mtl = CreateMaterial();
+    mtl->SetTexture(texbuffer->GetColorAttachment(0));
+    box->SetMaterial(mtl);
+
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        while (PeekEvent())
+        {
+            Event ev = WaitEvent();
+            switch (ev.id)
+            {
+            case EVENT_MOUSEDOWN:
+            case EVENT_MOUSEUP:
+            case EVENT_MOUSEMOVE:
+                auto pick = camera->Pick(framebuffer, ev.position.x, ev.position.y, 0, true);
+                if (pick.success and pick.entity == box)
+                {
+                    Vec2 tc = pick.GetTexCoords();
+                    ev.position.x = Round(tc.x * 256.0f);
+                    ev.position.y = Round(tc.y * 256.0f);
+                    ui->ProcessEvent(ev);
+                }
+                break;
+            }
+        }
+
+        world->Update();
+        world->Render(framebuffer);
     }
     return 0;
 }
