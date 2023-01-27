@@ -4,11 +4,11 @@ This class contains information from the results of a ray cast.
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| entity | [Entity](Entity.md) | |
-| face | [Face](Face.md) | |
-| mesh | [Mesh](Mesh.md) | |
-| normal | [xVec3](xVec3.md) | |
-| polygon | uint32_t | |
-| position | [xVec3](xVec3.md) | |
-| success | bool | |
-| texcoords | array<[Vec2](Vec2.md), 2> | |
+| entity | [Entity](Entity.md) | picked entity |
+| face | [Face](Face.md) | picked face, for brushes |
+| mesh | [Mesh](Mesh.md) | picked mesh, for models |
+| normal | [xVec3](xVec3.md) | picked normal |
+| polygon | uint32_t | picked polygon, for models |
+| position | [xVec3](xVec3.md) | picked position |
+| success | bool | true if anything is hit or false for nothing hit |
+| texcoords | array<[Vec2](Vec2.md), 2> | picked texture coordinates, for brushes or models |
