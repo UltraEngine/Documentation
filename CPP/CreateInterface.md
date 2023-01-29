@@ -299,7 +299,7 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
     camera->SetPosition(0, 0, -2);
     camera->SetClearColor(0.125);
-    
+
     //Camera controls
     auto actor = CreateActor(camera);
     actor->AddComponent<CameraControls>();
@@ -321,12 +321,13 @@ int main(int argc, const char* argv[])
     //Create widget
     iVec2 sz = ui->root->ClientSize();
     auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
-    
+
     //Create camera
     auto uicamera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
     uicamera->SetClearColor(1, 0, 0, 1);
     uicamera->SetPosition(128.0f, 128.0f, 0);
     uicamera->SetRenderLayers(2);
+    uicamera->SetRealtime(false);
 
     auto texbuffer = CreateTextureBuffer(256, 256);
     uicamera->SetRenderTarget(texbuffer);
@@ -351,6 +352,7 @@ int main(int argc, const char* argv[])
                     ev.position.x = Round(pick.texcoords[0].x * 256.0f);
                     ev.position.y = Round(pick.texcoords[0].y * 256.0f);
                     ui->ProcessEvent(ev);
+                    uicamera->Render();
                 }
                 break;
             }
