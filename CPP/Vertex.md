@@ -12,5 +12,5 @@ This class stores properties for a single mesh vertex.
 | displacement | float | maximum displacement, for use with tessellation |
 | normal | [Vec3](Vec3.md) | vertex normal |
 | position | [Vec3](Vec3.md) | vertex position |
-| texcoords | array<[Vec2](Vec2.md), 2> | vertex texcoords |
+| texcoords | [Vec4](Vec4.md) | vertex texcoords |
 | tangent | [Vec3](Vec3.md) | vertex tangent |
