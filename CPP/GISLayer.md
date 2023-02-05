@@ -1,5 +1,7 @@
 # GISLayer
 
+This class contains information about a single GIS server map layer.
+
 | Property | Type | Description |
 |---|---|---|
 | name | String | layer name for identification |
