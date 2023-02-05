@@ -6,5 +6,6 @@ This class is only available with the Ultra Engine enterprise license.
 
 | Property | Type | Description |
 |---|---|---|
+| url | String | |
 | capabilities | [GISCapablities](GISCapablities.md) | description of server features, layers, and other stuff |
 | [FetchMap](FetchMap.md) | Method | retrieves a map image with the specified parameters |
