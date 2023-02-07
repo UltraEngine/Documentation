@@ -18,7 +18,9 @@ Returns a new StreamBuffer object.
 
 ## Remarks
 
-If the [Buffer::Data()](Buffer_data.md) method is called on a StreamBuffer object, it will return NULL since the data is not loaded in memory.
+If the [Data](Buffer_data.md) method is called on a StreamBuffer object, it will return NULL since there is no pointer to data in memory.
+
+if the [Resize](Buffer_Resize.md) method is called on a StreamBuffer object, no resizing will take place and false will be returned.
 
 ## Example
 
