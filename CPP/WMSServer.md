@@ -6,7 +6,7 @@ This class provides an interface to easily communicate with a web map service, f
 |---|---|---|
 | url | String | |
 | capabilities | [WMSCapablities](WMSCapablities.md) | description of server features, layers, and other stuff |
-| [FetchMap](FetchMap.md) | Method | retrieves a map image with the specified parameters |
+| [FetchMap](WMSServer_FetchMap.md) | Method | retrieves a map image with the specified parameters |
 
 ## Availabilty
 
