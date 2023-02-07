@@ -27,7 +27,7 @@ If the [Buffer::Data()](Buffer_data.md) method is called on a StreamBuffer objec
 // 
 // This example will load a heightmap into a streambuffer and create a "virtual" pixmap, without 
 // loading the entire file into memory. A sub-section of the heightmap will be extracted and saved.
-// This can be used to work with very large image files that exceed the computer's memory capacity.
+// This can be used to work with very large image files that cannot be loaded in memory.
 // 
 //---------------------------------------------------------------------------------------------------
 
