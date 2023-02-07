@@ -5,6 +5,20 @@ This method resizes a pixmap to make it larger or smaller.
 ## Syntax
 
 - shared_ptr<[Pixmap](Pixmap.md)\> **Resize**(const int width, const int height)
+- bool **Resize**(const int width, const int height, shared_ptr<[Pixmap](Pixmap.md)\> dst)
+
+| Parameter | Description |
+|---|---|
+| width, height | resize dimensions |
+| dst | destination pixmap to write to |
+
+## Returns
+
+This method returns a new pixmap or a boolean indicating success or failure, depending on which overload is used.
+
+If the destination pixmap's dimensions don't match the specified width and height, false is returned.
+
+If the destination pixmap's format don't match the pixmap's format, false is returned.
 
 ## Example
 
