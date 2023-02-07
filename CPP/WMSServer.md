@@ -9,6 +9,9 @@ This class provides an interface to easily communicate with a web map service, f
 | [FetchMap](FetchMap.md) | Method | retrieves a map image with the specified parameters |
 
 ## Availabilty
+
+This class is only available in the enterprise version.
+
 | Indie | Pro | Enterprise |
 |---|---|---|
 | ✕ | ✕ | ✓ |
