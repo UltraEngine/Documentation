@@ -1,16 +1,27 @@
-# CreateStreamBuffer #
+# CreateStreamBuffer
+
 This function creates a new StreamBuffer object. A StreamBuffer is a file stream that can be treated like a memory buffer.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[StreamBuffer](StreamBuffer.md)> **CreateStreamBuffer**(shared_ptr<[Stream](Stream.md)> stream, uint64_t pos, uint64_t size)
 
-## Returns ##
+| Parameter | Description |
+|---|---|
+| stream | stream to read from or write to |
+| pos | starting position in the stream |
+| size | size of the virtual buffer |
+
+## Returns
+
 Returns a new StreamBuffer object.
 
-## Remarks ##
+## Remarks
+
 If the [Buffer::Data()](Buffer_data.md) method is called on a StreamBuffer object, it will return NULL since the data is not loaded in memory.
 
-## Example ##
+## Example
+
 ```c++
 //-----------------------------------------------------------------------------------------------
 // 
