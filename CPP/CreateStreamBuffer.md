@@ -21,6 +21,8 @@ If the specified range lies outside the position and size of the stream NULL wil
 
 If the specified size is zero NULL will be returned.
 
+If the stream size is zero NULL will be returned.
+
 If the stream is closed NULL will be returned.
 
 ## Remarks
