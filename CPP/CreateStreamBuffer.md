@@ -4,6 +4,7 @@ This function creates a new StreamBuffer object. A StreamBuffer is a file stream
 
 ## Syntax
 
+- shared_ptr<[StreamBuffer](StreamBuffer.md)> **CreateStreamBuffer**(shared_ptr<[Stream](Stream.md)> stream)
 - shared_ptr<[StreamBuffer](StreamBuffer.md)> **CreateStreamBuffer**(shared_ptr<[Stream](Stream.md)> stream, uint64_t pos, uint64_t size)
 
 | Parameter | Description |
@@ -14,9 +15,17 @@ This function creates a new StreamBuffer object. A StreamBuffer is a file stream
 
 ## Returns
 
-Returns a new StreamBuffer object.
+If successful, returns a new StreamBuffer object.
+
+If the specified range lies outside the position and size of the stream NULL will be returned.
+
+If the specified size is zero NULL will be returned.
+
+If the stream is closed NULL will be returned.
 
 ## Remarks
+
+If the position and size are not specified the position will be zero and the size will be equal to the stream size.
 
 If the [Data](Buffer_data.md) method is called on a StreamBuffer object, it will return NULL since there is no pointer to data in memory.
 
