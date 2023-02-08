@@ -18,7 +18,7 @@ This class contains information for events emitted by the GUI and other systems.
 | [ListenEvent](ListenEvent.md) | Function | sets a callback function to execute when an event occurs |
 | [WaitEvent](WaitEvent.md) | Function | wait until an event occurs and return it |
 
-The following event IDs may be emitted by the program. Additional event ID can be created with the [AllocEventId](AllocEventId.md) command.
+The following event IDs may be emitted by the program.
 
 | ID | Description |
 | --- | --- |
