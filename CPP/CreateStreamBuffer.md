@@ -51,11 +51,7 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
     //Load FreeImage plugin
-#ifdef _WIN64
-    auto plugin = LoadPlugin("Plugins/FITextureLoader.*");
-#else
-    auto plugin = LoadPlugin("Plugins/x86/FITextureLoader.*");
-#endif
+    auto plugin = LoadPlugin("Plugins/FITextureLoader");
     if (plugin == NULL)
     {
         Print("Failed to load FreeImage plugin.");
