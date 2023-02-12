@@ -1,0 +1,5 @@
+# Pixmap::Extract
+
+
+
+## Syntax
