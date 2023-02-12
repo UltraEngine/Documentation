@@ -51,7 +51,7 @@ int main(int argc, const char* argv[])
     int height = 50;
     pixmap->Blit(0, 0, width, height, pixmap, 156, 156, width * 4, height * 4);
 
-    //Save and view the image
+    // Save and view the image
     pixmap->Save(GetPath(PATH_DESKTOP) + "/test.png");
     RunFile(GetPath(PATH_DESKTOP) + "/test.png");
 
