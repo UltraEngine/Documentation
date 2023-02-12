@@ -30,6 +30,8 @@ If the pixmap format does not support blitting, then false is returned.
 
 ## Example
 
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/pixmap_blit.png)
+
 ```c++
 #include "UltraEngine.h"
 
