@@ -1544,6 +1544,10 @@
 									"filename": "CreatePixmap"
 								},
 								{
+									"title": "Extract",
+									"filename": "Pixmap_Extract"
+								},
+								{
 									"title": "Fill",
 									"filename": "Pixmap_Fill"
 								},
