@@ -16,7 +16,7 @@ This method copies an area of one pixmap to another with scaling and filtering. 
   
 ## Returns
   
-Returns true if any pixels are copied.
+Returns true if any pixels are written.
   
 If the destination pixmap is NULL then false is returned.
   
