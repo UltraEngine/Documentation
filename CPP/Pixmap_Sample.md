@@ -13,4 +13,4 @@ This method retrieves a pixel sample using bilinear filtering to smoothly interp
 
 ## Returns 
 
-Returns a linear filtered sample at the specified coordinate.
+Returns a bilinear filtered pixel sample at the specified coordinate.
