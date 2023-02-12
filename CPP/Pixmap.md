@@ -14,6 +14,7 @@ This class provides an interface for loading, manipulating, and saving image dat
 | [Blit](Pixmap_Blit.md) | Method | copies an area of a pixmap to another pixmap, with scaling and filtering |
 | [Convert](Pixmap_Convert.md) | Method | converts a pixmap to another format |
 | [CopyRect](Pixmap_CopyRect.md) | Method | copies an area of a pixmap to another pixmap |
+| [Extract](Pixmap_Extract.md) | Method | extracts part of the pixmap into a new pixmap |
 | [Fill](Pixmap_Fill.md) | Method | writes each pixel with the specified color |
 | [ReadPixel](Pixmap_ReadPixel.md) | Method | reads a single pixel |
 | [Resize](Pixmap_Resize.md) | Method | resizes the pixmap |
