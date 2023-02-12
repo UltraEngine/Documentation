@@ -11,8 +11,8 @@ This class provides an interface for loading, manipulating, and saving image dat
 | blocks | const iVec2&  | number of blocks in the image, for compressed formats |
 | pixels | const shared_ptr<[Buffer](Buffer.md)\>&  | buffer containing pixel data |
 | blocksize | const int&  | size of each block, for compressed formats |
-| [Convert](Pixmap_Convert.md) | Method | converts a pixmap to another format |
 | [Blit](Pixmap_Blit.md) | Method | copies an area of a pixmap to another pixmap, with scaling and filtering |
+| [Convert](Pixmap_Convert.md) | Method | converts a pixmap to another format |
 | [CopyRect](Pixmap_CopyRect.md) | Method | copies an area of a pixmap to another pixmap |
 | [Fill](Pixmap_Fill.md) | Method | writes each pixel with the specified color |
 | [ReadPixel](Pixmap_ReadPixel.md) | Method | reads a single pixel |
