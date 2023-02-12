@@ -1531,6 +1531,10 @@
 									"filename": "Pixmap_Convert"
 								},
 								{
+									"title": "CopyRect",
+									"filename": "Pixmap_CopyRect"
+								},
+								{
 									"title": "CreatePixmap",
 									"filename": "CreatePixmap"
 								},
