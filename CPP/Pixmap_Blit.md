@@ -1,6 +1,6 @@
 # Pixmap::Blit
 
-This method copies an area of one pixmap to another. Pixels that lie outside the area of the destination pixmap will be skipped.
+This method copies an area of one pixmap to another with scaling and filtering. Pixels that lie outside the area of the destination pixmap will be skipped.
 
 ## Syntax
 
