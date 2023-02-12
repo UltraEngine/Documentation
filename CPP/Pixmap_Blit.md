@@ -27,3 +27,34 @@ If the destination pixmap format does not match this pixmap's format then false 
 If the pixmap block size is greater than one, as it is for compressed formats, then false is returned.
 
 If the pixmap format does not support blitting, then false is returned.
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    // Load FreeImage plugin
+    auto plg = LoadPlugin("Plugins/FITextureLoader");
+
+    // Load pixmap
+    auto pixmap = LoadPixmap("https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/Brick/brickwall01.dds");
+
+    // Convert to RGBA format if needed
+    if (pixmap->format != TEXTURE_RGBA) pixmap = pixmap->Convert(TEXTURE_RGBA);
+
+    // Copy a section of the image with scaling and filtering
+    int width = 50;
+    int height = 50;
+    pixmap->Blit(0, 0, width, height, pixmap, 156, 156, width * 4, height * 4);
+
+    //Save and view the image
+    pixmap->Save(GetPath(PATH_DESKTOP) + "/test.png");
+    RunFile(GetPath(PATH_DESKTOP) + "/test.png");
+
+    return 0;
+}
+```
