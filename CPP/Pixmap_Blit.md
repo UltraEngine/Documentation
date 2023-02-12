@@ -4,7 +4,7 @@ This method copies an area of one pixmap to another with scaling and filtering. 
 
 ## Syntax
 
-- bool **CopyRect**(const int x, const int y, const int width, const int height, shared_ptr<[Pixmap](Pixmap.md)> dest, const int destx, const int desty, const int destwidth, const int destheight)
+- bool **Blit**(const int x, const int y, const int width, const int height, shared_ptr<[Pixmap](Pixmap.md)> dest, const int destx, const int desty, const int destwidth, const int destheight)
 
 | Parameter | Description |
 |---|---|
