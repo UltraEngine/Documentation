@@ -1526,7 +1526,12 @@
 						{
 							"title": "Pixmap",
 							"filename": "Pixmap",
-							"topics": [{
+							"topics": [
+								{
+									"title": "Blit",
+									"filename": "Pixmap_Blit"
+								},
+								{
 									"title": "Convert",
 									"filename": "Pixmap_Convert"
 								},
