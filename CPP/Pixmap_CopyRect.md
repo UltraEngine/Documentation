@@ -22,3 +22,5 @@ If the destination pixmap is NULL then false is returned.
 If the destination area does not overlap the destination pixmap then false is returned.
   
 If the destination pixmap format does not match this pixmap's format then false is returned.
+
+If the pixmap uses a compressed format, such as DXT1, DXT5, BC6H, BC7, etc., then the source and destination position and the area must be evenly divisible by the block size (4), or false is returned.
