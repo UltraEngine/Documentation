@@ -25,3 +25,5 @@ If the destination area does not overlap the destination pixmap then false is re
 If the destination pixmap format does not match this pixmap's format then false is returned.
 
 If the pixmap block size is greater than one, as it is for compressed formats, then false is returned.
+
+If the pixmap format does not support blitting, then false is returned.
