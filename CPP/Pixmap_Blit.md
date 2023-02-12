@@ -11,8 +11,9 @@ This method copies an area of one pixmap to another with scaling and filtering. 
 |---|---|
 | x, y | source copy position |
 | width, height | source copy area |
-| dst | destination pixmap |
-| dx, dy | destination write position |
+| destst | destination pixmap |
+| destx, desty | destination write position |
+| destwidth, destheight | destination copy area |
   
 ## Returns
   
