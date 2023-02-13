@@ -13,7 +13,7 @@ This method extracts an area of the pixmap and returns it as a new pixmap.
 
 ## Returns
 
-Returns a new Pixmap object if successful, otherwise NULL is returned.
+Returns a new [Pixmap](Pixmap.md) object if successful, otherwise NULL is returned.
 
 If the extracted area lies outside the bounds of the pixmap then NULL will be returned.
 
