@@ -8,7 +8,7 @@ This function creates a new mesh.
   
 | Parameter | Description |
 |---|---|
-| primitive | can be MESH_LINES, MESH_TRIANGLES, or MESH_QUADS |
+| primitive | can be MESH_POINTS, MESH_LINES, MESH_TRIANGLES, or MESH_QUADS |
 | vertices | optional vertex array |
 | indices | optional indice array |
 
