@@ -1,4 +1,4 @@
-# WMSServer
+# WebMapService
 
 This class provides an interface to easily communicate with a web map service, for loading terrain data from real-world data sets. This can be combined with the streaming terrain system to display large-scale worlds based on real world locations, or even entire planets.
 
