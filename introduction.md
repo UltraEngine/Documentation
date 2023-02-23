@@ -8,7 +8,7 @@ Ultra Engine is currently available in early access mode, consisting of a C++ pr
 
 - Discrete GPU with support for Vulkan 1.3 (Integrated graphics are not supported yet)
 - Windows 10 or 11
-- [Microsoft Visual Studio]([https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/#vs-section))
+- [Microsoft Visual Studio](https://visualstudio.microsoft.com/#vs-section)
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
 
 You can run the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
