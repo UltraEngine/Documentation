@@ -8,7 +8,7 @@ Ultra Engine is currently available in early access mode, consisting of a C++ pr
 
 - Discrete GPU with support for Vulkan 1.3 (Integrated graphics are not supported yet)
 - Windows 10 or 11
-- [Visual Studio 2022](https://visualstudio.microsoft.com/)
+- [Microsoft Visual Studio]([https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/#vs-section))
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
 
 You can run the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
@@ -45,7 +45,7 @@ Once the game engine is installed you can create a new project in the **Projects
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_newproject.png)
 
-The folder containing your project will be opened. You can open the .sln file with Visual Studio and start coding. If you do not have Visual Studio installed, [download it now](https://visualstudio.microsoft.com/). When running the installer, make sure the *Desktop development with C++* option is selected.
+The folder containing your project will be opened. You can open the .sln file with Visual Studio and start coding. If you do not have Visual Studio installed, [download it now](https://visualstudio.microsoft.com/#vs-section). When running the installer, make sure the *Desktop development with C++* option is selected.
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/vs_components.png)
 
