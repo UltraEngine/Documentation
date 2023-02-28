@@ -16,3 +16,4 @@ The side panel contains file information and tools for editing the asset....
 | splitter | [SplitPanel](SplitPanel.md) | main interface split panel |
 | viewport | [Window](Window.md) | viewport window for 3D rendering |
 | assets | Table | array of opened asset files |
+| [SaveFile](asseteditor_savefile) | Method | saves an opened file |
