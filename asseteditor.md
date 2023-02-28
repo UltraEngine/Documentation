@@ -13,5 +13,6 @@ The side panel contains file information and tools for editing the asset....
 | tabber | [Widget](Widget.md) | main tabbed panel |
 | closebutton | [Widget](Widget.md) | offscreen button with BUTTON_ESCAPE style |
 | window | [Window](Window.md) | main interface window |
+| splitter | [SplitPanel](SplitPanel.md) | main interface split panel |
 | viewport | [Window](Window.md) | viewport window for 3D rendering |
 | assets | Table | array of opened asset files |
