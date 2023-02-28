@@ -19,8 +19,8 @@ Returns true if the specified file was saved, otherwise false is returned.
 
 ```lua
 --Download a file from the web and open it
-program.asseteditor:OpenFile("https://www.github.com/ultraengine/...")
+local index = program.asseteditor:OpenFile("https://www.github.com/ultraengine/...")
 
 --Save the file
-program.asseteditor:Save()
+if index > -1 then program.asseteditor:Save() end
 ```
