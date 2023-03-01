@@ -10,6 +10,7 @@ Base class: [Object](Object.md)
 | [Copy](Buffer_Copy.md) | Method |  |
 | [Data](Buffer_Data.md) | Method |  |
 | [GetSize](Buffer_GetSize.md) | Method |  |
+| [Peek](Buffer_Peek) | Method |  |
 | [PeekByte](Buffer_PeekByte) | Method |  |
 | [PeekDouble](Buffer_PeekDouble) | Method |  |
 | [PeekInt](Buffer_PeekInt) | Method |  |
@@ -17,6 +18,7 @@ Base class: [Object](Object.md)
 | [PeekShort](Buffer_PeekShort) | Method |  |
 | [PeekString](Buffer_PeekString) | Method |  |
 | [PeekWString](Buffer_PeekWString) | Method |  |
+| [Poke](Buffer_Poke) | Method |  |
 | [PokeByte](Buffer_PokeByte) | Method |  |
 | [PokeDouble](Buffer_PokeDouble) | Method |  |
 | [PokeInt](Buffer_PokeInt) | Method |  |
