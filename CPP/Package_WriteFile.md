@@ -6,6 +6,10 @@ This method writes a new file to a package.
 
 - shared_ptr<[Stream](Stream.md)\> **WriteFile**(const [WString](WString.md)& path)
 
+| Parameter | Description |
+|---|---|
+| path | relative file path |
+
 ## Returns
 
 Returns a new stream if successful, otherwise NULL is returned.
