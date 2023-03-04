@@ -974,6 +974,10 @@
 							"filename": "FileHidden"
 						},
 						{
+							"title": "FileSize",
+							"filename": "FileSize"
+						},
+						{
 							"title": "FileTime",
 							"filename": "FileTime"
 						},
