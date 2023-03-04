@@ -13,3 +13,7 @@ Returns true if the package is closed successfully, otherwise false is returned.
 If there are open streams writing to the package, false will be returned.
 
 If the package file cannot be written to, false will be returned.
+
+## Remarks
+
+This method can only be called once if successful. Files cannot be read from and written to after this method is called.
