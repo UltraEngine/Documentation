@@ -4,7 +4,7 @@ This method returns the type of a file in the archive.
 
 ## Syntax
 
-- uint64_t **FileType**(const [WString](WString.md)& path)
+- int **FileType**(const [WString](WString.md)& path)
 
 | Parameter | Description |
 |---|---|
@@ -12,4 +12,4 @@ This method returns the type of a file in the archive.
 
 ## Returns
 
-If the file exists then one will be returned, otherwise zero will be returned.
+If the file exists then one or two will be returned for a file or folder, otherwise zero will be returned.
