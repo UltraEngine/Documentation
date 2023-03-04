@@ -763,12 +763,28 @@
 							"filename": "Package",
 							"topics": [
 								{
+									"title": "CreatePackage",
+									"filename": "CreatePackage"
+								},
+								{
+									"title": "Close",
+									"filename": "Package_Close"
+								},
+								{
+									"title": "DeleteFile",
+									"filename": "Package_DeleteFile"
+								},
+								{
 									"title": "FileSize",
 									"filename": "Package_FileSize"
 								},
 								{
 									"title": "FileType",
 									"filename": "Package_FileType"
+								},
+								{
+									"title": "Flush",
+									"filename": "Package_Flush"
 								},
 								{
 									"title": "LoadPackage",
@@ -781,7 +797,11 @@
 								{
 									"title": "SetPassword",
 									"filename": "Package_SetPassword"
-								}								
+								},
+								{
+									"title": "WriteFile",
+									"filename": "Package_WriteFile"
+								}
 							]
 						},   
 						{
