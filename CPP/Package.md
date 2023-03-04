@@ -13,6 +13,6 @@ This class provides an interface for loading files from compressed and encrypted
 | [Flush](Package_Flush.md) | Method | finalizes pending changes without closing the package |
 | [ReadFile](Package_ReadFile.md) | Method | reads a file from the archive |
 | [SetPassword](Package_SetPassword.md) | Method | sets a password, for encrypted archives |
+| [WriteFile](Package_WriteFile.md) | Method | writes a file to the archive |
 | [CreatePackage](CreatePackage.md) | Function | creates a new package |
 | [LoadPackage](LoadPackage.md) | Function | loads a package from a file |
-| [WriteFile](Package_WriteFile.md) | Method | writes a file to the archive |
