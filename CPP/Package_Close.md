@@ -17,3 +17,5 @@ If the package file cannot be written to, false will be returned.
 ## Remarks
 
 This method can only be called once if successful. Files cannot be read from and written to after this method is called.
+
+Packages are automatically closed upon deletion.
