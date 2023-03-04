@@ -16,6 +16,8 @@ Returns a new stream if successful, otherwise NULL is returned.
 
 If the package is closed NULL will be returned.
 
+If the package was loaded with a plugin that does not support writing then NULL will be returned.
+
 ## Example
 
 ```c++
