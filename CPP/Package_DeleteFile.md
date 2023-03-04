@@ -4,6 +4,15 @@ This method deletes a file from the package.
 
 ## Syntax
 
+bool **DeleteFile**(const [WString](WString.md) path)
+
+| Parameter | Description |
+|---|---|
+| path | relative file path |
+
+## Returns
+
+Returns true if successful, otherwise false is returned.
 
 ## Remarks
 
