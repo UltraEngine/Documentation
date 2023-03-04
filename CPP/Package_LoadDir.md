@@ -4,7 +4,7 @@ This method retrieves all the files and folders found in a package directory.
 
 ## Syntax
 
-- vector<[Wstring](WString)\> **LoadDir**(const [WString](WString.md) path)
+- vector<[WString](WString)\> **LoadDir**(const [WString](WString.md) path)
 
 | Parameter | Description |
 |---|---|
