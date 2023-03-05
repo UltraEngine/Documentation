@@ -775,6 +775,10 @@
 									"filename": "Package_DeleteFile"
 								},
 								{
+									"title": "ExtractFile",
+									"filename": "Package_ExtractFile"
+								},
+								{
 									"title": "FileSize",
 									"filename": "Package_FileSize"
 								},
