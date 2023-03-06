@@ -6,15 +6,15 @@ This class provides an interface for loading files from compressed and encrypted
 
 | Property | Type | Description |
 | - | - | - |
-| [AddFile](Package_AddFile.md) | Method | writes a file to the archive |
+| [AddFile](Package_AddFile.md) | Method | writes a file to the package |
 | [Close](Package_Close.md) | Method | finalizes all pending changes and closes the package |
-| [DeleteFile](Package_DeleteFile.md) | Method | deletes a file from the archive |
-| [ExtractFile](Package_ExtractFile.md) | Method | extracts a file from a package |
-| [FileSize](Package_FileSize.md) | Method | returns the size of a file in the archive |
-| [FileType](Package_FileType.md) | Method | returns the type of a file in the archive |
+| [DeleteFile](Package_DeleteFile.md) | Method | deletes a file from the package |
+| [ExtractFile](Package_ExtractFile.md) | Method | extracts a file from the package |
+| [FileSize](Package_FileSize.md) | Method | returns the size of a file in the package |
+| [FileType](Package_FileType.md) | Method | returns the type of a file in the package |
 | [Flush](Package_Flush.md) | Method | finalizes pending changes without closing the package |
 | [LoadDir](Package_LoadDir.md) | Method | loads the contents of a package directory |
-| [ReadFile](Package_ReadFile.md) | Method | reads a file from the archive |
-| [SetPassword](Package_SetPassword.md) | Method | sets a password, for encrypted archives |
+| [ReadFile](Package_ReadFile.md) | Method | reads a file from the package |
+| [SetPassword](Package_SetPassword.md) | Method | sets a password for encryption |
 | [CreatePackage](CreatePackage.md) | Function | creates a new package |
 | [LoadPackage](LoadPackage.md) | Function | loads a package from a file |
