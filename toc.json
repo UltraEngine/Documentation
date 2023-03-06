@@ -783,6 +783,10 @@
 									"filename": "Package_FileSize"
 								},
 								{
+									"title": "FileTime",
+									"filename": "Package_FileTime"
+								},
+								{
 									"title": "FileType",
 									"filename": "Package_FileType"
 								},
