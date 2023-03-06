@@ -21,19 +21,22 @@ void main(int argc, const char* argv[])
 {
     // Create a new zip package
     auto pak = CreatePackage("test.zip");
-
-    // Write a file into the package
-    auto stream = pak->WriteFile("test.txt");
-
+    
+    // Create a stream
+    auto stream = CreateBufferStream();
+    
     // Write a line of text
     stream->WriteLine("Hello!");
-
+    
+    // Insert the stream contents into the package
+    pak->AddFile("test.txt", stream->data);
+    
     // Close the stream
     stream->Close();
-
+    
     // Close the package to finalize changes
     pak->Close();
-
+    
     // Open the zip file in the default program
     RunFile("test.zip");
 }
