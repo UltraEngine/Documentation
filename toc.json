@@ -807,8 +807,8 @@
 									"filename": "Package_SetPassword"
 								},
 								{
-									"title": "WriteFile",
-									"filename": "Package_WriteFile"
+									"title": "AddFile",
+									"filename": "Package_AddFile"
 								}
 							]
 						},   
