@@ -4,19 +4,21 @@ This method writes a new file to a package.
 
 ## Syntax
 
-- shared_ptr<[Stream](Stream.md)\> **WriteFile**(const [WString](WString.md)& path)
+- bool **AddFile**(const [WString](WString.md)& path, shared_ptr<[Buffer](Buffer.md)\> data, const bool immediate = false)
 
 | Parameter | Description |
 |---|---|
 | path | relative file path |
+| data | file contents |
+| immediate | if set to true the package file will be immediately save, otherwise it will be saved automatically later |
 
 ## Returns
 
-Returns a new stream if successful, otherwise NULL is returned.
+Returns a true if successful, otherwise false is returned.
 
-If the package is closed NULL will be returned.
+If the package is closed false will be returned.
 
-If the package was loaded with a plugin that does not support writing then NULL will be returned.
+If the package was loaded with a plugin that does not support writing then false will be returned.
 
 ## Example
 
@@ -30,11 +32,14 @@ void main(int argc, const char* argv[])
     // Create a new zip package
     auto pak = CreatePackage("test.zip");
     
-    // Write a file into the package
-    auto stream = pak->WriteFile("test.txt");
+    // Create a stream
+    auto stream = CreateBufferStream();
     
     // Write a line of text
     stream->WriteLine("Hello!");
+    
+    // Insert the stream contents into the package
+    pak->AddFile("test.txt", stream->data);
     
     // Close the stream
     stream->Close();
