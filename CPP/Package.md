@@ -11,6 +11,7 @@ This class provides an interface for loading files from compressed and encrypted
 | [DeleteFile](Package_DeleteFile.md) | Method | deletes a file from the package |
 | [ExtractFile](Package_ExtractFile.md) | Method | extracts a file from the package |
 | [FileSize](Package_FileSize.md) | Method | returns the size of a file in the package |
+| [FileTime](Package_FileTime.md) | Method | returns the time of a file in the package |
 | [FileType](Package_FileType.md) | Method | returns the type of a file in the package |
 | [Flush](Package_Flush.md) | Method | finalizes pending changes without closing the package |
 | [LoadDir](Package_LoadDir.md) | Method | loads the contents of a package directory |
