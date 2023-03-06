@@ -7,7 +7,7 @@ This class provides an interface for loading files from compressed and encrypted
 | Property | Type | Description |
 | - | - | - |
 | [AddFile](Package_AddFile.md) | Method | writes a file to the package |
-| [Close](Package_Close.md) | Method | finalizes all pending changes and closes the package |
+| [Close](Package_Close.md) | Method | finalizes any pending changes and closes the package file |
 | [DeleteFile](Package_DeleteFile.md) | Method | deletes a file from the package |
 | [ExtractFile](Package_ExtractFile.md) | Method | extracts a file from the package |
 | [FileSize](Package_FileSize.md) | Method | returns the size of a file in the package |
