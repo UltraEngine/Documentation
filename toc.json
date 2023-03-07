@@ -763,6 +763,10 @@
 							"filename": "Package",
 							"topics": [
 								{
+									"title": "AddFile",
+									"filename": "Package_AddFile"
+								},								
+								{
 									"title": "CreatePackage",
 									"filename": "CreatePackage"
 								},
@@ -809,11 +813,7 @@
 								{
 									"title": "SetPassword",
 									"filename": "Package_SetPassword"
-								},
-								{
-									"title": "AddFile",
-									"filename": "Package_AddFile"
-								}
+								}								
 							]
 						},   
 						{
