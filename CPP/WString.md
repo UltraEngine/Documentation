@@ -19,6 +19,7 @@ This class provides an interface for manipulating wide unicode text strings. Thi
 | [Replace](WString_Replace.md) | Method | performs a search and replace operation |
 | [Right](WString_Right.md) | Method | returns rightmost characters |
 | [Split](WString_Split.md) | Method | segments the string |
+| [StartsWith](WString_StartsWith.md) | Method | compares the beginning of two strings |
 | [ToFloat](WString_ToFloat.md) | Method | converts the string to a floating point value |
 | [ToInt](WString_ToInt.md) | Method | converts the string to an integer value |
 | [ToString](WString_ToString.md) | Method | returns a narrow string containing only ASCII characters |
