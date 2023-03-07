@@ -23,4 +23,6 @@ If the destination area does not overlap the destination pixmap then false is re
   
 If the destination pixmap format does not match this pixmap's format then false is returned.
 
-If the pixmap uses a compressed format, such as DXT1, DXT5, BC6H, BC7, etc., then the source and destination position and the area must be evenly divisible by the block size (4), or false is returned.
+If the pixmap uses a compressed format, such as DXT1 / BC1, DXT5 / BC3, etc., then the source and destination position and the area must be evenly divisible by the block size (4), or false is returned.
+
+If the pixmap uses BC6 or BC7 compression then false is returned.
