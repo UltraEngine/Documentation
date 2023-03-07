@@ -2859,6 +2859,10 @@
 									"filename": "WString_Split"
 								},
 								{
+									"title": "StartsWith",
+									"filename": "WString_StartsWith"
+								},
+								{
 									"title": "ToFloat",
 									"filename": "WString_ToFloat"
 								},
