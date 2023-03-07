@@ -2794,6 +2794,10 @@
 									"filename": "String_Split"
 								},
 								{
+									"title": "StartsWith",
+									"filename": "String_StartsWith"
+								},
+								{
 									"title": "ToFloat",
 									"filename": "String_ToFloat"
 								},
