@@ -15,6 +15,8 @@ This method writes each pixel of the pixmap with the specified color.
 
 Returns the [RGBA](Rgba.md) color of the specified pixel.
 
+This method will not work with compressed pixel formats.
+
 ## Example
 
 ```c++
