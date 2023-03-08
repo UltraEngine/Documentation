@@ -43,18 +43,20 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Get the displays
+    // Get the displays
     auto displays = GetDisplays();
 
-    //Create a window
+    // Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0]);
 
-    //Create User Interface
+    // Create User Interface
     auto ui = CreateInterface(window);
     auto sz = ui->root->ClientSize();
 
-    //Create widget
+    // Create widget
     auto panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui->root);
+    
+    // Fade to black over ten seconds
     panel->SetColor(0, 0, 0, 1, WIDGETCOLOR_BACKGROUND, 10000);
 
     while (true)
