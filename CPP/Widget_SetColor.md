@@ -1,7 +1,9 @@
-# Widget::SetColor #
+# Widget::SetColor
+
 This method sets a widget's color value.
 
-## Syntax ##
+## Syntax
+
 - void **SetColor**(const float r, const float g, const float b, const float a = 1.0f, const WidgetColor index = WIDGETCOLOR_BACKGROUND)
 - void **SetColor**(const [Vec4](Vec4.md)& color, const WidgetColor index = WIDGETCOLOR_BACKGROUND)
 
@@ -14,7 +16,7 @@ This method sets a widget's color value.
 | color | color to set |
 | index | color index |
 
-## Remarks ##
+## Remarks
 
  The color index can be any of the following values:
 
@@ -41,9 +43,6 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Load plugins
-    auto plugin_svg = LoadPlugin("Plugins/SVG.*");
-
     //Get the displays
     auto displays = GetDisplays();
 
