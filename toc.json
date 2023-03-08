@@ -11,7 +11,12 @@
 			"topics": [{
 					"title": "Asset",
 					"filename": "Asset",
-					"topics": [{
+					"topics": [
+						{
+							"title": "GetPackage",
+							"filename": "Asset_GetPackage"
+						},
+						{
 							"title": "Reload",
 							"filename": "Asset_Reload"
 						},
