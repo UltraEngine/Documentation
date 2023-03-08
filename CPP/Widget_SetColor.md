@@ -55,7 +55,7 @@ int main(int argc, const char* argv[])
 
     //Create widget
     auto panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui->root);
-    panel->SetColor(0, 0, 0, 1);
+    panel->SetColor(0, 0, 0, 1, WIDGETCOLOR_BACKGROUND, 10000);
 
     while (true)
     {
