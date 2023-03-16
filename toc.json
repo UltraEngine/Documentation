@@ -833,6 +833,10 @@
 									}]
 								},
 								{
+									"title": "Align",
+									"filename": "Stream_Align"
+								},
+								{
 									"title": "Close",
 									"filename": "Stream_Close"
 								},
