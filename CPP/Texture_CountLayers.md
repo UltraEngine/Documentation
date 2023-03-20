@@ -4,7 +4,7 @@ This method returns the number of layers in the texture.
 
 ## Syntax
 
--int **CountLayers**(const int level = 0)
+- int **CountLayers**(const int level = 0)
 
 | Parameter | Description |
 |---|---|
