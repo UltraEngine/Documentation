@@ -5,10 +5,11 @@ This method writes each pixel of the pixmap with the specified color.
 ## Syntax
 
 - void **Fill**(const int color)
+- void **Fill**(const [Vec4](Vec4)& color)
 
 | Parameter | Description |
 |---|---|
-| color | [RGBA](Rgba.md) color |
+| color | [RGBA](Rgba.md) or [Vec4](Vec4) color |
 
 ## Example
 
