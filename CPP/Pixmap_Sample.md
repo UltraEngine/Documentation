@@ -10,7 +10,7 @@ This method retrieves a pixel sample using bilinear filtering to smoothly interp
 
 | Parameter | Description |
 |---|---|
-| (u, v), coords | sample coordinate |
+| (u, v), coords | sample coordinate or pixel |
 
 ## Returns 
 
