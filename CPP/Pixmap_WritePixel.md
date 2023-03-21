@@ -5,12 +5,13 @@ This method sets a single pixel in the pixmap to the specified color.
 ## Syntax
 
 - void **WritePixel**(const int x, const int y, const int color)
+- void **WritePixel**(const int x, const int y, const [Vec4](Vec4.md)& color)
 
 | Parameter | Description |
 |---|---|
 | x | x position of the pixel to write |
 | y | y position of the pixel to write |
-| color | [RGBA](Rgba.md) color |
+| color | [RGBA](Rgba.md) or [Vec4](Vec4.md) color |
 
 ## Remarks
 
