@@ -16,6 +16,8 @@ This method retrieves a pixel sample using bilinear filtering to smoothly interp
 
 Returns a bilinear filtered pixel sample at the specified coordinate.
 
+If the pixmap uses a compressed format Vec4(0) will be returned.
+
 ## Remarks
 
 Float coordinates will be clamped to the range 0.0-1.0.
