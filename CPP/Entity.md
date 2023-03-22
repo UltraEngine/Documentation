@@ -13,7 +13,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | omega | const [xVec3](xVec3.md)& | read-only angular velocity |
 | parent | const shared_ptr<[Entity](Entity.md)\>& | entity parent |
 | position | const [xVec3](xVec3.md)& | read-only position |
-| properties | [nlohmann::json](https://github.com/nlohmann/json) | user-defined properties }
+| properties | [nlohmann::json](https://github.com/nlohmann/json) | user-defined properties |
 | quaternion | const [xQuat](xQuat.md)& | read-only rotation |
 | rotation | const [xVec3](xVec3.md)& | read-only Euler rotation |
 | scale | const [xVec3](xVec3.md)& | read-only scale |
