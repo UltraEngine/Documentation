@@ -1307,6 +1307,10 @@
 									"filename": "CreateMesh"
 								},
 								{
+									"title": "GetRenderLayers",
+									"filename": "Mesh_GetRenderLayers"
+								},
+								{
 									"title": "GetVertexColor",
 									"filename": "Mesh_GetVertexColor"
 								},
@@ -1341,6 +1345,10 @@
 								{
 									"title": "SetMaterial",
 									"filename": "Mesh_SetMaterial"
+								},
+								{
+									"title": "SetRenderLayers",
+									"filename": "Mesh_SetRenderLayers"
 								},
 								{
 									"title": "SetSkinned",
