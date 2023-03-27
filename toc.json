@@ -1201,7 +1201,12 @@
 						{
 							"title": "Framebuffer",
 							"filename": "Framebuffer",
-							"topics": [{
+							"topics": [
+								{
+								"title": "GetSize",
+								"filename": "Framebuffer_GetSize"
+							},
+							{
 								"title": "CreateFramebuffer",
 								"filename": "CreateFramebuffer"
 							}]
