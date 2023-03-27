@@ -1,5 +1,5 @@
 # Framebuffer::GetSize
-This method retrieves the framebuffer width and height.
+This method retrieves the framebuffer drawable area.
 
 ## Syntax
 [iVec2](iVec2) **GetSize**()
