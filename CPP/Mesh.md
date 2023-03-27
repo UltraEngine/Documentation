@@ -20,6 +20,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [CountPrimitives](Mesh_CountPrimitives.md) | Method | returns the number of mesh primitives |
 | [CountVertices](Mesh_CountVertices.md) | Method | returns the number of mesh vertices |
 | [GetPrimitiveAttributes](Mesh_GetPrimitiveAttributes.md) | Method | gets attributes of a single primitive |
+| [GetRenderLayers](Mesh_GetRenderLayers.md) | Method | gets the mesh render layers |
 | [GetVertexColor](Mesh_GetVertexColor.md) | Method | gets the color of a vertex |
 | [GetVertexPosition](Mesh_GetVertexPosition.md) | Method | gets the position of a vertex |
 | [GetVertexNormal](Mesh_GetVertexNormal.md) | Method | gets the normal of a vertex |
@@ -28,9 +29,9 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | [Recenter](Mesh_Recenter.md) | Method | recenters a mesh along one or more axes |
 | [Rotate](Mesh_Rotate.md) | Method | rotates a mesh |
 | [Scale](Mesh_Scale.md) | Method | scales a mesh |
-| [SetSkinned](Mesh_SetSkinned.md) | Method | enables or disables vertex skinning |
 | [SetMaterial](Mesh_SetMaterial.md) | Method | sets the mesh material |
 | [SetPrimitiveAttributes](Mesh_SetPrimitiveAttributes.md) | Method | sets attributes of a single primitive |
+| [SetRenderLayers](Mesh_SetRenderLayers.md) | Method | sets the mesh render layers |
 | [SetSkinned](Mesh_SetSkinned.md) | Method | enables or disables mesh skinning |
 | [SetVertexColor](Mesh_SetVertexColor.md) | Method | sets the position of a vertex |
 | [SetVertexPosition](Mesh_SetVertexPosition.md) | Method | sets the position of a vertex |
