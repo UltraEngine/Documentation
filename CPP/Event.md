@@ -54,4 +54,4 @@ The following event IDs may be emitted by the program.
 | EVENT_WIDGETLOSEFOCUS | new widget is gains the focus |
 | EVENT_WIDGETDROP | drag-and-drop operation occurs |
 | EVENT_WINDOWDPICHANGE | the display of a window has changed its DPI scale |
-| EVENT_ZOOM | for high-precision trackpad and mouse scroll events. Use [IntBitsToFloat](IntBitsToFloat.md)(event.data) to get the zoom value |
+| EVENT_ZOOM | for high-precision trackpad and mouse scroll events. Use [IntBitsToFloat](IntBitsToFloat.md) to convert the event.data member to a floating point value |
