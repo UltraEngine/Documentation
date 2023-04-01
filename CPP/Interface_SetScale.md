@@ -10,6 +10,12 @@ This method sets the DPI scaling value of an interface.
 | --- | --- |
 | scale | DPI scaling value to set |
 
+## Remarks
+
+Because computer displays vary in pixel density, it is helpful to display your application with scaling for the current user settings. It's best to create your application interface assuming 100% scaling, and then apply scaling. You can also create new widgets after scaling is applied, and multiply their coordinates by the current scaling factor.
+
+If you make all widget positions and sizes a multiple of 4, all coordinates will scale to an exact integer and provide a better appearance.
+
 ## Example
 
 ```c+++
