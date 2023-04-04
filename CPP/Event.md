@@ -25,6 +25,7 @@ The following event IDs may be emitted by the program.
 | EVENT_WINDOWCLOSE | window is closed |
 | EVENT_WINDOWPAINT | window region is drawn |
 | EVENT_WINDOWSIZE | window is resized |
+| EVENT_WINDOWACCEPT | a file was dragged onto a window created with the WINDOW_ACCEPTFILES style |
 | EVENT_MOUSEMOVE | mouse cursor moves |
 | EVENT_MOUSEUP | mouse button released |
 | EVENT_MOUSEDOWN | mouse button pressed |
