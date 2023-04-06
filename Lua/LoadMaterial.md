@@ -2,9 +2,8 @@
 This function loads a material from a file or open stream.
 
 ### Syntax
-* void **LoadMaterial**(const string& path, const LoadFlags flags = LOAD_DEFAULT)
-* void **LoadMaterial**(const wstring& path, const LoadFlags flags = LOAD_DEFAULT)
-* void **LoadMaterial**(shared_ptr<Stream> stream, const LoadFlags flags = LOAD_DEFAULT)
+* [Material](Material.md) **LoadMaterial**(string path, number flags = LOAD_DEFAULT)
+* [Material](Material.md) **LoadMaterial**([Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
 
 ### Parameters
 | Name | Description |
