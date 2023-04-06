@@ -151,7 +151,7 @@
 					"filename": "Editor",
 					"hideFromCS": true,
 					"hideFromCPP": true
-				}
+				},
 				{
 					"title": "Entity",
 					"filename": "Entity",
