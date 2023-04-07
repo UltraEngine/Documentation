@@ -7,7 +7,7 @@
 		},
 		{
 			"title": "Editor Scripting Reference",
-			"filename": "Editor",
+			"filename": "EditorScripting",
 			"hideFromCS": true,
 			"hideFromCPP": true,
 			"topics": [
