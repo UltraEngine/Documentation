@@ -24,6 +24,10 @@ This function adds an event to the event queue and triggers any callbacks added 
 
 If any event listener callback triggered by this event returns false, the function will return false, otherwise true is returned.
 
+## Remarks
+
+If any event listener callback triggered by this event returns false, the event will not be added to the event queue.
+
 ## Example
 
 ```c++
