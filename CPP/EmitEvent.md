@@ -26,7 +26,7 @@ If any event listener callback triggered by this event returns false, the functi
 
 ## Remarks
 
-If any event listener callback triggered by this event returns false, the event will not be added to the event queue.
+If any event listener callback triggered by this event returns false, no further listener callbacks will be called and the event will not be added to the event queue.
 
 ## Example
 
