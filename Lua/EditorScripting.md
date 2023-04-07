@@ -9,3 +9,4 @@
 | asseteditor | [AssetEditor](AssetEditor.md) | |
 | logiceditor | [LogicEditor](LogicEditor.md) | |
 | [GetFileExtensions](GetFileExtensions.md) | Function | gets a list of file extensions for the specified category |
+| [GetFilePattern](GetFilePattern.md) | Function | gets a file dialog pattern for the specified category |
