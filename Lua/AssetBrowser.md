@@ -7,8 +7,6 @@ The asset browser provides a visual interface for browsing the contents of a pro
 | splitter |  | | 
 | treeview | [Widget](Widget.md) | | 
 | propertygrid | [PropertyGrid](PropertyGrid.md) | |
-| EVENT_CLOSEASSETPREVIEW | EventId | occurs when the preview window should be hidden |
-| EVENT_OPENASSETPREVIEW | EventId | occurs when the mouse is hovered over a thumbnail and the preview window should be shown |
 | searchbar | [Widget](Widget.md) | |
 | addbutton | [Widget](Widget.md) | |
 | scaleslider | [Widget](Widget.md) | |
