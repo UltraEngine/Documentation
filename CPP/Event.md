@@ -11,7 +11,7 @@ This class contains information for events emitted by the GUI and other systems.
 | size | [iVec2](iVec2.md) | size of the event source when the event occurred |
 | source | shared_ptr<[Object](Object.md)\> | object that emitted the event |
 | text | [WString](WString.md) | string information like file paths |
-| Event | Constructor | Event(const EventID id, shared_ptr<[Object](Object.md)\> source, const int data=0, [iVec2](iVec2.md) position = 0, [iVec2](iVec2.md) size = 0, shared_ptr<[Object](Object.md)\> extra = NULL) |
+| Event | Constructor | Event(const EventID id, shared_ptr<[Object](Object.md)\> source, const int data=0, [iVec2](iVec2.md) position = 0, [iVec2](iVec2.md) size = 0, shared_ptr<[Object](Object.md)\> extra = NULL, const [WString](WString.md)& text = L"") |
 | [EmitEvent](EmitEvent.md) | Function | adds an event to the event queue |
 | [FlushEvents](FlushEvents.md) | Function | clears the event queue |
 | [PeekEvent](PeekEvent.md) | Function | returns true if any events are available in the event queue. |
