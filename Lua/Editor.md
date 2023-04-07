@@ -1,4 +1,4 @@
-# Editor
+# Editor Scripting Reference
 
 
 | Property | Type | Description |
