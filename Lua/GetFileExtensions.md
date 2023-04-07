@@ -23,3 +23,12 @@ The following constants can be combined in the category parameter:
 - FILECATEGORY_SCENE
 - FILECATEGORY_SOUND
 - FILECATEGORY_TEXTURE
+
+## Example
+
+```lua
+local extensions = GetFileExtensions(FILECATEGORY_MODEL + FILECATEGORY_TEXTURE)
+for n = 1, n <= #extensions do
+  Print(extensions[n])
+end
+```
