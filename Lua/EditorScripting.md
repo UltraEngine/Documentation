@@ -8,3 +8,4 @@
 | assetbrowser | [AssetBrowser](AssetBrowser.md) | |
 | asseteditor | [AssetEditor](AssetEditor.md) | |
 | logiceditor | [LogicEditor](LogicEditor.md) | |
+| [GetFileExtensions](GetFileExtensions.md) | Function | gets a list of file extensions for the specified category |
