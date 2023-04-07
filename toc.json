@@ -6,6 +6,18 @@
 			"useLanguage": false
 		},
 		{
+			"title": "Editor Scripting Reference",
+			"filename": "Editor",
+			"hideFromCS": true,
+			"hideFromCPP": true,
+			"topics": [
+				{
+					"title": "Events",
+					"filename": "EditorEvents"
+				}
+			]
+		},		   
+		{
 			"title": "Programming Reference",
 			"openstate": true,
 			"topics": [{
@@ -3057,18 +3069,6 @@
 							"filename": "World_Update"
 						}
 					]
-				}
-			]
-		},
-		{
-			"title": "Editor Scripting Reference",
-			"filename": "Editor",
-			"hideFromCS": true,
-			"hideFromCPP": true,
-			"topics": [
-				{
-					"title": "Events",
-					"filename": "EditorEvents"
 				}
 			]
 		}	   
