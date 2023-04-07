@@ -4,11 +4,12 @@ This function is used to retrieve all extensions the editor supports for a file 
 
 ## Syntax
 
-table **GetFileExtensions**(number category)
+table **GetFileExtensions**(number category, boolean save = false)
 
 | Parameter | Description |
 |---|---|
 | category | can be any combination of the constants below |
+| save | true for file extensions that can be saved or false for file extensions that can be opened |
 
 ## Returns
 
