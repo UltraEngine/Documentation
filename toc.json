@@ -3064,7 +3064,13 @@
 			"title": "Editor Scripting Reference",
 			"filename": "Editor",
 			"hideFromCS": true,
-			"hideFromCPP": true
-		}		   
+			"hideFromCPP": true,
+			"topics": [
+				{
+					"title": "Events",
+					"filename": "EditorEvents"
+				}
+			]
+		}	   
 	]
 }
