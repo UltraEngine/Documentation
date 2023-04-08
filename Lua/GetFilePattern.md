@@ -25,6 +25,6 @@ The following constants can be combined in the category parameter:
 ## Example
 
 ```lua
-local pattern = GetFilePattern(FILECATEGORY_MODEL + FILECATEGORY_TEXTURE)
+local pattern = GetFilePattern(FILECATEGORY_MODEL | FILECATEGORY_TEXTURE)
 RequestFile("Open File", "", pattern)
 ```
