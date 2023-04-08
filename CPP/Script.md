@@ -85,7 +85,7 @@ L->set_function("CreateMonster",
 
 **Do not** call make_shared() to create a new shared pointer, as this will result in the premature deletion of the object.
 
-If NULL is not considered a valid value for the parameter, you can skip this and just use the shared pointer.
+If NULL is not considered a valid value for the parameter, you can skip this and just use the shared pointer in your function definition.
 
 ### String Values
 
