@@ -2958,6 +2958,22 @@
 					]
 				},
 				{
+					"title": "Script",
+					"topics": [{
+							"title": "ExecuteString",
+							"filename": "ExecuteString"
+						},
+						{
+							"title": "PollDebugger",
+							"filename": "PollDebugger"
+						},
+						{
+							"title": "RunScript",
+							"filename": "RunScript"
+						}
+					]
+				},			   
+				{
 					"title": "System",
 					"topics": [{
 							"title": "Command",
