@@ -22,19 +22,25 @@ class Monster
 {
 public:
   int health;
-  
   void Update();
-
-  static void BindClass(sol::state* L)
-  {
-    L->new_usertype<Monster>
-    (
-      "Monster",
-      "health", &health,
-      "Update", &Update
-    );
-  }
+  WString GetName();
+  static void BindClass(sol::state* L);
 };
+
+extern shared_ptr<Monster> CreateMonster(shared_ptr<World> world, int health = 100);
+```
+
+```cpp
+static void Monster::BindClass(sol::state* L)
+{
+  L->new_usertype<Monster>
+  (
+    "Monster",
+    "health", &health,
+    "Update", &Update
+  );
+  L->set_function("CreateMonster", &CreateMonster);
+}
 ```
 
 At the beginning of your program you can bind your class by calling the function:
@@ -48,6 +54,23 @@ Monster::BindClass();
 
 ## Default Parameters
 
-## NULL Values
+Default parameters are not supported directly, but can be implemented using function overloading as follows: 
+
+```cpp
+L->set_function("CreateMonster", sol::overload(
+  [](shared_ptr<World> world){ return CreateMonster(world); },
+  [](shared_ptr<World> world, int health){ return CreateMonster(world, health); }
+));
+```
+
+## NULL Shared Pointers
+
+Shared pointer function parameters that are allowed to have a value of NULL must be implemented using a raw pointer:
+
+```cpp
+L->set_function("CreateMonster",
+    [](World* w) { if (w == NULL) return CreateMonster(NULL); return CreateMonster(w->As<World>()); }
+);
+```
 
 ## String Values
