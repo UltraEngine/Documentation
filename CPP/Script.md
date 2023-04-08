@@ -90,3 +90,5 @@ L->set_function("CreateMonster",
 ## Class Hierarchy
 
 ## Casting Types
+
+## Getters and Setters
