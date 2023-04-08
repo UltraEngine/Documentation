@@ -29,17 +29,20 @@ int main(int argc, const char* argv[])
     //Get command-line options
     auto cl = ParseCommandLine(argc, argv);
 
+    shared_ptr<Timer> debugtimer;// Declare this outside the if block so it doesn't get deleted
+    
     //Enable script debugging if the -debug switch is specified
     if (cl["debug"].is_boolean() and cl["debug"] == true)
     {
+        //Enable Lua debugging
         RunScript("Scripts/Modules/Debugger.lua");
+        
+        //Create a timer
+        debugtimer = CreateTimer(490);
+
+        //Poll the debugger every timer tick
+        ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(&PollDebugger, 500));
     }
-
-    //Create a timer
-    auto timer = CreateTimer(490);
-
-    //Poll the debugger every timer tick
-    ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
 
     //Run the main script
     RunScript("Scripts/Main.lua");
