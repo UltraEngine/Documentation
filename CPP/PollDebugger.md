@@ -14,3 +14,24 @@ This function periodically polls the script debugger to check for user actions.
 ## Remarks
 
 For script debugging to work, the debugger must be enabled by running "Scripts/Modules/Debugger.lua".
+
+## Example
+
+```c++
+int main(int argc, const char* argv[])
+{
+    //Get command-line options
+    cl = ParseCommandLine(argc, argv);
+    
+    //Enable script debugging if the -debug switch is specified
+    if (cl["debug"].is_boolean() and cl["debug"] == true)
+    {
+        RunScript(AppDir() + "/Scripts/Modules/Debugger.lua");
+    }
+
+    //Run the main script
+    RunScript(AppDir() + "/Scripts/Main.lua");
+    
+    return 0
+}
+```
