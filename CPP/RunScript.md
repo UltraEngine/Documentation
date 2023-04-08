@@ -13,3 +13,36 @@ This function executes a Lua script from a file or string.
 ## Returns
 
 Returns true if the script was successfully run, otherwise false is returned.
+
+## Example
+
+This shows a typical setup for the C++ side of a Lua program.
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get command-line options
+    auto cl = ParseCommandLine(argc, argv);
+
+    //Enable script debugging if the -debug switch is specified
+    if (cl["debug"].is_boolean() and cl["debug"] == true)
+    {
+        RunScript("Scripts/Modules/Debugger.lua");
+    }
+
+    //Create a timer
+    auto timer = CreateTimer(490);
+
+    //Poll the debugger every timer tick
+    ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
+
+    //Run the main script
+    RunScript("Scripts/Main.lua");
+
+    return 0;
+}
+```
