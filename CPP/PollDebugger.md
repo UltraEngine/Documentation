@@ -26,25 +26,26 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Get command-line options
+    // Get command-line options
     auto cl = ParseCommandLine(argc, argv);
 
-    shared_ptr<Timer> debugtimer;// Declare this outside the if block so it doesn't get deleted
+    // Declare this outside the 'if' block so it doesn't get deleted
+    shared_ptr<Timer> debugtimer;
     
-    //Enable script debugging if the -debug switch is specified
+    // Enable script debugging if the -debug switch is specified
     if (cl["debug"].is_boolean() and cl["debug"] == true)
     {
-        //Enable Lua debugging
+        // Enable Lua debugging
         RunScript("Scripts/Modules/Debugger.lua");
         
-        //Create a timer
+        // Create a timer
         debugtimer = CreateTimer(500);
 
-        //Poll the debugger every timer tick
+        // Poll the debugger every timer tick
         ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(&PollDebugger, 490));
     }
 
-    //Run the main script
+    // Run the main script
     RunScript("Scripts/Main.lua");
 
     return 0;
