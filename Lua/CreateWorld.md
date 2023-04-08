@@ -38,6 +38,7 @@ local light = CreateBoxLight(world)
 light:SetRotation(45,35,0)
 light:SetColor(2)
 
+--Main loop
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
 	--Rotate the model
