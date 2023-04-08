@@ -92,3 +92,5 @@ L->set_function("CreateMonster",
 ## Casting Types
 
 ## Getters and Setters
+
+## Debugging User-defined Classes
