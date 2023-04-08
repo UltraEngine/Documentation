@@ -29,7 +29,10 @@ int main(int argc, const char* argv[])
         RunScript(AppDir() + "/Scripts/Modules/Debugger.lua");
     }
 
+    //Create a timer
     auto timer = CreateTimer(500);
+    
+    //Poll the debugger every timer tick
     ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500))
 
     //Run the main script
