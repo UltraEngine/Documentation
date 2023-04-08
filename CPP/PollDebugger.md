@@ -15,6 +15,8 @@ This function periodically polls the script debugger to check for user actions.
 
 For script debugging to work, the debugger must be enabled by running "Scripts/Modules/Debugger.lua".
 
+If you don't periodically call this function, your application will not detect new breakpoints as they are set in the IDE.
+
 ## Example
 
 This shows a typical setup for the C++ side of a Lua program.
