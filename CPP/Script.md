@@ -49,7 +49,7 @@ auto L = GetLuaState();
 Monster::BindClass(L);
 ```
 
-## Function Overloading
+### Function Overloading
 
 ```
 L->new_usertype<Monster>
@@ -62,7 +62,7 @@ L->new_usertype<Monster>
 );
 ```
 
-## Default Parameters
+### Default Parameters
 
 Default parameters are not supported directly, but can be implemented using function overloading as follows: 
 
@@ -73,7 +73,7 @@ L->set_function("CreateMonster", sol::overload(
 ));
 ```
 
-## NULL Shared Pointers
+### NULL Shared Pointers
 
 Shared pointer function parameters that are allowed to have a value of NULL must be implemented using a raw pointer. The [Object::As](Object_As.md) method can be used to retrieve the object's shared pointer.
 
@@ -85,12 +85,12 @@ L->set_function("CreateMonster",
 
 **Do not** call make_shared() to create a new shared pointer, as this will result in the premature deletion of the object.
 
-## String Values
+### String Values
 
-## Class Hierarchy
+### Class Hierarchy
 
-## Casting Types
+### Casting Types
 
-## Getters and Setters
+### Getters and Setters
 
-## Debugging User-defined Classes
+### Debugging User-defined Classes
