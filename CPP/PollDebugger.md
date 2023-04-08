@@ -38,10 +38,10 @@ int main(int argc, const char* argv[])
         RunScript("Scripts/Modules/Debugger.lua");
         
         //Create a timer
-        debugtimer = CreateTimer(490);
+        debugtimer = CreateTimer(500);
 
         //Poll the debugger every timer tick
-        ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(&PollDebugger, 500));
+        ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(&PollDebugger, 490));
     }
 
     //Run the main script
