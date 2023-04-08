@@ -26,7 +26,7 @@ int main(int argc, const char* argv[])
     //Enable script debugging if the -debug switch is specified
     if (cl["debug"].is_boolean() and cl["debug"] == true)
     {
-        RunScript(AppDir() + "/Scripts/Modules/Debugger.lua");
+        RunScript("Scripts/Modules/Debugger.lua");
     }
 
     //Create a timer
@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
     ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500))
 
     //Run the main script
-    RunScript(AppDir() + "/Scripts/Main.lua");
+    RunScript("Scripts/Main.lua");
     
     return 0
 }
