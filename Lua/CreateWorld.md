@@ -1,5 +1,15 @@
 # CreateWorld
 
+This function creates a new world object.
+
+## Syntax
+
+- [World](World.md) **CreateWorld**()
+
+## Returns
+
+Returns a new world object.
+
 ## Example
 
 ```lua
