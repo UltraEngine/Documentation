@@ -153,10 +153,6 @@
 							"filename": "Assert"
 						},
 						{
-							"title": "DebugLog",
-							"filename": "DebugLog"
-						},
-						{
 							"title": "RuntimeError",
 							"filename": "RuntimeError"
 						},
