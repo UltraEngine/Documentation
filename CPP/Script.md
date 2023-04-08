@@ -73,3 +73,7 @@ L->set_function("CreateMonster",
 ```
 
 ## String Values
+
+## Class Hierarchy
+
+## Casting Types
