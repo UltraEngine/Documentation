@@ -23,7 +23,6 @@ class Monster
 public:
   int health;
   void Update();
-  WString GetName();
   static void BindClass(sol::state* L);
 };
 
@@ -47,7 +46,7 @@ At the beginning of your program you can bind your class by calling the function
 
 ```c++
 auto L = GetLuaState();
-Monster::BindClass();
+Monster::BindClass(L);
 ```
 
 ## Function Overloading
