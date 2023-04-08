@@ -30,7 +30,7 @@ int main(int argc, const char* argv[])
     }
 
     auto timer = CreateTimer(500);
-    ListenEvent(EVENT_TIMERTICK, timer, std::bind(PollDebugger))
+    ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500))
 
     //Run the main script
     RunScript(AppDir() + "/Scripts/Main.lua");
