@@ -30,7 +30,7 @@ int main(int argc, const char* argv[])
     }
 
     //Create a timer
-    auto timer = CreateTimer(500);
+    auto timer = CreateTimer(490);
     
     //Poll the debugger every timer tick
     ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500))
