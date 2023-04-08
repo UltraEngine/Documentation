@@ -16,7 +16,7 @@ local framebuffer = CreateFramebuffer(window)
 local world = CreateWorld()
 
 --Create a camera
-local camera = CreateCamera(world, 2)
+local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0,0,-2)
 
