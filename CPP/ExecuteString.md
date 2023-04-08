@@ -1,4 +1,4 @@
-## Example
+## ExecuteString
 
 This function executes a string of text instead of a file.
 
