@@ -51,6 +51,17 @@ Monster::BindClass(L);
 
 ## Function Overloading
 
+```
+L->new_usertype<Monster>
+(
+  "Monster",
+  "Attack", sol::overload(
+    sol::resolve<void(shared_ptr<Player>)>(&Attack),
+    sol::resolve<void(shared_ptr<NPC>)>(&Attack)
+  )
+);
+```
+
 ## Default Parameters
 
 Default parameters are not supported directly, but can be implemented using function overloading as follows: 
