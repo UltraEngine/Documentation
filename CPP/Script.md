@@ -64,13 +64,15 @@ L->set_function("CreateMonster", sol::overload(
 
 ## NULL Shared Pointers
 
-Shared pointer function parameters that are allowed to have a value of NULL must be implemented using a raw pointer:
+Shared pointer function parameters that are allowed to have a value of NULL must be implemented using a raw pointer. The [Object::As](Object_As) can be used to retrieve the object's shared pointer.
 
 ```cpp
 L->set_function("CreateMonster",
     [](World* w) { if (w == NULL) return CreateMonster(NULL); return CreateMonster(w->As<World>()); }
 );
 ```
+
+**Do not** call make_shared() to create a new shared pointer, as this will result in the premature deletion of the object.
 
 ## String Values
 
