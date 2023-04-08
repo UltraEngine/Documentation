@@ -8,7 +8,7 @@ This function executes a Lua script from a file or string.
 
 | Parameter | Description |
 |-----|-----|
-| path | file path to run |
+| path | script file to run |
 
 ## Returns
 
