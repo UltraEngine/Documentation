@@ -17,12 +17,18 @@ For script debugging to work, the debugger must be enabled by running "Scripts/M
 
 ## Example
 
+This shows a typical setup for the C++ side of a Lua program.
+
 ```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
 int main(int argc, const char* argv[])
 {
     //Get command-line options
-    cl = ParseCommandLine(argc, argv);
-    
+    auto cl = ParseCommandLine(argc, argv);
+
     //Enable script debugging if the -debug switch is specified
     if (cl["debug"].is_boolean() and cl["debug"] == true)
     {
@@ -31,13 +37,13 @@ int main(int argc, const char* argv[])
 
     //Create a timer
     auto timer = CreateTimer(490);
-    
+
     //Poll the debugger every timer tick
-    ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500))
+    ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
 
     //Run the main script
     RunScript("Scripts/Main.lua");
-    
-    return 0
+
+    return 0;
 }
 ```
