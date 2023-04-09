@@ -143,17 +143,17 @@ Lua does not recognize the Ultra Engine [String](String.md) and [WString](WStrin
 To support inheritance, define base classes in the class definition. Each inherited class should be specified:
 
 ```c++
-L->new_usertype<Monster>
+L->new_usertype<Vampire>
 (
-    "MonsterClass",
-    sol::base_classes, sol::bases<Object>()
+    "VampireClass",
+    sol::base_classes, sol::bases<Object, Monster>()
 );
 ```
 
 You should also define the SOL_BASE_CLASSES macro in your header file. Note that the class namespaces must be explicitly defined:
 
 ```c++
-SOL_BASE_CLASSES(Monster, UltraEngine::Object);
+SOL_BASE_CLASSES(Vampire, Monster, UltraEngine::Object);
 ```
 
 ### Casting Types
