@@ -140,6 +140,15 @@ Lua does not recognize the Ultra Engine [String](String.md) and [WString](WStrin
 
 ### Class Hierarchy
 
+Define the base classes in the class definition:
+```c++
+L->new_usertype<Monster>
+(
+    "MonsterClass",
+    sol::base_classes, sol::bases<Object>()
+);
+```
+
 Define in header:
 ```c++
 SOL_BASE_CLASSES(Monster, UltraEngine::Object);
