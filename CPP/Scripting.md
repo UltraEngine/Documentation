@@ -69,7 +69,7 @@ static void Monster::BindClass(sol::state* L)
 {
   L->new_usertype<Monster>
   (
-    "Monster",
+    "MonsterClass",
     "health", &health,
     "Update", &Update
   );
@@ -90,7 +90,7 @@ You can specify multiple versions of a functon or method using the sol::overload
 ```c++
 L->new_usertype<Monster>
 (
-  "Monster",
+  "MonsterClass",
   "Attack", sol::overload(
     sol::resolve<void(shared_ptr<Player>)>(&Attack),
     sol::resolve<void(shared_ptr<NPC>)>(&Attack)
