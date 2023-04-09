@@ -202,6 +202,40 @@ static void Monster::BindClass(sol::state* L)
 }
 ```
 
+### Strings
+
+By default, Lua strings do not support wide characters or unicode. Ultra implements two string wrapper classes to handle strings in Lua:
+
+```c++
+namespace UltraEngine::Core
+{
+	struct StringWrapper
+	{
+		String s;
+		StringWrapper(std::string& s);
+	};
+	
+	struct WStringWrapper
+	{
+		WString s;
+		WStringWrapper(std::string& s);
+		WStringWrapper(std::wstring& s);
+	};	
+}
+```
+
+We generally want to try to store strings in the WStringWrapper class and convert to UTF8 only when needed. However, our function definitions need to be able to account for both string wrapper classes, as well as for raw Lua strings. Here is a typical definition for a function that accepts and returns string:
+
+```c++
+L->set_function("ExtractExt", sol::overload(
+	[](std::string s) { return WStringWrapper(ExtractExt(s)); },
+	[](Core::StringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); },
+	[](Core::WStringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); }
+));
+```
+
+The returned object can be passed to engine functions with no loss of information and can even be displayed in the debugger, and Lua doesn't know or care what is contained in the class.
+
 ### Debugging User-defined Classes
 
 You can add additional user-defined debugging information by adding a method called debug to your class and exposiing it:
