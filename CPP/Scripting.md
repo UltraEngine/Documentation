@@ -4,12 +4,12 @@ Ultra Engine supports scripts written with the [Lua](https://www.lua.org) progra
 Scripts can be attached to entities or used to control the entire program.
 You can even combine Lua scripts with C++ and C# programs.
 
-| Property | Type | Description |
+| Function | Description |
 |-----|-----|-----|
-| [ExecuteString](ExecuteString.md) | Function | |
-| [GetLuaState](GetLuaState.md) | Function | |
-| [RunScript](RunScript.md) | Function | |
-| [PollDebugger](PollDebugger.md) | Function | |
+| [ExecuteString](ExecuteString.md) | |
+| [GetLuaState](GetLuaState.md) |  |
+| [RunScript](RunScript.md) | |
+| [PollDebugger](PollDebugger.md) | |
 
 ## Debugging Lua Scripts
 
