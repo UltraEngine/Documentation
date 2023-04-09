@@ -142,6 +142,11 @@ Lua does not recognize the Ultra Engine [String](String.md) and [WString](WStrin
 
 ### Class Hierarchy
 
+Define in header:
+```c++
+SOL_BASE_CLASSES(Monster, UltraEngine::Object);
+```
+
 ### Casting Types
 
 It's best to make a cast function for each class:
