@@ -142,14 +142,6 @@ L->set_function("CreateMonster",
 
 If NULL is not considered a valid value for the parameter, you can skip this and just use the shared pointer in your function definition.
 
-### String Values
-
-Lua does not recognize the Ultra Engine [String](String.md) and [WString](WString.md) classes, and these must be converted to std::string.
-
-```c++
-L->set_function("Print", [](std::string s) { Print(s); });
-```
-
 ### Inheritance
 
 To support inheritance, define base classes in the class definition. Each inherited class should be specified:
