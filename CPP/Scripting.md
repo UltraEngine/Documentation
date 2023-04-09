@@ -50,7 +50,7 @@ Although by default the project is set to debug scripts using the debug build of
 
 ## Exposing C++ Classes to Lua
 
-Ultra Engine uses the [sol2](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua. It's most convenient to add a static function to each class you want to expose to Lua, called BindClass:
+Ultra Engine uses the [sol](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua. It's most convenient to add a static function to each class you want to expose to Lua, called BindClass:
 ```c++
 class Monster : public Object
 {
@@ -224,4 +224,4 @@ sol::table Monster::debug(sol::this_state ts) const
 ## Additional Information
 
 - [Lua 5.4 Reference Manual](https://www.lua.org/manual/5.4/)
-- [sol2 Documentation](https://sol2.readthedocs.io/en/latest/)
+- [sol Documentation](https://sol2.readthedocs.io/en/latest/)
