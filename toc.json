@@ -2954,7 +2954,8 @@
 					]
 				},
 				{
-					"title": "Script",
+					"title": "Scripting",
+					"filename": "Scripting",
 					"topics": [{
 							"title": "ExecuteString",
 							"filename": "ExecuteString"
