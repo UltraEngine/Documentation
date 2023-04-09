@@ -48,7 +48,7 @@ end
 
 Although by default the project is set to debug scripts using the debug build of your game, it is also possible to run the Lua debugger in release mode.
 
-## Exposing C++ Classes to Lua
+## Accessing C++ Classes in Lua
 
 Ultra Engine uses the [sol](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua. It's most convenient to add a static function to each class you want to expose to Lua, called BindClass:
 ```c++
