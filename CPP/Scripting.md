@@ -170,7 +170,7 @@ Note that this macro must be placed *outside* of any namespace.
 
 It's best to make a cast function for each class:
 ```c++
-L->set_function("Monster", [](Monster* m) { if (m == NULL) return NULL; return m->As<Monster>(); ) } );
+L->set_function("Monster", [](Object* m) { return dynamic_pointer_cast<Monster>(m); ) } );
 ```
 Because we are using the class name for this function, you should call the exposed class something different like "MonsterClass".
 
