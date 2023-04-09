@@ -5,7 +5,7 @@ Scripts can be attached to entities or used to control the entire program.
 You can even combine Lua scripts with C++ and C# programs.
 
 | Function | Description |
-|-----|-----|-----|
+|-----|-----|
 | [ExecuteString](ExecuteString.md) | |
 | [GetLuaState](GetLuaState.md) |  |
 | [RunScript](RunScript.md) | |
