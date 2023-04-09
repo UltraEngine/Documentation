@@ -164,6 +164,8 @@ You should also define the SOL_BASE_CLASSES macro in your header file. Note that
 SOL_BASE_CLASSES(Vampire, Monster, UltraEngine::Object);
 ```
 
+Note that this macro must be placed *outside* of any namespace.
+
 ### Casting Types
 
 It's best to make a cast function for each class:
