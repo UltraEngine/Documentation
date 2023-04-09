@@ -9,9 +9,9 @@ You can even combine Lua scripts with C++ and C# programs.
 | Name | Type | Description |
 |-----|-----|-----|
 | [ExecuteString](ExecuteString.md) | Function | |
+| [GetLuaState](GetLuaState.md) | Function | |
 | [RunScript](RunScript.md) | Function | |
 | [PollDebugger](PollDebugger.md) | Function | |
-| [LuaState](LuaState.md) | Function | |
 
 ## Exposing C++ classes to Lua
 
