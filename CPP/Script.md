@@ -105,7 +105,7 @@ Alternatively, you can use a Lambda function to specify function overloads:
 ```c++
 L->new_usertype<Monster>
 (
-  "Monster",
+  "MonsterClass",
   "Attack", sol::overload(
     [](Monster& m, shared_ptr<Player> p) { m.Attack(p); },
     [](Monster& m, shared_ptr<NPC> n) { m.Attack(n); }
@@ -158,8 +158,17 @@ Because we are using the class name for this function, you should call the expos
 ### Getters and Setters
 
 You can specify getter and setter class methods using the sol::property feature:
-```c++
-L->
+
+```cpp
+static void Monster::BindClass(sol::state* L)
+{
+  L->new_usertype<Monster>
+  (
+    "MonsterClass",
+    "health", sol::property([](Monster& m, int h){ m.SetHealth(h)}, [](Monster& m){ return m.GetHealth()}, )
+  );
+  L->set_function("CreateMonster", &CreateMonster);
+}
 ```
 
 ### Debugging User-defined Classes
