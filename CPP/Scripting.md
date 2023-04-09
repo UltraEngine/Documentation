@@ -130,17 +130,21 @@ L->set_function("CreateMonster", sol::overload(
 ));
 ```
 
-Shared pointer function parameters that are allowed to have a value of NULL must be implemented using a raw pointer. The [Object::As](Object_As.md) method can be used to retrieve the object's shared pointer.
-
-```cpp
-L->set_function("CreateMonster",
-    [](World* w) { if (w == NULL) return CreateMonster(NULL); return CreateMonster(w->As<World>()); }
-);
-```
-
 **Do not** call make_shared() to create a new shared pointer, as this will result in the premature deletion of the object.
 
 If NULL is not considered a valid value for the parameter, you can skip this and just use the shared pointer in your function definition.
+
+### Shared Pointers
+
+For the most part, shared pointers will work seamlessly with sol. However, the Lua nil value cannot be mapped to a shared pointer. If you have a shared pointer parameter that is allowed to be NULL, specify an overload for this case:
+```cpp
+L->set_function("CreateMonster",
+	sol::overload(
+		[](std::shared_ptr<World> w) { return CreateMonster(w); },
+		[](std::nullptr_t) { return CreateMonster(nullptr); }
+	)		
+);
+```
 
 ### Inheritance
 
