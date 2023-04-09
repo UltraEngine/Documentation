@@ -4,9 +4,7 @@ Ultra Engine supports scripts written with the [Lua](https://www.lua.org) progra
 Scripts can be attached to entities or used to control the entire program.
 You can even combine Lua scripts with C++ and C# programs.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |-----|-----|-----|
 | [ExecuteString](ExecuteString.md) | Function | |
 | [GetLuaState](GetLuaState.md) | Function | |
