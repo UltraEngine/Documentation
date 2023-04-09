@@ -150,6 +150,12 @@ L->new_usertype<Monster>
 );
 ```
 
+You should also define the SOL_BASE_CLASSES macro in your header file. Note that the class namespaces must be explicitly defined:
+
+```c++
+SOL_BASE_CLASSES(Monster, UltraEngine::Object);
+```
+
 ### Casting Types
 
 It's best to make a cast function for each class:
