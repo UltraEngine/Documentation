@@ -13,7 +13,7 @@ You can even combine Lua scripts with C++ code.
 
 ## Debugging Lua Scripts
 
-You can use [Visual Studio Code](https://code.visualstudio.com) to debug Lua scripts in your game. The project template includes launch settings that will appear when you open the project template in Visual Studio Code. When you select the debug launch option, the -debug command line switch will be passed to your game's executable. 
+You can use [Visual Studio Code](https://code.visualstudio.com) and the [Lua Debugger](https://marketplace.visualstudio.com/items?itemName=devCAT.lua-debug) extension to debug Lua scripts in your game. The project template includes launch settings that will appear when you open the project template in Visual Studio Code. When you select the debug launch option, the -debug command line switch will be passed to your game's executable. 
 
 Your game needs to interpret the command line switch and activate the debugger when the -debug option is specified. To do this, the debugger script must be run so the program can communicate with the IDE:
 ```c++
