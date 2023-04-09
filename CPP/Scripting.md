@@ -236,6 +236,24 @@ L->set_function("ExtractExt", sol::overload(
 
 The returned object can be passed to engine functions with no loss of information and can even be displayed in the debugger, and Lua doesn't know or care what is contained in the class.
 
+Here is a simple test that demonstrates wide strings in Lua with concatenation:
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    auto L = GetLuaState();
+    L->set("a", Core::WStringWrapper(L"Сколько"));
+    L->set("b", Core::WStringWrapper(L"вам"));
+    L->set("c", Core::WStringWrapper(L"лет"));
+    ExecuteString("Print(a..\" \"..b..\" \"..c..\"?\")");
+    return 0;
+}
+```
+
 ### Debugging User-defined Classes
 
 You can add additional user-defined debugging information by adding a method called debug to your class and exposiing it:
