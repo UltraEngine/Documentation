@@ -190,3 +190,8 @@ sol::table Monster::debug(sol::this_state ts) const
     return t;
 }
 ```
+
+## Additional Information
+
+- [Lua 5.4 Reference Manual](https://www.lua.org/manual/5.4/)
+- [sol2 Documentation](https://sol2.readthedocs.io/en/latest/)
