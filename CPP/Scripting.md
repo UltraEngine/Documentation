@@ -138,20 +138,16 @@ If NULL is not considered a valid value for the parameter, you can skip this and
 
 Lua does not recognize the Ultra Engine [String](String.md) and [WString](WString.md) classes, and these must be converted to std::string.
 
-### Class Hierarchy
+### Inheritance
 
-Define the base classes in the class definition:
+To support inheritance, define base classes in the class definition. Each inherited class should be specified:
+
 ```c++
 L->new_usertype<Monster>
 (
     "MonsterClass",
     sol::base_classes, sol::bases<Object>()
 );
-```
-
-Define in header:
-```c++
-SOL_BASE_CLASSES(Monster, UltraEngine::Object);
 ```
 
 ### Casting Types
