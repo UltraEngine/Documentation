@@ -4,11 +4,12 @@ This function creates a new point light.
 
 ## Syntax
 
-- void **CreatePointLight**(shared_ptr<[World](World.md)\> world)
+- void **CreatePointLight**(shared_ptr<[World](World.md)\> world, const float range = 5.0f)
 
 | Parameter | Description |
 |---|---|
 | world | world to create the light in |
+| range | light range |
 
 ## Returns
 
