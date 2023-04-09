@@ -89,8 +89,8 @@ Monster::BindClass(L);
 You can specify multiple versions of a functon or method using the sol::overload function. Let's say our class has two versions of a method:
 
 ```c++
-void Attack(shared_ptr<Player> player);
-void Attack(shared_ptr<Villager> villager);
+virtual void Attack(shared_ptr<Player> player);
+virtual void Attack(shared_ptr<Villager> villager);
 ```
 
 You can use sol::resolve to specify each function protocol:
