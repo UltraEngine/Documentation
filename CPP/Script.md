@@ -15,8 +15,7 @@ You can even combine Lua scripts with C++ and C# programs.
 
 ## Exposing C++ classes to Lua
 
-Ultra Engine uses the [sol2](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua.
-
+Ultra Engine uses the [sol2](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua. It's most convenient to add a static function to each class you want to expose to Lua, called BindClass:
 ```c++
 class Monster
 {
@@ -29,6 +28,7 @@ public:
 extern shared_ptr<Monster> CreateMonster(shared_ptr<World> world, int health = 100);
 ```
 
+The Monster::BindClass function definition looks like this:
 ```cpp
 static void Monster::BindClass(sol::state* L)
 {
@@ -42,7 +42,7 @@ static void Monster::BindClass(sol::state* L)
 }
 ```
 
-At the beginning of your program you can bind your class by calling the function:
+At the beginning of your program you can bind the class by calling the function:
 
 ```c++
 auto L = GetLuaState();
