@@ -86,7 +86,15 @@ Monster::BindClass(L);
 
 ### Function Overloading
 
-You can specify multiple versions of a functon or method using the sol::overload function, and sol::resolve to specify each function protocol:
+You can specify multiple versions of a functon or method using the sol::overload function. Let's say our class has two versions of a method:
+
+```c++
+void Attack(shared_ptr<Player> player);
+void Attack(shared_ptr<Villager> villager);
+```
+
+You can use sol::resolve to specify each function protocol:
+
 ```c++
 L->new_usertype<Monster>
 (
@@ -98,7 +106,7 @@ L->new_usertype<Monster>
 );
 ```
 
-Alternatively, you can use a Lambda function to specify function overloads:
+Alternatively, you can use a Lambda function to create function overloads:
 
 ```c++
 L->new_usertype<Monster>
