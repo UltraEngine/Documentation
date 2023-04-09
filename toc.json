@@ -2961,6 +2961,11 @@
 							"filename": "ExecuteString"
 						},
 						{
+							"title": "GetLuaState",
+							"filename": "GetLuaState",
+							"hideFromLua": true
+						},
+						{
 							"title": "PollDebugger",
 							"filename": "PollDebugger"
 						},
