@@ -146,6 +146,10 @@ If NULL is not considered a valid value for the parameter, you can skip this and
 
 Lua does not recognize the Ultra Engine [String](String.md) and [WString](WString.md) classes, and these must be converted to std::string.
 
+```c++
+L->set_function("Print", [](std::string s) { Print(s); });
+```
+
 ### Inheritance
 
 To support inheritance, define base classes in the class definition. Each inherited class should be specified:
@@ -184,7 +188,21 @@ static void Monster::BindClass(sol::state* L)
   L->new_usertype<Monster>
   (
     "MonsterClass",
-    "health", sol::property([](Monster& m, int h){ m.SetHealth(h)}, [](Monster& m){ return m.GetHealth()}, )
+    "health", sol::property([](Monster& m, int h){ m.SetHealth(h); }, [](Monster& m){ return m.GetHealth(); }, )
+  );
+  L->set_function("CreateMonster", &CreateMonster);
+}
+```
+
+You can use sol::property to create read-only class members:
+
+```cpp
+static void Monster::BindClass(sol::state* L)
+{
+  L->new_usertype<Monster>
+  (
+    "MonsterClass",
+    "birthdate", sol::property([](Monster& m){ return m.birthdate; }, )
   );
   L->set_function("CreateMonster", &CreateMonster);
 }
