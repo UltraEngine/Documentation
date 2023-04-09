@@ -199,7 +199,6 @@ static void Monster::BindClass(sol::state* L)
     "MonsterClass",
     "birthdate", sol::property([](Monster& m){ return m.birthdate; }, )
   );
-  L->set_function("CreateMonster", &CreateMonster);
 }
 ```
 
