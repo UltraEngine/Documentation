@@ -224,7 +224,7 @@ namespace UltraEngine::Core
 }
 ```
 
-We generally want to try to store strings in the WStringWrapper class and convert to UTF-8 only when needed. However, our function definitions need to be able to account for both string wrapper classes, as well as for raw Lua strings. Here is a typical definition for a function that accepts and returns a string:
+We generally want to try to store strings in the WStringWrapper class and convert to UTF-8 only when needed. (An exception would be file or memory read and write functions, where we may want to use basic strings). However, our function definitions need to be able to account for both string wrapper classes, as well as for raw Lua strings. Here is a typical definition for a function that accepts and returns a string:
 
 ```c++
 L->set_function("ExtractExt", sol::overload(
