@@ -38,7 +38,15 @@ auto timer = CreateTimer(510);
 //Poll the debugger every timer tick
 ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
 ```
-Alternatively, you can call PollDebugger() in your main loop in Lua.
+Alternatively, you can call the PollDebugger function in your main loop in Lua:
+```lua
+--Main loop
+while window:KeyDown(KEY_ESCAPE == false) do
+    PollDebugger()
+    world:Update()
+    world:Render(framebuffer)
+end
+```
 
 Although by default the project is set to debug scripts using the debug build of your game, it is also possible to run the Lua debugger in release mode.
 
