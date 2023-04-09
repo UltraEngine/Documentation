@@ -228,13 +228,31 @@ We generally want to try to store strings in the WStringWrapper class and conver
 
 ```c++
 L->set_function("ExtractExt", sol::overload(
-	[](std::string s) { return WStringWrapper(ExtractExt(s)); },
-	[](Core::StringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); },
+	[](std::string s) { return Core::StringWrapper(RealPath(ExtractExt(s)); },
+	[](Core::StringWrapper& s) { return Core::StringWrapper(ExtractExt(s.s)); },
 	[](Core::WStringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); }
 ));
 ```
 
+This function accepts three types of strings but always returns a WStringWrapper because the full file path may contain special characters:
+
+```c++
+L->set_function("RealPath", sol::overload(
+	[](std::string s) { return Core::WStringWrapper(RealPath(s)); },
+	[](Core::StringWrapper& s) { return Core::WStringWrapper(RealPath(s.s)); },
+	[](Core::WStringWrapper& s) { return Core::WStringWrapper(RealPath(s.s)); }
+));
+```
+
 The returned object can be passed to engine functions with no loss of information and can even be displayed in the debugger, and Lua doesn't know or care what is contained in the class.
+
+Whenever strings are added together (concatenation), the resulting string will use wide characters if either of the strings do:
+
+| Operand A | Operand B | Result |
+|---|---|---|
+| string | StringWrapper | StringWrapper |
+| string | WStringWrapper | WStringWrapper |
+| StringWrapper | WStringWrapper | WStringWrapper |
 
 Here is a simple test that demonstrates wide strings in Lua with concatenation:
 
@@ -253,6 +271,8 @@ int main(int argc, const char* argv[])
     return 0;
 }
 ```
+
+If a WStringWrapper object is used in a native Lua command that accepts a string, it will be automatically converted to UTF-8 for use with the function. The resulting strings may not always work or display as expected.
 
 ### Debugging User-defined Classes
 
