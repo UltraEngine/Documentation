@@ -88,13 +88,27 @@ Monster::BindClass(L);
 
 ### Function Overloading
 
-```
+You can specify multiple versions of a functon or method using the sol::overload function, and sol::resolve to specify each function protocol:
+```c++
 L->new_usertype<Monster>
 (
   "Monster",
   "Attack", sol::overload(
     sol::resolve<void(shared_ptr<Player>)>(&Attack),
     sol::resolve<void(shared_ptr<NPC>)>(&Attack)
+  )
+);
+```
+
+Alternatively, you can use a Lambda function to specify function overloads:
+
+```c++
+L->new_usertype<Monster>
+(
+  "Monster",
+  "Attack", sol::overload(
+    [](Monster& m, shared_ptr<Player> p) { m.Attack(p); },
+    [](Monster& m, shared_ptr<NPC> n) { m.Attack(n); }
   )
 );
 ```
@@ -110,8 +124,6 @@ L->set_function("CreateMonster", sol::overload(
 ));
 ```
 
-### NULL Shared Pointers
-
 Shared pointer function parameters that are allowed to have a value of NULL must be implemented using a raw pointer. The [Object::As](Object_As.md) method can be used to retrieve the object's shared pointer.
 
 ```cpp
@@ -126,10 +138,34 @@ If NULL is not considered a valid value for the parameter, you can skip this and
 
 ### String Values
 
+Lua does not recognize the Ultra Engine [String](String.md) and [WString](WString.md) classes, and these must be converted to std::string.
+
 ### Class Hierarchy
 
 ### Casting Types
 
+It's best to make a cast function for each class:
+```c++
+L->set_function("Monster", [](Monster* m) { if (m == NULL) return NULL; return m->As<Monster>(); ) } );
+```
+Because we are using the class name for this function, you should call the exposed class something different like "MonsterClass".
+
 ### Getters and Setters
 
+You can specify getter and setter class methods using the sol::property feature:
+```c++
+L->
+```
+
 ### Debugging User-defined Classes
+
+You can add additional user-defined debugging information by adding a method called debug to your class and exposiing it:
+
+```c+++
+sol::table Monster::debug(sol::this_state ts) const
+{
+    auto t = Object::debug(ts);
+    t["health"] = health;
+    return t;
+}
+```
