@@ -32,7 +32,7 @@ camera:SetPosition(0, 0, -2)
 
 --Create a model
 local box = CreateBox(world)
-box:SetColor(0,0,1)
+box:SetColor(0, 0, 1)
 
 --Create a light
 local light = CreateBoxLight(world)
