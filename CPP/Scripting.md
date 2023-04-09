@@ -130,13 +130,10 @@ L->set_function("CreateMonster", sol::overload(
 ));
 ```
 
-**Do not** call make_shared() to create a new shared pointer, as this will result in the premature deletion of the object.
-
-If NULL is not considered a valid value for the parameter, you can skip this and just use the shared pointer in your function definition.
-
 ### Shared Pointers
 
 For the most part, shared pointers will work seamlessly with sol. However, the Lua nil value cannot be mapped to a shared pointer. If you have a shared pointer parameter that is allowed to be NULL, specify an overload for this case:
+
 ```cpp
 L->set_function("CreateMonster",
 	sol::overload(
@@ -145,6 +142,8 @@ L->set_function("CreateMonster",
 	)		
 );
 ```
+
+If NULL is not considered a valid value for the parameter, you can skip the extra overload and just use the shared pointer in your function definition. In that case, an error will occur if a script attempts to call the function with a nil value.
 
 ### Inheritance
 
