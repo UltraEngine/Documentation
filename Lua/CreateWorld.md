@@ -28,21 +28,22 @@ local world = CreateWorld()
 --Create a camera
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
-camera:SetPosition(0,0,-2)
+camera:SetPosition(0, 0, -2)
 
 --Create a model
 local box = CreateBox(world)
+box:SetColor(0,0,1)
 
 --Create a light
 local light = CreateBoxLight(world)
-light:SetRotation(45,35,0)
+light:SetRotation(45, 35, 0)
 light:SetColor(2)
+light:SetRange(-5, 5)
 
---Main loop
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
 	--Rotate the model
-	box:Turn(0,0.1,0)
+	box:Turn(0, 1, 0)
 
 	--Update the world
 	world:Update()
