@@ -93,7 +93,7 @@ L->new_usertype<Monster>
   "MonsterClass",
   "Attack", sol::overload(
     sol::resolve<void(shared_ptr<Player>)>(&Attack),
-    sol::resolve<void(shared_ptr<NPC>)>(&Attack)
+    sol::resolve<void(shared_ptr<Villager>)>(&Attack)
   )
 );
 ```
@@ -106,7 +106,7 @@ L->new_usertype<Monster>
   "MonsterClass",
   "Attack", sol::overload(
     [](Monster& m, shared_ptr<Player> p) { m.Attack(p); },
-    [](Monster& m, shared_ptr<NPC> n) { m.Attack(n); }
+    [](Monster& m, shared_ptr<Villager> v) { m.Attack(v); }
   )
 );
 ```
