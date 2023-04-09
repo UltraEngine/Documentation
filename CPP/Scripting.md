@@ -6,10 +6,10 @@ You can even combine Lua scripts with C++ code.
 
 | Function | Description |
 |-----|-----|
-| [ExecuteString](ExecuteString.md) | |
-| [GetLuaState](GetLuaState.md) |  |
-| [RunScript](RunScript.md) | |
-| [PollDebugger](PollDebugger.md) | |
+| [ExecuteString](ExecuteString.md) | executes script code |
+| [GetLuaState](GetLuaState.md) | retrieves the game engine's Lua state |
+| [RunScript](RunScript.md) | executes a script file |
+| [PollDebugger](PollDebugger.md) | checks the debugger for updated information |
 
 ## Debugging Lua Scripts
 
