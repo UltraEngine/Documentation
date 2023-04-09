@@ -173,7 +173,7 @@ static void Monster::BindClass(sol::state* L)
 
 You can add additional user-defined debugging information by adding a method called debug to your class and exposiing it:
 
-```c+++
+```c++
 sol::table Monster::debug(sol::this_state ts) const
 {
     auto t = Object::debug(ts);
