@@ -169,10 +169,13 @@ Note that this macro must be placed *outside* of any namespace.
 
 ### Casting Types
 
-It's best to make a cast function for each class:
+It's best to make a cast function for each class, and include an overload that handles nil values:
 
 ```c++
-L->set_function("Monster", [](Object* m) { if (m == NULL) return NULL; else return m->As<Monster>(); } );
+L->set_function("Monster",
+	[](shared_ptr<Object> o){ return o->As<Monster>(); },
+	[](std::nullptr_t) { return nullptr; }
+);
 ```
 
 Because we are using the class name for this function, you should call the exposed class something different like "MonsterClass".
