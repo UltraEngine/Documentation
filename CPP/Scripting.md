@@ -51,6 +51,7 @@ Although by default the project is set to debug scripts using the debug build of
 ## Accessing C++ Classes in Lua
 
 Ultra Engine uses the [sol](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua. It's most convenient to add a static function to each class you want to expose to Lua, called BindClass:
+
 ```c++
 class Monster : public Object
 {
@@ -63,7 +64,8 @@ public:
 extern shared_ptr<Monster> CreateMonster(shared_ptr<World> world, int health = 100);
 ```
 
-The Monster::BindClass function definition looks like this:
+The Monster::BindClass function definition would look like this:
+
 ```cpp
 static void Monster::BindClass(sol::state* L)
 {
@@ -168,9 +170,11 @@ Note that this macro must be placed *outside* of any namespace.
 ### Casting Types
 
 It's best to make a cast function for each class:
+
 ```c++
 L->set_function("Monster", [](Object* m) { if (m == NULL) return NULL; else return m->As<Monster>(); } );
 ```
+
 Because we are using the class name for this function, you should call the exposed class something different like "MonsterClass".
 
 ### Getters and Setters
@@ -204,17 +208,11 @@ static void Monster::BindClass(sol::state* L)
 
 ### Strings
 
-By default, Lua strings do not support wide characters or unicode. Ultra implements two string wrapper classes to handle strings in Lua:
+By default, Lua strings do not support wide characters or unicode. Ultra implements awide string wrapper class to handle strings in Lua:
 
 ```c++
 namespace UltraEngine::Core
-{
-	struct StringWrapper
-	{
-		String s;
-		StringWrapper(std::string& s);
-	};
-	
+{	
 	struct WStringWrapper
 	{
 		WString s;
@@ -224,22 +222,20 @@ namespace UltraEngine::Core
 }
 ```
 
-We generally want to try to store strings in the WStringWrapper class and convert to UTF-8 only when needed. (An exception would be file or memory read and write functions, where we may want to use basic strings). However, our function definitions need to be able to account for both string wrapper classes, as well as for raw Lua strings. Here is a typical definition for a function that accepts and returns a string:
+We generally want to try to store strings in the WStringWrapper class and convert to narrow strings only when needed. (An exception would be file or memory read and write functions, where we may want to use basic strings). However, our function definitions need to be able to account for both the string wrapper class and raw Lua strings. Here is a typical definition for a function that accepts and returns a string:
 
 ```c++
 L->set_function("ExtractExt", sol::overload(
 	[](std::string s) { return Core::StringWrapper(RealPath(ExtractExt(s)); },
-	[](Core::StringWrapper& s) { return Core::StringWrapper(ExtractExt(s.s)); },
 	[](Core::WStringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); }
 ));
 ```
 
-This function accepts three types of strings but always returns a WStringWrapper because the full file path may contain special characters:
+This function accepts both types of strings but always returns a WStringWrapper because the full file path may contain special characters:
 
 ```c++
 L->set_function("RealPath", sol::overload(
 	[](std::string s) { return Core::WStringWrapper(RealPath(s)); },
-	[](Core::StringWrapper& s) { return Core::WStringWrapper(RealPath(s.s)); },
 	[](Core::WStringWrapper& s) { return Core::WStringWrapper(RealPath(s.s)); }
 ));
 ```
@@ -250,9 +246,10 @@ Whenever strings are added together (concatenation), the resulting string will u
 
 | Operand A | Operand B | Result |
 |---|---|---|
-| string | StringWrapper | StringWrapper |
+| string | string | string |
 | string | WStringWrapper | WStringWrapper |
-| StringWrapper | WStringWrapper | WStringWrapper |
+| WStringWrapper | string | WStringWrapper |
+| WStringWrapper | WStringWrapper | WStringWrapper |
 
 Here is a simple test that demonstrates wide strings in Lua with concatenation:
 
@@ -272,7 +269,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-If a WStringWrapper object is used in a native Lua command that accepts a string, it will be automatically converted to UTF-8 for use with the function. The resulting strings may not always work or display as expected, so it's generally best to rely on the engine string commands.
+If a WStringWrapper object is used in a native Lua command that accepts a string, it will be automatically converted to a narrow string for use with the function. The resulting strings may not always work or display as expected, so it's generally best to rely on the engine string commands.
 
 ### Debugging User-defined Classes
 
