@@ -211,48 +211,32 @@ static void Monster::BindClass(sol::state* L)
 
 ### Strings
 
-By default, Lua strings do not support wide characters or unicode. Ultra Engine implements a wide string wrapper class to handle strings in Lua:
+Ultra Engine uses wide strings wherever possible. Lua only supports narrow strings, but UTF-8 text can be encoded in them.
+
+When a C++ function is called from Lua, if it is possible for the returned string to contain special characters, the function should always return a wide string converted to UTF-8:
 
 ```c++
-namespace UltraEngine::Core
-{	
-	struct WStringWrapper
-	{
-		WString s;
-		WStringWrapper(std::string& s);
-		WStringWrapper(std::wstring& s);
-	};	
-}
+L->set_function("CurrentDir",
+	[](){ return std::string( CurrentDir().ToUtf8String()); }
+);
 ```
 
-We generally want to try to store strings in the WStringWrapper class and convert to narrow strings only when needed. (An exception would be file or memory read and write functions, where we may want to use basic strings). However, our function definitions need to be able to account for both the string wrapper class and raw Lua strings. Here is a typical definition for a function that accepts and returns a string:
+Any C++ function that accepts a string from Lua should assume the string is using UTF-8 encoding and convert to a wide string:
 
 ```c++
-L->set_function("ExtractExt", sol::overload(
-	[](std::string s) { return ExtractExt(s); },// Returns a narrow string
-	[](Core::WStringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); }// Returns a wide string
-));
+L->set_function("Notify",
+	[](std::string s){ Notify( WString(s) ); }
+);
 ```
 
-This function accepts both types of strings but always returns a WStringWrapper because the full file path may contain special characters:
+Class properties can be handled in the same manner:
 
 ```c++
-L->set_function("RealPath", sol::overload(
-	[](std::string s) { return Core::WStringWrapper(RealPath(s)); },
-	[](Core::WStringWrapper& s) { return Core::WStringWrapper(RealPath(s.s)); }
-));
+"name", sol::property(
+	[](Monster& m) { return std::string(m.name.ToUtf8String() ); },
+	[](Monster& m, std::string&) { m.name = WString(s); }
+)
 ```
-
-In the second function variation the returned WStringWrapper object can be passed to engine functions with no loss of information and can even be displayed in the debugger, and Lua doesn't know or care what is contained in the class.
-
-Whenever strings are added together (concatenation), the resulting string will use wide characters if either of the strings do:
-
-| Operand A | Operand B | Result |
-|---|---|---|
-| string | string | string |
-| string | WStringWrapper | WStringWrapper |
-| WStringWrapper | string | WStringWrapper |
-| WStringWrapper | WStringWrapper | WStringWrapper |
 
 Here is a simple test that demonstrates wide strings in Lua with concatenation:
 
@@ -264,17 +248,15 @@ using namespace UltraEngine;
 int main(int argc, const char* argv[])
 {
     auto L = GetLuaState();
-    L->set("a", Core::WStringWrapper(L"Сколько"));
-    L->set("b", Core::WStringWrapper(L"вам"));
-    L->set("c", Core::WStringWrapper(L"лет"));
+    L->set("a", std::string(WString(L"Сколько").ToUtf8String()) );
+    L->set("b", std::string(WString(L"вам").ToUtf8String()) );
+    L->set("c", std::string(WString(L"лет").ToUtf8String()) );
     ExecuteString("Print(a..\" \"..b..\" \"..c..\"?\")");
     return 0;
 }
 ```
 
-If a WStringWrapper object is used in a native Lua command that accepts a string, it will be automatically converted to a narrow string for use with the function. The resulting strings may not always work or display as expected, so it's generally best to rely on the engine string commands.
-
-You can make a read-only sol::property that return a WStringWrapper object, but you cannot make a writable property unless it only accepts a string or only a WStringWrapper, since the setter cannot be overloaded.
+Following these rules will allow your program to support other languages and run correctly on computers in other countries.
 
 ### Debugging User-defined Classes
 
