@@ -208,7 +208,7 @@ static void Monster::BindClass(sol::state* L)
 
 ### Strings
 
-By default, Lua strings do not support wide characters or unicode. Ultra implements awide string wrapper class to handle strings in Lua:
+By default, Lua strings do not support wide characters or unicode. Ultra Engine implements a wide string wrapper class to handle strings in Lua:
 
 ```c++
 namespace UltraEngine::Core
