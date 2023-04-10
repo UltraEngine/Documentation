@@ -36,7 +36,7 @@ auto timer = CreateTimer(510);
 //Poll the debugger every timer tick
 ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
 ```
-Alternatively, you can call the PollDebugger function in your main loop in Lua:
+Alternatively, you can call the PollDebugger function in your main loop in Lua itself:
 ```lua
 --Main loop
 while window:KeyDown(KEY_ESCAPE == false) do
