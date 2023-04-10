@@ -241,7 +241,7 @@ Class properties can be handled in the same manner:
 ```c++
 "name", sol::property(
 	[](Monster& m) { return std::string(m.name.ToUtf8String() ); },
-	[](Monster& m, std::string&) { m.name = WString(s); }
+	[](Monster& m, std::string) { m.name = WString(s); }
 )
 ```
 
