@@ -33,7 +33,7 @@ Additionally, your program must periodically call the function [PollDebugger](Po
 //Create a timer
 auto timer = CreateTimer(510);
 
-//Poll the debugger every timer tick
+//Poll the debugger every 500 milliseconds or so
 ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
 ```
 Alternatively, you can call the PollDebugger function in your main loop in Lua itself:
