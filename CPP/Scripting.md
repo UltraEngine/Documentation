@@ -217,7 +217,7 @@ When a C++ function is called from Lua, if it is possible for the returned strin
 
 ```c++
 L->set_function("CurrentDir",
-	[](){ return std::string( CurrentDir().ToUtf8String()); }
+	[](){ return std::string( CurrentDir().ToUtf8String() ); }
 );
 ```
 
