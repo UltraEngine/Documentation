@@ -289,7 +289,7 @@ sol::table Monster::debug(sol::this_state ts) const
 
 ## Lua Modules
 
-Lua modules allow scripts to execute code from dynamically linked libraries. You can use the version of Lua found [here](https://github.com/UltraEngine/Lua5.4) to build modules for use with Ultra Engine.
+Lua modules allow scripts to execute code from dynamically linked libraries. You can use the version of Lua found [here](https://github.com/UltraEngine/Lua5.4) to build modules for use with Ultra Engine. Lua modules should be placed in the "Scripts/Modules" subfolder in your game's directory.
 
 ## Additional Information
 
