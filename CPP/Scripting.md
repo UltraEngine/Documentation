@@ -274,6 +274,8 @@ int main(int argc, const char* argv[])
 
 If a WStringWrapper object is used in a native Lua command that accepts a string, it will be automatically converted to a narrow string for use with the function. The resulting strings may not always work or display as expected, so it's generally best to rely on the engine string commands.
 
+You can make a read-only sol::property that return a WStringWrapper object, but you cannot make a writable property unless it only accepts a string or only a WStringWrapper, since the setter cannot be overloaded.
+
 ### Debugging User-defined Classes
 
 You can add additional user-defined debugging information by adding a method called debug to your class and exposiing it:
