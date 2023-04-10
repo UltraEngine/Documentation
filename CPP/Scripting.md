@@ -226,7 +226,7 @@ We generally want to try to store strings in the WStringWrapper class and conver
 
 ```c++
 L->set_function("ExtractExt", sol::overload(
-	[](std::string s) { return ExtractExt(ExtractExt(s); },// Returns a narrow string
+	[](std::string s) { return ExtractExt(s); },// Returns a narrow string
 	[](Core::WStringWrapper& s) { return Core::WStringWrapper(ExtractExt(s.s)); }// Returns a wide string
 ));
 ```
