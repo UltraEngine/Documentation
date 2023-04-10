@@ -240,7 +240,7 @@ L->set_function("RealPath", sol::overload(
 ));
 ```
 
-The returned object can be passed to engine functions with no loss of information and can even be displayed in the debugger, and Lua doesn't know or care what is contained in the class.
+In the second function variation the returned WStringWrapper object can be passed to engine functions with no loss of information and can even be displayed in the debugger, and Lua doesn't know or care what is contained in the class.
 
 Whenever strings are added together (concatenation), the resulting string will use wide characters if either of the strings do:
 
