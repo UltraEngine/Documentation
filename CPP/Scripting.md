@@ -263,7 +263,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-Following these rules will allow your program to support other languages and run correctly on computers in other countries.
+Following these rules will allow your program to support other languages and run correctly on computers in other geographical regions.
 
 ### Debugging User-defined Classes
 
