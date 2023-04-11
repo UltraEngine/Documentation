@@ -4,7 +4,7 @@ Ultra Engine supports scripts written with the [Lua](https://www.lua.org) progra
 Scripts can be attached to entities or used to control the entire program.
 You can even combine Lua scripts with C++ code.
 
-Ultra Engine uses Lua 5.4 so you can take advantage of the very latest Lua features.
+Ultra Engine uses Lua 5.4 so you can take advantage of [the very latest Lua features](https://www.lua.org/manual/5.4/readme.html#changes).
 
 | Function | Description |
 |-----|-----|
