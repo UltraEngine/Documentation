@@ -7,6 +7,7 @@ You can even combine Lua scripts with C++ code.
 | Function | Description |
 |-----|-----|
 | [ExecuteString](ExecuteString.md) | executes script code |
+| [GCCollect](GCCollect.md) | runs the Lua garbage collector |
 | [GetLuaState](GetLuaState.md) | retrieves the game engine's Lua state |
 | [PollDebugger](PollDebugger.md) | syncs information with the debugger |
 | [RunScript](RunScript.md) | executes a script file |
