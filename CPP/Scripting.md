@@ -234,7 +234,7 @@ File and memory write functions that read and write narrow strings are an except
 
 ```c++
 "WriteString", [](Stream& s, std::string& t){ s.WriteString(t) },
-"ReadString", [](Stream& s){ return std::string(s.ReadString()) }
+"ReadString", [](Stream& s){ return std::string( s.ReadString(); ) }
 ```
 
 Class properties can be handled in the same manner:
