@@ -214,7 +214,7 @@ static void Monster::BindClass(sol::state* L)
 
 Ultra Engine uses wide strings wherever possible. Lua only supports narrow strings, but UTF-8 text can be encoded in them.
 
-When a C++ function is called from Lua, if it is possible for the returned string to contain special characters, the function should always return a wide string converted to UTF-8:
+When a C++ function is called from Lua, if it is possible for the returned string to contain special characters, the function should always return a wide string converted to UTF-8: Lua doesn't recognize the Ultra Engine [String](String.md) class, so make sure you cast the return value to std::string.
 
 ```c++
 L->set_function("CurrentDir",
