@@ -8,7 +8,7 @@
 
 | Parameter | Description |
 |---|---|
-| T | class type |
+| T | C++ class type |
 | path | path to Lua script |
 | hooks | structure containing function pointers, for use with other languages |
 | extra | external pointer or ID, for use with other languages |
