@@ -8,7 +8,7 @@
 
 | Parameter | Description |
 |---|---|
-| T | C++ class type, must be derived from the [Component](Component.md) class |
+| T | C++ type, must be derived from the [Component](Component.md) class |
 | path | path to Lua script |
 | hooks | structure containing function pointers, for use with other languages |
 | extra | external pointer or ID, for use with other languages |
