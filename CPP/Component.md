@@ -1,6 +1,6 @@
 # Component
 
-This class can be extended to add behavior and properties to an [Entity](Entity.md).
+The Ultra Engine entity component system allows you to easily add behavior to game objects. This class can be extended to add behavior and properties to an [Entity](Entity.md).
 
 | Property | Type | Description |
 |---|---|---|
