@@ -147,6 +147,31 @@
 					]
 				},
 				{
+					"title": "Component",
+					"filename": "Component",
+					"topics": [{
+							"title": "Collide",
+							"filename": "Component_Collide"
+						},
+						{
+							"title": "Load",
+							"filename": "Component_Load"
+						},
+						{
+							"title": "Save",
+							"filename": "Component_Save"
+						},
+						{
+							"title": "Start",
+							"filename": "Component_Start"
+						},
+						{
+							"title": "Update",
+							"filename": "Component_Update"
+						}
+					]
+				},			   
+				{
 					"title": "Debugging",
 					"topics": [{
 							"title": "Assert",
@@ -485,6 +510,10 @@
 							]
 						},
 						{
+							"title": "AddComponent",
+							"filename": "Entity_AddComponent"
+						},						   
+						{
 							"title": "AddForce",
 							"filename": "Entity_AddForce"
 						},
@@ -544,6 +573,10 @@
 							"title": "GetColor",
 							"filename": "Entity_GetColor"
 						},
+						{
+							"title": "GetComponent",
+							"filename": "Entity_GetComponent"
+						},							   
 						{
 							"title": "GetCrouched",
 							"filename": "Entity_GetCrouched"
@@ -711,61 +744,6 @@
 						{
 							"title": "Turn",
 							"filename": "Entity_Turn"
-						}
-					]
-				},
-				{
-					"title": "Entity Component System",
-					"filename": "EntityComponentSystem",
-					"topics": [{
-							"title": "Actor",
-							"filename": "Actor",
-							"topics": [{
-									"title": "AddComponent",
-									"filename": "Actor_AddComponent"
-								},
-								{
-									"title": "Copy",
-									"filename": "Actor_Copy"
-								},
-								{
-									"title": "CreateActor",
-									"filename": "CreateActor"
-								},
-								{
-									"title": "GetComponent",
-									"filename": "Actor_GetComponent"
-								},
-								{
-									"title": "GetEntityActor",
-									"filename": "GetEntityActor"
-								}
-							]
-						},
-						{
-							"title": "Component",
-							"filename": "Component",
-							"topics": [{
-									"title": "Collide",
-									"filename": "Component_Collide"
-								},
-								{
-									"title": "Load",
-									"filename": "Component_Load"
-								},
-								{
-									"title": "Save",
-									"filename": "Component_Save"
-								},
-								{
-									"title": "Start",
-									"filename": "Component_Start"
-								},
-								{
-									"title": "Update",
-									"filename": "Component_Update"
-								}
-							]
 						}
 					]
 				},
