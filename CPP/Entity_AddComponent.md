@@ -11,6 +11,7 @@
 | T | class type |
 | path | path to Lua script |
 | hooks | structure containing function pointers, for use with other languages |
+| extra | external pointer or ID, for use with other languages |
   
 ## Returns
 
