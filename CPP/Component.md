@@ -10,7 +10,7 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 | [Load](Component_Load.md) | Method | called when an actor is loaded or copied |
 | [Save](Component_Save.md) | Method | called when an actor is saved or copied |
 | [Start](Component_Start.md) | Method | called when a component is added |
-| [Update](Component_Update.md) | Method | called once for each actor in [World::Update](World_Update.md) |
+| [Update](Component_Update.md) | Method | called once each time [World::Update](World_Update.md) is called |
 
 You can override these methods or add your own in your component class. To add a new component, just create a new .hpp file in your "Source\Components" folder. You can use separate header and code files if you want, but it is more convenient to put everything in a single file that automatically gets included into your project. Compile your project once and the precompiler will detect your new file and update the component system code. The precompiler will automatically generate the files "ComponentSystem.h" and "ComponentSystem.cpp". These files should never be changed by hand, since they will be overwritten every time the precompiler runs.
 
