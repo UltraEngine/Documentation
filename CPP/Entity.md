@@ -19,6 +19,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | scale | const [xVec3](xVec3.md)& | read-only scale |
 | tags | const set<[WString](WString.md)\>& | read-only container of tags |
 | velocity | const [xVec3](xVec3.md)& | read-only linear velocity |
+| [AddComponent](Entity_AddComponent.md) | Method | adds an entity component |
 | [AddForce](Entity_AddForce.md) | Method | apply linear force to the entity |
 | [AddPointForce](Entity_AddPointForce.md) | Method | apply linear force at a specific point |
 | [AddTag](Entity_AddTag.md) | Method | adds a tag |
@@ -31,6 +32,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [GetAirborne](Entity_GetAirborne.md) | Method | returns the airborne state of a player |
 | [GetAngularVelocity](Entity_GetAngularVelocity.md) | Method | returns the entity angular velocity |
 | [GetCollider](Entity_GetCollider.md) | Method | returns the physics collider |
+| [GetComponent](Entity_GetComponent.md) | Method | gets an entity component |
 | [GetCollisionType](Entity_GetCollisionType.md) | Method | returns the collision type |
 | [GetColor](Entity_GetColor.md) | Method | returns the entity color |
 | [GetCrouched](Entity_GetCrouched.md) | Method | returns the crouched state of a player |
