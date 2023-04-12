@@ -16,6 +16,59 @@ You can override these methods or add your own in your component class. To add a
 
 The precompiler is limited in its ability to parse C++ declarations, so it's a good idea to stick to straightforward C++ syntax.
 
+## Using Components
+
+To use components in C++, include the component's header file and add the component to an entity with [Entity::AddComponent](Entity_AddComponent.md). The game engine will take care of the rest for you:
+
+```c++
+#include "UltraEngine.h"
+#include "Components/Mover.hpp"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the displays
+    auto displays = GetDisplays();
+
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125);
+    camera->SetFov(70);
+    camera->SetPosition(0, 0, -3);
+
+    //Create a light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(35, 45, 0);
+    light->SetRange(-10, 10);
+
+    //Create a box
+    auto box = CreateBox(world);
+    box->SetColor(0,0,1);
+
+    //Entity component system
+    auto component = box->AddComponent<Mover>();
+    component->rotationspeed.y = 45;
+
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        world->Update();
+        world->Render(framebuffer);
+    }
+    return 0;
+}
+```
+
 ## Example Component
 
 The Mover component is about as simple as it gets. It just stores some motion parameters and moves or turns the entity each time Update is called:
