@@ -53,7 +53,7 @@ Although by default the project is set to debug scripts using the debug build of
 
 ## C++ Interpreter for Lua
 
-Below is complete C++ code for a program controlled entirely by Lua. The program first executes all scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua":
+Below is complete C++ code for a program controlled primarily in Lua. The program first executes all scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua":
 
 ```c++
 #include "UltraEngine.h"
