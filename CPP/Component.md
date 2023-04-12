@@ -45,7 +45,7 @@ public:
         this->entity->Turn(rotationspeed / 60.0f, globalcoords);
     }
 
-    //This method will work with simple components with no changes
+    //This method will work with simple components
     virtual shared_ptr<Component> Copy()
     {
         return std::make_shared<Mover>(*this);
