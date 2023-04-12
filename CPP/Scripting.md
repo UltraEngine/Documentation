@@ -13,7 +13,6 @@ Ultra Engine uses Lua 5.4 so you can take advantage of [the very latest Lua feat
 | [GetLuaState](GetLuaState.md) | retrieves the game engine's Lua state |
 | [PollDebugger](PollDebugger.md) | syncs information with the debugger |
 | [RunScript](RunScript.md) | executes a script file |
-| [SetModulePath](SetModulePath.md) | changes the directory Lua loads modules from |
 
 ## Debugging Lua Scripts
 
