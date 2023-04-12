@@ -28,7 +28,7 @@ class Mover : public Component
 public: 
      
     Vec3 movementspeed;
-    Vec3 rotationspeed;
+    Vec3 rotationspeed = Vec3(0, 10, 0);
     bool globalcoords = false;
     
     virtual void Update()
