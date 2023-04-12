@@ -16,13 +16,12 @@ You can override these methods or add your own in your component class. To add a
 
 The precompiler is limited in its ability to parse C++ declarations, so it's a good idea to stick to straightforward C++ syntax.
 
-### Example Component
+## Example Component
 
 The Mover component is about as simple as it gets. It just stores some motion parameters and moves or turns the entity each time Update is called:
 ```c++
 #pragma once
 #include "UltraEngine.h"
-#include "../ComponentSystem.h"
 
 class Mover : public Component
 {
@@ -46,22 +45,11 @@ public:
     }
 }; 
 ```
-### Calling Methods
 
-When calling methods, you should call the actor method like this:
+## Component Methods and Members
+
+To call a component method or get a value, first check if a component of the desired type is attached to the entity, and then call the method:
 ```c++
-void HealthManager::TakeDamage(const int damage)
-{
-  health -= damage;
-  if (health <= 0) actor->Kill();
-}
+auto component = entity->GetComponent<HealthManager>();
+if (component) component->TakeDamage(10);
 ```
-Don't call the component's own method directly unless you are sure you want to:
-```c++
-void HealthManager::TakeDamage(const int damage)
-{
-  health -= damage;
-  if (health <= 0) Kill();
-}
-```
-When you call the actor method, all components with the called method will be executed, allowing for more emergent behavior between components. For example, another component might have a Kill() method that plays a sound when called. By calling the Actor method, we ensure that all variations of the method are executed, so that all components can enact their behaviors.
