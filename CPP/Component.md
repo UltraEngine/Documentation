@@ -1,12 +1,12 @@
 # Component
 
-This class can be extended to add behavior and properties to an [Actor](Actor.md).
+This class can be extended to add behavior and properties to an [Entity](Entity.md).
 
 | Property | Type | Description |
 |---|---|---|
-| actor | [Actor](Actor.md)* | actor this component belongs to |
-| entity | shared_ptr<[Entity](Entity.md)\> | entity this component's actor contains |
+| entity | [Entity](Entity.md)* | entity this component is attached to |
 | [Collide](Component_Collide.md) | Method | called whenever a physics collision occurs |
+| [Copy](Component_Copy.md) | Method | makes a copy of the component, for copying entities |
 | [Load](Component_Load.md) | Method | called when an actor is loaded or copied |
 | [Save](Component_Save.md) | Method | called when an actor is saved or copied |
 | [Start](Component_Start.md) | Method | called when a component is added |
@@ -28,21 +28,21 @@ class Mover : public Component
 {
 public: 
      
-    Vec3 movement;
-    Vec3 rotation;
+    Vec3 movementspeed;
+    Vec3 rotationspeed;
     bool globalcoords = false;
     
     virtual void Update()
     {
         if (globalcoords)
         {
-            this->entity->Translate(movement / 60.0f, true);
+            this->entity->Translate(movementspeed / 60.0f, true);
         }
         else
         {
-            this->entity->Move(movement / 60.0f);
+            this->entity->Move(movementspeed / 60.0f);
         }
-        this->entity->Turn(rotation / 60.0f, globalcoords);
+        this->entity->Turn(rotationspeed / 60.0f, globalcoords);
     }
 }; 
 ```
