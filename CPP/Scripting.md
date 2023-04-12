@@ -90,7 +90,7 @@ int main(int argc, const char* argv[])
     if (settings["debug"].is_boolean() and settings["debug"] == true)
     {
         RunScript("Scripts/Modules/Debugger.lua");
-        debugtimer = CreateTimer(490);
+        debugtimer = CreateTimer(510);
         ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(PollDebugger, 500));
     }
 
