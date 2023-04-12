@@ -52,6 +52,62 @@ end
 
 Although by default the project is set to debug scripts using the debug build of your game, it is also possible to run the Lua debugger in release mode.
 
+## C++ Interpreter for Lua
+
+Below is complete C++ code for a program controlled entirely by Lua. The program first executes all scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua":
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+void ExecuteDir(const WString& path)
+{
+    auto dir = LoadDir(path);
+    for (auto file : dir)
+    {
+        switch (FileType(path + "/" + file))
+        {
+        case 1:
+            if (ExtractExt(file).Lower() == "lua")
+            {
+                RunScript(path + "/" + file);
+            }
+            break;
+        case 2:
+            ExecuteDir(path + "/" + file);
+            break;
+        }
+    }
+}
+
+int main(int argc, const char* argv[])
+{
+    //Get commandline settings
+    auto settings = ParseCommandLine(argc, argv);
+
+    //Enable the debugger if needed
+    shared_ptr<Timer> debugtimer;
+    if (settings["debug"].is_boolean() and settings["debug"] == true)
+    {
+        RunScript("Scripts/Modules/Debugger.lua");
+        debugtimer = CreateTimer(490);
+        ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(PollDebugger, 500));
+    }
+
+    //Run required system scripts first
+    ExecuteDir("Scripts/System");
+
+    //Run user start scripts
+    ExecuteDir("Scripts/Start");
+
+    //Run main script
+    RunScript("Scripts/Main.lua");
+
+    return 0;
+}
+```
+
 ## User-defined C++ Classes in Lua
 
 Ultra Engine uses the [sol](https://github.com/ThePhD/sol2) library to expose C++ classes and functions to Lua. It's most convenient to add a static function to each class you want to expose to Lua, called BindClass:
