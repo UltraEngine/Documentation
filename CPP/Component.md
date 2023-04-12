@@ -31,6 +31,7 @@ public:
     Vec3 rotationspeed = Vec3(0, 10, 0);
     bool globalcoords = false;
     
+    //Update method, called once per loop
     virtual void Update()
     {
         if (globalcoords)
@@ -42,6 +43,12 @@ public:
             this->entity->Move(movementspeed / 60.0f);
         }
         this->entity->Turn(rotationspeed / 60.0f, globalcoords);
+    }
+
+    //This method will work with simple components with no changes
+    virtual shared_ptr<Component> Copy()
+    {
+        return std::make_shared<Mover>(*this);
     }
 }; 
 ```
