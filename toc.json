@@ -154,6 +154,10 @@
 							"filename": "Component_Collide"
 						},
 						{
+							"title": "Copy",
+							"filename": "Component_Copy"
+						},
+						{
 							"title": "Load",
 							"filename": "Component_Load"
 						},
