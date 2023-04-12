@@ -2,7 +2,7 @@
 
 ## Syntax
 
-- shared_ptr<[Component](Component.md)\> **GetComponent**<T>()
+- shared_ptr<[Component](Component.md)\> **GetComponent**<T\>()
 
 | Parameter | Description |
 |---|---|
