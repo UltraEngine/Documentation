@@ -2,9 +2,9 @@
 
 ## Syntax
 
-- shared_ptr<[Component](Component.md)\> AddComponent<T\>()
-- shared_ptr<[Component](Component.md)\> AddComponent(const [Wstring](WString.md)& path)
-- shared_ptr<[Component](Component.md)\> AddComponent(const ComponentHooks& hooks, void* extra)
+- shared_ptr<[Component](Component.md)\> **AddComponent**<T\>()
+- shared_ptr<[Component](Component.md)\> **AddComponent**(const [Wstring](WString.md)& path)
+- shared_ptr<[Component](Component.md)\> **AddComponent**(const ComponentHooks& hooks, void* extra)
 
 | Parameter | Description |
 |---|---|
