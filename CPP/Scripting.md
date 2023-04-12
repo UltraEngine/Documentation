@@ -14,43 +14,6 @@ Ultra Engine uses Lua 5.4 to give you access to [the very latest Lua features](h
 | [PollDebugger](PollDebugger.md) | syncs information with the debugger |
 | [RunScript](RunScript.md) | executes a script file |
 
-## Debugging Lua Scripts
-
-You can use [Visual Studio Code](https://code.visualstudio.com) with the [Lua Debugger](https://marketplace.visualstudio.com/items?itemName=devCAT.lua-debug) extension to debug Lua scripts in your game. The project template includes launch settings that will appear when you open the project template in Visual Studio Code. When you select the debug launch option, the -debug command line switch will be passed to your game's executable. 
-
-Your game needs to interpret the command line switch and activate the debugger when the -debug option is specified. To do this, the debugger script must be run so the program can communicate with the IDE:
-```c++
-int main(int argc, const char* argv[])
-{
-    //Get command-line options
-    auto cl = ParseCommandLine(argc, argv);
-
-    //Enable script debugging if the -debug switch is specified
-    if (cl["debug"].is_boolean() and cl["debug"] == true)
-    {
-        RunScript("Scripts/Modules/Debugger.lua");
-    }
-```
-Additionally, your program must periodically call the function [PollDebugger](PollDebugger.md) to receive updates from the IDE. This can be done with a timer in C++:
-```c++
-//Create a timer
-auto timer = CreateTimer(510);
-
-//Sync with the debugger every 500 milliseconds or so
-ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
-```
-Alternatively, you can call the PollDebugger function in your main loop in Lua itself:
-```lua
---Main loop
-while window:KeyDown(KEY_ESCAPE == false) do
-    PollDebugger()
-    world:Update()
-    world:Render(framebuffer)
-end
-```
-
-Although by default the project is set to debug scripts using the debug build of your game, it is also possible to run the Lua debugger in release mode.
-
 ## C++ Interpreter for Lua
 
 Below is complete C++ code for a program controlled primarily with Lua. The program first executes all scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua":
@@ -106,6 +69,45 @@ int main(int argc, const char* argv[])
     return 0;
 }
 ```
+
+## Debugging Lua Scripts
+
+You can use [Visual Studio Code](https://code.visualstudio.com) with the [Lua Debugger](https://marketplace.visualstudio.com/items?itemName=devCAT.lua-debug) extension to debug Lua scripts in your game. The project template includes launch settings that will appear when you open the project template in Visual Studio Code. When you select the debug launch option, the -debug command line switch will be passed to your game's executable. 
+
+Your game needs to interpret the command line switch and activate the debugger when the -debug option is specified. To do this, the debugger script must be run so the program can communicate with the IDE:
+```c++
+int main(int argc, const char* argv[])
+{
+    //Get command-line options
+    auto cl = ParseCommandLine(argc, argv);
+
+    //Enable script debugging if the -debug switch is specified
+    if (cl["debug"].is_boolean() and cl["debug"] == true)
+    {
+        RunScript("Scripts/Modules/Debugger.lua");
+    }
+```
+Additionally, your program must periodically call the function [PollDebugger](PollDebugger.md) to receive updates from the IDE. This can be done with a timer in C++:
+```c++
+//Create a timer
+auto timer = CreateTimer(510);
+
+//Sync with the debugger every 500 milliseconds or so
+ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
+```
+Alternatively, you can call the PollDebugger function in your main loop in Lua itself:
+```lua
+--Main loop
+while window:KeyDown(KEY_ESCAPE == false) do
+    PollDebugger()
+    world:Update()
+    world:Render(framebuffer)
+end
+```
+
+Although by default the project is set to debug scripts using the debug build of your game, it is also possible to run the Lua debugger in release mode.
+
+
 
 ## User-defined C++ Classes in Lua
 
