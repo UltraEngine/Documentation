@@ -9,7 +9,6 @@ Ultra Engine uses Lua 5.4 to give you access to [the very latest Lua features](h
 | Function | Description |
 |-----|-----|
 | [ExecuteString](ExecuteString.md) | executes script code |
-| [GCCollect](GCCollect.md) | runs the Lua garbage collector |
 | [GetLuaState](GetLuaState.md) | retrieves the game engine's Lua state |
 | [PollDebugger](PollDebugger.md) | syncs information with the debugger |
 | [RunScript](RunScript.md) | executes a script file |
