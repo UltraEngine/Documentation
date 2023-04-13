@@ -2493,8 +2493,6 @@
 				{
 					"title": "Networking",
 					"filename": "Networking",
-					"hideFromLua": true,
-					"hideFromCS": true,
 					"topics": [{
 							"title": "Client",
 							"filename": "Client",
