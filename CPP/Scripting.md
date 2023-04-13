@@ -50,7 +50,7 @@ int main(int argc, const char* argv[])
 
     //Enable the debugger if needed
     shared_ptr<Timer> debugtimer;
-    //if (settings["debug"].is_boolean() and settings["debug"] == true)
+    if (settings["debug"].is_boolean() and settings["debug"] == true)
     {
         RunScript("Scripts/System/Debugger.lua");
         debugtimer = CreateTimer(510);
