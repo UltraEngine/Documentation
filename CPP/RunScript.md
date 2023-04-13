@@ -14,6 +14,10 @@ This function executes a Lua script from a file or string.
 
 Returns true if the script was successfully run, otherwise false is returned.
 
+## Remarks
+
+This command can run both raw Lua code files (.lua) or compiled Lua byte code (.luac). See the [Lua documentation](https://www.lua.org/manual/5.4/luac.html) for additional information.
+
 ## Example
 
 This shows a typical setup for the C++ side of a Lua program.
