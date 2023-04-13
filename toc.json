@@ -174,22 +174,6 @@
 							"filename": "Component_Update"
 						}
 					]
-				},			   
-				{
-					"title": "Debugging",
-					"topics": [{
-							"title": "Assert",
-							"filename": "Assert"
-						},
-						{
-							"title": "RuntimeError",
-							"filename": "RuntimeError"
-						},
-						{
-							"title": "Warn",
-							"filename": "Warn"
-						}
-					]
 				},
 				{
 					"title": "Entity",
@@ -2955,7 +2939,12 @@
 				},			   
 				{
 					"title": "System",
-					"topics": [{
+					"topics": [
+						{
+							"title": "Assert",
+							"filename": "Assert"
+						},
+						{
 							"title": "Command",
 							"filename": "Command"
 						},
@@ -2998,6 +2987,10 @@
 						{
 							"title": "RequestFile",
 							"filename": "RequestFile"
+						},
+						{
+							"title": "RuntimeError",
+							"filename": "RuntimeError"
 						},
 						{
 							"title": "Sleep",
