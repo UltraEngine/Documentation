@@ -2767,18 +2767,6 @@
 					]
 				},
 				{
-					"title": "Statistics",
-					"topics": [{
-							"title": "PhysicsStats",
-							"filename": "PhysicsStats"
-						},
-						{
-							"title": "RenderStats",
-							"filename": "RenderStats"
-						}
-					]
-				},
-				{
 					"title": "Strings",
 					"filename": "Strings",
 					"topics": [{
@@ -2999,7 +2987,25 @@
 				{
 					"title": "World",
 					"filename": "World",
-					"topics": [{
+					"topics": [
+						{
+							"title": "Performance Analytics",
+							"topics": [
+								{
+									"title": "AnimationStats",
+									"filename": "AnimationStats"
+								},
+								{
+									"title": "PhysicsStats",
+									"filename": "PhysicsStats"
+								},
+								{
+									"title": "RenderStats",
+									"filename": "RenderStats"
+								}
+							]
+						},
+						{
 							"title": "ClearCollisionResponses",
 							"filename": "World_ClearCollisionResponses"
 						},
