@@ -27,24 +27,48 @@ This shows a typical setup for the C++ side of a Lua program.
 
 using namespace UltraEngine;
 
+void ExecuteDir(const WString& path)
+{
+    auto dir = LoadDir(path);
+    for (auto file : dir)
+    {
+        WString filepath = path + "/" + file;
+        switch (FileType(filepath))
+        {
+        case 1:
+            if (ExtractExt(file).Lower() == "lua")  RunScript(filepath);
+            break;
+        case 2:
+            ExecuteDir(filepath);
+            break;
+        }
+    }
+}
+
 int main(int argc, const char* argv[])
 {
-    //Get command-line options
-    auto cl = ParseCommandLine(argc, argv);
+    //Get commandline settings
+    auto settings = ParseCommandLine(argc, argv);
 
-    //Enable script debugging if the -debug switch is specified
-    if (cl["debug"].is_boolean() and cl["debug"] == true)
+    //Run the error handler script
+    RunScript("Scripts/System/ErrorHandler.lua");
+
+    //Enable the debugger if needed
+    shared_ptr<Timer> debugtimer;
+    //if (settings["debug"].is_boolean() and settings["debug"] == true)
     {
-        RunScript("Scripts/Modules/Debugger.lua");
+        RunScript("Scripts/System/Debugger.lua");
+        debugtimer = CreateTimer(510);
+        ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(PollDebugger, 500));
     }
 
-    //Create a timer
-    auto timer = CreateTimer(490);
+    //Enable the entity component system
+    RunScript("Scripts/System/ComponentSystem.lua");
 
-    //Poll the debugger every timer tick
-    ListenEvent(EVENT_TIMERTICK, timer, std::bind(&PollDebugger, 500));
+    //Run user start scripts
+    ExecuteDir("Scripts/Start");
 
-    //Run the main script
+    //Run main script
     RunScript("Scripts/Main.lua");
 
     return 0;
