@@ -82,8 +82,6 @@ pak->SetPassword("xxxxxxxxxxxxx");// set your own password here
 
 Note that AES encryption is not supported. If your Zip compression program has an option for legacy encryption, you should use that.
 
-If your game makes use of Lua, you should include the file "lua51.dll".
-
 The debug build stores the physics library as separate DLLs for external debugging. The release build does not need these DLLs:
 - newton_d.dll
 - dCustomJoints_d.dll
