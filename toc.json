@@ -28,24 +28,7 @@
 		{
 			"title": "Programming Reference",
 			"openstate": true,
-			"topics": [{
-					"title": "Asset",
-					"filename": "Asset",
-					"topics": [
-						{
-							"title": "GetPackage",
-							"filename": "Asset_GetPackage"
-						},
-						{
-							"title": "Reload",
-							"filename": "Asset_Reload"
-						},
-						{
-							"title": "Save",
-							"filename": "Asset_Save"
-						}
-					]
-				},
+			"topics": [
 				{
 					"title": "Audio",
 					"topics": [
@@ -737,7 +720,26 @@
 				},
 				{
 					"title": "File System",
-					"topics": [{
+					"topics": [
+						{
+							"title": "Asset",
+							"filename": "Asset",
+							"topics": [
+								{
+									"title": "GetPackage",
+									"filename": "Asset_GetPackage"
+								},
+								{
+									"title": "Reload",
+									"filename": "Asset_Reload"
+								},
+								{
+									"title": "Save",
+									"filename": "Asset_Save"
+								}
+							]
+						},
+						{
 							"title": "FileSystemWatcher",
 							"filename": "FileSystemWatcher",
 							"topics": [{
