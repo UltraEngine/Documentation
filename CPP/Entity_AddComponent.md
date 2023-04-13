@@ -5,13 +5,13 @@ This method adds a component to the entity.
 ## Syntax
 
 - shared_ptr<T\> **AddComponent**<T\>()
-- shared_ptr<[Component](Component.md)\> **AddComponent**(const [Wstring](WString.md)& path)
+- shared_ptr<[Component](Component.md)\> **AddComponent**(const [Wstring](WString.md)& name)
 - shared_ptr<[Component](Component.md)\> **AddComponent**(const ComponentHooks& hooks, void* extra)
 
 | Parameter | Description |
 |---|---|
 | T | C++ type, must be derived from the [Component](Component.md) class |
-| path | path to Lua script |
+| name | name of a Lua component |
 | hooks | structure containing function pointers, for use with other languages |
 | extra | external pointer or ID, for use with other languages |
   
