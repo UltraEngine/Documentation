@@ -15,7 +15,7 @@ Ultra Engine uses Lua 5.4 to give you access to [the very latest Lua features](h
 
 ## C++ Interpreter for Lua
 
-Below is complete C++ code for a program controlled primarily with Lua. The program first executes some required scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua" and exits when the script is finished:
+Below is complete C++ code for a program controlled primarily with Lua. The program first executes some required scripts in the "System" directory, then all scripts in the "Start" directory, and then runs the "Main.lua" file and exits when the script is finished:
 
 ```c++
 #include "UltraEngine.h"
