@@ -15,7 +15,7 @@ Ultra Engine uses Lua 5.4 to give you access to [the very latest Lua features](h
 
 ## C++ Interpreter for Lua
 
-Below is complete C++ code for a program controlled primarily with Lua. The program first executes all scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua":
+Below is complete C++ code for a program controlled primarily with Lua. The program first executes some required scripts in the "Scripts/System" directory, then all scripts in the "Scripts/Start" directory, and then runs the file "Scripts/Main.lua" and exits when the script is finished:
 
 ```c++
 #include "UltraEngine.h"
@@ -27,14 +27,11 @@ void ExecuteDir(const WString& path)
     auto dir = LoadDir(path);
     for (auto file : dir)
     {
-    	WString filepath = path + "/" + file;
+        WString filepath = path + "/" + file;
         switch (FileType(filepath))
         {
         case 1:
-            if (ExtractExt(file).Lower() == "lua")
-            {
-                RunScript(filepath);
-            }
+            if (ExtractExt(file).Lower() == "lua")  RunScript(filepath);
             break;
         case 2:
             ExecuteDir(filepath);
@@ -48,17 +45,20 @@ int main(int argc, const char* argv[])
     //Get commandline settings
     auto settings = ParseCommandLine(argc, argv);
 
+    //Run the error handler script
+    RunScript("Scripts/System/ErrorHandler.lua");
+
     //Enable the debugger if needed
     shared_ptr<Timer> debugtimer;
-    if (settings["debug"].is_boolean() and settings["debug"] == true)
+    //if (settings["debug"].is_boolean() and settings["debug"] == true)
     {
-        RunScript("Scripts/Modules/Debugger.lua");
+        RunScript("Scripts/System/Debugger.lua");
         debugtimer = CreateTimer(510);
         ListenEvent(EVENT_TIMERTICK, debugtimer, std::bind(PollDebugger, 500));
     }
 
-    //Run required system scripts first
-    ExecuteDir("Scripts/System");
+    //Enable the entity component system
+    RunScript("Scripts/System/ComponentSystem.lua");
 
     //Run user start scripts
     ExecuteDir("Scripts/Start");
