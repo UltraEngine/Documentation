@@ -27,16 +27,17 @@ void ExecuteDir(const WString& path)
     auto dir = LoadDir(path);
     for (auto file : dir)
     {
-        switch (FileType(path + "/" + file))
+    	WString filepath = path + "/" + file;
+        switch (FileType(filepath))
         {
         case 1:
             if (ExtractExt(file).Lower() == "lua")
             {
-                RunScript(path + "/" + file);
+                RunScript(filepath);
             }
             break;
         case 2:
-            ExecuteDir(path + "/" + file);
+            ExecuteDir(filepath);
             break;
         }
     }
