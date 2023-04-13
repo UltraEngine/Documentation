@@ -2769,6 +2769,7 @@
 				{
 					"title": "Strings",
 					"filename": "Strings",
+					"hideFromLua": true,
 					"topics": [{
 							"title": "String",
 							"filename": "String",
