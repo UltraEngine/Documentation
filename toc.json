@@ -2963,10 +2963,6 @@
 							"filename": "Input"
 						},
 						{
-							"title": "Microsecs",
-							"filename": "Microsecs"
-						},
-						{
 							"title": "Millisecs",
 							"filename": "Millisecs"
 						},
