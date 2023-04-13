@@ -16,7 +16,7 @@ This function creates a new terrain entity.
 
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
+#include "Components/CameraControls.h"
 
 using namespace UltraEngine;
 
@@ -84,8 +84,7 @@ int main(int argc, const char* argv[])
     }
 
     //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    camera->AddComponent<CameraControls>();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
