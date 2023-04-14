@@ -1,4 +1,4 @@
-# Window::GetHandle
+# Window:GetHandle
 
 This method returns a handle to the system window object.
 
