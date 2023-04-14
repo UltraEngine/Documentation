@@ -1,3 +1,3 @@
 # Component::FireOutputs
 
-- int **FireOutputs**(const WString& name)
+- int **FireOutputs**(const [WString](WString.md)& name)
