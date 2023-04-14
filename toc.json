@@ -146,16 +146,8 @@
 							"filename": "Component_Copy"
 						},
 						{
-							"title": "FireOutputs",
-							"filename": "Component_FireOutputs"
-						},
-						{
 							"title": "Load",
 							"filename": "Component_Load"
-						},
-						{
-							"title": "ReceiveSignal",
-							"filename": "Component_ReceiveSignal"
 						},
 						{
 							"title": "Save",
