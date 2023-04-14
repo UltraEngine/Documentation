@@ -2066,6 +2066,18 @@
 								}]
 						},
 						{
+							"title": "dVec2",
+							"filename": "dVec2"
+						},
+						{
+							"title": "dVec3",
+							"filename": "dVec3"
+						},
+						{
+							"title": "dVec4",
+							"filename": "dVec4"
+						},						
+						{
 							"title": "iVec2",
 							"filename": "iVec2"
 						},
