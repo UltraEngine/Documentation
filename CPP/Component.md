@@ -6,8 +6,11 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 |---|---|---|
 | entity | [Entity](Entity.md)* | entity this component is attached to |
 | [Collide](Component_Collide.md) | Method | called whenever a physics collision occurs |
+| [Connect](Component_Connect.md) | Method | creates a new logical connection |
 | [Copy](Component_Copy.md) | Method | makes a copy of the component, for copying entities |
+| [FireOutputs](Component_FireOutput.md | Method | fires a group of logical connections |
 | [Load](Component_Load.md) | Method | called when an actor is loaded or copied |
+| [ReceiveSignal] | Method | called when an input is triggered by a logical connection |
 | [Save](Component_Save.md) | Method | called when an actor is saved or copied |
 | [Start](Component_Start.md) | Method | called when a component is added |
 | [Update](Component_Update.md) | Method | called once each time [World::Update](World_Update.md) is called |
