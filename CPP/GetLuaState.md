@@ -25,7 +25,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    auto lua = GetLuaState();
+    sol::state* lua = GetLuaState();
 
     // sol API example
     lua->set("MyValue", 3);
