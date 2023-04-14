@@ -4,7 +4,7 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 
 | Property | Type | Description |
 |---|---|---|
-| entity | [Entity](Entity.md)* | entity this component is attached to |
+| entity | [Entity](Entity.md)* | entity this component is attached to. A raw pointer is used to prevent a circular reference |
 | [Collide](Component_Collide.md) | Method | called whenever a physics collision occurs |
 | [Connect](Component_Connect.md) | Method | creates a new logical connection |
 | [Copy](Component_Copy.md) | Method | makes a copy of the component, for copying entities |
