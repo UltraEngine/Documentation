@@ -10,7 +10,7 @@ Ultra Engine is currently available in early access mode, consisting of a C++ pr
 - Windows 10 or 11
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/#vs-section)
 
-## Recommended Software
+## Additional Software
 
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
 
