@@ -2066,6 +2066,18 @@
 								}]
 						},
 						{
+							"title": "dMat4",
+							"filename": "dMat4"
+						},
+						{
+							"title": "dPlane",
+							"filename": "dPlane"
+						},
+						{
+							"title": "dQuat",
+							"filename": "dQuat"
+						},
+						{
 							"title": "dVec2",
 							"filename": "dVec2"
 						},
