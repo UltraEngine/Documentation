@@ -35,6 +35,7 @@ camera:SetPosition(0, 0, -2)
 
 --Create the ground
 local ground = CreateBox(world, 10, 0.25, 10)
+ground.name = "Ground"
 ground:SetPosition(0,-1,0)
 
 --Create a model
@@ -44,8 +45,9 @@ box:SetColor(0,0,1)
 --Add a component for automatic motion
 local component = {}
 
-function component:Collide(entity, position, normal, speed)
+function component:Collide(collidedentity, position, normal, speed)
 	Print("COLLISION")
+	Print("Entity: "..collidedentity.name)
 	Print("Position: "..tostring(position.x)..", "..tostring(position.y)..", "..tostring(position.z))
 	Print("normal: "..tostring(normal.x)..", "..tostring(normal.y)..", "..tostring(normal.z))
 	Print("speed: "..tostring(speed))
