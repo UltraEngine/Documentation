@@ -6,6 +6,10 @@ This function returns the sol Lua state, for low-level usage.
 
 - [sol::state](https://sol2.readthedocs.io/en/latest/api/state.html)* **GetLuaState**()
 
+## Returns
+
+Returns the game engine's sol lua state.
+
 ## Remarks
 
 This is an advanced feature. See the Lua and sol documentation for more information:
