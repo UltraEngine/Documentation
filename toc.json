@@ -132,17 +132,30 @@
 				{
 					"title": "Component",
 					"filename": "Component",
-					"topics": [{
+					"topics": [
+						{
 							"title": "Collide",
 							"filename": "Component_Collide"
+						},
+						{
+							"title": "Connect",
+							"filename": "Component_Connect"
 						},
 						{
 							"title": "Copy",
 							"filename": "Component_Copy"
 						},
 						{
+							"title": "FireOutputs",
+							"filename": "Component_FireOutputs"
+						},
+						{
 							"title": "Load",
 							"filename": "Component_Load"
+						},
+						{
+							"title": "ReceiveSignal",
+							"filename": "Component_ReceiveSignal"
 						},
 						{
 							"title": "Save",
