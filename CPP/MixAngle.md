@@ -19,4 +19,4 @@ Returns the result of the linear interpolation.
 
 ## Remarks
 
-For interpolation between full 3D rotations, use the [Quat::Slerp](Quat_Slerp.md) method.
+This function only handles rotation on a single axis. For interpolation between full 3D rotations, use the [Quat::Slerp](Quat_Slerp.md) method.
