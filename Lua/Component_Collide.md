@@ -1,4 +1,4 @@
-# Component::Collide
+# Component:Collide
 
 This method is called evefy time the entity collides with another object.
 
