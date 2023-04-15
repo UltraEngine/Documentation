@@ -40,18 +40,18 @@ ground:SetPosition(0,-1,0)
 local entity1 = CreateBox(world)
 entity1:SetColor(0,1,0)
 entity1:SetPosition(-1,0,0)
-local sender = entity1:AddComponent("Testing.Sender")
+local sender = entity1:AddComponent("Testing.Dummy")
 
 local entity2 = CreateBox(world)
 entity2:SetColor(0,0,1)
 entity2:SetPosition(1,0,0)
-local receiver = entity2:AddComponent("Testing.Receiver")
+local receiver = entity2:AddComponent("Testing.Arguments")
 
-sender:Connect(sender.Send, receiver, receiver.Receive, { true, 2, "Hello!" })
+sender:Connect(sender.Function, receiver, receiver.DisplayArguments, { true, 2, "Hello!" })
 
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
-	if window:KeyHit(KEY_SPACE) then sender:Send() end
+	if window:KeyHit(KEY_SPACE) then sender:Function() end
 
 	--Update the world
 	world:Update()
