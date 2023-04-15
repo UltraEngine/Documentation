@@ -37,30 +37,15 @@ local ground = CreateBox(world, 10, 0.25, 10)
 ground.name = "Ground"
 ground:SetPosition(0,-1,0)
 
---Define sender component
-local sender = {}
-function sender:Send()
-	Print("Calling Send method...")
-end
-
---Define receiver component
-local receiver = {}
-function receiver:Receive(a, b, c)
-	Print("Receive is triggered!")
-	Print(a)
-	Print(b)
-	Print(c)
-end
-
 local entity1 = CreateBox(world)
 entity1:SetColor(0,1,0)
 entity1:SetPosition(-1,0,0)
-local sender = entity1:AddComponent(sender, "Sender")
+local sender = entity1:AddComponent("Testing.Sender")
 
 local entity2 = CreateBox(world)
 entity2:SetColor(0,0,1)
 entity2:SetPosition(1,0,0)
-local receiver = entity2:AddComponent(receiver, "Receiver")
+local receiver = entity2:AddComponent("Testing.Receiver")
 
 sender:Connect(sender.Send, receiver, receiver.Receive, { true, 2, "Hello!" })
 
