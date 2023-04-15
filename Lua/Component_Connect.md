@@ -1,4 +1,4 @@
-# Component::Connect
+# Component:Connect
 
 ## Syntax
 
