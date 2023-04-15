@@ -753,6 +753,25 @@
 							}]
 						},
 						{
+							"title": "Json",
+							"filename": "Json",
+							"topics": [
+								{
+									"title": "LoadJson",
+									"filename": "LoadJson"
+								},
+								{
+									"title": "ParseJson",
+									"filename": "ParseJson",
+									"hideFromLua": true
+								},
+								{
+									"title": "SaveJson",
+									"filename": "SaveJson"
+								}
+							]
+						},					
+						{
 							"title": "Package",
 							"filename": "Package",
 							"topics": [
