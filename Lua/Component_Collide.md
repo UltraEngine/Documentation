@@ -33,6 +33,12 @@ local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 0, -2)
 
+--Create a light
+local light = CreateBoxLight(world)
+light:SetRotation(45, 35, 0)
+light:SetColor(2)
+light:SetRange(-5, 5)
+
 --Create the ground
 local ground = CreateBox(world, 10, 0.25, 10)
 ground.name = "Ground"
@@ -41,37 +47,20 @@ ground:SetPosition(0,-1,0)
 --Create a model
 local box = CreateBox(world)
 box:SetColor(0,0,1)
-
---Add a component for automatic motion
-local component = {}
-
-function component:Collide(collidedentity, position, normal, speed)
-	Print("COLLISION")
-	Print("Entity: "..collidedentity.name)
-	Print("Position: "..tostring(position.x)..", "..tostring(position.y)..", "..tostring(position.z))
-	Print("normal: "..tostring(normal.x)..", "..tostring(normal.y)..", "..tostring(normal.z))
-	Print("speed: "..tostring(speed))
-	Print("")
-end
-
-box:AddComponent(component, "MyComponent")
 box:SetMass(10)
 box:SetPosition(0,2,0)
 box:SetRotation(0,0,-35)
 
---Create a light
-local light = CreateBoxLight(world)
-light:SetRotation(45, 35, 0)
-light:SetColor(2)
-light:SetRange(-5, 5)
+--Add a component that prints out collision information
+box:AddComponent("Testing.Collision")
 
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
-	--Update the world
-	world:Update()
+    --Update the world
+    world:Update()
 
-	--Render the world to the framebuffer
-	world:Render(framebuffer)
+    --Render the world to the framebuffer
+    world:Render(framebuffer)
 
 end
 ```
