@@ -4,9 +4,9 @@ This command executes a Lua function call.
  
 ## Syntax
 
-- sol::object **CallFunction**(const [WString](WString.md)& name, const std::vector< sol::autoobject \>& args = {} )
-- bool **CallFunction**(const [WString](WString.md)& name, const std::vector< sol::autoobject \>& args, std::vector< sol::object \>& results)
-- bool **CallFunction**(const sol::protected_function& func, const std::vector< sol::autoobject \>& args, std::vector< sol::object \>& results)
+- sol::object **CallFunction**(const [WString](WString.md)& name, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args = {} )
+- bool **CallFunction**(const [WString](WString.md)& name, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args, std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& results)
+- bool **CallFunction**(const sol::protected_function& func, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args, std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& results)
 
 ## Example
 
