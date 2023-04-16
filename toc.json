@@ -2615,7 +2615,8 @@
 						},
 						{
 							"title": "GetField",
-							"filename": "Object_GetField"
+							"filename": "Object_GetField",
+							"hideFromLua": true
 						},
 						{
 							"title": "Self",
@@ -2623,7 +2624,8 @@
 						},
 						{
 							"title": "SetField",
-							"filename": "Object_SetField"
+							"filename": "Object_SetField",
+							"hideFromLua": true
 						}
 					]
 				},
@@ -2975,7 +2977,8 @@
 					"topics": [
 						{
 							"title": "CallFunction",
-							"filename": "CallFunction"
+							"filename": "CallFunction",
+							"hideFromLua": true
 						},						
 						{
 							"title": "ExecuteString",
@@ -2983,7 +2986,8 @@
 						},
 						{
 							"title": "GetGlobal",
-							"filename": "GetGlobal"
+							"filename": "GetGlobal",
+							"hideFromLua": true
 						},
 						{
 							"title": "GetLuaState",
@@ -3000,7 +3004,8 @@
 						},
 						{
 							"title": "SetGlobal",
-							"filename": "SetGlobal"
+							"filename": "SetGlobal",
+							"hideFromLua": true
 						}
 					]
 				},			   
