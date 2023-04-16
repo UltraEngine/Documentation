@@ -4,7 +4,7 @@ This method sets a field on the object in the Lua virtual machine.
 
 ## Syntax
 
-- sol::object **SetField**(const [WString](WString.md)& name, const sol::autoobject& value)
+- void **SetField**(const [WString](WString.md)& name, const [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html)& value)
 
 ## Example
 
