@@ -1,5 +1,7 @@
 # Object::GetField
 
+This method gets a field on the object in the Lua virtual machine.
+
 - sol::object **GetField**(const [WString](WString.md)& name)
 
 ## Example
