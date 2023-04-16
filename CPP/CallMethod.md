@@ -4,8 +4,8 @@ This function performs a method-style function call with any object.
 
 ## Syntax
 
-- [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) **CallMethod**(shared_ptr<T\> o, const [WString](WString.md)& name, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args = {} )
-- bool **CallMethod**(shared_ptr<T\> o, const [WString](WString.md)& name, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args, std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& returnvalues)
+- [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) **CallMethod**(shared_ptr<T\> o, const [WString](WString.md)& name, const std::vector\<[sol::object](https://sol2.readthedocs.io/en/latest/api/object.html)\>& args = {} )
+- bool **CallMethod**(shared_ptr<T\> o, const [WString](WString.md)& name, const std::vector\<[sol::object](https://sol2.readthedocs.io/en/latest/api/object.html)\>& args, std::vector\<[sol::object](https://sol2.readthedocs.io/en/latest/api/object.html)\>& returnvalues)
 
 | Parameter | Description |
 |---|---|
