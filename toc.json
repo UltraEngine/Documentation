@@ -2608,13 +2608,22 @@
 				{
 					"title": "Object",
 					"filename": "Object",
-					"topics": [{
+					"topics": [
+						{
 							"title": "As",
 							"filename": "Object_As"
 						},
 						{
+							"title": "GetField",
+							"filename": "Object_GetField"
+						},
+						{
 							"title": "Self",
 							"filename": "Object_Self"
+						},
+						{
+							"title": "SetField",
+							"filename": "Object_SetField"
 						}
 					]
 				},
@@ -2963,9 +2972,18 @@
 				{
 					"title": "Scripting",
 					"filename": "Scripting",
-					"topics": [{
+					"topics": [
+						{
+							"title": "CallFunction",
+							"filename": "CallFunction"
+						},						
+						{
 							"title": "ExecuteString",
 							"filename": "ExecuteString"
+						},
+						{
+							"title": "GetGlobal",
+							"filename": "GetGlobal"
 						},
 						{
 							"title": "GetLuaState",
@@ -2979,6 +2997,10 @@
 						{
 							"title": "RunScript",
 							"filename": "RunScript"
+						},
+						{
+							"title": "SetGlobal",
+							"filename": "SetGlobal"
 						}
 					]
 				},			   
