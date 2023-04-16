@@ -2,7 +2,7 @@
 
 ## Syntax
 
-- void **SetGlobal**(const WString& name, const sol::object& value)
+- void **SetGlobal**(const [WString](WString.md)& name, const sol::object& value)
 
 ## Example
 
