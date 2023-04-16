@@ -2979,7 +2979,12 @@
 							"title": "CallFunction",
 							"filename": "CallFunction",
 							"hideFromLua": true
-						},						
+						},
+						{
+							"title": "CallMethod",
+							"filename": "CallMethod",
+							"hideFromLua": true
+						},
 						{
 							"title": "ExecuteString",
 							"filename": "ExecuteString"
