@@ -1,6 +1,6 @@
 # CallMethod
 
-This function performs a method-style function call on any object.
+This function performs a method-style function call with any object.
 
 ## Syntax
 
