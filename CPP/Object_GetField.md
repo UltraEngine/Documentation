@@ -4,7 +4,7 @@ This method gets a field on the object in the Lua virtual machine.
 
 ## Syntax
 
-- sol::object **GetField**(const [WString](WString.md)& name)
+- [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) **GetField**(const [WString](WString.md)& name)
 
 ## Example
 
