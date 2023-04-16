@@ -1,6 +1,6 @@
 # Object::SetField
 
-- sol::object **GetField**(const WString& name)
+- sol::object **GetField**(const [WString](WString.md)& name)
 
 ## Example
 
