@@ -24,9 +24,13 @@ The second overload returns true if the method was successfully executed, otherw
 
 When CallMethod is used, the object passed to the function will be the first function argument. The function must be declared in Lua preceeded by ":", enabling the self keyword to be used. The function will be identified by name, so it must be a field of the userdata object passed to the CallMethod function:
 
-```c++
+```lua
 function player:SetHealth( health )
-
+    self.health = health
+    self.healthbar:Update(Clamp(health / 100, 0, 100))
+    if self.health <= 0 then
+        self:Die()
+    end
 end
 ```
 
