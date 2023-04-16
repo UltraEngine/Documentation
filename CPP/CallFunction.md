@@ -39,12 +39,6 @@ void DisplayReturnValue(sol::object val)
 
 int main(int argc, const char* argv[])
 {
-    //Get the sol state
-    auto lua = GetLuaState();
-
-    //Get the Lua state
-    auto L = lua->lua_state();
-
     //Run a script that declares a function
     ExecuteString("function MyFunc( a, b ) return a + b end");
 
