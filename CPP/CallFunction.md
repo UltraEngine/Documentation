@@ -6,7 +6,7 @@ This command executes a Lua function call.
 
 - sol::object **CallFunction**(const [WString](WString.md)& name, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args = {} )
 - bool **CallFunction**(const [WString](WString.md)& name, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args, std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& results)
-- bool **CallFunction**(const sol::protected_function& func, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args, std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& results)
+- bool **CallFunction**(const [sol::protected_function](https://sol2.readthedocs.io/en/latest/api/protected_function.html)& func, const std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& args, std::vector< [sol::object](https://sol2.readthedocs.io/en/latest/api/object.html) \>& results)
 
 ## Example
 
