@@ -1,6 +1,6 @@
 # Object::SetField
 
-- sol::object **GetField**(const [WString](WString.md)& name)
+- sol::object **SetField**(const [WString](WString.md)& name, const sol::autoobject& value)
 
 ## Example
 
