@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
     }
     else
     {
-        Print("Return value is not a string.");
+        Print("Variable is not a string.");
     }
 
     return 0;
