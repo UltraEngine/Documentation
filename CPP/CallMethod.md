@@ -27,7 +27,7 @@ When CallMethod is used, the object passed to the function will be the first fun
 ```lua
 function player:SetHealth( health )
     self.health = health
-    self.healthbar:Update(Clamp(health / 100, 0, 100))
+    self.healthbar:Update(Clamp(health / 100, 0, 1))
     if self.health <= 0 then
         self:Die()
     end
