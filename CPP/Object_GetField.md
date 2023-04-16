@@ -1,0 +1,34 @@
+# Object::GetField
+
+- sol::object **GetField**(const [WString](WString.md)& name)
+
+## Example
+
+```c++
+#include "UltraEngine.h"
+
+using namespace UltraEngine;
+
+int main(int argc, const char* argv[])
+{
+    //Get the sol state
+    auto lua = GetLuaState();
+
+    //Get the Lua state
+    auto L = lua->lua_state();
+
+    //Create an object
+    auto box = CreateBox(NULL);
+
+    //Set a field
+    box->SetField("health", 100);
+
+    //Retrieve the value
+    auto o = box->GetField("health");
+    if (o.is<double>())
+    {
+        Print(o.as<double>());
+    }
+    
+    return 0;
+}
