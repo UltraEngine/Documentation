@@ -1,4 +1,6 @@
 # CallFunction
+
+This command executes a Lua function call.
  
 ## Syntax
 
