@@ -13,7 +13,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | omega | const [xVec3](xVec3.md)& | read-only angular velocity |
 | parent | const shared_ptr<[Entity](Entity.md)\>& | entity parent |
 | position | const [xVec3](xVec3.md)& | read-only position |
-| properties | [table](https://github.com/UltraEngine/tableplusplus) | user-defined properties |
+| properties | [table](https://github.com/UltraEngine/tableplusplus/blob/main/README.md#programming-guide) | user-defined properties |
 | quaternion | const [xQuat](xQuat.md)& | read-only rotation |
 | rotation | const [xVec3](xVec3.md)& | read-only Euler rotation |
 | scale | const [xVec3](xVec3.md)& | read-only scale |
