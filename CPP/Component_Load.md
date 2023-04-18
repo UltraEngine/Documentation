@@ -8,7 +8,7 @@ This method is called when an actor is loaded from a file or copied.
 
 | Parameter | Description |
 |---|---|
-| j3 | component data in a JSON object |
+| properties | component data in a table object |
 
 ## Returns
 
