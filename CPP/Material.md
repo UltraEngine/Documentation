@@ -7,7 +7,7 @@ This class is used to control the appearance of rendered surfaces.
 | Property | Type | Description |
 |---|---|---|
 | color | const [Vec4](Vec4)& | read-only material color |
-| properties | [nlohmann::json](https://github.com/nlohmann/json) | user-defined properties |
+| properties | [table](https://github.com/UltraEngine/tableplusplus/blob/main/README.md#programming-guide) | user-defined properties |
 | textures | const vector<shared_ptr<[Texture](Texture.md)> >& | read-only list of material textures |
 | [GetColor](Material_GetColor.md) | Method | gets the material color |
 | [GetMetalness](Material_GetMetalness.md) | Method | gets the material metalness |
