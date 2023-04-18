@@ -4,11 +4,11 @@ This method is called when an actor is saved to a file or copied.
 
 ## Syntax
 
-- bool **Save**([nlohmann::json](https://json.nlohmann.me/)& j3)
+- bool **Save**([table](https://github.com/UltraEngine/tableplusplus/blob/main/README#programming-guide)& properties)
 
 | Parameter | Description |
 |---|---|
-| j3 | component data in a JSON object |
+| properties | component data in a table object |
 
 ## Returns
 
@@ -19,10 +19,10 @@ Returns true if the component is successfully saved, otherwise false is returned
 This method can be overridden to add your own custom handling. For example, your component might need to save some extra information or write to another file. If you do so, you will probably want to call the base method without your method, to load the built-in supported data types, like so:
 
 ```c++
-bool Save(nlohmann::json& j3)
+bool Save(table& properties)
 {
-  if (!Component::Save(j3)) return false;
-  j3["customdata"]["myvalue"] = this->customvalue;
+  if (!Component::Save(properties)) return false;
+  properties["customdata"]["myvalue"] = this->customvalue;
   return true;
 }
 ```
