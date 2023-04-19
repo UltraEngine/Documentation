@@ -5,7 +5,7 @@ This function loads a C++ table from a JSON file or open stream.
 ## Syntax
 
 - [table](https://github.com/UltraEngine/tableplusplus#programming-guide) **LoadTable**(const [WString](WString.md)& path)
-- [table](https://github.com/UltraEngine/tableplusplus#programming-guide) **LoadTable**(shared_ptr\<[WString](WString.md)\> stream)
+- [table](https://github.com/UltraEngine/tableplusplus#programming-guide) **LoadTable**(shared_ptr<[WString](WString.md)\> stream)
 
 | Parameter | Description |
 |---|---|
