@@ -4,7 +4,7 @@ This method is called when an actor is loaded from a file or copied.
 
 ## Syntax
 
-- bool **Load**(const [table](https://github.com/UltraEngine/tableplusplus#programming-guide)& properties)
+- bool **Load**([table](https://github.com/UltraEngine/tableplusplus#programming-guide)& properties)
 
 | Parameter | Description |
 |---|---|
