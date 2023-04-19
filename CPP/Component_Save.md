@@ -22,8 +22,8 @@ This method can be overridden to add your own custom handling. For example, your
 bool Save(table& properties)
 {
   if (!Component::Save(properties)) return false;
-  properties["customdata"] = {}
-  properties["customdata"]["myvalue"] = this->customvalue;
+  properties["health"] = this->health;
+  if (this->texture) properties["texture"] = this->texture->path;
   return true;
 }
 ```
