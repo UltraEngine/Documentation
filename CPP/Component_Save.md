@@ -1,6 +1,6 @@
 # Component::Save
 
-This method is called when an actor is saved to a file or copied.
+This method is called when a component is saved to a file or copied.
 
 ## Syntax
 
