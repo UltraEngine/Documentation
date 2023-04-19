@@ -21,7 +21,6 @@ This method can be overridden to add your own custom handling. For example, your
 ```c++
 bool Save(table& properties)
 {
-  if (!Component::Save(properties)) return false;
   properties["health"] = this->health;
   if (this->texture) properties["texture"] = this->texture->path;
   return true;
