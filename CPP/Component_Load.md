@@ -19,10 +19,12 @@ Returns true if the component is successfully loaded, otherwise false is returne
 This method can be overridden to add your own custom handling. For example, your component might need to create extra entities to use. If you do so, you will probably want to call the base method without your method, to load the built-in supported data types, like so:
 
 ```c++
-bool Load(table& properties)
+bool Load(const table& properties)
 {
-  if (!Component::Load(properties)) return false;
-  this->customvalue = properties["customdata"]["myvalue"];
+  if (!Component::Save(properties)) return false;
+  this->health = properties["health"];
+  std::string path = properties["texture"];
+  if (not path.empty()) this->texture = LoadTexture(path);
   return true;
 }
 ```
