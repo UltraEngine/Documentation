@@ -4,7 +4,7 @@ This method is called when a component is loaded from a file or copied.
 
 ## Syntax
 
-- bool **Load**([table](https://github.com/UltraEngine/tableplusplus#programming-guide)& properties)
+- bool **Load**([table](https://github.com/UltraEngine/tableplusplus)& properties)
 
 | Parameter | Description |
 |---|---|
