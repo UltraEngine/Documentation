@@ -1,6 +1,6 @@
 # Component::Load
 
-This method is called when an actor is loaded from a file or copied.
+This method is called when a component is loaded from a file or copied.
 
 ## Syntax
 
