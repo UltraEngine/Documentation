@@ -21,7 +21,6 @@ This method can be overridden to add your own custom handling. For example, your
 ```c++
 bool Load(const table& properties)
 {
-  if (!Component::Save(properties)) return false;
   this->health = properties["health"];
   std::string path = properties["texture"];
   if (not path.empty()) this->texture = LoadTexture(path);
