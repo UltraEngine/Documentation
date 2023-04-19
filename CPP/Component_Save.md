@@ -4,7 +4,7 @@ This method is called when an actor is saved to a file or copied.
 
 ## Syntax
 
-- bool **Save**([table](https://github.com/UltraEngine/tableplusplus/blob/main/README#programming-guide)& properties)
+- bool **Save**([table](https://github.com/UltraEngine/tableplusplus#programming-guide)& properties)
 
 | Parameter | Description |
 |---|---|
