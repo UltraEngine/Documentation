@@ -39,7 +39,8 @@ local box = CreateBox(world)
 box:SetColor(0,0,1)
 
 --Add a component for automatic motion
-box:AddComponent("Mover")
+local component = box:AddComponent("Motion.Mover")
+component.rotationspeed.y = 1
 
 --Create a light
 local light = CreateBoxLight(world)
