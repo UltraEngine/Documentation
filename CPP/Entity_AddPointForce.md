@@ -5,7 +5,7 @@ This method applies a force, measured in Newtons, to an entity at a specified po
 ## Syntax
 
 - void **AddPointForce**(const dFloat fx, const dFloat fy, const dFloat fz, const dFloat x, const dFloat y, const dFloat z, const bool global = true)
-- void **AddPointForce**(const [xVec3](xVec3.md)& force, const [xVec3](xVec3.md)& position), const bool global = true)
+- void **AddPointForce**(const [xVec3](xVec3.md)& force, const [xVec3](xVec3.md)& position, const bool global = true)
 
 | Parameter | Description |
 | --- | --- |
