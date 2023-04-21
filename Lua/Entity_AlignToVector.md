@@ -46,6 +46,7 @@ box:SetMass(1)
 box:SetColor(0, 0, 1)
 box:SetGravityMode(false)
 
+--Main loop
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
 	--Move the mouse to point the box
