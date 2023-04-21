@@ -40,9 +40,9 @@ light:SetRange(-5, 5)
 
 --Create a model
 local box = CreateBox(world)
-box:SetMass(1);
-box:SetColor(0, 0, 1);
-box:SetGravityMode(false);
+box:SetMass(1)
+box:SetColor(0, 0, 1)
+box:SetGravityMode(false)
 
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
