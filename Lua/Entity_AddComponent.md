@@ -34,6 +34,12 @@ local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 0, -2)
 
+--Create a light
+local light = CreateBoxLight(world)
+light:SetRotation(45, 35, 0)
+light:SetColor(2)
+light:SetRange(-5, 5)
+
 --Create a model
 local box = CreateBox(world)
 box:SetColor(0,0,1)
@@ -41,12 +47,6 @@ box:SetColor(0,0,1)
 --Add a component for automatic motion
 local component = box:AddComponent("Motion.Mover")
 component.rotationspeed.y = 1
-
---Create a light
-local light = CreateBoxLight(world)
-light:SetRotation(45, 35, 0)
-light:SetColor(2)
-light:SetRange(-5, 5)
 
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
