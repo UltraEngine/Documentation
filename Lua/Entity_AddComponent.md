@@ -1,4 +1,18 @@
-# Entity::AddComponent
+# Entity:AddComponent
+
+This method adds a component to the entity.
+
+## Syntax
+
+- [Component](Component.md) **AddComponent**(string name)
+
+| Parameter | Description |
+|---|---|
+| name | name of a Lua component |
+  
+## Returns
+
+Returns a new component if successful, otherwise NULL is returned.
 
 ## Example
 
