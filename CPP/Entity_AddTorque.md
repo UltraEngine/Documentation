@@ -13,52 +13,47 @@ This method adds physical torque to the entity, measured in Newton metres.
 | global | set to true to indicate a rotation in global space, otherwise the rotation will be in local space |
 
 ```c++
-#include "UltraEngine.h"
+--Get the displays
+local displays = GetDisplays()
 
-using namespace UltraEngine;
+--Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
-int main(int argc, const char* argv[])
-{
-    //Get the displays
-    auto displays = GetDisplays();
+--Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+--Create a world
+local world = CreateWorld()
 
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
+--Create a camera
+local camera = CreateCamera(world)
+camera:SetClearColor(0.125)
+camera:SetPosition(0, 0, -2)
 
-    //Create a world
-    auto world = CreateWorld();
+--Create a light
+local light = CreateBoxLight(world)
+light:SetRotation(45, 35, 0)
+light:SetColor(2)
+light:SetRange(-5, 5)
 
-    //Create a camera
-    auto camera = CreateCamera(world);
-    camera->SetPosition(0, 0, -2);
-    camera->SetClearColor(0.125);
+--Create a model
+local box = CreateBox(world)
+box:SetMass(1)
+box:SetColor(0, 0, 1)
+box:SetGravityMode(false)
 
-    //Create light
-    auto light = CreateBoxLight(world);
-    light->SetRange(-10, 10);
-    light->SetRotation(45, 35, 0);
-    light->SetColor(2);
+while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
-    //Create model
-    auto box = CreateBox(world);
-    box->SetMass(1);
-    box->SetColor(0, 0, 1);
-    box->SetGravityMode(false);
-    
-    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
-    {
-        //Press the space key to apply a force
-        if (window->KeyHit(KEY_SPACE))
-        {
-            box->AddTorque(0, 0, 10);
-        }
+    --Press the space key to apply a force
+	if window:KeyHit(KEY_SPACE) then
+		box:AddTorque(0, 0, 10)
+	end
 
-        world->Update();
-        world->Render(framebuffer);
-    }
-    return 0;
-}
+	--Update the world
+	world:Update()
+
+	--Render the world to the framebuffer
+	world:Render(framebuffer)
+
+end
 ```
