@@ -14,3 +14,4 @@
 | [FormatDate](FormatDate.md) | Function  | Formats a timestamp into a string for user-friendly display |
 | [GetFileExtensions](GetFileExtensions.md) | Function | gets a list of file extensions for the specified category |
 | [GetFilePattern](GetFilePattern.md) | Function | gets a file dialog pattern for the specified category |
+| [SetThumbnail](Program_SetThumbnail.md) | Method | sets a widget's pixmap to a thumbnail for a file |
