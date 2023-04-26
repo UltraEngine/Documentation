@@ -66,7 +66,7 @@ void main(const char* args, const int argc)
             {
                 //Get the pixmap containing the captured frame, save and open it
                 auto pixmap = e.extra->As<Pixmap>();
-                WString path = GetPath(PATH_DESKTOP) + "/screenshot.jpg";
+                WString path = GetPath(PATH_DESKTOP) + "/screenshot" + String(e.data + 1) + ".jpg";
                 pixmap->Save(path);
                 RunFile(path);
             }
