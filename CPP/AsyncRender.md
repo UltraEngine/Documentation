@@ -18,6 +18,8 @@ If you use this function, you must call it before any other API commands.
 
 Once the engine is initialized, the multithreaded rendering mode cannot be changed.
 
+Applications will have lower framerates when multithreaded rendering is disabled. This feature should only be used for event-driven applications.
+
 ## Example
 
 This example creates an event-based application with a resizable window and a 3D viewport.
