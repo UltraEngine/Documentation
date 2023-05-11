@@ -8,6 +8,7 @@ You can attach an entity to a bone with the [Entity::Attach](Entity_Attach.md) m
 
 | Property | Type | Description |
 |---|---|---|
+| id | const int& | read-only bone index for vertex skinning |
 | [GetPosition](Bone_GetPosition.md) | Method | gets the bone position |
 | [GetRotation](Bone_GetRotation.md) | Method | gets the bone rotation |
 | [GetScale](Bone_GetScale.md) | Method | gets the bone uniform scale |
