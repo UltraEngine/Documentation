@@ -1762,6 +1762,10 @@
 									"filename": "Widget_GetHidden"
 								},
 								{
+									"title": "GetInterface",
+									"filename": "Widget_GetInterface"
+								},
+								{
 									"title": "GetParent",
 									"filename": "Widget_GetParent"
 								},
