@@ -1,6 +1,6 @@
 # Widget::GetInterface
 
-This method returns the interface the widget is created in.
+This method returns the interface the widget was created in.
 
 ## Syntax
 
