@@ -3,8 +3,8 @@
 This method causes an animation sequence to play.
 
 ## Syntax
-* void **Animate**(const int sequence = 0, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP, const float time = 0.0f)
-* void **Animate**(const [WString](WString.md)& sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP, const float time = 0.0f)
+* void **Animate**(const int sequence = 0, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP, const int frame = 0)
+* void **Animate**(const [WString](WString.md)& sequence, const float speed = 1.0f, const int blendtime = 250, const AnimationMode mode = ANIMATION_LOOP, const int frame = 0)
 
 | Parameter | Description |
 | ------ | ------ |
