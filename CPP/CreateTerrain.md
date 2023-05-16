@@ -16,7 +16,7 @@ This function creates a new terrain entity.
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/CameraControls.h"
+#include "Components/CameraControls.hpp"
 
 using namespace UltraEngine;
 
