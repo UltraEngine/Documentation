@@ -20,7 +20,7 @@ This example lets you cut holes in the terrain.
 
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
+#include "Components/CameraControls.hpp"
 
 using namespace UltraEngine;
 
@@ -66,8 +66,7 @@ int main(int argc, const char* argv[])
     terrain->SetMaterial(ground);
 
     //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    camera->AddComponent<CameraControls>();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
