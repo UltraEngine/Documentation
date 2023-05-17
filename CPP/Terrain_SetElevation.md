@@ -16,7 +16,7 @@ This method sets the height of the terrain, taking into account its vertical sca
 
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
+#include "Components/CameraControls.hpp"
 
 using namespace UltraEngine;
 
@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->SetPosition(0, 100, -100);
     camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
@@ -58,8 +58,7 @@ int main(int argc, const char* argv[])
     terrain->SetMaterial(ground);
 
     //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    camera->AddComponent<CameraControls>();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
