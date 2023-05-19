@@ -4,7 +4,7 @@ This method applies a material to a face.
 
 ## Syntax
 
-- void **SetMaterial**(shared_ptr<[Material](Material.md)/> material)
+- void **SetMaterial**(shared_ptr<[Material](Material.md)\> material)
 
 | Parameter | Description |
 |---|---|
