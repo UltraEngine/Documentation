@@ -720,6 +720,10 @@
 						{
 							"title": "Turn",
 							"filename": "Entity_Turn"
+						}.
+						{
+							"title": "UpdateBounds",
+							"filename": "Entity_UpdateBounds"
 						}
 					]
 				},
