@@ -77,7 +77,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [Sync](Entity_Sync.md) | Method | resets rendering interpolation |
 | [Translate](Entity_Translate.md) | Method | translates the entity position in local or global space |
 | [Turn](Entity_Turn.md) | Method | turns the entity in local or global space |
-
+| [UpdateBounds](Entity_UpdateBounds.md) | Method | updates the entity bounding boxes |
 
 
 
