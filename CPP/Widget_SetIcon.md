@@ -1,13 +1,16 @@
-# Widget::SetIcon #
+# Widget::SetIcon
 
 This method adds an icon to the widget.
 
-## Syntax ##
-- void **Seticon**(shared_ptr<[Icon](Icon.md)\> icon)
+## Syntax
+
+- void **Seticon**(shared_ptr<[Icon](Icon.md)\> icon, const PixmapAlignment alignment = PIXMAP_CENTER, const float scale = 1.0)
 
 | Parameter | Description |
 | --- | --- |
 | icon | icon to set |
+| alignment | pixmap alignment mode, may be PIXMAP_CENTER, PIXMAP_CONTAIN, PIXMAP_COVER, PIXMAP_STRETCH, or PIXMAP_FIT |
+| scale | icon scale |
 
 ## Example
 
