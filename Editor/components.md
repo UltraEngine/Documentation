@@ -21,3 +21,15 @@ The following components are available by default.
 |---|---|
 | [InventoryItem](component_inventoryitem.md) | marks an object as an inventory item that can be picked up, stored, and used |
 | [InventorySystem](component_inventorysystem.md) | adds an inventory system the player can access to browse their collected objects |
+
+#### Player
+
+|---|---|
+| [FPSPlayer](component_inventoryitem.md) |  |
+| [ThirdPersonPlayer](component_inventorysystem.md) |  |
+
+#### Weapons
+
+|---|---|
+| [Gun](component_inventoryitem.md) |  |
+| [Melee](component_inventorysystem.md) |  |
