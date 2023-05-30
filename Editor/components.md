@@ -24,12 +24,14 @@ The following components are available by default.
 
 #### Player
 
+| Name | Description |
 |---|---|
 | [FPSPlayer](component_inventoryitem.md) |  |
 | [ThirdPersonPlayer](component_inventorysystem.md) |  |
 
 #### Weapons
 
+| Name | Description |
 |---|---|
 | [Gun](component_inventoryitem.md) |  |
 | [Melee](component_inventorysystem.md) |  |
