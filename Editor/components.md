@@ -14,3 +14,10 @@ The following components are available by default.
 | Name | Description |
 |---|---|
 | [Highlight](component_highlight.md) | gives the entity a highlighted outline |
+
+#### Inventory
+
+| Name | Description |
+|---|---|
+| [InventoryItem](component_inventoryitem.md) | marks an object as an inventory item that can be picked up, stored, and used |
+| [InventorySystem](component_inventorysystem.md) | adds an inventory system the player can access to browse their collected objects |
