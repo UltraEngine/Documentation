@@ -14,6 +14,7 @@ The following components are available by default.
 | Name | Description |
 |---|---|
 | [Highlight](component_highlight.md) | gives the entity a highlighted outline |
+| [ColorChanger](component_colorchanger.md) | modulates the entity color with several animated effects |
 
 #### Inventory
 
