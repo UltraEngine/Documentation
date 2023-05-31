@@ -2,6 +2,12 @@
 
 The following components are available by default.
 
+#### Audio
+
+| Name | Description |
+|---|---|
+| [AmbientNoise](component_ambientnoise.md) | plays a sound continuously or intermettntly |
+
 #### Movement
 
 | Name | Description |
