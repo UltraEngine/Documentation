@@ -30,12 +30,16 @@ The following components are available by default.
 | Navigation | tells the entity to navigate to a point |
 | Follow | makes one entity follow a target |
 
+#### Powerups
+
+
 #### Player
 
 | Name | Description |
 |---|---|
 | [FPSPlayer](component_inventoryitem.md) |  |
 | [ThirdPersonPlayer](component_inventorysystem.md) |  |
+| [HealthManager] | |
 
 #### Weapons
 
