@@ -4,12 +4,16 @@ This method is called called when a keyboard key is pressed.
 
 ## Syntax
 
-- void **KeyDown**(const KeyCode key)
+- bool **KeyDown**(const KeyCode key)
 
 
 | Parameter | Description |
 |---|---|
 | keycode | the key that was pressed |
+
+## Returns
+
+If the method returns true menu hotkeys will be overridden.
 
 ## Remarks
 
