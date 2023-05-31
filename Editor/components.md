@@ -14,6 +14,8 @@ The following components are available by default.
 |---|---|
 | [Mover](component_mover.md) | makes the entity move or rotate continuously |
 | [PointAt](component_pointat.md) | makes the entity point at another object |
+| [Door](component_door.md) | makes the entity point at another object |
+| [Elevator](component-elevator.md) | makes the entity point at another object |
 
 #### Appearance
 
