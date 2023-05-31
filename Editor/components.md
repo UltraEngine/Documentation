@@ -23,6 +23,13 @@ The following components are available by default.
 | [InventoryItem](component_inventoryitem.md) | marks an object as an inventory item that can be picked up, stored, and used |
 | [InventorySystem](component_inventorysystem.md) | adds an inventory system the player can access to browse their collected objects |
 
+#### AI
+
+| Name | Description |
+|---|---|
+| Navigation | tells the entity to navigate to a point |
+| Follow | makes one entity follow a target |
+
 #### Player
 
 | Name | Description |
