@@ -6,7 +6,7 @@ Base class: [Object](Object.md)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| [Clear](Buffer_Clear.md) | Method |  |
+| [Clear](Buffer_Clear.md) | Method | fills the memory block with zero values |
 | [Copy](Buffer_Copy.md) | Method |  |
 | [Data](Buffer_Data.md) | Method |  |
 | [GetSize](Buffer_GetSize.md) | Method |  |
