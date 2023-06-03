@@ -14,7 +14,7 @@
 
 - [Sonniss](https://sonniss.com/)
 - [Audio Hero](https://www.audiohero.com/)
-- 
+- [Epic Stock Media](https://epicstockmedia.com/)
 
 ## Tools
 
