@@ -12,6 +12,10 @@
 
 ### Sounds
 
+- [Sonniss](https://sonniss.com/)
+- [Audio Hero](https://www.audiohero.com/)
+- 
+
 ## Tools
 
 ### Paint Applications
