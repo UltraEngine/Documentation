@@ -468,10 +468,6 @@
 									"filename": "Terrain_LoadHeightmap"
 								},
 								{
-									"title": "SetElevation",
-									"filename": "Terrain_SetElevation"
-								},
-								{
 									"title": "SetHeight",
 									"filename": "Terrain_SetHeight"
 								},
