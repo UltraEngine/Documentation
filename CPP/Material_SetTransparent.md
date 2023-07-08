@@ -77,7 +77,7 @@ int main(int argc, const char* argv[])
     drag->SetMaterial(mtl, true);
 
     Vec3 camerarotation;
-    Vec2 axis = window->GetMouseAxis();
+    auto axis = window->GetMouseAxis();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
