@@ -84,8 +84,8 @@ int main(int argc, const char* argv[])
         auto newpos = window->GetMouseAxis();
         auto diff = newpos - axis;
         axis = newpos;
-        camerarotation.x += diff.y * 50.0f;
-        camerarotation.y += diff.x * 50.0f;
+        camerarotation.x += diff.y * 100.0f;
+        camerarotation.y += diff.x * 100.0f;
         camera->SetPosition(0, 1.5, 0);
         camera->SetRotation(camerarotation);
         camera->Move(0, 0, -4);
