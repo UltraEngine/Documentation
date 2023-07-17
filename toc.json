@@ -1501,10 +1501,6 @@
 						{
 							"title": "Vertex",
 							"filename": "Vertex"
-						},
-						{
-							"title": "AsyncRender",
-							"filename": "AsyncRender"
 						}
 					]
 				},
