@@ -155,7 +155,9 @@ const EventId EVENT_VIEWPORTRENDER = EventId(101);
 int main(int argc, const char* argv[])
 {
     // Disable asynchronous rendering so window resizing will work with 3D graphics
-    AsyncRender(false);
+    EngineSettings settings;
+    settings.asyncrender = false;
+    Initialize(settings);
 
     // Get the available displays
     auto displays = GetDisplays();
