@@ -57,6 +57,7 @@ int main(int argc, const char* argv[])
 
     //Create player
     auto player = CreateCylinder(world, 0.4, 1.8);
+    player->SetNavObstacle(false);
     player->SetColor(0, 0, 1);
     auto agent = CreateNavAgent(navmesh);
     player->Attach(agent);
