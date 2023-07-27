@@ -18,6 +18,6 @@ This class handles outdoor landscapes.
 | [GetTileHidden](Terrain_GetTileHidden.md) | Method | gets the visibility of a single terrain tile |
 | [LoadHeightmap](Terrain_LoadHeightmap.md) | Method | loads a heightmap from a file |
 | [SetHeight](Terrain_SetHeight.md) | Method | sets the terrain height at the specified point |
-| [SetMaterial](Terrain_SetLayerWeight.md) | Method | sets the layer to be used at the specified point |
+| [SetLayerWeight](Terrain_SetLayerWeight.md) | Method | sets the layer to be used at the specified point |
 | [SetTileHidden](Terrain_SetTileHidden.md) | Method | hides or shows a single terrain tile |
 | [CreateTerrain](CreateTerrain.md) | Function | creates a new terrain entity |
