@@ -2,7 +2,7 @@
 
 Base class: [Entity](Entity.md)
 
-Ultra Engine supports a powerful heightmap system for rendering large landscapes. Multiple terrains can be created and positioned, with up to 256 different materials applied to any single terrain.
+Ultra Engine supports a powerful heightmap terrain system for rendering large landscapes. Multiple terrains can be created and positioned, with up to 256 different materials applied to any single terrain.
 
 | Property | Type | Description |
 |-----|-----|-----|
