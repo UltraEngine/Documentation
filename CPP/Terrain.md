@@ -9,6 +9,7 @@ This class handles outdoor landscapes.
 | heightmap | const shared_ptr<[Pixmap](Pixmap.md)\>& | read-only pixmap containing terrain elevation data |
 | material | const shared_ptr<[Material](Material.md)\>& | read-only material containing height and normal textures |
 | resolution | const [iVec2](iVec2.md)& | read-only terrain resolution |
+| [AddLayer](Terrain_AddLayer.md) | Method | adds a new terrain material layer |
 | [GetElevation](Terrain_GetElevation.md) | Method | returns the scaled terrain height |
 | [GetHeight](Terrain_GetHeight.md) | Method | returns the heightmap height at the specified point |
 | [GetLayers](Terrain_GetLayers.md) | Method | returns the layers in use at the specified point |
