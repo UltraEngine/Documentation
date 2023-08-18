@@ -1204,12 +1204,12 @@
 									"filename": "Framebuffer_Capture"
 								},
 								{
-									"title": "GetSize",
-									"filename": "Framebuffer_GetSize"
-								},
-								{
 									"title": "CreateFramebuffer",
 									"filename": "CreateFramebuffer"
+								},
+								{
+									"title": "GetSize",
+									"filename": "Framebuffer_GetSize"
 								}
 							]
 						},
