@@ -98,11 +98,9 @@ The only dependency your end users need to install is the [Microsoft Visual Stud
 
 This is just the beginning. There's a lot more great technology on the way! Here are some of the main features in development:
 
-- VR support
+- Hardware raytracing
 - Linux and Mac versions
 - C# programming support
-- Lua programming support
-- Advanced global illumination and reflections
 - Box2D physics
 
 Your feedback is always valued, so feel free to [make a suggestion](https://www.ultraengine.com/community/forum/3-suggestion-box/) for any features you'd like to see in upcoming releases.
