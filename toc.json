@@ -30,6 +30,23 @@
 			"openstate": true,
 			"topics": [
 				{
+					"title": "Analytics",
+					"topics": [
+						{
+							"title": "AnimationStats",
+							"filename": "AnimationStats"
+						},
+						{
+							"title": "PhysicsStats",
+							"filename": "PhysicsStats"
+						},
+						{
+							"title": "RenderStats",
+							"filename": "RenderStats"
+						}
+					]
+				},
+				{
 					"title": "Audio",
 					"topics": [
 						{
@@ -3069,23 +3086,6 @@
 					"title": "World",
 					"filename": "World",
 					"topics": [
-						{
-							"title": "Performance Analytics",
-							"topics": [
-								{
-									"title": "AnimationStats",
-									"filename": "AnimationStats"
-								},
-								{
-									"title": "PhysicsStats",
-									"filename": "PhysicsStats"
-								},
-								{
-									"title": "RenderStats",
-									"filename": "RenderStats"
-								}
-							]
-						},
 						{
 							"title": "ClearCollisionResponses",
 							"filename": "World_ClearCollisionResponses"
