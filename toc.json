@@ -28,24 +28,7 @@
 		{
 			"title": "Programming Reference",
 			"openstate": true,
-			"topics": [
-				{
-					"title": "Analytics",
-					"topics": [
-						{
-							"title": "AnimationStats",
-							"filename": "AnimationStats"
-						},
-						{
-							"title": "PhysicsStats",
-							"filename": "PhysicsStats"
-						},
-						{
-							"title": "RenderStats",
-							"filename": "RenderStats"
-						}
-					]
-				},
+			"topics": [				
 				{
 					"title": "Audio",
 					"topics": [
@@ -3025,7 +3008,24 @@
 							"hideFromLua": true
 						}
 					]
-				},			   
+				},
+				{
+					"title": "Statistics",
+					"topics": [
+						{
+							"title": "AnimationStats",
+							"filename": "AnimationStats"
+						},
+						{
+							"title": "PhysicsStats",
+							"filename": "PhysicsStats"
+						},
+						{
+							"title": "RenderStats",
+							"filename": "RenderStats"
+						}
+					]
+				},
 				{
 					"title": "System",
 					"topics": [
