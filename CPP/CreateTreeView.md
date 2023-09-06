@@ -65,7 +65,7 @@ int main(int argc, const char* argv[])
 
     while (true)
     {
-        const auto& event = WaitEvent();
+        const auto event = WaitEvent();
         switch (event.id)
         {
         case EVENT_WIDGETSELECT:
