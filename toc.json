@@ -6,6 +6,12 @@
 			"useLanguage": false
 		},
 		{
+			"title": "Editor Tutorials",
+			"openstate": true,
+			"filename": "editor",
+			"useLanguage": false
+		},
+		{
 			"title": "Editor Scripting Reference",
 			"filename": "EditorScripting",
 			"hideFromCS": true,
