@@ -9,7 +9,49 @@
 			"title": "Editor Tutorials",
 			"openstate": true,
 			"filename": "editor",
-			"useLanguage": false
+			"useLanguage": false,
+			"topics": [
+					{
+						"title": "Asset Browser",
+						"filename": "assetbrowser"
+					},
+					{
+						"title": "Asset Editor",
+						"filename": "asseteditor"
+					},
+					{
+						"title": "Console",
+						"filename": "console"
+					},
+					{
+						"title": "Objects Bar",
+						"filename": "objectsbar"
+					},
+					{
+						"title": "Objects Panel",
+						"filename": "objectspanel"
+					},
+					{
+						"title": "Options Window",
+						"filename": "optionswindow"
+					},
+					{
+						"title": "Scene Browser",
+						"filename": "scenebrowser"
+					},
+					{
+						"title": "Toolbar",
+						"filename": "toolbar"
+					},
+					{
+						"title": "View Panel",
+						"filename": "viewpanel"
+					},
+					{
+						"title": "Viewports",
+						"filename": "viewports"
+					}
+				]
 		},
 		{
 			"title": "Editor Scripting Reference",
