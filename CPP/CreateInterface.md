@@ -276,7 +276,7 @@ int main(int argc, const char* argv[])
 The last example shows how to create an interactive user interface that is displayed on a 3D surface:
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
+#include "Components/Player/CameraControls.h"
 
 using namespace UltraEngine;
 
