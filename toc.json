@@ -30,6 +30,10 @@
 								"filename": "console"
 							},
 							{
+								"title": "Face Editor",
+								"filename": "faceeditor"
+							},
+							{
 								"title": "Objects Bar",
 								"filename": "objectsbar"
 							},
@@ -48,6 +52,10 @@
 							{
 								"title": "Scene Browser",
 								"filename": "scenebrowser"
+							},
+							{
+								"title": "Terrain Editor",
+								"filename": "terraineditorl"
 							},
 							{
 								"title": "Toolbar",
