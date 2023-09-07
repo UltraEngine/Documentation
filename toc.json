@@ -8,7 +8,7 @@
 		},
 		{
 			"title": "Editor",
-			"openstate": true,
+			"openstate": false,
 			"filename": "editor",
 			"useLanguage": false,
 			"topics": [
@@ -138,7 +138,7 @@
 		},		   
 		{
 			"title": "Programming Reference",
-			"openstate": true,
+			"openstate": false,
 			"topics": [				
 				{
 					"title": "Audio",
