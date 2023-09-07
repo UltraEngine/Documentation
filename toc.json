@@ -560,6 +560,10 @@
 								{
 									"title": "LoadSprite",
 									"filename": "LoadSprite"
+								},
+								{
+									"title": "SetViewMode",
+									"filename": "Sprite_SetViewMode"
 								}
 							]
 						},
