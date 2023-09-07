@@ -62,10 +62,6 @@
 								"filename": "toolbar"
 							},
 							{
-								"title": "View Panel",
-								"filename": "viewpanel"
-							},
-							{
 								"title": "Viewports",
 								"filename": "viewports"
 							}
