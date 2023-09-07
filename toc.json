@@ -14,7 +14,6 @@
 			"topics": [
 				{
 					"title": "Interface",
-					"openstate": true,
 					"filename": "interface",
 					"useLanguage": false,
 					"topics": [
@@ -66,7 +65,6 @@
 				},
 				{
 					"title": "Workflow",
-					"openstate": true,
 					"filename": "Workflow",
 					"useLanguage": false,
 					"topics": [
