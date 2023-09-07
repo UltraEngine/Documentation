@@ -133,8 +133,8 @@
 								"filename": "run"
 							},
 							{
-								"title": "Editor Scripting",
-								"filename": "scripting"
+								"title": "Editor Extensions",
+								"filename": "extensions"
 							}
 						]
 				}
