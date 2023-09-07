@@ -13,7 +13,7 @@ Ultra Engine is currently available in early access mode, consisting of a C++ pr
 #### Additional Recommended Software
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/#vs-section)
-- [Microsoft Visual Studio Code](https://code.visualstudio.com)
+- [Microsoft Visual Studio Code](https://code.visualstudio.com) (used for shaders, Lua scripts, and file comparison)
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
 
 You can run the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
