@@ -8,10 +8,10 @@ This method updates timing, physics, and other systems. This should be called on
 
 | Parameter | Description |
 | --- | --- |
-| **frequency** | number of updates per second |
-| **threads** | number of physics threads, or zero for automatic |
-| **iterations** | number of physics iterations, or zero for the exact solver |
-| **substeps** | number of physics sub-steps |
+| frequency | number of updates per second |
+| threads | number of physics threads, or zero for automatic |
+| iterations | number of physics iterations, or zero for the exact solver |
+| substeps | number of physics sub-steps |
 
 ## Remarks
 
