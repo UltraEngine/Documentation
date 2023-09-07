@@ -71,6 +71,46 @@
 							{
 								"title": "Projects",
 								"filename": "projects"
+							},
+							{
+								"title": "Importing Assets",
+								"filename": "importassets"
+							},
+							{
+								"title": "Environment Settings",
+								"filename": "environment"
+							},
+							{
+								"title": "Constructive Solid Geometry",
+								"filename": "brushes"
+							},
+							{
+								"title": "Entity Properties",
+								"filename": "entityproperties"
+							},
+							{
+								"title": "Entity Components",
+								"filename": "componentsystem"
+							},
+							{
+								"title": "Lighting",
+								"filename": "lighting"
+							},
+							{
+								"title": "Terrain",
+								"filename": "terrain"
+							},
+							{
+								"title": "Pathfinding",
+								"filename": "pathfinding"
+							},
+							{
+								"title": "Packages",
+								"filename": "packages"
+							},
+							{
+								"title": "Running the Game",
+								"filename": "run"
 							}
 						]
 				}
