@@ -23,6 +23,8 @@ By default the engine will allocate a number of threads for physics calculations
 
 For greater precision, you can split physics updating up into multiple sub-steps by providing a value greater than one in the substeps paramter. This can be useful when very precise physics behavior is needed, but more substeps can cause slower performance.
 
+Although your application can safely make use of multiple worlds, you should only call this method on one single world, or errors will occur.
+
 ## Example
 
 ```c++
