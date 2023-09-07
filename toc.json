@@ -113,7 +113,7 @@
 								"filename": "entityproperties"
 							},
 							{
-								"title": "Entity Components",
+								"title": "Entity Component System",
 								"filename": "componentsystem"
 							},
 							{
