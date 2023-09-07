@@ -36,6 +36,10 @@
 						"filename": "optionswindow"
 					},
 					{
+						"title": "Project Manager",
+						"filename": "projectmanager"
+					},
+					{
 						"title": "Scene Browser",
 						"filename": "scenebrowser"
 					},
