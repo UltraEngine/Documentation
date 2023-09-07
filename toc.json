@@ -111,6 +111,10 @@
 							{
 								"title": "Running the Game",
 								"filename": "run"
+							},
+							{
+								"title": "Scripting",
+								"filename": "scripting"
 							}
 						]
 				}
