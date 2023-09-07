@@ -85,6 +85,26 @@
 								"filename": "brushes"
 							},
 							{
+								"title": "Maps",
+								"filename": "maps"
+							},
+							{
+								"title": "3D Models",
+								"filename": "models"
+							},
+							{
+								"title": "Materials",
+								"filename": "materials"
+							},
+							{
+								"title": "Textures",
+								"filename": "textures"
+							},
+							{
+								"title": "Shaders",
+								"filename": "shaders"
+							},
+							{
 								"title": "Entity Properties",
 								"filename": "entityproperties"
 							},
