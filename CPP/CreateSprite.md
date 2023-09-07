@@ -4,7 +4,7 @@ This function creates a sprite that displays a rectangle or a string of text.
 
 ## Syntax
 
-- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const float width, const float height, const bool wireframe = false, const float radius = 0)
+- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const float width, const float height, const bool wireframe = false)
 - shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size, const TextAlignment = TEXT_LEFT | TEXT_TOP)
 
 | Parameter | Description |
@@ -13,7 +13,6 @@ This function creates a sprite that displays a rectangle or a string of text.
 | width | width of the sprite, in pixels |
 | height | height of the sprite, in pixels |
 | wireframe | set to true for wireframe or false for solid |
-| radius | corner radius, for rounded rectangles |
 | text | text to display |
 | font | font to render text with |
 | size | font size |
