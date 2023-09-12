@@ -4,9 +4,7 @@ This method retrieves all entities in the world with the specified tag.
 
 ## Syntax
 
-```lua
-function World:GetTaggedEntities(tag: [string](https://www.lua.org/manual/5.4/manual.html#6.4)): table
-```
+- GetTaggedEntities(tag: [string](https://www.lua.org/manual/5.4/manual.html#6.4)): table
 
 ## Parameters
 
