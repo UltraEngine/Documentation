@@ -4,9 +4,7 @@ This function gets the package from which an asset was loaded.
 
 ## Syntax
 
-```lua
-function Asset:GetPackage() -> Asset
-```
+- function Asset:GetPackage() -> Asset
 
 ## Returns
 
