@@ -4,7 +4,7 @@ This method adds a text tag to the entity.
 
 ## Syntax
 
-- **AddTag**([string](string.md) tag)
+- **AddTag**([string](https://www.lua.org/manual/5.4/manual.html#6.4) tag)
 
 ## Remarks
 
