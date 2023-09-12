@@ -1,0 +1,50 @@
+# RequestFile
+This function opens a file browser dialog and lets the user select a file to open or save.
+
+## Syntax
+`RequestFile(title = "Open File", file = "", filetypes = "All Files:*", defaulttype = 0, save = false)`
+
+| Parameter | Description |
+| ----- | ----- |
+| title | Title shown in dialog window. |
+| file | Default file directory or full file path. |
+| filetypes | File extensions filter. |
+| defaulttype | Default file type to show. |
+| save | Set to true for a save dialog, otherwise an open dialog will be shown. |
+
+## Returns
+Returns the selected file path, or an empty string if the user cancelled the operation.
+
+## Remarks
+The extensions filter allows you to specify one or more file types to show in the dialog. Each file type consists of a description and an extension, separated by a colon. Note that the text shown inside the parenthesis is part of the description, and is just decorative:
+
+```
+Text Files (*.txt):txt
+```
+
+You can specify multiple extensions for a file type by separating them with a comma:
+
+```
+JPEG Image (*.jpg, *.jpeg):jpg,jpeg
+```
+
+You can use a wildcard to specify a range of extensions:
+
+```
+All Files:*
+```
+
+Use a semicolon to specify multiple file extensions for one file type:
+
+```
+Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg
+```
+
+## Example
+
+![](https://github.com/Leadwerks/Documentation/raw/master/Images/RequestFile.png)
+
+```lua
+local file = RequestFile("Open File")
+Print(file)
+```

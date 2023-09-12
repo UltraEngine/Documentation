@@ -1,17 +1,23 @@
-# Model::AddLOD #
-Adds a new level of detail to the model. The LOD can be empty or copied from another model. If another model is specified, its entity hierarchy must match this model's subhierarchy.
+# Model::AddLod
 
-## Syntax ##
-- int **AddLOD**()
-- int **AddLOD**(shared_ptr<Model\> lodmodel)
+This method adds a [Lod](Lod.md) to a model.
 
-## Example ##
+## Syntax
+
+- int **AddLod**()
+
+## Returns
+
+Returns the index of the new level of detail.
+
+## Example
+
 ```c++
 #include "UltraEngine.h"
 
 using namespace UltraEngine;
 
-void main(const char* args, const int argc)
+int main(int argc, const char* argv[])
 {
     //Get the displays
     auto displays = GetDisplays();
@@ -19,65 +25,61 @@ void main(const char* args, const int argc)
     //Create a window
     auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
-
     //Create a world
     auto world = CreateWorld();
 
-    //Create a light
-    auto light = CreateDirectionalLight(world);
-    light->SetRotation(45, 35, 0);
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->Move(0, 0, -3);
+    camera->SetClearColor(0.125);
+    camera->SetPosition(0, 0, -1);
     camera->SetWireframe(true);
+    camera->SetFOV(70);
 
-    //Create box and set its orientation
+    //Create a light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(45, 35, 0);
+    light->SetRange(-10, 10);
+    light->SetColor(2);
+
+    //Create a model
     auto model = CreateSphere(world, 0.5, 64);
+    model->SetColor(0, 1, 0);
 
-    //Create LOD levels
-    auto lod1 = CreateSphere(world, 0.5, 32);
-    auto lod2 = CreateSphere(world, 0.5, 16);
-    auto lod3 = CreateSphere(world, 0.5, 8);
+    //Add Lod
+    auto temp = CreateSphere(world, 0.5, 32);
+    model->AddLod();
+    model->AddMesh(temp->lods[0]->meshes[0], 1);
+    
+    //Add Lod
+    temp = CreateSphere(world, 0.5, 16);
+    model->AddLod();
+    model->AddMesh(temp->lods[0]->meshes[0], 2);
 
-    //Add LOD levels
-    model->AddLOD(lod1);
-    model->AddLOD(lod2);
-    model->AddLOD(lod3);
+    //Add Lod
+    temp = CreateSphere(world, 0.5, 8);
+    model->AddLod();
+    model->AddMesh(temp->lods[0]->meshes[0], 3);
+    temp = NULL;
 
-    //Delete LOD models
-    lod1 = NULL;
-    lod2 = NULL;
-    lod3 = NULL;
+    model->SetLodDistance(1);
 
-    //Set LOD pixel sizes (optional)
-    model->SetLODScreenSize(1, 256);
-    model->SetLODScreenSize(2, 128);
-    model->SetLODScreenSize(3, 64);
-
-    float zoom = 1;
+    auto z = camera->position.z;
 
     //Main loop
-    while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        model->Turn(0, 1, 0);
+        //Move the camera forward and backwards to change detail levels
+        if (window->KeyDown(KEY_UP)) z += 0.005f;
+        if (window->KeyDown(KEY_DOWN)) z -= 0.005f;
+        z = Min(-1.0f, z);
+        camera->SetPosition(0,0,z);
 
-        //Up / Down keys move forward and back
-        if (window->KeyDown(KEY_UP)) camera->Move(0, 0, 0.03);
-        if (window->KeyDown(KEY_DOWN)) camera->Move(0, 0, -0.03);
-
-        // +/- keys zoom in and out
-        if (window->KeyDown(KEY_EQUALS)) zoom *= 1.01;;
-        if (window->KeyDown(KEY_SUBTRACT)) zoom /= 1.01;
-        camera->SetZoom(zoom);
-
-        //Update world
         world->Update();
-
-        //Render world
         world->Render(framebuffer);
     }
+    return 0;
 }
 ```
