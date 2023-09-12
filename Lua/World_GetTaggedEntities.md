@@ -16,4 +16,4 @@ This method retrieves all entities in the world with the specified tag.
 
 ## Remarks
 
-You can set entity tags with the [`Entity:AddTag`](Entity_AddTag.md) method.
+You can set entity tags with the [Entity:AddTag](Entity_AddTag.md) method.
