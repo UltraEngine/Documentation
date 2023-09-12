@@ -141,29 +141,29 @@
 								"filename": "extensions"
 							}
 						]
-				}
-			]
-		},
-		{
-			"title": "Editor Scripting Reference",
-			"filename": "EditorScripting",
-			"hideFromCS": true,
-			"hideFromCPP": true,
-			"topics": [
-				{
-					"title": "Events",
-					"filename": "EditorEvents"
 				},
 				{
-					"title": "GetFileExtensions",
-					"filename": "GetFileExtensions"
-				},
-				{
-					"title": "GetFilePattern",
-					"filename": "GetFilePattern"
-				}
+					"title": "Scripting Reference",
+					"filename": "EditorScripting",
+					"hideFromCS": true,
+					"hideFromCPP": true,
+					"topics": [
+						{
+							"title": "Events",
+							"filename": "EditorEvents"
+						},
+						{
+							"title": "GetFileExtensions",
+							"filename": "GetFileExtensions"
+						},
+						{
+							"title": "GetFilePattern",
+							"filename": "GetFilePattern"
+						}
+					]
+				}				
 			]
-		},		   
+		},	   
 		{
 			"title": "Class Reference",
 			"openstate": false,
