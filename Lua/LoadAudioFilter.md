@@ -56,6 +56,7 @@ speaker:SetRange(10)
 
 -- Main loop
 while (not window:Closed()) and (not window:KeyDown(KEY_ESCAPE)) do
+
     -- Add filter when space key is pressed
     if window:KeyHit(KEY_SPACE) then
         local filter = LoadAudioFilter("https://raw.githubusercontent.com/UltraEngine/Assets/main/Sound/Filters/EAXReverb/SewerPipe.json")
