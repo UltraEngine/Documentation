@@ -33,5 +33,4 @@ while window:Closed() == false do
 		break
 	end
 end
-return 0
 ```
