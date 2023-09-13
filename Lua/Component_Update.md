@@ -4,7 +4,7 @@ This function is called once per call to [World:Update](World_Update.md).
 
 ## Syntax
 
-`function Component:Update()`
+- **Update**()
 
 ## Remarks
 
