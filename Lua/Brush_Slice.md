@@ -4,7 +4,7 @@ This method will slice a brush along a plane and return the two resulting pieces
 
 ## Syntax
 
-- boolean **Slice**([Plane](Plane.md) plane, [Brush](Brush.md) operandA, [Brush](Brush.md) operandB, [Face](Face.md) sliceface = `nil`, number tolerance = 0.001)
+- boolean **Slice**([Plane](Plane.md) plane, [Brush](Brush.md) operandA, [Brush](Brush.md) operandB, [Face](Face.md) sliceface = nil, number tolerance = 0.001)
 
 | Parameter | Description |
 |---|---|
