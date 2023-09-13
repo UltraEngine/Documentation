@@ -4,11 +4,13 @@ This method reloads an asset from a file on the disk. If changes were made to th
 
 ## Syntax
 
-- **asset:Reload**(flags)
+- **Reload**(flags: number)
 
-  - **flags** (optional): load flags
+| Parameter | Description |
+| *flags* | load flags |
 
 ## Returns
+
 If successful, `true` is returned. Otherwise, `false` is returned.
 
 ## Example
