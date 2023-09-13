@@ -12,7 +12,7 @@ This method adds a post-processing effect to a camera.
 
 ## Returns
 
-Returns the index of the added post-processing effect, or negative one (-1) if the effect could not be added.
+Returns the index of the added post-processing effect, or zero if the effect could not be added.
 
 ## Remarks
 
