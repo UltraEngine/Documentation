@@ -4,9 +4,7 @@ This method adds a post-processing effect to a camera.
 
 ## Syntax
 
-```lua
-function Camera:AddPostEffect(effect)
-```
+- number **AddPostEffect**([PostEffect](PostEffect.md) effect)
 
 | Parameter | Description |
 |---|---|
