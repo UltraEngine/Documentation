@@ -4,11 +4,7 @@ This method sets the camera clear behavior.
 
 ## Syntax
 
-```lua
-function Camera:setClearMode(mode)
-```
-
-## Parameters
+- **SetClearMode**(number mode)
 
 | Parameter | Description |
 |---|---|
@@ -25,8 +21,11 @@ Cameras are always drawn in the order they are created.
 This example uses two cameras to draw the far and near scene, with a small gap between their ranges to show the effect.
 
 ```lua
+--Get the displays
+local displays = GetDisplays()
+
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a world
 local world = CreateWorld()
@@ -66,13 +65,12 @@ model:SetPosition(0, 0.5, 0)
 model:SetColor(0, 0, 1)
 
 --Camera controls
-local actor = CreateActor(camera)
-actor:AddComponent<CameraControls>()
+require 'Components/Player/CameraControls'
+camera:AddComponent(CameraControls)
 
 --Main loop
 while (window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false) do
     world:Update()
     world:Render(framebuffer)
 end
-
 ```
