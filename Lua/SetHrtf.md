@@ -4,12 +4,11 @@ This function enables or disables head-related transfer function audio processin
 
 ## Syntax
 
-- **bool SetHrtf**(bool mode)
-  - mode: set to true to enable or false to disable
+- boolean **SetHrtf**(boolean mode)
 
 ## Returns
 
-Returns true if the mode is successfully set, otherwise false is returned.
+Returns `true` if the mode is successfully set, otherwise `false` is returned.
 
 ## Remarks
 
