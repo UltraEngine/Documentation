@@ -30,27 +30,24 @@ Any camera in the sequence can use post-processing effects, but only the first c
 ## Example
 
 ```lua
--- Required library
-local UltraEngine = require("UltraEngine")
-
 -- Get the displays
-local displays = UltraEngine.GetDisplays()
+local displays = GetDisplays()
 
 -- Create a window
-local window = UltraEngine.CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], UltraEngine.WINDOW_CENTER | UltraEngine.WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a world
-local world = UltraEngine.CreateWorld()
+local world = CreateWorld()
 
 -- Create a framebuffer
-local framebuffer = UltraEngine.CreateFramebuffer(window)
+local framebuffer = CreateFramebuffer(window)
 
 -- Create a camera
-local camera = UltraEngine.CreateCamera(world)
+local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 
 -- Main loop
-while not window:Closed() and not window:KeyDown(UltraEngine.KEY_ESCAPE) do
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     world:Update()
     world:Render(framebuffer)
 end
