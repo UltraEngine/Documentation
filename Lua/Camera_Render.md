@@ -4,9 +4,7 @@ This method will trigger a refresh of a camera that is set to only render interm
 
 ## Syntax
 
-```lua
-function Camera:Render()
-```
+- **Render**()
 
 ## Remarks
 
