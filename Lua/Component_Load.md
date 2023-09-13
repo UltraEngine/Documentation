@@ -4,13 +4,14 @@ This function is called when a component is loaded from a file or copied.
 
 ## Syntax
 
-```lua
-function Component:Load(properties)
-```
+- boolean **Load**([table](https://www.lua.org/manual/5.4/manual.html#6.6) properties, [Stream](Stream.md) binstream, [Scene](Scene.md) scene, number flags)
 
-### Parameters
-
-- `properties` (table): component data in a table object
+| Parameter | Description |
+|---|---|
+| properties | |
+| binstream | |
+| scene | |
+| flags | |
 
 ## Returns
 
