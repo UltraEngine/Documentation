@@ -25,22 +25,6 @@ local framebuffer = CreateFramebuffer(window)
 --Create a world
 local world = CreateWorld()
 
---Create a camera
-local camera = CreateCamera(world)
-camera:SetClearColor(0.125)
-camera:SetPosition(0, 0, -2)
-
---Create a light
-local light = CreateBoxLight(world)
-light:SetRotation(45, 35, 0)
-light:SetColor(2)
-light:SetRange(-5, 5)
-
---Create the ground
-local ground = CreateBox(world, 10, 0.25, 10)
-ground.name = "Ground"
-ground:SetPosition(0,-1,0)
-
 --Create some entities
 local box1 = CreateBox(world)
 local box2 = CreateBox(world)
