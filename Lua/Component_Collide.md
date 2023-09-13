@@ -51,8 +51,17 @@ box:SetMass(10)
 box:SetPosition(0,2,0)
 box:SetRotation(0,0,-35)
 
+local t = {}
+
+function t:Collide(entity, position, normal, speed)
+    Print(entity.name)
+    Print(position)
+    Print(normal)
+    Print(speed)
+end
+
 --Add a component that prints out collision information
-box:AddComponent("Testing.Collision")
+box:AddComponent(t)
 
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
