@@ -4,13 +4,13 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 
 | Property    | Type                  | Description                                                |
 | ----------- | --------------------- | ---------------------------------------------------------- |
-| entity      | [Entity](Entity.md)\* | entity this component is attached to. A raw pointer is used to prevent a circular reference |
+| entity      | [Entity](Entity.md) | entity this component is attached to |
 | [Collide](Component_Collide.md)  | Method                | called whenever a physics collision occurs                 |
 | [Copy](Component_Copy.md)     | Method                | makes a copy of the component, for copying entities        |
 | [Load](Component_Load.md)     | Method                | called when an actor is loaded or copied                   |
 | [Save](Component_Save.md)     | Method                | called when an actor is saved or copied                    |
 | [Start](Component_Start.md)   | Method                | called when a component is added                           |
-| [Update](Component_Update.md) | Method                | called once each time [World::Update](World_Update.md) is called |
+| [Update](Component_Update.md) | Method                | called once each time [World:Update](World_Update.md) is called |
 
 You can override these methods or add your own in your component class. To add a new component, just create a new .lua file in your "Source\Components" folder. You can use separate files if you want, but it is more convenient to put everything in a single file that can be included into your project. Compile your project once and the Lua interpreter will detect your new file and update the component system code. The component system will automatically update the component registration when the Lua interpreter detects changes to the component files.
 
