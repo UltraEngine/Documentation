@@ -1,10 +1,10 @@
-# camera:setFov
+# Camera::SetFov
 
 This method sets the camera field of view.
 
 ## Syntax 
 
-- **camera:setFov**(fov: number) : void 
+- void **SetFov**(number fov)
 
 | Parameter | Description |
 |---|---|
