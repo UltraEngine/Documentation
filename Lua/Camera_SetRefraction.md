@@ -4,6 +4,10 @@ This method enables or disables the transparency refraction setting for the came
 
 - **SetRefraction**(boolean mode)
 
+| Parameter | Description |
+|---|---|
+| mode | true to enable transparency refraction or false to disable it |
+
 ## Example
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/refraction.jpg)
