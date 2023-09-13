@@ -22,7 +22,7 @@ This example uses two camera to draw the far and near scene, with small gap betw
 
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
+#include "Components/Player/CameraControls.hpp"
 
 using namespace UltraEngine;
 
@@ -72,8 +72,7 @@ int main(int argc, const char* argv[])
     model->SetColor(0, 0, 1);
 
     //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    camera->AddComponent<CameraControls>();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
