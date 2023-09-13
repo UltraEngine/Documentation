@@ -6,6 +6,10 @@ This method adds a new face to a brush.
 
 - [Face](Face.md) **AddFace**([Material](Material.md) material)
 
+| Parameter | Description |
+|---|---|
+| material | optional material to apply |
+
 ## Returns
 
 Returns the new face.
