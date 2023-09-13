@@ -2,17 +2,13 @@
 
 This function creates a new camera entity.
 
-```lua
--- CreateCamera function
--- world: shared_ptr<World>
--- projectionmode: PROJECTION_PERSPECTIVE or PROJECTION_ORTHOGRAPHIC
--- returns: shared_ptr<Camera>
-function CreateCamera(world, projectionmode)
-```
+## Syntax
+
+- [Camera](Camera.md) **CreateCamera**([World](World.md) world, number projectionmode = PROJECTION_PERSPECTIVE)
 
 | Parameter | Description |
 |---|---|
-| world | |
+| world | world to create the entity in |
 | projectionmode | this can be PROJECTION_PERSPECTIVE or PROJECTION_ORTHOGRAPHIC |
 
 ## Remarks
