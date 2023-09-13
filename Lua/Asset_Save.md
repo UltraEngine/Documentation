@@ -8,8 +8,8 @@ boolean **Save**(path: [string](https://www.lua.org/manual/5.4/manual.html#6.4),
 
 | Parameter | Description |
 |---|---|
-| path | string representing the file path to save to. |
-| flags | optional save flags |
+| *path* | string representing the file path to save to. |
+| *flags* | optional save flags |
 
 ## Returns
 
