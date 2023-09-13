@@ -4,14 +4,12 @@ This function loads an audio filter from a file. Audio filters are stored in JSO
 
 ## Syntax
 
-```lua
-function LoadAudioFilter(path: string, flags: int) -> AudioFilter
-```
+- function LoadAudioFilter(path: string, flags: int) -> AudioFilter
 
-### Parameters
-
-- `path` (string): file path to load.
-- `flags` (int, optional): load flags.
+| Parameter | Description |
+|---|---|
+| *path* | file path to load |
+| *flags* | optional load flags |
 
 ### Returns
 
