@@ -4,8 +4,8 @@ This method adds a new vertex to a brush.
 
 ## Syntax
 
-- **AddVertex**(x: number, y: number, z: number): number
-- **AddVertex**(position: Vec3): number
+- number **AddVertex**(number x, number y, number z)
+- number **AddVertex**([Vec3](Vec3.md) position)
 
 
 | Parameter | Description |
