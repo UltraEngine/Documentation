@@ -13,7 +13,7 @@ This function loads an audio filter from a file. Audio filters are stored in JSO
 
 ### Returns
 
-- (AudioFilter): The loaded audio filter if successful, otherwise `nil` is returned.
+- Returns the loaded audio filter if successful, otherwise `nil` is returned.
 
 ## Example
 
