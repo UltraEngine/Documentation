@@ -12,16 +12,19 @@ Parameter
   - Type: Sound
 
 Returns
-- A new speaker.
-  - Type: Speaker
+
+Returns a new speaker.
 
 Example
+
 ```lua
-window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER)
+local displays = GetDisplays()
 
-sound = LoadSound("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Sound/notification.wav")
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
-speaker = CreateSpeaker(sound)
+local sound = LoadSound("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Sound/notification.wav")
+
+local speaker = CreateSpeaker(sound)
 
 while not (window:Closed() or window:KeyDown(KEY_ESCAPE)) do
     if window:KeyHit(KEY_SPACE) then
@@ -29,5 +32,4 @@ while not (window:Closed() or window:KeyDown(KEY_ESCAPE)) do
     end
     Sleep(16)
 end
-
 ```
