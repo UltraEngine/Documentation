@@ -27,7 +27,7 @@ light:SetColor(2);
 camera = CreateCamera(world);
 camera:SetClearColor(0.125);
 camera:SetPosition(0, 0, -3);
-camera:SetFOV(70);
+camera:SetFov(70);
 
 box = CreateBox(world)
 
