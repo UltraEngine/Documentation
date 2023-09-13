@@ -7,6 +7,7 @@ This method reloads an asset from a file on the disk. If changes were made to th
 - **Reload**(flags: number)
 
 | Parameter | Description |
+|---|---|
 | *flags* | load flags |
 
 ## Returns
