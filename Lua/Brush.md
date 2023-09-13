@@ -16,4 +16,3 @@ This class provides an interface for building level geometry with constructive s
 | [Slice](Brush_Slice.md) | Method | slices the brush along a plane | 
 | [CreateBoxBrush](CreateBoxBrush.md) | Function | creates a new box brush |
 | [CreateBrush](CreateBrush.md) | Function | creates a new brush entity |
- 
