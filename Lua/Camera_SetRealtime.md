@@ -4,9 +4,7 @@ This method allows you to control whether a camera renders continuously or only 
 
 ## Syntax
 
-```lua
-Camera:SetRealtime(mode: boolean)
-```
+- **SetRealtime**(boolean mode)
 
 ## Parameters
 
