@@ -35,6 +35,9 @@ This example will create a brush and cut it into two pieces.
 ![Example](https://github.com/UltraEngine/Documentation/raw/master/Images/brush_slice.jpg)
 
 ```lua
+--Get displays
+local displays = GetDisplays()
+
 -- Create a window
 local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
@@ -76,6 +79,8 @@ else
     A = nil
     B = nil
 end
+
+collectgarbage()
 
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
