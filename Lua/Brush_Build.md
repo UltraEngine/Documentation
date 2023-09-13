@@ -11,8 +11,11 @@ This method calculates face planes, checks for flipped faces, updates texture ma
 This example creates a box brush from scratch.
 
 ```lua
+--Get the displays
+local displays = GetDisplays()
+
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -31,6 +34,7 @@ local light = CreateBoxLight(world)
 light:SetRange(-20, 20)
 light:SetArea(20, 20)
 light:SetRotation(35, 35, 0)
+light:SetColor(2)
 
 --Create brush
 local brush = CreateBrush(world)
@@ -40,6 +44,7 @@ brush:SetColor(0, 0, 1)
 local w = 1
 local h = 1
 local d = 1
+
 brush:AddVertex(w * 0.5, h * 0.5, d * 0.5)
 brush:AddVertex(-w * 0.5, h * 0.5, d * 0.5)
 brush:AddVertex(-w * 0.5, h * 0.5, -d * 0.5)
@@ -51,28 +56,16 @@ brush:AddVertex(w * 0.5, -h * 0.5, -d * 0.5)
 
 --Add faces
 local face = brush:AddFace()
-face:AddIndice(0)
 face:AddIndice(1)
 face:AddIndice(2)
 face:AddIndice(3)
-
-face = brush:AddFace()
-face:AddIndice(4)
-face:AddIndice(5)
-face:AddIndice(6)
-face:AddIndice(7)
-
-face = brush:AddFace()
-face:AddIndice(0)
-face:AddIndice(1)
-face:AddIndice(5)
 face:AddIndice(4)
 
 face = brush:AddFace()
-face:AddIndice(2)
-face:AddIndice(3)
-face:AddIndice(7)
+face:AddIndice(5)
 face:AddIndice(6)
+face:AddIndice(7)
+face:AddIndice(8)
 
 face = brush:AddFace()
 face:AddIndice(1)
@@ -81,10 +74,22 @@ face:AddIndice(6)
 face:AddIndice(5)
 
 face = brush:AddFace()
-face:AddIndice(0)
+face:AddIndice(3)
+face:AddIndice(4)
+face:AddIndice(8)
+face:AddIndice(7)
+
+face = brush:AddFace()
+face:AddIndice(2)
 face:AddIndice(3)
 face:AddIndice(7)
+face:AddIndice(6)
+
+face = brush:AddFace()
+face:AddIndice(1)
 face:AddIndice(4)
+face:AddIndice(8)
+face:AddIndice(5)
 
 --Finalize the brush
 brush:Build()
@@ -94,6 +99,4 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Update()
     world:Render(framebuffer)
 end
-
-return 0
 ```
