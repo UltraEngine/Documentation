@@ -30,60 +30,54 @@ local function PickFilter(entity, extra)
     return true
 end
 
--- Main function
-function main()
-    -- Get the displays
-    local displays = GetDisplays()
+-- Get the displays
+local displays = GetDisplays()
 
-    -- Create a window
-    local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR)
+-- Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR)
 
-    -- Create a world
-    local world = CreateWorld()
+-- Create a world
+local world = CreateWorld()
 
-    -- Create a framebuffer
-    local framebuffer = CreateFramebuffer(window)
+-- Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    -- Create light
-    local light = CreateBoxLight(world)
-    light:SetRange(-10, 10)
-    light:SetRotation(15, 15, 0)
-    light:SetColor(2)
+-- Create light
+local light = CreateBoxLight(world)
+light:SetRange(-10, 10)
+light:SetRotation(15, 15, 0)
+light:SetColor(2)
 
-    -- Create camera
-    local camera = CreateCamera(world)
-    camera:SetClearColor(0.125)
-    camera:SetPosition(0, 0, -3)
-    camera:SetFov(70)
+-- Create camera
+local camera = CreateCamera(world)
+camera:SetClearColor(0.125)
+camera:SetPosition(0, 0, -3)
+camera:SetFov(70)
 
-    -- Create scenery
-    local box = CreateBox(world)
+-- Create scenery
+local box = CreateBox(world)
 
-    local cone = CreateCone(world)
-    cone:SetPosition(1.25, 0, 0)
+local cone = CreateCone(world)
+cone:SetPosition(1.25, 0, 0)
 
-    local sphere = CreateSphere(world)
-    sphere:SetPosition(-1.25, 0, 0)
+local sphere = CreateSphere(world)
+sphere:SetPosition(-1.25, 0, 0)
 
-    -- Main loop
-    while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
-        -- Click on an object to change its color
-        if window:MouseHit(MOUSE_LEFT) then
-            box:SetColor(1, 1, 1)
-            cone:SetColor(1, 1, 1)
-            sphere:SetColor(1, 1, 1)
-            local mousepos = window:GetMousePosition()
-            local pick = camera:Pick(framebuffer, mousepos.x, mousepos.y, 0, true, PickFilter, nil)
-            if pick.success then
-                pick.entity:SetColor(1, 0, 0)
-            end
+-- Main loop
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+    -- Click on an object to change its color
+    if window:MouseHit(MOUSE_LEFT) then
+        box:SetColor(1, 1, 1)
+        cone:SetColor(1, 1, 1)
+        sphere:SetColor(1, 1, 1)
+        local mousepos = window:GetMousePosition()
+        local pick = camera:Pick(framebuffer, mousepos.x, mousepos.y, 0, true, PickFilter, nil)
+        if pick.success then
+            pick.entity:SetColor(1, 0, 0)
         end
-
-        world:Update()
-        world:Render(framebuffer)
     end
-end
 
--- Call the main function
-main()
+    world:Update()
+    world:Render(framebuffer)
+end
 ```
