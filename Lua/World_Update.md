@@ -1,12 +1,10 @@
-# world:Update
+# World:Update
 
 This method updates timing, physics, and other systems. This should be called once per frame the main application loop.
 
 ## Syntax
 
-```lua
-world:Update(frequency, threads, iterations, substeps)
-```
+- **Update**(number frequency, number threads, number iterations, number substeps)
 
 | Parameter | Description |
 | --- | --- |
