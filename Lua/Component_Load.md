@@ -8,10 +8,10 @@ This function is called when a component is loaded from a file or copied.
 
 | Parameter | Description |
 |---|---|
-| properties | |
-| binstream | |
-| scene | |
-| flags | |
+| properties | component properties |
+| binstream | stream of binary data |
+| scene | map that is being loaded |
+| flags | map load flags |
 
 ## Returns
 
