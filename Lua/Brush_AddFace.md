@@ -60,28 +60,16 @@ brush:AddVertex(w * 0.5, -h * 0.5, -d * 0.5)
 
 --Add faces
 local face = brush:AddFace()
-face:AddIndice(0)
 face:AddIndice(1)
 face:AddIndice(2)
 face:AddIndice(3)
-
-face = brush:AddFace()
-face:AddIndice(4)
-face:AddIndice(5)
-face:AddIndice(6)
-face:AddIndice(7)
-
-face = brush:AddFace()
-face:AddIndice(0)
-face:AddIndice(1)
-face:AddIndice(5)
 face:AddIndice(4)
 
 face = brush:AddFace()
-face:AddIndice(2)
-face:AddIndice(3)
-face:AddIndice(7)
+face:AddIndice(5)
 face:AddIndice(6)
+face:AddIndice(7)
+face:AddIndice(8)
 
 face = brush:AddFace()
 face:AddIndice(1)
@@ -90,10 +78,22 @@ face:AddIndice(6)
 face:AddIndice(5)
 
 face = brush:AddFace()
-face:AddIndice(0)
+face:AddIndice(3)
+face:AddIndice(4)
+face:AddIndice(8)
+face:AddIndice(7)
+
+face = brush:AddFace()
+face:AddIndice(2)
 face:AddIndice(3)
 face:AddIndice(7)
+face:AddIndice(6)
+
+face = brush:AddFace()
+face:AddIndice(1)
 face:AddIndice(4)
+face:AddIndice(8)
+face:AddIndice(5)
 
 --Finalize the brush
 brush:Build()
