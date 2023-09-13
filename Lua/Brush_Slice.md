@@ -4,11 +4,7 @@ This method will slice a brush along a plane and return the two resulting pieces
 
 ## Syntax
 
-```lua
-function Brush:Slice(plane: Plane, operandA: Brush, operandB: Brush, sliceface: Face, tolerance: number) -> boolean
-```
-
-### Parameters
+- **Slice**([Plane](Plane.md) plane, [Brush](Brush.md) operandA, [Brush](Brush.md) operandB, [Face](Face.md) sliceface = `nil`, number tolerance = 0.001)
 
 | Parameter | Description |
 |---|---|
@@ -18,15 +14,14 @@ function Brush:Slice(plane: Plane, operandA: Brush, operandB: Brush, sliceface: 
 | sliceface | (optional) If provided, material and texture mapping settings will be copied from this face to the end caps of the resulting brushes. This is useful for boolean operations, where one brush carves a volume out of another. |
 | tolerance | The error tolerance, should be greater than zero. |
 
-### Returns
+## Returns
+If the plane intersects the brush, true is returned. Otherwise, false is returned. The results of the slice operation will be added to operandA and operandB.
 
-- If the plane intersects the brush, true is returned. Otherwise, false is returned. The results of the slice operation will be added to operandA and operandB.
+Note: Either operandA or operandB may be nil, but if both are nil, the operation will always return false.
 
-  Note: Either operandA or operandB may be nil, but if both are nil, the operation will always return false.
+Brushes can be fractured by performing multiple slices.
 
-- Brushes can be fractured by performing multiple slices.
-
-- Boolean addition and subtraction can be performed by slicing multiple planes, discarding one operand, and grouping the resulting brushes.
+Boolean addition and subtraction can be performed by slicing multiple planes, discarding one operand, and grouping the resulting brushes.
 
 ## Example
 
