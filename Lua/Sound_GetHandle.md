@@ -8,7 +8,7 @@ This function returns the OpenAL albuffer object associated with this sound.
 
 ## Returns
 
-Returns the OpenAL albuffer object.
+Returns the OpenAL `albuffer` object.
 
 ## Remarks
 
