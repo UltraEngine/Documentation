@@ -4,11 +4,11 @@ This method adds a component to the entity.
 
 ## Syntax
 
-- [Component](Component.md) **AddComponent**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name)
+- [Component](Component.md) **AddComponent**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 |---|---|
-| name | name of a Lua component |
+| name | path to a Lua component script |
   
 ## Returns
 
