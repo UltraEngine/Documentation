@@ -1,8 +1,7 @@
-# Vec3 #
+# Vec3
 This structure describes a three-dimensional vector.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 | - | - | - |
 | x, r | float | x component of the vector |
 | y, g | float | y component of the vector |
