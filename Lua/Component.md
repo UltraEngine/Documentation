@@ -90,8 +90,9 @@ end
 To call a component method or get a value, first check if a component of the desired type is attached to the entity, and then call the method:
 
 ```lua
-local component = entity:GetComponent(HealthManager)
-if component then
-    component:TakeDamage(10)
+if type(entity.healthmanager) == "table" then
+    if type(entity.healthmanager.TakeDamage) == "function" then
+        entity.healthmanager:TakeDamage(10)
+    end
 end
 ```
