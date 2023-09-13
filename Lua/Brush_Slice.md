@@ -8,11 +8,11 @@ This method will slice a brush along a plane and return the two resulting pieces
 
 | Parameter | Description |
 |---|---|
-| plane | The slice plane. |
-| operandA | The brush to receive the volume behind the slice plane. |
-| operandB | The brush to receive the volume in front of the slice plane. |
-| sliceface | (optional) If provided, material and texture mapping settings will be copied from this face to the end caps of the resulting brushes. This is useful for boolean operations, where one brush carves a volume out of another. |
-| tolerance | The error tolerance, should be greater than zero. |
+| plane | The slice plane |
+| operandA | The brush to receive the volume behind the slice plane |
+| operandB | The brush to receive the volume in front of the slice plane |
+| sliceface | If provided, material and texture mapping settings will be copied from this face to the end caps of the resulting brushes. This is useful for boolean operations, where one brush carves a volume out of another |
+| tolerance | The error tolerance, should be greater than zero |
 
 ## Returns
 If the plane intersects the brush, true is returned. Otherwise, false is returned. The results of the slice operation will be added to operandA and operandB.
