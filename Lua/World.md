@@ -6,8 +6,8 @@ The world class is a container for entities.
 
 | Property         | Type                            | Description                                                       |
 |------------------|---------------------------------|-------------------------------------------------------------------|
-| collisions       | const table                      | read-only list of collisions recorded in previous physics update |
-| frequency        | const number                    | read-only update frequency                                         |
+| collisions       | [table](https://www.lua.org/manual/5.4/manual.html#6.6) | read-only list of collisions recorded in previous physics update |
+| frequency        | number                    | read-only update frequency                                         |
 | physicsstats     | [PhysicsStats](PhysicsStats.md)    | physics statistics                                                  |
 | renderstats      | [RenderStats](RenderStats.md)      | rendering statistics                                                 |
 | [ClearCollisionResponses](World_ClearCollisionResponses.md)     | Method                          | clears all collision responses                                   |
