@@ -6,7 +6,7 @@ This class describes a flat surface of a Brush entity.
 
 | Property | Type | Description |
 |---|---|---|
-| plane | const Plane | read-only face plane |
+| plane | [Plane](Plane.md) | read-only face plane |
 | AddIndice | Method | adds an indice to the face |
 | GetMaterial | Method | returns the face material |
 | GetTextureMappingPlane | Method | returns the face texture mapping planes |
@@ -19,8 +19,7 @@ This class describes a flat surface of a Brush entity.
 | SetTextureMappingScale | Method | sets the face texture mapping scale |
 | SetTextureMappingTranslation | Method | sets the face texture mapping translation |
 
-
-Example:
+@@ Example
 
 ```lua
 -- Create a face object with a given plane
