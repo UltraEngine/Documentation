@@ -1,46 +1,19 @@
-# Vec3 #
+# Vec3
 This structure describes a three-dimensional vector.
 
-## Properties ##
-- number **x, r, width**
-- number **y, g, height**
-- number **z, b, depth**
-- [Vec3](API_Vec3) **xyz**
-- [Vec3](API_Vec3) **xzy**
-- [Vec3](API_Vec3) **yxz**
-- [Vec3](API_Vec3) **yzx**
-- [Vec3](API_Vec3) **zxy**
-- [Vec3](API_Vec3) **zyx**
-- [Vec2](API_Vec3) **xy**
-- [Vec2](API_Vec3) **xz**
-- [Vec2](API_Vec3) **yz**
-- [Vec2](API_Vec3) **yx**
-- [Vec2](API_Vec3) **zx**
-- [Vec2](API_Vec3) **zy**
-- [Vec3](API_Vec3) **rgb**
-- [Vec3](API_Vec3) **rbg**
-- [Vec3](API_Vec3) **grb**
-- [Vec3](API_Vec3) **gbr**
-- [Vec3](API_Vec3) **brg**
-- [Vec3](API_Vec3) **bgr**
-- [Vec2](API_Vec3) **rg**
-- [Vec2](API_Vec3) **rb**
-- [Vec2](API_Vec3) **gb**
-- [Vec2](API_Vec3) **gr**
-- [Vec2](API_Vec3) **br**
-- [Vec2](API_Vec3) **bg**
-
-## Constructors ##
-- **Vec3**()
-- **Vec3**(number x)
-- **Vec3**(number x, number y)
-- **Vec**3(number x, number y, number z)
-
-## Methods ##
-- Cross
-- DistanceToPoint
-- [Dot](API_Dot)
-- Inverse
-- Length
-- [Normalize](API_Normalize)
-- Reflect
+| Property | Type | Description |
+| - | - | - |
+| x, r | number | x component of the vector |
+| y, g | number | y component of the vector |
+| z, b | number | z component of the vector |
+| Vec3 | Constructor | Vec3(const float x) |
+| Vec3 | Constructor | Vec3(const float x, const float y, const float z)|
+| [DistanceToPoint](Vec3_DistanceToPoint.md) | Method | |
+| [Dot](Vec3_Dot.md) | Method | gets the distance to a point |
+| [Cross](Vec3_Cross.md) | Method | gets the vector cross product |
+| [Hsl](Vec3_Hsl) | Method | converts an RGB value to HSL |
+| [Inverse](Vec3_Inverse.md) | Method | gets the inverse vector |
+| [Length](Vec3_Length.md) | Method | gets the vector length |
+| [Normalize](Vec3_Normalize.md) | Method | gets the normalized vector |
+| [Reflect](Vec3_Reflect.md) | Method | gets the reflected vector |
+| [Rgb](Vec3_Rgb) | Method | converts an HSL value to RGB |
