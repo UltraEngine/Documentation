@@ -4,9 +4,11 @@ This method can be used to test whether two brushes intersect.
 
 ## Syntax
 
-- **Brush:IntersectsBrush**(brush: [Brush](Brush.md)) **-> bool**
+- boolean **IntersectsBrush**([Brush](Brush.md) brush)
 
-   - brush: The brush to test intersection against.
+| Parameter | Description |
+|---|---|
+| brush | the brush to test intersection against |
 
 ## Returns
 
