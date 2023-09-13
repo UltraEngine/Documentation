@@ -4,7 +4,11 @@ This method adds a new face to a brush.
 
 ## Syntax
 
-- shared_ptr<[Face](Face.md)> **AddFace**(shared_ptr<[Material](Material.md)>)
+- shared_ptr<[Face](Face.md)> **AddFace**(shared_ptr<[Material](Material.md)> material = `NULL`)
+
+| Parameter | Description |
+|---|---|
+| material | optional material to apply |
 
 ## Returns
 
