@@ -5,12 +5,13 @@ This method adds a component to the entity.
 ## Syntax
 
 - [table](https://www.lua.org/manual/5.4/manual.html#6.6) **AddComponent**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean start = true)
-- **AddComponent**([table](https://www.lua.org/manual/5.4/manual.html#6.6) table, boolean start = true)
+- **AddComponent**([table](https://www.lua.org/manual/5.4/manual.html#6.6) t, boolean start = true)
 
 | Parameter | Description |
 |---|---|
-| name | path to a Lua component script |
-  
+| path | path to a Lua component script |
+| t | table to use for component |
+
 ## Returns
 
 Returns a new component if successful, otherwise NULL is returned.
