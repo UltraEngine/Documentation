@@ -4,7 +4,7 @@ This function loads an audio filter from a file. Audio filters are stored in JSO
 
 ## Syntax
 
-- function LoadAudioFilter(path: string, flags: int) -> AudioFilter
+- function **LoadAudioFilter**(path: string, flags: int) -> AudioFilter
 
 | Parameter | Description |
 |---|---|
