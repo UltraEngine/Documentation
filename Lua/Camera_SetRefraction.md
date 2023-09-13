@@ -2,8 +2,7 @@
 
 This method enables or disables the transparency refraction setting for the camera. This effect will make transparent surfaces appear to bend light as it passes through them.
 
-- void **SetRefraction**(mode: boolean)
-  - mode: true to enable transparency refraction or false to disable it
+- **SetRefraction**(boolean mode)
 
 ## Example
 
@@ -14,19 +13,19 @@ This method enables or disables the transparency refraction setting for the came
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create framebuffer
 local framebuffer = CreateFramebuffer(window)
-framebuffer:GetSize()
 
 -- Create world
 local world = CreateWorld()
 world:SetAmbientLight(0.05)
 
 -- Set environment maps
-local specmap = LoadTexture(remotepath + "/Materials/Environment/Storm/specular.dds")
-local diffmap = LoadTexture(remotepath + "/Materials/Environment/Storm/diffuse.dds")
+local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets"
+local specmap = LoadTexture(remotepath .. "/Materials/Environment/Storm/specular.dds")
+local diffmap = LoadTexture(remotepath .. "/Materials/Environment/Storm/diffuse.dds")
 world:SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND)
 world:SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR)
 world:SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE)
@@ -48,10 +47,10 @@ camera:SetRefraction(true)
 local floor = CreateBox(world, 20, 1, 20)
 floor:SetPosition(0, -0.5, 0)
 local floormtl = CreateMaterial()
-floormtl:SetTexture(LoadTexture(remotepath + "/Materials/tiles.dds"))
+floormtl:SetTexture(LoadTexture(remotepath .. "/Materials/tiles.dds"))
 floor:SetMaterial(floormtl)
 
-local drag = LoadModel(world, remotepath + "/Models/Stanford/dragon.glb")
+local drag = LoadModel(world, remotepath .. "/Models/Stanford/dragon.glb")
 drag:SetScale(0.1)
 drag:SetColor(1, 1, 1, 1, true)
 
@@ -63,11 +62,12 @@ mtl:SetRoughness(0.5)
 mtl:SetTransparent(true)
 drag:SetMaterial(mtl, true)
 
-local camerarotation = Vec3()
+local camerarotation = Vec3(0)
 local axis = window:GetMouseAxis()
 
 -- Main loop
 while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+
     -- Camera rotate controls
     local newpos = window:GetMouseAxis()
     local diff = newpos - axis
@@ -79,6 +79,6 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     camera:Move(0, 0, -4)
 
     world:Update()
-    world:Render(framebuffer, true)
+    world:Render(framebuffer)
 end
 ```
