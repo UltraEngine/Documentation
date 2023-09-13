@@ -8,17 +8,17 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 |---|---|---|
 | extra | [Object](Object.md) | user-defined object |
 | kids | [table](https://www.lua.org/manual/5.4/manual.html#6.6) | read-only array of child entities |
-| matrix | xMat4 | read-only 4x4 matrix |
+| matrix | [xMat4](xMat4.md) | read-only 4x4 matrix |
 | name | [string](https://www.lua.org/manual/5.4/manual.html#6.4) | entity name |
-| omega | xVec3 | read-only angular velocity |
+| omega | [xVec3](xVec3.md) | read-only angular velocity |
 | parent | [Entity](Entity.md) | entity parent |
-| position | xVec3 | read-only position |
+| position | [xVec3](xVec3.md) | read-only position |
 | properties | [table](https://www.lua.org/manual/5.4/manual.html#6.6) | user-defined properties |
-| quaternion | xQuat | read-only rotation |
-| rotation | xVec3 | read-only Euler rotation |
-| scale | xVec3 | read-only scale |
+| quaternion | [xQuat](xQuat.md) | read-only rotation |
+| rotation | [xVec3](xVec3.md) | read-only Euler rotation |
+| scale | [xVec3](xVec3.md) | read-only scale |
 | tags | [table](https://www.lua.org/manual/5.4/manual.html#6.6) | read-only container of tags |
-| velocity | xVec3 | read-only linear velocity |
+| velocity | [xVec3](xVec3.md) | read-only linear velocity |
 | AddComponent | Method | adds an entity component |
 | AddForce | Method | apply linear force to the entity |
 | AddPointForce | Method | apply linear force at a specific point |
