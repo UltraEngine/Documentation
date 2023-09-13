@@ -1,6 +1,6 @@
 # LoadPostEffect
 
-This function loads a post-processing effect from a JSON file.
+This function loads a post-processing effect from a file.
 
 ## Syntax
 
