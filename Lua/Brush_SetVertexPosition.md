@@ -1,4 +1,4 @@
-# Brush: SetVertexPosition
+# Brush:SetVertexPosition
 
 This method sets a brush vertex position.
 
