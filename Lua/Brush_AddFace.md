@@ -4,9 +4,7 @@ This method adds a new face to a brush.
 
 ## Syntax
 
-```lua
-function Brush:AddFace() -> Face
-```
+- [Face](Face.md) **AddFace**()
 
 ## Returns
 
