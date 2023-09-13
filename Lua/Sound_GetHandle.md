@@ -4,7 +4,7 @@ This function returns the OpenAL albuffer object associated with this sound.
 
 ## Syntax
 
-- function Sound:GetHandle() : number
+- function **Sound:GetHandle**() : number
 
 ## Returns
 
