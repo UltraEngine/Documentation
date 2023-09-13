@@ -4,7 +4,7 @@ This function gets the package from which an asset was loaded.
 
 ## Syntax
 
-- function **Asset:GetPackage**() -> Asset
+- [Asset](Asset.md) **GetPackage**()
 
 ## Returns
 
