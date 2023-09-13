@@ -1,12 +1,10 @@
-# Sound.GetHandle
+# Sound:GetHandle
 
 This function returns the OpenAL albuffer object associated with this sound.
 
 ## Syntax
 
-```lua
-function Sound:GetHandle()
-```
+- function Sound:GetHandle() : number
 
 ## Returns
 
