@@ -4,7 +4,7 @@ This method will slice a brush along a plane and return the two resulting pieces
 
 ## Syntax
 
-- bool **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Brush](Brush.md)> operandA, shared_ptr<[Brush](Brush.md)> operandB, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001)
+- bool **Slice**(const [Plane](Plane.md)& plane, shared_ptr<[Brush](Brush.md)> operandA, shared_ptr<[Brush](Brush.md)> operandB, shared_ptr<[Face](Face.md)> sliceface = NULL, const float tolerance = 0.001f)
 
 | Parameter | Description |
 |---|---|
