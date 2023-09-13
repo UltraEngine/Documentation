@@ -4,9 +4,7 @@ This function is called when an entity is copied. This is a protected function t
 
 ## Syntax
 
-```lua
-function Component:Copy()
-```
+- [Component](Component.md) **Copy**()
 
 ## Returns
 
