@@ -45,16 +45,17 @@ local box = CreateBox(world)
 box:SetColor(0,0,1)
 
 --Add a component for automatic motion
-local component = box:AddComponent("Motion.Mover")
-component.rotationspeed.y = 1
+local component = box:AddComponent("Source/Components/Motion/Mover.lua")
+component.rotationspeed.y = -2
+box.mover.rotationspeed.x = 2
 
 while window:KeyDown(KEY_ESCAPE) == false and window:Closed() == false do
 
-	--Update the world
-	world:Update()
+    --Update the world
+    world:Update()
 
-	--Render the world to the framebuffer
-	world:Render(framebuffer)
+    --Render the world to the framebuffer
+    world:Render(framebuffer)
 
 end
 ```
