@@ -4,7 +4,7 @@ This method calculates face planes, checks for flipped faces, updates texture ma
 
 ## Syntax
 
-- `void` **Build**()
+- **Build**()
 
 ## Example
 
