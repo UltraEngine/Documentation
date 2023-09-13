@@ -1,4 +1,4 @@
-# Camera:setClearMode
+# Camera:SetClearMode
 
 This method sets the camera clear behavior.
 
