@@ -4,9 +4,8 @@ This function loads a post-processing effect from a JSON file.
 
 ## Syntax
 
-```lua
-function LoadPostEffect(path: WString, flags: LoadFlags): UserData
-```
+- [PostEffect](PostEffect.md) **LoadPostEffect**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
+
 
 | Parameter | Description |
 |-----------|-------------|
