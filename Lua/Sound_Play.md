@@ -2,19 +2,23 @@
 
 This method plays a sound once and returns a speaker object.
 
-```lua
-function Sound:Play() end
-```
+- function **Sound:Play**()
 
 ## Returns
 
-**Returns:** Speaker - Returns a new speaker object that can be used to control the sound.
+Returns a new speaker object that can be used to control the sound.
 
 ## Example
 
 ```lua
+--Get the displays
+local displays = GetDisplays();
+
+--Create window
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER);
+
 -- Load sound
-local sound = LoadSound("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Sound/notification.wav")
+local sound = LoadSound("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Sound/notification.wav")
 sound:Play()
 
 while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
