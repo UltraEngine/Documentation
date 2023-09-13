@@ -6,13 +6,12 @@ This function creates a brush with a box shape.
 
 - [Brush](Brush.md) **CreateBrush**([World](World.md) world, number size = 1)
 - [Brush](Brush.md) **CreateBrush**([World](World.md) world, number width, number height, number depth)
-- 
-## Parameters
 
-- `world` (type: World): the world to create the brush in
-
-- `width`, `height`, `depth` (type: number): dimensions of the box, in meters
+| Parameter | Description |
+|---|---|
+| world | world to create the brush in |
+| size, width, height, depth | brush dimensions in meters |
 
 ## Returns
 
-- (type: Brush): a new brush entity
+Returns a new brush entity.
