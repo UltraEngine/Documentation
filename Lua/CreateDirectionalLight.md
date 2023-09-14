@@ -4,7 +4,7 @@ This function creates a new directional light.
 
 ## Syntax
 
-- **createDirectionalLight**(world: World): Light
+- **CreateDirectionalLight**(world: World): Light
 
 | Parameter | Description |
 |---|---|
