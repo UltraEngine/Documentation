@@ -723,6 +723,10 @@
 							"filename": "Entity_GetMass"
 						},
 						{
+							"title": "GetMatrix",
+							"filename": "Entity_GetMatrix"
+						},
+						{
 							"title": "GetParent",
 							"filename": "Entity_GetParent"
 						},
@@ -825,6 +829,10 @@
 						{
 							"title": "SetMass",
 							"filename": "Entity_SetMass"
+						},
+						{
+							"title": "SetMatrix",
+							"filename": "Entity_SetMatrix"
 						},
 						{
 							"title": "SetParent",
