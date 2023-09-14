@@ -1,16 +1,16 @@
-# Camera:unProject
+# Camera:UnProject
 
-This method projects a 2D screen coordinate to a point.
+This method projects 2D screen coordinate to a point.
 
 ## Syntax
 
-`Camera:unProject(coord, framebuffer)`
+- [Vec3](Vec3.md) **UnProject**([Vec3](Vec3.md) coord, [Framebuffer](Framebuffer.md) framebuffer)
 
-## Parameters
-
-- `coord` - A [Vec3](Vec3.md) object representing the screen coordinate, with the distance in front of the camera stored in the Z component.
-- `framebuffer` - A [Framebuffer](Framebuffer.md) object to test with.
+| Parameter | Description |
+|---|---|
+| coord | screen coordinate, plus distance in front of camera stored in the Z component |
+| framebuffer | framebuffer to test with |
 
 ## Returns
 
-A [Vec3](Vec3.md) object representing the 3D position in global space.
+Returns a 3D position in global space.
