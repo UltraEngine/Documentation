@@ -1,4 +1,4 @@
-# Terrain:SetLayerTextureMappingMode
+# Terrain::SetLayerTextureMappingMode
 
 This method sets the layer texture mapping mode.
 
