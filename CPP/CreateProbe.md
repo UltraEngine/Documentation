@@ -6,6 +6,10 @@ This function creates a new environment probe.
 
 - shared_ptr<[Probe](Probe.md)\> **CreateProbe**(shared_ptr<[World](World.md)\> world)
 
+| Paraemter | Description |
+|---|---|
+| world | world to create the entity in |
+
 ## Returns
 
 Returns a new probe entity.
