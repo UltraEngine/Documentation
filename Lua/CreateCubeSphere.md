@@ -4,16 +4,14 @@ This function creates a new sphere model using a segmented cube morphed into a s
 
 ## Syntax
 
-`function CreateCubeSphere(world: World, radius: number = 0.5, segments: number = 8, type: MeshPrimtives = MESH_TRIANGLES): Model`
-
-### Parameters
+- [Model](Model.md) **CreateCubeSphere**([World](World.md) world, number radius = 0.5, number segments = 8, number type = MESH_TRIANGLES)
 
 | Parameter | Description |
 |--|--|
-| world | The world to create the model in |
-| radius | The radius of the cylinder |
-| segments | The subdivisions for each face |
-| type | The type of mesh, can be `MESH_TRIANGLES` or `MESH_QUADS` |
+| world | world to create the mdoel in |
+| radius | cylinder radius |
+| segments | subdivisions for each face |
+| type | can be MESH_TRIANGLES or MESH_QUADS |
 
 ## Returns 
 
