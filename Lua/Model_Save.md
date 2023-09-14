@@ -18,9 +18,6 @@ Returns true if the model is successfully saved, otherwise false is returned.
 ## Example
 
 ```lua
--- Import required libraries
--- ...
-
 -- Create model
 local model = CreateBox(nil)
 
