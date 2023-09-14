@@ -4,7 +4,7 @@ This method sets the view mode of a sprite. This controls how the sprite orients
 
 ## Syntax
 
-- void **SetViewMode**(number mode)
+- **SetViewMode**(number mode)
 
 | Parameter | Description |
 |---|---|
