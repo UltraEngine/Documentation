@@ -1,4 +1,4 @@
-# createDirectionalLight()
+# CreateDirectionalLight()
 
 This function creates a new directional light.
 
