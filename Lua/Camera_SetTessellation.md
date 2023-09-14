@@ -57,6 +57,7 @@ model:SetMaterial(mtl)
 
 -- Main loop
 while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
+
     -- Arrow keys move
     if window:KeyDown(KEY_DOWN) then
         camera:Move(0, 0, -0.01)
