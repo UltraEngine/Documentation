@@ -610,8 +610,8 @@
 									"filename": "Terrain_GetHeight"
 								},
 								{
-									"title": "SetLayerHeightConstraints",
-									"filename": "Terrain_SetLayerHeightConstraints"
+									"title": "GetLayerHeightConstraints",
+									"filename": "Terrain_GetLayerHeightConstraints"
 								},
 								{
 									"title": "GetLayerMapping",
