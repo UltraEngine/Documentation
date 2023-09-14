@@ -4,10 +4,8 @@ This method sets the light falloff mode, to control the way light fades with dis
 
 ## Syntax
 
-```lua
-function Light:SetFalloff(falloff)
-```
+- **SetFalloff**(number falloff)
 
-### Parameters
-
-- `falloff` (LightFalloffMode): light falloff mode, can be `LIGHTFALLOFF_LINEAR` or `LIGHTFALLOFF_INVERSE_SQUARE`
+| Parameter | Description |
+|---|---|
+| falloff | light falloff mode, can be `LIGHTFALLOFF_LINEAR` or `LIGHTFALLOFF_INVERSE_SQUARE` |
