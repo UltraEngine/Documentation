@@ -4,9 +4,16 @@ This method loads a heightmap onto the terrain.
 
 ## Syntax
 
-```lua
-function Terrain:LoadHeightmap(path: WString, flags: LoadFlags) -> bool
-```
+- bool **LoadHeightmap**([string]() path, number flags = LOAD_DEFAULT)
+
+| Parameter | Description |
+|---|---|
+| path | file path to load |
+| flags | optional load flags |
+
+## Returns
+
+Returns true if the heightmap is successfully loaded, otherwise false is returned.
 
 ## Example
 
