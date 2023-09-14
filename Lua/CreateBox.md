@@ -4,20 +4,15 @@ This function creates a new box model with a physics collider.
 
 ## Syntax
 
-- CreateBox(world: [World](World.md), size: number = 1): [Model](Model.md)
-- CreateBox(world: [World](World.md), width: number, height: number, depth: number, xsegs: number = 1, ysegs: number = 1, zsegs: number = 1, type: MeshPrimitives = MESH_TRIANGLES): [Model](Model.md)
+- [Model](Model.md) CreateBox([World](World.md) world, number size = 1)
+- [Model](Model.md) CreateBox([World](World.md) world, number width, number height, number depth, number xsegs = 1, number ysegs = 1, number zsegs = 1, number type = MESH_TRIANGLES)
 
-**Parameters**
-
-- *world* (type: [World](World.md)): world to create the model in
-- *size* (optional, type: number): uniform size of the box (default: 1)
-- *width* (type: number): width of the box
-- *height* (type: number): height of the box
-- *depth* (type: number): depth of the box
-- *xsegs* (optional, type: number): number of segments on the x-axis (default: 1)
-- *ysegs* (optional, type: number): number of segments on the y-axis (default: 1)
-- *zsegs* (optional, type: number): number of segments on the z-axis (default: 1)
-- *type* (optional, type: [MeshPrimitives](MeshPrimitives.md)): type of mesh (default: MESH_TRIANGLES)
+| Parameter | Description |
+|---|---|
+| world | world to create the model in |
+| size, (width, height, depth) | uniform size or dimensions of the box |
+| xsegs, ysegs, zsegs | number of segments on each axis |
+| type | can be MESH_TRIANGLES or MESH_QUADS |
 
 ## Remarks
 
