@@ -1,4 +1,4 @@
-# Terrain.SetTileHidden
+# Terrain:SetTileHidden
 
 This method is used to show or hide a single terrain tile.
 
