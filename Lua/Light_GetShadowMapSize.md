@@ -4,10 +4,8 @@ This method gets the resolution of a light's shadow map.
 
 ## Syntax
 
-```lua
-function Light:GetShadowMapSize()
-```
+- number **GetShadowMapSize**()
 
 ## Returns
 
-- *number* - The light's shadow map resolution.
+Returns the light's shadow map resolution in texels.
