@@ -13,9 +13,6 @@ This method sets the desired polygon edge size for tessellated materials.
 ## Example
 
 ```lua
---Load plugin for texture loading
-local plugin = LoadPlugin("Plugins/Basis.*")
-
 --Get the primary display
 local displaylist = GetDisplays()
 local display = displaylist[1];
@@ -23,14 +20,21 @@ if display == nil then RuntimeError("Primary display not found.") end
 local displayscale = display:GetScale()
 
 --Create a window
-local window = CreateWindow(display, "Tessellation", 0, 0, 1280, 720, WINDOW_CENTER + WINDOW_TITLEBAR)
+local window = CreateWindow("Tessellation", 0, 0, 1280, 720, display, WINDOW_CENTER + WINDOW_TITLEBAR)
 
 --Create a rendering framebuffer
 local framebuffer = CreateFramebuffer(window);
 
 --Create a world
 local world = CreateWorld()
-world:SetSkybox("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Sky/sunset.basis")
+
+local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/"
+
+local skybox = LoadTexture(remotepath .. "Materials/Environment/Storm/specular.dds")
+world:SetEnvironmentMap(skybox, ENVIRONMENTMAP_BACKGROUND)
+world:SetEnvironmentMap(skybox, ENVIRONMENTMAP_SPECULAR)
+local diffusemap = LoadTexture(remotepath .. "Materials/Environment/Storm/diffuse.dds")
+world:SetEnvironmentMap(diffusemap, ENVIRONMENTMAP_DIFFUSE)
 world:SetAmbientLight(0)
 
 --Create a camera
@@ -40,13 +44,13 @@ camera:SetClearColor(0.25)
 camera:SetTessellation(8) --Tessellated primitives are n pixels wide (zero or less disables tessellation)
 
 --Create a light
-local light = CreateLight(world,LIGHT_DIRECTIONAL)
+local light = CreateBoxLight(world)
 light:SetRotation(35,-55,0)
 light:SetColor(2,2,2)
 
 --Display material
-local model = CreateQuadSphere(world, 0.5, 8, true)
-local mtl = LoadMaterial("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/rocky_soil.mtl")
+local model = CreateCubeSphere(world)
+local mtl = LoadMaterial(remotepath .. "Materials/Ground/rocks_ground_02.json")
 model:SetMaterial(mtl)
 
 --Main loop
