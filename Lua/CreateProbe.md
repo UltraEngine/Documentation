@@ -4,9 +4,11 @@ This function creates a new environment probe.
 
 ## Syntax
 
-`CreateProbe(world: World): Probe`
+- [Probe](Probe.md) **CreateProbe**([World](World.md) world)
 
-- `world` (required): A shared pointer to the World instance.
+| Paraemter | Description |
+|---|---|
+| world | world to create the entity in |
 
 ## Returns
 
