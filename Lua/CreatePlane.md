@@ -1,10 +1,10 @@
-### createPlane
+# CreatePlane
 
 This function creates a new model consisting of a single rectangle.
 
-#### Syntax
+## Syntax
 
-`function createPlane(world: Model, width: number, height: number, xsegs: number, ysegs: number, type: number): Model`
+- [Model](Model.md) **CreatePlane**([World](World.md) world, number width = 1, number height = 1, number xsegs= 1, number ysegs = 1, number type = MESH_TRIANGLES)
 
 | Parameter | Description |
 |---|---|
@@ -13,6 +13,6 @@ This function creates a new model consisting of a single rectangle.
 | xsegs, ysegs | mesh subdivision |
 | type | can be MESH_TRIANGLES or MESH_QUADS |
 
-#### Returns
+## Returns
 
 Returns a new model.
