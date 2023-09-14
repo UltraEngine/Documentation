@@ -43,7 +43,7 @@ This example lets you paint a material onto the terrain.
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/CameraControls.hpp"
+#include "Components/Player/CameraControls.hpp"
 
 using namespace UltraEngine;
 
@@ -85,7 +85,7 @@ int main(int argc, const char* argv[])
     auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
-    terrain->SetMaterial(ground);
+    terrain->AddLayer(ground);
 
     //Create paint material
     auto rocks = CreateMaterial();
@@ -95,6 +95,7 @@ int main(int argc, const char* argv[])
     rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
+    terrain->AddLayer(rocks);
 
     //Camera controls
     camera->AddComponent<CameraControls>();
@@ -120,9 +121,9 @@ int main(int argc, const char* argv[])
                         {
                             float strength = 1.0f - Vec3(x, y, 0).DistanceToPoint(Vec3(pos.x, pos.y, 0)) / float(radius);
                             if (strength <= 0.0f) continue;
-                            float wt = terrain->GetMaterialWeight(x, y, rocks);
+                            float wt = terrain->GetLayerWeight(1, x, y);
                             wt += 0.1f;
-                            terrain->SetMaterial(x, y, rocks, wt);
+                            terrain->SetLayerWeight(1, x, y, wt);
                         }
                     }
                 }
