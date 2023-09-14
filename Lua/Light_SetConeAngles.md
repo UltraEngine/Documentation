@@ -4,10 +4,12 @@ This method sets a spotlight's inner and outer cone angles.
 
 ## Syntax
 
-- **light:SetConeAngles**(outerconeangle, innerconeangle)
+- void **SetConeAngles**(number outerconeangle, number innerconeangle)
 
-  - `outerconeangle` - outer cone angle where light ends.
-  - `innerconeangle` - inner cone angle where light reaches the maximum brightness.
+| Parameter | Description |
+|---|---|
+| outerconeangle | outer cone angle where light ends |
+| innerconeangle | inner cone angle where light reaches the maximum brightness |
 
 ## Example
 
