@@ -6,9 +6,9 @@
 		"metallic": 0,
 		"roughness": 1,
 		"tessellation": true,
-		"texture0": "rocks_ground_02_col_4k.dds",
-		"texture1": "rocks_ground_02_nor_gl_4k.dds",
-		"texture2": "rocks_ground_02_rough_4k.dds",
-		"texture3": "rocks_ground_02_height_4k.dds"
+		"texture0": "./rocks_ground_02_col_4k.dds",
+		"texture1": "./rocks_ground_02_nor_gl_4k.dds",
+		"texture2": "./rocks_ground_02_rough_4k.dds",
+		"texture3": "./rocks_ground_02_height_4k.dds"
 	}
 }
