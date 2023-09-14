@@ -22,59 +22,62 @@ This example lets you cut holes in the terrain.
 local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets"
 
 --Get the display list
-local displays = ultraengine.GetDisplays()
+local displays = GetDisplays()
 
 --Create a window
-local window = ultraengine.CreateWindow("Terrain Cut", 0, 0, 1280, 720, displays[1], ultraengine.WINDOW_CENTER + ultraengine.WINDOW_TITLEBAR)
+local window = CreateWindow("Terrain Cut", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR)
 
 --Create a world
-local world = ultraengine.CreateWorld()
+local world = CreateWorld()
 
 --Create a framebuffer
-local framebuffer = ultraengine.CreateFramebuffer(window)
+local framebuffer = CreateFramebuffer(window)
 
 --Create a camera
-local camera = ultraengine.CreateCamera(world)
+local camera = CreateCamera(world)
 camera:SetFov(70)
 camera:SetPosition(0, 100, -100)
 camera:SetRotation(45, 0, 0)
 camera:SetClearColor(0.125)
 
 --Sunlight
-local light = ultraengine.CreateDirectionalLight(world)
+local light = CreateDirectionalLight(world)
 light:SetRotation(45, 35, 0)
 light:SetColor(2)
 
 --Create terrain
-local terrain = ultraengine.CreateTerrain(world, 512)
+local terrain = CreateTerrain(world, 512)
 terrain:LoadHeightmap(remotepath .. "/Terrain/512.r16")
 terrain:SetScale(1, 100, 1)
 
 --Create base material
-local ground = ultraengine.CreateMaterial()
-local diffusemap = ultraengine.LoadTexture(remotepath .. "/Materials/Ground/river_small_rocks_diff_4k.dds")
-local normalmap = ultraengine.LoadTexture(remotepath .. "/Materials/Ground/river_small_rocks_nor_gl_4k.dds")
-ground:SetTexture(diffusemap, ultraengine.TEXTURE_DIFFUSE)
-ground:SetTexture(normalmap, ultraengine.TEXTURE_NORMAL)
-terrain:SetMaterial(ground)
+local ground = CreateMaterial()
+local diffusemap = LoadTexture(remotepath .. "/Materials/Ground/river_small_rocks_diff_4k.dds")
+local normalmap = LoadTexture(remotepath .. "/Materials/Ground/river_small_rocks_nor_gl_4k.dds")
+ground:SetTexture(diffusemap, TEXTURE_DIFFUSE)
+ground:SetTexture(normalmap, TEXTURE_NORMAL)
+terrain:AddLayer(ground)
+terrain:Fill(1)
+terrain:SetLayerScale(1,4)
 
 --Camera controls
-camera:AddComponent(ultraengine.CameraControls)
+require "Components/Player/CameraControls"
+camera:AddComponent(CameraControls)
 
 --Main loop
-while not window:Closed() and not window:KeyDown(ultraengine.KEY_ESCAPE) do
-    if window:MouseDown(ultraengine.MOUSE_LEFT) then
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+    if window:MouseDown(MOUSE_LEFT) then
         local mousepos = window:GetMousePosition()
         local pickinfo = camera:Pick(framebuffer, mousepos.x, mousepos.y)
         if pickinfo.success then
             if pickinfo.entity == terrain then
-                local pos = ultraengine.iVec2()
-                pos.x = ultraengine.Round(pickinfo.position.x) + terrain.resolution.x / 2
-                pos.y = ultraengine.Round(pickinfo.position.z) + terrain.resolution.y / 2
+                local pos = iVec2(0)
+                pos.x = Round(pickinfo.position.x) + terrain.resolution.x / 2
+                pos.y = Round(pickinfo.position.z) + terrain.resolution.y / 2
                 local radius = 10
                 for x = pos.x - radius, pos.x + radius do
                     for y = pos.y - radius, pos.y + radius do
-                        terrain:SetTileHidden(x, y, not window:KeyDown(ultraengine.KEY_CONTROL))
+                        terrain:SetTileHidden(x, y, not window:KeyDown(KEY_CONTROL))
                     end
                 end
             end
