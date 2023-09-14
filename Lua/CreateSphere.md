@@ -4,16 +4,14 @@ This function creates a new sphere model with a physics collider.
 
 ## Syntax
 
-`function CreateSphere(world: World, radius: float = 0.5, sides: int = 16) => Model`
+- [Model](Model.md) **CreateSphere**([World](World.md) world, number radius = 0.5, number sides = 16)
 
-## Parameters
+| Parameter | Description |
+|--|--|
+| world | world to create the mdoel in |
+| radius | cylinder radius |
+| sides | number of sides |
 
-| Name   | Description                |
-| ------ | -------------------------- |
-| world  | world to create the model in |
-| radius | sphere radius              |
-| sides  | number of sides            |
+## Returns 
 
-## Returns
-
-A new model.
+Returns a new model.
