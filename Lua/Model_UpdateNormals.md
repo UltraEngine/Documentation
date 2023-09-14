@@ -1,4 +1,4 @@
-# Model:updateNormals
+# Model:UpdateNormals
 
 This method calculates new normals for every mesh in every level of detail in the model.
 
