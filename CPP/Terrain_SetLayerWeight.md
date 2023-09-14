@@ -1,15 +1,15 @@
-# Terrain::SetMaterial
+# Terrain::SetLayerWeight
 
 This method sets the terrain material at any point on the heightmap. 
 
 ## Syntax
-- bool **SetMaterial**(shared_ptr<[Material](Material.md)\> material, const bool recursive = false)
-- bool **SetMaterial**(const [iVec2](iVec2.md) coord, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f, const bool normalize = true)
-- bool **SetMaterial**(const int x, const int y, shared_ptr<[Material](Material.md)\> material, const float weight = 1.0f, const bool normalize = true)
+
+- bool **SetMaterial**(const int layer, const int x, const int y, const float weight = 1.0f, const bool normalize = true)
+- bool **SetMaterial**(const int layer, const [iVec2](iVec2.md) coord, const float weight = 1.0f, const bool normalize = true)
 
 | Parameter | Description |
 |---|---|
-| material | material to apply |
+| layer | index of layer to use |
 | recursive | if set to true, the material will be applied to all children in the entity's subhierarchy |
 | coord, (x, y) | terrain point to modify |
 | weight | influence the material has at this point |
