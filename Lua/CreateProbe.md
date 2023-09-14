@@ -16,7 +16,7 @@ Returns a new probe entity.
 
 ## Example
 
-<img src="https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/probe.jpg">
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/probe.jpg)
 
 ```lua
 local remotePath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets"
