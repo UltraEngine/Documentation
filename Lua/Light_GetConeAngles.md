@@ -4,7 +4,7 @@ This function gets the cone angles of a spot light.
 
 ## Syntax
 
-- `Vec2` **Light:GetConeAngles**()
+- [Vec2](Vec2.md) **Light:GetConeAngles**()
 
 ## Returns
 
