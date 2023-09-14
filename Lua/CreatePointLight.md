@@ -4,12 +4,12 @@ This function creates a new point light.
 
 ## Syntax
 
-```lua
-function CreatePointLight(world, range)
-```
+- [PointLight](PointLight.md) **CreatePointLight**([World](World.md) world, const float range = 5.0f)
 
-- `world` - world to create the light in
-- `range` - light range (default value is `5.0`)
+| Parameter | Description |
+|---|---|
+| world | world to create the entity in |
+| range | light range |
 
 ## Returns
 
