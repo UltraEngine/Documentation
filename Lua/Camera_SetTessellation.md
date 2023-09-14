@@ -10,7 +10,13 @@ This method sets the desired polygon edge size for tessellated materials.
 | --- | --- |
 | polygonsize | desired size in pixels of tessellated polygons |
 
+## Remarks
+
+A polygonsize value of 4 is suitable for high quality tessellation. If it is zero then tessellation will be disabled.
+
 ## Example
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/tessellation.jpg)
 
 ```lua
 --Get the primary display
