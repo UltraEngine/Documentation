@@ -25,7 +25,7 @@ local world = CreateWorld()
 
 -- Create a camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:SetClearColor(0.125)
 camera:SetRotation(45, 0, 0)
 camera:Move(0, 0, -500)
@@ -36,7 +36,7 @@ light:SetRotation(45, 45, 0)
 
 -- Create terrain
 local terrain = CreateTerrain(world, 1024)
-terrain:LoadHeightmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Terrain/1024.r16")
+terrain:LoadHeightmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Terrain/1024.r16")
 terrain:SetScale(1, 300, 1)
 terrain:SetPosition(0, -100, 0)
 
@@ -45,6 +45,4 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Update()
     world:Render(framebuffer)
 end
-
-return 0
 ```
