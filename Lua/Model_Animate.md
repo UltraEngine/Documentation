@@ -8,12 +8,12 @@ This method causes an animation sequence to play.
 
 | Parameter | Description |
 | ---- | ----------- |
-| sequence | animation sequence index or name. Sequence names are not case-sensitive. |
-| speed | animation speed. Default value is 1.0. |
-| blendtime | animation transition time, in milliseconds. Default value is 250. |
-| mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP. Default value is ANIMATION_LOOP. |
-| frame | starting animation frame to use. Default value is 0. |
-| track | animation track, for playing multiple animations at once. Default value is 0. |
+| sequence | animation sequence index or name. Sequence names are not case-sensitive |
+| speed | animation speed. Default value is 1.0 |
+| blendtime | animation transition time, in milliseconds. Default value is 250 |
+| mode | animation playback mode. This can be ANIMATION_LOOP, ANIMATION_ONCE, or ANIMATION_STOP |
+| frame | starting animation frame to use. Default value is 0 |
+| track | animation track, for playing multiple animations at once. Default value is 0 |
 
 ## Example
 
