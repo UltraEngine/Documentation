@@ -4,13 +4,11 @@ This function creates a new box light.
 
 ## Syntax
 
-```lua
-function CreateBoxLight(world: World): Light
-```
+[Light](Light.md) **CreateBoxLight**([World](World.md) world)
 
-## Parameters
-
-- `world` (type: `World`): The world to create the light in.
+| Parameter | Description |
+|---|---|
+| world | the world to create the entity in |
 
 ## Returns
 
