@@ -47,7 +47,7 @@ light:SetRotation(25, 315, 0)
 
 -- Create camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:SetPosition(8, 2.5, 0)
 camera:SetClearColor(0.125)
 
@@ -90,8 +90,8 @@ probe:SetFadeDistance(0, CUBEMAP_POSITIVE_Z)
 probe:SetFadeDistance(0, CUBEMAP_NEGATIVE_Z)
 
 -- Camera controls
-local actor = CreateActor(camera)
-actor:Component<CameraControls>()
+require "Components/Player/CameraControls"
+camera:AddComponent(CameraControls)
 
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
@@ -99,5 +99,3 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     world:Render(framebuffer, true)
 end
 ```
-
-Note: The markdown links to `Probe.md` and `World.md` have been retained, assuming they contain the documentation for Probe and World respectively.
