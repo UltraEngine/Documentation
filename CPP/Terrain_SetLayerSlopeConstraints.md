@@ -1,4 +1,4 @@
-# Terrain:SetLayerSlopeConstraints
+# Terrain::SetLayerSlopeConstraints
 
 This method sets the terrain layer height constraints.
 
