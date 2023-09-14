@@ -5,7 +5,7 @@ This method gets all the layers in use on the terrain at the specified coordinat
 ## Syntax
 
 - number **GetLayerWeight**(number x, number y)
-- number **GetLayerWeight**([iVec2](iVec2.md))
+- number **GetLayerWeight**([iVec2](iVec2.md) coord)
 
 | Parameter | Description |
 |---|---|
