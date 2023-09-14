@@ -601,8 +601,8 @@
 									"filename": "Terrain_GetHeight"
 								},
 								{
-									"title": "GetMaterials",
-									"filename": "Terrain_GetMaterials"
+									"title": "GetLayers",
+									"filename": "Terrain_GetLayers"
 								},
 								{
 									"title": "GetMaterialWeight",
