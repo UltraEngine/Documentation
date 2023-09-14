@@ -45,7 +45,7 @@ camera:SetTessellation(8) --Tessellated primitives are n pixels wide (zero or le
 
 --Create a light
 local light = CreateBoxLight(world)
-light:SetRotation(35,-55,0)
+light:SetRotation(35,-25,0)
 light:SetColor(2,2,2)
 
 --Display material
