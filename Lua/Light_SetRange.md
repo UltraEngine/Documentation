@@ -1,4 +1,4 @@
-# light.SetRange
+# Light:SetRange
 
 This method sets the distance to which the light illuminates.
 
