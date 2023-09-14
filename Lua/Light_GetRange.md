@@ -4,9 +4,7 @@ This function gets the light range.
 
 ## Syntax
 
-```lua
-function Light:GetRange()
-```
+- [Vec2](Vec2.md) **GetRange**()
 
 ## Returns
 
