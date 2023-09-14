@@ -26,8 +26,10 @@ Returns a new sprite object.
 ## Example
 
 ```lua
+local displays = GetDisplays()
+
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -43,7 +45,7 @@ camera:SetPosition(framebuffer.size.x * 0.5, framebuffer.size.y * 0.5, 0.0)
 -- Create sprite
 local sprite = CreateSprite(world, 100, 100)
 sprite:SetColor(0, 0, 1)
-sprite:SetPosition(10, 10)
+sprite:SetPosition(10, 10, 0)
 
 -- Main loop
 while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
