@@ -4,7 +4,7 @@ This method sets the probe volume edge fade. This can be used to make specified 
 
 ## Syntax
 
-- **SetFadeDistance**(number distance, numbere face)
+- **SetFadeDistance**(number distance, number face)
 
 | Parameter | Description |
 |---|---|
