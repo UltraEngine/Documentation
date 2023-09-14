@@ -30,9 +30,8 @@ local world = CreateWorld()
 
 local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/"
 
-local skybox = LoadTexture(remotepath .. "Materials/Environment/Storm/specular.dds")
-world:SetEnvironmentMap(skybox, ENVIRONMENTMAP_BACKGROUND)
-world:SetEnvironmentMap(skybox, ENVIRONMENTMAP_SPECULAR)
+local specmap = LoadTexture(remotepath .. "Materials/Environment/Storm/specular.dds")
+world:SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR)
 local diffusemap = LoadTexture(remotepath .. "Materials/Environment/Storm/diffuse.dds")
 world:SetEnvironmentMap(diffusemap, ENVIRONMENTMAP_DIFFUSE)
 world:SetAmbientLight(0)
@@ -40,7 +39,7 @@ world:SetAmbientLight(0)
 --Create a camera
 local camera = CreateCamera(world)
 camera:Move(0,0,-0.75)
-camera:SetClearColor(0.25)
+camera:SetClearColor(0.125)
 camera:SetTessellation(8) --Tessellated primitives are n pixels wide (zero or less disables tessellation)
 
 --Create a light
