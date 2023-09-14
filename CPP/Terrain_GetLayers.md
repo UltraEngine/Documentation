@@ -5,10 +5,11 @@ This method gets all the layers in use on the terrain at the specified coordinat
 ## Syntax
 
 std::vector<int\> **GetLayers**(const int x, const int y)
+std::vector<int\> **GetLayers**(const [iVec2](iVec2.md) coord)
 
 | Parameter | Description |
 |---|---|
-| x, y | terrain coordinate |
+| coord, (x, y) | terrain coordinate |
 
 ## Returns
 
