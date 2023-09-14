@@ -23,7 +23,7 @@ local model = CreateBox(nil)
 
 -- Save to file
 if model:Save("box.obj") then
-  -- Show file
-  OpenDir("box.obj")
+    -- Show file
+    OpenDir("box.obj")
 end
 ```
