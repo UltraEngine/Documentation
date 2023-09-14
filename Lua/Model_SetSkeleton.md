@@ -21,7 +21,7 @@ This method can be used to efficiently animate large crowds of characters. For e
 local displays = GetDisplays()
 
 --Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -32,7 +32,7 @@ local world = CreateWorld()
 --Create camera
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:SetRotation(0, 165, 0)
 camera:Turn(15, 0, 0)
 camera:Move(0, 1, -8)
@@ -52,7 +52,7 @@ model:SetPosition(-1.5, 0, 0)
 model:Animate(1)
 
 --Create an instance of the model
-local model2 = model:Instantiate(world):AsModel() -- copy and cast to the Model class
+local model2 = Model(model:Instantiate(world)) -- copy and cast to the Model class
 model2:SetPosition(1.5, 0, 0)
 
 --Two foxes one skeleton
@@ -64,5 +64,3 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Render(framebuffer)
 end
 ```
-
-Note: In Lua, there is no need to import any libraries or retain any `#include` statements as the required libraries are already imported. Also, Lua does not have the concept of `shared_ptr` like in C++, so it is omitted in the documentation.
