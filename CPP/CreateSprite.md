@@ -51,7 +51,7 @@ int main(int argc, const char* argv[])
     //Create sprite
     auto sprite = CreateSprite(world, 100, 100);
     sprite->SetColor(0, 0, 1);
-    sprite->SetPosition(10, 10);
+    sprite->SetPosition(10, 10, 0);
 
     //Main loop
     while (window->Closed() == false and window->KeyHit(KEY_ESCAPE) == false)
