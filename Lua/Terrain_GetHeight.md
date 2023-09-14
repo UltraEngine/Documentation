@@ -1,4 +1,4 @@
-# Terrain::GetHeight
+# Terrain:GetHeight
 
 This method gets the height value at the specified coordinate.
 
