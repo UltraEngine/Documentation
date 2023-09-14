@@ -4,7 +4,7 @@ This method sets the layer texture mapping mode.
 
 ## Syntax
 
-- **SetLayerTextureMappingMode**(number layer, number mode)
+- void **SetLayerTextureMappingMode**(const int layer, const TerrainMappingMode mode)
 
 | Parameter | Description |
 |---|---|
