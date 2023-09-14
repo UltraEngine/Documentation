@@ -1,28 +1,18 @@
-# Model:AddMesh
+# Model::AddMesh
 
 This method creates or inserts an existing mesh on the model.
 
 ## Syntax
 
-#### model:AddMesh(type, lod)
-#### model:AddMesh(mesh, lod)
+- [Mesh](Mesh.md) **AddMesh**(number type = MESH_TRIANGLES, number = 0)
+- [Mesh](Mesh.md) **AddMesh**([Mesh](Mesh.md) mesh, number lod = 0)
 
-### Parameters
-- **type** *(optional)*: primitive type, can be MESH_POINTS, MESH_LINES, MESH_TRIANGLES, or MESH_QUADS.
-- **mesh** *(optional)*: adds an existing mesh to the model.
-- **lod**: mesh detail level.
+| Parameter | Description |
+|---|---|
+| type | primitive type, can be MESH_POINTS, MESH_LINES, MESH_TRIANGLES, or MESH_QUADS |
+| mesh | adds an existing mesh to the model |
+| lod | mesh detail level |
 
-### Returns
-Returns the added mesh (shared_ptr<Mesh>).
+## Returns
 
-## Example
-```lua
-local model = Model()
-
--- Create a new mesh and add it to the model
-local newMesh = model:AddMesh(MESH_TRIANGLES, 0)
-
--- Add an existing mesh to the model
-local existingMesh = Mesh()
-local addedMesh = model:AddMesh(existingMesh, 1)
-```
+Returns the added mesh.
