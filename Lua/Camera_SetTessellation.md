@@ -4,7 +4,7 @@ This method sets the desired polygon edge size for tessellated materials.
 
 ## Syntax
 
-- SetTessellation(number polygonsize)
+- **SetTessellation**(number polygonsize)
 
 | Parameter | Description |
 | --- | --- |
