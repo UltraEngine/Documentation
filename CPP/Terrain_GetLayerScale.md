@@ -4,7 +4,7 @@ This method retrieves the texture mapping scale of the specified layer.
 
 ## Syntax
 
-float - **GetLayerScale**(const int layer)
+- float **GetLayerScale**(const int layer)
 
 | Parameter | Description |
 |---|---|
