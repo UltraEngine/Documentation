@@ -46,6 +46,10 @@ local ground = CreateBox(world, 20, 1, 20)
 ground:SetPosition(0, -0.5, 0)
 ground:SetColor(0, 1, 0)
 
+--Create a model
+local model = CreateBox(world)
+model:SetPosition(0,0.5,0)
+
 -- Main loop
 while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
     world:Update()
