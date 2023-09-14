@@ -1,4 +1,4 @@
-# Terrain:GetLayerWeight
+# Terrain::GetLayerWeight
 
 This method gets all the layers in use on the terrain at the specified coordinate.
 
