@@ -40,6 +40,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [GetDistance](Entity_GetDistance.md) | Method | calculates distance to another entity |
 | [GetHidden](Entity_GetHidden.md) | Method | returns the entity hide state |
 | [GetMass](Entity_GetMass.md) | Method | returns the entity mass |
+| [GetMatrix](Entity_GetMatrix.md) | Method | returns the entity 4x4 matrix |
 | [GetParent](Entity_GetParent.md) | Method | returns the parent entity |
 | [GetPhysicsMode](Entity_GetPhysicsMode.md) | Method | gets the entity physics behavior |
 | [GetPickMode](Entity_GetPickMode.md) | Method | returns the entity pick mode |
@@ -68,6 +69,7 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [SetInput](Entity_SetInput.md) | Method | handles controls for player movement |
 | [SetMass](Entity_SetMass.md) | Method | sets the entity physical mass |
 | [SetMaterial](Entity_SetMaterial.md) | Method | applies a material to the entity |
+| [SetMatrix](Entity_SetMatrix.md) | Method | sets the entity 4x4 matrix |
 | [SetParent](Entity_SetParent.md) | Method | parents one entity to another |
 | [SetPhysicsMode](Entity_SetPhysicsMode.md) | Method | sets the entity physics behavior |
 | [SetPosition](Entity_SetPosition.md) | Method | sets the entity position in local or global space |
