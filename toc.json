@@ -588,9 +588,18 @@
 						{
 							"title": "Terrain",
 							"filename": "Terrain",
-							"topics": [{
+							"topics": [
+								{
+									"title": "AddLayer",
+									"filename": "Terrain_AddLayer"
+								},
+								{
 									"title": "CreateTerrain",
 									"filename": "CreateTerrain"
+								},
+								{
+									"title": "Fill",
+									"filename": "Terrain_Fill"
 								},
 								{
 									"title": "GetElevation",
@@ -601,8 +610,24 @@
 									"filename": "Terrain_GetHeight"
 								},
 								{
+									"title": "SetLayerHeightConstraints",
+									"filename": "Terrain_SetLayerHeightConstraints"
+								},
+								{
+									"title": "GetLayerMapping",
+									"filename": "Terrain_GetLayerMapping"
+								},
+								{
+									"title": "GetLayerSlopeConstraints",
+									"filename": "Terrain_GetLayerSlopeConstraints"
+								},
+								{
 									"title": "GetLayers",
 									"filename": "Terrain_GetLayers"
+								},
+								{
+									"title": "GetLayerScale",
+									"filename": "Terrain_GetLayerScale"
 								},
 								{
 									"title": "GetLayerWeight",
@@ -631,6 +656,26 @@
 								{
 									"title": "SetHeight",
 									"filename": "Terrain_SetHeight"
+								},
+								{
+									"title": "SetLayerHeightConstraints",
+									"filename": "Terrain_SetLayerHeightConstraints"
+								},
+								{
+									"title": "SetLayerMapping",
+									"filename": "Terrain_SetLayerMapping"
+								},
+								{
+									"title": "SetLayerSlopeConstraints",
+									"filename": "Terrain_SetLayerSlopeConstraints"
+								},
+								{
+									"title": "SetLayerScale",
+									"filename": "Terrain_SetLayerScale"
+								},
+								{
+									"title": "SetLayerWeight",
+									"filename": "Terrain_SetLayerWeight"
 								},
 								{
 									"title": "SetTileHidden",
