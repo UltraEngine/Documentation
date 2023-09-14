@@ -4,8 +4,8 @@ This method sets a terrain point's height. The height value will be clamped betw
 
 ## Syntax
 
-- void **SetHeight**(const [iVec2](iVec2.md)& coord, const float height)
 - void **SetHeight**(const int x, const int y, const float height)
+- void **SetHeight**(const [iVec2](iVec2.md)& coord, const float height)
 
 | Parameter | Description |
 |---|---|
