@@ -6,6 +6,13 @@ This function loads a texture, creates a sprite with the dimensions of the textu
 
 - shared_ptr<[Sprite](Sprite.md)\> **LoadSprite**(const [WString](WString.md)& path, const [LoadFlags](Constants.md#LoadFlags) flags = LOAD_DEFAULT)
 
+| Parameter | Description |
+|---|---|
+| world | |
+| path | | 
+| stream | |
+| flags | |
+
 ## Returns
 
 If the texture is successfully loaded a new sprite is returned, otherwise NULL is returned.
