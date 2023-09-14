@@ -84,7 +84,9 @@ int main(int argc, const char* argv[])
     auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
     ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
-    terrain->AddLayer(ground);
+    int baselayer = terrain->AddLayer(ground);
+    terrain->Fill(baselayer);
+    terrain->SetLayerScale(baselayer, 4);
 
     //Create paint material
     auto rocks = CreateMaterial();
@@ -94,7 +96,8 @@ int main(int argc, const char* argv[])
     rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
-    terrain->AddLayer(rocks);
+    int paintlayer = terrain->AddLayer(rocks);
+    terrain->SetLayerScale(paintlayer, 8);
 
     //Camera controls
     camera->AddComponent<CameraControls>();
@@ -113,16 +116,16 @@ int main(int argc, const char* argv[])
                     iVec2 pos;
                     pos.x = Round(pickinfo.position.x) + terrain->resolution.x / 2;
                     pos.y = Round(pickinfo.position.z) + terrain->resolution.y / 2;
-                    int radius = 20;
+                    int radius = 10;
                     for (int x = pos.x - radius; x < pos.x + radius; ++x)
                     {
                         for (int y = pos.y - radius; y < pos.y + radius; ++y)
                         {
                             float strength = 1.0f - Vec3(x, y, 0).DistanceToPoint(Vec3(pos.x, pos.y, 0)) / float(radius);
                             if (strength <= 0.0f) continue;
-                            float wt = terrain->GetLayerWeight(1, x, y);
+                            float wt = terrain->GetLayerWeight(paintlayer, x, y);
                             wt += 0.1f;
-                            terrain->SetLayerWeight(1, x, y, wt);
+                            terrain->SetLayerWeight(paintlayer, x, y, wt);
                         }
                     }
                 }
