@@ -1,4 +1,4 @@
-# Terrain::Fill
+# Terrain:Fill
 
 This method fills a terrain with the material used by the specified layer.
 
