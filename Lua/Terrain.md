@@ -25,7 +25,7 @@ Ultra Engine supports a powerful heightmap terrain system for rendering large la
 | [SetLayerHeightConstraints](Terrain_SetLayerHeightConstraints.md) | Method | sets the terrain layer height constraints |
 | [SetLayerMapping](Terrain_SetLayerMapping.md) | Method | sets the terrain layer texture mapping mode |
 | [SetLayerScale](Terrain_SetLayerScale.md) | Method | sets the terrain layer texture mapping scale |
-| [SetLayerSlopeConstraints](Terrain_SetLayerSlopeConstraints.md) | Method | |
+| [SetLayerSlopeConstraints](Terrain_SetLayerSlopeConstraints.md) | Method | sets the layer slope constraints |
 | [SetLayerWeight](Terrain_SetLayerWeight.md) | Method | sets the layer to be used at the specified point |
 | [SetTileHidden](Terrain_SetTileHidden.md) | Method | hides or shows a single terrain tile |
 | [CreateTerrain](CreateTerrain.md) | Function | creates a new terrain entity |
