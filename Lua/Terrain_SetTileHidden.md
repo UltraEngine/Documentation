@@ -4,8 +4,8 @@ This method is used to show or hide a single terrain tile.
 
 ## Syntax
 
-- **Terrain:SetTileHidden**(x: number, y: number, hidden: boolean)
-- **Terrain:SetTileHidden**(coord: [iVec2](iVec2.md), hidden: boolean)
+- **SetTileHidden**(number x, number y, boolean hidden)
+- **SetTileHidden**([iVec2](iVec2.md) coord, boolean hidden)
 
 | Parameter | Description |
 | --- | --- |
