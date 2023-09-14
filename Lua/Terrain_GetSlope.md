@@ -1,15 +1,13 @@
-# Terrain:GetSlope
+# Terrain::GetSlope
 
 This method gets the terrain slope at the specified coordinate or 3D position.
 
 ## Syntax
 
-```lua
-function Terrain:GetSlope(tx: integer, ty: integer): number
-function Terrain:GetSlope(coord: iVec2): number
-function Terrain:GetSlope(coord: xVec3): number
-function Terrain:GetSlope(x: number, y: number, z: number): number
-```
+- float **GetSlope**(const int tx, const int ty)
+- float **GetSlope**(const [iVec2](iVec2.md)& coord)
+- float **GetSlope**(const [xVec3](xVec3.md)& coord)
+- float **GetSlope**(const dFloat x, const dFloat y, const dFloat z)
 
 | Parameter | Description |
 |---|---|
