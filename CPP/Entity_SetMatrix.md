@@ -4,7 +4,7 @@ This method sets the entity 4x4 matrix, which describes its position, rotation, 
 
 ## Syntax
 
-- void **SetMatrix**(const [Mat4](Mat4.md) matrix, const bool global = true)
+- void **SetMatrix**(const [Mat4](Mat4.md)& matrix, const bool global = true)
 
   | Parameter | Description |
   |---|---|
