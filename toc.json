@@ -662,8 +662,8 @@
 									"filename": "Terrain_SetLayerHeightConstraints"
 								},
 								{
-									"title": "SetLayerMapping",
-									"filename": "Terrain_SetLayerMapping"
+									"title": "SetLayerTextureMappingMode",
+									"filename": "Terrain_SetLayerTextureMappingMode"
 								},
 								{
 									"title": "SetLayerSlopeConstraints",
