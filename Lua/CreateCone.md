@@ -4,15 +4,11 @@ This function creates a new cone model with a physics collider.
 
 ## Syntax
 
-```lua
-function CreateCone(world, radius, height, sides, heightsegs, capsegs)
-```
-
-## Parameters
+- [Model](Model.md) **CreateCone**([World](World.md) world, number radius = 0.5, number height = 1.0, number sides = 16, number heightsegs = 1, number capsegs = 1)
 
 | Parameter | Description |
-| -- | -- |
-| world | world to create the model in |
+|--|--|
+| world | world to create the mdoel in |
 | radius | cone radius |
 | height | cone height |
 | sides | number of sides |
