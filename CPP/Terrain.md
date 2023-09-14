@@ -14,6 +14,9 @@ Ultra Engine supports a powerful heightmap terrain system for rendering large la
 | [GetHeight](Terrain_GetHeight.md) | Method | returns the heightmap height at the specified point |
 | [GetLayers](Terrain_GetLayers.md) | Method | returns the layers in use at the specified point |
 | [GetLayerWeight](Terrain_GetLayerWeight.md) | Method | returns the weight of the layer at the specified point |
+| [GetLayerHeightConstraints](Terrain_GetLayerHeightConstraints.md) | Method | returns the layer height contraints |
+| [GetLayerMapping](Terrain_GetLayerMapping.md) | Method | returns the layer texture mapping mode |
+| [GetLayerSlopeConstraints](Terrain_GetLayerSlopeConstraints.md) | Method | returns the layer slope constraints |
 | [GetNormal](Terrain_GetNormal.md) | Method | returns the normal of the terrain at the specified position |
 | [GetSlope](Terrain_GetSlope.md) | Method | returns the slope of the terrain at the specified position |
 | [GetTileHidden](Terrain_GetTileHidden.md) | Method | gets the visibility of a single terrain tile |
