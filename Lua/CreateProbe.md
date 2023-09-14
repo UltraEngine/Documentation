@@ -82,12 +82,12 @@ drag:SetMaterial(mtl, true)
 local probe = CreateProbe(world)
 probe:SetScale(9.5, 5, 9.5)
 probe:SetPosition(0, 2.5, 0)
-probe:SetFadeDistance(1, CUBEMAP_POSITIVE_X)
-probe:SetFadeDistance(0, CUBEMAP_NEGATIVE_X)
-probe:SetFadeDistance(0, CUBEMAP_POSITIVE_Y)
-probe:SetFadeDistance(0, CUBEMAP_NEGATIVE_Y)
-probe:SetFadeDistance(0, CUBEMAP_POSITIVE_Z)
-probe:SetFadeDistance(0, CUBEMAP_NEGATIVE_Z)
+probe:SetFadeDistance(1, CUBEMAP_POSITIVEX)
+probe:SetFadeDistance(0, CUBEMAP_NEGATIVEX)
+probe:SetFadeDistance(0, CUBEMAP_POSITIVEY)
+probe:SetFadeDistance(0, CUBEMAP_NEGATIVEY)
+probe:SetFadeDistance(0, CUBEMAP_POSITIVEZ)
+probe:SetFadeDistance(0, CUBEMAP_NEGATIVEZ)
 
 -- Camera controls
 require "Components/Player/CameraControls"
@@ -96,6 +96,6 @@ camera:AddComponent(CameraControls)
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     world:Update()
-    world:Render(framebuffer, true)
+    world:Render(framebuffer)
 end
 ```
