@@ -1,4 +1,4 @@
-# Terrain::GetSlope
+# Terrain:GetSlope
 
 This method gets the terrain slope at the specified coordinate or 3D position.
 
