@@ -4,9 +4,7 @@ This function creates a new spot light.
 
 ## Syntax
 
-```lua
-function CreateSpotLight(world)
-```
+- [SpotLight](SpotLight.md) **CreateSpotLight**(world)
 
 ## Parameters
 
