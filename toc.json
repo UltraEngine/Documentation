@@ -145,8 +145,6 @@
 				{
 					"title": "Scripting Reference",
 					"filename": "EditorScripting",
-					"hideFromCS": true,
-					"hideFromCPP": true,
 					"topics": [
 						{
 							"title": "Events",
