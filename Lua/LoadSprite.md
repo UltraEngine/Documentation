@@ -4,13 +4,19 @@ This function loads a texture, creates a sprite with the dimensions of the textu
 
 ## Syntax
 
-```lua
-function LoadSprite(path: wstring, flags: loadFlags) -> sprite
-```
+- [Sprite](Sprite.md) **LoadSprite**([World](World.md) world, [WString](WString.md) path, number flags = LOAD_DEFAULT)
+- [Sprite](Sprite.md) **LoadSprite**([World](World.md) world, [Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
+
+| Parameter | Description |
+|---|---|
+| world | |
+| path | | 
+| stream | |
+| flags | |
 
 ## Returns
 
-If the texture is successfully loaded, a new sprite is returned. Otherwise, nil is returned.
+If the texture is successfully loaded a new sprite is returned, otherwise NULL is returned.
 
 ## Example
 
