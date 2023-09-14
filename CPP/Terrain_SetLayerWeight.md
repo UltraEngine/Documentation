@@ -12,7 +12,7 @@ This method sets the terrain material at any point on the heightmap.
 | layer | index of layer to use |
 | coord, (x, y) | terrain point to modify |
 | weight | influence the material has at this point |
-| normalize | if set to true, other materials at this point will be adjusted so the sum of all material weights is 1.0 |
+| normalize | if set to true, other layers in use at this point will be adjusted so the sum of all layer weights is 1.0 |
 
 ## Returns
 
