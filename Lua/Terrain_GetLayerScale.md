@@ -1,4 +1,4 @@
-# Terrain::GetLayerScale
+# Terrain:GetLayerScale
 
 This method retrieves the texture mapping scale of the specified layer.
 
