@@ -605,6 +605,10 @@
 									"filename": "Terrain_GetLayers"
 								},
 								{
+									"title": "GetLayerWeight",
+									"filename": "Terrain_GetLayerWeight"
+								},
+								{
 									"title": "GetMaterialWeight",
 									"filename": "Terrain_GetMaterialWeight"
 								},
