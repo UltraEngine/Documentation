@@ -1,13 +1,17 @@
-# Camera.SetTessellation #
+# Camera.SetTessellation
 
-## Syntax ##
+This method sets the desired polygon edge size for tessellated materials.
+
+## Syntax
+
 - SetTessellation(number polygonsize)
 
 | Parameter | Description |
 | --- | --- |
-| polygonsize | |
+| polygonsize | desired size in pixels of tessellated polygons |
 
-## Example ##
+## Example
+
 ```lua
 --Load plugin for texture loading
 local plugin = LoadPlugin("Plugins/Basis.*")
