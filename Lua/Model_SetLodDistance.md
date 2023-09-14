@@ -36,7 +36,7 @@ local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 0, -1)
 camera:SetWireframe(true)
-camera:SetFOV(70)
+camera:SetFov(70)
 
 --Create a light
 local light = CreateBoxLight(world)
@@ -68,8 +68,11 @@ model:SetLodDistance(1)
 
 local z = camera.position.z
 
+collectgarbage()
+
 --Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+    
     --Move the camera forward and backwards to change detail levels
     if window:KeyDown(KEY_UP) then
         z = z + 0.005
