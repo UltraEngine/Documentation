@@ -629,10 +629,6 @@
 									"filename": "Terrain_SetHeight"
 								},
 								{
-									"title": "SetMaterial",
-									"filename": "Terrain_SetMaterial"
-								},
-								{
 									"title": "SetTileHidden",
 									"filename": "Terrain_SetTileHidden"
 								}
