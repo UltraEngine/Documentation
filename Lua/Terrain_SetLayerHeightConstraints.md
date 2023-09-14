@@ -4,4 +4,4 @@ This method sets the terrain layer height constraints.
 
 ## Syntax
 
-- **SetLayerHeightConstraints**(const int layer, const float minheight, const float maxheight, const float transition)
+- **SetLayerHeightConstraints**(number layer, number minheight, number maxheight, number transition)
