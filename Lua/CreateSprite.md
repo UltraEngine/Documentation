@@ -4,22 +4,21 @@ This function creates a sprite that displays a rectangle or a string of text.
 
 ## Syntax
 
-`CreateSprite(world, width, height, wireframe = false)`
+- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const float width, const float height, const bool wireframe = false)
+- shared_ptr<[Sprite](Sprite.md)\> **CreateSprite**(shared_ptr<[World](World.md)\> world, const [WString](WString.md)& text, shared_ptr<[Font](Font.md)\> font, const int size, const TextAlignment = TEXT_LEFT | TEXT_TOP)
 
-`CreateSprite(world, text, font, size, textalignment = TEXT_LEFT | TEXT_TOP)`
+| Parameter | Description |
+| --- | --- |
+| world | canvas to add the sprite to |
+| width | width of the sprite, in pixels |
+| height | height of the sprite, in pixels |
+| wireframe | set to true for wireframe or false for solid |
+| text | text to display |
+| font | font to render text with |
+| size | font size |
+| textalignment | alignemtn flags, can be any combination of TEXT_LEFT, TEXT_CENTER, TEXT_RIGHT, TEXT_TOP, TEXT_MIDDLE, and TEXT_BOTTOM |
 
-### Parameters
-
-- `world` : shared_ptr<[World](World.md)\> - canvas to add the sprite to
-- `width` : float - width of the sprite, in pixels
-- `height` : float - height of the sprite, in pixels
-- `wireframe` : bool - set to true for wireframe or false for solid
-- `text` : [WString](WString.md) - text to display
-- `font` : shared_ptr<[Font](Font.md)\> - font to render text with
-- `size` : int - font size
-- `textalignment` : TextAlignment - alignment flags, can be any combination of TEXT_LEFT, TEXT_CENTER, TEXT_RIGHT, TEXT_TOP, TEXT_MIDDLE, and TEXT_BOTTOM
-
-### Returns
+## Returns
 
 Returns a new sprite object.
 
