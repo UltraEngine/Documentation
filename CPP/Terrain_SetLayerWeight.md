@@ -4,8 +4,8 @@ This method sets the terrain material at any point on the heightmap.
 
 ## Syntax
 
-- bool **SetMaterial**(const int layer, const int x, const int y, const float weight = 1.0f, const bool normalize = true)
-- bool **SetMaterial**(const int layer, const [iVec2](iVec2.md) coord, const float weight = 1.0f, const bool normalize = true)
+- void **SetLayerWeight**(const int layer, const int x, const int y, const float weight = 1.0f, const bool normalize = true)
+- void **SetLayerWeight**(const int layer, const [iVec2](iVec2.md) coord, const float weight = 1.0f, const bool normalize = true)
 
 | Parameter | Description |
 |---|---|
