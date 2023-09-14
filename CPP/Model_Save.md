@@ -4,7 +4,7 @@ This method saves the model to a file, in [glTF](https://www.khronos.org/gltf/) 
 
 ## Syntax
 
-- bool **Save**(const [WString](WString.md)& path, const SaveFlags = SAVE_DEFAULT)
+- bool **Save**(const [WString](WString.md)& path, const SaveFlags flags = SAVE_DEFAULT)
 
 | Parameter | Description |
 |---|---|
