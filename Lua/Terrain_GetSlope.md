@@ -29,7 +29,7 @@ This example applies a material to a terrain based on the slope at each point.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Terrain Paint", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR)
 
 -- Create a world
 local world = CreateWorld()
@@ -43,11 +43,11 @@ local camera = CreateCamera(world)
 camera:SetFov(70)
 camera:SetPosition(0, 50, 0)
 camera:SetRotation(45, 0, 0)
-camera:SetClearColor(0.125)
+camera:SetClearColor(Vec4(0.125))
 
--- Create a light
+-- Sunlight
 local light = CreateDirectionalLight(world)
-light:SetRotation(35, 45, 0)
+light:SetRotation(45, 35, 0)
 light:SetColor(2)
 
 -- Create terrain
@@ -61,7 +61,8 @@ local diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Do
 local normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds")
 ground:SetTexture(diffusemap, TEXTURE_DIFFUSE)
 ground:SetTexture(normalmap, TEXTURE_NORMAL)
-terrain:SetMaterial(ground)
+local groundlayer = terrain:AddLayer(ground)
+terrain:Fill(groundlayer)
 
 -- Create paint material
 local rocks = CreateMaterial()
@@ -72,24 +73,29 @@ rocks:SetTexture(diffusemap, TEXTURE_DIFFUSE)
 rocks:SetTexture(normalmap, TEXTURE_NORMAL)
 rocks:SetTexture(dispmap, TEXTURE_DISPLACEMENT)
 
+local rocklayer = terrain:AddLayer(rocks)
+
+terrain:SetLayerScale(groundlayer, 4)
+terrain:SetLayerScale(rocklayer, 8)
+
 -- Apply material based on terrain slope
 for x = 0, terrain.resolution.x - 1 do
     for y = 0, terrain.resolution.y - 1 do
         local slope = terrain:GetSlope(x, y)
         if slope > 15.0 then
             local wt = Min((slope - 15.0) / 10.0, 1.0)
-            terrain:SetMaterial(x, y, rocks, wt)
+            terrain:SetLayerWeight(rocklayer, x, y, wt)
         end
     end
 end
 
 -- Camera controls
-camera:CreateComponent(CameraControls)
+require "Components/Player/CameraControls"
+camera:AddComponent(CameraControls)
 
 -- Main loop
-while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     world:Update()
     world:Render(framebuffer)
 end
-return 0
 ```
