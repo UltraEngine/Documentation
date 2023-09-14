@@ -1,4 +1,4 @@
-# Camera.SetTessellation
+# Camera:SetTessellation
 
 This method sets the desired polygon edge size for tessellated materials.
 
