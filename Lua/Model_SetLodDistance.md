@@ -1,20 +1,20 @@
-# Model:SetLodDistance
+# Model::SetLodDistance
 
 This method sets the base Lod distance factor.
 
-`Model:SetLodDistance(basefactor)`
+- void **SetLodDistance**(number basefactor)
 
 | Parameter | Description |
 |---|---|
-| basefactor | Distance factor for Lod changes |
+| basefactor | distance factor for Lod changes |
 
 ## Remarks
 
 Each level of detail above zero will be shown when the distance from the center of the model's global bounding box to the camera exceeds the level's distance, as calculated by this equation:
 
-`distance = (2 ^ (level - 1)) * basefactor`
+distance = (2 ^ (level - 1)) * basefactor
 
-For example, if `basefactor` is 10, then Lod 1 will be shown at a distance of 10 meters, Lod 2 will be shown at a distance of 20 meters, and Lod 3 will be shown at a distance of 40 meters.
+For example, if basefactor is 10 then Lod 1 will be shown at a distance of 10 meters, Lod 2 will be shown at a distance of 20 meters, and Lod 3 will be shown at a distance of 40 meters.
 
 ## Example
 
