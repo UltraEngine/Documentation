@@ -3,10 +3,10 @@
 This method causes an animation sequence to play.
 
 ## Syntax
-* **void Animate**(sequence: number | string, speed: number = 1.0, blendtime: number = 250, mode: number = ANIMATION_LOOP, frame: number = 0, track: number = 0)
+- **Animate**(number sequence = 0, number speed = 1.0f, number blendtime = 250, number mode = ANIMATION_LOOP, number frame = 0, number track = 0)
+- **Animate**([string](https://www.lua.org/manual/5.4/manual.html#6.4) sequence, number speed = 1.0f, number blendtime = 250, number mode = ANIMATION_LOOP, number frame = 0, number track = 0)
 
-## Parameters
-| Name | Description |
+| Parameter | Description |
 | ---- | ----------- |
 | sequence | animation sequence index or name. Sequence names are not case-sensitive. |
 | speed | animation speed. Default value is 1.0. |
