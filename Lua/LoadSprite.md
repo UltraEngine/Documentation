@@ -25,7 +25,7 @@ If the texture is successfully loaded a new sprite is returned, otherwise NULL i
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -39,7 +39,7 @@ camera:SetClearColor(0.125)
 
 -- Create sprite
 local sprite = LoadSprite(world, "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Sprites/nightraider.dds")
-sprite:SetPosition(-sprite.size.x * 0.5, -sprite.size.y * 0.5)
+sprite:SetPosition(-sprite.size.x * 0.5, -sprite.size.y * 0.5, 0)
 sprite.mesh.material:SetAlphaMask(true)
 
 -- Main loop
