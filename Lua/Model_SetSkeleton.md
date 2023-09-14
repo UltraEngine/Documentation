@@ -1,14 +1,14 @@
-# Model:SetSkeleton
+# Model::SetSkeleton
 
 This method assigns a skeleton to a model. You can use this to share a skeleton across multiple models.
 
 ## Syntax
 
-`Model:SetSkeleton(skeleton)`
+- **SetSkeleton**([Skeleton](Skeleton.md) skeleton)
 
-### Parameters
-
-- `skeleton`: the skeleton to set
+| Parameter | Description |
+|---|---|
+| skeleton | skeleton to set |
 
 ## Remarks
 
