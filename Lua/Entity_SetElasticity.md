@@ -4,9 +4,7 @@ This method sets the elasticity of the entity.
 
 ## Syntax
 
-```lua
-function Entity:SetElasticity(elasticity: number)
-```
+- **SetElasticity**(number elasticity)
 
 | Parameter  | Description                                       |
 | ---------- | ------------------------------------------------- |
