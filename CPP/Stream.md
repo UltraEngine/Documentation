@@ -1,4 +1,4 @@
-# Stream #
+# Stream
 
 **Base class**: [Object](Object.md)
 
