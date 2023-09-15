@@ -4,11 +4,9 @@ This method sets a damping factor to model resistance.
 
 ## Syntax
 
-```lua
-Entity:SetDamping(lineardamping, angulardamping)
-```
+- **SetDamping**(number lineardamping, number angulardamping)
 
-## Parameters
-
-- `lineardamping` - linear damping value, between 0 and 1
-- `angulardamping` - angular damping value, between 0 and 1
+| Parameter | Description |
+|---|---|
+| lineardamping | linear damping value, between 0 and 1 |
+| angulardamping | angular damping value, between 0 and 1 |
