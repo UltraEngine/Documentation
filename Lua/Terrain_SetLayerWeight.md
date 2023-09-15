@@ -4,8 +4,8 @@ This method sets the terrain material at any point on the heightmap.
 
 ## Syntax
 
-- **SetLayerWeight**(number layer, number x, number y, number weight = 1.0f, boolean normalize = true)
-- **SetLayerWeight**(number layer, [iVec2](iVec2.md) coord, number weight = 1.0f, boolean normalize = true)
+- **SetLayerWeight**(number layer, number x, number y, number weight, boolean normalize = true)
+- **SetLayerWeight**(number layer, [iVec2](iVec2.md) coord, number weight, boolean normalize = true)
 
 | Parameter | Description |
 |---|---|
