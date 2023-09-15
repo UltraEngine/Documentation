@@ -4,11 +4,7 @@ This method retrieves the entity color value.
 
 ## Syntax
 
-### Lua
-
-```lua
-function Entity:GetColor()
-```
+- [Vec4](Vec4.md) **GetColor**()
 
 ## Returns
 
