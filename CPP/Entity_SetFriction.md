@@ -4,7 +4,7 @@ This method sets the friction of the entity.
 
 ## Syntax
 
-- void **SetFriction**(const dFloat kinematicfriction, const dFloat staticfriction = 0)
+- void **SetFriction**(const dFloat kinematicfriction, const dFloat staticfriction)
 
 | Parameter | Description |
 |---|---|
