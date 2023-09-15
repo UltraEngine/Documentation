@@ -1,32 +1,27 @@
-# CreateFileSystemWatcher #
+# CreateFileSystemWatcher
+
 This function can be used to create an object that monitors a specified directory for changes.
 
 ## Syntax
-```lua
--- Create a file system watcher object
--- @param path: string - path to folder to watch
--- @param recursive: boolean - set to true to detect changes to the subdirectory (optional, default is true)
--- @return FileSystemWatcher or nil: the newly created FileSystemWatcher object if the specified directory exists, otherwise nil
-function CreateFileSystemWatcher(path, recursive)
-```
 
-## Parameters
+- shared_ptr<[FileSystemWatcher](FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const [WString](WString.md)& path, const bool recursive = true)
+
 | Parameter | Description |
-| --- | --- |
-| path | string - path to folder to watch |
-| recursive | boolean - set to true to detect changes to the subdirectory (optional, default is true) |
+|---|---|
+|path|path to folder to watch|
+|recursive|set to true to detect changes to the subdirectory|
 
 ## Returns
 
-Returns a new `FileSystemWatcher` object if the specified directory exists, otherwise `nil` is returned.
+Returns a new FileSystemWatcher object if the specified directory exists, otherwise NULL is returned.
 
 ## Remarks
 
-Once the `FileSystemWatcher` object is created, it will monitor the directory to detect changes. When changes occur, an event will be emitted. The event ID will be one of the following:
-- `EVENT_FILECREATE`
-- `EVENT_FILEDELETE`
-- `EVENT_FILERENAME`
-- `EVENT_FILECHANGE`
+Once the FileSystemWatcher object is created, it will monitor the directory to detect changes. When changes occur an event will be emitted. The event ID will be one of the following
+- EVENT_FILECREATE
+- EVENT_FILEDELETE
+- EVENT_FILERENAME
+- EVENT_FILECHANGE
 
 ## Example
 
