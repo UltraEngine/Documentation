@@ -1,12 +1,10 @@
-# Package.FileSize
+# Package:FileSize
 
 This method returns the size of a file in the archive.
 
 ## Syntax
 
-```lua
-function Package.FileSize(path: string): number
-```
+- number FileSize([string](https://www.lua.org/manual/5.4/manual.html#6.4))
 
 ## Parameters
 
