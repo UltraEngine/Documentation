@@ -1,4 +1,4 @@
-# Package::AddFile
+# Package:AddFile
 
 This method writes a new file to a package.
 
