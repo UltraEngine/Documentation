@@ -8,4 +8,4 @@ This method adds a text tag to the entity.
 
 ## Remarks
 
-You can use [World::GetTaggedEntities](World_GetTaggedEntities.md) to retrieve all entities that use a specific tag.
+You can use [World:GetTaggedEntities](World_GetTaggedEntities.md) to retrieve all entities that use a specific tag.
