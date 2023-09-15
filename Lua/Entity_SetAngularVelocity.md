@@ -1,4 +1,4 @@
-# Entity::SetAngularVelocity
+# Entity:SetAngularVelocity
 
 This method sets the angular velocity of an entity.
 
