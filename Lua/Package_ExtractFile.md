@@ -1,4 +1,4 @@
-# Package::ExtractFile
+# Package:ExtractFile
 
 This method extracts a single file from the package.
 
