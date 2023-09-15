@@ -1,4 +1,4 @@
-# Entity::SetPhysicsMode
+# Entity:SetPhysicsMode
 
 This method selects the entity physics behavior.
 
