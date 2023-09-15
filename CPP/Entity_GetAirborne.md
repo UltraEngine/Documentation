@@ -29,15 +29,9 @@ int main(int argc, const char* argv[])
     auto framebuffer = CreateFramebuffer(window);
 
     //Create a world
-    auto world = CreateWorld();
+    auto world = CreateWorld();    
     world->SetAmbientLight(0.42, 0.42, 0.5);
     world->SetGravity(0, -30, 0);
-
-    //Set environment
-    WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/";
-    world->SetEnvironmentMap(LoadTexture(remotepath + "Materials/Environment/Storm/specular.dds"), ENVIRONMENTMAP_BACKGROUND);
-    world->SetEnvironmentMap(LoadTexture(remotepath + "Materials/Environment/Storm/specular.dds"), ENVIRONMENTMAP_SPECULAR);
-    world->SetEnvironmentMap(LoadTexture(remotepath + "Materials/Environment/Storm/diffuse.dds"), ENVIRONMENTMAP_DIFFUSE);
 
     //Create light
     auto light = CreateDirectionalLight(world);
@@ -58,14 +52,13 @@ int main(int argc, const char* argv[])
     camera->SetFov(70);
     camera->SetPosition(0, 1.6, 0);
     camera->AddPostEffect(LoadPostEffect("Shaders/SSAO.fx"));
-    camera->AddPostEffect(LoadPostEffect("Shaders/FXAA.fx"));
-    camera->AddPostEffect(LoadPostEffect("Shaders/Bloom.fx"));
     camera->SetPosition(player->position + Vec3(0, 1.7, 0));
 
     //Create the scene
+    WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/";
+    auto scene = LoadMap(world, remotepath + "Maps/playertest.ultra");
     auto mtl = CreateMaterial();
-    mtl->SetTexture(LoadTexture(remotepath + "Materials/Developer/graygrid.dds"));
-    auto scene = LoadMap(world, remotepath + "Maps/playertest.map");
+    mtl->SetColor(0.5);
     for (auto entity : scene->entities)
     {
         entity->SetMaterial(mtl, true);
