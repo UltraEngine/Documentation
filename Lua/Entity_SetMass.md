@@ -4,19 +4,37 @@ This method sets the entity mass for physics interactivity.
 
 ## Syntax
 
-```lua
-function Entity:SetMass(mass: number)
-```
+- **SetMass**(number mass)
 
-Sets the mass of the entity.
-
-- `mass`: The mass to set. Use 0 for immovable objects.
+| Parameter | Description |
+|---|---|
+| mass | mass to set, in kilograms |
 
 ## Example
 
 ```lua
+-- Get the displays
+local displays = GetDisplays()
+
+-- Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR)
+
 -- Create a world
 local world = CreateWorld()
+
+-- Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
+
+-- Create a camera
+local camera = CreateCamera(world)
+camera:SetClearColor(0.125)
+camera:SetPosition(0, 1, -4)
+
+-- Create light
+local light = CreateBoxLight(world)
+light:SetRange(-10, 10)
+light:SetRotation(45, 35, 0)
+light:SetColor(2)
 
 -- Create the ground
 local ground = CreateBox(world, 10, 1, 10)
@@ -40,7 +58,7 @@ box2:SetColor(0, 0, 1)
 world:SetGravity(0, -2, 0)
 
 -- Main loop
-while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+while not (window:Closed() or window:KeyDown(KEY_ESCAPE)) do
     world:Update()
     world:Render(framebuffer)
 end
