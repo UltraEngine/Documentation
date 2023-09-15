@@ -1,10 +1,11 @@
-# Entity:GetWorld #
+# Entity::GetWorld
+
 This method retrieves the world this entity belongs to.
 
-## Syntax ##
-```lua
-function Entity:GetWorld()
-```
+## Syntax
 
-## Returns ##
-Returns the world the entity belongs to, or `nil`.
+- [World](World.md) **GetWorld**()
+
+## Returns
+
+Returns the world the entity belongs to, or NULL.
