@@ -4,7 +4,7 @@ This method will cause the entity to be used for the listener's orientation for 
 
 ## Syntax
 
-- **Listen**(): void
+- **Listen**()
 
 ## Example
 
