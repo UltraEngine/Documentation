@@ -9,8 +9,8 @@ This method adds a component to the entity.
 
 | Parameter | Description |
 |---|---|
-| path | path to a Lua component script |
 | t | table to use for component |
+| path | path to a Lua component script |
 
 ## Returns
 
