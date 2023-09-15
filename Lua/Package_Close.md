@@ -4,9 +4,7 @@ This method will flush any queued changes and close the package.
 
 ## Syntax
 
-```lua
-function Close() -> boolean
-```
+- boolean **Close**()
 
 ## Returns
 
