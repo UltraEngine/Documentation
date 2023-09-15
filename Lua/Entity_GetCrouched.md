@@ -4,9 +4,7 @@ This method returns the current crouch state of an entity using player physics.
 
 ## Syntax
 
-```lua
-function Entity:GetCrouched() -> boolean
-```
+- boolean **GetCrouched**()
 
 ## Returns
 
