@@ -1,14 +1,12 @@
-# Entity::SetColor
+# Entity:SetColor
 
 This method can be used to colorize a visible entity such as a model or light.
 
 ## Syntax
 
-- void **SetColor**(color: [Vec4](Vec4.md), recursive: boolean = false): void
-- void **SetColor**(r: number, g: number, b: number, a: number = 1, recursive: boolean = false): void
-- void **SetColor**(luminance: number, recursive: boolean = false): void
-
-## Parameters
+- **SetColor**([Vec4](Vec4.md) color, boolean recursive = false)
+- **SetColor**(number r, number g, number b, boolean recursive = false)
+- **SetColor**(number luminance, boolean recursive = false)
 
 | Parameter | Description |
 | ---- | ---- |
@@ -19,17 +17,3 @@ This method can be used to colorize a visible entity such as a model or light.
 | a | alpha component of the color to set |
 | luminance | RGB brightness to set |
 | recursive | if set to true the entity subhierarchy will also be affected |
-
-## Example
-
-```lua
--- Using RGBA color
-local color = Vec4(1, 0, 0, 1) -- Red color
-entity:SetColor(color, true)
-
--- Using separate color components
-entity:SetColor(1, 0, 0, 1, true) -- Red color
-
--- Using RGB brightness
-entity:SetColor(0.5, true) -- Set brightness to 0.5
-```
