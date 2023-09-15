@@ -612,20 +612,20 @@
 									"filename": "Terrain_GetLayerHeightConstraints"
 								},
 								{
-									"title": "GetLayerSlopeConstraints",
-									"filename": "Terrain_GetLayerSlopeConstraints"
-								},
-								{
-									"title": "GetLayerTextureMappingMode",
-									"filename": "Terrain_GetLayerTextureMappingMode"
-								},								
-								{
 									"title": "GetLayers",
 									"filename": "Terrain_GetLayers"
 								},
 								{
 									"title": "GetLayerScale",
 									"filename": "Terrain_GetLayerScale"
+								},
+								{
+									"title": "GetLayerSlopeConstraints",
+									"filename": "Terrain_GetLayerSlopeConstraints"
+								},
+								{
+									"title": "GetLayerTextureMappingMode",
+									"filename": "Terrain_GetLayerTextureMappingMode"
 								},
 								{
 									"title": "GetLayerWeight",
