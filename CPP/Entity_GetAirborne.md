@@ -27,7 +27,7 @@ int main(int argc, const char* argv[])
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);
-     
+
     //Create a world
     auto world = CreateWorld();
     world->SetAmbientLight(0.42, 0.42, 0.5);
@@ -55,22 +55,21 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
     camera->SetClearColor(0.125);
     camera->SetPosition(0, 1, -8);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->SetPosition(0, 1.6, 0);
-    //camera->SetParent(player, false);
-    camera->AddPostEffect(LoadPostEffect("Shaders/PostEffects/SSAO.json"));
-    camera->AddPostEffect(LoadPostEffect("Shaders/PostEffects/FXAA.json"));
-    camera->AddPostEffect(LoadPostEffect("Shaders/PostEffects/Bloom.json"));
+    camera->AddPostEffect(LoadPostEffect("Shaders/SSAO.fx"));
+    camera->AddPostEffect(LoadPostEffect("Shaders/FXAA.fx"));
+    camera->AddPostEffect(LoadPostEffect("Shaders/Bloom.fx"));
     camera->SetPosition(player->position + Vec3(0, 1.7, 0));
 
     //Create the scene
     auto mtl = CreateMaterial();
     mtl->SetTexture(LoadTexture(remotepath + "Materials/Developer/graygrid.dds"));
-    auto scene = LoadScene(world, remotepath + "Maps/playertest.map");
+    auto scene = LoadMap(world, remotepath + "Maps/playertest.map");
     for (auto entity : scene->entities)
     {
         entity->SetMaterial(mtl, true);
-    } 
+    }
 
     //For testing player weight on objects...
     shared_ptr<Entity> box;
@@ -80,7 +79,7 @@ int main(int argc, const char* argv[])
     box->SetSweptCollision(true);
 
     Vec3 camrotation = camera->GetRotation();
-    Vec2 mouseaxis = window->GetMouseAxis();
+    Vec2 mouseaxis = window->GetMouseAxis().xy();
     const float lookspeed = 200;
     const float movespeed = 3.5;
     const float maxaccel = 40;
@@ -96,7 +95,7 @@ int main(int argc, const char* argv[])
         if (ActiveWindow() == window)
         {
             //Camera look
-            Vec2 newaxis = window->GetMouseAxis();
+            Vec2 newaxis = window->GetMouseAxis().xy();
             Vec2 mousedelta = newaxis - mouseaxis;
             mouseaxis = newaxis;
             camrotation.x = Mix(camrotation.x + mousedelta.y * lookspeed, camrotation.x, 1.0f / mousesmoothing);
