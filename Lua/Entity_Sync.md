@@ -21,7 +21,7 @@ In this example the box on the top will use rendering interpolation, while the b
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
