@@ -1,24 +1,24 @@
-# Package:AddFile
+# Package::AddFile
 
-This function writes a new file to a package.
+This method writes a new file to a package.
 
 ## Syntax
 
-```lua
-function Package:AddFile(path: string, data: Buffer, immediate: boolean): boolean
-```
+- boolean **AddFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, [Buffer](Buffer.md) data, boolean immediate = false)
 
-- `path` (string): relative file path.
-- `data` (Buffer): file contents.
-- `immediate` (boolean, optional): if set to true, the package file will be immediately saved. Default is false.
+| Parameter | Description |
+|---|---|
+| path | relative file path |
+| data | file contents |
+| immediate | if set to true the package file will be immediately save, otherwise it will be saved automatically later |
 
 ## Returns
 
-Returns `true` if successful, otherwise `false` is returned.
+Returns a true if successful, otherwise false is returned.
 
-If the package is closed, `false` will be returned.
+If the package is closed false will be returned.
 
-If the package was loaded with a plugin that does not support writing, `false` will be returned.
+If the package was loaded with a plugin that does not support writing then false will be returned.
 
 ## Example
 
