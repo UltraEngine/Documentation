@@ -18,58 +18,83 @@ In this example the box on the top will use rendering interpolation, while the b
 
 ```c++
 #include "UltraEngine.h"
+#include "Components/Motion/Mover.hpp"
 
 using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    //Get the displays
+    //Plugin for texture loading
+    auto plugin = LoadPlugin("Plugins/FITextureLoader");
+
+    //Get display
     auto displays = GetDisplays();
 
-    //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    //Create window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
 
-    //Create a framebuffer
+    //Create framebuffer
     auto framebuffer = CreateFramebuffer(window);
 
-    //Create a world
+    //Create world
     auto world = CreateWorld();
+    world->SetAmbientLight(0.1);
+    world->RecordStats(true);
 
-    //Create a camera
+    //Create camera
     auto camera = CreateCamera(world);
-    camera->SetClearColor(0.125);
-    camera->Move(0, 0, -2);
-    camera->SetFOV(70);
+    camera->SetClearColor(0.25);
+    camera->SetPosition(0, 2, 0);
+    camera->Move(0, 0, -5);
 
-    //Create light
-    auto light = CreateBoxLight(world);
-    light->SetRange(-20, 20);
-    light->SetArea(20, 20);
-    light->SetRotation(45, 35, 0);
+    //Build scene
+    auto tunnel = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/tunnel_t.glb");
+    tunnel->SetRotation(0, 180, 0);
+    tunnel->Staticize();
 
-    //Create model
-    auto box1 = CreateBox(world, 0.8, 0.8, 0.8);
-    box1->SetColor(0,0,1);
-    box1->SetPhysicsMode(PHYSICS_DISABLED);
+    auto cage = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/fancage.glb");
+    cage->Staticize();
 
-    auto box2 = CreateBox(world, 0.8, 0.8, 0.8);
-    box2->SetColor(0,1,0);
-    box2->SetPhysicsMode(PHYSICS_DISABLED);
+    auto fan = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
+    fan->SetPosition(0, 2, 0);
+    auto mover = fan->AddComponent<Mover>();
+    mover->rotationspeed.z = 300;
 
-    int n = 0;
-    float pos[2] = { -1, 1 };
+    auto light = CreatePointLight(world);
+    light->SetColor(2, 2, 2);
+    light->SetRange(10);
+    light->SetPosition(0, 2, 2);
+    light->SetColor(4.0);
 
-    while (window->Closed() == false)
+    //Display text
+    auto orthocam = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    orthocam->SetClearMode(CLEAR_DEPTH);
+    orthocam->SetRenderLayers(128);
+    orthocam->SetPosition(float(framebuffer->size.x) * 0.5, float(framebuffer->size.y) * 0.5f);
+
+    auto font = LoadFont("Fonts/arial.ttf");
+
+    auto text = CreateSprite(world, font, "Shadow polygons: 0", 14.0 * displays[0]->scale);
+    text->SetPosition(2, framebuffer->size.y - 16.0f * displays[0]->scale);
+    text->SetRenderLayers(128);
+
+    auto text2 = CreateSprite(world, font, "Press space to make the light static.", 14.0 * displays[0]->scale);
+    text2->SetPosition(2, framebuffer->size.y - 16.0f * 2.0f * displays[0]->scale);
+    text2->SetRenderLayers(128);
+
+    //Main loop
+    while (!window->KeyHit(KEY_ESCAPE) and !window->Closed())
     {
-        box1->SetPosition(pos[n], 0.5, 0);
-        box2->SetPosition(pos[n], -0.5, 0);
-        box2->Sync();
-
-        n++;
-        if (n == 2) n = 0;
-
         world->Update();
-        world->Render(framebuffer, false);
+        world->Render(framebuffer);
+
+        if (window->KeyHit(KEY_SPACE))
+        {
+            light->Staticize();
+            text2->SetHidden(true);
+        }
+
+        text->SetText("Shadow polygons: " + String(world->renderstats.shadowpolygons));
     }
     return 0;
 }
