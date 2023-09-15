@@ -4,9 +4,7 @@ This method sets the entity collision recording mode. Entity collisions will not
 
 ## Syntax
 
-```lua
-entity:RecordCollisions(record)
-```
+- **RecordCollisions**(boolean record)
 
 | Parameter | Description |
 |---|---|
