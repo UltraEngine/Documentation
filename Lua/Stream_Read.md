@@ -4,8 +4,8 @@ This method reads a block of memory from a stream. This can be more efficient th
 
 ## Syntax
 
-- **Read**(data: [Buffer](Buffer.md), offset: number, size: number): number
-- **Read**(data: pointer, size: number): number
+- number **Read**([Buffer](Buffer.md) data, number offset, number size)
+- number **Read**(userdata data, number size)
 
 | Parameter | Description |
 | --- | --- |
