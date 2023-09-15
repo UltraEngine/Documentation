@@ -1,9 +1,7 @@
-## Entity:ClearTags()
+# Entity::ClearTags
 
 This method removes all tags from the entity.
 
-### Syntax
+## Syntax
 
-```lua
-function Entity:ClearTags()
-```
+- **ClearTags**()
