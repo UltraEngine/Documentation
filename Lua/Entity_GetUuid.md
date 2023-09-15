@@ -4,9 +4,7 @@ This method returns the entity's unique identifier.
 
 ## Syntax
 
-```lua
-function Entity:GetUuid()
-```
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **GetUuid**()
 
 ## Returns
 
