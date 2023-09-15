@@ -4,7 +4,7 @@ This method sets player input for an entity that has its physics mode set to PHY
 
 ## Syntax
 
-- **SetInput**(angle:number, move:number, strafe:number = 0, jump:number = 0, crouch:boolean = false, maxaccel:number = 40, maxdecel:number = 15)
+- **SetInput**(number angle, number move, number strafe = 0, number jump = 0, boolean crouch = false, number maxaccel = 40, number maxdecel = 15)
 
 | Parameter | Description |
 |---|---|
