@@ -1,4 +1,4 @@
-# Entity::GetCollider
+# Entity:GetCollider
 
 This method retrieves the collision object the entity uses for physics.
 
