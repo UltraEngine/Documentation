@@ -1,18 +1,16 @@
-# Package:ExtractFile
+# Package::ExtractFile
 
-This function extracts a single file from the package.
+This method extracts a single file from the package.
 
 ## Syntax
 
-```lua
-function ExtractFile(path, dest)
-```
+- boolean **ExtractFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, const [string](https://www.lua.org/manual/5.4/manual.html#6.4)& dest)
 
-### Parameters
+| Parameter | Description |
+|---|---|
+| path | relative file path |
+| dest | file to save |
 
-- **path**: relative file path (`string`)
-- **dest**: file to save (`string`)
+## Returns
 
-### Returns
-
-Returns `true` if the file is successfully extracted, otherwise `false` is returned.
+Returns true if the file is successfully extracted, otherwise false is returned.
