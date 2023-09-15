@@ -1,4 +1,4 @@
-# Entity::GetDistance
+# Entity:GetDistance
 
 This method is used to calculate the distance in meters to another entity or to a point in global space.
 
