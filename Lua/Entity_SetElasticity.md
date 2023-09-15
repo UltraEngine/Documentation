@@ -55,7 +55,7 @@ box2:SetElasticity(0.25)
 box2:SetColor(Vec4(0, 0, 1, 1))
 
 -- Very slow gravity
-world:SetGravity(Vec3(0, -1, 0))
+world:SetGravity(0, -1, 0)
 
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
