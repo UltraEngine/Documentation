@@ -4,9 +4,7 @@ This method retrieves the entity collision type.
 
 ## Syntax
 
-```lua
-function Entity:GetCollisionType()
-```
+- number **GetCollisionType**()
 
 ## Returns
 
