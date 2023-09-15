@@ -4,11 +4,11 @@ This function returns the type of a file in the archive.
 
 ## Syntax
 
-`FileType(path: string): number`
+- number FileType([string](https://www.lua.org/manual/5.4/manual.html#6.4))
 
-## Parameters
-
-- `path` (string): relative file path
+| Parameter | Description |
+|---|---|
+| path | relative file path |
 
 ## Returns
 
