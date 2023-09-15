@@ -1,15 +1,17 @@
-# Stream:Align
+# Stream::Align
 
-**function Align(bytes: number): boolean**
+This method resizes the stream to be a multiple of the specified number of bytes, and moves the stream position to the end.
 
-This function resizes the stream to be a multiple of the specified number of bytes and moves the stream position to the end.
+## Syntax
 
-## Parameters
+- boolean **Align**(number bytes)
 
-- bytes: The number of bytes to align the stream to.
+| Parameter | Description |
+|---|---|
+| bytes | byte alignment |
 
 ## Returns
 
-Returns `true` if the stream was successfully aligned to the byte size, otherwise `false` is returned.
+Returns true if the stream was successfully aligned to the byte size, otherwise false is returned.
 
-If the stream is read-only, then `false` will be returned.
+If the stream is read-only then false will be returned.
