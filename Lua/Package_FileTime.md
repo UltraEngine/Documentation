@@ -4,7 +4,7 @@ This function returns the last modification time of a file in the package.
 
 ## Syntax
 
-- number FileTime([string](https://www.lua.org/manual/5.4/manual.html#6.4))
+- number **FileTime**([string](https://www.lua.org/manual/5.4/manual.html#6.4))
 
 ### Parameters
 
