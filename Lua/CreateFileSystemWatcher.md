@@ -4,12 +4,12 @@ This function can be used to create an object that monitors a specified director
 
 ## Syntax
 
-- shared_ptr<[FileSystemWatcher](FileSystemWatcher.md)\> **CreateFileSystemWatcher**(const [WString](WString.md)& path, const bool recursive = true)
+- [FileSystemWatcher](FileSystemWatcher.md) **CreateFileSystemWatcher**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean recursive = true)
 
 | Parameter | Description |
 |---|---|
-|path|path to folder to watch|
-|recursive|set to true to detect changes to the subdirectory|
+| path | path to folder to watch |
+| recursive | set to true to detect changes to the subdirectory |
 
 ## Returns
 
