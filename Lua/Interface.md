@@ -6,8 +6,8 @@ This class is used to create a graphical user interface.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| background, root | const [Widget](Widget.md) | read-only pointer to top-level panel widget |
-| scale | const number | read-only interface DPI scaling value |
+| background | [Widget](Widget.md) | read-only top-level panel widget |
+| scale | number | read-only interface DPI scaling value |
 | [LoadColorScheme](#interface_loadcolorscheme) | Function | loads a GUI color scheme from a JSON file |
 | [ProcessEvent](#interface_processevent) | Function | send an event to the interface for evaluation |
 | [SetRenderLayers](#interface_setrenderlayers) | Function | sets the interface render layers, for 3D graphics |
