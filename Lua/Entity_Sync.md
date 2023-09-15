@@ -33,7 +33,7 @@ local world = CreateWorld()
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:Move(0, 0, -2)
-camera:SetFOV(70)
+camera:SetFov(70)
 
 -- Create light
 local light = CreateBoxLight(world)
@@ -50,7 +50,7 @@ local box2 = CreateBox(world, 0.8, 0.8, 0.8)
 box2:SetColor(0,1,0)
 box2:SetPhysicsMode(PHYSICS_DISABLED)
 
-local n = 0
+local n = 1
 local pos = { -1.0, 1.0 }
 
 while window:Closed() == false do
@@ -59,8 +59,8 @@ while window:Closed() == false do
     box2:Sync()
 
     n = n + 1
-    if n == 2 then
-        n = 0
+    if n == 3 then
+        n = 1
     end
 
     world:Update()
