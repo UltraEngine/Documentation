@@ -3,9 +3,8 @@
 This method sets the entity collision type, for filtering collisions for physics.
 
 ## Syntax
-```lua
-function Entity:SetCollisionType(collisiontype: number, recursive: boolean = false): void
-```
+
+- **SetCollisionType**(number collisiontype, boolean recursive = false)
 
 | Parameter | Description |
 |---|---|
