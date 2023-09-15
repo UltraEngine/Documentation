@@ -1,6 +1,11 @@
-```lua
---- Retrieves the entity scale.
--- @return xVec3 The entity scale.
-function Entity:GetScale()
-end
-```
+# Entity:GetScale
+
+This method retrieves the entity scale.
+
+## Syntax
+
+- [xVec3](xVec3.md) **GetScale**()
+
+## Returns
+
+Returns the entity scale.
