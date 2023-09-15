@@ -8,29 +8,11 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 
 ## Syntax
 
-- Entity:SetPosition(position, global)
-- Entity:SetPosition(position, global)
-- Entity:SetPosition(x, y, z, global)
-
-### Parameters
+- **SetPosition**([xVec3](xVec3.md) position, boolean global = false)
+- **SetPosition**([xVec3](xVec3.md) position, boolean global = false)
+- **SetPosition**(number x, number y, number z, global = false)
 
 | Parameter | Description |
 | ------ | ------ |
 | position, (x, y, z) | The position to set |
 | global | Indicates whether the position should be set in global or local space |
-
-### Example
-
-```lua
--- Set position in local space
-entity:SetPosition({10, 0, 5})
-
--- Set position in global space
-entity:SetPosition({-3, 2, 0}, true)
-
--- Set position using separate x, y, and z coordinates in local space
-entity:SetPosition(1, -2, 7)
-
--- Set position using separate x, y, and z coordinates in global space
-entity:SetPosition(4, 0, 9, true)
-```
