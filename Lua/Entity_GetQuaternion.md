@@ -4,13 +4,11 @@ This method retrieves the entity rotation as a quaternion.
 
 ## Syntax
 
-```lua
-function Entity:GetQuaternion(global)
-```
+- [xQuat](xQuat.md) GetQuaternion(boolean global = false)
 
-### Parameters
-
-- `global` (optional): If set to `false`, the rotation relative to the parent is returned. If not provided or set to `true`, the rotation in world space is returned.
+| Parameter | Description |
+|---|---|
+| global | If set to `false`, the rotation relative to the parent is returned. If not provided or set to `true`, the rotation in world space is returned. |
 
 ## Returns
 
