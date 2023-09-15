@@ -1,23 +1,19 @@
 # Package:DeleteFile
 
-This function deletes a file from the package.
+This method deletes a file from the package.
 
 ## Syntax
 
-```lua
-DeleteFile(path: [string](https://www.lua.org/manual/5.3/manual.html#3.1))
-```
+boolean **DeleteFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean immediate = false)
 
-- **path**: relative file path (string)
-
-## Parameters
-
-- **path**: relative file path (string)
-- **immediate**: if set to true the package file will be saved immediately, otherwise it will be saved at a later time (boolean, optional)
+| Parameter | Description |
+|---|---|
+| path | relative file path |
+| immediate | if set to true the package file will be saved immediately, otherwise it will be saved at a later time |
 
 ## Returns
 
-- Returns true if successful, otherwise false is returned (boolean)
+Returns true if successful, otherwise false is returned.
 
 ## Remarks
 
