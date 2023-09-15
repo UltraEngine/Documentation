@@ -1,8 +1,11 @@
-# Entity::GetWorld #
+# Entity::GetWorld
+
 This method retrieves the world this entity belongs to.
 
-## Syntax ##
+## Syntax
+
 - shared_ptr<[World](World.md)> **GetWorld**()
 
-## Returns ##
+## Returns
+
 Returns the world the entity belongs to, or NULL.
