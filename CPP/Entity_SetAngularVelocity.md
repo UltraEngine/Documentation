@@ -4,8 +4,8 @@ This method sets the angular velocity of an entity.
 
 ## Syntax
 
-- void **SetOmega**(const [xVec3](xVec3.md)& omega, const bool recursive = true)
-- void **SetOmega**(const dFloat x, const dFloat y, const dFloat z, const bool recursive = true)
+- void **SetAngularVelocity**(const [xVec3](xVec3.md)& omega, const bool recursive = true)
+- void **SetAngularVelocity**(const dFloat x, const dFloat y, const dFloat z, const bool recursive = true)
 
 | Parameter | Description |
 | --- | --- |
