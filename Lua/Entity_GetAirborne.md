@@ -4,11 +4,11 @@ This method returns the current airborne state of an entity using player physics
 
 ## Syntax
 
-**GetAirborne**()
+- boolean **GetAirborne**()
 
 ## Returns
 
-Returns `false` if the player is standing on the ground, otherwise `true` is returned.
+Returns false if the player is standing on the ground, otherwise true is returned.
 
 ## Example
 
@@ -17,11 +17,11 @@ Returns `false` if the player is standing on the ground, otherwise `true` is ret
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
- 
+
 --Create a world
 local world = CreateWorld()
 world:SetAmbientLight(0.42, 0.42, 0.5)
@@ -49,18 +49,17 @@ player:SetPosition(0, 10, 0)
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 1, -8)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:SetPosition(0, 1.6, 0)
---camera:SetParent(player, false);
-camera:AddPostEffect(LoadPostEffect("Shaders/PostEffects/SSAO.json"))
-camera:AddPostEffect(LoadPostEffect("Shaders/PostEffects/FXAA.json"))
-camera:AddPostEffect(LoadPostEffect("Shaders/PostEffects/Bloom.json"))
+camera:AddPostEffect(LoadPostEffect("Shaders/SSAO.fx"))
+camera:AddPostEffect(LoadPostEffect("Shaders/FXAA.fx"))
+camera:AddPostEffect(LoadPostEffect("Shaders/Bloom.fx"))
 camera:SetPosition(player.position + Vec3(0, 1.7, 0))
 
 --Create the scene
 local mtl = CreateMaterial()
 mtl:SetTexture(LoadTexture(remotepath .. "Materials/Developer/graygrid.dds"))
-local scene = LoadScene(world, remotepath .. "Maps/playertest.map")
+local scene = LoadMap(world, remotepath .. "Maps/playertest.map")
 for _, entity in ipairs(scene.entities) do
     entity:SetMaterial(mtl, true)
 end 
@@ -97,15 +96,18 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
 
         --Movement 
         local accel = maxaccel
-        local movement = Vec2()
-        movement.y = (window:KeyDown(KEY_W) - window:KeyDown(KEY_S))
-        movement.x = (window:KeyDown(KEY_D) - window:KeyDown(KEY_A))
+        local movement = Vec2(0)
+        if window:KeyDown(KEY_W) then movement.y = movement.y + 1 end
+        if window:KeyDown(KEY_S) then movement.y = movement.y - 1 end
+        if window:KeyDown(KEY_D) then movement.x = movement.x + 1 end
+        if window:KeyDown(KEY_A) then movement.x = movement.x - 1 end
         if movement.x ~= 0.0 and movement.y ~= 0.0 then
             --Adjust speed on each axis if both are in use
             movement = movement * 0.7071
         end
         movement = movement * movespeed
-        local jump = window:KeyHit(KEY_SPACE) * jumpstrength
+        local jump = 0
+        if window:KeyHit(KEY_SPACE) then jump = jumpstrength end
         local crouch = window:KeyDown(KEY_C)
         if player:GetAirborne() then jump = 0 end
         if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetAirborne() then
@@ -132,6 +134,4 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
 
     world:Render(framebuffer)
 end
-
-return 0
 ```
