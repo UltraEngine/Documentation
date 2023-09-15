@@ -1,6 +1,6 @@
 # Entity::SetElasticity
 
-This methods sets the elasticity of the entity.
+This method sets the elasticity or "bounciness" of the entity.
 
 ## Syntax
 
