@@ -1,4 +1,5 @@
-# CreateFileSystemWatcher #
+# CreateFileSystemWatcher
+
 This function can be used to create an object that monitors a specified directory for changes.
 
 ## Syntax
