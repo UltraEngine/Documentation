@@ -47,21 +47,25 @@ local watcher = CreateFileSystemWatcher(path)
 
 local plugin = LoadPlugin("Plugins/FITextureLoader")
 local ui = CreateInterface(window)
-local panel = CreatePanel(0, 0, window:ClientSize().x, window:ClientSize().y, ui:root)
-panel:SetPixmap(LoadPixmap(path .. "/dirt01.jpg"))
+local panel = CreatePanel(0, 0, window:ClientSize().x, window:ClientSize().y, ui.background)
+local pixmap = LoadPixmap(path .. "/dirt01.jpg")
+panel:SetPixmap(pixmap)
 
 -- Main loop
 while window:Closed() == false do
+
     -- Check for file change events
     local e = WaitEvent()
 
     -- Look for file change or create events. Some programs delete the file and then recreate it when they save.
     if e.id == EVENT_FILECHANGE or e.id == EVENT_FILECREATE then
+
         -- Look for a loaded asset with this file path
         local asset = FindCachedAsset(e.text)
         if asset then
             -- Reload the modified asset
             asset:Reload()
+            panel:Redraw()
         end
     end
 end
