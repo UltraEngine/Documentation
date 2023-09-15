@@ -53,7 +53,8 @@ box2:SetPhysicsMode(PHYSICS_DISABLED)
 local n = 1
 local pos = { -1.0, 1.0 }
 
-while window:Closed() == false do
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+
     box1:SetPosition(pos[n], 0.5, 0)
     box2:SetPosition(pos[n], -0.5, 0)
     box2:Sync()
