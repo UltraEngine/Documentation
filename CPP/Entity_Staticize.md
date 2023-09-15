@@ -14,7 +14,7 @@ This example shows how a scene can be optimized to make non-moving objects stati
 
 ```c++
 #include "UltraEngine.h"
-#include "ComponentSystem.h"
+#include "Components/Motion/Mover.hpp"
 
 using namespace UltraEngine;
 
@@ -53,8 +53,7 @@ int main(int argc, const char* argv[])
 
     auto fan = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
-    auto actor = CreateActor(fan);
-    auto mover = actor->AddComponent<Mover>();
+    auto mover = fan->AddComponent<Mover>();
     mover->rotation.z = 300;
 
     auto light = CreatePointLight(world);
