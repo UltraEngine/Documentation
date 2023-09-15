@@ -45,7 +45,7 @@ local world = CreateWorld()
 -- Create a camera
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:Move(0, 2, -8)
 
 -- Create light
@@ -65,7 +65,7 @@ model:SetRotation(0, -90, 0)
 
 local neck = model.skeleton:FindBone("b_Neck_04")
 local head = model.skeleton:FindBone("b_Head_05")
-local rotation = Vec3()
+local rotation = Vec3(0)
 
 -- Model by alissvetlana
 -- https://sketchfab.com/3d-models/hat-a7f54e87bea94730b4a1827ec1f770df
