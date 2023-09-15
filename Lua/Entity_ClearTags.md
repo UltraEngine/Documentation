@@ -1,4 +1,4 @@
-# Entity::ClearTags
+# Entity:ClearTags
 
 This method removes all tags from the entity.
 
