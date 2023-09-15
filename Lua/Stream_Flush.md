@@ -4,9 +4,7 @@ This method writes all queued data to the stream. You generally do not need to c
 
 ## Syntax
 
-```lua
-Stream:Flush()
-```
+- **Flush**()
 
 ## Example
 
