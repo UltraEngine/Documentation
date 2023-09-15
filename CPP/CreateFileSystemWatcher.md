@@ -72,6 +72,7 @@ int main(int argc, const char* argv[])
             {
                 //Reload the modified asset
                 asset->Reload();
+                panel->Redraw();
             }
         }
     }
