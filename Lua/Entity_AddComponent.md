@@ -19,6 +19,8 @@ Returns a new component if successful, otherwise NULL is returned.
 ## Example
 
 ```lua
+require "Components/Motion/Mover"
+
 --Get the displays
 local displays = GetDisplays()
 
@@ -47,7 +49,7 @@ local box = CreateBox(world)
 box:SetColor(0,0,1)
 
 --Add a component for automatic motion
-local component = box:AddComponent("Source/Components/Motion/Mover.lua")
+local component = box:AddComponent(Mover)
 component.rotationspeed.y = -2
 box.mover.rotationspeed.x = 2
 
