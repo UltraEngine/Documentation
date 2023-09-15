@@ -2,12 +2,10 @@
 
 This method retrieves an entity's parent.
 
-### Syntax
+## Syntax
 
-```lua
-function Entity:GetParent()
-```
+- [Entity](Entity.md) **GetParent**()
 
-### Returns
+## Returns
 
-Returns the parent entity if it exists, otherwise `nil` is returned.
+Returns the parent entity if it exists, otherwise NULL is returned.
