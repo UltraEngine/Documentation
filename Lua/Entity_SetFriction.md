@@ -4,16 +4,12 @@ This method sets the friction of the entity.
 
 ## Syntax
 
-- **Entity:SetFriction**(kinematicfriction, staticfriction = 0)
+- **Entity:SetFriction**(number kinematicfriction, number staticfriction)
 
 | Parameter | Description |
 |---|---|
 | kinematicfriction | friction of an object in motion |
 | staticfriction | initial friction a stationary object must overcome to begin sliding |
-
-## Remarks
-
-The Box2D physics engine only uses kinematic friction.
 
 ## Example
 
@@ -22,7 +18,7 @@ The Box2D physics engine only uses kinematic friction.
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a world
 local world = CreateWorld()
@@ -46,7 +42,7 @@ light:SetColor(2)
 local ground = CreateBox(world, 10, 1, 10)
 ground:SetPosition(0, -0.5, 0)
 ground:SetColor(0, 1, 0)
-    
+
 --Add some boxes
 local box1 = CreateBox(world, 1, 1, 1)
 box1:SetPosition(-1, 0.5, 0)
@@ -62,6 +58,7 @@ box2:SetFriction(1, 1)
 
 --Main loop
 while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+    
     --Press the space key to push the boxes
     if window:KeyHit(KEY_SPACE) then
         box1:AddForce(0, 0, 100)
@@ -71,3 +68,4 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Update()
     world:Render(framebuffer)
 end
+```
