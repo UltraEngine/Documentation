@@ -1,4 +1,4 @@
-# Entity::UpdateBounds
+# Entity:UpdateBounds
 
 This method recalculates the entity bounding boxes.
 
