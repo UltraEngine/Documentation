@@ -4,9 +4,7 @@ This function returns the last modification time of a file in the package.
 
 ## Syntax
 
-```lua
-function FileTime(path: string): number
-```
+- number FileTime([string](https://www.lua.org/manual/5.4/manual.html#6.4))
 
 ### Parameters
 
