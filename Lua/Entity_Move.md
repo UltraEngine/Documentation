@@ -1,33 +1,12 @@
-### Entity:Move
-
-```lua
-function Entity:Move(movement)
-```
+# Entity:Move
 
 This method moves an entity in local space.
 
-**Syntax:**
+## Syntax
 
-- `Entity:Move(movement)`
-- `Entity:Move(x, y, z)`
+- **Move**(number x, number y, number z)
+- **Move**([xVec3](xVec3.md) movement)
 
-**Parameters:**
-
-- `movement` (table): a table representing the movement vector with the following fields:
-  - `x` (number): the amount of movement along the x-axis
-  - `y` (number): the amount of movement along the y-axis
-  - `z` (number): the amount of movement along the z-axis
-- `x`, `y`, `z` (numbers): the individual components of the movement vector
-
-**Example:**
-
-```lua
--- Creating a movement table
-local movement = {x = 1, y = 0, z = -1}
-
--- Moving the entity using the movement table
-Entity:Move(movement)
-
--- Moving the entity using individual components
-Entity:Move(1, 0, -1)
-```
+| Parameter | Description |
+| --- | --- |
+| movement, (x, y, z) | movement vector |
