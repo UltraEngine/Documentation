@@ -1,17 +1,15 @@
-# Package.ReadFile
+# Package:ReadFile
 
-This function reads a file from the archive.
+This method reads a file from the archive.
 
 ## Syntax
 
-```lua
-function ReadFile(path)
-```
+- [Stream](Stream.md) **ReadFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
-## Parameters
-
-- **path**: string - Relative file path.
+| Parameter | Description |
+|---|---|
+| path | relative file path |
 
 ## Returns
 
-Returns a new stream if the file exists, otherwise nil will be returned.
+Returns a new stream if the file exists, otherwise NULL will be returned.
