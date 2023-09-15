@@ -1,14 +1,11 @@
-# Entity:GetCollider
+# Entity::GetCollider
 
 This method retrieves the collision object the entity uses for physics.
 
----
-**Syntax:**
+## Syntax
 
-- **GetCollider**() -> [Collider](Collider.md)
+- [Collider](Collider.md) **GetCollider**()
 
----
+## Returns
 
-**Returns:**
-
-Returns the collision object this entity uses, or nil if no collision object is in use.
+Returns the collision object this entity uses, or `nil` if no collision object is in use.
