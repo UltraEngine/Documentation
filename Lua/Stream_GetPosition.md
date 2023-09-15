@@ -1,15 +1,17 @@
-# Stream:GetPosition #
+# Stream:GetPosition
+
 This method returns the current offset in the stream for read and write operations.
 
-## Syntax ##
-```lua
-function Stream:GetPosition()
-```
+## Syntax
 
-## Returns ##
+- number **GetPosition**()
+
+## Returns
+
 Returns the stream position in bytes.
 
 ## Example
+
 ```lua
 path = GetPath(PATH_DOCUMENTS) .. "/temp.bin"
 
