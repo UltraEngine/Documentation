@@ -4,7 +4,7 @@ This method returns the current airborne state of an entity using player physics
 
 ## Syntax
 
-bool **GetAirborne**()
+- bool **GetAirborne**()
 
 ## Returns
 
