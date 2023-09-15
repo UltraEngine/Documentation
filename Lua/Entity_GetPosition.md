@@ -4,9 +4,11 @@ This function returns the entity position.
 
 ## Syntax
 
-**GetPosition**(global)
+- [xVec3](xVec3) **GetPosition**(boolean global = false)
 
-- global (optional): If set to false, the position will be returned relative to the parent. If not provided, it is assumed to be false.
+| Parameter | Description |
+|---|---|
+| global | if set to false, the position will be returned relative to the parent |
 
 ## Returns
 
