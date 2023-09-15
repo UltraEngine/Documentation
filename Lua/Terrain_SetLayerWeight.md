@@ -93,6 +93,7 @@ local paintlayer = terrain:AddLayer(rocks)
 terrain:SetLayerScale(paintlayer, 8)
 
 -- Camera controls
+require "Components/Player/CameraControls"
 camera: AddComponent(CameraControls)
 
 -- Main loop
