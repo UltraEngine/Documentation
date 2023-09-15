@@ -4,7 +4,7 @@ This method retrieves the entity the component is attached to.
 
 ## Syntax
 
-- shared_ptr<[Entity](Entity.md)/> **GetEntity**()
+- shared_ptr<[Entity](Entity.md)\> **GetEntity**()
 
 ## Returns
 
