@@ -1,15 +1,16 @@
-## stream:GetSize ##
+# Stream:GetSize
+
 This method returns the size of the stream.
 
-### Syntax ###
-```lua
-function stream:GetSize()
-```
+## Syntax
 
-### Returns ###
+- number **GetSize**()
+
+## Returns
+
 Returns the stream size in bytes.
 
-### Example
+## Example
 
 ```lua
 path = GetPath(PATH_DOCUMENTS) .. "/temp.bin"
