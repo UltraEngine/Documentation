@@ -4,8 +4,8 @@ This method adds a component to the entity.
 
 ## Syntax
 
-- [Component](Component.md) **AddComponent**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean start = true)
 - [Component](Component.md) **AddComponent**([table](https://www.lua.org/manual/5.4/manual.html#6.6) t, boolean start = true)
+- [Component](Component.md) **AddComponent**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean start = true)
 
 | Parameter | Description |
 |---|---|
