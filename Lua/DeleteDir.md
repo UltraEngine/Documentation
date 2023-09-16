@@ -4,7 +4,7 @@ This function deletes a folder in the file system.
 
 ## Syntax
 
-- bool **DeleteDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
+- boolean **DeleteDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 | --- | --- |
