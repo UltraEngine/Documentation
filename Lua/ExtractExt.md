@@ -4,11 +4,11 @@ This function returns the extension part of a file path.
 
 ## Syntax ##
 
-- [string](string) **ExtractExt**(path: [string](string))
+- [string](string) **ExtractExt**([string](string) path)
 
 | Parameter | Description |
 | --- | --- |
-| path | full file path |
+| path | file path to use |
 
 ## Returns ##
 
