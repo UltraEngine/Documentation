@@ -4,7 +4,7 @@ This function returns the folder part of a file path.
 
 ## Syntax
 
-- **ExtractDir**(path: string): string
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **ExtractDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 | --- | --- |
