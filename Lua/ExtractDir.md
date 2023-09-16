@@ -8,7 +8,7 @@ This function returns the folder part of a file path.
 
 | Parameter | Description |
 | --- | --- |
-| path | full file path |
+| path | full or relative file path |
 
 ## Returns
 
