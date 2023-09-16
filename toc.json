@@ -1061,10 +1061,6 @@
 									"filename": "Stream_ReadLine"
 								},
 								{
-									"title": "ReadWLine",
-									"filename": "Stream_ReadWLine"
-								},
-								{
 									"title": "ReadShort",
 									"filename": "Stream_ReadShort"
 								},
@@ -1073,8 +1069,14 @@
 									"filename": "Stream_ReadString"
 								},
 								{
+									"title": "ReadWLine",
+									"filename": "Stream_ReadWLine",
+									"hideFromLua": true
+								},
+								{
 									"title": "ReadWString",
-									"filename": "Stream_ReadWString"
+									"filename": "Stream_ReadWString",
+									"hideFromLua": true
 								},
 								{
 									"title": "Seek",
@@ -1114,11 +1116,13 @@
 								},
 								{
 									"title": "WriteWLine",
-									"filename": "Stream_WriteWLine"
+									"filename": "Stream_WriteWLine",
+									"hideFromLua": true
 								},
 								{
 									"title": "WriteWString",
-									"filename": "Stream_WriteWString"
+									"filename": "Stream_WriteWString",
+									"hideFromLua": true
 								}
 							]
 						},
