@@ -1,10 +1,13 @@
-# stream:ReadFloat #
+# Stream:ReadFloat
+
 This method reads a float value from the stream.
 
-## Syntax ##
-- **float** stream:**ReadFloat**()
+## Syntax
 
-## Returns ##
+- number **ReadFloat**()
+
+## Returns
+
 Returns a float value read from the stream.
 
 ## Example
