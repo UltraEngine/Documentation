@@ -1,22 +1,25 @@
-# Stream:WriteLine #
+# Stream:WriteLine
+
 This method writes a line of text to the stream at the current position.
 
-## Syntax ##
-- `Stream:WriteLine(s)`
+## Syntax
 
-### Parameters ###
-- `s` (string): value to write
+- **WriteLine**([string](https://www.lua.org/manual/5.4/manual.html#6.4) s)
+
+| Parameter | Description |
+|---|---|
+| s | value to write |
 
 ## Example
 
 ```lua
-local path = GetPath(PATH_DOCUMENTS) .. "/temp.txt"
+path = GetPath(PATH_DOCUMENTS) .. "/temp.txt"
 
 -- Write a new file
-local stream = WriteFile(path)
+stream = WriteFile(path)
 if stream == nil then
-    Print("Failed to write file.")
-    return 0
+    print("Failed to write file.")
+    return
 end
 
 stream:WriteLine("Hello, world!")
