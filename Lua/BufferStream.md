@@ -4,20 +4,7 @@ This class provides a mechanism to read from and write to a block of memory as i
 
 Base class: [Stream](Stream.md)
 
-## Properties
-
-### CreateBufferStream
-
-```lua
-function CreateBufferStream(buffer: string): BufferStream
-```
-
-Creates a new BufferStream object.
-
-#### Parameters
-
-- `buffer` (string): The initial content of the buffer.
-
-#### Returns
-
-- `BufferStream`: The newly created BufferStream object.
+| Property | Type | Description |
+| --- | --- | --- |
+| data | [Buffer](Buffer.md) | read-only stream data buffer |
+| [CreateBufferStream](CreateBufferStream.md) | Function | Creates a new BufferStream object. |
