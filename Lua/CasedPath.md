@@ -7,6 +7,7 @@ This function returns a file path with capitalization fixed to match the existin
 - [string](https://www.lua.org/manual/5.4/manual.html#6.4) **CasedPath**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
+|---|---|
 | path | the file path to use |
 
 ## Returns
