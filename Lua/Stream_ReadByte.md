@@ -1,12 +1,13 @@
-# Stream:ReadByte #
+# Stream:ReadByte
+
 This method reads a single byte from a stream.
 
-## Syntax ##
-```lua
-function Stream:ReadByte() -> number
-```
+## Syntax
 
-## Returns ##
+- number **ReadByte**()
+
+## Returns
+
 Returns a byte read from the stream.
 
 ## Example
