@@ -1,4 +1,5 @@
 # Stream:Seek
+
 This method sets the stream position for reading or writing.
 
 ## Syntax
