@@ -1,12 +1,12 @@
-# Stream:ReadLine #
+# Stream:ReadLine
 
 This method reads a line of text from the stream.
 
-## Syntax ##
+## Syntax
 
-- **Stream:ReadLine**() -> [string](https://www.lua.org/manual/5.4/manual.html#6.4.1)
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **Stream:ReadLine**()
 
-## Returns ##
+## Returns
 
 Returns a line of text from the stream.
 
