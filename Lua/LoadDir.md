@@ -1,10 +1,10 @@
-# loadDir
+# LoadDir
 
 This function loads the contents of a directory and returns an array of files.
 
 ## Syntax
 
-- `loadDir`(path: string, packages: boolean): table[string]
+- [table](https://www.lua.org/manual/5.4/manual.html#6.6) **LoadDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean packages = true)
 
 | Parameter | Description |
 |---|---|
