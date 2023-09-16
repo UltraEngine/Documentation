@@ -2797,7 +2797,8 @@
 					"topics": [
 						{
 							"title": "As",
-							"filename": "Object_As"
+							"filename": "Object_As",
+							"hideFromLua": true
 						},
 						{
 							"title": "GetField",
@@ -2806,7 +2807,8 @@
 						},
 						{
 							"title": "Self",
-							"filename": "Object_Self"
+							"filename": "Object_Self",
+							"hideFromLua": true
 						},
 						{
 							"title": "SetField",
