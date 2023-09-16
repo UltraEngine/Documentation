@@ -1,9 +1,14 @@
-# Stream:WriteFloat #
-This method writes a float value to the stream at the current position.
+# Stream:WriteFloat
 
-## Syntax ##
-- Stream:**WriteFloat**(f)
-  - `f` : value to write as a float
+This function writes a float value to the stream at the current position.
+
+### Syntax
+
+- **WriteFloat**(number f)
+
+| Parameter | Description |
+|---|---|
+| f | the value to write |
 
 ## Example
 
