@@ -6,6 +6,7 @@ This function downloads a file from a web server and saves it to the user's hard
 - boolean **DownloadFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) src, [string](https://www.lua.org/manual/5.4/manual.html#6.4) dest)
 
 | Parameter | Description |
+|---|---|
 | src | URL of the file to download | 
 | dest | local file path to save to |
 
