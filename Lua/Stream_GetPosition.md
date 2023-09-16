@@ -19,31 +19,31 @@ path = GetPath(PATH_DOCUMENTS) .. "/temp.bin"
 stream = WriteFile(path)
 if stream == nil then
     Print("Failed to write file.")
-    return 0
+    return
 end
 
 -- Write a byte
 stream:WriteByte(1)
-Print("Position: " .. tostring(stream:GetPosition()))
-Print("Size: " .. tostring(stream:GetSize()))
+Print("Position: " .. stream:GetPosition())
+Print("Size: " .. stream:GetSize())
 
 -- Write a short
 stream:WriteShort(2)
-Print("Position: " .. tostring(stream:GetPosition()))
-Print("Size: " .. tostring(stream:GetSize()))
+Print("Position: " .. stream:GetPosition())
+Print("Size: " .. stream:GetSize())
 
 -- Write an integer
 stream:WriteInt(3)
-Print("Position: " .. tostring(stream:GetPosition()))
-Print("Size: " .. tostring(stream:GetSize()))
+Print("Position: " .. stream:GetPosition())
+Print("Size: " .. stream:GetSize())
 
 -- Write a float
 stream:WriteFloat(4)
-Print("Position: " .. tostring(stream:GetPosition()))
-Print("Size: " .. tostring(stream:GetSize()))
+Print("Position: " .. stream:GetPosition())
+Print("Size: " .. stream:GetSize())
 
 -- Write a double
 stream:WriteDouble(5)
-Print("Position: " .. tostring(stream:GetPosition()))
-Print("Size: " .. tostring(stream:GetSize()))
+Print("Position: " .. stream:GetPosition())
+Print("Size: " .. stream:GetSize())
 ```
