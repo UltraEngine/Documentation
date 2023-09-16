@@ -18,28 +18,18 @@ Returns a new [Stream](Stream.md) object If the file was successfully read, othe
 ## Example
 
 ```lua
-#include "pch.h"
+local path = GetPath(PATH_DOCUMENTS) .. "/temp.txt";
 
-using namespace UltraEngine;
+--Write a new file
+local stream = WriteFile(path);
+if stream == nil then
+    Print("Failed to write file.");
+    return
+end
 
-int main(int argc, const char* argv[])
-{
-	WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
+stream:WriteLine("Hello, world!");
+stream:Close();
 
-	//Write a new file
-	auto stream = WriteFile(path);
-	if (stream == NULL)
-	{
-		Print("Failed to write file.");
-		return 0;
-	}
-
-	stream->WriteLine("Hello, world!");
-	stream->Close();
-
-	stream = ReadFile(path);
-	Print(stream->ReadLine());
-
-	return 0;
-}
+stream = ReadFile(path);
+Print(stream:ReadLine());
 ```
