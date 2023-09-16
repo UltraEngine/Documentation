@@ -1,20 +1,21 @@
 # Stream:Write
 
-This function writes a block of memory to the stream. This can be more efficient than writing one value at a time, and supports additional data types there is not an explicit write method for.
+This method writes a block of memory to the stream. This can be more efficient than writing one value at a time, and supports additional data types there is not an explicit write method for.
 
 ## Syntax
 
-```lua
-function Stream:Write(data, offset, size)
-```
+- number **Write**([Buffer](Buffer.md) data, number offset, number size)
+- number **Write**(userdata data, number offset, number size)
 
-- `data` (userdata or pointer): buffer or pointer to read from
-- `offset` (number): offset in bytes from memory buffer beginning
-- `size` (number): number of bytes to write
+| Parameter | Description |
+| --- | --- |
+| data | buffer or pointer to read from |
+| offset | offset in bytes from memory buffer beginning |
+| size | number of bytes to write |
 
 ## Returns
 
-The function returns the number of bytes that were written to the stream.
+Returns the number of bytes that were written to the stream.
 
 ## Example
 
