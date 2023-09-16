@@ -1,15 +1,14 @@
-# stream:WriteInt #
-This method writes an integer value to the stream at the current position.
+# Stream:WriteInt
 
-## Syntax ##
-```lua
-function stream:WriteInt(i: number)
-```
+This function writes a float value to the stream at the current position.
 
-### Parameters ###
+## Syntax
+
+- **WriteInt**(number f)
+
 | Parameter | Description |
-| --- | --- |
-| i | value to write |
+|---|---|
+| f | the value to write |
 
 ## Example
 
