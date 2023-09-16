@@ -1,20 +1,21 @@
-# StripExt #
+# StripExt
+
 This function removes the file extension part from a file path and returns the result.
 
-## Syntax ##
-```lua
-function StripExt(path: string): string
-```
+## Syntax
 
-### Parameters ###
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **StripExt**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
+
 | Parameter | Description |
 | --- | --- |
 | path | full file path |
 
-## Returns ##
+## Returns
+
 Returns the file path with the extension removed.
 
 ## Example
+
 ```lua
 path = "C:/Windows/explorer.exe"
 
