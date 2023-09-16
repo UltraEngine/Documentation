@@ -1,10 +1,14 @@
-# stream:readString #
+# Stream:ReadString
+
 This method reads a string from the stream at the current position. The string will be terminated by either the null character, the end of the file, or the maximum string length, whichever comes first.
 
-## Syntax ##
-- **stream:readString**(maxlength)
+## Syntax
 
-  - `maxlength` (optional): if greater than zero, this is the maximum length of the string that will be read
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **ReadString**(number maxlength = 0)
+
+| Parameter | Description |
+|---|---|
+| maxlength | if greater than zero, this is the maximum length of the string that will be read |
 
 ## Example
 
