@@ -1,13 +1,14 @@
-# Stream:WriteDouble #
-This method writes a double float value to the stream at the current position.
+# Stream:WriteDouble
 
-## Syntax ##
-```lua
-function Stream:WriteDouble(d)
-```
+This function writes a double float value to the stream at the current position.
 
-### Parameters ###
-- `d`: The value to write.
+### Syntax
+
+- **WriteDouble**(number f)
+
+| Parameter | Description |
+|---|---|
+| f | the value to write |
 
 ## Example
 
