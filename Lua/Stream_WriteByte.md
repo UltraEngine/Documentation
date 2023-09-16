@@ -2,7 +2,7 @@
 
 This function writes a single byte value to the stream at the current position.
 
-### Syntax
+## Syntax
 
 - **WriteByte**(number b)
 
