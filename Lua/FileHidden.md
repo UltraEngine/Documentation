@@ -1,13 +1,21 @@
-# FileHidden #
+# FileHidden
+
 This function returns the hide state of the specified file path.
 
-## Syntax ##
-- **FileHidden**(path: [string](https://www.lua.org/manual/5.4/manual.html#6.4.1))
+## Syntax
 
-## Returns ##
+- **FileHidden**([string](https://www.lua.org/manual/5.4/manual.html#6.4.1) path)
+
+| Parameter | Description |
+|---|---|
+| path | file path to use |
+
+## Returns
+
 Returns true if the file exists and is hidden, otherwise false is returned.
 
 ## Example
+
 ```lua
 path = CurrentDir()
 
