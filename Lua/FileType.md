@@ -9,7 +9,7 @@ This function gets the type of a file.
 | Parameter | Description |
 |---|---|
 | path | The file path to check. |
-| packages | If set to `true`, all loaded packages will be checked after the file system. |
+| packages | If set to true, all loaded packages will be checked after the file system. |
 
 ## Returns
 
