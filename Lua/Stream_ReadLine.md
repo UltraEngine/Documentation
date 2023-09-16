@@ -26,5 +26,5 @@ stream:WriteLine("Hello, world!")
 stream:Close()
 
 stream = ReadFile(path)
-print(stream:ReadLine())
+Print(stream:ReadLine())
 ```
