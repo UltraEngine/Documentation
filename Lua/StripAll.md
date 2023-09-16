@@ -1,17 +1,21 @@
-# StripAll #
+# StripAll
+
 This function removes the folder and file extension parts from a file path and returns the result.
 
-## Syntax ##
-`WString StripAll(const WString& path)`
+## Syntax
+
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **StripAll**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 | --- | --- |
 | path | full file path |
 
-## Returns ##
+## Returns
+
 Returns the file path with the folder and extension removed.
 
 ## Example
+
 ```lua
 path = "C:/Windows/explorer.exe"
 
