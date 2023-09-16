@@ -8,7 +8,7 @@ This function returns the hide state of the specified file path.
 
 | Parameter | Description |
 |---|---|
-| path | file path to use |
+| path | full or relative |
 
 ## Returns
 
