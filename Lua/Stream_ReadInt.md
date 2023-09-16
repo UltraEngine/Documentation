@@ -1,10 +1,13 @@
-# Stream:ReadInt #
+# Stream:ReadInt
+
 This method reads an integer value from the stream.
 
-## Syntax ##
-- **ReadInt**() -> number
+## Syntax
 
-## Returns ##
+- number **ReadInt**()
+
+## Returns
+
 Returns an integer value read from the stream.
 
 ## Example
