@@ -2,7 +2,7 @@
 
 This function writes a double float value to the stream at the current position.
 
-### Syntax
+## Syntax
 
 - **WriteDouble**(number f)
 
