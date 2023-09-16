@@ -4,7 +4,7 @@ This function changes the name of an existing file.
 
 ## Syntax 
 
-- boolean **RenameFile**([string]([src](https://www.lua.org/manual/5.4/manual.html#6.4)) src, [string]([src](https://www.lua.org/manual/5.4/manual.html#6.4)) dest)
+- boolean **RenameFile**([string]([src](https://www.lua.org/manual/5.4/manual.html#6.4) src, [string]([src](https://www.lua.org/manual/5.4/manual.html#6.4) dest)
 
 | Parameter | Description |
 |---|---|
