@@ -3,20 +3,9 @@
 This function makes the specified file or folder visible in the file system.
 
 ## Syntax
-```lua
-function ShowFile(path: string): boolean
-```
+
+- boolean **ShowFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 ## Returns
-Returns `true` if the operation was successful or if the file was already visible, otherwise `false` is returned.
 
-## Example
-```lua
--- Make the file "C:\Users\User\Documents\example.txt" visible in the file system
-local success = ShowFile("C:\\Users\\User\\Documents\\example.txt")
-if success then
-    print("File is now visible")
-else
-    print("Failed to make file visible")
-end
-```
+Returns true of the operation was successful or if the file was already visible, otherwise false is returned.
