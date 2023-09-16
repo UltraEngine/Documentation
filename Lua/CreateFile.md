@@ -3,13 +3,15 @@
 This function creates a new file on the user's hard drive. The new file will initially be empty. If a file exists at this location it will be overwritten.
 
 ## Syntax
-```lua
-function CreateFile(path)
-```
 
-- **path**: full or relative path to the new file
+- boolean **CreateFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
+
+| Parameter | Description |
+|---|---|
+| path | file path to use |
 
 ## Example
+
 ```lua
 path = GetPath(PATH_DOCUMENTS) .. "/temp.txt"
 
