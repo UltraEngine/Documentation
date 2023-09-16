@@ -1,18 +1,12 @@
-# rumble(left, right)
+# GamePad:Rumble
 
-This function controls gamepad haptic feedback.
+This method controls gamepad haptic feedback.
 
 ## Syntax
 
-`rumble(left, right)`
+- **Rumble**(number left, number right)
 
-### Parameters
-
-- `left` (number): frequency of left motor, between 0.0 and 1.0.
-- `right` (number): frequency of right motor, between 0.0 and 1.0.
-
-## Example
-
-```lua
-rumble(0.5, 0.8)
-```
+| Parameter | Description |
+|---|---|
+| left | frequency of left motor, between 0.0 and 1.0 |
+| right | frequency of right motor, between 0.0 and 1.0 |
