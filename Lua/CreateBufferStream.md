@@ -18,9 +18,9 @@ Returns a new BufferStream object.
 
 ```lua
 -- Create a memory buffer and fill in some data
-local buffer = CreateBuffer(10 * ffi.sizeof("int"))
+local buffer = CreateBuffer(10 * 4)
 for n = 0, 9 do
-	buffer:PokeInt(n * ffi.sizeof("int"), n)
+    buffer:PokeInt(n * 4, n)
 end
 
 -- Create a buffer stream
@@ -28,6 +28,6 @@ local stream = CreateBufferStream(buffer)
 
 -- Read from the memory buffer as if it were a file
 while not stream:EoF() do
-	print(stream:ReadInt())
+    Print(stream:ReadInt())
 end
 ```
