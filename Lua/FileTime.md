@@ -1,19 +1,17 @@
 # FileTime
 
-This function returns the last time a file at the specified path was created or modified.
+This function gets the size of a file.
 
-```lua
-function FileTime(path: WString, packages: boolean): number
-```
+## Syntax
+
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4.1) **FileTime**([string](https://www.lua.org/manual/5.4/manual.html#6.4.1) path, boolean packages = true)
 
 ## Parameters
 
-- `path` (type: [WString](WString.md)): file path to read.
-- `packages` (type: boolean, optional): if true, loaded packages will be checked after the file system. Default value is `true`.
-
-## Returns
-
-Returns the file time, in units of 100 nanosecond intervals that have elapsed since 12:00 A.M. January 1, 1601 Coordinated Universal Time (UTC). If the file does not exist, then zero is returned.
+| Parameter | Description |
+|---|---|
+| path | The file path to check. |
+| packages | If set to `true`, all loaded packages will be checked after the file system. |
 
 ## Example
 ```lua
