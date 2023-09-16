@@ -1,13 +1,14 @@
-# Stream:WriteShort #
-This method writes an unsigned short value to the stream at the current position.
+# Stream:WriteShort
 
-## Syntax ##
-- **stream:WriteShort**(i)
+This function writes an unsigned short value to the stream at the current position.
 
-  Writes an unsigned short value to the stream.
+## Syntax
 
-  - **stream**: The stream object.
-  - **i**: The value to write.
+- **WriteShort**(number i)
+
+| Parameter | Description |
+|---|---|
+| i | the value to write |
 
 ## Example
 
