@@ -2,17 +2,16 @@
 
 This function returns a system path.
 
-## SyntaX
+## Syntax
 
-```lua
-function GetPath(path: UserPath): string
-```
+- GetPath(path)
 
-**Parameters**
-
-- `path: UserPath`: indicates which system path to retrieve, can be PATH_DESKTOP, PATH_DOCUMENTS, or PATH_PROGRAMDATA.
+| Parameters | Description |
+|--|--|
+| path | indicates which system path to retrieve, can be `PATH_DESKTOP`, `PATH_DOCUMENTS`, or P`ATH_PROGRAMDATA` |
 
 ## Returns
+
 Returns a string containing a file path.
 
 ## Example
