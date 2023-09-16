@@ -4,7 +4,7 @@ This function makes the specified file or folder hidden in the file system.
 
 ## Syntax
 
-- boolean **HideFile**([string](string.md) path)
+- boolean **HideFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 ## Returns
 
