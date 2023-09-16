@@ -33,4 +33,3 @@ end
 
 OpenDir(dst)
 ```
-Note: The code example assumes that the required libraries have already been imported to Lua.
