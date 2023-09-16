@@ -1,17 +1,21 @@
 # FileType
 
-This function detects the type of a specified file path.
+This function gets the type of a file.
 
 ## Syntax
 
-- **FileType**(path: string, packages: boolean): number
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4.1) **FileType**([string](https://www.lua.org/manual/5.4/manual.html#6.4.1) path, boolean packages = true)
 
-  - `path`: file path to read
-  - `packages`: if true then any loaded packages will be checked after the file system
+## Parameters
+
+| Parameter | Description |
+|---|---|
+| path | The file path to check. |
+| packages | If set to `true`, all loaded packages will be checked after the file system. |
 
 ## Returns
 
-Returns 1 if the specified path is a file, 2 if it is a folder, or 0 if it does not exist.
+Returns 1 for a file, 2 for a folder, and 0 if the file does not exist.
 
 ## Example
 
