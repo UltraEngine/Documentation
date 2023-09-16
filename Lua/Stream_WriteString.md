@@ -21,7 +21,7 @@ path = GetPath(PATH_DOCUMENTS) .. "/temp.txt"
 stream = WriteFile(path)
 if stream == nil then
     Print("Failed to write file.")
-    return 0
+    return
 end
 
 stream:WriteString("Hello, world!")
