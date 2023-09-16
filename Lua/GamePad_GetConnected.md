@@ -1,13 +1,11 @@
-# GamePad:GetConnected()
+# GamePad:GetConnected
 
 This method can be used to check if one or more game controllers are connected.
 
 ## Syntax
 
-```lua
-function GamePad:GetConnected()
-```
+- boolean **GetConnected**()
 
 ## Returns
 
-- [boolean](https://www.lua.org/pil/2.2.html) - Returns `true` if one or more game controllers are connected, otherwise returns `false`.
+Returns true of the gamepad is connected, otherwise false is returned.
