@@ -10,7 +10,7 @@ This method reads a block of memory from a stream. This can be more efficient th
 | Parameter | Description |
 | --- | --- |
 | offset | offset in bytes from memory buffer beginning |
-| data | buffer or pointer to write to |
+| data | buffer or pointer to read from |
 | size | number of bytes to read |
 
 ## Returns
