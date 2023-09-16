@@ -1,13 +1,12 @@
-# Stream:WriteString #
+# Stream:WriteString
+
 This method writes a string to the stream at the current position.
 
-## Syntax ##
-```lua
-Stream:WriteString(s, terminate = true)
-```
+## Syntax
 
-### Parameters ###
-| Name | Description |
+- **WriteString**([string](https://www.lua.org/manual/5.4/manual.html#6.4) s, boolean terminate = true)
+
+| Parameter | Description |
 |---|---|
 | s | the string to write |
 | terminate | if true, an extra byte with a value of zero will be written at the end of the string |
