@@ -1,20 +1,14 @@
-# CurrentDir #
+# CurrentDir
 
 This function returns the path of current folder.
 
----
+## Syntax
 
-## Syntax ##
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **CurrentDir**()
 
-- [WString](WString.md) **CurrentDir**()
-
----
-
-## Returns ##
+## Returns
 
 Returns the current folder location.
-
----
 
 ## Example
 
