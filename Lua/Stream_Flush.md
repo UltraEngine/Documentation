@@ -15,15 +15,12 @@ local path = GetPath(PATH_DOCUMENTS) .. "/temp.bin"
 local stream = WriteFile(path)
 if stream == nil then
     Print("Failed to write file.")
-    return 0
+    return
 end
 
-data = {}
 for i = 1, 1024 do
-    data[i] = 0
+    stream:WriteInt(i)
 end
-
-stream:Write(data, #data * sizeof(data[1]))
 
 Print("File size before Stream:Flush(): " .. tostring(FileSize(path)))
 
