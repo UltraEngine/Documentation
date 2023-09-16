@@ -1,17 +1,16 @@
-# CreateBufferStream #
+# CreateBufferStream
 
 This function creates a new BufferStream object that allows read and writing to a block of memory as if it were a file.
 
-## Syntax ##
-`function CreateBufferStream(data:Buffer?, path: string = ""):BufferStream`
+## Syntax
+- shared_ptr<[BufferStream](BufferStream.md)\> **CreateBufferStream**(shared_ptr<[Buffer](Buffer.md)\> data = NULL, const [WString](WString.md)& path = "")
 
-#### Parameters ####
 | Parameter | Description |
 | --- | --- |
-| `data` | Can be used to specify an existing data buffer for the stream to use |
-| `path` | Sets the Stream path member to simulate a file |
+| data | can be used to specify an existing data buffer for the stream to use |
+| path | sets the Stream path member to simulate a file |
 
-## Returns ##
+## Returns
 Returns a new BufferStream object.
 
 ## Example
