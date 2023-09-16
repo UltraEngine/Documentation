@@ -18,27 +18,15 @@ Returns an array of file names found within the directory. The array will be emp
  ## Example
 
 ```lua
-function main(argc, argv)
-    local path = UltraEngine.CurrentDir()
+local path = CurrentDir()
 
-    local dir = UltraEngine.loadDir(path)
-    if path == "" then
-        path = "."
-    end
-    for _, file in ipairs(dir) do
-        print("Name: " .. file)
-
-        if path ~= "" then
-            file = path .. "/" .. file
-        end
-
-        print("Type: " .. UltraEngine.FileType(file))
-        print("Time: " .. UltraEngine.FileTime(file))
-        print("Size: " .. UltraEngine.FileSize(file))
-        print("Hidden: " .. UltraEngine.FileHidden(file))
-
-        print("")
-    end
-    return 0
+local dir = LoadDir(path)
+for _, file in ipairs(dir) do
+    Print("Name: " .. file)
+    Print("Type: " .. tostring(FileType(file)))
+    Print("Time: " .. tostring(FileTime(file)))
+    Print("Size: " .. tostring(FileSize(file)))
+    Print("Hidden: " .. tostring(FileHidden(file)))
+    Print("")
 end
 ```
