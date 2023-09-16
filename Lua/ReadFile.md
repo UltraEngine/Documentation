@@ -1,33 +1,45 @@
-# ReadFile #
+# ReadFile
+
 This function loads a file from a path and returns a stream.
 
-## Syntax ##
-`ReadFile(path: string, flags: number): Stream`
+## Syntax
 
-### Parameters ###
-|  Name | Descriptio   |
+- [Stream](Stream.md) **ReadFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
+
+| Parameter | Descriptio   |
 |--|--|
-| **path** | file name or URL to load |
-| **flags** | optional load settings |
+| path | file name or URL to load |
+| flags | optional load settings |
 
-## Returns ##
-Returns a new `Stream` object If the file was successfully read, otherwise `nil` is returned.
+## Returns
+
+Returns a new [Stream](Stream.md) object If the file was successfully read, otherwise `nil` is returned.
 
 ## Example
 
 ```lua
-path = GetPath(PATH_DOCUMENTS) .. "/temp.txt"
+#include "pch.h"
 
--- Write a new file
-stream = WriteFile(path)
-if stream == nil then
-    print("Failed to write file.")
-    return 0
-end
+using namespace UltraEngine;
 
-stream:WriteLine("Hello, world!")
-stream:Close()
+int main(int argc, const char* argv[])
+{
+	WString path = GetPath(PATH_DOCUMENTS) + "/temp.txt";
 
-stream = ReadFile(path)
-print(stream:ReadLine())
+	//Write a new file
+	auto stream = WriteFile(path);
+	if (stream == NULL)
+	{
+		Print("Failed to write file.");
+		return 0;
+	}
+
+	stream->WriteLine("Hello, world!");
+	stream->Close();
+
+	stream = ReadFile(path);
+	Print(stream->ReadLine());
+
+	return 0;
+}
 ```
