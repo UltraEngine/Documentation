@@ -6,8 +6,6 @@ This function gets the size of a file.
 
 - [string](https://www.lua.org/manual/5.4/manual.html#6.4.1) **FileSize**([string](https://www.lua.org/manual/5.4/manual.html#6.4.1) path, boolean packages = true)
 
-## Parameters
-
 | Parameter | Description |
 |---|---|
 | path | The file path to check. |
