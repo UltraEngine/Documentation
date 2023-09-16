@@ -1,17 +1,21 @@
-# StripDir #
+# StripDir
+
 This function removes the folder part from a file path and returns the result.
 
 ## Syntax
-`WString` **StripDir**(const `WString`& path)
+
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **StripDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 | --- | --- |
 | path | full file path |
 
 ## Returns
+
 Returns the file path with the folder removed.
 
 ## Example
+
 ```lua
 path = "C:/Windows/explorer.exe"
 
