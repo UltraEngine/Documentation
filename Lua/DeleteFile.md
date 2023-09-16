@@ -1,18 +1,18 @@
 # DeleteFile
 
-This function deletes a file in the file system.
+This function deletes a file.
 
 ## Syntax
 
-- **DeleteFile**(path: [string](https://www.lua.org/manual/5.4/manual.html#6.4))
+- bool **DeleteFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
-## Return value
+| Parameter | Description |
+| --- | --- |
+| path | file path to delete |
 
-- Returns true if the file was successfully deleted.
+## Returns
 
-## Remarks
-
-It is not possible to restore deleted files. Use this feature with caution.
+Returns true if the file was successfully deleted.
 
 ## Example
 
