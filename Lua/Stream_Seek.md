@@ -1,13 +1,11 @@
-# stream:seek #
+# Stream:Seek
 This method sets the stream position for reading or writing.
 
-## Syntax ##
-```lua
-function stream:seek(pos)
-```
+## Syntax
 
-### Parameters ###
-| Name | Description |
+- **Seek**(number pos)
+
+| Parameter | Description |
 | --- | --- |
 | pos | new position, between zero and the stream size |
 
@@ -21,7 +19,7 @@ DeleteFile(path)
 local stream = OpenFile(path)
 if stream == nil then
     Print("Failed to write file.")
-    return 0
+    return
 end
 
 -- Write some data
@@ -32,7 +30,7 @@ stream:WriteInt(4)
 stream:WriteShort(5)
 
 -- Change the stream position
-stream:seek(0)
+stream:Seek(0)
 
 -- Read back the data
 Print(stream:ReadByte())
@@ -43,6 +41,4 @@ Print(stream:ReadShort())
 
 -- Close the stream
 stream:Close()
-
-return 0
 ```
