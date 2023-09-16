@@ -6,8 +6,6 @@ This function gets the type of a file.
 
 - [string](https://www.lua.org/manual/5.4/manual.html#6.4.1) **FileType**([string](https://www.lua.org/manual/5.4/manual.html#6.4.1) path, boolean packages = true)
 
-## Parameters
-
 | Parameter | Description |
 |---|---|
 | path | The file path to check. |
