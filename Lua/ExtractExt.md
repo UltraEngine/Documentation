@@ -8,7 +8,7 @@ This function returns the extension part of a file path.
 
 | Parameter | Description |
 | --- | --- |
-| path | file path to use |
+| path | full or relative file path |
 
 ## Returns ##
 
