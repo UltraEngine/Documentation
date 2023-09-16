@@ -1,15 +1,16 @@
-## Stream:WriteByte
+# Stream:WriteByte
+
 This function writes a single byte value to the stream at the current position.
 
 ### Syntax
-```lua
-function Stream:WriteByte(b: number)
-```
 
-#### Parameters
-* `b` (number): The value to write.
+- **WriteByte**(number b)
 
-### Example
+| Parameter | Description |
+|---|---|
+| b | the value to write |
+
+## Example
 
 ```lua
 path = GetPath(PATH_DOCUMENTS) .. "/temp.bin"
