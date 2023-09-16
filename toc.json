@@ -2117,6 +2117,7 @@
 						{
 							"title": "WidgetBlock",
 							"filename": "WidgetBlock",
+							"hideFromLua": true,
 							"topics": [{
 									"title": "SetIcon",
 									"filename": "WidgetBlock_SetIcon"
