@@ -1,4 +1,4 @@
-# Stream::Align
+# Stream:Align
 
 This method resizes the stream to be a multiple of the specified number of bytes, and moves the stream position to the end.
 
