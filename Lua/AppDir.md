@@ -4,7 +4,7 @@ This function returns the path of the folder the application executable is in. T
 
 ## Syntax
 
-- **AppDir**() -> string
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **AppDir**()
 
 ## Returns
 
