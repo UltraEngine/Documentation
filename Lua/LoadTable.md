@@ -4,12 +4,8 @@ This function loads a Lua table from a JSON file or open stream.
 
 ## Syntax
 
-```
-table LoadTable(path: string): table
-table LoadTable(stream: userdata<WString>): table
-```
-
-### Parameters
+- [table](https://www.lua.org/manual/5.4/manual.html#6.6) LoadTable([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
+- [table](https://www.lua.org/manual/5.4/manual.html#6.6) LoadTable([Stream](Stream.md) stream)
 
 | Parameter | Description |
 |---|---|
@@ -18,4 +14,4 @@ table LoadTable(stream: userdata<WString>): table
 
 ## Returns
 
-This function always returns a table, but the returned table may be `nil` if it was not loaded successfully.
+If successful the loaded table is returned, otherwise `nil` is returned.
