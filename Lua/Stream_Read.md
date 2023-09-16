@@ -5,12 +5,12 @@ This method reads a block of memory from a stream. This can be more efficient th
 ## Syntax
 
 - number **Read**([Buffer](Buffer.md) data, number offset, number size)
-- number **Read**(userdata data, number size)
+- number **Read**(userdata data, number offset, number size)
 
 | Parameter | Description |
 | --- | --- |
+| data | buffer or pointer to read from |
 | offset | offset in bytes from memory buffer beginning |
-| data | buffer or pointer to write to |
 | size | number of bytes to read |
 
 ## Returns
