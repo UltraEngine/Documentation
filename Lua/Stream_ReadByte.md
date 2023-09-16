@@ -20,7 +20,7 @@ DeleteFile(path)
 stream = OpenFile(path)
 if stream == nil then
     Print("Failed to write file.")
-    return 0
+    return
 end
 
 -- Write some data
