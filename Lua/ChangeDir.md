@@ -4,11 +4,11 @@ This function changes the current directory. Relative file paths will be loaded 
 
 ## Syntax
 
-```lua
-function ChangeDir(path: string): boolean
-```
+- **ChangeDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
-- `path`: folder location to move to
+| Parameter | Description |
+|---|---|
+| path | the file path to use |
 
 ## Returns
 
