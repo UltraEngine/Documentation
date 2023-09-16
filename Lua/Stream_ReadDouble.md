@@ -1,10 +1,12 @@
-# stream:ReadDouble #
+# Stream:ReadDouble
+
 This function reads a double float value from the stream.
 
-## Syntax ##
-- **stream:ReadDouble()**
+## Syntax
 
-## Returns ##
+- number **ReadDouble()**
+
+## Returns
 - Returns a double float value read from the stream.
 
 ## Example
@@ -18,7 +20,7 @@ function main(argc, argv)
     local stream = OpenFile(path)
     if stream == nil then
         Print("Failed to write file.")
-        return 0
+        return
     end
 
     -- Write some data
