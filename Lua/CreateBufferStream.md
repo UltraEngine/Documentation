@@ -26,7 +26,7 @@ end
 local stream = CreateBufferStream(buffer)
 
 -- Read from the memory buffer as if it were a file
-while not stream:EoF() do
+while not stream:Eof() do
     Print(stream:ReadInt())
 end
 ```
