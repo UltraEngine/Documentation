@@ -12,7 +12,7 @@ Returns the index of the frame capture, which starts with zero and iterates with
 
 ## Remarks
 
-This method will cause the contents of the framebuffer to be copied to a [Pixmap](Pixmap.md) when the first frame is rendered after the next call to [World::Render](World_Render.md). The captured image will be available in the extra member of an EVENT_FRAMECAPTURE event. One EVENT_FRAMECAPTURE event will be emitted for each call to this method. The event data member will store an index to the captured frame that starts at zero and iterates with each frame capture.
+This method will cause the contents of the framebuffer to be copied to a [Pixmap](Pixmap.md) when the first frame is rendered after the next call to [World::Render](World_Render.md). The captured image will be available in the array returned by [Framebuffer:GetCaptures](Framebuffer_GetCaptures.md). One frame will be captured for each call to this method.
 
 ## Example
 
