@@ -1404,6 +1404,10 @@
 									"filename": "CreateFramebuffer"
 								},
 								{
+									"title": "GetCaptures",
+									"filename": "Framebuffer_GetCaptures"
+								},								
+								{
 									"title": "GetSize",
 									"filename": "Framebuffer_GetSize"
 								}
