@@ -4,9 +4,7 @@ This function creates a new material.
 
 ## Syntax
 
-```lua
-function CreateMaterial()
-```
+- shared_ptr<[Material](Material.md)> **CreateMaterial**()
 
 ## Returns
 
