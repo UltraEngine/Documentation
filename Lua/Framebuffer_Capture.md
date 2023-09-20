@@ -58,15 +58,10 @@ while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
     end
 
     --Look for captured frames
-    while PeekEvent() do
-        local e = WaitEvent()
-        if e.id == EVENT_FRAMECAPTURE then
-            --Get the pixmap containing the captured frame, save and open it
-            local pixmap = e.extra:AsPixmap()
-            local path = GetPath(PATH_DESKTOP) .. "/screenshot" .. tostring(e.data + 1) .. ".jpg"
-            pixmap:Save(path)
-            RunFile(path)
-        end
+    for _, pixmap in pairs(world.framecaptures) do
+        local path = GetPath(PATH_DESKTOP) .. "/screenshot" .. tostring(e.data + 1) .. ".jpg"
+        pixmap:Save(path)
+        RunFile(path)
     end
 
     --Update world
