@@ -4,18 +4,16 @@ This method returns the width of a line of text rendered with the font with the 
 
 ## Syntax
 
-```lua
-function Font:GetTextWidth(text: string, size: number): number
-```
+- number **GetTextWidth**([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, number size)
 
-## Parameters
-
-- `text` (string): the string to determine the width of
-- `size` (number): font size
+| Parameter | Description |
+|---|---|
+| text | string to determine the width of |
+| size | font size |
 
 ## Returns
 
-- (number): the width the text will be when rendered
+Returns the width the text will be when rendered.
 
 ## Example
 
