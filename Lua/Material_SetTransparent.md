@@ -4,9 +4,7 @@ This method sets the transparency mode of the material.
 
 ## Syntax
 
-- void **SetTransparent**(mode: boolean)
-
-  - mode: true for transparent materials, false for opaque
+- **SetTransparent**(boolean mode)
 
 ## Example
 
