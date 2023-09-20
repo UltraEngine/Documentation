@@ -58,8 +58,9 @@ while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
     end
 
     --Look for captured frames
-    for _, pixmap in pairs(world.framecaptures) do
-        local path = GetPath(PATH_DESKTOP) .. "/screenshot" .. tostring(e.data + 1) .. ".jpg"
+    local caps = framebuffer:GetCaptures()
+    for _, pixmap in pairs(caps) do
+        local path = GetPath(PATH_DESKTOP) .. "/screenshot.jpg"
         pixmap:Save(path)
         RunFile(path)
     end
