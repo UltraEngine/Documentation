@@ -4,7 +4,7 @@ This method returns the texture mapping rotation for this face.
 
 ## Syntax 
 
-`function Face:GetTextureMappingRotation()`
+- number **GetTextureMappingRotation**()
 
 ## Returns
 
