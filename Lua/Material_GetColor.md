@@ -4,9 +4,7 @@ This method retrieves the material color.
 
 ## Syntax
 
-```lua
-function Material:GetColor()
-```
+- [Vec4](Vec4.md) **GetColor**()
 
 ## Returns
 
