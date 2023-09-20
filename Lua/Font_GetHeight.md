@@ -4,9 +4,11 @@ This method returns the font's line height.
 
 ## Syntax
 
-- **GetHeight**(size)
+- number **GetHeight**(size)
 
-    - `size` - font size
+| Parameter | Description |
+|---|---|
+| size | font size to use |
 
 ## Returns
 
