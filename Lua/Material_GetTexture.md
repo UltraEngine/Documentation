@@ -2,17 +2,14 @@
 
 This method retrieves a texture from the material.
 
----
-#### Syntax
+## Syntax
 
-- **material:GetTexture**(index = TEXTURE_BASE)
+- [Texture](Texture.md) **GetTexture**(const int index = TEXTURE_BASE)
 
----
-#### Parameters
+| Parameter | Description |
+|----|----|
+| index | texture slot from 1 to 16 |
 
-- **index**: The index of the texture slot. Valid values are integers from 0 to 15.
+## Returns
 
----
-#### Returns
-
-Returns the material texture if it exists, otherwise **nil** is returned.
+Returns the material texture if it exists, otherwise NULL is returned.
