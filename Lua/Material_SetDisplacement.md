@@ -4,13 +4,12 @@ This function sets the maximum vertex displacement distance.
 
 ## Syntax
 
-```lua
-function Material:SetDisplacement(distance: number)
-```
+- **SetDisplacement**(number displacement, number offset = 0)
 
-### Parameters
-
-- `distance`: The maximum displacement, in meters. (number)
+| Parameter | Description |
+|---|---|
+| distance | the maximum displacement, in meters |
+| offset | uniform offset, in meters |
 
 ## Example
 
