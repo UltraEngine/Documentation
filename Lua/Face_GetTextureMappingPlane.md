@@ -3,7 +3,8 @@
 This method returns the texture mapping plane for this face.
 
 ## Syntax 
-- [Plane](Plane.md) **Face:GetTextureMappingPlane**(axis:number)
+
+- [Plane](Plane.md) **GetTextureMappingPlane**(number axis)
 
 | Parameter | Description |
 |---|---|
@@ -12,11 +13,3 @@ This method returns the texture mapping plane for this face.
 ## Returns
 
 Returns the face texture mapping plane.
-
-## Example
-
-```lua
--- Assume the 'Face' class instance is already created and assigned to the variable 'face'
-local textureMappingPlane = face:GetTextureMappingPlane(0)
-print(textureMappingPlane)
-```
