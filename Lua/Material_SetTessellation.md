@@ -73,6 +73,4 @@ while window:Closed() == false and window:KeyHit(KEY_ESCAPE) == false do
     world:Update()
     world:Render(framebuffer)
 end
-
-return 0
 ```
