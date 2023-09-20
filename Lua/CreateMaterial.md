@@ -4,7 +4,7 @@ This function creates a new material.
 
 ## Syntax
 
-- shared_ptr<[Material](Material.md)> **CreateMaterial**()
+- [Material](Material.md) **CreateMaterial**()
 
 ## Returns
 
