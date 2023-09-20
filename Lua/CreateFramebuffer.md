@@ -1,18 +1,17 @@
-# createFramebuffer
+# CreateFramebuffer
 
 This function creates a new framebuffer object for 2D and 3D rendering.
 
-```lua
-function createFramebuffer(window)
-```
+## Syntax
+- [Framebuffer](Framebuffer.md) **CreateFramebuffer**([Window](Window.md) window)
 
-## Parameters
-
-- `window` (shared_ptr<[Window](Window.md)\>): window to create the framebuffer on
+| Parameter | Description |
+| --- | --- |
+| window | window to create the framebuffer on |
 
 ## Returns
 
-Returns a new framebuffer object if one is successfully created, otherwise `nil` is returned.
+Returns a new framebuffer object if one is successfully created, otherwise NULL is returned.
 
 ## Remarks
 
