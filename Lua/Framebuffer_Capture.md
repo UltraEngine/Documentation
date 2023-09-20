@@ -4,11 +4,7 @@ This method can be used to capture a screenshot.
 
 ## Syntax
 
-- number **Capture**()
-
-## Returns
-
-Returns the index of the frame capture, which starts with zero and iterates with each call to this method.
+- **Capture**()
 
 ## Remarks
 
