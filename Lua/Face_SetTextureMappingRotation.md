@@ -1,13 +1,11 @@
-# Face.SetTextureMappingRotation
+# Face:SetTextureMappingRotation
 
 This function manually sets the face texture mapping planes, overriding the default brush texture mapping routine.
 
 ## Syntax
 
-```lua
-function Face:SetTextureMappingRotation(angle)
-```
+- **SetTextureMappingRotation**(number angle)
 
-### Parameters
-
-- `angle` - Texture mapping rotation, in degrees.
+| Parameter | Description |
+|---|---|
+| angle | texture mapping rotation, in degrees |
