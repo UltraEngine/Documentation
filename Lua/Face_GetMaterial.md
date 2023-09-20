@@ -4,8 +4,8 @@ This method returns the material for this face.
 
 ## Syntax
 
-- `function GetMaterial(self)`
+- **GetMaterial**([Material](Material.md) material)
 
 ## Returns
 
-Returns the face material, or `nil` if no material is in use.
+Returns the face material, or nil if no material is in use.
