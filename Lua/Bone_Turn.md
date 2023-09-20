@@ -69,25 +69,3 @@ while window:Closed() == false do
     world:Render(framebuffer)
 end
 ```
-
-## Vec3
-
-A class that represents a 3D vector.
-
-### Properties
-
-- **x**: number - The x component of the vector.
-- **y**: number - The y component of the vector.
-- **z**: number - The z component of the vector.
-
-### Methods
-
-- **Vec3:New**(x: number, y: number, z: number): [Vec3](#vec3) - Creates a new Vec3 object with the specified components.
-- **Vec3:Length**(): number - Returns the length of the vector.
-- **Vec3:Normalize**(): [Vec3](#vec3) - Returns a normalized version of the vector.
-- **Vec3:Dot**(other: [Vec3](#vec3)): number - Calculates the dot product with another vector.
-- **Vec3:Cross**(other: [Vec3](#vec3)): [Vec3](#vec3) - Calculates the cross product with another vector.
-- **Vec3:Add**(other: [Vec3](#vec3)): [Vec3](#vec3) - Adds another vector to this vector.
-- **Vec3:Sub**(other: [Vec3](#vec3)): [Vec3](#vec3) - Subtracts another vector from this vector.
-- **Vec3:Mul**(scalar: number): [Vec3](#vec3) - Multiplies the vector by a scalar value.
-- **Vec3:Div**(scalar: number): [Vec3](#vec3) - Divides the vector by a scalar value.
