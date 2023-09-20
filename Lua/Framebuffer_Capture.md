@@ -1,4 +1,4 @@
-# Framebuffer::Capture
+# Framebuffer:Capture
 
 This method can be used to capture a screenshot.
 
