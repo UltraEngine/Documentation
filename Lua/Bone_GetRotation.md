@@ -4,19 +4,12 @@ This method returns the position of a bone.
 
 ## Syntax
 
-**bone:GetRotation**(global)
+- [Vec3](Vec3.md) **GetRotation**(boolean global = false)
 
-- `global` (boolean, optional): If set to `true`, rotation is relative to the skeleton. Otherwise, it is relative to the bone's parent. Default is `false`.
+| Parameter | Description |
+|---|---|
+| global | if set to true rotation is relative to the skeleton, otherwise it is relative to the bone's parent |
 
-### Returns
+## Returns
 
-- (Vec3): The bone's rotation.
-
-## Example
-
-```lua
-local rotation = bone:GetRotation(true)
-print(rotation)
-```
-
-In this example, the `GetRotation` method is called on a `bone` object with the `global` parameter set to `true`. The returned value, representing the rotation of the bone, is then printed to the console.
+Returns the bone's rotation.
