@@ -1,22 +1,22 @@
-# Material:SetMetalness
+# Material::SetMetalness
 
 This method sets the metallic property of a material.
 
 ## Syntax
 
-`Material:SetMetalness(metallic)`
+- **SetMetalness**(number metallic)
 
-### Parameters
-
-- `metallic`: metalness value between 0 and 1
+| Parameter | Description |
+|---|---|
+| metallic | metalness value between 0 and 1 |
 
 ## Remarks
 
-Metallic materials use reflections for their color. Therefore you should call [World:SetEnvironmentMap](World_SetEnvironmentMap.md) and assign specular and diffuse reflection maps when using metallic materials. If the reflection environment maps are not provided then metallic materials will appear very dark.
+Metallic materials use reflections for their color. Therefore you should call [World::SetEnvironmentMap](World_SetEnvironmentMap.md) and assign specular and diffuse reflection maps when using metallic materials. If the reflection environment maps are not provided then metallic materials will appear very dark.
 
 ## Example
 
-![Example](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/material_setroughness.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/material_setroughness.jpg)
 
 ```lua
 --Get the displays
