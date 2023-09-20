@@ -4,7 +4,7 @@ This method returns the material for this face.
 
 ## Syntax
 
-- **GetMaterial**([Material](Material.md) material)
+- [Material](Material.md) **GetMaterial**()
 
 ## Returns
 
