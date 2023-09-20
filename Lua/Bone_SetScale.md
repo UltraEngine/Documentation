@@ -1,24 +1,24 @@
 # Bone:SetScale
 
-This method can be used to manually scale a bone. You can control skinned models entirely in code or apply your own movements on top of animation.
+This method can be used to manually scale a bone. You can control skinned models enirely in code or apply your own movements on top of animation.
 
 ## Syntax
 
-```
-Bone:SetScale(scale)
-```
+- **SetScale**(number scale)
 
-### Parameters
-
-- `scale` (number): The uniform scale to set.
+| Parameter | Description |
+|---|---|
+| scale | uniform scale to set |
 
 ## Remarks
 
-To combine programmatic movement with animation, this method should be called after [`World:Update`](World_Update.md) and before [`World:Render`](World_Render.md).
+To combine programmatic movement with animation, this method should be called after [World::Update](World_Update.md) and before [World::Render](World_Render.md).
 
 ## Example
 
 This example will load and display an animated model, but we will add code to give the character a supersized noggin.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/bone_setscale.jpg)
 
 ```lua
 function main()
