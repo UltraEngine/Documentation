@@ -20,32 +20,57 @@ A framebuffer cannot be created on a window that uses the WINDOW_RESIZABLE windo
 ## Example
   
 ```lua
-require("UltraEngine")
+--Get the displays
+local displays = GetDisplays()
 
-function main(args, argc)
-    --Get the displays
-    local displays = GetDisplays()
+--Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
-    --Create a window
-    local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
+--Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    --Create a framebuffer
-    local framebuffer = createFramebuffer(window)
+--Create a world
+local world = CreateWorld()
 
-    --Create a world
-    local world = CreateWorld()
+--Create a camera
+local camera = CreateCamera(world)
+camera:SetClearColor(0.125)
+camera:SetPosition(0, 0, -2)
 
-    --Create a camera
-    local camera = CreateCamera(world)
-    camera:SetClearColor(0.125)
+--Create a light
+local light = CreateBoxLight(world)
+light:SetRotation(45, 35, 0)
+light:SetRange(-10, 10)
+light:SetColor(2)
 
-    --Main loop
-    while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
-        --Update world
-        world:Update()
+--Create a model
+local box = CreateBox(world)
+box:SetColor(0, 0, 1)
 
-        --Render world
-        world:Render(framebuffer, true)
+--Load the FreeImage plugin
+local plugin = LoadPlugin("Plugins/FITextureLoader")
+
+--Main loop
+while not window:Closed() and not window:KeyHit(KEY_ESCAPE) do
+    --Rotate the model
+    box:Turn(0, 1, 0)
+
+    --Press the space key to queue a screenshot
+    if window:KeyHit(KEY_SPACE) then
+        framebuffer:Capture()
     end
-end 
+
+    --Look for captured frames
+    for _, pixmap in pairs(world.framecaptures) do
+        local path = GetPath(PATH_DESKTOP) .. "/screenshot" .. tostring(e.data + 1) .. ".jpg"
+        pixmap:Save(path)
+        RunFile(path)
+    end
+
+    --Update world
+    world:Update()
+
+    --Render world
+    world:Render(framebuffer, true)
+end
 ```
