@@ -4,13 +4,11 @@ This method applies a material to a face.
 
 ## Syntax
 
-```lua
-function Face:SetMaterial(material)
-```
+- **SetMaterial**([Material](material.md) material)
 
-## Parameters
-
-- `material` (type: [Material](Material.md)): The material to assign.
+| Parameter | Description |
+|---|---|
+| material | material to set |
 
 ## Remarks
 
