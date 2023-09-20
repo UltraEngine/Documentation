@@ -4,7 +4,7 @@ This method returns the font's line height.
 
 ## Syntax
 
-- int **GetHeight**(const int size, )
+- int **GetHeight**(const int size)
 
 | Parameter | Description |
 |---|---|
