@@ -4,7 +4,7 @@ This method adds a new indice to a face.
 
 ## Syntax
 
-- **int AddIndice**(const int v)
+- number **AddIndice**(number v)
 
 | Parameter | Description |
 |---|---|
