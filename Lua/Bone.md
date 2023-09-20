@@ -9,6 +9,7 @@ You can attach an entity to a bone with the Entity:Attach() method.
 | Property | Type | Description |
 |---|---|---|
 | id | number | read-only bone index for vertex skinning |
+| name | [string](https://www.lua.org/manual/5.4/manual.html#6.4) | bone name |
 | [GetPosition](Bone_GetPosition.md) | Method | gets the bone position |
 | [GetRotation](Bone_GetRotation.md) | Method | gets the bone rotation |
 | [GetScale](Bone_GetScale.md) | Method | gets the bone uniform scale |
