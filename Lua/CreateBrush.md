@@ -4,15 +4,13 @@ This function creates a new empty brush entity.
 
 ## Syntax
 
-```lua
-local brush = CreateBrush(world)
-```
+- [Brush](Brush.md) **CreateBrush**([World](World.md) world)
 
-### Parameters
+| Parameter | Description |
+|---|---|
+| world | world to create the brush in |
 
-- `world`: the world to create the brush in
-
-### Returns
+## Returns
 
 Returns a new brush entity.
 
