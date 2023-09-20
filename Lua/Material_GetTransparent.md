@@ -2,9 +2,9 @@
 
 This method retrieves the material transparency mode.
 
-```lua
-function Material:GetTransparent()
-```
+## Syntax
+
+- boolean **GetTransparent**()
 
 ## Returns
 
