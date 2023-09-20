@@ -4,7 +4,7 @@ This method retrieves a texture from the material.
 
 ## Syntax
 
-- [Texture](Texture.md) **GetTexture**(const int index = TEXTURE_BASE)
+- [Texture](Texture.md) **GetTexture**(number index = TEXTURE_BASE)
 
 | Parameter | Description |
 |----|----|
