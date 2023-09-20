@@ -21,7 +21,7 @@ Returns the font's line height. For most fonts, this will be the distance betwee
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR + WINDOW_CENTER)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_TITLEBAR + WINDOW_CENTER)
 
 -- Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -40,7 +40,8 @@ local sprite = CreateSprite(world, font, "Hello, World!", fontsize)
 local rect = CreateSprite(world, font:GetTextWidth("Hello, World!", fontsize), font:GetHeight(fontsize), true)
 
 -- Center the text relative to the camera
-camera:SetPosition(sprite:GetBounds().center)
+local aabb = sprite:GetBounds()
+camera:SetPosition(aabb.center)
 
 -- Main loop
 while (not window:Closed()) and (not window:KeyHit(KEY_ESCAPE)) do
