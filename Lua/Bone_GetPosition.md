@@ -4,11 +4,7 @@ This method returns the position of a bone.
 
 ## Syntax
 
-```lua
-function Bone:GetPosition(global)
-```
-
-## Parameters
+- [Vec3](Vec3.md) **GetPosition**(boolean global = false)
 
 | Parameter | Description |
 |---|---|
@@ -16,4 +12,4 @@ function Bone:GetPosition(global)
 
 ## Returns
 
-Returns the bone's position as a [Vec3](Vec3.md) object.
+Returns the bone's position.
