@@ -4,8 +4,8 @@ This method smoothly adds rotation to the current rotation.
 
 ## Syntax
 
-- **Bone:Turn**(pitch: number, yaw: number, roll: number)
-- **Bone:Turn**(rotation: [Vec3](#vec3) )
+- **Turn**(number pitch, number yaw, number roll, boolean global = false)
+- **Turn**([Vec3](#vec3) rotation, boolean global = false)
 
 | Parameter | Description |
 |---|---|
