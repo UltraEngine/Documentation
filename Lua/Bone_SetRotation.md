@@ -1,12 +1,12 @@
 # Bone:SetRotation
 
-This method can be used to manually rotate a bone. You can control skinned models entirely in code or apply your own movements on top of animation.
+This method can be used to manually rotate a bone. You can control skinned models enirely in code or apply your own movements on top of animation.
 
 ## Syntax
 
-- Bone:**SetRotation**(pitch: number, yaw: number, roll: number, global: boolean = false)
-- Bone:**SetRotation**(rotation: Vec3, global: boolean = false)
-- Bone:**SetRotation**(rotation: Quat, global: boolean = false)
+- **SetRotation**(number pitch, number yaw, number roll, boolean = false)
+- **SetRotation**([Vec3](Vec3.md) rotation, boolean global = false)
+- **SetRotation**([Quat](Quat.md) rotation, boolean global = false)
 
 | Parameter | Description |
 |---|---|
@@ -15,13 +15,14 @@ This method can be used to manually rotate a bone. You can control skinned model
 
 ## Remarks
 
-To combine programmatic movement with animation, this method should be called after [World:Update](World_Update.md) and before [World:Render](World_Render.md).
+To combine programmatic movement with animation, this method should be called after [World::Update](World_Update.md) and before [World::Render](World_Render.md).
 
 ## Example
 
 This example will load and display an animated model, but we will add code to turn the character's head back and forth as they walk.
 
-![Bone SetRotation Example](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/bone_setrotation.jpg)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/bone_setrotation.jpg)
+
 
 ```lua
 local world = CreateWorld()
