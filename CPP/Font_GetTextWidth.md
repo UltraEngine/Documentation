@@ -4,7 +4,7 @@ This method returns the width of a line of text rendered with the font with the 
 
 ## Syntax
 
-- int **GetTextWidth**(const [WString](WString.md)& text, const int size, )
+- int **GetTextWidth**(const [WString](WString.md)& text, const int size)
 
 | Parameter | Description |
 |---|---|
