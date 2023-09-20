@@ -4,32 +4,30 @@ This method sets the roughness of a material. A material with low roughness will
 
 ## Syntax
 
-- Material:**SetRoughness**(roughness: number)
+- **SetRoughness**(number roughness)
 
-### Parameters
-
-- **roughness**: surface roughness between 0 and 1 (number)
+| Parameter | Description |
+|---|---|
+| roughness | surface roughness between 0 and 1 |
 
 ## Example
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/material_setroughness.jpg)
 
 ```lua
--- This example requires the UltraEngine library
-
--- Get the displays
+--Get the displays
 local displays = GetDisplays()
 
--- Create a window
+--Create a window
 local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
--- Create a world
+--Create a world
 local world = CreateWorld()
 
--- Create a framebuffer
+--Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
 
--- Create a camera
+--Create a camera
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 0, -10)
@@ -52,11 +50,11 @@ for x = 0, 3 do
         local ball = CreateSphere(world)
         ball:SetPosition(x * 2.0 - 3.0, y * 2.0 - 3.0, 0)
         ball:SetMaterial(mtl)
-        models[#models + 1] = ball
+        table.insert(models, ball)
     end
 end
 
--- Main loop
+--Main loop
 while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Update()
     world:Render(framebuffer)
