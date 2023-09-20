@@ -4,18 +4,18 @@ This function loads a font from a file path or stream.
 
 ## Syntax
 
-- **LoadFont**(path: string, flags: LoadFlags = LOAD_DEFAULT): [Font](Font.md)
-- **LoadFont**(stream: [Stream](Stream.md), flags: LoadFlags = LOAD_DEFAULT): [Font](Font.md)
+- [Font](Font.md) **LoadFont**([string]([WString.md](https://www.lua.org/manual/5.4/manual.html#6.4)) path, number flags = LOAD_DEFAULT)
+- [Font](Font.md) **LoadFont**([Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
 
-**Parameters:**
+| Parameter | Description |
+|---|---|
+| path | file path to load |
+| stream | stream to read from |
+| flags | loading options, can be LOAD_DEFAULT or LOAD_NO_CACHE |
 
-- `path`: file path to load (string)
-- `stream`: stream to read from ([Stream](Stream.md))
-- `flags`: loading options, can be LOAD_DEFAULT or LOAD_NO_CACHE (LoadFlags)
+## Returns
 
-**Returns:**
-
-Returns the loaded font, or nil if the font could not be loaded.
+Returns the loaded font, or NULL of the font could not be loaded.
 
 ## Example
 
