@@ -4,7 +4,7 @@ This method retrieves a texture from the material.
 
 ## Syntax
 
-- shared_ptr<[Material](Material.md)> **GetTexture**(const int index = TEXTURE_BASE)
+- shared_ptr<[Texture](Texture.md)> **GetTexture**(const int index = TEXTURE_BASE)
 
 | Parameter | Description |
 |----|----|
