@@ -4,17 +4,15 @@ This method controls whether a material will use hardware tessellation.
 
 ## Syntax
 
-`
-Material:SetTessellation(mode: boolean)
-`
+- **SetTessellation**(boolean mode)
 
-### Parameters
-
-- `mode`: set to `true` to enable tessellation
+| Parameter | Description |
+|---|---|
+| mode | set to true to enable tessellation |
 
 ## Remarks
 
-Tessellation will only be used if the camera has it enabled with [Camera:SetTessellation](Camera_SetTessellation.md).
+Tessellation will only be used if the camera has it enabled with [Camera::SetTessellation](Camera_SetTessellation.md).
 
 ## Example
 
