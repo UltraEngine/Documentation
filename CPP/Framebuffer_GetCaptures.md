@@ -1,6 +1,6 @@
 # Framebuffer::GetCaptures
 
-This method returns an array of screen capture images that have been recorded by calling [Frame::Capture](Frame_Capture.md).
+This method returns an array of screen capture images that have been recorded by calling [Framebuffer::Capture](Framebuffer_Capture.md).
 
 ## Syntax
 
