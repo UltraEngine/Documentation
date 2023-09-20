@@ -31,7 +31,7 @@ local framebuffer = CreateFramebuffer(window)
 -- Create a world
 local world = CreateWorld()
 
--- Create a camera
+-- Create a camera    
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:Turn(35, 0, 0)
@@ -48,9 +48,7 @@ local brush = CreateBrush(world)
 brush:SetColor(0, 0, 1)
 
 -- Add brush vertices
-local w = 1
-local h = 1
-local d = 1
+local w = 1; local h = 1; local d = 1;
 brush:AddVertex(w * 0.5, h * 0.5, d * 0.5)
 brush:AddVertex(-w * 0.5, h * 0.5, d * 0.5)
 brush:AddVertex(-w * 0.5, h * 0.5, -d * 0.5)
