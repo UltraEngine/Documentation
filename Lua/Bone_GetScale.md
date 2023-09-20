@@ -4,7 +4,7 @@ This method returns the bone scale.
 
 ## Syntax
 
-`Bone:GetScale()`
+- **GetScale**()
 
 ## Returns
 
