@@ -4,9 +4,7 @@ This method retrieves the material shader family.
 
 ## Syntax
 
-```lua
-function Material:GetShaderFamily() -> ShaderFamily
-```
+- [ShaderFamily](ShaderFamily.md) **GetShaderFamily**()
 
 ## Returns
 
