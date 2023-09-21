@@ -4,9 +4,7 @@ This method returns the number of color attachments the texture buffer has.
 
 ## Syntax
 
-```lua
-function TextureBuffer:CountColorAttachments()
-```
+- number **CountColorAttachments**()
 
 ## Returns
 
