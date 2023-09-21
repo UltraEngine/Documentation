@@ -1,22 +1,25 @@
 # Mesh:AddVertex
 
-This method adds a new vertex to the mesh.
+This methods adds a new vertex to the mesh.
 
 ## Syntax
 
-- **Mesh:AddVertex**(position, normal, texcoords, displacement) -> uint32_t
-- **Mesh:AddVertex**(x, y, z, nx, ny, nz, u0, v0, displacement) -> uint32_t
+- number **AddVertex**([Vec3](Vec3.md) position, [Vec3](Vec3.md) normal = 0, [Vec2](Vec2.md) texcoords = 0, number displacement = 1)
+- number **AddVertex**(number x, number y, number z, number nx, number ny, number nz, number u0, number v0, number displacement)
+- number **AddVertex**(number x, number y, number z, number nx, number ny, number nz, number u0, number v0)
+- number **AddVertex**(number x, number y, number z, number nx, number ny, number nz)
+- number **AddVertex**(number x, number y, number z)
 
-### Parameters
-
-- position, (x, y, z): The vertex position.
-- normal, (nx, ny, nz): The vertex normal.
-- texcoords, (u, v): The vertex texture coordinates.
-- displacement: The maximum tessellation displacement value.
+| Parameter | Description |
+|---|---|
+| position, (x, y, z) | vertex position |
+| normal, (nx, ny, nz) | vertex normal |
+| texcoords, (u, v) | vertex texture coordinates |
+| displacement | maximum tessellation displacement value |
 
 ## Returns
 
-The index of the new vertex.
+Returns the index of the new vertex.
 
 ## Remarks
 
