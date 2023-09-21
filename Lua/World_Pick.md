@@ -4,8 +4,8 @@ This method performs a line segment intersection test on all the entities in the
 
 ## Syntax
 
-- [PickInfo](PickInfo.md) **Pick**(const [xVec3](xVec3.md)& p0, const [xVec3](xVec3.md)& p1, const dFloat radius = 0.0, const boolean closest = false, boolean filter(shared_ptr<[Entity](Entity.md)\>, shared_ptr<[Object](Object.md)\>) = NULL, shared_ptr<[Object](Object.md)\> extra = NULL)
-- [PickInfo](PickInfo.md) **Pick**(const dFloat x0, const dFloat y0, const dFloat z0, const dFloat x1, const dFloat y1, const dFloat z1, const dFloat radius = 0.0, const boolean closest = false, boolean filter(shared_ptr<[Entity](Entity.md)\>, shared_ptr<[Object](Object.md)\>) = NULL, shared_ptr<[Object](Object.md)\> extra = NULL)
+- [PickInfo](PickInfo.md) **Pick**([xVec3](xVec3.md) p0, [xVec3](xVec3.md) p1, dFloat radius = 0.0, boolean closest = false, boolean filter(shared_ptr<[Entity](Entity.md)\>, [Object](Object.md)) = NULL, [Object](Object.md) extra = NULL)
+- [PickInfo](PickInfo.md) **Pick**(dFloat x0, dFloat y0, dFloat z0, dFloat x1, dFloat y1, dFloat z1, dFloat radius = 0, boolean closest = false, boolean filter([Entity](Entity.md), [Object](Object.md) ) = NULL, [Object](Object.md) extra = NULL)
 
 | Parameter | Description |
 | --- | --- |
