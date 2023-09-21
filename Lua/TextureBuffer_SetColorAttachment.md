@@ -4,18 +4,16 @@ This method sets a texture buffer's color texture.
 
 ## Syntax
 
-```lua
-function TextureBuffer:SetColorAttachment(texture, index)
-```
+- boolean **SetColorAttachment**([Texture](Texture.md) texture, const int index = 1)
 
-### Parameters
-
-- `texture`: color attachment to set
-- `index` (optional): color attachment index to set
+| Parameter | Description |
+|---|---|
+| texture | color attachment to set |
+| index | color attachment index to use, from 1 to 4 |
 
 ## Returns
 
-Returns `true` if the color attachment is set, otherwise `false` is returned.
+Returns true of the color attachment is set, otherwise false is returned.
 
 ## Remarks
 
@@ -25,6 +23,6 @@ The specified texture must have been created with the TEXTURE_BUFFER flag.
 
 The specified texture must be the same dimensions as the texture buffer.
 
-The `index` value must be less than 4.
+The index value must be less than 5.
 
-The `index` value must be between 0 and the value returned by `TextureBuffer:CountColorAttachments`.
+The index value must be between 0 and the value returned by [TextureBuffer::CountColorAttachments](TextureBuffer_CountColorAttachments.md).
