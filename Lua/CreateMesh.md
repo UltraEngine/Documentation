@@ -4,17 +4,11 @@ This function creates a new mesh.
 
 ## Syntax
 
-```lua
-function CreateMesh(primitive = MESH_TRIANGLES, vertices = {}, indices = {})
-```
-
-### Parameters
+- [Mesh](Mesh.md) **CreateMesh**(number primitivetype = MESH_TRIANGLES)
 
 | Parameter | Description |
 |---|---|
-| primitive | can be MESH_POINTS, MESH_LINES, MESH_TRIANGLES, or MESH_QUADS |
-| vertices | optional vertex array |
-| indices | optional indice array |
+| primitivetype | can be MESH_POINTS, MESH_LINES, MESH_TRIANGLES, or MESH_QUADS |
 
 ## Returns
 
