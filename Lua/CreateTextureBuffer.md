@@ -19,21 +19,23 @@ Returns a new texture buffer object.
 ## Example
 
 ```lua
-world = CreateWorld()
+local displays = GetDisplays()
 
-window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
-framebuffer = CreateFramebuffer(window)
+local framebuffer = CreateFramebuffer(window)
 
-light = CreateBoxLight(world)
+local world = CreateWorld()
+
+local light = CreateBoxLight(world)
 light:SetRange(-10, 10)
 light:SetRotation(15, 15, 0)
 light:SetColor(2)
 
-camera = CreateCamera(world)
+local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 0, -3)
-camera:SetFOV(70)
+camera:SetFov(70)
 
 box = CreateBox(world)
 
