@@ -1,4 +1,4 @@
-# Mesh::Rotate
+# Mesh:Rotate
 
 This method rotates all vertex positions by the specified rotation.
 
