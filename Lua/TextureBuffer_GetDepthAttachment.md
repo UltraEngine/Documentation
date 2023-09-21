@@ -4,10 +4,8 @@ This method returns a texture buffer's depth texture.
 
 ## Syntax
 
-```lua
-function TextureBuffer:GetDepthAttachment() --> texture
-```
+- [Texture](Texture.md) **GetDepthAttachment**()
 
 ## Returns
 
-- `texture` - The depth attachment.
+Returns the depth attachment at the specified index.
