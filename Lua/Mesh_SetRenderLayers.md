@@ -4,11 +4,7 @@ This method is used to control which cameras an entity is visible in.
 
 ## Syntax
 
-```lua
-function Mesh:SetRenderLayers(renderlayers)
-```
-
-## Parameters
+- **SetRenderLayers**(number renderlayers)
 
 | Parameter | Description |
 |---|---|
