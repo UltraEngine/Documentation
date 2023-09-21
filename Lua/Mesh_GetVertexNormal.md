@@ -4,7 +4,7 @@ This method gets the normal of the specified vertex.
 
 ## Syntax
 
-- **GetVertexNormal**(index)
+- [Vec3](Vec3.md) **GetVertexNormal**(index)
 
 | Parameter | Description |
 |-----------|-------------|
