@@ -1,13 +1,7 @@
-#### `mesh:UpdateTangents()`
+# Mesh::UpdateTangents
 
 This method updates the mesh tangents, for normal mapping.
 
-##### Syntax 
-```lua
-mesh:UpdateTangents()
-```
+## Syntax 
 
-##### Example
-```lua
-mesh:UpdateTangents()
-```
+- **UpdateTangents**()
