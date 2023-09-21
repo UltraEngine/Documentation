@@ -4,7 +4,7 @@ This method sets a texture buffer's color texture.
 
 ## Syntax
 
-- boolean **SetColorAttachment**([Texture](Texture.md) texture, const int index = 1)
+- boolean **SetColorAttachment**([Texture](Texture.md) texture, number index = 1)
 
 | Parameter | Description |
 |---|---|
