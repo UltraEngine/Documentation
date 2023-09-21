@@ -4,7 +4,7 @@ This method centers a mesh along one or more axes.
 
 ## Syntax
 
-- void **Recenter**(const bool x = true, const bool y = true, const bool z = true)
+- **Recenter**(boolean x = true, boolean y = true, boolean z = true)
 
 | Parameter | Description |
 |---|---|
