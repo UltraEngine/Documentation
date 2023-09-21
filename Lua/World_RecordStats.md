@@ -4,11 +4,11 @@ This method is used to enable or disable statistics recording. Statistics record
 
 ## Syntax
 
-```lua
-function World:RecordStats(record: boolean)
-```
+- RecordStats(boolean record)
 
-- `record` (boolean): if set to true, statistics recording is enabled. Otherwise, it is disabled.
+| Parameter | Description |
+|---|---|
+| record | if set to true, statistics recording is enabled. Otherwise, it is disabled |
 
 ## Example
 
