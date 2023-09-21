@@ -12,7 +12,6 @@ The world class is a container for entities.
 | renderstats | [RenderStats](RenderStats.md) | rendering statistics |
 | [ClearCollisionResponses](World_ClearCollisionResponses.md) | Method | clears all collision responses |
 | [GetAmbientLight](World_GetAmbientLight.md) | Method | returns the ambient light color |
-} [GetFrameCaptures](World_GetFrameCaptures.md) | Method | returns an array of screen capture images |
 | [GetCollisionResponse](World_GetCollisionResponse.md) | Method | returns the collision response for collisions between the specified collision types |
 | [GetEntitiesInArea](World_GetEntitiesInArea.md) | Method | returns an array of entities that intersect the specified bounding box |
 | [GetTaggedEntities](World_GetTaggedEntities.md) | Method | returns an array of entities with the specified tag |
