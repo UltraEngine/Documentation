@@ -3324,10 +3324,6 @@
 							"filename": "World_Render"
 						},
 						{
-							"title": "Save",
-							"filename": "World_Save"
-						},
-						{
 							"title": "SetAmbientLight",
 							"filename": "World_SetAmbientLight"
 						},
