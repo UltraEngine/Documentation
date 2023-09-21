@@ -4,14 +4,13 @@ This function creates a new texture buffer, for render-to-texture operations.
 
 ## Syntax
 
-```lua
-function CreateTextureBuffer(width, height, colorattachments, depthattachment)
-```
+- [TextureBuffer](TextureBuffer.md) **CreateTextureBuffer**(number width, number height, number colorattachments = 1, boolean depthattachment = true)
 
-- **width**: The width of the texture buffer.
-- **height**: The height of the texture buffer.
-- **colorattachments** (optional): The number of color textures to add, between 0 and 4. Default value is 1.
-- **depthattachment** (optional): Set to true to add a depth texture. Default value is true.
+| Parameter | Description |
+|---|---|
+| width, height | dimensions of the texture buffer |
+| colorattachments | number of color textures to add, between 0 and 4 |
+| depthattachment | set to true to add a depth texture |
 
 ## Returns
 
