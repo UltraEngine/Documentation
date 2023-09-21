@@ -1,17 +1,16 @@
-##### findBone
+# Skeleton:FindBone
 
-This function searches for a bone in the skeleton with the specified name.
+This method searches for a bone in the skeleton with the specified name.
 
-```lua
---[[
-    This function searches for a bone in the skeleton with the specified name
-    
-    @param name (string) - The bone name to search for
-    @param cased (boolean) - If set to true, the search will be case-sensitive
-    
-    @return (Bone) - Returns a bone with the specified name if found, otherwise nil is returned
-]]
-function Skeleton:findBone(name, cased)
-    -- implementation
-end
-```
+## Syntax
+
+- [Bone](Bone.md) **FindBone**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name, boolean cased = false)
+
+| Parameter | Description |
+|---|---|
+| name | the bone name to search for |
+| cased | if set to true the search will be case-sensitive |
+
+## Returns
+
+Returns a bone with the specified name if found, otherwise NULL is returned.
