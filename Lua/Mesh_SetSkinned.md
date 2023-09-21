@@ -4,9 +4,7 @@ This method enables or disables vertex weighting.
 
 ## Syntax
 
-```lua
-Mesh:SetSkinned(mode)
-```
+- **SetSkinned**(boolean mode)
 
 | Parameter | Description |
 |---|---|
