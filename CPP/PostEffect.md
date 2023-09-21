@@ -14,7 +14,7 @@ A post effect file specifies one or more shader passes. For each subpass, a text
 
 ```json
 {
-    "postEffect":
+    "posteffect":
     {
         "subpasses":
         [
