@@ -6,7 +6,6 @@ This function loads a post-processing effect from a file.
 
 - [PostEffect](PostEffect.md) **LoadPostEffect**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
 
-
 | Parameter | Description |
 |-----------|-------------|
 | path      | file name to load |
