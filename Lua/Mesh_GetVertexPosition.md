@@ -1,17 +1,15 @@
-### mesh:GetVertexPosition(index)
+# Mesh:GetVertexPosition
 
 This method gets the position of the specified vertex.
 
-#### Syntax
+## Syntax
 
-```lua
-function mesh:GetVertexPosition(index)
-```
+- **GetVertexPosition**(number index)
 
-#### Parameters
+| Parameter | Description |
+|---|---|
+| index | the vertex index |
 
-- `index` (number): The vertex index.
+## Returns
 
-#### Returns
-
-- `position` ([Vec3](Vec3.md)): The vertex position.
+Returns the vertex position.
