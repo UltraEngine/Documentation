@@ -1,23 +1,21 @@
-## mesh:AddPrimitive
+# Mesh:AddPrimitive
 
-This method adds a single line, triangle, or quad to the mesh.
+This method add a single line, triangle, or quad to the mesh.
 
-### Syntax
+## Syntax
 
-```lua
-index = mesh:AddPrimitive(a, b)
-index = mesh:AddPrimitive(a, b, c)
-index = mesh:AddPrimitive(a, b, c, d)
-```
+- number **AddPrimitive**(number a, number b)
+- number **AddPrimitive**(number a, number b, number c)
+- number **AddPrimitive**(number a, number b, number c, number d)
 
-### Parameters
+| Parameter | Description |
+|---|---|
+| a, b, c, d | vertex indices |
 
-- `a`, `b`, `c`, `d`: Vertex indices
+## Returns
 
-### Returns
+Returns the index of the new primitive.
 
-- `index`: The index of the new primitive
+## Remarks
 
-### Remarks
-
-The number of arguments must match the mesh primitive type.
+THe number of arguments must match the mesh primitive type.
