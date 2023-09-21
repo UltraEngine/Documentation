@@ -4,15 +4,15 @@ This method retrieves all entities in the world with the specified tag.
 
 ## Syntax
 
-- **GetTaggedEntities**(tag: [string](https://www.lua.org/manual/5.4/manual.html#6.4)): table
+- [table](https://www.lua.org/manual/5.4/manual.html#6.6) **GetTaggedEntities**([string](https://www.lua.org/manual/5.4/manual.html#6.4) tag)
 
-## Parameters
-
-- `tag` ([string](https://www.lua.org/manual/5.4/manual.html#6.4)): Tag to search for.
+| Parameter | Description |
+|---|---|
+| tag | tag to search for |
 
 ## Returns
 
-- (table): An array of all entities that use the specified tag.
+- Returns an array of all entities that use the specified tag.
 
 ## Remarks
 
