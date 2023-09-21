@@ -44,7 +44,7 @@ light:SetColor(2)
 
 -- Create a model
 local model = CreateSphere(world)
-for v = 0, model.lods[1].meshes[1]:GetVertexCount() - 1 do
+for v = 0, model.lods[1].meshes[1]:CountVertices() - 1 do
     model.lods[1].meshes[1]:SetVertexColor(v, Random(), Random(), Random())
 end
 
