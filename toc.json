@@ -1696,7 +1696,8 @@
 						},
 						{
 							"title": "Vertex",
-							"filename": "Vertex"
+							"filename": "Vertex",
+							"hideFromLua": true
 						}
 					]
 				},
