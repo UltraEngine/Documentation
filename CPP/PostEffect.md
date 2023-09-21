@@ -6,7 +6,7 @@ This class handles fullscreen post-porcessing shader effects.
 
 | Property | Type | Description |
 |---|---|---|
-| [LoadPostEffect](LoadPostEffect.md) | Function | loads a post-processing effect from a JSON file |
+| [LoadPostEffect](LoadPostEffect.md) | Function | loads a post-processing effect from a file |
 
 ### JSON Format
 
