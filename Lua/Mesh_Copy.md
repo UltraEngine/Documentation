@@ -1,4 +1,4 @@
-# Mesh:Copy()
+# Mesh:Copy
 
 This method creates a new mesh that is a duplicate of the current one.
 
