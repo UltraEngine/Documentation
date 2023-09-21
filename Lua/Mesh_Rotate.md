@@ -4,9 +4,9 @@ This method rotates all vertex positions by the specified rotation.
 
 ## Syntax 
 
-- void **Rotate**(float pitch, const float yaw, const float roll)
-- void **Rotate**([Vec3](Vec3.md) rotation)
-- void **Rotate**([Quat](Quat.md) rotation)
+- **Rotate**(number pitch, number yaw, number roll)
+- **Rotate**([Vec3](Vec3.md) rotation)
+- **Rotate**([Quat](Quat.md) rotation)
 
 | Parameter | Description |
 |---|---|
