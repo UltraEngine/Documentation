@@ -1418,6 +1418,27 @@
 							"filename": "Lod"
 						},
 						{
+							"title": "Map",
+							"filename": "Map",
+							"topics": [{
+									"title": "CreateMap",
+									"filename": "CreateMap"
+								},
+								{
+									"title": "LoadMap",
+									"filename": "LoadMap"
+								},
+								{
+									"title": "Reload",
+									"filename": "Map_Reload"
+								},
+								{
+									"title": "Save",
+									"filename": "Map_Save"
+								}
+							]
+						},
+						{
 							"title": "Material",
 							"filename": "Material",
 							"topics": [{
@@ -1485,7 +1506,7 @@
 									"filename": "Material_SetTransparent"
 								}
 							]
-						},
+						},						
 						{
 							"title": "Mesh",
 							"filename": "Mesh",
@@ -1598,28 +1619,7 @@
 								"title": "LoadPostEffect",
 								"filename": "LoadPostEffect"
 							}]
-						},
-						{
-							"title": "Scene",
-							"filename": "Scene",
-							"topics": [{
-									"title": "CreateScene",
-									"filename": "CreateScene"
-								},
-								{
-									"title": "LoadScene",
-									"filename": "LoadScene"
-								},
-								{
-									"title": "Reload",
-									"filename": "Scene_Reload"
-								},
-								{
-									"title": "Save",
-									"filename": "Scene_Save"
-								}
-							]
-						},						   
+						},												   
 						{
 							"title": "ShaderFamily",
 							"filename": "ShaderFamily",
