@@ -1,19 +1,21 @@
 # LoadTexture
+
 This function loads a texture from a file or open stream.
 
-### Syntax
-* void **LoadTexture**(const string& path, const LoadFlags flags = LOAD_DEFAULT)
-* void **LoadTexture**(const wstring& path, const LoadFlags flags = LOAD_DEFAULT)
-* void **LoadTexture**(shared_ptr<Stream> stream, const LoadFlags flags = LOAD_DEFAULT)
+## Syntax
 
-### Parameters
-| Name | Description |
+- **LoadTexture**(const string& path, const LoadFlags flags = LOAD_DEFAULT)
+- **LoadTexture**(const wstring& path, const LoadFlags flags = LOAD_DEFAULT)
+- **LoadTexture**(shared_ptr<Stream> stream, const LoadFlags flags = LOAD_DEFAULT)
+
+| Parameter | Description |
 | ------ | ------ |
-| **path** | path or URL to the file to be loaded |
-| **stream** | an open file stream to load the asset from |
-| **flags** | LoadFlags parameter to use |
+| path | path or URL to the file to be loaded |
+| stream | an open file stream to load the asset from |
+| flags | LoadFlags parameter to use |
 
-### Remarks
+## Remarks
+
 Any of the values below may be combined in the flags parameter:
 - LOAD_DEFAULT: Default load behavior.
 - LOAD_UNMANAGED: Does not store or load cached object.
@@ -22,7 +24,8 @@ Any of the values below may be combined in the flags parameter:
 - LOAD_NO_OVERRIDE: Does not use workflows to redirect files.
 - LOAD_NO_CACHE: Ignores cached copies of downloaded files.
  
-### Example
+## Example
+
 ```lua
 --Get the primary display
 local displaylist = GetDisplays()
