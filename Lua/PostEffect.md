@@ -8,7 +8,7 @@ This class handles fullscreen post-porcessing shader effects.
 |---|---|---|
 | [LoadPostEffect](LoadPostEffect.md) | Function | loads a post-processing effect from a file |
 
-### JSON Format
+## File Format
 
 A post effect file specifies one or more shader passes. For each subpass, a texture buffer is allocated automatically and the results of one subpass are used as the input image for the next one.
 
