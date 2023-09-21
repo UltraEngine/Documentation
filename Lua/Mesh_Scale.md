@@ -4,11 +4,10 @@ This method scales all vertex positions by the specified value.
 
 ## Syntax 
 
-- **Mesh:Scale**(offset: [Vec3](Vec3.md))
-- **Mesh:Scale**(x: number, y: number, z: number)
+- **Scale**([Vec3](Vec3.md) scale)
+- **Scale**(number x, number y, number z)
 
 | Parameter | Description |
 |---|---|
-| offset | the [Vec3](Vec3.md) scale |
+| scale | the scale to apply |
 | x, y, z | the vertex scale |
-
