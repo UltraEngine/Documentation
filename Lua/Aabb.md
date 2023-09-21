@@ -15,36 +15,3 @@ This class describes an axis-aligned bounding box.
 | \+= | Operator | Expands one Aabb to enclose another. |
 | \+ | Operator | Expands one Aabb to enclose another and returns the result. |
 | [Update](Aabb_Update.md) | Method | Calculates the bounding box size, center, and radius from the minimum and maximum extents. |
-
-
-## Example
-```lua
-local Vec3 = require("Vec3")
-
--- Create a new Aabb
-local aabb1 = Aabb()
-
--- Create a new Aabb with given minimum and maximum extents
-local min = Vec3(0, 0, 0)
-local max = Vec3(1, 1, 1)
-local aabb2 = Aabb(min, max)
-
--- Create a new Aabb with given coordinates
-local aabb3 = Aabb(0, 0, 0, 1, 1, 1)
-
--- Access properties
-local minExtent = aabb2.min
-local maxExtent = aabb2.max
-local centerPoint = aabb2.center
-local boxSize = aabb2.size
-local boxRadius = aabb2.radius
-
--- Expand one Aabb to enclose another
-aabb1 += aabb2
-
--- Expand one Aabb to enclose another and store the result in a new Aabb
-local result = aabb1 + aabb2
-
--- Update the bounding box size, center, and radius from the minimum and maximum extents
-aabb1:Update()
-```
