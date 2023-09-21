@@ -1,20 +1,18 @@
-# texture_buffer:set_depth_attachment
+# TextureBuffer:SetDepthAttachment
 
-This function sets a texture buffer's depth texture.
+This method sets a texture buffer's depth texture.
 
 ## Syntax
 
-```lua
-function texture_buffer:set_depth_attachment(texture)
-```
+- boolean **SetDepthAttachment**([Texture](Texture.md) texture)
 
-## Parameters
-
-- `texture` (userdata): The depth attachment to set.
+| Parameter | Description |
+|---|---|
+| texture | depth attachment to set |
 
 ## Returns
 
-- `true` if the depth attachment is set, otherwise `false`.
+Returns true of the depth attachment is set, otherwise false is returned.
 
 ## Remarks
 
