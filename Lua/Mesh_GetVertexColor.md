@@ -4,7 +4,7 @@ This method returns the color of the specified mesh vertex.
 
 ## Syntax
 
-- **GetVertexColor**(number index)
+- [Vec4](Vec4.md) **GetVertexColor**(number index)
 
 | Parameter | Description |
 |---|---|
