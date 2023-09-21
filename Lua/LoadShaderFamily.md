@@ -4,13 +4,13 @@ This function loads a shader family from a JSON file.
 
 ## Syntax
 
-- `LoadShaderFamily(path: string, flags: number): [ShaderFamily](Shaderfamily.md)`
+- [ShaderFamily](Shaderfamily.md) **LoadShaderFamily**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
 
-## Parameters
-
-- `path: string`: The file name to load.
-- `flags: number`: Optional load flags.
+| Parameter | Description |
+|---|---|
+| path | file name to load |
+| flags | optional load flags |
 
 ## Returns
 
-Returns the loaded shader family if successful, otherwise `nil` is returned.
+Returns the loaded shader family is successful, otherwise NULL is returned.
