@@ -1,10 +1,8 @@
 # ShaderFamily
 
-**Base class**: *Asset*
+**Base class**: [Asset](Asset.md)
 
 This class defines the shader modules that should be used for a material, under different circumstances and settings.
-
-## Properties
 
 | Property | Description |
 |---|---|
