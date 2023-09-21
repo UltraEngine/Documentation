@@ -4,7 +4,7 @@ This method gets the position of the specified vertex.
 
 ## Syntax
 
-- **GetVertexPosition**(number index)
+- [Vec3](Vec3.md) **GetVertexPosition**(number index)
 
 | Parameter | Description |
 |---|---|
