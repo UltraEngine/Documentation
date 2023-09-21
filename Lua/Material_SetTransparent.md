@@ -26,6 +26,7 @@ local world = CreateWorld()
 world:SetAmbientLight(0.05)
 
 --Set environment maps
+local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets";
 local specmap = LoadTexture(remotepath .. "/Materials/Environment/Storm/specular.dds")
 local diffmap = LoadTexture(remotepath .. "/Materials/Environment/Storm/diffuse.dds")
 world:SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND)
@@ -64,10 +65,12 @@ mtl:SetRoughness(0.5)
 mtl:SetTransparent(true)
 drag:SetMaterial(mtl, true)
 
-local camerarotation = Vec3()
+local camerarotation = Vec3(0)
+local axis = Vec3(0)
 
 --Main loop
 while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+
     --Camera rotate controls
     local newpos = window:GetMouseAxis()
     local diff = newpos - axis
