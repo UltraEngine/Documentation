@@ -4,7 +4,7 @@ This method returns the number of vertices in the mesh.
 
 ## Syntax
 
-- **CountVertices**()
+- number **CountVertices**()
 
 ## Returns
 
