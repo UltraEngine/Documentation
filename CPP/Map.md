@@ -1,4 +1,4 @@
-# Scene
+# Map
 
 Base class: [Object](Object.md)
 
