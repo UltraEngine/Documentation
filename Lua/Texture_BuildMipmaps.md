@@ -4,10 +4,8 @@ This method will create a new mipmap chain from the base image level. The textur
 
 ## Syntax
 
-- **Texture:BuildMipmaps**()
-- **Texture:BuildMipmaps**(layer)
-
-## Parameters
+- **BuildMipmaps**()
+- **BuildMipmaps**(number layer)
 
 | Parameter | Description |
 |---|---|
