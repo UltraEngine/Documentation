@@ -1,14 +1,10 @@
-# Mesh.GetVertexNormal
+# Mesh:GetVertexNormal
 
 This method gets the normal of the specified vertex.
 
 ## Syntax
 
-```lua
-function Mesh:GetVertexNormal(index)
-```
-
-## Parameters
+- **GetVertexNormal**(index)
 
 | Parameter | Description |
 |-----------|-------------|
