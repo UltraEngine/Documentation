@@ -28,26 +28,22 @@ Any of the values below may be combined in the flags parameter:
 
 ```lua
 --Get the primary display
-local displaylist = GetDisplays()
-local display = displaylist[1];
-if display == nil then RuntimeError("Primary display not found.") end
-local displayscale = display:GetScale()
+local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow(display, "Example", 0, 0, math.min(1280 * displayscale.x, display.size.x), math.min(720 * displayscale.y, display.size.y), WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280,720, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 --Create a rendering framebuffer
 local framebuffer = CreateFramebuffer(window);
 
 --Create a world
 local world = CreateWorld()
+world:SetAmbientLight(1)
 
 --Create a camera
 local camera = CreateCamera(world)
+camera:SetClearColor(0.125)
 camera:Move(0,0,-1)
-
---Create a light
-local light = CreateLight(world,LIGHT_DIRECTIONAL)
 
 --Display material
 local model = CreateBox(world)
@@ -56,10 +52,10 @@ model:SetMaterial(mtl)
 
 --Load texture
 local tex = LoadTexture("https://www.github.com/Leadwerks/Documentation/raw/master/Assets/brickwall01.dds")
-if tex ~= nil then mtl:SetTexture(tex, TEXTURE_BASE) end
+mtl:SetTexture(tex, TEXTURE_BASE)
 
 --Main loop
-while window:Closed() == false do
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
 	world:Update()
 	world:Render(framebuffer)
 end
