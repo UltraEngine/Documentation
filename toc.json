@@ -1534,10 +1534,6 @@
 									"filename": "Mesh_GetVertexTexCoords"
 								},
 								{
-									"title": "Modify",
-									"filename": "Mesh_Modify"
-								},
-								{
 									"title": "Recenter",
 									"filename": "Mesh_Recenter"
 								},
