@@ -18,7 +18,6 @@ The world class is a container for entities.
 | [Pick](World_Pick.md) | Method | performs a raycast |
 | [RecordStats](World_RecordStats.md) | Method | enables statistics recording |
 | [Render](World_Render.md) | Method | renders the world |
-| [Save](World_Save.md) | Method | serializes the world to a file |
 | [SetAmbientLight](World_SetAmbientLight.md) | Method | sets the ambient light color |
 | [SetCollisionResponse](World_SetCollisionResponse.md) | Method | sets the collision response for collisions between the specified collision types |
 | [SetEnvironmentMap](World_SetEnvironmentMap.md) | Method | sets the skybox or specular and diffuse reflection maps |
