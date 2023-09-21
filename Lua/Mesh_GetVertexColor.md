@@ -1,24 +1,15 @@
-# mesh:GetVertexColor
+# Mesh:GetVertexColor
 
 This method returns the color of the specified mesh vertex.
 
 ## Syntax
 
-```lua
-function mesh:GetVertexColor(index)
-```
+- **GetVertexColor**(number index)
 
-## Parameters
-
-- `index` - The index of the vertex.
+| Parameter | Description |
+|---|---|
+| index | the vertex index to use |
 
 ## Returns
 
-Returns the vertex color as a `Vec4` object.
-
-## Example
-
-```lua
-local color = mesh:GetVertexColor(0)
-print(color)
-```
+Returns the vertex color.
