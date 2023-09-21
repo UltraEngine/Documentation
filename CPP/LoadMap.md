@@ -1,15 +1,15 @@
-# LoadScene
+# LoadMap
 
 This command loads a scene from a file path or stream.
 
 ## Syntax
 
-- shared_ptr<[Scene](Scene.md)> **LoadScene**(shared_ptr<[World](World.md)> world, const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
-- shared_ptr<[Scene](Scene.md)> **LoadScene**(shared_ptr<[World](World.md)> world, shared_ptr<[Stream](Stream.md)> stream, shared_ptr<[Stream](Stream.md)> binstream, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Map](Map.md)> **LoadMap**(shared_ptr<[World](World.md)> world, const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Map](Map.md)> **LoadMap**(shared_ptr<[World](World.md)> world, shared_ptr<[Stream](Stream.md)> stream, shared_ptr<[Stream](Stream.md)> binstream, const LoadFlags flags = LOAD_DEFAULT)
 
 ## Returns
 
-If the scene is successfully loaded a new scene object is returned, otherwise NULL is returned.
+If the scene is successfully loaded a new map is returned, otherwise NULL is returned.
 
 ## Remarks
 
@@ -17,7 +17,7 @@ This feature is in continued development and its behavior may change somewhat in
 
 ## Example
 
-This example saves the starting scene and reloads it when the space key is pressed.
+This example saves the starting map and reloads it when the space key is pressed.
 
 ```c++
 #include "UltraEngine.h"
@@ -56,7 +56,7 @@ int main(int argc, const char* argv[])
     ground->SetColor(0, 1, 0);
     
     //Create a scene
-    auto scene = std::make_shared<Scene>();
+    auto scene = std::make_shared<Map>();
     scene->entities.push_back(ground);
     scene->entities.push_back(light);
     ground = NULL;
