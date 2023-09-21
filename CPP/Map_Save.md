@@ -1,4 +1,4 @@
-# Scene::Save
+# M::Save
 
 This method saves a scene to a file or stream.
 
