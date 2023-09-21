@@ -10,6 +10,5 @@ This method sets the texture coordinates of a single vertex in the mesh.
 | Parameter | Description |
 | --- | --- |
 | index | vertex index, starting with zero |
-| u, v | vertex texture coordinates to set |
-| texcoords | a [Vec2](Vec2.md) object representing the vertex texture coordinates |
+| texcoords, (u, v) | vertex texture coordinates to set |
 | texcoordset | texture coordinate set, can be 1 or 2 |
