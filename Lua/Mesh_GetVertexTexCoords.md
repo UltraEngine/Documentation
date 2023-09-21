@@ -1,20 +1,16 @@
 # Mesh:GetVertexTexCoords
 
-**function** `Mesh:GetVertexTexCoords(index: number, texcoordset: number): Vec2`
-
 This method gets the texture coordinates of the specified vertex.
 
 ## Syntax
 
-`Mesh:GetVertexTexCoords(index: number, texcoordset: number): Vec2`
+- [Vec2](Vec2.md) **GetVertexTexCoords**(number index)
 
-## Parameters
-
-| Name | Description |
+| Parameter | Description |
 |------|-------------|
 | index | The vertex index. |
-| texcoordset | (optional) The texture coordinate set to return. It can be 0 or 1. Default value is 0. |
+| texcoordset | The texture coordinate set to return. It can be 0 or 1. Default value is 0. |
 
 ## Returns
 
-Returns the vertex texture coordinates as a `Vec2` object.
+Returns the vertex texture coordinates.
