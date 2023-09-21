@@ -1,4 +1,4 @@
-# SetMaterial
+# Mesh:SetMaterial
 
 This function sets the material for the mesh.
 
