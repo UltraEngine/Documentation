@@ -4,8 +4,8 @@ This method can be used to modify the color of a single vertex.
 
 ## Syntax
 
-- Mesh:SetVertexColor(index: number, r: number, g: number, b: number, a: number = 1.0)
-- Mesh:SetVertexColor(index: number, color: [Vec4](Vec4.md) object)
+- **SetVertexColor**(number index, number r, number g, number b, number a = 1)
+- **SetVertexColor**(number index, [Vec4](Vec4.md) color)
 
 | Parameter | Description |
 |---|---|
@@ -55,5 +55,3 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Render(framebuffer)
 end
 ```
-
-Note: The Lua code assumes that all required libraries have already been imported.
