@@ -1,19 +1,14 @@
 # Pixmap:Convert
 
-```lua
--- Converts the pixmap to the specified pixel format
--- @param format The pixel format to convert to
--- @return The converted pixmap if successful, otherwise nil is returned
-function Pixmap:Convert(format)
-    -- Code implementation here
-end
-```
+- [Pixmap](Pixmap.md) **Convert**(number format)
 
-## Syntax
+| Parameter | Description |
+|---|---|
+| format | pixel format to convert to |
 
-```lua
--- Code implementation here
-```
+## Returns
+
+Returns a pixmap with the new pixel format if successful, otherwise NULL is returned.
 
 ## Example
 
