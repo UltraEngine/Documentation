@@ -4,14 +4,14 @@ This method generates a pixmap from a vector image. A scaling value can be used 
 
 ## Syntax
 
-`Pixmap Rasterize(float scale = 1.0, bool cached = true)`
+- shared_ptr<[Pixmap](Pixmap.md)\> **Rasterize**(const float scale = 1.0f, const bool cached = true)
 
-### Parameters
+| Parameter | Description |
+| --- | --- |
+| scale | magnification value to create scaled versions of the image |
+| cached | if set to true the routine will search for a cached pixmap at the specified scale, otherwise a new pixmap will always be generated |
 
-- `scale` (optional): Magnification value to create scaled versions of the image.
-- `cached` (optional): If set to `true`, the routine will search for a cached pixmap at the specified scale. Otherwise, a new pixmap will always be generated.
-
-### Returns
+## Returns
 
 Returns a pixmap at the specified scale.
 
