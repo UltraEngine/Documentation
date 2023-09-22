@@ -1,13 +1,11 @@
-# emitEvent
+# EmitEvent
 
-This function adds an event to the event queue and triggers any callbacks added with the [listenEvent](listenEvent.md) function.
+This function adds an event to the event queue and triggers any callbacks added with the [ListenEvent](ListenEvent.md) function.
 
 ## Syntax
 
-- **emitEvent**(event: [Event](Event.md)): boolean
-- **emitEvent**(id: number, source: [Object](Object.md), data: number = 0, x: number = 0, y: number = 0, width: number = 0, height: number = 0, extra: [Object](Object.md)? = nil, text: string = ""): boolean
-
-### Parameters
+- boolean **EmitEvent**([Event](Event.md))
+- boolean **EmitEvent**(number id, [Object](Object.md) source, number data = 0, number x = 0, number y = 0, number width = 0, number height = 0, [Object](Object.md) extra = nil, [string](https://www.lua.org/manual/5.4/manual.html#6.4) text = "")
 
 | Parameter | Description |
 | --- | --- |
@@ -20,9 +18,9 @@ This function adds an event to the event queue and triggers any callbacks added 
 | width | X compononent of event size | 
 | height | Y component of event size |
 | extra | event extra data |
-| text | event text data |
+| text | event text |
 
-### Returns
+## Returns
 
 If any event listener callback triggered by this event returns `false`, the function will return `false`, otherwise `true` is returned.
 
