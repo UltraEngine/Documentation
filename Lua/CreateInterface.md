@@ -35,8 +35,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1])
 local ui = CreateInterface(window)
 
 --Create widget
-local sz = ui.root:ClientSize()
-local button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui.root)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui.background)
 
 while (true) do
     local ev = WaitEvent()
