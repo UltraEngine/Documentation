@@ -1,4 +1,4 @@
-# display.GetScale
+# Display:GetScale
 
 This function retrieves the display scaling factor that is currently in use on this display.
 
