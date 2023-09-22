@@ -6,9 +6,9 @@ Base class: [Asset](Asset.md)
 
 | Property | Type | Description |
 | ----- | ----- | ----- |
-| size | const iVec2&  | default size of the image, in pixels |
-| [Rasterize](#iconrasterize) | Method | Generates a pixmap |
-| [LoadIcon](#loadicon) | Function | Loads an icon object from a file |
+| size | [iVec2](iVec2.md)  | default size of the image, in pixels |
+| [Rasterize](Icon_Rasterize.md) | Method | Generates a pixmap |
+| [LoadIcon](LoadIcon) | Function | Loads an icon object from a file |
 
 ## Method: Rasterize
 
