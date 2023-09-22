@@ -13,23 +13,17 @@ Returns the display's position on the bounding virtual display.
 ## Example
 
 ```lua
--- Get all displays
-local displays = UltraEngine.GetDisplays()
+local displays = GetDisplays()
 
--- Iterate through displays
-for k=0, #displays do
-    print("Display " .. k .. ":")
-    print("    Position: " .. tostring(displays[k]:GetPosition()))
-    print("    Size: " .. tostring(displays[k]:GetSize()))
-    print("    Scale: " .. tostring(displays[k]:GetScale()))
-    print("    Graphics Modes:")
-    
-    -- Get graphics modes
-    local gfxmodes = displays[k]:GraphicsModes()
-    
-    -- Iterate through graphics modes
-    for n=0, #gfxmodes do
-        print("        " .. n .. ": " .. tostring(gfxmodes[n]))
+for k = 1, #displays do
+    Print("Display " .. tostring(k) .. ":")
+    Print(" Position: " .. tostring(displays[k]:GetPosition().x) .. " x " .. tostring(displays[k]:GetSize().y))
+    Print(" Size: " .. tostring(displays[k]:GetSize().x) .. " x " .. tostring(displays[k]:GetSize().y))
+    Print(" Scale: " .. tostring(displays[k]:GetScale()))
+    Print(" Graphics Modes:")
+    local gfxmodes = displays[k].graphicsmodes
+    for n = 1, #gfxmodes do
+        Print("     " .. tostring(n) .. ": " .. tostring(gfxmodes[n].x) .. ", " .. tostring(gfxmodes[n].y .. ", " .. tostring(gfxmodes[n].z)))
     end
 end
 ```
