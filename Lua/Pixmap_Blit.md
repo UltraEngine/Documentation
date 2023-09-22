@@ -4,7 +4,7 @@ This method copies an area of one pixmap to another with scaling and filtering. 
 
 ## Syntax
 
-- bool **Blit**(number x, number y, number width, number height, [Pixmap](Pixmap.md) dest, number destx, number desty, number destwidth, number destheight)
+- boolean **Blit**(number x, number y, number width, number height, [Pixmap](Pixmap.md) dest, number destx, number desty, number destwidth, number destheight)
 
 | Parameter | Description |
 |---|---|
