@@ -4,9 +4,7 @@ This function retrieves a list of hardware monitors that are currently in use.
 
 ## Syntax
 
-```lua
-function GetDisplays() --> table
-```
+- [table]() **GetDisplays**()
 
 ## Returns
 
@@ -15,21 +13,17 @@ Returns a table of all displays currently in use, with the primary display at in
 ## Example
 
 ```lua
-function main()
-    local displays = GetDisplays()
+local displays = GetDisplays()
 
-    for k = 1, #displays do
-        print("Display " .. tostring(k) .. ":")
-        print(" Position: " .. tostring(displays[k]:GetPosition()))
-        print(" Size: " .. tostring(displays[k]:GetSize()))
-        print(" Scale: " .. tostring(displays[k]:GetScale()))
-        print(" Graphics Modes:")
-        local gfxmodes = displays[k]:graphicsmodes
-        for n = 1, #gfxmodes do
-            print("     " .. tostring(n) .. ": " .. tostring(gfxmodes[n]))
-        end
+for k = 1, #displays do
+    Print("Display " .. tostring(k) .. ":")
+    Print(" Position: " .. tostring(displays[k]:GetPosition().x) .. " x " .. tostring(displays[k]:GetSize().y))
+    Print(" Size: " .. tostring(displays[k]:GetSize().x) .. " x " .. tostring(displays[k]:GetSize().y))
+    Print(" Scale: " .. tostring(displays[k]:GetScale()))
+    Print(" Graphics Modes:")
+    local gfxmodes = displays[k].graphicsmodes
+    for n = 1, #gfxmodes do
+        Print("     " .. tostring(n) .. ": " .. tostring(gfxmodes[n].x) .. ", " .. tostring(gfxmodes[n].y .. ", " .. tostring(gfxmodes[n].z)))
     end
 end
-
-main()
 ```
