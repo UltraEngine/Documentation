@@ -1,20 +1,18 @@
-# ProcessEvent
+# Interface:ProcessEvent
 
-This function sends an event to an interface to be evaluated.
+This method sends an event to an interface to be evaluated.
 
-```lua
-function Interface:ProcessEvent(ev)
-    -- code to evaluate the event
-end
-```
+## Syntax
 
-## Parameters
+- **ProcessEvent**([Event](Event) ev)
 
-- `ev` (Event): event to be evaluated
+| Parameter | Description |
+|---|---|
+| ev | event to be evaluated |
 
 ## Remarks
 
-When an interface is created directly on a window, it will automatically receive events from the window. However, when an interface is created to appear in a 3D rendering viewport, events must be manually sent to the interfaces. This allows the user to make changes to events. For example, the coordinates of a mouse event can be transformed from 3D space to coordinates on a panel in the 3D world.
+When an interface is created directly on a window it will automatically receive events from the window. However, when an interface is created to appear in a 3D rendering viewport, events must be manually sent to the interfaces. This allows the user to make changes to events. For example, the coordinates of a mouse event can be transform from 3D space to coordinates on a panel in the 3D world.
 
 ## Example
 
