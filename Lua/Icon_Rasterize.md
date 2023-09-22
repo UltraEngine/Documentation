@@ -34,7 +34,7 @@ local icon = LoadIcon("https://github.com/Leadwerks/Documentation/raw/master/Ass
 local pixmap = icon:Rasterize(1.0)
 
 --Show the icon
-ui.root:SetPixmap(pixmap)
+ui.background:SetPixmap(pixmap)
 
 while true do
     local ev = WaitEvent()
