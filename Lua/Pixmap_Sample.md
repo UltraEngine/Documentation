@@ -4,24 +4,19 @@ This method retrieves a pixel sample using bilinear filtering to smoothly interp
 
 ## Syntax
 
-```lua
-function Pixmap:Sample(u: number, v: number): Vec4
-function Pixmap:Sample(coords: Vec2): Vec4
-function Pixmap:Sample(coords: iVec2): Vec4
-```
+- [Vec4](Vec4.md) **Sample**(number u, number v)
+- [Vec4](Vec4.md) **Sample**([Vec2](Vec2.md) coords)
+- [Vec4](Vec4.md) **Sample**([iVec2](iVec2.md) coords)
 
-## Parameters
+| Parameter | Description |
+|---|---|
+| (u, v), coords | sample coordinate or pixel |
 
-| Name | Description |
-| --- | --- |
-| u, v | sample coordinate or pixel |
-| coords | sample coordinate or pixel |
-
-## Returns
+## Returns 
 
 Returns a bilinear filtered pixel sample at the specified coordinate.
 
-If the pixmap uses a compressed format, `Vec4(0)` will be returned.
+If the pixmap uses a compressed format Vec4(0) will be returned.
 
 ## Remarks
 
