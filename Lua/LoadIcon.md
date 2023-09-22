@@ -1,19 +1,21 @@
 # LoadIcon
 
-This function loads a vector image from a file path or stream.
+This functions loads a vector image from a file path or stream.
 
 ## Syntax
 
-LoadIcon(path: string, flags: number): Icon
-LoadIcon(stream: Stream, flags: number): Icon
+- [Icon](Icon.md) **LoadIcon**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
+- [Icon](Icon.md) **LoadIcon**([Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
 
-- `path`: file path to load the icon from
-- `stream`: stream to load the icon from
-- `flags`: optional loading flags
+| Parameter | Description |
+|---|---|
+| path | file path to load the icon from |
+| stream | stream to load the icon from |
+| flags | optional loading flags |
 
 ## Returns
 
-Returns the loaded icon object if successful, otherwise `nil` is returned.
+Returns the loaded icon object if successful, otherwise NULL is returned.
 
 ## Example
 
