@@ -24,20 +24,26 @@ If the callback function returns false no more callbacks will be executed and no
 The first example shows another way to quit the program when the window is closed:
 
 ```lua
-function EventCallback(ev, extra)
+-- Define the EventCallback function
+local function EventCallback(ev, extra)
     os.exit(0)
 end
 
---Get the displays
+-- Get the displays
 local displays = GetDisplays()
 
---Create window
+-- Create window
 local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
---Create user interface
+-- Create user interface
 local ui = CreateInterface(window)
 
+-- Listen for the window close event
 ListenEvent(EVENT_WINDOWCLOSE, window, EventCallback)
+
+while true do
+    WaitEvent()
+end
 ```
 
 The example below demonstrates how an event listener can be used for custom resizing behavior:
