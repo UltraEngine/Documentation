@@ -1,4 +1,4 @@
-# pixmap:fill
+# Pixmap:Fill
 
 This method writes each pixel of the pixmap with the specified color.
 
@@ -31,7 +31,7 @@ pixmap:Fill(Rgba(0, 0, 0, 255))
 -- Show the pixmap
 ui.background:SetPixmap(pixmap)
 
-local button = CreateButton("Modify Pixmap", 10, 10, 100, 30, ui.root)
+local button = CreateButton("Modify Pixmap", 10, 10, 100, 30, ui.background)
 
 while true do
     local ev = WaitEvent()
