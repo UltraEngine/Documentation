@@ -120,6 +120,7 @@ camera:AddComponent(CameraControls)
 -- Create a model
 local box = CreateBox(world)
 box:SetRotation(0, 45, 0)
+box:SetPickMode(PICK_MESH)
 
 -- Create light
 local light = CreateBoxLight(world)
@@ -155,6 +156,8 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         if ev.id == EVENT_MOUSEDOWN or ev.id == EVENT_MOUSEUP or ev.id == EVENT_MOUSEMOVE then
             local pick = camera:Pick(framebuffer, ev.position.x, ev.position.y, 0, true)
             if pick.entity == box then
+                Print(pick.texcoords[1].x)
+                --button:SetColor(Random(), Random(), Random())
                 ev.position.x = Round(pick.texcoords[1].x * 256.0)
                 ev.position.y = Round(pick.texcoords[1].y * 256.0)
                 ui:ProcessEvent(ev)
