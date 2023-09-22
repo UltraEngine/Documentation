@@ -6,10 +6,10 @@ This class provides an interface for querying and managing hardware monitors.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| graphicsmodes | const vector<[iVec2](iVec2.md)>& | read-only available screen resolutions |
-| position | const [iVec2](iVec2.md)& | read-only screen position on the virtual desktop |
-| scale | const float& | read-only DPI scaling value |
-| size | const [iVec2](iVec2.md)& | read-only screen dimensions |
+| graphicsmodes | [table](https://www.lua.org/manual/5.4/manual.html#6.6) | read-only array of available screen resolutions |
+| position | [iVec2](iVec2.md) | read-only screen position on the virtual desktop |
+| scale | number | read-only DPI scaling value |
+| size | [iVec2](iVec2.md) | read-only screen dimensions |
 | [ClientArea](Display_ClientArea.md) | Method | returns the usable area within the screen |
 | [GetPosition](Display_GetPosition.md) | Method | returns the position of the display on the virtual monitor space |
 | [GetSize](Display_GetSize.md) | Method | returns the display dimensions in pixels |
