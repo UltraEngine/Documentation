@@ -22,25 +22,28 @@ Returns the loaded pixmap, or NULL if no pixmap was loaded.
 ## Example
 
 ```lua
--- Get the displays
+--Get the displays
 local displays = GetDisplays()
 
--- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+--Create window
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
--- Create user interface
+--Create user interface
 local ui = CreateInterface(window)
 
--- Create a pixmap
-local pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.dds")
+--Create a pixmap
+local pixmap = LoadPixmap("https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds")
 
--- Show the pixmap
-ui.root:SetPixmap(pixmap)
+--Resize the pixmap
+pixmap = pixmap:Resize(128, 128)
+
+--Show the pixmap
+ui.background:SetPixmap(pixmap)
 
 while true do
     local ev = WaitEvent()
     if ev.id == EVENT_WINDOWCLOSE then
-        break
+        return 0
     end
 end
 ```
