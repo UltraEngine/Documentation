@@ -6,9 +6,7 @@ This method generates a pixmap from a vector image. A scaling value can be used 
 
 - shared_ptr<[Pixmap](Pixmap.md)\> **Rasterize**(const float scale = 1.0f, const bool cached = true)
 
-### Parameters
-
-| Name | Description |
+| Parameter | Description |
 | --- | --- |
 | scale | magnification value to create scaled versions of the image |
 | cached | if set to true the routine will search for a cached pixmap at the specified scale, otherwise a new pixmap will always be generated |
