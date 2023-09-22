@@ -50,7 +50,7 @@ The example below demonstrates how an event listener can be used for custom resi
 
 ```lua
 function EventCallback(ev, extra)
-    local panel = extra:AsWidget()
+    local panel = Widget(extra)
     local sz = panel:GetParent():ClientSize()
     panel:SetShape(50, 50, sz.x - 100, sz.y - 100)
     panel:SetText(tostring(sz.x) .. " x " .. tostring(sz.y))
@@ -61,13 +61,13 @@ end
 local displays = GetDisplays()
 
 --Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE | WINDOW_CENTER)
 
 --Create user interface
 local ui = CreateInterface(window)
 
-local sz = ui.root:ClientSize()
-local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root)
+local sz = ui.background:ClientSize()
+local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background)
 panel:SetColor(0, 0, 0)
 
 --Comment this line out to see why it is needed. ;)
