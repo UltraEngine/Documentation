@@ -4,7 +4,7 @@ This method copies an area of one pixmap to another with scaling and filtering. 
 
 ## Syntax
 
-- boolean **Blit**(number x, number y, number width, number height, [Pixmap](Pixmap.md) dest, number destx, number desty, number destwidth, number destheight)
+- boolean **Blit**(number x, number y, number width, number height, [Pixmap](Pixmap.md) dest, number destx, number desty, number destwidth, number destheight, number filter = TEXTUREFILTER_LINEAR)
 
 | Parameter | Description |
 |---|---|
@@ -13,6 +13,7 @@ This method copies an area of one pixmap to another with scaling and filtering. 
 | dest | destination pixmap |
 | destx, desty | destination write position |
 | destwidth, destheight | destination copy area |
+| filter | texture filter, can be TEXTUREFILTER_LINEAR or TEXTUREFILTER_NEAREST |
   
 ## Returns
   
