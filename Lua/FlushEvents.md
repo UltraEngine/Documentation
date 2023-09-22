@@ -4,9 +4,7 @@ This function clears the event queue in Lua. Any events that have not been retur
 
 ## Syntax
 
-```lua
-function FlushEvents()
-```
+- **FlushEvents**()
 
 ## Remarks
 
