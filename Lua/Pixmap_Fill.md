@@ -42,6 +42,7 @@ while true do
 
         -- Redraw the panel
         ui.background:Paint()
+
     elseif ev.id == EVENT_WINDOWCLOSE then
         return 0
     end
