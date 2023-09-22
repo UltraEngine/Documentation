@@ -4,9 +4,9 @@ This class contains information for events emitted by the GUI and other systems.
 
 | Property | Type | Description |
 |-----|-----|-----|
-| data | int | field for event data value |
+| data | number | field for event data value |
 | extra | [Object](Object.md) | extra value associated witht the event |
-| id | EventId | Event type |
+| id | number | Event type |
 | position | [iVec2](iVec2.md) | screen coordinate at which event occurred |
 | size | [iVec2](iVec2.md) | size of the event source when the event occurred |
 | source | [Object](Object.md) | object that emitted the event |
