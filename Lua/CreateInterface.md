@@ -68,14 +68,14 @@ local font = LoadFont("Fonts/arial.ttf")
 local ui = CreateInterface(world, font, framebuffer.size)
 
 --Create widget
-local sz = ui.root:ClientSize()
-local button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui.root)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui.background)
 
 --Create camera
 local camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC)
 camera:SetPosition(framebuffer.size.x * 0.5, framebuffer.size.y * 0.5, 0)
 
-while (true) do
+while not window:KeyDown(KEY_ESCAPE) do
     while (PeekEvent()) do
         local ev = WaitEvent()
         if (ev.id == EVENT_WINDOWCLOSE and ev.source == window) then
