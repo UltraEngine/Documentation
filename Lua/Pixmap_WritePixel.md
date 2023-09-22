@@ -1,21 +1,20 @@
 # Pixmap:WritePixel
 
-This method sets a single pixel in the pixmap to the specified color.
+This method writes each pixel of the pixmap with the specified color.
 
 ## Syntax
 
-- **Pixmap:WritePixel**(x, y, color)
-- **Pixmap:WritePixel**(x, y, color)
+- **WritePixel**(number x, number y, number color)
+- **WritePixel**(number x, number y, [Vec4](Vec4.md) color)
 
 | Parameter | Description |
 |---|---|
-| x | x position of the pixel to write |
-| y | y position of the pixel to write |
-| color | RGBA or Vec4 color |
+| x, y | the coordinate of the pixel to read |
+| color | pixel color to write |
 
-## Remarks
+## Returns
 
-This command is thread-safe, as long as multiple threads do not write to the same region. See the [ThreadPool](ThreadPool_Execute.md) class for an example of multi-threaded use.
+Returns the [RGBA](Rgba.md) color of the specified pixel, packed into a single integer.
 
 This method will not work with compressed pixel formats.
 
@@ -26,23 +25,29 @@ This method will not work with compressed pixel formats.
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 -- Create user interface
 local ui = CreateInterface(window)
 
--- Create a pixmap
-local pixmap = CreatePixmap(512, 512)
- 
--- Write pixel data
-for x = 0, 511 do
-    for y = 0, 511 do
-        pixmap:WritePixel(x, y, Vec4(255 * x / 512.0, 255 * y / 512.0, 0, 255))
+-- Load a pixmap
+local pixmap = LoadPixmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/dirt01.dds")
+pixmap = pixmap:Convert(TEXTURE_RGBA)
+
+-- Write pixel data using the ReadPixel method
+for x = 0, pixmap.size.x - 1 do
+    for y = 0, pixmap.size.y - 1 do
+        local rgba = pixmap:ReadPixel(x, y)
+        local r = Red(rgba)
+        local g = 0
+        local b = 0
+        rgba = Rgba(r, g, b, 255)
+        pixmap:WritePixel(x, y, rgba)
     end
 end
 
 -- Show the pixmap
-ui.root:SetPixmap(pixmap)
+ui.background:SetPixmap(pixmap)
 
 while true do
     local ev = WaitEvent()
