@@ -4,16 +4,15 @@ This method writes each pixel of the pixmap with the specified color.
 
 ## Syntax
 
-- **ReadPixel**(x: number, y: number): number
+- number **ReadPixel**(number x, number y)
 
-## Parameters
-
-- `x`: The x position of the pixel to read.
-- `y`: The y position of the pixel to read.
+| Parameter | Description |
+|---|---|
+| x, y | the coordinate of the pixel to read |
 
 ## Returns
 
-Returns the [RGBA](Rgba.md) color of the specified pixel.
+Returns the [RGBA](Rgba.md) color of the specified pixel, packed into a single integer.
 
 This method will not work with compressed pixel formats.
 
@@ -24,13 +23,13 @@ This method will not work with compressed pixel formats.
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 -- Create user interface
 local ui = CreateInterface(window)
 
 -- Load a pixmap
-local pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.dds")
+local pixmap = LoadPixmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/dirt01.dds")
 pixmap = pixmap:Convert(TEXTURE_RGBA)
 
 -- Write pixel data using the ReadPixel method
@@ -46,7 +45,7 @@ for x = 0, pixmap.size.x - 1 do
 end
 
 -- Show the pixmap
-ui.root:SetPixmap(pixmap)
+ui.background:SetPixmap(pixmap)
 
 while true do
     local ev = WaitEvent()
