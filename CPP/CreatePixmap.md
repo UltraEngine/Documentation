@@ -4,7 +4,7 @@ This function creates a new pixmap with the specified size and format.
 
 ## Syntax
 
-- shared_ptr<[Pixmap](Pixmap.md)\> CreatePixmap(const int width, const int height, const TextureFormat format = TEXTURE_RGBA, shared_ptr<[Buffer](Buffer.md)> pixeldata = NULL)
+- shared_ptr<[Pixmap](Pixmap.md)\> **CreatePixmap**(const int width, const int height, const TextureFormat format = TEXTURE_RGBA, shared_ptr<[Buffer](Buffer.md)> pixeldata = NULL)
 
 | Parameter | Description |
 |---|---|
