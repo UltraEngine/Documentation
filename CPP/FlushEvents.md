@@ -4,7 +4,7 @@ This function clears the event queue. Any events that have not been returned in 
 
 ## Syntax
 
-void **FlushEvents**()
+- void **FlushEvents**()
 
 ## Remarks
 
