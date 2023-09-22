@@ -4,7 +4,7 @@ This method copies an area of one pixmap to another. Pixels that lie outside the
 
 ## Syntax
 
-- bool **CopyRect**(const int x, const int y, const int width, const int height, shared_ptr<[Pixmap](Pixmap.md)> dst, const int dx, const int dy)
+- bool **CopyRect**(const int x, const int y, const int width, const int height, [Pixmap](Pixmap.md) dst, const int dx, const int dy)
 
 | Parameter | Description |
 |---|---|
