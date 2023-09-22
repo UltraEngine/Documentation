@@ -10,7 +10,7 @@
 
 Returns a pixmap with the new pixel format if successful, otherwise NULL is returned.
 
-## Syntax
+## Example
 
 ```c++
 #include "UltraEngine.h"
