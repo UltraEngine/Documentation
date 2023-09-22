@@ -159,6 +159,7 @@ int main(int argc, const char* argv[])
     //Create a model
     auto box = CreateBox(world);
     box->SetRotation(0, 45, 0);
+    box->SetPickMode(PICK_MESH);
 
     //Create light
     auto light = CreateBoxLight(world);
