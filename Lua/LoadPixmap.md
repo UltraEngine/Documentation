@@ -4,22 +4,20 @@ This function loads a pixmap from a file path or stream.
 
 ## Syntax
 
-- ```lua
-    LoadPixmap(path: string, miplevel: number, face: number, flags: number): Pixmap
-  ```
-- ```lua
-    LoadPixmap(stream: Stream, miplevel: number, face: number, flags: number): Pixmap
-  ```
+- [Pixmap](Pixmap.md) **LoadPixmap**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number miplevel = 1, number face = 1, number flags = LOAD_DEFAULT)
+- [Pixmap](Pixmap.md) **LoadPixmap**([Stream](Stream.md), number miplevel = 1, number face = 1, number flags = LOAD_DEFAULT)
 
-  - `path` : file path to load the pixmap from.
-  - `stream` : stream to load the pixmap from.
-  - `miplevel` : optional mipmap level to load.
-  - `face` : optional texture face to load.
-  - `flags` : optional load flags.
+| Parameter | Description |
+|---|---|
+| path | file path to load the pixmap from |
+| stream | stream to load the pixmap from |
+| miplevel | optional mipmap level to load |
+| face | optional texture face to load |
+| flags | optional load flags |
 
 ## Returns
 
-Returns the loaded pixmap or `nil` if no pixmap was loaded.
+Returns the loaded pixmap, or NULL if no pixmap was loaded.
 
 ## Example
 
