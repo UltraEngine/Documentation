@@ -28,7 +28,7 @@ local ui = CreateInterface(window)
 
 while true do
     local r = Sin(Millisecs() / 20.0) * 0.5 + 0.5
-    ui.root:SetColor(r, r, r, 1)
+    ui.background:SetColor(r, r, r, 1)
     Sleep(1)
     while PeekEvent() do
         local ev = WaitEvent()
