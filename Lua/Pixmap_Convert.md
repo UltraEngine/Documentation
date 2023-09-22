@@ -17,7 +17,7 @@ Returns a pixmap with the new pixel format if successful, otherwise NULL is retu
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 -- Create user interface
 local ui = CreateInterface(window)
