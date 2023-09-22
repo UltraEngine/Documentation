@@ -9,19 +9,3 @@ Base class: [Asset](Asset.md)
 | size | [iVec2](iVec2.md)  | default size of the image, in pixels |
 | [Rasterize](Icon_Rasterize.md) | Method | Generates a pixmap |
 | [LoadIcon](LoadIcon) | Function | Loads an icon object from a file |
-
-## Method: Rasterize
-
-```lua
-function Icon:Rasterize()
-``` 
-
-Generates a pixmap.
-
-## Function: LoadIcon
-
-```lua
-function LoadIcon(file)
-``` 
-
-Loads an icon object from a file.
