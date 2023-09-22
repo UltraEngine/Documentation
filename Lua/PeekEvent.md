@@ -4,9 +4,7 @@ This function returns true if any events are available in the event queue.
 
 ## Syntax
 
-```lua
-function PeekEvent() -> boolean
-```
+- boolean **PeekEvent**()
 
 ## Remarks
 
