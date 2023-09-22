@@ -1,4 +1,4 @@
-# Pixmap::CopyRect
+# Pixmap:CopyRect
 
 This method copies an area of one pixmap to another. Pixels that lie outside the area of the destination pixmap will be skipped.
 
