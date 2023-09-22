@@ -41,7 +41,7 @@ while true do
         pixmap:Fill(Rgba(Random(255), Random(255), Random(255), 255))
 
         -- Redraw the panel
-        ui.root:Paint()
+        ui.background:Paint()
     elseif ev.id == EVENT_WINDOWCLOSE then
         return 0
     end
