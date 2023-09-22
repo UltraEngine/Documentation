@@ -102,7 +102,7 @@ local function ResizeViewport(ev, extra)
     -- If the window resize event is captured
     local window = ev.source:AsWindow()
 
-    -- Get the new size of the applications window
+    -- Get the new size of the application's window
     local sz = window:ClientSize()
 
     local viewport = extra:AsWindow()
@@ -122,7 +122,7 @@ Initialize(settings)
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR + WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR | WINDOW_RESIZABLE)
 
 -- Create user interface
 local ui = CreateInterface(window)
@@ -144,7 +144,7 @@ treeview.root:AddNode("Object 3")
 -- Create a viewport window
 local viewport = CreateWindow("", SidePanelWidth, Indent, sz.x - SidePanelWidth - Indent, sz.y - Indent * 2, window, WINDOW_CHILD)
 
--- Adjust the size of the viewport when the applications window is resized (this will callback to our ResizeViewport() function)
+-- Adjust the size of the viewport when the application's window is resized (this will callback to our ResizeViewport() function)
 ListenEvent(EVENT_WINDOWSIZE, window, ResizeViewport, viewport)
 
 -- Create a framebuffer
@@ -171,39 +171,47 @@ model:SetColor(0, 0, 1)
 local dirty = false
 
 -- Main loop
-while (true) do
+while true do
     -- Wait for event
     local ev = WaitEvent()
 
     -- Evaluate event
-    if (ev.id == EVENT_WINDOWMOVE) then
+    if ev.id == EVENT_WINDOWMOVE then
         Print("Window move")
-        if (not dirty) then
+        if not dirty then
             dirty = true
             EmitEvent(EVENT_VIEWPORTRENDER, viewport)
             Print("viewport refresh")
         end
-    elseif (ev.id == EVENT_WINDOWSIZE) then
+    elseif ev.id == EVENT_WINDOWSIZE then
         Print("Window size")
-        if (not dirty) then
+        if not dirty then
             dirty = true
             EmitEvent(EVENT_VIEWPORTRENDER, viewport)
             Print("viewport refresh")
         end
-    elseif (ev.id == EVENT_KEYDOWN) then
-        if (ev.source == window and ev.data == KEY_ESCAPE) then
+    elseif ev.id == EVENT_KEYDOWN then
+        if ev.source == window and ev.data == KEY_ESCAPE then
             return 0
         end
-    elseif (ev.id == EVENT_WINDOWCLOSE) then
-        if (ev.source == window) then
+    elseif ev.id == EVENT_WINDOWCLOSE then
+        if ev.source == window then
             return 0
         end
-    elseif (ev.id == EVENT_WINDOWPAINT) then
+    elseif ev.id == EVENT_WINDOWPAINT then
         Print("Window paint")
-        if (not dirty) then
+        if not dirty then
             -- This prevents excessive paint events from building up, especially during window resizing
             -- This event is added to the end of the event queue, so if a lot of paint events build up, it will 
             -- only cause a single render to be performed.
             dirty = true
             EmitEvent(EVENT_VIEWPORTRENDER, viewport)
-            Print("viewport refresh
+            Print("viewport refresh")
+        end
+    elseif ev.id == EVENT_VIEWPORTRENDER then
+        world:Render(framebuffer)
+        dirty = false
+        Print("Viewport render")
+    end
+end
+```
