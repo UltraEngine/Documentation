@@ -16,7 +16,7 @@ Returns the usable area of the screen.
 -- Get the displays
 local displays = GetDisplays()
 
-local area = displays[1]:ClientArea() -- Lua arrays start from 1
+local area = displays[1]:ClientArea()
 
 -- Create a window
 local window = CreateWindow("Ultra Engine", area.x, area.y, area.width, area.height, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
