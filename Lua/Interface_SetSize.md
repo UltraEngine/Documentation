@@ -4,15 +4,13 @@ This function resizes the interface.
 
 ## Syntax
 
-```lua
-function Interface:SetSize(size)
-```
+- **SetSize**([iVec2](iVec2) scale)
 
 ## Parameters
 
 | Parameter | Description |
 |---|---|
-| size | new dimensions to use (type: [iVec2](iVec2.md)) |
+| size | new dimensions to use |
 
 ## Remarks
 
