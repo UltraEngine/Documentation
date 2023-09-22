@@ -4,7 +4,7 @@ This method sets the DPI scaling value of an interface.
 
 ## Syntax
 
-- **Interface:SetScale**(scale: number): void
+- **Interface:SetScale**(number scale)
 
 | Parameter | Description |
 | --- | --- |
@@ -28,6 +28,20 @@ If you make all widget positions and sizes a multiple of 4, all coordinates will
 -- 
 ---------------------------------------------------------------------------------------------------
 
+--Hook function
+function Callback(ev, extra)
+    
+    --Resize window if desired
+    local window = Window(ev.source)
+    window:SetShape(ev.position, ev.size)
+
+    --Get the user interface
+    local ui = Interface(extra)
+    ui:SetScale( ev.data / 100)
+
+    return true
+end
+
 -- Get the displays
 local displays = GetDisplays()
 
@@ -39,21 +53,21 @@ window:SetMinSize(640, 480)
 local ui = CreateInterface(window)
 
 -- Create widgets
-local sz = ui.root:ClientSize()
+local sz = ui.background:ClientSize()
 
-local leftpanel = CreatePanel(10, 10, 200, sz.y - 20, ui.root)
+local leftpanel = CreatePanel(10, 10, 200, sz.y - 20, ui.background)
 leftpanel:SetLayout(1, 0, 1, 1)
 leftpanel:SetColor(0, 0, 0, 1)
 
-local rightpanel = CreatePanel(sz.x - 10 - 200, 10, 200, sz.y - 20, ui.root)
+local rightpanel = CreatePanel(sz.x - 10 - 200, 10, 200, sz.y - 20, ui.background)
 rightpanel:SetLayout(0, 1, 1, 1)
 rightpanel:SetColor(0, 0, 0, 1)
 
-local mainpanel = CreatePanel(10 + 200 + 10, 10, sz.x - 10 * 4 - 200 * 2, sz.y - 10 * 3 - 100, ui.root)
+local mainpanel = CreatePanel(10 + 200 + 10, 10, sz.x - 10 * 4 - 200 * 2, sz.y - 10 * 3 - 100, ui.background)
 mainpanel:SetLayout(1, 1, 1, 1)
 mainpanel:SetColor(0, 0, 0, 1)
 
-local bottompanel = CreatePanel(10 + 200 + 10, sz.y - 10 - 100, sz.x - 10 * 4 - 200 * 2, 100, ui.root)
+local bottompanel = CreatePanel(10 + 200 + 10, sz.y - 10 - 100, sz.x - 10 * 4 - 200 * 2, 100, ui.background)
 bottompanel:SetLayout(1, 1, 0, 1)
 bottompanel:SetColor(0, 0, 0, 1)
 
@@ -61,7 +75,7 @@ ListenEvent(EVENT_WINDOWDPICHANGED, window, Callback, ui)
 
 -- Trigger a rescale if the display scale is not 100%
 if displays[1].scale ~= 1.0 then
-    EmitEvent(EVENT_WINDOWDPICHANGED, window, Round(displays[1].scale * 100), 0, 0, 800 * displays[1].scale, 600 * displays[1].scale)
+    EmitEvent(EVENT_WINDOWDPICHANGED, window, displays[1].scale * 100, 0, 0, 800 * displays[1].scale, 600 * displays[1].scale)
 end
 
 while true do
