@@ -4,9 +4,7 @@ This function retrieves the display scaling factor that is currently in use on t
 
 ## Syntax
 
-```lua
-function display.GetScale()
-```
+- [iVec2](iVec2.md) **GetScale**()
 
 ## Returns
 
