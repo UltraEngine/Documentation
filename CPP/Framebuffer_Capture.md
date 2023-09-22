@@ -58,18 +58,13 @@ void main(const char* args, const int argc)
         //Press the space key to queue a screenshot
         if (window->KeyHit(KEY_SPACE)) framebuffer->Capture();
 
-        //Look for captured frames
-        while (PeekEvent())
+        --Look for captured frames
+        auto caps = framebuffer->GetCaptures();
+        for (auto pixmap : caps)
         {
-            const auto e = WaitEvent();
-            if (e.id == EVENT_FRAMECAPTURE)
-            {
-                //Get the pixmap containing the captured frame, save and open it
-                auto pixmap = e.extra->As<Pixmap>();
-                WString path = GetPath(PATH_DESKTOP) + "/screenshot" + String(e.data + 1) + ".jpg";
-                pixmap->Save(path);
-                RunFile(path);
-            }
+            auto path = GetPath(PATH_DESKTOP) .. "/screenshot.jpg";
+            pixmap:Save(path);
+            RunFile(path);
         }
 
         //Update world
