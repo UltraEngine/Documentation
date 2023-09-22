@@ -58,12 +58,12 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Create widget
-    iVec2 sz = ui->root->ClientSize();
-    auto button_dark = CreateButton("Dark Theme", sz.x / 4 - 75, sz.y / 4 - 15, 150, 30, ui->root);
-    auto button_light = CreateButton("Light Theme", sz.x / 4 * 3 - 75, sz.y / 4 - 15, 150, 30, ui->root);
+    iVec2 sz = ui->background->ClientSize();
+    auto button_dark = CreateButton("Dark Theme", sz.x / 4 - 75, sz.y / 4 - 15, 150, 30, ui->background);
+    auto button_light = CreateButton("Light Theme", sz.x / 4 * 3 - 75, sz.y / 4 - 15, 150, 30, ui->background);
 
     //Text area
-    auto textarea = CreateTextArea(8,sz.y/2,sz.x-16,sz.y/2-8,ui->root);
+    auto textarea = CreateTextArea(8,sz.y/2,sz.x-16,sz.y/2-8,ui->background);
     textarea->SetText(LoadString("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Themes/dark.json"));
 
     while (true)
