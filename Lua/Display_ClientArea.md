@@ -1,4 +1,4 @@
-# Display::ClientArea
+# Display:ClientArea
 
 This method returns the usable area within a screen, excluding system task bars or other decorations.
 
