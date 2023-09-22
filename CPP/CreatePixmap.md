@@ -40,7 +40,7 @@ int main(int argc, const char* argv[])
     pixmap->Fill(RGBA(0, 0, 255, 255));
 
     //Show the pixmap
-    ui->root->SetPixmap(pixmap);
+    ui->background->SetPixmap(pixmap);
 
     while (true)
     {
