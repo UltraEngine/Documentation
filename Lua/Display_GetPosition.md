@@ -1,14 +1,17 @@
-#### Display:GetPosition ####
+# Display:GetPosition
 
 This method retrieves the display position on the virtual display.
 
-##### Syntax #####
-- `iVec2` **GetPosition**()
+## Syntax
 
-##### Returns #####
+- [iVec2](iVec2.md) **GetPosition**()
+
+## Returns
+
 Returns the display's position on the bounding virtual display.
 
-##### Example #####
+## Example
+
 ```lua
 -- Import necessary libraries
 local UltraEngine = ultraschall.LuaLibraryLoader.LoadAndReturnLibrary("ultraengine")
