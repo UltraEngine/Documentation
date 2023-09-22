@@ -1,5 +1,9 @@
 # Pixmap:Convert
 
+This method converts a pixmap's pixels to another format.
+
+## Syntax
+
 - [Pixmap](Pixmap.md) **Convert**(number format)
 
 | Parameter | Description |
