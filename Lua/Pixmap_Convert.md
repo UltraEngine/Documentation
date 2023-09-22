@@ -29,7 +29,7 @@ local pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documenta
 pixmap = pixmap:Convert(TEXTURE_RED)
 
 -- Show the pixmap
-ui.root:SetPixmap(pixmap)
+ui.background:SetPixmap(pixmap)
 
 while true do
     local ev = WaitEvent()
