@@ -4,35 +4,33 @@ This method copies an area of one pixmap to another with scaling and filtering. 
 
 ## Syntax
 
-```lua
-function Pixmap:Blit(x, y, width, height, dest, destx, desty, destwidth, destheight)
-```
+- bool **Blit**(number x, number y, number width, number height, [Pixmap](Pixmap.md) dest, number destx, number desty, number destwidth, number destheight)
 
-## Parameters
-
-- x, y: The source copy position.
-- width, height: The source copy area.
-- dest: The destination pixmap.
-- destx, desty: The destination write position.
-- destwidth, destheight: The destination copy area.
-
+| Parameter | Description |
+|---|---|
+| x, y | source copy position |
+| width, height | source copy area |
+| dest | destination pixmap |
+| destx, desty | destination write position |
+| destwidth, destheight | destination copy area |
+  
 ## Returns
+  
+Returns true if any pixels are written.
+  
+If the destination pixmap is NULL then false is returned.
+  
+If the destination area does not overlap the destination pixmap then false is returned.
+  
+If the destination pixmap format does not match this pixmap's format then false is returned.
 
-Returns `true` if any pixels are written.
+If the pixmap block size is greater than one, as it is for compressed formats, then false is returned.
 
-If the destination pixmap is `nil`, then `false` is returned.
-
-If the destination area does not overlap the destination pixmap, then `false` is returned.
-
-If the destination pixmap format does not match this pixmap's format, then `false` is returned.
-
-If the pixmap block size is greater than one (as it is for compressed formats), then `false` is returned.
-
-If the pixmap format does not support blitting, then `false` is returned.
+If the pixmap format does not support blitting, then false is returned.
 
 ## Example
 
-![Pixmap Blit](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/pixmap_blit.png)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/pixmap_blit.png)
 
 ```lua
 -- Load FreeImage plugin
