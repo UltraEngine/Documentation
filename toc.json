@@ -1826,10 +1826,6 @@
 									"filename": "Pixmap_Fill"
 								},
 								{
-									"title": "Invalidate",
-									"filename": "Pixmap_Invalidate"
-								},
-								{
 									"title": "LoadPixmap",
 									"filename": "LoadPixmap"
 								},
