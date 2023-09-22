@@ -1,10 +1,10 @@
-# Display.GetSize
+# Display:GetSize
 
 This method retrieves the display size.
 
 ## Syntax
 
-- [iVec2](iVec2.md) **Display:GetSize**()
+- [iVec2](iVec2.md) **GetSize**()
 
 ## Returns
 
