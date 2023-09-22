@@ -4,7 +4,7 @@ This method generates a pixmap from a vector image. A scaling value can be used 
 
 ## Syntax
 
-- shared_ptr<[Pixmap](Pixmap.md)\> **Rasterize**(const float scale = 1.0f, const bool cached = true)
+- [Pixmap](Pixmap.md) **Rasterize**(number scale = 1, boolean cached = true)
 
 | Parameter | Description |
 | --- | --- |
