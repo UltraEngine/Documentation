@@ -13,32 +13,23 @@ Returns the display's position on the bounding virtual display.
 ## Example
 
 ```lua
--- Import necessary libraries
-local UltraEngine = ultraschall.LuaLibraryLoader.LoadAndReturnLibrary("ultraengine")
+-- Get all displays
+local displays = UltraEngine.GetDisplays()
 
--- Main function
-function main()
-    -- Get all displays
-    local displays = UltraEngine.GetDisplays()
-
-    -- Iterate through displays
-    for k=0, #displays do
-        print("Display " .. k .. ":")
-        print("    Position: " .. tostring(displays[k]:GetPosition()))
-        print("    Size: " .. tostring(displays[k]:GetSize()))
-        print("    Scale: " .. tostring(displays[k]:GetScale()))
-        print("    Graphics Modes:")
-        
-        -- Get graphics modes
-        local gfxmodes = displays[k]:GraphicsModes()
-        
-        -- Iterate through graphics modes
-        for n=0, #gfxmodes do
-            print("        " .. n .. ": " .. tostring(gfxmodes[n]))
-        end
+-- Iterate through displays
+for k=0, #displays do
+    print("Display " .. k .. ":")
+    print("    Position: " .. tostring(displays[k]:GetPosition()))
+    print("    Size: " .. tostring(displays[k]:GetSize()))
+    print("    Scale: " .. tostring(displays[k]:GetScale()))
+    print("    Graphics Modes:")
+    
+    -- Get graphics modes
+    local gfxmodes = displays[k]:GraphicsModes()
+    
+    -- Iterate through graphics modes
+    for n=0, #gfxmodes do
+        print("        " .. n .. ": " .. tostring(gfxmodes[n]))
     end
 end
-
--- Execute the script
-main()
 ```
