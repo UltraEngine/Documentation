@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
 
     //Create a pixmap
     auto pixmap = CreatePixmap(512,512);
-    pixmap->Fill(RGBA(0, 0, 0, 255));
+    pixmap->Fill(Rgba(0, 0, 0, 255));
 
     //Show the pixmap
     ui->root->SetPixmap(pixmap);
