@@ -1,5 +1,9 @@
 # Pixmap::Convert
 
+This method converts a pixmap's pixels to another format.
+
+## Syntax
+
 - shared_ptr<[Pixmap](Pixmap.md)\> **Convert**(const TextureFormat format)
 
 | Parameter | Description |
