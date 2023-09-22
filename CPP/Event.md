@@ -1,4 +1,4 @@
-# Event #
+# Event
 
 This class contains information for events emitted by the GUI and other systems.
 
