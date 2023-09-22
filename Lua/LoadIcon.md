@@ -4,10 +4,8 @@ This function loads a vector image from a file path or stream.
 
 ## Syntax
 
-```lua
 LoadIcon(path: string, flags: number): Icon
 LoadIcon(stream: Stream, flags: number): Icon
-```
 
 - `path`: file path to load the icon from
 - `stream`: stream to load the icon from
@@ -30,10 +28,10 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 800, displays[1])
 local ui = CreateInterface(window)
 
 --Create a pixmap
-local icon = LoadIcon("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Logos/23.svg")
+local icon = LoadIcon("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Logos/23.svg")
 
 --Show the icon
-ui.root.SetIcon(icon)
+ui.background:SetIcon(icon)
 
 while true do
     local ev = WaitEvent()
