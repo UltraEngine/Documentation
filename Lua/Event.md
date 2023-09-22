@@ -10,8 +10,8 @@ This class contains information for events emitted by the GUI and other systems.
 | position | [iVec2](iVec2.md) | screen coordinate at which event occurred |
 | size | [iVec2](iVec2.md) | size of the event source when the event occurred |
 | source | [Object](Object.md) | object that emitted the event |
-| text | [WString](WString.md) | string information like file paths |
-| Event | Constructor | Event(const EventID id, shared_ptr<[Object](Object.md)\> source, const int data=0, [iVec2](iVec2.md) position = 0, [iVec2](iVec2.md) size = 0, shared_ptr<[Object](Object.md)\> extra = NULL, const [WString](WString.md)& text = L"") |
+| text | [string](https://www.lua.org/manual/5.4/manual.html#6.4) | string information like file paths |
+| Event | Constructor | Event(number id, [Object](Object.md) source, number data = 0, [iVec2](iVec2.md) position = 0, [iVec2](iVec2.md) size = 0, [Object](Object.md) extra = nil, [string](https://www.lua.org/manual/5.4/manual.html#6.4) text = "") |
 | [EmitEvent](EmitEvent.md) | Function | adds an event to the event queue |
 | [FlushEvents](FlushEvents.md) | Function | clears the event queue |
 | [PeekEvent](PeekEvent.md) | Function | returns true if any events are available in the event queue. |
@@ -22,7 +22,7 @@ The following event IDs may be emitted by the program.
 
 | ID | Description |
 | --- | --- |
-| EVENT_WINDOWCLOSE | window is closed |
+| EVENT_WINDOWCLOSE | window has been closed |
 | EVENT_WINDOWPAINT | window region is drawn |
 | EVENT_WINDOWSIZE | window is resized |
 | EVENT_WINDOWACCEPT | a file was dragged onto a window created with the WINDOW_ACCEPTFILES style |
