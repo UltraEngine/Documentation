@@ -1,16 +1,18 @@
-# Picmap::CopyRect #
+# Picmap::CopyRect
 
-## Example ##
+
+## Example
+
 ```lua
 --IO plugins needed
 local plugin = LoadPlugin("Plugins/FITextureLoader.dll")
 
 --Load image
-local pixmap = LoadPixmap("Materials/77684-blocks18c_1.jpg")
+local pixmap = LoadPixmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/scifiwall.jpg")
 
 --Convert to RGBA if not already
 if pixmap.format ~= TEXTURE_RGBA then
-	pixmap = pixmap:Convert(TEXTURE_RGBA)
+    pixmap = pixmap:Convert(TEXTURE_RGBA)
 end
 
 --Let's make some changes :D
