@@ -58,7 +58,7 @@ void main(const char* args, const int argc)
         //Press the space key to queue a screenshot
         if (window->KeyHit(KEY_SPACE)) framebuffer->Capture();
 
-        --Look for captured frames
+        //Look for captured frames
         auto caps = framebuffer->GetCaptures();
         for (auto pixmap : caps)
         {
