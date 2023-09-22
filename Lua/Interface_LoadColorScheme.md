@@ -4,12 +4,12 @@ This method loads a color scheme from a JSON file.
 
 ## Syntax
 
-- **LoadColorScheme**(path: string, flags: number = LOAD_DEFAULT): boolean
+- boolean **LoadColorScheme**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
 
-## Parameters
-
-- **path** - file path to load.
-- **flags** - optional load flags.
+| Parameter | Description |
+|---|---|
+| path | file path to load |
+| flags | optional load flags |
 
 ## Returns
 
