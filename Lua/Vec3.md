@@ -6,8 +6,8 @@ This structure describes a three-dimensional vector.
 | x, r | number | x component of the vector |
 | y, g | number | y component of the vector |
 | z, b | number | z component of the vector |
-| Vec3 | Constructor | Vec3(const float x) |
-| Vec3 | Constructor | Vec3(const float x, const float y, const float z)|
+| Vec3 | Constructor | Vec3(number x) |
+| Vec3 | Constructor | Vec3(number x, number y, number z)|
 | [DistanceToPoint](Vec3_DistanceToPoint.md) | Method | |
 | [Dot](Vec3_Dot.md) | Method | gets the distance to a point |
 | [Cross](Vec3_Cross.md) | Method | gets the vector cross product |
