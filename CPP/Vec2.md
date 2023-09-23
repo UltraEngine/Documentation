@@ -1,8 +1,7 @@
-# Vec2 #
+# Vec2
 This structure describes a two-dimensional vector.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 | - | - | - |
 | x | float | x component of the vector |
 | y | float | y component of the vector |
