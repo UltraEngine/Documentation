@@ -1,12 +1,14 @@
-# Widget:GetPosition
+# Widget::GetPosition
 
 This method returns the widget position, relative to the parent or the interface.
 
 ## Syntax
 
-#### iVec2 **GetPosition**(global)
+- [iVec2](iVec2.md) **GetPosition**(boolean global = false)
 
-- `global` (boolean): if set to false the position is relative to the parent, otherwise it is relative to the interface
+| Parameter | Description |
+|---|---|
+| global | if set to false the position is relative to the parent, otherwise it is relative to the interface |
 
 ## Returns
 
