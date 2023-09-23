@@ -4,7 +4,7 @@ This method returns the dimensions of a window. To retrieve the area inside the 
 
 ## Syntax
 
-- [iVec2](iVec2.md) Window:ClientSize()
+- [iVec2](iVec2.md) **ClientSize**()
 
 ## Returns
 
