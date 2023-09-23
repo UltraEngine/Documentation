@@ -2,7 +2,7 @@
 
 Base class: [Object](Object.md)
 
-This class handle user interface elements. A variety of widget types are supported. You can also create [custom widgets](CustomWidgets.md) by extending this class.
+This class handle user interface elements. A variety of widget types are supported.
 
 | Property | Type | Description |
 |---|---|---|
