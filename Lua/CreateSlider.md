@@ -28,16 +28,16 @@ Returns a new slider widget.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create User Interface
 local ui = CreateInterface(window)
 
 -- Create widget
-local sz = ui.root:ClientSize()
-local slider1 = CreateSlider(10, 10, 200, 30, ui.root, SLIDER_SCROLLBAR)
-local slider2 = CreateSlider(10, 10 + 50, 200, 30, ui.root, SLIDER_TRACKBAR)
-local slider3 = CreateSlider(10, 10 + 50 * 2, 30, 30, ui.root, SLIDER_STEPPER | SLIDER_VERTICAL)
+local sz = ui.background:ClientSize()
+local slider1 = CreateSlider(10, 10, 200, 30, ui.background, SLIDER_SCROLLBAR)
+local slider2 = CreateSlider(10, 10 + 50, 200, 30, ui.background, SLIDER_TRACKBAR)
+local slider3 = CreateSlider(10, 10 + 50 * 2, 30, 30, ui.background, SLIDER_STEPPER | SLIDER_VERTICAL)
 
 while true do
     local ev = WaitEvent()
