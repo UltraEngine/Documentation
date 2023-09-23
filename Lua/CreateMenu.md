@@ -1,10 +1,10 @@
 # CreateMenu
 
-This function creates a menu widget. A menu item emits a `WIDGETACTION` event when it is selected.
+This function creates a menu widget. A menu item emits a WIDGETACTION event when it is selected.
 
 ## Syntax
 
-`function CreateMenu(text: string, parent: Widget): Widget`
+- [Widget](Widget.md) **CreateMenu**([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, [Widget](Widget.md) parent)
 
 | Parameter | Description |
 | --- | --- |
