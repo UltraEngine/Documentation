@@ -4,18 +4,20 @@ The slider widget adjusts an integer value within a defined range. Three differe
 
 ## Syntax
 
-**CreateSlider**(x: number, y: number, width: number, height: number, parent: Widget, style: number): Widget
+- [Widget](Widget.md) **CreateSlider**(number x, number y, number width, number height, [Widget](Widget.md) parent, number style = SLIDER_DEFAULT)
 
-- `x`: widget X position
-- `y`: widget Y position
-- `width`: widget width
-- `height`: widget height
-- `parent`: parent widget
-- `style`: slider style, can be any combination of `SLIDER_SCROLLBAR`, `SLIDER_STEPPER`, `SLIDER_TRACKBAR`, `SLIDER_HORIZONTAL`, and `SLIDER_VERTICAL`
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | slider style, can be any combination of SLIDER_SCROLLBAR, SLIDER_STEPPER, SLIDER_TRACKBAR, SLIDER_HORIZONTAL, and SLIDER_VERTICAL |
 
 ## Returns
 
-- Returns a new slider widget.
+Returns a new slider widget.
 
 ## Example
 
