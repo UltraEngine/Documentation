@@ -14,4 +14,4 @@ This class describes an axis-aligned bounding box.
 | radius | double | Radius of a sphere that complete encloses the bounding box. |
 | += | Operator | Expands one dAabb to enclose another. |
 | + | Operator | Expands one dAabb to enclose another and returns the result. |
-| [Update](Aabb_Update.md) | Method | Calculates the bounding box size, center, and radius from the minimum and maximum extents. |
+| [Update](dAabb_Update.md) | Method | Calculates the bounding box size, center, and radius from the minimum and maximum extents. |
