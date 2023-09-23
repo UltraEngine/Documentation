@@ -4,15 +4,12 @@ This method performs spherical linear interpolation to interpolate between two r
 
 ## Syntax
 
-```lua
-function Quat:Slerp(r0, r1, blend)
-```
+- [Quat](Quat.md) **Slerp**([Quat](Quat.md) dest, number blend)
 
-## Parameters
-
-- `r0` (Quat): starting rotation
-- `r1` (Quat): end rotation
-- `blend` (number): interpolation amount between 0 and 1
+Parameter | Description
+---|---
+dest | target rotation to match 
+blend | travel amount, between 0 and 1
 
 ## Returns
 
