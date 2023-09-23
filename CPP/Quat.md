@@ -2,9 +2,7 @@
 
 This class describes a quaternion rotation. Quaternions are more accurate than Euler angles and do not suffer from Gimbal lock, but they more difficult to intuitively understand.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | Quat | Constructor | Quat(const float x, const float y, const float z, const float w) |
 | Quat | Constructor | Quat(const [Vec3](Vec3.md)& euler) |
