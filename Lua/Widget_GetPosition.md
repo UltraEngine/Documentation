@@ -1,4 +1,4 @@
-# Widget::GetPosition
+# Widget:GetPosition
 
 This method returns the widget position, relative to the parent or the interface.
 
