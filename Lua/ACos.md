@@ -4,11 +4,11 @@ This function returns the arc cosine of the specified value.
 
 ## Syntax
 
-- **ACos**(value: number): number
+- number **ACos**(number value)
 
-## Parameters
-
-- **value**: The cosine value.
+Parameter | Description
+---|---|
+value | the cosine value 
 
 ## Returns
 
@@ -23,7 +23,7 @@ s = Sin(angle)
 c = Cos(angle)
 t = Tan(angle)
 
-print("Sin: " .. ASin(s))
-print("Cos: " .. ACos(c))
-print("Tan: " .. ATan(t))
+Print("Sin: " .. ASin(s))
+Print("Cos: " .. ACos(c))
+Print("Tan: " .. ATan(t))
 ```
