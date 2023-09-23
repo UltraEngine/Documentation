@@ -1,19 +1,24 @@
-# CreateProgressBar #
+# CreateProgressBar
 
-The progressbar widget displays a horizontal bar that indicates the progress of some task. The progress complete can be set using the [Widget:SetProgress](Widget_SetProgress.md) method.
+The progressbar widget displays a horizontal bar that indicates the progress of some task. The progress complete can be set using the [Widget::SetProgress](Widget_SetProgress.md) method.
 
-## Syntax ##
-`CreateProgressBar(x: number, y: number, width: number, height: number, parent: <Widget>): <Widget>`
+## Syntax
 
-Creates a progressbar widget at the specified position and size, with the specified parent widget.
+- [Widget](Widget.md) **CreateProgressBar**(const int x, const int y, const int width, const int height, [Widget](Widget.md) parent)
 
-- **x**: The X position of the widget.
-- **y**: The Y position of the widget.
-- **width**: The width of the widget.
-- **height**: The height of the widget.
-- **parent**: The parent widget.
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
 
-## Example ##
+## Returns
+
+Returns a new progress bar widget.
+
+## Example
 
 ![CreateProgressBar](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateProgressBar.png)
 
