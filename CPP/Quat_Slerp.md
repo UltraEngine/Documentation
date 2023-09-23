@@ -4,12 +4,11 @@ This method performs spherical linear interpolation to interpolate between two r
 
 ## Syntax
 
-- [Quat](Quat.md) **Slerp**(const [Quat](Quat)& r0, const [Quat](Quat)& r1, const float blend)
+- [Quat](Quat.md) **Slerp**(const [Quat](Quat)& dest, const float blend)
 
 | Parameter | Description |
 |---|---|
-| r0 | starting rotation |
-| r1 | end rotation |
+| dest | target rotation to match |
 | blend | interpolation amount between 0 and 1 |
 
 ## Returns
