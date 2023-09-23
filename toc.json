@@ -2023,7 +2023,8 @@
 								},
 								{
 									"title": "MouseLeave",
-									"filename": "Widget_MouseLeave"
+									"filename": "Widget_MouseLeave",
+									"hideFromLua": true
 								},
 								{
 									"title": "MouseMove",
