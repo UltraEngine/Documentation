@@ -9,13 +9,3 @@ This functions returns the absolute value of a number.
 ## Returns
 
 Returns the absolute value.
-
-## Example
-
-```lua
-Abs = function(value)
-    return math.abs(value)
-end
-
-print(Abs(-3))
-```
