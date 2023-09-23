@@ -15,8 +15,10 @@ This method adds an icon to the widget.
 ## Example
 
 ```lua
+local displays = GetDisplays()
+
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 800, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 800, displays[1])
 
 -- Create a user interface
 local ui = CreateInterface(window)
@@ -25,7 +27,7 @@ local ui = CreateInterface(window)
 local icon = LoadIcon("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Logos/23.svg")
 
 -- Show the icon
-ui.root:SetIcon(icon)
+ui.background:SetIcon(icon)
 
 while true do
     local ev = WaitEvent()
