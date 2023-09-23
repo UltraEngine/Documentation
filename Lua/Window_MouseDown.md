@@ -1,43 +1,35 @@
-## Window.MouseDown
+# Window:MouseDown
 
 Returns the current press state of the specified mouse button.
 
-### Syntax
+## Syntax
+
+- boolean **MouseDown**(number button)
+
+| Parameter | Description |
+|---|---|
+| button |  The mouse button to test, can be MOUSE_LEFT, `MOUSE_RIGHT, or MOUSE_MIDDLE. |
+
+## Returns
+
+Returns true if the specified mouse button is currently pressed, otherwise false is returned.
+
+## Example
 
 ```lua
-local result = Window.MouseDown(button)
-```
-
-- `result`: A boolean value indicating whether the specified mouse button is currently pressed.
-- `button`: The mouse button to test, can be `MOUSE_LEFT`, `MOUSE_RIGHT`, or `MOUSE_MIDDLE`.
-
-### Returns
-
-Returns `true` if the specified mouse button is currently pressed, otherwise `false` is returned.
-
-### Example
-
-```lua
--------------------------------------------------------------------------------------------------
---
--- This example uses the left mouse button to control the color of a panel widget.
---
--------------------------------------------------------------------------------------------------
-
 -- Get the displays
 local displays = GetDisplays()
 
 -- Create windows
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create user interface
 local ui = CreateInterface(window)
 
 while true do
+
     if window:MouseDown(MOUSE_LEFT) then
-        ui.root:SetColor(1, 0, 0, 1)
-    else
-        ui.root:SetColor(0, 0, 0, 1)
+        Notify("Mouse pressed")
     end
 
     local ev = WaitEvent()
@@ -45,6 +37,4 @@ while true do
         return 0
     end
 end
-
-return 0
 ```
