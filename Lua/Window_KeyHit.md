@@ -4,11 +4,11 @@ Returns true if the specified key has been pressed since the last call to KeyHit
 
 ## Syntax
 
-    Window:KeyHit(key)
+- **KeyHit**(number key)
 
-### Parameters
-
-- `key` (number): code of the key to check the state of
+| Parameter | Description |
+|---|---|
+| key | code of the key to check the state of |
 
 ## Returns
 
@@ -29,23 +29,26 @@ This example uses the space key to control the color of a panel widget.
 --
 -------------------------------------------------------------------------------------------------
 
---Get the displays
+-- Get the displays
 local displays = GetDisplays()
 
---Create windows
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+-- Create windows
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 --Create user interface
 local ui = CreateInterface(window)
 
+local color = 1
+
 while true do
     if window:KeyHit(KEY_SPACE) then
-        ui.root:SetColor(Random(1.0), Random(1.0), Random(1.0), 1)
+        color = 1 - color
+        ui.background:SetColor(1, color, color, 1)
     end
 
     local ev = WaitEvent()
     if ev.id == EVENT_WINDOWCLOSE then
-        return 0
+        return
     end
 end
 ```
