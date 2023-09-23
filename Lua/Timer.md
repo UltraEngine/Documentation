@@ -1,23 +1,9 @@
-## Timer
+# Timer
 
-Base class: `Object`
+Base class: [Object](Object.md)
 
-A timer object emits a `TIMERTICK` event at a regular frequency. This provides a method of updating an event-driven application in real-time while maintaining minimal CPU usage.
+A timer object emits a TIMERTICK event at a regular frequency. This is provides a method of updating an event-driven application in real-time while maintaining minimal CPU usage.
 
-### Properties
-
-#### CreateTimer
-
-- Type: `function`
-- Description: Creates a new timer object
-
-## Example
-
-```lua
--- Import required libraries
-
--- CreateTimer function
-function CreateTimer()
-  -- Implementation code here
-end
-```
+| Property | Type | Description |
+| --- | --- | --- |
+| [CreateTimer](CreateTimer.md) | Function | creates a new timer object |
