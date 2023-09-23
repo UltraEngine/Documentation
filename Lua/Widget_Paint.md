@@ -21,8 +21,6 @@ In most cases, a widget will be automatically drawn when needed. However, this f
 ## Example
 
 ```lua
--- Import the required libraries
-
 -- Get the displays
 local displays = GetDisplays()
 
@@ -33,8 +31,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 local ui = CreateInterface(window)
 
 -- Load an asset
-local path = GetPath(PATH_DOCUMENTS) + "/temp.dds"
-if not CopyFile("https://github.com/Leadwerks/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds", path) then
+local path = GetPath(PATH_DOCUMENTS) .. "/temp.dds"
+if not CopyFile("https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/Ground/dirt01.dds", path) then
     RuntimeError("Failed to download pixmap.")
 end
 
@@ -42,16 +40,16 @@ end
 local pixmap = LoadPixmap(path)
 
 -- Show the pixmap
-ui.root.SetPixmap(pixmap)
+ui.background:SetPixmap(pixmap)
 
-local button = CreateButton("Modify Pixmap", 10, 10, 100, 30, ui.root)
+local button = CreateButton("Modify Pixmap", 10, 10, 100, 30, ui.background)
 
 while true do
     local ev = WaitEvent()
     if ev.id == EVENT_WIDGETACTION then
         if ev.source == button then
             -- Make a copy of the pixmap, modify it, and overwrite the file
-            local pixmap2 = pixmap.Copy().AsPixmap()
+            local pixmap2 = Pixmap(pixmap:Copy())
             if pixmap2.format ~= TEXTURE_RGBA then
                 pixmap2 = pixmap2.Convert(TEXTURE_RGBA)
             end
