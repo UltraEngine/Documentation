@@ -30,8 +30,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 local ui = CreateInterface(window)
 
 --Create widget
-local sz = ui.root:ClientSize()
-local treeview = CreateTreeView(10, 10, sz.x - 20, sz.y - 20, ui.root)
+local sz = ui.background:ClientSize()
+local treeview = CreateTreeView(10, 10, sz.x - 20, sz.y - 20, ui.background)
 
 local node = treeview.root:AddNode("Node 1")
 node:AddNode("Subnode 1")
@@ -54,5 +54,4 @@ while true do
         return 0
     end
 end
-return 0
 ```
