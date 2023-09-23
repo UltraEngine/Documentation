@@ -4,9 +4,7 @@ This method returns the quaternion as a Euler rotation.
 
 ## Syntax
 
-```lua
-function Quat:ToEuler()
-```
+- [Vec3](Vec3.md) **ToEuler**()
 
 ## Returns
 
