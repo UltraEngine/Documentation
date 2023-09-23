@@ -8,7 +8,7 @@ This structure describes a three-dimensional vector.
 | z, b | float | z component of the vector |
 | Vec3 | Constructor | Vec3(const float x) |
 | Vec3 | Constructor | Vec3(const float x, const float y, const float z)|
-| [DistanceToPoint](Vec3_DistanceToPoint.md) | Method | |
+| [DistanceToPoint](Vec3_DistanceToPoint.md) | Method | gets the vector dot product |
 | [Dot](Vec3_Dot.md) | Method | gets the distance to a point |
 | [Cross](Vec3_Cross.md) | Method | gets the vector cross product |
 | [Hsl](Vec3_Hsl) | Method | converts an RGB value to HSL |
