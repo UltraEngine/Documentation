@@ -1,4 +1,4 @@
-# GetSelectedNode
+# Widget:GetSelectedNode
 
 This function retrieves the currently selected node in a treeview widget.
 
