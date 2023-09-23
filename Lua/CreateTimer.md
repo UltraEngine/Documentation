@@ -33,7 +33,7 @@ local timer = CreateTimer(1000)
 while true do
     local ev = WaitEvent()
     if ev.id == EVENT_TIMERTICK then
-        label:SetText(ev.data)
+        label:SetText(tostring(ev.data))
     elseif ev.id == EVENT_WINDOWCLOSE then
         return 0
     end
