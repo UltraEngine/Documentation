@@ -1,37 +1,11 @@
-### C++ Documentation:
+# Quat:Inverse
 
-#### Function: `void printHello()`
+This method retrieves the inverse quaternion.
 
-This function prints "Hello, world!" to the console.
+## Syntax
 
-**Example:**
+- [Quat](Quat.md) **Inverse**()
 
-```cpp
-#include <iostream>
+## Returns
 
-void printHello() {
-    std::cout << "Hello, world!" << std::endl;
-}
-
-int main() {
-    printHello();
-    return 0;
-}
-```
-
-### Lua Documentation:
-
-#### Function: `function printHello()`
-
-This function prints "Hello, world!" to the console.
-
-**Example:**
-
-```lua
-function printHello()
-    print("Hello, world!")
-end
-
-printHello()
-```
-
+Returns the inverse quaternion.
