@@ -4,13 +4,11 @@ This function returns the focused application window.
 
 ## Syntax
 
-```lua
-function ActiveWindow() -> Window
-```
+[Window](Window.md) **ActiveWindow**()
 
 ## Returns
 
-Returns the focused window, or `nil` if no application window has the focus.
+Returns the focused window, or nil if no application window has the focus.
 
 ## Example
 
@@ -19,10 +17,8 @@ Returns the focused window, or `nil` if no application window has the focus.
 local displays = GetDisplays()
 
 --Create windows
-local window1 = CreateWindow("Window 1", 0, 0, 640, 480, displays[1])
-local window2 = CreateWindow("Window 2 (Active)", 200, 200, 640, 480, displays[1])
-
-local active
+local window1 = CreateWindow("Window 1", 0, 0, 640, 480, displays[1], WINDOW_TITLEBAR)
+local window2 = CreateWindow("Window 2 (Active)", 200, 200, 640, 480, displays[1], WINDOW_TITLEBAR)
 
 while true do
     local ev = WaitEvent()
