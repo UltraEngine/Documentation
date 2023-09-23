@@ -4,18 +4,20 @@ This function creates a Panel widget. The Panel widget is a rectangular area for
 
 ## Syntax
 
-#### panel = **CreatePanel**(x, y, width, height, parent, style = PANEL_DEFAULT)
+- [Widget](Widget.md) **CreatePanel**(number x, number y, number width, number height, [Widget](Widget.md) parent, number style = PANEL_DEFAULT)
 
-- `x` (number): initial x position of the widget
-- `y` (number): initial y position of the widget
-- `width` (number): initial width of the widget
-- `height` (number): initial height of the widget
-- `parent` (widget): parent of the widget
-- `style` (number, optional): widget style, can be `PANEL_DEFAULT`, `PANEL_BORDER`, or `PANEL_GROUP` (default is `PANEL_DEFAULT`)
+| Parameter | Description |
+|---|---|
+| x | initial x position of the widget |
+| y | initial y position of the widget |
+| width | initial width of the widget |
+| height | initial height of the widget |
+| parent | parent of the widget |
+| style | optional widget style, can be PANEL_DEFAULT, PANEL_BORDER, or PANEL_GROUP |
 
 ## Returns
 
-- `panel` (widget): a new panel widget
+Returns a new panel widget.
 
 ## Example
 
