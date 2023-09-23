@@ -4,14 +4,12 @@ This method moves the mouse pointer to the specified window coordinate.
 
 ## Syntax
 
-- **SetMousePosition**(x: integer, y: integer)
-- **SetMousePosition**(coords: [iVec2](iVec2.md))
+- **SetMousePosition**(number x, number y)
+- **SetMousePosition**([iVec2](iVec2.md) coords)
 
-### Parameters
-
-- **x**: The X component of the destination coordinates.
-- **y**: The Y component of the destination coordinates.
-- **coords**: The destination coordinates.
+| Parameter | Description |
+|---|---|
+| coords, (x, y) | mouse coordinate to set |
 
 ## Example
 
@@ -20,15 +18,15 @@ This method moves the mouse pointer to the specified window coordinate.
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create user interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
-local panel = CreatePanel(100, 100, sz.x - 200, sz.y - 200, ui.root)
+local sz = ui.background:ClientSize()
+local panel = CreatePanel(100, 100, sz.x - 200, sz.y - 200, ui.background)
 panel:SetColor(0, 0, 0, 1)
-panel:SetPointer(POINTER_CROSS)
-local label = CreateLabel("Click on the black panel to center the mouse", 0, 43, sz.x, 30, ui.root, LABEL_CENTER)
+panel:SetCursor(CURSOR_CROSS)
+local label = CreateLabel("Click on the black panel to center the mouse", 0, 43, sz.x, 30, ui.background, LABEL_CENTER)
 
 while true do
     local ev = WaitEvent()
@@ -42,3 +40,4 @@ while true do
         break
     end
 end
+```
