@@ -1,20 +1,10 @@
-# CreateTextArea #
+# CreateTextArea
 
-The text area widget is a read-only multiline text display. If the WORDWRAP style is used, the text will be adjusted to fit in the horizontal space of the widget.
+The text area widget is a read-only multiline text display. If the WORDWRAP style is used the text will be adjusted to fit in the horizontal space of the widget.
 
-## Syntax ##
+## Syntax
 
-```lua
--- @param x widget X position
--- @param y widget Y position
--- @param width widget width
--- @param height widget height
--- @param parent parent widget
--- @param style textfield style, can be TEXTAREA_DEFAULT or TEXTAREA_WORDWRAP
--- @return shared_ptr<[Widget](Widget.md)>
-function CreateTextArea(x, y, width, height, parent, style)
-end
-```
+- [Widget](Widget.md) **CreateTextArea**(number x, number y, number width, number height, [Widget](Widget.md) parent, number style = TEXTAREA_DEFAULT)
 
 | Parameter | Description |
 | --- | --- |
@@ -42,14 +32,14 @@ When the TEXTAREA_WORDWRAP style is used whitespace characters may be optimized 
 local displays = GetDisplays();
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE);
+local window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE | WINDOW_CENTER);
 
 -- Create User Interface
 local ui = CreateInterface(window);
 
 -- Create widget
-local sz = ui.root:ClientSize();
-local textarea = CreateTextArea(10, 10, sz.x - 20, sz.y - 20, ui.root, TEXTAREA_WORDWRAP);
+local sz = ui.background:ClientSize();
+local textarea = CreateTextArea(10, 10, sz.x - 20, sz.y - 20, ui.background, TEXTAREA_WORDWRAP);
 
 local s = [[
 Night was falling now, and as I recalled what Akeley had written me about those earlier nights \
