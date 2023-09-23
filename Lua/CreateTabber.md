@@ -4,19 +4,15 @@ The tabber widget is a tabbed panel that allows the user to select different "pa
 
 ## Syntax
 
-```lua
---[[-
-CreateTabber creates a tabber widget.
+- [Widget](Widget.md) **CreateTabber**(number x, number y, number width, number height, [Widget](Widget.md) parent)
 
-@tparam int x widget X position
-@tparam int y widget Y position
-@tparam int width widget width
-@tparam int height widget height
-@tparam Widget parent parent widget
-@treturn shared_ptr<Widget> pointer to the created tabber widget
-]]--
-function CreateTabber(x, y, width, height, parent)
-```
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
 
 ## Example
 
@@ -27,14 +23,14 @@ function CreateTabber(x, y, width, height, parent)
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create User Interface
 local ui = CreateInterface(window)
 
 --Create widget
-local sz = ui.root:ClientSize()
-local tabber = CreateTabber(10, 10, sz.x - 20, sz.y - 20, ui.root)
+local sz = ui.background:ClientSize()
+local tabber = CreateTabber(10, 10, sz.x - 20, sz.y - 20, ui.background)
 tabber:AddItem("Item 1", true)
 tabber:AddItem("Item 2")
 tabber:AddItem("Item 3")
