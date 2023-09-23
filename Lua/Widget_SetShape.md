@@ -1,4 +1,4 @@
-# Widget.SetShape
+# Widget:SetShape
 
 This method sets the widget position and height.
 
