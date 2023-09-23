@@ -1,13 +1,11 @@
-# vec3:getRotation
+# Mat4:GetRotation
 
 This method returns the matrix rotation as an Euler rotation.
 
 ## Syntax
 
-```lua
-function vec3:getRotation()
-```
+- [Vec3](Vec3.md) **GetRotation**()
 
 ## Returns
 
-- Returns the matrix rotation as a [vec3](Vec3.md) object.
+Returns the matrix rotation.
