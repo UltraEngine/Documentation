@@ -4,4 +4,4 @@ This method sets the minimum size a window can be resized to.
 
 ## Syntax
 
-- void **SetMinSize**(number width, number height)
+- **SetMinSize**(number width, number height)
