@@ -21,7 +21,7 @@ Returns the widget item text at the specified index.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 -- Create User Interface
 local ui = CreateInterface(window)
