@@ -4,8 +4,8 @@ This method sets the widget position and height.
 
 ## Syntax
 
-- **Widget:SetShape**(x, y, width, height)
-- **Widget:SetShape**(position, size)
+- **SetShape**(number x, number y, number width, number height)
+- **SetShape**([iVec2](iVec2.md) position, [iVec2](iVec2.md) size)
 
 | Parameter | Description |
 | --- | --- |
