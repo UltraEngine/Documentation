@@ -4,8 +4,8 @@ This method sets the widget state. The widget state may be WIDGETSTATE_SELECTED,
 
 ## Syntax
 
-- **Widget:SetState**(state: number)
-- **Widget:SetState**(selected: boolean)
+- **SetState**(state: number)
+- **SetState**(selected: boolean)
 
 | Parameter | Description |
 |---|---|
@@ -19,12 +19,12 @@ This method sets the widget state. The widget state may be WIDGETSTATE_SELECTED,
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[1])
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
-local button = CreateButton("Checkbox", sz.x / 2 - 40, sz.y / 2 - 15, 80, 30, ui.root, BUTTON_CHECKBOX)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Checkbox", sz.x / 2 - 40, sz.y / 2 - 15, 80, 30, ui.background, BUTTON_CHECKBOX)
 
 -- Set the widget state
 button:SetState(WIDGETSTATE_INDETERMINATE)
