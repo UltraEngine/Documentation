@@ -4,7 +4,7 @@ This method restores a window that is minimized or maximized to its previous pos
 
 ## Syntax
 
-- **Window:Restore()**
+- **Restore**()
 
 ## Example
 
@@ -17,13 +17,13 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_
 
 --Create user interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
-local button = CreateButton("Toggle Window", sz.x / 2 - 50, sz.y / 2 - 15, 100, 30, ui.root)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Toggle Window", sz.x / 2 - 50, sz.y / 2 - 15, 100, 30, ui.background)
 
 while true do
     local ev = WaitEvent()
     if ev.id == EVENT_WINDOWSIZE then
-        sz = ui.root:ClientSize()
+        sz = ui.background:ClientSize()
         button:SetShape(sz.x / 2 - 50, sz.y / 2 - 15, 100, 30)
     elseif ev.id == EVENT_WIDGETACTION then
         if ev.source == button then
@@ -37,6 +37,4 @@ while true do
         return 0
     end
 end
-
-return 0
 ```
