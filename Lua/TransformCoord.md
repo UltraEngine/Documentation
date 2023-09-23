@@ -12,8 +12,8 @@ Parameter | Description
 x | X component of the coordinate to transform
 y | Y component of the coordinate to transform
 coord | coordinate to transform
-src | source window to transform the coordinate from, or `nil` for the desktop
-dst | destination window to transform the coordinate to, or `nil` for the desktop
+src | source window to transform the coordinate from, or nil for the desktop
+dst | destination window to transform the coordinate to, or nil for the desktop
 
 ## Returns
 
