@@ -4,21 +4,21 @@ The button widget can be used to create push buttons, checkboxes, radio buttons,
 
 ## Syntax
 
-- `function CreateButton(text: string, x: number, y: number, width: number, height: number, parent: Widget, style: ButtonStyle = BUTTON_DEFAULT): Widget`
+- [Widget](Widget.md) **CreateButton**([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, number x, number y, number width, number height, [Widget](Widget.md) parent, number style = BUTTON_DEFAULT)
 
-  *Parameters:*
-  
-  - `text`: widget text
-  - `x`: widget x position
-  - `y`: widget y position
-  - `width`: widget width
-  - `height`: widget height
-  - `parent`: parent widget
-  - `style`: optional button style, can be any combination of BUTTON_CANCEL, BUTTON_CHECKBOX, BUTTON_RADIO, BUTTON_OK, BUTTON_TOGGLE, and BUTTON_TOOLBAR.
-  
-  *Returns:*
-  
-  - Returns a new button object.
+| Parameter | Description |
+| --- | --- |
+| text | widget text |
+| x | widget x position |
+| y | widget y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
+| style | optional button style, can be any combination of BUTTON_CANCEL, BUTTON_CHECKBOX, BUTTON_RADIO, BUTTON_OK, BUTTON_TOGGLE, and BUTTON_TOOLBAR. |
+
+## Returns
+
+Returns a new button object.
 
 ## Example
 
