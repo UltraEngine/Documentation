@@ -4,9 +4,7 @@ This method adds a node to a treeview widget.
 
 ## Syntax
 
-```lua
-function Widget:AddNode(text: string, icon: shared_ptr<Icon> = nil): shared_ptr<Widget>
-```
+- [Widget](Widget.md) AddNode([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, [Icon](Icon.md) icon = nil)
 
 | Parameter | Description |
 |---|---|
@@ -15,7 +13,7 @@ function Widget:AddNode(text: string, icon: shared_ptr<Icon> = nil): shared_ptr<
 
 ## Returns
 
-Returns a new treeview node if called by a treeview widget, otherwise nil is returned.
+Returns a new treeview node if called by a treeview widget, otherwise NULL is returned.
 
 ## Example
 
