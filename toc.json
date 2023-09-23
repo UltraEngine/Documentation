@@ -1860,7 +1860,8 @@
 							"filename": "Widget",
 							"topics": [{
 									"title": "AddBlock",
-									"filename": "Widget_AddBlock"
+									"filename": "Widget_AddBlock",
+									"hideFromLua": true
 								},
 								{
 									"title": "AddItem",
@@ -1932,15 +1933,18 @@
 								},
 								{
 									"title": "Draw",
-									"filename": "Widget_Draw"
+									"filename": "Widget_Draw",
+									"hideFromLua": true
 								},
 								{
 									"title": "DoubleClick",
-									"filename": "Widget_DoubleClick"
+									"filename": "Widget_DoubleClick",
+									"hideFromLua": true
 								},
 								{
 									"title": "GainFocus",
-									"filename": "Widget_GainFocus"
+									"filename": "Widget_GainFocus",
+									"hideFromLua": true
 								},
 								{
 									"title": "GetItemText",
@@ -1988,27 +1992,33 @@
 								},
 								{
 									"title": "KeyChar",
-									"filename": "Widget_KeyChar"
+									"filename": "Widget_KeyChar",
+									"hideFromLua": true
 								},
 								{
 									"title": "KeyDown",
-									"filename": "Widget_KeyDown"
+									"filename": "Widget_KeyDown",
+									"hideFromLua": true
 								},
 								{
 									"title": "KeyUp",
-									"filename": "Widget_KeyUp"
+									"filename": "Widget_KeyUp",
+									"hideFromLua": true
 								},
 								{
 									"title": "LoseFocus",
-									"filename": "Widget_LoseFocus"
+									"filename": "Widget_LoseFocus",
+									"hideFromLua": true
 								},
 								{
 									"title": "MouseDown",
-									"filename": "Widget_MouseDown"
+									"filename": "Widget_MouseDown",
+									"hideFromLua": true
 								},
 								{
 									"title": "MouseEnter",
-									"filename": "Widget_MouseEnter"
+									"filename": "Widget_MouseEnter",
+									"hideFromLua": true
 								},
 								{
 									"title": "MouseLeave",
@@ -2016,15 +2026,18 @@
 								},
 								{
 									"title": "MouseMove",
-									"filename": "Widget_MouseMove"
+									"filename": "Widget_MouseMove",
+									"hideFromLua": true
 								},
 								{
 									"title": "MouseUp",
-									"filename": "Widget_MouseUp"
+									"filename": "Widget_MouseUp",
+									"hideFromLua": true
 								},
 								{
 									"title": "MouseWheel",
-									"filename": "Widget_MouseWheel"
+									"filename": "Widget_MouseWheel",
+									"hideFromLua": true
 								},
 								{
 									"title": "Paint",
@@ -2112,7 +2125,8 @@
 								},
 								{
 									"title": "TripleClick",
-									"filename": "Widget_TripleClick"
+									"filename": "Widget_TripleClick",
+									"hideFromLua": true
 								}
 							]
 						},
