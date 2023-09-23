@@ -4,9 +4,7 @@ This method returns the mouse position relative to the window, in integer screen
 
 ## Syntax
 
-```lua
-function Window:GetMousePosition() --> iVec3
-```
+- [iVec3](iVec3.md) **GetMousePosition**()
 
 ## Returns
 
@@ -29,8 +27,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 local ui = CreateInterface(window)
 
 --Display window position
-local sz = ui.root:ClientSize()
-local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.root, LABEL_CENTER | LABEL_MIDDLE)
+local sz = ui.background:ClientSize()
+local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.background, LABEL_CENTER | LABEL_MIDDLE)
 label:SetLayout(1, 1, 1, 1)
 
 local pos = window:GetMousePosition()
@@ -46,4 +44,3 @@ while true do
     end
 end
 ```
-Note: The C++ example was simplified for the Lua example. The Lua example assumes that the required libraries are already imported into Lua and that the necessary functions and variables are defined.
