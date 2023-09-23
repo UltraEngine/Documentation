@@ -2,6 +2,8 @@
 
 This method returns the normalized quaternion.
 
+## Syntax
+
 [Quat](Quat.md) **Normalize**()
 
 ## Returns
