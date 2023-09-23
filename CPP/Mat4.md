@@ -2,9 +2,7 @@
 
 This class describes a 4x4 matrix used for 3D orientations in space.
 
-## Properties
-
-| Name | Type | Description |
+| Property | Type | Description |
 |---|---|---|
 | i | [Vec4](Vec4) | first matrix row |
 | j | [Vec4](Vec4) | second matrix row |
