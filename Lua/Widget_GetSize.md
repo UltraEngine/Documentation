@@ -4,9 +4,7 @@ This method returns the dimensions of the widget. To retrieve the area inside th
 
 ## Syntax
 
-```lua
-function Widget:GetSize()
-```
+- [iVec2](iVec2) **GetSize**()
 
 ## Returns
 
@@ -26,14 +24,14 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_
 
 --Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
+local sz = ui.background:ClientSize()
 
 --Create widget
-local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root, PANEL_BORDER)
+local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background, PANEL_BORDER)
 panel:SetLayout(1, 1, 1, 1)
 
 sz = panel:ClientSize()
-local label = CreateLabel("", 0, 0, sz.x, sz.y, panel, LABEL_CENTER | LABEL_MIDDLE)
+local label = CreateLabel(sz.x .. " x " .. sz.y, 0, 0, sz.x, sz.y, panel, LABEL_CENTER | LABEL_MIDDLE)
 label:SetLayout(1, 1, 1, 1)
 
 while true do
