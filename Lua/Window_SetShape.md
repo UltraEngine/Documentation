@@ -1,11 +1,11 @@
-# window.SetShape
+# Window:SetShape
 
 This function sets the window's position and size.
 
 ## Syntax
 
-- **window: SetShape**(x: number, y: number, width: number, height: number)
-- **window: SetShape**(position: iVec2, size: iVec2)
+- **SetShape**(x: number, y: number, width: number, height: number)
+- **SetShape**([iVec2](iVec2.md) position, [iVec2](iVec2.md) size)
 
 | Parameter | Description |
 | --- | --- |
@@ -19,7 +19,7 @@ This function sets the window's position and size.
 local displays = GetDisplays()
 
 --Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
 
 --Create user interface
 local ui = CreateInterface(window)
@@ -35,3 +35,4 @@ while true do
         break
     end
 end
+```
