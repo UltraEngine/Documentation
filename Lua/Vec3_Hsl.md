@@ -4,9 +4,7 @@ This method converts an RGB color to an HSL value.
 
 ## Syntax
 
-```lua
-function Vec3:Hsl()
-```
+- [Vec3](Vec3.md) **Hsl**()
 
 ## Returns
 
