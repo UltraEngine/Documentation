@@ -19,7 +19,7 @@ Returns a new timer object.
 ```lua
 local displays = GetDisplays()
 
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 local ui = CreateInterface(window)
 
