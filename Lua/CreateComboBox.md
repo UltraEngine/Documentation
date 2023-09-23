@@ -1,4 +1,18 @@
+# CreateComboBox
 
+The combobox widget displays a drop-down box the user can select an item from. This widget emits a WIDGETSELECT event when a new item is selected.
+
+## Syntax
+
+- [Widget](Widget.md) **CreateComboBox**(number x, number y, number width, number height, [Widget](Widget.md) parent)
+
+| Parameter | Description |
+| --- | --- |
+| x | widget X position |
+| y | widget Y position |
+| width | widget width |
+| height | widget height |
+| parent | parent widget |
 
 ## Example
 
