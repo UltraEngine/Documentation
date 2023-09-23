@@ -1,13 +1,11 @@
-# Window.Minimized #
+# Window:Minimized
 
 This function returns true if the window is minimized.
 
-## Syntax ##
+## Syntax
 
-```lua
-function Window.Minimized()
-```
+- boolean **Minimized**()
 
-## Returns ##
+## Returns
 
-Returns `true` if the window is minimized, otherwise `false` is returned.
+Returns true if the window is minimized, otherwise false is returned.
