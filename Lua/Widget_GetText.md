@@ -4,9 +4,7 @@ This method returns the widget text.
 
 ## Syntax
 
-```lua
-function Widget:GetText()
-```
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **GetText**()
 
 ## Returns
 
@@ -19,14 +17,14 @@ Returns the widget text.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create User Interface
 local ui = CreateInterface(window)
 
 -- Create widget
-local sz = ui.root:ClientSize()
-local textfield = CreateTextField(20, 20, 300, 32, ui.root)
+local sz = ui.background:ClientSize()
+local textfield = CreateTextField(20, 20, 300, 32, ui.background)
 textfield:SetText("Here is some text!")
 
 while true do
@@ -39,5 +37,4 @@ while true do
         return 0
     end
 end
-return 0
 ```
