@@ -4,8 +4,8 @@ This method sets the widget state. The widget state may be WIDGETSTATE_SELECTED,
 
 ## Syntax
 
-- **SetState**(state: number)
-- **SetState**(selected: boolean)
+- **SetState**(number state)
+- **SetState**(boolean state)
 
 | Parameter | Description |
 |---|---|
