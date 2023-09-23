@@ -23,16 +23,7 @@ local displays = GetDisplays()
 -- Create window
 local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
--- Create user interface
-local ui = CreateInterface(window)
-
-local sz = ui.background:ClientSize()
-local button = CreateButton("Close", sz.x / 2 - 40, sz.y / 2 - 15, 80, 30, ui.background)
-
 while not window:Closed() do
-    local ev = WaitEvent()
-    if ev.id == EVENT_WIDGETACTION and ev.source == button then
-        window:Close()
-    end
+    WaitEvent()
 end
 ```
