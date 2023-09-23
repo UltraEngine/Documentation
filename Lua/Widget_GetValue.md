@@ -41,7 +41,7 @@ while true do
     local widget
 
     if ev.id == EVENT_WIDGETACTION then
-        widget = ev.source:AsWidget()
+        widget = Widget(ev.source)
         Print("Slider value: " .. tostring(widget:GetValue()))
     elseif ev.id == EVENT_WINDOWCLOSE then
         return 0
