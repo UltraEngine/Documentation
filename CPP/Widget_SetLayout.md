@@ -10,9 +10,6 @@ This method controls the way a widget behaves when its parent is resized or when
 | --- | --- |
 | left, right, top, bottom | edge clamp mode, can be 0 or 1 |
 
-## Remarks
-
-
 
 ## Example 
 
