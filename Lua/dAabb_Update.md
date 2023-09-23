@@ -13,8 +13,8 @@ This method calculates the bounding box size, center, and radius from the minimu
 local aabb = dAabb()
 
 -- Set the minimum and maximum extents
-aabb.min = Vec3(-1, -1, -1)
-aabb.max = Vec3(1, 1, 1)
+aabb.min = dVec3(-1, -1, -1)
+aabb.max = dVec3(1, 1, 1)
 
 -- Update the bounding box
 aabb:Update()
