@@ -4,9 +4,7 @@ This functions returns the absolute value of a number.
 
 ## Syntax
 
-- **number** **Abs**(value)
-- **number** **Abs**(value)
-- **number** **Abs**(value)
+- **number** **Abs**(number value)
 
 ## Returns
 
