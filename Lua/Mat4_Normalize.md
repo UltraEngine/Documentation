@@ -4,9 +4,7 @@ This method returns the normalized matrix.
 
 ## Syntax
 
-```lua
-function Mat4:Normalize()
-```
+- [Mat4](Mat4.md) **Normalize**()
 
 ## Returns
 
