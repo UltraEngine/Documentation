@@ -17,7 +17,7 @@ This method sets the font scale to make text relatively larger or smaller. The f
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER | WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_RESIZABLE | WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create User Interface
 local ui = CreateInterface(window)
