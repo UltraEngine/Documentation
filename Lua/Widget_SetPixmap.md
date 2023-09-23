@@ -3,7 +3,8 @@
 This method sets a widget pixmap. It is preferable to use the [Widget:SetIcon](Widget_SetIcon.md) method if the vector image is available, as it will be resolution-independent.
 
 ## Syntax
-- **Widget:SetPixmap**(pixmap, alignment)
+
+- **SetPixmap**([Pixmap](Pixmap.md) pixmap, number alignment = PIXMAP_CENTER)
 
 | Parameter | Description |
 |---|---|
@@ -21,10 +22,10 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 local ui = CreateInterface(window)
 
 -- Create a pixmap
-local pixmap = LoadPixmap("https://raw.githubusercontent.com/Leadwerks/Documentation/master/Assets/Materials/Ground/dirt01.dds")
+local pixmap = LoadPixmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/dirt01.dds")
 
 -- Show the pixmap
-ui.root:SetPixmap(pixmap)
+ui.background:SetPixmap(pixmap)
 
 while true do
     local ev = WaitEvent()
