@@ -51,7 +51,7 @@ local sz = ui.background:ClientSize()
 local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background)
 
 -- Fade to black over ten seconds
-panel:SetColor(0, 0, 0, 1, WIDGETCOLOR_BACKGROUND)
+panel:SetColor(0, 0, 1, 1, WIDGETCOLOR_BACKGROUND)
 
 while true do
     local ev = WaitEvent()
