@@ -4,7 +4,7 @@ Returns true if the specified key has been pressed since the last call to KeyHit
 
 ## Syntax
 
-- **KeyHit**(number key)
+- boolean **KeyHit**(number key)
 
 | Parameter | Description |
 |---|---|
