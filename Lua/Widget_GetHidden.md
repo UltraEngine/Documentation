@@ -1,13 +1,11 @@
-# Widget.GetHidden
+# Widget::GetHidden
 
-This function returns the widget visibility state.
+This method returns the widget visibility state.
 
 ## Syntax
 
-```lua
-function Widget:GetHidden()
-```
+- boolean **GetHidden**()
 
 ## Returns
 
-Returns `true` if the widget is hidden, otherwise `false` is returned.
+Returns true if the widget is hidden, otherwise false is returned.
