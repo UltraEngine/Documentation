@@ -8,4 +8,4 @@ This method returns the matrix translation.
 
 ## Returns
 
-Returns the matrix translation as a [Vec3](Vec3.md).
+Returns the matrix translation.
