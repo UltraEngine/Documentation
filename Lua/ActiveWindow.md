@@ -4,7 +4,7 @@ This function returns the focused application window.
 
 ## Syntax
 
-[Window](Window.md) **ActiveWindow**()
+- [Window](Window.md) **ActiveWindow**()
 
 ## Returns
 
