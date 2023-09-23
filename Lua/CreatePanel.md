@@ -20,6 +20,7 @@ This function creates a Panel widget. The Panel widget is a rectangular area for
 ## Example
 
 ![CreatePanel Example](https://github.com/Leadwerks/Documentation/raw/master/Images/CreatePanel.png)
+
 ```lua
 -- Get the displays
 local displays = GetDisplays()
@@ -29,10 +30,10 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
+local sz = ui.background:ClientSize()
 
 -- Create widget
-local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root)
+local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background)
 panel:SetColor(0, 0, 0, 1)
 panel:SetLayout(1, 1, 1, 1)
 
