@@ -6,6 +6,10 @@ This method sets the font weight to make text bold or normal.
 
 - **SetFontBold**(boolean mode)
 
+| Parameter | Description |
+|---|---|
+| mode | set to true for bold font |
+
 ## Example
 
 ```lua
