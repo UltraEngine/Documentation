@@ -1,8 +1,7 @@
-# iVec4 #
+# iVec4
 This class describes a four-dimensional integer vector.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 |-|-|-|
 | x | int | x component of the vector |
 | y | int | y component of the vector |
