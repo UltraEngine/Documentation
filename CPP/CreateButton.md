@@ -22,8 +22,6 @@ Returns a new button object.
 
 ## Example
 
-The first example creates an interface directly on a window.
-
 ![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateButton.png)
 
 ```c++
@@ -77,83 +75,6 @@ int main(int argc, const char* argv[])
                 return 0;
                 break;
         }
-    }
-    return 0;
-}
-```
-
-The second example renders an interface in a Vulkan framebuffer.
-
-```c++
-#include "UltraEngine.h"
-
-using namespace UltraEngine;
-
-int main(int argc, const char* argv[])
-{
-    //Get the displays
-    auto displays = GetDisplays();
-
-    //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
-
-    //Create framebuffer
-    auto framebuffer = CreateFramebuffer(window);
-
-    //Create world
-    auto world = CreateWorld();
-
-    //Create camera
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-    camera->SetPosition(float(framebuffer->size.x) * 0.5f, (framebuffer->size.y) * 0.5f);
-
-    //Load a font
-    auto font = LoadFont("Fonts/arial.ttf");
-
-    //Create User Interface
-    auto ui = CreateInterface(world, font, framebuffer->size);
-
-    //Create buttons
-    int x = (window->ClientSize().x - 120) / 2;
-    int y = 50;
-    int sep = 40;
-
-    auto button = CreateButton("Button", x, y, 120, 30, ui->root);
-    y += sep;
-
-    auto toggle = CreateButton("Toggle", x, y, 120, 30, ui->root, BUTTON_TOGGLE);
-    y += sep;
-
-    auto toolbar = CreateButton("Toolbar", x, y, 120, 30, ui->root, BUTTON_TOOLBAR);
-    y += sep;
-
-    auto checkbox = CreateButton("Checkbox", x, y, 120, 30, ui->root, BUTTON_CHECKBOX);
-    y += sep;
-
-    auto radio1 = CreateButton("Option 1", x, y, 120, 30, ui->root, BUTTON_RADIO);
-    radio1->SetState(WIDGETSTATE_SELECTED);
-
-    y += sep;
-    auto radio2 = CreateButton("Option 2", x, y, 120, 30, ui->root, BUTTON_RADIO);
-
-    while (true)
-    {
-        while (PeekEvent())
-        {
-            const Event ev = WaitEvent();
-            switch (ev.id)
-            {
-            case EVENT_WIDGETACTION:
-                Print(ev.source->As<Widget>()->text);
-                break;
-            case EVENT_WINDOWCLOSE:
-                return 0;
-                break;
-            }
-            ui->ProcessEvent(ev);
-        }
-        world->Update();
-        world->Render(framebuffer);
     }
     return 0;
 }
