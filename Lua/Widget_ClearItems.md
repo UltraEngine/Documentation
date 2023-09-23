@@ -1,30 +1,29 @@
-# Widget:ClearItems #
+# Widget:ClearItems
+
 This method clears all widget items and redraws the widget.
 
-## Syntax ##
+## Syntax
+
 - **ClearItems**()
 
-## Example ##
+## Example
 
 ```lua
--- Load plugins
-local plugin_svg = LoadPlugin("Plugins/SVG.*")
-
 -- Get the displays
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:GetSize()
+local sz = ui.background:GetSize()
 
 -- Create filter input
-local button = CreateButton("Clear Items", 20, 20, sz.x - 40, 30, ui.root)
+local button = CreateButton("Clear Items", 20, 20, sz.x - 40, 30, ui.background)
 
 -- Create list box
-local listbox = CreateListBox(20, 55, sz.x - 40, sz.y - 75, ui.root)
+local listbox = CreateListBox(20, 55, sz.x - 40, sz.y - 75, ui.background)
 listbox:AddItem("Item 1", true)
 listbox:AddItem("Item 2")
 listbox:AddItem("Item 3")
