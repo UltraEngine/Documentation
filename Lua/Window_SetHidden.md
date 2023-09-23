@@ -4,9 +4,11 @@ This method hides a window.
 
 ## Syntax
 
-- **Window:SetHidden**(hide: boolean)
-  
-  - `hide`: window visibility
+- **SetHidden**(boolean hide)
+
+| Parameter | Description |
+|---|---|
+| hide | window visibility |
 
 ## Example
 
@@ -19,8 +21,8 @@ local window = CreateWindow("Parent window", 0, 0, 800, 600, displays[1])
 
 -- Create user interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
-local button = CreateButton("Show child window", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui.root)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Show child window", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui.background)
 
 -- Create subwindow
 local subwindow = CreateWindow("Child window", 200, 200, 400, 300, window, WINDOW_TITLEBAR | WINDOW_HIDDEN)
