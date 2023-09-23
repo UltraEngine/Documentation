@@ -17,14 +17,18 @@ Returns a new timer object.
 ## Example
 
 ```lua
-window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
-ui = CreateInterface(window)
-sz = ui.root:ClientSize()
+local displays = GetDisplays()
 
-label = CreateLabel("", 0, 0, sz.x, sz.y, ui.root, LABEL_CENTER | LABEL_MIDDLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+
+local ui = CreateInterface(window)
+
+local sz = ui.background:ClientSize()
+
+local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.background, LABEL_CENTER | LABEL_MIDDLE)
 label:SetFontScale(4)
 
-timer = CreateTimer(1000)
+local timer = CreateTimer(1000)
 
 while true do
     local ev = WaitEvent()
