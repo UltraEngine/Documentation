@@ -1,13 +1,11 @@
-## Mat4:Transpose
+# Mat4:Transpose
 
 This method returns the transpose matrix.
 
-### Syntax
+## Syntax
 
-```lua
-function Mat4:Transpose()
-```
+- [Mat4](Mat4.md) **Transpose**()
 
-### Returns
+## Returns
 
 - Returns the transpose matrix.
