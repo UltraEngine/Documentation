@@ -1,6 +1,6 @@
 # Widget:SetTexture
 
-This method applies a texture to the widget. Typically this is used to display the rendering output of a camera that is drawing to a texture using the [Camera::SetRenderTarget](Camera_SetRenderTarget.md) command.
+This method applies a texture to the widget. Typically this is used to display the rendering output of a camera that is drawing to a texture using the [Camera:SetRenderTarget](Camera_SetRenderTarget.md) command.
 
 ## Syntax
 
