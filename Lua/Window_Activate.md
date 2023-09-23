@@ -4,7 +4,7 @@ This method makes the window gain the keyboard focus and brings it to the top of
 
 ## Syntax
 
-- Window:Activate()
+- **Activate**()
 
 ## Example
 
