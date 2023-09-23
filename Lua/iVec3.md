@@ -1,14 +1,14 @@
-# iVec3 #
+# iVec3
+
 This class describes a three-dimensional integer vector.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 |-|-|-|
 | x | number | x component of the vector |
 | y | number | y component of the vector |
 | z | number | z component of the vector |
-| iVec3 | function | iVec3(const number x)
-| iVec3 | function | iVec3(const number x, const number y, const number z) |
+| iVec3 | function | iVec3(number x)
+| iVec3 | function | iVec3(number x, number y, number z) |
 
 ### Example ###
 ```lua
