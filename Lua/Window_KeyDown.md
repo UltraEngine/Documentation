@@ -1,10 +1,10 @@
-# Window.KeyDown
+# Window:KeyDown
 
 Returns the current key state of the specified key.
 
 ## Syntax
 
-- **Window:KeyDown**(key: KeyCode): boolean
+- boolean **KeyDown**(number key)
 
 | Parameter | Description |
 |---|---|
@@ -23,28 +23,25 @@ Returns true if the specified key is currently pressed, otherwise false is retur
 --
 -------------------------------------------------------------------------------------------------
 
--- import required libraries
-local ultra = require("UltraEngine")
-
 -- Get the displays
-local displays = ultra.GetDisplays()
+local displays = GetDisplays()
 
 -- Create windows
-local window = ultra.CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 --Create user interface
-local ui = ultra.CreateInterface(window)
+local ui = CreateInterface(window)
 
 while true do
-    if window:KeyDown(ultra.KEY_SPACE) then
-        ui.root:SetColor(1, 0, 0, 1)
+    if window:KeyDown(KEY_SPACE) then
+        ui.background:SetColor(1, 0, 0, 1)
     else
-        ui.root:SetColor(0, 0, 0, 1)
+        ui.background:SetColor(0, 0, 0, 1)
     end
 
-    local ev = ultra.WaitEvent()
-    if ev.id == ultra.EVENT_WINDOWCLOSE then
-        return 0
+    local ev = WaitEvent()
+    if ev.id == EVENT_WINDOWCLOSE then
+        return
     end
 end
 ```
