@@ -1,20 +1,20 @@
-## Vec3:Reflect
+# Vec3:Reflect
 
 This function bounces the vector off a specified normal vector and returns the result.
 
-### Syntax
+## Syntax
 
-```lua
-function Vec3:Reflect(normal)
-```
+- [Vec3](Vec3.md) **Reflect**([Vec3](Vec3.md) normal)
 
-- `normal` (Vec3): The surface normal to bounce the vector off of.
+| Parameter | Description |
+|---|---|
+| normal | surface normal to reflect off of |
 
-### Returns
+## Returns
 
-- (Vec3): The reflected vector.
+Returns the reflected vector.
 
-### Example
+## Example
 
 ```lua
 -- The motion is pointing down and forward
@@ -27,5 +27,5 @@ local ground = Vec3(0, 1, 0)
 local bounce = motion:Reflect(ground)
 
 -- The bounce angle should be up and forward
-print(bounce.x .. ", " .. bounce.y .. ", " .. bounce.z)
+Print(bounce.x .. ", " .. bounce.y .. ", " .. bounce.z)
 ```
