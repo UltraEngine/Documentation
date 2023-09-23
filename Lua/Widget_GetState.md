@@ -4,9 +4,7 @@ This method retrieves the widget state.
 
 ## Syntax
 
-```lua
-function widget:GetState()
-```
+- number **GetState**()
 
 ## Returns
 
@@ -20,8 +18,8 @@ local displays = GetDisplays()
 local window = CreateWindow("Ultra Engine", 0, 0, 640, 480, displays[1])
 
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
-local button = CreateButton("Unselected", sz.x / 2 - 40, sz.y / 2 - 15, 120, 30, ui.root, BUTTON_CHECKBOX)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Unselected", sz.x / 2 - 40, sz.y / 2 - 15, 120, 30, ui.background, BUTTON_CHECKBOX)
 
 while true do
     local ev = WaitEvent()
