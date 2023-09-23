@@ -1,8 +1,7 @@
-# iVec2 #
+# iVec2
 This class describes a two-dimensional integer vector.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 |-|-|-|
 | x, width | int | x component of the vector |
 | y, height | int | y component of the vector |
