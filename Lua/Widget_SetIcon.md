@@ -4,13 +4,13 @@ This method adds an icon to the widget.
 
 ## Syntax
 
-- **SetIcon**(icon, alignment, scale)
+- **Seticon**([Icon](Icon.md) icon, number alignment = PIXMAP_CENTER, number scale = 1)
 
-  **Parameters:**
-  
-  - `icon` (shared_ptr<[Icon](Icon.md)\>): The icon to set.
-  - `alignment` (number): Pixmap alignment mode. It can be `PIXMAP_CENTER`, `PIXMAP_CONTAIN`, `PIXMAP_COVER`, `PIXMAP_STRETCH`, or `PIXMAP_FIT`. (Default: `PIXMAP_CENTER`)
-  - `scale` (number): Icon scale. (Default: 1.0)
+| Parameter | Description |
+| --- | --- |
+| icon | icon to set |
+| alignment | pixmap alignment mode, may be PIXMAP_CENTER, PIXMAP_CONTAIN, PIXMAP_COVER, PIXMAP_STRETCH, or PIXMAP_FIT |
+| scale | icon scale |
 
 ## Example
 
