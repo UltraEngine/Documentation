@@ -1,17 +1,22 @@
-# ui.AddItem #
+# Widget:AddItem
+
 This function adds an item to any widget that displays a list of items.
 
-## Syntax ##
-- **ui.AddItem**(text: string, selected: boolean = false): number
+## Syntax
 
-### Parameters ###
-- **text:** The text of the widget item.
-- **selected:** Optional. If set to true, the item will be selected.
+- number **AddItem**([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, boolean selected = false)
 
-## Returns ##
+| Parameter | Description |
+|---|---|
+| text | the text for the widget item |
+| selected | if set to true the item will be selected |
+
+## Returns
+
 Returns the index of the new widget item.
 
-## Example ##
+## Example 
+
 ```lua
 --Get the displays
 local displays = GetDisplays()
@@ -23,8 +28,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 local ui = CreateInterface(window)
 
 --Create widget
-local sz = ui.root:GetSize()
-local listbox = CreateListBox(20, 20, sz.x - 40, sz.y - 40, ui.root)
+local sz = ui.background:GetSize()
+local listbox = CreateListBox(20, 20, sz.x - 40, sz.y - 40, ui.background)
 listbox:AddItem("Item 1", true)
 listbox:AddItem("Item 2")
 listbox:AddItem("Item 3")
