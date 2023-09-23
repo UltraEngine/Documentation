@@ -1,4 +1,4 @@
-# Widget::GetHidden
+# Widget:GetHidden
 
 This method returns the widget visibility state.
 
