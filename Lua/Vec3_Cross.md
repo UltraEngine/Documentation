@@ -4,7 +4,7 @@ This method returns the cross product of this vector and the specified vector.
 
 ## Syntax
 
-- Vec3 Cross(const Vec3& v)
+- [Vec3](Vec3.md) **Cross**([Vec3](Vec3.md) v)
 
 | Parameter | Description |
 |-|-|
