@@ -1,16 +1,12 @@
-# CreateLabel #
+# CreateLabel
 
 The label widget displays a read-only block of text.
 
-## Syntax ##
+## Syntax
 
-```lua
--- shared_ptr<[Widget](Widget.md)> CreateLabel(const [WString](WString.md)& text, const int x, const int y, const int width, const int height, shared_ptr<[Widget](Widget.md)> parent, const ButtonStyle = LABEL_DEFAULT)
-```
+- [Widget](Widget.md) **CreateLabel**([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, number x, number y, number width, number height, [Widget](Widget.md) parent, number style = LABEL_DEFAULT)
 
-### Parameters ###
-
-|Parameter|Description|
+| Parameter | Description |
 |---|---|
 | text | widget text |
 | x | widget x position |
@@ -20,7 +16,7 @@ The label widget displays a read-only block of text.
 | parent | parent widget |
 | style | optional button style, can be any combination of LABEL_LEFT, LABEL_RIGHT, LABEL_CENTER, LABEL_TOP, LABEL_MIDDLE, LABEL_BOTTOM, and LABEL_BORDER |
 
-## Example ##
+## Example
 
 ![](https://github.com/Leadwerks/Documentation/raw/master/Images/CreateLabel.png)
 
@@ -29,16 +25,16 @@ The label widget displays a read-only block of text.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create User Interface
 local ui = CreateInterface(window)
 
 -- Create widget
-local label1 = CreateLabel("Label", 20, 20, 120, 30, ui.root)
-local label2 = CreateLabel("Border Label", 20, 50, 120, 30, ui.root, LABEL_BORDER + LABEL_CENTER + LABEL_MIDDLE)
+local label1 = CreateLabel("Label", 20, 20, 120, 30, ui.background)
+local label2 = CreateLabel("Border Label", 20, 50, 120, 30, ui.background, LABEL_BORDER | LABEL_CENTER | LABEL_MIDDLE)
 
-while window.Closed() == false do
+while not window:Closed() do
     WaitEvent()
 end
 ```
