@@ -4,7 +4,7 @@ This function retrieves the currently selected node in a treeview widget.
 
 ## Syntax
 
-- [Widget](Widget.md) **Widget:GetSelectedNode**()
+- [Widget](Widget.md) **GetSelectedNode**()
 
 ## Returns
 
