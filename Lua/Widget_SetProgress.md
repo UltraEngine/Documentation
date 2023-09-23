@@ -1,9 +1,10 @@
-# Widget:SetProgress #
+# Widget:SetProgress
 
 This method sets the progress complete to display, for a progress bar widget.
 
-## Syntax ##
-- **SetProgress**(progress: number)
+## Syntax
+
+- **SetProgress**(number progress)
 
 | Parameter | Description |
 | --- | --- |
