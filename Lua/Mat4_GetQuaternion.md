@@ -4,9 +4,7 @@ This method returns the matrix rotation as a quaternion.
 
 ## Syntax
 
-```lua
-function Mat4:GetQuaternion()
-```
+- [Quat](Quat.md) **GetQuaternion**()
 
 ## Returns
 
