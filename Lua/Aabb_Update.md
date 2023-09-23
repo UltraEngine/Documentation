@@ -4,9 +4,7 @@ This method calculates the bounding box size, center, and radius from the minimu
 
 ## Syntax
 
-```lua
-function Aabb:Update()
-```
+- **Update**()
 
 ## Example
 
@@ -15,14 +13,14 @@ function Aabb:Update()
 local aabb = Aabb()
 
 -- Set the minimum and maximum extents
-aabb.minExtent = Vector3(-1, -1, -1)
-aabb.maxExtent = Vector3(1, 1, 1)
+aabb.min = Vec3(-1, -1, -1)
+aabb.max = Vec3(1, 1, 1)
 
 -- Update the bounding box
 aabb:Update()
 
 -- Print the bounding box size, center, and radius
-print("Size:", aabb.size)
-print("Center:", aabb.center)
-print("Radius:", aabb.radius)
+Print("Size: " .. tostring(aabb.size.x) .. ", " ..tostring(aabb.size.y) .. ", " .. tostring(aabb.size.z))
+Print("Center: " .. tostring(aabb.center.x) .. ", " ..tostring(aabb.center.y) .. ", " .. tostring(aabb.center.z))
+Print("Radius: " .. tostring(aabb.radius))
 ```
