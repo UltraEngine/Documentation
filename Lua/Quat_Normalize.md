@@ -1,10 +1,10 @@
 # Quat:Normalize
 
-This method returns the normalized quaternion.
+This method retrieves the normalized quaternion.
 
-```lua
-function Quat:Normalize()
-```
+## Syntax
+
+- [Quat](Quat.md) **Normalize**()
 
 ## Returns
 
