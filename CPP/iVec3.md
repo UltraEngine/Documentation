@@ -1,8 +1,7 @@
-# iVec3 #
+# iVec3
 This class describes a three-dimensional integer vector.
 
-### Properties ###
-| Name | Type | Description |
+| Property | Type | Description |
 |-|-|-|
 | x | int | x component of the vector |
 | y | int | y component of the vector |
