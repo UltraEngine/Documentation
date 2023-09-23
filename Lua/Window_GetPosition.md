@@ -4,7 +4,7 @@ This method returns the position of a window in screen coordinates.
 
 ## Syntax
 
-- [iVec2](iVec2.md) **Window:GetPosition**()
+- [iVec2](iVec2.md) **GetPosition**()
 
 ## Returns
 
@@ -17,14 +17,14 @@ Returns the window position.
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create user interface
 local ui = CreateInterface(window)
 
 -- Display window position
-local sz = ui.root:ClientSize()
-local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.root, LABEL_CENTER | LABEL_MIDDLE)
+local sz = ui.background:ClientSize()
+local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.background, LABEL_CENTER | LABEL_MIDDLE)
 label:SetLayout(1, 1, 1, 1)
 
 local pos = window:GetPosition()
@@ -36,7 +36,7 @@ while true do
         pos = window:GetPosition()
         label:SetText("Window position: " .. tostring(pos.x) .. " x " .. tostring(pos.y))
     elseif ev.id == EVENT_WINDOWCLOSE then
-        return 0
+        return
     end
 end
 ```
