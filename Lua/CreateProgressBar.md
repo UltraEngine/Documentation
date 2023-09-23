@@ -1,6 +1,6 @@
 # CreateProgressBar
 
-The progressbar widget displays a horizontal bar that indicates the progress of some task. The progress complete can be set using the [Widget::SetProgress](Widget_SetProgress.md) method.
+The progressbar widget displays a horizontal bar that indicates the progress of some task. The progress complete can be set using the [Widget:SetProgress](Widget_SetProgress.md) method.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ Returns a new progress bar widget.
 
 ```lua
 function UpdateProgress(e, extra)
-    local widget = extra:AsWidget()
+    local widget = Widget(extra)
     widget:SetProgress((e.data / 20.0) % 1.0)
     return true
 end
@@ -33,14 +33,14 @@ end
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 --Create User Interface
 local ui = CreateInterface(window)
 
 --Create widget
-local sz = ui.root:GetSize()
-local widget = CreateProgressBar(20, (sz.y - 30) / 2, sz.x - 40, 30, ui.root)
+local sz = ui.background:GetSize()
+local widget = CreateProgressBar(20, (sz.y - 30) / 2, sz.x - 40, 30, ui.background)
 widget:SetProgress(0.6)
 
 local progresstimer = CreateTimer(500)
