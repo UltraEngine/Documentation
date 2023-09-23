@@ -1,13 +1,11 @@
-### widget:SetColor
+# Widget:SetColor
 
 This method sets a widget's color value.
 
-#### Syntax
+## Syntax
 
-* **widget:SetColor**(r: number, g: number, b: number, a: number = 1.0, index: WidgetColor = WIDGETCOLOR_BACKGROUND): void
-* **widget:SetColor**(color: [Vec4](Vec4.md), index: WidgetColor = WIDGETCOLOR_BACKGROUND): void
-
-##### Parameters
+- **SetColor**(number r, number g, number b, number a = 1, number index = WIDGETCOLOR_BACKGROUND)
+- **SetColor**([Vec4](Vec4.md) color, number index = WIDGETCOLOR_BACKGROUND)
 
 | Parameter | Description |
 | --- | --- |
@@ -18,7 +16,7 @@ This method sets a widget's color value.
 | color | color to set |
 | index | color index |
 
-#### Remarks
+## Remarks
 
 The color index can be any of the following values:
 
@@ -36,7 +34,7 @@ The color index can be any of the following values:
 * WIDGETCOLOR_MENUBORDER
 * WIDGETCOLOR_POPUP
 
-#### Example
+## Example
 
 ```lua
 -- Get the displays
@@ -47,13 +45,13 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
+local sz = ui.background:ClientSize()
 
 -- Create widget
-local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root)
+local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background)
 
 -- Fade to black over ten seconds
-panel:SetColor(0, 0, 0, 1, WIDGETCOLOR_BACKGROUND, 10000)
+panel:SetColor(0, 0, 0, 1, WIDGETCOLOR_BACKGROUND)
 
 while true do
     local ev = WaitEvent()
