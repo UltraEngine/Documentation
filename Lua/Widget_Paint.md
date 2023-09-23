@@ -1,18 +1,18 @@
-# widget.Paint()
+# Widget:Paint
 
 This function sends a paint message to the user interface signaling the widget to be redrawn. 
 
 ## Syntax
 
-- widget.Paint()
-- widget.Paint(x, y, width, height)
+- **Paint**(number x, number y, number width, number height)
+- **Paint**()
 
-### Parameters
-
-- **x**: x position of the region to paint
-- **y**: y position of the region to paint
-- **width**: width of the region to paint
-- **height**: height of the region to paint
+| Parameter | Description |
+|---|---|
+| x | x position of the region to paint |
+| y | y position of the region to paint |
+| width | width of the region to paint |
+| height | height of the region to paint |
 
 ## Remarks
 
@@ -51,23 +51,23 @@ while true do
             -- Make a copy of the pixmap, modify it, and overwrite the file
             local pixmap2 = Pixmap(pixmap:Copy())
             if pixmap2.format ~= TEXTURE_RGBA then
-                pixmap2 = pixmap2.Convert(TEXTURE_RGBA)
+                pixmap2 = pixmap2:Convert(TEXTURE_RGBA)
             end
             local px = Random(0, pixmap.size.x - 1 - 100)
             local py = Random(0, pixmap.size.y - 1 - 100)
             local color = Rgba(Random(255), Random(255), Random(255), 255)
             for x = 0, 99 do
                 for y = 0, 99 do
-                    pixmap2.WritePixel(px + x, py + y, color)
+                    pixmap2:WritePixel(px + x, py + y, color)
                 end
             end
-            pixmap2.Save(path)
+            pixmap2:Save(path)
 
             -- Reload the pixmap from the file
-            pixmap.Reload()
+            pixmap:Reload()
 
             -- Redraw the panel
-            ui.root.Paint()
+            ui.background:Paint()
         end
     elseif ev.id == EVENT_WINDOWCLOSE then
         break
