@@ -4,16 +4,13 @@ This method sets the range of a slider widget.
 
 ## Syntax
 
-```lua
-function Widget:SetRange(x: number, y: number): void
-```
-
-## Parameters
+- **SetRange**(number x, number y, number increments = 1)
 
 | Parameter | Description |
 |---|---|
 | x | minimum value for a stepper or trackbar, or visible range for a scrollbar  |
 | y | maximum value for a stepper or trackbar, or total range for a scrollbar |
+| increments | for scrollbar sliders, the minimum change in value |
 
 ## Remarks
 
@@ -26,23 +23,25 @@ If this method is used with a slider widget that uses the SCROLLBAR slider style
 ## Example
 
 ```lua
+local displays = GetDisplays()
+
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0])
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root.ClientSize()
+local sz = ui.background:ClientSize()
 
 -- Create scrollbar
-local slider1 = CreateSlider(10, 10, 200, 30, ui.root, SLIDER_SCROLLBAR)
+local slider1 = CreateSlider(10, 10, 200, 30, ui.background, SLIDER_SCROLLBAR)
 slider1:SetRange(3, 10)
 
 -- Create scrollbar
-local slider2 = CreateSlider(10, 10 + 50, 200, 30, ui.root, SLIDER_SCROLLBAR)
+local slider2 = CreateSlider(10, 10 + 50, 200, 30, ui.background, SLIDER_SCROLLBAR)
 slider2:SetRange(1, 10)
 
 -- Create trackbar
-local slider3 = CreateSlider(10, 10 + 100, 200, 30, ui.root, SLIDER_TRACKBAR)
+local slider3 = CreateSlider(10, 10 + 100, 200, 30, ui.background, SLIDER_TRACKBAR)
 slider3:SetRange(10, 20)
 slider3:SetValue(15)
 
@@ -50,10 +49,10 @@ while true do
     local ev = WaitEvent()
     local widget
     if ev.id == EVENT_WIDGETACTION then
-        widget = ev.source:As(Widget)
-        print("Slider value: " .. tostring(widget:GetValue()))
+        widget = Widget(ev.source)
+        Print("Slider value: " .. tostring(widget:GetValue()))
     elseif ev.id == EVENT_WINDOWCLOSE then
-        return 0
+        return
     end
 end
 ```
