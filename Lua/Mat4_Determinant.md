@@ -1,13 +1,11 @@
-###**Mat4:determinant()**
+# Mat4:Determinant
 
 This method returns the matrix determinant.
 
-####**Syntax**
+## Syntax
 
-```lua
-function determinant()
-```
+number **Determinant**()
 
-####**Returns**
+## Returns
 
 Returns the matrix determinant.
