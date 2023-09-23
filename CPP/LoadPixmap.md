@@ -4,15 +4,13 @@ This function loads a pixmap from a file path or stream.
 
 ## Syntax
 
-- shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(const [WString](WString.md)& path, const int miplevel = 0, const int face = 0, const LoadFlags flags = LOAD_DEFAULT)
-- shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(shared_ptr<[Stream](Stream.md)\>, const int miplevel = 0, const int face = 0, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(shared_ptr<[Stream](Stream.md)\>, const LoadFlags flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
 | path | file path to load the pixmap from |
 | stream | stream to load the pixmap from |
-| miplevel | optional mipmap level to load |
-| face | optional texture face to load |
 | flags | optional load flags |
 
 ## Returns
