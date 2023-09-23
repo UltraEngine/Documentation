@@ -1,17 +1,11 @@
-# Widget:GetParent #
-This function retrieves the widget parent.
+# Widget:GetParent
 
-Syntax:
-```lua
-function Widget:GetParent()
-```
+This method retrieves the widget parent.
 
-Returns:
-- [Widget](Widget.md) - The widget parent.
+## Syntax
 
-Example:
-```lua
-local parentWidget = widget:GetParent()
-```
+- [Widget](Widget.md) **GetParent**()
 
-In this example, `widget` is an instance of the `Widget` class. The `GetParent` function is used to retrieve its parent widget. The returned value, `parentWidget`, will be an instance of the `Widget` class.
+## Returns
+
+Returns the widget parent.
