@@ -1,14 +1,10 @@
-# Widget.GetItemText
+# Widget:GetItemText
 
 This method returns the text of the specified widget item.
 
 ## Syntax
 
-```lua
-function Widget.GetItemText(item)
-```
-
-### Parameters
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **GetItemText**(number item)
 
 | Parameter | Description |
 | --- | --- |
@@ -21,8 +17,6 @@ Returns the widget item text at the specified index.
 ## Example
 
 ```lua
-dofile("UltraEngine.lua")
-
 -- Get the displays
 local displays = GetDisplays()
 
@@ -31,11 +25,11 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:GetSize()
+local sz = ui.background:GetSize()
 
-local label = CreateLabel("Selected item: \"Item 1\"", 20, 20, sz.x, 30, ui.root)
+local label = CreateLabel("Selected item: \"Item 1\"", 20, 20, sz.x, 30, ui.background)
 
-local listbox = CreateListBox(20, 50, sz.x - 40, sz.y - 70, ui.root)
+local listbox = CreateListBox(20, 50, sz.x - 40, sz.y - 70, ui.background)
 listbox:AddItem("Item 1", true)
 listbox:AddItem("Item 2")
 listbox:AddItem("Item 3")
