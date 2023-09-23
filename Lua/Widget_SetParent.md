@@ -4,12 +4,8 @@ This method makes this widget a child of the specified parent widget.
 
 ## Syntax
 
-```lua
-function Widget:SetParent(parent: Widget)
-function Widget:SetParent(parent: Widget, position: number)
-```
-
-### Parameters
+- **SetParent**([Widget](Widget.md) parent)
+- **SetParent**([Widget](Widget.md) parent, number position)
 
 | Parameter | Description |
 | --- | --- |
@@ -29,20 +25,20 @@ The parent widget may be nil if you are deleting the widget.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
+local sz = ui.background:ClientSize()
 
 -- Panel
-local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root)
+local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background)
 panel:SetColor(0, 0, 0)
 panel:SetLayout(1, 1, 1, 1)
 
 -- Subpanel
 sz = panel:ClientSize()
-local subpanel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root)
+local subpanel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background)
 subpanel:SetColor(0.5, 0.5, 0.5)
 subpanel:SetLayout(1, 1, 1, 1)
 
@@ -51,7 +47,7 @@ subpanel:SetParent(panel)
 
 while true do
     local ev = WaitEvent()
-    
+
     if ev.id == EVENT_WINDOWCLOSE then
         return 0
     end
