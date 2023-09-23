@@ -28,7 +28,7 @@ Returns a new panel widget.
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR | WINDOW_RESIZABLE)
 
 -- Create User Interface
 local ui = CreateInterface(window)
