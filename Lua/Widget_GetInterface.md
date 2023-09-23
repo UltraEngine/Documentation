@@ -8,4 +8,4 @@ This method returns the interface the widget was created in.
 
 ## Returns
 
-Returns the widget interface, or NULL if the interface has gone out of scope and been deleted.
+Returns the widget interface, or nil if the interface has gone out of scope and been deleted.
