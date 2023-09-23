@@ -4,8 +4,8 @@ This function loads a pixmap from a file path or stream.
 
 ## Syntax
 
-- shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
-- shared_ptr<[Pixmap](Pixmap.md)\> LoadPixmap(shared_ptr<[Stream](Stream.md)\>, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Pixmap](Pixmap.md)\> **LoadPixmap**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
+- shared_ptr<[Pixmap](Pixmap.md)\> **LoadPixmap**(shared_ptr<[Stream](Stream.md)\>, const LoadFlags flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
