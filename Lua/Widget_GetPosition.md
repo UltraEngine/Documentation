@@ -15,21 +15,18 @@ Returns the widget position.
 ## Example
 
 ```lua
--- Load plugins
-local plugin_svg = LoadPlugin("Plugins/SVG.*")
-
 -- Get the displays
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
 
 -- Create User Interface
 local ui = CreateInterface(window)
-local sz = ui.root:ClientSize()
+local sz = ui.background:ClientSize()
 
 -- Create widget
-local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.root, PANEL_BORDER)
+local panel = CreatePanel(50, 50, sz.x - 100, sz.y - 100, ui.background, PANEL_BORDER)
 panel:SetLayout(0, 1, 0, 1)
 
 sz = panel:ClientSize()
