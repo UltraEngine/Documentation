@@ -1929,7 +1929,8 @@
 								},
 								{
 									"title": "Custom Widgets",
-									"filename": "CustomWidgets"
+									"filename": "CustomWidgets",
+									"hideFromLua": true
 								},
 								{
 									"title": "Draw",
