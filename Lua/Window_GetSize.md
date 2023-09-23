@@ -4,7 +4,7 @@ This method returns the dimensions of a window. To retrieve the area inside the 
 
 ## Syntax
 
-- iVec2 Window:ClientSize()
+- [iVec2](iVec2.md) Window:ClientSize()
 
 ## Returns
 
@@ -23,8 +23,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_
 local ui = CreateInterface(window)
 
 --Display window size
-local sz = ui.root:ClientSize()
-local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.root, LABEL_CENTER | LABEL_MIDDLE)
+local sz = ui.background:ClientSize()
+local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.background, LABEL_CENTER | LABEL_MIDDLE)
 label:SetLayout(1, 1, 1, 1)
 
 sz = window:GetSize()
