@@ -4,9 +4,7 @@ This method returns true if the window has been closed since the last call, or s
 
 ## Syntax
 
-```lua
-function Window:Closed()
-```
+- boolean **Closed**()
 
 ## Returns
 
@@ -14,13 +12,11 @@ Returns the window closed state and resets the state to false.
 
 ## Remarks
 
-This method uses a global state to detect when the window has been closed. If two different parts of your application call the method, only one will detect the close event. For finer control, use the events system and listen for `WINDOWCLOSE` events.
+This method uses a global state to detect when the window has been closed. If two different parts of your application call the method, only one will detect the close event. For finer control, use the events system and listen for WINDOWCLOSE events.
 
 ## Example
 
 ```lua
-require("UltraEngine")
-
 -- Get the displays
 local displays = GetDisplays()
 
@@ -30,8 +26,8 @@ local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1])
 -- Create user interface
 local ui = CreateInterface(window)
 
-local sz = ui.root:ClientSize()
-local button = CreateButton("Close", sz.x / 2 - 40, sz.y / 2 - 15, 80, 30, ui.root)
+local sz = ui.background:ClientSize()
+local button = CreateButton("Close", sz.x / 2 - 40, sz.y / 2 - 15, 80, 30, ui.background)
 
 while not window:Closed() do
     local ev = WaitEvent()
