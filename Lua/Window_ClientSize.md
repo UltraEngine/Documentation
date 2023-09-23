@@ -4,13 +4,11 @@ This method returns the dimensions of the drawable area inside a window, excludi
 
 ## Syntax
 
-- **ClientSize**: `function() -> table`
+- [iVec2](iVec2.md) **ClientSize**()
 
 ## Returns
 
-- Returns the window client size as a table with the following fields:
-  - **x**: The width of the client area.
-  - **y**: The height of the client area.
+Returns the window client size.
 
 ## Example
 
@@ -19,14 +17,14 @@ This method returns the dimensions of the drawable area inside a window, excludi
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
+local window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], WINDOW_TITLEBAR | WINDOW_RESIZABLE)
 
 -- Create user interface
 local ui = CreateInterface(window)
 
 -- Display window size
-local sz = ui.root:ClientSize()
-local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.root, LABEL_CENTER | LABEL_MIDDLE)
+local sz = ui.background:ClientSize()
+local label = CreateLabel("", 0, 0, sz.x, sz.y, ui.background, LABEL_CENTER | LABEL_MIDDLE)
 label:SetLayout(1, 1, 1, 1)
 
 sz = window:GetSize()
