@@ -1,10 +1,10 @@
-# mat4.getTranslation
+# Mat4:GetTranslation
 
 This method returns the matrix translation.
 
 ## Syntax
 
-- **mat4.getTranslation**()
+- [Vec3](Vec3.md) **GetTranslation**()
 
 ## Returns
 
