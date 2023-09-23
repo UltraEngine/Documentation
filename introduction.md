@@ -2,7 +2,7 @@
 
 Welcome to the Ultra Engine documentation. Here you will learn how to use the software to build high-performance games and applications with the world's fastest game engine.
 
-Ultra Engine is currently available in early access mode, consisting of a C++ programming SDK for Windows that serves as a foundation for continued development.
+Ultra Engine is currently available in early access mode, with support for the C++ and Lua programming languages.
 
 ## System Requirements
 
