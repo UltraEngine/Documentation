@@ -1,11 +1,11 @@
-# NavAgent.Navigate
+# NavAgent:Navigate
 
 This method plots a path to the specified point and directs the navigation agent to move there.
 
 ## Syntax
 
-- **Navigate**(position: [Vec3](Vec3.md)): boolean
-- **Navigate**(x: number, y: number, z: number): boolean
+- boolean **Navigate**([xVec3](xVec3.md) destination)
+- boolean **Navigate**(number x, number y, number z)
 
 | Parameter | Description |
 |---|---|
