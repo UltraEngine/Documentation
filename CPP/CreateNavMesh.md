@@ -4,7 +4,7 @@ This function creates a new navigation mesh for pathfinding.
 
 ## Syntax
 
-- shared_ptr<[NavMesh](NavMesh.md)\> **CreateNavMesh**(shared_ptr<[World](World.md)\> world, const float height, const int tilesx, const int tilesz, const int tileres = 32, const float voxelsize = 0.25, const float agentradius = 0.4, const float agentheight = 1.8, const float agentstepheight = 0.501, const float maxslope = 45.01)
+- shared_ptr<[NavMesh](NavMesh.md)\> **CreateNavMesh**(shared_ptr<[World](World.md)\> world, const float height, const int tilesx, const int tilesz, const int tileres = 32, const float voxelsize = 0.25, const float agentradius = 0.4, const float agentheight = 1.8, const float stepheight = 0.501, const float maxslope = 45.01)
 
 | Parameter | Description |
 | --- | --- |
@@ -18,7 +18,7 @@ This function creates a new navigation mesh for pathfinding.
 | voxelsize | resolution of voxel grid |
 | agentradius | radius of the characters that will use this navmesh |
 | agentheight | height of the characters that will use this navmesh |
-| agentstepheight | maximum height that can be stepped up |
+| stepheight | maximum height that can be stepped up |
 | maxslope | maximum slope that can be traversed, in degrees |
 
 ## Returns
