@@ -4,8 +4,8 @@ This method can be used to manually position a navigation agent.
 
 ## Syntax
 
-- **NavAgent:SetPosition**(x: number, y: number, z: number)
-- **NavAgent:SetPosition**(position: table)
+- **SetPosition**(number x, number y, number z)
+- **SetPosition**([xVec3](xVec3.md) position)
 
 | Parameter | Description |
 |---|---|
