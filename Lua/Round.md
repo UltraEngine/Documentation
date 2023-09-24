@@ -4,7 +4,7 @@ This function rounds a decimal number off to the nearest integer and returns the
 
 ## Syntax
 
-- **Round**(f: number): number
+- number **Round**(number f)
 
 ## Returns
 
@@ -13,10 +13,5 @@ Returns the nearest integer value.
 ## Example
 
 ```lua
-function main()
-    local UltraEngine = require("UltraEngine")
-    UltraEngine.Print(Round(1.9))
-end
-
-main()
+Print(Round(1.9))
 ```
