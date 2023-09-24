@@ -4,9 +4,7 @@ This method returns a string value from the memory buffer.
 
 ## Syntax
 
-```lua
-function Buffer:PeekString(pos: number): string
-```
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **PeekString**(number pos)
 
 | Parameter | Description |
 | ---- | ----------- |
@@ -23,7 +21,9 @@ A runtime error will occur if the read range lies outside of the buffer extents.
 ## Example
 
 ```lua
-buffer = CreateBuffer(ffi.sizeof("char") * (#s + 1))
+local s = "Hello world!"
+buffer = CreateBuffer(#s + 1)
 buffer:PokeString(0, s)
-print(buffer:PeekString(0))
+s = buffer:PeekString(0)
+Print(s)
 ```
