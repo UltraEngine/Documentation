@@ -1,24 +1,15 @@
-### Hex
+# Hex
 
 This function converts a decimal value into a hexadecimal number and returns the result.
 
-#### Syntax
+## Syntax
 
-```lua
-function Hex(dec)
-```
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **Hex**(number dec)
 
-- `dec` : decimal number
+| Parameter | Description |
+| --- | --- |
+| dec | decimal number |
 
-#### Returns
+## Returns
 
 Returns a string containing the hexadecimal number.
-
-#### Example
-
-```lua
-i = 1024
-s = Hex(i)
-Print(s)
-Print(Dec(s))
-```
