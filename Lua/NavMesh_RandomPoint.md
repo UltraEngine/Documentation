@@ -2,18 +2,14 @@
 
 This method returns a random valid position on the navigation mesh. This can be useful for placing enemies or making characters wander throughout a scene.
 
----
-
 ## Syntax
 
-- **RandomPoint**() -> Vec3
+- [Vec3](Vec3.md) **RandomPoint**()
 
----
 ## Returns
 
 - Returns a valid position on the navigation mesh.
 
----
 ## Example
 
 ```lua
