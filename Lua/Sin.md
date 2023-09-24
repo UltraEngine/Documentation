@@ -1,23 +1,29 @@
 # Sin
 
-This function returns the sine of the specified angle.
+This function returns the sine of the specified value.
 
 ## Syntax
 
-- **Sin**(angle: number): number
+- number **Sin**(number value)
 
-  - angle: The angle, in degrees.
+Parameter | Description
+---|---|
+value | the arc sine value 
 
 ## Returns
 
-Returns the sine of the specified angle.
+Returns the sine.
 
 ## Example
 
 ```lua
-angle = 65
+angle = -65.0
 
-Print("Sin: " .. tostring(Sin(angle)))
-Print("Cos: " .. tostring(Cos(angle)))
-Print("Tan: " .. tostring(Tan(angle)))
+s = Sin(angle)
+c = Cos(angle)
+t = Tan(angle)
+
+Print("Sin: " .. ASin(s))
+Print("Cos: " .. ACos(c))
+Print("Tan: " .. ATan(t))
 ```
