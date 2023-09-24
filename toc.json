@@ -1292,7 +1292,8 @@
 				},
 				{
 					"title": "Graphics",
-					"topics": [{
+					"topics": [
+						{
 							"title": "Bone",
 							"filename": "Bone",
 							"topics": [{
@@ -1322,6 +1323,31 @@
 								{
 									"title": "Turn",
 									"filename": "Bone_Turn"
+								}
+							]
+						},
+						{
+							"title": "Display",
+							"filename": "Display",
+							"topics": [{
+									"title": "ClientArea",
+									"filename": "Display_ClientArea"
+								},
+								{
+									"title": "GetDisplays",
+									"filename": "GetDisplays"
+								},
+								{
+									"title": "GetPosition",
+									"filename": "Display_GetPosition"
+								},
+								{
+									"title": "GetScale",
+									"filename": "Display_GetScale"
+								},
+								{
+									"title": "GetSize",
+									"filename": "Display_GetSize"
 								}
 							]
 						},
@@ -1698,37 +1724,126 @@
 							"title": "Vertex",
 							"filename": "Vertex",
 							"hideFromLua": true
-						}
+						},
+						{
+							"title": "Window",
+							"filename": "Window",
+							"topics": [{
+									"title": "Activate",
+									"filename": "Window_Activate"
+								},
+								{
+									"title": "ActiveWindow",
+									"filename": "ActiveWindow"
+								},
+								{
+									"title": "ClientSize",
+									"filename": "Window_ClientSize"
+								},
+								{
+									"title": "Closed",
+									"filename": "Window_Closed"
+								},
+								{
+									"title": "CreateWindow",
+									"filename": "CreateWindow"
+								},
+								{
+									"title": "FlushKeys",
+									"filename": "Window_FlushKeys"
+								},
+								{
+									"title": "FlushMouse",
+									"filename": "Window_FlushMouse"
+								},
+								{
+									"title": "GetHandle",
+									"filename": "Window_GetHandle"
+								},
+								{
+									"title": "GetHidden",
+									"filename": "Window_GetHidden"
+								},								   
+								{
+									"title": "GetMousePosition",
+									"filename": "Window_GetMousePosition"
+								},
+								{
+									"title": "GetPosition",
+									"filename": "Window_GetPosition"
+								},
+								{
+									"title": "GetSize",
+									"filename": "Window_GetSize"
+								},
+								{
+									"title": "KeyDown",
+									"filename": "Window_KeyDown"
+								},
+								{
+									"title": "KeyHit",
+									"filename": "Window_KeyHit"
+								},
+								{
+									"title": "MouseDown",
+									"filename": "Window_MouseDown"
+								},
+								{
+									"title": "MouseHit",
+									"filename": "Window_MouseHit"
+								},
+								{
+									"title": "Maximize",
+									"filename": "Window_Maximize"
+								},
+								{
+									"title": "Maximized",
+									"filename": "Window_Maximized"
+								},
+								{
+									"title": "Minimize",
+									"filename": "Window_Minimize"
+								},
+								{
+									"title": "Minimized",
+									"filename": "Window_Minimized"
+								},
+								{
+									"title": "Restore",
+									"filename": "Window_Restore"
+								},
+								{
+									"title": "SetCursor",
+									"filename": "Window_SetCursor"
+								},
+								{
+									"title": "SetHidden",
+									"filename": "Window_SetHidden"
+								},
+								{
+									"title": "SetMinSize",
+									"filename": "Window_SetMinSize"
+								},
+								{
+									"title": "SetMousePosition",
+									"filename": "Window_SetMousePosition"
+								},
+								{
+									"title": "SetShape",
+									"filename": "Window_SetShape"
+								},
+								{
+									"title": "TransformCoord",
+									"filename": "TransformCoord"
+								}
+							]
+						}						
 					]
 				},
 				{
 					"title": "GUI",
 					"filename": "GUI",
-					"topics": [{
-							"title": "Display",
-							"filename": "Display",
-							"topics": [{
-									"title": "ClientArea",
-									"filename": "Display_ClientArea"
-								},
-								{
-									"title": "GetDisplays",
-									"filename": "GetDisplays"
-								},
-								{
-									"title": "GetPosition",
-									"filename": "Display_GetPosition"
-								},
-								{
-									"title": "GetScale",
-									"filename": "Display_GetScale"
-								},
-								{
-									"title": "GetSize",
-									"filename": "Display_GetSize"
-								}
-							]
-						},
+					"topics": [
 						{
 							"title": "Event",
 							"filename": "Event",
@@ -2154,119 +2269,6 @@
 							"title": "WidgetItem",
 							"filename": "WidgetItem"
 						},
-						{
-							"title": "Window",
-							"filename": "Window",
-							"topics": [{
-									"title": "Activate",
-									"filename": "Window_Activate"
-								},
-								{
-									"title": "ActiveWindow",
-									"filename": "ActiveWindow"
-								},
-								{
-									"title": "ClientSize",
-									"filename": "Window_ClientSize"
-								},
-								{
-									"title": "Closed",
-									"filename": "Window_Closed"
-								},
-								{
-									"title": "CreateWindow",
-									"filename": "CreateWindow"
-								},
-								{
-									"title": "FlushKeys",
-									"filename": "Window_FlushKeys"
-								},
-								{
-									"title": "FlushMouse",
-									"filename": "Window_FlushMouse"
-								},
-								{
-									"title": "GetHandle",
-									"filename": "Window_GetHandle"
-								},
-								{
-									"title": "GetHidden",
-									"filename": "Window_GetHidden"
-								},								   
-								{
-									"title": "GetMousePosition",
-									"filename": "Window_GetMousePosition"
-								},
-								{
-									"title": "GetPosition",
-									"filename": "Window_GetPosition"
-								},
-								{
-									"title": "GetSize",
-									"filename": "Window_GetSize"
-								},
-								{
-									"title": "KeyDown",
-									"filename": "Window_KeyDown"
-								},
-								{
-									"title": "KeyHit",
-									"filename": "Window_KeyHit"
-								},
-								{
-									"title": "MouseDown",
-									"filename": "Window_MouseDown"
-								},
-								{
-									"title": "MouseHit",
-									"filename": "Window_MouseHit"
-								},
-								{
-									"title": "Maximize",
-									"filename": "Window_Maximize"
-								},
-								{
-									"title": "Maximized",
-									"filename": "Window_Maximized"
-								},
-								{
-									"title": "Minimize",
-									"filename": "Window_Minimize"
-								},
-								{
-									"title": "Minimized",
-									"filename": "Window_Minimized"
-								},
-								{
-									"title": "Restore",
-									"filename": "Window_Restore"
-								},
-								{
-									"title": "SetCursor",
-									"filename": "Window_SetCursor"
-								},
-								{
-									"title": "SetHidden",
-									"filename": "Window_SetHidden"
-								},
-								{
-									"title": "SetMinSize",
-									"filename": "Window_SetMinSize"
-								},
-								{
-									"title": "SetMousePosition",
-									"filename": "Window_SetMousePosition"
-								},
-								{
-									"title": "SetShape",
-									"filename": "Window_SetShape"
-								},
-								{
-									"title": "TransformCoord",
-									"filename": "TransformCoord"
-								}
-							]
-						}
 					]
 				},
 				{
