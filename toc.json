@@ -2639,7 +2639,8 @@
 								},
 								{
 									"title": "PeekWString",
-									"filename": "Buffer_PeekWString"
+									"filename": "Buffer_PeekWString",
+									"hideFromLua": true
 								},
 								{
 									"title": "PokeByte",
@@ -2667,7 +2668,8 @@
 								},
 								{
 									"title": "PokeWString",
-									"filename": "Buffer_PokeWString"
+									"filename": "Buffer_PokeWString",
+									"hideFromLua": true
 								},
 								{
 									"title": "Resize",
