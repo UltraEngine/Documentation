@@ -4,9 +4,7 @@ This function performs a linear interpolation and returns the result.
 
 ## Syntax
 
-- number **Mix**(value0: number, value1: number, d: number): number
-
-## Parameters
+- number **Mix**(number value0, number value1, number d)
 
 | Parameter | Description |
 | --- | --- |
