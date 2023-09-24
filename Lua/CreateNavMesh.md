@@ -1,8 +1,29 @@
+# CreateNavMesh
 
+This function creates a new navigation mesh for pathfinding.
 
-### Returns
+## Syntax
 
-Returns a new NavMesh object.
+- [NavMesh](NavMesh.md) **CreateNavMesh**([World](World.md) world, number height, number tilesx, number tilesz, number tileres = 32, number voxelsize = 0.25, number agentradius = 0.4, number agentheight = 1.8, number stepheight = 0.501, number maxslope = 45.01)
+
+| Parameter | Description |
+| --- | --- |
+| world | world to create the navmesh in |
+| width | width of the navmesh volume |
+| height | width of the navmesh volume |
+| depth | width of the navmesh volume |
+| tilesx | number of tiles along the X axis |
+| tilesz | number of tiles along the Z axis |
+| tileres | number of voxels per tile |
+| voxelsize | resolution of voxel grid |
+| agentradius | radius of the characters that will use this navmesh |
+| agentheight | height of the characters that will use this navmesh |
+| stepheight | maximum height that can be stepped up |
+| maxslope | maximum slope that can be traversed, in degrees |
+
+## Returns
+
+Returns a new Navmesh object.
 
 ## Example
 
