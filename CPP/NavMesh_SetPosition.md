@@ -36,10 +36,10 @@ int main(int argc, const char* argv[])
 
     //Create a camera    
     auto camera = CreateCamera(world);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->SetClearColor(0.125);
     camera->SetPosition(100, 3, -6);
-    camera->SetRotation(35,0,0);
+    camera->SetRotation(35, 0, 0);
 
     //Create light
     auto light = CreateBoxLight(world);
@@ -47,7 +47,7 @@ int main(int argc, const char* argv[])
     light->SetArea(20, 20);
     light->SetRotation(35, 35, 0);
     light->SetColor(3);
-    light->SetPosition(100,0,0);
+    light->SetPosition(100, 0, 0);
 
     //Create scene
     auto ground = CreateBox(world, 10, 1, 10);
@@ -58,8 +58,8 @@ int main(int argc, const char* argv[])
     wall->SetPosition(100, 0, 0);
 
     //Create navmesh
-    auto navmesh = CreateNavMesh(world, 10, 5, 10, 4, 4);
-    navmesh->SetPosition(100,0,0);
+    auto navmesh = CreateNavMesh(world, 5, 4, 4);
+    navmesh->SetPosition(100, 0, 0);
     navmesh->Build();
 
     //Create player
