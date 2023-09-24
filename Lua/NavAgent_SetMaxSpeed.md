@@ -1,4 +1,4 @@
-## NavAgent:SetMaxSpeed
+# NavAgent:SetMaxSpeed
 
 This method sets the maximum speed the agent can travel at.
 
