@@ -18,12 +18,19 @@ Returns a table containing the plotted path points. If a path could not be plott
 ## Example
 
 ```lua
+-- Create a window
+local displays = GetDisplays()
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
+
+-- Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
+
 --Create a world
 local world = CreateWorld()
 
 --Create a camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 3, -6)
 camera:SetRotation(35, 0, 0)
@@ -42,7 +49,7 @@ ground:SetColor(0, 1, 0)
 local wall = CreateBox(world, 1, 2, 4)
 
 --Create navmesh
-local navmesh = CreateNavMesh(world, 10, 5, 10, 4, 4)
+local navmesh = CreateNavMesh(world, 5, 4, 4)
 navmesh:Build()
 
 --Create player
@@ -63,12 +70,14 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         if rayinfo.success then
             local path = navmesh:PlotPath(player.position, rayinfo.position)
             nodes = {}
+            collectgarbage()
             for n = 1, #path do
                 if nodes[n] == nil then
                     nodes[n] = CreateSphere(world, 0.25)
+                    nodes[n]:SetNavObstacle(false)
                     nodes[n]:SetColor(1, 0, 0)
                 end
-                nodes[n]:SetPosition(path[n])
+                nodes[n]:SetPosition(path[n])                
             end
         end
     end
