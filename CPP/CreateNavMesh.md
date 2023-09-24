@@ -9,9 +9,7 @@ This function creates a new navigation mesh for pathfinding.
 | Parameter | Description |
 | --- | --- |
 | world | world to create the navmesh in |
-| width | width of the navmesh volume |
 | height | width of the navmesh volume |
-| depth | width of the navmesh volume |
 | tilesx | number of tiles along the X axis |
 | tilesz | number of tiles along the Z axis |
 | tileres | number of voxels per tile |
