@@ -12,7 +12,7 @@ rgba | The packed [RGBA](Rgba.md) value.
 
 ## Returns
 
-Returns the alpha component of the color.
+Returns the green component of the color.
 
 ## Example
 
