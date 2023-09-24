@@ -4,7 +4,7 @@ This method is used to plot a path between two points.
 
 ## Syntax
 
-- **PlotPath**([xVec3](xVec3.md) origin, [xVec3](xVec3.md) destination)
+- [table](https://www.lua.org/manual/5.4/manual.html#6.6) **PlotPath**([xVec3](xVec3.md) origin, [xVec3](xVec3.md) destination)
 
 Parameter | Description 
 -|-
