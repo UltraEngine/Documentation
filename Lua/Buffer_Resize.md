@@ -1,4 +1,4 @@
-# buffer.Resize
+# Buffer:Resize
 
 This function resizes the allocated memory block. The contents of the buffer will be retained in the new memory block.
 
