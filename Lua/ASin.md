@@ -4,13 +4,15 @@ This function returns the arc sine of the specified value.
 
 ## Syntax
 
-- **ASin**(value: number): number
+- number **ASin**(number value)
 
-Parameter:
-- value: sine value
+Parameter | Description 
+---|---
+value | sine value
 
-Returns:
-- Returns the arc sine.
+## Returns
+
+Returns the arc sine.
 
 ## Example
 
