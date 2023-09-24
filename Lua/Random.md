@@ -1,26 +1,25 @@
 # Random
 
-This function returns a pseudorandom value within the specified range. If no range is specified, the result will be between 0 and 1.
+This function returns a psuedorandom value within the specified range. If no range is specified, the result will be between 0 and 1.
 
 ## Syntax
 
-`Random(maxima: number): number`
+- number **Random**(number maxima = 1.0f)
+- number **Random**(number minima, number maxima)
 
-`Random(minima: number, maxima: number): number`
-
-## Parameters
-
-- `minima` (optional): The minimum value that can be returned.
-- `maxima`: The maximum value that can be returned.
+| Parameter | Description |
+|---|---|
+| minima | minimum value that can be returned |
+| maxima | maximum value that can be returned |
 
 ## Returns
 
-Returns a pseudorandom number.
+Returns a psuedorandom number.
 
 ## Example
 
 ```lua
-SeedRandom(Millisecs())
+Seed(Millisecs())
 
 Print(Random())
 Print(Random(10))
