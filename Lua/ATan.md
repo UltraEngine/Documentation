@@ -4,10 +4,8 @@ This function returns the arc tangent of the specified value.
 
 ## Syntax
 
-- **atan**(value: number): number
-- **atan**(y: number, x: number): number
-
-## Parameters
+- number **ATan**(number value)
+- number **ATan**(number y, number x)
 
 | Parameter | Description |
 | --- | --- |
@@ -24,11 +22,11 @@ Returns the arc tangent, or the angle given by the vector XY.
 ```lua
 angle = -65.0
 
-s = math.sin(math.rad(angle))
-c = math.cos(math.rad(angle))
-t = math.tan(math.rad(angle))
+s = Sin(angle)
+c = Cos(angle)
+t = Tan(angle)
 
-print("Sin: " .. math.deg(math.asin(s)))
-print("Cos: " .. math.deg(math.acos(c)))
-print("Tan: " .. math.deg(math.atan(t)))
+Print("Sin: " .. ASin(s))
+Print("Cos: " .. ACos(c))
+Print("Tan: " .. ATan(t))
 ```
