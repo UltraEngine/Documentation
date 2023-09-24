@@ -49,7 +49,7 @@ ground:SetColor(0, 1, 0)
 local wall = CreateBox(world, 1, 2, 4)
 
 --Create navmesh
-local navmesh = CreateNavMesh(world, 5, 16, 16)
+local navmesh = CreateNavMesh(world, 5, 4, 4)
 navmesh:Build()
 
 --Create player
@@ -57,9 +57,13 @@ local player = CreateCylinder(world, 0.4, 1.8)
 player:SetColor(0, 0, 1)
 local agent = CreateNavAgent(navmesh)
 player:Attach(agent)
+agent:SetPosition(-2,1,0)
 
 --Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+
+    navmesh:SetDebugging(windowLKeyDown(KEY_D))
+
     if window:MouseHit(MOUSE_LEFT) then
         local mousepos = window:GetMousePosition()
         local rayinfo = camera:Pick(framebuffer, mousepos.x, mousepos.y)
