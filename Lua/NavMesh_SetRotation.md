@@ -4,9 +4,9 @@ This method can be used to rotate a navigation mesh. You can make characters tha
 
 ## Syntax
 
-- void **SetRotation**(pitch, yaw, roll: number)
-- void **SetRotation**(rotation: xVec3)
-- void **SetRotation**(rotation: xQuat)
+- **SetRotation**(number pitch, number yaw, number roll)
+- **SetRotation**([xVec3](xVec3.md) rotation)
+- **SetRotation**([xQuat](xQuat.md) rotation)
 
 | Parameter | Description |
 |---|---|
