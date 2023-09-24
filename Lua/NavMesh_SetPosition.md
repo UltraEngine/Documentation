@@ -4,15 +4,12 @@ This method can be used to move a navigation mesh.
 
 ## Syntax
 
-- **SetPosition**(x, y, z)
-- **SetPosition**(position)
+- **SetPosition**(number x, number y, number z)
+- **SetPosition**([xVec3](xVec3.md) position)
 
-### Parameters
-
-- x (number): x-coordinate of the navigation mesh position
-- y (number): y-coordinate of the navigation mesh position
-- z (number): z-coordinate of the navigation mesh position
-- position (table): a table representing the navigation mesh position with fields x, y, and z
+Parameter | Description
+-|-
+position, (x, y, z) | navmesh position to set
 
 ## Example
 
