@@ -2,12 +2,10 @@
 
 This method sets the maximum speed the agent can travel at.
 
-### Syntax
+## Syntax
 
-```lua
-NavAgent:SetMaxSpeed(speed)
-```
+- **SetMaxSpeed**(number speed)
 
-#### Parameters
-
-- `speed` (number): the maximum velocity, in meters per second
+Parameter | Description 
+---|---
+speed | the maximum velocity, in meters per second
