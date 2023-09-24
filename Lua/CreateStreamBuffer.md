@@ -4,8 +4,8 @@ This function creates a new StreamBuffer object. A StreamBuffer is a file stream
 
 ## Syntax
 
-- shared_ptr<[StreamBuffer](StreamBuffer.md)> **CreateStreamBuffer**(shared_ptr<[Stream](Stream.md)> stream)
-- shared_ptr<[StreamBuffer](StreamBuffer.md)> **CreateStreamBuffer**(shared_ptr<[Stream](Stream.md)> stream, uint64_t pos, uint64_t size)
+- [StreamBuffer](StreamBuffer.md) **CreateStreamBuffer**([Stream](Stream.md) stream)
+- [StreamBuffer](StreamBuffer.md) **CreateStreamBuffer**([Stream](Stream.md) stream, number pos, number size)
 
 | Parameter | Description |
 |---|---|
