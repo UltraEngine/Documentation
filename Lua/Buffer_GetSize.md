@@ -4,9 +4,7 @@ This method retrieves the size of the allocated memory block.
 
 ## Syntax
 
-```lua
-function Buffer:GetSize()
-```
+- number **GetSize**()
 
 ## Returns
 
