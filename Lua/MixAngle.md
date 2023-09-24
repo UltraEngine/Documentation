@@ -4,20 +4,14 @@ This function performs a linear interpolation between two angles and returns the
 
 ## Syntax
 
-```lua
-MixAngle(angle0: number, angle1: number, d: number): number
-```
+- number **MixAngle**(number angle0, number angle1, number d)
 
-## Parameters
-
-- `angle0`: The first value.
-- `angle1`: The second value.
-- `d`: The interpolation amount.
+| Parameter | Description |
+| --- | --- |
+| angle0 | first value |
+| angle1 | second value |
+| d | interpolation amount |
 
 ## Returns
 
 Returns the result of the linear interpolation.
-
-## Remarks
-
-This function only handles rotation on a single axis. For interpolation between full 3D rotations, use the [Quat::Slerp](Quat_Slerp.md) method.
