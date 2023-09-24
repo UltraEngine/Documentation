@@ -4,7 +4,7 @@ This method copies the contents of this buffer to another one.
 
 ## Syntax
 
-- void **Copy**(const uint64_t srcoffset, shared_ptr<Buffer> dst, const uint64_t dstoffset, const uint64_t size)
+- void **Copy**(const uint64_t srcoffset, shared_ptr<[Buffer](Buffer.md)> dst, const uint64_t dstoffset, const uint64_t size)
 
 | Parameter | Description |
 | ----- | ----- |
