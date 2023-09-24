@@ -9,22 +9,3 @@ This class provides an interface to manipulate part of a file as if it was a mem
 | Property | Type | Description |
 |----------|------|-------------|
 | [CreateStreamBuffer](CreateStreamBuffer.md) | Function | Creates a new StreamBuffer object |
-
-### Example
-
-```lua
--- Open the file
-local file = io.open("example.txt", "w")
-
--- Create a StreamBuffer object
-local buffer = CreateStreamBuffer()
-
--- Write data to the buffer
-buffer:Write("Hello, Lua!")
-
--- Write the buffer contents to the file
-file:write(buffer:GetData())
-
--- Close the file
-file:close()
-```
