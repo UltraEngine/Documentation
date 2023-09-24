@@ -4,7 +4,7 @@ This function returns the maximum of two specified values.
 
 ## Syntax
 
-- **Max**(value0: number, value1: number): number
+- number **Max**(number value0, number value1)
 
 ## Returns
 
