@@ -67,7 +67,7 @@ int main(int argc, const char* argv[])
     auto wall = CreateBox(world, 1, 2, 4);
 
     //Create navmesh
-    auto navmesh = CreateNavMesh(world, 50, 4, 4);
+    auto navmesh = CreateNavMesh(world, 5, 4, 4);
     navmesh->Build();
 
     //Create player
