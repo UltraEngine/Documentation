@@ -4,7 +4,7 @@ This method can be used to manually position a navigation agent.
 
 ## Syntax
 
-- **NavAgent:SetRotation**(number angle)
+- **SetRotation**(number angle)
 
 Parameter | Description 
 -|-
