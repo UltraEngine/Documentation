@@ -17,7 +17,7 @@ Returns the cosine of the specified angle.
 ```lua
 angle = 65
 
-print("Sin: " .. sin(angle))
-print("Cos: " .. cos(angle))
-print("Tan: " .. tan(angle))
+Print("Sin: " .. sin(angle))
+Print("Cos: " .. cos(angle))
+Print("Tan: " .. tan(angle))
 ```
