@@ -4,11 +4,11 @@ This function returns the sine of the specified value.
 
 ## Syntax
 
-- number **Sin**(number value)
+- number **Sin**(number angle)
 
 Parameter | Description
 ---|---|
-value | the arc sine value 
+angle | angle, in degrees
 
 ## Returns
 
