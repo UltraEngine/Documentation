@@ -21,7 +21,7 @@ This method returns a random valid position on the navigation mesh. This can be 
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -31,7 +31,7 @@ local world = CreateWorld()
 
 --Create a camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 3, -6)
 camera:SetRotation(35, 0, 0)
@@ -50,7 +50,7 @@ ground:SetColor(0, 1, 0)
 local wall = CreateBox(world, 1, 2, 4)
 
 --Create navmesh
-local navmesh = CreateNavMesh(world, 10, 5, 10, 4, 4)
+local navmesh = CreateNavMesh(world, 5, 4, 4)
 navmesh:Build()
 
 --Create player
