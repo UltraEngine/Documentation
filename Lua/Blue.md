@@ -1,4 +1,4 @@
-# Blue
+# Green
 
 Extracts the blue component from a packed [RGBA](Rgba.md) value.
 
