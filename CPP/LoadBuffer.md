@@ -1,7 +1,9 @@
 # LoadBuffer
+
 This function loads a buffer from a file.
 
 ## Syntax
+
 - shared_ptr<[Buffer](Buffer.md)\> **LoadBuffer**(const [WString](WString.md)& path, const [LoadFlags](Constants.md) flags = LOAD_DEFAULT)
 
 | Parameter | Description |
@@ -10,6 +12,7 @@ This function loads a buffer from a file.
 | flags | optional load settings |
 
 ## Returns
+
 Returns the loaded buffer if successful, otherwise NULL is returned.
 
 ## Example
