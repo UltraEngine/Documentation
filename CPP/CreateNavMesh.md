@@ -4,7 +4,7 @@ This function creates a new navigation mesh for pathfinding.
 
 ## Syntax
 
-- shared_ptr<[NavMesh](NavMesh.md)\> **CreateNavMesh**(shared_ptr<[World](World.md)\> world, const float width, const float height, const float depth, const int tilesx, const int tilesz, const float voxelsize = 0.25, const float agentradius = 0.4, const float agentheight = 1.8, const float agentstepheight = 0.501, const float maxslope = 45.01);
+- shared_ptr<[NavMesh](NavMesh.md)\> **CreateNavMesh**(shared_ptr<[World](World.md)\> world, const float height, const int tilesx, const int tilesz, const int tileres = 32, const float voxelsize = 0.25, const float agentradius = 0.4, const float agentheight = 1.8, const float agentstepheight = 0.501, const float maxslope = 45.01)
 
 | Parameter | Description |
 | --- | --- |
@@ -14,6 +14,7 @@ This function creates a new navigation mesh for pathfinding.
 | depth | width of the navmesh volume |
 | tilesx | number of tiles along the X axis |
 | tilesz | number of tiles along the Z axis |
+| tileres | number of voxels per tile |
 | voxelsize | resolution of voxel grid |
 | agentradius | radius of the characters that will use this navmesh |
 | agentheight | height of the characters that will use this navmesh |
@@ -47,10 +48,10 @@ int main(int argc, const char* argv[])
 
     //Create a camera    
     auto camera = CreateCamera(world);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->SetClearColor(0.125);
     camera->SetPosition(0, 3, -6);
-    camera->SetRotation(35,0,0);
+    camera->SetRotation(35, 0, 0);
 
     //Create light
     auto light = CreateBoxLight(world);
@@ -66,7 +67,7 @@ int main(int argc, const char* argv[])
     auto wall = CreateBox(world, 1, 2, 4);
 
     //Create navmesh
-    auto navmesh = CreateNavMesh(world, 10, 5, 10, 4, 4);
+    auto navmesh = CreateNavMesh(world, 50, 4, 4);
     navmesh->Build();
 
     //Create player
@@ -75,10 +76,16 @@ int main(int argc, const char* argv[])
     player->SetColor(0, 0, 1);
     auto agent = CreateNavAgent(navmesh);
     player->Attach(agent);
+    agent->SetPosition(-2, 1, 0);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        navmesh->SetDebugging(window->KeyDown(KEY_D));
+
+        if (window->KeyDown(KEY_RIGHT)) wall->Move(0.1, 0, 0);
+        if (window->KeyDown(KEY_LEFT)) wall->Move(-0.1, 0, 0);
+
         if (window->MouseHit(MOUSE_LEFT))
         {
             auto mousepos = window->GetMousePosition();
@@ -88,6 +95,7 @@ int main(int argc, const char* argv[])
                 agent->Navigate(rayinfo.position);
             }
         }
+        if (window->KeyHit(KEY_SPACE)) agent->Stop();
 
         world->Update();
         world->Render(framebuffer);
