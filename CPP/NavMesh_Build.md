@@ -56,12 +56,12 @@ int main(int argc, const char* argv[])
     auto wall = CreateBox(world, 1, 2, 4);
 
     //Create navmesh
-    auto navmesh = CreateNavMesh(world, 5, 4, 4);
-    navmesh->SetDebugging(true);
+    auto navmesh = CreateNavMesh(world, 50, 4, 4);
     navmesh->Build();
 
     //Create player
     auto player = CreateCylinder(world, 0.4, 1.8);
+    player->SetNavObstacle(false);
     player->SetColor(0, 0, 1);
     auto agent = CreateNavAgent(navmesh);
     player->Attach(agent);
@@ -70,6 +70,11 @@ int main(int argc, const char* argv[])
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
+        navmesh->SetDebugging(window->KeyDown(KEY_D));
+
+        if (window->KeyDown(KEY_RIGHT)) wall->Move(0.1, 0, 0);
+        if (window->KeyDown(KEY_LEFT)) wall->Move(-0.1, 0, 0);
+
         if (window->MouseHit(MOUSE_LEFT))
         {
             auto mousepos = window->GetMousePosition();
