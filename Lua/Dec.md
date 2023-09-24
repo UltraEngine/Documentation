@@ -4,21 +4,12 @@ This function converts a hexadecimal value into a decimal number and returns the
 
 ## Syntax
 
-`Dec(hex: string): string`
+- number **Dec**([string](https://www.lua.org/manual/5.4/manual.html#6.4) hex)
 
-- `hex` (string): hexadecimal number
+Parameter | Description
+---|---
+hex | hexadecimal number
 
 ## Returns
 
 Returns a string containing the decimal number.
-
-## Example
-
-```lua
--- Assuming UltraEngine has already been imported
-
-local i = 1024
-local s = Hex(i)
-Print(s)
-Print(Dec(s))
-```
