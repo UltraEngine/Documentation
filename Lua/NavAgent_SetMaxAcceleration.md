@@ -1,14 +1,12 @@
-## NavAgent.SetMaxAcceleration(acceleration)
+# NavAgent:SetMaxAcceleration
 
 This function sets the maximum acceleration the agent can travel at.
 
-### Syntax
+## Syntax
 
-```lua
-NavAgent.SetMaxAcceleration(acceleration)
-```
+- **SetMaxAcceleration**(number acceleration)
 
-### Parameters
+## Parameters
 
 | Parameter    | Description                                                 |
 |--------------|-------------------------------------------------------------|
