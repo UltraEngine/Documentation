@@ -18,16 +18,16 @@ A runtime error will occur if the destination range lies outside of the buffer e
 ## Example
 
 ```lua
--- Create a buffer
-local buffer = CreateBuffer(20 * sizeof("char"))
+--Create a buffer
+local buffer = CreateBuffer(20)
 
--- Poke data to the buffer
-for n = 0, buffer:GetSize() / sizeof("char") do
+--Poke data to the buffer
+for n = 0, buffer:GetSize() - 1 do
     buffer:PokeByte(n, n + 1)
 end
 
--- Peek and display data from the buffer
-for n = 0, buffer:GetSize() / sizeof("char") do
-    print(buffer:PeekByte(n))
+--Peek and display data from the buffer
+for n = 0, buffer:GetSize() - 1 do
+    Print(buffer:PeekByte(n))
 end
 ```
