@@ -1,14 +1,14 @@
 # Min
 
-This function returns the minimum of two specified values.
+This function returns the maximum of two specified values.
 
 ## Syntax
 
-- **Min**(value0: number, value1: number): number
+- number **Min**(number value0, number value1)
 
 ## Returns
 
-Returns the lowest of the two specified values.
+Returns the highest of the two specified values.
 
 ## Example
 
