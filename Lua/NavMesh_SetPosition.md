@@ -1,4 +1,4 @@
-# NavMesh.SetPosition
+# NavMesh:SetPosition
 
 This method can be used to move a navigation mesh.
 
