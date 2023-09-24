@@ -86,6 +86,7 @@ int main(int argc, const char* argv[])
                     if (nodes[n] == NULL)
                     {
                         nodes[n] = CreateSphere(world, 0.25);
+                        nodes[n]->SetNavObstacle(false);
                         nodes[n]->SetColor(1, 0, 0);
                     }
                     nodes[n]->SetPosition(path[n]);
