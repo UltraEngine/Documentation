@@ -4,9 +4,7 @@ This method will cancel movement to a destination, if it is active, and the agen
 
 ## Syntax
 
-- **Stop()**
-  - This method has no parameters.
-  - This method does not return any value.
+- **Stop**()
 
 ## Example
 
