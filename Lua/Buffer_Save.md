@@ -3,9 +3,8 @@
 This method saves the buffer's contents to a file.
 
 ## Syntax
-```lua
-function Buffer:Save(path: string): boolean
-```
+
+- boolean **Save**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 |---|---|
@@ -13,7 +12,7 @@ function Buffer:Save(path: string): boolean
 
 ## Returns
 
-Returns `true` if the file is saved successfully, otherwise `false` is returned.
+Returns true if the file is saved successfully, otherwise false is returned.
 
 ## Example
 
@@ -28,19 +27,19 @@ buffer:PokeInt(12, 4)
 --Save the buffer
 local path = GetPath(PATH_DOCUMENTS) .. "/temp.bin"
 if not buffer:Save(path) then
-    error("Failed to save buffer.")
+    RuntimeError("Failed to save buffer.")
 end
 
 --Load the buffer
 buffer = LoadBuffer(path)
 if buffer == nil then
-    error("Failed to load buffer.")
+    RuntimeError("Failed to load buffer.")
 end
 DeleteFile(path)
 
-assert(buffer:GetSize() == 16)
-print(buffer:PeekInt(0))
-print(buffer:PeekInt(4))
-print(buffer:PeekInt(8))
-print(buffer:PeekInt(12))
+Assert(buffer:GetSize() == 16)
+Print(buffer:PeekInt(0))
+Print(buffer:PeekInt(4))
+Print(buffer:PeekInt(8))
+Print(buffer:PeekInt(12))
 ```
