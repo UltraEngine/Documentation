@@ -4,10 +4,12 @@ This method is used to plot a path between two points.
 
 ## Syntax
 
-`NavMesh:PlotPath(origin, destination)`
+- **PlotPath**([xVec3](xVec3.md) origin, [xVec3](xVec3.md) destination)
 
-- `origin` (Vec3): path starting point
-- `destination` (Vec3): path end point
+Parameter | Description 
+-|-
+origin | path starting point
+destination | path end point
 
 ## Returns
 
