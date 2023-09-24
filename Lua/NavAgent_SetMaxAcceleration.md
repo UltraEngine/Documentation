@@ -6,8 +6,6 @@ This function sets the maximum acceleration the agent can travel at.
 
 - **SetMaxAcceleration**(number acceleration)
 
-## Parameters
-
 | Parameter    | Description                                                 |
 |--------------|-------------------------------------------------------------|
 | acceleration | The maximum acceleration in meters per second squared.      |
