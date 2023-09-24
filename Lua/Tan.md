@@ -1,16 +1,15 @@
-# Tan #
+# Tan
 
 This function returns the tangent of the specified angle.
 
-## Syntax ##
+## Syntax
 
-- **number** **Tan**(angle)
-- **number** **Tan**(angle)
+- number **Tan**(angle)
 
 | Parameter | Description |
 | --- | --- |
 | angle | angle, in degrees |
 
-## Returns ##
+## Returns
 
 Returns the tangent of the specified angle.
