@@ -4,15 +4,13 @@ This function creates a new memory buffer object.
 
 ## Syntax
 
-```lua
-local buffer = CreateBuffer(size)
-```
+- [Buffer](Buffer.md) **CreateBuffer**(number size)
 
-### Parameters
+Paramater | Description |
+-|-
+size | size of the allocated memory block
 
-- **size**: size of the allocated memory block
-
-### Returns
+## Returns
 
 If the memory is allocated successfully, a new buffer object is returned. Otherwise, `nil` is returned.
 
@@ -20,15 +18,15 @@ If the memory is allocated successfully, a new buffer object is returned. Otherw
 
 ```lua
 --Create a buffer
-local buffer = CreateBuffer(20 * sizeof("char"))
+local buffer = CreateBuffer(20)
 
 --Poke data to the buffer
-for n = 0, buffer:GetSize() / sizeof("char") - 1 do
+for n = 0, buffer:GetSize() - 1 do
 	buffer:PokeByte(n, n + 1)
 end
 
 --Peek and display data from the buffer
-for n = 0, buffer:GetSize() / sizeof("char") - 1 do
-	print(buffer:PeekByte(n))
+for n = 0, buffer:GetSize() - 1 do
+	Print(buffer:PeekByte(n))
 end
 ```
