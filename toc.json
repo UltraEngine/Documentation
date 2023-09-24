@@ -3,7 +3,7 @@
 		{
 			"title": "Introduction",
 			"openstate": false,
-			"filename": "introduction",
+			"filename": "introduction", 
 			"useLanguage": false
 		},
 		{
@@ -2268,7 +2268,7 @@
 						{
 							"title": "WidgetItem",
 							"filename": "WidgetItem"
-						},
+						}
 					]
 				},
 				{
