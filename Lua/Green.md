@@ -4,13 +4,15 @@ Extracts the green component from a packed [RGBA](Rgba.md) value.
 
 ## Syntax
 
-```lua
-function Green(rgba: number): number
-```
+- number **Green**(number rgba)
+
+Parameter | Description 
+---|---
+rgba | The packed [RGBA](Rgba.md) value.
 
 ## Returns
 
-Returns the green component of the color.
+Returns the alpha component of the color.
 
 ## Example
 
