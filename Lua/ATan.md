@@ -1,4 +1,4 @@
-# atan
+# ATan
 
 This function returns the arc tangent of the specified value.
 
