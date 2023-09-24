@@ -1,13 +1,16 @@
 # Seed
+
 This function sets the seed for pseudorandom number calculation.
 
-**Syntax**
+## Syntax
 
-```lua
-function Seed(seed: number)
-```
+- **Seed**(number seed)
 
-**Example**
+Parameter | Description
+---|---
+seed | randoms seed to set
+
+## Example
 
 ```lua
 Seed(Millisecs())
