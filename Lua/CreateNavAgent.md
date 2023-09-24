@@ -4,14 +4,14 @@ This function creates a new navigation agent.
 
 ## Syntax
 
-- **CreateNavAgent**(navmesh: NavMesh): NavAgent
-- **CreateNavAgent**(navmesh: NavMesh, radius: number, height: number): NavAgent
+- [NavAgent](NavAgent.md) **CreateNavAgent**([NavMesh](NavMesh.md) navmesh)
+- [NavAgent](NavAgent.md) **CreateNavAgent**([NavMesh](NavMesh.md) navmesh, number radius, number height)
 
 | Parameter | Description |
 |---|---|
 | navmesh | navigation mesh to add the agent to |
-| radius | (optional) navigation agent radius override |
-| height | (optional) navigation agent height override |
+| radius | navigation agent radius override |
+| height | navigation agent height override |
 
 ## Returns
 
