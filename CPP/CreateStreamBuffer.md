@@ -29,7 +29,7 @@ If the stream is closed NULL will be returned.
 
 If the position and size are not specified the position will be zero and the size will be equal to the stream size.
 
-If the [Data](Buffer_data.md) method is called on a StreamBuffer object, it will return NULL since there is no pointer to data in memory.
+If the [Data](Buffer_Data.md) method is called on a StreamBuffer object, it will return NULL since there is no pointer to data in memory.
 
 if the [Resize](Buffer_Resize.md) method is called on a StreamBuffer object, no resizing will take place and false will be returned.
 
