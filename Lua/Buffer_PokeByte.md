@@ -1,8 +1,10 @@
-# Buffer: PokeByte
+# Buffer:PokeByte
+
 This function inserts a single byte into a memory buffer.
 
 ## Syntax
-- **Buffer: PokeByte**(pos: number, b: number)
+
+- **PokeByte**(number pos, number b)
 
 | Parameter | Description |
 | -------- | ----------- |
@@ -10,21 +12,22 @@ This function inserts a single byte into a memory buffer.
 | b | The value to insert. |
 
 ## Remarks
+
 A runtime error will occur if the destination range lies outside of the buffer extents.
 
 ## Example
 
 ```lua
 -- Create a buffer
-local buffer = CreateBuffer(20 * sizeof(char))
+local buffer = CreateBuffer(20 * sizeof("char"))
 
 -- Poke data to the buffer
-for n = 0, buffer:GetSize() / sizeof(char) - 1 do
-	buffer:PokeByte(n, n + 1)
+for n = 0, buffer:GetSize() / sizeof("char") do
+    buffer:PokeByte(n, n + 1)
 end
 
 -- Peek and display data from the buffer
-for n = 0, buffer:GetSize() / sizeof(char) - 1 do
-	Print(buffer:PeekByte(n))
+for n = 0, buffer:GetSize() / sizeof("char") do
+    print(buffer:PeekByte(n))
 end
 ```
