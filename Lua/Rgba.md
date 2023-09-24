@@ -4,11 +4,7 @@ This function combines four 8-bit color channels into a single packed RGBA color
 
 ## Syntax
 
-```lua
-function Rgba(r: number, g: number, b: number, a: number): number
-```
-
-## Parameters
+- number **Rgba**(number r, number g, number b, number a = 1)
 
 | Parameter | Description |
 | --- | --- |
