@@ -65,6 +65,7 @@ int main(int argc, const char* argv[])
     player->SetColor(0, 0, 1);
     auto agent = CreateNavAgent(navmesh);
     player->Attach(agent);
+    agent->SetPosition(-2, 1, 0);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
