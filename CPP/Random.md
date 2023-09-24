@@ -25,7 +25,7 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
-    SeedRandom(Millisecs());
+    Seed(Millisecs());
 
     Print(Random());
     Print(Random(10));
