@@ -4,19 +4,15 @@ This function creates a collision sphere shape for physics interactions.
 
 ## Syntax
 
-- **CreateSphereCollider**(radius: number, depth: number, x: number = 0, y: number = 0, z: number = 0): [Collider](Collider.md)
-
-- **CreateSphereCollider**(radius: number, offset: [Vec3](Vec3.md)): [Collider](Collider.md)
+- [Collider](Collider.md) **CreateSphereCollider**(number radius, number x = 0, number y = 0, number z = 0)
+- [Collider](Collider.md) **CreateSphereCollider**(number radius, [Vec3](Vec3.md) offset)
 
 ## Parameters
 
 | Name | Description |
 |---|----|
 | radius |radius of shape|
-| x |x component of shape offset|
-| y |y component of shape offset|
-| z |z component of shape offset|
-| offset |offset of shape|
+| offset, (x, y, z) |offset of shape|
 
 ## Returns
 
@@ -39,13 +35,14 @@ local world = CreateWorld()
 
 --Create camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:Turn(15, 0, 0)
 camera:Move(0, 2, -8)
 camera:SetClearColor(0.125)
 
 --Create light
 local light = CreateDirectionalLight(world)
+light:SetColor(2)
 light:SetRotation(45, 35, 0)
 
 --Create ground
@@ -70,4 +67,3 @@ while window:Closed() == false and window:KeyHit(KEY_ESCAPE) == false do
     world:Render(framebuffer)
 end
 ```
-Note: The provided Lua example assumes that all required libraries have already been imported.
