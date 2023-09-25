@@ -4,14 +4,14 @@ This function creates a convex hull that encapsulates all vertices of the input 
 
 ## Syntax
 
-**CreateConvexHullCollider**(geometry: [Mesh](Mesh.md)) -> [Collider](Collider.md)
-**CreateConvexHullCollider**(geometry: [Model](Model.md)) -> [Collider](Collider.md)
+- [Collider](Collider.md) **CreateConvexHullCollider**([Mesh](Mesh.md) geometry)
+- [Collider](Collider.md) **CreateConvexHullCollider**([Model](Model.md) geometry)
+- [Collider](Collider.md) **CreateConvexHullCollider**([table](https://www.lua.org/manual/5.4/manual.html#6.6) points)
 
-## Parameters
-
-| Name | Description |
+| Parameter | Description |
 |---|---|
 | geometry | mesh or model to build the collision from |
+| points | array of [Vec3](Vec3.md) vertices |
 
 ## Example
 
@@ -30,21 +30,23 @@ local world = CreateWorld()
 
 -- Create camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:Turn(15, 0, 0)
 camera:Move(0, 2, -8)
 camera:SetClearColor(0.125)
 
 -- Create light
 local light = CreateDirectionalLight(world)
+light:SetColor(2)
 light:SetRotation(45, 35, 0)
 
 -- Create ground
 local ground = CreateBox(world, 10, 1, 10)
 ground:SetPosition(0, -0.5, 0)
+ground:SetColor(0,1,0)
 
 -- Create model
-local model = CreateCylinder(world, 0.5, 1, 5)
+local model = CreateCylinder(world, 1, 1, 5)
 model:SetPosition(0, 8, 0)
 model:SetColor(0, 0, 1)
 model:SetMass(1)
