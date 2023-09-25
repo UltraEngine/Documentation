@@ -1,16 +1,13 @@
-### createBoxCollider
+# CreateBoxCollider
 
 This function creates a collider box shape for physics interactions.
 
-#### Syntax
+## Syntax
 
-- **createBoxCollider**(width: number, height: number, depth: number, x: number = 0, y: number = 0, z: number = 0, pitch: number = 0, yaw: number = 0, roll: number = 0): [Collider](Collider.md)
+- **CreateBoxCollider**(width: number, height: number, depth: number, x: number = 0, y: number = 0, z: number = 0, pitch: number = 0, yaw: number = 0, roll: number = 0): [Collider](Collider.md)
+- **CreateBoxCollider**(size: [Vec3](Vec3.md), offset: [Vec3](Vec3.md) = 0, rotation: [Vec3](Vec3.md) = 0): [Collider](Collider.md)
 
-- **createBoxCollider**(size: [Vec3](Vec3.md), offset: [Vec3](Vec3.md) = 0, rotation: [Vec3](Vec3.md) = 0): [Collider](Collider.md)
-
-#### Parameters
-
-| Name | Description |
+| Parameter | Description |
 |---|----|
 |width|width of box|
 |height|height of box|
