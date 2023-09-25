@@ -4,8 +4,8 @@ This function creates a collider box shape for physics interactions.
 
 ## Syntax
 
-- **CreateBoxCollider**(width: number, height: number, depth: number, x: number = 0, y: number = 0, z: number = 0, pitch: number = 0, yaw: number = 0, roll: number = 0): [Collider](Collider.md)
-- **CreateBoxCollider**(size: [Vec3](Vec3.md), offset: [Vec3](Vec3.md) = 0, rotation: [Vec3](Vec3.md) = 0): [Collider](Collider.md)
+- [Collider](Collider.md) **CreateBoxCollider**([Vec3](Vec3.md) size, [Vec3](Vec3.md) offset = 0, [Vec3](Vec3.md) rotation = 0)
+- [Collider](Collider.md) **CreateBoxCollider**(number width, number height, number depth, number x = 0, number y = 0, number z = 0, number pitch = 0, number yaw = 0, number roll = 0)
 
 | Parameter | Description |
 |---|----|
@@ -33,7 +33,7 @@ Returns a new collider object.
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -45,7 +45,7 @@ local world = CreateWorld()
 local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:Move(0, 1, -3)
-camera:SetFOV(70)
+camera:SetFov(70)
 
 --Create light
 local light = CreateDirectionalLight(world)
@@ -55,6 +55,9 @@ light:SetRotation(45, 35, 0)
 local ground = CreateBox(world, 10, 1, 10)
 ground:SetPosition(0, -0.5, 0)
 ground:SetColor(0, 1, 0)
+
+--Load FreeImage plugin
+local plugin = LoadPlugin("Plugins/FITextureLoader")
 
 --Load model
 local model = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Containers/crate01.glb")
@@ -67,8 +70,8 @@ local bounds = model:GetBounds(BOUNDS_LOCAL)
 local collider = CreateBoxCollider(bounds.size, bounds.center)
 model:SetCollider(collider)
 
-while (window:Closed() == false) do
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     world:Update()
     world:Render(framebuffer)
-    end
+end
 ```
