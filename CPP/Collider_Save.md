@@ -2,7 +2,7 @@
 
 This method saves the collider to a file.
 
-# Syntax
+## Syntax
 
 - bool __Save__([WString](WString.md) path, const SaveFlags = SAVE_DEFAULT)
 
