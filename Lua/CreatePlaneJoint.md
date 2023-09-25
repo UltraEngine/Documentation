@@ -4,29 +4,28 @@ This function creates a plane joint. Plane joints can be used to lock an entity 
 
 ## Syntax
 
-```lua
-function CreatePlaneJoint(position, axis, parent, child)
-```
+- [Joint](Joint.md) **CreatePlaneJoint**([xVec3](xVec3.md) position, [xVec3](xVec3.md) axis, [Entity](Entity.md) parent, [Entity](Entity.md) child)
+- [Joint](Joint.md) **CreatePlaneJoint**(dFloat x, dFloat y, dFloat z, dFloat px, dFloat py, dFloat pz, [Entity](Entity.md) parent, [Entity](Entity.md) child)
 
-Creates a plane joint with the specified parameters.
+Parameter | Description
+---|---
+position, (x, y, z) | the joint position
+axis (px, py, pz) | the joint axis
+parent | the parent entity to use, or nil for a fixed position
+child | the child entity to use
 
-- `position` (Vec3): The joint position.
-- `axis` (Vec3): The joint axis.
-- `parent` (shared_ptr<Entity>): The parent entity, or nil for a fixed position.
-- `child` (shared_ptr<Entity>): The child entity.
+## Returns
 
-Returns a new joint as a shared_ptr.
+Returns a new joint.
 
 ## Example
 
 ```lua
-require("UltraEngine")
-
 -- Get the displays
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a world
 local world = CreateWorld()
