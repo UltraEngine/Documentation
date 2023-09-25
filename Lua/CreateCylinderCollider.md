@@ -4,25 +4,13 @@ This function creates a collision cylinder shape for physics interactions.
 
 ## Syntax
 
-```
-function CreateCylinderCollider(radius: number, height: number, x: number = 0.0, y: number = 0.0, z: number = 0.0, pitch: number = 0.0, yaw: number = 0.0, roll: number = 0.0): Collider
-function CreateCylinderCollider(radius: number, height: number, offset: Vec3, rotation: Vec3 = 0.0): Collider
-```
+- [Collider](Collider.md) **CreateCylinderCollider**(number radius, number height, [xVec3](xVec3.md) offset = 0, [xVec3](xVec3.md) rotation = 0)
+- [Collider](Collider.md) **CreateCylinderCollider**(number radius, number height, number x = 0, number y = 0, number z = 0, number pitch = 0, number yaw = 0, number roll = 0)
 
-## Parameters
-
-|Parameter|Description|
-|---|----|
-|radius|radius of shape|
-|height|height of shape|
-|x|x component of shape offset|
-|y|y component of shape offset|
-|z|z component of shape offset|
-|pitch|pitch of shape rotation|
-|yaw|yaw of shape rotation|
-|roll|roll of shape rotation|
-|offset|offset of shape|
-|rotation|rotation of shape|
+Parameter | Description
+---|---
+offset, (x, y, z) | offset of shape
+rotation, (pitch, yaw, roll) | rotation of shape
 
 ## Returns
 
@@ -31,8 +19,10 @@ Returns a new collider object.
 ## Example
 
 ```lua
+local displays = GetDisplays()
+
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_TITLEBAR | WINDOW_CENTER)
 
 -- Create framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -42,7 +32,7 @@ local world = CreateWorld()
 
 -- Create camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:Turn(15, 0, 0)
 camera:Move(0, 2, -8)
 camera:SetClearColor(0.125)
@@ -50,6 +40,7 @@ camera:SetClearColor(0.125)
 -- Create light
 local light = CreateDirectionalLight(world)
 light:SetRotation(45, 35, 0)
+light:SetColor(2)
 
 -- Create ground
 local ground = CreateBox(world, 10, 1, 10)
