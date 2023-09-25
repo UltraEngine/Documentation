@@ -3,14 +3,14 @@
 This function creates a collider from a mesh or model.
 
 ## Syntax
-- `CreateMeshCollider(geometry: shared_ptr<Mesh>): shared_ptr<Collider>`
-- `CreateMeshCollider(geometry: shared_ptr<Model>): shared_ptr<Collider>`
 
-## Parameters
+- [Collider](Collider.md) __CreateMeshCollider__([Mesh](Mesh.md) geometry, boolean optimize = true)
+- [Collider](Collider.md) __CreateMeshCollider__([Mesh](Model.md) geometry, boolean optimize = true)
 
-| Name | Description |
+| Parameter | Description |
 |---|---|
 | geometry | mesh or model to build the collision from |
+| optimize | if set to true, the creation routine will attempt to merge coplanar faces |
 
 ## Remarks
 
