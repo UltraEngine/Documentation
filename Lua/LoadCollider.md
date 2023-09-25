@@ -5,12 +5,10 @@ This function loads a collision shape from a JSON file. Collision objects can be
 ## Syntax
 
 - [Collider](Collider.md) __LoadCollider__([string](https://www.lua.org/manual/5.4/manual.html#6.4), number flags = LOAD_DEFAULT)
-- [Collider](Collider.md) __LoadCollider__([Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 | --- | --- |
 | path | file path to open |
-| stream | open stream to read from |
 | flags | optional load flags |
 
 ## Returns
