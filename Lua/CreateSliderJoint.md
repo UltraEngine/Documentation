@@ -38,6 +38,7 @@ local light = CreateBoxLight(world)
 light:SetRange(-20, 20)
 light:SetRotation(35, 35, 0)
 light:SetColor(3)
+light:SetArea(20,20)
 
 local parent = CreateBox(world)
 parent:SetColor(0, 0, 1)
