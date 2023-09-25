@@ -4,13 +4,11 @@ This function creates a complex collision shape that is made up of multiple sub-
 
 ## Syntax
 
-```lua
-function CreateCompoundCollider(subshapes)
-```
+- [Collider](Collider.md) **CreateCompoundCollider**([table](https://www.lua.org/manual/5.4/manual.html#6.6))
 
-### Parameters
-
-- **subshapes**: an array of collision objects to be combined into the created shape
+Parameter | Description 
+---|---
+subshapes | an array of collision objects to be combined into the created shape
 
 ## Example
 
