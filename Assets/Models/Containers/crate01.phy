@@ -1,7 +1,7 @@
 {
     "collider":
     {
-        "subShapes":
+        "parts":
         [
             {
                 "shape": "BOX",
