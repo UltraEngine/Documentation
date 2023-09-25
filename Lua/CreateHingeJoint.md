@@ -1,4 +1,4 @@
-# createHingeJoint
+# CreateHingeJoint
 
 This function creates a new hinge joint. A hinge joint spins around an axis.
 
@@ -18,11 +18,10 @@ Returns a new joint object.
 ## Example
 
 ```lua
--- Import necessary libraries
-require("UltraEngine")
+local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, GetDisplays()[1], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -39,7 +38,7 @@ camera:SetPosition(0, 0, -6)
 local light = CreateBoxLight(world)
 light:SetRange(-20, 20)
 light:SetRotation(35, 35, 0)
-light:SetColor(3)
+light:SetColor(2)
 
 local parent = CreateBox(world)
 parent:SetColor(0, 0, 1)
@@ -49,7 +48,7 @@ child:SetPosition(4, 0, 0)
 child:SetMass(1)
 child:SetColor(0, 1, 0)
 
-local joint = createHingeJoint(parent.position, Vec3(0, 0, 1), parent, child)
+local joint = CreateHingeJoint(parent.position, Vec3(0, 0, 1), parent, child)
 
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
