@@ -6,12 +6,12 @@ This function creates a convex hull that encapsulates all vertices of the input 
 
 - shared_ptr<[Collider](Collider.md)\> **CreateConvexHullCollider**(shared_ptr<[Mesh](Mesh.md)\> geometry)
 - shared_ptr<[Collider](Collider.md)\> **CreateConvexHullCollider**(shared_ptr<[Model](Model.md)\> geometry)
+- shared_ptr<[Collider](Collider.md)\> **CreateConvexHullCollider**(const std::vector<[Vec3](Vec3.md)\>& points)
 
-## Parameters
-
-| Name | Description |
+| Parameter | Description |
 |---|---|
 | geometry | mesh or model to build the collision from |
+| points | array of vertices |
 
 ## Example
 
