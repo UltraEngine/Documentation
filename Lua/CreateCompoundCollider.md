@@ -27,7 +27,7 @@ local world = CreateWorld()
 
 -- Create camera
 local camera = CreateCamera(world)
-camera:SetFOV(70)
+camera:SetFov(70)
 camera:Turn(15, 0, 0)
 camera:Move(0, 2, -8)
 camera:SetClearColor(0.125)
@@ -86,7 +86,7 @@ part:SetColor(1, 0, 0)
 part:SetPosition(0, 1, 0)
 part:SetParent(model)
 
-model:SetPosition(0, 5, 0)
+model:SetPosition(0, 10, 0)
 
 -- Remove colliders from child primitives
 for i,child in ipairs(model.kids) do
@@ -94,15 +94,15 @@ for i,child in ipairs(model.kids) do
 end
 
 -- Create collision
-local collisions = {}
-table.insert(collisions, CreateSphereCollider(1))
-table.insert(collisions, CreateConeCollider(0.5, 1, 1, 0, 0, 0, 0, -90))
-table.insert(collisions, CreateConeCollider(0.5, 1, -1, 0, 0, 0, 0, 90))
-table.insert(collisions, CreateConeCollider(0.5, 1, 0, 1, 0, 0, 0, 0))
-table.insert(collisions, CreateConeCollider(0.5, 1, 0, -1, 0, 180, 0, 0))
-table.insert(collisions, CreateConeCollider(0.5, 1, 0, 0, 1, 90, 0, 0))
-table.insert(collisions, CreateConeCollider(0.5, 1, 0, 0, -1, -90, 0, 0))
-local collider = CreateCompoundCollider(collisions)
+local parts = {}
+table.insert(parts, CreateSphereCollider(1))
+table.insert(parts, CreateConeCollider(0.5, 1, 1, 0, 0, 0, 0, -90))
+table.insert(parts, CreateConeCollider(0.5, 1, -1, 0, 0, 0, 0, 90))
+table.insert(parts, CreateConeCollider(0.5, 1, 0, 1, 0, 0, 0, 0))
+table.insert(parts, CreateConeCollider(0.5, 1, 0, -1, 0, 180, 0, 0))
+table.insert(parts, CreateConeCollider(0.5, 1, 0, 0, 1, 90, 0, 0))
+table.insert(parts, CreateConeCollider(0.5, 1, 0, 0, -1, -90, 0, 0))
+local collider = CreateCompoundCollider(parts)
 model:SetCollider(collider)
 
 while window:Closed() == false and window:KeyHit(KEY_ESCAPE) == false do
