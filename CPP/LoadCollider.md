@@ -5,12 +5,10 @@ This function loads a collision shape from a JSON file. Collision objects can be
 ## Syntax
 
 - shared_ptr<[Collider](Collider.md)\> **LoadCollider**(const WString& path, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
-- shared_ptr<[Collider](Collider.md)\> **LoadCollider**(shared_ptr<[Stream](Stream.md)\> stream, const [LoadFlags](LoadFlags.md) flags = LOAD_DEFAULT)
 
 |Parameter|Description|
 |---|---|
 |path|file path to open|
-|stream|open stream to read from|
 |flags|optional load settings|
 
 ## Returns
