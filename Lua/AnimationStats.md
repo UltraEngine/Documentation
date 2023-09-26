@@ -1,4 +1,5 @@
-# AnimationStats #
+# AnimationStats
+
 This class contains information about the animation threads. To enable statistics recording, you must call the [World:RecordStats](World_RecordStats.md) method.
 
 | Property | Type | Description |
