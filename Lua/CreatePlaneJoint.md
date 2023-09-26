@@ -5,7 +5,6 @@ This function creates a plane joint. Plane joints can be used to lock an entity 
 ## Syntax
 
 - [Joint](Joint.md) **CreatePlaneJoint**([xVec3](xVec3.md) position, [xVec3](xVec3.md) axis, [Entity](Entity.md) parent, [Entity](Entity.md) child)
-- [Joint](Joint.md) **CreatePlaneJoint**(dFloat x, dFloat y, dFloat z, dFloat px, dFloat py, dFloat pz, [Entity](Entity.md) parent, [Entity](Entity.md) child)
 
 Parameter | Description
 ---|---
