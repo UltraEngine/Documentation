@@ -8,4 +8,4 @@ This function gets the package from which an asset was loaded.
 
 ## Returns
 
-If the asset was loaded from a package that has not been deleted, it will be returned. Otherwise, `nil` is returned.
+If the asset was loaded from a package that has not been deleted, it will be returned. Otherwise, nil is returned.
