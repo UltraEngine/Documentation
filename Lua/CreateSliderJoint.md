@@ -13,6 +13,10 @@ This function creates a new slider joint. A hinge joint moves freely along the j
 | parent | joint parent or NULL for a fixed point |
 | child | joint child |
 
+## Returns
+
+Returns a new joint.
+
 ## Example
 
 ```lua
