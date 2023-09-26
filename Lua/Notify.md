@@ -1,14 +1,10 @@
-# Notify #
+# Notify
 
 This function displays a message box.
 
-```lua
-function Notify(message, title, serious)
-```
+## Syntax
 
-Displays a message box with the specified `message`. 
-
-### Parameters ###
+- **Notify**([string](https://www.lua.org/manual/5.4/manual.html#6.4) message, [string](https://www.lua.org/manual/5.4/manual.html#6.4) title = "", boolean serious = false)
 
 | Parameter | Description |
 | ----- | ----- |
@@ -16,10 +12,10 @@ Displays a message box with the specified `message`.
 | title | optional title of the message box window | 
 | serious | If set to true a warning icon will be displayed |
 
-### Example
+## Example
 
 ![](https://github.com/Leadwerks/Documentation/raw/master/Images/Notify.png)
 
 ```lua
-Notify("Hello, world!")
+Notify("Hello, world!", "Title", true)
 ```
