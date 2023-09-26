@@ -4,13 +4,12 @@ This method performs a line segment intersection test on all the entities in the
 
 ## Syntax
 
-- [PickInfo](PickInfo.md) **Pick**([xVec3](xVec3.md) p0, [xVec3](xVec3.md) p1, dFloat radius = 0.0, boolean closest = false, boolean filter(shared_ptr<[Entity](Entity.md)\>, [Object](Object.md)) = NULL, [Object](Object.md) extra = NULL)
-- [PickInfo](PickInfo.md) **Pick**(dFloat x0, dFloat y0, dFloat z0, dFloat x1, dFloat y1, dFloat z1, dFloat radius = 0, boolean closest = false, boolean filter([Entity](Entity.md), [Object](Object.md) ) = NULL, [Object](Object.md) extra = NULL)
+- [PickInfo](PickInfo.md) **Pick**([xVec3](xVec3.md) p0, [xVec3](xVec3.md) p1, number radius = 0.0, boolean closest = false, function filter = nil, extra = nil)
 
 | Parameter | Description |
 | --- | --- |
-| p0, (x0, y0, z0) | line start position |
-| p1, (x1, y1, z1) | line end position |
+| p0 | line start position |
+| p1 | line end position |
 | radius | if greater than zero a swept sphere intersection test will be performed |
 | closest | if set to true the closest intersected point will be found, otherwise the routine will return on the first hit |
 | filter | optional callback to filter objects |
