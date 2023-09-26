@@ -4,12 +4,14 @@ This function creates a new hinge joint. A hinge joint spins around an axis.
 
 ## Syntax
 
-`createHingeJoint(position, axis, parent, child)`
+- [Joint](Joint.md) **CreateHingeJoint**([xVec3](xVec3.md) position, [xVec3](xVec3.md) axis, [Entity](Entity.md) parent, [Entity](Entity.md) child)
 
-- `position`: a vector representing the position of the joint
-- `axis`: a vector representing the axis the joint will spin around
-- `parent`: the parent entity of the joint (can be set to nil for a fixed point)
-- `child`: the child entity of the joint
+| Parameter | Description |
+|---|---|
+| position | position of the joint |
+| axis | axis the joint will spin around |
+| parent | joint parent or NULL for a fixed point |
+| child | joint child |
 
 ## Returns
 
