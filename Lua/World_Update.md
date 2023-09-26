@@ -17,11 +17,11 @@ This method updates timing, physics, and other systems. This should be called on
 
 The update frequency can be increased for greater precision, but this will require your game code to run at a greater frequency. The default setting of 60 hz allows your game code and physics to each execute in less than 16.7 milliseconds. A frequency of 90 hz requires your game code and physics calculations to both execute in less than 11.1 milliseconds.
 
-By default, the physics engine will perform iterations until an exact solution is found. You can explicitly control the number of cycles with the `iterations` parameter. One is the fastest and least accurate, and greater numbers will be slower but more accurate.
+By default, the physics engine will perform iterations until an exact solution is found. You can explicitly control the number of cycles with the iterations parameter. One is the fastest and least accurate, and greater numbers will be slower but more accurate.
 
-By default, the engine will allocate a number of threads for physics calculations. You can control this number by supplying a value greater than zero in the `threads` parameter.
+By default, the engine will allocate a number of threads for physics calculations. You can control this number by supplying a value greater than zero in the threads parameter.
 
-For greater precision, you can split physics updating up into multiple sub-steps by providing a value greater than one in the `substeps` parameter. This can be useful when very precise physics behavior is needed, but more substeps can cause slower performance.
+For greater precision, you can split physics updating up into multiple sub-steps by providing a value greater than one in the substeps parameter. This can be useful when very precise physics behavior is needed, but more substeps can cause slower performance.
 
 ## Example
 
