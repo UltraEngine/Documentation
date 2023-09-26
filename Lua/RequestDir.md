@@ -1,11 +1,14 @@
-# RequestDir #
+# RequestDir
+
 This function displays a file dialog and lets the user select a folder.
 
-## Syntax ##
-- **RequestDir**(title: [string](String.md) = "Open Folder", dir: [string](String.md) = ""): [string](String.md)
+## Syntax
+
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **RequestDir**([string](https://www.lua.org/manual/5.4/manual.html#6.4) title = "Open Folder", [string](https://www.lua.org/manual/5.4/manual.html#6.4) dir = "")
 
 ## Example
+
 ```lua
 local file = RequestDir("Open Folder")
-print(file)
+Print(file)
 ```
