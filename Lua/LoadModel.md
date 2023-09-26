@@ -5,7 +5,7 @@ This function loads a model from a file.
 ## Syntax
 
 - [Model](Model.md) **LoadModel**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
-- [Model](Model.md) **LoadModel**(stream: [Stream](Stream.md), number flags = LOAD_DEFAULT)
+- [Model](Model.md) **LoadModel**([Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
 
 ### Parameters
 
