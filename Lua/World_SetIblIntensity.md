@@ -1,14 +1,11 @@
-### `SetIblIntensity(intensity)`
+# SetIblIntensity
 
-This function can be used to adjust the strength of environment map reflections.
+This method can be used to adjust the strength of environment map reflections.
 
-#### Parameters
+## Syntax
 
-- `intensity` (number): The brightness of environment map reflections. The default value is 1.0.
+- **SetIblIntensity**(number intensity)
 
-### Example
-
-```lua
--- Adjust the strength of environment map reflections
-SetIblIntensity(0.5)
-```
+| Parameter | Description |
+|---|---|
+| intensity | brightness of environment map reflections, 1.0 is default |
