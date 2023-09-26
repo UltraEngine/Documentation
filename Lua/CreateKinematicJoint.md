@@ -4,10 +4,11 @@ This function creates a new kinematic joint. A kinematic joint can be used to co
 
 ## Syntax
 
-- [Joint](Joint.md) **CreateKinematicJoint**([Entity](Entity.md) entity)
+- [Joint](Joint.md) **CreateKinematicJoint**([xVec3](xVec3.md) position, [Entity](Entity.md) entity)
 
 | Parameter | Description |
 |---|---|
+| position | joint position |
 | entity | entity the joint controls |
 
 ## Returns
