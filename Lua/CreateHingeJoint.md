@@ -10,7 +10,7 @@ This function creates a new hinge joint. A hinge joint spins around an axis.
 |---|---|
 | position | position of the joint |
 | axis | axis the joint will spin around |
-| parent | joint parent or NULL for a fixed point |
+| parent | joint parent or nil for a fixed point |
 | child | joint child |
 
 ## Returns
