@@ -16,7 +16,6 @@ auto plugin_freeimage = LoadPlugin("Plugins/FITextureLoader")
 | ----- | ----- | ----- |
 | description | [string](https://www.lua.org/manual/5.4/manual.html#6.4) | read-only description of functionality loaded from the plugin |
 | title | [string](https://www.lua.org/manual/5.4/manual.html#6.4) | read-only title loaded from plugin |
-| properties | [table](https://www.lua.org/manual/5.4/manual.html#6.6) | JSON structure containing plugin information |
 | [LoadPlugin](LoadPlugin.md) | Function | loads a plugin module |
 
 ## Stock Plugins
