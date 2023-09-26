@@ -21,9 +21,9 @@ The entity's mass must be greater than zero.
 
 A kinematic joint can control the entity position, rotation, or both.
 
-To control the entity position, you must call [Joint::SetMaxForce](Joint_SetMaxForce.md) and [Joint::SetTargetPosition](Joint_SetTargetPosition.md).
+To control the entity position, you must call [Joint:SetMaxForce](Joint_SetMaxForce.md) and [Joint:SetTargetPosition](Joint_SetTargetPosition.md).
 
-To control the entity rotation, you must call [Joint::SetMaxTorque](Joint_SetMaxTorque.md) and [Joint::SetTargetRotation](Joint_SetTargetRotation.md).
+To control the entity rotation, you must call [Joint:SetMaxTorque](Joint_SetMaxTorque.md) and [Joint:SetTargetRotation](Joint_SetTargetRotation.md).
 
 ## Example
 
