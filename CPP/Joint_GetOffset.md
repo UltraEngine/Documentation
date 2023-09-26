@@ -4,7 +4,7 @@ This method returns the current joint offset.
 
 ## Syntax
 
-dFloat **GetOffset**()
+- dFloat **GetOffset**()
 
 ## Returns
 
