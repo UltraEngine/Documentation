@@ -2,7 +2,8 @@
 This function opens a file browser dialog and lets the user select a file to open or save.
 
 ## Syntax
-`RequestFile(title = "Open File", file = "", filetypes = "All Files:*", defaulttype = 0, save = false)`
+
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **RequestFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) title = "Open File", [string](https://www.lua.org/manual/5.4/manual.html#6.4) file = "", [string](https://www.lua.org/manual/5.4/manual.html#6.4) filetypes = "All Files:*", number defaulttype = 1, boolean save = false)
 
 | Parameter | Description |
 | ----- | ----- |
