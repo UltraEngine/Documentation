@@ -8,7 +8,7 @@ This function enables or disables head-related transfer function audio processin
 
 ## Returns
 
-Returns `true` if the mode is successfully set, otherwise `false` is returned.
+Returns true if the mode is successfully set, otherwise false is returned.
 
 ## Remarks
 
