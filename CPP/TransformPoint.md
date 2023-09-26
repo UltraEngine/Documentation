@@ -1,5 +1,7 @@
 # TransformPoint
 
+This function transforms a 3D point from one space to another.
+
 ## Syntax
 
 - [Vec3](Vec3.md) **TransformPoint**(const [Vec3](Vec3.md)& point, const [Mat4](Mat4.md)& src, const [Mat4](Mat4.md)& dst)
@@ -14,3 +16,7 @@ Parameter | Description
 point, (x, y, z) | position to transform
 src | source 4x4 matrix or entity
 dst | destination 4x4 matrix or entity
+
+## Returns
+
+Returns the transformed point.
