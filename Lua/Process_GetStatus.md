@@ -15,16 +15,16 @@ Returns the process status. This may be PROCESS_RUNNING or PROCESS_FINISHED. The
 ```lua
 apppath = "C:/Windows/notepad.exe"
 
-print("Launching process")
+Print("Launching process")
 local proc = CreateProcess(apppath)
 
-print("Process running")
+Print("Process running")
 while proc:GetStatus() == PROCESS_RUNNING do
     Sleep(500)
-    print(".")
+    Print(".")
 end
 
 local exitcode = proc:Close()
 
-print("Process finished (" .. tostring(exitcode) .. ")")
+Print("Process finished (" .. tostring(exitcode) .. ")")
 ```
