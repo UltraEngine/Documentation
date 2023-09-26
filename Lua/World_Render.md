@@ -23,46 +23,40 @@ If your game spends a significant amount of time initializing a scene, you can s
 ## Example
 
 ```lua
-function main()
-    -- Get the displays
-    local displays = UltraEngine.GetDisplays()
+-- Get the displays
+local displays = GetDisplays()
 
-    -- Create window
-    local window = UltraEngine.CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[1], UltraEngine.WINDOW_CENTER | UltraEngine.WINDOW_TITLEBAR)
+-- Create window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
-    -- Create world
-    local world = UltraEngine.CreateWorld()
+-- Create world
+local world = CreateWorld()
 
-    -- Create framebuffer
-    local framebuffer = UltraEngine.CreateFramebuffer(window)
+-- Create framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    -- Create a camera
-    local camera = UltraEngine.CreateCamera(world, UltraEngine.PROJECTION_ORTHOGRAPHIC)
-    camera:SetClearColor(0.125)
+-- Create a camera
+local camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC)
+camera:SetClearColor(0.125)
 
-    while not window:Closed() and not window:KeyDown(UltraEngine.KEY_ESCAPE) do
-        while UltraEngine.PeekEvent() do
-            local e = UltraEngine.WaitEvent()
-            if e.id == UltraEngine.EVENT_STARTRENDERER then
-                if e.data == 1 then
-                    -- Display the graphics device name
-                    window:SetText(window.text .. " - " .. e.text)
-                else
-                    -- Show error message
-                    UltraEngine.Notify("Renderer failed to initialize.\n\n" .. e.text, "Error", true)
-                    return 0
-                end
-            elseif e.id == UltraEngine.EVENT_QUIT then
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+    while PeekEvent() do
+        local e = WaitEvent()
+        if e.id == EVENT_STARTRENDERER then
+            if e.data == 1 then
+                -- Display the graphics device name
+                window:SetText(window.text .. " - " .. e.text)
+            else
+                -- Show error message
+                Notify("Renderer failed to initialize.\n\n" .. e.text, "Error", true)
                 return 0
             end
+        elseif e.id == EVENT_QUIT then
+            return 0
         end
-
-        world:Update()
-        world:Render(framebuffer)
     end
 
-    return 0
+    world:Update()
+    world:Render(framebuffer)
 end
-
-main()
 ```
