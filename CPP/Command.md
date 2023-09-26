@@ -28,11 +28,16 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+	shared_ptr<Stream> stream = CreateBufferStream();
 #ifdef _WIN32
-	Print(Command("systeminfo | findstr /B /C:\"OS Name\""));
+	Command("systeminfo | findstr /B /C:\"OS Name\"", stream);
 #else
-	Print(Command("uname -r"));
+	Command("uname -r", stream);
 #endif
+	while (not stream->Eof())
+	{
+		Print(stream->ReadLine());
+	}
 	return 0;
 }
 ```
