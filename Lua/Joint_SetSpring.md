@@ -4,15 +4,13 @@ This method adds spring behavior to a hinge or slider joint.
 
 ## Syntax
 
-```lua
-Joint:SetSpring(relaxation, spring, damper)
-```
+- void **SetSpring**(number relaxation, number spring, number damper)
 
-### Parameters
-
-- `relaxation`: spring damper relaxation (number)
-- `spring`: spring constant (number)
-- `damper`: damping value (number)
+| Parameter | Description |
+|---|---|
+| relaxation | spring damper relaxation |
+| spring | spring constant |
+| damper | damping value |
 
 ## Remarks
 
