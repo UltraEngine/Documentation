@@ -2,6 +2,8 @@
 
 This method can be used to set custom collision responses between different collision types.
 
+## Syntax
+
 - void **SetCollisionResponse**(const int type1, const int type2, const CollisionResponse response)
 
 | Parameter | Description |
