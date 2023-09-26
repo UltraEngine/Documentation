@@ -4,7 +4,7 @@ This function creates a ball and socket joint.
 
 ## Syntax
 
-shared_ptr<[Joint](Joint.md)\> **CreateBallAndSocketJoint**(const [Vec3](Vec3.md)& position,shared_ptr<[Entity](Entity.md)\> parent, shared_ptr<[Entity](Entity.md)\> child)
+- shared_ptr<[Joint](Joint.md)\> **CreateBallAndSocketJoint**(const [Vec3](Vec3.md)& position,shared_ptr<[Entity](Entity.md)\> parent, shared_ptr<[Entity](Entity.md)\> child)
 
 | Parameter | Description |
 |---|---|
