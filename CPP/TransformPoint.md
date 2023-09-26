@@ -6,7 +6,7 @@ This function transforms a 3D point from one space to another.
 
 - [Vec3](Vec3.md) **TransformPoint**(const [Vec3](Vec3.md)& point, const [Mat4](Mat4.md)& src, const [Mat4](Mat4.md)& dst)
 - [Vec3](Vec3.md) **TransformPoint**(const float x, const float y, const float z, const [Mat4](Mat4.md)& src, const [Mat4](Mat4.md)& dst)
-- [xVec3](xVec3.md) **TransformPoint**(const [xVec3](xVec3.md)& poin, shared_ptr<[Entity](Entity.md)\> src, shared_ptr<[Entity](Entity.md)\> dst)
+- [xVec3](xVec3.md) **TransformPoint**(const [xVec3](xVec3.md)& point, shared_ptr<[Entity](Entity.md)\> src, shared_ptr<[Entity](Entity.md)\> dst)
 - [xVec3](xVec3.md) **TransformPoint**(const dFloat x, const dFloat y, const dFloat z, shared_ptr<[Entity](Entity.md)\> src, shared_ptr<[Entity](Entity.md)\> dst)
 
 Parameter | Description
