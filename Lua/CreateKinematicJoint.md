@@ -4,13 +4,15 @@ This function creates a new kinematic joint. A kinematic joint can be used to co
 
 ## Syntax
 
-`CreateKinematicJoint(entity: table): table`
+- [Joint](Joint.md) **CreateKinematicJoint**([Entity](Entity.md) entity)
 
-- `entity`: The entity the joint controls.
+| Parameter | Description |
+|---|---|
+| entity | entity the joint controls |
 
 ## Returns
 
-Returns a new joint object, or `nil` if the joint could not be created.
+Returns a new joint object, or nil if the joint could not be created.
 
 ## Remarks
 
@@ -18,9 +20,9 @@ The entity's mass must be greater than zero.
 
 A kinematic joint can control the entity position, rotation, or both.
 
-To control the entity position, you must call [Joint:SetMaxForce](Joint_SetMaxForce.md) and [Joint:SetTargetPosition](Joint_SetTargetPosition.md).
+To control the entity position, you must call [Joint::SetMaxForce](Joint_SetMaxForce.md) and [Joint::SetTargetPosition](Joint_SetTargetPosition.md).
 
-To control the entity rotation, you must call [Joint:SetMaxTorque](Joint_SetMaxTorque.md) and [Joint:SetTargetRotation](Joint_SetTargetRotation.md).
+To control the entity rotation, you must call [Joint::SetMaxTorque](Joint_SetMaxTorque.md) and [Joint::SetTargetRotation](Joint_SetTargetRotation.md).
 
 ## Example
 
