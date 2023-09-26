@@ -2405,26 +2405,6 @@
 							]
 						},
 						{
-							"title": "TransformAabb",
-							"filename": "TransformAabb"
-						},
-						{
-							"title": "TransformNormal",
-							"filename": "TransformNormal"
-						},
-						{
-							"title": "TransformPlane",
-							"filename": "TransformPlane"
-						},
-						{
-							"title": "TransformPoint",
-							"filename": "TransformPoint"
-						},
-						{
-							"title": "TransformRotation",
-							"filename": "TransformRotation"
-						},
-						{
 							"title": "Vec2",
 							"filename": "Vec2",
 							"topics": [{
@@ -2597,6 +2577,26 @@
 						{
 							"title": "Tan",
 							"filename": "Tan"
+						},
+						{
+							"title": "TransformAabb",
+							"filename": "TransformAabb"
+						},
+						{
+							"title": "TransformNormal",
+							"filename": "TransformNormal"
+						},
+						{
+							"title": "TransformPlane",
+							"filename": "TransformPlane"
+						},
+						{
+							"title": "TransformPoint",
+							"filename": "TransformPoint"
+						},
+						{
+							"title": "TransformRotation",
+							"filename": "TransformRotation"
 						}
 					]
 				},
