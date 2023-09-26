@@ -6,7 +6,7 @@ This function transforms a 3D point from one space to another.
 
 - [Vec3](Vec3.md) **TransformPoint**([Vec3](Vec3.md) point, [Mat4](Mat4.md) src, [Mat4](Mat4.md) dst)
 - [Vec3](Vec3.md) **TransformPoint**(number x, number y, number z, [Mat4](Mat4.md) src, [Mat4](Mat4.md) dst)
-- [xVec3](xVec3.md) **TransformPoint**([xVec3](xVec3.md) poin, [Entity](Entity.md) src, [Entity](Entity.md) dst)
+- [xVec3](xVec3.md) **TransformPoint**([xVec3](xVec3.md) point, [Entity](Entity.md) src, [Entity](Entity.md) dst)
 - [xVec3](xVec3.md) **TransformPoint**(number x, number y, number z, [Entity](Entity.md) src, [Entity](Entity.md) dst)
 
 Parameter | Description
