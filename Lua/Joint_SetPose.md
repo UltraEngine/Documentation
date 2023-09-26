@@ -27,7 +27,7 @@ Changing this setting will have no effect on hinge joints until [Joint:SetMaxFor
 local displays = GetDisplays()
 
 --Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 --Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -57,7 +57,7 @@ child:SetColor(0, 1, 0)
 
 local hinge = CreateHingeJoint(parent.position, Vec3(0, 0, 1), nil, parent)
 hinge:SetMaxTorque(100)
-    
+
 local slider = CreateSliderJoint(parent.position, Vec3(-1, 0, 0), parent, child)
 slider:SetLimits(0, 8)
 
