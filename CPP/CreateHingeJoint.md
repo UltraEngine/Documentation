@@ -8,8 +8,8 @@ This function creates a new hinge joint. A hinge joint spins around an axis.
 
 | Parameter | Description |
 |---|---|
-| position, (x, y, z) | position of the joint |
-| axis (dx, dy, dz) | axis the joint will spin around |
+| position | position of the joint |
+| axis | axis the joint will spin around |
 | parent | joint parent or NULL for a fixed point |
 | child | joint child |
 
