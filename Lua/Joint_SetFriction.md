@@ -1,16 +1,14 @@
-# Joint:SetFriction
+# Joint::SetFriction
 
-This method sets the friction of a hinge or slider joint.
+This methods sets the friction of a hinge or slider joint.
 
 ## Syntax
 
-```lua
-function Joint:SetFriction(friction: number)
-```
+- void **SetFriction**(const dFloat friction)
 
-### Parameters
-
-- `friction`: joint friction, in Newtons for a slider and Newton-meters for a hinge
+| Parameter | Description |
+|---|---|
+| friction | joint friction, in Newtons for a slider and Newton-meters for a hinge |
 
 ## Example
 
