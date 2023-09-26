@@ -4,16 +4,16 @@ This method saves the object to a file.
 
 ## Syntax
 
-boolean **Save**(path: [string](https://www.lua.org/manual/5.4/manual.html#6.4), flags: number)
+boolean **Save**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags)
 
 | Parameter | Description |
 |---|---|
-| *path* | string representing the file path to save to. |
-| *flags* | optional save flags |
+| path | string representing the file path to save to. |
+| flags | optional save flags |
 
 ## Returns
 
-Returns `true` if saving is supported for this object type, and if the object was successfully saved, otherwise `false` is returned.
+Returns true if saving is supported for this object type, and if the object was successfully saved, otherwise false is returned.
 
 ## Example
 
