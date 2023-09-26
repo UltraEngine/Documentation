@@ -21,5 +21,5 @@ If the user pressed the OK button 1 is returned. If the user presses the cancel 
 ## Example
 
 ```lua
-Print(Confirm("Are you sure you want to do that?"))
+Print(Confirm("Are you sure you want to do that?", "Title", true))
 ```
