@@ -6,6 +6,7 @@ The world class is a container for entities.
 
 | Property | Type | Description |
 |---|---|---|
+| animationstats     | [AnimationStats](AnimationStats.md)    | animation system statistics                                                  |
 | collisions | const vector<[Collision](Collision.md)\>& | read-only list of collisions recorded in previous physics update |
 | frequency | const int& | read-only update frequency |
 | physicsstats | [PhysicsStats](PhysicsStats.md) | physics statistics |
