@@ -1,4 +1,4 @@
-# World::SetAmbientLight
+# World:SetAmbientLight
 
 This method sets the ambient light level for the world.
 
