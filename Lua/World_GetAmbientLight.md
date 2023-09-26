@@ -1,4 +1,4 @@
-# World::GetAmbientLight
+# World:GetAmbientLight
 
 This method returns the world's ambient light color.
 
