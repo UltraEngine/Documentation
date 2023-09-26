@@ -4,13 +4,11 @@ This function pauses the current thread for the specified number of milliseconds
 
 ## Syntax
 
-```lua
-function Sleep(time: number)
-```
+- **Sleep**(number time)
 
-## Parameters
-
-- **time:** the number of milliseconds to pause.
+Parameter | Description 
+---|---
+time | the number of milliseconds to pause.
 
 ## Remarks
 
