@@ -9,6 +9,7 @@ This function allows you to interact with the operating system terminal or conso
 | Parameter | Description |
 |---|---|
 | command | command to send |
+| stream | stream to capture any printed output |
 
 ## Returns
 
