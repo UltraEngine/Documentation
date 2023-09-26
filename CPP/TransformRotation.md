@@ -13,7 +13,7 @@ This function transforms a 3D vector from one space to another.
 
 Parameter | Description
 ---|---
-rotation, (x, y, z) | 3D vector to transform
+rotation, (x, y, z) | Euler or quaternion rotation to transform
 src | source 4x4 matrix or entity
 dst | destination 4x4 matrix or entity
 
