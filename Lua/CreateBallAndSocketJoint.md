@@ -4,7 +4,7 @@ This function creates a ball and socket joint.
 
 ## Syntax
 
-- [Joint](Joint.md) **CreateBallAndSocketJoint**([Vec3](Vec3.md) position, [Entity](Entity.md) parent, [Entity](Entity.md) child)
+- [Joint](Joint.md) **CreateBallAndSocketJoint**([xVec3](xVec3.md) position, [Entity](Entity.md) parent, [Entity](Entity.md) child)
 
 | Parameter | Description |
 |---|---|
