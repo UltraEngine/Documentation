@@ -4,9 +4,9 @@ This method sets the target position or rotation of a hinge, slider, or kinemati
 
 ## Syntax
 
-- **Joint:SetPose**(offset: number)
-- **Joint:SetPose**(position: xVec3, rotation: xVec3)
-- **Joint:SetPose**(position: xVec3, rotation: xQuat)
+- **SetPose**(number offset)
+- **SetPose**([xVec3](xVec3.md) position, [xVec3](xVec3.md) rotation)
+- **SetPose**([xVec3](xVec3.md) position, [xQuat](xQuat.md) rotation)
 
 | Parameter | Description |
 |---|---|
@@ -16,9 +16,9 @@ This method sets the target position or rotation of a hinge, slider, or kinemati
 
 ## Remarks
 
-This method will have no effect on hinge joints until [**Joint:SetMaxTorque**](#jointsetmaxtorque) is called with a torque greater than zero.
+Changing this setting will have no effect on hinge joints until [Joint:SetMaxTorque](Joint_SetMaxTorque.md) is called with a torque greater than zero.
 
-This method will have no effect on hinge joints until [**Joint:SetMaxForce**](#jointsetmaxforce) is called with a force greater than zero.
+Changing this setting will have no effect on hinge joints until [Joint:SetMaxForce](Joint_SetMaxForce.md) is called with a force greater than zero.
 
 ## Example
 
