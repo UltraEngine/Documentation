@@ -4,7 +4,7 @@ This function allows you to interact with the operating system terminal or conso
 
 ## Syntax
 
-[WString](WString.md) **Command**(const [WString](WString.md)& command)
+- int **Command**(const [WString](WString.md)& command, shared_ptr<[Stream](Stream.md)\> stream = NULL)
 
 | Parameter | Description |
 |---|---|
@@ -12,7 +12,7 @@ This function allows you to interact with the operating system terminal or conso
 
 ## Returns
 
-Returns the printed output of the terminal or console.
+Returns the command result.
 
 ## Remarks
 
