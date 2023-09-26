@@ -4,19 +4,15 @@ This function creates a ball and socket joint.
 
 ## Syntax
 
-```lua
-function CreateBallAndSocketJoint(position, parent, child)
-```
-
-### Parameters
+- [Joint](Joint.md) **CreateBallAndSocketJoint**([Vec3](Vec3.md) position, [Entity](Entity.md) parent, [Entity](Entity.md) child)
 
 | Parameter | Description |
 |---|---|
 | position | joint position |
-| parent | parent entity, or nil for a fixed position |
+| parent | parent entity, or NULL for a fixed position |
 | child | child entity |
 
-### Returns
+## Returns
 
 Returns a new joint.
 
