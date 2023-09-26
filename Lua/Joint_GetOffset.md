@@ -17,7 +17,7 @@ Returns the current angle of a hinge joint in degrees, or position of a slider j
 local displays = GetDisplays()
 
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -51,7 +51,7 @@ local joint = CreateHingeJoint(parent.position, Vec3(0, 0, 1), parent, child)
 local cam2d = CreateCamera(world, PROJECTION_ORTHOGRAPHIC)
 cam2d:SetRenderLayers(128)
 cam2d:SetClearMode(CLEAR_DEPTH)
-cam2d:SetPosition(framebuffer.size.x * 0.5, framebuffer.size.y * 0.5)
+cam2d:SetPosition(framebuffer.size.x * 0.5, framebuffer.size.y * 0.5, 0)
 
 local font = LoadFont("Fonts/arial.ttf")
 local sprite = CreateSprite(world, font, "0", 18)
@@ -64,6 +64,4 @@ while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Update()
     world:Render(framebuffer)
 end
-
-return 0
 ```
