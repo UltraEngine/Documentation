@@ -13,7 +13,7 @@ stream | optional stream for capturing printed output
 
 ## Returns
 
-Returns the printed output of the terminal or console.
+Returns the result of the command.
 
 ## Remarks
 
