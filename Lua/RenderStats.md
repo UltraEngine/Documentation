@@ -1,4 +1,5 @@
-# RenderStats #
+# RenderStats
+
 This class contains information about the rendering thread. To enable statistics recording, you must call the [World:RecordStats](World_RecordStats.md) method.
 
 | Property | Type | Description |
@@ -14,4 +15,4 @@ This class contains information about the rendering thread. To enable statistics
 |		 shadowpolygons | number | Number of shadow polygons drawn in the previous frame |
 |		 rendertime | number | CPU time taken to render the previous frame, in milliseconds |
 |		 vertices | number | Number of vertices drawn in the previous frame |
-|		 vram | userdata | Phyical device memory limit |
+|		 vram | number | Phyical device memory limit |
