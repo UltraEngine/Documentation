@@ -4,9 +4,7 @@ This method sets the maximum force a motorized slider or kinematic joint can app
 
 ## Syntax
 
-```lua
-Joint:SetMaxForce(force)
-```
+- **SetMaxForce**(number force)
 
 | Parameter | Description |
 |---|---|
@@ -15,6 +13,15 @@ Joint:SetMaxForce(force)
 ## Example
 
 ```lua
+--Get the displays
+local displays = GetDisplays()
+
+--Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
+
+--Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
+
 --Create a world
 local world = CreateWorld()
 
@@ -43,8 +50,8 @@ joint:SetMaxForce(100)
 joint:SetPose(2)
 
 --Main loop
-while window.Closed() == false and window.KeyDown(KEY_ESCAPE) == false do
+while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
     world:Update()
-    world:Render()
+    world:Render(framebuffer)
 end
 ```
