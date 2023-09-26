@@ -4,7 +4,7 @@ This function displays a message dialog box with the options "Yes", "No", and "C
 
 ## Syntax
 
-- number **Proceed**([string](https://www.lua.org/manual/5.4/manual.html#6.4) message, [string](https://www.lua.org/manual/5.4/manual.html#6.4) title, boolean serious)
+- number **Proceed**([string](https://www.lua.org/manual/5.4/manual.html#6.4) message, [string](https://www.lua.org/manual/5.4/manual.html#6.4) title = "", boolean serious = false)
 
 | Parameter | Description |
 | --- | --- |
