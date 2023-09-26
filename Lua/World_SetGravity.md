@@ -1,4 +1,4 @@
-# World::SetGravity
+# World:SetGravity
 
 The methods sets the gravitational vector applied uniformly across the world.
 
