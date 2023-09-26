@@ -20,8 +20,11 @@ You can access a collection of ready-to-use environment maps [here](https://gith
 ## Example
 
 ```lua
+-- Get the displays
+local displays = GetDisplays()
+
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a world
 local world = CreateWorld()
