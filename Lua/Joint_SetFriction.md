@@ -4,7 +4,7 @@ This methods sets the friction of a hinge or slider joint.
 
 ## Syntax
 
-- void **SetFriction**(const dFloat friction)
+- **SetFriction**(number friction)
 
 | Parameter | Description |
 |---|---|
