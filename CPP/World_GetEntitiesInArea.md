@@ -4,7 +4,7 @@ This method efficiently retrieves all entities that intersect the specified boun
 
 ## Syntax
 
-vector<shared_ptr<[Entity](Entity.md)\> > **GetEntitiesInArea**(const [xAabb](xAabb.md)& area)
+vector<shared_ptr<[Entity](Entity.md)\> > **GetEntitiesInArea**(const [xVec3](xVec3.md)& minbounds, const [xVec3](xVec3.md)& maxbounds)
 
 | Paraemter | Description |
 |---|---|
