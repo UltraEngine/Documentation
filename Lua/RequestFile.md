@@ -19,25 +19,25 @@ Returns the selected file path, or an empty string if the user cancelled the ope
 ## Remarks
 The extensions filter allows you to specify one or more file types to show in the dialog. Each file type consists of a description and an extension, separated by a colon. Note that the text shown inside the parenthesis is part of the description, and is just decorative:
 
-```
+```txt
 Text Files (*.txt):txt
 ```
 
 You can specify multiple extensions for a file type by separating them with a comma:
 
-```
+```txt
 JPEG Image (*.jpg, *.jpeg):jpg,jpeg
 ```
 
 You can use a wildcard to specify a range of extensions:
 
-```
+```txt
 All Files:*
 ```
 
 Use a semicolon to specify multiple file extensions for one file type:
 
-```
+```txt
 Windows Bitmap (*.bmp):bmp;JPEG Image (*.jpg, *.jprg):jpg,jpeg
 ```
 
