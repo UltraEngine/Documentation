@@ -8,8 +8,8 @@ This function creates a plane joint. Plane joints can be used to lock an entity 
 
 Parameter | Description
 ---|---
-position, (x, y, z) | the joint position
-axis (px, py, pz) | the joint axis
+position | the joint position
+axis | the joint axis
 parent | the parent entity to use, or nil for a fixed position
 child | the child entity to use
 
