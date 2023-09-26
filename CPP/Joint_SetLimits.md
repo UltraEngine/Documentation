@@ -4,12 +4,12 @@ This method sets the limits of a hinge, slider, or ball and socket joint.
 
 ## Syntax
 
-- void **SetLimits**(const dFloat minlimit, const dFloat maxlimit)
+- void **SetLimits**(const dFloat lower, const dFloat upper)
 
 | Parameter | Description |
 |---|---|
-| minlimit | minimum joint angle or offset |
-| maxlimit | maximum joint angle or offset |
+| lower | minimum joint angle or offset |
+| upper | maximum joint angle or offset |
 
 ## Remarks
 
