@@ -21,6 +21,14 @@ If the line segment intersects the entity, the resulting PickInfo's *success* me
 
 If a filter callback is provided it will be called for each entity that is evaluated. If the callback returns true the entity will be tested, otherwise it will be skipped.
 
+If defined, the filter function should accept an entity and an extra value, and return true if the entity should be tested:
+
+```lua
+function filter(entity, extra)
+    return true
+end
+```
+
 ## Example
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/World_Pick.gif)
