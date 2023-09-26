@@ -2,17 +2,16 @@
 
 This function returns the current system time, in milliseconds.
 
-Syntax
-```
-function Millisecs()
-```
+## Syntax
 
-Returns
-```
+- number **Millisecs**()
+
+## Returns
+
 Returns the current system time, in milliseconds.
-```
 
-Example
+## Example
+
 ```lua
 -- Get the initial system time
 local starttime = Millisecs()
