@@ -6,9 +6,10 @@ This method efficiently retrieves all entities that intersect the specified boun
 
 vector<shared_ptr<[Entity](Entity.md)\> > **GetEntitiesInArea**(const [xVec3](xVec3.md)& minbounds, const [xVec3](xVec3.md)& maxbounds)
 
-| Paraemter | Description |
-|---|---|
-| area | bounding box to test for intersecting entities |
+Parameter | Description
+---|---
+minbounds | lower bounds of area
+maxbounds | upper bounds of area
 
 ## Returns
 
