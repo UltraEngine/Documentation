@@ -4,11 +4,12 @@ This function allows you to interact with the operating system terminal or conso
 
 ## Syntax
 
-```lua
-function Command(command: string): string
-```
+- number **Command**([string](https://www.lua.org/manual/5.4/manual.html#6.4) command, [Stream](Stream.md) stream = nil)
 
-- **command:** command to send
+Parameter | Description
+---|---
+command | command to execute
+stream | optional stream for capturing printed output
 
 ## Returns
 
