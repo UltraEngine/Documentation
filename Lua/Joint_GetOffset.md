@@ -4,9 +4,7 @@ This method returns the current joint offset.
 
 ## Syntax
 
-```lua
-function Joint:GetOffset()
-```
+- number **GetOffset**()
 
 ## Returns
 
