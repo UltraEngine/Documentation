@@ -3209,7 +3209,8 @@
 						},
 						{
 							"title": "ExecuteString",
-							"filename": "ExecuteString"
+							"filename": "ExecuteString",
+							"hideFromLua": true
 						},
 						{
 							"title": "GetGlobal",
@@ -3223,7 +3224,8 @@
 						},
 						{
 							"title": "PollDebugger",
-							"filename": "PollDebugger"
+							"filename": "PollDebugger",
+							"hideFromLua": true
 						},
 						{
 							"title": "RunScript",
