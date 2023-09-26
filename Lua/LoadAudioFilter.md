@@ -4,16 +4,16 @@ This function loads an audio filter from a file. Audio filters are stored in JSO
 
 ## Syntax
 
-- function **LoadAudioFilter**(path: [string](https://www.lua.org/manual/5.4/manual.html#6.4), flags: int): [AudioFilter](AudioFilter.md)
+- [AudioFilter](AudioFilter.md) **LoadAudioFilter**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number)
 
 | Parameter | Description |
 |---|---|
 | *path* | file path to load |
 | *flags* | optional load flags |
 
-### Returns
+## Returns
 
-- Returns the loaded audio filter if successful, otherwise `nil` is returned.
+- Returns the loaded audio filter if successful, otherwise nil is returned.
 
 ## Example
 
