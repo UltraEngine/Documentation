@@ -4,7 +4,7 @@ This method efficiently retrieves all entities that intersect the specified boun
 
 ## Syntax
 
-- [table](https://www.lua.org/manual/5.4/manual.html#6.6) **GetEntitiesInArea**([xAabb](xAabb.md) area)
+- [table](https://www.lua.org/manual/5.4/manual.html#6.6) **GetEntitiesInArea**([xVec3](xVec3.md) minbounds, [xVec3](xVec3.md) maxbounds)
 
 ## Parameters
 
