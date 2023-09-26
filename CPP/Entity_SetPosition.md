@@ -9,7 +9,6 @@ The engine uses a left-handed coordinate system. The X axis points to the right,
 ## Syntax
 
 - void **SetPosition**(const [xVec3](xVec3.md)& position, const bool global = false) 
-- void **SetPosition**(const [xVec2](xVec2.md)& position, const bool global = false)
 - void **SetPosition**(const dFloat x, const dFloat y, const dFloat z = 0.0, const bool global = false) 
 
 | Parameter | Description |
