@@ -4,7 +4,7 @@ This function creates a new hinge joint. A hinge joint spins around an axis.
 
 ## Syntax
 
-- shared_ptr<[Joint](Joint.md)> **CreateHingeJoint**(const [xVec3](xVec3.md)& position, const [xVec3](xVec3.md)& axis, shared_ptr<[Entity](Entity.md)> parent, shared_ptr<[Entity](Entity.md)> child)
+- shared_ptr<[Joint](Joint.md)\> **CreateHingeJoint**(const [xVec3](xVec3.md)& position, const [xVec3](xVec3.md)& axis, shared_ptr<[Entity](Entity.md)> parent, shared_ptr<[Entity](Entity.md)> child)
 
 | Parameter | Description |
 |---|---|
