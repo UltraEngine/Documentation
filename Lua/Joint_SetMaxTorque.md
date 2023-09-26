@@ -4,15 +4,21 @@ This method sets the maximum torque a motorized hinge or kinematic joint can app
 
 ## Syntax
 
-- Joint:**SetMaxTorque**(torque:number)
+- **SetMaxTorque**(number torque)
 
-  - **torque**: maximum torque in Newton-meters (number)
+Parameter | Description
+---|---
+torque | maximum torque, in Newton-meters
+
 
 ## Example
 
 ```lua
+--Get the displays
+local displays = GetDisplays()
+
 -- Create a window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER + WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create a framebuffer
 local framebuffer = CreateFramebuffer(window)
@@ -40,7 +46,7 @@ child:SetPosition(4, 0, 0)
 child:SetMass(1)
 child:SetColor(0, 1, 0)
 
-local hinge = CreateHingeJoint(parent.position, Vec3(0, 0, 1), NULL, parent)
+local hinge = CreateHingeJoint(parent.position, Vec3(0, 0, 1), nil, parent)
 hinge:SetMaxTorque(100)
 
 local slider = CreateSliderJoint(parent.position, Vec3(-1, 0, 0), parent, child)
