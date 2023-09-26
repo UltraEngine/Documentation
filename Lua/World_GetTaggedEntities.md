@@ -12,7 +12,7 @@ This method retrieves all entities in the world with the specified tag.
 
 ## Returns
 
-- Returns an array of all entities that use the specified tag.
+Returns an array of all entities that use the specified tag.
 
 ## Remarks
 
