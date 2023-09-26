@@ -2,6 +2,8 @@
 
 This method can be used to get the collision response between different collision types.
 
+## Syntax
+
 - CollisionResponse **GetCollisionResponse**(const int type1, const int type2)
 
 | Parameter | Description |
