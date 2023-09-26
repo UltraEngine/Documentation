@@ -2,6 +2,8 @@
 
 This method can be used to get the collision response between different collision types.
 
+## Syntax
+
 - number **GetCollisionResponse**(number type1, number type2)
 
 | Parameter | Description |
