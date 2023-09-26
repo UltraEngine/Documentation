@@ -1,4 +1,4 @@
-# Joint::SetLimits
+# Joint:SetLimits
 
 This method sets the limits of a hinge, slider, or ball and socket joint.
 
