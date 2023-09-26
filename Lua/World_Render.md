@@ -4,21 +4,21 @@ This method sends all queued rendering instructions to the rendering thread and 
 
 ## Syntax
 
-- **Render**(framebuffer: [Framebuffer](Framebuffer.md), vsync: boolean = true, maxframerate: number = 0): void
+- **Render**([Framebuffer](Framebuffer.md) framebuffer, boolean vsync = true, number maxframerate = 0)
 
-## Parameters
-
-- `framebuffer` (type: [Framebuffer](Framebuffer.md)): The framebuffer to render to.
-- `vsync` (type: boolean, optional): If set to true, vertical sync is enabled. Default is true.
-- `maxframerate` (type: number, optional): The maximum allowed framerate, or zero for unlimited. Default is 0.
+| Parameter | Description |
+|---|---|
+| framebuffer | framebuffer to render to |
+| vsync | if set to true vertical sync is enabled |
+| maxframerate | maximum allowed framerate, or zero for unlimited |
 
 ## Remarks
 
-If vertical sync is disabled, the framerate will be uncapped and will usually be higher, but screen tearing artifacts can occur. Vertical sync should be disabled when benchmarking performance.
+If vertical sync is disabled the framerate will be uncapped and will usually be higher, but screen tearing artifacts can occur. Vertical sync should be disabled when benchmarking performance.
 
-Rendering in Ultra Engine is asynchronous, meaning it is executed on a separate thread from your game logic. Consequently, there is some delay between the first call to `World:Render` and the first appearance of visible graphics on the screen. Additionally, initialization of the renderer can fail if the hardware it is running on does not meet system requirements. You can evaluate the `STARTRENDERER` event to wait until the renderer has started drawing before you begin your game logic, to detect if the renderer has failed to initialize, and to retrieve the name of the graphics device the renderer is using. The `event.data` member will be set to 1 if the renderer was initialized successfully, otherwise it will be set to 0. The device name will be stored in the `event.text` member.
+Rendering in Ultra Engine is asychronous, meaning it is executed on a separate thread from your game logic. Consequently, there is some delay between the first call to World::Render and the first appearance of visible graphics on the screen. Additionally, initialization of the renderer can fail if the hardware it is running on does not meet system requirements. You can evaluate the STARTRENDERER event to wait until the renderer has started drawing before you begin your game logic, to detect if the renderer has failed to initialize, and to retrieve the name of the graphics device the renderer is using. The event.data member will be set to 1 if the renderer was initialized successfully, otherwise it will be set to 0. The device name will be stored in the event.text member.
 
-If your game spends a significant amount of time initializing a scene, you can save a few seconds of loading time by calling this method immediately after creating a framebuffer so that Vulkan initialization is performed at the same time your game is loading.
+If your game spendsa significant amount of time initializing a scene, you can save a few seconds of loading time by calling this method immediately after creating a framebuffer so that Vulkan initialization is performed at the same time your game is loading.
 
 ## Example
 
