@@ -8,7 +8,7 @@
 		},
 		{
 			"title": "Editor",
-			"openstate": false,
+			"openstate": true,
 			"filename": "editor",
 			"useLanguage": false,
 			"topics": [
@@ -164,7 +164,7 @@
 		},	   
 		{
 			"title": "Programming Reference",
-			"openstate": false,
+			"openstate": true,
 			"topics": [
 				{
 					"title": "Asset",
