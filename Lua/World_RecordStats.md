@@ -10,6 +10,10 @@ This method is used to enable or disable statistics recording. Statistics record
 |---|---|
 | record | if set to true, statistics recording is enabled. Otherwise, it is disabled |
 
+## Remarks
+
+When statistics recording is enabled, the world [RenderStats](RenderStats.md), [AnimationStats](AnimationStats.md), and [PhysicsStats](PhysicsStats.md) information will be available.
+
 ## Example
 
 ```lua
