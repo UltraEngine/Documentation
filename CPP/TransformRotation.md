@@ -19,4 +19,4 @@ dst | destination 4x4 matrix or entity
 
 ## Returns
 
-Returns the transformed vector.
+Returns the transformed rotation.
