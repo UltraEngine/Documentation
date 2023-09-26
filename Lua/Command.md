@@ -22,5 +22,10 @@ On the Windows operating system the command output will be piped to a file store
 ## Example
 
 ```lua
-Command("systeminfo | findstr /B /C:\"OS Name\"")
+local stream = CreateBufferStream()
+Command("systeminfo | findstr /B /C:\"OS Name\"", stream)
+
+while not stream:Eof() do
+    Print(stream:ReadLine())
+end
 ```
