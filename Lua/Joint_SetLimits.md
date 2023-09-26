@@ -4,7 +4,7 @@ This method sets the limits of a hinge, slider, or ball and socket joint.
 
 ## Syntax
 
-- void **SetLimits**(number lower, number upper)
+- **SetLimits**(number lower, number upper)
 
 | Parameter | Description |
 |---|---|
