@@ -4,15 +4,15 @@ This method reloads an asset from a file on the disk. If changes were made to th
 
 ## Syntax
 
-- **Reload**(flags: number)
+- **Reload**(number flags)
 
 | Parameter | Description |
 |---|---|
-| *flags* | load flags |
+| flags | load flags |
 
 ## Returns
 
-If successful, `true` is returned. Otherwise, `false` is returned.
+If successful, true is returned. Otherwise, false is returned.
 
 ## Example
 
