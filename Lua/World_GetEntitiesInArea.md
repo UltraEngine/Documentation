@@ -6,11 +6,10 @@ This method efficiently retrieves all entities that intersect the specified boun
 
 - [table](https://www.lua.org/manual/5.4/manual.html#6.6) **GetEntitiesInArea**([xVec3](xVec3.md) minbounds, [xVec3](xVec3.md) maxbounds)
 
-## Parameters
-
 Parameter | Description
 ---|---
-area | bounding box to test for intersecting entities
+minbounds | lower bounds of area
+maxbounds | upper bounds of area
 
 ## Returns
 
