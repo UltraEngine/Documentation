@@ -4,14 +4,14 @@ This function creates a new slider joint. A hinge joint moves freely along the j
 
 ## Syntax
 
-`CreateSliderJoint(position, axis, parent, child)`
+- [Joint](Joint.md) **CreateSliderJoint**([xVec3](xVec3.md) position, [xVec3](xVec3.md) axis, [Entity](Entity.md) parent, [Entity](Entity.md) child)
 
-- `position` (xVec3): position of the joint
-- `axis` (xVec3): axis the joint will slide along
-- `parent` (Entity): joint parent or `nil` for a fixed point
-- `child` (Entity): joint child
-
-Returns: [Joint](Joint.md) object
+| Parameter | Description |
+|---|---|
+| position | position of the joint |
+| axis | axis the joint will slide along |
+| parent | joint parent or NULL for a fixed point |
+| child | joint child |
 
 ## Example
 
