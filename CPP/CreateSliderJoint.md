@@ -5,12 +5,11 @@ This function creates a new slider joint. A hinge joint moves freely along the j
 ## Syntax
 
 - shared_ptr<[Joint](Joint.md)> **CreateSliderJoint**(const [xVec3](xVec3.md)& position, const [xVec3](xVec3.md)& axis, shared_ptr<[Entity](Entity.md)> parent, shared_ptr<[Entity](Entity.md)> child)
-- shared_ptr<[Joint](Joint.md)> **CreateSliderJoint**(const dFloat x, const dFLoat y, const dFloat z, const dFloat dx, const dFloat dy, const dFloat dz, shared_ptr<[Entity](Entity.md)> parent, shared_ptr<[Entity](Entity.md)> child) 
 
 | Parameter | Description |
 |---|---|
-| position, (x, y, z) | position of the joint |
-| axis (dx, dy, dz) | axis the joint will slide along |
+| position | position of the joint |
+| axis | axis the joint will slide along |
 | parent | joint parent or NULL for a fixed point |
 | child | joint child |
 
