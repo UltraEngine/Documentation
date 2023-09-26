@@ -31,7 +31,7 @@ If a filter callback is provided it will be called for each entity that is evalu
 local displays = GetDisplays()
 
 -- Create window
-local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR)
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
 -- Create world
 local world = CreateWorld()
@@ -85,11 +85,16 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     pivot:Turn(0.0, spin_speed, 0.0)
 
     local target_pos = Vec3(0.0, 0.0, rod_scale)
-    target_pos = TransformPoint(target_pos, Mat4(), pivot:GetMatrix(true):Inverse())
+
+    local m = pivot:GetMatrix(true)
+    m = m:Inverse()
+    local identity = Mat4(1)
+
+    target_pos = TransformPoint(target_pos, identity, m)
 
     -- Perform a ray cast
-    local pick_info = world:Pick(pivot:GetPosition(true), target_pos, 0.25, true, PickFilter)
-    if pick_info.success then
+    local pick_info = world:Pick(pivot:GetPosition(true), target_pos, 0.25, true)
+    if pick_info.entity then
         sphere:SetPosition(pick_info.position, true)
     else
         sphere:SetPosition(target_pos, true)
@@ -101,6 +106,4 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
     -- Render the world
     world:Render(framebuffer)
 end
-
-return 0
 ```
