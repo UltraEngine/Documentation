@@ -1,24 +1,12 @@
-```lua
--- World:SetGravity
+# World::SetGravity
 
--- Sets the gravitational vector applied uniformly across the world.
--- @param gravity table: gravitational force to set, in meters per second squared
---     - gravity.x number: gravity along the x-axis
---     - gravity.y number: gravity along the y-axis
---     - gravity.z number: gravity along the z-axis
--- @return void
+The methods sets the gravitational vector applied uniformly across the world.
 
-function World:SetGravity(gravity)
-    -- Implementation logic here
-end
-```
+## Syntax
 
-## Example
+- **SetGravity**([xVec3](xVec3.md) gravity)
+- **SetGravity**(number x, number y, number z)
 
-```lua
--- Create a new instance of the World class
-local world = World()
-
--- Set the gravity to (0, -9.8, 0) m/s^2
-world:SetGravity(0, -9.8, 0)
-```
+| Parameter | Description |
+|---|---|
+| gravity, (x, y, z) | gravitional force to set, in meters per second squared |
