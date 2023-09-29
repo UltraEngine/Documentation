@@ -9,4 +9,4 @@ This method manually sets the face texture mapping planes, overriding the defaul
 
 | Parameter | Description |
 |---|---|
-| scale, (x, y) | texture scale to set |
+| scale, (x, y) | texture scale to set, in texels per meter |
