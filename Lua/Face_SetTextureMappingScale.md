@@ -11,6 +11,6 @@ This method manually sets the face texture mapping planes, overriding the defaul
 |---|---|
 | scale, (x, y) | texture scale to set, in texels per meter |
 
-# Remarks
+## Remarks
 
 The default brush texture mapping scale is 400, meaning that 400 pixels cover an area of one meter. With this scaling factor, a 1024 x 1024 texture will cover a 256 x 256 centimeter area.
