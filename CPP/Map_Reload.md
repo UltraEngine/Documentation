@@ -5,7 +5,7 @@ This method reloads the states of the entities in a scene from a file, without r
 ## Syntax
 
 - bool **Reload**(const [WString](WString.md)& path, const LoadFlags flags = LOAD_DEFAULT)
-- bool **Reload**(shared_ptr<[Stream](Stream.md)\> stream, shared_ptr<[Stream](Stream.md)\> binstream, const LoadFlags flags = LOAD_DEFAULT)
+- bool **Reload**(shared_ptr<[Stream](Stream.md)\> stream, const LoadFlags flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
