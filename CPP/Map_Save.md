@@ -61,9 +61,9 @@ int main(int argc, const char* argv[])
     auto ground = CreateBox(world, 10, 1, 10);
     ground->SetPosition(0, -0.5, 0);
     ground->SetColor(0, 1, 0);
-    
+
     //Create a scene
-    auto scene = std::make_shared<Scene>();
+    auto scene = CreateMap();
     scene->entities.push_back(ground);
     scene->entities.push_back(light);
     ground = NULL;
@@ -74,15 +74,13 @@ int main(int argc, const char* argv[])
     {
         auto box = CreateBox(world);
         box->SetColor(0, 0, 1);
-        box->SetPosition(Random(-5,5), Random(5, 10), Random(-5, 5));
+        box->SetPosition(Random(-5, 5), Random(5, 10), Random(-5, 5));
         box->SetMass(1);
         scene->entities.push_back(box);
     }
 
-    //Save the starting scene to memory
-    auto stream = CreateBufferStream();
-    auto binstream = CreateBufferStream();
-    scene->Save(stream,binstream);
+    //Save the starting scene to a file
+    scene->Save("game.sav");
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
@@ -90,9 +88,7 @@ int main(int argc, const char* argv[])
         //Reload the starting scene when space key is pressed
         if (window->KeyHit(KEY_SPACE))
         {
-            stream->Seek(0);
-            binstream->Seek(0);
-            scene = LoadScene(world, stream, binstream);
+            scene->Reload("game.sav");
         }
 
         world->Update();
