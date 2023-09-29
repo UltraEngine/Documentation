@@ -5,7 +5,7 @@ This method reloads the states of the entities in a scene from a file, without r
 ## Syntax
 
 - boolean **Reload**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = LOAD_DEFAULT)
-- boolean **Reload**([Stream](Stream.md) stream, [Stream](Stream.md) binstream, number flags = LOAD_DEFAULT)
+- boolean **Reload**([Stream](Stream.md) stream, number flags = LOAD_DEFAULT)
 
 | Parameter | Description |
 |---|---|
