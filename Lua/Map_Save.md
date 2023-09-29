@@ -5,7 +5,7 @@ This method saves a scene to a file or stream.
 ## Syntax
 
 - boolean **Save**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = SAVE_DEFAULT)
-- boolean **Save**([Stream](Stream.md) stream, [Stream](Stream.md) binstream, number flags = SAVE_DEFAULT)
+- boolean **Save**([Stream](Stream.md) stream, number flags = SAVE_DEFAULT)
 
 | Parameter | Description |
 |---|---|
