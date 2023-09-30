@@ -68,19 +68,15 @@ for n = 1, 10 do
     scene.entities[#scene.entities + 1] = box
 end
 
--- Save the starting scene to memory
-local stream = CreateBufferStream()
-local binstream = CreateBufferStream()
-scene:Save(stream, binstream)
+-- Save the starting scene to a file
+scene:Save(stream, "game.sav")
 
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
 
     -- Reload the starting scene when space key is pressed
     if window:KeyHit(KEY_SPACE) then
-        stream:Seek(0)
-        binstream:Seek(0)
-        scene:Reload(stream, binstream)
+        scene:Reload(stream, "game.sav")
     end
 
     world:Update()
