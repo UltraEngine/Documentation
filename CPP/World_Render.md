@@ -20,6 +20,8 @@ Rendering in Ultra Engine is asychronous, meaning it is executed on a separate t
 
 If your game spendsa significant amount of time initializing a scene, you can save a few seconds of loading time by calling this method immediately after creating a framebuffer so that Vulkan initialization is performed at the same time your game is loading.
 
+Changing the vsync parameter forces recreation of the framebuffer swapchain. Applications should not frequently switch this setting.
+
 ## Example
 
 ```c++
