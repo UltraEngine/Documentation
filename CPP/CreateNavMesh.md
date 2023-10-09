@@ -56,7 +56,7 @@ int main(int argc, const char* argv[])
     light->SetRange(-20, 20);
     light->SetArea(20, 20);
     light->SetRotation(35, 35, 0);
-    light->SetColor(3);
+    light->SetColor(2);
 
     //Create scene
     auto ground = CreateBox(world, 10, 1, 10);
