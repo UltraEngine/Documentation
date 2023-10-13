@@ -1,23 +1,27 @@
 # Editor Interface
 
-When you start the Ultra Engine editor, the interface will look like this:
+Upon launching the Ultra Engine editor, you'll be greeted with interface shown below:
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/defaultviewmax.png?raw=true)
 
-The main window displays a toolbar across the top, four viewports for viewing the map, and a side panel containing additional controls.
+The main window is composed of a top toolbar, four viewports for map visualization, and a versatile side panel that hosts various essential controls.
 
-The toolbar contains button to open, reset, or save the map, buttons to select the current mouse tool, and buttons to show or hide the side panel and console.
+**Toolbar**: Located at the top, the toolbar boasts a range of functionalities. You can utilize buttons to open, reset, or save your map. Additionally, you'll find buttons to select the current mouse tool and toggle the visibility of the side panel and console.
 
-The console displays the program log, warnings, and errors. Lua commands can be entered into the text field at the bottom and executed.
+**Console**: This section serves as your hub for program information, including logs, warnings, and errors. It also provides a text input field for executing Lua commands.
 
-The side panel contains tabs for the object panel, asset browser, and map browser.
+**Side Panel**: This comprehensive panel is divided into tabs for easy navigation:
 
-The object panel displays object templates you can select to create a new object.
+**Object Panel**: The Object Panel showcases a selection of object templates that you can use to create new objects.
 
-The asset browser shows your game's directory and files.
+**Asset Browser**: The Asset Browser grants access to your game's directory and the files it contains.
 
-The map browser shows all the objects in the current scene, as well as allowing you to view and edit properties.
+**Map Browser**: In the Map Browser, you can explore all objects within the current scene and conveniently view and edit their properties.
 
-When the brush face tool is selected, the face panel shows the texture mapping properties of any selected faces.
+Furthermore, depending on your selected mouse tool the following interfaces may appear in the side panel:
 
-When the terrain tool is selected, the terrain panel shows the selected terrain's material layers, as well as tools to modify the terrain.
+**Brush Face Tool**: This tool brings up the Face Panel, which offers control over texture mapping properties for selected faces.
+
+**Terrain Tool**: When using the Terrain Tool, the Terrain Panel appears, allowing you to manage material layers associated with the selected terrain and providing tools for terrain modification.
+
+This streamlined interface empowers you to efficiently navigate and manipulate your game world within the Ultra Engine editor.
