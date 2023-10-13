@@ -54,7 +54,7 @@ int main(int argc, const char* argv[])
     auto fan = LoadModel(world, "https://github.com/UltraEngine/Documentation/raw/master/Assets/Models/Underground/fanblades.glb");
     fan->SetPosition(0, 2, 0);
     auto mover = fan->AddComponent<Mover>();
-    mover->rotation.z = 300;
+    mover->rotationspeed.z = 300;
 
     auto light = CreatePointLight(world);
     light->SetColor(2, 2, 2);
