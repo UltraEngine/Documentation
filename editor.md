@@ -6,13 +6,13 @@ Upon launching the Ultra Engine editor, you'll be greeted with the interface sho
 
 The main window contains a top toolbar, four viewports for map visualization, the bottom console, and a side panel that hosts various essential controls.
 
-**Toolbar**: Located at the top, the toolbar boasts a range of functionalities. You can utilize buttons to open, reset, or save your map. Additionally, you'll find buttons to select the current mouse tool and toggle the visibility of the side panel and console.
+[Toolbar](toolbar.md): Located at the top, the toolbar boasts a range of functionalities. You can utilize buttons to open, reset, or save your map. Additionally, you'll find buttons to select the current mouse tool and toggle the visibility of the side panel and console.
 
 [Console](console.md): This section serves as your hub for program information, including logs, warnings, and errors. It also provides a text input field for executing Lua commands.
 
 **Side Panel**: This comprehensive panel is divided into tabs for easy navigation:
 
-- **Object Panel**: The Object Panel showcases a selection of object templates that you can use to create new objects.
+- [Object Panel](objectpanel.md): The Object Panel showcases a selection of object templates that you can use to create new objects.
 
 - [Asset Browser](assetbrowser.md): The Asset Browser grants access to your game's directory and the files it contains.
 
