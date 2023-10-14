@@ -10,8 +10,12 @@ The Project Manager allows you to effortlessly access and select from a list of 
 ## Project Creation
 Creating new projects is a breeze with the "Create" button in the Project Manager. This feature initiates a wizard that guides you through the project creation process. It enables you to define project settings, ensuring that your new project is configured to your specific requirements from the start.
 
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/projectwizard.png?raw=true)
+
 ## Synchronization
 The Sync button will appear next to a project when new files are available. It allows you to effortlessly update a project with any changes that have occurred in its original template files. This ensures that your project stays up to date with the latest template improvements and modifications.
+
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/syncproject.png?raw=true)
 
 ## Flexible Project Loading
 The Project Manager offers flexibility by allowing you to load any folder as a new project. This means you can convert existing folders into fully-fledged projects, which are then seamlessly integrated into your projects list. This versatility makes it easy to work with a variety of data sources and project structures.
