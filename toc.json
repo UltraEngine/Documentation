@@ -30,12 +30,8 @@
 								"filename": "console"
 							},
 							{
-								"title": "Face Editor",
-								"filename": "faceeditor"
-							},
-							{
-								"title": "Objects Bar",
-								"filename": "objectsbar"
+								"title": "Face Panel",
+								"filename": "facepanel"
 							},
 							{
 								"title": "Objects Panel",
@@ -50,12 +46,12 @@
 								"filename": "projectmanager"
 							},
 							{
-								"title": "Scene Browser",
-								"filename": "scenebrowser"
+								"title": "Map Browser",
+								"filename": "mapbrowser"
 							},
 							{
-								"title": "Terrain Editor",
-								"filename": "terraineditorl"
+								"title": "Terrain Panel",
+								"filename": "terrainpanel"
 							},
 							{
 								"title": "Toolbar",
