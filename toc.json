@@ -497,6 +497,10 @@
 									"filename": "Model_Clear"
 								},
 								{
+									"title": "Collapse",
+									"filename": "Model_Collapse"
+								},
+								{
 									"title": "CreateBox",
 									"filename": "CreateBox"
 								},
