@@ -1,6 +1,6 @@
 # Editor
 
-Upon launching the Ultra Engine editor, you'll be greeted with interface shown below:
+Upon launching the Ultra Engine editor, you'll be greeted with the interface shown below:
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/defaultview.png?raw=true)
 
