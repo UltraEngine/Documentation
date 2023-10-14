@@ -4,8 +4,6 @@ The View Panel takes up mpst of the main window and serves as the gateway to the
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/viewpanel.png?raw=true)
 
-Here's a detailed overview of the View Panel and how it functions:
-
 By default, the View Panel is subdivided into four viewports showing three orthographic views and a 3D perspective view.
 
 You can customize the View Panel to show three, two, or just a single viewport, depending on your specific needs.
