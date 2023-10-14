@@ -1,19 +1,37 @@
 # Asset Editor
 
-The asset editor is in a separate window. You can open any asset by double-clicking it in the [asset browser](assetbrowser.md). The item will appear in a new tab in the asset editor window.
+The Asset Editor is a dedicated workspace for interacting with and editing various assets within Ultra Engine. Here's an overview of how it works:
 
-The appearance of this window will change slightly based on the type of asset that is opened in it. When a model is opened, two tabs appear. If the model is animated, an animation bar will be visible at the bottom of the window, with controls for selecting and playing animations.
+## Opening Assets
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor.png?raw=true)
+To access the Asset Editor, simply double-click the desired asset in the [Asset Browser](assetbrowser.md). This action will open the asset in a new tab within the Asset Editor window.
 
-Any embedded materials and textures packed into the model file can be selected and modified in this interface.
+![Asset Editor](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor.png?raw=true)
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor2.png?raw=true)
+## Asset-Specific Views
 
-When a material is opened in the asset editor, the properties tab will contain all material settings and textures.
+The appearance and available features within the Asset Editor window may vary based on the type of asset you've opened:
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/materialeditor.png?raw=true)
+### Model Assets
 
-When a texture is opened in the asset editor, all texture settings are displayed.
+When a model asset is opened, two tabs appear in the Asset Editor window. If the model includes animations, you'll find an animation bar at the bottom of the window, complete with controls for selecting and playing animations.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/textureeditor.png?raw=true)
+![Model Editor](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor.png?raw=true)
+
+In the Model Editor, you can also work with any embedded materials and textures packed into the model file, allowing you to select and modify these resources conveniently.
+
+![Model Editor - Materials and Textures](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor2.png?raw=true)
+
+### Material Assets
+
+For material assets, the Asset Editor's properties tab provides access to all material settings and associated textures, enabling you to fine-tune the appearance and behavior of materials.
+
+![Material Editor](https://github.com/UltraEngine/Documentation/blob/master/Images/materialeditor.png?raw=true)
+
+### Texture Assets
+
+When you open a texture asset in the Asset Editor, you'll find an interface that displays all relevant texture settings. This allows you to edit and customize the properties of the texture.
+
+![Texture Editor](https://github.com/UltraEngine/Documentation/blob/master/Images/textureeditor.png?raw=true)
+
+The Asset Editor is a versatile tool that adapts to the specific needs of different asset types, providing an efficient and user-friendly environment for asset management and editing.
