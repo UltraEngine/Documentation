@@ -1,6 +1,8 @@
 # Editor
 
-Upon launching the Ultra Engine editor, you'll be greeted with the interface shown below:
+The first time you run the Ultra Engine editor, the [project wizard](projectqizard.md) will prompt you to create a new project.
+
+Upon launching a project in the Ultra Engine editor, you'll be greeted with the interface shown below:
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/defaultview.png?raw=true)
 
