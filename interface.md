@@ -4,7 +4,7 @@ Upon launching the Ultra Engine editor, you'll be greeted with interface shown b
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/defaultview.png?raw=true)
 
-The main window is composed of a top toolbar, four viewports for map visualization, and a versatile side panel that hosts various essential controls.
+The main window contains a top toolbar, four viewports for map visualization, the bottom console, and a side panel that hosts various essential controls.
 
 **Toolbar**: Located at the top, the toolbar boasts a range of functionalities. You can utilize buttons to open, reset, or save your map. Additionally, you'll find buttons to select the current mouse tool and toggle the visibility of the side panel and console.
 
