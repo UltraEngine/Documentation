@@ -2,6 +2,11 @@
 
 The asset editor is in a separate window. You can open any asset by double-clicking it in the [asset browser](assetbrowser.md). The item will appear in a new tab in the asset editor window.
 
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor.png?raw=true)
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/modeleditor2.png?raw=true)
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/materialeditor.png?raw=true)
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/textureeditor.png?raw=true)
+
 ## Side Panel
 
 The side panel contains file information and tools for editing the asset....
