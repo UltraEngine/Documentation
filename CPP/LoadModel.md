@@ -26,7 +26,7 @@ Ultra Engine natively supports glTF, OBJ, and Leadwerks MDL files. JPEG and PNG 
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/CameraControls.hpp"
+#include "Components/Player/CameraControls.hpp"
 
 using namespace UltraEngine;
 
