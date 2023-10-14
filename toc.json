@@ -41,6 +41,10 @@
 					"filename": "mapbrowser"
 				},
 				{
+					"title": "Project Managrr",
+					"filename": "projectmanager"
+				},
+				{
 					"title": "Terrain Panel",
 					"filename": "terrainpanel"
 				},
