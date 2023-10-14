@@ -1,6 +1,6 @@
 # Editor
 
-The first time you run the Ultra Engine editor, the [project wizard](projectwizard.md) will prompt you to create a new project.
+The first time you run the Ultra Engine editor, the [project manager](projectmanager.md) will appear so that you can create a new project to work with.
 
 Upon launching a project in the Ultra Engine editor, you'll be greeted with the interface shown below:
 
