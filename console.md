@@ -11,3 +11,5 @@ Notify("Hello, world!")
 ```
 
 Press the enter key to execute the command.
+
+If you want to see the value of a variable in the Lua virtual machine, just type the variable name by itself and press the Enter key.
