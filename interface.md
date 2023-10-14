@@ -14,7 +14,7 @@ The main window contains a top toolbar, four viewports for map visualization, th
 
 - **Object Panel**: The Object Panel showcases a selection of object templates that you can use to create new objects.
 
-- **Asset Browser**: The Asset Browser grants access to your game's directory and the files it contains.
+- [Asset Browser](assetbrowser.md): The Asset Browser grants access to your game's directory and the files it contains.
 
 - **Map Browser**: In the Map Browser, you can explore all objects within the current scene and conveniently view and edit their properties.
 
