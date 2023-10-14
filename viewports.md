@@ -1,11 +1,21 @@
 # Viewports
 
-The view panel occupies most of the middle of the main window and displays the program viewports. Viewports function as the windows through which we can view the 3D scene. By default the view panel is divided into four viewports showing orthgraphic views of the top, bottom, and side of the scene, with an additional viewport showing a 3D perspective view. The view panel can also be set to display three, two, or one single viewport.
+The View Panel takes up mpst of the main window and serves as the gateway to the program's viewports, which allow visualizing and interacting with your 3D environment.
 
-Each viewport can be changed to show a 3D perspective view or any orthographic view (top, bottom, left, right, front, or back).
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/viewpanel.png?raw=true)
 
-To pan the viewport camera press and hold the middle mouse button on a viewport and drag the mouse.
+Here's a detailed overview of the View Panel and how it functions:
 
-For free-look mode in any 3D perspective viewport, press and hold the right mouse button. Move the mouse to look around, and use the WASD keys to move forward, left, backwards, and right. You can use the mouse wheel to zoom in orthographic viewports or move forward and back in 3D perspective viewports.
+By default, the View Panel is subdivided into four viewports showing three orthographic views and a 3D perspective view.
 
-You can adjust the grid size by pressing the "[" and "]" keys
+You can customize the View Panel to show three, two, or just a single viewport, depending on your specific needs.
+
+Each viewport can be configured to display a 3D perspective view or any of the available orthographic views.
+
+## Navigating Viewports
+
+- **Panning**: To move the camera within a viewport, press and hold the middle mouse button while dragging the mouse. This action allows you to pan the camera and explore your 3D scene from different angles.
+
+- **Free-Look Mode**: In any 3D perspective viewport, you can enter a free-look mode by pressing and holding the right mouse button. This mode enables you to look around by moving the mouse and navigate using the WASD keys for forward, left, backward, and right movements. You can also use the mouse wheel for zooming in orthographic viewports or controlling the camera's distance in 3D perspective viewports.
+
+- **Grid Size Adjustment**: You can easily adjust the grid size for precise object placement by pressing the "[" and "]" keys. This feature is valuable for maintaining accuracy in your scene.
