@@ -2,7 +2,7 @@
 
 The asset browser is divided in half, with the top half containing a search bar and displaying the directory structure of your project. The bottom panel displays thumbnails for all the files in the selected directory.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/assetbrowser.png)
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/assetbrowser.png?raw=true)
 
 You can double click a file icon to open it. If it is a file that Ultra Engine supports, it will be opened in an [asset editor](asseteditor.md) window. Otherwise, the file will load with your system's default program for that file type.
 
