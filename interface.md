@@ -2,7 +2,7 @@
 
 Upon launching the Ultra Engine editor, you'll be greeted with interface shown below:
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/defaultviewmax.png?raw=true)
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/defaultview.png?raw=true)
 
 The main window is composed of a top toolbar, four viewports for map visualization, and a versatile side panel that hosts various essential controls.
 
