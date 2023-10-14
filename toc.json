@@ -37,10 +37,6 @@
 					"filename": "optionswindow"
 				},
 				{
-					"title": "Project Manager",
-					"filename": "projectmanager"
-				},
-				{
 					"title": "Map Browser",
 					"filename": "mapbrowser"
 				},
