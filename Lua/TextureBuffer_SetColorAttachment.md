@@ -23,6 +23,4 @@ The specified texture must have been created with the TEXTURE_BUFFER flag.
 
 The specified texture must be the same dimensions as the texture buffer.
 
-The index value must be less than 5.
-
-The index value must be between 0 and the value returned by [TextureBuffer::CountColorAttachments](TextureBuffer_CountColorAttachments.md).
+The index value must be between 1 and the value returned by [TextureBuffer::CountColorAttachments](TextureBuffer_CountColorAttachments.md).
