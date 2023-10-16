@@ -16,8 +16,6 @@ Ultra Engine is currently available in early access mode, with support for the C
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/#vs-section) (used for C++ programming)
 - [Microsoft Visual Studio Code](https://code.visualstudio.com) (used for shaders, Lua scripts, and file comparison)
 
-You can run the [Ultra Engine benchmarks](https://github.com/UltraEngine/Benchmarks) to make sure your computer is compatible.
-
 ## Installation
 
 First, download and install the [Ultra Engine Client](https://ultraengine.github.io/files/UltraClient.exe). This application will allow you to install different versions of the game engine and receive updates. When you open the application you will be prompted to sign into your Ultra Engine account. If you do not have an account yet, you can create one [here](https://www.ultraengine.com/community/register).
