@@ -50,14 +50,6 @@ Once the game engine is installed you can create a new project in the **Projects
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_newproject.png)
 
-The folder containing your project will be opened. You can open the .sln file with Visual Studio and start coding. If you do not have Visual Studio installed, [download it now](https://visualstudio.microsoft.com/#vs-section). When running the installer, make sure the *Desktop development with C++* option is selected.
-
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/vs_components.png)
-
-You can run any of the [examples](LoadModel.md) in this documentation by copying and pasting the code into your main.cpp file. Compile and run the project and the example will be shown.
-
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.png)
-
 Your project will be listed in the projects panel for easy access.
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_projects.png)
