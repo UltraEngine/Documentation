@@ -19,13 +19,13 @@ Before you dive into C++ programming for Ultra Engine on Windows, ensure you hav
 To start your C++ programming journey with Ultra Engine, follow these steps:
 
 1. **Open Your C++ Ultra Engine Project:**
-   - Locate the `.sln` file in your C++ Ultra Engine project directory.
+   - Locate the .sln file in your C++ Ultra Engine project directory.
    - Open this solution file using Visual Studio Community Edition.
 
 ![Project Files](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.png)
 
 2. **Compile and Run Your Game:**
-   - With your project open in Visual Studio, press `F5` to compile and run your Ultra Engine game.
+   - With your project open in Visual Studio, press F5 to compile and run your Ultra Engine game.
 
 ![Compile and Run](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/vs.png)
 
@@ -37,9 +37,9 @@ You can quickly explore C++ programming in Ultra Engine by trying out example pr
    - Visit the [examples section](https://www.ultraengine.com/learn/LoadModel?lang=cpp) of the documentation.
    - Copy the code from any example you wish to try.
 
-2. **Paste into Your `main.cpp` File:**
-   - Open your `main.cpp` file in Visual Studio.
-   - Paste the copied code into your `main.cpp` file.
+2. **Paste into Your main.cpp File:**
+   - Open your main.cpp file in Visual Studio.
+   - Paste the copied code into your main.cpp file.
 
 3. **Compile and Run:**
    - Compile and run your project in Visual Studio, and the example will be displayed.
