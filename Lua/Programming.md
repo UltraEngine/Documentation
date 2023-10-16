@@ -29,9 +29,9 @@ To begin programming with Lua for Ultra Engine, follow these steps:
 Once your development environment is set up, you can run your Ultra Engine Lua game by following these steps:
 
 1. **Run Your Game:**
-   - Press the `F5` key within Visual Studio Code to launch your Ultra Engine Lua game.
+   - Press the F5 key within Visual Studio Code to launch your Ultra Engine Lua game.
 
 2. **Explore Example Projects:**
-   - If you want to see a working example, you can copy code from [our documentation](https://www.ultraengine.com/learn/LoadModel?lang=lua) and paste it into the `main.lua` file in your project to see it in action.
+   - If you want to see a working example, you can copy code from [our documentation](https://www.ultraengine.com/learn/LoadModel?lang=lua) and paste it into the *Source/main.lua* file in your project to see it in action.
 
 This guide should help you kickstart your Lua development journey with Ultra Engine, making it easier to create your games and simulations.
