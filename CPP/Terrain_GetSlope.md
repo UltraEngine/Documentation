@@ -26,7 +26,7 @@ This example applies a material to a terrain based on the slope at each point.
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/CameraControls.hpp"
+#include "Components/Player/CameraControls.hpp"
 
 using namespace UltraEngine;
 
