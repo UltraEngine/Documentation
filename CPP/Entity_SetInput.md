@@ -63,7 +63,6 @@ int main(int argc, const char* argv[])
     camera->SetPosition(0, 1, -8);
     camera->SetFov(70);
     camera->SetPosition(0, 1.6, 0);
-    camera->AddPostEffect(LoadPostEffect("Shaders/SSAO.fx"));
     camera->SetPosition(player->position + Vec3(0, 1.7, 0));
 
     //Create the scene
