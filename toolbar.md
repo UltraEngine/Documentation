@@ -25,9 +25,9 @@ In the middle section of the Toolbar, you'll discover a set of buttons that cont
 
 - **Scaling**: Adjust the size and proportions of objects.
 
-- **Face**: Select the Face Mouse Tool to interact with brush faces. This can be used to adjust both texture mapping properties and brush geometry.
-
 - **Vertex**: The Vertex Mouse Tool is ideal for working at the vertex level, offering fine-grained control over brush objects.
+
+- **Face**: Select the Face Mouse Tool to interact with brush faces. This can be used to adjust both texture mapping properties and brush geometry.
 
 - **Terrain**: The Terrain Mouse Tool is used for terrain editing, allowing you to sculpt and paint landscapes.
 
