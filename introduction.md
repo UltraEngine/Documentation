@@ -26,8 +26,6 @@ When you sign into your account in the application, it will look like this:
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_start.png)
 
-The **Projects** tab displays a list of your projects for easy access, and allows new project creation.
-
 The **Updates** tab allows you to select and install a version of the engine.
 
 The **Community** tab contains links to community features you can access on our site.
