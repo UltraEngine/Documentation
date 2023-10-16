@@ -10,7 +10,7 @@ You can open an Ultra Engine Lua project in VSCode by double-clicking on the bat
 
 If you don't have it installed already, you will be prompted to download the [Lua debugger addon](https://marketplace.visualstudio.com/items?itemName=devCAT.lua-debug). This will allow you to debug Ultra Engine games written with Lua.
 
-To support Lua debugging, you must also enable the "Allow Breakpoints Everywhere" option in the User > Features > Debug settings.
+To support Lua debugging, you must also enable the "Allow Breakpoints Everywhere" option in the *User > Features > Debug* settings.
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/breakpoints.png?raw=true)
 
