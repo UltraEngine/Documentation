@@ -20,7 +20,7 @@ This example lets you cut holes in the terrain.
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/CameraControls.hpp"
+#include "Components/Player/CameraControls.hpp"
 
 using namespace UltraEngine;
 
