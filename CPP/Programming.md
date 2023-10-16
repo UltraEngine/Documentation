@@ -6,7 +6,11 @@ To get started with C++ in Ultra Engine on Windows, install [Visual Studio Commu
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/vs_components.png)
 
-To start programming, just open the .sln file found in your C++ Ultra Engine project. Press F5 to compile and run your game.
+To start programming, just open the .sln file found in your C++ Ultra Engine project.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/projectfiles.png)
+
+Press F5 to compile and run your game.
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/vs.png)
 
