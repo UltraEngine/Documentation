@@ -9,4 +9,4 @@ This method sets the layer texture mapping scale.
 | Parameter | Description |
 |---|---|
 | layer | the index of the layer to use |
-| scale | texture mapping scale to set |
+| scale | texture mapping scale to set, in texels per meter |
