@@ -36,9 +36,7 @@ The **Billing** tab contains information about your account and plan.
 
 The **Settings** tab contains various settings for the cient application.
 
-When your subscription plan is active, you can select a channel in the **Updates** panel and install the engine. If your plan is not active, you can renew it [here](https://www.ultraengine.com/community/store/category/1-software/).
-
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_install.png)
+When your license is active, you can select a channel in the **Updates** panel and install the engine. If you do not have a license you can get one [here](https://www.ultraengine.com/community/store/category/1-software/).
 
 The default channel will contain the current stable build, which does not change. You can select a newer version and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
 
