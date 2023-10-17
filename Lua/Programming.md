@@ -1,6 +1,6 @@
 # Programming with Lua
 
-Lua is a versatile scripting language widely employed in a multitude of games, ranging from popular titles like Angry Birds to complex ones like Call of Duty. Its simplicity and flexibility make it an excellent choice for both novice developers and experienced programmers looking to swiftly bring their ideas to life. Lua debugging integration in Ultra Engine makes Lua a first-class programming language for game development.
+Lua is a versatile scripting language widely employed in a multitude of games, ranging from popular titles like Angry Birds to complex ones like Call of Duty. Its simplicity and flexibility make it an excellent choice for both novice developers and experienced programmers looking to swiftly bring their ideas to life.
 
 ## Getting Started
 
