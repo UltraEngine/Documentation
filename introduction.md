@@ -14,7 +14,7 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/#vs-section) (used for C++ programming)
-- [Microsoft Visual Studio Code](https://code.visualstudio.com) (used for shaders, Lua scripts, and file comparison)
+- [Microsoft Visual Studio Code](https://code.visualstudio.com) (used for Lua and GLSL programming)
 
 ## Installation
 
