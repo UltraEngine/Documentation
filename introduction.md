@@ -61,14 +61,3 @@ If your code does not load any plugins you do not need to include the DLLs in th
 You should not distribute any files from the client application folder like the library, headers, template files, etc.
 
 The only dependency your end users need to install is the [Microsoft Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe). There's a good chance they already have it installed from another game or application, but you should package this in your installer or select it in the install settings for your game on Steam.
-
-## Continuing Development
-
-This is just the beginning. There's a lot more great technology on the way! Here are some of the main features in development:
-
-- C# programming support
-- Hardware raytracing
-- Linux and Mac support
-- Oculus Quest support
-
-Your feedback is always valued, so feel free to [make a suggestion](https://www.ultraengine.com/community/forum/3-suggestion-box/) for any features you'd like to see in upcoming releases.
