@@ -25,5 +25,3 @@ Furthermore, depending on your selected mouse tool the following interfaces may 
 - [Face Panel](facepanel.md): This tool brings up the face panel, which offers control over texture mapping properties for selected faces.
 
 - [Terrain Panel](terrainpanel.md): When using the terrain tool, the Terrain Panel appears, allowing you to manage material layers associated with the selected terrain and providing tools for terrain modification.
-
-This streamlined interface empowers you to efficiently navigate and manipulate your game world within the Ultra Engine editor.
