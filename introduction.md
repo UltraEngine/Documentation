@@ -8,6 +8,7 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 - Discrete GPU with support for Vulkan 1.3 (integrated graphics are not supported yet)
 - Windows 10 or 11
+- [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 
 #### Additional Recommended Software
 
