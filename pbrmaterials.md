@@ -2,10 +2,6 @@
 
 Ultra Engine makes use of physically-based rendering (PBR) to deliver next-gen visuals with realistic lighting. Several different settings in materials and the environment combine to produce the appearance of a surface.
 
-Direct lighting is achieved with point, spot, directional, and box lights. These each use a different lighting equation to simulate a light source with texture-based shadows (shadow maps).
-
-Indirect lighting is achieved through a set of world environment textures and smaller local environment probes. Because PBR materials accurately reflect the surrounding environment, it's important to have good reflection data.
-
 ## Creating Materials
 
 PBR materials consist of many layers of data, compacted into different color channels, stored in different pixel formats. The easiest way to create materials is to let the editor do all the work for you. 
@@ -57,6 +53,10 @@ It's important to note that the more metallic a surface is, the more it depends 
 In practice, most of your basic materials without metal / roughness maps will use 100% roughness and 0% metalness.
 
 ## PBR Lighting
+
+Direct lighting is achieved with point, spot, directional, and box lights. These each use a different lighting equation to simulate a light source with texture-based shadows (shadow maps). Note that highly metallic objects will not be affected very strongly by direct lighting, since they are highly reflective and just show the environment around them.
+
+Indirect lighting is achieved through a set of world environment textures and smaller local environment probes. Because PBR materials accurately reflect the surrounding environment, it's important to have good reflection data.
 
 Reflections are a very important part of physically-based materials. If the world does not have diffuse and specular environment maps set, materials will look quite dark.
 
