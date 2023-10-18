@@ -55,3 +55,17 @@ The *metalness* setting indicates how metallic a material is. When a metal / rou
 It's important to note that the more metallic a surface is, the more it depends on the surrounding environment to provide reflections. If a material is completely metal, but no environment maps have been set for the world, then the surface will appear black.
 
 In practice, most of your basic materials without metal / roughness maps will use 100% roughness and 0% metalness.
+
+## PBR Lighting
+
+Reflections are a very important part of physically-based materials. If the world does not have diffuse and specular environment maps set, materials will look quite dark.
+
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrnone.jpg?raw=true)
+
+When diffuse and specular reflection maps are added to the world, the whole scene comes alive.
+
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbsky.jpg?raw=true)
+
+This is better, but the appearance of the scene is oddly bright because only the sky color is being reflected. To get the best appearance we can create environment probes to enclose different areas of our map.
+
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrprobe.jpg?raw=true)
