@@ -1,73 +1,69 @@
 # Physically-based Materials
 
-Ultra Engine makes use of physically-based rendering (PBR) to deliver next-gen visuals with realistic lighting. Several different settings in materials and the environment combine to produce the appearance of a surface.
+Ultra Engine employs physically-based rendering (PBR) to achieve next-generation visual quality with realistic lighting. PBR combines various material and environmental settings to create realistic surface appearances.
 
 ## Creating Materials
 
-PBR materials consist of many layers of data, compacted into different color channels, stored in different pixel formats. The easiest way to create materials is to let the editor do all the work for you by automatically generating materials from textures.
+PBR materials are a complex blend of data layers compacted into different color channels and stored in various pixel formats. The easiest way to create PBR materials is by leveraging the editor's ability to automatically generate materials from textures.
 
-You can download free PBR images from a variety of websites including [ambientCG](https://www.ambientcg.com) and [Polyhaven](https://www.polyhaven.com). For this example, we will use a texture set that shows a rusted metallic surface.
+To get started, you can obtain free PBR images from websites like [ambientCG](https://www.ambientcg.com) and [Polyhaven](https://www.polyhaven.com). In this example, we will use a texture set featuring a rusted metallic surface.
 
-[Download the texture pack](https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/pbrtextures.zip) and extract the contents into your Ultra Engine project. The extracted images will look like this:
+1. [Download the texture pack](https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/pbrtextures.zip) and extract its contents into your Ultra Engine project. The extracted images will look like this:
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrtextures.png?raw=true)
+   ![Texture Pack](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrtextures.png?raw=true)
 
-In the Ultra Engine editor, navigate to this folder in the [asset browser](assetbrowser.md). Right-click on the file *MetalPlates013_1K-PNG_Color.png*, select the *Generate Material* menu item, and wait a moment. The editor will identify the different image files, combine channels, and compress the images into opimized texture files.
+2. In the Ultra Engine editor, navigate to this folder in the [asset browser](assetbrowser.md). Right-click on the file *MetalPlates013_1K-PNG_Color.png*, select the *Generate Material* menu item, and wait for the editor to identify the different image files, combine channels, and compress the images into optimized texture files.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrgenmaterial.png?raw=true)
+   ![Material Generation](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrgenmaterial.png?raw=true)
 
-If you open the resulting material file, you can see the textures have been combined to make a beautiful surface with interesting variation in its reflectivity and appearance.
+3. Open the resulting material file to observe how the textures have been combined, creating a surface with appealing variations in reflectivity and appearance.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrgenmaterial2.png?raw=true)
+   ![Generated Material](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrgenmaterial2.png?raw=true)
 
-Here's what the material generation algorithm does:
+The material generation algorithm performs the following steps:
 
-1. The base / diffuse map is converted into optimized BC7 format and saved as a DDS file.
+- The base/diffuse map is converted into an optimized BC7 format and saved as a DDS file.
+- The normal map is converted into an optimized BC5 format and saved as a DDS file. BC5 removes the Z-axis from the normal to make room for more data on the other two components, with the Z-axis reconstructed in the fragment shader. BC5 is the only compressed texture format suitable for normal maps.
+- If available, the metalness and roughness maps are combined into the green and blue channels of a single texture and saved in BC7 format. If a metalness map is found, the material's metalness setting is set to 1.0.
+- If an ambient occlusion map is present and a metalness roughness map exists, the ambient occlusion data is packed into the red channel of the metalness/roughness map. Otherwise, the ambient occlusion map will be saved as a single texture in BC4 format for compressing single-channel images.
+- If a displacement map is found, it will be saved in an uncompressed single-channel image. Texture compression should not be used with displacement maps.
 
-2. The normal map is converted into optimized BC5 format and saved as a DDS file. BC5 removes the Z-axis from the normal to make room for more data on the other two components, and the Z-axis will be reconstructed in the fragment shader. BC5 is the only compressed texture format that should be used with normal maps.
+While manually adjusting these settings can be time-consuming, the built-in material generation tool can create optimized materials from raw images in seconds. You can modify the suffixes used by the material generation feature in the program options, specifically in the *Material Generation* settings.
 
-3. If they are present, the metalness and roughness maps are combined into the green and blue channels of a single texture, and saved in BC7 format. If a metalness map is found, the material's metalness setting is set to 1.0.
-
-4. If an ambient occlusion map is present, and a metalness roughness map exists, the ambient occlusion data is packed into the red channel of the metalness / roughness map. Otherwise, the ambient occlusion map will be saved as a single texture in BC4 format, for compression of single-channel images.
-
-5. If a displacement map is found, it will be saved in an uncompressed single-channel image. Texture compression should never be used with displacement maps.
-
-This would all be very time consuming to adjust by hand, but the built-in material generation tool can create optimized materials from raw images in just a few seconds. It does this by searching for common endings for file names and guessing which image goes where. You can modify these suffixes used by the material generation feature in the program options, in the *Material Generation* settings.
-
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/genmatsettings.png?raw=true)
+   ![Material Generation Settings](https://github.com/UltraEngine/Documentation/blob/master/Images/genmatsettings.png?raw=true)
 
 ## Material Settings
 
-The most important setting for PBR materials are roughness and metalness.
+The most crucial settings for PBR materials are *roughness* and *metalness*.
 
 ### Roughness
 
-The *roughness* setting indicates how rough a material's microsurface is. When a metal / roughness map is present, the roughness settings will act as a multiplier, so it should usually be set to 1.0 / 100%. If a metallic roughness map is not present, then this setting alone controls how rough the surface appears.
+The *roughness* setting indicates the microsurface roughness of a material. When a metal/roughness map is present, the roughness setting acts as a multiplier, usually set to 1.0 (100%). If there's no metallic roughness map, this setting alone controls the surface's roughness.
 
 ### Metalness
 
-The *metalness* setting indicates how metallic a material is. When a metal / roughness map is present, the metalness settings will act as a multiplier, so it should usually be set to 1.0 / 100%. If a metallic roughness map is not present, then this setting alone controls how metallic the surface appears.
+The *metalness* setting reflects the metallic properties of a material. Like roughness, when a metal/roughness map is present, the metalness setting acts as a multiplier, typically set to 1.0 (100%). If there's no metallic roughness map, this setting alone determines the material's metallic appearance.
 
-It's important to note that the more metallic a surface is, the more it depends on the surrounding environment to provide reflections. If a material is completely metal, but no environment maps have been set for the world, then the surface will appear black.
+It's important to note that the more metallic a surface is, the more it relies on the surrounding environment for reflections. A completely metallic material without environment maps will appear black.
 
-In practice, most of your basic materials without metal / roughness maps will use 100% roughness and 0% metalness.
+In practice, most basic materials without metal/roughness maps will use 100% roughness and 0% metalness.
 
 ## PBR Lighting
 
-Direct lighting is achieved with point, spot, directional, and box lights. These each use a different lighting equation to simulate a light source with texture-based shadows (shadow maps). Note that highly metallic objects will not be affected very strongly by direct lighting, since they are highly reflective and just show the environment around them.
+Ultra Engine achieves direct lighting through point, spot, directional, and box lights, each utilizing a different lighting equation to simulate light sources with texture-based shadows (shadow maps). Highly metallic objects are less affected by direct lighting because of their high reflectivity, primarily reflecting the environment.
 
-Indirect lighting is achieved through a set of world environment textures and smaller local environment probes. Because PBR materials accurately reflect the surrounding environment, it's important to have good reflection data.
+Indirect lighting is accomplished with a combination of world environment textures and local environment probes. Since PBR materials accurately reflect their surroundings, having high-quality reflection data is essential.
 
-Reflections are a very important part of physically-based materials. If the world does not have diffuse and specular environment maps set, materials will look quite dark.
+Reflections play a significant role in physically-based materials. Without diffuse and specular environment maps set for the world, materials may appear dark.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrnone.jpg?raw=true)
+   ![No Reflection](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrnone.jpg?raw=true)
 
-When diffuse and specular reflection maps are added to the world, the whole scene comes alive.
+When you add diffuse and specular reflection maps to the world, the scene becomes more vibrant.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrsky.jpg?raw=true)
+   ![Reflection Added](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrsky.jpg?raw=true)
 
-This is better, but the appearance of the scene is oddly bright because only the sky color is being reflected. To get the best appearance we can create environment probes to enclose different areas of our map.
+To achieve the best results, combine diffuse and specular reflection maps for the world with environment probes for indoor spaces.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrprobe.jpg?raw=true)
+   ![Best Results](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrprobe.jpg?raw=true)
 
-Your maps will look the best when you use diffuse and specular reflection maps for the world, combined with environment probes for indoor spaces.
+Optimal reflection data results in stunning and realistic visuals for your maps.
