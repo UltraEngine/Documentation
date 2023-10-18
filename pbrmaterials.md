@@ -39,3 +39,7 @@ Here's what the material generation algorithm does:
 This would all be very time consuming to adjust by hand, but the built-in material generation tool can create optimized materials from raw images in just a few seconds. It does this by searching for common endings for file names and guessing which image goes where. You can modify these suffixes used by the material generation feature in the program options, in the *Material Generation* settings.
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/genmatsettings.png?raw=true)
+
+## Material Settings
+
+
