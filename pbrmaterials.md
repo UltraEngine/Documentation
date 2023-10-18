@@ -1,6 +1,6 @@
-# PBR Materials and Lighting
+# Physically-based Materials
 
-Ultra Engine makes use of physically-based rendering to deliver next-gen visuals with realistic lighting. Several different settings in materials and the environment combine to produce the appearance of a surface.
+Ultra Engine makes use of physically-based rendering (PBR) to deliver next-gen visuals with realistic lighting. Several different settings in materials and the environment combine to produce the appearance of a surface.
 
 Direct lighting is achieved with point, spot, directional, and box lights. These each use a different lighting equation to simulate a light source with texture-based shadows (shadow maps).
 
