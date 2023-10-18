@@ -65,7 +65,7 @@
 					"title": "Workflow",
 					"topics": [
 						{
-							"title": "PBR Materials",
+							"title": "Physically-based Materials",
 							"filename": "pbrmaterials"
 						}
 					]
