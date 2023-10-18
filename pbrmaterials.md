@@ -64,8 +64,10 @@ Reflections are a very important part of physically-based materials. If the worl
 
 When diffuse and specular reflection maps are added to the world, the whole scene comes alive.
 
-![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbsky.jpg?raw=true)
+![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrsky.jpg?raw=true)
 
 This is better, but the appearance of the scene is oddly bright because only the sky color is being reflected. To get the best appearance we can create environment probes to enclose different areas of our map.
 
 ![](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrprobe.jpg?raw=true)
+
+Your maps will look the best when you use diffuse and specular reflection maps for the world, combined with environment probes for indoor spaces.
