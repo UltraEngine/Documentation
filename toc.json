@@ -60,6 +60,15 @@
 							"filename": "viewports"
 						}
 					]
+				},
+				{
+					"title": "Workflow",
+					"topics": [
+						{
+							"title": "PBR Materialsr",
+							"filename": "pbrmaterials"
+						}
+					]
 				}
 			]
 		},	   
