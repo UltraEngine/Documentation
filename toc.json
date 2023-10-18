@@ -9,53 +9,58 @@
 		{
 			"title": "Editor",
 			"openstate": true,
-			"filename": "editor",
 			"useLanguage": false,
 			"topics": [
 				{
-					"title": "Asset Browser",
-					"filename": "assetbrowser"
-				},
-				{
-					"title": "Asset Editor",
-					"filename": "asseteditor"
-				},
-				{
-					"title": "Console",
-					"filename": "console"
-				},
-				{
-					"title": "Face Panel",
-					"filename": "facepanel"
-				},
-				{
-					"title": "Objects Panel",
-					"filename": "objectspanel"
-				},
-				{
-					"title": "Options Window",
-					"filename": "optionswindow"
-				},
-				{
-					"title": "Map Browser",
-					"filename": "mapbrowser"
-				},
-				{
-					"title": "Project Manager",
-					"filename": "projectmanager"
-				},
-				{
-					"title": "Terrain Panel",
-					"filename": "terrainpanel"
-				},
-				{
-					"title": "Toolbar",
-					"filename": "toolbar"
-				},
-				{
-					"title": "Viewports",
-					"filename": "viewports"
-				}				
+					"title": "Interface",
+					"filename": "editor",
+					"topics": [
+						{
+							"title": "Asset Browser",
+							"filename": "assetbrowser"
+						},
+						{
+							"title": "Asset Editor",
+							"filename": "asseteditor"
+						},
+						{
+							"title": "Console",
+							"filename": "console"
+						},
+						{
+							"title": "Face Panel",
+							"filename": "facepanel"
+						},
+						{
+							"title": "Objects Panel",
+							"filename": "objectspanel"
+						},
+						{
+							"title": "Options Window",
+							"filename": "optionswindow"
+						},
+						{
+							"title": "Map Browser",
+							"filename": "mapbrowser"
+						},
+						{
+							"title": "Project Manager",
+							"filename": "projectmanager"
+						},
+						{
+							"title": "Terrain Panel",
+							"filename": "terrainpanel"
+						},
+						{
+							"title": "Toolbar",
+							"filename": "toolbar"
+						},
+						{
+							"title": "Viewports",
+							"filename": "viewports"
+						}
+					]
+				}
 			]
 		},	   
 		{
