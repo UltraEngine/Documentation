@@ -53,3 +53,5 @@ The *roughness* setting indicates how rough a material's microsurface is. When a
 The *metalness* setting indicates how metallic a material is. When a metal / roughness map is present, the metalness settings will act as a multiplier, so it should usually be set to 1.0 / 100%. If a metallic roughness map is not present, then this setting alone controls how metallic the surface appears.
 
 It's important to note that the more metallic a surface is, the more it depends on the surrounding environment to provide reflections. If a material is completely metal, but no environment maps have been set for the world, then the surface will appear black.
+
+In practice, most of your basic materials without metal / roughness maps will use 100% roughness and 0% metalness.
