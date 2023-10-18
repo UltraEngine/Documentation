@@ -42,7 +42,7 @@ This would all be very time consuming to adjust by hand, but the built-in materi
 
 ## Material Settings
 
-The most important setting for PBR materials are metalness and roughness.
+The most important setting for PBR materials are roughness and metalness.
 
 ### Roughness
 
