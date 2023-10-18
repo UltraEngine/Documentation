@@ -44,11 +44,12 @@ This would all be very time consuming to adjust by hand, but the built-in materi
 
 The most important setting for PBR materials are metalness and roughness.
 
-### Metalness
-
-The *metalness* setting indicates how metallic a material is. When a metal / roughness map is present, the metalness settings will act as a multiplier, so it should usually be set to 1.0 / 100%. If a metallic roughness map is not present, then this setting alone controls how metallic the surface appears.
-
 ### Roughness
 
 The *roughness* setting indicates how rough a material's microsurface is. When a metal / roughness map is present, the roughness settings will act as a multiplier, so it should usually be set to 1.0 / 100%. If a metallic roughness map is not present, then this setting alone controls how rough the surface appears.
 
+### Metalness
+
+The *metalness* setting indicates how metallic a material is. When a metal / roughness map is present, the metalness settings will act as a multiplier, so it should usually be set to 1.0 / 100%. If a metallic roughness map is not present, then this setting alone controls how metallic the surface appears.
+
+It's important to note that the more metallic a surface is, the more it depends on the surrounding environment to provide reflections. If a material is completely metal, but no environment maps have been set for the world, then the surface will appear black.
