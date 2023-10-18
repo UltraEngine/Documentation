@@ -26,15 +26,15 @@ If you open the resulting material file, you can see the textures have been comb
 
 Here's what the material generation algorithm does:
 
-- The base / diffuse map is converted into optimized BC7 format and saved as a DDS file.
+1. The base / diffuse map is converted into optimized BC7 format and saved as a DDS file.
 
-- The normal map is converted into optimized BC5 format and saved as a DDS file. BC5 removes the Z-axis from the normal to make room for more data on the other two components, and the Z-axis will be reconstructed in the fragment shader. BC5 is the only compressed texture format that should be used with normal maps.
+2. The normal map is converted into optimized BC5 format and saved as a DDS file. BC5 removes the Z-axis from the normal to make room for more data on the other two components, and the Z-axis will be reconstructed in the fragment shader. BC5 is the only compressed texture format that should be used with normal maps.
 
-- If they are present, the metalness and roughness maps are combined into the green and blue channels of a single texture, and saved in BC7 format. If a metalness map is found, the material's metalness setting is set to 1.0.
+3. If they are present, the metalness and roughness maps are combined into the green and blue channels of a single texture, and saved in BC7 format. If a metalness map is found, the material's metalness setting is set to 1.0.
 
-- If an ambient occlusion map is present, and a metalness roughness map exists, the ambient occlusion data is packed into the red channel of the metalness / roughness map. Otherwise, the ambient occlusion map will be saved as a single texture in BC4 format, for compression of single-channel images.
+4. If an ambient occlusion map is present, and a metalness roughness map exists, the ambient occlusion data is packed into the red channel of the metalness / roughness map. Otherwise, the ambient occlusion map will be saved as a single texture in BC4 format, for compression of single-channel images.
 
-- If a displacement map is found, it will be saved in an uncompressed single-channel image. Texture compression should never be used with displacement maps.
+5. If a displacement map is found, it will be saved in an uncompressed single-channel image. Texture compression should never be used with displacement maps.
 
 This would all be very time consuming to adjust by hand, but the built-in material generation tool can create optimized materials from raw images in just a few seconds. It does this by searching for common endings for file names and guessing which image goes where. You can modify these suffixes used by the material generation feature in the program options, in the *Material Generation* settings.
 
