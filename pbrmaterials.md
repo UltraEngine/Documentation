@@ -4,7 +4,7 @@ Ultra Engine makes use of physically-based rendering (PBR) to deliver next-gen v
 
 ## Creating Materials
 
-PBR materials consist of many layers of data, compacted into different color channels, stored in different pixel formats. The easiest way to create materials is to let the editor do all the work for you. 
+PBR materials consist of many layers of data, compacted into different color channels, stored in different pixel formats. The easiest way to create materials is to let the editor do all the work for you by automatically generating materials from textures.
 
 You can download free PBR images from a variety of websites including [ambientCG](https://www.ambientcg.com) and [Polyhaven](https://www.polyhaven.com). For this example, we will use a texture set that shows a rusted metallic surface.
 
