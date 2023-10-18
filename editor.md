@@ -1,4 +1,4 @@
-# Editor
+# Editor Interface
 
 The first time you run the Ultra Engine editor, the [project manager](projectmanager.md) will appear so that you can create a new project to work with.
 
