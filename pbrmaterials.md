@@ -16,7 +16,7 @@ To get started, you can obtain free PBR images from websites like [ambientCG](ht
 
    ![Material Generation](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrgenmaterial.png?raw=true)
 
-3. Open the resulting material file to observe how the textures have been combined, creating a surface with appealing variations in reflectivity and appearance.
+3. Open the resulting material file to observe how the textures have been combined, creating a surface with appealing variations in reflectivity and appearance. You can delete the original PNG files if you wish, since they are no longer needed.
 
    ![Generated Material](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrgenmaterial2.png?raw=true)
 
