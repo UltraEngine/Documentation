@@ -28,6 +28,16 @@ The material generation algorithm performs the following steps:
 - If an ambient occlusion map is present and a metalness roughness map exists, the ambient occlusion data is packed into the red channel of the metalness/roughness map. Otherwise, the ambient occlusion map will be saved as a single texture in BC4 format for compressing single-channel images.
 - If a displacement map is found, it will be saved in an uncompressed single-channel image. Texture compression should not be used with displacement maps.
 
+The table below shows the optimal layout for texture data:
+
+| Texture slot | Name | Format | R | G | B | A |
+|---|---|---|---|---|---|---|
+| 0 | base | BC7 | base red | base green | base blue | base alpha |
+| 1 | normal | BC5 | nx | ny | -- | -- |
+| 2, 5 | occlusion / metallic / roughness | BC7 | occlusion | metalness | roughness | -- |
+| 3 | displacement | R8 | height | -- | -- | -- |
+| 4 | emission | BC7 | emission red | emission green | emission blue | -- |
+
 While manually adjusting these settings can be time-consuming, the built-in material generation tool can create optimized materials from raw images in seconds. You can modify the suffixes used by the material generation feature in the program options, specifically in the *Material Generation* settings.
 
    ![Material Generation Settings](https://github.com/UltraEngine/Documentation/blob/master/Images/genmatsettings.png?raw=true)
