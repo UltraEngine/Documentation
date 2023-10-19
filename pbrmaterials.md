@@ -66,4 +66,4 @@ To achieve the best results, combine diffuse and specular reflection maps for th
 
    ![Best Results](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrprobe.jpg?raw=true)
 
-Optimal reflection data results in stunning and realistic visuals for your maps.
+Optimal reflection data results in stunning and realistic visuals for your games.
