@@ -30,7 +30,7 @@ The material generation algorithm performs the following steps:
 
 The table below shows the optimal layout for material texture data:
 
-| Slot | Name | Format | R | G | B | A |
+| Index | Name | Format | R | G | B | A |
 |---|---|---|---|---|---|---|
 | 0 | base | BC7 | base red | base green | base blue | base alpha |
 | 1 | normal | BC5 | nx | ny | -- | -- |
