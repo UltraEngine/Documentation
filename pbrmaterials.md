@@ -37,7 +37,7 @@ The table below shows the optimal layout for material texture data:
 | 2, 5 | occlusion / metallic / roughness | BC7 | ambient occlusion | metalness | roughness | -- |
 | 3 | displacement | R8 | height | -- | -- | -- |
 | 4 | emission | BC7 | emission red | emission green | emission blue | -- |
-| 5 | occlusion alone | BC4 | ambient occlusion | -- | -- | -- |
+| 5 | occlusion (alone) | BC4 | ambient occlusion | -- | -- | -- |
 
 While manually adjusting these settings can be time-consuming, the built-in material generation tool can create optimized materials from raw images in seconds. You can modify the suffixes used by the material generation feature in the program options, specifically in the *Material Generation* settings.
 
