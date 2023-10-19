@@ -28,7 +28,7 @@ The material generation algorithm performs the following steps:
 - If an ambient occlusion map is present and a metalness roughness map exists, the ambient occlusion data is packed into the red channel of the metalness/roughness map. Otherwise, the ambient occlusion map will be saved as a single texture in BC4 format for compressing single-channel images.
 - If a displacement map is found, it will be saved in an uncompressed single-channel image. Texture compression should not be used with displacement maps.
 
-The table below shows the optimal layout for texture data:
+The table below shows the optimal layout for material texture data:
 
 | Texture slot | Name | Format | R | G | B | A |
 |---|---|---|---|---|---|---|
