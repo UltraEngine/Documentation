@@ -1,12 +1,12 @@
 # 3D Modeling Pipeline
 
-Ultra Engine natively supports loading and saving of [Khronos glTF](https://www.khronos.org/gltf/) and Wavefront OBJ files. Support for additional model file formats can be added through the [plugin](Plugin.md) system.
+Ultra Engine natively supports the loading and saving of [Khronos glTF](https://www.khronos.org/gltf/) and Wavefront OBJ files. You can extend its capabilities by adding support for additional model file formats through the [plugin](Plugin.md) system.
 
-## glTF Models
+## Using glTF Models
 
-Khronos glTF is the recommended 3D model file format to use. It supports hierarchies, PBR materials, animation, and other features. The format loads quickly and is easily accessible in a variety of 3D modeling programs.
+Khronos glTF is the recommended 3D model file format to use with Ultra Engine. It provides support for hierarchies, PBR materials, animations, and other useful features. The format loads quickly and seamlessly integrates with a variety of 3D modeling programs.
 
-### glTF Export from Blender
+### Exporting glTF from Blender
 
 To export your models to glTF format from Blender, follow these steps:
 
@@ -15,21 +15,22 @@ To export your models to glTF format from Blender, follow these steps:
 2. Go to `File` > `Export` > `Export as` and choose the *glTF 2.0* format.
 
 3. There are several formats the glTF file can be saved in:
-  - **glTF Binary (.glb)**: This packs the glTF, binary data, and textures into one single file.
-  - **glTF Separate (.gltf + .bin + textures)**: This saves the glTF, binary data, and textures as separate files.
-  - **glTF Embedded (.gltf)**: This packs the glTF, binary data, and textures into one single ASCII file. 
 
-Although Ultra Engine will load any of these types of files, it's best to use the second option, *glTF Separate*. This will allow easy access to the glTF data and texture files.
+   - **glTF Binary (.glb)**: This packs the glTF, binary data, and textures into one single file.
+   - **glTF Separate (.gltf + .bin + textures)**: This saves the glTF, binary data, and textures as separate files.
+   - **glTF Embedded (.gltf)**: This packs the glTF, binary data, and textures into one single ASCII file.
+
+   While Ultra Engine can load any of these types of files, it's best to use the second option, *glTF Separate*. This allows easy access to the glTF data and texture files.
 
 5. Click the "Export" button to save your model in *glTF format*. Your exported glTF file can be loaded directly into Ultra Engine.
 
-## Compressed Textures
+## Working with Compressed Textures
 
-Most glTF files will store textures in PNG images. JPEG is also supported, but should not be used due compression artifacts. glTF does not natively support memory-compressed texture formats, but does support the [Microsoft DDS](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/MSFT_texture_dds) and [Basis](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_basisu) formats through two file format extensions.
+Most glTF files store textures in PNG images. Although JPEG is supported, it is not recommended due to compression artifacts. glTF does not natively support memory-compressed texture formats, but it does support the [Microsoft DDS](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/MSFT_texture_dds) and [Basis](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_basisu) formats through two file format extensions.
 
-You can convert glTF textures to DDS or Basis in the Ultra Engine editor. Open the glTF file you want to modify and select the *Tools > Convert Textures to DDS* or *Convert Textures to Basis* menu item. This will save all PNG and JPEG images the model uses to the optimized format and reassign these files to the materials. You can then save the glTF file and the optimized texture files will be specified in the new file. The unoptimized PNG and JPEG images will be kept as well, so that your glTF file can be loaded in programs that do not support the required extensions.
+You can convert glTF textures to DDS or Basis in the Ultra Engine editor. Open the glTF file you want to modify and select the *Tools > Convert Textures to DDS* or *Convert Textures to Basis* menu item. This will save all PNG and JPEG images the model uses to the optimized format and reassign these files to the materials. The glTF file will then specify the optimized texture files. The original PNG and JPEG images will be retained, ensuring compatibility with programs that don't support the required extensions.
 
-glTF files can also be opened in a text editor and modified by hand to add the optimized texture files, without too much trouble:
+For manual modification, you can open glTF files in a text editor and add the optimized texture files as follows:
 
 ```json
 "textures": [
