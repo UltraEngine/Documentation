@@ -30,7 +30,7 @@ Most glTF files store textures in PNG images. Although JPEG is supported, it is 
 
 You can convert glTF textures to DDS or Basis in the Ultra Engine editor. Open the glTF file you want to modify and select the *Tools > Convert Textures to DDS* or *Convert Textures to Basis* menu item. This will save all PNG and JPEG images the model uses to the optimized format and reassign these files to the materials. The glTF file will then specify the optimized texture files. The original PNG and JPEG images will be retained, ensuring compatibility with programs that don't support the required extensions. Note that displacement maps should not use compression, and will not be stored in a compressed pixel format, but these files do not have to be shipped with your game.
 
-For manual modification, you can open glTF files in a text editor and add the optimized texture files as follows:
+Alternatively, you can manually modify the glTF files in a text editor and add the optimized texture files as follows:
 
 ```json
 "textures": [
