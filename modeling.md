@@ -56,5 +56,5 @@ Alternatively, you can manually modify the glTF files in a text editor and add t
 ## Additional Information
 
 - [glTF 2.0 in Blender](https://docs.blender.org/manual/en/2.80/addons/io_scene_gltf2.html)
-- [Exporting to glTF from 3ds Max](https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D)
 - [glTF Materials in 3ds Max](https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-7ABFB805-1D9F-417E-9C22-704BFDF160FA)
+- [Exporting to glTF from 3ds Max](https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D)
