@@ -45,10 +45,10 @@ Alternatively, you can manually modify the glTF files in a text editor and add t
 ],
 "images": [
     {
-        "uri": "defaultTexture.png"
+        "uri": "mytexture.png"
     },
     {
-        "uri": "DDSTexture.dds"
+        "uri": "mytexture.dds"
     }
 ]
 ```
