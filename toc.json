@@ -67,6 +67,10 @@
 						{
 							"title": "Physically-based Materials",
 							"filename": "pbrmaterials"
+						},
+						{
+							"title": "Modeling Pipeline",
+							"filename": "modeling"
 						}
 					]
 				}
