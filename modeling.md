@@ -19,7 +19,7 @@ To export your models to glTF format from Blender, follow these steps:
   - **glTF Separate (.gltf + .bin + textures)**: This saves the glTF, binary data, and textures as separate files.
   - **glTF Embedded (.gltf)**: This packs the glTF, binary data, and textures into one single ASCII file. 
 
-Although Ultra Engine will load any of these types of files, you should always use the second option, glTF Separate.
+Although Ultra Engine will load any of these types of files, it's best to use the second option, *glTF Separate*. This will allow easy access to the glTF data and texture files.
 
 5. Click the "Export" button to save your model in *glTF format*. Your exported glTF file can be loaded directly into Ultra Engine.
 
