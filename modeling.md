@@ -12,11 +12,16 @@ To export your models to glTF format from Blender, follow these steps:
 
 1. Open your model in Blender.
 
-2. Go to `File` > `Export` > `Export as` and choose the glTF format (`.glb` or `.gltf`).
+2. Go to `File` > `Export` > `Export as` and choose the *glTF 2.0* format.
 
-3. Configure the export settings according to your requirements, including options for materials, animations, and other parameters.
+3. There are several formats the glTF file can be saved in:
+  - **glTF Binary (.glb)**: This packs the glTF, binary data, and textures into one single file.
+  - **glTF Separate (.gltf + .bin + textures)**: This saves the glTF, binary data, and textures as separate files.
+  - **glTF Embedded (.gltf)**: This packs the glTF, binary data, and textures into one single ASCII file. 
 
-4. Click the "Export" button to save your model in glTF format.
+Although Ultra Engine will load any of these types of files, you should always use the second option, glTF Separate.
+
+5. Click the "Export" button to save your model in *glTF format*.
 
 ### glTF Export from 3ds Max
 
