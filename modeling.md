@@ -21,42 +21,7 @@ To export your models to glTF format from Blender, follow these steps:
 
 Although Ultra Engine will load any of these types of files, you should always use the second option, glTF Separate.
 
-5. Click the "Export" button to save your model in *glTF format*.
-
-### glTF Export from 3ds Max
-
-To export your models to glTF format from 3ds Max, you can use the following steps:
-
-1. Open your model in 3ds Max.
-
-2. Navigate to `File` > `Export` and select the glTF format (`.glb` or `.gltf`) as the export option.
-
-3. Adjust the export settings as needed, such as specifying materials, animations, and other relevant options.
-
-4. Click the "Export" button to save your model in glTF format.
-
-## glTF Materials
-
-Understanding how to work with glTF materials in your 3D modeling software is crucial for achieving the desired visual effects in Ultra Engine.
-
-### glTF Materials in Blender
-
-When working with glTF materials in Blender, make sure to:
-
-- Assign the appropriate PBR materials to your model.
-- Configure textures, roughness, metalness, and other material properties to ensure realistic rendering.
-- Pay attention to material naming conventions to simplify the import process in Ultra Engine.
-
-### glTF Materials in 3ds Max
-
-For 3ds Max, consider the following when working with glTF materials:
-
-- Ensure that your materials are set up with the correct PBR attributes.
-- Apply textures and adjust parameters like roughness and metalness to achieve the desired appearance.
-- Be mindful of material naming conventions to streamline the import process in Ultra Engine.
-
-By mastering the use of glTF models and materials in your preferred 3D modeling software, you can take full advantage of Ultra Engine's capabilities for creating immersive 3D environments and experiences.
-
+5. Click the "Export" button to save your model in *glTF format*. Your exported glTF file can be loaded directly into Ultra Engine.
 
 For additional Blender info: https://docs.blender.org/manual/en/2.80/addons/io_scene_gltf2.html
 
