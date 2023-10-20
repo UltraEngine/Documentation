@@ -2,6 +2,10 @@
 
 Ultra Engine employs physically-based rendering (PBR) to achieve next-generation visual quality with realistic lighting. PBR combines various material and environmental settings to create realistic surface appearances.
 
+## Embedded Model Materials
+
+Model materials in Ultra Engine are embedded in the model file, and can be modified in the [asset window](asseteditor.md). Standalone material files are only needed for brushes, terrain, and sprites.
+
 ## Creating Materials
 
 PBR materials are a complex blend of data layers compacted into different color channels and stored in various pixel formats. The easiest way to create PBR materials is by leveraging the editor's ability to automatically generate materials from textures.
