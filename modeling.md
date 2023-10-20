@@ -12,7 +12,7 @@ To export your models to glTF format from Blender, follow these steps:
 
 1. Open your model in Blender.
 
-2. Go to `File` > `Export` > `Export as` and choose the *glTF 2.0* format.
+2. Go to *File > Export > Export as* and choose the *glTF 2.0* format.
 
 3. There are several formats the glTF file can be saved in:
 
