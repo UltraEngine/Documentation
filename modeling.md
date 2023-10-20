@@ -29,6 +29,29 @@ Most glTF files will store textures in PNG images. JPEG is also supported, but s
 
 You can convert glTF textures to DDS or Basis in the Ultra Engine editor. Open the glTF file you want to modify and select the *Tools > Convert Textures to DDS* or *Convert Textures to Basis* menu item. This will save all PNG and JPEG images the model uses to the optimized format and reassign these files to the materials. You can then save the glTF file and the optimized texture files will be specified in the new file. The unoptimized PNG and JPEG images will be kept as well, so that your glTF file can be loaded in programs that do not support the required extensions.
 
+glTF files can also be opened in a text editor and modified by hand to add the optimized texture files, without too much trouble:
+
+```json
+"textures": [
+    {
+        "source": 0,
+        "extensions": {
+            "MSFT_texture_dds": {
+                "source": 1
+            }
+        }
+    }
+],
+"images": [
+    {
+        "uri": "defaultTexture.png"
+    },
+    {
+        "uri": "DDSTexture.dds"
+    }
+]
+```
+
 For additional Blender info: https://docs.blender.org/manual/en/2.80/addons/io_scene_gltf2.html
 
 3ds max: https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D
