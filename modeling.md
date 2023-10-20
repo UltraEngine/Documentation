@@ -51,3 +51,8 @@ For 3ds Max, consider the following when working with glTF materials:
 - Be mindful of material naming conventions to streamline the import process in Ultra Engine.
 
 By mastering the use of glTF models and materials in your preferred 3D modeling software, you can take full advantage of Ultra Engine's capabilities for creating immersive 3D environments and experiences.
+
+
+For additional Blender info: https://docs.blender.org/manual/en/2.80/addons/io_scene_gltf2.html
+
+3ds max: https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D
