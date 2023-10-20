@@ -52,6 +52,7 @@ glTF files can also be opened in a text editor and modified by hand to add the o
 ]
 ```
 
-For additional Blender info: https://docs.blender.org/manual/en/2.80/addons/io_scene_gltf2.html
+## Additional Information
 
-3ds max: https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D
+- [glTF 2.0 in Blender](https://docs.blender.org/manual/en/2.80/addons/io_scene_gltf2.html)
+- [glTF Support in 3ds Max](https://help.autodesk.com/view/3DSMAX/2023/ENU/?guid=GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D)
