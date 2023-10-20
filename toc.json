@@ -8,12 +8,12 @@
 		},
 		{
 			"title": "Editor",
+			"filename": "editor",
 			"openstate": true,
 			"useLanguage": false,
 			"topics": [
 				{
 					"title": "Interface",
-					"filename": "editor",
 					"topics": [
 						{
 							"title": "Asset Browser",
