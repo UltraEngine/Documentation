@@ -24,7 +24,7 @@ To export your models to glTF format from Blender, follow these steps:
 
 5. Click the "Export" button to save your model in *glTF format*. Your exported glTF file can be loaded directly into Ultra Engine.
 
-## Working with Compressed Textures
+## Working with Memory-Compressed Textures
 
 Most glTF files store textures in PNG images. Although JPEG is supported, it is not recommended due to compression artifacts. glTF does not natively support memory-compressed texture formats, but it does support the [Microsoft DDS](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/MSFT_texture_dds) and [Basis](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_texture_basisu) formats through two file format extensions.
 
