@@ -69,7 +69,7 @@ Reflections play a significant role in physically-based materials. Without diffu
 
    ![No Reflection](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrnone.jpg?raw=true)
 
-When you add diffuse and specular reflection maps to the world, the scene becomes more vibrant.
+When you add diffuse and specular reflection maps to the world, the scene becomes more vibrant but the lighting lacks depth because only the sky color is reflected.
 
    ![Reflection Added](https://github.com/UltraEngine/Documentation/blob/master/Images/pbrsky.jpg?raw=true)
 
