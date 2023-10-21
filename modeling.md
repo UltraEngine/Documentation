@@ -68,6 +68,10 @@ And here is the same information with the DDS extension applied:
     }
 ]
 ```
+The following changes were made.
+- *MSFT_texture_dds* is added to the *extensionsUsed* section.
+- A new image is added in the *images* list specifying the DDS file.
+- The *MSFT_texture_dds* block is added to a texture structure with a *source* value specifying the index of the DDS image.
 
 ## Additional Information
 
