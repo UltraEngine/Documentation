@@ -2774,18 +2774,8 @@
 							"hideFromLua": true
 						},
 						{
-							"title": "GetField",
-							"filename": "Object_GetField",
-							"hideFromLua": true
-						},
-						{
 							"title": "Self",
 							"filename": "Object_Self",
-							"hideFromLua": true
-						},
-						{
-							"title": "SetField",
-							"filename": "Object_SetField",
 							"hideFromLua": true
 						}
 					]
