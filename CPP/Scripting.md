@@ -9,7 +9,6 @@ Ultra Engine uses Lua 5.4 to give you access to [the very latest Lua features](h
 | Function | Description |
 |-----|-----|
 | [CallFunction](CallFunction.md) | executes a function call |
-| [CallMethod](CallMethod.md) | executes a method-style function call |
 | [ExecuteString](ExecuteString.md) | executes script code |
 | [GetGlobal](GetGlobal.md) | retrieves a global variable |
 | [GetLuaState](GetLuaState.md) | retrieves the game engine's Lua state |
