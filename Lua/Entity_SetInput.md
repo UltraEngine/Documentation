@@ -36,7 +36,6 @@ local framebuffer = CreateFramebuffer(window)
 
 -- Create a world
 local world = CreateWorld()
-world:SetAmbientLight(0.42, 0.42, 0.5)
 world:SetGravity(0, -30, 0)
 
 -- Create light
@@ -62,11 +61,7 @@ camera:SetPosition(player.position + Vec3(0, 1.7, 0))
 -- Create the scene
 local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/"
 local scene = LoadMap(world, remotepath .. "Maps/playertest.ultra")
-local mtl = CreateMaterial()
-mtl:SetColor(0.5,0.5,0.5)
-for _, entity in pairs(scene.entities) do
-    entity:SetMaterial(mtl, true)
-end
+world:SetAmbientLight(0.42, 0.42, 0.5)
 
 -- For testing player weight on objects...
 local box = CreateBox(world, 4, 0.1, 1)
