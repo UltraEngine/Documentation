@@ -30,7 +30,6 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld();    
-    world->SetAmbientLight(0.42, 0.42, 0.5);
     world->SetGravity(0, -30, 0);
 
     //Create light
@@ -56,12 +55,7 @@ int main(int argc, const char* argv[])
     //Create the scene
     WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/";
     auto scene = LoadMap(world, remotepath + "Maps/playertest.ultra");
-    auto mtl = CreateMaterial();
-    mtl->SetColor(0.5);
-    for (auto entity : scene->entities)
-    {
-        entity->SetMaterial(mtl, true);
-    }
+    world->SetAmbientLight(0.42, 0.42, 0.5);
 
     //For testing player weight on objects...
     shared_ptr<Entity> box;
