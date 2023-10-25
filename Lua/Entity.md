@@ -29,13 +29,11 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [ClearTags](Entity_ClearTags.md) | Method | removes all tags |
 | [Copy](Entity_Copy.md) | Method | duplicates the entity |
 | [FindChild](Entity_FindChild.md) | Method | searches for a child by name |
-| [GetPlayerAirborne](Entity_GetAirborne.md) | Method | returns the airborne state of a player |
 | [GetAngularVelocity](Entity_GetAngularVelocity.md) | Method | returns the entity angular velocity |
 | [GetCollider](Entity_GetCollider.md) | Method | returns the physics collider |
 | [GetComponent](Entity_GetComponent.md) | Method | gets an entity component |
 | [GetCollisionType](Entity_GetCollisionType.md) | Method | returns the collision type |
 | [GetColor](Entity_GetColor.md) | Method | returns the entity color |
-| [GetPlayerCrouched](Entity_GetCrouched.md) | Method | returns the crouched state of a player |
 | [GetBounds](Entity_GetBounds.md) | Method | returns an axis-aligned bounding box |
 | [GetDistance](Entity_GetDistance.md) | Method | calculates distance to another entity |
 | [GetHidden](Entity_GetHidden.md) | Method | returns the entity hide state |
@@ -44,6 +42,8 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [GetParent](Entity_GetParent.md) | Method | returns the parent entity |
 | [GetPhysicsMode](Entity_GetPhysicsMode.md) | Method | gets the entity physics behavior |
 | [GetPickMode](Entity_GetPickMode.md) | Method | returns the entity pick mode |
+| [GetPlayerAirborne](Entity_GetPlayerAirborne.md) | Method | returns the airborne state of a player |
+| [GetPlayerCrouched](Entity_GetPlayerCrouched.md) | Method | returns the crouched state of a player |
 | [GetPosition](Entity_GetPosition.md) | Method | returns the entity position |
 | [GetRotation](Entity_GetRotation.md) | Method | returns the entity Euler rotation |
 | [GetQuaternion](Entity_GetQuaternion.md) | Method | returns the entity rotation |
