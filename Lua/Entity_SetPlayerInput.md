@@ -1,10 +1,10 @@
-# Entity:SetInput
+# Entity:SetPlayerInput
 
 This method sets player input for an entity that has its physics mode set to PHYSICS_PLAYER.
 
 ## Syntax
 
-- **SetInput**(number angle, number move, number strafe = 0, number jump = 0, boolean crouch = false, number maxaccel = 40, number maxdecel = 15)
+- **SetPlayerInput**(number angle, number move, number strafe = 0, number jump = 0, boolean crouch = false, number maxaccel = 40, number maxdecel = 15)
 
 | Parameter | Description |
 |---|---|
@@ -114,7 +114,7 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         end
 
         -- Set input
-        player:SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel)
+        player:SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel)
     end
 
     world:Update()
