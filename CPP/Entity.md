@@ -29,13 +29,13 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [ClearTags](Entity_ClearTags.md) | Method | removes all tags |
 | [Copy](Entity_Copy.md) | Method | duplicates the entity |
 | [FindChild](Entity_FindChild.md) | Method | searches for a child by name |
-| [GetAirborne](Entity_GetAirborne.md) | Method | returns the airborne state of a player |
+| [GetPlayerAirborne](Entity_GetPlayerAirborne.md) | Method | returns the airborne state of a player |
 | [GetAngularVelocity](Entity_GetAngularVelocity.md) | Method | returns the entity angular velocity |
 | [GetCollider](Entity_GetCollider.md) | Method | returns the physics collider |
 | [GetComponent](Entity_GetComponent.md) | Method | gets an entity component |
 | [GetCollisionType](Entity_GetCollisionType.md) | Method | returns the collision type |
 | [GetColor](Entity_GetColor.md) | Method | returns the entity color |
-| [GetCrouched](Entity_GetCrouched.md) | Method | returns the crouched state of a player |
+| [GetPlayerCrouched](Entity_GetPlayerCrouched.md) | Method | returns the crouched state of a player |
 | [GetBounds](Entity_GetBounds.md) | Method | returns an axis-aligned bounding box |
 | [GetDistance](Entity_GetDistance.md) | Method | calculates distance to another entity |
 | [GetHidden](Entity_GetHidden.md) | Method | returns the entity hide state |
