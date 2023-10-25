@@ -20,7 +20,7 @@ This method sets player input for an entity that has its physics mode set to PHY
 
 You can set the entity physics mode with the [Entity:SetPhysicsMode](Entity_SetPhysicsMode.md) method.
 
-You can use the [Entity:GetAirborne](Entity_GetAirborne.md) method to check if the entity is standing on the ground and able to jump.
+You can use the [Entity:GetPlayerAirborne](Entity_GetPlayerAirborne.md) method to check if the entity is standing on the ground and able to jump.
 
 ## Example
 
@@ -104,8 +104,8 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         movement = movement * movespeed
         local jump = (window:KeyHit(KEY_SPACE) and jumpstrength) or 0
         local crouch = window:KeyDown(KEY_C)
-        if player:GetAirborne() then jump = 0 end
-        if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetAirborne() then
+        if player:GetPlayerAirborne() then jump = 0 end
+        if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetPlayerAirborne() then
             movement = movement * runspeed
         end
         if jump > 0 and not crouch then
@@ -121,7 +121,7 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
 
     -- Adjust camera position
     local eyeheight = 1.7
-    if player:GetCrouched() then
+    if player:GetPlayerCrouched() then
         eyeheight = 1.8 * 0.5 - 0.1
     end
     camera:SetPosition(Mix(camera.position.x, player.position.x, 0.5), MoveTowards(camera.position.y, player.position.y + eyeheight, 0.1), Mix(camera.position.z, player.position.z, 0.5))
