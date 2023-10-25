@@ -66,12 +66,12 @@ This class serves as the foundation for all 3D objects in a world. It provides a
 | [SetFriction](Entity_SetFriction.md) | Method | sets the entity physics friction |
 | [SetFog](Entity_SetFog.md) | Method | controls whether distance fog affects the entity |
 | [SetHidden](Entity_SetHidden.md) | Method | hides or shows the entity |
-| [SetInput](Entity_SetInput.md) | Method | handles controls for player movement |
 | [SetMass](Entity_SetMass.md) | Method | sets the entity physical mass |
 | [SetMaterial](Entity_SetMaterial.md) | Method | applies a material to the entity |
 | [SetMatrix](Entity_SetMatrix.md) | Method | sets the entity 4x4 matrix |
 | [SetParent](Entity_SetParent.md) | Method | parents one entity to another |
 | [SetPhysicsMode](Entity_SetPhysicsMode.md) | Method | sets the entity physics behavior |
+| [SetPlayerInput](Entity_SetPlayerInput.md) | Method | handles controls for player movement |
 | [SetPosition](Entity_SetPosition.md) | Method | sets the entity position in local or global space |
 | [SetRotation](Entity_SetRotation.md) | Method | sets the entity rotation in local or global space |
 | [SetScale](Entity_SetScale.md) | Method | sets the entity scale |
