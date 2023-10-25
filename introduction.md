@@ -6,11 +6,9 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 ## System Requirements
 
-- Discrete GPU with support for Vulkan 1.3 (integrated graphics are not supported yet)
+- Discrete GPU with support for Vulkan 1.3 (integrated graphics are not supported yet). Please note that in the current build AMD graphics cards are experiencing visual artifacts.
 - Windows 10 or 11
 - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-
-Please note that in the current build AMD graphics cards are experiencing visual artifacts.
 
 #### Additional Recommended Software
 
