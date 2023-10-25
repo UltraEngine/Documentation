@@ -1,14 +1,26 @@
-# Entity::GetPAirborne
+# Entity::SetInput
 
-This method returns the current airborne state of an entity using player physics.
+This method sets player input for an entity that has its physics mode set to PHYSICS_PLAYER.
 
 ## Syntax
 
-- bool **GetPlayerAirborne**()
+- void **SetInput**(const dFloat angle, const dFloat move, const dFloat strafe = 0, const dFloat jump = 0, const bool crouch = false, const dFloat maxaccel = 40, const dFloat maxdecel = 15)
 
-## Returns
+| Paraeeter | Description |
+|---|---|
+| angle | rotation of the character in degrees |
+| move | forward or backwards movement |
+| strafe | right or left movement |
+| jump | jump force |
+| crouch | crouch state |
+| maxaccel | max acceleration |
+| maxdecel | max deceleration |
 
-Returns false if the player is standing on the ground, otherwise true is returned.
+## Remarks
+
+You can set the entity physics mode with the [Entity::SetPhysicsMode](Entity_SetPhysicsMode.md) method.
+
+You can use the [Entity::GetAirborne](Entity_GetAirborne.md) method to check if the entity is standing on the ground and able to jump.
 
 ## Example
 
@@ -102,8 +114,8 @@ int main(int argc, const char* argv[])
             movement *= movespeed;
             float jump = window->KeyHit(KEY_SPACE) * jumpstrength;
             bool crouch = window->KeyDown(KEY_C);
-            if (player->GetPlayerAirborne()) jump = 0;
-            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetPlayerAirborne())
+            if (player->GetAirborne()) jump = 0;
+            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetAirborne())
             {
                 movement *= runspeed;
             }
@@ -121,7 +133,7 @@ int main(int argc, const char* argv[])
 
         //Adjust camera position
         float eyeheight = 1.7f;
-        if (player->GetPlayerCrouched())
+        if (player->GetCrouched())
         {
             eyeheight = 1.8f * 0.5f - 0.1f;
         }

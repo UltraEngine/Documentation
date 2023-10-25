@@ -1,26 +1,14 @@
-# Entity::SetPlayerInput
+# Entity::GetCrouched
 
-This method sets player input for an entity that has its physics mode set to PHYSICS_PLAYER.
+This method returns the current crouch state of an entity using player physics.
 
 ## Syntax
 
-- void **SetPlayerInput**(const dFloat angle, const dFloat move, const dFloat strafe = 0, const dFloat jump = 0, const bool crouch = false, const dFloat maxaccel = 40, const dFloat maxdecel = 15)
+bool **GetCrouched**()
 
-| Paraeeter | Description |
-|---|---|
-| angle | rotation of the character in degrees |
-| move | forward or backwards movement |
-| strafe | right or left movement |
-| jump | jump force |
-| crouch | crouch state |
-| maxaccel | max acceleration |
-| maxdecel | max deceleration |
+## Returns
 
-## Remarks
-
-You can set the entity physics mode with the [Entity::SetPhysicsMode](Entity_SetPhysicsMode.md) method.
-
-You can use the [Entity::GetPlayerAirborne](Entity_GetPlayerAirborne.md) method to check if the entity is standing on the ground and able to jump.
+Returns true if the player input has set the crouch state to true or if the player is unable to stand up, otherwise false is returned.
 
 ## Example
 
@@ -126,7 +114,7 @@ int main(int argc, const char* argv[])
             }
 
             //Set input
-            player->SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
+            player->SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
         }
 
         world->Update();

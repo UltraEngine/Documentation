@@ -1,10 +1,10 @@
-# Entity:GetPlayerCrouched
+# Entity:GetCrouched
 
 This method returns the current crouch state of an entity using player physics.
 
 ## Syntax
 
-- boolean **GetPlayerCrouched**()
+- boolean **GetCrouched**()
 
 ## Returns
 
@@ -92,8 +92,8 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         movement = movement * movespeed
         local jump = (window:KeyHit(KEY_SPACE) and jumpstrength) or 0
         local crouch = window:KeyDown(KEY_C)
-        if player:GetPlayerAirborne() then jump = 0 end
-        if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetPlayerAirborne() then
+        if player:GetAirborne() then jump = 0 end
+        if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetAirborne() then
             movement = movement * runspeed
         end
         if jump > 0 and not crouch then
@@ -102,14 +102,14 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         end
 
         -- Set input
-        player:SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel)
+        player:SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel)
     end
 
     world:Update()
 
     -- Adjust camera position
     local eyeheight = 1.7
-    if player:GetPlayerCrouched() then
+    if player:GetCrouched() then
         eyeheight = 1.8 * 0.5 - 0.1
     end
     camera:SetPosition(Mix(camera.position.x, player.position.x, 0.5), MoveTowards(camera.position.y, player.position.y + eyeheight, 0.1), Mix(camera.position.z, player.position.z, 0.5))

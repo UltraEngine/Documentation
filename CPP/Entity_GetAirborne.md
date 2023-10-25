@@ -1,14 +1,14 @@
-# Entity::GetPlayerCrouched
+# Entity::GetPAirborne
 
-This method returns the current crouch state of an entity using player physics.
+This method returns the current airborne state of an entity using player physics.
 
 ## Syntax
 
-bool **GetPlayerCrouched**()
+- bool **GetAirborne**()
 
 ## Returns
 
-Returns true if the player input has set the crouch state to true or if the player is unable to stand up, otherwise false is returned.
+Returns false if the player is standing on the ground, otherwise true is returned.
 
 ## Example
 
@@ -102,8 +102,8 @@ int main(int argc, const char* argv[])
             movement *= movespeed;
             float jump = window->KeyHit(KEY_SPACE) * jumpstrength;
             bool crouch = window->KeyDown(KEY_C);
-            if (player->GetPlayerAirborne()) jump = 0;
-            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetPlayerAirborne())
+            if (player->GetAirborne()) jump = 0;
+            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetAirborne())
             {
                 movement *= runspeed;
             }
@@ -114,7 +114,7 @@ int main(int argc, const char* argv[])
             }
 
             //Set input
-            player->SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
+            player->SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
         }
 
         world->Update();

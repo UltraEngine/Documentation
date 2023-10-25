@@ -640,7 +640,11 @@
 						{
 							"title": "FindChild",
 							"filename": "Entity_FindChild"
-						},						
+						},
+						{
+							"title": "GetAirborne",
+							"filename": "Entity_GetAirborne"
+						},
 						{
 							"title": "GetAngularVelocity",
 							"filename": "Entity_GetAngularVelocity"
@@ -665,6 +669,10 @@
 							"title": "GetComponent",
 							"filename": "Entity_GetComponent",
 							"hideFromLua": true
+						},
+						{
+							"title": "GetCrouched",
+							"filename": "Entity_GetCrouched"
 						},
 						{
 							"title": "GetDistance",
@@ -693,14 +701,6 @@
 						{
 							"title": "GetPickMode",
 							"filename": "Entity_GetPickMode"
-						},
-												{
-							"title": "GetPlayerAirborne",
-							"filename": "Entity_GetPlayerAirborne"
-						},
-						{
-							"title": "GetPlayerCrouched",
-							"filename": "Entity_GetPlayerCrouched"
 						},
 						{
 							"title": "GetPosition",
@@ -785,6 +785,10 @@
 						{
 							"title": "SetHidden",
 							"filename": "Entity_SetHidden"
+						},
+						{
+							"title": "SetInput",
+							"filename": "Entity_SetInput"
 						},						
 						{
 							"title": "SetMass",
@@ -805,10 +809,6 @@
 						{
 							"title": "SetPickMode",
 							"filename": "Entity_SetPickMode"
-						},
-						{
-							"title": "SetPlayerInput",
-							"filename": "Entity_SetPlayerInput"
 						},
 						{
 							"title": "SetPosition",
