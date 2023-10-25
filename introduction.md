@@ -32,9 +32,9 @@ The **Community** tab contains links to community features you can access on our
 
 The **Learn** tab contains links to documentation.
 
-The **Billing** tab contains information about your account and plan.
+The **Billing** tab contains information about your account and license.
 
-The **Settings** tab contains various settings for the cient application.
+The **Settings** tab contains various settings for the client application.
 
 When your license is active, you can select a channel in the **Updates** panel and install the engine. If you do not have a license you can get one [here](https://www.ultraengine.com/community/store/category/1-software/).
 
