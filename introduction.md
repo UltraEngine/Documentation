@@ -10,6 +10,8 @@ Ultra Engine is currently available in early access mode, with support for the C
 - Windows 10 or 11
 - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 
+Please note that in the current build AMD graphics cards are experiencing visual artifacts.
+
 #### Additional Recommended Software
 
 - [Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
