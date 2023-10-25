@@ -1,10 +1,10 @@
-# Entity::GetAirborne
+# Entity::GetPAirborne
 
 This method returns the current airborne state of an entity using player physics.
 
 ## Syntax
 
-- bool **GetAirborne**()
+- bool **GetPlayerAirborne**()
 
 ## Returns
 
@@ -30,7 +30,6 @@ int main(int argc, const char* argv[])
 
     //Create a world
     auto world = CreateWorld();    
-    world->SetAmbientLight(0.42, 0.42, 0.5);
     world->SetGravity(0, -30, 0);
 
     //Create light
@@ -56,12 +55,7 @@ int main(int argc, const char* argv[])
     //Create the scene
     WString remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/";
     auto scene = LoadMap(world, remotepath + "Maps/playertest.ultra");
-    auto mtl = CreateMaterial();
-    mtl->SetColor(0.5);
-    for (auto entity : scene->entities)
-    {
-        entity->SetMaterial(mtl, true);
-    }
+    world->SetAmbientLight(0.42, 0.42, 0.5);
 
     //For testing player weight on objects...
     shared_ptr<Entity> box;
@@ -108,8 +102,8 @@ int main(int argc, const char* argv[])
             movement *= movespeed;
             float jump = window->KeyHit(KEY_SPACE) * jumpstrength;
             bool crouch = window->KeyDown(KEY_C);
-            if (player->GetAirborne()) jump = 0;
-            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetAirborne())
+            if (player->GetPlayerAirborne()) jump = 0;
+            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetPlayerAirborne())
             {
                 movement *= runspeed;
             }
@@ -120,14 +114,14 @@ int main(int argc, const char* argv[])
             }
 
             //Set input
-            player->SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
+            player->SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
         }
 
         world->Update();
 
         //Adjust camera position
         float eyeheight = 1.7f;
-        if (player->GetCrouched())
+        if (player->GetPlayerCrouched())
         {
             eyeheight = 1.8f * 0.5f - 0.1f;
         }
