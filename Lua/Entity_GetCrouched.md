@@ -1,10 +1,10 @@
-# Entity:GetCrouched
+# Entity:GetPlayerCrouched
 
 This method returns the current crouch state of an entity using player physics.
 
 ## Syntax
 
-- boolean **GetCrouched**()
+- boolean **GetPlayerCrouched**()
 
 ## Returns
 
@@ -24,7 +24,6 @@ local framebuffer = CreateFramebuffer(window)
 
 -- Create a world
 local world = CreateWorld()
-world:SetAmbientLight(0.42, 0.42, 0.5)
 world:SetGravity(0, -30, 0)
 
 -- Create light
@@ -50,11 +49,7 @@ camera:SetPosition(player.position + Vec3(0, 1.7, 0))
 -- Create the scene
 local remotepath = "https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/"
 local scene = LoadMap(world, remotepath .. "Maps/playertest.ultra")
-local mtl = CreateMaterial()
-mtl:SetColor(0.5,0.5,0.5)
-for _, entity in pairs(scene.entities) do
-    entity:SetMaterial(mtl, true)
-end
+world:SetAmbientLight(0.42, 0.42, 0.5)
 
 -- For testing player weight on objects...
 local box = CreateBox(world, 4, 0.1, 1)
@@ -97,8 +92,8 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         movement = movement * movespeed
         local jump = (window:KeyHit(KEY_SPACE) and jumpstrength) or 0
         local crouch = window:KeyDown(KEY_C)
-        if player:GetAirborne() then jump = 0 end
-        if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetAirborne() then
+        if player:GetPlayerAirborne() then jump = 0 end
+        if not crouch and window:KeyDown(KEY_SHIFT) and not player:GetPlayerAirborne() then
             movement = movement * runspeed
         end
         if jump > 0 and not crouch then
@@ -107,14 +102,14 @@ while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
         end
 
         -- Set input
-        player:SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel)
+        player:SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel)
     end
 
     world:Update()
 
     -- Adjust camera position
     local eyeheight = 1.7
-    if player:GetCrouched() then
+    if player:GetPlayerCrouched() then
         eyeheight = 1.8 * 0.5 - 0.1
     end
     camera:SetPosition(Mix(camera.position.x, player.position.x, 0.5), MoveTowards(camera.position.y, player.position.y + eyeheight, 0.1), Mix(camera.position.z, player.position.z, 0.5))
