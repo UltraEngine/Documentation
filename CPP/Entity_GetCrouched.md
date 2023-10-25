@@ -1,10 +1,10 @@
-# Entity::GetCrouched
+# Entity::GetPlayerCrouched
 
 This method returns the current crouch state of an entity using player physics.
 
 ## Syntax
 
-bool **GetCrouched**()
+bool **GetPlayerCrouched**()
 
 ## Returns
 
@@ -108,8 +108,8 @@ int main(int argc, const char* argv[])
             movement *= movespeed;
             float jump = window->KeyHit(KEY_SPACE) * jumpstrength;
             bool crouch = window->KeyDown(KEY_C);
-            if (player->GetAirborne()) jump = 0;
-            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetAirborne())
+            if (player->GetPlayerAirborne()) jump = 0;
+            if (crouch == false and window->KeyDown(KEY_SHIFT) and !player->GetPlayerAirborne())
             {
                 movement *= runspeed;
             }
@@ -120,14 +120,14 @@ int main(int argc, const char* argv[])
             }
 
             //Set input
-            player->SetInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
+            player->SetPlayerInput(camrotation.y, movement.y, movement.x, jump, crouch, accel, maxdecel);
         }
 
         world->Update();
 
         //Adjust camera position
         float eyeheight = 1.7f;
-        if (player->GetCrouched())
+        if (player->GetPlayerCrouched())
         {
             eyeheight = 1.8f * 0.5f - 0.1f;
         }
