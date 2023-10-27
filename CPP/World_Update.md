@@ -21,7 +21,7 @@ By default, the physics engine will perform iterations until an exact solution i
 
 By default the engine will allocate a number of threads for physics calculations. You can control this number by supplying a value greater than zero in the threads paramter.
 
-For greater precision, you can split physics updating up into multiple sub-steps by providing a value greater than one in the substeps paramter. This can be useful when very precise physics behavior is needed, but more substeps can cause slower performance.
+For greater precision, you can split physics updating up into multiple sub-steps by providing a value greater than one in the substeps parameter. This can be useful when very precise physics behavior is needed, but more substeps can cause slower performance.
 
 ## Example
 
