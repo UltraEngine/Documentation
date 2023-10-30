@@ -4,7 +4,7 @@ This method is called evefy time the entity collides with another object.
 
 ## Syntax
 
-- void **Collide**(shared_ptr<[Entity](Entity.md)> collidedentity const [Vec3](Vec3.md)& position, const [Vec3](Vec3.md)& normal, const dFloat speed)
+- void **Collide**(shared_ptr<[Entity](Entity.md)> collidedentity, const [Vec3](Vec3.md)& position, const [Vec3](Vec3.md)& normal, const dFloat speed)
 
 | Parameter | Description |
 |---|---|
