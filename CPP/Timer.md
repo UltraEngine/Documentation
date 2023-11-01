@@ -6,4 +6,5 @@ A timer object emits a TIMERTICK event at a regular frequency. This is provides 
 
 | Property | Type | Description |
 | --- | --- | --- |
+| [Stop](Timer_Stop.md) | Method | stops the timer |
 | [CreateTimer](CreateTimer.md) | Function | creates a new timer object |
