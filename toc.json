@@ -1884,10 +1884,16 @@
 						{
 							"title": "Timer",
 							"filename": "Timer",
-							"topics": [{
-								"title": "CreateTimer",
-								"filename": "CreateTimer"
-							}]
+							"topics": [
+								{
+									"title": "CreateTimer",
+									"filename": "CreateTimer"
+								},
+								{
+									"title": "Stop",
+									"filename": "Timer_Stop"
+								}
+							]
 						},
 						{
 							"title": "Widget",
