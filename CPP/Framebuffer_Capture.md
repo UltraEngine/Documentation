@@ -62,8 +62,8 @@ void main(const char* args, const int argc)
         auto caps = framebuffer->GetCaptures();
         for (auto pixmap : caps)
         {
-            auto path = GetPath(PATH_DESKTOP) .. "/screenshot.jpg";
-            pixmap:Save(path);
+            auto path = GetPath(PATH_DESKTOP) + "/screenshot.jpg";
+            pixmap->Save(path);
             RunFile(path);
         }
 
