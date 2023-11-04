@@ -21,3 +21,5 @@ If the pixmap uses a compressed format Vec4(0) will be returned.
 ## Remarks
 
 Float coordinates will be clamped to the range 0.0-1.0.
+
+If coord is an [iVec2](iVec2.md) bilinear filtering will not be used.
