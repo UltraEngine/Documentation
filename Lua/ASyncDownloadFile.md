@@ -4,7 +4,7 @@ This function provides a non-blocking method of downloading files for GUI applic
 
 ## Syntax
 
-- ASyncDownloadFileInfo **ASyncDownloadFile**(string url, string localpath)
+- ASyncDownloadFileInfo **ASyncDownloadFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) url, [string](https://www.lua.org/manual/5.4/manual.html#6.4) localpath)
 
 | Parameter | Description |
 |---|---|
