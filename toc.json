@@ -1059,6 +1059,10 @@
 							"filename": "AppPath"
 						},
 						{
+							"title": "ASyncDownloadFile",
+							"filename": "ASyncDownloadFile"
+						},
+						{
 							"title": "CasedPath",
 							"filename": "CasedPath"
 						},
