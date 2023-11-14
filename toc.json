@@ -1097,6 +1097,10 @@
 						{
 							"title": "ExtractExt",
 							"filename": "ExtractExt"
+						},						
+						{
+							"title": "FetchUrl",
+							"filename": "FetchUrl"
 						},
 						{
 							"title": "FileHidden",
@@ -3207,10 +3211,6 @@
 						{
 							"title": "Confirm",
 							"filename": "Confirm"
-						},
-						{
-							"title": "FetchUrl",
-							"filename": "FetchUrl"
 						},						   
 						{
 							"title": "Millisecs",
