@@ -4,7 +4,7 @@ This function provides a non-blocking method of downloading files for GUI applic
 
 ## Syntax
 
-shared_ptr<ASyncDownloadFileInfo> ASyncDownloadFile(const [WString](WString.md)& url, const [WString](WString.md)& localpath)
+- shared_ptr<ASyncDownloadFileInfo> **ASyncDownloadFile**(const [WString](WString.md)& url, const [WString](WString.md)& localpath)
 
 | Parameter | Description |
 |---|---|
