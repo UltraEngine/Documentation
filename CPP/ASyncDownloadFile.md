@@ -17,3 +17,4 @@ Returns a ASyncDownloadFileInfo object with the following methods available:
 
 - **GetProgress**: This will return a float value between zero and one, indicating the download progress.
 - **GetStatus**: This will return DOWNLOAD_FINISHED, DOWNLOAD_FAILED, or DOWNLOAD_INPROGRESS.
+- **Cancel**: This will cancel the download if it is still in progress.
