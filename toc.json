@@ -3247,6 +3247,19 @@
 					]
 				},
 				{
+					"title": "VrDevice",
+					"filename": "VrDevice",
+					"topics": [
+						{
+							"title": "Hmd",
+							"filename": "Hmd"
+						},
+						{
+							"title": "VrController",
+							"filename": "VrController"
+						}
+					]
+				{
 					"title": "World",
 					"filename": "World",
 					"topics": [
