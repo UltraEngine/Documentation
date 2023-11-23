@@ -2,6 +2,8 @@
 
 This method returns the rotation of the specified device.
 
+## Syntax
+
 - [Vec3](Vec3.md) **GetRotation**()
 
 ## Returns
