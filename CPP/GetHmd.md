@@ -17,3 +17,5 @@ Returns an object representing the user's head-mounted display. This will always
 ## Remarks
 
 This function must be called before the first call to [World::Render](World_Render.md).
+
+The world parameter will be ignored after the first call to this function.
