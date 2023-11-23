@@ -7,5 +7,4 @@ This class handles hand-held virtual reality controllers, for a variety of hardw
 | [ButtonDown](VrController_ButtonDown.md) | Method | returns the button pressed state |
 | [ButtonHit](VrController_ButtonHit.md) | Method | returns the button hit state |
 | [ButtonTouched](VrController_ButtonTouched.md) | Method | returns the button touch state |
-| [Connected](VrController_Connected.md) | Method | returns true if the headset is connected |
 | [GetAxis](VrController_GetAxis.md) | Method | returns the specified input axis value |
