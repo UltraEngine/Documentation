@@ -4,14 +4,16 @@ This method attaches an entity to a model bone or a navigation agent. This provi
 
 ## Syntax
 
-- bool **Attach**(shared_ptr<[NavAgent](NavAgent.md)> agent)
 - bool **Attach**(shared_ptr<[Model](Model.md)> model, shared_ptr<[Bone](Bone.md)> bone)
+- bool **Attach**(shared_ptr<[NavAgent](NavAgent.md)> agent)
+- bool **Attach**(shared_ptr<[VrDevice](VrDevice.md)> device)
 
 | Parameter | Description |
 | --- | --- |
-| **model** | model to attach entity to |
-| **bone** | skeleton bone to attach entity to |
-| **agent** | navigation agent to attach entity to |
+| model | model to attach entity to |
+| bone | skeleton bone to attach entity to |
+| agent | navigation agent to attach entity to |
+| device | VR device to attach entity to |
 
 ## Returns
 
