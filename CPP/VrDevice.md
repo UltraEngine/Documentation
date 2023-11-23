@@ -8,5 +8,5 @@ This class handles objects that appear in both the virtual and real world, such 
 | [Connected](Hmd_Connected.md) | Method | returns true if the device is connected |
 | [GetMatrix](Hmd_GetMatrix.md) | Method | returns the device 4x4 matrix |
 | [GetPosition](Hmd_GetPosition.md) | Method | returns the device position |
-| [GetRotation](Hmd_GetRotation.md) | Method | returns the device rotation |
 | [GetQuaternion](Hmd_GetQuaternion.md) | Method | returns the device quaternion |
+| [GetRotation](Hmd_GetRotation.md) | Method | returns the device rotation |
