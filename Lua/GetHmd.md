@@ -22,54 +22,45 @@ The world parameter will be ignored after the first call to this function.
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
+```lua
+--Get the displays
+local displays = GetDisplays()
 
-using namespace UltraEngine;
+--Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CLIENTCOORDS | WINDOW_CENTER | WINDOW_TITLEBAR)
 
-int main(int argc, const char* argv[])
-{
-    //Get the displays
-    auto displays = GetDisplays();
+--Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CLIENTCOORDS | WINDOW_CENTER | WINDOW_TITLEBAR);
+--Create a world
+local world = CreateWorld()
 
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
+--Get the VR headset
+local hmd = GetHmd(world)
 
-    //Create a world
-    auto world = CreateWorld();
+--Environment maps
+local specmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/specular.dds")
+local diffmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/diffuse.dds")
+world:SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND)
+world:SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR)
+world:SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE)
 
-    //Get the VR headset
-    auto hmd = GetHmd(world);
+--Create a light
+local light = CreateBoxLight(world)
+light:SetRotation(55, 35, 0)
+light:SetRange(-10, 10)
+light:SetColor(2)
 
-    //Environment maps
-    auto specmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/specular.dds");
-    auto diffmap = LoadTexture("https://github.com/UltraEngine/Assets/raw/main/Materials/Environment/footprint_court/diffuse.dds");
-    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_BACKGROUND);
-    world->SetEnvironmentMap(specmap, ENVIRONMENTMAP_SPECULAR);
-    world->SetEnvironmentMap(diffmap, ENVIRONMENTMAP_DIFFUSE);
+--Add a floor
+local floor = CreateBox(world, 5, 1, 5)
+floor:SetPosition(0, -0.5, 0)
+local mtl = CreateMaterial()
+mtl:SetTexture(LoadTexture("https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/Developer/griid_gray.dds"))
+floor:SetMaterial(mtl)
 
-    //Create a light
-    auto light = CreateBoxLight(world);
-    light->SetRotation(55, 35, 0);
-    light->SetRange(-10, 10);
-    light->SetColor(2);
-
-    //Add a floor
-    auto floor = CreateBox(world, 5, 1, 5);
-    floor->SetPosition(0, -0.5, 0);
-    auto mtl = CreateMaterial();
-    mtl->SetTexture(LoadTexture("https://github.com/UltraEngine/Documentation/raw/master/Assets/Materials/Developer/griid_gray.dds"));
-    floor->SetMaterial(mtl);
-
-    //Main loop
-    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
-    {
-        world->Update();
-        world->Render(framebuffer);
-    }
-    return 0;
-}
+--Main loop
+while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+    world:Update()
+    world:Render(framebuffer)
+end
 ```
