@@ -2,6 +2,8 @@
 
 This method returns the rotation of the specified device.
 
+## Syntax
+
 - [Quat](Quat.md) **GetQuaternion**()
 
 ## Returns
