@@ -1,6 +1,6 @@
 # VrDevice::GetQuaternion
 
-This method gets the device position.
+This method gets the device rotation.
 
 ## Syntax
 
@@ -8,4 +8,4 @@ This method gets the device position.
 
 ## Returns
 
-Returns the current position of the device.
+Returns the current rotation of the device.
