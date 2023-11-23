@@ -3320,11 +3320,59 @@
                     "topics": [
                         {
                             "title": "Hmd",
-                            "filename": "Hmd"
+                            "filename": "Hmd",
+                            "topics": [
+                                {
+                                    "title": "SetOffset",
+                                    "filename": "Hmd_SetOffset"
+                                },
+                                {
+                                    "title": "GetHmd",
+                                    "filename": "GetHmd"
+                                }
+                            ]
                         },
                         {
                             "title": "VrController",
-                            "filename": "VrController"
+                            "filename": "VrController",
+                            "topics": [
+                                {
+                                    "title": "ButtonDown",
+                                    "filename": "VrController_ButtonDown"
+                                },
+                                {
+                                    "title": "ButtonHit",
+                                    "filename": "VrController_ButtonHit"
+                                },
+                                {
+                                    "title": "ButtonTouched",
+                                    "filename": "VrController_ButtonTouched"
+                                },
+                                {
+                                    "title": "GetAxis",
+                                    "filename": "VrController_GetAxis"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Connected",
+                            "filename": "VrDevice_Connected"
+                        },
+                        {
+                            "title": "GetMatrix",
+                            "filename": "VrDevice_GetMatrix"
+                        },
+                        {
+                            "title": "GetPosition",
+                            "filename": "VrDevice_GetPosition"
+                        },
+                        {
+                            "title": "GetQuaternion",
+                            "filename": "VrDevice_GetQuaternion"
+                        },
+                        {
+                            "title": "GetRotation",
+                            "filename": "VrDevice_GetRotation"
                         }
                     ]
                 },
