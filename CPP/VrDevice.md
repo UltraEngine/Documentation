@@ -4,6 +4,7 @@ This class handles objects that appear in both the virtual and real world, such 
 
 | Property | Type | Description |
 | --- | --- | --- |
+| model | const shared_ptr<[Model](Model.md)\>& | 3D model representing the real object |
 | [GetMatrix](Hmd_GetMatrix.md) | Method | returns the device 4x4 matrix |
 | [GetPosition](Hmd_GetPosition.md) | Method | returns the device position |
 | [GetRotation](Hmd_GetRotation.md) | Method | returns the device rotation |
