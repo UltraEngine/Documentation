@@ -1,4 +1,4 @@
-# Hmd::SetOffset
+# Hmd:SetOffset
 
 Sets the offset position and rotation, for player movement.
 
