@@ -4,7 +4,7 @@ This function returns the head-mounted display, for virtual reality rendering.
 
 ## Syntax
 
-- shared_ptr<[Hmd](Hmd.md)\> **GetHmd**(shared_ptr<[World](World.md) world\>)
+- shared_ptr<[Hmd](Hmd.md)\> **GetHmd**(shared_ptr<[World](World.md)\> world)
 
 | Parameter | Description |
 |---|---|
