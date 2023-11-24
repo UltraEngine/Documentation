@@ -4,7 +4,7 @@ This method gets the current button pressed state of the controller.
 
 ## Syntax
 
-- bool **ButtonDown**(number button)
+- boolean **ButtonDown**(number button)
 
 | Parameter | Description |
 |---|---|
