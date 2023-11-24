@@ -1,5 +1,7 @@
 # Hmd
 
+Base class: [VrDevice](VrDevice.md)
+
 The Hmd (head-mounted display) class provide access to virtual reality features.
 
 | Property | Type | Description |
