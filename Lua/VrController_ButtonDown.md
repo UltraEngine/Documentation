@@ -1,4 +1,4 @@
-# VrController::ButtonDown
+# VrController:ButtonDown
 
 This method gets the current button pressed state of the controller.
 
