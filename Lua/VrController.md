@@ -1,5 +1,7 @@
 # VrController
 
+Base class: [VrDevice](VrDevice.md)
+
 This class handles hand-held virtual reality controllers, for a variety of hardware devices.
 
 | Property | Type | Description |
