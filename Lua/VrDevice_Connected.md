@@ -1,4 +1,4 @@
-# VrDevice::Connected
+# VrDevice:Connected
 
 This method gets the current connected state of the device.
 
