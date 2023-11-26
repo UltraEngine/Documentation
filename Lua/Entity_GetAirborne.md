@@ -1,4 +1,4 @@
-# Entity:GetPAirborne
+# Entity:GetAirborne
 
 This method returns the current airborne state of an entity using player physics.
 
