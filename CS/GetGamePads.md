@@ -1,0 +1,3 @@
+```csharp
+List<GamePad> GetGamePads()
+```

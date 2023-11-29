@@ -1,0 +1,28 @@
+# StreamBuffer
+
+This class provides an interface to manipulate part of a file as if it was a memory block, without loading the entire file into memory at once. This can be useful when working with super-resolution images and other large files. Random access speeds on mechanical hard drives are much slower than solid state drives, so if you are processing big data sets you will probably want to use an SSD.
+
+Base class: [Buffer](Buffer.md)
+
+| Property | Type | Description |
+|-|-|-|
+| [CreateStreamBuffer](CreateStreamBuffer.md) | Function | creates a new StreamBuffer object |
+
+**Syntax:**
+```csharp
+public static StreamBuffer CreateStreamBuffer(string filePath, long bufferSize);
+```
+
+**Parameters:**
+- `filePath` - The path to the file to create a StreamBuffer for.
+- `bufferSize` - The size of the buffer to use in bytes.
+
+**Return Value:**
+A new instance of the `StreamBuffer` class.
+
+**Example:**
+```csharp
+string filePath = @"C:\path\to\file.txt";
+long bufferSize = 4096;
+StreamBuffer streamBuffer = StreamBuffer.CreateStreamBuffer(filePath, bufferSize);
+```
