@@ -1,4 +1,4 @@
-# Programming with C#
+# Programming with C\#
 
 C# is a powerful programming language capable of crafting games and simulations in Ultra Engine. It offers a high-level programming experience while maintaining excellent debugging capabilities and seamless compatibility with a vast array of third-party libraries and APIs. Ultra Engine's integration of C# smart pointers simplifies C# development, providing memory management akin to high-level languages without compromising performance.
 
