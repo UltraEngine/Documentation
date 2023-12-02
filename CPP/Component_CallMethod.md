@@ -15,3 +15,27 @@ This method is used in C++ to call a method by name. User-defined components sho
 ## Returns
 
 Returns any value.
+
+## Example
+
+Here is an example of a component method that can be called by a flowgraph connection.
+
+```c++
+virtual void SetHealth(const int health)
+{
+    this->health = health;
+}
+
+virtual std::any CallMethod(shared_ptr<Component> caller, const WString& name, const std::vector<std::any>& args)
+{
+    if (name == "SetHealth")
+    {
+        if (args.size() >= 1 and std::string(args[0].type().name()) == "int")
+        {
+            int arg0 = std::any_cast<int>(args[0]);
+            SetHealth(arg0);
+        }
+    }
+    return false;
+}
+```
