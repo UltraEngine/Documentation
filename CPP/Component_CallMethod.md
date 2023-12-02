@@ -18,7 +18,7 @@ Returns any value.
 
 ## Example
 
-Here is an example of a component method that can be called by a flowgraph connection.
+Here is an example of a component method that can be called by a flowgraph connection. The component code should check to make sure the supplied arguments are of the correct type.
 
 ```c++
 virtual void SetHealth(const int healthvalue)
