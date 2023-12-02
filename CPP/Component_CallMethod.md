@@ -21,9 +21,9 @@ Returns any value.
 Here is an example of a component method that can be called by a flowgraph connection.
 
 ```c++
-virtual void SetHealth(const int health)
+virtual void SetHealth(const int healthvalue)
 {
-    this->health = health;
+    this->health = healthvalue;
 }
 
 virtual std::any CallMethod(shared_ptr<Component> caller, const WString& name, const std::vector<std::any>& args)
