@@ -63,7 +63,7 @@ camera:SetFov(70)
 camera:AddPostEffect(LoadPostEffect("Shaders/FXAA.fx"))
 
 --Add camera controls
-camera:AddComponent<CameraControls>()
+camera:AddComponent(CameraControls)
 
 --Create light
 local light = CreateBoxLight(world)
