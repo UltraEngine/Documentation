@@ -142,3 +142,7 @@ To call a component method or get a value, first check if a component of the des
 auto component = entity->GetComponent<HealthManager>();
 if (component) component->TakeDamage(10);
 ```
+
+## Loading Components in a Map
+
+Call the **RegisterComponents** function at the start of your program to make it so the map loader is able to add components to entities that are loaded in a map. 
