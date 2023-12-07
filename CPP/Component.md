@@ -4,7 +4,7 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 
 | Property | Type | Description |
 |---|---|---|
-| [CallMethod](Component_CallMethod.md) | Method | allows a method to be called by name |
+| [CallMethod](Component_CallMethod.md) | Method | allows a method to be called by name, for use with the flowgraph |
 | [Collide](Component_Collide.md) | Method | called whenever a physics collision occurs |
 | [Copy](Component_Copy.md) | Method | makes a copy of the component, for copying entities |
 | [GetEntity](Component_GetEntity.md) | Method | retrieves the entity this component is attached to |
