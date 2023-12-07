@@ -12,17 +12,46 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 | [Start](Component_Start.md) | Method | called when a component is added |
 | [Update](Component_Update.md) | Method | called once each time [World::Update](World_Update.md) is called |
 
-You can override these methods or add your own in your component class. To add a new component, just create a new .hpp file in your "Source\Components" folder. You can use separate header and code files if you want, but it is more convenient to put everything in a single file that automatically gets included into your project. Compile your project once and the precompiler will detect your new file and update the component system code. The precompiler will automatically generate the files "ComponentSystem.h" and "ComponentSystem.cpp". These files should never be changed by hand, since they will be overwritten every time the precompiler runs.
+You can override these methods or add your own in your component class. To add a new component, just create a new .hpp file in any subfolder in your "Source\Components" folder. You can use separate header and code files if you want, but it is more convenient to put everything in a single file that automatically gets included into your project. 
 
-The precompiler is limited in its ability to parse C++ declarations, so it's a good idea to stick to straightforward C++ syntax.
+Open the file "Source\ComponentSystem.h" and add your component into the list of includes, and add it in the **RegisterComponents** function:
+```c++
+#pragma once
+#include "UltraEngine.h"
+
+#include "Components/Motion/Mover.hpp"
+#include "Components/Motion/SlidingDoor.hpp"
+#include "Components/Player/CameraControls.hpp"
+#include "Components/Player/FirstPersonControls.hpp"
+#include "Components/Player/ThirdPersonControls.hpp"
+#include "Components/Player/VRPlayer.hpp"
+#include "Components/Triggers/CollisionTrigger.hpp"
+
+//Include user-defined component
+#include "Components/Custom/MyComponent.hpp"
+
+void RegisterComponents()
+{
+    RegisterComponent<Mover>();
+    RegisterComponent<SlidingDoor>();
+    RegisterComponent<CameraControls>();
+    RegisterComponent<FirstPersonControls>();
+    RegisterComponent<ThirdPersonControls>();
+    RegisterComponent<VRPlayer>();
+    RegisterComponent<CollisionTrigger>();
+
+    //Register user-defined component
+    RegisterComponent<MyComponent>();
+}
+```
 
 ## Using Components
 
-To use components in C++, include the component's header file and add the component to an entity with [Entity::AddComponent](Entity_AddComponent.md). The game engine will take care of the rest for you:
+To use components in C++, include the component system header file and add the component to an entity with [Entity::AddComponent](Entity_AddComponent.md). The game engine will take care of the rest for you:
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/Mover.hpp"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
