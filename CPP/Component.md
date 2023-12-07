@@ -48,7 +48,7 @@ void RegisterComponents()
 
 ## Using Components
 
-To use components in C++, include the component system header file and add the component to an entity with [Entity::AddComponent](Entity_AddComponent.md). The game engine will take care of the rest for you:
+To use components in C++, include the component system header file and add the component to an entity with [Entity::AddComponent](Entity_AddComponent.md). Call the **RegisterComponents** function at the start of your program to make it so the map loader is able to add components to entities that are loaded in a map. 
 
 ```c++
 #include "UltraEngine.h"
@@ -58,6 +58,8 @@ using namespace UltraEngine;
 
 int main(int argc, const char* argv[])
 {
+    RegisterComponents();
+
     //Get the displays
     auto displays = GetDisplays();
 
@@ -143,7 +145,3 @@ To call a component method or get a value, first check if a component of the des
 auto component = entity->GetComponent<HealthManager>();
 if (component) component->TakeDamage(10);
 ```
-
-## Loading Components in a Map
-
-Call the **RegisterComponents** function at the start of your program to make it so the map loader is able to add components to entities that are loaded in a map. 
