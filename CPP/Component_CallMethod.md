@@ -4,7 +4,7 @@ This method is used in C++ to call a method by name. User-defined components sho
 
 ## Syntax
 
-- std::any **CallMethod**(shared_ptr<[Component](Component.md)> caller, const [WString](WString.md)& name, const std::vector<std::any>& args)
+- std::any **CallMethod**(shared_ptr<[Component](Component.md)\> caller, const [WString](WString.md)& name, const std::vector\<std::any\>& args)
 
 | Parameter | Description |
 |---|---|
