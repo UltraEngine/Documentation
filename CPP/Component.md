@@ -15,7 +15,7 @@ The Ultra Engine entity component system allows you to easily add behavior to ga
 
 You can override these methods or add your own in your component class. To add a new component, just create a new .hpp file in any subfolder in your "Source\Components" folder. You can use separate header and code files if you want, but it is more convenient to put everything in a single file that automatically gets included into your project. 
 
-Open the file "Source\ComponentSystem.h" and add your component into the list of includes, and add it in the **RegisterComponents** function:
+Open the file "Source\ComponentSystem.h" and add your component into the list of includes, as well as in the **RegisterComponents** function:
 ```c++
 #pragma once
 #include "UltraEngine.h"
