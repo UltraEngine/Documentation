@@ -329,6 +329,10 @@
                                     "filename": "Camera_SetFov"
                                 },
                                 {
+                                    "title": "SetProjectionMode",
+                                    "filename": "Camera_SetProjectionMode"
+                                },
+                                {
                                     "title": "SetRealtime",
                                     "filename": "Camera_SetRealtime"
                                 },
