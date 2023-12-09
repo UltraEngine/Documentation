@@ -17,6 +17,7 @@ The camera class is an entity used to render the world.
 | [SetClearMode](Camera_SetClearMode.md)    | Method   | controls color and depth clearing     |
 | [SetDepthPrepass](Camera_SetDepthPrepass.md)    | Method   | sets the camera depth pre-pass mode     |
 | [SetFov](Camera_SetFov.md)    | Method   | sets the camera field of view     |
+| [SetProjectionMode](Camera_SetProjectionMode.md) | Method | sets the camera projection mode |
 | [SetRealtime](Camera_SetRealtime.md)    | Method   | sets realtime rendering mode     |
 | [SetRefraction](Camera_SetRefraction.md)    | Method   | enables or disables transparency refraction     |
 | [SetRenderTarget](Camera_SetRenderTarget.md)    | Method   | for render-to-texture     |
