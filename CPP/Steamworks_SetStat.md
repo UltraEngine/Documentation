@@ -1,4 +1,4 @@
-# SetStat
+# Steamworks::SetStat
 
 ## Syntax
 
