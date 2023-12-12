@@ -11,6 +11,7 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [AppSubscribed](Steamworks_AppSubscribed.md) | Function | checks if the specified app is authorized to be run |
 | [Disconnect](Steamworks_Disconnect.md) | Function | disconnects a peer-to-peer connection |
 | [DlcInstalled](Steamworks_DlcInstalled.md) | Function | checks if the specified DLC is installed for this application |
+| [FilterVoice](Steamworks_FilterVoice.md) | Function | used to control which players can hear each other |
 | [Initialize](Steamworks_Initialize.md) | Function | Initializes the Steam API |
 | [GetAchievement](Steamworks_GetAchievement.md) | Function | checks if a user achievement has been earned |
 | [GetAppId](Steamworks_GetAppId.md) | Function | gets this application's ID |
