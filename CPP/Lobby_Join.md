@@ -1,0 +1,4 @@
+# Steamworks::Lobby::Join
+
+## Syntax
+
