@@ -14,7 +14,7 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [FilterVoice](Steamworks_FilterVoice.md) | Function | used to control which players can hear each other |
 | [GetAchievement](Steamworks_GetAchievement.md) | Function | checks if a user achievement has been earned |
 | [GetAppId](Steamworks_GetAppId.md) | Function | gets this application's ID |
-| [GetBuildId](Steamworks_GetBuildId.md) | Function | gets the Steam build ID |
+| [GetBuildId](Steamworks_GetBuildId.md) | Function | gets the application build ID |
 | [GetPacket](Steamworks_GetPacket.md) | Function | retrieves the next available packet received |
 | [GetStat](Steamworks_GetStat.md) | Function | gets a user statistic |
 | [GetUserAvatar](Steamworks_GetUserAvatar.md) | Function | gets the user's Steam profile picture |
