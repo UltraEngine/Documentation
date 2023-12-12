@@ -27,20 +27,3 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [SetStat](Steamworks_SetStat.md) | Function | sets a user statistic |
 | [Shutdown](Steamworks_Shutdown.md) | Function | closes the Steam API |
 | [Update](Steamworks_Update.md) | Function | should be called once per frame |
-
-The basic structure of a Steam-enabled game looks like this:
-```c++
-int main()
-{
-  //Initialize Steam API
-  if (not Steamworks::Initialize()) return 1;
-
-  while ()
-  {
-    
-  }
-
-  //Close Steam API
-  Steamworks::Shutdown();  
-}
-```
