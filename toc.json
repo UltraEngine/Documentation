@@ -3360,6 +3360,10 @@
                                 {
                                     "title": "GetAxis",
                                     "filename": "VrController_GetAxis"
+                                },
+                                {
+                                    "title": "Rumble",
+                                    "filename": "VrController_Rumble"
                                 }
                             ]
                         },
