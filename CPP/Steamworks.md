@@ -12,15 +12,15 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [Disconnect](Steamworks_Disconnect.md) | Function | disconnects a peer-to-peer connection |
 | [DlcInstalled](Steamworks_DlcInstalled.md) | Function | checks if the specified DLC is installed for this application |
 | [FilterVoice](Steamworks_FilterVoice.md) | Function | used to control which players can hear each other |
-| [Initialize](Steamworks_Initialize.md) | Function | Initializes the Steam API |
 | [GetAchievement](Steamworks_GetAchievement.md) | Function | checks if a user achievement has been earned |
 | [GetAppId](Steamworks_GetAppId.md) | Function | gets this application's ID |
 | [GetBuildId](Steamworks_GetBuildId.md) | Function | gets the Steam build ID |
 | [GetPacket](Steamworks_GetPacket.md) | Function | retrieves the next available packet received |
 | [GetStat](Steamworks_GetStat.md) | Function | gets a user statistic |
+| [GetUserAvatar](Steamworks_GetUserAvatar.md) | Function | gets the user's Steam profile picture |
 | [GetUserId](Steamworks_GetUserId.md) | Function | gets the user's Steam profile ID |
 | [GetUserName](Steamworks_GetUserName.md) | Function | gets the user's Steam profile name |
-| [GetUserAvatar](Steamworks_GetUserAvatar.md) | Function | gets the user's Steam profile picture |
+| [Initialize](Steamworks_Initialize.md) | Function | Initializes the Steam API |
 | [RecordVoice](Steamworks_RecordVoice.md) | Function | sets the microphone recording state, for in-game voice chat |
 | [SendPacket](Steamworks_SendPacket.md) | Function | sends data to another user |
 | [SetAchievement](Steamworks_SetAchievement.md) | Function | sets a user achievement |
