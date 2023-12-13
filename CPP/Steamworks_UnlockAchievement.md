@@ -35,17 +35,11 @@ int main(int argc, const char* argv[])
     // Create camera
     auto camera = CreateCamera(world);
 
-    // Create lobby
-    auto lobby = Steamworks::CreateLobby();
-    
     // Main loop
     while (not window->KeyDown(KEY_ESCAPE) and not window->Closed())
     {
         // Press A to win!
-        if (window->KeyHit(KEY_A))
-        {
-            Steamworks::UnlockAchievement("ACH_TRAVEL_FAR_SINGLE");
-        }
+        if (window->KeyHit(KEY_A)) Steamworks::UnlockAchievement("ACH_TRAVEL_FAR_SINGLE");
 
         // Update world
         world->Update();
