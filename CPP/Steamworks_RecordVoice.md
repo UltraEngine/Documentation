@@ -20,6 +20,20 @@ int main(int argc, const char* argv[])
         return 1;
     }
 
+    auto cl = ParseCommandLine(argc, argv);
+
+    //Join lobby if launching from invite
+    if (cl["connect_lobby"].is_integer())
+    {
+        uint64_t lobbyid = int64_t(cl["connect_lobby"]);
+        Print("Joining lobby " + String(lobbyid));
+        if (not SteamMatchmaking()->JoinLobby(lobbyid))
+        {
+            Print("Failed to join lobby.");
+            return 0;
+        }
+    }
+
     //Get the displays
     auto displays = GetDisplays();
 
