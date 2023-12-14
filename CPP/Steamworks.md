@@ -19,6 +19,7 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [GetLeaderboard](Steamworks_GetLeaderboard.md) | Function | gets a leaderboard by name |
 | [GetLeaderboardEntries](Steamworks_GetLeaderboardEntries.md) | Function | gets the leaderboard stored scores |
 | [GetLobbies](Steamworks_GetLobbies.md) | Function | gets a list of lobbies for this game |
+| [GetLobbyCapacity](Steamworks_GetLobbyCapacity.md) | Function | gets the maximum number of players that can join the lobby |
 | [GetLobbyMembers](Steamworks_GetLobbyMembers.md) | Function | gets the user ID of all players in the lobby |
 | [GetLobbyOwner](Steamworks_GetLobbyOwner.md) | Function | gets the user ID of the lobby's owner |
 | [GetPacket](Steamworks_GetPacket.md) | Function | retrieves the next available packet received |
