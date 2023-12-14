@@ -4,7 +4,7 @@ This functions sets an achievement for a user's account for the game.
 
 ## Syntax
 
-- boolean **UnlockAchievement**([string]() name)
+- boolean **UnlockAchievement**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name)
 
 | Parameter | Description |
 |---|---|
