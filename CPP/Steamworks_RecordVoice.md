@@ -43,7 +43,7 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
 
     // Create lobby
-    auto lobby = Steamworks::CreateLobby(Steamworks::LOBBY_FRIENDS);
+    auto lobby = Steamworks::CreateLobby(Steamworks::LOBBY_PRIVATE);
     
     // Main loop
     while (not window->KeyDown(KEY_ESCAPE) and not window->Closed())
