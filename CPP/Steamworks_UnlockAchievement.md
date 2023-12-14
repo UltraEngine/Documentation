@@ -1,7 +1,22 @@
 # Steamworks::UnlockAchievement
 
+This functions sets an achievement for a user's account for the game.
+
 ## Syntax
 
+- bool **UnlockAchievement**(const [WString](WString.md)& name)
+
+| Parameter | Description |
+|---|---|
+| name | name of the achievement set in the Steamworks game settings |
+
+## Returns
+
+Returns true if the achievement was successfully added. If the achievement does not exist then false is returned.
+
+## Remarks
+
+See the [Steamworks documentation](https://partner.steamgames.com/doc/features/achievements) for more information on creating achievements for your game.
 
 ## Example
 
