@@ -1,4 +1,4 @@
-# Steamworks::JoinLobby
+# Steamworks:JoinLobby
 
 This functions joins a game lobby.
 
