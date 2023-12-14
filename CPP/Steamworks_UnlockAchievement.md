@@ -16,7 +16,7 @@ Returns true if the achievement was successfully added. If the achievement does 
 
 ## Remarks
 
-See the [Steamworks documentation](https://partner.steamgames.com/doc/features/achievements) for more information on creating achievements for your game.
+See the [Steamworks documentation](https://partner.steamgames.com/doc/features/achievements/ach_guide) for more information on creating achievements for your game.
 
 ## Example
 
