@@ -12,7 +12,7 @@ This functions sets an achievement for a user's account for the game.
 
 ## Returns
 
-Returns true if the achievement was successfully added. If the achievement does not exist then false is returned.
+Returns true if the achievement was successfully added. If the achievement does not exist or could not be set then false is returned.
 
 ## Remarks
 
