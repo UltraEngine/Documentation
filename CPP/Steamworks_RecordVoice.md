@@ -1,8 +1,14 @@
 # Steamworks::RecordVoice
 
+This function sets the microphone recording mode and broadcasts the user's voice to other players in the game.
+
 ## Syntax
 
 - void **RecordVoice**(const bool record)
+
+## Remarks
+
+When voice recording is active, your program should provide a visual cue showing the player they can speak.
 
 ## Example
 
