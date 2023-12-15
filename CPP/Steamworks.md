@@ -11,7 +11,6 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [AppSubscribed](Steamworks_AppSubscribed.md) | Function | checks if the specified app is authorized to be run |
 | [BroadcastPacket](Steamworks_BroadcastPacket.md) | Function | sends a packet all other players in a lobby |
 | [CreateLobby](Steamworks_CreateLobby.md) | Function | creates a new lobby for multiplayer games |
-| [Disconnect](Steamworks_Disconnect.md) | Function | disconnects a peer-to-peer connection |
 | [DlcInstalled](Steamworks_DlcInstalled.md) | Function | checks if the specified DLC is installed for this application |
 | [FilterVoice](Steamworks_FilterVoice.md) | Function | used to control which players can hear each other |
 | [GetAppId](Steamworks_GetAppId.md) | Function | gets this application's ID |
