@@ -34,6 +34,7 @@ int main(int argc, const char* argv[])
     }
 
     String gamename = "Universal Tailor";
+    String servername = "My Cool Server";
 
     table properties;
     properties["game"] = gamename;
@@ -41,6 +42,7 @@ int main(int argc, const char* argv[])
     auto lobby = Steamworks::CreateLobby();
     Print("Created lobby " + String(lobby));
     Steamworks::SetLobbyProperty(lobby, "game", gamename);
+    Steamworks::SetLobbyProperty(lobby, "name", servername);
 
     Sleep(1000);// we have to pause briefly before the lobby will be listed in search results
 
@@ -49,6 +51,8 @@ int main(int argc, const char* argv[])
     for (int n = 0; n < lobbies.size(); ++n)
     {
         Print(String(n) + ": " + String(lobbies[n]));
+        Print("Max players: " + String(Steamworks::GetLobbyCapacity(lobbies[n])));
+        Print("Name: " + Steamworks::GetLobbyProperty(lobbies[n], "name"));
     }
 
     Steamworks::Shutdown();
