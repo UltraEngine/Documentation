@@ -6,7 +6,7 @@ This function retrieves the leaderboard scores.
 
 ## Syntax
 
-- std::vector<LeaderboardEntry\> **GetLeaderboardEntries**(const uint64_t id, const LeaderboardDataRequest request = LEADERBOARD_GLOBAL, const int start = 0, const int count = 20)
+- std::vector<LeaderboardEntry\> **GetLeaderboardEntries**(const uint64 id, const LeaderboardDataRequest request = LEADERBOARD_GLOBAL, const int start = 0, const int count = 20)
 
 | Parameter | Description |
 |---|---|
