@@ -1,4 +1,6 @@
-# Steamworks::GetLeaderboard
+# GetLeaderboard
+
+Namespace: [Steamworks](Steamworks.md)
 
 This function gets a game's leaderboard.
 
