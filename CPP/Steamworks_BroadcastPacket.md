@@ -12,6 +12,7 @@ This function sends a packet of data to all other members in the specified lobby
 |---|---|
 | data | data to send |
 | channel | packet channel to use |
+| size | size of data to send |
 | sendtype | can be P2PSEND_UNRELIABLE, P2PSEND_UNRELIABLENODELAY, P2PSEND_RELIABLE, or P2PSEND_RELIABLEBUFFERED |
 
 ## Returns
