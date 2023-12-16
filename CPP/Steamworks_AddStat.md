@@ -1,5 +1,6 @@
-# Steamworks::AddStat
+# AddStat
 
+Namespace: [Steamworks](Steamworks.md)
 
 ## Example
 
