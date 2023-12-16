@@ -21,6 +21,7 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [GetLobbyCapacity](Steamworks_GetLobbyCapacity.md) | Function | gets the maximum number of players that can join the lobby |
 | [GetLobbyMembers](Steamworks_GetLobbyMembers.md) | Function | gets the user ID of all players in the lobby |
 | [GetLobbyOwner](Steamworks_GetLobbyOwner.md) | Function | gets the user ID of the lobby's owner |
+| [GetLobbyProperty](Steamworks_GetLobbyCapacity.md) | Function | gets the maximum number of players |
 | [GetPacket](Steamworks_GetPacket.md) | Function | retrieves the next available packet received |
 | [GetStat](Steamworks_GetStat.md) | Function | gets a user statistic |
 | [GetUserAvatar](Steamworks_GetUserAvatar.md) | Function | gets the user's Steam profile picture |
