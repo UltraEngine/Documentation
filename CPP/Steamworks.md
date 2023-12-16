@@ -33,6 +33,8 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [RecordVoice](Steamworks_RecordVoice.md) | Function | sets the microphone recording state, for in-game voice chat |
 | [SendPacket](Steamworks_SendPacket.md) | Function | sends data to another user |
 | [SetLeaderboardScore](Steamworks_SetLeaderboardScore.md) | Function | sets a user statistic |
+| [SetLobbyProperty](Steamworks_SetLobbyCapacity.md) | Function | sets the maximum number of players |
+| [SetStat](Steamworks_SetLobbyProperty.md) | Function | sets a lobby property |
 | [SetStat](Steamworks_SetStat.md) | Function | sets a user statistic |
 | [Shutdown](Steamworks_Shutdown.md) | Function | closes the Steam API |
 | [UnlockAchievement](Steamworks_UnlockAchievement.md) | Function | sets a user achievement |
