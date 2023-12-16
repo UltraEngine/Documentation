@@ -20,3 +20,5 @@ This function sends a packet of data to all other members in the specified lobby
 Returns false if the packet fails to send to any other member in the lobby, otherwise true us returned.
 
 ## Remarks
+
+String data will be converted to UTF-8 before sending.
