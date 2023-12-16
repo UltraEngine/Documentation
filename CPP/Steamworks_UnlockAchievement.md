@@ -1,4 +1,4 @@
-# Steamworks::UnlockAchievement
+# UnlockAchievement
 
 This functions sets an achievement for a user's account for the game.
 
