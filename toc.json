@@ -3279,16 +3279,148 @@
                     "filename": "Steamworks",
                     "topics": [
                         {
+                            "title": "AddStat",
+                            "filename": "Steamworks_AddStat"
+                        },
+                        {
+                            "title": "AppInstalled",
+                            "filename": "Steamworks_AppInstalled"
+                        },
+                        {
+                            "title": "AppSubscribed",
+                            "filename": "Steamworks_AppSubscribed"
+                        },
+                        {
+                            "title": "BroadcastPacket",
+                            "filename": "Steamworks_BroadcastPacket"
+                        },
+                        {
+                            "title": "BroadcastPacket",
+                            "filename": "Steamworks_BroadcastPacket"
+                        },
+                        {
+                            "title": "CreateLobby",
+                            "filename": "Steamworks_CreateLobby"
+                        },
+                        {
+                            "title": "DlcInstalled",
+                            "filename": "Steamworks_DlcInstalled"
+                        },
+                        {
+                            "title": "FilterVoice",
+                            "filename": "Steamworks_FilterVoice"
+                        },
+                        {
+                            "title": "GetAppId",
+                            "filename": "Steamworks_GetAppId"
+                        },
+                        {
+                            "title": "GetBuildId",
+                            "filename": "Steamworks_GetBuildId"
+                        },
+                        {
                             "title": "GetLeaderboard",
                             "filename": "Steamworks_GetLeaderboard"
+                        },
+                        {
+                            "title": "GetLeaderboardEntries",
+                            "filename": "Steamworks_GetLeaderboardEntries"
+                        },
+                        {
+                            "title": "GetLobbies",
+                            "filename": "Steamworks_GetLobbies"
+                        },
+                        {
+                            "title": "GetLobbyCapacity",
+                            "filename": "Steamworks_GetLobbyCapacity"
+                        },
+                        {
+                            "title": "GetLobbyMembers",
+                            "filename": "Steamworks_GetLobbyMembers"
+                        },
+                        {
+                            "title": "GetLobbyOwner",
+                            "filename": "Steamworks_GetLobbyOwner"
+                        },
+                        {
+                            "title": "GetLobbyProperty",
+                            "filename": "Steamworks_GetLobbyProperty"
+                        },
+                        {
+                            "title": "GetPacket",
+                            "filename": "Steamworks_GetPacket"
+                        },
+                        {
+                            "title": "GetStat",
+                            "filename": "Steamworks_GetStat"
+                        },
+                        {
+                            "title": "GetUserAvatar",
+                            "filename": "Steamworks_GetUserAvatar"
+                        },
+                        {
+                            "title": "GetUserId",
+                            "filename": "Steamworks_GetUserId"
+                        },
+                        {
+                            "title": "GetUserName",
+                            "filename": "Steamworks_GetUserName"
+                        },
+                        {
+                            "title": "Initialize",
+                            "filename": "Steamworks_Initialize"
+                        },
+                        {
+                            "title": "InviteFriends",
+                            "filename": "Steamworks_InviteFriends"
+                        },
+                        {
+                            "title": "JoinLobby",
+                            "filename": "Steamworks_JoinLobby"
+                        },
+                        {
+                            "title": "LeaveLobby",
+                            "filename": "Steamworks_LeaveLobby"
+                        },
+                        {
+                            "title": "RecordVoice",
+                            "filename": "Steamworks_RecordVoice"
+                        },
+                        {
+                            "title": "RecordVoice",
+                            "filename": "Steamworks_RecordVoice"
                         },
                         {
                             "title": "SendPacket",
                             "filename": "Steamworks_SendPacket"
                         },
                         {
+                            "title": "SetLeaderboardScore",
+                            "filename": "Steamworks_SetLeaderboardScore"
+                        },
+                        {
+                            "title": "SetLobbyCapacity",
+                            "filename": "Steamworks_SetLobbyCapacity"
+                        },
+                        {
+                            "title": "SetLobbyProperty",
+                            "filename": "Steamworks_SetLobbyProperty"
+                        },
+                        {
+                            "title": "SetStat",
+                            "filename": "Steamworks_SetStat"
+                        },
+                        {
+                            "title": "Shutdown",
+                            "filename": "Steamworks_Shutdown"
+                        },
+                        {
                             "title": "UnlockAchievement",
                             "filename": "Steamworks_UnlockAchievement"
+                        },
+                        {
+                            "title": "Update",
+                            "filename": "Steamworks_Update"
                         }
                     ]
                 },
