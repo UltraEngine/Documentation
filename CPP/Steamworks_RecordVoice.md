@@ -1,4 +1,6 @@
-# Steamworks::RecordVoice
+# RecordVoice
+
+Namespace: [Steamworks](Steamworks.md)
 
 This function sets the microphone recording mode and broadcasts the user's voice to other players in the game.
 
