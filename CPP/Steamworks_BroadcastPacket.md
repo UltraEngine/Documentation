@@ -1,5 +1,7 @@
 # BroadcastPacket
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function sends a packet of data to all other members in the specified lobby.
 
 ## Syntax
