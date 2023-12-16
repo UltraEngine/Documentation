@@ -17,7 +17,7 @@ This function sends a packet of data to all other members in the specified lobby
 
 ## Returns
 
-Returns false if the packet fails to send to any other member in the lobby, otherwise true us returned.
+Returns false if the packet fails to send to any other member in the lobby, otherwise true is returned.
 
 ## Remarks
 
