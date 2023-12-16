@@ -3275,6 +3275,23 @@
                     ]
                 },
                 {
+                    "title": "Steamworks",
+                    "topics": [
+                        {
+                            "title": "GetLeaderboard",
+                            "filename": "Steamworks_GetLeaderboard"
+                        },
+                        {
+                            "title": "SendPacket",
+                            "filename": "Steamworks_SendPacket"
+                        },
+                        {
+                            "title": "UnlockAchievement",
+                            "filename": "Steamworks_UnlockAchievement"
+                        }
+                    ]
+                },
+                {
                     "title": "System",
                     "topics": [
                         {
