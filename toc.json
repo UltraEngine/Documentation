@@ -3387,10 +3387,6 @@
                             "filename": "Steamworks_RecordVoice"
                         },
                         {
-                            "title": "RecordVoice",
-                            "filename": "Steamworks_RecordVoice"
-                        },
-                        {
                             "title": "SendPacket",
                             "filename": "Steamworks_SendPacket"
                         },
