@@ -1,5 +1,7 @@
 # GetAppId
 
+Namespace: [Steamworks](Steamworks.md)
+
 This functions retrieves the app ID for this game.
 
 ## Syntax
