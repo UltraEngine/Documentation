@@ -3295,10 +3295,6 @@
                             "filename": "Steamworks_BroadcastPacket"
                         },
                         {
-                            "title": "BroadcastPacket",
-                            "filename": "Steamworks_BroadcastPacket"
-                        },
-                        {
                             "title": "CreateLobby",
                             "filename": "Steamworks_CreateLobby"
                         },
