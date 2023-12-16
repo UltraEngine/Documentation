@@ -1,5 +1,7 @@
 # GetLeaderboardEntries
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function retrieves the leaderboard scores.
 
 ## Syntax
