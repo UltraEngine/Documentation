@@ -1,5 +1,7 @@
 # DlcInstalled
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function checks to see if an DLC is installed.
 
 ## Syntax
