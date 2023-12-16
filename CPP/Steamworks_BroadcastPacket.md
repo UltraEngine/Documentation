@@ -6,12 +6,13 @@ This function sends a packet of data to all other members in the specified lobby
 
 ## Syntax
 
-- bool **BroadcastPacket**(const uint64 lobbyid, const [WString](WString)& data, const int channel, const P2PSendMode sendtype)
-- bool **BroadcastPacket**(const uint64 lobbyid, std::shared_ptr<[Buffer](Buffer.md)\> data, const int channel, const P2PSendMode sendtype)
-- bool **BroadcastPacket**(const uint64 lobbyid, const void* data, const uint32 size, const int channel, const P2PSendMode sendtype)
+- bool **BroadcastPacket**(const uint64 lobby, const [WString](WString)& data, const int channel, const P2PSendMode sendtype)
+- bool **BroadcastPacket**(const uint64 lobby, std::shared_ptr<[Buffer](Buffer.md)\> data, const int channel, const P2PSendMode sendtype)
+- bool **BroadcastPacket**(const uint64 lobby, const void* data, const uint32 size, const int channel, const P2PSendMode sendtype)
 
 | Parameter | Description |
 |---|---|
+| lobby | other members of this lobby will be send the packet |
 | data | data to send |
 | channel | packet channel to use |
 | size | size of data to send |
@@ -19,7 +20,7 @@ This function sends a packet of data to all other members in the specified lobby
 
 ## Returns
 
-Returns false if the packet fails to send to any other member in the lobby, otherwise true is returned.
+Returns true of the packet was successfully sent. (This does not necessarily mean the packet was successfully received.)
 
 ## Remarks
 
