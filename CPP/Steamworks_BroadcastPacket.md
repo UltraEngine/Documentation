@@ -6,9 +6,9 @@ This function sends a packet of data to all other members in the specified lobby
 
 ## Syntax
 
-- bool **BroadcastPacket**(const uint64 lobby, const [WString](WString)& data, const int channel, const P2PSendMode sendtype)
-- bool **BroadcastPacket**(const uint64 lobby, std::shared_ptr<[Buffer](Buffer.md)\> data, const int channel, const P2PSendMode sendtype)
-- bool **BroadcastPacket**(const uint64 lobby, const void* data, const uint32 size, const int channel, const P2PSendMode sendtype)
+- bool **BroadcastPacket**(const uint64 lobby, const [WString](WString)& data, const int channel = 0, const P2PSendMode sendtype = P2PSEND_UNRELIABLE)
+- bool **BroadcastPacket**(const uint64 lobby, std::shared_ptr<[Buffer](Buffer.md)\> data, const int channel = 0, const P2PSendMode sendtype = P2PSEND_UNRELIABLE)
+- bool **BroadcastPacket**(const uint64 lobby, const void* data, const uint32 size, const int channel = 0, const P2PSendMode sendtype = P2PSEND_UNRELIABLE)
 
 | Parameter | Description |
 |---|---|
