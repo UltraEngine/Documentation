@@ -6,7 +6,7 @@ This function gets a game's leaderboard.
 
 ## Syntax
 
-- uint64_t **GetLeaderboard**(const [WString](WString.md)& name)
+- uint64 **GetLeaderboard**(const [WString](WString.md)& name)
 
 | Parameter | Description |
 |---|---|
