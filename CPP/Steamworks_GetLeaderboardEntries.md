@@ -21,7 +21,7 @@ Returns an array of LeaderboardEntry objects, each with the following properties
 
 | Property | Type | Description |
 |---|---|---|
-| userid | uint64_t | user ID of the player for this entry |
+| userid | uint64 | user ID of the player for this entry |
 | score | int | user's score |
 
 ## Remarks
