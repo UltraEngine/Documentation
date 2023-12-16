@@ -3276,7 +3276,7 @@
                 },
                 {
                     "title": "Steamworks",
-                    "filename": "Steamworks"
+                    "filename": "Steamworks",
                     "topics": [
                         {
                             "title": "GetLeaderboard",
