@@ -4,7 +4,7 @@ This function checks to see if an DLC is installed.
 
 ## Syntax
 
-- bool **DlcInstalled**(uint64_t appid)
+- bool **DlcInstalled**(const uint64_t appid)
 
 | Parameter | Description |
 |---|---|
