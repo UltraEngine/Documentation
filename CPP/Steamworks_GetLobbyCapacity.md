@@ -1,5 +1,7 @@
 # GetLobbyCapacity
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function gets the maximum number of players allowed in the lobby
 
 ## Syntax
