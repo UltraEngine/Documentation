@@ -1,5 +1,7 @@
 # AppInstalled
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function checks to see if an application is installed.
 
 ## Syntax
