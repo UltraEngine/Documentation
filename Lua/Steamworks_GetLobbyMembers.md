@@ -16,33 +16,30 @@ This function gets the members in the specified lobby.
 
 Returns an array of user IDs if the user is in the same lobby, otherwise an array of zeros will be returned.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Assuming Steamworks module is loaded or provided by the UltraEngine
 
-using namespace UltraEngine;
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get lobbies
+local lobbies = Steamworks.GetLobbies()
+Print(String(#lobbies) .. " lobbies found")
 
-    auto lobbies = Steamworks::GetLobbies();
-    Print(String(lobbies.size()) + " lobbies found");
-    for (int n = 0; n < lobbies.size(); ++n)
-    {
-        Print(String(n) + ": " + String(lobbies[n]));
-        Print("Name: " + Steamworks::GetLobbyProperty(lobbies[n], "name"));
-        Print("Max players: " + String(Steamworks::GetLobbyCapacity(lobbies[n])));
-        auto members = Steamworks::GetLobbyMembers(lobbies[n]);
-        Print(String(members.size()) + " members\n");
-    }
+-- Iterate through lobbies and print information
+for n = 1, #lobbies do
+    Print(tostring(n) .. ": " .. String(lobbies[n]))
+    Print("Name: " .. Steamworks.GetLobbyProperty(lobbies[n], "name"))
+    Print("Max players: " .. String(Steamworks.GetLobbyCapacity(lobbies[n])))
 
-    Steamworks::Shutdown();
-    return 0;
-}
+    -- Get lobby members
+    local members = Steamworks.GetLobbyMembers(lobbies[n])
+    Print(String(#members) .. " members\n")
+end
+
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
