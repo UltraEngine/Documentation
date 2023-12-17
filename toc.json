@@ -3303,10 +3303,6 @@
                             "filename": "Steamworks_DlcInstalled"
                         },
                         {
-                            "title": "FilterVoice",
-                            "filename": "Steamworks_FilterVoice"
-                        },
-                        {
                             "title": "GetAppId",
                             "filename": "Steamworks_GetAppId"
                         },
