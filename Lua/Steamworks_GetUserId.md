@@ -6,58 +6,28 @@ This function gets the user's Steam profile ID.
 
 ## Syntax
 
-- uint64 **GetUserId**()
+- number **GetUserId**()
 
 ## Returns
 
 Returns the user ID.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Get and print Steam information
+Print("App ID: " .. String(Steamworks.GetAppId()))
+Print("Build ID: " .. String(Steamworks.GetBuildId()))
 
-int main(int argc, const char* argv[])
-{
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get user information
+local userId = Steamworks.GetUserId()
+Print("User ID: " .. String(userId))
+Print("User name: " .. Steamworks.GetUserName(userId))
 
-    //Get app ID
-    auto appid = Steamworks::GetAppId();
-    Print("App ID: " + String(appid));
-
-    //Get build ID
-    auto buildid = Steamworks::GetBuildId();
-    Print("Build ID: " + String(buildid));
-
-    //Confirm app installed
-    bool installed = Steamworks::AppInstalled(appid);
-    Print("App installed: " + String(installed));
-
-    //Confirm app owned
-    bool owned = Steamworks::AppSubscribed(appid);
-    Print("App subscribed: " + String(owned));
-
-    //Get user ID
-    auto id = Steamworks::GetUserId();
-    Print("User ID: " + String(id));
-
-    //Get user name
-    Print("User name: " + Steamworks::GetUserName(id));
-
-    //Get user avatar
-    auto pixmap = Steamworks::GetUserAvatar(id);
-    if (pixmap)
-    {
-        pixmap->Save("avatar.dds");
-        RunFile("avatar.dds");
-    }
-    
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
