@@ -29,13 +29,6 @@ end
 local leaderboard = Steamworks.GetLeaderboard("Feet Traveled")
 Print("Leaderboard: " .. tostring(leaderboard))
 
--- Get user input for the score
-local userInput = Input("\nEnter your score:")
-local userScore = tonumber(userInput)
-
--- Set the user's score on the leaderboard
-Steamworks.SetLeaderboardScore(leaderboard, userScore)
-
 -- Get leaderboard entries and print them
 local entries = Steamworks.GetLeaderboardEntries(leaderboard, Steamworks.LEADERBOARD_AROUNDUSER)
 for n = 1, #entries do
