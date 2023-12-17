@@ -1,5 +1,7 @@
 # CreateLobby
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function creates a new lobby.
 
 ## Syntax
