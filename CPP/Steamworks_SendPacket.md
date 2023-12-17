@@ -76,7 +76,7 @@ int main(int argc, const char* argv[])
         RuntimeError("Steamworks failed to initialize.");
         return 1;
     }
-    
+
     // Get the displays
     auto displays = GetDisplays();
 
@@ -92,9 +92,9 @@ int main(int argc, const char* argv[])
 
     // Create lobby
     auto lobbyid = Steamworks::CreateLobby(Steamworks::LOBBY_PUBLIC);
-    
+
     Print("Lobby: " + String(lobbyid));
-     
+
     // Spawn local player
     auto player = Player::Get(world, Steamworks::GetUserId());
     player->entity->AddComponent<FirstPersonControls>();
@@ -117,7 +117,7 @@ int main(int argc, const char* argv[])
         {
             const auto e = WaitEvent();
             switch (e.id)
-            {            
+            {
             case Steamworks::EVENT_LOBBYINVITEACCEPTED:
             case Steamworks::EVENT_LOBBYDATACHANGED:
             case Steamworks::EVENT_LOBBYUSERJOIN:
@@ -136,7 +136,7 @@ int main(int argc, const char* argv[])
                         Print("Failed to join lobby");
                     }
                     break;
-                
+
                 case Steamworks::EVENT_LOBBYDATACHANGED:
                     Print("New lobby owner " + username);
                     break;
@@ -202,7 +202,13 @@ int main(int argc, const char* argv[])
         auto player = Player::players[userid];
         state.position = player->entity->position;
         state.yaw = player->entity->rotation.y;
-        Steamworks::BroadcastPacket(lobbyid, &state, sizeof(PlayerState), 0, Steamworks::P2PSEND_UNRELIABLENODELAY);
+
+        // Alternatively, you can call BroadcastPacket() to send the packet to all other members in this lobby
+        auto members = Steamworks::GetLobbyMembers(lobbyid);
+        for (const auto& id : members)
+        {
+            if (id != Steamworks::GetUserId()) Steamworks::SendPacket(id, &state, sizeof(PlayerState), 0, Steamworks::P2PSEND_UNRELIABLENODELAY);
+        }
 
         // Enable voice chat when the C key is pressed
         bool record = window->KeyDown(KEY_C);
