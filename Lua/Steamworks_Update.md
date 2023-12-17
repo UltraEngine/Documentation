@@ -6,56 +6,49 @@ This function should be called once per frame when a Steam app is running.
 
 ## Syntax
 
-- void **Update**()
+- **Update**()
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steamworks
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return 1
+end
 
-using namespace UltraEngine;
+-- Parse command line arguments
+local cl = ParseCommandLine(arg)
 
-int main(int argc, const char* argv[])
-{
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Load FreeImage plugin (optional)
+local fiplugin = LoadPlugin("Plugins/FITextureLoader")
 
-    auto cl = ParseCommandLine(argc, argv);
-    
-    //Load FreeImage plugin (optional)
-    auto fiplugin = LoadPlugin("Plugins/FITextureLoader");
+-- Get the displays
+local displays = GetDisplays()
 
-    //Get the displays
-    auto displays = GetDisplays();
+-- Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280 * displays[1].scale, 720 * displays[1].scale, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
-    //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280 * displays[0]->scale, 720 * displays[0]->scale, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+-- Create a world
+local world = CreateWorld()
 
-    //Create a world
-    auto world = CreateWorld();
+-- Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    //Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
+-- Load the map
+local mapname = "Maps/start.ultra"
+if cl["map"] and type(cl["map"]) == "string" then
+    mapname = cl["map"]
+end
+local scene = LoadMap(world, mapname)
 
-    //Load the map
-    WString mapname = "Maps/start.ultra";
-    if (cl["map"].is_string()) mapname = std::string(cl["map"]);
-    auto scene = LoadMap(world, mapname);
+-- Main loop
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+    world:Update()
+    world:Render(framebuffer)
+    Steamworks.Update()
+end
 
-    //Main loop
-    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
-    {
-        world->Update();
-        world->Render(framebuffer);
-        Steamworks::Update();
-    }
-
-    Steamworks::Shutdown();
-
-    return 0;
-}
+-- Shutdown Steamworks
+Steamworks.Shutdown()
 ```
