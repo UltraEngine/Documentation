@@ -12,8 +12,8 @@ This function retrieves the leaderboard scores.
 |---|---|
 | id | Leaderboard ID |
 | request | can be LEADERBOARD_GLOBAL, LEADERBOARD_AROUNDUSER, or LEADERBOARD_FRIENDS | 
-| start | |
-| count | |
+| start | starting index |
+| count | number of entries |
 
 ## Returns
 
