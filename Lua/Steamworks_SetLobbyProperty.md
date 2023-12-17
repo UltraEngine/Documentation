@@ -2,13 +2,11 @@
 
 Namespace: [Steamworks](Steamworks.md)
 
-Namespace: [Steamworks](Steamworks.md)
-
 This function sets a key/value pair that can be read by other users.
 
 ## Syntax
 
-- bool **SetLobbyProperty**(const [WString](WString.md)& key, const [WString](WString.md)& value)
+- boolean **SetLobbyProperty**([string](https://www.lua.org/manual/5.4/manual.html#6.4) key, [string](https://www.lua.org/manual/5.4/manual.html#6.4) value)
 
 ## Remarks
 
@@ -18,44 +16,38 @@ Users do not have to be in the lobby to retrieve properties set with this comman
 
 When a lobby property changes an LOBBYDATACHANGED event will be emitted for all users.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+local gamename = "Universal Tailor"
+local servername = "My Cool Server"
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Create lobby properties
+local properties = {}
+properties["game"] = gamename
 
-    String gamename = "Universal Tailor";
-    String servername = "My Cool Server";
+-- Create a lobby
+local lobby = Steamworks.CreateLobby()
+Print("Created lobby " .. String(lobby))
+Steamworks.SetLobbyProperty(lobby, "game", gamename)
+Steamworks.SetLobbyProperty(lobby, "name", servername)
 
-    table properties;
-    properties["game"] = gamename;
+-- Pause briefly before the lobby will be listed in search results
+Sleep(1000)
 
-    auto lobby = Steamworks::CreateLobby();
-    Print("Created lobby " + String(lobby));
-    Steamworks::SetLobbyProperty(lobby, "game", gamename);
-    Steamworks::SetLobbyProperty(lobby, "name", servername);
+-- Get lobbies based on properties
+local lobbies = Steamworks.GetLobbies(properties)
+Print(String(#lobbies) .. " lobbies found")
+for n = 1, #lobbies do
+    Print(tostring(n) .. ": " .. String(lobbies[n]))
+    Print("Max players: " .. String(Steamworks.GetLobbyCapacity(lobbies[n])))
+    Print("Name: " .. Steamworks.GetLobbyProperty(lobbies[n], "name"))
+end
 
-    Sleep(1000);// we have to pause briefly before the lobby will be listed in search results
-
-    auto lobbies = Steamworks::GetLobbies(properties);
-    Print(String(lobbies.size()) + " lobbies found");
-    for (int n = 0; n < lobbies.size(); ++n)
-    {
-        Print(String(n) + ": " + String(lobbies[n]));
-        Print("Max players: " + String(Steamworks::GetLobbyCapacity(lobbies[n])));
-        Print("Name: " + Steamworks::GetLobbyProperty(lobbies[n], "name"));
-    }
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
