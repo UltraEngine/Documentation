@@ -6,7 +6,7 @@ This function creates a new lobby.
 
 ## Syntax
 
-- uint64 **CreateLobby**(const LobbyType type = LOBBY_PUBLIC, const int capacity = 16)
+- number **CreateLobby**(number type = LOBBY_PUBLIC, number capacity = 16)
 
 | Parameter | Description |
 |---|---|
