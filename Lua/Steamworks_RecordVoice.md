@@ -1,20 +1,20 @@
-# JoinLobby
+# RecordVoice
 
 Namespace: [Steamworks](Steamworks.md)
 
-This functions joins a game lobby.
+This function sets the microphone recording mode and broadcasts the user's voice to other players in the game.
 
 ## Syntax
 
-- bool **JoinLobby**(const uint64 lobbyid)
+- void **RecordVoice**(const bool record)
 
 | Parameter | Description |
 |---|---|
-| lobbyid | ID of the lobby to invite friends to |
+| record | recording mode |
 
-## Returns
+## Remarks
 
-Returns true if the lobby is successfully joined, otherwise false is returned.
+When voice recording is active, your program should provide a visual cue showing the player they can speak.
 
 ## Example
 
@@ -32,7 +32,7 @@ int main(int argc, const char* argv[])
         RuntimeError("Steamworks failed to initialize.");
         return 1;
     }
-
+    
     // Get the displays
     auto displays = GetDisplays();
 
@@ -50,7 +50,7 @@ int main(int argc, const char* argv[])
 
     // Create lobby
     auto lobby = Steamworks::CreateLobby(Steamworks::LOBBY_PRIVATE);
-
+    
     // Main loop
     while (not window->KeyDown(KEY_ESCAPE) and not window->Closed())
     {
