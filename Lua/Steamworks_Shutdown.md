@@ -6,7 +6,7 @@ This function should be called when a Steam app exits.
 
 ## Syntax
 
-- void **Shutdown**()
+- **Shutdown**()
 
 ## Example
 
