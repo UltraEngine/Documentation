@@ -10,6 +10,8 @@ This function gets a statistic for the user for this game.
 
 ## Returns
 
+Returns the statistic value, or -1 if the value cannot be retrieved.
+
 ## Example
 
 ```c++
