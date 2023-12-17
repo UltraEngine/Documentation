@@ -6,7 +6,7 @@ This function is used to fetch a list of lobbies. These can be displayed in the 
 
 ## Syntax
 
-std::vector<uint64\> **GetLobbies**([table](table)& properties)
+- userdata **GetLobbies**(table properties)
 
 | Parameter | Description |
 |---|---|
