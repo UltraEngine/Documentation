@@ -8,6 +8,10 @@ This function sets the microphone recording mode and broadcasts the user's voice
 
 - void **RecordVoice**(const bool record)
 
+| Parameter | Description |
+|---|---|
+| record | recording mode |
+
 ## Remarks
 
 When voice recording is active, your program should provide a visual cue showing the player they can speak.
