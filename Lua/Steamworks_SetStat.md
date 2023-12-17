@@ -1,5 +1,7 @@
 # SetStat
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function sets a user statitics value for this game.
 
 ## Syntax
