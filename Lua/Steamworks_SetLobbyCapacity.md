@@ -6,7 +6,7 @@ This function sets the maximum number of players the lobby can contain at once.
 
 ## Syntax
 
-- **SetLobbyCapacity**(number lobby, const int capacity)
+- boolean **SetLobbyCapacity**(number lobby, const int capacity)
 
 | Parameter | Description |
 |---|---|
