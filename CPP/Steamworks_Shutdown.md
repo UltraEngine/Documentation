@@ -8,6 +8,8 @@ This function should be called when a Steam app exits.
 
 - void **Shutdown**()
 
+## Example
+
 ```c++
 #include "UltraEngine.h"
 #include "Steamworks/Steamworks.h"
