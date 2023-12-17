@@ -6,7 +6,7 @@ This function gets the maximum number of players allowed in the lobby
 
 ## Syntax
 
-- int **GetLobbyCapacity**(const uint64 lobby)
+- number **GetLobbyCapacity**(number lobby)
 
 | Parameter | Description |
 |---|---|
