@@ -6,7 +6,7 @@ This function gets a lobby property value for a given key.
 
 ## Syntax
 
-- [WString](WString.md) **GetLobbyProperty**(const uint64 lobby, const [WString](WString.md)& key)
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **GetLobbyProperty**(number lobby, [string](https://www.lua.org/manual/5.4/manual.html#6.4) key)
 
 | Parameter | Description |
 |---|---|
