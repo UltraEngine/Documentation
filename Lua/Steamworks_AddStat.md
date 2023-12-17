@@ -6,7 +6,7 @@ This function increments the user statistic for this game by the specified value
 
 ## Syntax
 
-- bool **AddStat**(const [WString](WString.md)& name, const int add = 1)
+- boolean **AddStat**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name, number add = 1)
 
 ## Returns
 
