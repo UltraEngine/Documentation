@@ -12,7 +12,6 @@ This module is intended to provide easy access to the most commonly used Steam f
 | [BroadcastPacket](Steamworks_BroadcastPacket.md) | Function | sends a packet all other players in a lobby |
 | [CreateLobby](Steamworks_CreateLobby.md) | Function | creates a new lobby for multiplayer games |
 | [DlcInstalled](Steamworks_DlcInstalled.md) | Function | checks if the specified DLC is installed for this application |
-| [FilterVoice](Steamworks_FilterVoice.md) | Function | used to control which players can hear each other |
 | [GetAppId](Steamworks_GetAppId.md) | Function | gets this application's ID |
 | [GetBuildId](Steamworks_GetBuildId.md) | Function | gets the application build ID |
 | [GetLeaderboard](Steamworks_GetLeaderboard.md) | Function | gets a leaderboard by name |
