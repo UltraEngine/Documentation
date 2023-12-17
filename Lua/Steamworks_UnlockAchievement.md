@@ -6,7 +6,7 @@ This functions sets an achievement for a user's account for the game.
 
 ## Syntax
 
-- bool **UnlockAchievement**(const [WString](WString.md)& name)
+- boolean **UnlockAchievement**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name)
 
 | Parameter | Description |
 |---|---|
@@ -22,54 +22,45 @@ See the [Steamworks documentation](https://partner.steamgames.com/doc/features/a
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steamworks
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return 1
+end
 
-using namespace UltraEngine;
+-- Get the displays
+local displays = GetDisplays()
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steamworks
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
-    
-    // Get the displays
-    auto displays = GetDisplays();
+-- Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280 * displays[1].scale, 720 * displays[1].scale, displays[1], WINDOW_CENTER | WINDOW_TITLEBAR)
 
-    // Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280 * displays[0]->scale, 720 * displays[0]->scale, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+-- Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
 
-    // Create a framebuffer
-    auto framebuffer = CreateFramebuffer(window);
+-- Create world
+local world = CreateWorld()
 
-    // Create world
-    auto world = CreateWorld();
+-- Create camera
+local camera = CreateCamera(world)
 
-    // Create camera
-    auto camera = CreateCamera(world);
+-- Main loop
+while not window:KeyDown(KEY_ESCAPE) and not window:Closed() do
+    -- Press A to win!
+    if window:KeyHit(KEY_A) then
+        Steamworks.UnlockAchievement("ACH_TRAVEL_FAR_SINGLE")
+    end
 
-    // Main loop
-    while (not window->KeyDown(KEY_ESCAPE) and not window->Closed())
-    {
-        // Press A to win!
-        if (window->KeyHit(KEY_A)) Steamworks::UnlockAchievement("ACH_TRAVEL_FAR_SINGLE");
+    -- Update world
+    world:Update()
 
-        // Update world
-        world->Update();
+    -- Update Steamworks
+    Steamworks.Update()
 
-        // Update Steamworks
-        Steamworks::Update();
+    -- Render world
+    world:Render(framebuffer)
+end
 
-        // Render world
-        world->Render(framebuffer);
-    }
-
-    // Close Steamworks
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Close Steamworks
+Steamworks.Shutdown()
 ```
