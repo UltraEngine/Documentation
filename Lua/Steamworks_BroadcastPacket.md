@@ -22,10 +22,6 @@ This function sends a packet of data to all other members in the specified lobby
 
 Returns true of the packet was successfully sent. (This does not necessarily mean the packet was successfully received.)
 
-## Remarks
-
-String data will be converted to UTF-8 before sending.
-
 ```lua
 -- Assuming Steamworks module is loaded or provided by the UltraEngine
 
