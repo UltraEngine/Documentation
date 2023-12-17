@@ -6,7 +6,7 @@ This function opens the Steam overlay with the invite dialog.
 
 ## Syntax
 
-- void **InviteFriends**(const uint64 lobby|
+- **InviteFriends**(number lobby|
 
 | Parameter | Description |
 |---|---|
