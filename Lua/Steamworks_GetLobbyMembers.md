@@ -6,7 +6,7 @@ This function gets the members in the specified lobby.
 
 ## Syntax
 
-- std::vector<uint64\> **GetLobbyMembers**(const uint64 lobby)
+- userdata **GetLobbyMembers**(number lobby)
 
 | Parameter | Description |
 |---|---|
