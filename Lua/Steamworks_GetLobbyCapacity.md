@@ -18,33 +18,40 @@ Returns the maximum number of players allowed in the lobby.
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Assuming Steamworks module is loaded or provided by the UltraEngine
 
-using namespace UltraEngine;
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+local gamename = "Universal Tailor"
+local servername = "My Cool Server"
 
-    auto lobbies = Steamworks::GetLobbies();
-    Print(String(lobbies.size()) + " lobbies found");
-    for (int n = 0; n < lobbies.size(); ++n)
-    {
-        Print(String(n) + ": " + String(lobbies[n]));
-        Print("Name: " + Steamworks::GetLobbyProperty(lobbies[n], "name"));
-        Print("Max players: " + String(Steamworks::GetLobbyCapacity(lobbies[n])));
-        auto members = Steamworks::GetLobbyMembers(lobbies[n]);
-        Print(String(members.size()) + " members\n");
-    }
+-- Create lobby properties
+local properties = {}
+properties["game"] = gamename
 
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Create a lobby
+local lobby = Steamworks.CreateLobby()
+Print("Created lobby " .. String(lobby))
+Steamworks.SetLobbyProperty(lobby, "game", gamename)
+Steamworks.SetLobbyProperty(lobby, "name", servername)
+
+-- Pause briefly before the lobby will be listed in search results
+Sleep(1000)
+
+-- Get lobbies based on properties
+local lobbies = Steamworks.GetLobbies(properties)
+Print(String(#lobbies) .. " lobbies found")
+for n = 1, #lobbies do
+    Print(tostring(n) .. ": " .. String(lobbies[n]))
+    Print("Max players: " .. String(Steamworks.GetLobbyCapacity(lobbies[n])))
+    Print("Name: " .. Steamworks.GetLobbyProperty(lobbies[n], "name"))
+end
+
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
