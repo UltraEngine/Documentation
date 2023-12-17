@@ -6,7 +6,7 @@ This function retrieves the lobby's owner.
 
 ## Syntax
 
-- uint64 **GetLobbyOwner**(const uint64 lobby)
+- number **GetLobbyOwner**(number lobby)
 
 | Parameter | Description |
 |---|---|
