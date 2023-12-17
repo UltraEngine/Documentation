@@ -1,31 +1,27 @@
-# Steamworks::SetStat
+# SetStat
+
+This function sets a user statitics value for this game.
 
 ## Syntax
 
+- boolean **SetStat**([string](https://www.lua.org/manual/5.4/manual.html#6.4) key, [string](https://www.lua.org/manual/5.4/manual.html#6.4) value)
+
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Retrieve the current value
+local value = Steamworks.GetStat("NumWins")
+Print(value)
 
-int main(int argc, const char* argv[])
-{
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Set a new value
+Steamworks.SetStat("NumWins", 105)
 
-    //Retrieve the current value
-    int value = Steamworks::GetStat("NumWins");
-    Print(value);
-    
-    //Set a new value
-    Steamworks::SetStat("NumWins", 105);
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
