@@ -6,7 +6,7 @@ This functions joins a game lobby.
 
 ## Syntax
 
-- bool **JoinLobby**(const uint64 lobbyid)
+- boolean **JoinLobby**(number lobbyid)
 
 | Parameter | Description |
 |---|---|
