@@ -6,34 +6,28 @@ This function initializes the Steamworks API. It should be called at the start o
 
 ## Syntax
 
-- bool **Initialize**()
+- boolean **Initialize**()
 
 ## Returns
 
 Returns true if Steamworks is successfully initialized, otherwise false is returned.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Get and print Steam information
+Print("App ID: " .. tostring(Steamworks.GetAppId()))
+Print("Build ID: " .. tostring(Steamworks.GetBuildId()))
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get user information
+local userId = Steamworks.GetUserId()
+Print("User ID: " .. tostring(userId))
+Print("User name: " .. Steamworks.GetUserName(userId))
 
-    Print("App ID: " + String(Steamworks::GetAppId()));
-    Print("Build ID: " + String(Steamworks::GetBuildId()));
-    auto id = Steamworks::GetUserId();
-    Print("User ID: " + String(id));
-    Print("User name: " + Steamworks::GetUserName(id));
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
