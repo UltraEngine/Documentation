@@ -12,28 +12,24 @@ This functions retrieves the app ID for this game.
 
 Returns the game's Steam app ID.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Assuming Steamworks module is loaded or provided by the UltraEngine
 
-using namespace UltraEngine;
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get and print Steam information
+Print("App ID: " .. String(Steamworks.GetAppId()))
+Print("Build ID: " .. String(Steamworks.GetBuildId()))
 
-    Print("App ID: " + String(Steamworks::GetAppId()));
-    Print("Build ID: " + String(Steamworks::GetBuildId()));
-    auto id = Steamworks::GetUserId();
-    Print("User ID: " + String(id));
-    Print("User name: " + Steamworks::GetUserName(id));
+-- Get user information
+local userId = Steamworks.GetUserId()
+Print("User ID: " .. String(userId))
+Print("User name: " .. Steamworks.GetUserName(userId))
 
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
