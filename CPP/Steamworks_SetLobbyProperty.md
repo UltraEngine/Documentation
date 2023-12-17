@@ -1,5 +1,7 @@
 # SetLobbyProperty
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function sets a key/value pair that can be read by other users.
 
 ## Syntax
