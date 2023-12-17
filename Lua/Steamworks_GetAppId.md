@@ -6,7 +6,7 @@ This functions retrieves the app ID for this game.
 
 ## Syntax
 
-- uint64 **GetAppId**()
+- number **GetAppId**()
 
 ## Returns
 
