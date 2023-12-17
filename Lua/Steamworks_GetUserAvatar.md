@@ -6,7 +6,7 @@ This function retrieves the user's profile picture.
 
 ## Syntax
 
-- shared_ptr<[Pixmap](Pixmap.md)\> **GetUserAvatar**(const uint64 userid)
+- [Pixmap](Pixmap.md) **GetUserAvatar**(number userid)
 
 | Parameter | Description |
 |---|---|
