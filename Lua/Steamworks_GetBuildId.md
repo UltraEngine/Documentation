@@ -6,7 +6,7 @@ This functions retrieves the build ID for this game.
 
 ## Syntax
 
-- uint64 **GetBuildId**()
+- number **GetBuildId**()
 
 ## Returns
 
