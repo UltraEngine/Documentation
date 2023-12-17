@@ -21,24 +21,21 @@ See the [Steamworks documentation](https://partner.steamgames.com/doc/features/a
 ## Example
 
 ```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+-- Initialize Steamworks
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return 1
+end
 
-using namespace UltraEngine;
+-- Get the App ID
+local appId = Steamworks.GetAppId()
 
-int main(int argc, const char* argv[])
-{
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Check if the app is subscribed
+Print("App subscribed: " .. tostring(Steamworks.AppSubscribed(appId)))
 
-    auto appid = Steamworks::GetAppId();
-    Print("App subscribed: " + String(Steamworks::AppSubscribed(appid)));
-    Print("App installed: " + String(Steamworks::AppInstalled(appid)));
+-- Check if the app is installed
+Print("App installed: " .. tostring(Steamworks.AppInstalled(appId)))
 
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steamworks
+Steamworks.Shutdown()
 ```
