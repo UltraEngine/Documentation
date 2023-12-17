@@ -1,4 +1,6 @@
-# Steamworks::GetUserId
+# GetUserId
+
+Namespace: [Steamworks](Steamworks.md)
 
 This function gets the user's Steam profile ID.
 
