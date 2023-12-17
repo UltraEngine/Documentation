@@ -18,30 +18,21 @@ Returns a pixmap with the user's profile picture.
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
-#include "ComponentSystem.h"
+```lua
+-- Initialize Steamworks
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return 1
+end
 
-using namespace UltraEngine;
+-- Get user ID
+local userid = Steamworks.GetUserId()
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get user avatar
+local pixmap = Steamworks.GetUserAvatar(userid)
+pixmap:Save("avatar.dds")
+RunFile("avatar.dds")
 
-    auto userid = Steamworks::GetUserId();
-    auto pixmap = Steamworks::GetUserAvatar(userid);
-    pixmap->Save("avatar.dds");
-    RunFile("avatar.dds");
-
-    // Close Steam
-    Steamworks::Shutdown();
-
-    return 0;
-}
+-- Close Steam
+Steamworks.Shutdown()
 ```
