@@ -12,28 +12,22 @@ This functions retrieves the build ID for this game.
 
 Returns the game's Steam build ID.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Get and print Steam information
+Print("App ID: " .. String(Steamworks.GetAppId()))
+Print("Build ID: " .. String(Steamworks.GetBuildId()))
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get user information
+local userId = Steamworks.GetUserId()
+Print("User ID: " .. String(userId))
+Print("User name: " .. Steamworks.GetUserName(userId))
 
-    Print("App ID: " + String(Steamworks::GetAppId()));
-    Print("Build ID: " + String(Steamworks::GetBuildId()));
-    auto id = Steamworks::GetUserId();
-    Print("User ID: " + String(id));
-    Print("User name: " + Steamworks::GetUserName(id));
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
