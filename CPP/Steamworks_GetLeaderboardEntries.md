@@ -17,7 +17,7 @@ This function retrieves the leaderboard scores.
 
 ## Returns
 
-Returns an array of LeaderboardEntry objects, each with the following properties:
+Returns an array of LeaderboardEntry objects, each with the following members:
 
 | Property | Type | Description |
 |---|---|---|
