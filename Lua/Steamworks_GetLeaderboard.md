@@ -18,35 +18,31 @@ Returns the ID of the leaderboard if successful, otherwise zero is returned.
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Get the leaderboard
+local leaderboard = Steamworks.GetLeaderboard("Feet Traveled")
+Print("Leaderboard: " .. String(leaderboard))
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get leaderboard entries and print them
+local entries = Steamworks.GetLeaderboardEntries(leaderboard)
+for n = 1, #entries do
+    local name = Steamworks.GetUserName(entries[n].userid)
+    Print(name .. ": " .. String(entries[n].score))
+end
 
-    auto leaderboard = Steamworks::GetLeaderboard("Feet Traveled");
-    Print("Leaderboard: " + String(leaderboard));
+-- Get user input for the score
+local userInput = Input("\nEnter your score:")
+local userScore = userInput:ToInt()
 
-    auto entries = Steamworks::GetLeaderboardEntries(leaderboard);
-    for (int n = 0; n < entries.size(); ++n)
-    {
-        auto name = Steamworks::GetUserName(entries[n].userid);
-        Print(name + ": " + String(entries[n].score));        
-    }
+-- Set the user's score on the leaderboard
+Steamworks.SetLeaderboardScore(leaderboard, userScore)
 
-    auto s = Input("\nEnter your score:");
-    Steamworks::SetLeaderboardScore(leaderboard, s.ToInt());
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
