@@ -1,5 +1,7 @@
 # GetLobbyOwner
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function retrieves the lobby's owner.
 
 ## Syntax
