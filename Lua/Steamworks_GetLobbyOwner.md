@@ -20,28 +20,23 @@ Returns the user ID of the lobby's owner if the user is in the lobby, otherwise 
 
 If the owner of a lobby leaves, ownership will be transfered to another user and a LOBBYDATACHANGED event will be emitted.
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Create a lobby
+local lobby = Steamworks.CreateLobby()
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get the owner of the lobby
+local owner = Steamworks.GetLobbyOwner(lobby)
 
-    auto lobby = Steamworks::CreateLobby();
-    auto owner = Steamworks::GetLobbyOwner(lobby);
+-- Print lobby and owner information
+Print("Lobby: " .. String(lobby))
+Print("Owner: " .. Steamworks.GetUserName(owner))
 
-    Print("Lobby: " + String(lobby));
-    Print("Owner: " + Steamworks::GetUserName(owner));
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
