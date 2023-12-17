@@ -1,5 +1,7 @@
 # SetLeaderboardScore
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function sets the user's score for the specified leaderboard.
 
 ## Syntax
