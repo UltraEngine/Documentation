@@ -1,5 +1,7 @@
 # GetLobbyMembers
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function gets the members in the specified lobby.
 
 ## Syntax
