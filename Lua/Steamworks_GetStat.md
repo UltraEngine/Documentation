@@ -14,28 +14,20 @@ Returns the statistic value, or -1 if the value cannot be retrieved.
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steamworks
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return 1
+end
 
-using namespace UltraEngine;
+-- Increment the stat
+Steamworks.AddStat("NumWins")
 
-int main(int argc, const char* argv[])
-{
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Retrieve the current value
+local value = Steamworks.GetStat("NumWins")
+Print(value)
 
-    //Retrieve the current value
-    int value = Steamworks::GetStat("NumWins");
-    Print(value);
-    
-    //Set a new value
-    Steamworks::SetStat("NumWins", 105);
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steamworks
+Steamworks.Shutdown()
 ```
