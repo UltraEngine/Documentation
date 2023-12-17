@@ -6,9 +6,9 @@ This function sends a packet of data to another user who is in the same lobby.
 
 ## Syntax
 
-- bool **SendPacket**(const uint64 userid, const [WString](WString)& data, const int channel = 0, const P2PSendMode sendtype = P2PSEND_UNRELIABLE)
-- bool **SendPacket**(const uint64 userid, std::shared_ptr<[Buffer](Buffer.md)\> data, const int channel = 0, const P2PSendMode sendtype = P2PSEND_UNRELIABLE)
-- bool **SendPacket**(const uint64 userid, const void* data, const uint32 size, const int channel = 0, const P2PSendMode sendtype = P2PSEND_UNRELIABLE)
+- boolean **SendPacket**(number userid, [string](https://www.lua.org/manual/5.4/manual.html#6.4) data, number channel = 0, number sendtype = P2PSEND_UNRELIABLE)
+- boolean **SendPacket**(number userid, [Buffer](Buffer.md) data, number channel = 0, number sendtype = P2PSEND_UNRELIABLE)
+- boolean **SendPacket**(number userid, userdata data, number size, number channel = 0, number sendtype = P2PSEND_UNRELIABLE)
 
 | Parameter | Description |
 |---|---|
