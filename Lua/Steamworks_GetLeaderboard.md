@@ -6,7 +6,7 @@ This function gets a game's leaderboard.
 
 ## Syntax
 
-- uint64 **GetLeaderboard**(const [WString](WString.md)& name)
+- number **GetLeaderboard**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name)
 
 | Parameter | Description |
 |---|---|
