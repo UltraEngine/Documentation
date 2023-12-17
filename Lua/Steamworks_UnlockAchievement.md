@@ -46,6 +46,7 @@ local camera = CreateCamera(world)
 
 -- Main loop
 while not window:KeyDown(KEY_ESCAPE) and not window:Closed() do
+    
     -- Press A to win!
     if window:KeyHit(KEY_A) then
         Steamworks.UnlockAchievement("ACH_TRAVEL_FAR_SINGLE")
