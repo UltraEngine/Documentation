@@ -1,4 +1,4 @@
-# Steamworks::GetStat
+# GetStat
 
 Namespace: [Steamworks](Steamworks.md)
 
