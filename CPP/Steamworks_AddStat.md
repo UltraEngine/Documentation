@@ -4,6 +4,8 @@ Namespace: [Steamworks](Steamworks.md)
 
 This function increments the user statistic for this game by the specified value.
 
+## Syntax
+
 - bool **AddStat**(const [WString](WString.md)& name, const int add = 1)
 
 ## Returns
