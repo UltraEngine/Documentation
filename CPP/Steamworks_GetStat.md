@@ -1,5 +1,14 @@
 # Steamworks::GetStat
 
+Namespace: [Steamworks](Steamworks.md)
+
+This function gets a statistic for the user for this game.
+
+## Syntax
+
+- int **GetStat**(const [WString](WString.md)& name)
+
+## Returns
 
 ## Example
 
