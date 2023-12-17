@@ -6,7 +6,7 @@ This function gets the user's Steam profile ID.
 
 ## Syntax
 
-- uint64_t **GetUserId**()
+- uint64 **GetUserId**()
 
 ## Returns
 
