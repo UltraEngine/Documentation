@@ -13,8 +13,6 @@ This functions retrieves the app ID for this game.
 Returns the game's Steam app ID.
 
 ```lua
--- Assuming Steamworks module is loaded or provided by the UltraEngine
-
 -- Initialize Steam
 if not Steamworks.Initialize() then
     RuntimeError("Steamworks failed to initialize.")
