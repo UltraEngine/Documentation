@@ -1,5 +1,7 @@
 # GetPacket
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function retrieves the next available packet sent by another user.
 
 ## Syntax
