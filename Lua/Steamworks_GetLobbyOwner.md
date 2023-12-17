@@ -34,7 +34,7 @@ local lobby = Steamworks.CreateLobby()
 local owner = Steamworks.GetLobbyOwner(lobby)
 
 -- Print lobby and owner information
-Print("Lobby: " .. String(lobby))
+Print("Lobby: " .. tostring(lobby))
 Print("Owner: " .. Steamworks.GetUserName(owner))
 
 -- Shutdown Steam
