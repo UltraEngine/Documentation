@@ -1,6 +1,6 @@
 # SendPacket
 
-[Steamworks](Steamworks.md)
+Namespace: [Steamworks](Steamworks.md)
 
 This function sends a packet of data to another user who is in the same lobby.
 
