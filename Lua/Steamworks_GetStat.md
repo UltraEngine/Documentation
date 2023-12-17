@@ -6,7 +6,7 @@ This function gets a statistic for the user for this game.
 
 ## Syntax
 
-- number **GetStat**([string]([WString.md](https://www.lua.org/manual/5.4/manual.html#6.4)) name)
+- number **GetStat**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name)
 
 ## Returns
 
