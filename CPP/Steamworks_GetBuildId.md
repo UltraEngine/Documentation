@@ -10,7 +10,7 @@ This functions retrieves the build ID for this game.
 
 ## Returns
 
-Returns the game's Steam app ID.
+Returns the game's Steam build ID.
 
 ```c++
 #include "UltraEngine.h"
