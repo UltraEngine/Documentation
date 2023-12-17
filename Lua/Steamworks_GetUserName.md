@@ -4,7 +4,7 @@ This function retrieves the display name for the specified user ID.
 
 ## Syntax
 
-- [WString](WString.md) **GetUserName**(const uint64 userid)
+- [string](https://www.lua.org/manual/5.4/manual.html#6.4) **GetUserName**(number userid)
 
 | Parameter | Description |
 |---|---|
@@ -16,27 +16,22 @@ Returns the user's display name.
 
 ## Example
 
-```c++
-#include "UltraEngine.h"
-#include "Steamworks/Steamworks.h"
+```lua
+-- Initialize Steam
+if not Steamworks.Initialize() then
+    RuntimeError("Steamworks failed to initialize.")
+    return
+end
 
-using namespace UltraEngine;
+-- Get and print Steam information
+Print("App ID: " .. String(Steamworks.GetAppId()))
+Print("Build ID: " .. String(Steamworks.GetBuildId()))
 
-int main(int argc, const char* argv[])
-{
-    // Initialize Steam
-    if (not Steamworks::Initialize())
-    {
-        RuntimeError("Steamworks failed to initialize.");
-        return 1;
-    }
+-- Get user information
+local userId = Steamworks.GetUserId()
+Print("User ID: " .. String(userId))
+Print("User name: " .. Steamworks.GetUserName(userId))
 
-    Print("App ID: " + String(Steamworks::GetAppId()));
-    auto id = Steamworks::GetUserId();
-    Print("User ID: " + String(id));
-    Print("User name: " + Steamworks::GetUserName(id));
-
-    Steamworks::Shutdown();
-    return 0;
-}
+-- Shutdown Steam
+Steamworks.Shutdown()
 ```
