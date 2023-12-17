@@ -6,7 +6,15 @@ This functions joins a game lobby.
 
 ## Syntax
 
-- bool **JoinLobby**(const uint64_t lobbyid)
+- bool **JoinLobby**(const uint64 lobbyid)
+
+| Parameter | Description |
+|---|---|
+| lobbyid | ID of the lobby to invite friends to |
+
+## Returns
+
+Returns true if the lobby is successfully joined, otherwise false is returned.
 
 ## Example
 
