@@ -1,5 +1,7 @@
 # GetLobbyProperty
 
+Namespace: [Steamworks](Steamworks.md)
+
 This function gets a lobby property value for a given key.
 
 ## Syntax
