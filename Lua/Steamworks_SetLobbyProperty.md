@@ -32,7 +32,7 @@ properties["game"] = gamename
 
 -- Create a lobby
 local lobby = Steamworks.CreateLobby()
-Print("Created lobby " .. String(lobby))
+Print("Created lobby " .. tostring(lobby))
 Steamworks.SetLobbyProperty(lobby, "game", gamename)
 Steamworks.SetLobbyProperty(lobby, "name", servername)
 
@@ -41,10 +41,10 @@ Sleep(1000)
 
 -- Get lobbies based on properties
 local lobbies = Steamworks.GetLobbies(properties)
-Print(String(#lobbies) .. " lobbies found")
+Print(tostring(#lobbies) .. " lobbies found")
 for n = 1, #lobbies do
-    Print(tostring(n) .. ": " .. String(lobbies[n]))
-    Print("Max players: " .. String(Steamworks.GetLobbyCapacity(lobbies[n])))
+    Print(tostring(n) .. ": " .. tostring(lobbies[n]))
+    Print("Max players: " .. tostring(Steamworks.GetLobbyCapacity(lobbies[n])))
     Print("Name: " .. Steamworks.GetLobbyProperty(lobbies[n], "name"))
 end
 
