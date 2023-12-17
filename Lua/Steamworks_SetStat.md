@@ -6,7 +6,16 @@ This function sets a user statitics value for this game.
 
 ## Syntax
 
-- boolean **SetStat**([string](https://www.lua.org/manual/5.4/manual.html#6.4) key, [string](https://www.lua.org/manual/5.4/manual.html#6.4) value)
+- boolean **SetStat**([string](https://www.lua.org/manual/5.4/manual.html#6.4) key, number value)
+
+| Parameter | Description |
+|---|---|
+| key | name of user statistic to set |
+| value | value to set |
+
+## Returns
+
+Returns true if the user statistic is successfully stored, otherwise false is returned.
 
 ## Example
 
