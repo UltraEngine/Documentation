@@ -6,7 +6,7 @@ This function checks to see if an application is installed.
 
 ## Syntax
 
-- bool **AppInstalled**(const uint64 appid)
+- boolean **AppInstalled**(number appid)
 
 | Parameter | Description |
 |---|---|
