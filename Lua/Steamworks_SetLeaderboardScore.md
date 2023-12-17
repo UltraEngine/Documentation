@@ -6,7 +6,7 @@ This function sets the user's score for the specified leaderboard.
 
 ## Syntax
 
-- bool **SetLeaderboardScore**(const uint64 leaderboard, const int score)
+- boolean **SetLeaderboardScore**(number leaderboard, number score)
 
 | Parameter | Description |
 |---|---|
