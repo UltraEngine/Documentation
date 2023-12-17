@@ -1,6 +1,21 @@
-# Steamworks::SetStat
+# SetStat
+
+Namespace: [Steamworks](Steamworks.md)
+
+This function sets a user statitics value for this game.
 
 ## Syntax
+
+- bool **SetStat**([WString](WString.md) key, const int value)
+
+| Parameter | Description |
+|---|---|
+| key | name of user statistic to set |
+| value | value to set |
+
+## Returns
+
+Returns true if the user statistic is successfully stored, otherwise false is returned.
 
 ## Example
 
