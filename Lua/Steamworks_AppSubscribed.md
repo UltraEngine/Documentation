@@ -6,7 +6,7 @@ This function checks to see if an application is authorized for usage by the use
 
 ## Syntax
 
-- bool **AppSubscribed**(const uint64 appid)
+- boolean **AppSubscribed**(number appid)
 
 | Parameter | Description |
 |---|---|
