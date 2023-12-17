@@ -41,7 +41,7 @@ local world = CreateWorld()
 local camera = CreateCamera(world)
 
 -- Create lobby
-local lobby = Steamworks.CreateLobby(Steamworks.LOBBY_PRIVATE)
+local lobby = Steamworks.CreateLobby()
 
 -- Main loop
 while not window:KeyDown(KEY_ESCAPE) and not window:Closed() do
