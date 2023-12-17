@@ -35,6 +35,7 @@ int main(int argc, const char* argv[])
     }
 
     auto appid = Steamworks::GetAppId();
+    Print("App subscribed: " + String(Steamworks::AppSubscribed(appid)));
     Print("App installed: " + String(Steamworks::AppInstalled(appid)));
 
     Steamworks::Shutdown();
