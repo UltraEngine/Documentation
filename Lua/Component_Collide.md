@@ -1,6 +1,6 @@
 # Component:Collide
 
-This method is called evefy time the entity collides with another object.
+This method is called every time the entity collides with another object.
 
 ## Syntax
 
