@@ -145,3 +145,70 @@ To call a component method or get a value, first check if a component of the des
 auto component = entity->GetComponent<HealthManager>();
 if (component) component->TakeDamage(10);
 ```
+
+## Exposing Components to the Editor
+
+To display components in the editor, each component must have a JSON file with the same base name as the code file. The format of the JSON data is the same for every supported programming language. Here is the contents of the Mover.json file:
+
+```json
+{
+    "component":
+    {
+        "properties":
+        [
+            {
+                "name": "movementspeed",
+                "label": "Movement",
+                "value": [0.0,0.0,0.0]
+            },
+            {
+                "name": "rotationspeed",
+                "label": "Rotation",
+                "value": [0.0,0.0,0.0]
+            },
+            {
+                "name": "globalcoords",
+                "label": "Global",
+                "value": false
+            }
+        ]
+    }
+}
+```
+
+Each property entry represents an editable value that will be displayed in the component properties when it is attached to an entity. The default value of the property determines what type of interface element will be used to control the value.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/component_properties.png)
+
+We can add input and output functions to control which component methods can be connected in the flowgraph editor:
+
+```json
+    "component":
+    {
+        "outputs":
+        [
+            {
+                "name": "Open"
+            },
+            {
+                "name": "Close"
+            }
+        ],
+        "inputs":
+        [
+            {
+                "name": "Open"
+            },
+            {
+                "name": "Close"
+            },
+            {
+                "name": "Enable"
+            },
+            {
+                "name": "Disable"
+            }
+        ]
+    }
+}
+```
