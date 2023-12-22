@@ -180,9 +180,10 @@ Each property entry represents an editable value that will be displayed in the c
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/component_properties.png)
 
-We can add input and output functions to control which component methods can be connected in the flowgraph editor:
+We can add input and output functions to the component definition.
 
 ```json
+{
     "component":
     {
         "outputs":
@@ -212,3 +213,10 @@ We can add input and output functions to control which component methods can be 
     }
 }
 ```
+
+This will control which component methods can be connected in the flowgraph editor.
+
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/component_properties.png)
+
+
+
