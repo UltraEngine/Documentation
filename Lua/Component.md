@@ -167,4 +167,4 @@ We can add input and output functions to the component definition.
 
 This will control which component methods can be connected in the flowgraph editor.
 
-![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/component_properties.png)
+![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/component_outputs.png)
