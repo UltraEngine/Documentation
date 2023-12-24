@@ -36,7 +36,7 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Terrain Paint", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
     //Create a world
     auto world = CreateWorld();
@@ -66,7 +66,7 @@ int main(int argc, const char* argv[])
     auto ground = CreateMaterial();
     auto diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
     auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
-    ground->SetTexture(diffusemap, TEXTURE_DIFFUSE);
+    ground->SetTexture(diffusemap, TEXTURE_BASE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
     terrain->SetMaterial(ground);
 
@@ -75,9 +75,10 @@ int main(int argc, const char* argv[])
     diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k.dds");
     normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_dot3.dds");
     auto dispmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/Rocks_Dirt_Ground_2k_disp.dds");
-    rocks->SetTexture(diffusemap, TEXTURE_DIFFUSE);
+    rocks->SetTexture(diffusemap, TEXTURE_BASE);
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
+    auto rocklayer = terrain->AddLayer(rocks);
 
     //Apply material based on terrain slope
     for (int x = 0; x < terrain->resolution.x; ++x)
@@ -88,10 +89,10 @@ int main(int argc, const char* argv[])
             if (slope > 15.0f)
             {
                 float wt = Min((slope - 15.0f) / 10.0f, 1.0f);
-                terrain->SetMaterial(x, y, rocks, wt);
+                terrain->SetLayerWeight(rocklayer, x, y, wt);
             }
         }
-    } 
+    }
 
     //Camera controls
     camera->AddComponent<CameraControls>();
