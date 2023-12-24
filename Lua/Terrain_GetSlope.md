@@ -75,9 +75,6 @@ rocks:SetTexture(dispmap, TEXTURE_DISPLACEMENT)
 
 local rocklayer = terrain:AddLayer(rocks)
 
-terrain:SetLayerScale(groundlayer, 4)
-terrain:SetLayerScale(rocklayer, 8)
-
 -- Apply material based on terrain slope
 for x = 0, terrain.resolution.x - 1 do
     for y = 0, terrain.resolution.y - 1 do
