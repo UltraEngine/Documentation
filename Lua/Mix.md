@@ -19,5 +19,5 @@ Returns the result of the linear interpolation.
 ## Example
 
 ```lua
-Print(Mix(10.0f, 20.0f, 0.75f))
+Print(Mix(10, 20, 0.75))
 ```
