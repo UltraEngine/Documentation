@@ -83,6 +83,8 @@ function Mover.new()
     setmetatable(instance, { __index = Mover })
     return instance
 end
+
+return Mover
 ```
 
 ## Component Methods and Members
