@@ -5,7 +5,6 @@ This function is used to create a new window.
 ## Syntax
 
 - shared_ptr<[Window](Window.md)\> **CreateWindow**(const [WString](WString.md)& title, const int x, const int y, const int width, const int height, shared_ptr<[Display](Display.md)\> display, const [WindowStyle](Window.md) style = WINDOW_DEFAULT)
-
 - shared_ptr<[Window](Window.md)\> **CreateWindow**(const [WString](WString.md)& title, const int x, const int y, const int width, const int height, shared_ptr<[Window](Window.md)\> parent, const [WindowStyle](Window.md) style = WINDOW_DEFAULT)
 
 | Parameter | Description |
