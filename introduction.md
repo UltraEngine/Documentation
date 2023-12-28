@@ -18,6 +18,8 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 ## Installation
 
+The following installation instructions only apply if you own a license for the standalone version of Ultra Engine. If you purchased Ultra Engine on Steam, the application will install as a regular Steam app and you can ignore the instructions below.
+
 First, download and install the [Ultra Engine Client](https://github.com/UltraEngine/ultraengine.github.io/raw/main/UltraClient.exe). This application will allow you to install different versions of the game engine and receive updates. When you open the application you will be prompted to sign into your Ultra Engine account. If you do not have an account yet, you can create one [here](https://www.ultraengine.com/community/register).
 
 ![](https://raw.githubusercontent.com/UltraEngine/Documentation/master/Images/client_signin.jpg)
