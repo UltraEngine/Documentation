@@ -6,11 +6,11 @@ This class handle user interface elements. A variety of widget types are support
 
 | Property | Type | Description |
 |---|---|---|
-| blocks | const vector<shared_ptr<[WidgetBlock](WidgetBlock.md)\> \>& | read-only container of widget blocks |
-| items | const std::vector<[WidgetItem](WidgetItem.md)>& | read-only items list |
-| kids | const vector<shared_ptr<[Widget](Widget.md)\> \>& | read-only container of child widgets |
-| size | const [iVec2](iVec2.md)& | read-only widget size |
-| text | const [WString](WString.md)& | read-only widget text |
+| blocks | vector<shared_ptr<[WidgetBlock](WidgetBlock.md)\> \> | read-only container of widget blocks |
+| items | std::vector<[WidgetItem](WidgetItem.md)> | read-only items list |
+| kids | vector<shared_ptr<[Widget](Widget.md)\> \> | read-only container of child widgets |
+| size | [iVec2](iVec2.md) | read-only widget size |
+| text | [WString](WString.md) | read-only widget text |
 | [AddBlock](Widget_AddBlock.md) | Method | adds a widget block |
 | [AddItem](Widget_AddItem.md) | Method | adds a widget item |
 | [AddNode](Widget_AddNode.md) | Method | adds a node to a treeview widget |
