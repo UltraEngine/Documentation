@@ -153,8 +153,7 @@ int main(int argc, const char* argv[])
     camera->SetClearColor(0.125);
 
     //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    camera->AddComponent<CameraControls>();
 
     //Create a model
     auto box = CreateBox(world);
