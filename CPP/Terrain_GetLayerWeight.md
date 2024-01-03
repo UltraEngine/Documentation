@@ -3,12 +3,12 @@
 This method gets all the layers in use on the terrain at the specified coordinate.
 
 ## Syntax
-
-- float **GetLayerWeight**(const int x, const int y)
-- float **GetLayerWeight**(const [iVec2](iVec2.md)& coord)
+- float **GetLayerWeight**(const int layer, const int x, const int y)
+- float **GetLayerWeight**(const int layer, const [iVec2](iVec2.md)& coord)
 
 | Parameter | Description |
 |---|---|
+| layer | terrain layer to retrieve information for |
 | coord, (x, y) | terrain coordinate |
 
 ## Returns
