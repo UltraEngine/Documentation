@@ -4,7 +4,7 @@ This function creates a new box light.
 
 ## Syntax
 
-- void **CreateBoxLight**(shared_ptr<[World](World.md)\> world)
+- shared_ptr<[BoxLight](BoxLight.md)\> **CreateBoxLight**(shared_ptr<[World](World.md)\> world)
 
 | Parameter | Description |
 |---|---|
