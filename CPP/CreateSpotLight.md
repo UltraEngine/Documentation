@@ -4,7 +4,7 @@ This function creates a new spot light.
 
 ## Syntax
 
-- void **CreateSpotLight**(shared_ptr<[World](World.md)\> world)
+- shared_ptr<[SpotLight](SpotLight.md)\> **CreateSpotLight**(shared_ptr<[World](World.md)\> world)
 
 | Parameter | Description |
 |---|---|
