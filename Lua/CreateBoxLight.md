@@ -4,7 +4,7 @@ This function creates a new box light.
 
 ## Syntax
 
-[Light](Light.md) **CreateBoxLight**([World](World.md) world)
+- [Light](Light.md) **CreateBoxLight**([World](World.md) world)
 
 | Parameter | Description |
 |---|---|
