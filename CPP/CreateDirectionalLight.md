@@ -4,7 +4,7 @@ This function creates a new directional light.
 
 ## Syntax
 
-- shared_ptr<[DirectionalLight](DirectionalLight.md)\>  **CreateDirectionalLight**(shared_ptr<[World](World.md)\> world)
+- shared_ptr<[Light](Light.md)\>  **CreateDirectionalLight**(shared_ptr<[World](World.md)\> world)
 
 | Parameter | Description |
 |---|---|
