@@ -4,7 +4,7 @@ This function creates a new point light.
 
 ## Syntax
 
-- shared_ptr<[PointLight](PointLight.md)\> **CreatePointLight**(shared_ptr<[World](World.md)\> world, const float range = 5.0f)
+- shared_ptr<[Light](Light.md)\> **CreatePointLight**(shared_ptr<[World](World.md)\> world, const float range = 5.0f)
 
 | Parameter | Description |
 |---|---|
