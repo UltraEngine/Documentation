@@ -679,6 +679,10 @@
                             "filename": "Entity_Copy"
                         },
                         {
+                            "title": "EmitSound",
+                            "filename": "Entity_EmitSound"
+                        },
+                        {
                             "title": "FindChild",
                             "filename": "Entity_FindChild"
                         },
