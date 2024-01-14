@@ -16,7 +16,7 @@ This function is used to create a new window.
 | height | initial height of the window |
 | display | Display to create the window on |
 | parent | parent Window |
-| style | can be any combination of WINDOW_TITLEBAR, WINDOW_RESiZABLE, WINDOW_CENTER, WINDOW_HIDDEN, WINDOW_CHILD, WINDOW_CLIENTCOORDS, and WINDOW_ACCEPTFILES |
+| style | can be any combination of WINDOW_TITLEBAR, WINDOW_RESiZABLE, WINDOW_CENTER, WINDOW_HIDDEN, WINDOW_CHILD, WINDOW_CLIENTCOORDS, WINDOW_FULLSCREEN, and WINDOW_ACCEPTFILES |
 
 ## Remarks
 
