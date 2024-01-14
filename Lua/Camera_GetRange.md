@@ -1,4 +1,4 @@
-# Camera::GetRange
+# Camera:GetRange
 
 This method retrieves the camera range.
 
