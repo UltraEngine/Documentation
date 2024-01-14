@@ -305,6 +305,22 @@
                                     "filename": "CreateCamera"
                                 },
                                 {
+                                    "title": "GetFov",
+                                    "filename": "Camera_GetFov"
+                                },
+                                {
+                                    "title": "GetProjectionMode",
+                                    "filename": "Camera_GetProjectionMode"
+                                },
+                                {
+                                    "title": "GetRange",
+                                    "filename": "Camera_GetRange"
+                                },
+                                {
+                                    "title": "GetZoom",
+                                    "filename": "Camera_GetZoom"
+                                },
+                                {
                                     "title": "Pick",
                                     "filename": "Camera_Pick"
                                 },
@@ -331,6 +347,10 @@
                                 {
                                     "title": "SetProjectionMode",
                                     "filename": "Camera_SetProjectionMode"
+                                },
+                                {
+                                    "title": "SetRange",
+                                    "filename": "Camera_SetRange"
                                 },
                                 {
                                     "title": "SetRealtime",
