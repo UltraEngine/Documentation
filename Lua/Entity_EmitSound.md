@@ -16,4 +16,4 @@
 
 Returns a speaker that can be used to control the sound.
 
-This method may return NULL if the listener is out of range of the sound.
+This method may return nil if the listener is out of range of the sound.
