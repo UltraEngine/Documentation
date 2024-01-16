@@ -1838,7 +1838,8 @@
                         },
                         {
                             "title": "AsyncRender",
-                            "filename": "AsyncRender"                          
+                            "filename": "AsyncRender",
+                            "hideFromLua": true
                         }
                     ]
                 },
