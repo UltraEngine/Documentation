@@ -1835,6 +1835,10 @@
                                     "filename": "TransformCoord"
                                 }
                             ]
+                        },
+                        {
+                            "title": "AsyncRender",
+                            "filename": "AsyncRender"                          
                         }
                     ]
                 },
