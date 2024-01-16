@@ -22,7 +22,6 @@ shared_ptr<Object> MyFunc(shared_ptr<Object> o)
 int main(int argc, const char* argv[])
 {
     auto thread = CreateThread(MyFunc);
-    thread->Resume();
     thread->Wait();
     auto o = thread->GetResult();
     auto s = o->As<String>();
