@@ -345,6 +345,10 @@
                                     "filename": "Camera_SetFov"
                                 },
                                 {
+                                    "title": "SetOrder",
+                                    "filename": "Camera_SetOrder"
+                                },
+                                {
                                     "title": "SetProjectionMode",
                                     "filename": "Camera_SetProjectionMode"
                                 },
