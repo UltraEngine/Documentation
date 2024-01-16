@@ -1835,11 +1835,6 @@
                                     "filename": "TransformCoord"
                                 }
                             ]
-                        },
-                        {
-                            "title": "AsyncRender",
-                            "filename": "AsyncRender",
-                            "hideFromLua": true
                         }
                     ]
                 },
