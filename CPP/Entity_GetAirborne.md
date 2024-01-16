@@ -121,7 +121,7 @@ int main(int argc, const char* argv[])
 
         //Adjust camera position
         float eyeheight = 1.7f;
-        if (player->GetPlayerCrouched())
+        if (player->GetCrouched())
         {
             eyeheight = 1.8f * 0.5f - 0.1f;
         }
