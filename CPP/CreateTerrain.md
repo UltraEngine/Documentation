@@ -16,7 +16,7 @@ This function creates a new terrain entity.
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/Player/CameraControls.hpp"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
@@ -37,10 +37,11 @@ int main(int argc, const char* argv[])
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->SetFOV(70);
+    camera->SetFov(70);
     camera->SetPosition(0, 50, 0);
     camera->SetRotation(45, 0, 0);
     camera->SetClearColor(0.125);
+    //camera->SetSweptCulling(true);
 
     //Sunlight
     auto light = CreateDirectionalLight(world);
@@ -69,6 +70,8 @@ int main(int argc, const char* argv[])
     rocks->SetTexture(normalmap, TEXTURE_NORMAL);
     rocks->SetTexture(dispmap, TEXTURE_DISPLACEMENT);
 
+    int rocklayer = terrain->AddLayer(rocks);
+
     //Apply material based on terrain slope
     for (int x = 0; x < terrain->resolution.x; ++x)
     {
@@ -78,7 +81,7 @@ int main(int argc, const char* argv[])
             if (slope > 15.0f)
             {
                 float wt = Min((slope - 15.0f) / 10.0f, 1.0f);
-                terrain->SetMaterial(x, y, rocks, wt);
+                terrain->SetLayerWeight(rocklayer, x, y, wt);
             }
         }
     }
