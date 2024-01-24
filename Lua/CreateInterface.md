@@ -20,7 +20,7 @@ Returns a new interface object.
 
 ## Example
 
-Four examples are shown below to demonstrate different types of programs you can create.
+Three examples are shown below to demonstrate different types of programs you can create.
 
 The first example shows how to create an interface directly on a window for an event-based desktop application.
 
