@@ -369,6 +369,10 @@
                                     "filename": "Camera_SetRenderTarget"
                                 },
                                 {
+                                    "title": "SetSweptCulling",
+                                    "filename": "Camera_SetSweptCulling"
+                                },
+                                {
                                     "title": "SetTessellation",
                                     "filename": "Camera_SetTessellation"
                                 },
