@@ -16,11 +16,7 @@ This function is used to create a new window.
 | height | initial height of the window |
 | display | Display to create the window on |
 | parent | parent Window |
-| style | can be any combination of WINDOW_TITLEBAR, WINDOW_RESiZABLE, WINDOW_CENTER, WINDOW_HIDDEN, WINDOW_CHILD, WINDOW_CLIENTCOORDS, WINDOW_FULLSCREEN, and WINDOW_ACCEPTFILES |
-
-## Remarks
-
-A framebuffer cannot be created on a window that uses the WINDOW_RESIZABLE window style, unless the multi-threaded renderer is disabled by calling [AsyncRender](AsyncRender.md) prior to engine initialization.
+| style | can be any combination of WINDOW_TITLEBAR, WINDOW_RESIZABLE, WINDOW_CENTER, WINDOW_HIDDEN, WINDOW_CHILD, WINDOW_CLIENTCOORDS, WINDOW_FULLSCREEN, and WINDOW_ACCEPTFILES |
 
 ## Example
 
