@@ -1,10 +1,10 @@
-# Camera::SetSweptCulling
+# Camera:SetSweptCulling
 
 This method is used to set the camera swept culling mode. When swept culling is enabled, it can prevent objects from popping into view when the camera moves or turns.
 
 ## Syntax
 
-- void **SetSweptCulling**(boolean mode)
+- **SetSweptCulling**(boolean mode)
 
 | Parameter | Description |
 |---|---|
