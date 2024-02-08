@@ -69,14 +69,14 @@ for n = 1, 10 do
 end
 
 -- Save the starting scene to a file
-scene:Save(stream, "game.sav")
+scene:Save("game.sav")
 
 -- Main loop
 while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
 
     -- Reload the starting scene when space key is pressed
     if window:KeyHit(KEY_SPACE) then
-        scene:Reload(stream, "game.sav")
+        scene:Reload("game.sav")
     end
 
     world:Update()
