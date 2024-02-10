@@ -1,6 +1,6 @@
 # Framebuffer
 
-This class provides an interface for displaying Vulkan graphics on the screen.
+This class provides an interface for displaying 3D graphics on the screen.
 
 Base class: [Object](Object)
 
