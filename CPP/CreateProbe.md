@@ -97,8 +97,7 @@ int main(int argc, const char* argv[])
     probe->SetFadeDistance(0, CUBEMAP_NEGATIVE_Z);
 
     //Camera controls
-    auto actor = CreateActor(camera);
-    actor->AddComponent<CameraControls>();
+    camera->AddComponent<CameraControls>();
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
