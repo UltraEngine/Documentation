@@ -56,6 +56,7 @@ int main(int argc, const char* argv[])
     auto camera = CreateCamera(world);
     camera->SetFOV(70);
     camera->SetPosition(8, 2.5, 0);
+    camera->SetRotation(0, -90, 0);
     camera->SetClearColor(0.125f);
 
     //Create the scene
