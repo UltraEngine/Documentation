@@ -526,6 +526,9 @@
                         },
                         {
                             "title": "Probe",
+                            "hideFromLua": true,
+                            "hideFromCS": true,
+                            "hideFromCPP": true,
                             "filename": "Probe",
                             "topics": [
                                 {
