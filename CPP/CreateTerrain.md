@@ -48,14 +48,14 @@ int main(int argc, const char* argv[])
     light->SetColor(2);
 
     //Create terrain
-    auto terrain = CreateTerrain(world, 512);
+    auto terrain = CreateTerrain(world, 512, 512, 2048);
     terrain->LoadHeightmap("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Terrain/512.r16");
     terrain->SetScale(1, 100, 1);
 
     //Create base material
     auto ground = CreateMaterial();
-    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_4k.dds");
-    auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_4k.dds");
+    auto diffusemap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_diff_2k.dds");
+    auto normalmap = LoadTexture("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Ground/river_small_rocks_nor_gl_2k.dds");
     ground->SetTexture(diffusemap, TEXTURE_BASE);
     ground->SetTexture(normalmap, TEXTURE_NORMAL);
     terrain->SetMaterial(ground);
