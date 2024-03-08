@@ -181,7 +181,7 @@ int main(int argc, const char* argv[])
     uicamera->SetRenderLayers(2);
     uicamera->SetRealtime(false);
 
-    auto texbuffer = CreateTextureBuffer(256, 256);
+    auto texbuffer = CreateTextureBuffer(256, 256, 1, true, 0);
     uicamera->SetRenderTarget(texbuffer);
 
     auto mtl = CreateMaterial();
