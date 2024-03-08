@@ -11,6 +11,7 @@ This function creates a new texture buffer, for render-to-texture operations.
 | width, height | dimensions of the texture buffer |
 | colorattachments | number of color textures to add, between 0 and 6 |
 | depthattachment | set to true to add a depth texture |
+| samples | number of samples, or 0 for a non-MSAA texture |
 
 ## Returns
 
