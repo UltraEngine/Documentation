@@ -55,7 +55,7 @@ int main(int argc, const char* argv[])
     sphere->SetColor(1, 0, 0);
 
     //Create camera and texture buffer
-    auto texbuffer = CreateTextureBuffer(256, 256);
+    auto texbuffer = CreateTextureBuffer(256, 256, 1, true, 0);
     auto cam2 = CreateCamera(world);
     cam2->SetClearColor(1, 1, 1);
     cam2->SetRenderTarget(texbuffer);
