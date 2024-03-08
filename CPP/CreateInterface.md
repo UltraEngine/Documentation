@@ -126,7 +126,7 @@ The last example shows how to create an interactive user interface that is displ
 
 ```c++
 #include "UltraEngine.h"
-#include "Components/Player/CameraControls.h"
+#include "ComponentSystem.h"
 
 using namespace UltraEngine;
 
