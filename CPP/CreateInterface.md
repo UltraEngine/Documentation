@@ -41,8 +41,8 @@ int main(int argc, const char* argv[])
     auto ui = CreateInterface(window);
 
     //Create widget
-    iVec2 sz = ui->root->ClientSize();
-    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
+    iVec2 sz = ui->background->ClientSize();
+    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->background);
 
     while (true)
     {
@@ -102,8 +102,8 @@ int main(int argc, const char* argv[])
     ui->background->SetColor(0, 0, 0, 0.5);
 
     //Create widget
-    iVec2 sz = ui->root->ClientSize();
-    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
+    iVec2 sz = ui->background->ClientSize();
+    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->background);
 
     //Create camera
     auto orthocamera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
@@ -191,8 +191,8 @@ int main(int argc, const char* argv[])
     ui->SetRenderLayers(2);
 
     //Create widget
-    iVec2 sz = ui->root->ClientSize();
-    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
+    iVec2 sz = ui->background->ClientSize();
+    auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->background);
 
     //Create camera
     auto uicamera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
