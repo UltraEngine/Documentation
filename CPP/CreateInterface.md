@@ -20,7 +20,7 @@ Returns a new interface object.
 
 ## Example
 
-Three examples are shown below to demonstrate different types of programs you can create.
+Several examples are shown below to demonstrate different types of programs you can create.
 
 The first example shows how to create an interface directly on a window for an event-based desktop application.
 
@@ -61,7 +61,7 @@ int main(int argc, const char* argv[])
 }
 ```
 
-The second example shows how to create an interface that appears in a 3D rendering viewport. Note that in this example you must send events to the interface with the [ProcessEvent](Interface_ProcessEvent.md) method.
+The second example shows how to create an interface that appears in a 3D rendering viewport on top of the scene. Note that in this example you must send events to the interface with the [ProcessEvent](Interface_ProcessEvent.md) method.
 
 ```c++
 #include "UltraEngine.h"
@@ -82,22 +82,42 @@ int main(int argc, const char* argv[])
     //Create world
     auto world = CreateWorld();
 
+    //Create main camera
+    auto camera = CreateCamera(world);
+    camera->SetPosition(0, 0, -3);
+
+    //Create a model
+    auto box = CreateBox(world);
+
+    //Create a light
+    auto light = CreateBoxLight(world);
+    light->SetRange(-5, 5);
+    light->SetRotation(34, 45, 0);
+
     //Load a font
     auto font = LoadFont("Fonts/arial.ttf");
 
-    //Create user interface
+    //Create user interface with a semi-transparent background
     auto ui = CreateInterface(world, font, framebuffer->size);
+    ui->background->SetColor(0, 0, 0, 0.5);
 
     //Create widget
     iVec2 sz = ui->root->ClientSize();
     auto button = CreateButton("Button", sz.x / 2 - 75, sz.y / 2 - 15, 150, 30, ui->root);
 
     //Create camera
-    auto camera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-    camera->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0);
+    auto orthocamera = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
+    orthocamera->SetClearMode(CLEAR_DEPTH);
+    orthocamera->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0);
+
+    //UI will only appear in orthographic camera
+    orthocamera->SetRenderLayers(2);
+    ui->SetRenderLayers(2);
 
     while (true)
     {
+        box->Turn(0, 1, 0);
+
         while (PeekEvent())
         {
             const Event ev = WaitEvent();
