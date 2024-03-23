@@ -6,7 +6,7 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 ## System Requirements
 
-- Discrete GPU with support for Vulkan 1.3 (integrated graphics are not supported yet). Please note that in the current build AMD graphics cards are experiencing visual artifacts.
+- Nvidia GEForce 420 or AMD Radeon RX 5300M (Integrated graphics are not supported yet. The expected minimum hardware supported for Intel is the HD Graphics 520 chip.)
 - Windows 10 or 11
 - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 
