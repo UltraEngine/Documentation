@@ -1,0 +1,145 @@
+# Ultra Model File Format
+
+MDL is an unambiguous fast-loading binary format that is designed to be simple to read and simple to write. It is designed to make the user's life as easy as possible, with numerous tag anchors placed throughout the format for no other purpose than to help ensure the layout is correct.
+
+MDL does not attempt to optimize things that do not need to be optimized. For example, the file size could be made more compact, but a single vertex layout is defined for the sake of simplicity. In reality, the added storage space this creates is negligible, especially if assets are stored in a compressed package format. This is an example of practical reality-based design.
+
+### Materials
+
+MDL does not define a materials system, but instead references external material files. A materials system is outside the scope of this specification.
+
+Material file paths can be specified two ways:
+- File paths that begin with "./" are relative to the model file, i.e. "./gun.mtl". This is probably best for most models.
+- File paths that do not begin with "./" are relative to the game base directory, i.e. "Materials/Brick/brickwall.mtl". This is best when a material is reused across many models stored in different locations.
+
+### Skinning and Animation
+
+Bones and nodes are two distinct types of objects. The top-level node may have one bone, which is the root of the model's skeleton. In practice, most exporters will probably save all subobjects as bones when vertex skinning is in use.
+
+Vertex skinning is only supported on meshes in the top-level node. Subnodes can be present that contain meshes that do not use vertex skinning (all bone weights must be zero).
+
+Bone inverse bind matrices are the inverse matrix of the bone's default orientation.
+
+Animation keyframes must be evenly spaced. The duration of an animation is equal to the number of keyframes divided by sixty, divided by the speed value. For example if there are 30 keyframes and the speed is 0.5 the animation will last one second.
+
+### Units
+
+All distance values are in meters.
+
+### Data Types
+
+- TAG: Four-byte string, not null-terminated
+- STRING: Null-terminated string, only used for the first four bytes
+- ISTRING: 32-bit signed integer indicating text length, followed by string, not null-terminated
+- UINT: 32-bit unsigned integer
+- INT: 32-bit signed integer
+- SHORT: 16-bit unsigned integer
+- BYTE: 8-bit unsigned integer
+- FLOAT: 32-bit floating point
+- FLOAT2: 2-dimensional vector
+- FLOAT3: 3-dimensional vector
+- FLOAT4: 4-dimensional vector or quaternion rotation
+
+### The File Format
+
+- STRING - "G3D" - null-terminated string (four bytes)
+- INT - 100 - version
+- TAG - "NODE"
+- ISTRING - NAME
+- ISTRING - Engine properties as a Json string, or zero for no data
+- ISTRING - User-defined properties as a Json String, or zero for no data
+- FLOAT3 - position
+- FLOAT4 - rotation
+- FLOAT3 - scale
+- FLOAT4 - color
+- INT - bone ID node is attached to, or -1 if no attachment
+- INT - Lod count
+- For each Lod...
+    - TAG - "LOD_"
+    - FLOAT - Lod view distance
+    - INT - mesh count
+    - For each mesh...
+        - TAG - "MESH"
+        - ISTRING - name
+        - ISTRING - material file path
+        - INT - vertex stride, must be 84
+        - INT - vertex count
+        - For each vertex...
+            - FLOAT3 - position
+            - FLOAT3 - normal
+            - FLOAT2 - texcoords 0
+            - FLOAT2 - texcoords 1
+            - FLOAT - displacement, should normally be 1.0
+            - FLOAT3 - tangent, or (0,0,0) if not specified
+            - FLOAT3 - bitangent, or (0,0,0) if not specified
+            - SHORT - bone 0, or zero if not specified
+            - SHORT - bone 1, or zero if not specified
+            - SHORT - bone 2, or zero if not specified
+            - SHORT - bone 3, or zero if not specified
+            - BYTE - bone weught 0, or zero if not specified
+            - BYTE - bone weught 1, or zero if not specified
+            - BYTE - bone weught 2, or zero if not specified
+            - BYTE - bone weught 3, or zero if not specified
+        - INT - indice size
+        - INT - indice count
+        - For each indice...
+            - if indice size is 2...
+                - SHORT - indice
+            - or if indice size is 4...
+                - UINT - indice
+        - TAG - "MSET"
+        - INT - number of vertex morphs
+        - For each morph...
+            - TAG - "MORP"
+            - For each vertex...
+                - FLOAT3 - position
+                - FLOAT3 - normal
+                - FLOAT3 - tangent, or (0,0,0) if not specified
+                - FLOAT3 - bitangent, or (0,0,0) if not specified
+        - TAG - "PRIM"
+        - INT - primitive count matching the indice count and type of the mesh, or zero if no data is included
+            - For each primitive...
+                - BYTE - per-primitive flags, a combination of 1, 2, and/or 4 indicating whether subdivision is supported for each edge. If this data is not included, the default values will be 3 for quads and 7 for triangles (subdivision on all edges).
+        - TAG - "PICK"
+        - INT - pick data size, or zero if this data is not included
+- INT - bone count, must be 1 or 0. Bones are only allowed in the top-level node.
+- For each bone...
+    - TAG - "BONE"
+    - ISTRING - name
+    - FLOAT3 - position
+    - FLOAT4 - rotation
+    - FLOAT3 - scale
+    - INT - child count
+    - for each child...
+        - TAG - "BONE"
+        - ...
+- INT - animation count, must match that of the parent bone, even if the animation is empty
+- For each animation...
+    - TAG - "ANIM"
+    - ISTRING - name
+    - FLOAT - speed
+    - INT - keyframes
+    - INT - bone count
+    - For each bone...
+        - TAG - "BONE"
+        - INT - bone ID
+        - INT - keyframe flags
+        - For each keyframe...
+            - if (1 & flags)
+                - FLOAT3 - position
+            - if (2 & flags)
+                - FLOAT4 - rotation
+            - if (4 & flags)
+                - FLOAT3 - scale
+- TAG - "COLL"
+- INT - collider data size. Use this to skip this data.
+- If collider data size is not zero...
+    - INT - parts count
+    - For each part...
+        - TAG - "PART"
+        - INT - id, 0: box, 1: cylinder, 2: sphere, 3: cone, 4: capsule, 5: chamfer cylinder, 6: convex hull, 7: polygons
+        -     
+- TAG "KIDS"
+- For each child...
+    - TAG - "NODE"
+    - ...
