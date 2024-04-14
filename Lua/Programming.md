@@ -34,4 +34,10 @@ Once your development environment is set up, you can run your Ultra Engine Lua g
 2. **Explore Example Projects:**
    - If you want to see a working example, you can copy code from [our documentation](https://www.ultraengine.com/learn/LoadModel?lang=lua) and paste it into the *Source/main.lua* file in your project to see it in action.
 
+## Trouble Shooting
+
+1. If you see an error that says "Missing 'program' to debug" it is probably because you have the [actboy168.lua-debug](https://marketplace.visualstudio.com/items?itemName=actboy168.lua-debug) extension installed. You can uninstall the extension, or disable it for this workspace.
+
+2. If you see an error that says "The code execution cannot proceed because MSVCP140D.dll was not found. Reinstalling the program may fix the error", this means the [Visual Studio redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) has not been installed.
+
 This guide should help you kickstart your Lua development journey with Ultra Engine, making it easier to create your games and simulations.
