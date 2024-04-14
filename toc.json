@@ -7,6 +7,18 @@
             "useLanguage": false
         },
         {
+            "title": "Getting Started with C++",
+            "openstate": false,
+            "filename": "cppsetup",
+            "useLanguage": false
+        },
+        {
+            "title": "Getting Started with Lua",
+            "openstate": false,
+            "filename": "luasetup",
+            "useLanguage": false
+        },
+        {
             "title": "Editor",
             "filename": "editor",
             "openstate": true,
