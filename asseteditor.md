@@ -33,5 +33,3 @@ For material assets, the Asset Editor's properties tab provides access to all ma
 When you open a texture asset in the Asset Editor, you'll find an interface that displays all relevant texture settings. This allows you to edit and customize the properties of the texture.
 
 ![Texture Editor](https://github.com/UltraEngine/Documentation/blob/master/Images/textureeditor.png?raw=true)
-
-The Asset Editor is a versatile tool that adapts to the specific needs of different asset types, providing an efficient and user-friendly environment for asset management and editing.
