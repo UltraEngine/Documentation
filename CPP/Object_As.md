@@ -18,6 +18,12 @@ Returns the object as a derived type **T**, or NULL if the object cannot be cast
 
 This method should *never* be called in a class constructor or destructor.
 
+You can get the equivalent functionality of this method using this STL function:
+```c++
+auto entity = std::dynamic_pointer_cast<Entity>(o);
+```
+This can be good to use if you are not sure if the object is non-null.
+
 ## Example
 
 ```c++
