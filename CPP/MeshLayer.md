@@ -4,6 +4,8 @@ Base class: [Object](Object.md)
 
 The mesh layer class provides a very efficient interface to display large amounts of vegetation, rocks, and other instanced objects on a terrain.
 
+Mesh layers are created using the [Terrain::AddMeshLayer](Terrain_AddMeshLayer.md) method.
+
 | Property | Type | Description |
 | --- | --- | --- |
 | extra | [Object](Object.md) | user-defined object |
