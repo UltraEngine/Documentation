@@ -1,0 +1,23 @@
+# MeshLayer
+
+Base class: [Object](Object.md)
+
+The mesh class handles vegetation and rocks on a terrain.
+
+| Property | Type | Description |
+| --- | --- | --- |
+| [GetCollisionType](MeshLayer_GetCollisionType) | Method | returns the mesh layer collision type |
+| [Clear](MeshLayer_Clear.md) | Method | sets the mesh layer model |
+| [CountVariations](Mesh_CountVariations.md) | Method | returns the number of mesh layer variations |
+| [Fill](MeshLayer_Fill.md) | Method | sets the mesh layer model |
+| [GetInstanceMatrix](MeshLayer_GetInstanceMatrix.md) | Method | returns the orientation of the specified instance |
+| [GetInstanceVisible](MeshLayer_GetInstanceVisible.md) | Method | gets the visibility of the specified instance |
+| [GetPickMode](MeshLayer_GetPickMode.md) | Method | returns the mesh layer pick mode |
+| [SetCollisionType](MeshLayer_SetCollisionType.md) | Method | sets the mesh layer pick mode |
+| [SetHeightConstraints](MeshLayer_SetHeightConstraints.md) | Method | sets the mesh layer height constraints |
+| [SetInstanceVisible](MeshLayer_SetInstanceVisible.md) | Method | sets the visibility of the specified instance |
+| [SetModel](MeshLayer_SetModel.md) | Method | sets the mesh layer model |
+| [SetPickMode](MeshLayer_SetPickMode.md) | Method | sets the mesh layer pick mode |
+| [SetSeed](MeshLayer_SetSeed.md) | Method | sets the mesh layer random seed |
+| [SetSlopeConstraints](MeshLayer_SetSlopeConstraints.md) | Method | sets the mesh layer slope constraints |
+| [SetWeight](MeshLayer_SetWeight.md) | Method | sets the weighting of the specified variation |
