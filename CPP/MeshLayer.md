@@ -22,6 +22,7 @@ Mesh layers are created using the [Terrain::AddMeshLayer](Terrain_AddMeshLayer.m
 | [GetPickMode](MeshLayer_GetPickMode.md) | Method | returns the mesh layer pick mode |
 | [GetShadows](MeshLayer_GetShadows.md) | Method | returns the mesh layer shadow casting mode |
 | [SetAlignment](MeshLayer_SetAlignment.md) | Method | sets the mesh layer alignment mode |
+| [SetCollider](MeshLayer_SetCollider.md) | Method | sets the mesh layer collider |
 | [SetCollisionType](MeshLayer_SetCollisionType.md) | Method | sets the mesh layer pick mode |
 | [SetSpacing](MeshLayer_SetSpacing.md) | Method | sets the mesh layer instance spacing |
 | [SetHeightConstraints](MeshLayer_SetHeightConstraints.md) | Method | sets the mesh layer height constraints |
