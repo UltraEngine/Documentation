@@ -1653,12 +1653,12 @@
                             "title": "MeshLayer",
                             "filename": "MeshLayer",
                             "topics": [
-                            {
-                                "title": "AddVariation",
-                                "filename": "MeshLayer_AddVariation"
-                            }
-                        ]
-                        }
+                                {
+                                    "title": "AddVariation",
+                                    "filename": "MeshLayer_AddVariation"
+                                }
+                            ]
+                        },
                         {
                             "title": "PostEffect",
                             "filename": "PostEffect",
