@@ -14,3 +14,5 @@ This method sets the height constraints for the mesh layer. This affects the way
 ## Comments
 
 The value NAN can be used to disable one or both constraints.
+
+By default height constraints are disabled.
