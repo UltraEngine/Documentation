@@ -2,7 +2,7 @@
 
 Base class: [Object](Object.md)
 
-The mesh layer class handles vegetation and rocks on a terrain.
+The mesh layer class provides a very efficient interface to display large amounts of vegetation, rocks, and other instanced objects on a terrain.
 
 | Property | Type | Description |
 | --- | --- | --- |
