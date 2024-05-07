@@ -6,7 +6,9 @@ The mesh class handles vegetation and rocks on a terrain.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| [GetCollisionType](MeshLayer_GetCollisionType) | Method | returns the mesh layer collision type |
+| extra | [Object](Object.md) | user-defined object |
+| name | [WString](WString.md) | mesh layer name |
+| [GetCollisionType](MeshLayer_GetCollisionType.md) | Method | returns the mesh layer collision type |
 | [Clear](MeshLayer_Clear.md) | Method | sets the mesh layer model |
 | [CountVariations](Mesh_CountVariations.md) | Method | returns the number of mesh layer variations |
 | [Fill](MeshLayer_Fill.md) | Method | sets the mesh layer model |
