@@ -9,9 +9,9 @@ The mesh class handles vegetation and rocks on a terrain.
 | extra | [Object](Object.md) | user-defined object |
 | name | [WString](WString.md) | mesh layer name |
 | [GetCollisionType](MeshLayer_GetCollisionType.md) | Method | returns the mesh layer collision type |
-| [Clear](MeshLayer_Clear.md) | Method | sets the mesh layer model |
+| [Clear](MeshLayer_Clear.md) | Method | makes each instance invisible |
 | [CountVariations](Mesh_CountVariations.md) | Method | returns the number of mesh layer variations |
-| [Fill](MeshLayer_Fill.md) | Method | sets the mesh layer model |
+| [Fill](MeshLayer_Fill.md) | Method | makes each instance visible, respecting slope and height constraints |
 | [GetInstanceMatrix](MeshLayer_GetInstanceMatrix.md) | Method | returns the orientation of the specified instance |
 | [GetInstanceVisible](MeshLayer_GetInstanceVisible.md) | Method | gets the visibility of the specified instance |
 | [GetPickMode](MeshLayer_GetPickMode.md) | Method | returns the mesh layer pick mode |
