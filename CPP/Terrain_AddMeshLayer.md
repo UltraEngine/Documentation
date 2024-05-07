@@ -13,4 +13,4 @@ This method adds a new mesh layer to the terrain.
 
 ## Returns 
 
-Returns a new mesh layer object.
+Returns a new mesh layer object with one variation using the specified model.
