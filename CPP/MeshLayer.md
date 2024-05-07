@@ -9,7 +9,7 @@ Mesh layers are created using the [Terrain::AddMeshLayer](Terrain_AddMeshLayer.m
 | Property | Type | Description |
 | --- | --- | --- |
 | extra | [Object](Object.md) | user-defined object |
-| name | [WString](WString.md) | mesh layer name |
+| name | [WString](WString.md) | user-defined name |
 | [AddVariation](MeshLayer_AddVariation.md) | Method | adds a new mesh layer variation |
 | [Clear](MeshLayer_Clear.md) | Method | makes each instance invisible |
 | [CountVariations](Mesh_CountVariations.md) | Method | returns the number of mesh layer variations |
