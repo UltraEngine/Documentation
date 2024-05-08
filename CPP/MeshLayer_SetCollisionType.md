@@ -1,5 +1,16 @@
 # MeshLayer::SetCollisionType
 
+This method sets the collision type of the specified variation.
+
+## Syntax
+
+- void **SetCollisionType**(const int variation, const int collisiontype)
+
+| Parameter | Description |
+|---|---|
+| variation | index of the variation to set |
+| collisiontype | collision type to set |
+
 ```c++
 #include "UltraEngine.h"
 #include "ComponentSystem.h"
