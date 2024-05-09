@@ -579,10 +579,6 @@
                                     "filename": "Terrain_AddLayer"
                                 },
                                 {
-                                    "title": "AddMeshLayer",
-                                    "filename": "Terrain_AddMeshLayer"
-                                },
-                                {
                                     "title": "CreateTerrain",
                                     "filename": "CreateTerrain"
                                 },
@@ -1646,16 +1642,6 @@
                                 {
                                     "title": "UpdateTangents",
                                     "filename": "Mesh_UpdateTangents"
-                                }
-                            ]
-                        },
-                        {
-                            "title": "MeshLayer",
-                            "filename": "MeshLayer",
-                            "topics": [
-                                {
-                                    "title": "AddVariation",
-                                    "filename": "MeshLayer_AddVariation"
                                 }
                             ]
                         },
