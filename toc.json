@@ -1781,6 +1781,10 @@
                                     "filename": "Window_GetHidden"
                                 },
                                 {
+                                    "title": "GetMouseAxis",
+                                    "filename": "Window_GetMouseAxis"
+                                },
+                                {
                                     "title": "GetMousePosition",
                                     "filename": "Window_GetMousePosition"
                                 },
