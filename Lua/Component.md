@@ -56,33 +56,26 @@ The Mover component is about as simple as it gets. It just stores some motion pa
 
 ```lua
 Mover = {}
+Mover.name = "Mover"
+
+Mover.movementspeed = Vec3(0)
+Mover.rotationspeed = Vec3(0,1,0)
+Mover.globalcoords = false
+
+function Mover:Start()
+    
+end
 
 function Mover:Update()
     if self.globalcoords then
-        self.entity:Translate(self.movementspeed / 60.0, true)
+        self.entity:Translate(self.movementspeed / 60, true)
     else
-        self.entity:Move(self.movementspeed / 60.0)
+        self.entity:Move(self.movementspeed / 60)
     end
-    self.entity:Turn(self.rotationspeed / 60.0, self.globalcoords)
+    self.entity:Turn(self.rotationspeed / 60, self.globalcoords)
 end
 
-function Mover:Copy()
-    local copy = {}
-    for k, v in pairs(self) do
-        copy[k] = v
-    end
-    return copy
-end
-
-function Mover.new()
-    local instance = {
-        movementspeed = Vec3(),
-        rotationspeed = Vec3(0, 10, 0),
-        globalcoords = false
-    }
-    setmetatable(instance, { __index = Mover })
-    return instance
-end
+RegisterComponent("Mover", Mover)
 
 return Mover
 ```
