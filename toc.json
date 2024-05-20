@@ -894,6 +894,10 @@
                             "filename": "Entity_SetScale"
                         },
                         {
+                            "title": "SetShadow",
+                            "filename": "Entity_SetShadow"
+                        },
+                        {
                             "title": "SetVelocity",
                             "filename": "Entity_SetVelocity"
                         },
