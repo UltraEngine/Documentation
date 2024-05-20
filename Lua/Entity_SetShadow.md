@@ -4,7 +4,7 @@ This method determines whether the entity casts a shadow.
 
 ## Sytnax
 
-- **SetShadow**(const bool mode)
+- **SetShadow**(boolean mode)
 
 | Parameter | Description |
 |---|---|
