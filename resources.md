@@ -16,23 +16,23 @@
 * [ShareTextures](https://www.sharetextures.com/)
 * [TextureBox](https://texturebox.com/)
 * https://cc0textures.com/
-https://www.textures.com/premiumaccess1
-https://texturebox.com/
-https://devga.me/free/3d-models-and-textures/
-https://www.sharetextures.com/textures/
-https://texturefun.com/
-https://texturehaven.com/
-https://hdrihaven.com/hdris/
-https://www.sharetextures.com/
-https://www.cgbookcase.com/textures
-https://www.goodtextures.com/
-https://www.sketchuptextureclub.com/textures
-https://3djungle.net/textures/
-https://www.a23d.co/
-https://www.dextrous3d.com/product-category/texture/
-https://www.archivecg.com/
-https://artaley3d.com/
-https://pbrpx.com/
+* https://www.textures.com/premiumaccess1
+* https://texturebox.com/
+* https://devga.me/free/3d-models-and-textures/
+* https://www.sharetextures.com/textures/
+* https://texturefun.com/
+* https://texturehaven.com/
+* https://hdrihaven.com/hdris/
+* https://www.sharetextures.com/
+* https://www.cgbookcase.com/textures
+* https://www.goodtextures.com/
+* https://www.sketchuptextureclub.com/textures
+* https://3djungle.net/textures/
+* https://www.a23d.co/
+* https://www.dextrous3d.com/product-category/texture/
+* https://www.archivecg.com/
+* https://artaley3d.com/
+* https://pbrpx.com/
 
 ## Models
 - https://www.sketchfab.com
