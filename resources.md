@@ -1,10 +1,10 @@
 # Additional Resources
 
 ## Textures
-- [AmbientCG](https://www.ambientcg.com/)
-- [FreePBR](https://www.freepbr.com/)
-- [Polyhaven](https://polyhaven.com/textures)
-- [Texture Ninja](https://texture.ninja)
+* [AmbientCG](https://www.ambientcg.com/)
+* [FreePBR](https://www.freepbr.com/)
+* [Polyhaven](https://polyhaven.com/textures)
+* [Texture Ninja](https://texture.ninja)
 * [CC0 Textures](https://cc0textures.com/)
 * [3D Textures](https://3dtextures.me)
 * [CG Bookcase](https://www.cgbookcase.com)
