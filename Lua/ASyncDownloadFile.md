@@ -1,10 +1,10 @@
-# ASyncDownloadFile
+# AsyncDownloadFile
 
 This function provides a non-blocking method of downloading files for GUI applications.
 
 ## Syntax
 
-- ASyncDownloadFileInfo **ASyncDownloadFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) url, [string](https://www.lua.org/manual/5.4/manual.html#6.4) localpath)
+- ASyncDownloadFileInfo **AsyncDownloadFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) url, [string](https://www.lua.org/manual/5.4/manual.html#6.4) localpath)
 
 | Parameter | Description |
 |---|---|
@@ -15,6 +15,6 @@ This function provides a non-blocking method of downloading files for GUI applic
 
 Returns a ASyncDownloadFileInfo object with the following methods available:
 
-- **GetProgress**: This will return a float value between zero and one, indicating the download progress.
+- **GetProgress**: This will return the number of bytes read.
 - **GetStatus**: This will return DOWNLOAD_FINISHED, DOWNLOAD_FAILED, or DOWNLOAD_INPROGRESS.
 - **Cancel**: This will cancel the download if it is still in progress.
