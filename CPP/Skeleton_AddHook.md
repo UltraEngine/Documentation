@@ -12,7 +12,7 @@
 
 using namespace UltraEngine;
 
-void Hook(shared_ptr<Skeleton> skeleton, const int sequence, const int frame, shared_ptr<Object> extra)
+void Hook(shared_ptr<Skeleton> skeleton, shared_ptr<Object> extra)
 {
     auto entity = extra->As<Entity>();
     entity->SetColor(Random(), Random(), Random());
@@ -59,7 +59,7 @@ int main(int argc, const char* argv[])
     model->Animate(1);
 
     //Add an animation callback function
-    model->skeleton->AddHook(1, 3, Hook, model);
+    model->skeleton->AddHook(1, 0, Hook, model);
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
