@@ -60,7 +60,6 @@ local camera = CreateCamera(world)
 camera:SetClearColor(0.125)
 camera:SetPosition(0, 1.4, -1)
 camera:SetFov(70)
-camera:AddPostEffect(LoadPostEffect("Shaders/FXAA.fx"))
 
 --Add camera controls
 camera:AddComponent(CameraControls)
