@@ -4,7 +4,7 @@ This method adds a new mesh layer to the terrain.
 
 ## Syntax
 
-- shared_ptr<[MeshLayer](MeshLayer.md)\> **AddMeshLayer**(shared_ptr<[Model](Model.md)> model, const float spacing = 2.0f)
+- shared_ptr<[MeshLayer](MeshLayer.md)\> **AddMeshLayer**(shared_ptr<[Model](Model.md)> model, const float spacing = 2.0)
 
 | Parameter | Description |
 |---|---|
