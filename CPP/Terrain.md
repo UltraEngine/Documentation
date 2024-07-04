@@ -10,6 +10,7 @@ Ultra Engine supports a powerful heightmap terrain system for rendering large la
 | material | const shared_ptr<[Material](Material.md)\>& | read-only material containing height and normal textures |
 | resolution | const [iVec2](iVec2.md)& | read-only terrain resolution |
 | [AddLayer](Terrain_AddLayer.md) | Method | adds a new terrain material layer |
+| [AddMeshLayer](Terrain_AddMeshLayer.md) | Method | adds a new terrain mesh layer |
 | [Fill](Terrain_Fill.md) | Method | paints the terrain with the specified material layer |
 | [GetElevation](Terrain_GetElevation.md) | Method | returns the scaled terrain height |
 | [GetHeight](Terrain_GetHeight.md) | Method | returns the heightmap height at the specified point |
