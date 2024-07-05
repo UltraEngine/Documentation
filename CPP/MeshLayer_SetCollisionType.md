@@ -4,7 +4,7 @@ This method sets the collision type of the specified variation.
 
 ## Syntax
 
-- void **SetCollisionType**(const int variation, const int collisiontype)
+- void **SetCollisionType**(const int sublayer, const int collisiontype)
 
 | Parameter | Description |
 |---|---|
