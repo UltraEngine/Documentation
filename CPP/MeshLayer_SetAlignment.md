@@ -2,6 +2,8 @@
 
 This method sets the alignment mode for the specified mesh layer variation.
 
+## Syntax
+
 - void SetAlignment(const int variation, MeshLayerAlignment alignment)
 
 | Parameter | Description |
