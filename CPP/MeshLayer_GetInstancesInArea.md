@@ -16,4 +16,4 @@ This method retrieves a list of all instances that occur within the specified bo
 
 ## Returns
 
-Returns a list of all instances that intersect the specified area. Each element of the returned array specifies the X and Y coordinate of a valid instance.
+Returns an array of all instances that intersect the specified area. Each element of the returned array specifies the X and Y coordinate of a valid instance.
