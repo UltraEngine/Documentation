@@ -4,14 +4,10 @@ This method retrieves a list of all instances that occur within the specified bo
 
 ## Syntax
 
-- vector<[iVec2](iVec2.md)> **GetInstancesInArea**(const [Vec3](Vec4.md)& area)
-- vector<[iVec2](iVec2.md)> **GetInstancesInArea**(const float x, const float z, const float radius)
 - vector<[iVec2](iVec2.md)> **GetInstancesInArea**(const [Aabb](Aabb.md)& bounds)
 
 | Parameter | Description |
 |---|---|
-| area | an area in world coordinates |
-| x, z, radius | a circular area in world coordinates |
 | bounds | an axis-aligned bounding box |
 
 ## Returns
