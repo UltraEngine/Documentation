@@ -12,7 +12,7 @@ Mesh layers are created using the [Terrain::AddMeshLayer](Terrain_AddMeshLayer.m
 | name | [WString](WString.md) | user-defined name |
 | [AddVariation](MeshLayer_AddVariation.md) | Method | adds a new mesh layer variation |
 | [Clear](MeshLayer_Clear.md) | Method | makes each instance invisible |
-| [CountVariations](Mesh_CountVariations.md) | Method | returns the number of mesh layer variations |
+| [CountVariations](MeshLayer_CountVariations.md) | Method | returns the number of mesh layer variations |
 | [Fill](MeshLayer_Fill.md) | Method | makes each instance visible, respecting slope and height constraints |
 | [GetCollisionType](MeshLayer_GetCollisionType.md) | Method | returns the mesh layer collision type |
 | [GetInstanceMatrix](MeshLayer_GetInstanceMatrix.md) | Method | returns the orientation of the specified instance |
