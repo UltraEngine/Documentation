@@ -1651,13 +1651,7 @@
                         },
                         {
                             "title": "MeshLayer",
-                            "filename": "MeshLayer",
-                            "topics": [
-                                {
-                                    "title": "MeshLayer_Fill",
-                                    "filename": "MeshLayer_Fill"
-                                }
-                            ]
+                            "filename": "MeshLayer"
                         },
                         {
                             "title": "PostEffect",
