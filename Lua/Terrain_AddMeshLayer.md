@@ -4,7 +4,7 @@ This method adds a new mesh layer to the terrain.
 
 ## Syntax
 
-- [MeshLayer](MeshLayer.md) **AddMeshLayer**([Model](Model.md) model, number spacing = 2.0)
+- [MeshLayer](MeshLayer.md) **AddMeshLayer**([Model](Model.md) model, number spacing = 2)
 
 | Parameter | Description |
 |---|---|
