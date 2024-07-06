@@ -4,7 +4,7 @@ This method retrieves a list of all instances that occur within the specified bo
 
 ## Syntax
 
-- vector<[iVec2](iVec2.md)> **GetInstancesInArea**(const [Aabb](Aabb.md)& bounds)
+- table **GetInstancesInArea**([Aabb](Aabb.md) bounds)
 
 | Parameter | Description |
 |---|---|
