@@ -1,4 +1,4 @@
-# MeshLayer::SetWeight
+# MeshLayer:SetWeight
 
 This method sets the weighting factor for the specified variation. This controls how frequently the variation appears.
 
