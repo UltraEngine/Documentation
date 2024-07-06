@@ -1,4 +1,4 @@
-# MeshLayer::SetSpacing
+# MeshLayer:SetSpacing
 
 This method sets the spacing between instances in this mesh layer.
 
