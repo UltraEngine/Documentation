@@ -4,7 +4,7 @@ This method sets the weighting factor for the specified variation. This controls
 
 ## Syntax
 
-- void **SetWeight**(const float weight, const bool normalize = true)
+- **SetWeight**(number weight, boolean normalize = true)
 
 | Parameter | Description |
 |---|---|
