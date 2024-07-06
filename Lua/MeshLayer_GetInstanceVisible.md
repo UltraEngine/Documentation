@@ -1,4 +1,4 @@
-# MeshLayer::GetInstanceVisible
+# MeshLayer:GetInstanceVisible
 
 This method retrieves the visibility state of a specific instance.
 
