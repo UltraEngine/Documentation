@@ -4,7 +4,7 @@ This method sets the height constraints for the mesh layer. This affects the way
 
 ## Syntax
 
-- void **SetSlopeConstraints**(const float minslope, const float maxslope)
+- **SetSlopeConstraints**(number minslope, number maxslope)
 
 | Parameter | Description |
 |---|---|
