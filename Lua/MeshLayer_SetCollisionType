@@ -1,0 +1,10 @@
+# MeshLayer::SetCollisionType
+
+This method sets the collision type for the specified mesh layer variation.
+
+- void SetCollisionType(const int variation, const int collisiontype)
+
+| Parameter | Description |
+|---|---|
+| variation | index of the variation to set |
+| collisiontype | collision type to set |
