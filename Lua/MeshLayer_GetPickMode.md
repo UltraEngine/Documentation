@@ -4,7 +4,7 @@ This method returns the pick mode of the specified sublayer.
 
 ## Syntax
 
-- PickMode **GetPickMode**(const int sublayer)
+- number **GetPickMode**(number sublayer)
 
 ## Returns
 
