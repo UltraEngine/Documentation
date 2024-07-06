@@ -1,4 +1,4 @@
-# MeshLayer::GetInstanceMatrix
+# MeshLayer:GetInstanceMatrix
 
 This method gets the 4x4 matrix of the instance at the specified coordinate.
 
