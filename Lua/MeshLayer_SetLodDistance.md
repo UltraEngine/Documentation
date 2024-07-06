@@ -4,4 +4,4 @@ This method sets the distance for each level of detail of the sublayer model.
 
 ## Syntax
 
-- void **SetLodDistance**(const int sublayer, const float d0, const float d1, const float d2)
+- **SetLodDistance**(number sublayer, number d0, number d1, number d2)
