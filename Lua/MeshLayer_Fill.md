@@ -4,5 +4,5 @@ This method sets all instances to be visible, unless the height or slope constra
 
 ## Syntax
 
-- void **Fill**()
+- **Fill**()
 
