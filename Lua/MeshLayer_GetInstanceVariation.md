@@ -4,7 +4,7 @@ This method returns the index of the variation the specified instance uses.
 
 ## Syntax
 
-- int **GetInstanceVariation**(const [iVec2](iVec2.md) coord)
+- number **GetInstanceVariation**([iVec2](iVec2.md) coord)
 
 | Parameter | Description |
 |---|---|
