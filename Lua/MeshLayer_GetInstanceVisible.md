@@ -4,7 +4,7 @@ This method retrieves the visibility state of a specific instance.
 
 ## Syntax
 
-- bool **GetInstanceVisible**(int x, int y)
+- boolean **GetInstanceVisible**(number x, number y)
 
 ## Returns
 
