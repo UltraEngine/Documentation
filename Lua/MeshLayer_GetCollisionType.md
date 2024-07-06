@@ -4,7 +4,7 @@ This method retrieves the collision type of the specified sublayer.
 
 ## Syntax
 
-- unsigned int **GetCollisionType**(const int sublayer)
+- number **GetCollisionType**(number sublayer)
 
 ## Returns
 
