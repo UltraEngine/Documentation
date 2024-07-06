@@ -1,4 +1,4 @@
-# MeshLayer::AddVariation
+# MeshLayer:AddVariation
 
 This method adds a new variation to the mesh layer, which will be randomly used across the terrain.
 
