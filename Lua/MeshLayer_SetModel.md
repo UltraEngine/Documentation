@@ -1,4 +1,4 @@
-# MeshLayer::SetModel
+# MeshLayer:SetModel
 
 This method sets the specified sublayer's model.
 
