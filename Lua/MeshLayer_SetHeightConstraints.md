@@ -4,7 +4,7 @@ This method sets the height constraints for the mesh layer. This affects the way
 
 ## Syntax
 
-- void **SetHeightConstraints**(const float minheight, const float maxheight)
+- **SetHeightConstraints**(number minheight, number maxheight)
 
 | Parameter | Description |
 |---|---|
