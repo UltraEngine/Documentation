@@ -1,4 +1,4 @@
-# MeshLayer::SetShadows
+# MeshLayer:SetShadows
 
 This method sets the shadow mode of the specified sublayer.
 
