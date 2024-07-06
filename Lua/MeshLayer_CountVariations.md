@@ -4,4 +4,4 @@ This method returns the number of variations the mesh layer contains.
 
 ## Syntax
 
-- int **CountVariations**()
+- number **CountVariations**()
