@@ -1,4 +1,4 @@
-# MeshLayer::GetCollisionType
+# MeshLayer:GetCollisionType
 
 This method retrieves the collision type of the specified sublayer.
 
