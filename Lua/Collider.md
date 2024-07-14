@@ -14,4 +14,3 @@ This class provides an interface for loading and creating collision shapes for p
 | [CreateConvexHullCollider](CreateConvexHullCollider.md) | Function | Creates a convex hull collision shape for physics interactions. |
 | [CreateMeshCollider](CreateMeshCollider.md) | Function | Creates a mesh collision shape for physics interactions. |
 | [CreateSphereCollider](CreateSphereCollider.md) | Function | Creates a sphere collision shape for physics interactions. |
-| [LoadCollider](LoadCollider.md) | Function | Loads a collision shape from a file |
