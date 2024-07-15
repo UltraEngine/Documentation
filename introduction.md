@@ -54,10 +54,6 @@ auto pak = LoadPackage("gamedata.zip");// load the archive
 pak->SetPassword("xxxxxxxxxxxxx");// set your own password here
 ```
 
-Note that AES encryption is not supported. If your Zip compression program has an option for legacy encryption, you should use that.
-
-Your game should not include the shader source code files (.vert, .frag., .geom, .comp, .tese, .tesc). Only the compiled .spv files should be included.
-
 If your code does not load any plugins you do not need to include the DLLs in the "Plugins" directory.
 
 You should not distribute any files from the client application folder like the library, headers, template files, etc.
