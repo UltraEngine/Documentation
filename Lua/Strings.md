@@ -1,14 +1,13 @@
 # Strings
 
-Strings in Lua are handled using the built-in string data type. There are no specific classes for narrow and wide strings like in Ultra Engine. Lua supports Unicode characters, so there is no need to distinguish between narrow and wide strings.
+Strings in Lua are handled using the built-in string data type. There are no specific classes for narrow and wide strings like in the C++ API. Lua strings are considered to be in UTF-8 format and converted to and from wide strings when they are pass as function arguments or returned from an API function.
 
 ## Constructors
 
-Strings can be created using string literals:
+In Lua, strings can be created using string literals like so:
 ```lua
 local s = "Hello!"
 ```
-There is no need to use a specific syntax for Unicode strings, as Lua handles them automatically.
 
 Common numeric data types can be converted to a string using the `tostring` function:
 ```lua
