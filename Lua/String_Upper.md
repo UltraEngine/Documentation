@@ -1,14 +1,16 @@
-# string.upper #
+# Upper
+
 This function returns the uppercase version of the string.
 
-- **string.upper**()
+- string **Upper**(string s)
 
-## Returns ##
+## Returns
+
 Returns the string, converted to uppercase.
 
-## Example ##
+## Example
 
 ```lua
-local string = "John Smith"
-print(string.upper())
+local s = "John Smith"
+Print(Upper(s))
 ```
