@@ -33,7 +33,7 @@ The following functions are available, in addition to the [Lua language string l
 |---|---|---|
 | [Find](String_Find.md) | Function | performs a search operation |
 | [Left](String_Left.md) | Function | returns leftmost characters |
-| [GetSize](String_GetSize.md) | Function | returns the length of the string |
+| [Len](String_Len.md) | Function | returns the length of the string |
 | [Lower](String_Lower.md) | Function | returns the string to lowercase |
 | [Mid](String_Mid.md) | Function | returns the length of the string |
 | [Replace](String_Replace.md) | Function | performs a search and replace operation |
