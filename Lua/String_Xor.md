@@ -1,10 +1,10 @@
-# String:__Xor__
+# Xor
 
 This method encrypts the string with an XOR cipher and returns the result.
 
 ## Syntax
 
-- [String](String.md) **:_Xor**(const [String](String.md)& key)
+- string **Xor**(string key)
 
 | Parameter | Description |
 | --- | --- |
@@ -17,15 +17,12 @@ Returns the encrypted string.
 ## Example
 
 ```lua
--- Import the required libraries
-local String = require("String")
-
 local password = "HaikuMockingBonanzaTumble"
 local key = "d'U0)Ez[^?2?=^X|y49dKurq9mASp`5}"
-local encrypted = String:_Xor(key)
+local encrypted = Xor(password, key)
 
-print("Encrypted string: " .. encrypted)
+Print("Encrypted string: " .. encrypted)
 
-local decrypted = encrypted:_Xor(key)
-print("Decrypted string: " .. decrypted)
+local decrypted = Xor(encrypted, key)
+Print("Decrypted string: " .. decrypted)
 ```
