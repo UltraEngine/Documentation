@@ -1,4 +1,4 @@
-# Mis
+# Mid
 
 This function extracts a partial string from a specified position and returns it.
 
