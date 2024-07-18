@@ -18,5 +18,5 @@ Returns the first position in the string where the search term is found, or -1 i
 
 ```lua
 local s = "Hello, how are you today?"
-print(Find(s, "today"))
+Print(Find(s, "today"))
 ```
