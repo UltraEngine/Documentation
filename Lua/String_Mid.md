@@ -1,8 +1,10 @@
-# string.mid
+# Mis
+
 This function extracts a partial string from a specified position and returns it.
 
 ## Syntax
-`string.mid(pos, length)`
+
+- string **Mid**(number pos, number length)
 
 | Parameter | Description |
 | --- | --- |
@@ -15,7 +17,6 @@ Returns a string extracted from the specified position and length.
 ## Example
 
 ```lua
--- Assuming the required libraries are already imported
 local s = "Hello, how are you today?"
-print(s:mid(7, 3))
+Print(Mid(s, 7, 3))
 ```
