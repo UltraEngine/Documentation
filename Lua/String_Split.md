@@ -1,13 +1,14 @@
-# String:Split
+# Split
+
 This function splits the string by a delimiter and returns an array of parts.
 
 ## Syntax
 
-`function String:Split(delimiter: string) -> table`
+string **Split**(string delimiter)
 
-## Parameters
-
-- `delimiter` (string): The separator used to split the string.
+| Parameter | Description |
+|---|---|
+| delimiter | the separator used to split the string |
 
 ## Returns
 
@@ -21,9 +22,9 @@ If the delimiter is not found in the string, the entire string will be returned.
 
 ```lua
 local s = "dog,cat,raccoon,fox,crow,snake,rabbit,deer"
-local sarr = s:Split(",")
+local sarr = Split(s, ",")
 
 for _, s in ipairs(sarr) do
-    print(s)
+    Print(s)
 end
 ```
