@@ -4,7 +4,7 @@ This method performs a search and replace operation on the string and returns th
 
 ## Syntax
 
-- string *Replace*(searchtext, replacetext)
+- string **Replace**(searchtext, replacetext)
 
 | Parameter | Description |
 | --- | --- |
