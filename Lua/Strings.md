@@ -5,11 +5,12 @@ Strings in Lua are handled using the built-in string data type. There are no spe
 ## Constructors
 
 In Lua, strings can be created using string literals like so:
+
 ```lua
 local s = "Hello!"
 ```
+Common numeric data types can be converted to a string using the **tostring** function:
 
-Common numeric data types can be converted to a string using the `tostring` function:
 ```lua
 local s1 = tostring(2) -- integer to string conversion
 local s2 = tostring(2.43434) -- float to string conversion
@@ -19,7 +20,8 @@ local s2 = tostring(2.43434) -- float to string conversion
 
 Narrow to wide string conversion is not relevant in Lua, as there is no separate wide string type.
 
-To convert a string to an integer or floating point value, Lua provides the `tonumber` function:
+To convert a string to an integer or floating point value, Lua provides the **tonumber** function:
+
 ```lua
 local n = tonumber("465")
 local f = tonumber("3.14")
