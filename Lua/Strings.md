@@ -24,3 +24,25 @@ To convert a string to an integer or floating point value, Lua provides the `ton
 local n = tonumber("465")
 local f = tonumber("3.14")
 ```
+
+## Functions
+
+The following functions are available, in addition to the Lua language string library.
+
+| Property | Type | Description |
+|---|---|---|
+| [Find](String_Find.md) | Function | performs a search operation |
+| [Left](String_Left.md) | Function | returns leftmost characters |
+| [GetSize](String_GetSize.md) | Function | returns the length of the string |
+| [Lower](String_Lower.md) | Function | returns the string to lowercase |
+| [Mid](String_Mid.md) | Function | returns the length of the string |
+| [Replace](String_Replace.md) | Function | performs a search and replace operation |
+| [Right](String_Right.md) | Function | returns rightmost characters |
+| [Split](String_Split.md) | Function | segments the string |
+| [StartsWith](String_StartsWith.md) | Function | compares the beginning of two strings |
+| [ToFloat](String_ToFloat.md) | Function | converts the string to a floating point value |
+| [ToInt](String_ToInt.md) | Function | converts the string to an integer value |
+| [Trim](String_Trim.md) | Function | removes whitespace characters from the ends of the string |
+| [Upper](String_Upper.md) | Function | converts the string to uppercase |
+| [Xor](String_Xor.md) | Function | performs an XOR operation |
+| [Uuid](Uuid.md) | Function | creates a unique universal identifier |
