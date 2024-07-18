@@ -27,7 +27,7 @@ local f = tonumber("3.14")
 
 ## Functions
 
-The following functions are available, in addition to the Lua language string library.
+The following functions are available, in addition to the [Lua language string library](https://www.lua.org/pil/20.html).
 
 | Property | Type | Description |
 |---|---|---|
