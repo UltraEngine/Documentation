@@ -1,18 +1,17 @@
-# String:StartsWith
+# StartsWith
 
 This method compares the beginning of two strings.
 
 ## Syntax
 
-```lua
-function **String:StartsWith**(beginning: string): boolean
-```
+boolean **StartsWith**(string beginning) 
 
-## Parameters
-
-- `beginning`: A string to compare.
+| Parameter | Description |
+|---|---|
+| beginning | a string to compare |
 
 ## Returns
 
-- Returns true if the left-most characters of this string match the beginning string.
-- Returns false if the strings do not match, or if this string is shorter than the beginning string.
+This function returns true if the left-most characters of this string match the beginning string.
+
+This function returns false if the strings do not match, or if this string is shorter than the beginning string.
