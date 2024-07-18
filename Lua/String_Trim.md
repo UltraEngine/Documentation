@@ -1,18 +1,18 @@
-# string.trim #
+# Trim
 
 This method removes whitespace characters from the beginning and end of the string and returns the result.
 
-#### Syntax ####
+## Syntax
 
-- string:trim()
+- string **Trim**(string s)
 
-#### Returns ####
+## Returns
 
 Returns the string with whitespace characters removed from the beginning and end.
 
-#### Example ####
+## Example
 
 ```lua
 local s = "    Hello!  "
-print('"' .. s:trim() .. '"')
+Print('"' .. Trim(s) .. '"')
 ```
