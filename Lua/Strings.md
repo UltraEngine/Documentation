@@ -40,8 +40,6 @@ The following functions are available, in addition to the [Lua language string l
 | [Right](String_Right.md) | Function | returns rightmost characters |
 | [Split](String_Split.md) | Function | segments the string |
 | [StartsWith](String_StartsWith.md) | Function | compares the beginning of two strings |
-| [ToFloat](String_ToFloat.md) | Function | converts the string to a floating point value |
-| [ToInt](String_ToInt.md) | Function | converts the string to an integer value |
 | [Trim](String_Trim.md) | Function | removes whitespace characters from the ends of the string |
 | [Upper](String_Upper.md) | Function | converts the string to uppercase |
 | [Xor](String_Xor.md) | Function | performs an XOR operation |
