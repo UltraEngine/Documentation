@@ -3127,11 +3127,11 @@
                 {
                     "title": "Strings",
                     "filename": "Strings",
-                    "hideFromLua": true,
                     "topics": [
                         {
                             "title": "String",
                             "filename": "String",
+                            "hideFromLua": true,
                             "topics": [
                                 {
                                     "title": "Find",
@@ -3198,6 +3198,7 @@
                         {
                             "title": "WString",
                             "filename": "WString",
+                            "hideFromLua": true,
                             "topics": [
                                 {
                                     "title": "Find",
