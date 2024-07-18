@@ -4,7 +4,7 @@ This function splits the string by a delimiter and returns an array of parts.
 
 ## Syntax
 
-string **Split**(string delimiter)
+- string **Split**(string delimiter)
 
 | Parameter | Description |
 |---|---|
