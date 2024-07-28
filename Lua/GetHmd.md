@@ -4,11 +4,12 @@ This function returns the head-mounted display, for virtual reality rendering.
 
 ## Syntax
 
-- [Hmd](Hmd.md) **GetHmd**(shared_ptr<[World](World.md)\> world)
+- [Hmd](Hmd.md) **GetHmd**(shared_ptr<[World](World.md)\> world, boolean initialize = true)
 
 | Parameter | Description |
 |---|---|
 | world | world to display the VR controllers in |
+| initialize | if set to true VR mode will be initialized |
 
 ## Returns
 
@@ -16,7 +17,9 @@ Returns an object representing the user's head-mounted display. This will always
 
 ## Remarks
 
-This function must be called before the first call to [World:Render](World_Render.md).
+If the initialize argument is set to true, this function must be called before the first call to [World:Render](World_Render.md).
+
+This function can be used to check if an HMD is in use by setting the initialize argument to false.
 
 The world parameter will be ignored after the first call to this function.
 
