@@ -15,6 +15,7 @@
 * [Free 5K textures by Miloš Belanec](https://www.artstation.com/deepmind/albums/89651)
 * [ShareTextures](https://www.sharetextures.com/)
 * [TextureBox](https://texturebox.com/)
+* [TextureCan](https://texturecan.com/)
 * https://cc0textures.com/
 * https://www.textures.com/premiumaccess1
 * https://texturebox.com/
