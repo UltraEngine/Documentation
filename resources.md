@@ -16,6 +16,7 @@
 * [ShareTextures](https://www.sharetextures.com/)
 * [TextureBox](https://texturebox.com/)
 * [TextureCan](https://texturecan.com/)
+* https://www.pbrpx.com
 * https://textures.pixel-furnace.com/
 * https://texture.ninja/
 * https://itch.io/game-assets/free/tag-textures
