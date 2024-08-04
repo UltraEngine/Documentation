@@ -16,6 +16,10 @@
 * [ShareTextures](https://www.sharetextures.com/)
 * [TextureBox](https://texturebox.com/)
 * [TextureCan](https://texturecan.com/)
+* https://textures.pixel-furnace.com/
+* https://texture.ninja/
+* https://itch.io/game-assets/free/tag-textures
+* https://www.poliigon.com/textures/free
 * https://cc0textures.com/
 * https://www.textures.com/premiumaccess1
 * https://texturebox.com/
