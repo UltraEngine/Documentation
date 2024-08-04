@@ -40,7 +40,7 @@
 * https://artaley3d.com/
 * https://pbrpx.com/
 
-## Models
+## 3D Models
 - https://www.sketchfab.com
 - https://www.turbosquid.com
 - https://www.cgtrader.com
@@ -51,4 +51,3 @@
 - [Audio Hero](https://www.audiohero.com/)
 - [Epic Stock Media](https://epicstockmedia.com/)
 - https://www.soundrangers.com
-- 
