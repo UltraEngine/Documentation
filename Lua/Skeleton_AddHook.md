@@ -1,7 +1,7 @@
 # Skeleton:AddHook
 
 ## Syntax
-- **AddHook**(number sequence, number frame, hook)
+- **AddHook**(sequence, frame, hook)
 
 ## Example
 
