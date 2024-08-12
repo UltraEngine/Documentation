@@ -1,5 +1,8 @@
 # Skeleton:AddHook
 
+## Syntax
+- **AddHook**(number sequence, number frame, hook)
+
 ## Example
 
 ```lua
