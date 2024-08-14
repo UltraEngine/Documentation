@@ -2,7 +2,7 @@
 
 Base class: [Entity](Entity.md)
 
-This particle emitter entity can be used to create fire, smoke, explosion, and other effects.
+This entity can be used to create fire, smoke, explosion, and other effects.
 
 | Property | Type | Description |
 |---|---|---|
