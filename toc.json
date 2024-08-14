@@ -526,6 +526,16 @@
                             ]
                         },
                         {
+                            "title": "ParticleEmitter",
+                            "filename": "ParticleEmitter",
+                            "topics": [
+                                {
+                                    "title": "CreateParticleEmitter",
+                                    "filename": "CreateParticleEmitter"
+                                }
+                            ]
+                        },
+                        {
                             "title": "Pivot",
                             "filename": "Pivot",
                             "topics": [
