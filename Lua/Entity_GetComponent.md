@@ -1,27 +1,15 @@
 # Entity:GetComponent
 
+This method retrieves an entity's component, if it exists.
+
 ## Syntax
 
-<pre><code>function GetComponent<T>()
-</code></pre>
-
-## Parameters
+- [Component](Component.md) GetComponent(string name)
 
 | Parameter | Description |
 |---|---|
-| T | The class type of the component. |
+| name | the component class name |
 
 ## Returns
 
-Returns a component if it exists, otherwise `nil` is returned.
-
-#### Example
-
-```lua
-local positionComponent = GetComponent<PositionComponent>()
-if positionComponent ~= nil then
-  -- Do something with the position component
-else
-  -- The component doesn't exist
-end
-```
+Returns a component if it exists, otherwise nil is returned.
