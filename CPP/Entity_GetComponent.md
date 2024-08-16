@@ -1,5 +1,7 @@
 # Entity::GetComponent
 
+This method retrieves an entity's component, if it exists.
+
 ## Syntax
 
 - shared_ptr<[Component](Component.md)\> **GetComponent**<T\>()
