@@ -3489,6 +3489,10 @@
                             "filename": "Confirm"
                         },
                         {
+                            "title": "GetMemoryUsage",
+                            "filename": "GetMemoryUsage"
+                        },
+                        {
                             "title": "Millisecs",
                             "filename": "Millisecs"
                         },
