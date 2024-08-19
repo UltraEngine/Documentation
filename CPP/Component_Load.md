@@ -4,7 +4,7 @@ This method is called when a component is loaded from a file or copied.
 
 ## Syntax
 
-- bool **Load**([table](https://github.com/UltraEngine/tableplusplus)& properties)
+- bool **Load**(table& properties, shared_ptr<[Stream](Stream.md)> binstream, shared_ptr<[Scene](Scene.md)> scene, const LoadFlags flags)
 
 | Parameter | Description |
 |---|---|
