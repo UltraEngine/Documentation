@@ -4,7 +4,7 @@ This method writes a new file to a package.
 
 ## Syntax
 
-- boolean **AddFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, [Buffer](Buffer.md) data, boolean immediate = false)
+- boolean **AddFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, [Buffer](Buffer.md) data)
 
 | Parameter | Description |
 |---|---|
