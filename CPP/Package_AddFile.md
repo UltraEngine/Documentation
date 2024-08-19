@@ -4,7 +4,7 @@ This method writes a new file to a package.
 
 ## Syntax
 
-- bool **AddFile**(const [WString](WString.md)& path, shared_ptr<[Buffer](Buffer.md)\> data, const bool immediate = false)
+- bool **AddFile**(const [WString](WString.md)& path, shared_ptr<[Buffer](Buffer.md)\> data)
 
 | Parameter | Description |
 |---|---|
