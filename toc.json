@@ -1675,11 +1675,11 @@
                                 },
                                 {
                                     "title": "Reload",
-                                    "filename": "Map_Reload"
+                                    "filename": "Scene_Reload"
                                 },
                                 {
                                     "title": "Save",
-                                    "filename": "Map_Save"
+                                    "filename": "Scene_Save"
                                 }
                             ]
                         },
