@@ -1,69 +1,85 @@
-# Scene:Save #
-This method saves a scene to a stream or file.
+# Map:Save
 
-The Lua state of each entity in the scene will be serialized in the saved file. Because of differences between the Lua language and the JSON schematic, the following rules should be noted:
+This method saves a scene to a file or stream.
 
-A table that contains only numbers for keys, whose keys include each integer from 1 to the size of the table, will be saved as a JSON list. This occurs when table.insert() is used to insert values into a table as if it was an array.
+## Syntax
 
-Lua:
+- boolean **Save**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, number flags = SAVE_DEFAULT)
+- boolean **Save**([Stream](Stream.md) stream, number flags = SAVE_DEFAULT)
+
+| Parameter | Description |
+|---|---|
+| path | file path to save to |
+| stream | stream to write JSON data to |
+| binstream | stream to write binary data to |
+| flags | Save mode flags |
+
+## Returns
+
+If the scene is successfully saved true is returned, otherwise false is returned.
+
+## Remarks
+
+This feature is in continued development and its behavior may change somewhat in future updates.
+
+## Example
+
+This example saves the starting scene and reloads it when the space key is pressed.
+
 ```lua
-self.table = {}
-table.insert(self.table, "a")
-table.insert(self.table, "b")
-table.insert(self.table, "c")
-```
-JSON:
-```js
-{
-  "table": [
-    "a",
-    "b",
-    "c"
-  ]
-}
-```
-If a table is saved that does not convert to a JSON list, any number keys will be converted to strings.
+-- Get the displays
+local displays = GetDisplays()
 
-Lua:
-```lua
-self.table = {}
-self.table[1] = "a"
-self.table["key"] = "b"
-```
-JSON:
-```js
-{
-  "table": {
-    "1": "a",
-    "key", "b"
-  }
-}
-```
-Table keys that are booleans will be stored as the strings "true" or "false":
+-- Create a window
+local window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[1], WINDOW_CENTER + WINDOW_TITLEBAR)
 
-Lua:
-```lua
-self.table = {}
-self.table[true] = "value"
-```
-JSON:
-```js
-{
-  "table": {
-    "true": "value"
-  }
-}
-```
-A string value that can be converted to a number will be loaded as a number.
-Entity values will be saved as a string indicating the entity's GUID.
-A string value in the GUID format ("xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx") will be converted to the matching entity if it exists in the scene file. If the entity cannot be found the key pair will not be loaded.
-Tables keys that are the strings "true" or "false" will be converted to a boolean value when loaded.
-Key pairs that use a table for the key will not be saved:
-```lua
-self.table1 = {}
-self.table2 = {}
-self.table2[table1] = 1
-```
-## Syntax ##
+-- Create a world
+local world = CreateWorld()
 
-## Example ##
+-- Create a framebuffer
+local framebuffer = CreateFramebuffer(window)
+
+-- Create a camera
+local camera = CreateCamera(world)
+camera:SetClearColor(0.125)
+camera:SetPosition(0, 1, -4)
+
+-- Create light
+local light = CreateBoxLight(world)
+light:SetRange(-10, 10)
+light:SetArea(15, 15)
+light:SetRotation(45, 35, 0)
+light:SetColor(2)
+
+-- Create the ground
+local ground = CreateBox(world, 10, 1, 10)
+ground:SetPosition(0, -0.5, 0)
+ground:SetColor(0, 1, 0)
+
+-- Create a scene
+local scene = CreateMap()
+
+-- Add some boxes
+for n = 1, 10 do
+    local box = CreateBox(world)
+    box:SetColor(0, 0, 1)
+    box:SetPosition(Random(-5, 5), Random(5, 10), Random(-5, 5))
+    box:SetMass(1)
+    scene.entities[#scene.entities + 1] = box
+end
+
+-- Save the starting scene to a file
+scene:Save("game.sav")
+
+-- Main loop
+while not window:Closed() and not window:KeyDown(KEY_ESCAPE) do
+
+    -- Reload the starting scene when space key is pressed
+    if window:KeyHit(KEY_SPACE) then
+        scene:Reload("game.sav")
+    end
+
+    world:Update()
+    world:Render(framebuffer)
+end
+```
