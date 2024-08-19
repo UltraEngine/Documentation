@@ -398,6 +398,16 @@
                             ]
                         },
                         {
+                            "title": "Decal",
+                            "filename": "Decal",
+                            "topics": [
+                                {
+                                    "title": "CreateDecal",
+                                    "filename": "CreateDecal"
+                                },
+                            ]
+                        },   
+                        {
                             "title": "Light",
                             "filename": "Light",
                             "topics": [
@@ -1462,28 +1472,6 @@
                             "filename": "Lod"
                         },
                         {
-                            "title": "Map",
-                            "filename": "Map",
-                            "topics": [
-                                {
-                                    "title": "CreateMap",
-                                    "filename": "CreateMap"
-                                },
-                                {
-                                    "title": "LoadMap",
-                                    "filename": "LoadMap"
-                                },
-                                {
-                                    "title": "Reload",
-                                    "filename": "Map_Reload"
-                                },
-                                {
-                                    "title": "Save",
-                                    "filename": "Map_Save"
-                                }
-                            ]
-                        },
-                        {
                             "title": "Material",
                             "filename": "Material",
                             "topics": [
@@ -1670,6 +1658,28 @@
                                 {
                                     "title": "LoadPostEffect",
                                     "filename": "LoadPostEffect"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Scene",
+                            "filename": "Scene",
+                            "topics": [
+                                {
+                                    "title": "CreateScene",
+                                    "filename": "CreateScene"
+                                },
+                                {
+                                    "title": "LoadScene",
+                                    "filename": "LoadScene"
+                                },
+                                {
+                                    "title": "Reload",
+                                    "filename": "Map_Reload"
+                                },
+                                {
+                                    "title": "Save",
+                                    "filename": "Map_Save"
                                 }
                             ]
                         },
