@@ -4,7 +4,7 @@ This method deletes a file from the package.
 
 ## Syntax
 
-boolean **DeleteFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path, boolean immediate = false)
+boolean **DeleteFile**([string](https://www.lua.org/manual/5.4/manual.html#6.4) path)
 
 | Parameter | Description |
 |---|---|
