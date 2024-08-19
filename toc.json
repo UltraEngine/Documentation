@@ -993,10 +993,6 @@
                                     "filename": "Package_FileType"
                                 },
                                 {
-                                    "title": "Flush",
-                                    "filename": "Package_Flush"
-                                },
-                                {
                                     "title": "LoadDir",
                                     "filename": "Package_LoadDir"
                                 },
