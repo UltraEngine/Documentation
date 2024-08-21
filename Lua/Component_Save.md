@@ -4,7 +4,7 @@ This method is called when a component is saved to a file or copied.
 
 ## Syntax
 
-- boolean **Save**([table](https://www.lua.org/manual/5.4/manual.html#6.6) properties, [Stream](Stream.md) binstream, [Scene](Scene.md) scene, number flags)
+- boolean **Save**([table](https://www.lua.org/manual/5.4/manual.html#6.6) properties, [Stream](Stream.md) binstream, [Scene](Scene.md) scene, number flags, [Object](Object.md) extra)
 
 | Parameter | Description |
 |---|---|
