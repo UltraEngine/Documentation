@@ -4,9 +4,7 @@ This function creates a scene.
 
 ## Syntax
 
-```lua
-function CreateScene()
-```
+[Scene](Scene.md) **CreateScene**()
 
 ## Returns
 
