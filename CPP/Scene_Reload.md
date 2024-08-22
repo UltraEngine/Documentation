@@ -1,4 +1,4 @@
-# Map::Reload
+# Scene::Reload
 
 This method reloads the states of the entities in a scene from a file, without recreating them. This is useful for loading game save states or synchonizing the world over a network.
 
