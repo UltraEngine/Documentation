@@ -1,10 +1,10 @@
-# Package::Protect
+# Package::Restrict
 
 This method enables extra security measures for any loaded package.
 
 ## Syntax
 
-- void **Protect**()
+- void **Restrict**()
 
 ## Remarks
 
