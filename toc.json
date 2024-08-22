@@ -1005,6 +1005,10 @@
                                     "filename": "Package_ReadFile"
                                 },
                                 {
+                                    "title": "Restrict",
+                                    "filename": "Package_Restrict"
+                                },
+                                {
                                     "title": "SetPassword",
                                     "filename": "Package_SetPassword"
                                 }
