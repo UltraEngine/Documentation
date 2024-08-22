@@ -15,6 +15,7 @@ This class provides an interface for loading files from compressed and encrypted
 | [FileType](Package_FileType.md) | Method | returns the type of a file in the package |
 | [LoadDir](Package_LoadDir.md) | Method | loads the contents of a package directory |
 | [ReadFile](Package_ReadFile.md) | Method | reads a file from the package |
+| [Restrict](Package_Restrict.md) | Method | blocks direct file reads from scripts |
 | [SetPassword](Package_SetPassword.md) | Method | sets a password for encryption |
 | [CreatePackage](CreatePackage.md) | Function | creates a new package |
 | [LoadPackage](LoadPackage.md) | Function | loads a package from a file |
