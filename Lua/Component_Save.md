@@ -12,6 +12,7 @@ This method is called when a component is saved to a file or copied.
 | binstream | stream of binary data |
 | scene | map that is being loaded |
 | flags | map save flags |
+| extra | user-defined value |
 
 ## Returns
 
