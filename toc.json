@@ -1658,6 +1658,16 @@
                             ]
                         },
                         {
+                            "title": "Prefab",
+                            "filename": "Prefab",
+                            "topics": [
+                                {
+                                    "title": "LoadPrefab",
+                                    "filename": "LoadPrefab"
+                                }
+                            ]
+                        },
+                        {
                             "title": "Scene",
                             "filename": "Scene",
                             "topics": [
