@@ -114,16 +114,6 @@
                     "title": "Audio",
                     "topics": [
                         {
-                            "title": "AudioFilter",
-                            "filename": "AudioFilter",
-                            "topics": [
-                                {
-                                    "title": "LoadAudioFilter",
-                                    "filename": "LoadAudioFilter"
-                                }
-                            ]
-                        },
-                        {
                             "title": "Sound",
                             "filename": "Sound",
                             "topics": [
