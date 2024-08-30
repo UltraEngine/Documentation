@@ -4,7 +4,7 @@ This method adds an audio filter to the speaker.
 
 ## Syntax
 
-- void **SetFilter**(const AudioFilter filter)
+- bool **SetFilter**(const AudioFilter filter)
 
 | Parameter | Description |
 |---|---|
