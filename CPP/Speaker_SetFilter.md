@@ -22,20 +22,56 @@ int main(int argc, const char* argv[])
     //Get the displays
     auto displays = GetDisplays();
 
-    //Create window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 800, 600, displays[0], WINDOW_TITLEBAR | WINDOW_CENTER);
+    //Create a window
+    auto window = CreateWindow("Ultra Engine", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
-    //Load sound
+    //Create a world
+    auto world = CreateWorld();
+
+    //Create a framebuffer
+    auto framebuffer = CreateFramebuffer(window);
+
+    //Create a camera
+    auto camera = CreateCamera(world);
+    camera->SetClearColor(0.125);
+    camera->SetFov(70);
+    camera->SetPosition(0, 0, -3);
+    camera->Listen();
+
+    //Create a light
+    auto light = CreateBoxLight(world);
+    light->SetRotation(35, 45, 0);
+    light->SetRange(-10, 10);
+
+    //Create a box
+    auto box = CreateBox(world);
+    box->SetColor(0, 0, 1);
+
+    //Sound
     auto sound = LoadSound("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Sound/notification.wav");
-
     auto speaker = CreateSpeaker(sound);
-    speaker->SetFilter(AUDIOFILTER_REVERB_SEWERPIPE);
-    
+    speaker->SetLooping(true);
+    speaker->SetPosition(box->GetPosition(true));
+    speaker->Play();
+    speaker->SetRange(10);
+
+    //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
     {
-        //Play sound when space key is pressed
-        if (window->KeyHit(KEY_SPACE)) speaker->Play();
-        Sleep(16);
+        //Add filter when space key is pressed
+        if (window->KeyHit(KEY_SPACE))
+        { 
+            speaker->SetFilter(AUDIOFILTER_REVERB_SEWERPIPE);
+        }
+
+        //Move and turn with the arrow keys - best experienced with headphones
+        if (window->KeyDown(KEY_UP)) camera->Move(0, 0, 0.1);
+        if (window->KeyDown(KEY_DOWN)) camera->Move(0, 0, -0.1);
+        if (window->KeyDown(KEY_LEFT)) camera->Turn(0, -1, 0);
+        if (window->KeyDown(KEY_RIGHT)) camera->Turn(0, 1, -0);
+
+        world->Update();
+        world->Render(framebuffer);
     }
     return 0;
 }
