@@ -8,7 +8,21 @@ This method adds an audio filter to the speaker.
 
 | Parameter | Description |
 |---|---|
-| filter | audio filter to set |
+| filter | audio filter to set, can be any of the values in the table below |
+
+## Returns
+
+Returns true if the audio filter was successfully set, otherwise false is returned.
+
+## Remarks
+
+The following audio filter constants are available.
+
+| AudioFilter |
+|---|
+| AUDIOFILTER_NONE |
+| AUDIOFILTER_REVERB_SEWERPIPE |
+| AUDIOFILTER_REVERB_PSYCHOTIC |
 
 ## Example
 
