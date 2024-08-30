@@ -54,10 +54,10 @@ speaker:SetRange(10)
 
 --Main loop
 while window:Closed() == false and window:KeyDown(KEY_ESCAPE) == false do
+
     --Add filter when space key is pressed
     if window:KeyHit(KEY_SPACE) then
-        local filter = LoadAudioFilter("https://raw.githubusercontent.com/UltraEngine/Assets/main/Sound/Filters/EAXReverb/SewerPipe.json")
-        speaker:SetFilter(filter)
+        speaker:SetFilter(AUDIOFILTER_REVERB_SEWERPIPE)
     end
 
     --Move and turn with the arrow keys - best experienced with headphones
