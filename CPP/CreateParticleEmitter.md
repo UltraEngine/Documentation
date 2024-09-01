@@ -38,7 +38,7 @@ int main(int argc, const char* argv[])
 
     //Create a camera
     auto camera = CreateCamera(world);
-    camera->SetPosition(0, 1, -2);
+    camera->SetPosition(0, 4, -8);
 
     //Create a particle emitter with 50 particles
     auto emitter = CreateParticleEmitter(world, 50);
