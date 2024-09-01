@@ -33,6 +33,7 @@ local world = CreateWorld()
 -- Create a camera
 local camera = CreateCamera(world)
 camera:SetPosition(0, 4, -8)
+camera:SetClearColor(0.125)
 
 -- Create a particle emitter with 50 particles
 local emitter = CreateParticleEmitter(world, 50)
