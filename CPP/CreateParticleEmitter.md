@@ -42,7 +42,7 @@ int main(int argc, const char* argv[])
 
     //Create a particle emitter with 50 particles
     auto emitter = CreateParticleEmitter(world, 50);
-    emitter->SetMaterial(LoadMaterial("Materials/Particles/default.mat"));
+    emitter->SetMaterial(LoadMaterial("https://raw.githubusercontent.com/UltraEngine/Documentation/master/Assets/Materials/Particles/default.mat"));
 
     //Main loop
     while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
