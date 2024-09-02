@@ -8,7 +8,25 @@ This method gets the current button pressed state of the controller.
 
 | Parameter | Description |
 |---|---|
-| button | can be VRBUTTON_A, VRBUTTON_B, VRBUTTON_MENU, VRBUTTON_GRIP, VRBUTTON_SYSTEM, VRBUTTON_LEFT, VRBUTTON_UP, VRBUTTON_RIGHT, VRBUTTON_DOWN, VRBUTTON_TOUCHPAD, VRBUTTON_TRIGGER, or any number from 0 to 63 |
+| button | can be any of the values in the list below, or any number from 0 to 63 |
+
+#### Generic Buttons
+- VRBUTTON_A
+- VRBUTTON_B
+- VRBUTTON_TOUCHPAD
+- VRBUTTON_TRIGGER
+
+#### Valve Index Controller Buttons
+- VRBUTTON_INDEX_A (also indicates squeezed handle)
+- VRBUTTON_INDEX_B
+- VRBUTTON_INDEX_DPAD (also touchpad button)
+- VRBUTTON_INDEX_TRIGGER
+
+#### HTC Vive controller
+- VRBUTTON_VIVE_MENU
+- VRBUTTON_VIVE_GRIP
+- VRBUTTON_VIVE_TOUCHPAD
+- VRBUTTON_VIVE_TRIGGER
 
 ## Returns
 
