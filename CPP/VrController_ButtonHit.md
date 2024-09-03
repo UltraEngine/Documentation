@@ -17,10 +17,10 @@ This method gets the button hit state.
 - VRBUTTON_TRIGGER
 
 #### Valve Index Controller Buttons
-- VRBUTTON_INDEX_A (also indicates squeezed handle)
-- VRBUTTON_INDEX_B
-- VRBUTTON_INDEX_DPAD (also touchpad button)
-- VRBUTTON_INDEX_TRIGGER
+- VRBUTTON_KNUCKLES_A (also indicates squeezed handle)
+- VRBUTTON_KNUCKLES_B
+- VRBUTTON_KNUCKLES_DPAD (also touchpad button)
+- VRBUTTON_KNUCKLES_TRIGGER
 
 #### HTC Vive controller
 - VRBUTTON_VIVE_MENU
