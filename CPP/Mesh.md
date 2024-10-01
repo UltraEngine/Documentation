@@ -10,6 +10,7 @@ The mesh class is a collection of vertices and polygons that form visible surfac
 | extra | shared_ptr<[Object](Object.md)\> | user-defined data |
 | indices | const vector<uint32_t\>& | read-only array of primitive indices |
 | material | const shared_ptr<[Material](Material.md)\>& | read-only material object |
+| materials | const array<shared_ptr<[Material](Material.md)\>, 4>& | read-only materials array |
 | name | [WString](WString.md) | user-defined name |
 | type | const MeshPrimitives& | read-only mesh primitive type |
 | vertices | const vector<[Vertex](Vertex.md)\>& | read-only array of mesh vertices |
