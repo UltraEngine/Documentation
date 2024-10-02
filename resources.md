@@ -16,6 +16,7 @@
 * [ShareTextures](https://www.sharetextures.com/)
 * [TextureBox](https://texturebox.com/)
 * [TextureCan](https://texturecan.com/)
+* https://pbrtexture.com/store?category_id=4
 * https://www.pbrpx.com
 * https://textures.pixel-furnace.com/
 * https://texture.ninja/
