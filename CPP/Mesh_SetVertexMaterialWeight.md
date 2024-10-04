@@ -9,5 +9,5 @@ This method sets the material weight of a single vertex in the mesh.
 | Parameter | Description |
 |---|---|
 | vertex | vertex index, starting with zero |
-| weight | vertex texture coordinates to set |
+| weight | material weight to set, between 0 and 1 |
 | index | material index, can be 0, 1, 2, or 3 |
