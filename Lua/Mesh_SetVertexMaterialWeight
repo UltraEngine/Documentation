@@ -1,0 +1,13 @@
+# Mesh:SetVertexMaterialWeight
+
+This method sets the material weight of a single vertex in the mesh.
+
+## Syntax
+
+- **SetVertexMaterialWeight**(number vertex, number weight, number index)
+
+| Parameter | Description |
+|---|---|
+| vertex | vertex index, starting with zero |
+| weight | vertex texture coordinates to set, between zero and one |
+| index | material index, can be 1, 2, 3, or 4 |
