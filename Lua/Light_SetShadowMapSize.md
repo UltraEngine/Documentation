@@ -1,10 +1,10 @@
-# Light:SetShadowMapSize
+# Light:SetShadowmapSize
 
 This function is used to control the resolution of a light's shadow map.
 
 ## Syntax
 
-- **SetShadowMapSize**(number size)
+- **SetShadowmapSize**(number size)
 
 | Parameter | Description |
 |---|---|
