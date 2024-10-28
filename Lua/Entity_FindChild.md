@@ -15,7 +15,7 @@ This method searches the entity subhierarchy for a child with a specified name. 
 
 ## Returns
 
-Returns the first entity found with the specified name, or the number of children found.
+Returns the first entity found with the specified name, or an array of children found.
 
 ## Remarks
 
