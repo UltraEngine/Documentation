@@ -1,4 +1,4 @@
-# Light::SetShadowMapSize
+# Light::SetShadowmapSize
 
 This method is used to control the resolution of a light's shadow map.
 
