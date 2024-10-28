@@ -5,7 +5,7 @@ This method searches the entity subhierarchy for a child with a specified name. 
 ## Syntax
 
 - shared_ptr<[Entity](Entity.md)\> **FindChild**(const [WString](WString.md)& name, const bool cased = true)
-- int **FindChildren**(const [WString](WString.md)& name, vector<shared_ptr<[Entity](Entity.md)\>\> results, const bool cased = true)
+- std::vector<shared_ptr<[Entity](Entity.md)\> > **FindChildren**(const [WString](WString.md)& name, const bool cased = true)
 
 | Parameter | Description |
 | --- | --- |
@@ -15,7 +15,7 @@ This method searches the entity subhierarchy for a child with a specified name. 
 
 ## Returns
 
-Returns the first entity found with the specified name, or the number of children found.
+Returns the first entity found with the specified name, or an array of children found.
 
 ## Remarks
 
