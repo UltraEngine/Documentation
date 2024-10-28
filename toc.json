@@ -446,8 +446,8 @@
                                     "filename": "Light_SetRange"
                                 },
                                 {
-                                    "title": "SetShadowMapSize",
-                                    "filename": "Light_SetShadowMapSize"
+                                    "title": "SetShadowmapSize",
+                                    "filename": "Light_SetShadowmapSize"
                                 }
                             ]
                         },
