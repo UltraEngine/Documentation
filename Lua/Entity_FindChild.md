@@ -5,7 +5,7 @@ This method searches the entity subhierarchy for a child with a specified name. 
 ## Syntax
 
 - [Entity](Entity.md) **FindChild**([string](https://www.lua.org/manual/5.4/manual.html#6.4) name, boolean casesensitive = true)
-- number **FindChild**(([string](https://www.lua.org/manual/5.4/manual.html#6.4), [table](https://www.lua.org/manual/5.4/manual.html#6.6) results, boolean casesensitive = true)
+- table **FindChildren**(([string](https://www.lua.org/manual/5.4/manual.html#6.4), boolean casesensitive = true)
 
 | Parameter | Description |
 | --- | --- |
