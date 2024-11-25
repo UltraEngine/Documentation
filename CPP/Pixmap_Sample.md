@@ -1,6 +1,6 @@
 # Pixmap::Sample
 
-This method retrieves a pixel sample using bilinear filtering to smoothly interpolate between pixels.
+This method retrieves a pixel sample using bilinear filtering to smoothly interpolate between pixels. This can also be used to read color values from high-precision pixel formats.
 
 ## Syntax
 
