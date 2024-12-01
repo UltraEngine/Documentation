@@ -3,9 +3,7 @@ This function produces a runtime error if the supplied condition or object is fa
 
 ## Syntax
 
-- void **Assert**(const bool condition)
 - void **Assert**(const bool condition, const [WString](WString.md)& message)
-- void **Assert**(shared_ptr<[Object](Object.md)\> o)
 - void **Assert**(shared_ptr<[Object](Object.md)\> o, const [WString](WString.md)& message) 
 
 | Paraemter | Description |
@@ -16,7 +14,7 @@ This function produces a runtime error if the supplied condition or object is fa
 
 ## Example
 ```c++
-#include "pch.h"
+#include "UltraEngine.h"
 
 using namespace UltraEngine;
 
@@ -24,7 +22,7 @@ int main(int argc, const char* argv[])
 {
     try
     {
-        Assert(false);
+        Assert(false, "Value is false");
     }
     catch (std::exception e)
     {
