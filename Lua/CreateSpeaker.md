@@ -2,20 +2,19 @@
 
 This function creates a new speaker object.
 
-Syntax
-```lua
-function CreateSpeaker(sound:Sound): Speaker
-```
+## Syntax
 
-Parameter
-- sound: (optional) sound to set
-  - Type: Sound
+- Speaker CreateSpeaker(sound)
 
-Returns
+| Parameter | Description |
+|---|---|
+| sound | sound to set |
+
+## Returns
 
 Returns a new speaker.
 
-Example
+## Example
 
 ```lua
 local displays = GetDisplays()
