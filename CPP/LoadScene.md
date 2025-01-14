@@ -56,7 +56,7 @@ int main(int argc, const char* argv[])
     ground->SetColor(0, 1, 0);
     
     //Create a scene
-    auto scene = std::make_shared<Map>();
+    auto scene = CreateScene();
     scene->entities.push_back(ground);
     scene->entities.push_back(light);
     ground = NULL;
