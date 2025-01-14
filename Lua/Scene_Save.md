@@ -57,7 +57,7 @@ ground:SetPosition(0, -0.5, 0)
 ground:SetColor(0, 1, 0)
 
 -- Create a scene
-local scene = CreateMap()
+local scene = CreateScene()
 
 -- Add some boxes
 for n = 1, 10 do
