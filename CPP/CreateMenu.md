@@ -2,6 +2,8 @@
 
 This function creates a menu widget. A menu item emits a WIDGETACTION event when it is selected.
 
+Note that menu widgets are only compatible with an interface created directly on a window.
+
 ## Syntax
 
 - shared_ptr<[Widget](Widget.md)> **CreateMenu**(const [WString](WString.md)& text, shared_ptr<[Widget](Widget.md)> parent);
@@ -13,7 +15,7 @@ This function creates a menu widget. A menu item emits a WIDGETACTION event when
 
 ## Returns
 
-Returns a new widget.
+Returns a new widget, or NULL if the interface was not created on a window.
 
 ## Example
 
