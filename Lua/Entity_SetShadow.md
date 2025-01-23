@@ -1,10 +1,10 @@
-# Entity:SetShadow
+# Entity:SetShadows
 
 This method determines whether the entity casts a shadow.
 
 ## Sytnax
 
-- **SetShadow**(boolean mode)
+- **SetShadows**(boolean mode)
 
 | Parameter | Description |
 |---|---|
