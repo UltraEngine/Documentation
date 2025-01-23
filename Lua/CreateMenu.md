@@ -2,6 +2,8 @@
 
 This function creates a menu widget. A menu item emits a WIDGETACTION event when it is selected.
 
+Note that menu widgets are only compatible with an interface created directly on a window.
+
 ## Syntax
 
 - [Widget](Widget.md) **CreateMenu**([string](https://www.lua.org/manual/5.4/manual.html#6.4) text, [Widget](Widget.md) parent)
@@ -13,7 +15,7 @@ This function creates a menu widget. A menu item emits a WIDGETACTION event when
 
 ## Returns
 
-Returns a new widget.
+Returns a new widget, or nil if the interface was not created on a window.
 
 ## Example
 
