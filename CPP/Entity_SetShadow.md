@@ -1,10 +1,10 @@
-# Entity::SetShadow
+# Entity::SetShadows
 
 This method determines whether the entity casts a shadow.
 
 ## Sytnax
 
-- void **SetShadow**(const bool mode)
+- void **SetShadows**(const bool mode)
 
 | Parameter | Description |
 |---|---|
