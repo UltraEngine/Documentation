@@ -3112,16 +3112,6 @@
                     ]
                 },
                 {
-                    "title": "Plugin",
-                    "filename": "Plugin",
-                    "topics": [
-                        {
-                            "title": "LoadPlugin",
-                            "filename": "LoadPlugin"
-                        }
-                    ]
-                },
-                {
                     "title": "Process",
                     "filename": "Process",
                     "topics": [
