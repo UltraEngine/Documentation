@@ -77,12 +77,9 @@
         },
         {
             "title": "Programming Reference",
+            "filename": "Programming"
             "openstate": true,
             "topics": [
-                {
-                    "title": "Getting Started",
-                    "filename": "Programming"
-                },
                 {
                     "title": "Asset",
                     "filename": "Asset",
