@@ -8,7 +8,6 @@
         },
         {
             "title": "Tutorials",
-            "filename": "editor",
             "openstate": true,
             "useLanguage": false,
             "topics": [
@@ -81,17 +80,9 @@
             "openstate": true,
             "topics": [
                 {
-                    "title": "Getting Started with C++",
-                    "openstate": false,
-                    "filename": "cppsetup",
-                    "useLanguage": false
+                    "title": "Getting Started",
+                    "filename": "Programming"
                 },
-                {
-                    "title": "Getting Started with Lua",
-                    "openstate": false,
-                    "filename": "luasetup",
-                    "useLanguage": false
-                },                
                 {
                     "title": "Asset",
                     "filename": "Asset",
