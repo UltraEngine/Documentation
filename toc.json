@@ -12,7 +12,7 @@
             "useLanguage": false,
             "topics": [
                 {
-                    "title": "Interface",
+                    "title": "Editor",
                     "topics": [
                         {
                             "title": "Asset Browser",
@@ -61,7 +61,7 @@
                     ]
                 },
                 {
-                    "title": "Workflow",
+                    "title": "Level Design",
                     "topics": [
                         {
                             "title": "Physically-based Materials",
@@ -70,6 +70,28 @@
                         {
                             "title": "Modeling Pipeline",
                             "filename": "modeling"
+                        }
+                    ]
+                },
+                {
+                    "title": "Gameplay",
+                    "topics": [
+                        {
+                            "title": "Physically-based Materials",
+                            "filename": "pbrmaterials"
+                        },
+                        {
+                            "title": "Modeling Pipeline",
+                            "filename": "modeling"
+                        }
+                    ]
+                },
+                {
+                    "title": "Programming",
+                    "topics": [
+                        {
+                            "title": "Getting Started",
+                            "filename": "Programming"
                         }
                     ]
                 }
