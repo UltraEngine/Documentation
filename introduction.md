@@ -42,20 +42,3 @@ When your license is active, you can select a channel in the **Updates** panel a
 The default channel will contain the current stable build, which does not change. You can select a newer version and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
 
 Once the game engine is installed you can press the launch button to run the [editor](editor.md) and begin building games.
-
-## Distribution
-
-Only the release build of your game should be distributed. The debug build of your game will end with the suffix "_d.exe" and should not be included.
-
-You can pack all game data files (models, textures, etc.) into an [encrypted Zip package](https://www.ultraengine.com/learn/Package) to protect them. Just load the archive at the beginning of your program with this code:
-
-```c++
-auto pak = LoadPackage("gamedata.zip");// load the archive
-pak->SetPassword("xxxxxxxxxxxxx");// set your own password here
-```
-
-If your code does not load any plugins you do not need to include the DLLs in the "Plugins" directory.
-
-You should not distribute any files from the client application folder like the library, headers, template files, etc.
-
-The only dependency your end users need to install is the [Microsoft Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe). There's a good chance they already have it installed from another game or application, but you should package this in your installer or select it in the install settings for your game on Steam.
