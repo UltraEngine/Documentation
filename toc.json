@@ -7,19 +7,7 @@
             "useLanguage": false
         },
         {
-            "title": "Getting Started with C++",
-            "openstate": false,
-            "filename": "cppsetup",
-            "useLanguage": false
-        },
-        {
-            "title": "Getting Started with Lua",
-            "openstate": false,
-            "filename": "luasetup",
-            "useLanguage": false
-        },
-        {
-            "title": "Editor",
+            "title": "Tutorials",
             "filename": "editor",
             "openstate": true,
             "useLanguage": false,
@@ -92,6 +80,18 @@
             "title": "Programming Reference",
             "openstate": true,
             "topics": [
+                {
+                    "title": "Getting Started with C++",
+                    "openstate": false,
+                    "filename": "cppsetup",
+                    "useLanguage": false
+                },
+                {
+                    "title": "Getting Started with Lua",
+                    "openstate": false,
+                    "filename": "luasetup",
+                    "useLanguage": false
+                },                
                 {
                     "title": "Asset",
                     "filename": "Asset",
