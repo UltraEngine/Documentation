@@ -12,7 +12,7 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 #### Additional Recommended Software
 
-- [Microsoft Visual Studio](https://visualstudio.microsoft.com/#vs-section) (used for C++ programming)
+- [Microsoft Visual Studio Community Edition](https://visualstudio.microsoft.com/#vs-section) (used for C++ programming)
 - [Microsoft Visual Studio Code](https://code.visualstudio.com) (used for Lua programming)
 
 ## Installation
