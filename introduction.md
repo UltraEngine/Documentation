@@ -6,7 +6,7 @@ Ultra Engine is currently available in early access mode, with support for the C
 
 ## System Requirements
 
-- Nvidia GEForce 420 or AMD Radeon RX 5300M (Integrated graphics are not supported yet. The expected minimum hardware supported for Intel is the HD Graphics 520 chip.)
+- Nvidia GEForce 420 or AMD Radeon RX 5300M
 - Windows 10 or 11
 - [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 
