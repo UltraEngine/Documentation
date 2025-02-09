@@ -114,7 +114,7 @@ Let's try another. What power-of-two numbers can we add together to make the num
 
 This works with all power-of-two numbers, into infinity.
 
-## Logical OR
+### Logical OR
 
 Sometimes programmers like to use this super power to combine multiple values into a single variable using something called the logical OR operator:
 ```
@@ -134,7 +134,7 @@ window = CreateWindow("My Window", 0, 0, 800, 600, display, WINDOW_CENTER | WIND
 
 The window will be created using the WINDOW_CENTER and the WINDOW_TITLEBAR styles.
 
-## Logical AND
+### Logical AND
 
 If logical OR combines values, logical AND allows us to detect combined values. In the example below, we know the number three is made up of two and one, so two is the value the two sides of the operator have in common.
 
