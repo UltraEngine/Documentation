@@ -117,12 +117,12 @@ This works with all power-of-two numbers, into infinity.
 ### Logical OR
 
 Sometimes programmers like to use this super power to combine multiple values into a single variable using something called the logical OR operator:
-```
+```lua
 n = 1 | 2
 Print(n) --prints 3
 ```
 Logical OR will add two power-of-two numbers together...unless one number already contains the other!
-```
+```lua
 n = 1 | 3
 Print(n) --prints 3
 ```
