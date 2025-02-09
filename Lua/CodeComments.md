@@ -23,7 +23,7 @@ model = CreateBox(world) --create a new box model
 
 ## Multi-line Comments
 
-You can comment out multiple lines of code by adding "--[[" before the block and "]]--" after.  When you do this the entire section of text will change colors indicating that it is inactive.
+You can comment out multiple lines of code by adding "--[[" before the block and "]]" after.  When you do this the entire section of text will change colors indicating that it is inactive.
 
 ```lua
 --[[
