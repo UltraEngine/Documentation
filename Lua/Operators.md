@@ -89,6 +89,43 @@ if a ~= 5 then
 end
 ```
 
+## Logical Operators
+
+Okay, now things are going to get a little weird. Computers use a lot of power-of-two numbers. Power-of-two numbers are what you get if you start with one and just keep multiplying by two:
+> 1 x 2 = 2  
+> 2 x 2 = 4  
+> 4 x 2 = 8  
+> 8 x 2 = 16  
+> 16 x 2 = 32  
+> 32 x 2 = 64  
+> 64 x 2 = 128  
+> 128 x 2 = 256  
+
+The funny thing about power-of-two numbers is that when we combine them we can tell which numbers we used to make the new number. For example:
+> 1 + 2 = 3
+
+We know that if three is made by adding power-of-two numbers together, the two numbers we used are one and two. Here's another example:
+> 2 + 4 = 6
+
+The only power-of-two numbers you can add together to make six are four and two!
+
+Let's try another. What power-of-two numbers can we add together to make the number 13?
+> 1 + 4 + 8 = 13
+
+This works with all power-of-two numbers, into infinity.
+
+## Logical OR
+
+Sometimes programmers like to use this super power to combine multiple values into a single variable. These are called "bitwise flags" and are often used for optional settings that are being passed to a function, like the window create function.
+
+```lua
+window = CreateWindow("My Window", 0, 0, 800, 600, display, WINDOW_CENTER | WINDOW_TITLEBAR )
+```
+
+## Logical AND
+
+
+
 ## Conclusion
 
 You will frequently encounter all of these operators while writing Lua scripts.  Make sure you understand how they all work, and ask on the forum if you have any questions.  You're doing great!
