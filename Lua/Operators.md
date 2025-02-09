@@ -152,7 +152,7 @@ if n & 1 ~= 0 then
 end
 ```
 
-Since nine is made by adding eight and one together, the above code will print "Yes!"
+Since nine is made by adding eight and one together, the above code will print "Yes".
 
 You can also use the logical AND operator to remove a bitwise flag from a number, when combined with the not `~` symbol:
 
