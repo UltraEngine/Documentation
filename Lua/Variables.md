@@ -3,16 +3,16 @@ A variable is a named value in a program that stores a piece of information. Let
 
 > adjective
 > 
-> apt or liable to vary or change; changeable:
-variable weather; variable moods.
-capable of being varied or changed; alterable:
-a variable time limit for completion of a book.
-inconstant; fickle:
-a variable lover.
-having much variation or diversity.
-Biology. deviating from the usual type, as a species or a specific character.
-Astronomy. (of a star) changing in brightness.
-Meteorology. (of wind) tending to change in direction.
+> apt or liable to vary or change; changeable:  
+> variable weather; variable moods.  
+> capable of being varied or changed; alterable:  
+> a variable time limit for completion of a book.  
+> inconstant; fickle:  
+> a variable lover.  
+> having much variation or diversity.  
+> Biology. deviating from the usual type, as a species or a specific character.  
+> Astronomy. (of a star) changing in brightness.  
+> Meteorology. (of wind) tending to change in direction.  
 
 All of these definitions have something to do with the idea of change, and as you might have guessed, variables can and do very often change values during the execution of a program. Variables can be used to keep track of the health of a character, the player's score, or the angle of the rising sun.
 
