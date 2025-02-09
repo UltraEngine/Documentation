@@ -129,7 +129,7 @@ Print(n) --prints 3
 These combined values are sometimes called "bitwise flags" and are often used for optional settings that are being passed to a function, like the window create function.
 
 ```lua
-window = CreateWindow("My Window", 0, 0, 800, 600, display, WINDOW_CENTER | WINDOW_TITLEBAR )
+CreateWindow("My Window", 0, 0, 800, 600, display, WINDOW_CENTER | WINDOW_TITLEBAR )
 ```
 
 The window will be created using the WINDOW_CENTER and the WINDOW_TITLEBAR styles.
