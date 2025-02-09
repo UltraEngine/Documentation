@@ -26,9 +26,7 @@ end
 
 ## Less Than
 
-The less than operator determines if one number is smaller than another.  The less than sign looks a little bit like a bird's beak if you picture the bird facing to the left:
-
-`<`
+The less than operator determines if one number is smaller than another.  The less than sign looks a little bit like a bird's beak if you picture the bird facing to the left: `<`
 
 Remember, birds don't eat a lot, so the number where his beak points is smaller.  Here's an example of it in action:
 
@@ -41,9 +39,7 @@ end
 
 ## Greater Than
 
-The greater than operator determines if one number is larger than another.  The greater than sign looks a little bit like an alligator's mouth if you picture the alligator facing to the left:
-
-`>`
+The greater than operator determines if one number is larger than another.  The greater than sign looks a little bit like an alligator's mouth if you picture the alligator facing to the left: `>`
 
 Remember, alligators eat a lot, so the number where his mouth points is bigger.  Here's an example of it in action:
 
