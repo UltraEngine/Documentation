@@ -126,16 +126,45 @@ Logical OR will add two power-of-two numbers together...unless one number alread
 n = 1 | 3
 Print(n) --prints 3
 ```
-These type of values are called "bitwise flags" and are often used for optional settings that are being passed to a function, like the window create function.
+These combined values are sometimes called "bitwise flags" and are often used for optional settings that are being passed to a function, like the window create function.
 
 ```lua
 window = CreateWindow("My Window", 0, 0, 800, 600, display, WINDOW_CENTER | WINDOW_TITLEBAR )
 ```
 
+The window will be created using the WINDOW_CENTER and the WINDOW_TITLEBAR styles.
+
 ## Logical AND
 
+If logical OR combines values, logical AND allows us to detect combined values. In the example below, we know the number three is made up of two and one, so two is the value the two sides of the operator have in common.
 
+```lua
+n = 2 & 3
+Print(n) --prints 1
+```
+
+You can quickly check to see if a power-of-two combo contains a bitwise flag like this:
+
+```lua
+n = 9
+if n & 1 ~= 0 then
+        Print("Yes")
+end
+```
+
+Since nine is made by adding eight and one together, the above code will print "Yes!"
+
+You can also use the logical AND operator to remove a bitwise flag from a number, when combined with the not `~` symbol:
+
+```lua
+n = 9 & ~ 1
+Print(n) --prints 8
+```
+
+You probably won't need to use the logical AND operator in your game code, but it's there if you are feeling adventurous.
+
+If this section was a little confusing, that's okay. Next time you see something like `WINDOW_CENTER | WINDOW_TITLEBAR` you will know why it is there and what it does!
 
 ## Conclusion
 
-You will frequently encounter all of these operators while writing Lua scripts.  Make sure you understand how they all work, and ask on the forum if you have any questions.  You're doing great!
+You will frequently encounter most of these operators while writing Lua scripts.  Make sure you understand how they all work, and ask on the forum if you have any questions.  You're doing great!
