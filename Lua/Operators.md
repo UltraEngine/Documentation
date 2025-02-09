@@ -116,7 +116,17 @@ This works with all power-of-two numbers, into infinity.
 
 ## Logical OR
 
-Sometimes programmers like to use this super power to combine multiple values into a single variable. These are called "bitwise flags" and are often used for optional settings that are being passed to a function, like the window create function.
+Sometimes programmers like to use this super power to combine multiple values into a single variable using something called the logical OR operator:
+```
+n = 1 | 2
+Print(n) --prints 3
+```
+Logical OR will add two power-of-two numbers together...unless one number already contains the other!
+```
+n = 1 | 3
+Print(n) --prints 3
+```
+These type of values are called "bitwise flags" and are often used for optional settings that are being passed to a function, like the window create function.
 
 ```lua
 window = CreateWindow("My Window", 0, 0, 800, 600, display, WINDOW_CENTER | WINDOW_TITLEBAR )
