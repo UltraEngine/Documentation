@@ -136,15 +136,15 @@ Scope is an important programming concept. Variables can have one of two scopes.
 Local variables are contained within a piece of code. We can define a local variable with the key word "local":
 
 ```lua
-local n=1
+local n = 1
 ```
 
 Local variables can only be accessed from within the block of code they are declared in. In the example below, a local variable is declared inside an "if" statement. Because the variable is made local, it will not be visible to code outside the if statement.
 
 ```lua
-a=1
-if a>0 then
-        local n=2
+a = 1
+if a > 0 then
+        local n = 2
 end
 
 Print(n) --prints "nil"
