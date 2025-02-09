@@ -141,4 +141,4 @@ end
 
 ## Conclusion
 
-Lua tables are the magic that makes the language so flexible and great for games.  It's important to understand this feature, so don't hesitate to ask any questions you have in the comments below.
+Lua tables are the magic that makes the language so flexible and great for games.  It's important to understand this feature, so don't hesitate to ask any questions you have in the forum or on our Discord server.
