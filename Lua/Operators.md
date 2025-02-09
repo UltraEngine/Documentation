@@ -112,7 +112,7 @@ The only power-of-two numbers you can add together to make six are four and two!
 Let's try another. What power-of-two numbers can we add together to make the number 13?
 > 1 + 4 + 8 = 13
 
-This works with all power-of-two numbers, into infinity.
+This works with all positive power-of-two numbers, into infinity.
 
 ### Logical OR
 
