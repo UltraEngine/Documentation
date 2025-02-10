@@ -14,8 +14,8 @@ Leadwerks 4 documentation can be found [here](https://www.ultraengine.com/learn4
 
 #### Additional Recommended Software
 
-- [Microsoft Visual Studio Community Edition](https://visualstudio.microsoft.com/#vs-section) (used for C++ programming)
-- [Microsoft Visual Studio Code](https://code.visualstudio.com) (used for Lua programming)
+- [Microsoft Visual Studio Community Edition](https://visualstudio.microsoft.com/#vs-section) is used for C++ programming.
+- [Microsoft Visual Studio Code](https://code.visualstudio.com) is used for Lua programming.
 
 ## Installation
 
