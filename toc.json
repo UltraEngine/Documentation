@@ -61,32 +61,6 @@
                     ]
                 },
                 {
-                    "title": "Level Design",
-                    "topics": [
-                        {
-                            "title": "Physically-based Materials",
-                            "filename": "pbrmaterials"
-                        },
-                        {
-                            "title": "Modeling Pipeline",
-                            "filename": "modeling"
-                        }
-                    ]
-                },
-                {
-                    "title": "Gameplay",
-                    "topics": [
-                        {
-                            "title": "Physically-based Materials",
-                            "filename": "pbrmaterials"
-                        },
-                        {
-                            "title": "Modeling Pipeline",
-                            "filename": "modeling"
-                        }
-                    ]
-                },
-                {
                     "title": "Programming",
                     "topics": [
                         {
