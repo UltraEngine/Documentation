@@ -55,4 +55,4 @@ When your license is active, you can select a channel in the **Updates** panel a
 
 The default channel will contain the current stable build, which does not change. You can select a newer version and receive more frequent updates, but the releases will not be as thoroughly tested. If you want to switch channels, uninstall the engine and select a new channel to install.
 
-Once the game engine is installed you can press the launch button to run the [editor](editor.md) and begin building games.
+Once the game engine is installed you can press the launch button to run the editor.
