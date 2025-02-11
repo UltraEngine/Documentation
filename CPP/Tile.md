@@ -9,6 +9,7 @@ Base class: [Object](Object.md)
 | [GetClipRegion](Tile_GetClipRegion.md) | Method | Sets the tile position in 2D space |
 | [GetColor](Tile_GetColor.md) | Method | Sets the tile position in 2D space |
 | [GetOrder](Tile_GetOrder.md) | Method | Sets the tile position in 2D space |
+| [GetMaterial](Tile_GetMaterial.md) | Method | Sets the tile position in 2D space |
 | [GetPosition](Tile_GetPosition.md) | Method | Sets the tile position in 2D space |
 | [GetRotation](Tile_GetRotation.md) | Method | Sets the tile position in 2D space |
 | [GetScale](Tile_GetScale.md) | Method | Sets the tile position in 2D space |
@@ -16,6 +17,7 @@ Base class: [Object](Object.md)
 | [SetClipRegion](Tile_SetClipRegion.md) | Method | Sets the tile position in 2D space |
 | [SetColor](Tile_SetColor.md) | Method | Sets the tile position in 2D space |
 | [SetHandle](Tile_SetHandle.md) | Method | Sets the tile position in 2D space |
+| [SetMaterial](Tile_SetMaterial.md) | Method | Sets the tile position in 2D space |
 | [SetPosition](Tile_SetPosition.md) | Method | Sets the tile position in 2D space |
 | [SetRotation](Tile_SetRotation.md) | Method | Sets the tile position in 2D space |
 | [SetOrder](Tile_SetOrder.md) | Method | Sets the tile position in 2D space |
