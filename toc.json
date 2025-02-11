@@ -1747,7 +1747,12 @@
                         },
                         {
                             "title": "Tile",
-                            "filename": "Tile"
+                            "filename": "Tile",
+                            "topics": [
+                            {
+                                "title": "CreateTile",
+                                "filename": "CreateTile"
+                            }
                         },
                         {
                             "title": "Vertex",
