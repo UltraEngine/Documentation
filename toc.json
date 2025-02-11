@@ -1746,6 +1746,10 @@
                             ]
                         },
                         {
+                            "title": "Tile",
+                            "filename": "Tile"
+                        },
+                        {
                             "title": "Vertex",
                             "filename": "Vertex",
                             "hideFromLua": true
