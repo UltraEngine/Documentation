@@ -1749,10 +1749,11 @@
                             "title": "Tile",
                             "filename": "Tile",
                             "topics": [
-                            {
-                                "title": "CreateTile",
-                                "filename": "CreateTile"
-                            }
+                                {
+                                    "title": "CreateTile",
+                                    "filename": "CreateTile"
+                                }
+                            ]
                         },
                         {
                             "title": "Vertex",
