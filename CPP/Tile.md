@@ -2,7 +2,7 @@
 
 This class provides an interface for allocating, writing to, and reading from blocks of memory.
 
-Base class: [Tile](Tile.md)
+Base class: [Object](Object.md)
 
 | Property | Type | Description |
 | --- | --- | --- |
