@@ -6,7 +6,7 @@ This function creates a new tile for 2D drawing. Tiles can be rectangles or text
 
 - shared_ptr<[Tile](Tile)\> **CreateTile**(shared_ptr<[Camera](Camera)> camera, const float width, const float height, const bool wireframe = false)
 - shared_ptr<[Tile](Tile)\> **CreateTile**(shared_ptr<[Camera](Camera)> camera, const [Vec2](Vec2)& size, const bool wireframe = false)
-- shared_ptr<[Tile](Tile)\> **CreateTile**(shared_ptr<[Camera](Camera)> camera, shared_ptr<[Font](Font)> font, const int fontsize = 14, const [WString](WString)& text, const TextAlignment alignment = TEXT_LEFT, const float linespacing = 1.5f)
+- shared_ptr<[Tile](Tile)\> **CreateTile**(shared_ptr<[Camera](Camera)> camera, shared_ptr<[Font](Font)> font, const [WString](WString)& text, const int fontsize = 14, const TextAlignment alignment = TEXT_LEFT, const float linespacing = 1.5f)
 
 | Parameter | Description |
 |---|---|
